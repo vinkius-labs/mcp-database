@@ -1,7 +1,6 @@
 # Bitwarden MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bitwarden)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bitwarden-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bitwarden-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bitwarden)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Bitwarden** MCP server
 > I've compiled the member list. There are currently 12 active members and 2 pending invitations. Notable users include 'Alice (Owner)', 'Bob (Admin)', and 'Charlie (User)'. Should I check their group assignments?
 
 
+## ❓ FAQ
+
+**Q: Can I use this to audit recent administrative changes in my Bitwarden organization?**
+Yes! Use the `list_events` tool to retrieve the audit trail. It provides a detailed log of events, including who performed what action and when, helping you maintain security oversight.
+
+**Q: How do I check which security policies are currently active?**
+Simply ask the agent to run the `list_policies` action. This will return all administrative and security policies configured for your organization, such as Master Password requirements or Two-step Login rules.
+
+**Q: Is it possible to see all the shared collections we have set up?**
+Yes, the `list_collections` tool allows you to retrieve all collections available to the organization, helping you understand how shared secrets are categorized.
+
+
 ## Installation & Usage
 
-To install and use the **Bitwarden** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bitwarden](https://vinkius.com/mcp/bitwarden)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bitwarden** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bitwarden` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bitwarden** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bitwarden": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

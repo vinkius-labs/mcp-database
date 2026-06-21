@@ -1,7 +1,6 @@
 # Interest Amortization Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/interest-amortization-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/interest-amortization-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/interest-amortization-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/interest-amortization-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Interest Amortization 
 > The computation has been executed with mathematical precision. All results are exact and ready for review.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between PRICE and SAC?**
+PRICE features fixed total monthly payments (interest decreases, amortization increases). SAC features constant amortization, meaning the total monthly payment starts high and decreases over time.
+
+**Q: Can it generate 360-month mortgages?**
+Yes. It can instantly generate the complete, period-by-period JSON schedule for a 30-year (360-month) mortgage without timeout or token limit issues on the Vinkius Edge.
+
+**Q: Are the outputs legally viable?**
+Yes, the formulas applied are the exact universal mathematical standards required by courts and central banks worldwide.
+
+
 ## Installation & Usage
 
-To install and use the **Interest Amortization Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/interest-amortization-engine](https://vinkius.com/mcp/interest-amortization-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Interest Amortization Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `interest-amortization-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Interest Amortization Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "interest-amortization-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

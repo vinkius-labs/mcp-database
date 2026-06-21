@@ -1,7 +1,6 @@
 # Courier MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/courier)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/courier-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/courier-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/courier)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Courier** MCP server u
 > I've retrieved 15 templates, including 'Password Reset', 'New Login Alert', and 'Monthly Digest'. Would you like to see the details for a specific template?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Courier Auth Token?**
+Log in to your Courier dashboard, navigate to **Settings > API Keys**, and you will find your Auth Token there. Use the 'Published' key for production environments.
+
+**Q: What channels are supported?**
+Courier supports dozens of providers for Email (SendGrid, Mailgun), SMS (Twilio, MessageBird), Push (Firebase, OneSignal), and Chat (Slack, Discord).
+
+**Q: Can I track if a message was opened?**
+Yes, the agent can use the get_message_details tool to check the status of a specific message, which includes tracking events like 'OPENED' or 'CLICKED' if supported by the provider.
+
+
 ## Installation & Usage
 
-To install and use the **Courier** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/courier](https://vinkius.com/mcp/courier)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Courier** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `courier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Courier** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "courier": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

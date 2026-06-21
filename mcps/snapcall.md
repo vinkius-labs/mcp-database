@@ -1,7 +1,6 @@
 # SnapCall MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snapcall)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/snapcall-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/snapcall-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snapcall)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,46 @@ Here are some examples of how you can interact with the **SnapCall** MCP server 
 > Weekly performance report (May 12-16). 6 agents handled 89 video calls. Top performer: Sarah Chen (23 calls, 91% resolution, 4.9/5 CSAT, avg 6.8 min). James Park: 18 calls, 83% resolution, 4.6/5. Lisa Wang: 16 calls, 88% resolution, 4.7/5. Alex Rivera: 14 calls, 86% resolution, 4.5/5. 2 additional agents: combined 18 calls. Team averages: Resolution 86%, CSAT 4.7/5, Duration 7.8 min. Improvement vs last week: resolution +3%, CSAT +0.2. Training recommendation: billing escalation procedures.
 
 
+## ❓ FAQ
+
+**Q: How do I find my SnapCall API Key?**
+Log in to your SnapCall account, navigate to **Settings** > **API**, and you will find your unique secret API Key there.
+
+
 ## Installation & Usage
 
-To install and use the **SnapCall** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/snapcall](https://vinkius.com/mcp/snapcall)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SnapCall** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `snapcall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SnapCall** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "snapcall": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

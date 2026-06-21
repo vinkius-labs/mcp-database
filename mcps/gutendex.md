@@ -1,7 +1,6 @@
 # Gutendex MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gutendex)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gutendex-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gutendex-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gutendex)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **Gutendex** MCP server 
 > Found 'Frankenstein; Or, The Modern Prometheus' by Mary Wollstonecraft Shelley (Gutenberg ID: 84). Published 1818. Subjects: Science fiction, Gothic fiction, Monsters, Frankenstein's monster. Download count: 35,000+. Available in HTML, EPUB, Kindle, plain text and audio.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! Gutendex is completely free and requires no authentication. Just subscribe and start searching. There's no sign-up or registration needed.
+
+**Q: What books are available?**
+Gutendex indexes 70,000+ ebooks from Project Gutenberg, the world's oldest digital library. This includes classics like Pride and Prejudice, Frankenstein, Moby Dick, Romeo and Juliet, Alice's Adventures in Wonderland and thousands of other public domain works in many languages.
+
+**Q: Can I filter by language?**
+Yes! Use the languages parameter with ISO 2-letter codes: "en" for English, "pt" for Portuguese, "fr" for French, "es" for Spanish, "de" for German, etc. You can also combine multiple languages: "en,fr" for English and French books.
+
+**Q: Can I download the books?**
+Yes! Each book includes download URLs in multiple formats: HTML, EPUB, Kindle (MOBI), plain text, PDF and sometimes audio. The download links go directly to Project Gutenberg's servers. All books are in the public domain in the United States.
+
+
 ## Installation & Usage
 
-To install and use the **Gutendex** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gutendex](https://vinkius.com/mcp/gutendex)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gutendex** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gutendex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gutendex** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gutendex": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

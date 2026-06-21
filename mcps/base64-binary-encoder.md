@@ -1,7 +1,6 @@
 # Base64 & Binary Encoder MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/base64-binary-encoder)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/base64-binary-encoder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/base64-binary-encoder-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/base64-binary-encoder)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -52,12 +51,52 @@ Here are some examples of how you can interact with the **Base64 & Binary Encode
 > Encoded Output: Generated URL-safe Base64 string.
 
 
+## ❓ FAQ
+
+**Q: Does it support URL-safe Base64?**
+Yes, just pass `base64url` as the format argument. It removes `+` and `/` characters.
+
+**Q: Is this needed if my LLM can write code?**
+Yes, because the LLM is running in a sandbox without a Node.js runtime. This MCP gives the LLM direct access to `Buffer` execution.
+
+**Q: What happens if I try to decode an invalid Base64 string?**
+The V8 engine will safely catch the error and return a formatted error message without crashing your agent.
+
+
 ## Installation & Usage
 
-To install and use the **Base64 & Binary Encoder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/base64-binary-encoder](https://vinkius.com/mcp/base64-binary-encoder)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Base64 & Binary Encoder** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `base64-binary-encoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Base64 & Binary Encoder** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "base64-binary-encoder": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

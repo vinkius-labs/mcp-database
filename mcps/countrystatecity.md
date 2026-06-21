@@ -1,7 +1,6 @@
 # CountryStateCity MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/countrystatecity)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/countrystatecity-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/countrystatecity-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/countrystatecity)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **CountryStateCity** MCP
 > Fetching cities for New York, United States... I've found cities such as Albany, Buffalo, New York City, and Rochester. Do you need specific details for any of these cities?
 
 
+## ❓ FAQ
+
+**Q: How can I list all cities within a specific state or province?**
+Use the `list_cities_by_state` tool by providing the Country ISO2 code (e.g., 'US') and the State ISO2 code (e.g., 'NY'). The agent will return a list of all cities registered in that region.
+
+**Q: Can I get detailed metadata like emojis and phone codes for a country?**
+Yes! The `get_country` tool allows you to fetch full details for a specific country using its ISO2 code. You can also use `list_countries` with the `fields` parameter to include 'emoji' or 'phonecode' in the results.
+
+**Q: Is there a limit when listing all cities in a country?**
+The `list_cities_by_country` tool requires a Supporter+ tier API key from CountryStateCity. For standard users, it is recommended to use `list_cities_by_state` to query cities in smaller administrative batches.
+
+
 ## Installation & Usage
 
-To install and use the **CountryStateCity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/countrystatecity](https://vinkius.com/mcp/countrystatecity)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CountryStateCity** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `countrystatecity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CountryStateCity** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "countrystatecity": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

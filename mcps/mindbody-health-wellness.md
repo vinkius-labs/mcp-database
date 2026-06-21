@@ -1,7 +1,6 @@
 # MINDBODY Health & Wellness MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mindbody-health-wellness)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mindbody-health-wellness-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mindbody-health-wellness-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mindbody-health-wellness)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,49 @@ Here are some examples of how you can interact with the **MINDBODY Health & Well
 > Searching for 'John Doe'... I found a match! John has been a member since 2022 and has an active 'Unlimited Monthly' pass.
 
 
+## ❓ FAQ
+
+**Q: How do I find my MINDBODY Site ID?**
+Your Site ID is a unique integer representing your business. You can find it in your [**MINDBODY Dashboard**](https://clients.mindbodyonline.com/) or in the emails provided during your account setup.
+
+**Q: How do I generate an API Key?**
+You must register as a developer at the [**MINDBODY Developer Portal**](https://developers.mindbodyonline.com/). Once approved, you can create a project and generate your API Key.
+
+
 ## Installation & Usage
 
-To install and use the **MINDBODY Health & Wellness** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mindbody-health-wellness](https://vinkius.com/mcp/mindbody-health-wellness)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MINDBODY Health & Wellness** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mindbody-health-wellness` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MINDBODY Health & Wellness** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mindbody-health-wellness": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

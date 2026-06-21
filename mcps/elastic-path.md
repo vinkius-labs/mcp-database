@@ -1,7 +1,6 @@
 # Elastic Path MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elastic-path)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elastic-path-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elastic-path-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elastic-path)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Elastic Path** MCP ser
 > I've fetched the supported geographies. Your store currently supports shipping and billing in 5 countries: USA, Canada, UK, Germany, and France.
 
 
+## ❓ FAQ
+
+**Q: Can I check the status of a specific purchase using its ID?**
+Yes! Use the `get_purchase` tool with the store scope and purchase ID. It will return the status (such as COMPLETE or FAILED), order totals, and a list of items.
+
+**Q: How do I retrieve the navigation structure for my storefront?**
+Simply use the `get_navigations` tool providing your store scope. This will fetch the entry points for your store's categories and links.
+
+**Q: Is it possible to see the default cart for a specific scope?**
+Yes, the `get_default_cart` tool allows you to read the default cart for any specified scope, including optional zoom parameters for linked data.
+
+
 ## Installation & Usage
 
-To install and use the **Elastic Path** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/elastic-path](https://vinkius.com/mcp/elastic-path)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Elastic Path** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `elastic-path` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Elastic Path** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "elastic-path": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

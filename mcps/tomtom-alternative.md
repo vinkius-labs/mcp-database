@@ -1,7 +1,6 @@
 # TomTom MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomtom-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tomtom-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tomtom-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomtom-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **TomTom** MCP server us
 > Here is the URL for the requested map tile: https://api.tomtom.com/map/1/tile/basic/main/15/17600/10700.png?key=YOUR_API_KEY
 
 
+## ❓ FAQ
+
+**Q: Can I search for a place using just a name like 'Coffee Shop'?**
+Yes! Use the `fuzzy_search` tool. It allows you to search for points of interest, streets, and addresses using free-text queries.
+
+**Q: Does the routing tool take real-time traffic into account?**
+Yes, by default the `calculate_route` tool uses real-time traffic data to provide the most accurate travel times and paths.
+
+**Q: How can I get the latitude and longitude for a specific address?**
+You can use the `geocode` tool. Simply provide the address string, and it will return the geographic coordinates.
+
+
 ## Installation & Usage
 
-To install and use the **TomTom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tomtom-alternative](https://vinkius.com/mcp/tomtom-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TomTom** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tomtom-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TomTom** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tomtom-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Checkmarx MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkmarx)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/checkmarx-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/checkmarx-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkmarx)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **Checkmarx** MCP server
 > The SQL injection in `auth/login.ts:87` can be fixed by using parameterized queries. Best Fix Location (BFL) analysis shows the root cause is at line 82 where user input flows unsanitized into the query builder. Replace the string concatenation with a prepared statement.
 
 
+## ❓ FAQ
+
+**Q: How can the AI help me fix a vulnerability faster?**
+Once an issue is identified via scan results, ask your agent to pull the 'Best Fix Location' (BFL) using the query ID. Checkmarx mathematically finds the common root code block, and your AI can instantly rewrite that exact block to sanitize the flaw. You save hours tracing code paths.
+
+**Q: Can the agent initiate a static code scan independently?**
+Yes! Tell the agent to 'Run a scan on project ID X targeting the main branch'. It initiates the analysis array natively across Checkmarx One engines. You can poll for completion status later and retrieve the new dataset directly via chat.
+
+**Q: Does it segregate AppSec results from Cloud infrastructure flaws?**
+It does. Application flaws are pulled cleanly via `get_scan_results`, whereas misconfigurations tied to Docker, Kubernetes, or Terraform limits use a dedicated `get_kics_results` pipeline. The agent intrinsically separates the context for your DevOps team.
+
+
 ## Installation & Usage
 
-To install and use the **Checkmarx** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/checkmarx](https://vinkius.com/mcp/checkmarx)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Checkmarx** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `checkmarx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Checkmarx** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "checkmarx": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

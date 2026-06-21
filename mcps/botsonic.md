@@ -1,7 +1,6 @@
 # Botsonic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/botsonic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/botsonic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/botsonic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/botsonic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Botsonic** MCP server 
 > Found 18 leads captured by bot_301 this week. Top 5 by engagement: 1) Sarah Chen (sarah@techcorp.io) — asked about enterprise pricing, 4 messages. 2) James Miller (james@startupxyz.com) — demo request, 3 messages. 3) Lisa Park (lisa@retailco.com) — integration question, 6 messages. Average lead quality score: 7.2/10. Would you like to export these leads or view specific conversation transcripts?
 
 
+## ❓ FAQ
+
+**Q: Can I train a bot by adding web pages to its knowledge base?**
+Yes! The `add_knowledge_url` action accepts a Bot ID and a URL. Botsonic will crawl the page and add its content to the bot's training data. Use `list_knowledge_base` to review all sources (URLs, documents, files) currently training a specific bot.
+
+**Q: Can I retrieve leads captured by my chatbot during customer interactions?**
+Yes. The `list_leads` tool retrieves all leads collected by a specific bot during conversations, including contact details, conversation context, and capture timestamp. This is ideal for syncing chatbot-qualified leads into your CRM.
+
+**Q: How can I measure the performance of my chatbots?**
+Use `get_bot_analytics` with the Bot ID. It returns conversation count, total messages, resolution rate (percentage of conversations resolved without human handoff), and customer satisfaction scores. Compare across bots to identify which ones need KB improvements.
+
+
 ## Installation & Usage
 
-To install and use the **Botsonic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/botsonic](https://vinkius.com/mcp/botsonic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Botsonic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `botsonic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Botsonic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "botsonic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

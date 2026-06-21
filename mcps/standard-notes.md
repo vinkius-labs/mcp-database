@@ -1,7 +1,6 @@
 # Standard Notes MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/standard-notes)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/standard-notes-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/standard-notes-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/standard-notes)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,12 +102,52 @@ The isolated item UUID generated from the central server was successfully regist
 The item correlating to your input parameter UUID has been entirely removed from the persistent repository securely.
 
 
+## ❓ FAQ
+
+**Q: If I am self-hosting Standard Notes on my own server, can this integration still connect to it?**
+Absolutely. The `SN_SERVER_URL` parameter allows complete flexibility. You can use the official `https://api.standardnotes.com` endpoint, or simply provide the custom domain pointing to your private server infrastructure.
+
+**Q: Are my encrypted notes fully exposed to the AI model during a query?**
+The server passes local encrypted blocks down to the MCP layer. While `list_notes` primarily retrieves metadata and structural UUIDs, executing an extraction using `get_item_details` or writing entirely new content via `create_note` will securely transmit standard text directly to the model's localized context.
+
+**Q: What is the purpose of the 'sync_items' functionality?**
+Standard Notes employs a client-side database synchronization architecture. The `sync_items` module retrieves exclusively the differences or modifications made since the execution of your last tracked `sync_token`. It ensures local operational states match the remote vault natively.
+
+
 ## Installation & Usage
 
-To install and use the **Standard Notes** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/standard-notes](https://vinkius.com/mcp/standard-notes)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Standard Notes** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `standard-notes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Standard Notes** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "standard-notes": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

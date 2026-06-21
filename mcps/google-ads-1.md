@@ -1,7 +1,6 @@
 # Google Ads MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-ads-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-ads-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-ads-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-ads-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,71 @@ Here are some examples of how you can interact with the **Google Ads** MCP serve
 > Found 2 shopping campaigns below 2x ROAS. Paused: 'Electronics Clearance' (ROAS: 1.3x, $4,200 spend) and 'Accessories Broad' (ROAS: 1.7x, $1,800 spend). Estimated daily savings: ~$450.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Google Ads API credentials?**
+You need three things:
+
+**1. OAuth Client ID & Secret:**
+- Go to **console.cloud.google.com**.
+- Navigate to **APIs & Services → Credentials**.
+- Click **Create Credentials → OAuth Client ID**.
+- Select **Web Application**, add redirect URIs, and copy the **Client ID** and **Client Secret**.
+
+**2. Developer Token:**
+- Log in to your Google Ads **Manager Account** (MCC).
+- Go to **Tools & Settings → Setup → API Center**.
+- Copy your **Developer Token** (start with a test token while pending approval).
+
+**3. Customer ID:**
+- Your 10-digit Google Ads account number (visible in the top right of the Google Ads console, formatted as XXX-XXX-XXXX).
+
+Paste all values below.
+
+**Q: Can I manage multiple ad accounts from one agent?**
+Yes. If you use a Google Ads Manager account (MCC), your AI agent can access all linked accounts. Simply switch between customer IDs to manage different accounts conversationally.
+
+**Q: Can I optimize keyword bids through my AI agent?**
+Yes. Your agent can increase or decrease keyword bids, add negative keywords, change match types, and pause underperforming keywords — giving you full bid management from a single conversation.
+
+**Q: What campaign types are supported?**
+All Google Ads campaign types: Search, Display, Shopping, Video (YouTube), App, Discovery, Performance Max, and Smart campaigns. Your AI agent can create and manage any of these types.
+
+
 ## Installation & Usage
 
-To install and use the **Google Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-ads-1](https://vinkius.com/mcp/google-ads-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Ads** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-ads-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Ads** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-ads-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

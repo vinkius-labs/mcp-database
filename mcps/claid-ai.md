@@ -1,7 +1,6 @@
 # Claid AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/claid-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/claid-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/claid-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/claid-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Claid AI** MCP server 
 > Checking status for task_98765... The task is still 'Processing'. Claid AI is currently applying the requested HDR and Polishing adjustments. I'll check again in a moment.
 
 
+## ❓ FAQ
+
+**Q: Can I upscale an image to 4K resolution through the agent?**
+Yes! Use the `upscale_image_resolution` tool. You can specify the model (e.g., `photo` for realistic images) and the agent will instruct Claid AI to enhance the image to high resolution.
+
+**Q: How do I check if my image processing task is finished?**
+Use the `get_processing_task_details` tool with the unique task ID. Your agent will fetch the current status and provide the output URL once the processing is complete.
+
+**Q: Where do I find my Claid AI API Key?**
+Log in to your Claid.ai dashboard and navigate to the API or Settings section. You can generate and copy your API key from there.
+
+
 ## Installation & Usage
 
-To install and use the **Claid AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/claid-ai](https://vinkius.com/mcp/claid-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Claid AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `claid-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Claid AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "claid-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

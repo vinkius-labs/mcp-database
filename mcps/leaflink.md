@@ -1,7 +1,6 @@
 # LeafLink MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leaflink)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/leaflink-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/leaflink-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leaflink)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **LeafLink** MCP server 
 > Successfully accepted order #ORD-101. Its status has been updated in LeafLink, and the buyer has been notified.
 
 
+## ❓ FAQ
+
+**Q: How do I update the inventory level for a product?**
+Use the `update_product_inventory` tool with the unique product ID and the new total quantity. This will update the quantity field in LeafLink.
+
+**Q: Can I fulfill an order using the agent?**
+Yes, use the `update_order_status` tool with the order number and set the action to 'fulfill' to transition the order status.
+
+**Q: Is it possible to see my buyer list?**
+Absolutely. The `list_wholesale_customers` tool retrieves all organizational buyers and dispensary accounts registered in your LeafLink network.
+
+
 ## Installation & Usage
 
-To install and use the **LeafLink** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/leaflink](https://vinkius.com/mcp/leaflink)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LeafLink** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `leaflink` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LeafLink** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "leaflink": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # MailSlurp MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailslurp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailslurp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailslurp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailslurp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **MailSlurp** MCP server
 > I've sent the email to user@example.com from your virtual inbox inbox-xyz. The message has been successfully delivered to the outbound queue.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Inbox ID?**
+Use the `list_all_inboxes` tool to see a comprehensive list of all your MailSlurp addresses along with their unique IDs.
+
+**Q: What is the benefit of the 'wait-for' tools?**
+They hold the connection until an email arrives, making it easy to test asynchronous processes (like password resets) without writing complex retry loops.
+
+**Q: Where do I find my API Key?**
+Log in to your MailSlurp dashboard and copy the API key from the Home or API Settings section.
+
+
 ## Installation & Usage
 
-To install and use the **MailSlurp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mailslurp](https://vinkius.com/mcp/mailslurp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MailSlurp** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mailslurp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MailSlurp** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mailslurp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

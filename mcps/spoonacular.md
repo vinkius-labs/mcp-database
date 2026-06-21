@@ -1,7 +1,6 @@
 # Spoonacular MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spoonacular)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spoonacular-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spoonacular-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spoonacular)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Spoonacular** MCP serv
 *Would you like the full recipe?*
 
 
+## ❓ FAQ
+
+**Q: What dietary filters are available?**
+Spoonacular supports: vegetarian, vegan, gluten-free, ketogenic, paleo, whole30, lacto-vegetarian, ovo-vegetarian, pescetarian, and primal diets. You can also filter by intolerances like dairy, egg, gluten, peanut, sesame, and soy.
+
+**Q: Can I get full nutritional analysis for the recipes?**
+Yes, every recipe includes a comprehensive nutritional breakdown including calories, macronutrients, and micronutrients.
+
+**Q: Is there a limit to the daily requests on the free tier?**
+Yes, the free tier allows up to 150 points (requests) per day.
+
+
 ## Installation & Usage
 
-To install and use the **Spoonacular** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/spoonacular](https://vinkius.com/mcp/spoonacular)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Spoonacular** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `spoonacular` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Spoonacular** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "spoonacular": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

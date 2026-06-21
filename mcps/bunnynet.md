@@ -1,7 +1,6 @@
 # Bunny.net MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bunnynet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bunnynet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bunnynet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bunnynet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Bunny.net** MCP server
 > I checked your NVMe edge cluster. Within '/assets/', I found 'hero_bg.webp' (1.2 MB) and 'compiled_main.css' (900 KB). Shall I provide the cryptographic checksums?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent instantly purge a CDN Pull Zone after a release?**
+Yes. Instead of logging into the admin portal manually, just tell your agent you deployed the frontend. It will grab the ID of your main Pull Zone and blast the purge_pull_zone command immediately.
+
+**Q: Does it track new files uploaded directly to my Storage Zone?**
+Yes! Provide the API password and string path, and the agent lists precise object files inside the folder natively. E-commerce sites use this to verify if static images successfully pushed to the edge before updating database paths.
+
+**Q: Can it provision new Pull Zones from scratch?**
+Absolutely. You can request a fresh caching domain, pass the target origin URL (like an S3 bucket), and the AI builds your CDN layer generating the specific `*.b-cdn.net` URL response for you.
+
+
 ## Installation & Usage
 
-To install and use the **Bunny.net** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bunnynet](https://vinkius.com/mcp/bunnynet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bunny.net** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bunnynet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bunny.net** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bunnynet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

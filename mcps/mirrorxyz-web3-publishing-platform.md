@@ -1,7 +1,6 @@
 # Mirror.xyz (Web3 Publishing Platform) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mirrorxyz-web3-publishing-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mirrorxyz-web3-publishing-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mirrorxyz-web3-publishing-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mirrorxyz-web3-publishing-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Mirror.xyz (Web3 Publi
 > Searching for entries from atlas.eth... I found 3 recent publications. The most recent is 'Mapping the Open Metaverse' published last week. I can fetch the full text for any of these if you provide the digest.
 
 
+## ❓ FAQ
+
+**Q: Can I fetch posts from any Mirror publication if I only have the ENS domain?**
+Yes! Use the `get_entries` tool with the ENS domain (e.g., 'mirror-xyz.eth'). The agent will return a list of published entries associated with that specific publication.
+
+**Q: How do I retrieve the full text of a specific Mirror article?**
+You can use the `get_entry` tool by providing the unique Arweave digest (transaction hash) of the article. This will fetch the full content, title, and author details.
+
+**Q: Does this integration allow me to publish new content to Mirror.xyz?**
+No. The current set of tools is focused on querying and reading data (fetching entries and entry details). Publishing operations are not supported in this version.
+
+
 ## Installation & Usage
 
-To install and use the **Mirror.xyz (Web3 Publishing Platform)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mirrorxyz-web3-publishing-platform](https://vinkius.com/mcp/mirrorxyz-web3-publishing-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mirror.xyz (Web3 Publishing Platform)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mirrorxyz-web3-publishing-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mirror.xyz (Web3 Publishing Platform)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mirrorxyz-web3-publishing-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

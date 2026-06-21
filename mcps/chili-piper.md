@@ -1,7 +1,6 @@
 # Chili Piper MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chili-piper)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chili-piper-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chili-piper-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chili-piper)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Chili Piper** MCP serv
 > Retrieving 'Inside Sales' team roster... I found 5 members: John Doe, Sarah Smith, Mike Miller, Jane Jones, and Bob Black. All are currently active in routing.
 
 
+## ❓ FAQ
+
+**Q: Can I see my active routing queues through the agent?**
+Yes! Use the `list_chili_queues` tool. The agent will return all configured queues in your account, allowing you to audit how leads are being distributed.
+
+**Q: How do I check the details of a specific meeting?**
+Use the `get_meeting_details` tool with the unique meeting ID. Your agent will fetch the full record, including the attendees, timestamp, and status.
+
+**Q: Where do I find my Chili Piper API Key?**
+Log in to your Chili Piper Admin Center and navigate to **Integrations**. You will find your API key there (it may be labeled as the Zapier API Key).
+
+
 ## Installation & Usage
 
-To install and use the **Chili Piper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chili-piper](https://vinkius.com/mcp/chili-piper)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chili Piper** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chili-piper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chili Piper** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chili-piper": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Orkes Conductor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/orkes-conductor)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/orkes-conductor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/orkes-conductor-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/orkes-conductor)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Orkes Conductor** MCP 
 > 8 instances of 'order-processing' currently running. 5 are at the 'payment-validation' stage, 2 at 'shipping-trigger', and 1 at 'inventory-check'. Average execution time so far: 4.2 seconds. No instances are stuck or timed out. Want me to inspect one?
 
 
+## ❓ FAQ
+
+**Q: Can I search for failed workflows across my entire history?**
+Yes. The search tool supports Elasticsearch query syntax — search by status (FAILED, TIMED_OUT), workflow type, date ranges, or correlation IDs. Ask your agent 'show me all failed workflows from the last 24 hours' and it returns matching executions with their IDs, failure reasons, and timestamps.
+
+**Q: What's the difference between workflow definitions and running instances?**
+Definitions are the blueprints — the graph schema with tasks, operators, and branching logic. Running instances are actual executions of those definitions, each with their own input data, current state, and task-by-task progress. Think of definitions as classes and instances as objects.
+
+**Q: Does this integration support triggering new workflow executions?**
+Currently, this integration focuses on observability — listing definitions, monitoring running instances, and searching execution history. It does not trigger new workflow executions. For launching workflows, use the Orkes Conductor UI or direct API calls.
+
+
 ## Installation & Usage
 
-To install and use the **Orkes Conductor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/orkes-conductor](https://vinkius.com/mcp/orkes-conductor)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Orkes Conductor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `orkes-conductor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Orkes Conductor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "orkes-conductor": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

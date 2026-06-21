@@ -1,7 +1,6 @@
 # Bybit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bybit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bybit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bybit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bybit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,55 @@ Here are some examples of how you can interact with the **Bybit** MCP server usi
 > BTCUSDT funding rate: 0.0100% (annualized: 10.95%). Positive rate means longs pay shorts. Next funding: 4h 30min.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key for market data?**
+No! All public market data endpoints (tickers, klines, orderbook, trades, instruments, funding, open interest) are completely free and open. No authentication required.
+
+**Q: What trading categories are available?**
+Four categories: "spot" (spot trading), "linear" (USDT/USDC perpetual & futures), "inverse" (inverse perpetual & futures), "option" (options). Use get_instruments to see all available pairs.
+
+**Q: What kline intervals are supported?**
+Intervals: 1, 3, 5, 15, 30, 60, 120, 240, 360, 720 (minutes), D (daily), W (weekly), M (monthly). Up to 1000 candles per request.
+
+**Q: What is funding rate?**
+Funding rate is a periodic payment exchanged between long and short traders in perpetual futures. Positive rate means longs pay shorts. It keeps the perpetual price close to the spot price. Payments occur every 8 hours on Bybit.
+
+
 ## Installation & Usage
 
-To install and use the **Bybit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bybit](https://vinkius.com/mcp/bybit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bybit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bybit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bybit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bybit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

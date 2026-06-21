@@ -1,7 +1,6 @@
 # BulkSMS.com MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bulksmscom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bulksmscom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bulksmscom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bulksmscom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **BulkSMS.com** MCP serv
 > Scanning account... Your current balance is 1,240.50 credits. Based on your recent usage, you are in good standing for your next campaign. Need any help with a new broadcast?
 
 
+## ❓ FAQ
+
+**Q: How do I find my BulkSMS Token ID and Secret?**
+Log in to BulkSMS, navigate to **Settings** > **Developers** > **API Tokens**, and generate a new token to get your ID and Secret.
+
+**Q: Can I manage contact groups via AI?**
+The current toolset focuses on messaging and credit checks. You can query your account profile to see high-level metadata about your groups.
+
+**Q: How do I check my remaining balance?**
+Use the `get_credit_balance` tool to retrieve your current remaining funds directly from the BulkSMS platform.
+
+
 ## Installation & Usage
 
-To install and use the **BulkSMS.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bulksmscom](https://vinkius.com/mcp/bulksmscom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BulkSMS.com** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bulksmscom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BulkSMS.com** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bulksmscom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

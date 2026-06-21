@@ -1,7 +1,6 @@
 # Capsule CRM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/capsule-crm-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/capsule-crm-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/capsule-crm-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/capsule-crm-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Capsule CRM** MCP serv
 > I've retrieved the tasks for project 12345. There are 2 pending tasks: 'Review contract' (Due tomorrow) and 'Send welcome email' (Overdue).
 
 
+## ❓ FAQ
+
+**Q: How can I find a specific contact or company in my CRM?**
+You can use the `search_parties` tool by providing a search query. The AI will return matching people and organizations, including their IDs for further inspection via `get_party`.
+
+**Q: Can I see the history of interactions for a specific person?**
+Yes! Use the `list_entity_entries` tool with the Party ID. This will retrieve all history entries, notes, and activities associated with that specific contact.
+
+**Q: Is it possible to manage my sales opportunities and pipeline?**
+Absolutely. You can use `list_opportunities` to see your current deals, `get_opportunity` for details, and `update_opportunity` to change milestones or probabilities as deals progress.
+
+
 ## Installation & Usage
 
-To install and use the **Capsule CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/capsule-crm-alternative](https://vinkius.com/mcp/capsule-crm-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Capsule CRM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `capsule-crm-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Capsule CRM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "capsule-crm-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

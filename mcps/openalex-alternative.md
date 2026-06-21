@@ -1,7 +1,6 @@
 # OpenAlex MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openalex-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openalex-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openalex-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openalex-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **OpenAlex** MCP server 
 > Retrieving profile... This ID belongs to Yoshua Bengio. He has over 1,000 works indexed, with a high citation count in Computer Science and Artificial Intelligence. His primary affiliation is Université de Montréal.
 
 
+## ❓ FAQ
+
+**Q: How do I find works by a specific author if I only have their name?**
+First, use `list_authors` with the `search` parameter to find the author's OpenAlex ID. Once you have the ID (e.g., A5012345678), use `list_works` with a filter like `author.id:A5012345678`.
+
+**Q: Can I filter research papers by publication year or citation count?**
+Yes. Use the `filter` parameter in `list_works`. For example, `publication_year:>2020` or `cited_by_count:>100`. You can also use the `sort` parameter like `cited_by_count:desc` to see the most impactful works first.
+
+**Q: Is an API key mandatory to use this server?**
+No. OpenAlex offers a free public tier. However, providing an API key places you in the 'Polite Pool', which offers faster rate limits and more consistent performance for heavy research tasks.
+
+
 ## Installation & Usage
 
-To install and use the **OpenAlex** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openalex-alternative](https://vinkius.com/mcp/openalex-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenAlex** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openalex-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenAlex** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openalex-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

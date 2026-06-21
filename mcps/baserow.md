@@ -1,7 +1,6 @@
 # Baserow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baserow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baserow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baserow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baserow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -96,12 +95,55 @@ Here are some examples of how you can interact with the **Baserow** MCP server u
 > Done! I've created a new row in the Tasks table with title 'Review PR #234', assigned to Alice, status 'To Do'. The row ID is 157 and it was created just now.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Baserow API Token?**
+Log in to your Baserow workspace, go to **Database Settings > API Tokens** (or Workspace Settings > API Tokens), click **Create Token**, give it a name and set the permissions (create, read, update, delete) for specific tables. Copy the token immediately — it won't be shown again.
+
+**Q: Can I create and update rows programmatically?**
+Yes! Use `create_row` with the table ID and a JSON object of field_name: value pairs. Use `update_row` with the table ID, row ID and the fields to update. First use `list_fields` to discover the available field names and their types for the table.
+
+**Q: Can I filter rows by field values?**
+Yes! The `list_rows` tool supports pagination and ordering. Use the `page` and `size` parameters for pagination, and `order_by` to sort by any field (prefix with `-` for descending). The underlying API also supports field-level filtering through the filter parameter.
+
+**Q: What field types does Baserow support?**
+Baserow supports: text, number, boolean, date, long_text, email, url, single_select, multiple_select, link_row (relationships), file, rating, formula, lookup, rollup, last_modified and created_on fields. Use `list_fields` to see the exact types in your table.
+
+
 ## Installation & Usage
 
-To install and use the **Baserow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/baserow](https://vinkius.com/mcp/baserow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Baserow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `baserow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Baserow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "baserow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

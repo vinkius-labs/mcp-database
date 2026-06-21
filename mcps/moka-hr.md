@@ -1,7 +1,6 @@
 # Moka HR MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moka-hr)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moka-hr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moka-hr-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moka-hr)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Moka HR** MCP server u
 > I've compiled the monthly hiring summary. You've received 150 new applications, scheduled 42 interviews, and made 5 offers. The conversion rate from interview to offer is currently 12%. Would you like a breakdown by department?
 
 
+## ❓ FAQ
+
+**Q: How do I obtain a Moka API Key?**
+You must contact your Moka Customer Success Manager (CSM) to enable the API Platform feature and receive your unique API Key.
+
+**Q: Can I see interview schedules for my team?**
+Yes. Use the `list_interviews` tool to see upcoming sessions. You can then use `get_interview` with a specific ID to see the full details, including participants and meeting links.
+
+**Q: Is it possible to add a new candidate through the agent?**
+Yes! Use the `create_candidate` tool. You will need to provide the candidate's name and email address. You can also optionally include their mobile number.
+
+
 ## Installation & Usage
 
-To install and use the **Moka HR** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/moka-hr](https://vinkius.com/mcp/moka-hr)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Moka HR** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `moka-hr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Moka HR** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "moka-hr": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Ping Identity MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ping-identity)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ping-identity-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ping-identity-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ping-identity)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ What would you like to drill down into?
 > Execution successful. The PingOne distinct identity assigned to `81773-XYZ-192` has been removed explicitly. Associated explicit MFA linkages, secondary sessions, isolated SCIM references, and assigned app scopes have all been safely purged from the Directory.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically detect insecure applications federated under my PingOne Environment?**
+Yes. Ask the agent to list all applications and their OIDC/SAML parameters. It will return grant types and callback URIs. You can instruct your AI to identify any applications exposing excessive grants, lacking mandatory PKCE, or missing secure redirection URLs.
+
+**Q: Can I use the agent to investigate complex zero-trust policies?**
+Absolutely. Query the agent for your current Risk Policies and Sign-On Policies. The AI translates raw rulesets (like IP anomalies, VPN blocklists, or ML-based behavioral steps) into human-readable summaries, letting you track how authentication flows operate without reverse-engineering JSON files.
+
+**Q: How does the agent organize directories inside PingOne?**
+The agent can separate users utilizing Ping Identity's native Population boundaries and abstract mapping Groups. You can list all Populations to see distinct buckets entirely independent of each other, enforcing different self-service and strict password compliance boundaries globally across your organization.
+
+
 ## Installation & Usage
 
-To install and use the **Ping Identity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ping-identity](https://vinkius.com/mcp/ping-identity)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ping Identity** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ping-identity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ping Identity** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ping-identity": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

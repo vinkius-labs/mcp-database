@@ -1,7 +1,6 @@
 # Greenhouse MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/greenhouse-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/greenhouse-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/greenhouse-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/greenhouse-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Greenhouse** MCP serve
 > Action complete! Application 'app_987' has been advanced to the 'Onsite Interview' stage. The hiring team has been notified of the stage change in Greenhouse.
 
 
+## ❓ FAQ
+
+**Q: What is the 'On-Behalf-Of' requirement?**
+Greenhouse requires write operations to be associated with a specific User ID for auditing. This ID is passed in the header to identify who performed the action.
+
+**Q: Can I search for candidates by email?**
+Yes! Use the `list_candidates` tool and provide the `email` parameter to find a specific person's recruitment record and history.
+
+**Q: How do I advance an application to the next stage?**
+The `advance_application` tool requires a valid application ID. It will automatically move the candidate to the next sequential stage defined in your job's workflow.
+
+
 ## Installation & Usage
 
-To install and use the **Greenhouse** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/greenhouse-alternative](https://vinkius.com/mcp/greenhouse-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Greenhouse** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `greenhouse-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Greenhouse** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "greenhouse-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

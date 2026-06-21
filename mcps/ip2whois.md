@@ -1,7 +1,6 @@
 # IP2WHOIS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ip2whois)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ip2whois-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ip2whois-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ip2whois)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **IP2WHOIS** MCP server 
 > google.com expires on September 14, 2028. That's approximately 866 days from now — no immediate renewal concern. The registrar is MarkMonitor Inc.
 
 
+## ❓ FAQ
+
+**Q: Can I check if a domain is available for registration?**
+Yes! Use `check_domain_availability` with the domain name. It analyzes the WHOIS record to determine if the domain appears unregistered.
+
+**Q: How many domains can I look up at once?**
+Use `bulk_whois_lookup` with a comma-separated list of up to 10 domains to get key registration details for each one in a single request.
+
+**Q: Can I find which domains are hosted on a specific server?**
+Yes! Use `lookup_hosted_domains` with an IPv4 or IPv6 address to perform a reverse IP lookup and discover all domains on that server.
+
+
 ## Installation & Usage
 
-To install and use the **IP2WHOIS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ip2whois](https://vinkius.com/mcp/ip2whois)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IP2WHOIS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ip2whois` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IP2WHOIS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ip2whois": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

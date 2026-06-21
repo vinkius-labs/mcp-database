@@ -1,7 +1,6 @@
 # BlazeMeter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blazemeter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blazemeter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blazemeter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blazemeter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **BlazeMeter** MCP serve
 > Emergency stop validated. The REST sequence transmitted a shutdown instruction correctly severing connections and scaling down the Master load orchestrator (`m-11223`).
 
 
+## ❓ FAQ
+
+**Q: Can my agent actually start a cloud performance test orchestrating servers?**
+Yes. By utilizing the 'start_test' tool paired with an active Test ID, your AI agent securely pulls levers directly on BlazeMeter's cloud infrastructure to provision load generation hosts without any required GUI interaction.
+
+**Q: How do I check the live status of an active test run (Master)?**
+You can instruct your agent to use the 'get_master' or 'get_report' tool. It strictly evaluates live Gateway stats, throughput rates, and p90 indicators dynamically reporting back.
+
+**Q: Is there a way for the AI to forcefully kill a rogue load test?**
+Absolutely. Your agent can execute the 'stop_master' mutation—which immediately severs the test execution pipeline and protects vulnerable origin servers from unplanned stress.
+
+
 ## Installation & Usage
 
-To install and use the **BlazeMeter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blazemeter](https://vinkius.com/mcp/blazemeter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BlazeMeter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blazemeter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BlazeMeter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blazemeter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

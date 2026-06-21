@@ -1,7 +1,6 @@
 # Postmark MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postmark-extended-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/postmark-extended-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/postmark-extended-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postmark-extended-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -136,12 +135,52 @@ Here are some examples of how you can interact with the **Postmark** MCP server 
 > Processing `send_email_with_template`... The email has been successfully queued for delivery to John.
 
 
+## ❓ FAQ
+
+**Q: Can I send multiple emails in a single request?**
+Yes! You can use `send_batch_emails` to send up to 500 messages at once, or `send_bulk_emails` for larger distributions using templates and recipient variables.
+
+**Q: How do I use my existing Postmark templates?**
+Use the `send_email_with_template` tool. You just need to provide the `TemplateId` or `TemplateAlias` and the `TemplateModel` containing your dynamic variables.
+
+**Q: Can I manage my templates without leaving the chat?**
+Absolutely. You can use `list_templates`, `create_template`, `edit_template`, and `delete_template` to perform full CRUD operations on your Postmark server templates.
+
+
 ## Installation & Usage
 
-To install and use the **Postmark** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/postmark-extended-1](https://vinkius.com/mcp/postmark-extended-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Postmark** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `postmark-extended-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Postmark** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "postmark-extended-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

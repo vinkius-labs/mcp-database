@@ -1,7 +1,6 @@
 # Teamwork Projects MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/teamwork-projects)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/teamwork-projects-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/teamwork-projects-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/teamwork-projects)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,55 @@ Here are some examples of how you can interact with the **Teamwork Projects** MC
 > Milestone created successfully! 'Phase 1 Complete' added to project 12345 with deadline 2025-05-01.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Teamwork Access Token?**
+Log in to Teamwork, go to your Profile picture > My Profile > Developer, and generate a Personal Access Token.
+
+**Q: Can I create tasks with assignees?**
+Yes! Use the create_task action with a JSON body that includes content, tasklist_id, and responsible-party-ids for assignment.
+
+**Q: Can I log time against a project?**
+Yes! Use the create_time_entry action with a JSON body that includes description, duration (in minutes or seconds), and date.
+
+**Q: Can I retrieve project milestones?**
+Yes! Use the list_milestones action to get all project milestones and their deadlines.
+
+
 ## Installation & Usage
 
-To install and use the **Teamwork Projects** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/teamwork-projects](https://vinkius.com/mcp/teamwork-projects)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Teamwork Projects** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `teamwork-projects` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Teamwork Projects** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "teamwork-projects": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

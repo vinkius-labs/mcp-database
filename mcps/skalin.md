@@ -1,7 +1,6 @@
 # Skalin MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skalin)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/skalin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/skalin-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skalin)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,46 @@ Here are some examples of how you can interact with the **Skalin** MCP server us
 > QBR Report: Meridian Corp (Q1 2025). Health score: 38/100 (Critical). Contract value: $180,000/year (renewal: August 15). Usage: 45 active users of 100 licenses (45% adoption, down from 67%). Feature adoption: 4 of 12 modules active. Support: 23 tickets (vs 8 last quarter, +188%). NPS: 6 (Passive, was 8). Key wins: API integration completed, custom dashboard deployed. Concerns: Champions left the company (2), executive sponsor unresponsive. Recommended actions: Executive alignment meeting, adoption workshop, contract review.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Skalin API Key?**
+Log in to your Skalin account, navigate to **Settings** > **Integrations**, and you will find your unique secret API Bearer Token there.
+
+
 ## Installation & Usage
 
-To install and use the **Skalin** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/skalin](https://vinkius.com/mcp/skalin)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Skalin** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `skalin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Skalin** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "skalin": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

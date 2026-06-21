@@ -1,7 +1,6 @@
 # Vatlayer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vatlayer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vatlayer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vatlayer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vatlayer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Vatlayer** MCP server 
 > Based on a base amount of 150 EUR and the French standard VAT rate of 20%, the VAT amount is 30 EUR, making the total price 180 EUR.
 
 
+## ❓ FAQ
+
+**Q: How can I check if a specific EU VAT number is valid and active?**
+Use the `validate_vat` tool by providing the VAT number (e.g., LU26375245). The agent will return the validation status along with company name and address details.
+
+**Q: Can I get a complete list of VAT rates for all EU member states at once?**
+Yes, simply run the `get_rate_list` tool. It will fetch the full set of VAT rates for all 28 EU member states in a single response.
+
+**Q: How do I calculate a VAT-compliant price for a specific country?**
+Use the `calculate_price` tool. Provide the base amount and the 2-letter country code. You can also specify a product type (like 'medical') to apply reduced rates if applicable.
+
+
 ## Installation & Usage
 
-To install and use the **Vatlayer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vatlayer](https://vinkius.com/mcp/vatlayer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vatlayer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vatlayer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vatlayer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vatlayer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

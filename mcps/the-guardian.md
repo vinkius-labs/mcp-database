@@ -1,7 +1,6 @@
 # The Guardian MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-guardian)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/the-guardian-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/the-guardian-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-guardian)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,55 @@ Here are some examples of how you can interact with the **The Guardian** MCP ser
 > I retrieved 47 articles mentioning 'climate change' published between 2026-01-01 and 2026-03-31. Key pieces include investigative reports on carbon markets, policy analysis from COP summits, and feature stories on climate migration. The most discussed article had 312 comments. Shall I fetch the full text of any specific article?
 
 
+## ❓ FAQ
+
+**Q: Can I retrieve the full text of a Guardian article, not just the headline?**
+Yes. Use the `get_item` tool with the article's path ID. The response includes the full body text, byline, standfirst, publication date, section, tags, and thumbnail image when available.
+
+**Q: How far back does the Guardian Content API archive go?**
+The Guardian Content API provides access to articles dating back to 1999. You can use `search_by_date_range` with specific start and end dates to query historical content from any period covered by the archive.
+
+**Q: Is a paid subscription required to use this integration?**
+No. The Guardian Open Platform offers a free developer API key that supports up to 12 calls per second and 5,000 calls per day. This is sufficient for most research and automation workflows.
+
+**Q: Can I filter articles by topic, section, or contributor?**
+Yes. The `search_content` tool accepts section, tag, and date filters. Use `list_sections` to discover available sections and `list_tags` to find keywords, contributors, and series to refine your queries.
+
+
 ## Installation & Usage
 
-To install and use the **The Guardian** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/the-guardian](https://vinkius.com/mcp/the-guardian)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **The Guardian** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `the-guardian` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **The Guardian** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "the-guardian": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

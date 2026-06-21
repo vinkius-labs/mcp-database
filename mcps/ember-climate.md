@@ -1,7 +1,6 @@
 # Ember Climate MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ember-climate)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ember-climate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ember-climate-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ember-climate)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -102,12 +101,55 @@ Here are some examples of how you can interact with the **Ember Climate** MCP se
 > Fetching monthly demand data for France in 2024... Peak demand occurred in January and December (winter heating season) at around 55-60 TWh per month, while summer months like July and August dropped to approximately 35-40 TWh, reflecting strong seasonal variation.
 
 
+## ❓ FAQ
+
+**Q: How do I get an Ember Climate API key and how long does it take?**
+Simply visit the [Ember Climate API page](https://ember-energy.org/data/api/), enter your email address, and click to request your key. You'll receive it via email almost instantly. It only takes 30 seconds — no OAuth apps to configure, no developer portals to navigate, no complex setup.
+
+**Q: What countries and regions are covered by the Ember electricity dataset?**
+The dataset covers over 200 countries and geographical regions worldwide, including individual nations, continents (like Europe), and regional aggregates (like OECD, EU-27). You can use the `get_api_options` tool to discover all available entity codes and country names before querying specific data.
+
+**Q: Can I compare electricity generation across multiple countries in a single query?**
+Yes! Use the `get_generation_multi_entity` tool and provide comma-separated ISO country codes in the `entity_code` parameter (e.g., "BRA,DE,US,CHN" for Brazil, Germany, USA, and China). This is highly efficient for comparative energy analysis without making multiple separate API calls.
+
+**Q: What energy sources can I filter by when querying electricity generation?**
+You can filter by all major energy sources including fossil fuels (coal, gas, oil), renewables (wind, solar, hydro, bioenergy, geothermal), nuclear, and storage. Use the `series` parameter with values like "coal", "wind", "solar", "hydro", "nuclear", "gas". Call `get_api_options` with filter_name="series" to see the complete list of available energy types for any dataset.
+
+
 ## Installation & Usage
 
-To install and use the **Ember Climate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ember-climate](https://vinkius.com/mcp/ember-climate)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ember Climate** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ember-climate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ember Climate** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ember-climate": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

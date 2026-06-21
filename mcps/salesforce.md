@@ -1,7 +1,6 @@
 # Salesforce MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesforce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salesforce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salesforce-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesforce)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -105,12 +104,52 @@ Total pipeline value: $487,500
 Top performer: Sarah Chen ($485K closed)
 
 
+## ❓ FAQ
+
+**Q: Can I run custom SOQL queries?**
+Yes! The `soql_query` tool accepts any valid SOQL string. Example: SELECT Id, Name, Amount FROM Opportunity WHERE StageName = 'Closed Won' LIMIT 20.
+
+**Q: Can I create records in any object?**
+Yes! Use `create_record` with the SObject type (Account, Contact, Lead, etc.) and a JSON string of fields.
+
+**Q: How do I search across all Salesforce data?**
+Use `global_search` with your search text. It uses SOSL to find matches across Accounts, Contacts, Leads, and all other objects simultaneously.
+
+
 ## Installation & Usage
 
-To install and use the **Salesforce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/salesforce](https://vinkius.com/mcp/salesforce)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Salesforce** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `salesforce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Salesforce** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "salesforce": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

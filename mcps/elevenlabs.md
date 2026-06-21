@@ -1,7 +1,6 @@
 # ElevenLabs MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elevenlabs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elevenlabs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elevenlabs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elevenlabs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **ElevenLabs** MCP serve
 > Dubbing job initiated! I've started the translation queue for your video into Spanish. I'll provide the tracking ID (dub_abc) so you can monitor the rendering status.
 
 
+## ❓ FAQ
+
+**Q: Can my agent generate speech using a specific voice ID?**
+Yes. Use the 'text_to_speech' tool. Provide the 'voice_id' and the text script. The agent will fire the inference pipeline and return the generated audio content natively.
+
+**Q: How do I monitor my character quota via chat?**
+Use the 'get_subscription' tool. Your agent will validate the API logic querying your character usage (e.g., 100k limits) and subscription status to prevent system overruns.
+
+**Q: Can I translate a video using the dubbing tool through the agent?**
+Absolutely. Use the 'create_dubbing' tool. Provide a JSON payload with the 'source_url' and 'target_lang'. The agent will initiate the massive video translation queue and track the rendering job for you.
+
+
 ## Installation & Usage
 
-To install and use the **ElevenLabs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/elevenlabs](https://vinkius.com/mcp/elevenlabs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ElevenLabs** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `elevenlabs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ElevenLabs** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "elevenlabs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

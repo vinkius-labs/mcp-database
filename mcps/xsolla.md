@@ -1,7 +1,6 @@
 # Xsolla MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xsolla)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/xsolla-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/xsolla-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xsolla)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **Xsolla** MCP server us
 > Retrieving details for transaction 987654321... This was a payment of $19.99 for 'Season Pass' by user 'Gamer123'. Status: Completed. Payment method: Credit Card.
 
 
+## ❓ FAQ
+
+**Q: Can I search for specific transactions based on their status?**
+Yes. Use the `search_transactions` tool. You can filter by status (e.g., 'completed', 'canceled') and date ranges to find exactly what you need.
+
+**Q: How do I view the virtual items currently available in my catalog?**
+Simply use the `get_virtual_items` tool. It will retrieve the full list of virtual items configured in your project catalog.
+
+**Q: Is it possible to issue a refund through the AI agent?**
+Yes. By using the `refund_transaction` tool with a valid Transaction ID and an optional reason, the agent can initiate the refund process directly.
+
+
 ## Installation & Usage
 
-To install and use the **Xsolla** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/xsolla](https://vinkius.com/mcp/xsolla)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Xsolla** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `xsolla` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Xsolla** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "xsolla": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

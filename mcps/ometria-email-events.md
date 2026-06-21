@@ -1,7 +1,6 @@
 # Ometria Email Events MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ometria-email-events)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ometria-email-events-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ometria-email-events-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ometria-email-events)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Ometria Email Events**
 > Fetching contact history... John Smith (john@example.com) has a very active history: 12 opens and 5 clicks across 3 campaigns in the last 30 days. He recently clicked a link in the 'Loyalty Rewards' email. Would you like the full timestamped log?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Ometria API Key?**
+You can generate an API key in the Ometria settings dashboard under the API tab. This key is used for the `X-Ometria-Auth` header.
+
+**Q: Can I see who marked an email as spam?**
+Yes! Use the `list_email_complaints` tool to retrieve a list of events where users marked your emails as spam, including contact identifiers.
+
+**Q: Does this support SMS events?**
+This implementation specifically targets email engagement events (opens, clicks, bounces, etc.). For SMS tracking, please check if your Ometria instance exports these through the same events endpoint.
+
+
 ## Installation & Usage
 
-To install and use the **Ometria Email Events** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ometria-email-events](https://vinkius.com/mcp/ometria-email-events)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ometria Email Events** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ometria-email-events` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ometria Email Events** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ometria-email-events": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

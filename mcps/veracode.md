@@ -1,7 +1,6 @@
 # Veracode MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/veracode)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/veracode-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/veracode-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/veracode)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Would you like me to pull the security finding logs specifically for 'Auth-Micro
 I can write a quick patch for line 144 if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Can I get code remediation details directly in conversational chat?**
+Yes! If you ask your AI: `fetch finding details for ID '391' on the 'PaymentGateway' app`, it will query Veracode and describe exactly what caused the vulnerability (e.g. CWE-79) and provide remediation context natively inside your text editor or UI.
+
+**Q: Are both Sandbox and Policy findings merged intelligently?**
+The tool endpoints mirror Veracode's structure natively. You can query your `list_sandboxes` specifically, keeping your sandbox data accurately separated from your main application's formal risk profile and finding charts.
+
+**Q: Can I permanently delete unused legacy applications from Veracode via AI chat?**
+Yes. The `deleteApplicationTool` is included. By providing the specific GUID of the application, the agent can irrevocably remove the AppSec profile along with all linked analyses, findings, and history, streamlining data hygiene.
+
+
 ## Installation & Usage
 
-To install and use the **Veracode** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/veracode](https://vinkius.com/mcp/veracode)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Veracode** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `veracode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Veracode** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "veracode": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

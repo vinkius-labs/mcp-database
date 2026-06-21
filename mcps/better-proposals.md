@@ -1,7 +1,6 @@
 # Better Proposals MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/better-proposals)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/better-proposals-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/better-proposals-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/better-proposals)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Better Proposals** MCP
 > Retrieving templates... I found 5 templates, including 'Modern SaaS Proposal', 'Consulting Agreement', and 'Creative Agency Services'. Which one would you like to use for your next document?
 
 
+## ❓ FAQ
+
+**Q: Can I see if a client has opened my proposal using the agent?**
+Yes! Use the `get_proposal` tool with the Proposal ID. Your agent will fetch the latest status, which includes whether the proposal has been viewed, signed, or paid.
+
+**Q: How do I list all my saved proposal templates?**
+Simply ask the agent to `list_templates`. It will retrieve all the proposal templates available in your account for you to review and use.
+
+**Q: Does the integration allow me to create a new contact?**
+Yes! Use the `create_contact` action with the name and email. Your agent will register the new contact in your Better Proposals CRM instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Better Proposals** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/better-proposals](https://vinkius.com/mcp/better-proposals)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Better Proposals** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `better-proposals` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Better Proposals** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "better-proposals": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

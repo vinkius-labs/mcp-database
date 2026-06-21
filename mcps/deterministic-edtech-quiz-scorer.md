@@ -1,7 +1,6 @@
 # Deterministic EdTech Quiz Scorer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-edtech-quiz-scorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-edtech-quiz-scorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-edtech-quiz-scorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-edtech-quiz-scorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Deterministic EdTech Q
 > Using the score_quiz tool (totalTimeSeconds=180): The performance metrics show an average of 18 seconds spent per question.
 
 
+## ❓ FAQ
+
+**Q: Why should I use an MCP instead of asking the AI to grade it?**
+LLMs hallucinate math. If you give an LLM 50 questions, it will often miscount the correct answers, fail to apply fractional weights, or hallucinate the final percentage. This MCP uses deterministic V8 loops, guaranteeing 100% mathematical accuracy.
+
+**Q: How does the weighting system work?**
+In your `answerKey` JSON array, you can add a `weight` parameter (e.g., `weight: 2.5`). The engine automatically tallies the `maxPossibleScore` and evaluates the user's earned points against it, rather than just doing a flat 1-point-per-question calculation.
+
+**Q: Does it track which questions the user got wrong?**
+Yes. The output payload includes an array called `incorrectQuestionIds`, which isolates the exact IDs the user failed, allowing your AI to instantly provide targeted tutoring on those specific topics.
+
+
 ## Installation & Usage
 
-To install and use the **Deterministic EdTech Quiz Scorer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deterministic-edtech-quiz-scorer](https://vinkius.com/mcp/deterministic-edtech-quiz-scorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deterministic EdTech Quiz Scorer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deterministic-edtech-quiz-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deterministic EdTech Quiz Scorer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deterministic-edtech-quiz-scorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

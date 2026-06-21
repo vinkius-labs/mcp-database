@@ -1,7 +1,6 @@
 # Nager.Date MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nagerdate)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nagerdate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nagerdate-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nagerdate)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Nager.Date** MCP serve
 > I've identified the next 5 global holidays. They include events in countries like Australia, India, and Norway. Would you like the local names and specific dates for each?
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for Nager.Date?**
+No. Nager.Date is a free and open service. This server works out of the box without any static credentials required.
+
+**Q: Can the agent check if today is a holiday?**
+Yes. Use the `is_holiday_today` tool providing the 2-letter country code. Your agent will return a boolean indicating if it is a public holiday today instantly.
+
+**Q: Does it support local names for holidays?**
+Yes. The holiday records retrieved by your agent include both the English name and the local name used in that specific country.
+
+
 ## Installation & Usage
 
-To install and use the **Nager.Date** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nagerdate](https://vinkius.com/mcp/nagerdate)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nager.Date** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nagerdate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nager.Date** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nagerdate": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

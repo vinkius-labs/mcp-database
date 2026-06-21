@@ -1,7 +1,6 @@
 # Doctolib MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doctolib)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/doctolib-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/doctolib-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doctolib)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Doctolib** MCP server 
 > Retrieving appointments... You have 1 upcoming consultation: 'Dr. Martin' on Wednesday at 10:00 AM. I can provide the practice address and motive for you.
 
 
+## ❓ FAQ
+
+**Q: Can my agent search for specific medical specialists in a city?**
+Yes. Use the 'rechercher_praticiens' tool. Provide the specialty (e.g., 'médecin généraliste') and the city. The agent will retrieve matching practitioner profiles from Doctolib's active directory natively.
+
+**Q: How do I book a consultation slot through the agent?**
+First, use 'disponibilites' to find free slots for a doctor. Then, provide the practitioner ID, the chosen slot ID, and your email to the 'prendre_rendez_vous' tool to confirm your reservation in the database.
+
+**Q: Can I see all medical practices connected to my account?**
+Absolutely. Use the 'lister_cabinets' tool. Your agent will perform a structural extraction of localized entity bounds, showing you all physical office locations managed within your Doctolib partner environment.
+
+
 ## Installation & Usage
 
-To install and use the **Doctolib** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/doctolib](https://vinkius.com/mcp/doctolib)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Doctolib** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `doctolib` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Doctolib** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "doctolib": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

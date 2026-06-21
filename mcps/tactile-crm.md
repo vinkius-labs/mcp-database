@@ -1,7 +1,6 @@
 # Tactile CRM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tactile-crm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tactile-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tactile-crm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tactile-crm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Added organizational tag 'Enterprise'.
 New native ID: `cont-9941`.
 
 
+## ❓ FAQ
+
+**Q: Is the integration read-only?**
+Yes. All tools (list_companies, list_contacts, list_opportunities, etc.) are read-only queries. They cannot modify, create, or delete any CRM records.
+
+**Q: What is the TACTILE_SUBDOMAIN?**
+It's the unique prefix of your Tactile CRM URL (e.g., if your URL is `acme.tactilecrm.com`, the subdomain is `acme`). You can find it in the address bar when logged in.
+
+**Q: What data can the agent access?**
+Companies, contacts, opportunities with pipeline stages, notes, and activities. The scope is determined by the permissions of the API key you provide.
+
+
 ## Installation & Usage
 
-To install and use the **Tactile CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tactile-crm](https://vinkius.com/mcp/tactile-crm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tactile CRM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tactile-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tactile CRM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tactile-crm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

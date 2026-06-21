@@ -1,7 +1,6 @@
 # Delivery Integrity Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/delivery-integrity-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/delivery-integrity-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/delivery-integrity-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/delivery-integrity-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Delivery Integrity Pro
 > Verdict: UNVERIFIED_CHANGES. Your verification logs are a placeholder ('Everything worked fine'). Execute actual test or compile commands and provide the real console output to verify integrity.
 
 
+## ❓ FAQ
+
+**Q: Why are placeholder logs like 'tests passed' rejected?**
+AI agents frequently assume that code works without executing it. Requiring actual command output logs forces them to run verification scripts, catching syntax errors and test failures early.
+
+**Q: What counts as a remaining gap?**
+A remaining gap includes any manual check required by the user, edge cases that were explicitly left out of scope, or dependencies on other teams. Banning 'none' forces agents to acknowledge limitations.
+
+**Q: How does this prevent agents from lying about completion?**
+It converts simple guidelines into strict tool-call checks. The agent must successfully match requirements to modified code lines and paste actual command outputs to get an approval verdict.
+
+
 ## Installation & Usage
 
-To install and use the **Delivery Integrity Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/delivery-integrity-prover](https://vinkius.com/mcp/delivery-integrity-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Delivery Integrity Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `delivery-integrity-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Delivery Integrity Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "delivery-integrity-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

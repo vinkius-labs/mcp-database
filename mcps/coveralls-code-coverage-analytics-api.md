@@ -1,7 +1,6 @@
 # Coveralls (Code Coverage Analytics API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coveralls-code-coverage-analytics-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coveralls-code-coverage-analytics-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coveralls-code-coverage-analytics-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coveralls-code-coverage-analytics-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Coveralls (Code Covera
 > Triggering a rerun for build #45678... The request was successful, and Coveralls is now re-calculating the coverage data for that build.
 
 
+## ❓ FAQ
+
+**Q: How do I retrieve my repository's secret token for CI configuration?**
+Use the `get_repo` tool by providing the service (e.g., 'github') and repository name. The agent will return the repository details, including the `repo_token` needed for your CI environment variables.
+
+**Q: Can I submit a coverage report for a specific CI job manually?**
+Yes! The `submit_job` tool allows you to send coverage data directly. You'll need to provide the `repo_token`, `service_name`, `service_job_id`, and the `source_files` JSON array containing coverage metrics.
+
+**Q: How do I finalize a parallel build once all individual jobs are finished?**
+Use the `close_parallel_build` tool. Provide your `repo_token` and the `build_num`. This triggers Coveralls to aggregate all parallel jobs and calculate the final coverage percentage for the build.
+
+
 ## Installation & Usage
 
-To install and use the **Coveralls (Code Coverage Analytics API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coveralls-code-coverage-analytics-api](https://vinkius.com/mcp/coveralls-code-coverage-analytics-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Coveralls (Code Coverage Analytics API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coveralls-code-coverage-analytics-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Coveralls (Code Coverage Analytics API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coveralls-code-coverage-analytics-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

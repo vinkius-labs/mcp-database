@@ -1,7 +1,6 @@
 # Ask Kodiak MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ask-kodiak)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ask-kodiak-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ask-kodiak-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ask-kodiak)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Ask Kodiak** MCP serve
 > The Hartford offers 12 commercial products in Ask Kodiak, including General Liability, Workers' Compensation, and Commercial Auto.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Ask Kodiak Group ID and API Key?**
+Log in to your Ask Kodiak account, go to **Company Settings**, and you will find your **Group ID** and **API Key** listed in the API section.
+
+**Q: What is a NAICS code?**
+NAICS (North American Industry Classification System) is a standard used by Federal statistical agencies in classifying business establishments for the purpose of collecting, analyzing, and publishing statistical data related to the U.S. business economy.
+
+**Q: Can I search for products by state?**
+Yes, use the `list_products` tool and provide the two-letter state code (e.g., 'NY', 'CA') in the `state` parameter to filter results.
+
+
 ## Installation & Usage
 
-To install and use the **Ask Kodiak** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ask-kodiak](https://vinkius.com/mcp/ask-kodiak)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ask Kodiak** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ask-kodiak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ask Kodiak** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ask-kodiak": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

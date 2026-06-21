@@ -1,7 +1,6 @@
 # Time MS Converter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/time-ms-converter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/time-ms-converter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/time-ms-converter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/time-ms-converter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -52,12 +51,52 @@ Here are some examples of how you can interact with the **Time MS Converter** MC
 > Time Conversion Result: It translates to `2 days`.
 
 
+## ❓ FAQ
+
+**Q: Why use an engine for simple math?**
+Because LLMs hallucinate multiplication on complex floating-point numbers. Delegating to a deterministic V8 execution ensures 0% infrastructure scheduling errors.
+
+**Q: What formats are supported?**
+It supports standard English time abbreviations: `d` (days), `h` (hours), `m` (minutes), `s` (seconds), and `ms` (milliseconds). E.g., `"2.5 hrs"` or `"10h"`.
+
+**Q: Can it convert backwards?**
+Yes. If you pass the string `"172800000"`, it will output the human-readable string `"2 days"`.
+
+
 ## Installation & Usage
 
-To install and use the **Time MS Converter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/time-ms-converter](https://vinkius.com/mcp/time-ms-converter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Time MS Converter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `time-ms-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Time MS Converter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "time-ms-converter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

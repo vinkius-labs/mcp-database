@@ -1,7 +1,6 @@
 # Systran (Machine Translation API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/systran-machine-translation-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/systran-machine-translation-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/systran-machine-translation-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/systran-machine-translation-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Systran (Machine Trans
 > Performing dictionary lookup... For 'cloud computing', the Spanish translation is 'computación en la nube'. It is categorized as a technical noun.
 
 
+## ❓ FAQ
+
+**Q: Can I translate HTML content while preserving the tags?**
+Yes! Use the `translate_text` tool and set the `format` parameter to 'html'. The engine will translate the text content while keeping your HTML structure intact.
+
+**Q: How do I find the specific meaning of a technical term in another language?**
+Use the `dictionary_lookup` tool. Provide the term in the `input` field along with the `source` and `target` language codes to get professional dictionary definitions and translations.
+
+**Q: Can the AI identify a language if I don't know what it is?**
+Absolutely. Use the `detect_language` tool with any text input. The server will return the detected language code and confidence level.
+
+
 ## Installation & Usage
 
-To install and use the **Systran (Machine Translation API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/systran-machine-translation-api](https://vinkius.com/mcp/systran-machine-translation-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Systran (Machine Translation API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `systran-machine-translation-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Systran (Machine Translation API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "systran-machine-translation-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

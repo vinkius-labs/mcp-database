@@ -1,7 +1,6 @@
 # Vestiaire Collective MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vestiaire-collective)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vestiaire-collective-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vestiaire-collective-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vestiaire-collective)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Vestiaire Collective**
 > You have 3 items currently listed: 1. Louis Vuitton Speedy 30 (Status: Active, 12 likes), 2. Gucci Marmont Belt (Status: Active, 5 likes), and 3. Prada Nylon Backpack (Status: Pending Authentication). Would you like to see the performance metrics for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I monitor my own luxury listings and sales status?**
+Yes. The `list_my_selling_items` tool allows your AI agent to pull a list of all items you currently have for sale in your Vestiaire Collective dressing room, along with their current status and metadata, helping you stay organized without manual tracking.
+
+**Q: How can I find out the resale value of a luxury bag?**
+Ask your agent to analyze price trends using the `analyze_price_trends` tool. Provide the brand and category, and it will surface historical price data and market trends, helping you decide on the best listing price for your item or identifying investment opportunities.
+
+**Q: Is it possible to filter search results by item condition or material?**
+Absolutely. Use the `search_with_advanced_filters` tool to narrow down results by brand, category, condition (e.g., never worn, very good), price range, color, material, and even the country of the seller for more localized results.
+
+
 ## Installation & Usage
 
-To install and use the **Vestiaire Collective** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vestiaire-collective](https://vinkius.com/mcp/vestiaire-collective)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vestiaire Collective** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vestiaire-collective` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vestiaire Collective** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vestiaire-collective": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

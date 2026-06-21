@@ -1,7 +1,6 @@
 # Maxio (SaaS Billing & FinOps) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/maxio-saas-billing-finops)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/maxio-saas-billing-finops-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/maxio-saas-billing-finops-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/maxio-saas-billing-finops)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Maxio (SaaS Billing & 
 > Customer 'Innovative SaaS' has been successfully created. The new Account ID is 'cust-13579'. You can now use the `create_contract` tool to assign subscription terms and revenue mappings to this account.
 
 
+## ❓ FAQ
+
+**Q: Can I audit the ARR breakdown for a specific contract through my agent?**
+Yes. Use the `get_contract` tool with a specific Contract ID. Your agent will retrieve the detailed recurring revenue mappings, term dates, and line-item distributions, allowing you to validate exactly how much ARR is assigned to that contract record.
+
+**Q: How do I create a new invoice for a customer through a conversation?**
+The `create_invoice` tool allows your agent to dispatch a JSON payload representing the invoice headers and lines. This is used to charge or log revenue events against an active customer contract, helping you manage B2B billing schedules directly from your workspace.
+
+**Q: Can my agent help me manage customer account information in Maxio?**
+Absolutely. Use tools like `list_customers` and `update_customer` to manage your billing directory. Your agent can retrieve account profiles, update display names, or identify churn flags by inspecting customer metadata mappings in real-time.
+
+
 ## Installation & Usage
 
-To install and use the **Maxio (SaaS Billing & FinOps)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/maxio-saas-billing-finops](https://vinkius.com/mcp/maxio-saas-billing-finops)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Maxio (SaaS Billing & FinOps)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `maxio-saas-billing-finops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Maxio (SaaS Billing & FinOps)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "maxio-saas-billing-finops": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

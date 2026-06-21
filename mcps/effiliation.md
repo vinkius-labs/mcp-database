@@ -1,7 +1,6 @@
 # Effiliation MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/effiliation)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/effiliation-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/effiliation-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/effiliation)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Effiliation** MCP serv
 > This month, your account has recorded 1,250 clicks, 45 conversions, and a total estimated commission of $1,200.00. The conversion rate is currently 3.6%. Would you like to see which program is performing best?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Effiliation API Key?**
+Log in to your Effiliation account, navigate to your profile or API settings section, and you can generate or retrieve your unique API Key from there.
+
+**Q: Can the agent validate transactions?**
+This integration currently focuses on listing and auditing programs and transactions. Validating or declining conversions should be managed via the Effiliation dashboard or specific management API endpoints.
+
+**Q: Does the integration show real-time clicks?**
+Yes, you can use the get_performance_statistics tool to retrieve the latest click and interaction volumes as reported by the Effiliation platform.
+
+
 ## Installation & Usage
 
-To install and use the **Effiliation** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/effiliation](https://vinkius.com/mcp/effiliation)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Effiliation** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `effiliation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Effiliation** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "effiliation": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

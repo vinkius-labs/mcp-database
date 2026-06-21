@@ -1,7 +1,6 @@
 # Freshworks MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshworks)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freshworks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freshworks-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshworks)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Freshworks** MCP serve
 > Found contact! John Smith is a 'Decision Maker' at 'Acme Corp'. He has 2 active deals and 1 closed support ticket. I can retrieve his full profile or communication history for you.
 
 
+## ❓ FAQ
+
+**Q: Can my agent list both sales deals and support tickets via Freshworks?**
+Yes. This server provides tools for both. Use 'list_deals' to see your sales pipeline and 'list_tickets' to see helpdesk activity. The agent fetches data from both partitions within your unified Freshworks instance.
+
+**Q: How do I check the health of a specific sales account via chat?**
+Use the 'list_accounts' tool to find the account and then ask for its detailed metrics. Your agent can retrieve hierarchical account limits and associated contact data to help you verify its status natively.
+
+**Q: Can I audit agent groups and their queues through the agent?**
+Absolutely. Use the 'list_groups' tool. Your agent will execute bulk iterations tracking explicitly registered agent grouping configurations, allowing you to monitor how support queues are handled securely.
+
+
 ## Installation & Usage
 
-To install and use the **Freshworks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/freshworks](https://vinkius.com/mcp/freshworks)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Freshworks** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `freshworks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Freshworks** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "freshworks": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

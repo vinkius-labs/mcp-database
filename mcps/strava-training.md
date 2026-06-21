@@ -1,7 +1,6 @@
 # Strava Training MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-training)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/strava-training-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/strava-training-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-training)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,12 +102,52 @@ Here are some examples of how you can interact with the **Strava Training** MCP 
 > Found 8 efforts on segment 22978 (Old La Honda Road). Best effort: 14:32 (PR) on 2024-02-15. Recent efforts trending: 15:02, 14:48, 14:32 — showing 2-minute improvement over 3 months. Average HR: 168 bpm on best effort.
 
 
+## ❓ FAQ
+
+**Q: What data streams are available for activities?**
+Available streams include: time, distance, latlng (GPS coordinates), altitude, velocity_smooth (speed), heartrate, cadence, watts (power), temp (temperature), moving (moving flag), and grade_smooth (incline %). Request specific streams with comma-separated types, e.g., "heartrate,watts,velocity_smooth". Not all streams are available for every activity — it depends on the recording device.
+
+**Q: What are activity zones and how are they calculated?**
+Activity zones show the time spent in each heart rate zone (Z1-Z5) or power zone during an activity. Zones are based on the athlete's personal zone configuration (set in Strava settings). Zone analysis reveals training intensity — whether a workout was aerobic (Z1-Z2), threshold (Z3), or anaerobic (Z4-Z5). This data requires a heart rate monitor or power meter.
+
+**Q: How do I find my athlete ID on Strava?**
+Your athlete ID is the numeric portion of your Strava profile URL. For example, from https://www.strava.com/athletes/12345678, your athlete ID is 12345678. You can also get it from the get_athlete tool in the Strava Planning or Strava Social MCP servers.
+
+
 ## Installation & Usage
 
-To install and use the **Strava Training** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/strava-training](https://vinkius.com/mcp/strava-training)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Strava Training** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `strava-training` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Strava Training** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "strava-training": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

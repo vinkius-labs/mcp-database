@@ -1,7 +1,6 @@
 # Humanloop (LLM Prompt Management API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/humanloop-llm-prompt-management-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/humanloop-llm-prompt-management-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/humanloop-llm-prompt-management-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/humanloop-llm-prompt-management-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Humanloop (LLM Prompt 
 > Deployment successful. Version 'v_987' of prompt 'pr_123' is now live in the 'production' environment.
 
 
+## ❓ FAQ
+
+**Q: Can I see the full version history of a specific prompt?**
+Yes! Use the `list_prompt_versions` tool with the Prompt ID. It will return all historical versions, allowing you to track changes and metadata over time.
+
+**Q: How do I deploy a prompt version to a specific environment like production?**
+You can use the `deploy_prompt` tool. Provide the Prompt ID and the Environment ID to set that specific version as the active deployment for that environment.
+
+**Q: Is it possible to record model outputs for later evaluation?**
+Absolutely. Use the `log_to_prompt` tool to record a generation, including the prompt path, messages, and output, which can then be used for evaluation in Humanloop.
+
+
 ## Installation & Usage
 
-To install and use the **Humanloop (LLM Prompt Management API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/humanloop-llm-prompt-management-api](https://vinkius.com/mcp/humanloop-llm-prompt-management-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Humanloop (LLM Prompt Management API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `humanloop-llm-prompt-management-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Humanloop (LLM Prompt Management API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "humanloop-llm-prompt-management-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

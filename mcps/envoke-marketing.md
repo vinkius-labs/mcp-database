@@ -1,7 +1,6 @@
 # Envoke Marketing MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/envoke-marketing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/envoke-marketing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/envoke-marketing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/envoke-marketing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Envoke Marketing** MCP
 > Alex is currently 'Subscribed' and a member of 2 lists: 'General Announcements' and 'Product Beta'. Their last recorded click was on March 15th. Should I pull their full interaction history?
 
 
+## ❓ FAQ
+
+**Q: How do I get Envoke API credentials?**
+Log in to your Envoke account, navigate to **Settings > API Integration**, and you can find your unique **API ID** and **API Key** there. API access is typically included in professional and higher plans.
+
+**Q: Can the agent send new mass emails?**
+This integration currently focuses on listing and auditing campaigns, lists, and contacts. Creating or sending new mass emails should be managed via the Envoke platform dashboard or automated API triggers.
+
+**Q: Does the integration show real-time stats?**
+Yes, you can use the get_campaign_performance_stats tool to retrieve the latest sent, open, and click counts for any active campaign.
+
+
 ## Installation & Usage
 
-To install and use the **Envoke Marketing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/envoke-marketing](https://vinkius.com/mcp/envoke-marketing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Envoke Marketing** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `envoke-marketing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Envoke Marketing** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "envoke-marketing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

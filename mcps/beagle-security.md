@@ -1,7 +1,6 @@
 # Beagle Security MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/beagle-security)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/beagle-security-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/beagle-security-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/beagle-security)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Beagle Security** MCP 
 > Retrieving results for test_554433... I found 3 vulnerabilities: 1 Critical (SQL Injection), 1 High (XSS), and 1 Medium (Missing Security Headers). Would you like the full details for the SQL Injection?
 
 
+## ❓ FAQ
+
+**Q: Can I start a security test for a specific application from the agent?**
+Yes! Use the `start_test` action with your application's token. Your agent will trigger the penetration test in your Beagle Security account immediately.
+
+**Q: How do I check if a running security test has finished?**
+Simply ask the agent to `get_test_status` with the Test ID. It will return the current phase of the test and its completion status.
+
+**Q: Does the integration show me the details of found vulnerabilities?**
+Yes. Once a test is finished, you can use `get_vulnerabilities` or `get_test_results` to retrieve a list of findings, including severity and descriptions.
+
+
 ## Installation & Usage
 
-To install and use the **Beagle Security** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/beagle-security](https://vinkius.com/mcp/beagle-security)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Beagle Security** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `beagle-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Beagle Security** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "beagle-security": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

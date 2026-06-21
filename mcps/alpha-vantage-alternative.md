@@ -1,7 +1,6 @@
 # Alpha Vantage MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alpha-vantage-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/alpha-vantage-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/alpha-vantage-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alpha-vantage-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Alpha Vantage** MCP se
 > Accessing economic indicators... The latest Real GDP growth rate is 3.4% (annualized), and the Consumer Price Index (CPI) shows a year-over-year inflation rate of 3.2%. Would you like to see the historical trend for either of these?
 
 
+## ❓ FAQ
+
+**Q: Can I get intraday stock prices for a specific time interval?**
+Yes. Use the `time_series_intraday` tool and specify the `interval` (e.g., '1min', '5min', '60min'). You can also toggle `extended_hours` to see pre-market and after-hours data.
+
+**Q: How do I access a company's financial health and ratios?**
+You can use `get_overview` for general ratios and metadata, or `get_income_statement`, `get_balance_sheet`, and `get_cash_flow` for detailed annual and quarterly financial reports.
+
+**Q: Does this server support sentiment analysis for market news?**
+Yes! The `get_news_sentiment` tool provides real-time news articles along with sentiment scores and relevance rankings for specific stock symbols or topics.
+
+
 ## Installation & Usage
 
-To install and use the **Alpha Vantage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/alpha-vantage-alternative](https://vinkius.com/mcp/alpha-vantage-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Alpha Vantage** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `alpha-vantage-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Alpha Vantage** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "alpha-vantage-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

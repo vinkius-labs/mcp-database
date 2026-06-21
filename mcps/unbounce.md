@@ -1,7 +1,6 @@
 # Unbounce MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unbounce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unbounce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unbounce-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unbounce)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Unbounce** MCP server 
 > Retrieved form values securely for Lead 7709xxv: User email marked 'john.doe@test.com'. Included an arbitrary internal company name input as 'Acme Global'. The request indicates no additional customized checkboxes were marked.
 
 
+## ❓ FAQ
+
+**Q: Can it retrieve all form submission data (Leads) for a specific landing page in one go?**
+Absolutely. Just instruct the agent using the 'list_page_leads' capability, feeding it the specific landing page ID. It directly taps the records returning JSON-wrapped metadata of exactly what your visitors typed in.
+
+**Q: How can I check the performance and stats of a live landing page quickly?**
+Simply ask the agent to fetch the page statistics using 'get_page_statistics' with its respective ID. Data elements like bounce rates, overall views vs conversions naturally return into the AI context mapping easy charts.
+
+**Q: Can it query sub-accounts dynamically finding out assigned domains on larger enterprise accounts?**
+Yes. First call 'list_sub_accounts' to get raw IDs, then orchestrate 'list_sub_account_domains' recursively across those IDs. In one prompt, your AI audits the entire organizational deployment topology natively.
+
+
 ## Installation & Usage
 
-To install and use the **Unbounce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/unbounce](https://vinkius.com/mcp/unbounce)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Unbounce** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `unbounce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Unbounce** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "unbounce": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Greptile MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/greptile)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/greptile-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/greptile-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/greptile)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Greptile** MCP server 
 > Repository submitted for indexing! Remote: github, Repository: company/frontend-app, Branch: main. Current status: 'processing' — 45% complete (scanning 1,247 files). Estimated time remaining: 3 minutes. Indexed repositories: 3 total. 1) 'company/backend-api' (main, completed, 892 files). 2) 'company/shared-lib' (main, completed, 234 files). 3) 'company/frontend-app' (main, processing, 45%). Once completed, you'll be able to query and search the frontend codebase. Would you like to check again in a few minutes?
 
 
+## ❓ FAQ
+
+**Q: Can I ask natural language questions about my codebase?**
+Yes! The `query_codebase` tool sends a natural language question along with repository references and returns AI-generated answers with specific code references (file paths and line numbers). For follow-up questions, use `query_with_context` with the session ID from the previous response to maintain conversation continuity.
+
+**Q: Do I need to index my repository before querying it?**
+Yes. Use `index_repository` with the remote host (github or gitlab), repository path (owner/repo), and branch name. Check indexing progress with `get_repository_status`. Once indexed, you can query and search the repository. Use `reindex_repository` to refresh the index after significant code changes.
+
+**Q: Can I search for specific code patterns across my repositories?**
+Yes. The `search_codebase` tool performs semantic search across your indexed repositories to find relevant files and functions. For targeted results, use `search_by_filepath` to narrow the search to a specific file path. Use `get_file_info` to retrieve indexed metadata for any file.
+
+
 ## Installation & Usage
 
-To install and use the **Greptile** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/greptile](https://vinkius.com/mcp/greptile)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Greptile** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `greptile` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Greptile** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "greptile": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # CityBikes (Bike Sharing) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/citybikes-bike-sharing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/citybikes-bike-sharing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/citybikes-bike-sharing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/citybikes-bike-sharing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **CityBikes (Bike Sharin
 > Accessing Citi Bike NYC data... This network operates in New York, NY. I have access to real-time status for all stations, including location coordinates and current bike/dock counts. Would you like a summary of the nearest stations?
 
 
+## ❓ FAQ
+
+**Q: How can I find the specific ID for a bike network in my city?**
+Use the `list_networks` tool. You can ask the agent to filter the results by city or country name to find the correct `id` (e.g., 'velib' for Paris or 'citibike-nyc' for New York).
+
+**Q: Does the server show the exact number of available bikes at a station?**
+Yes! By using the `get_network` tool with a specific `network_id`, the agent retrieves real-time station data, including the count of free bikes and empty docks.
+
+**Q: Is the data updated in real-time?**
+The data is fetched directly from the CityBikes API, which aggregates live feeds from various operators. The refresh rate depends on the individual bike-sharing provider's own API updates.
+
+
 ## Installation & Usage
 
-To install and use the **CityBikes (Bike Sharing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/citybikes-bike-sharing](https://vinkius.com/mcp/citybikes-bike-sharing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CityBikes (Bike Sharing)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `citybikes-bike-sharing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CityBikes (Bike Sharing)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "citybikes-bike-sharing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

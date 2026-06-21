@@ -1,7 +1,6 @@
 # Renfe Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/renfe-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/renfe-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/renfe-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/renfe-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Renfe Data** MCP serve
 > Checking trip updates for AV/LD/MD... I see a 10-minute delay for the AVE 03122 from Barcelona to Madrid due to a technical check. Other services are running on time. Should I check for alerts in specific regions?
 
 
+## ❓ FAQ
+
+**Q: How often are the real-time train positions updated?**
+It depends on the service: Cercanías positions (`rt_vehicle_positions_cercanias`) update every 20 seconds, while Long Distance trains (`rt_vehicle_positions_ld`) update every 15 minutes.
+
+**Q: Can I check for delays or platform changes for a specific trip?**
+Yes. Use `rt_trip_updates_cercanias` or `rt_trip_updates_ld` to get live information on delays, cancellations, and platform assignments across the network.
+
+**Q: Where can I find the static GTFS files for schedules?**
+You can use the `get_static_datasets` tool. It returns direct download URLs for GTFS schedule packages and CSV/XLSX lists of all Renfe stations.
+
+
 ## Installation & Usage
 
-To install and use the **Renfe Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/renfe-data](https://vinkius.com/mcp/renfe-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Renfe Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `renfe-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Renfe Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "renfe-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # MPU-Manager MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mpu-manager)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mpu-manager-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mpu-manager-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mpu-manager)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **MPU-Manager** MCP serv
 > You have 42 registered clients. The most recent is João Oliveira (added 3 days ago, 2 active cases). Would you like to see details or create a new case?
 
 
+## ❓ FAQ
+
+**Q: How do I create a new case via AI?**
+Use the `create_case` tool with a client ID and description. The case is opened immediately in your MPU Manager account.
+
+**Q: Can I schedule appointments from my agent?**
+Yes. Use `create_appointment` with case ID, date (ISO 8601), and location to schedule a new appointment instantly.
+
+**Q: How do I view reports for a specific case?**
+Use `list_reports` with the case ID to retrieve all generated reports including type, date, and current status.
+
+
 ## Installation & Usage
 
-To install and use the **MPU-Manager** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mpu-manager](https://vinkius.com/mcp/mpu-manager)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MPU-Manager** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mpu-manager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MPU-Manager** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mpu-manager": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

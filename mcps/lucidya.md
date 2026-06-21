@@ -1,7 +1,6 @@
 # Lucidya MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lucidya)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lucidya-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lucidya-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lucidya)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Lucidya** MCP server u
 > I've fetched the profile for customer cust-123. They have interact with your brand 12 times across Twitter and Intercom, with an overall sentiment score of 0.85 (Neutral-Positive).
 
 
+## ❓ FAQ
+
+**Q: How do I find my API Token?**
+Log in to your Lucidya account and navigate to Account Settings or API section to generate and copy your unique authorization token.
+
+**Q: Does the AI analysis work for languages other than English?**
+Yes, Lucidya's AI is highly optimized for multiple languages, with specific advanced support for various Arabic dialects.
+
+**Q: Can I retrieve historical social data?**
+You can retrieve any data that has been captured by your active monitors. Use the `monitor_details` tool to check what is currently being monitored.
+
+
 ## Installation & Usage
 
-To install and use the **Lucidya** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lucidya](https://vinkius.com/mcp/lucidya)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lucidya** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lucidya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lucidya** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lucidya": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

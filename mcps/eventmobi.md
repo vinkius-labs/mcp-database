@@ -1,7 +1,6 @@
 # EventMobi MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventmobi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eventmobi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eventmobi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventmobi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **EventMobi** MCP server
 > Action complete! Attendee p_456 has been successfully checked in for the 'Product Vision' session. The arrival is now logged in your EventMobi analytics.
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Key for EventMobi?**
+Log in to your Experience Manager and navigate to the **Integrations** tab to generate your unique key for the API.
+
+**Q: Can I track session check-ins via AI?**
+Yes! Use the `attendee_checkin` tool to log a participant's arrival at the overall event or for specific scheduled sessions.
+
+**Q: Does it support real-time poll results?**
+The `list_live_polls` tool retrieves the most current metadata and results for active attendee surveys directly from the platform.
+
+
 ## Installation & Usage
 
-To install and use the **EventMobi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eventmobi](https://vinkius.com/mcp/eventmobi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EventMobi** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eventmobi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EventMobi** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eventmobi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

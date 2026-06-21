@@ -1,7 +1,6 @@
 # VATNode MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vatnode)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vatnode-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vatnode-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vatnode)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **VATNode** MCP server u
 > I've scanned the global rate catalog. Countries with standard rates above 20% include Hungary (27%), Denmark (25%), and Sweden (25%). Would you like the full list of metadata for these countries?
 
 
+## ❓ FAQ
+
+**Q: How do I find my VATNode API Key?**
+Log in to your [**VATNode dashboard**](https://vatnode.dev/dashboard), and you will find your API Key on the main home page. Copy and paste it below.
+
+**Q: Can the agent validate European VAT numbers?**
+Yes. VATNode supports validation for VAT numbers across the European Union and several other jurisdictions globally using official VIES data.
+
+**Q: Is tax rate information provided?**
+Yes. The `get_country_vat_rates` tool provides current standard and reduced VAT rates, helping you audit tax obligations for different regions.
+
+
 ## Installation & Usage
 
-To install and use the **VATNode** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vatnode](https://vinkius.com/mcp/vatnode)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **VATNode** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vatnode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **VATNode** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vatnode": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

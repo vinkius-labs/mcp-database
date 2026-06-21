@@ -1,7 +1,6 @@
 # LiveKit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/livekit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/livekit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/livekit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/livekit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -102,12 +101,52 @@ Here are some examples of how you can interact with the **LiveKit** MCP server u
 > I've sent the command to mute the track 'TR_XXXXXXXX' for 'user_99' in 'Main-Lobby'. The participant is now muted.
 
 
+## ❓ FAQ
+
+**Q: Can I remotely mute a participant who has background noise?**
+Yes. Use the `mute_published_track` tool by providing the room name, participant identity, and the specific track SID. You can set the `muted` boolean to true to silence them immediately.
+
+**Q: Is it possible to record a session for later viewing?**
+Absolutely. You can use `start_room_composite_egress` to record an entire room using a web layout, or `start_web_egress` to record a specific URL. These tools leverage LiveKit's Egress service.
+
+**Q: How do I kick a disruptive user from a room?**
+You can use the `remove_participant` tool. Simply provide the room name and the identity of the participant you wish to disconnect.
+
+
 ## Installation & Usage
 
-To install and use the **LiveKit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/livekit](https://vinkius.com/mcp/livekit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LiveKit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `livekit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LiveKit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "livekit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

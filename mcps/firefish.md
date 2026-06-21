@@ -1,7 +1,6 @@
 # Firefish MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firefish)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firefish-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firefish-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firefish)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Firefish** MCP server 
 > Retrieving actions... Here are the latest actions recorded, including 'Email Sent to Candidate cand_123' and 'Interview Scheduled for Job job_789'.
 
 
+## ❓ FAQ
+
+**Q: How do I ensure the candidate data is up to date?**
+The Firefish MCP server fetches data directly from your live Firefish environment. Use the 'getCandidate' tool to retrieve the most recent profile information for any specific candidate ID.
+
+**Q: Can I filter jobs by their current status?**
+Yes! The 'listJobs' tool retrieves all active jobs. You can then ask your AI agent to sort or filter these results based on status, title, or hiring company.
+
+**Q: What format should I use for creating a new candidate?**
+Use the 'createCandidate' tool by providing the first name, last name, and email address. The agent will handle the underlying API request to ensure the record is created correctly in Firefish.
+
+
 ## Installation & Usage
 
-To install and use the **Firefish** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/firefish](https://vinkius.com/mcp/firefish)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Firefish** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `firefish` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Firefish** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "firefish": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

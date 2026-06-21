@@ -1,7 +1,6 @@
 # GitScrum MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitscrum)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gitscrum-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gitscrum-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitscrum)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **GitScrum** MCP server 
 > The web-app project has 5 labels: 🔴 'Critical' (#E74C3C), 🟡 'Enhancement' (#F39C12), 🔵 'Frontend' (#3498DB), 🟢 'Backend' (#27AE60), and 🟣 'DevOps' (#9B59B6). Would you like to create additional labels or apply any of these to tasks?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent list all workspaces and drill into specific project details?**
+Absolutely. Use `list_workspaces` to browse all your organizational workspaces, then `list_projects` to see every project within a workspace. Your agent returns full metadata including member counts, settings, and creation dates — all without leaving your conversation.
+
+**Q: I need to set up a new project with custom workflows and labels — can I do it all conversationally?**
+Yes. Tell your agent to create the project, then ask it to configure the workflow columns and create color-coded labels. The agent chains `create_project`, `list_workflows`, and `create_label` tools automatically to set up your board exactly as you describe it.
+
+**Q: Does this integration let me modify or delete projects?**
+This core integration focuses on workspace exploration, project creation, and configuration management — including workflows and labels. For task-level operations like CRUD, subtasks, and checklists, use the dedicated GitScrum Tasks integration. All actions respect your GitScrum account permissions.
+
+
 ## Installation & Usage
 
-To install and use the **GitScrum** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gitscrum](https://vinkius.com/mcp/gitscrum)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GitScrum** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gitscrum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GitScrum** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gitscrum": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

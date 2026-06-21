@@ -1,7 +1,6 @@
 # Rev.com MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/revcom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/revcom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/revcom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/revcom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,49 @@ Here are some examples of how you can interact with the **Rev.com** MCP server u
 > Transcription order created: #ORD-8923. File: investor_call_may13.mp3 (45:12 duration). Service: Human transcription (99%+ accuracy). Options: Timestamps every 30 seconds, speaker identification (2 speakers detected), verbatim transcription. Turnaround: 24 hours (rush available for +50%). Estimated cost: $56.40 ($1.25/min). Output formats: DOCX, TXT, SRT. Order status: Processing. You'll receive an email when the transcript is ready for review.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the status and attachments for a specific Rev order?**
+Yes! Use the `get_order` and `list_attachments` tools. Your agent will respond with complete metadata, including processing status and links to retrieved files in seconds.
+
+**Q: How do I find my Rev.com Client Key and User Key?**
+Log in to your Rev.com account, navigate to the **Settings** or **API** section, and you will find your unique Client Key and User Key there.
+
+
 ## Installation & Usage
 
-To install and use the **Rev.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/revcom](https://vinkius.com/mcp/revcom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rev.com** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `revcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rev.com** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "revcom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

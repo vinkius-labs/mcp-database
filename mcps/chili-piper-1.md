@@ -1,7 +1,6 @@
 # Chili Piper MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chili-piper-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chili-piper-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chili-piper-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chili-piper-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Chili Piper** MCP serv
 > John Doe has 4 free slots tomorrow: 10:00 AM, 11:30 AM, 2:00 PM, and 4:30 PM. All times are in his local timezone (EST).
 
 
+## ❓ FAQ
+
+**Q: Can my agent check why a specific rep is not getting leads?**
+Yes. Ask your agent to get queue details for your distribution group. It surfaces the weights and distribution history for each member, allowing you to quickly spot misconfigured weights or availability issues that block lead routing.
+
+**Q: How do I generate a booking link for a prospect during a chat?**
+Provide your agent with the prospect's email and name, and specify a Concierge route. The agent calls the Chili Piper API to generate a personalized, ephemeral booking link that you can share immediately in your outreach.
+
+**Q: Can I audit all meetings that ended as a 'No-Show' this week?**
+Absolutely. List your meetings for the desired date range and ask your agent to filter for No-Show status. It aggregates the data directly from Chili Piper, helping you track pipeline health without manual exports.
+
+
 ## Installation & Usage
 
-To install and use the **Chili Piper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chili-piper-1](https://vinkius.com/mcp/chili-piper-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chili Piper** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chili-piper-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chili Piper** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chili-piper-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Moodle MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moodle)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moodle-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moodle-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moodle)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Moodle** MCP server us
 > I've checked the completion status for John Doe in course 8. His progress is currently at 85%. He has completed all video lectures but still needs to submit the final project. Shall I send him a reminder message?
 
 
+## ❓ FAQ
+
+**Q: How do I enable Web Services in Moodle?**
+Go to Site Administration > Server > Web services > Overview. You'll need to enable Web Services, enable the REST protocol, create a specific user, and generate a token for them.
+
+**Q: Can I see student grades for a course?**
+Yes! Use the `get_course_grades` tool with a course ID to retrieve the gradebook data for all students enrolled in that course.
+
+**Q: How do I check if a student has completed a course?**
+The `get_course_completion` tool allows you to check the progress and completion status for a specific User ID in a target Course ID.
+
+
 ## Installation & Usage
 
-To install and use the **Moodle** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/moodle](https://vinkius.com/mcp/moodle)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Moodle** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `moodle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Moodle** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "moodle": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

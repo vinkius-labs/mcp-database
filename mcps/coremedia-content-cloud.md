@@ -1,7 +1,6 @@
 # CoreMedia Content Cloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coremedia-content-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coremedia-content-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coremedia-content-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coremedia-content-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **CoreMedia Content Clou
 > Retrieving navigation hierarchy... Root: 'Main Menu'. Children include 'Products', 'Services', 'About Us', and 'Contact'. I can expand any of these sub-channels for you.
 
 
+## ❓ FAQ
+
+**Q: Can my agent execute custom GraphQL queries against CoreMedia?**
+Yes. Use the 'execute_graphql_payload' tool. You can provide any valid GraphQL query string and variables. The agent will fetch the data natively from your Headless Delivery schema, bypassing rigid model limits.
+
+**Q: How do I search for articles using specific keywords?**
+Use the 'search_global_content' tool. The agent leverages CoreMedia's Solr integration to pull explicitly queried words spanning all CMS nodes, returning the exact matches and their paths.
+
+**Q: Can I use persisted queries to optimize performance?**
+Absolutely. Use the 'execute_persisted_query' tool. Provide the SHA256 hash of your pre-compiled query. This ensures proper Edge caching and allows your agent to retrieve content with minimum latency.
+
+
 ## Installation & Usage
 
-To install and use the **CoreMedia Content Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coremedia-content-cloud](https://vinkius.com/mcp/coremedia-content-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CoreMedia Content Cloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coremedia-content-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CoreMedia Content Cloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coremedia-content-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

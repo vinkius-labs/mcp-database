@@ -1,7 +1,6 @@
 # DeepAI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deepai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deepai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **DeepAI** MCP server us
 > I've applied AI colorization to the photo. The colorized version is available here: [URL]
 
 
+## ❓ FAQ
+
+**Q: Can I choose different quality levels for image generation?**
+Yes! The `generate_image` tool allows you to specify `image_generator_version` such as 'standard', 'hd', 'genius', or 'super_genius' to match your needs.
+
+**Q: How do I improve the quality of a blurry or small image?**
+Use the `super_resolution` tool. Just provide the image URL, and the AI will upscale and sharpen it while preserving details.
+
+**Q: Is it possible to edit an image using only text commands?**
+Absolutely. With the `edit_image` tool, you provide a base image URL and a text prompt describing the changes you want to see.
+
+
 ## Installation & Usage
 
-To install and use the **DeepAI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deepai](https://vinkius.com/mcp/deepai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DeepAI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deepai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DeepAI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deepai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

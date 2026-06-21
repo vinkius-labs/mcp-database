@@ -1,7 +1,6 @@
 # PingPong MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pingpong)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pingpong-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pingpong-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pingpong)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **PingPong** MCP server 
 > I've checked the status for payout 'PAY-8821'. It is currently 'Processing' by the receiving bank. Funds are expected to arrive in your destination account within 24 hours.
 
 
+## ❓ FAQ
+
+**Q: How do I find my PingPong App ID and Secret?**
+Log in to the PingPong developer portal or contact your PingPong account manager to receive your unique App ID and App Secret for API integration.
+
+**Q: Can I check the balance of my virtual cards (VCC)?**
+Yes. Use the `get_vcc_balance` tool to retrieve the combined balance of all your virtual card accounts, helping you manage advertising spend or supplier payments.
+
+**Q: Is it possible to monitor payout statuses through the agent?**
+Yes! Use the `get_payout_status` tool with your payout ID to retrieve the current processing status and estimated arrival time for your funds.
+
+
 ## Installation & Usage
 
-To install and use the **PingPong** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pingpong](https://vinkius.com/mcp/pingpong)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PingPong** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pingpong` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PingPong** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pingpong": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Shopify Discount Creator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shopify-discount-creator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shopify-discount-creator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shopify-discount-creator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shopify-discount-creator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -39,12 +38,49 @@ Here are some examples of how you can interact with the **Shopify Discount Creat
 > I've generated the discount code AI_VIP_15. You can use it at checkout for 15% off!
 
 
+## ❓ FAQ
+
+**Q: Can the agent change the price of products with this?**
+No. This MCP only accesses the endpoint to create Discount Codes. It does not have the `write_products` permission, meaning it is physically impossible for the AI to alter your catalog prices or delete products.
+
+**Q: Does it support fixed amount discounts (e.g. $10 off)?**
+To maintain maximum simplicity and safety for the AI, this specific tool is hardcoded to generate 'percentage-based' discounts applied to the entire cart. This prevents currency confusion issues.
+
+
 ## Installation & Usage
 
-To install and use the **Shopify Discount Creator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shopify-discount-creator](https://vinkius.com/mcp/shopify-discount-creator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Shopify Discount Creator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shopify-discount-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Shopify Discount Creator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shopify-discount-creator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

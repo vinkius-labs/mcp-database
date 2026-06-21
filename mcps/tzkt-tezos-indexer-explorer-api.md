@@ -1,7 +1,6 @@
 # TzKT (Tezos Indexer & Explorer API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tzkt-tezos-indexer-explorer-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tzkt-tezos-indexer-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tzkt-tezos-indexer-explorer-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tzkt-tezos-indexer-explorer-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **TzKT (Tezos Indexer & 
 > Searching Ghostnet for operation ooVp... Found it! This was a transaction of 50 XTZ from tz1... to tz1... confirmed at block level 1,234,567. The status is 'applied'.
 
 
+## ❓ FAQ
+
+**Q: Can I see how an account's balance has changed over time?**
+Yes! Use the `get_account_balance_history` tool with the account address. It will return a historical record of balance changes for that specific Tezos address.
+
+**Q: How do I check the current state or storage of a smart contract?**
+You can use the `get_contract_storage` tool by providing the contract's KT1 address. This will retrieve the current data stored in the contract's state.
+
+**Q: Is it possible to list transactions for a specific sender or target?**
+Absolutely. Use the `list_transactions` tool and apply filters like `sender` or `target` to narrow down the results to specific addresses or interaction flows.
+
+
 ## Installation & Usage
 
-To install and use the **TzKT (Tezos Indexer & Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tzkt-tezos-indexer-explorer-api](https://vinkius.com/mcp/tzkt-tezos-indexer-explorer-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TzKT (Tezos Indexer & Explorer API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tzkt-tezos-indexer-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TzKT (Tezos Indexer & Explorer API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tzkt-tezos-indexer-explorer-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

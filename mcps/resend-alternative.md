@@ -1,7 +1,6 @@
 # Resend MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/resend-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/resend-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/resend-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/resend-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -109,12 +108,55 @@ Here are some examples of how you can interact with the **Resend** MCP server us
 > Done! I've created the API key 'production-sending' with 'sending' permissions. The key value is `re_2mXq9K...` — make sure to copy and store it securely as it won't be shown again.
 
 
+## ❓ FAQ
+
+**Q: How do I create a Resend API Key?**
+Log in to the [**Resend Dashboard**](https://resend.com/api-keys), go to **Settings > API Keys**, click **Create API Key**, select the permission scope (Full Access, Sending, or Domains), give it a name and copy the key immediately — it starts with `re_` and won't be shown again.
+
+**Q: Can I send HTML emails with attachments?**
+Yes! Use the `send_email` tool with the `html` parameter for HTML body content and optionally include attachments. You can also provide a `text` fallback for email clients that don't render HTML. Attachments are passed as objects with filename, content (base64) and content_type.
+
+**Q: How do I verify a domain for sending?**
+Use `create_domain` with your domain name (e.g. "example.com"). Resend will return the SPF and DKIM DNS records you need to add to your DNS provider. After adding the records, use `verify_domain` with the domain ID to trigger re-verification. The domain status will change to "verified" once DNS propagation is complete.
+
+**Q: What are the API rate limits?**
+Resend allows 5 requests per second per team, shared across all API keys. If you exceed this limit, you'll receive a 429 response. Rate limits can be increased by contacting Resend support for verified senders.
+
+
 ## Installation & Usage
 
-To install and use the **Resend** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/resend-alternative](https://vinkius.com/mcp/resend-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Resend** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `resend-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Resend** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "resend-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

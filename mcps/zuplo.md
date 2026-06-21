@@ -1,7 +1,6 @@
 # Zuplo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zuplo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zuplo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zuplo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zuplo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Zuplo** MCP server usi
 > Success! I've provisioned a new consumer identity for 'Acme Partner' (ID: cons-999) in project proj-101. I can provide the associated API key details if you need them for delivery.
 
 
+## ❓ FAQ
+
+**Q: Can I check my API gateway metrics through the agent?**
+Yes. The `get_metrics` tool allows your AI agent to retrieve real-time traffic and latency data for any specific project ID, helping you monitor gateway performance directly through chat.
+
+**Q: How do I create a new consumer identity for API key authentication?**
+You can use the `create_consumer` tool. Provide the project ID and a JSON payload with the consumer's details, and Zuplo will provision the new identity for your API gateway instantly.
+
+**Q: Is it possible to see my project's configuration files via conversation?**
+Absolutely. Use the `list_project_files` tool to retrieve the declarative configuration files for your API project, allowing you to audit routing and policy definitions through your agent.
+
+
 ## Installation & Usage
 
-To install and use the **Zuplo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zuplo](https://vinkius.com/mcp/zuplo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zuplo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zuplo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zuplo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zuplo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

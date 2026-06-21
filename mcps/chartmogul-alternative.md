@@ -1,7 +1,6 @@
 # ChartMogul MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chartmogul-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chartmogul-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chartmogul-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chartmogul-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **ChartMogul** MCP serve
 > Fetching profile... John Doe (ID: uuid_123) contributes $150 to your MRR through a 'Premium Plan'. His LTV is estimated at $4,500 based on his 12-month tenure. Need any other details from his history?
 
 
+## ❓ FAQ
+
+**Q: How do I find my ChartMogul API Key?**
+Log in to your account, navigate to **Settings** > **API**, and copy your unique secret key.
+
+**Q: Are the MRR and ARR metrics real-time?**
+Yes! The metrics tools retrieve the most current calculations based on the data synced into your ChartMogul account.
+
+**Q: Can I filter metrics by specific date ranges?**
+Absolutely. Use the `get_summary_metrics` tool and provide `start-date` and `end-date` parameters to analyze specific growth periods.
+
+
 ## Installation & Usage
 
-To install and use the **ChartMogul** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chartmogul-alternative](https://vinkius.com/mcp/chartmogul-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ChartMogul** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chartmogul-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ChartMogul** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chartmogul-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

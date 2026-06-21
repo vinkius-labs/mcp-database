@@ -1,7 +1,6 @@
 # Elon Musk Physics Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elon-musk-physics-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elon-musk-physics-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elon-musk-physics-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elon-musk-physics-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Elon Musk Physics Prov
 > PREMATURE_OPTIMIZATION + ITERATION_AVERSION — Three violations. First: you are OPTIMIZING a 7-step campaign — why does it have 7 steps? Step 2 says DELETE. Throw away 5 steps. Second: you jumped to AUTOMATING lead scoring on an undeleted process. Third: 'production-ready' and 'enterprise-grade' are perfection language — the enemy of cycle speed. Delete 5 steps. Simplify to 2. Ship in hours, not months.
 
 
+## ❓ FAQ
+
+**Q: Why does it reject optimization?**
+It rejects PREMATURE optimization. The most common error of a smart engineer is to optimize a thing that should not exist. You must prove you DELETED parts (Step 2) before the engine allows you to simplify (Step 3). If you are optimizing a Kafka queue that should not exist, you are wasting time on the wrong problem.
+
+**Q: Why must I name the person who created the requirement?**
+Because requirements without a name attached become immovable. When a requirement is anonymous, no one questions it. When you attach a name, you can ask: 'Is this person still right? Has the context changed?' Most requirements were created by someone who no longer works on the project.
+
+**Q: What is 'Deletion Cowardice'?**
+It is the instinct to add instead of delete. When an engineer encounters a problem, the reflex is to add a cache, add a queue, add a service. The Starbase Algorithm demands the opposite: the best part is no part. Delete first. If you are not occasionally forced to add back 10% of what you deleted, you are not deleting enough.
+
+
 ## Installation & Usage
 
-To install and use the **Elon Musk Physics Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/elon-musk-physics-prover](https://vinkius.com/mcp/elon-musk-physics-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Elon Musk Physics Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `elon-musk-physics-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Elon Musk Physics Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "elon-musk-physics-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

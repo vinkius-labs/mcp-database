@@ -1,7 +1,6 @@
 # ClickBid MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clickbid)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clickbid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clickbid-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clickbid)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **ClickBid** MCP server 
 > Here is the information you requested based on the execution of the tools.
 
 
+## ❓ FAQ
+
+**Q: Can I add a new bidder straight from the chat interface?**
+Absolutely. By providing the 'create_clickbid_bidder' tool with a JSON string containing the guest's name and contact info, they will be registered instantly.
+
+**Q: How do I retrieve a list of everyone who bought event tickets?**
+Use the 'list_clickbid_ticket_purchasers' tool. The AI will query the API and return the complete roster of ticket buyers for your active events.
+
+**Q: Is it possible to view specific details about a donated item?**
+Yes. Provide the item's unique ID to the 'get_clickbid_item' tool, and the AI agent will pull its description, estimated value, and current bid status.
+
+
 ## Installation & Usage
 
-To install and use the **ClickBid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clickbid](https://vinkius.com/mcp/clickbid)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ClickBid** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clickbid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ClickBid** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clickbid": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Expedia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/expedia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/expedia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -104,12 +103,52 @@ BA178 is the best value and has the earliest arrival. Want me to pull a detailed
 The Standard Double offers the safest option with free cancellation. Would you like me to proceed with booking, or should I search for alternative properties in the area first?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent search hotels, flights, and cars all in one conversation?**
+Yes. This integration covers all three travel segments. Use `search_properties` for hotels, `search_flights` for air travel, and `search_cars` for vehicle rentals. Your agent can query all three in sequence and compile a complete trip plan with pricing from each segment in a single conversation.
+
+**Q: Does this integration handle actual bookings or is it only for searching?**
+Both. You can search and compare options across all segments (read), and then proceed to create bookings using `create_booking` for hotels and `book_flight` for flights. Cancellations are also supported via `cancel_booking`. All transactions go through the official Expedia Group API with standard terms applied by the provider.
+
+**Q: What kind of API credentials do I need, and how is authentication handled?**
+You need an API Key and an API Secret from the Expedia Group Developer Hub. The integration uses OAuth 2.0 client credentials flow — it automatically exchanges your key and secret for a short-lived access token on each request. You only need to enter your credentials once; token management is fully automated.
+
+
 ## Installation & Usage
 
-To install and use the **Expedia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/expedia](https://vinkius.com/mcp/expedia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Expedia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `expedia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Expedia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "expedia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

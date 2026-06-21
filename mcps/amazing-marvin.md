@@ -1,7 +1,6 @@
 # Amazing Marvin MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazing-marvin)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazing-marvin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazing-marvin-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazing-marvin)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Amazing Marvin** MCP s
 > Time tracking has started for the 'Database migration' task.
 
 
+## ❓ FAQ
+
+**Q: Can the AI Agent start a time tracker for a specific task?**
+Yes! The agent can start and stop the time tracker for any task if you provide the task ID.
+
+**Q: Is it possible to assign tasks to specific dates?**
+Yes, the agent can schedule tasks to specific days by passing the 'day' parameter (e.g., '2024-10-31').
+
+**Q: Does the agent manage both categories and projects?**
+Absolutely. It can create new categories or projects and organize them by assigning parent IDs.
+
+
 ## Installation & Usage
 
-To install and use the **Amazing Marvin** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amazing-marvin](https://vinkius.com/mcp/amazing-marvin)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amazing Marvin** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amazing-marvin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amazing Marvin** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amazing-marvin": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

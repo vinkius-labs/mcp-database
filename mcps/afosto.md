@@ -1,7 +1,6 @@
 # Afosto MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/afosto)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/afosto-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/afosto-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/afosto)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Afosto** MCP server us
 > I've found the profile for John Doe. He is a 'Gold' tier customer with 5 lifetime orders. His last order was 2 weeks ago. Would you like to see his full interaction history?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Afosto API credentials?**
+Log in to the Afosto Admin App, navigate to **Company** > **API Settings**. You can create a new integration there to generate your Client ID and Client Secret.
+
+**Q: Can I check stock levels across multiple warehouses?**
+Yes! Use the `list_inventory` tool. It provides real-time stock data aggregated by location, helping you manage omnichannel fulfillment.
+
+**Q: Does this support multi-channel orders?**
+Absolutely. The `list_orders` tool retrieves orders from all connected sales channels, including B2B, B2C, and integrated marketplaces.
+
+
 ## Installation & Usage
 
-To install and use the **Afosto** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/afosto](https://vinkius.com/mcp/afosto)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Afosto** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `afosto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Afosto** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "afosto": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ESA Near Earth Objects MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/esa-near-earth-objects)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/esa-near-earth-objects-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/esa-near-earth-objects-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/esa-near-earth-objects)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -102,12 +101,52 @@ Here are some examples of how you can interact with the **ESA Near Earth Objects
 > Querying the NEOCC database for 2024YR4... The orbital elements show a semi-major axis of 1.47 AU, eccentricity 0.42, inclination 3.8°. The physical properties indicate an estimated diameter of 40-90 meters with absolute magnitude H=24.7. This object was flagged for follow-up observations. Would you like to see its computed ephemerides for telescope planning?
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key to use this server?**
+No. The ESA NEOCC API is completely public and requires no authentication. Simply subscribe to this server and enter any placeholder value in the API key field to start querying asteroid data immediately.
+
+**Q: How often is the asteroid data updated?**
+The ESA NEOCC updates its close approach data, risk lists, and impact monitoring tables multiple times per day. Orbital elements and physical properties are updated whenever new observational data becomes available from ground-based telescopes worldwide.
+
+**Q: Can I query data for a specific asteroid like Apophis?**
+Yes! Use the object-specific tools with the asteroid's designation. For example, query orbital elements for '99942' (Apophis), or get close approaches for '2024YR4'. The designation should match the official IAU format used in the NEOCC database.
+
+
 ## Installation & Usage
 
-To install and use the **ESA Near Earth Objects** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/esa-near-earth-objects](https://vinkius.com/mcp/esa-near-earth-objects)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ESA Near Earth Objects** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `esa-near-earth-objects` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ESA Near Earth Objects** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "esa-near-earth-objects": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

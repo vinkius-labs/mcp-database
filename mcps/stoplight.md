@@ -1,7 +1,6 @@
 # Stoplight MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stoplight)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stoplight-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stoplight-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stoplight)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Extracted the OpenAPI schema for the `processing` endpoint. It expects a payload
 All 3 members are currently active and mapped to active API projects.
 
 
+## ❓ FAQ
+
+**Q: Is the integration read-only?**
+Yes. All tools only read from your Stoplight workspace — projects, nodes, schemas, and activity logs. No modifications or deletions are possible through this integration.
+
+**Q: What is the workspace slug?**
+It's the subdomain of your Stoplight URL. For example, if your workspace is at `https://acme.stoplight.io`, the slug is `acme`. You can find it in the address bar when logged in.
+
+**Q: What data can the agent access?**
+Projects, workspace members, activity logs, and all project nodes (endpoints, models, articles). Each node's full content — including OpenAPI schemas — can be retrieved via `get_node_details`.
+
+
 ## Installation & Usage
 
-To install and use the **Stoplight** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stoplight](https://vinkius.com/mcp/stoplight)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Stoplight** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stoplight` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Stoplight** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stoplight": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

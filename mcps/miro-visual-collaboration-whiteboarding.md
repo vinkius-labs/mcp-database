@@ -1,7 +1,6 @@
 # Miro (Visual Collaboration & Whiteboarding) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/miro-visual-collaboration-whiteboarding)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/miro-visual-collaboration-whiteboarding-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/miro-visual-collaboration-whiteboarding-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/miro-visual-collaboration-whiteboarding)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Miro (Visual Collabora
 > Retrieving tags… I've identified 4 semantic tags in the 'UX Research' board: 'High Priority', 'User Pain Point', 'Feature Request', and 'Follow-up Needed'. Would you like me to list the items associated with any of these tags?
 
 
+## ❓ FAQ
+
+**Q: Can I add a sticky note to a specific Miro board through my agent?**
+Yes. Use the `create_sticky_note` tool by providing the Board ID and your text content. Your agent will inject a basic colored note onto the board's coordinate grid immediately, perfect for rapid ideation.
+
+**Q: How do I see all the items currently on a board?**
+The `list_items` tool retrieves all visual components physically attached to a board. Your agent will return a list of sticky notes, shapes, and text blocks, helping you audit the canvas content without opening the browser.
+
+**Q: Can my agent list the team members who have access to my boards?**
+Absolutely. Use the `list_members` tool with a specific Board ID. Your agent will report all active collaborators explicitly granted access, allowing you to verify viewer and editor permissions across your workspace.
+
+
 ## Installation & Usage
 
-To install and use the **Miro (Visual Collaboration & Whiteboarding)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/miro-visual-collaboration-whiteboarding](https://vinkius.com/mcp/miro-visual-collaboration-whiteboarding)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Miro (Visual Collaboration & Whiteboarding)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `miro-visual-collaboration-whiteboarding` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Miro (Visual Collaboration & Whiteboarding)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "miro-visual-collaboration-whiteboarding": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

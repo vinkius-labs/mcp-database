@@ -1,7 +1,6 @@
 # Eventtia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventtia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eventtia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eventtia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventtia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Eventtia** MCP server 
 > I've found 3 attendees matching 'Sarah': 'Sarah Miller' (VP Sales), 'Sarah Connor' (Business Analyst), and 'Sarah Williams'. All are registered for the main conference. Would you like the profile details for Sarah Miller?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Eventtia API Key?**
+Log in to your Eventtia account, navigate to **Settings > API Integration**, and you can generate or retrieve your unique API Key from there. API access usually requires a specific subscription tier.
+
+**Q: Does the integration support B2B matchmaking?**
+Yes, you can use the list_event_business_meetings tool to retrieve data on scheduled meetings, networking pairings, and participant interactions for your event.
+
+**Q: Can the agent check real-time attendance?**
+Yes, you can use the get_event_performance_stats tool to retrieve real-time attendance rates and registration volume as reported by the Eventtia platform.
+
+
 ## Installation & Usage
 
-To install and use the **Eventtia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eventtia](https://vinkius.com/mcp/eventtia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Eventtia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eventtia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Eventtia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eventtia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

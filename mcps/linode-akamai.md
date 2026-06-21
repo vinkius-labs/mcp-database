@@ -1,7 +1,6 @@
 # Linode (Akamai) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linode-akamai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/linode-akamai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/linode-akamai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linode-akamai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Linode (Akamai)** MCP 
 > Fetching LKE clusters... I found one cluster: 'production-cluster' (ID: 9876). It's running K8s version 1.25 in us-east with 3 nodes in the default pool.
 
 
+## ❓ FAQ
+
+**Q: Can I list all my active virtual servers across all regions?**
+Yes. Use the `list_linodes` tool to retrieve a complete list of all Linode compute instances associated with your account, including their status and IP addresses.
+
+**Q: How do I deploy a new Kubernetes cluster using this server?**
+You can use the `create_lke_cluster` tool. You'll need to provide a label, region, and Kubernetes version. You can also optionally define node pools with specific instance types.
+
+**Q: Is it possible to delete a Linode instance if it's no longer needed?**
+Yes, the `delete_linode` tool allows you to permanently remove a specific Linode instance by providing its unique `linodeId`.
+
+
 ## Installation & Usage
 
-To install and use the **Linode (Akamai)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/linode-akamai](https://vinkius.com/mcp/linode-akamai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Linode (Akamai)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `linode-akamai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Linode (Akamai)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "linode-akamai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

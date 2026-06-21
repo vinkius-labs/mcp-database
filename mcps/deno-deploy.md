@@ -1,7 +1,6 @@
 # Deno Deploy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deno-deploy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deno-deploy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deno-deploy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deno-deploy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Deno Deploy** MCP serv
 > The deployment for revision 7e8f9a0b is currently at the 'Uploading Assets' stage (65% complete). I will continue to monitor the progress for you.
 
 
+## ❓ FAQ
+
+**Q: How can I check if my latest deployment was successful?**
+You can use the `get_revision_progress` tool with your Revision ID to stream the real-time status, or `get_revision` to fetch the final state of a specific deployment.
+
+**Q: Is it possible to view runtime errors for my application?**
+Yes. Use the `get_app_logs` tool. You can filter by `level` (e.g., 'error') and set a `query` string to find specific issues within your application logs.
+
+**Q: Can I manage environment variables across multiple apps?**
+Absolutely. Use the `create_layer` and `update_layer` tools to create shared configuration layers that can be attached to your Deno Deploy applications.
+
+
 ## Installation & Usage
 
-To install and use the **Deno Deploy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deno-deploy](https://vinkius.com/mcp/deno-deploy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deno Deploy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deno-deploy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deno Deploy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deno-deploy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

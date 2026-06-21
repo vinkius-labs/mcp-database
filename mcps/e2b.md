@@ -1,7 +1,6 @@
 # E2B MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/e2b)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/e2b-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/e2b-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/e2b)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Your sandbox is ready. It's an isolated Linux environment with Python 3.11 pre-i
 | `sbx_ghi789` | killed | Sandbox terminated — resources released |
 
 
+## ❓ FAQ
+
+**Q: How secure are E2B sandboxes?**
+E2B sandboxes run as dedicated Firecracker microVMs — the same technology used by AWS Lambda and Fargate. Each sandbox has its own Linux kernel, filesystem, and network stack, providing hardware-level isolation. Code running in a sandbox cannot access your host system, other sandboxes, or any external resources unless explicitly configured.
+
+**Q: What programming languages are supported?**
+E2B supports Python, JavaScript/TypeScript, R, Java, and Bash out of the box. You can also create custom sandbox templates with any pre-installed tools, libraries, or system dependencies. The base template provides a full Ubuntu Linux environment where you can install anything via apt or pip.
+
+**Q: How does E2B pricing work?**
+E2B uses usage-based pricing billed per second of compute time. The free Hobby plan includes a one-time $100 credit (no credit card required), up to 20 concurrent sandboxes, and 1-hour maximum session length. The Pro plan starts at $150/month with 24-hour sessions and higher concurrency limits.
+
+
 ## Installation & Usage
 
-To install and use the **E2B** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/e2b](https://vinkius.com/mcp/e2b)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **E2B** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `e2b` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **E2B** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "e2b": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

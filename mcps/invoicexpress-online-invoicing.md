@@ -1,7 +1,6 @@
 # InvoiceXpress (Online Invoicing) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/invoicexpress-online-invoicing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/invoicexpress-online-invoicing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/invoicexpress-online-invoicing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/invoicexpress-online-invoicing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **InvoiceXpress (Online 
 > I've identified 3 active VAT rates: 23% (Normal rate, ID: 1), 13% (Intermediate rate, ID: 2), and 6% (Reduced rate, ID: 3). There are also 2 exemption codes configured for international services. I can provide the IDs for your item mappings.
 
 
+## ❓ FAQ
+
+**Q: Can I see the signed PDF of an invoice through my agent?**
+Yes. Use the `get_invoice` tool with a specific Invoice ID. Your agent will return all document details along with a permalink to the signed PDF, allowing you to view or share the official fiscal document instantly.
+
+**Q: How do I find a client by their company name?**
+The `find_client` tool allows you to search for a client directly by their business name. This is perfect for locating a client profile when you don't have their numerical ID handy.
+
+**Q: Can I list the VAT rates available in my account?**
+Absolutely. Use the `list_taxes` tool to enumerate all VAT rates and exemptions configured in your InvoiceXpress account. Your agent will show the official AT mapping, which is essential before creating new items or invoices.
+
+
 ## Installation & Usage
 
-To install and use the **InvoiceXpress (Online Invoicing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/invoicexpress-online-invoicing](https://vinkius.com/mcp/invoicexpress-online-invoicing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **InvoiceXpress (Online Invoicing)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `invoicexpress-online-invoicing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **InvoiceXpress (Online Invoicing)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "invoicexpress-online-invoicing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

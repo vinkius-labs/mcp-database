@@ -1,7 +1,6 @@
 # HubSpot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hubspot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hubspot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hubspot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hubspot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **HubSpot** MCP server u
 > Sales pipelines: 2 configured. 1) 'Sales Pipeline' — 5 stages: Prospect (10%), Qualified (25%), Proposal (50%), Negotiation (75%), Closed Won (100%). 12 active deals, $892K value. 2) 'Partnership Pipeline' — 4 stages: Introduction, Evaluation, Agreement, Active Partner. 3 active deals, $150K value. HubSpot users: 8 owners. Sarah Chen (Sales), Mike Torres (Sales), Lisa Park (Marketing), James Rodriguez (CS), Ana Müller (RevOps), 3 others. Deal properties (42 total): Key fields: dealname, amount, dealstage, pipeline, closedate, hubspot_owner_id, description, deal_currency_code. Custom: contract_length, implementation_fee, annual_recurring_revenue. Would you like to create a deal or search contacts?
 
 
+## ❓ FAQ
+
+**Q: Can I search for contacts using specific filters?**
+Yes. The `search_contacts` tool accepts a JSON array of HubSpot filters. Example: `[{"propertyName":"email","operator":"CONTAINS_TOKEN","value":"@company.com"}]`. This uses HubSpot's native search API to find contacts matching property values, date ranges, or engagement criteria. Use `get_object_schema` with 'contacts' to discover all searchable properties.
+
+**Q: Can I link contacts to companies and deals?**
+Yes. Use `link_crm_objects` with the source object type and ID, target object type and ID, and the association type name. Example: link a contact to a company with `fromType='contacts', fromId='123', toType='companies', toId='456', associationType='contact_to_company'`. This creates bidirectional CRM relationships.
+
+**Q: What type of HubSpot credential do I need?**
+You need a **Private App Access Token** from your HubSpot account. This is different from OAuth tokens — it provides direct API access scoped to the permissions you select when creating the Private App. The token is sent as a Bearer token in the Authorization header against `api.hubapi.com`.
+
+
 ## Installation & Usage
 
-To install and use the **HubSpot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hubspot](https://vinkius.com/mcp/hubspot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HubSpot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hubspot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HubSpot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hubspot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

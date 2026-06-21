@@ -1,7 +1,6 @@
 # Cohere (Embed & Rerank) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cohere-embed-rerank)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cohere-embed-rerank-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cohere-embed-rerank-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cohere-embed-rerank)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Cohere (Embed & Rerank
 > That sentence contains 9 tokens according to the Cohere tokenizer. I can provide the exact integer array mapping these tokens if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Can my agent improve my RAG system's accuracy using Cohere?**
+Yes. The 'rerank_documents' tool is specifically designed for this. Provide a query and a list of documents, and Cohere will reorder them based on semantic relevance, ensuring the most accurate context is fed to your LLM.
+
+**Q: How do I test text classification via the agent?**
+Use the 'classify_texts' tool. Provide your input strings and a few-shot JSON array of examples (text and label). The agent will return the predicted categories along with confidence scores from the Cohere engine.
+
+**Q: What is the difference between Trial and Production keys?**
+Trial keys are free for development but have strict rate limits (approx. 1,000 calls per month). Production keys remove these limits but require a paid plan. Both types work seamlessly with this server.
+
+
 ## Installation & Usage
 
-To install and use the **Cohere (Embed & Rerank)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cohere-embed-rerank](https://vinkius.com/mcp/cohere-embed-rerank)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cohere (Embed & Rerank)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cohere-embed-rerank` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cohere (Embed & Rerank)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cohere-embed-rerank": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

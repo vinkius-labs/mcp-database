@@ -1,7 +1,6 @@
 # Nue.io Revenue MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nueio-revenue)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nueio-revenue-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nueio-revenue-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nueio-revenue)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Nue.io Revenue** MCP s
 > Retrieving revenue workflows... You have 3 active workflows: 'Automated Invoice Generation', 'Credit Memo Approval', and 'Renewal Reminder Path'. Would you like the configuration details for the invoice generation workflow?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Nue.io API Key?**
+You can generate an API Key in your Nue.io profile settings. Ensure your user role has the necessary permissions for API access.
+
+**Q: Which products appear in the commerce catalog?**
+Only products that have been explicitly 'published' for self-service in the Nue App will be returned by the catalog endpoints.
+
+**Q: What is a price tag in Nue?**
+Nue uses 'Price Tags' to represent complex pricing logic (like tiered or volume-based pricing) without needing to create multiple SKUs for the same product.
+
+
 ## Installation & Usage
 
-To install and use the **Nue.io Revenue** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nueio-revenue](https://vinkius.com/mcp/nueio-revenue)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nue.io Revenue** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nueio-revenue` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nue.io Revenue** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nueio-revenue": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

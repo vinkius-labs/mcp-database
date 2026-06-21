@@ -1,7 +1,6 @@
 # Lightcast Labor Market MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lightcast-labor-market)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lightcast-labor-market-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lightcast-labor-market-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lightcast-labor-market)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Lightcast Labor Market
 > In the New York region, there are currently 1.2 million active job postings. The median advertised wage is $85,000. Top in-demand skills include 'Project Management' and 'Strategic Planning'. Would you like to see the top hiring employers?
 
 
+## ❓ FAQ
+
+**Q: How do I get Lightcast API credentials?**
+You need a registered developer account at the [**Lightcast Developer Portal**](https://lightcast.io/developer). Once approved, you can create an application to receive your **Client ID** and **Client Secret**.
+
+**Q: Which API versions does this support?**
+This integration currently utilizes the latest stable versions of the Skills, Titles, and Occupations APIs provided by the Lightcast platform.
+
+**Q: Is global labor data available?**
+Yes, Lightcast provides labor market data for various international regions. Availability depends on the specific geographic permissions associated with your API credentials.
+
+
 ## Installation & Usage
 
-To install and use the **Lightcast Labor Market** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lightcast-labor-market](https://vinkius.com/mcp/lightcast-labor-market)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lightcast Labor Market** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lightcast-labor-market` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lightcast Labor Market** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lightcast-labor-market": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

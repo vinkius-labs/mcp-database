@@ -1,7 +1,6 @@
 # Color Contrast Checker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/color-contrast-checker-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/color-contrast-checker-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/color-contrast-checker-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/color-contrast-checker-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **Color Contrast Checker
 > Contrast: 1.67:1 | Verdict: ❌ Fail — unreadable. Minimum for any text is 3:1. Suggest using #525252 instead.
 
 
+## ❓ FAQ
+
+**Q: My AI says this color combination passes WCAG. Should I trust it?**
+No. LLMs cannot reliably calculate relative luminance — they approximate. This engine uses the exact W3C formula: L = 0.2126*R + 0.7152*G + 0.0722*B with sRGB gamma correction. Trust the math, not the prediction.
+
+**Q: What's the difference between AA and AAA levels?**
+AA requires 4.5:1 contrast for normal text — the legal minimum in most countries. AAA requires 7:1 — the gold standard for maximum readability. Large text (18pt+) has relaxed thresholds: 3:1 for AA, 4.5:1 for AAA.
+
+**Q: Can I mix color formats? Like HEX for foreground and a CSS name for background?**
+Absolutely. Pass '#333333' as foreground and 'white' as background, or 'rgb(0,0,0)' with 'hsl(0,0%,95%)' — the engine normalizes everything internally.
+
+
 ## Installation & Usage
 
-To install and use the **Color Contrast Checker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/color-contrast-checker-alternative](https://vinkius.com/mcp/color-contrast-checker-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Color Contrast Checker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `color-contrast-checker-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Color Contrast Checker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "color-contrast-checker-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Compliance Governance Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/compliance-governance-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/compliance-governance-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/compliance-governance-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/compliance-governance-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Compliance Governance 
 > GAPS_UNQUANTIFIED — Regulation and controls pass, but gap analysis fails. 'Low risk' is not a measurement — assign severity (1-5), calculate fine exposure (Art. 83: up to €20M or 4% global turnover), estimate remediation cost, and set a timeline. Also: 'engineering team' is not an owner — name a person. And Q2 2024 audit is over a year old — what is the next scheduled assessment?
 
 
+## ❓ FAQ
+
+**Q: Does this replace legal advice?**
+No. This is analytical support — it forces structured thinking about compliance. It does not certify compliance or replace qualified legal, regulatory, or compliance professionals. It catches structural gaps in reasoning, not legal deficiencies in controls.
+
+**Q: What does it catch that a prompt doesn't?**
+A prompt says 'be thorough about compliance.' The LLM says 'comply with GDPR and implement security controls' — and the prompt is satisfied. This tool rejects that because no article number was cited, no control was mapped, and no gap was scored. Tool calls are obligations — the LLM cannot skip the structural checks.
+
+**Q: Which regulations does it support?**
+Any regulation — it is framework-agnostic. GDPR, SOC 2, PCI DSS, HIPAA, ISO 27001, EU AI Act, CCPA, NIST. It does not validate whether your controls satisfy a regulation — it validates whether your analysis is structurally complete. The depth of your reasoning is what it enforces.
+
+
 ## Installation & Usage
 
-To install and use the **Compliance Governance Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/compliance-governance-prover](https://vinkius.com/mcp/compliance-governance-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Compliance Governance Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `compliance-governance-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Compliance Governance Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "compliance-governance-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

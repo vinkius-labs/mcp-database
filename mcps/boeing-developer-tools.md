@@ -1,7 +1,6 @@
 # Boeing Developer Tools MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boeing-developer-tools)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/boeing-developer-tools-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/boeing-developer-tools-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boeing-developer-tools)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,55 @@ Here are some examples of how you can interact with the **Boeing Developer Tools
 > Pulling the NOTAM list for the KJFK scope. I identified 4 active notices. The only critical closure states: **TWY A BTN TWY A1 AND TWY A2 CLSD** (meaning Taxiway A is strictly closed between Alpha 1 and Alpha 2 for surface restructuring until tonight). There are no broader airspace or active runway closures in effect.
 
 
+## ❓ FAQ
+
+**Q: How does the AI securely connect isolated to Boeing?**
+It takes 30 seconds to connect — no complex OAuth apps or middleware necessary. All read requests stay strictly inside the Vurb Edge boundary and the API key is vaulted per session.
+
+**Q: Where do I find my Boeing Developer Tools API Token?**
+Log into your developer.boeing.com account. After your Aviation ID is validated, navigate to your 'My Apps' section in the portal, select the application, and generate a new Bearer API Key Token.
+
+**Q: Can it search for physical runway mappings globally?**
+Yes. Agents can use the Jeppesen Aerodrome logic built inside the server to fetch dimensions, operational metadata, and taxi-times using standard ICAO codes for almost any airport worldwide.
+
+**Q: Are NOTAMs fetched immediately?**
+Yes, by calling the `search_notams` tool, agents immediately read official global aviation warnings (Notices to Air Missions) synchronized with the current flight radar constraints.
+
+
 ## Installation & Usage
 
-To install and use the **Boeing Developer Tools** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/boeing-developer-tools](https://vinkius.com/mcp/boeing-developer-tools)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Boeing Developer Tools** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `boeing-developer-tools` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Boeing Developer Tools** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "boeing-developer-tools": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

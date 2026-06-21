@@ -1,7 +1,6 @@
 # Campaign Monitor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/campaign-monitor-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/campaign-monitor-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/campaign-monitor-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/campaign-monitor-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Campaign Monitor** MCP
 > Fetching analytics... Campaign c_789 ('Holiday Promo') has a 22% open rate and a 4% click-through rate. Total successful deliveries: 5,420. Shall I check for any bounced addresses?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Campaign Monitor API Key?**
+Log in to your account, click on your profile (top right), navigate to **Account Settings** > **API Key**, and copy your unique token.
+
+**Q: Can I manage multiple clients via AI?**
+Yes! The `list_clients` tool retrieves all sub-accounts, and you can use their IDs to manage lists and campaigns specifically for each client.
+
+**Q: Does it support real-time campaign analytics?**
+The `get_campaign_analytics` tool retrieves the most current engagement metrics (opens, clicks, unsubscribes) directly from the platform.
+
+
 ## Installation & Usage
 
-To install and use the **Campaign Monitor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/campaign-monitor-alternative](https://vinkius.com/mcp/campaign-monitor-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Campaign Monitor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `campaign-monitor-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Campaign Monitor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "campaign-monitor-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

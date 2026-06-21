@@ -1,7 +1,6 @@
 # Snapchat Conversions MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snapchat-conversions)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/snapchat-conversions-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/snapchat-conversions-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snapchat-conversions)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,46 @@ Here are some examples of how you can interact with the **Snapchat Conversions**
 > Conversion events batch sent to Snapchat Conversions API. Events: 67 PURCHASE events. Total revenue reported: $8,945. Average order value: $133.51. Deduplication: 4 events matched existing Snap Pixel events (removed). Net new: 63 events. Match rate: 89% (Snapchat matched 56 events to Snapchat users). Attribution window: 28-day click, 1-day view. Events timestamped with original transaction time. Next sync scheduled: 6 hours. Campaign optimization data will update within 4 hours.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Snapchat Conversions API Token?**
+Log in to your Snapchat Ads Manager, navigate to **Business Details**, and you will find your Conversions API Token under the API tokens section.
+
+
 ## Installation & Usage
 
-To install and use the **Snapchat Conversions** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/snapchat-conversions](https://vinkius.com/mcp/snapchat-conversions)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Snapchat Conversions** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `snapchat-conversions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Snapchat Conversions** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "snapchat-conversions": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

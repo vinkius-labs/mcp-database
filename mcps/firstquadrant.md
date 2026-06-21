@@ -1,7 +1,6 @@
 # FirstQuadrant MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firstquadrant)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firstquadrant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firstquadrant-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firstquadrant)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **FirstQuadrant** MCP se
 > Contact enrolled! I've successfully added John Doe (ID: 101) to your 'Discovery Sequence'. They will receive the first automated email shortly.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Organization ID in FirstQuadrant?**
+Log in to your FirstQuadrant dashboard and navigate to **Settings** > **Developer Settings**. Your unique Organization ID will be listed there.
+
+**Q: Can the agent update custom properties?**
+Yes! Use the `create_contact` or `enrich_contact_ai` tools to manage standard and custom data points defined in your property schema.
+
+**Q: How does AI enrichment work through the agent?**
+The `enrich_contact_ai` tool triggers FirstQuadrant's autonomous research engine to scan public sources and update the contact record with high-fidelity insights.
+
+
 ## Installation & Usage
 
-To install and use the **FirstQuadrant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/firstquadrant](https://vinkius.com/mcp/firstquadrant)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FirstQuadrant** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `firstquadrant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FirstQuadrant** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "firstquadrant": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # TeamGantt MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/teamgantt)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/teamgantt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/teamgantt-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/teamgantt)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **TeamGantt** MCP server
 > Task updated! I've set the progress for task 88231 to 100% and updated its status to 'completed' in your TeamGantt project. Your timeline has been synchronized.
 
 
+## ❓ FAQ
+
+**Q: Can I see all the tasks in a project via AI?**
+Yes! Use the `list_project_tasks` tool and provide the Project ID. Your agent will retrieve all tasks, milestones, and groups for that specific Gantt chart.
+
+**Q: How do I update the progress of a task using the agent?**
+Use the `update_task_fields` action. Provide the Task ID and the `percentComplete` value (0-100) to update the task's status instantly.
+
+**Q: Is it possible to link two tasks with a dependency via AI?**
+Absolutely. Use the `link_tasks_dependency` tool. Provide the ID of the predecessor and the successor tasks to create a Gantt link between them.
+
+
 ## Installation & Usage
 
-To install and use the **TeamGantt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/teamgantt](https://vinkius.com/mcp/teamgantt)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TeamGantt** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `teamgantt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TeamGantt** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "teamgantt": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

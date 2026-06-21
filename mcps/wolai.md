@@ -1,7 +1,6 @@
 # Wolai MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wolai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wolai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wolai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wolai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Wolai** MCP server usi
 > Done! I've created the page 'Weekly Sprint Notes' in your workspace. You can now start adding content blocks to it. Page ID: WL-8821.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Wolai App ID and Secret?**
+Log in to Wolai, go to [Personal Center] → [Space Settings] → [App Settings], and create a 'Self-built App' to generate your App ID and App Secret.
+
+**Q: Can I search for specific data within a database?**
+Yes. Use the `query_database` tool with the database ID. You can optionally provide a JSON filter string to narrow down the results based on your criteria.
+
+**Q: What is a 'Block' in Wolai?**
+Like Notion, Wolai uses a block-based structure. Everything from a paragraph of text to an image or a sub-page is considered a block. You can list these using the `list_blocks` tool.
+
+
 ## Installation & Usage
 
-To install and use the **Wolai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wolai](https://vinkius.com/mcp/wolai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wolai** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wolai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wolai** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wolai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

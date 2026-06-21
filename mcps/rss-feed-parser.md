@@ -1,7 +1,6 @@
 # RSS Feed Parser MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rss-feed-parser)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rss-feed-parser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rss-feed-parser-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rss-feed-parser)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **RSS Feed Parser** MCP 
 > 3 episodes with audio URLs, durations, and descriptions extracted.
 
 
+## ❓ FAQ
+
+**Q: Does it work with podcast feeds?**
+Yes. Podcast RSS feeds include enclosure elements with audio/video URLs, MIME types, and file sizes. The parser extracts all of them.
+
+**Q: Can it handle both RSS 2.0 and Atom?**
+Yes. Both formats are auto-detected and parsed into the same unified JSON structure. Your agent doesn't need to know which format the source uses.
+
+**Q: Does it fetch the feed URL or do I pass the XML?**
+Pass the feed URL and the engine fetches + parses in one step. No manual XML handling needed.
+
+
 ## Installation & Usage
 
-To install and use the **RSS Feed Parser** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rss-feed-parser](https://vinkius.com/mcp/rss-feed-parser)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **RSS Feed Parser** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rss-feed-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **RSS Feed Parser** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rss-feed-parser": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

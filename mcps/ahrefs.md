@@ -1,7 +1,6 @@
 # Ahrefs MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ahrefs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ahrefs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ahrefs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ahrefs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Ahrefs** MCP server us
 > I've analyzed 'best SEO tools' for the US market. The monthly search volume is 12,000, with a difficulty score of 65 (Hard). The estimated CPC is $5.50. Would you like some related keyword ideas?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Ahrefs API v3 Token?**
+Log in to Ahrefs as a workspace owner or admin, navigate to **Account settings** > **API keys**, and create a new key. Note that API v3 is the current standard; v2 is deprecated.
+
+**Q: Does this integration consume Ahrefs API units?**
+Yes! Ahrefs uses a unit-based system. Every request costs at least 50 units, and the total cost depends on the number of rows and fields retrieved.
+
+**Q: Can I analyze competitor domains?**
+Absolutely. You can provide any domain or URL to the Site Explorer tools to retrieve their backlink profiles, Domain Rating, and organic traffic data.
+
+
 ## Installation & Usage
 
-To install and use the **Ahrefs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ahrefs](https://vinkius.com/mcp/ahrefs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ahrefs** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ahrefs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ahrefs** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ahrefs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

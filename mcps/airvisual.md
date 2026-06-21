@@ -1,7 +1,6 @@
 # AirVisual MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airvisual)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/airvisual-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/airvisual-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airvisual)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **AirVisual** MCP server
 > I've found 13 supported states/provinces in Canada, including Ontario, British Columbia, Quebec, and Alberta. Which one would you like to explore for city data?
 
 
+## ❓ FAQ
+
+**Q: Can I get air quality data for my current location without entering coordinates?**
+Yes! You can use the `get_nearest_city_by_ip` tool. The agent will use your requester IP address to find and return the AQI and weather data for the closest supported city automatically.
+
+**Q: How do I find out which cities are supported in a specific region?**
+You can browse the hierarchy using `list_countries`, then `list_states` for a specific country, and finally `list_cities` for a specific state. This allows you to discover exactly which locations have active monitoring.
+
+**Q: Does this server provide data from specific monitoring stations?**
+Yes, the `get_station_data` tool allows you to retrieve real-time data from a specific named monitoring station if you know its name and location details (city, state, country).
+
+
 ## Installation & Usage
 
-To install and use the **AirVisual** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/airvisual](https://vinkius.com/mcp/airvisual)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AirVisual** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `airvisual` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AirVisual** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "airvisual": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

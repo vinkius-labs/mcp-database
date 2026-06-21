@@ -1,7 +1,6 @@
 # NOAA Tides & Currents API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-tides-currents-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/noaa-tides-currents-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/noaa-tides-currents-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-tides-currents-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **NOAA Tides & Currents 
 > I've retrieved the real-time water levels for Los Angeles! The current value is identified as 3.2 ft above MLLW. I can assist you with an audit of predicted vs actual water level metadata if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for NOAA Tides API?**
+No. The NOAA CO-OPS API is a free and open service provided by the United States government. This server works out of the box without any static credentials required.
+
+**Q: Can the agent show air temperature at stations?**
+Yes. Use the `get_air_temperature` tool providing a station ID. Your agent will return real-time temperature metadata alongside the timestamp.
+
+**Q: What data datum is used for predictions?**
+This server uses the Mean Lower Low Water (MLLW) datum for all water level and tide prediction requests to maintain consistency with nautical charts.
+
+
 ## Installation & Usage
 
-To install and use the **NOAA Tides & Currents API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/noaa-tides-currents-api](https://vinkius.com/mcp/noaa-tides-currents-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NOAA Tides & Currents API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `noaa-tides-currents-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NOAA Tides & Currents API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "noaa-tides-currents-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

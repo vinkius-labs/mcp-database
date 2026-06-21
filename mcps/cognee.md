@@ -1,7 +1,6 @@
 # Cognee MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cognee)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cognee-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cognee-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cognee)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Relationships found:
 - Transformer → introduced_by → Vaswani et al.
 
 
+## ❓ FAQ
+
+**Q: How is Cognee different from standard RAG?**
+Standard RAG splits documents into chunks and finds similar text using vector search — but it loses the relationships between facts. Cognee builds a knowledge graph that preserves entity relationships, temporal connections, and hierarchical structures. When you search, Cognee uses graph traversal combined with vector similarity and LLM reasoning, resulting in more accurate, context-aware answers that understand HOW facts relate to each other.
+
+**Q: What search types are available?**
+Cognee supports four retrieval strategies: GRAPH_COMPLETION (default — combines vector search + graph traversal + LLM reasoning for context-aware answers), SUMMARIES (fast hierarchical overview search), INSIGHTS (structured entity relationships), and CHUNKS (pure vector similarity for raw text passages). Each strategy optimizes for different use cases.
+
+**Q: Is Cognee open-source?**
+Yes! Cognee is fully open-source under the Apache 2.0 license. You can self-host the entire platform including the knowledge graph engine, vector database, and API server. A managed cloud version with API keys is also available for teams that prefer not to manage infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Cognee** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cognee](https://vinkius.com/mcp/cognee)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cognee** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cognee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cognee** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cognee": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

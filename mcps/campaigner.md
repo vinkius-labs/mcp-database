@@ -1,7 +1,6 @@
 # Campaigner MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/campaigner)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/campaigner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/campaigner-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/campaigner)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Campaigner** MCP serve
 > I've found the subscriber profile for John Doe. He is currently 'Subscribed' and is associated with the 'Customers' and 'Weekly Update' lists.
 
 
+## ❓ FAQ
+
+**Q: Can I check the statistics for a specific campaign using the agent?**
+Yes! Use the `get_campaign_stats` tool with the Campaign ID. Your agent will fetch the detailed performance data, including open rates, clicks, and bounces, directly from Campaigner.
+
+**Q: How do I list all the subscribers in my account?**
+Simply ask the agent to `list_subscribers`. It will retrieve the list of contacts from your Campaigner account, including their status and primary details.
+
+**Q: Does the integration allow adding a new subscriber?**
+Yes. Use the `create_subscriber` action and provide the email address. The contact will be added to your Campaigner account immediately.
+
+
 ## Installation & Usage
 
-To install and use the **Campaigner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/campaigner](https://vinkius.com/mcp/campaigner)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Campaigner** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `campaigner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Campaigner** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "campaigner": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

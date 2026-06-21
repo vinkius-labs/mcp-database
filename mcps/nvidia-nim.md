@@ -1,7 +1,6 @@
 # NVIDIA NIM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-nim)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nvidia-nim-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nvidia-nim-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-nim)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **NVIDIA NIM** MCP serve
 > Execution telemetry directly extracted natively utilizing metric parameters securely matching `get_metrics`. Parsed arrays successfully formatting structural mappings mapping explicitly memory bounds efficiently.
 
 
+## ❓ FAQ
+
+**Q: Can I explicitly track GPU hardware analytics natively using the NIM MCP integration?**
+Yes! Utilize `get_metrics` exposing Prometheus-compatible proxy limits tracking explicit hardware latencies easily natively securely.
+
+**Q: How do I explicitly evaluate if my container instances mapped properly loaded native Foundation Models?**
+Target UUID probes natively mapped executing `check_health_ready` verifying bounds catching limits generating exact readiness states cleanly.
+
+**Q: Does this call inference proxies executing completions bounds mapped dynamically?**
+No, this is infrastructure proxy bounding explicitly container node management. Utilize `nvidia-catalog-mcp` enforcing natively hosted inference bounds efficiently.
+
+
 ## Installation & Usage
 
-To install and use the **NVIDIA NIM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nvidia-nim](https://vinkius.com/mcp/nvidia-nim)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NVIDIA NIM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nvidia-nim` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NVIDIA NIM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nvidia-nim": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

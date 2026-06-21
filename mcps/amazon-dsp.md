@@ -1,7 +1,6 @@
 # Amazon DSP MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-dsp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazon-dsp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazon-dsp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-dsp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Amazon DSP** MCP serve
 > I have successfully requested the DSP report for yesterday. Because Amazon generates reports asynchronously, it is currently processing. Would you like me to check its status now?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Amazon DSP API credentials?**
+You need to create a 'Login with Amazon' application in the Amazon Developer Console to get your Client ID and Client Secret. Then, you generate a Refresh Token. You also need your Advertiser ID.
+
+**Q: How do I choose the correct region?**
+Select the region that matches your target marketplace: **NA** (North America - US, CA, MX, BR), **EU** (Europe - UK, DE, FR, IT, ES, etc.), or **FE** (Far East - JP, AU, SG).
+
+**Q: Why do reports take time to generate?**
+Amazon Ads reporting API is asynchronous. When you request a report, it returns a `reportId`. You must wait a few moments and use the check status tool to download the data once it's ready.
+
+
 ## Installation & Usage
 
-To install and use the **Amazon DSP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amazon-dsp](https://vinkius.com/mcp/amazon-dsp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amazon DSP** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amazon-dsp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amazon DSP** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amazon-dsp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Formsite MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/formsite)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/formsite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/formsite-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/formsite)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,55 @@ Here are some examples of how you can interact with the **Formsite** MCP server 
 > Inspecting form items... The 'Contact Form' includes fields for 'Name', 'Email Address', 'Subject', and 'Message (Paragraph Text)'.
 
 
+## ❓ FAQ
+
+**Q: How do I get an Access Token for Formsite?**
+You can find your Access Token in your Formsite account by going to Form Settings > Integrations > Formsite API.
+
+**Q: What is the 'Server' and 'User Directory' required for setup?**
+The Server is your prefix (e.g., fs18) and the User Directory is your account name. Both are displayed on the Formsite API integration page.
+
+**Q: Can I receive real-time notifications for new form results?**
+Yes! Use the 'create_webhook' tool to subscribe a URL to the 'result_completed' event for any of your forms.
+
+**Q: Are the results returned in JSON format?**
+Yes, all data retrieved through this MCP server is provided in a structured format, which the AI agent can then summarize for you.
+
+
 ## Installation & Usage
 
-To install and use the **Formsite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/formsite](https://vinkius.com/mcp/formsite)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Formsite** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `formsite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Formsite** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "formsite": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ReqBin MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reqbin)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reqbin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reqbin-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reqbin)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,12 +62,52 @@ Here are some examples of how you can interact with the **ReqBin** MCP server us
 > Connectivity test successful. I sent a default payload and ReqBin Echo successfully returned Id 78912, Quantity 1, and Price 18.00.
 
 
+## ❓ FAQ
+
+**Q: Can I send custom fields like Price and Quantity to the echo service?**
+Yes! Use the `echo_post_json` tool. You can optionally provide an Id, Quantity, and Price. The server will send these to ReqBin and return the echoed JSON so you can verify the structure.
+
+**Q: What happens if I run the echo tool without any parameters?**
+If no specific fields are provided, the `echo_post_json` tool sends a default payload (Id: 78912, Quantity: 1, Price: 18.00) to verify that the connection to ReqBin is working correctly.
+
+**Q: Is this tool intended for production data storage?**
+No. This is a debugging and testing tool. It uses ReqBin's Echo API to reflect back the data you send, making it ideal for verifying that your AI agent is formatting JSON requests correctly.
+
+
 ## Installation & Usage
 
-To install and use the **ReqBin** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/reqbin](https://vinkius.com/mcp/reqbin)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ReqBin** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `reqbin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ReqBin** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "reqbin": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

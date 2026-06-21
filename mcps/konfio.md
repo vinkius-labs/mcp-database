@@ -1,7 +1,6 @@
 # Konfío MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/konfio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/konfio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/konfio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/konfio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Konfío** MCP server u
 > Payment initiated! A direct debit of $12,000.00 MXN is being pulled from your primary connected bank account to pay towards LOAN-442. This covers your minimum installment of $10,500 with $1,500 going directly to the principal balance.
 
 
+## ❓ FAQ
+
+**Q: Can I emit legal Mexican electronic invoices (CFDIs) with this tool?**
+Yes! Use the `create_invoice` tool. You just need to provide the client's RFC, the SAT usage code (e.g., G03), and the item details. Konfío will automatically stamp (timbrar) the XML document with the SAT network to make it fully legally binding in Mexico.
+
+**Q: How do I check when my next loan payment is due?**
+First use `list_loans` to find your active loan ID, then use `get_payment_schedule` with that ID to view all upcoming installments, breaking down principal, interest, and IVA taxes for each payment.
+
+**Q: Can I pay suppliers via SPEI using my Konfío balance?**
+Yes, use the `create_transfer` tool with the supplier's 18-digit CLABE number and the transfer amount. Konfío processes these as standard domestic SPEI wires.
+
+
 ## Installation & Usage
 
-To install and use the **Konfío** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/konfio](https://vinkius.com/mcp/konfio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Konfío** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `konfio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Konfío** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "konfio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

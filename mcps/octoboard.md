@@ -1,7 +1,6 @@
 # Octoboard MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/octoboard)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/octoboard-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/octoboard-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/octoboard)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Octoboard** MCP server
 > You have 4 automated reports configured. "Weekly SEO Summary" sends every Monday at 9 AM to marketing@company.com. "Monthly Client Report" generates the 1st of each month for 6 agency clients. "Daily Ad Spend" delivers at 8 AM to the growth team. "Quarterly Executive Review" runs every quarter end.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the Widget ID for a custom data widget?**
+The Widget ID is found in the Octoboard dashboard settings for any 'Custom Data' widget. You must provide this ID when using the `send_numeric_metric` or similar tools.
+
+**Q: How do I find my Octoboard API Key?**
+Log in to Octoboard, navigate to your **Account Settings** > **API**, and you will find your unique secret token there.
+
+**Q: Can I push table data to Octoboard using the AI?**
+Yes! Use the `send_table_data` tool. Provide the Widget ID, headers, and a 2D array of rows, and your agent will update the corresponding data table widget instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Octoboard** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/octoboard](https://vinkius.com/mcp/octoboard)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Octoboard** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `octoboard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Octoboard** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "octoboard": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

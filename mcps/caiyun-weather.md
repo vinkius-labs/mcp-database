@@ -1,7 +1,6 @@
 # Caiyun Weather / 彩云天气 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/caiyun-weather)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/caiyun-weather-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/caiyun-weather-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/caiyun-weather)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Caiyun Weather / 彩�
 > I've retrieved the AQI for Guangzhou. The current index is 45, which is 'Good'. Pollutant levels are low, with PM2.5 at 12 μg/m³. Is there anything else you'd like to know about the environmental conditions there?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Caiyun Weather Token?**
+Log in to the [Caiyun Weather Open Platform](https://open.caiyunapp.com/), navigate to the 'Application Management' (应用管理) section to find your unique API Token.
+
+**Q: What is the coordinate format for location?**
+Caiyun uses the format `[Longitude],[Latitude]`. For example, Beijing is approximately `116.40,39.90`. It is important to put the Longitude first.
+
+**Q: Which coordinate system should I use?**
+Caiyun natively supports GCJ-02 coordinates, which is the standard system for maps in mainland China. Ensure your coordinates are in this format for maximum accuracy.
+
+
 ## Installation & Usage
 
-To install and use the **Caiyun Weather / 彩云天气** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/caiyun-weather](https://vinkius.com/mcp/caiyun-weather)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Caiyun Weather / 彩云天气** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `caiyun-weather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Caiyun Weather / 彩云天气** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "caiyun-weather": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

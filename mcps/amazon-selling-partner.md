@@ -1,7 +1,6 @@
 # Amazon Selling Partner MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-selling-partner)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazon-selling-partner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazon-selling-partner-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-selling-partner)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Amazon Selling Partner
 > I've retrieved the catalog details for ASIN B012345678. It's a 'Wireless Bluetooth Headset' currently listed in the Electronics category. Would you like to see the pricing and dimensions metadata?
 
 
+## ❓ FAQ
+
+**Q: How do I get my Amazon SP-API credentials?**
+You need to register a private application in the Amazon Seller Central (Partner Network > Develop Apps). You will get an LwA Client ID and Secret. You then self-authorize the app to get a long-lived Refresh Token.
+
+**Q: Which region should I choose?**
+Select the region that matches your target marketplace: **NA** (North America - US, CA, MX, BR), **EU** (Europe - UK, DE, FR, IT, ES, etc.), or **FE** (Far East - JP, AU, SG).
+
+**Q: Can I request PII data like customer names?**
+This MCP server uses standard SP-API tokens. Some PII data (Personally Identifiable Information) in orders requires a Restricted Data Token (RDT), which must be specifically requested in the API call and authorized in your app's roles.
+
+
 ## Installation & Usage
 
-To install and use the **Amazon Selling Partner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amazon-selling-partner](https://vinkius.com/mcp/amazon-selling-partner)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amazon Selling Partner** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amazon-selling-partner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amazon Selling Partner** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amazon-selling-partner": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

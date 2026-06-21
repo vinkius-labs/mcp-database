@@ -1,7 +1,6 @@
 # OpenDataSUS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opendatasus)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opendatasus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opendatasus-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opendatasus)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **OpenDataSUS** MCP serv
 > Accessing the DataStore... Here are the first 5 records from that resource, showing columns like 'municipio', 'data_notificacao', and 'casos_confirmados'.
 
 
+## ❓ FAQ
+
+**Q: How can I search for specific rows inside a large CSV dataset?**
+You can use the `datastore_search` tool. Provide the `resource_id` and use the `q` parameter for full-text search or the `filters` parameter to target specific columns.
+
+**Q: Can I find which organizations provide the most datasets?**
+Yes! Use the `organization_list` tool to see all data providers registered in the OpenDataSUS portal.
+
+**Q: How do I get the download link for a specific data file?**
+Use the `resource_show` tool with the Resource UUID. It will return the metadata including the URL where the file is hosted.
+
+
 ## Installation & Usage
 
-To install and use the **OpenDataSUS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opendatasus](https://vinkius.com/mcp/opendatasus)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenDataSUS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opendatasus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenDataSUS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opendatasus": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

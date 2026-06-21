@@ -1,7 +1,6 @@
 # AgentFire MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agentfire)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agentfire-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agentfire-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agentfire)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **AgentFire** MCP server
 > Listing directory orchestrated! I've identified 3 active listings with zero clicks this month, including 'Condo B' and 'Industrial Loft'. I've retrieved the technical status for your review. Shall I check for any pending content updates for these listings?
 
 
+## ❓ FAQ
+
+**Q: How do I find my AgentFire API Key?**
+Log in to your AgentFire dashboard, navigate to **Integrations** > **REST API**, and copy your unique Access Token.
+
+**Q: Can I see individual property clicks via AI?**
+Yes! The `list_leads` tool allows your agent to retrieve interest signals and property engagement metadata for all your contacts.
+
+**Q: How do I list my active listings?**
+Use the `list_listings` tool to retrieve your complete directory along with the unique identifiers for all managed properties.
+
+
 ## Installation & Usage
 
-To install and use the **AgentFire** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/agentfire](https://vinkius.com/mcp/agentfire)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AgentFire** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `agentfire` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AgentFire** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "agentfire": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

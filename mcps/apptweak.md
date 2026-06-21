@@ -1,7 +1,6 @@
 # AppTweak MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apptweak)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apptweak-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apptweak-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apptweak)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **AppTweak** MCP server 
 > I've fetched and analyzed the latest 20 reviews. The overall sentiment is Negative (avg rating 1.9/5). Common complaints center around: 1) Account bans without explanation, 2) The high cost of 'Gold' subscriptions relative to actual matches, and 3) An increase in bot accounts in the US market over the last 72 hours.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent rewrite my app description using the keyword suggestions?**
+Yes. This is the perfect use case. First, ask the agent to fetch keyword suggestions and volume for your App ID. Then, in the same prompt, command the LLM to rewrite your 'App Store description' naturally injecting the top 5 high-KEI keywords. You get a fully optimized, data-backed description in one go.
+
+**Q: How do I check a competitor’s downloads secretly?**
+Just tell the agent to 'Get download estimates' and provide the target app ID (either Google package name or Apple ID). The agent uses AppTweak's proprietary machine learning algorithms to return a calculated daily or monthly download figure for that specific competitor without alerting them.
+
+**Q: Are keyword volumes valid for non-US countries?**
+Yes. Most AppTweak query tools require a `country` parameter. You can tell your agent to 'Check keyword rank in Brazil (br)' or 'France (fr)'. The AI automatically routes the localization tag so you get data isolated precisely for your target demographic.
+
+
 ## Installation & Usage
 
-To install and use the **AppTweak** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/apptweak](https://vinkius.com/mcp/apptweak)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AppTweak** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `apptweak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AppTweak** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "apptweak": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

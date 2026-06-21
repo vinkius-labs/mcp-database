@@ -1,7 +1,6 @@
 # BunnyDoc MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bunnydoc)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bunnydoc-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bunnydoc-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bunnydoc)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **BunnyDoc** MCP server 
 > Signature request for the 'NDA' template has been sent to Jane Smith. The new envelope ID is env_12345.
 
 
+## ❓ FAQ
+
+**Q: Can I check if a document has been signed using the agent?**
+Yes! Use the `get_envelope_status` tool with the Envelope ID. Your agent will fetch the current status (e.g., 'Completed' or 'Sent') directly from BunnyDoc.
+
+**Q: How do I send a signature request to multiple recipients?**
+Simply ask the agent to `create_signature_request` and provide the Template ID and a JSON array of recipients. Each object should include the recipient's name and email.
+
+**Q: Does the integration allow listing all available templates?**
+Yes. Use the `list_templates` tool. It will retrieve all the document templates configured in your BunnyDoc account, making it easy to find the ID you need for a new request.
+
+
 ## Installation & Usage
 
-To install and use the **BunnyDoc** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bunnydoc](https://vinkius.com/mcp/bunnydoc)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BunnyDoc** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bunnydoc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BunnyDoc** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bunnydoc": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

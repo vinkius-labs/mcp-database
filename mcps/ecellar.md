@@ -1,7 +1,6 @@
 # eCellar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecellar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ecellar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ecellar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecellar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -104,12 +103,52 @@ Here are some examples of how you can interact with the **eCellar** MCP server u
 > You have 12 reservations booked for tomorrow afternoon between 1:00 PM and 5:00 PM, totaling 45 guests. There are two VIP members arriving at 2:00 PM (the Hendersons and Robert Williams).
 
 
+## ❓ FAQ
+
+**Q: How is eCellar different from Commerce7?**
+eCellar is an all-in-one DTC platform popular with ultra-premium Napa Valley and Sonoma wineries. It includes CRM, ecommerce, POS, wine clubs, and reservations in a unified system with full REST API.
+
+**Q: Does this integration require additional licensing from eCellar?**
+No, the Exchange REST API is generally available to all eCellar customers. You simply need to request your unique API Key and Secret from the eCellar support team as mentioned in the instructions.
+
+**Q: Can I manage reservations with this tool?**
+Yes! The integration provides full access to your reservation and booking systems, allowing you to quickly query upcoming visits, manage guest lists, and track tasting room capacity.
+
+
 ## Installation & Usage
 
-To install and use the **eCellar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ecellar](https://vinkius.com/mcp/ecellar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **eCellar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ecellar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **eCellar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ecellar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

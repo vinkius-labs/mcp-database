@@ -1,7 +1,6 @@
 # openFDA MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openfda)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openfda-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openfda-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openfda)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -54,12 +53,49 @@ Here are some examples of how you can interact with the **openFDA** MCP server u
 > Searching the Drug Adverse Events dataset for `patient.drug.medicinalproduct:"IBUPROFEN" AND patient.reaction.reactionmeddrapt:"INSOMNIA"`. Yes, I've found multiple adverse event records. Here is a summary of the metadata.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API Key?**
+No. This zero-auth integration allows up to 1,000 requests per day (per IP address) right out of the box, covering most standard agent usage scenarios.
+
+**Q: How do search queries work?**
+The API gives you massive flexibility. The AI agent can format search strings using standard query syntax (e.g. `reason_for_recall:salmonella AND state:CA`).
+
+
 ## Installation & Usage
 
-To install and use the **openFDA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openfda](https://vinkius.com/mcp/openfda)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **openFDA** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openfda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **openFDA** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openfda": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

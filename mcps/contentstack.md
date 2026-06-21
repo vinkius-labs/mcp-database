@@ -1,7 +1,6 @@
 # Contentstack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contentstack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contentstack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Contentstack** MCP ser
 > I've retrieved the latest assets from your stack. You have several new items, including 'Banner-Spring-2024.png' and 'Product-Logo-v2.svg'. Would you like the direct CDN URLs for any of these?
 
 
+## ❓ FAQ
+
+**Q: How do I correctly generate a Contentstack Delivery Token?**
+Log into your core Contentstack account dashboard securely. Access the specific Stack you wish to query and navigate toward the technical 'Settings' header before clicking on 'Tokens'. Within this specific submenu, specifically select 'Delivery Tokens'. Generate a new one with an identifying name, assigning it distinctly to your intended 'Environment'. Note down the produced Token safely to input along with the matching Stack API key below.
+
+**Q: Can the agent update entries or publish content directly to the CMS?**
+No. The integration exclusively relies upon Contentstack's globally distributed 'Delivery API' rather than their 'Management API', deliberately restricting operations to a secure read-only modality focused on retrieving already published entries, preventing accidental automated or unauthorized payload mutations from impacting live production data stores.
+
+**Q: Do I need to type the exact environment name as it appears in Contentstack?**
+Yes, accuracy is strictly required. Providing the exact environment name (e.g., 'production' or 'staging') matching the internal naming correctly ensures the endpoint filters accurately out published iterations of records belonging only to those targeted distribution layers you are aiming specifically at querying reliably during chat prompts.
+
+
 ## Installation & Usage
 
-To install and use the **Contentstack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/contentstack](https://vinkius.com/mcp/contentstack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Contentstack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `contentstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Contentstack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "contentstack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

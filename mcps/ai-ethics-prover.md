@@ -1,7 +1,6 @@
 # AI Ethics Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ai-ethics-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ai-ethics-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ai-ethics-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ai-ethics-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **AI Ethics Prover** MCP
 > TRANSPARENCY_OPAQUE — Stakeholders and bias audit pass, but transparency fails. 'Based on qualifications' is not an explanation — name the top-3 decision factors and provide counterfactual examples ('if your experience were 5+ years instead of 3, the decision would change'). A black box with a label is still a black box. Also: 'email HR' is not structured recourse — define SLA, human reviewer role, and appeal process.
 
 
+## ❓ FAQ
+
+**Q: Does this tool make ethical decisions for me?**
+No. It enforces analytical rigor — forcing you to name stakeholders, quantify harms, audit biases with methodology, demonstrate transparency, and define recourse mechanisms. It does not prescribe ethical conclusions. The ethics are yours. The structure is enforced by the tool.
+
+**Q: What bias metrics does it support?**
+Any metric — it is framework-agnostic. Statistical parity, equalized odds, disparate impact ratio, calibration. It does not compute bias — it validates that you named the metric, the protected attribute, the measured disparity, and the acceptable threshold. 'We checked for bias' without this structure is ethics washing.
+
+**Q: What counts as a recourse mechanism?**
+A structured process: (1) accessible challenge channel, (2) response SLA in business days, (3) human reviewer — not automated, (4) appeal process if the initial review denies the challenge, (5) remediation action if the challenge succeeds. 'Contact support' fails every axis.
+
+
 ## Installation & Usage
 
-To install and use the **AI Ethics Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ai-ethics-prover](https://vinkius.com/mcp/ai-ethics-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AI Ethics Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ai-ethics-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AI Ethics Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ai-ethics-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

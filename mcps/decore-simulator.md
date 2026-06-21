@@ -1,7 +1,6 @@
 # DECORE Simulator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/decore-simulator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/decore-simulator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/decore-simulator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/decore-simulator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **DECORE Simulator** MCP
 > The taxable portion of your income is 5000, while the exempt portion is 0.
 
 
+## ❓ FAQ
+
+**Q: What does the simulator calculate?**
+It calculates total monthly revenue, checks if your income amounts are within regulatory compliance limits using `validate_income_compliance`, and estimates your taxable burden.
+
+**Q: How do I know if my income is in a 'Warning' state?**
+A 'Warning' status is triggered when any of your income categories reach 80% of their predefined regulatory threshold.
+
+**Q: Does the tool handle different types of income?**
+Yes, it specifically processes Pro-labore, Profit Distribution, and Autonomous income streams.
+
+
 ## Installation & Usage
 
-To install and use the **DECORE Simulator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/decore-simulator](https://vinkius.com/mcp/decore-simulator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DECORE Simulator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `decore-simulator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DECORE Simulator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "decore-simulator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

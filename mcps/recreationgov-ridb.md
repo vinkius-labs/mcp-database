@@ -1,7 +1,6 @@
 # Recreation.gov (RIDB) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recreationgov-ridb)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/recreationgov-ridb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/recreationgov-ridb-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recreationgov-ridb)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Recreation.gov (RIDB)*
 > I can retrieve the full list of supported activities. Common ones include Camping, Hiking, Fishing, Boating, and Biking. Would you like me to list all available activity types from the database?
 
 
+## ❓ FAQ
+
+**Q: How can I find campgrounds in a specific state like Colorado?**
+You can use the `list_facilities` tool and provide 'CO' in the `state` parameter. You can also add a `query` like 'campground' to narrow down the results to camping facilities specifically.
+
+**Q: Can I see photos of a specific recreation area before visiting?**
+Yes! Use the `list_recarea_media` tool with the specific `recAreaId`. It will return links to images and videos associated with that area in the RIDB database.
+
+**Q: How do I find out which federal agency manages a park?**
+First, use `get_facility` or `get_recarea` to find the organization ID associated with the site. Then, use `get_organization` with that ID to see the full details of the managing agency.
+
+
 ## Installation & Usage
 
-To install and use the **Recreation.gov (RIDB)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/recreationgov-ridb](https://vinkius.com/mcp/recreationgov-ridb)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Recreation.gov (RIDB)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `recreationgov-ridb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Recreation.gov (RIDB)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "recreationgov-ridb": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

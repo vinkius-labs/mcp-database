@@ -1,7 +1,6 @@
 # EOQ Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eoq-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eoq-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eoq-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eoq-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **EOQ Calculator** MCP s
 > The annual ordering cost is approximately $1,414.21 and the annual holding cost is approximately $1,414.21, demonstrating a balanced cost structure.
 
 
+## ❓ FAQ
+
+**Q: What is the Economic Order Quantity (EOQ)?**
+EOQ is the ideal order size a company should purchase to minimize its total inventory costs, specifically balancing ordering costs and holding costs.
+
+**Q: How do I use the `calculate_eoq_metrics` tool?**
+Provide your annual demand, fixed cost per order, holding cost percentage (as a decimal), and the unit price of the item to receive optimal quantity and frequency metrics.
+
+**Q: Can this tool help prevent stockouts?**
+Yes, by using the `calculate_reorder_point` tool with your lead time data, you can determine the exact inventory level that triggers a new order to ensure goods arrive before you run out.
+
+
 ## Installation & Usage
 
-To install and use the **EOQ Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eoq-calculator](https://vinkius.com/mcp/eoq-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EOQ Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eoq-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EOQ Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eoq-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

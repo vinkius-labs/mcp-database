@@ -1,7 +1,6 @@
 # Constructor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/constructor)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/constructor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/constructor-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/constructor)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Constructor** MCP serv
 > Browsing 'Outdoor Furniture' (ID: group_789)... I found 45 products in this category hierarchy. Top sub-categories include 'Patio Sets' and 'Garden Chairs'.
 
 
+## ❓ FAQ
+
+**Q: Can my agent check the ML ranking for a specific product search?**
+Yes. Use the 'search_products' tool. The agent will retrieve results ranked by Constructor's ML engine, allowing you to audit how products are surfaced based on specific keywords and intent signals.
+
+**Q: How do I retrieve personalized recommendations via the agent?**
+Provide the 'pod_id' to your agent and use the 'get_recommendations' tool. The agent will query the collaborative filtering models to return a list of products tailored to your specified recommendation logic.
+
+**Q: Can I test attribute filtering like color or size through chat?**
+Absolutely. The 'search_filtered' tool allows you to pass exact attribute mappings (e.g., 'color:blue,size:L'). Your agent will verify how the API restricts results to those specific structural bounds.
+
+
 ## Installation & Usage
 
-To install and use the **Constructor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/constructor](https://vinkius.com/mcp/constructor)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Constructor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `constructor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Constructor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "constructor": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

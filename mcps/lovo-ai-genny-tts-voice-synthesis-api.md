@@ -1,7 +1,6 @@
 # Lovo AI (Genny TTS & Voice Synthesis API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lovo-ai-genny-tts-voice-synthesis-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lovo-ai-genny-tts-voice-synthesis-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lovo-ai-genny-tts-voice-synthesis-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lovo-ai-genny-tts-voice-synthesis-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Lovo AI (Genny TTS & V
 > The job 'job_789abc' is now complete! You can access your audio file here: [Audio URL]. The synthesis used the 'cheerful' style as requested.
 
 
+## ❓ FAQ
+
+**Q: How can I find the right voice ID for my project?**
+Use the `list_voices` tool. It returns a comprehensive list of speakers including their IDs, names, and supported styles. You can then use `get_speaker` with a specific ID to see more detailed information.
+
+**Q: Can I adjust the emotion or speed of the generated voice?**
+Yes! When using `create_tts_job`, you can provide an optional `speed` (number) and `style` (e.g., 'cheerful', 'sad', 'normal') to customize the output to your needs.
+
+**Q: How do I get the final audio file once the job is submitted?**
+After creating a job, use the `get_tts_job` tool with the returned Job ID. Once the status is 'completed', the response will include the URLs to download your synthesized audio.
+
+
 ## Installation & Usage
 
-To install and use the **Lovo AI (Genny TTS & Voice Synthesis API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lovo-ai-genny-tts-voice-synthesis-api](https://vinkius.com/mcp/lovo-ai-genny-tts-voice-synthesis-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lovo AI (Genny TTS & Voice Synthesis API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lovo-ai-genny-tts-voice-synthesis-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lovo AI (Genny TTS & Voice Synthesis API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lovo-ai-genny-tts-voice-synthesis-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

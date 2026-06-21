@@ -1,7 +1,6 @@
 # Runlayer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/runlayer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/runlayer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/runlayer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/runlayer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -147,12 +146,52 @@ Here are some examples of how you can interact with the **Runlayer** MCP server 
 > I'll create a security policy with rules limiting MCP server access to authorized personnel.
 
 
+## ❓ FAQ
+
+**Q: Do I need a Runlayer enterprise subscription to use this MCP?**
+Yes, this MCP server requires an active Runlayer organization with API access. Runlayer is an enterprise-grade control plane, so you need a valid organizational subscription. Contact Runlayer sales to get started and obtain your organization API key.
+
+**Q: Can this MCP server detect unauthorized AI usage (shadow AI)?**
+Yes! The run_mcp_sweep_scan tool initiates comprehensive shadow AI discovery across devices, detecting unauthorized MCP servers, OpenClaw installs, Skills, and agents. Results include policy violations and security risks across your organization's endpoints.
+
+**Q: What types of AI agents does Runlayer support?**
+Runlayer supports Claude Desktop, Cursor, VS Code with Copilot, Windsurf, and custom AI agents. Each agent type can be registered with specific security policies, assigned MCP servers, and monitored through the audit trail. New agent types can be added as custom integrations.
+
+
 ## Installation & Usage
 
-To install and use the **Runlayer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/runlayer](https://vinkius.com/mcp/runlayer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Runlayer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `runlayer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Runlayer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "runlayer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

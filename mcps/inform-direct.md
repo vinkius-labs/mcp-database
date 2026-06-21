@@ -1,7 +1,6 @@
 # Inform Direct MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inform-direct)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/inform-direct-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/inform-direct-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inform-direct)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Inform Direct** MCP se
 > Company 12345678 has its next Confirmation Statement due on June 15, 2026, and Annual Accounts due on September 30, 2026. Both are on track. Would you like to check shareholders too?
 
 
+## ❓ FAQ
+
+**Q: Can I add a UK company to my account via AI?**
+Yes. Use the `add_company` tool with the Companies House registration number and the company will be linked to your Inform Direct account instantly.
+
+**Q: How do I check a company's filing deadlines?**
+Use the `get_filing_status` tool with the company number to see all upcoming deadlines for confirmation statements and annual accounts.
+
+**Q: Can I view directors and shareholders?**
+Absolutely. Use `list_directors` and `list_shareholders` with the company number to retrieve complete officer and ownership records.
+
+
 ## Installation & Usage
 
-To install and use the **Inform Direct** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/inform-direct](https://vinkius.com/mcp/inform-direct)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Inform Direct** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `inform-direct` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Inform Direct** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "inform-direct": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # CallRail MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/callrail)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/callrail-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/callrail-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/callrail)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **CallRail** MCP server 
 > Retrieving companies... You have 3 active companies: 'Vinkius North', 'Global Solutions', and 'Tech Corp'. Which one would you like to see calls for?
 
 
+## ❓ FAQ
+
+**Q: Can I check the source of a specific call using the agent?**
+Yes! Use the `get_call_details` tool with the Call ID. Your agent will fetch the detailed metadata, which typically includes the `source` or `tracking_number` associated with the call.
+
+**Q: How do I list all the leads from my website forms?**
+Simply ask the agent to `list_form_submissions`. It will retrieve the latest leads captured through web forms from your CallRail account, including names and submission times.
+
+**Q: Does the integration allow creating a new tracking number?**
+The current toolset focuses on querying and monitoring (Read-Only) for marketing attribution analysis. Provisioning new numbers or changing core routing should be managed via the CallRail administrator dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **CallRail** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/callrail](https://vinkius.com/mcp/callrail)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CallRail** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `callrail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CallRail** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "callrail": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

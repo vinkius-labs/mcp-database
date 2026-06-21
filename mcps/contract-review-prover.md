@@ -1,7 +1,6 @@
 # Contract Review Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contract-review-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contract-review-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contract-review-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contract-review-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -57,12 +56,52 @@ Here are some examples of how you can interact with the **Contract Review Prover
 > Verdict: JURISDICTION_UNVERIFIED. Delaware vs. Germany creates a jurisdiction conflict. Key questions: (1) Is the venue clause exclusive or non-exclusive? (2) Does GDPR override Delaware law for data processing? (3) What are enforcement costs of litigating in Delaware from Germany? (4) Are arbitration clauses available as alternative?
 
 
+## ❓ FAQ
+
+**Q: Is this a substitute for legal counsel?**
+No. This tool structures your analysis before you meet with legal counsel. It ensures you identify risky clauses, missing protections, and financial exposure — so your lawyer meeting is productive, not exploratory.
+
+**Q: How does risk scoring work?**
+Each clause gets a 1-5 score: 1=standard/favorable, 2=acceptable, 3=review recommended, 4=unfavorable/risky, 5=critical/potentially harmful. The score MUST include justification — not just a number.
+
+**Q: What are the 10 standard protections checked?**
+Limitation of liability, IP ownership, termination rights, indemnification, confidentiality/NDA, data processing/GDPR, force majeure, audit rights, warranty/representations, and dispute resolution mechanism.
+
+
 ## Installation & Usage
 
-To install and use the **Contract Review Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/contract-review-prover](https://vinkius.com/mcp/contract-review-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Contract Review Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `contract-review-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Contract Review Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "contract-review-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

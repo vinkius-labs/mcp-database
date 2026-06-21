@@ -1,7 +1,6 @@
 # WorkOS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workos)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/workos-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/workos-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workos)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **WorkOS** MCP server us
 > I found 120 users in directory dir_01J.... The most recently synced users are: 1. John Doe (john@acme.com), 2. Jane Smith (jane@acme.com), and 3. Robert Brown (robert@acme.com). Would you like to see the full roster or filter by group?
 
 
+## ❓ FAQ
+
+**Q: Can I check the sync status of a specific company directory through the agent?**
+Yes. The `get_directory_details` tool allows your AI agent to retrieve the current sync status and metadata for any specific directory ID, helping you monitor whether employees are being correctly provisioned.
+
+**Q: How do I see which users belong to a specific synced group?**
+You can use the `list_directory_users` tool and filter by the directory ID to see the full roster. For group-level information, use the `list_directory_groups` tool to see organizational units imported from the identity provider.
+
+**Q: Is it possible to retrieve security audit logs via chat?**
+Absolutely. The `get_audit_log_events` tool retrieves a stream of events for any specific organization ID, giving you instant access to compliance-related activities directly through your conversation.
+
+
 ## Installation & Usage
 
-To install and use the **WorkOS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/workos](https://vinkius.com/mcp/workos)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WorkOS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `workos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WorkOS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "workos": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

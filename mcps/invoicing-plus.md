@@ -1,7 +1,6 @@
 # Invoicing Plus MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/invoicing-plus)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/invoicing-plus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/invoicing-plus-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/invoicing-plus)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -100,12 +99,52 @@ Here are some examples of how you can interact with the **Invoicing Plus** MCP s
 > Product catalog: 12 items. Services: Web Development ($150/hr), UI Design ($120/hr), QA Testing ($80/hr), Consulting ($200/hr). Products: Hosting ($49/mo), SSL ($19/yr), Domain ($12/yr). Invoice #INV-2089 sent! ✅ Delivered to billing@acmecorp.com. Status: Sent. Payment due: May 10, 2025.
 
 
+## ❓ FAQ
+
+**Q: Can I create and send invoices through the AI agent?**
+Yes. Use the invoice creation tools with client ID, line items, and tax settings. Browse products for quick item selection and send invoices directly to clients.
+
+**Q: Can I track overdue invoices and payment status?**
+Yes. List invoices with status filters to identify overdue, paid, and pending invoices. Track payment amounts and dates for cash flow monitoring.
+
+**Q: Can I manage my product catalog?**
+Yes. Browse all products and services with pricing. Use products directly when creating invoices for quick line item selection.
+
+
 ## Installation & Usage
 
-To install and use the **Invoicing Plus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/invoicing-plus](https://vinkius.com/mcp/invoicing-plus)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Invoicing Plus** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `invoicing-plus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Invoicing Plus** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "invoicing-plus": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

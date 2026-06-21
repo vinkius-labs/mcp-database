@@ -1,7 +1,6 @@
 # FlightAware MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flightaware)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flightaware-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flightaware-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flightaware)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -108,12 +107,52 @@ Here are some examples of how you can interact with the **FlightAware** MCP serv
 > Retrieving historical flight data for BAW117... Flight BAW117 (Boeing 777-300ER, registration G-STBF) departed London Heathrow (EGLL) at 2025-04-08 10:12 UTC (scheduled 10:05 UTC, 7 minutes early) from Terminal 5 Gate A12. The flight tracked westbound across the North Atlantic via the NATS track system, filing route: KONAN L607 RESNO 52N020W 52N030W 51N040W 50N050W 49N060W J547 CAM J753 MERIT. Cruising altitude FL380 with average ground speed 485 knots. Arrived New York JFK (KJFK) at 2025-04-08 13:28 UTC (scheduled 13:45 UTC, 17 minutes early) at Terminal 7 Gate 1. Total flight time: 7 hours 16 minutes. Complete track log contains 432 position points. Would you like me to generate a route map or analyze performance metrics for this crossing?
 
 
+## ❓ FAQ
+
+**Q: Can my AI track a specific flight in real-time and tell me exactly where it is, its altitude, and estimated arrival time?**
+Yes! Use the `search_flights` tool with the flight number (e.g., "UAL123") or tail number to find active flights. Your AI agent will respond with current position coordinates, ground speed, altitude, estimated time of arrival (ETA), departure and arrival airports with gates, and whether the flight is en-route, landed, or experiencing delays. For even more detail on a specific flight, use `get_flight_status` with the FlightAware ID to get complete operational metadata.
+
+**Q: How do I check all arriving and departing flights at a specific airport along with current weather conditions?**
+Simply ask the agent to run the `get_airport_arrivals` and `get_airport_departures` actions with the airport ICAO code (e.g., "KJFK" for New York JFK, "KLAX" for Los Angeles). Then request `get_airport_weather` for the same airport to see current METAR observations including wind, visibility, ceiling, temperature, and any weather phenomena affecting operations. The AI will compile a complete picture of airport activity and meteorological conditions.
+
+**Q: Can I access historical flight data to analyze on-time performance and typical routes flown between two cities?**
+Absolutely! Use the `get_historical_flights` tool with a FlightAware canonical flight ID to retrieve complete flight history dating back to January 1, 2011. You'll get actual departure and arrival times, delay indicators, the route flown, and all track points with timestamps. To understand common routing patterns between airports, use `get_airport_routes` with origin and destination ICAO codes to see frequently filed routes. This is perfect for schedule reliability studies, aviation trend analysis, and operational benchmarking.
+
+
 ## Installation & Usage
 
-To install and use the **FlightAware** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flightaware](https://vinkius.com/mcp/flightaware)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FlightAware** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flightaware` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FlightAware** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flightaware": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

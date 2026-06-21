@@ -1,7 +1,6 @@
 # Pika MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pika)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pika-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pika-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pika)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Pika** MCP server usin
 > I pinged `get_job_status` and it returned 'COMPLETED'. Using `get_job_result`, here is the final MP4 hyperlink: [https://fal.media/cloud/...]
 
 
+## ❓ FAQ
+
+**Q: Can the AI generate a video and then instantly apply sound effects to it?**
+Yes. The AI can manage complex async workflows. It first runs `generate_video_from_text`, checks `get_job_status`, and once it collects the returned ID, feeds it down internally chaining it into the `generate_sound_effects` or `lip_sync_video` tools.
+
+**Q: Are the generated videos high-fidelity outputs suitable for production?**
+Yes. The underlying API points toward the flagship Pika 2.2 model via Fal.ai which matches the official visual quality outputs displayed natively in their proprietary interface.
+
+**Q: How do I deal with the generation time since videos take minutes to render?**
+All jobs run asynchronously. The `generate` calls merely start the engine and return an ID. The AI is trained to intelligently poll `get_job_status` internally, leaving you unblocked, and notifies you instantly when the final URL is pushed via `get_job_result`.
+
+
 ## Installation & Usage
 
-To install and use the **Pika** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pika](https://vinkius.com/mcp/pika)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pika** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pika` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pika** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pika": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

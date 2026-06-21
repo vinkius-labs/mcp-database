@@ -1,7 +1,6 @@
 # Co-Founder Synergy Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/co-founder-synergy-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/co-founder-synergy-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/co-founder-synergy-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/co-founder-synergy-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Co-Founder Synergy Pro
 > Classic build-vs-ship tension. Neither is wrong — the conflict reveals missing decision framework. Define: what is the technical debt cost of NOT rebuilding? What is the market cost of NOT launching? Make the tradeoff quantitative, not emotional. Set a 90-day compromise: launch 1 market on current backend while scoping modular rebuild.
 
 
+## ❓ FAQ
+
+**Q: Why does it reject 'we trust each other'?**
+Trust is not a cap table strategy. Without vesting, a co-founder can leave in month 2 with half the company. Mandate 4-year vesting, 1-year cliff.
+
+**Q: Why is 50/50 considered naive?**
+50/50 is politeness, not math. When one founder works full-time and the other part-time, equity must reflect actual contribution — time, risk, capital, IP.
+
+**Q: What is 'Velocity Absent'?**
+Strong alignment but zero shipping. Stuck in stealth mode. Launch now, iterate tomorrow. Show MVP date, first 10 users, deployment frequency.
+
+
 ## Installation & Usage
 
-To install and use the **Co-Founder Synergy Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/co-founder-synergy-prover](https://vinkius.com/mcp/co-founder-synergy-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Co-Founder Synergy Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `co-founder-synergy-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Co-Founder Synergy Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "co-founder-synergy-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Stanford Semantic Scholar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-semantic-scholar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stanford-semantic-scholar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stanford-semantic-scholar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-semantic-scholar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -115,12 +114,52 @@ Here are some examples of how you can interact with the **Stanford Semantic Scho
 > Using the AI recommendation engine with "Attention Is All You Need" as the seed paper, I've found highly relevant papers including BERT, GPT-2, the Universal Transformer, Transformer-XL, and other key works that built upon the attention mechanism paradigm.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No. The Semantic Scholar API is fully public. An optional free API key increases rate limits from 1 to 10 requests per second.
+
+**Q: What paper ID formats are supported?**
+Semantic Scholar accepts multiple ID formats: its own S2 Paper ID, DOI (e.g. "10.1038/..."), ArXiv ID (e.g. "arXiv:2106.09685"), PubMed ID (e.g. "PMID:34845388"), and ACL Anthology ID. This makes it easy to look up any paper regardless of where you found the reference.
+
+**Q: How do the AI recommendations work?**
+The recommendation engine uses machine learning to analyze citation patterns, co-citation networks, and content similarity. You can provide one seed paper for basic recommendations, or multiple positive and negative seed papers for advanced filtering. This is the most sophisticated way to discover related literature.
+
+
 ## Installation & Usage
 
-To install and use the **Stanford Semantic Scholar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stanford-semantic-scholar](https://vinkius.com/mcp/stanford-semantic-scholar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Stanford Semantic Scholar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stanford-semantic-scholar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Stanford Semantic Scholar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stanford-semantic-scholar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

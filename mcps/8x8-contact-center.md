@@ -1,7 +1,6 @@
 # 8x8 Contact Center MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/8x8-contact-center)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/8x8-contact-center-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/8x8-contact-center-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/8x8-contact-center)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **8x8 Contact Center** M
 > Analyzing performance for the 'General' queue... The average wait time was 45 seconds, with a 95% service level. This is a 5% improvement over the previous hour.
 
 
+## ❓ FAQ
+
+**Q: Can I see how many calls are currently waiting in a queue?**
+Yes. Use the `get_realtime_metrics` tool to see live statistics, including the number of waiting calls and active agent status across all queues.
+
+**Q: How do I audit an agent's interaction history?**
+Use the `list_agent_interactions` tool. You can optionally provide a start and end time range to filter logs for specific periods.
+
+**Q: Can I export performance data to other tools?**
+Your AI agent can retrieve the data using `list_queue_metrics`, which can then be formatted or summarized for use in reports, spreadsheets, or other applications.
+
+
 ## Installation & Usage
 
-To install and use the **8x8 Contact Center** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/8x8-contact-center](https://vinkius.com/mcp/8x8-contact-center)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **8x8 Contact Center** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `8x8-contact-center` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **8x8 Contact Center** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "8x8-contact-center": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

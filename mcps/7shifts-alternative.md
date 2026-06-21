@@ -1,7 +1,6 @@
 # 7shifts MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/7shifts-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/7shifts-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/7shifts-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/7shifts-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **7shifts** MCP server u
 > Success! A new work assignment has been created for tomorrow (09:00 - 17:00) at the Downtown unit. It is currently unassigned. Would you like me to assign an employee to it?
 
 
+## ❓ FAQ
+
+**Q: Can I see all the active shifts for a specific employee via AI?**
+Yes! Use the `list_shifts` tool and provide the optional `user_id`. Your agent will retrieve the complete work history and future assignments for that specific person.
+
+**Q: How do I create a new work shift using the agent?**
+Use the `create_shift` action. You'll need to provide the Location ID, and the start and end times in ISO 8601 format (e.g., 2024-12-01T10:00:00Z).
+
+**Q: Is it possible to check real-time clock-in data via AI?**
+Absolutely. Use the `list_time_punches` query. The agent will retrieve the history of actual clock-in and clock-out events, allowing you to verify labor compliance instantly.
+
+
 ## Installation & Usage
 
-To install and use the **7shifts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/7shifts-alternative](https://vinkius.com/mcp/7shifts-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **7shifts** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `7shifts-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **7shifts** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "7shifts-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

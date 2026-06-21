@@ -1,7 +1,6 @@
 # LinkedIn Ads MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkedin-ads)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/linkedin-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/linkedin-ads-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkedin-ads)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **LinkedIn Ads** MCP ser
 > I found 5 campaigns in your account, including 'Brand Awareness Q1', 'Lead Gen Webinar', and 'Product Demo'. Which one would you like to see demographics for?
 
 
+## ❓ FAQ
+
+**Q: Which scopes are required for this server?**
+Your access token must have at least `r_ads_reporting` and `r_ads` scopes to list accounts and fetch performance metrics.
+
+**Q: How do I specify the time range for analytics?**
+You must provide a Restli-formatted string in the `params` field, including `dateRange=(start:(day:X,month:Y,year:Z))`. Refer to LinkedIn API documentation for exact syntax.
+
+**Q: Is the API Key (Personal Access Token) supported?**
+LinkedIn uses OAuth2 tokens. You can generate a long-lived Access Token through the LinkedIn Developer Portal's Token Generator tool for development use.
+
+
 ## Installation & Usage
 
-To install and use the **LinkedIn Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/linkedin-ads](https://vinkius.com/mcp/linkedin-ads)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LinkedIn Ads** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `linkedin-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LinkedIn Ads** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "linkedin-ads": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

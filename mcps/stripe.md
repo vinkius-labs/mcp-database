@@ -1,7 +1,6 @@
 # Stripe MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stripe)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stripe-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stripe-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stripe)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,55 @@ Here are some examples of how you can interact with the **Stripe** MCP server us
 > Customer created: **Jane Smith** (cus_QR7x...). Email: jane@example.com. Ready for invoicing and subscriptions.
 
 
+## ❓ FAQ
+
+**Q: How do I get started with Stripe MCP?**
+Subscribe, then go to the **Stripe Dashboard → Developers → API keys** and copy your Secret key (starts with sk_live_ or sk_test_ for testing). Paste it here and you're ready. No SDK, no server setup, no webhooks — just connect and start querying your payment data.
+
+**Q: Can my AI agent track subscription churn and billing status?**
+Yes. Ask your agent to list all subscriptions filtered by status — 'show me all past-due subscriptions' or 'how many canceled subscriptions do we have this month?'. It returns billing intervals, plan amounts, and whether the subscription will cancel at period end. Perfect for SaaS MRR monitoring.
+
+**Q: How do I check if a customer's payment went through?**
+Just ask — 'check recent payments for customer cus_abc123' or 'did John's payment go through?'. Your agent pulls the latest payment intents showing the amount, currency, and status (succeeded, requires_action, or failed). No need to log into the Stripe dashboard or refresh browser tabs.
+
+**Q: Can I manage customers and invoices for my entire team?**
+Absolutely. Create new customers with name, email, and notes in a single command. List all invoices filtered by customer or status — open, paid, or overdue. Share hosted invoice URLs directly from the conversation. Perfect for finance teams, SaaS billing departments, and e-commerce operations managing hundreds of customer accounts.
+
+
 ## Installation & Usage
 
-To install and use the **Stripe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stripe](https://vinkius.com/mcp/stripe)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Stripe** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stripe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Stripe** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stripe": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

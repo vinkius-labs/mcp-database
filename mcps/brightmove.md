@@ -1,7 +1,6 @@
 # BrightMove MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brightmove)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brightmove-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brightmove-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brightmove)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **BrightMove** MCP serve
 > Retrieving references for Jane Smith... I found 2 references: John Miller (Manager at TechCorp) and Sarah Wilson (HR Director at Global Solutions).
 
 
+## ❓ FAQ
+
+**Q: Can I check the references for a specific applicant?**
+Yes! Use the `list_references` tool with the Applicant's GUID. Your agent will fetch the list of names, companies, and contact details for the references provided by the candidate.
+
+**Q: How do I list all the active job postings?**
+Simply ask the agent to `list_jobs`. It will retrieve the current job openings from your BrightMove ATS account, including titles and status information.
+
+**Q: Does the integration allow creating a new candidate profile?**
+The current toolset is focused on querying and monitoring (Read-Only) to ensure data integrity. Creating or updating applicant records should be done through the BrightMove web interface or your careers page.
+
+
 ## Installation & Usage
 
-To install and use the **BrightMove** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/brightmove](https://vinkius.com/mcp/brightmove)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BrightMove** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `brightmove` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BrightMove** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "brightmove": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

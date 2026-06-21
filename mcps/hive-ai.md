@@ -1,7 +1,6 @@
 # Hive AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hive-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hive-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hive-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hive-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,55 @@ Here are some examples of how you can interact with the **Hive AI** MCP server u
 > Video moderation task started! I've successfully submitted the file to Hive AI. Your unique task ID is 'task_99283'. This process can take several minutes for deep analysis. I'll monitor the status for you. Should I alert you once the final safety report is ready?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Hive AI API Keys?**
+Log in to your Hive AI dashboard, select a project (e.g., a Visual or Text project), and navigate to the **Settings** or **API** section. Note that each project type requires its own unique API key.
+
+**Q: What is the difference between Synchronous and Asynchronous moderation?**
+Synchronous moderation (`moderate_text`, `moderate_image`) returns results instantly and is best for real-time interactions. Asynchronous moderation (`moderate_video_async`) is used for larger files and requires polling the task status or using a callback.
+
+**Q: Can this integration detect deepfakes or AI-generated voices?**
+Yes! Hive AI provides specialized models for detecting AI-generated content across text, images, video, and audio. Use the `detect_ai_generated_text` and `detect_ai_generated_image` tools for these checks.
+
+**Q: Is the integration secure for sensitive content?**
+Absolutely. The integration uses official Hive AI Token authentication over HTTPS. Your credentials and analyzed content are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Hive AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hive-ai](https://vinkius.com/mcp/hive-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hive AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hive-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hive AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hive-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

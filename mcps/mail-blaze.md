@@ -1,7 +1,6 @@
 # Mail Blaze MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mail-blaze)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mail-blaze-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mail-blaze-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mail-blaze)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Mail Blaze** MCP serve
 > I've triggered the sending of campaign cp456def. Mail Blaze has queued the delivery to your subscribers.
 
 
+## ❓ FAQ
+
+**Q: How do I find my List UID or Campaign UID?**
+You can retrieve all UIDs by using the `list_subscriber_lists` or `list_email_campaigns` tools. They are also visible in the URL when viewing these resources in the Mail Blaze dashboard.
+
+**Q: Can I add custom fields when subscribing a user?**
+Yes, include your custom field values within the `subscriber_json` object when using the `add_subscriber_to_list` tool.
+
+**Q: Is there a limit to the number of subscribers I can retrieve?**
+The API uses pagination. The `list_list_subscribers` tool retrieves the first page of results (up to 100 records by default).
+
+
 ## Installation & Usage
 
-To install and use the **Mail Blaze** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mail-blaze](https://vinkius.com/mcp/mail-blaze)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mail Blaze** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mail-blaze` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mail Blaze** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mail-blaze": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

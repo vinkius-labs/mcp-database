@@ -1,7 +1,6 @@
 # Emoji Name Resolver MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emoji-name-resolver)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/emoji-name-resolver-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/emoji-name-resolver-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emoji-name-resolver)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Emoji Name Resolver** 
 > Result: Deploy successful ✅ zero downtime 💪
 
 
+## ❓ FAQ
+
+**Q: How many emojis are supported?**
+Over 1,800 emojis from the Unicode standard, including all standard shortcodes used by Slack, Discord, and GitHub.
+
+**Q: Can it process full sentences with multiple emojis?**
+Yes. Pass a full message like 'Great job :thumbsup: keep going :rocket:' and it will convert all shortcodes in one call.
+
+**Q: What shortcode format does it use?**
+The standard colon-wrapped format used by Slack, Discord, and GitHub: `:emoji_name:`. For example, `:fire:`, `:heart:`, `:rocket:`.
+
+
 ## Installation & Usage
 
-To install and use the **Emoji Name Resolver** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/emoji-name-resolver](https://vinkius.com/mcp/emoji-name-resolver)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Emoji Name Resolver** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `emoji-name-resolver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Emoji Name Resolver** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "emoji-name-resolver": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

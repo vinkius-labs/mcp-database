@@ -1,7 +1,6 @@
 # Avaza MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/avaza)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/avaza-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/avaza-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/avaza)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Avaza** MCP server usi
 > Timesheet entry created! I've logged 2 hours for today on 'Website Redesign' (Project ID: 54321). Your total logged hours for this project are now updated.
 
 
+## ❓ FAQ
+
+**Q: Can the AI automatically log time for a specific project?**
+Yes! Use the `create_timesheet` tool. You'll need to provide the ProjectID, PersonID, and the duration to instantly log work hours in your Avaza account.
+
+**Q: How do I update the status of a task through the AI?**
+Simply ask the agent to run the `update_task` tool with the TaskID. You can modify the title, description, or status to reflect the current progress of your work.
+
+**Q: Does this integration allow for auditing recent customer invoices?**
+Yes. The `list_invoices` tool provides a clear overview of recent billing, helping you track payment statuses and financial health across your projects.
+
+
 ## Installation & Usage
 
-To install and use the **Avaza** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/avaza](https://vinkius.com/mcp/avaza)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Avaza** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `avaza` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Avaza** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "avaza": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

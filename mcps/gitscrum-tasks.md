@@ -1,7 +1,6 @@
 # GitScrum Tasks MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitscrum-tasks)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gitscrum-tasks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gitscrum-tasks-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitscrum-tasks)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -109,12 +108,52 @@ Here are some examples of how you can interact with the **GitScrum Tasks** MCP s
 > Done! Added 3 checklist items to WEB-42: ☐ Write unit tests, ☐ Update docs, ☐ Deploy to staging. All start as unchecked. Shall I mark any as complete or add sub-items under any of them?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent find a specific task by its human-readable code like WEB-42?**
+Yes! Use the `get_task_by_code` tool with the task code (e.g., WEB-42). Your agent will return the full task details including description, assignees, workflow status, labels, sprint association, time estimates, and checklist progress — in seconds.
+
+**Q: I want to quickly see what I need to work on today. Can the agent help?**
+Absolutely. Use `my_today_tasks` to see everything due today, or `my_tasks` for your full assignment list across all workspaces. The agent returns task titles, project context, due dates, and current workflow status — your daily standup briefing in one command.
+
+**Q: Can the agent manage task assignments and checklists too?**
+Yes. Use `assign_member` and `unassign_member` to manage task assignments by username. For checklists, use `create_checklist_item` to add items (including nested sub-items via parent_id), and `toggle_checklist_item` to mark them done. The complete task lifecycle is covered — from creation to completion.
+
+
 ## Installation & Usage
 
-To install and use the **GitScrum Tasks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gitscrum-tasks](https://vinkius.com/mcp/gitscrum-tasks)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GitScrum Tasks** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gitscrum-tasks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GitScrum Tasks** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gitscrum-tasks": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

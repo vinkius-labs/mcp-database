@@ -1,7 +1,6 @@
 # Enspire Commerce MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/enspire-commerce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/enspire-commerce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/enspire-commerce-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/enspire-commerce)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Enspire Commerce** MCP
 > I've retrieved today's shipments. 45 orders were dispatched via FedEx and 20 via UPS. All tracking numbers have been generated and sent to customers. Would you like a summary of any delayed shipments?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Enspire API Key?**
+Log in to your Enspire Commerce portal, navigate to the **Developer or API Settings** section, and you can generate or retrieve your unique API Key from there. Ensure you have the necessary credentials for production access.
+
+**Q: Does the integration support multi-location stock?**
+Yes, you can use the get_sku_stock_level tool to retrieve granular inventory data broken down by fulfillment center and location.
+
+**Q: Can the agent update order statuses?**
+This integration currently focuses on listing and auditing orders, shipments, and inventory. Updating order statuses or modifying line items should be managed via the Enspire Commerce dashboard or automated ERP integrations.
+
+
 ## Installation & Usage
 
-To install and use the **Enspire Commerce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/enspire-commerce](https://vinkius.com/mcp/enspire-commerce)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Enspire Commerce** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `enspire-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Enspire Commerce** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "enspire-commerce": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

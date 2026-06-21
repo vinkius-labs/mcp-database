@@ -1,7 +1,6 @@
 # ProUni Eligibility Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/prouni-eligibility-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/prouni-eligibility-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/prouni-eligibility-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/prouni-eligibility-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -50,12 +49,52 @@ Here are some examples of how you can interact with the **ProUni Eligibility Cal
 > The `determine_eligibility_tier` tool will analyze your income against the 1.5x and 3x minimum wage thresholds to provide a definitive scholarship tier, which is crucial for all subsequent checks.
 
 
+## ❓ FAQ
+
+**Q: What is the first step to check my financial eligibility?**
+You must first use the `calculate_per_capita_income` tool, providing your gross family income and number of household members. This result is then passed to the `determine_eligibility_tier` tool to classify your status (Full/Partial Scholarship).
+
+**Q: How do I check if my academic scores are high enough?**
+After determining your financial tier, use the `identify_eligible_courses` tool. This function takes your ENEM scores and whether you attended a public school to suggest qualified courses, considering both your academic achievement and scholarship restrictions.
+
+**Q: Where can I find participating universities near me?**
+To get a list of potential institutions, use the `query_university_locations` tool. Simply provide your preferred city to receive hardcoded results of universities participating in ProUni programs.
+
+
 ## Installation & Usage
 
-To install and use the **ProUni Eligibility Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/prouni-eligibility-calculator](https://vinkius.com/mcp/prouni-eligibility-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ProUni Eligibility Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `prouni-eligibility-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ProUni Eligibility Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "prouni-eligibility-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

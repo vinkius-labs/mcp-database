@@ -1,7 +1,6 @@
 # Pingdom MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pingdom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pingdom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pingdom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pingdom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Pingdom** MCP server u
 > Check 98765 has been successfully paused. Remember to ask me to resume it once the maintenance is finished!
 
 
+## ❓ FAQ
+
+**Q: How do I create a Pingdom API Token?**
+In your Pingdom dashboard (or SolarWinds portal), go to **Settings** > **API Tokens**. Click **Add API Token**, give it a name, and ensure it has the necessary access levels.
+
+**Q: Can I see response times for different global regions?**
+Yes! The `list_check_results` tool returns data from multiple probe locations, allowing you to see how your site performs from different parts of the world.
+
+**Q: Does this support pausing multiple checks at once?**
+The tools handle checks individually, but you can ask the AI agent to 'Pause all checks related to our API' and it will process them sequentially using their IDs.
+
+
 ## Installation & Usage
 
-To install and use the **Pingdom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pingdom](https://vinkius.com/mcp/pingdom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pingdom** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pingdom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pingdom** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pingdom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

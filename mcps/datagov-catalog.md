@@ -1,7 +1,6 @@
 # Data.gov Catalog MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datagov-catalog)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datagov-catalog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datagov-catalog-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datagov-catalog)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Data.gov Catalog** MCP
 > I've found the location ID for Los Angeles. Retrieving the GeoJSON geometry now... Done. You can now use this boundary to filter datasets using the `search_datasets` tool.
 
 
+## ❓ FAQ
+
+**Q: Can I search for datasets within a specific geographic area?**
+Yes! Use `search_locations` to find a location ID, then `get_location_geometry` to get the GeoJSON. Finally, pass that to `search_datasets` with the `spatial_geometry` parameter.
+
+**Q: How do I find datasets from a specific agency like NASA?**
+Use the `search_datasets` tool and provide 'nasa' in the `org_slug` parameter. You can combine this with a search query `q` for more specific results.
+
+**Q: What is the difference between raw and transformed harvest records?**
+The `get_harvest_record_raw` tool returns the original metadata from the source agency, while `get_harvest_record_transformed` returns the data mapped to the standard DCAT-US schema used by Data.gov.
+
+
 ## Installation & Usage
 
-To install and use the **Data.gov Catalog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/datagov-catalog](https://vinkius.com/mcp/datagov-catalog)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Data.gov Catalog** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `datagov-catalog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Data.gov Catalog** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "datagov-catalog": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Donorbox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/donorbox)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/donorbox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/donorbox-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/donorbox)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Donorbox** MCP server 
 > Sarah Jones has an active monthly recurring plan of $50.00 that started on January 1st. They have made 3 successful payments to date. Would you like me to check their next scheduled donation date?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Donorbox API Key?**
+Log in to your Donorbox account, navigate to **Account > API & Integrations**, and you can generate or retrieve your unique API Key from there. You will also need your account email.
+
+**Q: Can the agent manage recurring plans?**
+This integration currently focuses on listing and auditing recurring plans and their status. Modifying plan details or amounts should be managed via the Donorbox dashboard.
+
+**Q: Does the integration show donor contact info?**
+Yes, you can use the list_registered_donors or search_donors_by_email tools to retrieve donor profile details, including their registered email addresses.
+
+
 ## Installation & Usage
 
-To install and use the **Donorbox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/donorbox](https://vinkius.com/mcp/donorbox)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Donorbox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `donorbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Donorbox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "donorbox": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # TYPO3 CMS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typo3-cms)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/typo3-cms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/typo3-cms-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typo3-cms)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **TYPO3 CMS** MCP server
 > Action confirmed. Record ID 644 inside the 'pages' entity has been wiped through a deletion mutation payload. It has been successfully removed from visibility.
 
 
+## ❓ FAQ
+
+**Q: Can it retrieve both the navigation tree and single rendered pages autonomously?**
+Yes. Command the LLM to 'get_navigation_tree' from ID 1, revealing the layout. Finding a curious page, you can instruct it to 'get_rendered_page' supplying its new ID to dissect content instantly.
+
+**Q: How does the assistant handle adding complex backend module data like Extbase records?**
+Using the 'create_cms_entity' endpoint tool, you just tell the AI the physical target database component and pass your JSON. TYPO3 resolves it server-side identically as if inserted from the admin view.
+
+**Q: Is there a fast way to verify if my TYPO3 API authentication block is working?**
+Run a request with the 'ping_rest_api' capability. It triggers a lightweight, zero-payload call directly returning successful metadata from your host validating you have unbridled authorization natively.
+
+
 ## Installation & Usage
 
-To install and use the **TYPO3 CMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/typo3-cms](https://vinkius.com/mcp/typo3-cms)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TYPO3 CMS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `typo3-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TYPO3 CMS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "typo3-cms": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

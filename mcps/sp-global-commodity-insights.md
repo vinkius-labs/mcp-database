@@ -1,7 +1,6 @@
 # S&P Global Commodity Insights MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sp-global-commodity-insights)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sp-global-commodity-insights-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sp-global-commodity-insights-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sp-global-commodity-insights)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -327,12 +326,55 @@ Here are some examples of how you can interact with the **S&P Global Commodity I
 > Fetching EU Allowance (EUA) carbon credit assessment... Current EUA price is €68.50/tonne CO2. Carbon prices have been volatile this month, ranging between €65-72/tonne as markets digest EU energy policy updates and industrial demand forecasts. The UK ETS is trading at a slight discount at £45.20/tonne.
 
 
+## ❓ FAQ
+
+**Q: What commodity types and benchmarks are covered?**
+The API covers over 12,000 daily price assessments across: Crude Oil (WTI, Brent, Dubai, Mars, WCS + hundreds of grades), Natural Gas (Henry Hub, TTF, NBP, JKM), Electric Power (PJM, ERCOT, CAISO, European markets), Coal (Newcastle, API2, API4), Refined Products (gasoline, diesel, jet fuel), Petrochemicals (ethylene, propylene, benzene), Metals (copper, aluminum, gold, steel), Agriculture (wheat, corn, soybeans, fertilizers), and Energy Transition (carbon credits, battery metals, RECs).
+
+**Q: How do I get an S&P Global Commodity Insights API key?**
+API access requires an active S&P Global Commodity Insights subscription. Contact your S&P Global account manager or visit https://www.spglobal.com/commodityinsights to discuss licensing options. Once licensed, you'll receive API credentials through your SSO (Single Sign-On) account. The authentication uses Bearer tokens generated via the /auth/api endpoint with your SSO email and password.
+
+**Q: Are the prices real-time or delayed?**
+S&P Global Platts price assessments are published daily based on market activity. Most assessments reflect same-day or next-day values depending on the commodity and market. Some benchmarks (especially power markets) may have intra-day updates. Historical data is available for backtesting and trend analysis with flexible date range queries. The exact publication timing varies by commodity — crude oil and gas benchmarks are typically available by end of trading day.
+
+**Q: Can I query historical prices for trend analysis?**
+Yes! Use the `get_historical_commodity_prices` tool with a specific commodity identifier, start date, and optional end date. You can query daily, weekly, or monthly aggregated data. For example, to get WTI crude prices for the last 30 days, use commodity='crude-oil', start_date='2026-03-08'. The API provides extensive historical data suitable for backtesting, trend analysis, and market research.
+
+
 ## Installation & Usage
 
-To install and use the **S&P Global Commodity Insights** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sp-global-commodity-insights](https://vinkius.com/mcp/sp-global-commodity-insights)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **S&P Global Commodity Insights** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sp-global-commodity-insights` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **S&P Global Commodity Insights** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sp-global-commodity-insights": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Chroma (Vector DB) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chroma-vector-db)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chroma-vector-db-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chroma-vector-db-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chroma-vector-db)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Chroma (Vector DB)** M
 > Checking heartbeat... Connection successful! The Chroma instance responded in 12ms and is fully operational.
 
 
+## ❓ FAQ
+
+**Q: Can my agent perform semantic search across my collections?**
+Yes. Provide the vector embedding array in JSON format, and your agent will return the closest document matches along with their distance metrics. It is the perfect way to test your RAG (Retrieval-Augmented Generation) logic without complex scripts.
+
+**Q: How can I verify the health of my self-hosted Chroma instance?**
+Simply ask your agent to check the heartbeat. The agent performs a nanosecond-level responsiveness test against your API nodes, confirming the physical database is active and reachable from the gateway.
+
+**Q: I manage multiple tenants — how do I switch between them?**
+You can define the tenant and database names during the setup phase. If you need to switch often, you can update the credentials in the dashboard. The agent uses these values for all collection and document operations to ensure strict isolation.
+
+
 ## Installation & Usage
 
-To install and use the **Chroma (Vector DB)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chroma-vector-db](https://vinkius.com/mcp/chroma-vector-db)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chroma (Vector DB)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chroma-vector-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chroma (Vector DB)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chroma-vector-db": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

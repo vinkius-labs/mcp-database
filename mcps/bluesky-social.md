@@ -1,7 +1,6 @@
 # Bluesky Social MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bluesky-social)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bluesky-social-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bluesky-social-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bluesky-social)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Bluesky Social** MCP s
 > Searching social graph... I found 3 users matching your query, including 'Vinkius' and 2 other tech profiles. I've retrieved their high-fidelity bios and follower counts for you. Shall I follow any of them?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Bluesky Handle and App Password?**
+Your handle is your username (e.g., name.bsky.social). For the password, go to **Settings** > **App Passwords** in Bluesky and generate a new one.
+
+**Q: Can I search for users via AI?**
+Yes! The `search_profiles` tool allows your agent to find Bluesky users matching a text query programmatically.
+
+**Q: How do I check my social notifications?**
+Use the `list_notifications` tool to retrieve recent likes, reposts, and mentions directly through your AI agent.
+
+
 ## Installation & Usage
 
-To install and use the **Bluesky Social** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bluesky-social](https://vinkius.com/mcp/bluesky-social)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bluesky Social** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bluesky-social` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bluesky Social** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bluesky-social": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

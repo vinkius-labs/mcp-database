@@ -1,7 +1,6 @@
 # VTEX Checkout MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vtex-checkout)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vtex-checkout-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vtex-checkout-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vtex-checkout)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,55 @@ Here are some examples of how you can interact with the **VTEX Checkout** MCP se
 > Client found: **Maria Silva** (maria@example.com). Document: CPF 123.456.789-00. Phone: +55 11 98765-4321. This client has 3 saved addresses and 12 previous orders.
 
 
+## ❓ FAQ
+
+**Q: How do I get my VTEX API credentials?**
+Log in to your VTEX Admin, go to **Account Settings → Application Keys**, and create a new App Key. You'll receive an App Key and App Token pair. You also need your Account Name (the subdomain you use to access the VTEX Admin, e.g., 'mystore'). No code, no SDK — just connect and go.
+
+**Q: Can my agent simulate a full cart with shipping costs?**
+Yes! Use the 'simulate_order' tool with a list of items and a postal code. Your agent will return the full cart breakdown — totals, per-item pricing, available logistics options, estimated delivery dates, and applicable discounts — all without touching the actual store.
+
+**Q: What happens when a customer asks support about their current cart?**
+Your support agent can use the 'get_orderform' tool to instantly retrieve the customer's active cart — items, quantities, prices, applied coupons, and shipping address. No need to switch tabs or navigate the admin. The agent can then apply a coupon or check shipping costs, all within the same conversation.
+
+**Q: Can I validate payment conditions before placing bulk orders?**
+Absolutely. The 'simulate_payment' tool lets your agent validate payment tokens and check accepted conditions — perfect for operations teams running bulk order validations across multiple sellers and payment methods without processing real transactions.
+
+
 ## Installation & Usage
 
-To install and use the **VTEX Checkout** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vtex-checkout](https://vinkius.com/mcp/vtex-checkout)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **VTEX Checkout** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vtex-checkout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **VTEX Checkout** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vtex-checkout": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # World Bank Full Access MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/world-bank-full-access)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/world-bank-full-access-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/world-bank-full-access-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/world-bank-full-access)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -121,12 +120,55 @@ Found 47 gender-related indicators. Key findings for Sweden, Norway, Denmark, an
 Indicator found: SG.GEN.PARL.ZS (Proportion of seats held by women in national parliaments). Results show France leads the G7 at ~37%, followed by Germany ~35%, UK ~34%, Italy ~33%, Canada ~31%, Japan ~10%, and USA ~28%.
 
 
+## ❓ FAQ
+
+**Q: How do I get started?**
+Our World Bank Open Data servers require absolutely zero authentication. You do not need to register, get an API key, or setup webhooks. Just instantly connect and your AI agent can begin querying decades of global data.
+
+**Q: How does the AI know which of the 29,506 indicators to use?**
+The server includes an incredibly powerful `search_indicators` tool. The agent can search by concept (like 'Renewable Energy') and the server returns the precise indicator codes (like 'EG.FEC.RNEW.ZS') needed to pull the data directly.
+
+**Q: Is there any rate limit or API key required to process deep geographical queries?**
+No! This provides frictionless access across the massive public array without writing SDK codes or navigating Webhooks; just connect instantly to the largest global indicator pool on earth.
+
+**Q: What is the scale of the data I can access?**
+You have direct access to 64 years of historical data covering 196+ sovereign states and global regional aggregates, powered directly by the World Bank's robust open data initiatives.
+
+
 ## Installation & Usage
 
-To install and use the **World Bank Full Access** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/world-bank-full-access](https://vinkius.com/mcp/world-bank-full-access)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **World Bank Full Access** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `world-bank-full-access` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **World Bank Full Access** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "world-bank-full-access": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

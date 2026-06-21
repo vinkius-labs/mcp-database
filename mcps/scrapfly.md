@@ -1,7 +1,6 @@
 # Scrapfly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scrapfly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scrapfly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scrapfly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scrapfly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Scrapfly** MCP server 
 > Full-page screenshot captured: competitor_pricing_may2025.png (2400x8600px). Plan details extracted: Starter ($29/mo, 1 user, 5GB storage), Professional ($79/mo, 5 users, 50GB, API access), Enterprise ($199/mo, unlimited users, 500GB, priority support, SSO). Annual discount: 20% across all plans. Free trial: 14 days. Compared to your pricing: you are 15% lower on Starter, comparable on Professional, 10% higher on Enterprise. New feature since last check: AI assistant added to Professional tier.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically extract structured JSON from a web page using Scrapfly?**
+Yes! Use the `ai_data_extraction` tool. Provide the URL and optionally a model or prompt, and your agent will return the parsed data in structured JSON format instantly.
+
+**Q: How do I use residential proxies to bypass anti-bot systems?**
+Simply ask the agent to run the `web_scrape` action. Scrapfly handles anti-bot (ASP) and premium proxy rotation automatically based on the site's security level.
+
+**Q: How do I find my Scrapfly API Key?**
+Log in to your Scrapfly account, navigate to the **Dashboard**, and you will find your unique secret API key prominently displayed.
+
+
 ## Installation & Usage
 
-To install and use the **Scrapfly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/scrapfly](https://vinkius.com/mcp/scrapfly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Scrapfly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `scrapfly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Scrapfly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "scrapfly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

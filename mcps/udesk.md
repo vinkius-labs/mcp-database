@@ -1,7 +1,6 @@
 # Udesk / 沃丰科技 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/udesk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/udesk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/udesk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/udesk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Udesk / 沃丰科技**
 > I've found 3 articles in the Udesk knowledge base matching your query. The primary guide 'Standard Refund Procedures' was last updated 2 days ago. Should I retrieve the full content for you?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Udesk API Token?**
+Log in to your Udesk admin backend, go to [Admin] → [Settings] → [Validation Info], and you will find your Open API Token there. Ensure you have administrator privileges.
+
+**Q: Can I see ticket reply histories through this server?**
+Yes. Use the `get_ticket_replies` tool with a specific ticket ID to retrieve the entire historical chain of comments and messages for that incident.
+
+**Q: Is it possible to list support agents and their groups?**
+Yes! You can use the `list_agents` and `list_groups` tools to see all members of your support organization and how they are structured into functional teams.
+
+
 ## Installation & Usage
 
-To install and use the **Udesk / 沃丰科技** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/udesk](https://vinkius.com/mcp/udesk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Udesk / 沃丰科技** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `udesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Udesk / 沃丰科技** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "udesk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

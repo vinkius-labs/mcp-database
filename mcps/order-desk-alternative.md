@@ -1,7 +1,6 @@
 # Order Desk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/order-desk-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/order-desk-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/order-desk-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/order-desk-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Order Desk** MCP serve
 > SKU WIDGET-PRO-BLK ("Widget Pro Black Edition") found. Previous stock: 47 units. I have updated the inventory count to 250 units. The item is mapped to 3 active sales channels and has a reorder point set at 25 units. Last shipment received: May 5th (200 units from supplier Acme Widgets).
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific order by its ID?**
+Yes! Use the `get_order` tool with the Order ID. Your agent will respond with complete metadata for the record, including customer information, items, and status in seconds.
+
+**Q: How do I find my Order Desk Store ID and API Key?**
+Log in to your Order Desk store, navigate to **Store Settings** > **API**, and you will find your unique Store ID and generate your secret API key there.
+
+**Q: Can I update inventory levels using the AI?**
+Absolutely. Use the `update_inventory` tool. Provide the Inventory Item ID and the new stock quantity, and the agent will sync the update to Order Desk immediately.
+
+
 ## Installation & Usage
 
-To install and use the **Order Desk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/order-desk-alternative](https://vinkius.com/mcp/order-desk-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Order Desk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `order-desk-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Order Desk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "order-desk-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

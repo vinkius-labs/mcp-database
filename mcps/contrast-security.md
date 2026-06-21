@@ -1,7 +1,6 @@
 # Contrast Security MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contrast-security)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contrast-security-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contrast-security-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contrast-security)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Contrast Security** MC
 > Decompressing trace `1xx-bbxx-11x`... It's flagged as an untrusted SQL Injection caused by vulnerable code in controller `AuthRoute.js` line 45. The status is open and currently untriaged.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Contrast Security API credentials?**
+Log into your Contrast Security web interface. Navigate directly to your profile dropdown via **User Settings** -> **Profile**. Here you will find your distinct Authorization Key (encoded string), API Key, and the required Organization UUID at the very top.
+
+**Q: What exactly is termed a 'Trace' in the Contrast ecosystem?**
+A Trace is the Contrast terminology applied to a single explicit instance of a security vulnerability uncovered deep within an executing application. Every trace holds a massive amount of payload data concerning the attack vectors.
+
+**Q: Can I use this MCP integration to completely delete trace incidents?**
+No. The integration architecture focuses heavily on purely read-only auditing workflows. Features like permanently overwriting and deleting incident historical data are prohibited to ensure strong forensic compliance logs.
+
+
 ## Installation & Usage
 
-To install and use the **Contrast Security** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/contrast-security](https://vinkius.com/mcp/contrast-security)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Contrast Security** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `contrast-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Contrast Security** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "contrast-security": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

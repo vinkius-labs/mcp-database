@@ -1,7 +1,6 @@
 # OpenCage MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opencage)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opencage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opencage-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opencage)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **OpenCage** MCP server 
 > Found 5 results in the US with confidence ≥ 7. Top match: Springfield, IL (confidence 9) — 39.7817, -89.6501 (state capital). Also: Springfield, MO (confidence 8), Springfield, MA (confidence 8), Springfield, OH (confidence 7), Springfield, OR (confidence 7). Want details on any of these?
 
 
+## ❓ FAQ
+
+**Q: How accurate is the geocoding — can I use it for delivery routing?**
+OpenCage returns a confidence score from 1 to 10 for each result. Use the high-confidence filter (min_confidence=8 or higher) to get delivery-grade accuracy. Combined with country filtering, you can eliminate ambiguous matches and get coordinates reliable enough for last-mile dispatch.
+
+**Q: What does privacy mode actually do?**
+When you enable no_record=1, OpenCage processes your query but doesn't log it in their cache or analytics. The result is identical, but the query leaves no trace on their servers. Ideal for geocoding patient addresses, legal documents, or any PII-sensitive data.
+
+**Q: Can I geocode in multiple languages — like getting results in Portuguese for a Brazilian address?**
+Yes. Use the language bias tool with any IETF language code (pt-BR, es-MX, fr-FR, etc.) and OpenCage returns the address components translated to that locale. Perfect for building multilingual apps or standardizing address formats across regions.
+
+
 ## Installation & Usage
 
-To install and use the **OpenCage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opencage](https://vinkius.com/mcp/opencage)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenCage** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opencage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenCage** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opencage": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

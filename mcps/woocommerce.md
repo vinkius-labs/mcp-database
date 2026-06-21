@@ -1,7 +1,6 @@
 # WooCommerce MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/woocommerce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/woocommerce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/woocommerce-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/woocommerce)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **WooCommerce** MCP serv
 > Sales report for this week: You have generated $2,450.00 in total revenue across 32 orders. Your top-selling item was the 'Leather Wallet'. No refunds were processed during this period.
 
 
+## ❓ FAQ
+
+**Q: Can I check the total sales for the last month via chat?**
+Yes. Use the `get_sales_report` tool and specify the period as 'last_month'. Your AI agent will return a summary of your sales performance, including total revenue and order counts for that timeframe.
+
+**Q: How do I update an order's status to 'Completed'?**
+You can use the `update_order_status` tool. Provide the unique order ID and set the status to 'completed'. This allows you to manage your fulfillment process directly through conversation.
+
+**Q: Is it possible to see which coupons are being used most in my store?**
+Absolutely. The `list_store_coupons` tool retrieves all active discount codes along with their usage counts, helping you identify which promotions are driving the most sales.
+
+
 ## Installation & Usage
 
-To install and use the **WooCommerce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/woocommerce](https://vinkius.com/mcp/woocommerce)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WooCommerce** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `woocommerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WooCommerce** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "woocommerce": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

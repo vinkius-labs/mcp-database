@@ -1,7 +1,6 @@
 # Evernote MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evernote)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/evernote-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/evernote-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evernote)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Evernote** MCP server 
 > Retrieving notebooks... You have 5 notebooks: 'Inbox' (12 notes), 'Work' (45 notes), 'Projects' (8 notes), 'Ideas' (22 notes), and 'Archive' (100+ notes). Which one would you like to explore?
 
 
+## ❓ FAQ
+
+**Q: Can my agent search for notes with specific tags in Evernote?**
+Yes. Use the 'search_notes' tool. You can use Evernote's query syntax like 'tag:work' or 'tag:ideas' to filter results. The agent executes the structural match and returns matching note metadata.
+
+**Q: How do I create a new note in a specific notebook via chat?**
+Use the 'create_note' tool. Provide the 'notebook_id' (GUID), a title, and the content. The note will be created and synced across all your Evernote clients immediately.
+
+**Q: Can I check my monthly upload quota through the agent?**
+Absolutely. Use the 'get_user' tool. Your agent will fetch authenticated profile information, including your current quota usage and service tier, to help you stay within system limits.
+
+
 ## Installation & Usage
 
-To install and use the **Evernote** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/evernote](https://vinkius.com/mcp/evernote)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Evernote** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `evernote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Evernote** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "evernote": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

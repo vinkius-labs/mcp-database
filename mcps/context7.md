@@ -1,7 +1,6 @@
 # Context7 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/context7)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/context7-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/context7-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/context7)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Context7** MCP server 
 > Querying Tailwind CSS v4.0.0 docs... The main updates include the new high-performance engine, native CSS variables support, and simplified configuration. I can provide the exact code examples for these new features.
 
 
+## ❓ FAQ
+
+**Q: Can my agent find the latest documentation for a specific Tailwind CSS version?**
+Yes. First, use the 'resolve_library' tool with 'tailwindcss'. It will return the deterministic ID and version (e.g., 'tailwindcss/3.4.1'). Then, use 'query_docs' to pull the exact Markdown blocks for your specific topic.
+
+**Q: Does Context7 provide code examples for the libraries I search for?**
+Absolutely. When you query documentation via the 'query_docs' tool, the agent retrieves not only textual descriptions but also version-specific code examples found in the original library documentation to ensure implementation accuracy.
+
+**Q: How does this help prevent AI hallucinations in coding tasks?**
+Standard LLMs have a training data cutoff. Context7 pulls live, version-specific documentation chunks that act as ground-truth context. By grounding your agent in this real-time data, it avoids hallucinating outdated or non-existent API methods.
+
+
 ## Installation & Usage
 
-To install and use the **Context7** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/context7](https://vinkius.com/mcp/context7)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Context7** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `context7` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Context7** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "context7": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

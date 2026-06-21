@@ -1,7 +1,6 @@
 # HelpCrunch MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helpcrunch-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/helpcrunch-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/helpcrunch-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helpcrunch-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **HelpCrunch** MCP serve
 > Done! Message delivered to chat c_101. The customer will see your reply in the chat window immediately. I'll let you know if they respond.
 
 
+## ❓ FAQ
+
+**Q: How do I generate an API Key in HelpCrunch?**
+Log in to your HelpCrunch account, navigate to **Settings** > **Developers** > **Public API**, and click **Generate New API Key** to obtain your token.
+
+**Q: Can the agent respond to customers directly?**
+Yes! Use the `send_chat_message` tool to post replies into any active chat thread. The message will appear as coming from your agent account.
+
+**Q: How do I search for a customer by email?**
+The `search_customers` tool allows you to perform lookups using filters like email, name, or external ID to retrieve specific user profiles.
+
+
 ## Installation & Usage
 
-To install and use the **HelpCrunch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/helpcrunch-alternative](https://vinkius.com/mcp/helpcrunch-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HelpCrunch** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `helpcrunch-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HelpCrunch** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "helpcrunch-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

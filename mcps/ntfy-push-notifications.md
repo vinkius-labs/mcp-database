@@ -1,7 +1,6 @@
 # ntfy (Push Notifications) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ntfy-push-notifications)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ntfy-push-notifications-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ntfy-push-notifications-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ntfy-push-notifications)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **ntfy (Push Notificatio
 > I've scheduled your notification for the 'reminders' topic. It will be delivered in approximately 1 hour.
 
 
+## ❓ FAQ
+
+**Q: Can I send emojis in my notifications?**
+Yes! Use the `tags` parameter in the `publish_message` tool. You can provide a comma-separated list of emojis or tags like 'warning,skull' to display them in the notification.
+
+**Q: How do I check for messages that were sent while I was away?**
+You can use the `poll_messages` tool. By specifying the `topic` and optionally the `since` parameter, you can retrieve the history of cached messages from that topic.
+
+**Q: Does this support self-hosted ntfy instances?**
+Absolutely. During setup, you can provide your custom `NTFY_URL`. If your instance requires authentication, you can also provide your `NTFY_TOKEN`.
+
+
 ## Installation & Usage
 
-To install and use the **ntfy (Push Notifications)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ntfy-push-notifications](https://vinkius.com/mcp/ntfy-push-notifications)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ntfy (Push Notifications)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ntfy-push-notifications` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ntfy (Push Notifications)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ntfy-push-notifications": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Personio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/personio-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/personio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/personio-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/personio-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Personio** MCP server 
 > Fetching report data... I've loaded the 'Monthly Payroll Export'. It contains 50 rows of data across columns like 'Base Salary', 'Bonus', and 'Department'. Should I summarize the totals for you?
 
 
+## ❓ FAQ
+
+**Q: Can I access custom employee attributes defined in my Personio account?**
+Yes! Use the `list_custom_attributes` tool to retrieve dynamic IDs and labels, and `list_employees` to see the values assigned to your staff.
+
+**Q: Is it possible to log working hours for an employee via the AI?**
+Absolutely. You can use the `create_attendance` tool by providing the employee ID, date, and start/end times to record daily work periods.
+
+**Q: Can the agent help me review my hiring pipeline?**
+Yes. The tools `list_jobs`, `list_candidates`, and `list_applications` allow your agent to fetch and summarize your current recruiting status and applicant details.
+
+
 ## Installation & Usage
 
-To install and use the **Personio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/personio-alternative](https://vinkius.com/mcp/personio-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Personio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `personio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Personio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "personio-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

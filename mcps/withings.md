@@ -1,7 +1,6 @@
 # Withings MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/withings)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/withings-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/withings-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/withings)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Withings** MCP server 
 > Looking at your activity data: On Saturday you took 12,450 steps and burned 2,400 calories (Goal met!). On Sunday, you took 6,200 steps and logged a 45-minute Cycling workout burning 450 calories, keeping your activity high despite lower steps.
 
 
+## ❓ FAQ
+
+**Q: How do I filter for specific measurements like Body Fat or Blood Pressure?**
+Use the `meastype` parameter with the `get_measurements` tool. Common types: 1 (Weight), 4 (Height), 8 (Fat Mass), 9 (Diastolic BP), 10 (Systolic BP), 11 (Heart Pulse), 71 (Body Temperature).
+
+**Q: What is the difference between sleep summary and sleep details?**
+`get_sleep_summary` returns one overall score and total duration per night. `get_sleep_details` returns high-frequency intraday data, detailing exactly what time you entered REM, deep sleep, or woke up throughout the night.
+
+**Q: Can I receive real-time notifications when I step on the scale?**
+Yes, use the `subscribe_notifications` tool with an `appli` ID of 1 (Weight). Withings will then send a POST webhook to the callback URL you specify the moment a new weight measurement is synced.
+
+
 ## Installation & Usage
 
-To install and use the **Withings** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/withings](https://vinkius.com/mcp/withings)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Withings** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `withings` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Withings** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "withings": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

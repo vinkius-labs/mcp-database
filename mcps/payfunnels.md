@@ -1,7 +1,6 @@
 # Payfunnels MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payfunnels)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/payfunnels-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/payfunnels-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payfunnels)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Payfunnels** MCP serve
 > "Premium Upgrade" funnel details: 412 checkouts initiated, 140 completed (34% conversion), 272 abandoned. Revenue: $47,200. Refunds: 3 processed totaling $1,011 (2.1% refund rate). Average order value: $337. Payment methods: Credit Card 78%, PayPal 18%, Apple Pay 4%. Peak conversion hour: 2 PM EST.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific payment by its ID?**
+Yes! Use the `get_payment` tool with the Payment ID. Your agent will respond with complete metadata, including amount, status, customer info, and transaction date in seconds.
+
+**Q: How do I find my Payfunnels External API Key?**
+Log in to your Payfunnels dashboard, navigate to **Billing** > **Integration**, find the 'Payfunnels API Key' section, and click 'Generate' to see your unique secret key.
+
+**Q: Can I process a partial refund via the AI?**
+The current `refund_payment` tool processes the full transaction amount. For partial refunds, we recommend using the main Payfunnels dashboard until support is added to the API.
+
+
 ## Installation & Usage
 
-To install and use the **Payfunnels** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/payfunnels](https://vinkius.com/mcp/payfunnels)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Payfunnels** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `payfunnels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Payfunnels** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "payfunnels": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

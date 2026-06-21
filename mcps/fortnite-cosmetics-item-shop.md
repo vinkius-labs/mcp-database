@@ -1,7 +1,6 @@
 # Fortnite Cosmetics & Item Shop MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fortnite-cosmetics-item-shop)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fortnite-cosmetics-item-shop-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fortnite-cosmetics-item-shop-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fortnite-cosmetics-item-shop)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Fortnite Cosmetics & I
 > Inspecting latest patch leaks... I've identified 3 new unreleased skins: 'Skin Name X', 'Skin Name Y', and an upcoming crossover emote. These are not yet in the shop but appear in the database files. Would you like the high-res icon URLs?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find 'Leaked' skins that haven't been released yet?**
+Yes! Use the `get_new_cosmetics` tool. Your agent will scan the Fortnite-API database for items added in the latest patch but not yet available in the shop, providing names and icon previews.
+
+**Q: How do I check the last time a specific rare skin was seen in the shop?**
+Simply ask the agent to run the `get_cosmetic_details` tool with the item ID. It will retrieve the historical dates of availability, helping you quantify the rarity of the target skin.
+
+**Q: Does the integration permit listing all items belonging to a specific set like the 'Frozen Series'?**
+Yes. The `search_cosmetics` action allows your agent to filter the entire database by official set names, ensuring you find all matching gliders, skins, and pickaxes for your collection.
+
+
 ## Installation & Usage
 
-To install and use the **Fortnite Cosmetics & Item Shop** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fortnite-cosmetics-item-shop](https://vinkius.com/mcp/fortnite-cosmetics-item-shop)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fortnite Cosmetics & Item Shop** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fortnite-cosmetics-item-shop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fortnite Cosmetics & Item Shop** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fortnite-cosmetics-item-shop": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

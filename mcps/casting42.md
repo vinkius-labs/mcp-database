@@ -1,7 +1,6 @@
 # Casting42 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/casting42)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/casting42-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/casting42-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/casting42)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Casting42** MCP server
 > Checking active projects... You have 2 active projects: 'Summer Commercial 2024' and 'Feature Film - Project X'. Both are currently in the 'Selection' phase.
 
 
+## ❓ FAQ
+
+**Q: Can I search for talents with specific custom attributes?**
+Yes! You can use the `search_talents` tool. Your agent will query the database and you can then use `get_talent_details` to inspect all custom fields associated with matching profiles.
+
+**Q: How do I see the photos and videos for a talent?**
+Use the `list_talent_media` tool with the talent's unique ID. The agent will return links to all headshots, videos, and self-tapes stored in their profile.
+
+**Q: Where do I find my Casting42 API Key?**
+Log in to your Casting42 account and navigate to the 'Settings' module. You should find your API key there for integration.
+
+
 ## Installation & Usage
 
-To install and use the **Casting42** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/casting42](https://vinkius.com/mcp/casting42)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Casting42** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `casting42` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Casting42** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "casting42": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

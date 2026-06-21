@@ -1,7 +1,6 @@
 # Deck Commerce MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deck-commerce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deck-commerce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deck-commerce-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deck-commerce)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Deck Commerce** MCP se
 > Order #DC123 was shipped via FedEx on June 12th. The tracking number is 1234567890. The current status is 'Delivered' in New York, NY. Would you like the full shipment history?
 
 
+## ❓ FAQ
+
+**Q: How do I get Deck Commerce API credentials?**
+Log in to your Deck Commerce admin portal, navigate to the API settings or Integrations section to generate your API Key and find your Site ID.
+
+**Q: Can the agent check backordered items?**
+Yes, you can use the list_backordered_items tool to identify which SKUs are currently on backorder and monitor their fulfillment status.
+
+**Q: Does the integration support tracking numbers?**
+Yes, when retrieving shipment details, the agent provides carrier information and tracking numbers for your customer orders.
+
+
 ## Installation & Usage
 
-To install and use the **Deck Commerce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deck-commerce](https://vinkius.com/mcp/deck-commerce)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deck Commerce** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deck-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deck Commerce** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deck-commerce": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Hyrule Compendium MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hyrule-compendium)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hyrule-compendium-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hyrule-compendium-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hyrule-compendium)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Hyrule Compendium** MC
 > Accessing the materials category... I've found entries like 'Silent Princess', 'Big Hearty Truffle', and 'Voltfin Trout'. Which material would you like to know more about?
 
 
+## ❓ FAQ
+
+**Q: How can I find the stats for a specific creature like a 'Golden Horse'?**
+Use the `get_entry` tool and provide 'golden_horse' as the id_or_name. The agent will return its common locations, drops, and description in seconds.
+
+**Q: Can I list only the weapons and armor available in the game?**
+Yes. Use the `get_category` tool with the category_name set to 'equipment' to see all gear recorded in the compendium.
+
+**Q: Is it possible to browse the entire compendium at once?**
+Absolutely. The `get_all_entries` tool fetches the complete database, organized by category, allowing your AI to act as a full Hylian encyclopedia.
+
+
 ## Installation & Usage
 
-To install and use the **Hyrule Compendium** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hyrule-compendium](https://vinkius.com/mcp/hyrule-compendium)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hyrule Compendium** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hyrule-compendium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hyrule Compendium** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hyrule-compendium": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

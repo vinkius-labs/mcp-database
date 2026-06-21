@@ -1,7 +1,6 @@
 # SITA Airport Reference API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sita-airport-reference-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sita-airport-reference-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sita-airport-reference-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sita-airport-reference-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -61,12 +60,49 @@ Here are some examples of how you can interact with the **SITA Airport Reference
 > Here are the details for GRU (São Paulo/Guarulhos International Airport): Location: Guarulhos, São Paulo, Brazil. Timezone: America/Sao_Paulo (UTC-3). IATA: GRU, ICAO: SBGR. Coordinates: -23.4356, -46.4731. Would you like to see the terminal layout?
 
 
+## ❓ FAQ
+
+**Q: What format are airport codes in?**
+The API uses standard 3-letter IATA airport codes (e.g., 'LHR' for London Heathrow, 'JFK' for New York JFK, 'GRU' for São Paulo Guarulhos).
+
+**Q: Is this a read-only API?**
+Yes, all 3 tools are strictly read-only queries. The integration retrieves reference data and cannot modify anything in the SITA database.
+
+
 ## Installation & Usage
 
-To install and use the **SITA Airport Reference API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sita-airport-reference-api](https://vinkius.com/mcp/sita-airport-reference-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SITA Airport Reference API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sita-airport-reference-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SITA Airport Reference API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sita-airport-reference-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # US Statute of Limitations Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-statute-of-limitations-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-statute-of-limitations-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-statute-of-limitations-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-statute-of-limitations-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **US Statute of Limitati
 > The extended deadline after accounting for the tolling event is 2025-06-15.
 
 
+## ❓ FAQ
+
+**Q: What claim types are supported?**
+The calculator supports contract, tort, and fraud claims.
+
+**Q: How does the discovery rule work in this tool?**
+The `evaluate_discovery_rule` tool allows you to recalculate a deadline based on when the harm was discovered rather than when it occurred.
+
+**Q: Can I check for tolling extensions?**
+Yes, use the `check_tolling_impact` tool to see if events like reaching the age of majority or mental incapacity extend your filing deadline.
+
+
 ## Installation & Usage
 
-To install and use the **US Statute of Limitations Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-statute-of-limitations-calculator](https://vinkius.com/mcp/us-statute-of-limitations-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **US Statute of Limitations Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-statute-of-limitations-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **US Statute of Limitations Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-statute-of-limitations-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

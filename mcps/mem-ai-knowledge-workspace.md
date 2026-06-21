@@ -1,7 +1,6 @@
 # Mem AI (Knowledge Workspace) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mem-ai-knowledge-workspace)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mem-ai-knowledge-workspace-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mem-ai-knowledge-workspace-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mem-ai-knowledge-workspace)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Mem AI (Knowledge Work
 > I've retrieved your collections: 'Project Alpha', 'Meeting Archives', 'Personal Research', and 'Reading List'. Which one would you like to explore or add a new note to?
 
 
+## ❓ FAQ
+
+**Q: How is Mem's AI search different from regular keyword search?**
+Mem uses semantic similarity. When your agent uses the `search_mems` tool, it identifies notes based on the meaning of your query. This means you can find relevant context even if you don't remember the exact words used in the original note.
+
+**Q: Can I organize my notes into folders using my agent?**
+In Mem, folders are called 'Collections'. Use the `create_collection` and `add_mem_to_collection` tools. Your agent can establish thematic groups and link specific mems to them structurally, maintaining an organized workspace through conversation.
+
+**Q: What is the 'Mem It' tool used for?**
+The `mem_it` tool is a quick capture shortcut. Your agent can use it to instantly log raw thoughts, URLs, or snippets into your workspace with automated formatting, perfect for high-speed idea tracking during your workflow.
+
+
 ## Installation & Usage
 
-To install and use the **Mem AI (Knowledge Workspace)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mem-ai-knowledge-workspace](https://vinkius.com/mcp/mem-ai-knowledge-workspace)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mem AI (Knowledge Workspace)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mem-ai-knowledge-workspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mem AI (Knowledge Workspace)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mem-ai-knowledge-workspace": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

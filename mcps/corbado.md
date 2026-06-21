@@ -1,7 +1,6 @@
 # Corbado MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corbado)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/corbado-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/corbado-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corbado)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -108,12 +107,52 @@ Here are some examples of how you can interact with the **Corbado** MCP server u
 > I've successfully added 'dev@example.com' as an email identifier for Alice Vance (usr-123456789). The identifier is currently in 'pending' status until verified.
 
 
+## ❓ FAQ
+
+**Q: Can I list all users in my project to check their status?**
+Yes! Use the `list_users` tool to retrieve a paginated list of all users in your project, including their current status (active, pending, or disabled).
+
+**Q: How do I add a new email or phone number to an existing user?**
+You can use the `create_identifier` tool. Simply provide the `userID`, the type (email, phone, or username), and the value you want to add.
+
+**Q: Is it possible to revoke a user's session if their account is compromised?**
+Absolutely. Use the `revoke_session` tool with the specific session ID to immediately terminate that user's access.
+
+
 ## Installation & Usage
 
-To install and use the **Corbado** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/corbado](https://vinkius.com/mcp/corbado)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Corbado** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `corbado` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Corbado** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "corbado": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Eventcube MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventcube)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eventcube-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eventcube-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventcube)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **Eventcube** MCP server
 > John Doe (john@example.com) is registered for 'Tech Conference 2024' with a VIP Pass. Registration is confirmed.
 
 
+## ❓ FAQ
+
+**Q: Can I check real-time ticket sales for an event?**
+Yes, just supply the specific Event ID and the AI can query the exact number of sold and available tickets.
+
+**Q: Is it possible to retrieve an attendee's details?**
+Absolutely. You can fetch attendee records to verify registration status or check their specific ticket type.
+
+**Q: Can I list all my active events?**
+Yes, querying the list of active events will return their IDs, dates, and baseline capacities instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Eventcube** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eventcube](https://vinkius.com/mcp/eventcube)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Eventcube** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eventcube` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Eventcube** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eventcube": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

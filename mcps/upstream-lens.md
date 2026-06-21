@@ -1,7 +1,6 @@
 # Upstream Lens MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upstream-lens)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/upstream-lens-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/upstream-lens-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upstream-lens)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Upstream Lens** MCP se
 > I found 3 available imagery layers for property feat_10293: 'Sentinel-2 (True Color)', 'Sentinel-2 (NDVI)', and 'Landsat 8'. The most recent capture was yesterday. Shall I retrieve the download metadata?
 
 
+## ❓ FAQ
+
+**Q: Can I see if new satellite images are available for my project?**
+Yes! Use the `list_property_imagery` tool and provide the Property ID. Your agent will retrieve all available imagery layers (Sentinel, Landsat, etc.) with their respective capture dates.
+
+**Q: How do I retrieve field notes for a specific conservation project?**
+Run the `list_project_notes` query with your Project ID. You can also provide an optional timestamp to filter only notes updated after a specific date.
+
+**Q: Is it possible to see the geospatial metadata for a property feature?**
+Absolutely. Use the `get_property_details` tool with the Feature ID to retrieve detailed geospatial data and metadata for any monitored property.
+
+
 ## Installation & Usage
 
-To install and use the **Upstream Lens** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/upstream-lens](https://vinkius.com/mcp/upstream-lens)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Upstream Lens** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `upstream-lens` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Upstream Lens** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "upstream-lens": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

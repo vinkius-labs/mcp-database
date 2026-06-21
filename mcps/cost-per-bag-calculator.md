@@ -1,7 +1,6 @@
 # Cost-per-Bag Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cost-per-bag-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cost-per-bag-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cost-per-bag-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cost-per-bag-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,52 @@ Here are some examples of how you can interact with the **Cost-per-Bag Calculato
 > The comparison shows a cost variance of 0.00 and a yield variance of 0.00 relative to the North region benchmark.
 
 
+## ❓ FAQ
+
+**Q: What does the calculator compute?**
+It calculates total production costs per hectare, cost per bag based on expected yield, and provides a breakdown of fixed versus variable costs.
+
+**Q: How can I compare my results to industry standards?**
+Use the `compare_regional_benchmark` tool by providing your calculated cost per bag, expected yield, and the name of the region you wish to benchmark against.
+
+**Q: What inputs are required for a complete analysis?**
+You should provide fixed costs (land, machinery, labor) and variable costs (seeds, fertilizer, pesticides, harvest, and transport) to get an accurate total cost per hectare.
+
+
 ## Installation & Usage
 
-To install and use the **Cost-per-Bag Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cost-per-bag-calculator](https://vinkius.com/mcp/cost-per-bag-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cost-per-Bag Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cost-per-bag-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cost-per-Bag Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cost-per-bag-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

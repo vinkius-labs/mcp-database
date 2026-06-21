@@ -1,7 +1,6 @@
 # CTO Architect Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cto-architect-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cto-architect-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cto-architect-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cto-architect-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **CTO Architect Prover**
 > MIGRATION_BLOCKED + OBSERVABILITY_VOID — Two fatal gaps. First: 'take the system offline for 2 hours' is a maintenance window — blocked. Use expand/contract: add the column with a default value (no lock), dual-write from the application, backfill existing rows in batches, switch reads, drop the old logic. Each step handles live traffic. Second: 'check the logs manually' is not monitoring — define automated health probes and alerting thresholds.
 
 
+## ❓ FAQ
+
+**Q: What is 'Resume-Driven Development'?**
+It is when engineers choose technologies because they look impressive on a resume, not because they solve the problem. Kubernetes for a 3-person seed team with 50 users is Resume-Driven Development. A monolith with PostgreSQL would ship in 8 weeks. Kubernetes adds 3 months of operational overhead for no user benefit.
+
+**Q: Why does it reject 'use HTTPS' as a security strategy?**
+Because HTTPS is the bare minimum, not a strategy. A hardened security posture requires rate limiting with specific thresholds (100 req/min per IP), parameterized queries to prevent SQL injection, JWT with RS256 and rotation policy, CORS whitelisting, and data-at-rest encryption with a named algorithm (AES-256). Saying 'use HTTPS' is like saying 'lock the door' — it does not address the windows.
+
+**Q: Why is 'maintenance window' blocked?**
+Because zero-downtime is the production standard. Maintenance windows are an admission that your migration strategy cannot handle live traffic. Use the expand/contract pattern: add the new column, dual-write, backfill, switch reads, drop the old column. Each step is reversible. Each step handles live traffic. If your migration requires downtime, your architecture is not production-ready.
+
+
 ## Installation & Usage
 
-To install and use the **CTO Architect Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cto-architect-prover](https://vinkius.com/mcp/cto-architect-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CTO Architect Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cto-architect-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CTO Architect Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cto-architect-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # OpenRouteService MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openrouteservice)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openrouteservice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openrouteservice-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openrouteservice)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **OpenRouteService** MCP
 > 3×5 distance matrix computed (driving-car). Shortest pair: Warehouse B → Customer 3 (8.2 km, 14 min). Longest pair: Warehouse A → Customer 5 (47.1 km, 52 min). Average delivery time across all pairs: 28 min. Want me to run VRP optimization to assign optimal warehouse-customer pairs?
 
 
+## ❓ FAQ
+
+**Q: Is the OpenRouteService API free?**
+Yes. ORS offers a free Standard plan with generous daily limits for all services (directions, isochrones, matrix, geocoding, and optimization). No credit card required. Higher rate limits are available through the Collaborative plan for non-profits, academics, and government organizations.
+
+**Q: What routing profiles are supported?**
+ORS supports driving-car, driving-hgv (heavy goods vehicles), cycling-regular, cycling-road, cycling-mountain, cycling-electric, foot-walking, foot-hiking, and wheelchair. Each profile optimizes routes based on road network restrictions specific to that transportation mode.
+
+**Q: Can I solve vehicle routing problems with time windows and capacity constraints?**
+Yes. The VRP optimization tool uses the VROOM solver. Define jobs with locations, service times, and time windows, then define vehicles with start/end locations, capacities, and operating hours. The solver returns optimized assignments and routes for your entire fleet.
+
+
 ## Installation & Usage
 
-To install and use the **OpenRouteService** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openrouteservice](https://vinkius.com/mcp/openrouteservice)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenRouteService** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openrouteservice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenRouteService** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openrouteservice": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Datalastic Maritime MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datalastic-maritime)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datalastic-maritime-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datalastic-maritime-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datalastic-maritime)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Datalastic Maritime** 
 > Retrieving port data for Brazil (BR)... I've found a list of terminals including Santos (BRSSZ), Paranaguá (BRPNG), and Itajaí (BRITJ). I can provide the exact coordinates or technical details for any of these ports.
 
 
+## ❓ FAQ
+
+**Q: Can I track a ship using its name?**
+Yes! Use the `search_maritime_vessels` tool with the vessel's name. It will return a list of matching ships with their MMSI numbers, which you can then use for real-time tracking.
+
+**Q: What is an MMSI number?**
+MMSI stands for Maritime Mobile Service Identity. It is a unique 9-digit number used to identify a vessel's radio equipment and is the primary identifier for AIS tracking.
+
+**Q: How can I find the official code for a port?**
+Use the `search_ports_by_country` tool with the 2-letter ISO country code. The response will list ports in that country along with their official UN/LOCODEs.
+
+
 ## Installation & Usage
 
-To install and use the **Datalastic Maritime** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/datalastic-maritime](https://vinkius.com/mcp/datalastic-maritime)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Datalastic Maritime** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `datalastic-maritime` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Datalastic Maritime** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "datalastic-maritime": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

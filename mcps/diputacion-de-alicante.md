@@ -1,7 +1,6 @@
 # Diputación de Alicante MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/diputacion-de-alicante)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/diputacion-de-alicante-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/diputacion-de-alicante-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/diputacion-de-alicante)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Diputación de Alicant
 > Querying the Blue Flags dataset... I found the list of beaches in Alicante recognized for their environmental and quality standards. Notable entries include beaches in Denia, Altea, and Alicante city.
 
 
+## ❓ FAQ
+
+**Q: How can I check the current debt levels for municipalities in Alicante?**
+You can use the `get_live_debt` tool to retrieve the 'Deuda Viva' dataset, which contains financial data regarding the outstanding debt of local municipalities.
+
+**Q: Is it possible to see the distribution of foreign residents by their country of origin?**
+Yes. The `get_foreign_population_by_country` tool provides detailed statistics on the foreign population residing in the province, categorized by nationality.
+
+**Q: Can I find information about local festivals like Moors and Christians?**
+Absolutely. Use the `get_moors_and_christians_festivals` tool for specific data on those celebrations, or `get_official_local_festivals` for the general provincial festival calendar.
+
+
 ## Installation & Usage
 
-To install and use the **Diputación de Alicante** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/diputacion-de-alicante](https://vinkius.com/mcp/diputacion-de-alicante)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Diputación de Alicante** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `diputacion-de-alicante` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Diputación de Alicante** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "diputacion-de-alicante": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

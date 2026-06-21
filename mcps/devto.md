@@ -1,7 +1,6 @@
 # DEV.to MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/devto)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/devto-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/devto-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/devto)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -106,12 +105,52 @@ Here are some examples of how you can interact with the **DEV.to** MCP server us
 > Fetching your portfolio... You have 3 published articles: 'Understanding Webhooks', 'API Design Patterns', and 'The Future of MCP'. Which one would you like to inspect or update?
 
 
+## ❓ FAQ
+
+**Q: Can I create a draft without publishing it immediately?**
+Yes! When using the `create_article` tool, simply set the `published` parameter to `false`. The article will be saved as a draft in your account.
+
+**Q: How do I find my own articles that I haven't published yet?**
+You can use the `get_my_unpublished_articles` tool. It will return a list of all your drafts currently stored on DEV.to.
+
+**Q: Is it possible to update the tags or content of an existing post?**
+Absolutely. Use the `update_article` tool with the specific article `id`. You can modify the title, body, tags, and other metadata fields.
+
+
 ## Installation & Usage
 
-To install and use the **DEV.to** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/devto](https://vinkius.com/mcp/devto)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DEV.to** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `devto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DEV.to** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "devto": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

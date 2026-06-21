@@ -1,7 +1,6 @@
 # Holded MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/holded)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/holded-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/holded-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/holded)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,55 @@ Here are some examples of how you can interact with the **Holded** MCP server us
 > Accessing inventory... Product 'prod_992' (Wireless Mouse) currently has 45 units in stock across 2 warehouses. The main warehouse has 30 units and the secondary has 15. Should I update the stock level for any specific location?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Holded API Key?**
+Log in to your Holded account, click on the **Settings** icon (top right), go to **Developers**, and you will find your unique **API Key** listed there. You can create multiple keys for different integrations.
+
+**Q: What document types are supported in the invoicing tools?**
+This integration currently focuses on the `invoice` document type. For other types like sales orders or purchase orders, you can use the generic `list_invoices` logic if they are mapped under the same module in your instance.
+
+**Q: Can I update stock levels through this integration?**
+Yes! Use the `update_product_stock` tool. You must provide the product ID and a JSON string containing the warehouse ID and the new quantity to update your inventory.
+
+**Q: Is the integration secure for ERP data?**
+Absolutely. The integration uses official Holded API keys in the request header over HTTPS. Your credentials and business data are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Holded** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/holded](https://vinkius.com/mcp/holded)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Holded** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `holded` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Holded** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "holded": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

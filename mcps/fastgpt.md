@@ -1,7 +1,6 @@
 # FastGPT MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fastgpt)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fastgpt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fastgpt-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fastgpt)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **FastGPT** MCP server u
 > Creating dataset... 'Internal Documentation' has been created successfully. ID: `ds_docs_999`. You can now start pushing data to it using the `push_dataset_data` tool.
 
 
+## ❓ FAQ
+
+**Q: Can I use this with my self-hosted FastGPT instance?**
+Yes! Simply provide your custom domain in the **Base URL** field (e.g., `https://fastgpt.mycompany.com`). The MCP will route all requests to your specific instance.
+
+**Q: How do I add new data to an existing dataset?**
+Use the `push_dataset_data` tool. You can send a JSON array of objects containing the text content to be indexed. FastGPT will handle the chunking and embedding automatically.
+
+**Q: What is the 'goods_sign' used for in Pinduoduo tools?**
+Wait, this is the FastGPT FAQ. For FastGPT, you mostly need Dataset IDs and App IDs. The 'goods_sign' is specific to the Pinduoduo MCP. Always check you are using the correct tools for the specific platform.
+
+
 ## Installation & Usage
 
-To install and use the **FastGPT** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fastgpt](https://vinkius.com/mcp/fastgpt)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FastGPT** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fastgpt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FastGPT** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fastgpt": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Metricool MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/metricool)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/metricool-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/metricool-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/metricool)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Metricool** MCP server
 > Querying unified summary... Across all platforms, you reached 100,000 users with an average engagement rate of 4.5%.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Metricool Access Token?**
+Log in to Metricool, go to Account Settings > API, and you can generate or copy your Access Token there.
+
+**Q: Can I see metrics for multiple platforms?**
+Yes, Metricool supports Instagram, Facebook, Twitter, LinkedIn, and more. Use the specific tool for each platform.
+
+**Q: Is my social media data secure?**
+Absolutely. Your token is encrypted at rest and injected securely at runtime.
+
+
 ## Installation & Usage
 
-To install and use the **Metricool** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/metricool](https://vinkius.com/mcp/metricool)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Metricool** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `metricool` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Metricool** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "metricool": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

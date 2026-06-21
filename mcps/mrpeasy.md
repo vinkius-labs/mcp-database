@@ -1,7 +1,6 @@
 # MRPeasy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mrpeasy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mrpeasy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mrpeasy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mrpeasy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **MRPeasy** MCP server u
 > I've retrieved your vendor list. You have 12 registered suppliers, including 'Global Metals Co.', 'Swift Fasteners', and 'Reliable Plastics'. Would you like the contact info for Swift Fasteners?
 
 
+## ❓ FAQ
+
+**Q: Is API access available on all MRPeasy plans?**
+No. According to MRPeasy documentation, the API is exclusively available to clients on the 'Unlimited' pricing plan.
+
+**Q: Can I see the Bill of Materials (BOM) for a production order?**
+Yes! Use the `get_manufacturing_order` tool with a specific MO ID to see the detailed metadata including the bill of materials required for that order.
+
+**Q: How do I find a specific item's stock history?**
+Use the `get_stock_item` tool with the item ID to retrieve its complete metadata and stock levels.
+
+
 ## Installation & Usage
 
-To install and use the **MRPeasy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mrpeasy](https://vinkius.com/mcp/mrpeasy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MRPeasy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mrpeasy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MRPeasy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mrpeasy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

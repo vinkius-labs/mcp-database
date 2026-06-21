@@ -1,7 +1,6 @@
 # Yelp Fusion MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yelp-fusion)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/yelp-fusion-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/yelp-fusion-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yelp-fusion)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Yelp Fusion** MCP serv
 > I found several upcoming events in Austin. Notable ones include the 'Austin Food & Wine Festival' and the 'Taco & Margarita Fest'. Would you like the specific dates and location details for these?
 
 
+## ❓ FAQ
+
+**Q: Can I find businesses that offer delivery in my area?**
+Yes. Use the `search_transactions` tool. It specifically filters for businesses that support food delivery transactions in your specified location.
+
+**Q: How can I see what people are saying about a specific business?**
+Use the `get_business_reviews` tool with the business ID or alias. It returns up to 3 review excerpts and ratings to help you gauge the quality of the establishment.
+
+**Q: Is it possible to identify a business using just a phone number?**
+Absolutely. The `search_by_phone` tool allows you to find a Yelp business by providing its phone number (including the '+' and country code).
+
+
 ## Installation & Usage
 
-To install and use the **Yelp Fusion** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/yelp-fusion](https://vinkius.com/mcp/yelp-fusion)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Yelp Fusion** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `yelp-fusion` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Yelp Fusion** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "yelp-fusion": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

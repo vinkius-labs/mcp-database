@@ -1,7 +1,6 @@
 # Hunter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hunter-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hunter-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hunter-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hunter-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Hunter** MCP server us
 > Account: john@company.com. Plan: Starter. Credits this month: Searches: 18 of 500 used (482 remaining). Verifications: 42 of 1,000 used (958 remaining). Resets: May 1, 2025. Saved leads: 34 total. Lead lists: 1) 'Enterprise Prospects' — 12 leads (8 verified, 4 unverified). 2) 'SMB Outreach' — 15 leads (12 verified, 3 risky). 3) 'Recruiting Pipeline' — 7 leads (all verified). Recent leads: sarah.chen@acmecorp.com (VP Engineering, added today). david@stripe.com (CTO, added today). mike@techco.com (Director Sales, added yesterday). Would you like to verify unverified leads or search a new domain?
 
 
+## ❓ FAQ
+
+**Q: Can I find all professional email addresses for a specific company?**
+Yes. Use `search_domain_emails` with a domain (e.g., 'stripe.com') or company name (e.g., 'Stripe') to retrieve all professional emails found for that organization. Each result includes the email, confidence score, position, and source URLs. Use `get_domain_email_count` to preview how many emails are available before using search credits.
+
+**Q: Can I verify if an email address is valid before sending outreach?**
+Yes. The `verify_email_address` tool checks the validity and deliverability of any email address. It returns a status (deliverable, undeliverable, risky, unknown), confidence score, and details about the email server (MX records, SMTP check, accept-all detection). This prevents bounces and protects your sender reputation.
+
+**Q: How does Hunter API authentication work?**
+Hunter uses an API Key passed as a query parameter (`?api_key=YOUR_KEY`) in all requests to `api.hunter.io/v2`. This differs from the typical Bearer token pattern. Your API key is available in the Hunter dashboard under Account > API. Free accounts include 25 searches and 50 verifications per month.
+
+
 ## Installation & Usage
 
-To install and use the **Hunter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hunter-alternative](https://vinkius.com/mcp/hunter-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hunter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hunter-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hunter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hunter-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Trigger.dev (Background Tasks & Jobs) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/triggerdev-background-tasks-jobs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/triggerdev-background-tasks-jobs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/triggerdev-background-tasks-jobs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/triggerdev-background-tasks-jobs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Trigger.dev (Backgroun
 > Schedule created for 'cleanup-logs' with cron '0 0 * * *'. Deduplication key: 'daily-cleanup-logs'. The task will now run automatically every day at midnight UTC.
 
 
+## ❓ FAQ
+
+**Q: Can I trigger multiple background tasks at once?**
+Yes! You can use the `batch_trigger_tasks` tool to trigger up to 1,000 tasks in a single batch request, which is highly efficient for high-volume workflows.
+
+**Q: How do I check the output or error of a specific job run?**
+Use the `get_run` tool with the specific Run ID. It will return the full status, payload, output, and any attempt details or error logs associated with that run.
+
+**Q: Can I schedule a task to run automatically using a cron expression?**
+Absolutely. Use the `create_schedule` tool to define a task identifier, a cron expression (e.g., '0 0 * * *'), and a deduplication key to automate recurring background jobs.
+
+
 ## Installation & Usage
 
-To install and use the **Trigger.dev (Background Tasks & Jobs)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/triggerdev-background-tasks-jobs](https://vinkius.com/mcp/triggerdev-background-tasks-jobs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Trigger.dev (Background Tasks & Jobs)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `triggerdev-background-tasks-jobs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Trigger.dev (Background Tasks & Jobs)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "triggerdev-background-tasks-jobs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # GBIF MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gbif)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gbif-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gbif-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gbif)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **GBIF** MCP server usin
 > Found 10 results for 'orchid'. The Orchidaceae family is one of the largest flowering plant families with 28,000+ species. Top results include: Phalaenopsis (moth orchids — most popular houseplant orchid), Dendrobium (1,800+ species across Asia), Vanilla planifolia (the source of vanilla flavoring), and Cattleya (classic corsage orchid). Each with full Linnaean taxonomy and GBIF links.
 
 
+## ❓ FAQ
+
+**Q: What types of organisms are covered in GBIF?**
+GBIF covers all life on Earth across all kingdoms: Animalia (animals), Plantae (plants), Fungi (mushrooms, yeasts), Bacteria, Archaea, Chromista (algae, diatoms), and Protozoa. From microscopic bacteria to blue whales, from orchids to ancient ferns — if a species has been scientifically described, GBIF likely has records for it.
+
+**Q: Is GBIF data free and do I need to register?**
+Yes, GBIF data is completely free and open under CC0, CC-BY, or CC-BY-NC licenses. No registration or API key is required for programmatic access. GBIF is funded by governments of 40+ member countries and endorsed by the United Nations Environment Programme.
+
+**Q: Can I filter species observations by country or region?**
+Yes! The occurrence search supports country filtering using ISO-2 country codes (US for United States, BR for Brazil, AU for Australia, GB for United Kingdom, JP for Japan, etc.). This allows you to find exactly where a species has been observed in a specific country with GPS coordinates and dates.
+
+
 ## Installation & Usage
 
-To install and use the **GBIF** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gbif](https://vinkius.com/mcp/gbif)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GBIF** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gbif` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GBIF** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gbif": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

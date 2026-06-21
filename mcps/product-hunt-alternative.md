@@ -1,7 +1,6 @@
 # Product Hunt MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/product-hunt-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/product-hunt-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/product-hunt-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/product-hunt-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Product Hunt** MCP ser
 > Found 12 AI developer tools with 200+ upvotes this month. Top picks: "CopilotX Studio" (1,240 upvotes) offers multi-model AI code generation. "APIForge" (890 upvotes) auto-generates REST APIs from natural language. "TestPilot AI" (734 upvotes) AI-driven test suite generator. "DBWhisperer" (567 upvotes) natural language to SQL converter. Average upvotes for the category: 523. The AI developer tools category has grown 34% vs last month.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the top 5 products launched today on Product Hunt?**
+Yes! Use the `list_posts` tool with `first: 5`. Your agent will respond with the most upvoted products of the day, including titles, taglines, and direct links in seconds.
+
+**Q: How do I find my Product Hunt Developer Token?**
+Log in to Product Hunt, go to [**API Dashboard**](https://www.producthunt.com/v2/oauth/applications), create a new **Application**, and look for the 'Developer Token' section at the bottom.
+
+**Q: Can I upvote products using the AI?**
+This MCP server version focuses on data retrieval and analysis. Voting typically requires custom 'write' scope approval from the Product Hunt team.
+
+
 ## Installation & Usage
 
-To install and use the **Product Hunt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/product-hunt-alternative](https://vinkius.com/mcp/product-hunt-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Product Hunt** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `product-hunt-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Product Hunt** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "product-hunt-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

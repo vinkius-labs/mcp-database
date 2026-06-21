@@ -1,7 +1,6 @@
 # Moonriver (Moonriver Block Explorer API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moonriver-moonriver-block-explorer-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moonriver-moonriver-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moonriver-moonriver-block-explorer-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moonriver-moonriver-block-explorer-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Moonriver (Moonriver B
 > Fetching EVM tokens... I found several tokens including MOVR (Native), xcKSM, and various ERC-20 assets. Would you like to see the transfer history for a specific token?
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance and metadata of a specific Moonriver address?**
+Yes! Use the `get_account_info` tool by providing the wallet address. Your agent will return the current balance and associated account metadata.
+
+**Q: How can I track token transfers for a specific user?**
+Use the `list_transfers` tool with the user's address. It will retrieve the history of token transfers (ERC-20/ERC-721) for that specific account.
+
+**Q: Is it possible to look up a transaction using its hash?**
+Absolutely. Use the `get_extrinsic` tool and provide the transaction hash to get full details about that specific operation on the network.
+
+
 ## Installation & Usage
 
-To install and use the **Moonriver (Moonriver Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/moonriver-moonriver-block-explorer-api](https://vinkius.com/mcp/moonriver-moonriver-block-explorer-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Moonriver (Moonriver Block Explorer API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `moonriver-moonriver-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Moonriver (Moonriver Block Explorer API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "moonriver-moonriver-block-explorer-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

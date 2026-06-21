@@ -1,7 +1,6 @@
 # Nimble CRM (Social Sales CRM & Contacts API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nimble-crm-social-sales-crm-contacts-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nimble-crm-social-sales-crm-contacts-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nimble-crm-social-sales-crm-contacts-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nimble-crm-social-sales-crm-contacts-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Nimble CRM (Social Sal
 > Inspecting contact 5f4e3d2c1b... This is 'Morgan Blake', Senior VP at GlobalCorp. I've found their LinkedIn profile, Twitter handle, and primary work phone number.
 
 
+## ❓ FAQ
+
+**Q: Can I search for contacts using specific tags or keywords?**
+Yes! Use the `list_contacts` tool with the `keyword` or `tags` parameters. You can also sort the results by fields like last name to find exactly who you need.
+
+**Q: How do I get the full social profile and details of a specific contact?**
+Simply use the `get_contact` tool and provide the contact ID. It will return all available data, including social media links and metadata for that specific record.
+
+**Q: Is it possible to delete multiple contacts at once based on a query?**
+Yes, the `delete_contacts` tool allows you to perform bulk deletions by providing a JSON-encoded search query and specifying the record type (person, company, or all).
+
+
 ## Installation & Usage
 
-To install and use the **Nimble CRM (Social Sales CRM & Contacts API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nimble-crm-social-sales-crm-contacts-api](https://vinkius.com/mcp/nimble-crm-social-sales-crm-contacts-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nimble CRM (Social Sales CRM & Contacts API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nimble-crm-social-sales-crm-contacts-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nimble CRM (Social Sales CRM & Contacts API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nimble-crm-social-sales-crm-contacts-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

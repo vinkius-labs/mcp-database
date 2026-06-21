@@ -1,7 +1,6 @@
 # HaloPSA MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/halopsa)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/halopsa-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/halopsa-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/halopsa)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **HaloPSA** MCP server u
 > Accessing assets... I found 5 assets linked to Acme Corp, including 3 Laptops (MacBook Pro), 1 Server (PowerEdge), and 1 Firewall (FortiGate). Shall I list the serial numbers for these items?
 
 
+## ❓ FAQ
+
+**Q: How do I set up my HaloPSA API credentials?**
+Log in as an Administrator, go to **Configuration > Integrations > Halo API**. In 'View Applications', create a new app with the 'Agent' login type and grant the necessary permissions. You will receive your Client ID and Client Secret there.
+
+**Q: What are the Resource and Auth URLs?**
+The Resource URL is typically `https://your-tenant.halopsa.com/api` and the Auth URL is `https://your-tenant.halopsa.com/auth`. Replace 'your-tenant' with your actual HaloPSA instance name.
+
+**Q: Can I perform actions on tickets, like changing status?**
+Yes! Use the `perform_ticket_action` tool by providing the ticket ID and the specific action ID configured in your Halo instance. You can also add an optional note.
+
+**Q: Is the integration secure?**
+Yes, it uses industry-standard OAuth2 Client Credentials flow. Your credentials are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **HaloPSA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/halopsa](https://vinkius.com/mcp/halopsa)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HaloPSA** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `halopsa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HaloPSA** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "halopsa": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

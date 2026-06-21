@@ -1,7 +1,6 @@
 # Startup Financial Model MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/startup-financial-model)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/startup-financial-model-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/startup-financial-model-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/startup-financial-model)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Startup Financial Mode
 > I will use `query_cost_structure` with the provided revenue array, cogsPercentage: 0.3, and fixedExpenses: 1000.
 
 
+## ❓ FAQ
+
+**Q: What time horizons can I model?**
+The engine supports projections for 12, 24, or 36 months.
+
+**Q: How do I calculate the break-even month?**
+Use the `generate_comprehensive_projection` tool. It automatically identifies the first month where net income becomes non-negative.
+
+**Q: Can I input custom growth rates?**
+Yes, you can specify any monthly percentage increase as a decimal (e.g., 0.05 for 5%) in the tool parameters.
+
+
 ## Installation & Usage
 
-To install and use the **Startup Financial Model** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/startup-financial-model](https://vinkius.com/mcp/startup-financial-model)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Startup Financial Model** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `startup-financial-model` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Startup Financial Model** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "startup-financial-model": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

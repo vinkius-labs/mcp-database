@@ -1,7 +1,6 @@
 # Freshsuccess MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshsuccess)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freshsuccess-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freshsuccess-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshsuccess)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **Freshsuccess** MCP ser
 > Metric recorded! I have successfully posted the value 150 for the 'api_calls' metric to user ID user_987. This will factor into their engagement score.
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Key for Freshsuccess?**
+Log in to your Freshsuccess account, navigate to Settings > Third-party integrations > API, and generate or copy your active token.
+
+**Q: What is my 'Region Domain'?**
+Your domain depends on where your account is hosted (e.g. 'api-us.freshsuccess.com' for US Data Center, 'api-eu.freshsuccess.com' for Europe).
+
+**Q: Can I update an account's metadata using the agent?**
+Yes! Use the 'upsert_cs_account' tool. Provide the unique Account ID and the new name to instantly update the record in Freshsuccess.
+
+**Q: Is it possible to log custom product metrics?**
+Absolutely. You can use the 'post_metric_value' tool to send raw numeric data for specific accounts or users to influence their health scores.
+
+
 ## Installation & Usage
 
-To install and use the **Freshsuccess** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/freshsuccess](https://vinkius.com/mcp/freshsuccess)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Freshsuccess** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `freshsuccess` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Freshsuccess** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "freshsuccess": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Aragón Open Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aragon-open-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aragon-open-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aragon-open-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aragon-open-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Aragón Open Data** MC
 > Fetching data preview for view 702... Here are the first 5 records containing fields like 'Municipio', 'Año', and 'Valor'. The data shows a breakdown of local demographics for the selected period.
 
 
+## ❓ FAQ
+
+**Q: Can I filter the data preview to see only specific records?**
+Yes! Use the `preview_data` tool and provide a JSON string in the `filters` parameter (e.g., `{"entidad": "ARANDA"}`). This allows you to restrict the results to exactly what you need.
+
+**Q: How do I find the structure and data types of a specific view?**
+You can use the `show_columns` tool by providing the `view_id`. It will return a detailed list of all columns, their descriptions, and their technical data types.
+
+**Q: Is it possible to search for datasets by keywords or topics?**
+Absolutely. Use the `search_datasets` tool with the `q` parameter to perform a Solr search across the entire CKAN catalog for relevant datasets.
+
+
 ## Installation & Usage
 
-To install and use the **Aragón Open Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aragon-open-data](https://vinkius.com/mcp/aragon-open-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aragón Open Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aragon-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aragón Open Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aragon-open-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Findymail MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/findymail)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/findymail-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/findymail-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/findymail)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Findymail** MCP server
 > Lead search task started! The Task ID is 'task_123'. I will check the status and notify you when the results are ready to be fetched.
 
 
+## ❓ FAQ
+
+**Q: How does Findymail ensure the accuracy of the found emails?**
+Findymail uses a proprietary verification engine that checks the deliverability of B2B emails in real-time. By using the 'verify_email' tool, you can double-check any address to ensure your bounce rate stays below 1%.
+
+**Q: Can I search for leads using natural language like 'Founders in San Francisco'?**
+Yes! The 'search_leads' tool uses the Intellimatch engine, allowing you to discover companies and contacts based on conversational queries. It's like having a lead researcher built into your AI agent.
+
+**Q: What happens if a phone number or email cannot be found?**
+If Findymail cannot locate a verified contact, the tool will return a null or empty status. Findymail only charges credits for successful finds, ensuring you only pay for data you can actually use.
+
+
 ## Installation & Usage
 
-To install and use the **Findymail** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/findymail](https://vinkius.com/mcp/findymail)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Findymail** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `findymail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Findymail** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "findymail": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

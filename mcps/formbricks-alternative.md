@@ -1,7 +1,6 @@
 # Formbricks MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/formbricks-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/formbricks-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/formbricks-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/formbricks-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Formbricks** MCP serve
 > Person 'user_555' is Jane Doe. They are on the 'Pro' plan and have completed 3 surveys in the last month.
 
 
+## ❓ FAQ
+
+**Q: Can I list all my active surveys using my AI agent?**
+Yes! Use the `list_surveys` tool to retrieve a full list of surveys in your Formbricks environment.
+
+**Q: How do I check responses for a specific survey?**
+Simply provide the Survey ID to the `list_responses` tool. Your agent will fetch all submissions associated with that survey.
+
+**Q: Can I delete a survey using this agent?**
+Yes, use the `delete_survey` action and provide the unique Survey ID.
+
+
 ## Installation & Usage
 
-To install and use the **Formbricks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/formbricks-alternative](https://vinkius.com/mcp/formbricks-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Formbricks** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `formbricks-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Formbricks** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "formbricks-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

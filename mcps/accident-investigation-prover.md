@@ -1,7 +1,6 @@
 # Accident Investigation Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accident-investigation-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/accident-investigation-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/accident-investigation-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accident-investigation-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -59,12 +58,52 @@ Here are some examples of how you can interact with the **Accident Investigation
 > Organizational factors dominant: cost-driven supplier selection (Level 4), traceability gap in part documentation (Level 3/supervision), inadequate authority oversight of third-party suppliers (Level 4/regulatory). Recommendations must address: supplier audit frequency, traceability chain verification, OEM vs third-party risk assessment framework.
 
 
+## ❓ FAQ
+
+**Q: How does this prevent 'pilot error' as a root cause conclusion?**
+The engine maintains a semantic trap list of blame-language signals: 'pilot error,' 'crew error,' 'human error,' 'judgment error,' 'failed to,' 'negligence.' If the LLM uses any of these in the HFACS taxonomy field, the classification is rejected. Instead, the LLM must classify each factor at the correct HFACS level: Level 1 (what the pilot did — skill error, decision error, perceptual error, or violation), Level 2 (what conditions enabled it — fatigue, CRM failure, environment), Level 3 (what supervision allowed it — scheduling, training gaps), Level 4 (what organizational decisions created it — budget cuts, staffing, regulatory gaps). 'Pilot error' is Level 1 only — the investigation must reach Level 4.
+
+**Q: What evidence sources must be cross-referenced?**
+Five mandatory sources: (1) Flight Data Recorder — minimum 88 parameters per ICAO Annex 6, with timestamps. (2) Cockpit Voice Recorder — last 2 hours of audio, transcribed with timestamps, correlated with FDR parameter changes. (3) ATC recordings — radar track, clearances, handoffs, weather advisories. (4) Maintenance logs — last A/B/C/D checks, MEL items, deferred defects, AD compliance, component life (TSN/TSO/CSN/CSO). (5) Wreckage analysis — impact signatures, fire patterns, fracture analysis (fatigue vs overload), metallurgical examination. The engine rejects speculative language like 'it appears that' or 'evidence suggests' when hard data from these sources exists.
+
+**Q: Why does this require recommendations to be addressed to specific authorities?**
+Because 'improve training' with no addressee has zero accountability. The NTSB model requires each recommendation to name the authority responsible for implementation — the FAA, the operator, the manufacturer, or an international body. Each recommendation must include: what specific action to take, measurable success criteria, a response deadline (typically 90 days), a verification mechanism (audit, inspection, data review), and a direct link to a specific investigation finding. This is how aviation achieved its extraordinary safety record — not through vague wishes, but through tracked, accountable, evidence-linked changes.
+
+
 ## Installation & Usage
 
-To install and use the **Accident Investigation Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/accident-investigation-prover](https://vinkius.com/mcp/accident-investigation-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Accident Investigation Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `accident-investigation-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Accident Investigation Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "accident-investigation-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

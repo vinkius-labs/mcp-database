@@ -1,7 +1,6 @@
 # Circadian REM Sleep Cycle Optimizer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/circadian-rem-sleep-cycle-optimizer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/circadian-rem-sleep-cycle-optimizer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/circadian-rem-sleep-cycle-optimizer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/circadian-rem-sleep-cycle-optimizer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -60,12 +59,52 @@ Here are some examples of how you can interact with the **Circadian REM Sleep Cy
 > Using the calculate_sleep_cycles tool: The circadian engine confirms that for a 05:00 wake-up with a 30-minute latency, you must get into bed exactly at 21:00 for 5 complete REM cycles.
 
 
+## ❓ FAQ
+
+**Q: What is the 90-minute REM rule?**
+Human sleep cycles last approximately 90 minutes. Waking up in the middle of a deep REM phase causes 'sleep inertia' (grogginess). This algorithm targets wake-up times strictly at the end of a cycle, meaning sleeping 7.5 hours (5 cycles) often feels more refreshing than sleeping 8 hours.
+
+**Q: Why use an MCP for sleep math?**
+Because calculating multiple backward chronobiological subtraction paths in base-60 time causes frequent LLM errors. By offloading it to this deterministic timeline engine, the calculations are mathematically flawless.
+
+**Q: Does it account for the time it takes to fall asleep?**
+Yes. The algorithm incorporates a 'fallAsleepBufferMinutes' parameter (which defaults to 15 minutes). If you need to wake up at 07:00, the 5-cycle target recommends getting into bed at 23:15, allowing exactly 15 minutes to fall asleep before the cycles commence.
+
+
 ## Installation & Usage
 
-To install and use the **Circadian REM Sleep Cycle Optimizer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/circadian-rem-sleep-cycle-optimizer](https://vinkius.com/mcp/circadian-rem-sleep-cycle-optimizer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Circadian REM Sleep Cycle Optimizer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `circadian-rem-sleep-cycle-optimizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Circadian REM Sleep Cycle Optimizer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "circadian-rem-sleep-cycle-optimizer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

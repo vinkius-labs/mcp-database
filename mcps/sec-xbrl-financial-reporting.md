@@ -1,7 +1,6 @@
 # SEC XBRL (Financial Reporting) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-xbrl-financial-reporting)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sec-xbrl-financial-reporting-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sec-xbrl-financial-reporting-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-xbrl-financial-reporting)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **SEC XBRL (Financial Re
 > Aggregating XBRL frames for Accounts Payable (Current) in Q3 2023... I've compiled the data for all reporting entities. For example, Entity A reported $5.2B while Entity B reported $1.1B. Would you like a summary of the top 10 entities by this metric?
 
 
+## ❓ FAQ
+
+**Q: How do I find the filing history for a specific company?**
+Use the `get_submissions` tool with the company's Central Index Key (CIK). For example, Apple is 320193. The tool automatically handles leading zeros.
+
+**Q: Can I retrieve specific financial metrics like 'Net Income' for a company?**
+Yes. Use `get_company_concept` by providing the CIK, the taxonomy (usually 'us-gaap'), and the XBRL tag (like 'NetIncomeLoss').
+
+**Q: How can I compare a single metric across all companies for a specific year?**
+Use the `get_xbrl_frames` tool. You can specify a concept, unit, and period (e.g., 'CY2023') to get data for every reporting entity in that timeframe.
+
+
 ## Installation & Usage
 
-To install and use the **SEC XBRL (Financial Reporting)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sec-xbrl-financial-reporting](https://vinkius.com/mcp/sec-xbrl-financial-reporting)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SEC XBRL (Financial Reporting)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sec-xbrl-financial-reporting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SEC XBRL (Financial Reporting)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sec-xbrl-financial-reporting": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

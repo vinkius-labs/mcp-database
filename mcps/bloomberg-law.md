@@ -1,7 +1,6 @@
 # Bloomberg Law MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bloomberg-law)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bloomberg-law-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bloomberg-law-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bloomberg-law)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -104,12 +103,55 @@ Here are some examples of how you can interact with the **Bloomberg Law** MCP se
 > Found 47 docket entries for 1:24-cv-12345 (SDNY). Recent entries: 1) Entry 47 — Motion for Summary Judgment filed by Plaintiff (April 5, 2026), 2) Entry 46 — Defendant's Response to Discovery Requests (April 3, 2026), 3) Entry 45 — Court Order Setting Discovery Deadline (March 28, 2026), 4) Entry 44 — Joint Case Management Plan filed (March 15, 2026). Would you like to view the full text of any filing?
 
 
+## ❓ FAQ
+
+**Q: What courts and jurisdictions are covered by the Bloomberg Law Dockets API?**
+The Bloomberg Law Dockets API covers 200M+ federal and state court dockets. Federal coverage includes all U.S. District Courts, Circuit Courts of Appeals, Bankruptcy Courts, and the Supreme Court. State court coverage varies by jurisdiction but includes major state courts across the U.S. Coverage details are available in your Bloomberg Law subscription dashboard.
+
+**Q: How do I get a Bloomberg Law API key?**
+Contact your Bloomberg Law account administrator or Bloomberg Law sales team to request access to the Enterprise Dockets API. API access requires an active Bloomberg Law subscription with Enterprise Dockets add-on. Once provisioned, you'll receive an API key and documentation for integration.
+
+**Q: What types of legal research can I do with this API?**
+You can search court dockets by party name, case name, or keywords; retrieve complete docket histories with all filings and orders; search case law for precedents and holdings; browse Bloomberg Law legal news; find expert witnesses; and research company profiles. The API is designed for comprehensive legal research across federal and state courts.
+
+**Q: What's the difference between docket search and case search?**
+**Docket search** returns active court dockets with docket numbers, parties, courts, and filing histories—ideal for tracking ongoing litigation. **Case search** returns decided cases with case law, holdings, citations, and outcomes—ideal for legal research and finding precedents. Use dockets to track live cases, use cases to find legal precedents.
+
+
 ## Installation & Usage
 
-To install and use the **Bloomberg Law** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bloomberg-law](https://vinkius.com/mcp/bloomberg-law)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bloomberg Law** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bloomberg-law` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bloomberg Law** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bloomberg-law": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

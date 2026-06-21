@@ -1,7 +1,6 @@
 # Erply ERP & POS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/erply-erp-pos)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/erply-erp-pos-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/erply-erp-pos-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/erply-erp-pos)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Erply ERP & POS** MCP 
 > I've found 3 products matching 'Wireless Mouse': 'Basic Wireless Mouse' ($25), 'Pro Gaming Mouse' ($85), and 'Ergo Mouse' ($45). All are currently in stock. Would you like the detailed data for the Pro Gaming Mouse?
 
 
+## ❓ FAQ
+
+**Q: How do I get Erply API credentials?**
+You need your **Client Code** (found in your Erply account URL) and a **Session Token**. You can generate a Session Token by making a login request to the Erply API using your credentials. Please refer to the Erply API documentation for details on generating long-lived tokens.
+
+**Q: Is the inventory data real-time?**
+Yes, you can use the list_inventory_stock_levels tool to retrieve current available and reserved counts directly from the Erply database.
+
+**Q: Can the agent process new sales in the POS?**
+This integration currently focuses on listing and auditing products, sales documents, and inventory. Processing live transactions should be performed via the Erply POS interface or dedicated hardware.
+
+
 ## Installation & Usage
 
-To install and use the **Erply ERP & POS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/erply-erp-pos](https://vinkius.com/mcp/erply-erp-pos)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Erply ERP & POS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `erply-erp-pos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Erply ERP & POS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "erply-erp-pos": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

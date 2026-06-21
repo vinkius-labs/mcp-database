@@ -1,7 +1,6 @@
 # EPA AirNow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epa-airnow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/epa-airnow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/epa-airnow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epa-airnow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -59,12 +58,52 @@ Here are some examples of how you can interact with the **EPA AirNow** MCP serve
 - PM10 concentration reported optimally clear (AQI 22). Parameter checked actively and correctly without errors.
 
 
+## ❓ FAQ
+
+**Q: Is the environmental tracking completely real-time?**
+Yes! The system taps directly into the active observation corridors of the Environmental Protection Agency, gathering insights exactly as they are reported by local atmospheric sensors.
+
+**Q: How does it help people with asthma or sensitivities?**
+The agent retrieves exact pollutant indices and maps them into clear categories, letting users instantly know when it is dangerous for sensitive groups to engage in outdoor activities.
+
+**Q: Are the geographic queries limited by zip code only?**
+No, you can query locations by ZIP code to find immediate reporting areas, or use exact latitude/longitude coordinates to pull the closest station parameters precisely.
+
+
 ## Installation & Usage
 
-To install and use the **EPA AirNow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/epa-airnow](https://vinkius.com/mcp/epa-airnow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EPA AirNow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `epa-airnow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EPA AirNow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "epa-airnow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

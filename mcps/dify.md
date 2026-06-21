@@ -1,7 +1,6 @@
 # Dify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Dify** MCP server usin
 > Feedback submitted! I've sent a 'like' for message 'msg_789'. This will help improve the performance tracking of your Dify agent in the dashboard.
 
 
+## ❓ FAQ
+
+**Q: Can my agent interact with a specific Dify application via chat?**
+Yes. When you provide the Application API Key, the agent uses the 'chat' mutation to send your query directly to that Dify agent. It returns the AI response within your current chat context, allowing for seamless integration.
+
+**Q: How do I retrieve the conversation history from my Dify project?**
+Use the 'list_conversations' tool. Your agent will pull the explicitly attached array vectors representing your conversation listing. You can then use 'list_messages' with a specific ID to see the detailed interactions.
+
+**Q: Can I upload files to my Dify agents through this server?**
+Absolutely. The 'upload_file' tool allows you to transmit local binaries securely. The agent maps these files internally against standard Dify attachments, making them available for your Dify agents to process.
+
+
 ## Installation & Usage
 
-To install and use the **Dify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dify](https://vinkius.com/mcp/dify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

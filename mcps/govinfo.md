@@ -1,7 +1,6 @@
 # GovInfo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/govinfo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/govinfo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/govinfo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/govinfo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,49 @@ Which collection would you like to explore?
 > Retrieving package summary... The package 'FR-2023-01-10' is the Federal Register issue from January 10, 2023. It contains 124 individual documents (granules). I have the download links for the PDF and XML formats. Would you like me to list the specific documents inside this package?
 
 
+## ❓ FAQ
+
+**Q: What kind of documents can I find on GovInfo?**
+GovInfo provides access to a vast array of federal documents, including Congressional Bills (BILLS), the Federal Register (FR), Code of Federal Regulations (CFR), United States Courts Opinions (USCOURTS), and Presidential Documents (CPD). Use the `list_collections` tool to see all available categories.
+
+**Q: How do I find the actual text or PDF of a document?**
+The `get_package_summary` tool returns metadata which includes download links (URLs) for various formats like PDF, XML, or Text. You can then use those links to access the full document.
+
+
 ## Installation & Usage
 
-To install and use the **GovInfo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/govinfo](https://vinkius.com/mcp/govinfo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GovInfo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `govinfo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GovInfo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "govinfo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

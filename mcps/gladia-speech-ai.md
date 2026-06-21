@@ -1,7 +1,6 @@
 # Gladia (Speech AI) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gladia-speech-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gladia-speech-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gladia-speech-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gladia-speech-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Gladia (Speech AI)** M
 > I've generated a live session. Here is your secure WebSocket URL: `wss://api.gladia.io/v2/live/...`. The sample rate is set to 16000Hz.
 
 
+## ❓ FAQ
+
+**Q: How do I check the status of a transcription job I just started?**
+Use the `get_transcription` tool with the Job ID. It will return the current status (queued, processing, done, or error) and the results if completed.
+
+**Q: Can I automatically identify different speakers in a recording?**
+Yes! When using `init_transcription`, set the `diarization` parameter to true. The AI will then distinguish between different voices in the transcript.
+
+**Q: How do I handle a local audio file that isn't online yet?**
+First, use the `upload_audio_file` tool by providing the base64 data and filename. This will give you an `audio_url` that you can then pass to `init_transcription`.
+
+
 ## Installation & Usage
 
-To install and use the **Gladia (Speech AI)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gladia-speech-ai](https://vinkius.com/mcp/gladia-speech-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gladia (Speech AI)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gladia-speech-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gladia (Speech AI)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gladia-speech-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # WHOOP MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whoop)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/whoop-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/whoop-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whoop)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,55 @@ Here are some examples of how you can interact with the **WHOOP** MCP server usi
 > This week's workouts: 1. Running (45min, strain 14.2, avg HR 152, 520 cal) — 2. Weight Training (60min, strain 12.8, avg HR 138, 410 cal) — 3. Cycling (30min, strain 10.5, avg HR 145, 350 cal). Total weekly strain: 37.5.
 
 
+## ❓ FAQ
+
+**Q: How do I get WHOOP API credentials?**
+Visit [**developer.whoop.com**](https://developer.whoop.com/), create an app to get a Client ID and Client Secret. Then complete the OAuth2 flow to obtain an Access Token. All three are required for API access.
+
+**Q: What is a WHOOP cycle?**
+A WHOOP cycle represents a 24-hour period combining your sleep, strain and recovery data. Each cycle starts when you wake up and includes the previous night's sleep, the day's strain, and your recovery score for the next day.
+
+**Q: How much historical data can I access?**
+You can access all historical data recorded by your WHOOP device. Use the start and end date parameters (ISO 8601 format) to filter results. Pagination returns up to 25 records per request; use the nextToken to retrieve more.
+
+**Q: Does the API include heart rate data?**
+Yes! Heart rate data (average and max) is included in the cycle, workout and recovery responses. There's no dedicated heart rate endpoint, but the data is nested within these resources.
+
+
 ## Installation & Usage
 
-To install and use the **WHOOP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/whoop](https://vinkius.com/mcp/whoop)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WHOOP** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `whoop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WHOOP** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "whoop": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

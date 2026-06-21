@@ -1,7 +1,6 @@
 # Trivia Quiz Generator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trivia-quiz-generator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/trivia-quiz-generator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/trivia-quiz-generator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trivia-quiz-generator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Trivia Quiz Generator*
 > Searching for a geography question... Here it is: 'Which country is known as the Land of the Rising Sun?' Options: Japan (Correct), China, Thailand, South Korea. Good luck!
 
 
+## ❓ FAQ
+
+**Q: Can I get 10 random history questions?**
+Yes! Use the `get_trivia_questions` tool and set the `categories` parameter to 'history' and `limit` to 10. It will return a set of history-themed questions.
+
+**Q: How can I filter by difficulty?**
+The `get_trivia_questions` tool has a `difficulties` parameter. You can specify 'easy', 'medium', or 'hard' to get questions at the desired challenge level.
+
+**Q: What are the available categories?**
+You can use the `list_trivia_categories` tool to see the full list. Common categories include Arts & Literature, Film & TV, Geography, History, Music, and Science.
+
+
 ## Installation & Usage
 
-To install and use the **Trivia Quiz Generator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/trivia-quiz-generator](https://vinkius.com/mcp/trivia-quiz-generator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Trivia Quiz Generator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `trivia-quiz-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Trivia Quiz Generator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "trivia-quiz-generator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

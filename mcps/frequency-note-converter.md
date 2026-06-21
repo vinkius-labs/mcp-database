@@ -1,7 +1,6 @@
 # Frequency & Note Converter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/frequency-note-converter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/frequency-note-converter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/frequency-note-converter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/frequency-note-converter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,52 @@ Here are some examples of how you can interact with the **Frequency & Note Conve
 > The harmonic series for 100Hz includes 200Hz, 300Hz, 400Hz, 500Hz, 600Hz, 700Hz, and 800Hz.
 
 
+## ❓ FAQ
+
+**Q: What tuning standards are supported?**
+The server supports the international standard (A4 = 440Hz) and the alternative tuning (A4 = 432Hz).
+
+**Q: Can I calculate harmonics for any frequency?**
+Yes, using the `calculate_harmonics` tool, you can generate the first 8 harmonics for any positive frequency.
+
+**Q: How accurate are the conversions?**
+The server provides precise semitone and cents deviation calculations.
+
+
 ## Installation & Usage
 
-To install and use the **Frequency & Note Converter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/frequency-note-converter](https://vinkius.com/mcp/frequency-note-converter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Frequency & Note Converter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `frequency-note-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Frequency & Note Converter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "frequency-note-converter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

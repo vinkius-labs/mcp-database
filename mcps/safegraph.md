@@ -1,7 +1,6 @@
 # SafeGraph MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/safegraph)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/safegraph-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/safegraph-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/safegraph)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **SafeGraph** MCP server
 > The foot traffic data has been cleanly retrieved from the registry! Based on safe historical compilations, this location captures an approximate volume of 12,000 visitors routinely holding a median dwell time reaching precisely 45 minutes on active days.
 
 
+## ❓ FAQ
+
+**Q: Can I manipulate or delete existing POIs present inside the global SafeGraph spatial indexes?**
+No. The AI interacts safely with the GraphQL API strictly on a 'read-only' query-bound basis. It has absolutely no inherent capability to corrupt or perform unauthorized destructive operations such as erasing core places or overwriting coordinates in your environment.
+
+**Q: Are geometric polygons always provided for queried structures automatically?**
+No, they must be explicitly queried utilizing the `lookup_building_geometry` functionality along with a verified Placekey, or structured thoroughly using the standard GraphQL command when available. Otherwise most basic list operations only return textual descriptors and simple pinpoint latitude/longitude figures.
+
+**Q: Does the AI download huge databases directly into my storage limit when filtering large geographical boundary ranges (WKT)?**
+The integration employs a managed response methodology natively implemented through GraphQL constraints. The output responses are strictly paginated securely filtering hundreds of points effectively rather than attempting to sync gigabytes directly to the chatbot at once.
+
+
 ## Installation & Usage
 
-To install and use the **SafeGraph** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/safegraph](https://vinkius.com/mcp/safegraph)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SafeGraph** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `safegraph` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SafeGraph** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "safegraph": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

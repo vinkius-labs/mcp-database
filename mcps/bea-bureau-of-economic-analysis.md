@@ -1,7 +1,6 @@
 # BEA (Bureau of Economic Analysis) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bea-bureau-of-economic-analysis)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bea-bureau-of-economic-analysis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bea-bureau-of-economic-analysis-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bea-bureau-of-economic-analysis)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **BEA (Bureau of Economi
 > I am fetching the data for NIPA Table T10101 for the year 2023... The data shows Real Gross Domestic Product increased at an annual rate of 2.5 percent in 2023. Would you like a breakdown by quarter?
 
 
+## ❓ FAQ
+
+**Q: How can I see which economic datasets are available?**
+You can use the `get_dataset_list` tool. It will return a comprehensive list of all datasets currently supported by the BEA API, such as NIPA, NIUnderlyingDetail, and FixedAssets.
+
+**Q: How do I know what filters or parameters to use for a specific dataset?**
+First, use `get_parameter_list` with the dataset name to see required fields. Then, use `get_parameter_values` to find valid inputs (like specific Year or TableID) for those parameters.
+
+**Q: Can I fetch actual GDP or income figures directly?**
+Yes. Use the `get_data` tool. You will need to provide the dataset name and a JSON string of parameters (e.g., TableName, Frequency, Year) to retrieve the specific economic observations.
+
+
 ## Installation & Usage
 
-To install and use the **BEA (Bureau of Economic Analysis)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bea-bureau-of-economic-analysis](https://vinkius.com/mcp/bea-bureau-of-economic-analysis)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BEA (Bureau of Economic Analysis)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bea-bureau-of-economic-analysis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BEA (Bureau of Economic Analysis)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bea-bureau-of-economic-analysis": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

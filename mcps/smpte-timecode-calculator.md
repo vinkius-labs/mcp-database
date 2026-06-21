@@ -1,7 +1,6 @@
 # SMPTE Timecode Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smpte-timecode-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smpte-timecode-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smpte-timecode-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smpte-timecode-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **SMPTE Timecode Calcula
 > ✅ **Timecode Formatted:** 1500 frames at 25fps maps perfectly to `00:01:00:00`.
 
 
+## ❓ FAQ
+
+**Q: Does it support drop-frame?**
+Yes, pass the dropFrame boolean parameter for exact NTSC compliance.
+
+**Q: What framerates are supported?**
+All standard rates: 23.976, 24, 25, 29.97, 30, 50, 59.94, 60.
+
+**Q: Can it convert frames to timecode?**
+Yes, absolute frame counting to SMPTE string is supported.
+
+
 ## Installation & Usage
 
-To install and use the **SMPTE Timecode Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/smpte-timecode-calculator](https://vinkius.com/mcp/smpte-timecode-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SMPTE Timecode Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `smpte-timecode-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SMPTE Timecode Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "smpte-timecode-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

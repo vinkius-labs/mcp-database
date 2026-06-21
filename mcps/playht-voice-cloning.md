@@ -1,7 +1,6 @@
 # Play.ht (Voice Cloning) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/playht-voice-cloning)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/playht-voice-cloning-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/playht-voice-cloning-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/playht-voice-cloning)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Play.ht (Voice Cloning
 > Generating audio with 'female_happy' emotion at 1.2x speed. The Play.ht engine is now synthesizing the speech for your request.
 
 
+## ❓ FAQ
+
+**Q: How can I generate audio from text using a specific voice?**
+Use the `generate_tts_stream` tool. Provide the text and the unique voice ID. You can also customize the `voice_engine` (like Play3.0-mini) and `emotion` for better results.
+
+**Q: Can I create a new voice clone with this server?**
+Yes! Use the `create_instant_voice_clone` tool. You'll need to provide a name for the voice and a base64 encoded audio sample of the voice you want to clone.
+
+**Q: What audio formats are supported for generation?**
+When using `generate_tts_stream`, you can specify the `output_format` as mp3, wav, ogg, flac, or mulaw.
+
+
 ## Installation & Usage
 
-To install and use the **Play.ht (Voice Cloning)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/playht-voice-cloning](https://vinkius.com/mcp/playht-voice-cloning)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Play.ht (Voice Cloning)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `playht-voice-cloning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Play.ht (Voice Cloning)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "playht-voice-cloning": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

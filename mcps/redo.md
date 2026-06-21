@@ -1,7 +1,6 @@
 # Redo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/redo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/redo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/redo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/redo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,55 @@ Here are some examples of how you can interact with the **Redo** MCP server usin
 > Calculating rates... I found 3 shipping options for this return. Standard Ground is $8.50 and Express is $15.75. Which one would you like to select?
 
 
+## ❓ FAQ
+
+**Q: How do I get my API Secret for Redo?**
+Log in to your Redo dashboard, navigate to Settings > API, and you can generate or copy your active secret key.
+
+**Q: Are shipping protection claims handled differently than returns?**
+No, Redo treats shipping protection claims (for lost, damaged, or stolen items) as a specific type of return record, accessible via the same tools.
+
+**Q: Can I approve a return request directly through the agent?**
+Yes! Use the 'approve_return_claim' tool and provide the Return ID. The agent will update the status in Redo instantly.
+
+**Q: How do I see the reasons why customers are returning items?**
+The 'get_return_details' tool retrieves the full metadata for any request, which includes the specific return reason code and customer comments.
+
+
 ## Installation & Usage
 
-To install and use the **Redo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/redo](https://vinkius.com/mcp/redo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Redo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `redo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Redo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "redo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

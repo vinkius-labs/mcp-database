@@ -1,7 +1,6 @@
 # OKLink (Multi-chain Web3 Blockchain Data API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oklink-multi-chain-web3-blockchain-data-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oklink-multi-chain-web3-blockchain-data-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oklink-multi-chain-web3-blockchain-data-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oklink-multi-chain-web3-blockchain-data-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **OKLink (Multi-chain We
 > Analyzing transaction... This was a transfer of 500 USDC from 0x... to 0x... confirmed in block 18,402,100. The status is 'Success' and the gas fee was 0.002 ETH.
 
 
+## ❓ FAQ
+
+**Q: How do I check the balance of a specific wallet address?**
+You can use the `get_address_summary` tool by providing the chain name (e.g., 'eth') and the address. For a detailed list of all token holdings, use the `get_token_balance` tool.
+
+**Q: Can I retrieve information about NFT collections?**
+Yes! Use the `get_nft_collection_info` tool with the chain name and the NFT contract address to fetch metadata and collection details.
+
+**Q: How do I find the latest block on a specific blockchain?**
+Simply use the `get_latest_block` tool and specify the chain (e.g., 'btc', 'eth', 'polygon'). It will return the height and details of the most recently mined block.
+
+
 ## Installation & Usage
 
-To install and use the **OKLink (Multi-chain Web3 Blockchain Data API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/oklink-multi-chain-web3-blockchain-data-api](https://vinkius.com/mcp/oklink-multi-chain-web3-blockchain-data-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OKLink (Multi-chain Web3 Blockchain Data API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `oklink-multi-chain-web3-blockchain-data-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OKLink (Multi-chain Web3 Blockchain Data API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "oklink-multi-chain-web3-blockchain-data-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

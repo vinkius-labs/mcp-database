@@ -1,7 +1,6 @@
 # Apex & Division Stats by TRN MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apex-division-stats-by-trn)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apex-division-stats-by-trn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apex-division-stats-by-trn-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apex-division-stats-by-trn)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Apex & Division Stats 
 Would you like detailed profiles for any of these players?
 
 
+## ❓ FAQ
+
+**Q: Which games are supported?**
+The official TRN public API supports **Apex Legends** and **The Division 2**. For Apex: full profile stats, per-legend breakdowns, match history, and global leaderboards. For Division 2: PvE/PvP stats, Dark Zone details, and session history.
+
+**Q: Can I see per-legend stats like kills on Wraith or damage on Octane?**
+Yes! Use `get_apex_legend_breakdown` to get performance data for each individual legend — kills, damage, wins, and more. This is perfect for identifying a player's main and comparing legend-specific performance.
+
+**Q: How do I track a player's recent performance over time?**
+Use `get_apex_match_history` or `get_division2_match_history` to retrieve grouped play sessions with aggregated stats. Each session shows kills, damage, placements, and XP — making it easy to spot improvement trends or slumps.
+
+
 ## Installation & Usage
 
-To install and use the **Apex & Division Stats by TRN** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/apex-division-stats-by-trn](https://vinkius.com/mcp/apex-division-stats-by-trn)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Apex & Division Stats by TRN** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `apex-division-stats-by-trn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Apex & Division Stats by TRN** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "apex-division-stats-by-trn": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

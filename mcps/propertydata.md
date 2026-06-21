@@ -1,7 +1,6 @@
 # PropertyData MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/propertydata)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/propertydata-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/propertydata-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/propertydata)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -132,12 +131,52 @@ Here are some examples of how you can interact with the **PropertyData** MCP ser
 > In Manchester, capital growth has been strong, showing a cumulative increase of approximately 28.5% over the last 5 years. The highest growth was seen in the M1 and M4 postcodes. Would you like a breakdown of the current sales demand in those specific areas?
 
 
+## ❓ FAQ
+
+**Q: How can I find the unique identifier (UPRN) for a specific UK address?**
+You can use the `pdAddressMatchUprn` tool. Simply provide the full address string, and the agent will return the closest matching UPRN along with property details.
+
+**Q: Can the AI estimate how much it would cost to rebuild a specific house?**
+Yes, by using the `pdRebuildCost` tool. You can provide a postcode or coordinates along with optional parameters like internal area, wall type, and roof type to get an approximate rebuild estimate.
+
+**Q: Is it possible to see the historical capital growth of an area?**
+Absolutely. Use the `pdGrowth` tool with a postcode or town name to retrieve up to 7 years of capital growth data for that specific UK location.
+
+
 ## Installation & Usage
 
-To install and use the **PropertyData** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/propertydata](https://vinkius.com/mcp/propertydata)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PropertyData** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `propertydata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PropertyData** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "propertydata": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

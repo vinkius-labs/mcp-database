@@ -1,7 +1,6 @@
 # PartnerPortal.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/partnerportalio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/partnerportalio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/partnerportalio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/partnerportalio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **PartnerPortal.io** MCP
 > Lead registered successfully (ID: lead_4892). Partner: Meridian Solutions. Account: Acme Corp. Opportunity: Enterprise Platform Migration, estimated value $185,000. Status: Pending Approval. The partner manager has been notified for deal validation. Expected close date set to Q3 2025 based on the partner's estimate.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific lead by its ID?**
+Yes! Use the `get_lead` tool with the Company ID and Lead ID. Your agent will respond with complete metadata, including lead status, source, and associated deal info in seconds.
+
+**Q: How do I find my PartnerPortal.io API Token?**
+Log in to your PartnerPortal.io account, navigate to **Settings** > **API**, and you will find or generate your unique secret token there. Ensure you have the required plan level for API access.
+
+**Q: What is the Company ID?**
+The Company ID is a unique identifier for your organization profile within PartnerPortal.io. You can find it in your portal settings or URL after logging in.
+
+
 ## Installation & Usage
 
-To install and use the **PartnerPortal.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/partnerportalio](https://vinkius.com/mcp/partnerportalio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PartnerPortal.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `partnerportalio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PartnerPortal.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "partnerportalio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

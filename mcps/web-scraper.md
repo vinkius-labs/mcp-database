@@ -1,7 +1,6 @@
 # Web Scraper MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/web-scraper)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/web-scraper-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/web-scraper-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/web-scraper)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Web Scraper** MCP serv
 > Using the batch reading tool, I've loaded both URLs simultaneously. URL 1 discusses a 'React-first' architecture and uses component styling. URL 2 advocates for 'HTML-first', server-rendered patterns. While both aim to increase web performance, they take fundamentally opposite approaches to client-side hydration.
 
 
+## ❓ FAQ
+
+**Q: Can it read documentation sites that are split into multiple pages?**
+Yes! You can use the `crawl` tool. For example: 'Crawl the getting started guide at https://example.com/docs'. The agent will fetch the starting page and automatically follow inner links to gather up to 10 pages of context.
+
+**Q: How does it handle ads and cluttered websites?**
+The `read` tool uses the same underlying technology as Firefox's 'Reader View' (@mozilla/readability). It intelligently strips out standard website boilerplate—like navbars, sidebars, footers, and ads—leaving only the title and the clean main article text converted to Markdown.
+
+**Q: Is there a limit on how many URLs I can batch process?**
+Yes, to ensure conversational AI latency remains reasonable, the `batch_read` tool accepts a maximum of 10 URLs in a single request. All 10 URLs are fetched simultaneously in parallel for maximum speed.
+
+
 ## Installation & Usage
 
-To install and use the **Web Scraper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/web-scraper](https://vinkius.com/mcp/web-scraper)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Web Scraper** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `web-scraper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Web Scraper** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "web-scraper": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

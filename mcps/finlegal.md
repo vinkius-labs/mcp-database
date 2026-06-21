@@ -1,7 +1,6 @@
 # FinLegal MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finlegal)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/finlegal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/finlegal-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finlegal)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **FinLegal** MCP server 
 > Scanning activities for clm_123... I've found 3 workflow steps: 'Initial Application' (Completed), 'Medical Evidence' (Open), and 'Final Submission' (Pending). Would you like the details for the open step?
 
 
+## ❓ FAQ
+
+**Q: How do I find my FinLegal API Key?**
+Log in to your account, navigate to **Settings** > **API Keys**, and generate a new key for your integration.
+
+**Q: Which regions are supported?**
+The FinLegal MCP server supports **uk**, **us**, and **au** regions. You can specify this during setup.
+
+**Q: Can I search for a contact by email?**
+Yes! Use the `get_contact_by_email` tool to retrieve profile details and associated claims for any registered email address.
+
+
 ## Installation & Usage
 
-To install and use the **FinLegal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/finlegal](https://vinkius.com/mcp/finlegal)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FinLegal** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `finlegal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FinLegal** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "finlegal": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

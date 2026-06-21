@@ -1,7 +1,6 @@
 # IPRoyal (Proxy Services) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iproyal-proxy-services)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/iproyal-proxy-services-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/iproyal-proxy-services-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iproyal-proxy-services)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **IPRoyal (Proxy Service
 > Generating proxy string… For Germany (DE) with a sticky session, your connection string is: `geo.iproyal.com:10000:username_country-de_session-abc123:password`. You can use this directly in your scraping script.
 
 
+## ❓ FAQ
+
+**Q: Can I check how much bandwidth I've consumed for a specific proxy order?**
+Yes. Use the `get_traffic` tool with your Order ID. Your agent will return the exact amount of data used in GB/MB, helping you avoid unexpected depletion of funds for residential proxies.
+
+**Q: How do I whitelist my server's IP address through my agent?**
+The `add_whitelist_ip` tool allows your agent to authorize a specific IPv4 address for a proxy order. This enables user/pass-free authentication, which is more secure for headless scrapers and backend servers.
+
+**Q: Can I check if residential proxies are available in a specific country?**
+Absolutely. Use the `get_availability` tool and specify the product (e.g. 'residential'). Your agent will return a live count of online proxies in the IPRoyal pool for each country.
+
+
 ## Installation & Usage
 
-To install and use the **IPRoyal (Proxy Services)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/iproyal-proxy-services](https://vinkius.com/mcp/iproyal-proxy-services)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IPRoyal (Proxy Services)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `iproyal-proxy-services` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IPRoyal (Proxy Services)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "iproyal-proxy-services": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

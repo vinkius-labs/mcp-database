@@ -1,7 +1,6 @@
 # Kombo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kombo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kombo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kombo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kombo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **Kombo** MCP server usi
 > The system lists the following absence types: Vacation, Sick Leave, Parental Leave, and Unpaid Leave. Do you need to check the absences for a specific employee?
 
 
+## ❓ FAQ
+
+**Q: Can I list all employees from my HRIS system using this server?**
+Yes! Use the `get_hris_employees` tool. You can also apply filters like `updated_after` to find recently modified records or use pagination for large datasets.
+
+**Q: How do I check for active job openings in our connected ATS?**
+Simply ask the agent to run the `get_ats_jobs` tool. It will retrieve all job openings, including metadata like descriptions and status, from your integrated recruitment platform.
+
+**Q: Is it possible to see why a candidate was rejected?**
+Yes, the `get_ats_rejection_reasons` tool allows you to list the configured rejection reasons in your ATS, helping you understand the hiring outcomes.
+
+
 ## Installation & Usage
 
-To install and use the **Kombo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kombo](https://vinkius.com/mcp/kombo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kombo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kombo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kombo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kombo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

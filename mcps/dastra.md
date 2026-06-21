@@ -1,7 +1,6 @@
 # Dastra MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dastra)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dastra-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dastra-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dastra)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Dastra** MCP server us
 > Breach documented! I've successfully registered the 'Server Unauthorized Access' incident in workspace ws_123. The incident ID is 'br_789'. I'll now help you monitor the investigation status.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Dastra Access Token?**
+Log in to Dastra, click your profile icon, navigate to **API Access**, and generate a new Access Token for your account.
+
+**Q: What is a DSR request?**
+Data Subject Requests are exercises of privacy rights (Access, Erasure, etc.) submitted by individuals under data protection laws.
+
+**Q: Can I manage multiple workspaces?**
+Yes! Use the `list_workspaces` tool to identify your workspace IDs, then use them as parameters in other tools like `list_dsr` or `list_breaches`.
+
+
 ## Installation & Usage
 
-To install and use the **Dastra** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dastra](https://vinkius.com/mcp/dastra)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dastra** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dastra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dastra** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dastra": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

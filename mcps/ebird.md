@@ -1,7 +1,6 @@
 # eBird MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ebird)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ebird-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ebird-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ebird)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **eBird** MCP server usi
 > I've identified several top hotspots in Florida, including Everglades National Park (L128523) and Fort De Soto Park (L109156). Which one would you like to explore for recent sightings?
 
 
+## ❓ FAQ
+
+**Q: How do I find recent sightings of a specific bird species in my area?**
+Use the `get_recent_observations_by_species` tool. Provide the `regionCode` (e.g., 'US-NY') and the `speciesCode` (e.g., 'pingro' for Pine Grosbeak) to see the latest reports.
+
+**Q: Can I find birding locations near my current GPS coordinates?**
+Yes, use `get_recent_nearby_observations` with your latitude and longitude. You can also use `get_nearby_hotspots` to find established birding locations within a specific radius.
+
+**Q: How do I get information about a specific region's birding activity?**
+Use `get_region_info` for general data or `get_recent_checklists` to see the most recent trip reports submitted by birders in that region.
+
+
 ## Installation & Usage
 
-To install and use the **eBird** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ebird](https://vinkius.com/mcp/ebird)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **eBird** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ebird` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **eBird** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ebird": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Exchange Rates API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exchange-rates-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/exchange-rates-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/exchange-rates-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exchange-rates-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Exchange Rates API** M
 > On January 1st, 2020, the exchange rates relative to EUR were: **USD: 1.121**, **GBP: 0.846**, and **JPY: 121.75**. Would you like to see the full list of currencies for this date?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Exchange Rates API Key?**
+You can sign up for a free account at [**ExchangeRatesAPI.io**](https://exchangeratesapi.io). Once registered, your **API Access Key** will be available in your dashboard.
+
+**Q: What is the default base currency?**
+For Free and Basic plans, the default base currency is **EUR**. Premium plans allow you to specify any supported currency as the base for exchange rate data.
+
+**Q: How far back does historical data go?**
+Exchange Rates API provides historical exchange rate data dating back to **1999** for most major currencies.
+
+
 ## Installation & Usage
 
-To install and use the **Exchange Rates API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/exchange-rates-api](https://vinkius.com/mcp/exchange-rates-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Exchange Rates API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `exchange-rates-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Exchange Rates API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "exchange-rates-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

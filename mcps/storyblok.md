@@ -1,7 +1,6 @@
 # Storyblok MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/storyblok)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/storyblok-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/storyblok-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/storyblok)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Successfully published the new blog story 'Future Tech' into the content reposit
 These assets are ready to be integrated into your active story components.
 
 
+## ❓ FAQ
+
+**Q: How does the AI validate JSON payloads before creating content?**
+Instruct the agent to call `list_components` first. It returns the exact field names and types each component expects, so the AI builds a compliant JSON payload before calling `create_content_story`.
+
+**Q: Can the agent accidentally delete entire spaces?**
+No. `delete_content_story` targets a single story by ID — it cannot perform recursive or bulk deletions. For extra safety, use a token scoped with limited write permissions.
+
+**Q: What content types can I manage through this integration?**
+Stories (pages, articles, blog posts), media assets (images, videos, documents), component definitions, and space-level settings. Use `list_stories`, `list_assets`, and `list_components` to explore your content.
+
+
 ## Installation & Usage
 
-To install and use the **Storyblok** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/storyblok](https://vinkius.com/mcp/storyblok)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Storyblok** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `storyblok` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Storyblok** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "storyblok": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Ecwid MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecwid)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ecwid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ecwid-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecwid)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Ecwid** MCP server usi
 > Retrieving recent orders... I found 3 orders from yesterday: #1001 ($45.00, Paid), #1002 ($120.00, Awaiting Payment), and #1003 ($35.50, Shipped). Would you like to see the customer details for order #1001?
 
 
+## ❓ FAQ
+
+**Q: Can my agent update product inventory in Ecwid?**
+Yes. Use the 'update_inventory' tool. Provide the product ID and the new quantity. The agent will command the Ecwid mutation endpoint to reset the physical stock level perfectly.
+
+**Q: How do I search for orders by a specific customer via chat?**
+First, use 'search_customers' to find the buyer details. Then, use 'search_orders' with appropriate filters. Your agent can retrieve the exact financial logs and fulfillment statuses for any order number.
+
+**Q: Can I see all active discount coupons through the agent?**
+Absolutely. Use the 'list_coupons' tool. Your agent will evaluate the distinct discounting rules in your account, allowing you to audit coupon boundaries and rules without manual dashboard checks.
+
+
 ## Installation & Usage
 
-To install and use the **Ecwid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ecwid](https://vinkius.com/mcp/ecwid)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ecwid** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ecwid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ecwid** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ecwid": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

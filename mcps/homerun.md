@@ -1,7 +1,6 @@
 # Homerun MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/homerun)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/homerun-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/homerun-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/homerun)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Homerun** MCP server u
 > Successfully updated application 554433. The candidate has been moved to the 'hired' stage. Would you like me to check if there are any other pending tasks for this vacancy?
 
 
+## ❓ FAQ
+
+**Q: Can I filter job applications to see only those who have been hired?**
+Yes! Use the `list_job_applications` tool and set the `stage` parameter to 'hired'. You can also combine this with `hired_after` to see recent hires.
+
+**Q: How do I retrieve the full profile and notes for a specific candidate?**
+Use the `get_job_application` tool with the specific `job_application_id`. To see notes, ensure you include 'notes' in the `include` parameter.
+
+**Q: Is it possible to move a candidate to a different stage via the AI?**
+Absolutely. Use the `update_job_application` tool and provide the new stage name within the `stage` JSON object (e.g., `{"name": "interview"}`).
+
+
 ## Installation & Usage
 
-To install and use the **Homerun** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/homerun](https://vinkius.com/mcp/homerun)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Homerun** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `homerun` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Homerun** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "homerun": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

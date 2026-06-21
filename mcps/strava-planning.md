@@ -1,7 +1,6 @@
 # Strava Planning MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-planning)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/strava-planning-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/strava-planning-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-planning)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -109,12 +108,52 @@ Here are some examples of how you can interact with the **Strava Planning** MCP 
 > Activity created: "Gym Session" — Type: Workout, Date: 2024-03-15 07:00, Duration: 45 min. Description: "Strength training - upper body focus". Activity ID: 9876543210. Now visible in your Strava feed.
 
 
+## ❓ FAQ
+
+**Q: How do I export a route to my GPS device?**
+First, use list_routes to find your route ID. Then use export_route_gpx or export_route_tcx with that route ID. The GPX file can be downloaded and loaded onto Garmin, Wahoo, or other GPS devices for turn-by-turn navigation during your workout.
+
+**Q: Can I log activities that Strava doesn't automatically track?**
+Yes! Use create_activity to manually log any workout — gym sessions, yoga, swimming, hiking, cross-training. Provide the name, type (e.g., "Workout", "Yoga", "Swim"), start date, elapsed time, and optionally distance and description. This keeps all your training in one place.
+
+**Q: How do I track my bike and shoe mileage?**
+Use get_gear with the gear ID to see total accumulated distance. Gear IDs are found in your athlete profile or assigned to activities. You can assign gear to activities using update_activity with the gear_id parameter. Track mileage to know when to replace chains, tires, or running shoes.
+
+
 ## Installation & Usage
 
-To install and use the **Strava Planning** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/strava-planning](https://vinkius.com/mcp/strava-planning)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Strava Planning** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `strava-planning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Strava Planning** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "strava-planning": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

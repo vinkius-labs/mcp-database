@@ -1,7 +1,6 @@
 # Reservoir (NFT Liquidity API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reservoir-nft-liquidity-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reservoir-nft-liquidity-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reservoir-nft-liquidity-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reservoir-nft-liquidity-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Reservoir (NFT Liquidi
 > There are 3 active listings for this Bored Ape: 75 ETH on OpenSea, 74.9 ETH on LooksRare, and 76 ETH on X2Y2. I can generate a buy transaction for the cheapest one if you're ready.
 
 
+## ❓ FAQ
+
+**Q: Can I check the floor price and volume for a specific NFT collection?**
+Yes. Use the `get_collection` tool with the collection ID or contract address. It returns real-time stats including floor price, market cap, and volume metrics.
+
+**Q: How do I see all active buy offers for a particular NFT?**
+Simply use the `list_bids` tool and provide the token identifier (contract:tokenId). The agent will list all active offers across supported marketplaces.
+
+**Q: Does this server allow me to actually buy an NFT through the AI?**
+The `execute_buy` tool generates the necessary transaction data. You will still need to sign the transaction with your wallet (like MetaMask) to complete the purchase, ensuring full security.
+
+
 ## Installation & Usage
 
-To install and use the **Reservoir (NFT Liquidity API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/reservoir-nft-liquidity-api](https://vinkius.com/mcp/reservoir-nft-liquidity-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Reservoir (NFT Liquidity API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `reservoir-nft-liquidity-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Reservoir (NFT Liquidity API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "reservoir-nft-liquidity-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

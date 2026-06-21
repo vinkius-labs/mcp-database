@@ -1,7 +1,6 @@
 # Stark Bank MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stark-bank)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stark-bank-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stark-bank-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stark-bank)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,55 @@ Here are some examples of how you can interact with the **Stark Bank** MCP serve
 > Boleto initialized inside Stark Bank batch array successfully under the desired CPF target. Check the array payload internally or export the barcode now.
 
 
+## ❓ FAQ
+
+**Q: How do I securely pass the Stark Bank ECDSA Private Key to MCP?**
+Inside Stark Bank, when you generate your API project, the website will generate a Public/Private Keypair or ask you to provide one. You must grab the **Private Key** (often starting with `-----BEGIN EC PRIVATE KEY-----`) and paste that entire raw multiline text into the `STARK_PRIVATE_KEY` input inside the MCP client perfectly as it is.
+
+**Q: Can the bot process Corporate Card requests automatically?**
+Yes! If you instruct the agent to orchestrate the generation using the tool `stark_create_corporate_card`, the API instantly spins up a valid, active Corporate Virtual Card attached to your Master Balance in real-time.
+
+**Q: How does the Stark Bank transfer function differ from basic gateway Pix?**
+Stark Transfer allows hyper granular outbounds. Instead of just pushing a basic Pix key, the `stark_create_transfer` can route massive payrolls, TED systems tracking `BankCode`, ISPB nodes and branch validation—giving you raw underlying banking protocol access.
+
+**Q: Will Stark API throttle the connection if the Agent lists too many historic Boletos?**
+StarkBank allows huge enterprise-grade API ceilings per second. Pulling hundreds of statements using `stark_list_boletos` naturally respects rate limits easily while functioning inside LLM chat turns.
+
+
 ## Installation & Usage
 
-To install and use the **Stark Bank** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stark-bank](https://vinkius.com/mcp/stark-bank)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Stark Bank** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stark-bank` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Stark Bank** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stark-bank": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

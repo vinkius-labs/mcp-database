@@ -1,7 +1,6 @@
 # BulkSMS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bulksms)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bulksms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bulksms-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bulksms)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **BulkSMS** MCP server u
 > Retrieving group members... I found 15 contacts in the 'VIP Customers' group, including John Doe (+1234567890) and Sarah Smith (+0987654321).
 
 
+## ❓ FAQ
+
+**Q: Can I check my remaining credit balance using the agent?**
+Yes! Use the `get_profile` tool. Your agent will fetch your account profile, including the current total credit balance available for sending messages.
+
+**Q: How do I send an SMS to multiple people at once?**
+Simply ask the agent to `send_bulk_sms` and provide a JSON array of messages. Each object should include the recipient's phone number and the message body.
+
+**Q: Does the integration support checking if a message was delivered?**
+Yes. Use the `get_message` tool with the Message ID. It will retrieve the current delivery status directly from BulkSMS.com.
+
+
 ## Installation & Usage
 
-To install and use the **BulkSMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bulksms](https://vinkius.com/mcp/bulksms)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BulkSMS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bulksms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BulkSMS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bulksms": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

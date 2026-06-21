@@ -1,7 +1,6 @@
 # BCB Câmbio — Dólar PTAX, Euro e 150+ Moedas MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bcb-cambio-dolar-ptax-euro-e-150-moedas)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bcb-cambio-dolar-ptax-euro-e-150-moedas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bcb-cambio-dolar-ptax-euro-e-150-moedas-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bcb-cambio-dolar-ptax-euro-e-150-moedas)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Trend: -1.2% (strengthening BRL)
 > Using the latest EUR/BRL exchange rate of 6.1820... 500 EUR equals to 3091.00 BRL natively.
 
 
+## ❓ FAQ
+
+**Q: What is PTAX?**
+PTAX is the official BRL/USD reference rate calculated by the Central Bank of Brazil. It's computed from daily consultations with foreign exchange dealers and is used as the benchmark for settling FX contracts, derivatives, and international transactions in Brazil.
+
+**Q: Can I query currencies other than USD?**
+Yes! The Central Bank holds an active catalog covering more than 150 different foreign exchange currencies against the Real (BRL). The AI will fetch daily crosses simply by mentioning the currency ticker.
+
+**Q: Does it require an API authentication key or setup?**
+No. The integration interfaces entirely with the Central Bank's open access OData portals. Subscribe the module and engage directly without generating account tokens.
+
+
 ## Installation & Usage
 
-To install and use the **BCB Câmbio — Dólar PTAX, Euro e 150+ Moedas** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bcb-cambio-dolar-ptax-euro-e-150-moedas](https://vinkius.com/mcp/bcb-cambio-dolar-ptax-euro-e-150-moedas)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BCB Câmbio — Dólar PTAX, Euro e 150+ Moedas** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bcb-cambio-dolar-ptax-euro-e-150-moedas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BCB Câmbio — Dólar PTAX, Euro e 150+ Moedas** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bcb-cambio-dolar-ptax-euro-e-150-moedas": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

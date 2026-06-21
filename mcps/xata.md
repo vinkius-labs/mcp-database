@@ -1,7 +1,6 @@
 # Xata MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xata)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/xata-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/xata-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xata)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **Xata** MCP server usin
 > Found 2 projects in 'org-123': 'E-commerce-Backend' and 'User-Analytics'. Would you like to check the resource limits for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I see all organizations I have access to?**
+Yes! Use the `list_organizations` tool to retrieve all Xata organizations available to your current API key.
+
+**Q: How do I start a new project in a specific organization?**
+Simply use the `create_project` action providing the `organization_id` and the desired name for your new project.
+
+**Q: Can I run raw SQL queries through the agent?**
+Yes, the `execute_sql` tool allows you to run SQL queries directly against your database branches for advanced data manipulation and analysis.
+
+
 ## Installation & Usage
 
-To install and use the **Xata** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/xata](https://vinkius.com/mcp/xata)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Xata** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `xata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Xata** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "xata": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

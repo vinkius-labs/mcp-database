@@ -1,7 +1,6 @@
 # Days of Supply Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/days-of-supply-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/days-of-supply-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/days-of-supply-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/days-of-supply-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Days of Supply Calcula
 > Using `get_category_health_summary`, the Electronics category shows 5 items at risk of stockout and 2 items in overstock.
 
 
+## ❓ FAQ
+
+**Q: What is the purpose of this MCP?**
+It calculates how many days your current stock will last based on daily demand, helping you prevent stockouts and reduce overstock.
+
+**Q: How does it identify stockout risks?**
+The tool flags any item where the calculated supply duration is less than 7 days as a critical risk.
+
+**Q: Can I analyze financial impact?**
+Yes, using `calculate_financial_exposure_by_tier`, you can see the monetary value of inventory held in different coverage tiers.
+
+
 ## Installation & Usage
 
-To install and use the **Days of Supply Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/days-of-supply-calculator](https://vinkius.com/mcp/days-of-supply-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Days of Supply Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `days-of-supply-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Days of Supply Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "days-of-supply-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

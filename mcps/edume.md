@@ -1,7 +1,6 @@
 # eduMe MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/edume)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/edume-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/edume-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/edume)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **eduMe** MCP server usi
 > The 'Warehouse Night Shift' and 'Regional Drivers' teams currently have the lowest engagement rates (below 60%). Would you like me to pull the contact information for the team leads?
 
 
+## ❓ FAQ
+
+**Q: How do I get an eduMe API Key?**
+Log in to your eduMe dashboard, navigate to **Settings > API**, and you can generate or retrieve your unique API Key from there. API access may require an enterprise-level plan.
+
+**Q: Can the agent assign courses to users?**
+This integration currently focuses on listing and auditing training data. Assigning courses or creating new users should be managed via the eduMe dashboard or specific enrollment API endpoints.
+
+**Q: Does the integration show real-time completion?**
+Yes, you can use the list_training_courses or get_user_training_profile tools to retrieve the latest completion rates and statuses as reported by the eduMe platform.
+
+
 ## Installation & Usage
 
-To install and use the **eduMe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/edume](https://vinkius.com/mcp/edume)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **eduMe** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `edume` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **eduMe** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "edume": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

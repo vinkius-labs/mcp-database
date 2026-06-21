@@ -1,7 +1,6 @@
 # Dada Now / 达达 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dada-now)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dada-now-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dada-now-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dada-now)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Dada Now / 达达** MC
 > I've retrieved the details for shop `SH_STORE_01`. It is currently 'Online' and operating in the Jing'an District of Shanghai. The contact person is 'Zhang Wei'. Would you like me to update any contact information for this station?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Dada App Key, Secret, and Source ID?**
+Log in to the [Dada Developer Portal](https://newopen.imdada.cn/), register your application to get the App Key and App Secret. Your Source ID (Merchant ID) is visible in your merchant account profile after registration.
+
+**Q: What is the 'origin_shop_id'?**
+The `origin_shop_id` is a custom unique identifier you define for your shop when adding it to Dada. It should match the ID you use in your own system to coordinate operations between platforms.
+
+**Q: Can I query delivery prices before placing an order?**
+Yes! Use the `query_delivery_fee` tool to calculate the cost. If you're happy with the price, you can immediately use the returned `deliveryNo` with the `create_order_after_query` tool to confirm the delivery.
+
+
 ## Installation & Usage
 
-To install and use the **Dada Now / 达达** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dada-now](https://vinkius.com/mcp/dada-now)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dada Now / 达达** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dada-now` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dada Now / 达达** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dada-now": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

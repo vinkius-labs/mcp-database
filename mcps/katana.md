@@ -1,7 +1,6 @@
 # Katana MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/katana)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/katana-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/katana-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/katana)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Katana** MCP server us
 > I've fetched 8 manufacturing orders. Current jobs include production of 'Wooden Table' and 'Office Chair'.
 
 
+## ❓ FAQ
+
+**Q: Can I check the inventory of a specific material variant?**
+Yes, use the `get_inventory_by_variant` tool with the unique variant ID to see current stock levels and availability in real-time.
+
+**Q: Is it possible to list all current manufacturing orders?**
+Absolutely. The `list_manufacturing_orders` tool retrieves a list of all production jobs, helping you track shop floor activities.
+
+**Q: Can I see my customer list via the agent?**
+Yes, the `list_customers` tool provides access to your customer database, making it easy to reference customer IDs for new sales orders.
+
+
 ## Installation & Usage
 
-To install and use the **Katana** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/katana](https://vinkius.com/mcp/katana)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Katana** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `katana` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Katana** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "katana": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

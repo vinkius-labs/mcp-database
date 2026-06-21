@@ -1,7 +1,6 @@
 # Carta MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/carta)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/carta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/carta-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/carta)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,55 @@ Here are some examples of how you can interact with the **Carta** MCP server usi
 > João Paulo was granted 50,000 options on June 1, 2023, with a 4-year vesting schedule and 1-year cliff. He has vested 21,875 shares (43.75%). His next vesting event is on the 1st of next month for 1,041 shares.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Carta API credentials?**
+Go to the **Carta Developer Portal** at **developer.carta.com** and log in or register. Click **Create App**, fill in the app details (name, homepage URL, grant type, and required scopes), then click **View app details** to find your **Client ID** and **Client Secret**. Copy both values and paste them into the configuration below. Note: Carta's API program is invite-only — if you don't have access, email **developers@carta.com** to request it.
+
+**Q: Can my AI agent tell me exactly how much equity remains in our option pool?**
+Yes. Ask your agent to pull the cap table and it returns the total authorized shares, shares issued, options granted, options exercised, and the remaining unallocated pool — giving you an instant snapshot of your equity position. Perfect for board meetings, fundraising conversations, or new-hire planning where you need the numbers immediately.
+
+**Q: What if a new hire asks about their vesting schedule during onboarding?**
+Your AI agent can pull any employee's grant details including total shares granted, vesting start date, cliff date, monthly vesting rate, and shares already vested — so HR can answer equity questions instantly during the onboarding call without opening the Carta dashboard or asking Legal.
+
+**Q: Can this handle companies with complex multi-round fundraising histories?**
+Yes. The integration retrieves the full cap table structure including Seed, Series A, B, C rounds and beyond, convertible notes, SAFEs, and all share classes. Perfect for late-stage startups preparing for IPO, companies running secondary sales, and legal teams performing due diligence on cap table complexity.
+
+
 ## Installation & Usage
 
-To install and use the **Carta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/carta](https://vinkius.com/mcp/carta)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Carta** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `carta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Carta** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "carta": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

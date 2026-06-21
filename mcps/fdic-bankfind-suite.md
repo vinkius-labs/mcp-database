@@ -1,7 +1,6 @@
 # FDIC BankFind Suite MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fdic-bankfind-suite)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fdic-bankfind-suite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fdic-bankfind-suite-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fdic-bankfind-suite)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **FDIC BankFind Suite** 
 > In 2023, notable bank failures included Silicon Valley Bank, Signature Bank, and First Republic Bank. I can provide the specific failure dates and resolution details for each.
 
 
+## ❓ FAQ
+
+**Q: Can I search for banks in a specific state?**
+Yes. Use the `list_institutions` tool with a filter like `STALP:"NY"` to find all institutions headquartered in New York.
+
+**Q: How do I find information about bank mergers?**
+You can use the `list_history` tool. It provides details on structure change events, including mergers and acquisitions for financial institutions.
+
+**Q: Can I see data on banks that have failed?**
+Yes, the `list_failures` tool allows you to retrieve records of failed financial institutions, including the date of failure and resolution type.
+
+
 ## Installation & Usage
 
-To install and use the **FDIC BankFind Suite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fdic-bankfind-suite](https://vinkius.com/mcp/fdic-bankfind-suite)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FDIC BankFind Suite** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fdic-bankfind-suite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FDIC BankFind Suite** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fdic-bankfind-suite": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

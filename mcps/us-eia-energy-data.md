@@ -1,7 +1,6 @@
 # U.S. EIA Energy Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-eia-energy-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-eia-energy-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-eia-energy-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-eia-energy-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **U.S. EIA Energy Data**
 > Total U.S. Dry Natural Gas production is currently at 102 billion cubic feet per day. Underground storage levels are at 3,200 Bcf. Would you like to see the breakdown by production state?
 
 
+## ❓ FAQ
+
+**Q: How do I get an EIA API Key?**
+You can register for a free API Key at the [**EIA Open Data portal**](https://www.eia.gov/opendata/register.php). Once registered, the key will be sent to your email address.
+
+**Q: Is the data real-time or historical?**
+EIA provides both current energy statistics (updated daily or weekly) and extensive historical time-series data dating back several decades.
+
+**Q: Does the integration cover global energy data?**
+This integration focuses on official U.S. domestic energy statistics as reported by the U.S. Energy Information Administration (EIA). Some international import/export data is included where relevant to the U.S. market.
+
+
 ## Installation & Usage
 
-To install and use the **U.S. EIA Energy Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-eia-energy-data](https://vinkius.com/mcp/us-eia-energy-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **U.S. EIA Energy Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-eia-energy-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **U.S. EIA Energy Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-eia-energy-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

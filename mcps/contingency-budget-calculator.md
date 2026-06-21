@@ -1,7 +1,6 @@
 # Contingency Budget Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contingency-budget-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contingency-budget-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contingency-budget-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contingency-budget-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Contingency Budget Cal
 > The total contingency amount required is $75,000, bringing the new total projected budget to $575,000.
 
 
+## ❓ FAQ
+
+**Q: How does the contingency calculation change over time?**
+The required reserve decreases as the project progresses. The `calculate_contingency_amounts` tool uses higher percentages for the design phase and lower percentages for the construction phase to reflect reduced uncertainty.
+
+**Q: What types of risks are covered?**
+The engine calculates reserves for three specific categories: design risk (errors/omissions), site risk (environmental/logistical), and market risk (economic/supply chain).
+
+**Q: Can I see the total impact on my budget?**
+Yes, by using the `analyze_budget_impact` tool, you can see both the total contingency amount required and the new projected total project budget.
+
+
 ## Installation & Usage
 
-To install and use the **Contingency Budget Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/contingency-budget-calculator](https://vinkius.com/mcp/contingency-budget-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Contingency Budget Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `contingency-budget-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Contingency Budget Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "contingency-budget-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

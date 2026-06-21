@@ -1,7 +1,6 @@
 # AudioStack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/audiostack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/audiostack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/audiostack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/audiostack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **AudioStack** MCP serve
 > I found 3 templates: 'Techno Pulse', 'Ambient Synth', and 'House Groove'. Each includes pre-mixed background tracks optimized for professional mastering.
 
 
+## ❓ FAQ
+
+**Q: Can the AI help me choose the best voice for my content?**
+Yes! You can ask the agent to search for voices based on gender, language, or style (e.g., 'professional male Portuguese voice'). It will return a list of matching IDs and descriptions for you to choose from.
+
+**Q: What is an Audioform and how does the AI use it?**
+An Audioform is a JSON blueprint for a full production. Your AI agent uses it to define exactly which voice to use, what background music to add, and how the final mastering should sound in a single automated step.
+
+**Q: Is there a limit to the length of audio I can generate?**
+The integration supports standard API limits from AudioStack. For very long scripts, it is recommended to generate them in sections or chapters for optimal quality and processing speed.
+
+
 ## Installation & Usage
 
-To install and use the **AudioStack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/audiostack](https://vinkius.com/mcp/audiostack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AudioStack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `audiostack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AudioStack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "audiostack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

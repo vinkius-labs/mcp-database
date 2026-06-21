@@ -1,7 +1,6 @@
 # EX.CO Video Experience MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exco-video-experience)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/exco-video-experience-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/exco-video-experience-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exco-video-experience)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **EX.CO Video Experience
 > I've found 3 interactive items matching 'Quiz': 'Customer Feedback Quiz', 'Product Knowledge Quiz', and 'Fun Personality Quiz'. All are currently 'Active'. Would you like the detailed performance for the Customer Feedback Quiz?
 
 
+## ❓ FAQ
+
+**Q: How do I get an EX.CO API Key?**
+Log in to your EX.CO platform, navigate to **Settings > API Integration**, and you can generate or retrieve your unique **REST API Key** from there. Ensure you have the necessary organizational permissions.
+
+**Q: Does the integration show real-time views?**
+Yes, you can use the get_video_analytics_summary tool to retrieve the latest view counts, completions, and interaction metrics across your entire video library.
+
+**Q: Can the agent upload new videos?**
+This integration currently focuses on listing and auditing videos, interactive content, and analytics. Uploading or editing video assets should be managed via the EX.CO platform dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **EX.CO Video Experience** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/exco-video-experience](https://vinkius.com/mcp/exco-video-experience)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EX.CO Video Experience** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `exco-video-experience` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EX.CO Video Experience** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "exco-video-experience": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

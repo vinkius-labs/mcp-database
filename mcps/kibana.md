@@ -1,7 +1,6 @@
 # Kibana MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kibana)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kibana-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kibana-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kibana)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -119,12 +118,52 @@ Here are some examples of how you can interact with the **Kibana** MCP server us
 > Fetching object... The index pattern 'logs-*' is configured with the time field '@timestamp' and contains 45 mapped fields. It was last updated on 2023-10-25.
 
 
+## ❓ FAQ
+
+**Q: Can I search for a specific dashboard across my entire Kibana instance?**
+Yes. Use the `find_saved_objects` tool and specify the type as 'dashboard'. You can also provide a search string to filter the results by name or description.
+
+**Q: Is it possible to move dashboards from a development space to a production space?**
+Absolutely. The `copy_saved_objects` tool allows you to select objects from a source space and replicate them into one or more target spaces, including their references.
+
+**Q: Can I create new Kibana spaces using this integration?**
+Yes, you can use the `create_space` action. You just need to provide the space configuration JSON, including the ID and name you want for the new environment.
+
+
 ## Installation & Usage
 
-To install and use the **Kibana** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kibana](https://vinkius.com/mcp/kibana)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kibana** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kibana` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kibana** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kibana": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Keywords AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/keywords-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/keywords-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/keywords-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/keywords-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -64,12 +63,52 @@ Here are some examples of how you can interact with the **Keywords AI** MCP serv
 > Analytics summary: 1,234 total requests, .80 total cost, 98.2% success rate, p50 latency 890ms, p99 2.1s.
 
 
+## ❓ FAQ
+
+**Q: Can my AI track LLM costs?**
+Yes. `get_credits` shows your balance, `get_usage_stats` breaks down costs by model and time period.
+
+**Q: Can I filter request logs by model?**
+Yes. `list_requests_by_model` returns only requests made to a specific LLM.
+
+**Q: What analytics are available?**
+`get_analytics` provides cost trends, latency percentiles, error rates, and token usage over time.
+
+
 ## Installation & Usage
 
-To install and use the **Keywords AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/keywords-ai](https://vinkius.com/mcp/keywords-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Keywords AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `keywords-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Keywords AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "keywords-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Anthropic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anthropic-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/anthropic-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/anthropic-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anthropic-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,55 @@ Here are some examples of how you can interact with the **Anthropic** MCP server
 > The message would use approximately 547 input tokens (45 for the prompt + 502 for the article text). With a typical response of 150 tokens, the total would be ~697 tokens for this conversation turn.
 
 
+## ❓ FAQ
+
+**Q: How do I get an Anthropic API Key?**
+Log in to the [**Anthropic Console**](https://console.anthropic.com), go to **Account Settings > API Keys** and click **Create Key**. Copy the key immediately — it starts with `sk-ant-` and won't be shown again. You can also create workspace-scoped keys to control spending by use case.
+
+**Q: What models are available?**
+Use the `list_models` tool to see all available Claude models. Current models include Claude Sonnet 4, Claude Opus 4 and Claude Haiku variants, each with different capabilities, context windows and pricing. The model ID format is like `claude-sonnet-4-20250514`.
+
+**Q: Can I send multi-turn conversations?**
+Yes! Pass a messages array with alternating 'user' and 'assistant' roles. Each message has a 'role' and 'content' field. Claude will continue the conversation based on the full message history. Example: [{"role":"user","content":"Hello"},{"role":"assistant","content":"Hi!"},{"role":"user","content":"What's 2+2?"}].
+
+**Q: How does batch processing work?**
+Use `create_batch_message` with an array of independent message requests. Each request is processed asynchronously and costs 50% less than individual requests. Use `get_batch_message` to check progress and results. Batches are ideal when you have many unrelated prompts to process.
+
+
 ## Installation & Usage
 
-To install and use the **Anthropic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/anthropic-alternative](https://vinkius.com/mcp/anthropic-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Anthropic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `anthropic-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Anthropic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "anthropic-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

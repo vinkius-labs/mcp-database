@@ -1,7 +1,6 @@
 # StatusCake MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/statuscake)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/statuscake-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/statuscake-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/statuscake)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **StatusCake** MCP serve
 > Inspecting SSL monitor 998877... The certificate for 'secure.example.com' is valid. It expires in 45 days (2024-12-15) and is issued by Let's Encrypt.
 
 
+## ❓ FAQ
+
+**Q: Can I check the status of all my heartbeat monitors at once?**
+Yes! Use the `list_heartbeats` tool. You can also filter by status (up/down) or tags to find specific background jobs quickly.
+
+**Q: How do I create a new page speed test for a website?**
+Simply use the `create_pagespeed` tool. You'll need to provide the website URL, a name for the check, the check rate, and the region you want to test from.
+
+**Q: Is it possible to see my configured maintenance windows?**
+Yes, you can use the `list_maintenance_windows` tool to retrieve all scheduled maintenance periods across your infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **StatusCake** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/statuscake](https://vinkius.com/mcp/statuscake)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **StatusCake** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `statuscake` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **StatusCake** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "statuscake": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

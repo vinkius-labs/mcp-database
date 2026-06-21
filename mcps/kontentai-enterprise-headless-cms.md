@@ -1,7 +1,6 @@
 # Kontent.ai (Enterprise Headless CMS) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kontentai-enterprise-headless-cms)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kontentai-enterprise-headless-cms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kontentai-enterprise-headless-cms-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kontentai-enterprise-headless-cms)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Kontent.ai (Enterprise
 > The 'Article' content type (codename: article) contains 5 fields: 'title' (Text), 'slug' (URL slug), 'body' (Rich text), 'author' (Content relation), and 'hero_image' (Asset). I can help you create a new item implementing this schema.
 
 
+## ❓ FAQ
+
+**Q: Can I update the actual text of an item using my agent?**
+Yes. Use the `upsert_language_variant` tool. While `upsert_item` creates the container, the variant tool allows you to populate the specific content fields (`elements`) for a given language, placing the item into Draft status.
+
+**Q: How do I make my draft content live on the website?**
+The `publish_variant` tool transitions a specific language variant from Draft to Published. This makes the content immediately accessible to your frontend applications via the public Delivery APIs.
+
+**Q: Can my agent help me understand which fields are in a content model?**
+Absolutely. Use the `get_content_type` tool by providing the type codename. Your agent will perform a schema introspection and list all available elements, allowing you to understand the exact structure you need to populate.
+
+
 ## Installation & Usage
 
-To install and use the **Kontent.ai (Enterprise Headless CMS)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kontentai-enterprise-headless-cms](https://vinkius.com/mcp/kontentai-enterprise-headless-cms)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kontent.ai (Enterprise Headless CMS)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kontentai-enterprise-headless-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kontent.ai (Enterprise Headless CMS)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kontentai-enterprise-headless-cms": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

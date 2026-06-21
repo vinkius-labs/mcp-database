@@ -1,7 +1,6 @@
 # PractiTest MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/practitest)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/practitest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/practitest-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/practitest)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **PractiTest** MCP serve
 > Investigating `list_issues`, I see one highly relevant defect: 'EUR vs GBP Cart Rounding Error' (Issue ID #91). It carries a `High` severity and it strictly ties to instances in your 'Multicurrency V2' test cluster. Current status: UNRESOLVED.
 
 
+## ❓ FAQ
+
+**Q: Can the AI provide the exact step where a test case failed?**
+Yes. If an execution failed, the agent uses `list_runs` for the instance. Since an instance maps directly to test steps, the AI inherently decodes the exact execution traces to show you the failing parameters.
+
+**Q: Is PractiTest's requirement and issue tracing accessible to the AI?**
+Yes. Tools like `list_requirements` and `list_issues` expose full traceability trees. You can ask exactly how many QA instances are mapped to Requirement 5.
+
+**Q: Do I need to copy the project ID separately?**
+Yes. In PractiTest, APIs execute cleanly isolated within specific Project instances. You must provide the numeric Project ID alongside your Personal Token so the underlying `pt-engine` binds queries strictly to that project.
+
+
 ## Installation & Usage
 
-To install and use the **PractiTest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/practitest](https://vinkius.com/mcp/practitest)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PractiTest** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `practitest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PractiTest** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "practitest": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

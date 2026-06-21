@@ -1,7 +1,6 @@
 # Vertex AI Search MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vertex-ai-search)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vertex-ai-search-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vertex-ai-search-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vertex-ai-search)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Vertex AI Search** MCP
 > I found several matches in 'product-catalog': 1. 'CloudBass Pro Blue' (In Stock), 2. 'SkyBuds v2 Azure' (Limited Stock), and 3. 'Oceanic Beats Wireless' (Discontinued). I can provide more details on features or pricing for any of these.
 
 
+## ❓ FAQ
+
+**Q: Can I get direct answers from my documents without reading through them?**
+Yes. Using the `get_grounded_answer` tool, your AI agent can process a natural language question and return a precise answer based specifically on the content within your Vertex AI Search data stores. This grounding ensures high accuracy and reduces hallucinations by sticking to your private data as the source of truth.
+
+**Q: How do I know which data stores are available to search?**
+Ask your agent to list your data stores. It will return all configured data stores in your collection along with their IDs and names. You can then use these IDs to perform targeted semantic searches or browse specific document branches.
+
+**Q: Can I use this for product recommendations on my website?**
+Absolutely. The `get_recommendations` tool allows your agent to retrieve personalized recommendations by providing user event data. This is ideal for testing recommendation engines and surfacing relevant content or products to users based on their historical behavior.
+
+
 ## Installation & Usage
 
-To install and use the **Vertex AI Search** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vertex-ai-search](https://vinkius.com/mcp/vertex-ai-search)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vertex AI Search** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vertex-ai-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vertex AI Search** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vertex-ai-search": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

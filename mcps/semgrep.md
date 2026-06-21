@@ -1,7 +1,6 @@
 # Semgrep MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/semgrep)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/semgrep-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/semgrep-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/semgrep)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Semgrep** MCP server u
 > I've analyzed your AppSec timeline with `get_metrics`. Your overall Fix Rate for the trailing 30 days is hovering around 83%. The median 'time-to-resolve' for critical SAST vulnerabilities is 3.4 days. This shows strong engagement natively within developer pull requests before merge.
 
 
+## ❓ FAQ
+
+**Q: Can the AI resolve or close findings in Semgrep natively?**
+Yes. This server supports mutable actions. By invoking `update_finding_status`, your AI agent can shift a specific semantic flaw to 'mitigated', 'fixed', 'ignored', or 'false_positive' updating the registry in real-time.
+
+**Q: How can I deploy a new custom SAST rule via chat?**
+Simply ask the LLM: 'Draft a semantic grep rule to ban hardcoded API keys in Python and deploy it'. The agent will natively format the JSON structure required and call `create_rule`, sending it directly to all repositories.
+
+**Q: Do I need to supply a 'Deployment Slug' for every request?**
+Most API queries require the deployment context. To ensure smooth interactions, just tell the agent your organization slug once (or let it query `list_deployments` to fetch the default one). The agent will remember it for the rest of the conversation loop.
+
+
 ## Installation & Usage
 
-To install and use the **Semgrep** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/semgrep](https://vinkius.com/mcp/semgrep)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Semgrep** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `semgrep` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Semgrep** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "semgrep": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Domo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/domo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/domo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/domo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/domo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Domo** MCP server usin
 > User 10293 has been successfully added to the 'Data Science' group. They now have access to the group's shared resources.
 
 
+## ❓ FAQ
+
+**Q: Can I automatically send an invitation email when creating a new user?**
+Yes. When using the `create_user` tool, the `sendInvite` parameter defaults to true, which triggers an invitation email to the new user's address.
+
+**Q: How do I change a user's role to Admin?**
+Use the `update_user` tool and provide the user's unique ID along with the `role` parameter set to 'Admin'.
+
+**Q: Is it possible to remove a user from a specific group without deleting their account?**
+Absolutely. Use the `remove_user_from_group` tool with the corresponding `group_id` and `user_id`. This only modifies group membership.
+
+
 ## Installation & Usage
 
-To install and use the **Domo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/domo](https://vinkius.com/mcp/domo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Domo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `domo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Domo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "domo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

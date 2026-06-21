@@ -1,7 +1,6 @@
 # Snov.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snovio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/snovio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/snovio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snovio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,55 @@ Here are some examples of how you can interact with the **Snov.io** MCP server u
 > Found: sarah.kim@makenotion.com (confidence: 88%). Domain pattern: {first}.{last}@makenotion.com. Verification: valid (SMTP confirmed). Credits used: 1.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Snov.io API credentials?**
+Log in to your Snov.io account at **app.snov.io**. Click your **profile avatar** (top right corner). Select the **API** tab. Your **User ID** and **API Secret** are displayed on this page. Copy both values and paste them into the configuration fields below. Free plans include 50 credits/month.
+
+**Q: Can I find all emails at a specific company domain?**
+Yes. Ask your agent 'Find all emails at acme.com' and it returns a list of verified business emails with names, job titles, confidence scores, and the email pattern used at that domain.
+
+**Q: Can I set up drip campaigns through the AI agent?**
+Yes. Your agent can create drip campaigns, add recipients, configure follow-up sequences, and monitor delivery statuses — complete email automation from a single conversation.
+
+**Q: Does Snov.io have a free plan?**
+Yes. Snov.io offers a free trial with 50 credits per month, enough for basic email finding and verification. The API works identically on all plans — credits are the only difference. Upgrade for higher volumes.
+
+
 ## Installation & Usage
 
-To install and use the **Snov.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/snovio](https://vinkius.com/mcp/snovio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Snov.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `snovio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Snov.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "snovio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

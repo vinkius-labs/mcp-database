@@ -1,7 +1,6 @@
 # DNSimple MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dnsimple)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dnsimple-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dnsimple-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dnsimple)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -143,12 +142,52 @@ Here are some examples of how you can interact with the **DNSimple** MCP server 
 > I found 2 email forwarding rules for 'my-app.io': 'info@my-app.io' -> 'admin@gmail.com' and 'support@my-app.io' -> 'help@zendesk.com'.
 
 
+## ❓ FAQ
+
+**Q: How can I check if DNSSEC is enabled for a specific domain?**
+You can use the `get_dnssec` tool by providing the Account ID and the Domain name. The agent will return the current DNSSEC status and details.
+
+**Q: Can I list all domains across all my DNSimple accounts?**
+First, use `list_accounts` to see all available Account IDs. Then, use `list_domains` with each specific Account ID to retrieve the domains associated with that account.
+
+**Q: Is it possible to manage email forwarding rules through this agent?**
+Yes! You can use `list_email_forwards` to see existing rules or `create_email_forward` to set up a new one for a specific domain.
+
+
 ## Installation & Usage
 
-To install and use the **DNSimple** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dnsimple](https://vinkius.com/mcp/dnsimple)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DNSimple** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dnsimple` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DNSimple** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dnsimple": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

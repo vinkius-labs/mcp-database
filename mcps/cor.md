@@ -1,7 +1,6 @@
 # COR MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cor)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cor-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cor)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **COR** MCP server using
 > Team directory orchestrated! The 'Development' team currently has 5 high-fidelity profiles, including 'Alex' (Dev Lead) and 'Sarah' (Senior FE). Your API connection is healthy. Shall I retrieve the detailed time log metadata for this team?
 
 
+## ❓ FAQ
+
+**Q: How do I find my COR API Token?**
+Log in to your account, navigate to **Personal Settings** > **API Tokens**, and generate a new high-fidelity **Personal API Token**.
+
+**Q: Can I check project profitability via AI?**
+Yes! The `get_cor_project` tool allows your agent to retrieve high-fidelity profitability metrics and financial health data for any specific project.
+
+**Q: How do I list my organization's teams?**
+Use the `list_cor_teams` tool to retrieve the complete high-fidelity directory of teams along with their unique identifiers for precise orchestration.
+
+
 ## Installation & Usage
 
-To install and use the **COR** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cor](https://vinkius.com/mcp/cor)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **COR** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **COR** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cor": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

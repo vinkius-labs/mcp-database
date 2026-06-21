@@ -1,7 +1,6 @@
 # TrackingTime MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trackingtime)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/trackingtime-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/trackingtime-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trackingtime)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **TrackingTime** MCP ser
 > Checking today's entries... You've tracked a total of 5.5 hours today: 2h on 'Backend API', 1.5h on 'Team Sync', and 2h on 'Documentation'. Great progress!
 
 
+## ❓ FAQ
+
+**Q: Can I start a timer for a specific task using the AI?**
+Yes! Use the `start_timer` tool and provide the Task ID. Your agent will instantly begin tracking time for that specific activity in your workspace.
+
+**Q: How do I see my time logs for the last 7 days?**
+Run the `list_time_entries` query. Provide the `fromDate` and `toDate` in YYYY-MM-DD format to retrieve the full history of tracked blocks for that period.
+
+**Q: Is it possible to add a time entry manually via AI?**
+Absolutely. Use the `add_time_entry` action. Provide the start time, end time, and the associated Task ID to register a completed block of time.
+
+
 ## Installation & Usage
 
-To install and use the **TrackingTime** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/trackingtime](https://vinkius.com/mcp/trackingtime)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TrackingTime** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `trackingtime` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TrackingTime** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "trackingtime": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

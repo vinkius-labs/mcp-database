@@ -1,7 +1,6 @@
 # MasterGo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mastergo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mastergo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mastergo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mastergo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **MasterGo** MCP server 
 > I've retrieved the styles for 'core-ui-library'. It includes 12 color variables and 8 typography styles. Would you like me to list them all for you?
 
 
+## ❓ FAQ
+
+**Q: How do I obtain a MasterGo API Token?**
+Log in to MasterGo, go to the [Developer Center](https://mastergo.com/developers), and create a new application or generate a personal access token under your account settings.
+
+**Q: Can I read specific layer information through this server?**
+Yes. Use the `list_nodes` tool with the file key and optional node IDs. This allows your agent to retrieve detailed data about frames, layers, and their properties.
+
+**Q: What is a 'fileKey' in MasterGo?**
+The `fileKey` is the unique identifier found in the URL of your MasterGo design file. It typically appears after `/file/` in the browser address bar.
+
+
 ## Installation & Usage
 
-To install and use the **MasterGo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mastergo](https://vinkius.com/mcp/mastergo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MasterGo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mastergo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MasterGo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mastergo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

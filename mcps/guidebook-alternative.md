@@ -1,7 +1,6 @@
 # Guidebook MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/guidebook-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/guidebook-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/guidebook-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/guidebook-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Guidebook** MCP server
 > Scanning custom lists for 'g_123'... I've retrieved the speaker list. You have 25 speakers registered, including keynote presenters and technical leads. I can provide the full list or search for a specific name.
 
 
+## ❓ FAQ
+
+**Q: How do I find a Guide ID?**
+You can use the `list_guides` tool to retrieve all mobile guides in your account along with their unique identifiers and names.
+
+**Q: Can I see the speakers or exhibitors for an event?**
+Yes! Use the `list_custom_lists` tool with a specific `guide_id` to retrieve all custom directories like speakers, exhibitors, or sponsors.
+
+**Q: Does the integration support viewing the event map?**
+The `list_guide_locations` tool provides the metadata for all mapped locations within a guide, helping you identify precisely where sessions take place.
+
+
 ## Installation & Usage
 
-To install and use the **Guidebook** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/guidebook-alternative](https://vinkius.com/mcp/guidebook-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Guidebook** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `guidebook-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Guidebook** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "guidebook-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

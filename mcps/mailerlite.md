@@ -1,7 +1,6 @@
 # MailerLite MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailerlite)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailerlite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailerlite-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailerlite)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **MailerLite** MCP serve
 > I've scanned your campaigns. You have 2 sent campaigns this week: 'Weekly Update #42' and 'Flash Sale October'. I can provide performance metrics for both if needed.
 
 
+## ❓ FAQ
+
+**Q: How do I find my MailerLite API token?**
+Log in to MailerLite, go to **Integrations**, and click **API** to generate a new token. Copy and paste it into the token field below.
+
+**Q: Can I add subscribers to specific groups using the AI agent?**
+Yes. Use the `add_subscriber_to_group` tool with the specific Group ID and Subscriber ID. Your agent will link them instantly and confirm the association.
+
+**Q: Is it possible to monitor campaign drafts?**
+Yes. You can list all campaigns, including those in draft status, using the `list_campaigns` tool. This allows your agent to audit content before it is finalized.
+
+
 ## Installation & Usage
 
-To install and use the **MailerLite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mailerlite](https://vinkius.com/mcp/mailerlite)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MailerLite** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mailerlite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MailerLite** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mailerlite": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

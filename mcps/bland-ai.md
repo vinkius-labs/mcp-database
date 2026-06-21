@@ -1,7 +1,6 @@
 # Bland AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bland-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bland-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bland-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bland-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Bland AI** MCP server 
 > Here are the PSTN numbers currently bridged to your AI routing logic: 1. +1 (555) 012-3456 (Status: Active), 2. +1 (555) 987-6543 (Status: Inactive).
 
 
+## ❓ FAQ
+
+**Q: Can my agent determine if a sales phone call was successful?**
+Yes. By providing the specific Call ID and a structured goal query (e.g., 'Did they buy?'), your AI agent triggers the 'analyze_call' tool, running a targeted LLM pass exactly over that transcript to extract the explicit boolean outcome.
+
+**Q: What if a voice agent goes off-script on a live call?**
+You can instruct your agent to forcefully disrupt the conversation. Using the 'end_call' tool, it will immediately pass an interrupt flag and drop the active telecom connection without waiting for the other party.
+
+**Q: Can I make AI agent calls directly through the browser instead of standard telephony?**
+Absolutely. Your agent can execute the 'create_web_call' tool, which bypasses PSTN billing entirely and opens a pure WebRTC signaling socket for direct in-app or browser audio interactions.
+
+
 ## Installation & Usage
 
-To install and use the **Bland AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bland-ai](https://vinkius.com/mcp/bland-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bland AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bland-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bland AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bland-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Infura (Ethereum Node RPC Provider) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/infura-ethereum-node-rpc-provider)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/infura-ethereum-node-rpc-provider-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/infura-ethereum-node-rpc-provider-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/infura-ethereum-node-rpc-provider)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Infura (Ethereum Node 
 > Based on current network conditions, the suggested base fee is 15 Gwei with a priority fee of 1.5 Gwei for a standard transaction.
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance of any Ethereum wallet address?**
+Yes. Use the `eth_getBalance` tool with the target address. You can also specify the block parameter (e.g., 'latest') to get the most up-to-date balance in wei.
+
+**Q: How do I find out the current gas price for a transaction?**
+You can use the `eth_gasPrice` tool to get the current price in wei, or use `getSuggestedGasFees` for a more detailed recommendation on priority and base fees.
+
+**Q: Can I inspect the details of a specific block using its number?**
+Absolutely. Use the `eth_getBlockByNumber` tool. Provide the hex-encoded block number or a tag like 'latest', and set `full_tx` to true if you want to see all transaction objects within that block.
+
+
 ## Installation & Usage
 
-To install and use the **Infura (Ethereum Node RPC Provider)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/infura-ethereum-node-rpc-provider](https://vinkius.com/mcp/infura-ethereum-node-rpc-provider)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Infura (Ethereum Node RPC Provider)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `infura-ethereum-node-rpc-provider` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Infura (Ethereum Node RPC Provider)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "infura-ethereum-node-rpc-provider": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

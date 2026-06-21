@@ -1,7 +1,6 @@
 # Alpha Vantage MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alpha-vantage)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/alpha-vantage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/alpha-vantage-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alpha-vantage)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -108,12 +107,55 @@ Here are some examples of how you can interact with the **Alpha Vantage** MCP se
 > Today's sector performance: Technology (+2.1%), Healthcare (+1.5%), Financials (+1.2%), Energy (-0.3%), Utilities (-0.8%). Technology is leading with strong gains across semiconductor and software stocks.
 
 
+## ❓ FAQ
+
+**Q: How do I get an Alpha Vantage API key?**
+Visit [**alphavantage.co/support/#api_key**](https://www.alphavantage.co/support/#api_key), fill in your name and email, and click **GET FREE API KEY**. The key is delivered instantly on the page. Free tier includes 25 requests per day.
+
+**Q: What technical indicators are available?**
+Alpha Vantage supports 50+ technical indicators including SMA, EMA, RSI, MACD, Bollinger Bands, Stochastic, ADX, ATR, CCI, Williams %R, and many more. Currently this MCP server exposes RSI, with more indicators available on request.
+
+**Q: Can I get cryptocurrency data?**
+Yes! Use `get_crypto_daily` with the crypto symbol (e.g. 'BTC', 'ETH', 'SOL') and market currency (e.g. 'USD', 'EUR'). Returns daily OHLCV data for the cryptocurrency pair.
+
+**Q: How much historical data is available?**
+Alpha Vantage provides 20+ years of historical data for most stocks. Use the `get_daily_time_series` tool with outputsize 'full' to access the complete history. The compact mode returns the last 100 data points.
+
+
 ## Installation & Usage
 
-To install and use the **Alpha Vantage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/alpha-vantage](https://vinkius.com/mcp/alpha-vantage)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Alpha Vantage** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `alpha-vantage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Alpha Vantage** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "alpha-vantage": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Universal Unit Converter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/universal-unit-converter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/universal-unit-converter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/universal-unit-converter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/universal-unit-converter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -55,12 +54,52 @@ Here are some examples of how you can interact with the **Universal Unit Convert
 > Using the convert_temperature tool: 78 F is 25.56 C.
 
 
+## ❓ FAQ
+
+**Q: Are digital storage conversions based on base-10 (1000) or base-2 (1024)?**
+The digital storage tool strictly uses base-2 (binary multipliers of 1024), which is the standard for memory and file system operations (e.g., 1 KB = 1024 B).
+
+**Q: Why use this instead of letting Claude or ChatGPT convert the values?**
+LLMs hallucinate subtle decimal errors when converting odd metrics (like 17.3 miles to centimeters). This tool forces the AI to use exact deterministic formulas.
+
+**Q: Does it require internet access?**
+No. The entire engine is local and executes purely on local hardware without any API requests.
+
+
 ## Installation & Usage
 
-To install and use the **Universal Unit Converter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/universal-unit-converter](https://vinkius.com/mcp/universal-unit-converter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Universal Unit Converter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `universal-unit-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Universal Unit Converter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "universal-unit-converter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Pixazo 3D MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pixazo-3d)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pixazo-3d-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pixazo-3d-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pixazo-3d)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **Pixazo 3D** MCP server
 > Generating anime-style 3D character... Using styled generation with anime preset. Generation complete! Model in FBX format with skeletal rigging (18.4 MB). Download: https://s3.pixazo.ai/models/anime_character_rigged.fbx. The character features stylized anime proportions, cel-shaded textures, and full humanoid rig with 54 bones. Ready for import into Unity or Blender for animation. Texture resolution is 2K with albedo and normal maps. Would you like additional facial expression blend shapes?
 
 
+## ❓ FAQ
+
+**Q: Can my AI generate a 3D model from a product photo with PBR textures?**
+Yes! Use the `generate_pbr_textures_3d` tool with your product image URL. Pixazo will generate a 3D model with complete PBR texture maps including albedo, normal, roughness, metallic, and ambient occlusion. You can specify texture resolution (1024, 2048, or 4096) and output format (GLB, OBJ, FBX). The resulting model is ready for game engines, product visualization, and e-commerce platforms with physically accurate materials.
+
+**Q: Which model should I use for the highest quality 3D generation?**
+For the highest quality, use `generate_hunyuan_3d` (Hunyuan by Tencent) or `generate_hyper_3d` (Hyper3D). Both produce production-quality geometry with detailed surface reproduction. Hunyuan excels at accurate proportions and realistic details, while Hyper3D focuses on clean topology and precise texture mapping. For text-to-3D with quality control, use `generate_text_to_3d` with quality set to ultra. All models support output formats GLB, OBJ, FBX, GLTF, and USDZ.
+
+**Q: Can I generate 3D characters with automatic rigging for animation?**
+Yes! Use the `generate_rigged_3d` tool with a character reference image. You can specify the rig type (humanoid, quadruped, or biped) and the API will generate a 3D model with automatic skeletal rigging including bone hierarchies and weight painting. The output is suitable for direct import into Unity, Unreal Engine, Blender, or any animation software. Output formats include FBX (recommended for rigs), GLB, and GLTF.
+
+
 ## Installation & Usage
 
-To install and use the **Pixazo 3D** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pixazo-3d](https://vinkius.com/mcp/pixazo-3d)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pixazo 3D** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pixazo-3d` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pixazo 3D** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pixazo-3d": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

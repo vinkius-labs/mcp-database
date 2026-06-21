@@ -1,7 +1,6 @@
 # Buddy Punch MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buddy-punch)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/buddy-punch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/buddy-punch-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buddy-punch)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Buddy Punch** MCP serv
 > Fetching pay period data... For the current cycle, your team has logged a total of 480 hours. Highlights include 40 hours from 'John Doe' and 38 from 'Jane Smith'. Would you like the high-fidelity break metadata?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Buddy Punch Subscription Key?**
+Log in to the Buddy Punch Developer Hub, navigate to your profile, and copy your Subscription Key (requires an active Enterprise plan).
+
+**Q: Can I punch in an employee via AI?**
+Yes! The `punch_in_out` tool allows your agent to record a punch action by providing the employee ID and punch type (In/Out) programmatically.
+
+**Q: How do I retrieve time entries for payroll?**
+Use the `list_time_entries` tool to retrieve detailed historical records of all work duration and breaks for the current pay period.
+
+
 ## Installation & Usage
 
-To install and use the **Buddy Punch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/buddy-punch](https://vinkius.com/mcp/buddy-punch)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Buddy Punch** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `buddy-punch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Buddy Punch** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "buddy-punch": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

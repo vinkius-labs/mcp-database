@@ -1,7 +1,6 @@
 # D2L Brightspace MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/d2l-brightspace)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/d2l-brightspace-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/d2l-brightspace-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/d2l-brightspace)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **D2L Brightspace** MCP 
 > User 554 (John Doe) has a current grade of 88% in course 8821. This includes 3 completed assignments and 1 pending quiz.
 
 
+## ❓ FAQ
+
+**Q: Can I check a specific student's grade for a course unit?**
+Yes. By using the `get_user_grade` tool with the appropriate Org Unit ID and User ID, the agent can retrieve the current grade details for that student.
+
+**Q: Is it possible to list all modules within a course structure?**
+Absolutely. Use the `list_root_modules` tool to fetch the top-level content structure for any specific course org unit.
+
+**Q: Can I manage discussion forums through this agent?**
+Yes, you can use `list_forums` to see available forums and `create_topic` or `create_post` to interact with the discussion boards.
+
+
 ## Installation & Usage
 
-To install and use the **D2L Brightspace** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/d2l-brightspace](https://vinkius.com/mcp/d2l-brightspace)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **D2L Brightspace** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `d2l-brightspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **D2L Brightspace** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "d2l-brightspace": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

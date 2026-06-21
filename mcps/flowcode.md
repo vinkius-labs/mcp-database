@@ -1,7 +1,6 @@
 # Flowcode MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flowcode)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flowcode-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flowcode-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flowcode)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Flowcode** MCP server 
 > Retrieving audience data... Your engagement is primarily coming from users aged 25-34 (45%) using mobile devices. The top scan locations are New York and London. Would you like a more detailed breakdown?
 
 
+## ❓ FAQ
+
+**Q: Can I change the destination URL of a Flowcode after it has been created?**
+Yes! Flowcodes are dynamic by default. You can use the 'create_flowcode' or future update tools via the agent to manage your redirect rules without needing to change the physical QR code image.
+
+**Q: How do I see where my QR codes are being scanned geographically?**
+You can use the 'get_geographic_analytics' tool. The agent will retrieve a summary of scan distribution across different regions, helping you understand where your offline audience is most active.
+
+**Q: Can I retrieve contact info from users who scanned my codes?**
+Yes! If you have forms on your Flowpages, you can use the 'get_flowpage_contacts' tool to retrieve submissions, including names and emails, directly through the agent.
+
+
 ## Installation & Usage
 
-To install and use the **Flowcode** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flowcode](https://vinkius.com/mcp/flowcode)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Flowcode** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flowcode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Flowcode** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flowcode": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

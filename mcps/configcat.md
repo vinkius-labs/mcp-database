@@ -1,7 +1,6 @@
 # ConfigCat MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/configcat)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/configcat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/configcat-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/configcat)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **ConfigCat** MCP server
 > Environment 'env_987' is named 'Production'. It is associated with Product ID 'prod_123' and has the color code '#FF0000'.
 
 
+## ❓ FAQ
+
+**Q: Can I list all feature flags in a specific configuration?**
+Yes. Use the `list_settings` tool with your Configuration ID to retrieve all feature flags and settings, including their types and keys.
+
+**Q: How do I create a new environment like 'Staging'?**
+Simply use the `create_environment` tool. Provide the Product ID and the name 'Staging' to instantly set up a new environment for your flags.
+
+**Q: Is it possible to update the value of a setting remotely?**
+Yes! The `update_setting_value` tool allows you to change the value of any flag or setting for a specific environment in real-time.
+
+
 ## Installation & Usage
 
-To install and use the **ConfigCat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/configcat](https://vinkius.com/mcp/configcat)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ConfigCat** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `configcat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ConfigCat** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "configcat": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

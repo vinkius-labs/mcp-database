@@ -1,7 +1,6 @@
 # Kameleoon MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kameleoon)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kameleoon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kameleoon-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kameleoon)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Kameleoon** MCP server
 > I've retrieved 2 sites from your profile: 'Main E-commerce (Code: SEC-123)' and 'Marketing Blog (Code: BLOG-456)'.
 
 
+## ❓ FAQ
+
+**Q: How can I check if an experiment is currently active on a specific site?**
+Use the `list_experiments` tool to get a summary of all experiments, which includes their current status (e.g., 'ACTIVE', 'PAUSED') and assigned site IDs.
+
+**Q: Can I see the defined variations for a particular experiment?**
+Yes, the `list_variations` tool takes an experiment ID and returns all variants configured for that test, along with their metadata.
+
+**Q: Is it possible to list targeting rules and segments?**
+Absolutely. You can use the `list_segments` and `list_targeting_rules` tools to inspect how your traffic is being allocated across your experimentation ecosystem.
+
+
 ## Installation & Usage
 
-To install and use the **Kameleoon** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kameleoon](https://vinkius.com/mcp/kameleoon)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kameleoon** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kameleoon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kameleoon** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kameleoon": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

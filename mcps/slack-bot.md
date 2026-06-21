@@ -1,7 +1,6 @@
 # Slack Bot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/slack-bot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/slack-bot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/slack-bot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/slack-bot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Slack Bot** MCP server
 > Checking presence... User U12345 is currently 'active'. I can retrieve their full profile details if you'd like.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Slack Bot Token?**
+Log in to the [**Slack App Console**](https://api.slack.com/apps), select your App, go to **OAuth & Permissions**, and copy the 'Bot User OAuth Token'. Paste it below.
+
+**Q: Can the agent check if a user is active?**
+Yes. Use the `get_presence` tool providing the User ID. Your agent will return the real-time presence status (active or away) for that specific user.
+
+**Q: Is it possible to retrieve message history via the agent?**
+Yes. The `get_history` tool allows your agent to fetch recent messages from any channel, helping you audit conversations or monitor specific updates.
+
+
 ## Installation & Usage
 
-To install and use the **Slack Bot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/slack-bot](https://vinkius.com/mcp/slack-bot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Slack Bot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `slack-bot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Slack Bot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "slack-bot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

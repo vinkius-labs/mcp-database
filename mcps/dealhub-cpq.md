@@ -1,7 +1,6 @@
 # DealHub CPQ MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dealhub-cpq)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dealhub-cpq-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dealhub-cpq-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dealhub-cpq)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **DealHub CPQ** MCP serv
 > CRM synchronization triggered! I've forced a data ingestion loop for 'opp_123' against your Salesforce instance. All custom fields and CPQ boundaries are now up to date.
 
 
+## ❓ FAQ
+
+**Q: Can my agent create a new quote linked to a CRM opportunity?**
+Yes. Use the 'create_quote' tool. Provide the external opportunity ID from Salesforce or HubSpot. The agent will generate a fresh CPQ sequence linked to that native CRM block, allowing you to start the sales process immediately.
+
+**Q: How do I check if a customer has signed a specific quote?**
+Use the 'get_quote_status' tool with the quote ID. Your agent will retrieve explicit cloud logs to parse if the PDF was viewed, signed, or rejected, providing real-time visibility into the closing process.
+
+**Q: Can I force a synchronization between DealHub and my CRM via the agent?**
+Absolutely. The 'sync_crm' tool forces a real-time data ingestion loop against SFDC or MS Dynamics providers. This ensures that the opportunity data in your CRM matches the latest CPQ boundaries in DealHub.
+
+
 ## Installation & Usage
 
-To install and use the **DealHub CPQ** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dealhub-cpq](https://vinkius.com/mcp/dealhub-cpq)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DealHub CPQ** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dealhub-cpq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DealHub CPQ** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dealhub-cpq": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

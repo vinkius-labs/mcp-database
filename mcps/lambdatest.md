@@ -1,7 +1,6 @@
 # LambdaTest MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lambdatest)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lambdatest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lambdatest-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lambdatest)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **LambdaTest** MCP serve
 > Browsers: Chrome (118-124), Firefox (115-121), Safari (16-17), Edge (118-124), Opera (104-108). OS: Windows 11/10/8, macOS Sonoma/Ventura/Monterey, Ubuntu 22/20. Stats (30 days): 456 sessions, 38 builds, 91.2% pass rate. Average duration: 2.3 min. Most tested: Chrome 124/Win11 (180 sessions). Flaky tests: 4 identified.
 
 
+## ❓ FAQ
+
+**Q: Can I view test builds and session results?**
+Yes. List all builds with pass/fail counts, browse individual sessions with screenshots, video recordings, and detailed execution logs.
+
+**Q: Does LambdaTest use Basic Auth?**
+Yes. LambdaTest uses **HTTP Basic Auth** with your Username and Access Key (Base64 encoded) against `api.lambdatest.com/automation/api/v1`.
+
+**Q: Can I browse available browser and OS combinations?**
+Yes. Access the full list of supported browsers, versions, and operating systems for cross-browser testing.
+
+
 ## Installation & Usage
 
-To install and use the **LambdaTest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lambdatest](https://vinkius.com/mcp/lambdatest)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LambdaTest** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lambdatest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LambdaTest** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lambdatest": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

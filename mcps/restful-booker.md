@@ -1,7 +1,6 @@
 # Restful Booker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/restful-booker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/restful-booker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/restful-booker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/restful-booker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Restful Booker** MCP s
 > I've updated the total price for booking 882 to 200 using a partial update. All other details remain the same.
 
 
+## ❓ FAQ
+
+**Q: How do I find a booking ID for a specific guest?**
+Use the `get_booking_ids` tool. You can provide optional parameters like `firstname` or `lastname` to filter the results and find the exact ID you need.
+
+**Q: Do I need an auth token to view booking details?**
+No, `get_booking` and `get_booking_ids` are public queries. You only need a token generated via `create_token` for `update_booking`, `partial_update_booking`, and `delete_booking` actions.
+
+**Q: Can I update only the price of a booking without changing other details?**
+Yes! Use the `partial_update_booking` tool. It allows you to send only the fields you want to change, such as `totalprice`, while keeping the rest of the booking intact.
+
+
 ## Installation & Usage
 
-To install and use the **Restful Booker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/restful-booker](https://vinkius.com/mcp/restful-booker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Restful Booker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `restful-booker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Restful Booker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "restful-booker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

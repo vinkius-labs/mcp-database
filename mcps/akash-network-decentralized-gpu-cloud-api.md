@@ -1,7 +1,6 @@
 # Akash Network (Decentralized GPU & Cloud API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/akash-network-decentralized-gpu-cloud-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/akash-network-decentralized-gpu-cloud-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/akash-network-decentralized-gpu-cloud-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/akash-network-decentralized-gpu-cloud-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Akash Network (Decentr
 > Closing deployment... DSEQ 105548 has been successfully closed. Associated resources have been released and the remaining escrow balance will be returned to your account.
 
 
+## ❓ FAQ
+
+**Q: How do I check for available provider bids after creating a deployment?**
+Use the `list_bids` tool with your deployment's DSEQ. It typically takes 30-60 seconds for providers to submit bids for your workload.
+
+**Q: Can I update a running deployment with a new SDL manifest?**
+Yes! Use the `update_deployment` tool. Provide the existing DSEQ and your revised SDL string to apply changes to your active resources.
+
+**Q: How do I prevent my deployment from closing due to insufficient funds?**
+You can use `add_deposit` to manually add USD to the escrow, or use `enable_auto_top_up` to configure automatic funding based on your deployment's needs.
+
+
 ## Installation & Usage
 
-To install and use the **Akash Network (Decentralized GPU & Cloud API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/akash-network-decentralized-gpu-cloud-api](https://vinkius.com/mcp/akash-network-decentralized-gpu-cloud-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Akash Network (Decentralized GPU & Cloud API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `akash-network-decentralized-gpu-cloud-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Akash Network (Decentralized GPU & Cloud API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "akash-network-decentralized-gpu-cloud-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

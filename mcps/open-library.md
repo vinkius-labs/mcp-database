@@ -1,7 +1,6 @@
 # Open Library MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-library)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-library-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-library-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-library)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Open Library** MCP ser
 > I've found 15 books categorized under 'Artificial Intelligence'. Top matches include 'AI: A Modern Approach' and 'Life 3.0'. Would you like the author details for any of them?
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for Open Library?**
+No. Open Library is a free and open service. This server works out of the box without any static credentials required.
+
+**Q: Can the agent search for books by ISBN?**
+Yes. Use the `get_book_by_isbn` tool providing the ISBN-10 or ISBN-13. Your agent will retrieve the specific record from the Open Library catalog instantly.
+
+**Q: Is it possible to see an author's bibliography via the agent?**
+Yes. The `get_author_works` tool allows your agent to retrieve all known works for a specific author using their unique author key.
+
+
 ## Installation & Usage
 
-To install and use the **Open Library** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/open-library](https://vinkius.com/mcp/open-library)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Open Library** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `open-library` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Open Library** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "open-library": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

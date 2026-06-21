@@ -1,7 +1,6 @@
 # Gumroad MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gumroad)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gumroad-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gumroad-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gumroad)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,55 @@ Here are some examples of how you can interact with the **Gumroad** MCP server u
 > Checking license key... The key ABC-123 for 'DevOps Toolkit' is VALID. It has been used 1 time out of a maximum of 3 allowed activations. The customer email is buyer@example.com.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Gumroad Access Token?**
+Log in to your Gumroad account, navigate to **Settings > Advanced**, and scroll down to the 'Application' section to create an application or generate a personal access token.
+
+**Q: Can I verify customer license keys through this integration?**
+Yes! Use the `verify_license` tool by providing the `product_id` and the `license_key` provided by the customer. The agent will confirm if the key is valid and how many times it has been used.
+
+**Q: Does this integration support processing refunds?**
+Yes, you can use the `refund_sale` tool with a specific sale ID to initiate a refund directly from your AI agent.
+
+**Q: Is my sales data secure?**
+Absolutely. The integration uses OAuth 2.0 Bearer tokens and communicates only with Gumroad's official API over HTTPS. Your token is encrypted and stored securely in the Vinkius Cloud.
+
+
 ## Installation & Usage
 
-To install and use the **Gumroad** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gumroad](https://vinkius.com/mcp/gumroad)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gumroad** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gumroad` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gumroad** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gumroad": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

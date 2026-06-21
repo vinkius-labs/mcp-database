@@ -1,7 +1,6 @@
 # Campinas Open Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/campinas-open-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/campinas-open-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/campinas-open-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/campinas-open-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Campinas Open Data** M
 > Fetching metadata for 'vagas-em-creches'... This dataset includes 3 resources (CSV and PDF) and was last updated on June 2023. It covers nursery school availability by region.
 
 
+## ❓ FAQ
+
+**Q: How can I search for datasets related to a specific topic like 'Health'?**
+You can use the `search_packages` tool with a query string. For example, searching for 'saude' will return all datasets categorized under health in the Campinas portal.
+
+**Q: Can I see which city departments are publishing data?**
+Yes! Use the `list_organizations` tool to get a complete list of all city departments and entities that contribute to the Open Data Portal.
+
+**Q: How do I get the download link for a specific data file?**
+Use the `get_resource` tool with the specific Resource ID. It will return the metadata, including the URL to download the file (CSV, PDF, etc.).
+
+
 ## Installation & Usage
 
-To install and use the **Campinas Open Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/campinas-open-data](https://vinkius.com/mcp/campinas-open-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Campinas Open Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `campinas-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Campinas Open Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "campinas-open-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

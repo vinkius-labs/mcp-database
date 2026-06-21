@@ -1,7 +1,6 @@
 # MarketMan MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marketman)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/marketman-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/marketman-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marketman)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **MarketMan** MCP server
 > The food cost for the Signature Burger is currently at 28.5%. The recent $0.50 increase in beef prices from your wholesale supplier raised the cost per portion by 3%.
 
 
+## ❓ FAQ
+
+**Q: What does MarketMan do?**
+MarketMan automates restaurant inventory, purchasing, and food cost management. It integrates with POS systems, accounting software, and suppliers.
+
+**Q: Can MarketMan handle multiple suppliers for the same ingredient?**
+Yes, MarketMan allows you to link multiple vendors to a single ingredient, enabling you to compare prices and choose the most cost-effective supplier when generating purchase orders.
+
+**Q: Does the integration track food waste accurately?**
+Absolutely. You can log waste events such as spoilage, spills, or over-portioning in MarketMan, and the AI can summarize these events to show you the exact financial impact.
+
+
 ## Installation & Usage
 
-To install and use the **MarketMan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/marketman](https://vinkius.com/mcp/marketman)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MarketMan** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `marketman` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MarketMan** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "marketman": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

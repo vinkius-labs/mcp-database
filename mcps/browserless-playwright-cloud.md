@@ -1,7 +1,6 @@
 # Browserless (Playwright Cloud) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browserless-playwright-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browserless-playwright-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browserless-playwright-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browserless-playwright-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Browserless (Playwrigh
 > I've invoked the `get_html_content` method successfully against the target URI. The Playwright container fully let the React/Next.js hydration loop stabilize. Captured massive 450kb parsed DOM structure explicitly mapping all internal blog routes natively. How would you like me to process this massive markup string within our memory context?
 
 
+## ❓ FAQ
+
+**Q: Can the agent scrape modern SPAs built with React or Vue?**
+Absolutely. Because Browserless exposes actual Chrome environments via Playwright, standard JavaScript rendering pipelines execute exactly as they do on a user's machine. The agent simply captures the stabilized final DOM states post-hydration, making it remarkably effective for highly dynamic single-page applications.
+
+**Q: What does `scrape_with_wait` do exactly when instructed to an AI?**
+If a website relies on extremely heavy animations or subsequent lazy-loaded payload responses, `get_html_content` might return prematurely. Requesting your agent to use `scrape_with_wait` accompanied by a distinct selector (e.g., `#main-data-table`) locks the Browserless virtual container actively polling the CDP port. Only when that element materializes will it snap the payload back to you.
+
+**Q: Are the screenshots produced bound to specific screen dimensions?**
+By default, calling `get_screenshot` leverages Browserless' intrinsic 'Full Page' modifier. It synthetically commands the headless browser frame to extend computationally, absorbing the complete top-to-bottom scroll bounds of the rendered website into a massive, crystal clear uncropped PNG artifact.
+
+
 ## Installation & Usage
 
-To install and use the **Browserless (Playwright Cloud)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/browserless-playwright-cloud](https://vinkius.com/mcp/browserless-playwright-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Browserless (Playwright Cloud)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `browserless-playwright-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Browserless (Playwright Cloud)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "browserless-playwright-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Hudu MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hudu-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hudu-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hudu-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hudu-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Hudu** MCP server usin
 > Company created! Name: TechStart Inc, ID: company_19. You now have 19 managed clients. Asset created! Name: 'TS-SRV-01', Company: TechStart Inc (company_19), Tag: 'Production', ID: asset_287. The asset is now linked to TechStart Inc. Next steps: you may want to add passwords for this client and create onboarding procedures. Would you like to add passwords or create more assets?
 
 
+## ❓ FAQ
+
+**Q: Can I retrieve stored passwords for a specific client?**
+Yes. Use `list_passwords` with an optional `company_id` to filter passwords by client. Then use `get_password` with a specific password ID to retrieve the full entry including the secret. Use `list_companies` to find the company ID first.
+
+**Q: Does Hudu require a custom instance URL?**
+Yes. Hudu is self-hosted or uses dedicated instances, so you need to provide your **Instance URL** (e.g., `https://your-company.huducloud.com`) along with the **API Key**. The API Key is sent via the `x-api-key` header (not Bearer), and all API calls are routed to `{instanceUrl}/api/v1`.
+
+**Q: Can I track all assets for a specific company?**
+Yes. Use `list_assets` with the `company_id` parameter to retrieve all assets (servers, workstations, network devices) for a specific client. Use `get_asset` for detailed specifications and tags. Use `create_asset` to add new assets with a name, company ID, and optional asset tag.
+
+
 ## Installation & Usage
 
-To install and use the **Hudu** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hudu-alternative](https://vinkius.com/mcp/hudu-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hudu** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hudu-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hudu** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hudu-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

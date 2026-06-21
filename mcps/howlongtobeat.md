@@ -1,7 +1,6 @@
 # HowLongToBeat MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/howlongtobeat)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/howlongtobeat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/howlongtobeat-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/howlongtobeat)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **HowLongToBeat** MCP se
 > Comparing Bethesda titles... Skyrim's main story takes about 34 hours, while Starfield's is slightly shorter at 23 hours. However, for a full 100% run, Skyrim takes around 232 hours compared to Starfield's 154 hours.
 
 
+## ❓ FAQ
+
+**Q: Can I find out how long 'Elden Ring' takes to 100%?**
+Yes! Use the `search_game_times` tool with the query 'Elden Ring'. It will return the average hours for different playstyles, including the 'Completionist' run which is usually over 130 hours.
+
+**Q: Where does the data come from?**
+The data is crowdsourced from thousands of gamers worldwide who submit their actual completion times to the HowLongToBeat community platform.
+
+**Q: What is the difference between 'Main + Extra' and 'Completionist'?**
+'Main + Extra' includes the story plus some side content, while 'Completionist' represents finishing everything the game has to offer (100% trophies/achievements).
+
+
 ## Installation & Usage
 
-To install and use the **HowLongToBeat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/howlongtobeat](https://vinkius.com/mcp/howlongtobeat)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HowLongToBeat** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `howlongtobeat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HowLongToBeat** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "howlongtobeat": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

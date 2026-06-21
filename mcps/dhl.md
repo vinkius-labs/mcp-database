@@ -1,7 +1,6 @@
 # DHL MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dhl)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dhl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dhl-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dhl)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **DHL** MCP server using
 > The nearest official DHL Service Point to 90210 is located on Santa Monica Blvd, 1.2 miles away. It accepts drop-offs until 6:00 PM local time today.
 
 
+## ❓ FAQ
+
+**Q: Does it track regular post or only DHL Express?**
+This MCP is primarily optimized for the DHL Express system, checking 10-digit Air Waybill tracking numbers globally securely.
+
+**Q: Can I automatically calculate cross-border freight costs?**
+Yes. The AI can utilize the Rates Engine comparing weights and postal codes immediately providing exact prices.
+
+**Q: How do I get API Credentials?**
+Visit developer.dhl.com, create an account, register an App mapping to your DHL Express Account number, and inject the Client ID and Secret.
+
+
 ## Installation & Usage
 
-To install and use the **DHL** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dhl](https://vinkius.com/mcp/dhl)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DHL** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dhl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DHL** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dhl": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Harvard Art Museums MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harvard-art-museums-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/harvard-art-museums-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/harvard-art-museums-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harvard-art-museums-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -100,12 +99,52 @@ Here are some examples of how you can interact with the **Harvard Art Museums** 
 > Fetching record 303935... This is 'Self-Portrait' by Vincent van Gogh, oil on canvas, dated 1887. It is currently located in Gallery 2400. It features a vibrant palette of blues and yellows with characteristic brushwork.
 
 
+## ❓ FAQ
+
+**Q: How can I find artworks from a specific culture or time period?**
+You can use the `list_objects` tool and apply filters like `culture` (e.g., 'Japanese') or `century` (e.g., '19th century'). You can also use `yearmade` for more precise dating.
+
+**Q: Is it possible to see which exhibitions are currently running at the museum?**
+Yes! Use the `list_exhibitions` tool with the `status` parameter set to 'current'. This will return a list of all active shows with their details.
+
+**Q: Can I search for artworks based on their location within the museum building?**
+Absolutely. You can use `list_galleries` to find specific room IDs or floors, and then use the `gallery` filter in `list_objects` to see what is displayed in that specific space.
+
+
 ## Installation & Usage
 
-To install and use the **Harvard Art Museums** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/harvard-art-museums-alternative](https://vinkius.com/mcp/harvard-art-museums-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Harvard Art Museums** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `harvard-art-museums-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Harvard Art Museums** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "harvard-art-museums-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

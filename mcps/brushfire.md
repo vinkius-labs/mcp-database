@@ -1,7 +1,6 @@
 # Brushfire MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brushfire)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brushfire-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brushfire-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brushfire)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Brushfire** MCP server
 > Attendee att_99283 has been successfully checked-in for the event. Their status is now marked as present in Brushfire.
 
 
+## ❓ FAQ
+
+**Q: Can I check-in an attendee using the agent?**
+Yes! Use the `check_in_attendee` tool with the Attendee ID. Your agent will update the status in Brushfire instantly to mark the guest as present.
+
+**Q: How do I see the list of all attendees for my event?**
+Simply ask the agent to `list_attendees` and provide the Event ID. It will retrieve all the registered guests, including names and statuses, from your Brushfire account.
+
+**Q: Does the integration allow updating attendee details?**
+Yes. Use the `update_attendee` action and provide the Attendee ID along with the new name or email. The information will be synchronized with Brushfire immediately.
+
+
 ## Installation & Usage
 
-To install and use the **Brushfire** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/brushfire](https://vinkius.com/mcp/brushfire)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Brushfire** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `brushfire` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Brushfire** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "brushfire": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

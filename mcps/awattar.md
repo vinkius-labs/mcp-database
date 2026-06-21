@@ -1,7 +1,6 @@
 # Awattar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/awattar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/awattar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/awattar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/awattar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Awattar** MCP server u
 > Fetching market data for the next 24-hour window... I found that prices will drop significantly between 01:00 and 05:00 AM. This would be the best time to run high-energy appliances. Would you like the specific price for each hour?
 
 
+## ❓ FAQ
+
+**Q: When are the electricity prices for the next day available?**
+Prices for the next day are typically updated daily at 14:00 (CET/CEST). You can use the `get_market_data` tool or `get_current_yaml` with the tomorrow parameter set to true to retrieve them.
+
+**Q: Can I get data specifically formatted for Loxone home automation?**
+Yes! Use the `get_current_yaml` tool. It returns price statistics and hourly thresholds optimized for LOXONE Home Automation systems in a ready-to-use YAML format.
+
+**Q: What time format should I use for start and end parameters?**
+The `get_market_data` tool expects time parameters in Epoch milliseconds. For example, 1704067200000 represents January 1st, 2024.
+
+
 ## Installation & Usage
 
-To install and use the **Awattar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/awattar](https://vinkius.com/mcp/awattar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Awattar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `awattar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Awattar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "awattar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Yodiz MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yodiz)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/yodiz-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/yodiz-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yodiz)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Yodiz** MCP server usi
 > Project 101 has 3 scheduled iterations: 1. 'Sprint 24 - Networking' (Current), 2. 'Sprint 25 - Security Audit' (Upcoming), and 3. 'Sprint 26 - Scalability' (Future). Would you like to see the start and end dates for these sprints?
 
 
+## ❓ FAQ
+
+**Q: Can I see the list of open bugs for a specific project?**
+Yes. The `list_bugs` tool allows your AI agent to retrieve all defects and issues reported for a specific project ID, helping you monitor technical debt and priority fixes through chat.
+
+**Q: How do I check the requirements in our backlog via conversation?**
+You can use the `list_user_stories` tool. Provide the unique project ID, and your agent will return a list of backlog items and requirements, ensuring you stay aligned with current development priorities.
+
+**Q: Is it possible to see our release timeline and sprints?**
+Absolutely. Use the `list_sprints` tool to retrieve all iterations configured for a project. Your agent will return the sprint names and IDs, helping you monitor the release cycle and delivery status.
+
+
 ## Installation & Usage
 
-To install and use the **Yodiz** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/yodiz](https://vinkius.com/mcp/yodiz)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Yodiz** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `yodiz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Yodiz** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "yodiz": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

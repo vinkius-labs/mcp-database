@@ -1,7 +1,6 @@
 # Nationalize MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nationalize)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nationalize-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nationalize-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nationalize)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Nationalize** MCP serv
 > The name 'O'Connor' shows a very strong correlation with Ireland (IE) at 0.92 probability. Other minor matches include the United Kingdom and Australia.
 
 
+## ❓ FAQ
+
+**Q: How many names can I analyze in a single request?**
+You can pass a list of up to 10 names to the `predict_nationality` tool per request. This allows for efficient batch processing of datasets.
+
+**Q: What kind of results does the tool return?**
+The tool returns a ranked list of ISO 3166-1 alpha-2 country codes (like 'US', 'BR', 'JP') along with a probability score for each, indicating the likelihood of that origin.
+
+**Q: Is an API key required to use this server?**
+The `NATIONALIZE_API_KEY` is optional. You can perform basic testing without it, but for higher volume or production use, providing a key is recommended to avoid rate limits.
+
+
 ## Installation & Usage
 
-To install and use the **Nationalize** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nationalize](https://vinkius.com/mcp/nationalize)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nationalize** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nationalize` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nationalize** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nationalize": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

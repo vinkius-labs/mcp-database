@@ -1,7 +1,6 @@
 # Mighty Networks MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mighty-networks)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mighty-networks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mighty-networks-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mighty-networks)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Mighty Networks** MCP 
 > Active Spaces: 5. 1) 'General Discussion' (4,200 members). 2) 'Course: React Mastery' (850 members). 3) 'Job Board' (1,200 members). 4) 'VIP Mastermind' (Private, 45 members). 5) 'Introductions' (4,100 members).
 
 
+## ❓ FAQ
+
+**Q: Can I automatically post content and articles?**
+Yes. You can publish quick posts, full articles, and polls to specific Spaces within your network.
+
+**Q: How does Mighty Networks authentication work?**
+It requires an **API Key** (Bearer) and a **Network ID** against `api.mn.co/admin/v1`.
+
+**Q: Can I manage access to premium courses?**
+Yes. Invite members to specific Spaces or Courses and manage their roles and subscription status.
+
+
 ## Installation & Usage
 
-To install and use the **Mighty Networks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mighty-networks](https://vinkius.com/mcp/mighty-networks)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mighty Networks** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mighty-networks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mighty Networks** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mighty-networks": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

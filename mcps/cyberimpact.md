@@ -1,7 +1,6 @@
 # Cyberimpact MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cyberimpact)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cyberimpact-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cyberimpact-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cyberimpact)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Cyberimpact** MCP serv
 > I found the profile for 'user@example.com'. They are currently 'Active' and a member of the 'General Newsletter' and 'VIP Customers' groups. Would you like to see their full interaction history?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Cyberimpact API Key?**
+Log in to your Cyberimpact account, navigate to **Configuration > API**, and you can generate or retrieve your API Key from that section.
+
+**Q: Does Cyberimpact follow CASL regulations?**
+Yes, Cyberimpact is designed to be compliant with the Canadian Anti-Spam Legislation (CASL), helping you manage consent effectively.
+
+**Q: Can I see campaign reports in the chat?**
+Yes, you can use the get_campaign_details tool to see delivery, open, and click statistics for any of your sent campaigns.
+
+
 ## Installation & Usage
 
-To install and use the **Cyberimpact** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cyberimpact](https://vinkius.com/mcp/cyberimpact)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cyberimpact** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cyberimpact` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cyberimpact** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cyberimpact": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

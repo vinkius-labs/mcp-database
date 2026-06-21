@@ -1,7 +1,6 @@
 # Databricks MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/databricks)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/databricks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/databricks-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/databricks)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Databricks** MCP serve
 > I found 4 root catalogs: 'main', 'development', 'samples', and 'system'. Which one would you like to explore for databases and schemas?
 
 
+## ❓ FAQ
+
+**Q: Can my agent check the status of a specific Databricks job run?**
+Yes. Provide the 'job_id' to the 'list_job_runs' tool. The agent will retrieve the chronological history of executions, allowing you to identify successful completions or precise points of failure in your workflows.
+
+**Q: How do I explore schemas within a specific Unity Catalog via chat?**
+Use the 'list_schemas' tool and provide the catalog name. Your agent will pull the detailed databases and schemas registered inside that Unity Catalog, giving you immediate visibility into your data hierarchy.
+
+**Q: Can I monitor the health of my Databricks clusters through the agent?**
+Absolutely. The 'list_clusters' and 'get_cluster' tools allow your agent to retrieve detailed node information and operational statuses, helping you audit cluster health and capacity across your workspace.
+
+
 ## Installation & Usage
 
-To install and use the **Databricks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/databricks](https://vinkius.com/mcp/databricks)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Databricks** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `databricks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Databricks** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "databricks": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

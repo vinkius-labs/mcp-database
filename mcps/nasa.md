@@ -1,7 +1,6 @@
 # NASA MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nasa-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nasa-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,55 @@ Here are some examples of how you can interact with the **NASA** MCP server usin
 > Over the next 7 days, NASA is tracking 18 near-Earth objects. 2 are classified as 'potentially hazardous'. The largest is approximately 340 meters in diameter (2024 AB1), passing at a safe distance of 4.2 lunar distances on Wednesday. No impact threats are known.
 
 
+## ❓ FAQ
+
+**Q: How do I get a NASA API key?**
+Visit [**api.nasa.gov**](https://api.nasa.gov) and sign up with your email — it's completely free. You'll receive an API key instantly. For quick testing, you can use `DEMO_KEY` which allows 30 requests/hour and 50/day. Registered keys get 1,000 requests/hour.
+
+**Q: Can I get Mars rover photos from today?**
+Mars rovers don't take photos every Earth day due to communication delays and mission schedules. Use `get_mars_photos` with rover name 'curiosity' or 'perseverance' and an earth_date parameter. If no photos exist for that date, the API returns an empty list. Try recent dates or browse available dates with `get_mars_rovers`.
+
+**Q: What are Near-Earth Objects (NEOs)?**
+NEOs are asteroids and comets whose orbits bring them close to Earth. NASA tracks them for planetary defense. Use `get_neo_feed` to see asteroid counts and data over a date range. Each NEO includes estimated diameter, velocity, miss distance, and whether it's classified as 'potentially hazardous'.
+
+**Q: Can I search NASA's image library?**
+Yes! Use `search_nasa_library` with a free-text query (e.g. 'Apollo 11', 'Mars', 'ISS', 'Hubble'). It searches thousands of images, videos and audio files. Results include title, description, NASA center, media type and URL. Optionally set page number for pagination.
+
+
 ## Installation & Usage
 
-To install and use the **NASA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nasa](https://vinkius.com/mcp/nasa)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NASA** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nasa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NASA** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nasa": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

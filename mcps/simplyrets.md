@@ -1,7 +1,6 @@
 # SimplyRETS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simplyrets)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/simplyrets-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/simplyrets-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simplyrets)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **SimplyRETS** MCP serve
 > Fetching analytics for MLS 123456... This property has seen a 5% increase in viewings this week and is priced 2% below the neighborhood average.
 
 
+## ❓ FAQ
+
+**Q: Can I search for properties in a specific city or area?**
+Yes. Use the `list_properties` tool with the `q` parameter to search for specific locations, or use `points` for a geospatial polygon search.
+
+**Q: How do I get the full details of a listing if I have the MLS ID?**
+Simply provide the MLS ID to the `get_property` tool. It will return comprehensive metadata including price, features, and property history.
+
+**Q: Can I see which agents are listed in the feed?**
+Yes, the `list_agents` tool retrieves agent information directly from the MLS feed, allowing you to see contact details and affiliations.
+
+
 ## Installation & Usage
 
-To install and use the **SimplyRETS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/simplyrets](https://vinkius.com/mcp/simplyrets)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SimplyRETS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `simplyrets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SimplyRETS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "simplyrets": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

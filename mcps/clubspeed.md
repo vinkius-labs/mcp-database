@@ -1,7 +1,6 @@
 # Clubspeed MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clubspeed)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clubspeed-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clubspeed-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clubspeed)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Clubspeed** MCP server
 > Retrieving upcoming heats... You have 2 heats scheduled in the next hour: Heat #45 (Pro Karting) at 11:15 AM and Heat #46 (Junior Karting) at 11:30 AM.
 
 
+## ❓ FAQ
+
+**Q: Can I see if a customer has signed their waiver through the agent?**
+Yes! Use the `list_customer_waivers` tool. The agent will return all signed waivers, allowing you to verify compliance before a customer starts their activity.
+
+**Q: How do I check the race heat schedule for today?**
+Use the `list_race_heats` tool. Your agent will fetch the list of upcoming and past heats, allowing you to monitor the day's schedule directly.
+
+**Q: Where do I find my Clubspeed Private Key and Site ID?**
+You can find your **Private Key** in your Clubspeed API settings. The **Site ID** is typically your account's subdomain (e.g., if your dashboard is `myvenue.clubspeed.com`, your Site ID is `myvenue`).
+
+
 ## Installation & Usage
 
-To install and use the **Clubspeed** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clubspeed](https://vinkius.com/mcp/clubspeed)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clubspeed** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clubspeed` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clubspeed** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clubspeed": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

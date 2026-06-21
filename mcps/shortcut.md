@@ -1,7 +1,6 @@
 # Shortcut MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shortcut)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shortcut-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shortcut-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shortcut)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Shortcut** MCP server 
 > Initiating standard extraction accessing `list_workflows` exclusively. Successfully isolated 2 primary organizational workflow state pipelines. 'Engineering Workflow' notably incorporates active transition tags directly translating as 'Unstarted', 'Ready for Dev', 'In Development', securely mapping seamlessly into endpoint resolution state uniquely marked 'Completed'.
 
 
+## ❓ FAQ
+
+**Q: Can the integration alter, comment in, or edit stories directly?**
+By structural design, this module is strictly bound as an observational lens. Operations such as `search_stories`, `list_epics`, and `get_story_details` parse and extract massive context. It omits explicitly write mechanisms preventing your autonomous agent from accidentally sabotaging valid roadmap components permanently.
+
+**Q: Why use the token via MCP instead of normal webhook integrations?**
+Webhooks exclusively wait for explicit platform triggers passively. The MCP configuration hands your prompt active, unadulterated runtime authority to scan iterations, grab user arrays, and interrogate backlog metadata aggressively instantly dynamically. It permits pulling, rather than simply listening blindly.
+
+**Q: Can the integration directly access workspaces not associated with the token creator?**
+No. The highly sensitive REST API access token acts inherently as a mapped functional clone of the exact user credentials operating at generation time. Searching workflows, epics, and members evaluates precisely against the internal permissions bounds of the token creator robustly limiting toxic footprint.
+
+
 ## Installation & Usage
 
-To install and use the **Shortcut** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shortcut](https://vinkius.com/mcp/shortcut)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Shortcut** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shortcut` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Shortcut** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shortcut": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

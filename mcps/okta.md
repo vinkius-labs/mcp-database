@@ -1,7 +1,6 @@
 # Okta MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/okta)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/okta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/okta-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/okta)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Okta** MCP server usin
 Do you want me to revoke any permissions immediately?
 
 
+## ❓ FAQ
+
+**Q: Where do I retrieve my Okta Domain and API Token?**
+Log in to your Okta Admin Console. The Okta domain is simply the URL you use (e.g., `company.okta.com`). To get the API Key, navigate to **Security** -> **API**, then select the **Tokens** tab. Click **Create Token**, assign it a name, and securely copy the generated string.
+
+**Q: Can the agent clear active sessions for a compromised user?**
+Yes! If you suspect an ongoing security incident, you can promptly ask the agent to clear user sessions (`clear_user_sessions`) by simply stating the user's ID or email. The integration talks back to Okta and terminates persistent connections instantaneously.
+
+**Q: Is the administrator API key shared globally with anyone else?**
+No, your setup is extremely private and BYOC (Bring Your Own Credentials). The token is entered locally inside your private environment or workspace instance and injected tightly and exclusively into your isolated runtime execution. It is never exposed publically.
+
+
 ## Installation & Usage
 
-To install and use the **Okta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/okta](https://vinkius.com/mcp/okta)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Okta** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `okta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Okta** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "okta": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

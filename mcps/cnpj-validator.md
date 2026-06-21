@@ -1,7 +1,6 @@
 # CNPJ Validator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cnpj-validator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cnpj-validator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cnpj-validator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cnpj-validator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **CNPJ Validator** MCP s
 > Total processed: 2. Valid count: 2. Invalid count: 0.
 
 
+## ❓ FAQ
+
+**Q: Does this tool require an internet connection to the Brazilian Federal Revenue?**
+No. The `validate_cnpj_format` and other tools use a local checksum algorithm (weighted summation) to verify the mathematical validity of the CNPJ without making external API calls to federal databases.
+
+**Q: Can I validate multiple CNPJs at once?**
+Yes, you can use the `batch_validate_cnpjs` tool to process an array of CNPJ strings in a single operation and receive summary statistics.
+
+**Q: What information is returned when analyzing a CNPJ?**
+By using `analyze_cnpj_structure`, you will receive the root identifier, branch identifier, check digits, and the inferred Brazilian state (UF) based on regional mapping rules.
+
+
 ## Installation & Usage
 
-To install and use the **CNPJ Validator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cnpj-validator](https://vinkius.com/mcp/cnpj-validator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CNPJ Validator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cnpj-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CNPJ Validator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cnpj-validator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

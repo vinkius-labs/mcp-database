@@ -1,7 +1,6 @@
 # Amazon Redshift MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-redshift)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazon-redshift-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazon-redshift-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-redshift)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Amazon Redshift** MCP 
 > I submitted the SQL aggregation query via `execute_sql`. It's processing under the distinct ID: '50e3k1-b843-c009a'. I am monitoring the execution (`statement_status`) and will use `get_results` to retrieve your APAC sum as soon as the Redshift engine finishes compiling and running the aggregation.
 
 
+## ❓ FAQ
+
+**Q: Are query results limited by size?**
+Yes. The underlying Redshift Data API imposes soft constraints; for enormous responses, you might receive a paginated `NextToken`. While this MCP server auto-handles some response collection, queries returning over a few megabytes of raw JSON should be pre-filtered using `LIMIT` or aggregated to avoid token constraints in the LLM.
+
+**Q: Can I use standard IAM credentials or do I need specific AWS roles?**
+The integration accepts standard static IAM keys (`AWS_ACCESS_KEY_ID` & `AWS_SECRET_ACCESS_KEY`), provided they hold sufficient IAM inline or attached policies allowing use of `redshift-data:*` operations targeting your exact Cluster ARN.
+
+**Q: Why does `execute_sql` only return a statement ID instead of the data?**
+Because the Amazon Redshift Data API is strictly asynchronous. Queries often take seconds to minutes. Returning the `statement_id` instantly allows the AI to continue parsing conversations or interacting with other systems without locking up, executing `get_results` at a later time when the query officially succeeds.
+
+
 ## Installation & Usage
 
-To install and use the **Amazon Redshift** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amazon-redshift](https://vinkius.com/mcp/amazon-redshift)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amazon Redshift** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amazon-redshift` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amazon Redshift** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amazon-redshift": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

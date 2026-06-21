@@ -1,7 +1,6 @@
 # Vibrato MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vibrato)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vibrato-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vibrato-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vibrato)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Vibrato** MCP server u
 > I've retrieved the transcript. The AI successfully negotiated a $20/month discount on your plan. Here is the full conversation: [View Transcript].
 
 
+## ❓ FAQ
+
+**Q: How do I get my Vibrato API Key?**
+Log in to your account at [getvibrato.com](https://getvibrato.com/), navigate to the API Keys section, and copy your unique secret key.
+
+**Q: Does it provide call recordings?**
+Yes, you can access call recordings and live transcripts through the `get_call_status` tool once a call is in progress or completed.
+
+**Q: Can I use custom prompts?**
+Absolutely. The `create_call` tool allows you to provide a custom natural language prompt to define exactly what the AI should achieve during the call.
+
+
 ## Installation & Usage
 
-To install and use the **Vibrato** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vibrato](https://vinkius.com/mcp/vibrato)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vibrato** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vibrato` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vibrato** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vibrato": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

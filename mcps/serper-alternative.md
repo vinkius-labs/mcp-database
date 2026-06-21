@@ -1,7 +1,6 @@
 # Serper MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/serper-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/serper-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/serper-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/serper-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Serper** MCP server us
 > I've found 5 top-rated pizza places in Seattle. Notable results include 'Serious Pie' and 'Delancey'. I can provide the addresses and average ratings for each.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Serper API Key?**
+Log in to your [**Serper.dev dashboard**](https://serper.dev/dashboard), and you will find your API Key on the main page. Copy and paste it below.
+
+**Q: Can the agent search for images and news separately?**
+Yes. This server includes specialized tools for Google Images (`search_images`) and Google News (`search_news`), allowing your agent to query specific verticals based on your needs.
+
+**Q: Is it possible to retrieve local business details via the agent?**
+Yes. The `search_places` tool allows your agent to query Google Places for business information, including addresses and ratings, ensuring your local research is accurate.
+
+
 ## Installation & Usage
 
-To install and use the **Serper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/serper-alternative](https://vinkius.com/mcp/serper-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Serper** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `serper-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Serper** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "serper-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

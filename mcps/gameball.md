@@ -1,7 +1,6 @@
 # Gameball MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gameball)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gameball-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gameball-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gameball)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Gameball** MCP server 
 > Fetching challenges... You have 5 active challenges: 'First Purchase', 'Refer a Friend', 'Weekly Login Streak', 'Write a Review', and 'Mobile App Install'. Would you like the point details for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I check a player's points balance via AI?**
+Yes! Use the `get_player_balance` tool and provide the Player Unique ID. Your agent will retrieve the current points and currency for that specific user.
+
+**Q: How do I award points for a specific action using the agent?**
+Use the `track_player_event` action. Provide the Player ID and the Event Name (e.g., 'purchase_completed'). Gameball will process the event and trigger rewards based on your rules.
+
+**Q: Is it possible to list all available rewards via AI?**
+Absolutely. Use the `list_rewards` query. The agent will retrieve the full catalog of rewards, redemption options, and active point rules from your account.
+
+
 ## Installation & Usage
 
-To install and use the **Gameball** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gameball](https://vinkius.com/mcp/gameball)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gameball** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gameball` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gameball** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gameball": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Caddy Server MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/caddy-server)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/caddy-server-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/caddy-server-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/caddy-server)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Caddy Server** MCP ser
 > Fetching upstream status... I found 3 configured upstreams. All backends for 'api-cluster' are currently healthy, but one node in 'static-assets' is reporting a timeout. Would you like the full metrics?
 
 
+## ❓ FAQ
+
+**Q: Can I use a Caddyfile instead of JSON to update my configuration?**
+Yes! Use the `load_config` tool and set the `content_type` to `text/caddyfile`. You can also use `adapt_config` to preview the JSON conversion before applying it.
+
+**Q: How can I monitor the health of my load-balanced backends?**
+Use the `get_upstreams` tool. It returns the current status and health metrics of all configured proxy upstreams in your Caddy instance.
+
+**Q: Is it possible to remove a specific site or route without resetting the whole server?**
+Absolutely. Use `delete_config` with the specific path (e.g., `apps/http/servers/srv0/routes/1`) to remove only that element from the active configuration.
+
+
 ## Installation & Usage
 
-To install and use the **Caddy Server** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/caddy-server](https://vinkius.com/mcp/caddy-server)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Caddy Server** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `caddy-server` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Caddy Server** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "caddy-server": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

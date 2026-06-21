@@ -1,7 +1,6 @@
 # LinkedIn Ads MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkedin-ads-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/linkedin-ads-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/linkedin-ads-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkedin-ads-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,62 @@ Here are some examples of how you can interact with the **LinkedIn Ads** MCP ser
 > Budget updated: 'Brand Awareness' daily budget changed from $150 to $200 (+33%). Estimated new daily reach: ~2,800 impressions (up from ~2,100).
 
 
+## ❓ FAQ
+
+**Q: How do I get my LinkedIn Ads API credentials?**
+1. Go to **developer.linkedin.com** and log in with your LinkedIn account.
+2. Click **My Apps** → **Create App**.
+3. Fill in your app name, company LinkedIn page, and logo.
+4. Under the **Products** tab, request access to **Marketing Developer Platform**.
+5. After approval, go to the **Auth** tab and copy your **Client ID** and **Client Secret**.
+6. Paste both values below.
+
+⚠️ Access to the Marketing API requires approval from LinkedIn (typically 1-5 business days).
+
+**Q: Can I download lead gen form submissions?**
+Yes. Your AI agent can pull all lead gen form submissions including names, emails, job titles, and custom fields — ready to sync to your CRM or outreach tool.
+
+**Q: What targeting criteria can I use?**
+LinkedIn offers the most precise B2B targeting: job title, job function, seniority, company name, company size, industry, skills, education, and matched audiences (ABM lists, retargeting, lookalikes).
+
+**Q: Can I track cost-per-lead (CPL)?**
+Yes. Your AI agent calculates CPL by dividing total spend by leads generated — broken down by campaign, ad group, or creative. Essential for B2B marketers optimizing demand gen budgets.
+
+
 ## Installation & Usage
 
-To install and use the **LinkedIn Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/linkedin-ads-1](https://vinkius.com/mcp/linkedin-ads-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LinkedIn Ads** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `linkedin-ads-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LinkedIn Ads** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "linkedin-ads-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

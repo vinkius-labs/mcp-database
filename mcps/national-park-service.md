@@ -1,7 +1,6 @@
 # National Park Service MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/national-park-service)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/national-park-service-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/national-park-service-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/national-park-service)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **National Park Service*
 > Retrieving events for Grand Canyon (GRCA)... There is a 'Guided Rim Walk' scheduled for tomorrow at 10 AM and a 'Star Party' this Saturday evening. Shall I provide the meeting location for the rim walk?
 
 
+## ❓ FAQ
+
+**Q: Is the NPS API Key free?**
+Yes! You can sign up for a free API key at nps.gov/subjects/developer by providing your name and email. The key is typically issued instantly.
+
+**Q: How can I find the correct 'Park Code'?**
+You can find park codes by using the `list_parks` tool or by looking at the URL of a park on nps.gov (e.g., nps.gov/yose/ has the code 'yose').
+
+**Q: What kind of alerts are provided?**
+The `list_alerts` tool provides information on park closures, safety warnings (like weather or fire conditions), and general notices about road work or facility changes.
+
+
 ## Installation & Usage
 
-To install and use the **National Park Service** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/national-park-service](https://vinkius.com/mcp/national-park-service)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **National Park Service** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `national-park-service` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **National Park Service** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "national-park-service": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # DonorsChoose MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/donorschoose)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/donorschoose-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/donorschoose-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/donorschoose)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **DonorsChoose** MCP ser
 > The latest proposals include projects for 'Special Education Sensory Tools' in Texas and 'Music Room Instruments' in Florida. Both were posted in the last hour. Would you like to see the school names for these new projects?
 
 
+## ❓ FAQ
+
+**Q: How do I get a DonorsChoose API Key?**
+For general public access, you can use the API key 'DONORSCHOOSE'. If you require a unique key for high-volume use, you can apply for one through the DonorsChoose developer site.
+
+**Q: Can the agent make donations directly?**
+This integration currently focuses on searching and auditing project data. Making actual donations should be completed via the project links provided by the agent on the DonorsChoose website.
+
+**Q: Which geographical areas are covered?**
+DonorsChoose covers public and charter school classroom projects across all 50 US states.
+
+
 ## Installation & Usage
 
-To install and use the **DonorsChoose** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/donorschoose](https://vinkius.com/mcp/donorschoose)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DonorsChoose** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `donorschoose` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DonorsChoose** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "donorschoose": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

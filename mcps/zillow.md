@@ -1,7 +1,6 @@
 # Zillow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zillow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zillow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zillow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zillow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,49 @@ Here are some examples of how you can interact with the **Zillow** MCP server us
 > Property 12345: 123 Oak Street, Los Angeles, CA 90001. Price: $1,250,000. 4 bed, 3 bath, 2,400 sqft. Built 2015. Single Family. Lot size: 5,200 sqft.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Zillow API key?**
+Apply for access through the [**Zillow Bridge API**](https://bridge.intercom.io/) program. You'll need to create an account and request API access.
+
+**Q: Can I search properties by city?**
+Yes! Use search_property with the city parameter to find all properties in a city. You can also filter by state and zipcode for more precise results.
+
+
 ## Installation & Usage
 
-To install and use the **Zillow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zillow](https://vinkius.com/mcp/zillow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zillow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zillow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zillow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zillow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

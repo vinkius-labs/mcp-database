@@ -1,7 +1,6 @@
 # GlobalGiving MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/globalgiving)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/globalgiving-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/globalgiving-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/globalgiving)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,55 @@ Here are some examples of how you can interact with the **GlobalGiving** MCP ser
 > Filtering projects... I found 2 environmental initiatives near their goals: 'Reforestation in Kenya' (Remaining: $450) and 'Ocean Cleanup Program' (Remaining: $820).
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Key for GlobalGiving?**
+Go to the GlobalGiving API website (globalgiving.org/api/) and request a free API key by filling out their registration form.
+
+**Q: Are all organizations on GlobalGiving vetted?**
+Yes, GlobalGiving performs rigorous due diligence on all nonprofit partners to ensure they are high-impact and transparent.
+
+**Q: Can I search for projects using ISO country codes?**
+Yes! Use the 'list_projects_by_country' tool and provide a standard 2-letter ISO code (e.g., 'BR' for Brazil or 'US' for the USA).
+
+**Q: What themes are available for filtering?**
+Common themes include 'edu' (education), 'env' (environment), 'health', 'disaster' (disaster recovery), and 'women' (women and girls).
+
+
 ## Installation & Usage
 
-To install and use the **GlobalGiving** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/globalgiving](https://vinkius.com/mcp/globalgiving)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GlobalGiving** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `globalgiving` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GlobalGiving** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "globalgiving": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # SonarQube & SonarCloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sonarqube-sonarcloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sonarqube-sonarcloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sonarqube-sonarcloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sonarqube-sonarcloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -100,12 +99,52 @@ Do you want me to search issues to drop technical debt in half?
 I can retrieve lines specifically natively via `get_source_code` if you're ready to fix this token loop now.
 
 
+## ❓ FAQ
+
+**Q: Can I connect this extension to my company's self-hosted, private SonarQube on-premise instance?**
+Yes! The tool requires a `SONAR_BASE_URL` credential. If your company uses `https://sonar.internal-corp.local:9000`, the MCP traffic routes originating from your local desktop client to that exact internal instance seamlessly, guaranteeing total compatibility even inside VPNs.
+
+**Q: How can the AI know how to fix a Sonar 'Code Smell' specifically?**
+When the AI notices an identified smell from `search_issues`, it queries `list_rules` looking for the exact underlying Sonar rule ID definitions. Armed with the rigid logic rules enforced by SonarQube plus the `get_source_code` of your file, the LLM patches the snippet flawlessly.
+
+**Q: Can it inspect duplication limits and technical debt logic?**
+Yes. Ask the LLM to inspect technical debt by running `get_measures` providing 'sqale_index' metric. On the other hand, it can pull specific chunk references using the `get_duplications` command, helping you extract redundant code safely.
+
+
 ## Installation & Usage
 
-To install and use the **SonarQube & SonarCloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sonarqube-sonarcloud](https://vinkius.com/mcp/sonarqube-sonarcloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SonarQube & SonarCloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sonarqube-sonarcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SonarQube & SonarCloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sonarqube-sonarcloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

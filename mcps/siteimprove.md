@@ -1,7 +1,6 @@
 # Siteimprove MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/siteimprove)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/siteimprove-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/siteimprove-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/siteimprove)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Should I group these by page?
 The most significant opportunity is improving your Accessibility compliance score. Should I pull the exact issues causing the low accessibility rating?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically detect accessibility barriers on newly crawled pages?**
+Yes. Ask the agent to list the accessibility issues for a specific Site ID. It pulls from Siteimprove's latest crawls to pinpoint exact violations (e.g., missing alt text, ARIA label failures), so you can remediate them before the next audit cycle.
+
+**Q: How do I easily fix broken links without searching them all manually?**
+Ask your agent to 'list all broken links' on the site. Instead of manually parsing reports, your AI will list the exact origin page where the broken link exists, plus the broken destination URL. You can use this checklist to rapidly go through your CMS and fix them.
+
+**Q: Can my agent give me a quick health summary of my domain?**
+Absolutely. Request the 'Digital Certainty Index (DCI) summary' for your site. The agent instantly pulls your overall Quality Assurance score, SEO health, and Accessibility compliance rating, which is perfect for generating a quick weekly status report.
+
+
 ## Installation & Usage
 
-To install and use the **Siteimprove** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/siteimprove](https://vinkius.com/mcp/siteimprove)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Siteimprove** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `siteimprove` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Siteimprove** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "siteimprove": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

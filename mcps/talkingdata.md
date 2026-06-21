@@ -1,7 +1,6 @@
 # TalkingData MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/talkingdata)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/talkingdata-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/talkingdata-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/talkingdata)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **TalkingData** MCP serv
 > I've listed your tracked events. There are 25 custom events currently active, including 'Registration_Complete', 'Add_to_Cart', and 'Level_Up'. Which event would you like to see detailed analytics for?
 
 
+## ❓ FAQ
+
+**Q: How do I find my TalkingData App ID and API Key?**
+Log in to the [TalkingData portal](https://www.talkingdata.com/), select your application from the management console, and you will find your AppID and API Key (Access Token) in the application settings or 'App Info' section.
+
+**Q: Can I query data for a specific date range?**
+Yes. Tools like `get_active_users` and `get_new_users` accept optional `start_date` and `end_date` parameters (in YYYY-MM-DD format) to retrieve statistics for specific periods.
+
+**Q: Is it possible to list all custom events?**
+Yes! Use the `list_events` tool to retrieve a complete list of all custom behavioral events currently being tracked in your application, along with their unique identifiers.
+
+
 ## Installation & Usage
 
-To install and use the **TalkingData** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/talkingdata](https://vinkius.com/mcp/talkingdata)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TalkingData** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `talkingdata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TalkingData** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "talkingdata": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # iFood MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ifood)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ifood-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ifood-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ifood)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Here are some examples of how you can interact with the **iFood** MCP server usi
 > I'll update your business hours for the entire week right now.
 
 
+## ❓ FAQ
+
+**Q: Does this work for iFood customers or only merchants?**
+This MCP server is designed exclusively for iFood merchants (restaurant owners). It uses the Merchant API to manage orders, catalogs, and operations. Consumer-side features require a different API. If you're a restaurant owner using iFood for delivery, this is for you.
+
+**Q: Can I accept and prepare orders automatically with this MCP?**
+Yes! AI agents can update order status through the full workflow: PENDING -> ACCEPTED -> PREPARING -> READY -> DISPATCHED -> DELIVERED. You can build automation rules to accept orders instantly, notify kitchen staff, and track preparation times.
+
+**Q: Does this support multiple restaurant locations?**
+Absolutely. The API returns all stores associated with your merchant account. Each tool requires a store_id parameter, so you can manage operations independently across all your restaurant locations. AI agents can list all your stores first to get their IDs.
+
+
 ## Installation & Usage
 
-To install and use the **iFood** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ifood](https://vinkius.com/mcp/ifood)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **iFood** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ifood` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **iFood** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ifood": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

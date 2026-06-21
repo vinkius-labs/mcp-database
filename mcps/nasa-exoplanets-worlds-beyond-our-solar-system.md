@@ -1,7 +1,6 @@
 # NASA Exoplanets — Worlds Beyond Our Solar System MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-exoplanets-worlds-beyond-our-solar-system)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nasa-exoplanets-worlds-beyond-our-solar-system-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nasa-exoplanets-worlds-beyond-our-solar-system-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-exoplanets-worlds-beyond-our-solar-system)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,46 @@ Active missions: TESS, JWST
 Rocky planets (< 2 R⊕) with 200-320K equilibrium temperature.
 
 
+## ❓ FAQ
+
+**Q: What is the habitable zone?**
+The habitable zone ('Goldilocks zone') is the range of distances from a star where liquid water could exist on a planet's surface — not too hot, not too cold. We filter for equilibrium temperatures between 200-320K and rocky sizes (< 2 Earth radii).
+
+
 ## Installation & Usage
 
-To install and use the **NASA Exoplanets — Worlds Beyond Our Solar System** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nasa-exoplanets-worlds-beyond-our-solar-system](https://vinkius.com/mcp/nasa-exoplanets-worlds-beyond-our-solar-system)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NASA Exoplanets — Worlds Beyond Our Solar System** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nasa-exoplanets-worlds-beyond-our-solar-system` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NASA Exoplanets — Worlds Beyond Our Solar System** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nasa-exoplanets-worlds-beyond-our-solar-system": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

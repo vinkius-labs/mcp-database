@@ -1,7 +1,6 @@
 # Vercel MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vercel-extended)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vercel-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vercel-extended-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vercel-extended)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Vercel** MCP server us
 > Success! I've added 'DB_PASSWORD' to 'api-gateway'. The change is now active for production, preview, and development environments.
 
 
+## ❓ FAQ
+
+**Q: Can I see if a specific deployment failed using the AI?**
+Yes! Use the `get_deployment_info` tool with the Deployment ID. Your agent will retrieve the current state, and if it's 'ERROR', it will show you the deployment details.
+
+**Q: How do I add a new API Key to a project via AI?**
+Use the `add_environment_variable` action. Provide the project name/ID, the key name, and the value. You can also specify the type as 'secret' or 'sensitive'.
+
+**Q: Is it possible to list all domains linked to my account?**
+Absolutely. Use the `list_account_domains` query to retrieve a complete list of all domains registered or configured within your Vercel account.
+
+
 ## Installation & Usage
 
-To install and use the **Vercel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vercel-extended](https://vinkius.com/mcp/vercel-extended)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vercel** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vercel-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vercel** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vercel-extended": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

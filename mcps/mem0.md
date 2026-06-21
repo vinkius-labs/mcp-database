@@ -1,7 +1,6 @@
 # Mem0 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mem0)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mem0-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mem0-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mem0)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ These will be automatically recalled in future conversations.
 Created between 2026-01-15 and 2026-04-01.
 
 
+## ❓ FAQ
+
+**Q: Is Mem0 free to use?**
+Yes! Mem0 offers a free Hobby tier with 10,000 memories and 1,000 search calls per month — no credit card required. Paid plans start at $19/month for higher limits. An open-source version (Apache 2.0) is also available for self-hosting.
+
+**Q: How does Mem0 extract and store memories?**
+When you send content to Mem0, its AI automatically extracts key facts and structured information. For example, if you send 'I prefer Python over JavaScript and work best in the morning', Mem0 creates two separate memories: one about language preference and one about work schedule. These are stored in a hybrid architecture (key-value + vector + graph) for fast semantic retrieval.
+
+**Q: Can I organize memories by user or agent?**
+Yes! Every memory operation supports scoping by user_id, agent_id, or run_id. This means you can maintain separate memory banks for different users, different agents, or even different conversation runs — keeping context perfectly isolated.
+
+
 ## Installation & Usage
 
-To install and use the **Mem0** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mem0](https://vinkius.com/mcp/mem0)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mem0** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mem0` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mem0** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mem0": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Learn Amp MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/learn-amp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/learn-amp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/learn-amp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/learn-amp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Learn Amp** MCP server
 > Processing completion... Done! Item 8823 has been successfully marked as completed for user 1029. Their progress has been updated in the system.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically mark a course as completed for a specific user?**
+Yes! Use the `complete_item` action by providing the Item ID and User ID. Your agent will record the completion in the Learn Amp database instantly.
+
+**Q: How do I list all the available learning pathways (Learnlists)?**
+Simply ask the agent to run the `list_learnlists` query. It will return a paginated list of all active pathways with their names and unique IDs.
+
+**Q: Is it possible to deactivate a user account via this integration?**
+Yes. The `deactivate_user` tool allows you to disable access for any specific user ID, which is ideal for automating offboarding processes.
+
+
 ## Installation & Usage
 
-To install and use the **Learn Amp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/learn-amp](https://vinkius.com/mcp/learn-amp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Learn Amp** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `learn-amp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Learn Amp** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "learn-amp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

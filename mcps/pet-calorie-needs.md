@@ -1,7 +1,6 @@
 # Pet Calorie Needs MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pet-calorie-needs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pet-calorie-needs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pet-calorie-needs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pet-calorie-needs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -49,12 +48,52 @@ Here are some examples of how you can interact with the **Pet Calorie Needs** MC
 > The available lifestyle factors include neutered, intact, pregnant, lactating, athletic, and weight loss.
 
 
+## ❓ FAQ
+
+**Q: What is RER?**
+Resting Energy Requirement (RER) is the minimum amount of energy needed to maintain vital functions while the animal is at rest.
+
+**Q: How do I know which lifestyle factor to use?**
+You can use the `list_lifestyle_factors` tool to see a complete list of available keys like 'neutered' or 'athletic'.
+
+**Q: Does this account for different breeds?**
+The calculation is based on metabolic weight (kg^0.75), which is a standard veterinary approach that inherently accounts for scaling across different sizes.
+
+
 ## Installation & Usage
 
-To install and use the **Pet Calorie Needs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pet-calorie-needs](https://vinkius.com/mcp/pet-calorie-needs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pet Calorie Needs** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pet-calorie-needs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pet Calorie Needs** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pet-calorie-needs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

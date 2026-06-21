@@ -1,7 +1,6 @@
 # New York Times MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/new-york-times)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/new-york-times-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/new-york-times-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/new-york-times)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **New York Times** MCP s
 > Found classic NYTimes reviews: 1. Original 1972 Review by Vincent Canby — 'A magnificent film'. 2. Retrospective reviews from later decades.
 
 
+## ❓ FAQ
+
+**Q: How far back does the NYTimes archive go?**
+The article search API provides access to articles dating back to 1851. It is one of the most comprehensive historical newspaper archives available.
+
+**Q: Can I get the actual text of the articles?**
+The API provides the headline, abstract (summary), snippet, and URL to the full article on NYTimes.com. Full text is not included in the API response but can be accessed via the provided link.
+
+**Q: What sections are available for Top Stories?**
+You can access almost any section of the NYTimes, including home, world, politics, business, technology, sports, arts, health, and science. Use the get_sections tool to see the full list.
+
+
 ## Installation & Usage
 
-To install and use the **New York Times** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/new-york-times](https://vinkius.com/mcp/new-york-times)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **New York Times** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `new-york-times` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **New York Times** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "new-york-times": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Tettra MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tettra)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tettra-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tettra-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tettra)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ The content has been formatted with step-by-step markdown. Your team can now sea
 The system will log that it was verified today, maintaining trust in your knowledge base.
 
 
+## ❓ FAQ
+
+**Q: Why do I get an error when providing my token?**
+Tettra's API keys are exclusively available to workspaces on their **Scaling** or **Professional** subscription tiers. If your team operates on a free or basic plan, the API credentials menu will not be accessible and requests will be blocked.
+
+**Q: Can the AI rewrite existing company wiki articles?**
+Yes. Using the `update_wiki_page` function, the AI can overwrite existing body content and titles. It adopts your user profile's access permissions, meaning it can only update pages you personally have edit rights for in the Tettra UI.
+
+**Q: Where do I track down my Tettra Team ID?**
+Your Team ID is the slug prefix used in your Tettra domain. For example, if you access your wiki primarily through `https://app.tettra.co/teams/acme-corp`, your Team ID is exactly `acme-corp`.
+
+
 ## Installation & Usage
 
-To install and use the **Tettra** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tettra](https://vinkius.com/mcp/tettra)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tettra** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tettra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tettra** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tettra": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

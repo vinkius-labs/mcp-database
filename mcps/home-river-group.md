@@ -1,7 +1,6 @@
 # Home River Group MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/home-river-group)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/home-river-group-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/home-river-group-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/home-river-group)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -62,12 +61,55 @@ Here are some examples of how you can interact with the **Home River Group** MCP
 > I'll retrieve the current unit availability for you.
 
 
+## ❓ FAQ
+
+**Q: How do I get API credentials for Home River Group?**
+You need to log in to your Entrata instance (homeriver.entrata.com) and navigate to Setup > Company > API Access. If you don't have access, contact your system administrator.
+
+**Q: Can I create work orders with this MCP?**
+Yes, you can use the create_work_order tool to submit new maintenance requests directly into the system.
+
+**Q: Is the subdomain required?**
+It defaults to 'homeriver'. If your specific instance uses a different subdomain, you should provide it during setup.
+
+**Q: Are these real-time updates?**
+Yes, all data retrieved and created is processed directly through the Entrata API in real-time.
+
+
 ## Installation & Usage
 
-To install and use the **Home River Group** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/home-river-group](https://vinkius.com/mcp/home-river-group)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Home River Group** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `home-river-group` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Home River Group** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "home-river-group": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

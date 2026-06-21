@@ -1,7 +1,6 @@
 # Namecheap MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/namecheap)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/namecheap-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/namecheap-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/namecheap)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Namecheap** MCP server
 > myawesomeapp.com is AVAILABLE for registration. Not a premium domain. Standard .com pricing applies.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Namecheap API key?**
+Log in to [**Namecheap**](https://www.namecheap.com), go to **Profile > Tools & Services > Business & Developer Tools > API Access**, enable API access and your API key will be displayed. Also whitelist your IP address for security.
+
+**Q: Can I update DNS records?**
+Yes! Use set_dns_hosts with the domain name and a JSON array of DNS records. This replaces all existing records, so include all records you want to keep. Supports A, AAAA, CNAME, MX, TXT, NS, URL, URL301 and FRAME record types.
+
+**Q: Can I check if a domain is available?**
+Yes! Use check_domain_availability with the domain name you want to check. Returns availability status, premium status and pricing information.
+
+
 ## Installation & Usage
 
-To install and use the **Namecheap** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/namecheap](https://vinkius.com/mcp/namecheap)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Namecheap** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `namecheap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Namecheap** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "namecheap": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

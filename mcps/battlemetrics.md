@@ -1,7 +1,6 @@
 # BattleMetrics MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/battlemetrics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/battlemetrics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/battlemetrics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/battlemetrics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,12 +102,55 @@ Here are some examples of how you can interact with the **BattleMetrics** MCP se
 > I've pulled the player count history for server 12345. The data shows peak activity at 18:00-22:00 UTC with an average of 87 players, dropping to around 15 during off-peak hours.
 
 
+## ❓ FAQ
+
+**Q: How do I find a specific game server?**
+Use the `list_servers` tool with the search parameter. You can filter by server name, game type (e.g. rust, ark), or country code (e.g. US, DE). The results include server name, IP, player count, and rank. For more advanced filtering (min/max players), use the `search_servers` tool.
+
+**Q: Can I track a player's activity across different servers?**
+Yes. Use `list_players` to find the player by name, then `get_player` to view their full profile, and `get_player_sessions` to see their complete session history including which servers they joined, when they connected and disconnected, and for how long.
+
+**Q: What games does BattleMetrics support?**
+BattleMetrics tracks hundreds of multiplayer games including Rust, ARK, Minecraft, CS2, Valheim, DayZ, and many more. Use the `list_games` tool to get the complete, up-to-date catalog of all supported games with their identifiers.
+
+**Q: How do I get details about a specific ban?**
+First use `list_bans` to find the ban and get its numeric ban ID. Then use `get_ban` with that ID to retrieve the complete ban record including the reason, player identifier, expiry date, scope, and issuing administrator.
+
+
 ## Installation & Usage
 
-To install and use the **BattleMetrics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/battlemetrics](https://vinkius.com/mcp/battlemetrics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BattleMetrics** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `battlemetrics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BattleMetrics** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "battlemetrics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Socket.dev (Dependency Security) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/socketdev-dependency-security)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/socketdev-dependency-security-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/socketdev-dependency-security-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/socketdev-dependency-security)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Socket.dev (Dependency
 > Fetching the threat feed... I found several recently flagged malicious packages, including 'discord-selfbot-v14' which was flagged for containing malware. Be cautious if these appear in your dependencies.
 
 
+## ❓ FAQ
+
+**Q: How can I check if a specific npm package is safe to use?**
+You can use the `get_package_score` tool by providing the Package URL (PURL), such as `pkg:npm/lodash`. The agent will return a security score and risk assessment.
+
+**Q: Can I scan my entire project's dependencies at once?**
+Yes! Use the `create_scan` tool and provide the content of your manifest files (like `package.json`). Socket will analyze all dependencies and generate a report.
+
+**Q: How do I see the specific security issues found in a package?**
+Use the `get_package_issues` tool with the package's PURL. It will list all alerts, such as telemetry, install scripts, or known vulnerabilities associated with that package.
+
+
 ## Installation & Usage
 
-To install and use the **Socket.dev (Dependency Security)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/socketdev-dependency-security](https://vinkius.com/mcp/socketdev-dependency-security)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Socket.dev (Dependency Security)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `socketdev-dependency-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Socket.dev (Dependency Security)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "socketdev-dependency-security": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

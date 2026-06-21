@@ -1,7 +1,6 @@
 # TestLink MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/testlink)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/testlink-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/testlink-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/testlink)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Would you like me to flag this into an exportable markdown table?
 Which plan would you like to retrieve the registered builds for?
 
 
+## ❓ FAQ
+
+**Q: Why should I plug an AI agent into an older legacy application like TestLink?**
+Because retrieving test assets from older GUIs can be painfully slow for developers. By mapping the database to an AI agent, your devs can just chat: 'What are the steps to reproduce Test Case 4022?' The agent calls the XML-RPC backend and instantly formats the manual steps logically in the chat space.
+
+**Q: Can it read all my hierarchical QA Suites and specific cases?**
+Yes! The testlink agent is configured to retrieve Suites. You just list a Project ID, traverse downwards into Test Suites, and then request Test Cases by the retrieved Suite ID. It allows full architectural transparency over chat.
+
+**Q: Does my TestLink server need to be accessible to the internet?**
+No. Because MCP servers process logic strictly locally through a sidecar setup, the interaction happens right on your machine/endpoint. As long as the machine running the AI client (e.g. Cursor, Claude Desktop) can resolve the Internal Network URL, the connection is solid.
+
+
 ## Installation & Usage
 
-To install and use the **TestLink** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/testlink](https://vinkius.com/mcp/testlink)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TestLink** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `testlink` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TestLink** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "testlink": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

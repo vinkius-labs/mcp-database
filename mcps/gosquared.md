@@ -1,7 +1,6 @@
 # GoSquared MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gosquared)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gosquared-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gosquared-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gosquared)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **GoSquared** MCP server
 > Checking technology insights... So far today, 62% of your site traffic is originating from mobile devices, predominantly iOS.
 
 
+## ❓ FAQ
+
+**Q: Can I see exactly how many people are on my site right now?**
+Yes! The `get_now_overview` tool provides an instant snapshot of your concurrent active visitors. You can also use `get_now_pages` to see exactly which URLs they are currently reading.
+
+**Q: How do I check traffic for a specific day in the past?**
+You can use any of the `get_trends_*` tools (like `get_trends_overview`) and provide the `date` parameter. You can use 'today', 'yesterday', or a specific date format like 'YYYY-MM-DD'.
+
+**Q: Does it track which external links visitors click?**
+Yes. The real-time events functionality tracks specific outbound interactions out of the box, exposing exactly what resources capture audience interest the most.
+
+
 ## Installation & Usage
 
-To install and use the **GoSquared** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gosquared](https://vinkius.com/mcp/gosquared)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GoSquared** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gosquared` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GoSquared** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gosquared": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

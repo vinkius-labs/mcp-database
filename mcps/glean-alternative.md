@@ -1,7 +1,6 @@
 # Glean MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/glean-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/glean-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/glean-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/glean-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Glean** MCP server usi
 > People search result: James Rodriguez (james@company.com) — Senior Engineering Manager, Payments Team. Reports to: VP Engineering. Located: San Francisco. Expertise: payment processing, PCI-DSS, Stripe integration. Slack search results for 'PCI compliance': 3 relevant threads in #payments-eng. 1) 'PCI audit prep checklist' — 2 days ago, 12 replies. 2) 'TLS 1.3 migration timeline' — 5 days ago, 8 replies. 3) 'Tokenization vendor review' — 1 week ago, 15 replies. Would you like to read a specific thread or ask the AI for a PCI compliance summary?
 
 
+## ❓ FAQ
+
+**Q: Can I search across multiple data sources like Confluence, Slack, and Google Drive simultaneously?**
+Yes! The `search` tool queries all connected data sources in a single request. If you want to narrow results to a specific platform, use `search_by_datasource` with the datasource name (e.g., 'Confluence', 'Slack', 'Google Drive'). Use `autocomplete` to get intelligent suggestions as you refine your query.
+
+**Q: Can I ask the Glean AI assistant questions about my organization's knowledge?**
+Yes. The `chat` tool sends a natural language question to Glean's AI assistant, which generates an answer grounded in your organization's indexed knowledge — including documents, wikis, Slack conversations, and Jira tickets. This is ideal for getting synthesized answers rather than just search results.
+
+**Q: Can I index custom documents into Glean programmatically?**
+Yes. Use `index_document` to add a single document with a JSON payload containing title, body, URL, and metadata. For large batches, use `bulk_index_documents` to index multiple documents in one request. Use `delete_document` to remove outdated content and `get_document` to verify indexing status.
+
+
 ## Installation & Usage
 
-To install and use the **Glean** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/glean-alternative](https://vinkius.com/mcp/glean-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Glean** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `glean-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Glean** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "glean-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

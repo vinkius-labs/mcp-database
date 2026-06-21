@@ -1,7 +1,6 @@
 # Road511 Trucking MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/road511-trucking)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/road511-trucking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/road511-trucking-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/road511-trucking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Here are some examples of how you can interact with the **Road511 Trucking** MCP
 > Fetching STAA truck routes for Illinois... Found 12,450 route segments covering I-80, I-55, I-57, I-70, I-74, I-90, I-94, and major US highways. Active incidents affecting trucking: I-80 westbound at Mile 142 — Lane closure due to construction, expect 20-minute delays, detour via IL-47. I-55 southbound at Bloomington — Accident cleared, residual delays 10-15 minutes. I-294 northbound — Weight restriction in effect for trucks over 80,000 lbs due to bridge maintenance, ends at 5PM today. All other major truck routes operating normally.
 
 
+## ❓ FAQ
+
+**Q: Can my AI check for low bridges on a truck route in California?**
+Yes! Use the `get_bridge_clearances` tool with jurisdiction=CA to get all bridge clearance data for California. You can also filter by bounding box or radius from specific coordinates. The API returns bridge locations, clearance heights in feet, bridge identifiers, and road names. This is essential for truck height compliance planning and avoiding low-bridge incidents.
+
+**Q: How do I find truck parking near a specific location for HOS compliance?**
+Use the `get_truck_parking` tool with lat, lon, and radius parameters to find truck parking facilities near your current location. For example: lat=41.8781, lon=-87.6298, radius=50 finds parking within 50km of Chicago. Results include facility names, coordinates, capacity information, and amenity details. This is critical for Hours of Service (HOS) compliance planning and safe rest stop identification.
+
+**Q: Are there any seasonal weight restrictions affecting my route right now?**
+Use the `get_weight_restrictions` tool with jurisdiction and status=active to find all current weight restrictions in a state or province. You can also filter by specific road name (e.g., road=I-94) to check restrictions on a particular highway. Returns restriction details, weight limits, effective dates, and affected road segments. Essential for avoiding weight violation fines and planning compliant loads.
+
+
 ## Installation & Usage
 
-To install and use the **Road511 Trucking** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/road511-trucking](https://vinkius.com/mcp/road511-trucking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Road511 Trucking** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `road511-trucking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Road511 Trucking** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "road511-trucking": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

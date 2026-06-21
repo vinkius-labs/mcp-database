@@ -1,7 +1,6 @@
 # Kylas MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kylas)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kylas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kylas-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kylas)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Kylas** MCP server usi
 > Team: 4 reps. Sarah — 18 deals ($320K), 38% win rate, avg cycle: 22 days. Mike — 12 deals ($210K), 30% win rate. Lisa — 10 deals ($190K), 35%. James — 5 deals ($170K), 28%. Pipeline conversion: Lead→Qualified: 45%. Qualified→Proposal: 60%. Proposal→Won: 32%. Avg deal: $19.8K.
 
 
+## ❓ FAQ
+
+**Q: Can I manage leads and track deals?**
+Yes. List, create, and update leads with status tracking. Browse deals across pipeline stages with deal values and probability.
+
+**Q: Can I monitor pipeline conversion rates?**
+Yes. Track pipeline metrics including deal counts per stage, conversion rates, average deal size, and velocity.
+
+**Q: What API endpoint does Kylas use?**
+Bearer authentication against `api.kylas.io/v1`.
+
+
 ## Installation & Usage
 
-To install and use the **Kylas** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kylas](https://vinkius.com/mcp/kylas)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kylas** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kylas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kylas** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kylas": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

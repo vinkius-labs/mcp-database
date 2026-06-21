@@ -1,7 +1,6 @@
 # US WARN Act Compliance Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-warn-act-compliance-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-warn-act-compliance-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-warn-act-compliance-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-warn-act-compliance-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **US WARN Act Compliance
 > The `calculate_civil_penalty_exposure` tool would return a total penalty of $5,000.
 
 
+## ❓ FAQ
+
+**Q: What is the WARN Act?**
+The WARN Act is a federal law in the United States designed to protect workers and their families by providing notice of plant closings and mass layoffs.
+
+**Q: How can I check if a layoff is a violation?**
+You can use the `check_warn_compliance` tool by providing the number of affected employees, the type of layoff, and the actual notice period provided to see if it falls below the required 60 days.
+
+**Q: What liabilities are calculated by this tool?**
+The tool calculates back pay liabilities (wages and benefits) using `calculate_employee_backpay_liability` and civil penalty exposure using `calculate_civil_penalty_exposure`.
+
+
 ## Installation & Usage
 
-To install and use the **US WARN Act Compliance Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-warn-act-compliance-calculator](https://vinkius.com/mcp/us-warn-act-compliance-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **US WARN Act Compliance Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-warn-act-compliance-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **US WARN Act Compliance Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-warn-act-compliance-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

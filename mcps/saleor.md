@@ -1,7 +1,6 @@
 # Saleor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/saleor)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/saleor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/saleor-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/saleor)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Saleor** MCP server us
 > I queried the high-level Sales Channels settings securely. You maintain three active pipelines functioning flawlessly: USD for the primary US store, GBP representing the UK environment, and EUR cleanly implemented on the continental node.
 
 
+## ❓ FAQ
+
+**Q: Can the AI forcefully complete, modify, or delete existing customer orders in my Saleor shop?**
+No. The integration focuses securely on read-only queries. It fetches critical information such as stock numbers, recent sales, and product characteristics without actively overwriting, resolving, or destroying records to protect e-commerce transactional integrity.
+
+**Q: Does it require a specific Saleor Cloud paid plan to use this integration?**
+A specific plan is not heavily mandated by the tool itself as long as your environment successfully exposes the standard backend GraphQL endpoint and permits the creation of standard administrative App Tokens within your environment policies.
+
+**Q: Why do some commands ask for a 'GraphQL ID' specifically?**
+Saleor’s core architecture uses unique Base64-encoded strings (like 'UHJvZHVjdDoxMjM=') as identifiers natively, rather than typical numeric database IDs. Always use the `list_orders` or `list_products` tools first to discover these exact encoded IDs natively, then seamlessly pass them to the exact fetching tools to pull their full snapshots.
+
+
 ## Installation & Usage
 
-To install and use the **Saleor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/saleor](https://vinkius.com/mcp/saleor)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Saleor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `saleor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Saleor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "saleor": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

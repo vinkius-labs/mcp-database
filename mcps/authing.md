@@ -1,7 +1,6 @@
 # Authing MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/authing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/authing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/authing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/authing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Authing** MCP server u
 > I've retrieved your organizational structure. You have 5 primary branches, including 'Engineering', 'HR', and 'Marketing'. Would you like to see the child units under 'Engineering'?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Authing User Pool ID and Access Key?**
+Log in to your Authing console, select your project or user pool, and you will find your User Pool ID in the basic info section. Generate your Access Key ID and Secret in the [Settings] → [Access Key] section.
+
+**Q: Can I retrieve security audit logs through this server?**
+Yes. Use the `get_audit_logs` tool to retrieve a list of recent administrative and user actions, helping you maintain a clear trail for security compliance.
+
+**Q: Is it possible to list organizations and their structures?**
+Yes! Use the `list_organizations` tool to retrieve all organizational units defined in your user pool, allowing your agent to understand your company's hierarchy.
+
+
 ## Installation & Usage
 
-To install and use the **Authing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/authing](https://vinkius.com/mcp/authing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Authing** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `authing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Authing** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "authing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

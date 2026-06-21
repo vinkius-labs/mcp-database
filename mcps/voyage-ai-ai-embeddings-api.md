@@ -1,7 +1,6 @@
 # Voyage AI (AI Embeddings API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/voyage-ai-ai-embeddings-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/voyage-ai-ai-embeddings-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/voyage-ai-ai-embeddings-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/voyage-ai-ai-embeddings-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Voyage AI (AI Embeddin
 > The batch job has been initiated successfully. You can monitor its progress using the `get_batch` tool with the ID: `batch_v1_abc123`.
 
 
+## ❓ FAQ
+
+**Q: How does reranking improve my RAG system's accuracy?**
+By using the `rerank` tool, your agent can take a list of potentially relevant documents and re-score them using a powerful cross-encoder model. This ensures that the most semantically relevant pieces of information are ranked first, providing better context for the LLM to answer queries.
+
+**Q: What is the benefit of using contextualized embeddings?**
+The `create_contextualized_embeddings` tool allows you to embed chunks of text while considering the surrounding content of the same document. This prevents loss of meaning that often happens with standard chunking, leading to much higher retrieval precision.
+
+**Q: Can I process images and text in the same vector space?**
+Yes! With `create_multimodal_embeddings`, you can provide interleaved sequences of text and image URLs. Voyage AI will generate a single embedding that represents the combined semantic meaning, perfect for visual or hybrid search.
+
+
 ## Installation & Usage
 
-To install and use the **Voyage AI (AI Embeddings API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/voyage-ai-ai-embeddings-api](https://vinkius.com/mcp/voyage-ai-ai-embeddings-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Voyage AI (AI Embeddings API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `voyage-ai-ai-embeddings-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Voyage AI (AI Embeddings API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "voyage-ai-ai-embeddings-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

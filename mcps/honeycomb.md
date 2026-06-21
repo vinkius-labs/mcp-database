@@ -1,7 +1,6 @@
 # Honeycomb MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/honeycomb)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/honeycomb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/honeycomb-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/honeycomb)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,55 @@ Here are some examples of how you can interact with the **Honeycomb** MCP server
 > Query execution triggered! Your result ID is 'res_552'. I'll wait a few moments for the data to process. Should I retrieve the final results for you now?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Honeycomb API Key?**
+Log in to Honeycomb, go to **Team Settings**, and navigate to the **API Keys** section. You will be able to generate and copy your Team API Key from there. Ensure you also note your account's region.
+
+**Q: Which region should I select?**
+If your browser URL starts with `ui.eu1.honeycomb.io`, select **EU**. Otherwise, select **US**. Using the correct region is required for the integration to connect to the right API cluster.
+
+**Q: Can I run a query and get the data back?**
+Yes! Use the `run_query` tool with a valid query ID. It will return a result ID, which you can then pass to the `get_query_result` tool once the analysis is complete.
+
+**Q: Is the integration secure for telemetry data?**
+Absolutely. The integration uses official Honeycomb Team API keys over HTTPS. Your credentials and queried data are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Honeycomb** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/honeycomb](https://vinkius.com/mcp/honeycomb)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Honeycomb** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `honeycomb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Honeycomb** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "honeycomb": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

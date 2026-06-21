@@ -1,7 +1,6 @@
 # Accela MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accela)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/accela-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/accela-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accela)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Accela** MCP server us
 > Retrieving record REC-10293... This is a 'Commercial Electrical' permit issued to 'BuildIt Corp'. Current status is 'Active' and it was last updated on 2024-11-01.
 
 
+## ❓ FAQ
+
+**Q: Can I search for specific permits by their current status?**
+Yes. Use the `search_records` tool and provide a status filter (e.g., 'Pending' or 'Approved') to find all matching applications within your agency.
+
+**Q: How do I schedule a new inspection for an existing record?**
+Simply use the `schedule_inspection` tool. You will need to provide the Record ID, the type of inspection, and the desired scheduled date.
+
+**Q: Is it possible to retrieve land parcel details using a parcel number?**
+Yes, the `get_parcels` tool allows you to query the system using a parcel number to retrieve specific land and property metadata.
+
+
 ## Installation & Usage
 
-To install and use the **Accela** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/accela](https://vinkius.com/mcp/accela)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Accela** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `accela` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Accela** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "accela": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

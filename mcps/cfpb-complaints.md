@@ -1,7 +1,6 @@
 # CFPB Complaints MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cfpb-complaints)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cfpb-complaints-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cfpb-complaints-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cfpb-complaints)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,55 @@ Here are some examples of how you can interact with the **CFPB Complaints** MCP 
 > Equifax has 350,000+ complaints in the database. Top issues: Incorrect information (45%), Problem with credit report (30%), Unable to get credit report (15%). Most common product: Credit reporting.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! CFPB complaint data is completely free and open public domain. No authentication required.
+
+**Q: What products are covered?**
+Complaints cover: Debt collection, Mortgage, Credit card, Credit reporting, Student loan, Bank account, Payday loan, Money transfer, Prepaid card and many more.
+
+**Q: Can I read consumer narratives?**
+Yes! Use get_complaints_with_narrative to find complaints that include the consumer's detailed description of their experience.
+
+**Q: How recent is the data?**
+The database is updated daily with new complaints. Complaints are published after the company responds or after 15 days, whichever comes first.
+
+
 ## Installation & Usage
 
-To install and use the **CFPB Complaints** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cfpb-complaints](https://vinkius.com/mcp/cfpb-complaints)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CFPB Complaints** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cfpb-complaints` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CFPB Complaints** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cfpb-complaints": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

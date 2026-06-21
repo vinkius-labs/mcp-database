@@ -1,7 +1,6 @@
 # Glofox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/glofox)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/glofox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/glofox-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/glofox)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **Glofox** MCP server us
 > There are currently 6 members with overdue membership payments totaling $450 this week. Would you like me to list their contact details so the Front Desk can follow up?
 
 
+## ❓ FAQ
+
+**Q: How do I get Glofox API access?**
+Contact Glofox support or your account manager to request API access. You'll receive an API Key and Branch ID for your location.
+
+**Q: Does this integration also cover ABC Fitness Solutions / ClubReady endpoints?**
+While Glofox is part of ABC Fitness Solutions, this specific MCP Server connects directly to the Glofox Developer API endpoints. Other ABC platforms may require their respective integration servers.
+
+**Q: Can I process refunds or payments through natural language?**
+You can track and query payment statuses, memberships, and transaction histories, but full payment processing usually depends on the specific payment gateway integration configured within your Glofox account.
+
+
 ## Installation & Usage
 
-To install and use the **Glofox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/glofox](https://vinkius.com/mcp/glofox)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Glofox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `glofox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Glofox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "glofox": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

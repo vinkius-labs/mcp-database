@@ -1,7 +1,6 @@
 # Aspose.Words MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/asposewords)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/asposewords-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/asposewords-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/asposewords)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Aspose.Words** MCP ser
 > Page rendering triggered! I'm converting the first page of your contract into a high-fidelity PNG image. This is useful for instant previews in your agent. Need help with other pages?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Aspose JWT Token?**
+Log in to the [**Aspose Cloud Dashboard**](https://dashboard.aspose.cloud/), go to **My Apps**, create or select an app, and generate a JWT token using your Client ID and Client Secret.
+
+**Q: Can I replace text inside a Word file via AI?**
+Yes! The `replace_text_in_document` tool allows your agent to find and update specific strings within documents hosted in your Aspose Cloud storage.
+
+**Q: How do I check document page count?**
+Use the `get_document_statistics` tool to retrieve word count, page count, and other high-fidelity structural metadata directly from the platform.
+
+
 ## Installation & Usage
 
-To install and use the **Aspose.Words** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/asposewords](https://vinkius.com/mcp/asposewords)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aspose.Words** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `asposewords` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aspose.Words** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "asposewords": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

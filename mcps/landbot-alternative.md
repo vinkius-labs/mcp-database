@@ -1,7 +1,6 @@
 # Landbot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/landbot-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/landbot-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/landbot-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/landbot-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Landbot** MCP server u
 > Customers: 2,834 total. Active (7 days): 145. Channels: Web (1,890), WhatsApp (944). Top by conversations: Ana Costa (8 conversations), Mike Torres (5), Lisa Park (4). Reply sent to Ana! ✅ 'Hi Ana, great to hear you are interested in Pro! I will have our sales team reach out within the hour. In the meantime, here is our pricing page.'
 
 
+## ❓ FAQ
+
+**Q: Can I manage bots and read conversations?**
+Yes. List all bots with performance metrics, browse conversations with full message history, and send replies to customers.
+
+**Q: How does Landbot authentication work?**
+Landbot uses a **Token** header for authentication against `api.landbot.io/v1`. This differs from standard Bearer authentication.
+
+**Q: Can I track chatbot conversion metrics?**
+Yes. Monitor flow completion rates, drop-off points, lead capture rates, and conversation-to-conversion metrics per bot.
+
+
 ## Installation & Usage
 
-To install and use the **Landbot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/landbot-alternative](https://vinkius.com/mcp/landbot-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Landbot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `landbot-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Landbot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "landbot-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

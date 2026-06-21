@@ -1,7 +1,6 @@
 # Highnote MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/highnote)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/highnote-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/highnote-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/highnote)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,55 @@ Here are some examples of how you can interact with the **Highnote** MCP server 
 > Card frozen! I've successfully updated the status of card card_992 to 'FROZEN'. This card will no longer accept new transactions until it is unfrozen. Would you like me to notify the account holder via email?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Highnote API Key?**
+Log in to your Highnote dashboard, navigate to **Settings > API**, and you will be able to generate and copy your API key. Make sure to distinguish between Test and Live keys based on your environment.
+
+**Q: What environments are supported?**
+The integration supports both the **Test** (Sandbox) and **Live** (Production) environments. You must specify which one you are connecting to during setup to ensure the correct API endpoints are used.
+
+**Q: Can I freeze a card through this integration?**
+Yes! Use the `update_card_status` tool and set the status to `FROZEN`. This will immediately prevent any new authorizations on that card. You can set it back to `ACTIVE` to unfreeze it.
+
+**Q: Is the integration secure for financial data?**
+Absolutely. The integration uses industry-standard Basic Authentication over HTTPS. Your credentials and financial data are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Highnote** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/highnote](https://vinkius.com/mcp/highnote)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Highnote** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `highnote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Highnote** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "highnote": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

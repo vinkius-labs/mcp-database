@@ -1,7 +1,6 @@
 # Baidu Qianfan MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baidu-qianfan)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baidu-qianfan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baidu-qianfan-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baidu-qianfan)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Baidu Qianfan** MCP se
 > Fetching templates... I found 3 templates: 1. Code-Review-Expert (ID: tp_1), 2. Creative-Writer (ID: tp_2), 3. SQL-Generator (ID: tp_3). Which one would you like to use?
 
 
+## ❓ FAQ
+
+**Q: Which version of Ernie Bot should I use for chat?**
+For high performance and reasoning, use `ernie-4.0-8k`. For faster response times and cost efficiency, `ernie-speed-128k` or `ernie-lite-8k` are excellent choices.
+
+**Q: Can I automatically generate embeddings for RAG?**
+Yes! Use the `get_embeddings` tool with your text input. The agent will retrieve the vector representations from Baidu's embedding models, ready for indexing in your vector database.
+
+**Q: How do I use prompt templates from the console?**
+Use the `list_prompt_templates` tool to find your configured templates. You can then retrieve specific details using `get_prompt_template` to maintain consistency across your AI workflows.
+
+
 ## Installation & Usage
 
-To install and use the **Baidu Qianfan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/baidu-qianfan](https://vinkius.com/mcp/baidu-qianfan)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Baidu Qianfan** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `baidu-qianfan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Baidu Qianfan** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "baidu-qianfan": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

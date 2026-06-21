@@ -1,7 +1,6 @@
 # Assertible MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/assertible)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/assertible-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/assertible-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/assertible)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Assertible** MCP serve
 > I'll use the `validate_json` tool to check your document. Please provide the JSON content and the schema you'd like to validate it against.
 
 
+## ❓ FAQ
+
+**Q: Can I trigger a full test suite run after a new deployment?**
+Yes. Use the `create_deployment` tool. It tracks the deployment to your environment and automatically triggers the associated test runs for that service.
+
+**Q: How do I keep my tests in sync with my OpenAPI documentation?**
+You can use the `sync_specification` tool with your Import ID. This ensures your Assertible tests stay up-to-date with any changes in your Swagger or OpenAPI files.
+
+**Q: Is it possible to check the current status of a service for a README file?**
+Absolutely. Use `get_service_status_badge` to retrieve the markdown and URL for a status badge, which you can then embed directly into your documentation.
+
+
 ## Installation & Usage
 
-To install and use the **Assertible** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/assertible](https://vinkius.com/mcp/assertible)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Assertible** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `assertible` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Assertible** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "assertible": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

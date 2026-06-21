@@ -1,7 +1,6 @@
 # Stanford bioRxiv MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-biorxiv)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stanford-biorxiv-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stanford-biorxiv-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-biorxiv)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -114,12 +113,52 @@ Here are some examples of how you can interact with the **Stanford bioRxiv** MCP
 > I've retrieved this week's genomics preprints from bioRxiv, including recent work on single-cell sequencing, CRISPR screens, and population genetics.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No. The bioRxiv and medRxiv APIs are completely free and public.
+
+**Q: What is the difference between bioRxiv and medRxiv?**
+bioRxiv covers biological sciences (neuroscience, genomics, cell biology, ecology, etc.) while medRxiv covers health sciences (clinical research, epidemiology, public health, health systems).
+
+**Q: Are preprints peer-reviewed?**
+No. Preprints are shared before formal peer review. They undergo basic screening but not the full editorial process. This server also tracks which preprints later get published in peer-reviewed journals.
+
+
 ## Installation & Usage
 
-To install and use the **Stanford bioRxiv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stanford-biorxiv](https://vinkius.com/mcp/stanford-biorxiv)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Stanford bioRxiv** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stanford-biorxiv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Stanford bioRxiv** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stanford-biorxiv": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

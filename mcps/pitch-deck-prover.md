@@ -1,7 +1,6 @@
 # Pitch Deck Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pitch-deck-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pitch-deck-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pitch-deck-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pitch-deck-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Pitch Deck Prover** MC
 > TRACTION_ABSENT — Problem, market, and model pass. But traction fails. 'Waitlist signups' and 'pilot conversations' are not traction — they are awareness. 'Strong interest from Fortune 500' without a signed LOI or paid pilot is anecdotal. Show: paid pilots (even at discount), LOIs with company names, or validated waitlist with deposits. Also: ask needs use of funds breakdown, milestones, and runway — '$1.5M for product development' is too vague.
 
 
+## ❓ FAQ
+
+**Q: Does it create pitch deck slides?**
+No. It validates that your pitch narrative addresses the five elements investors evaluate — validated problem, sourced market sizing, defined business model, demonstrated traction, and specific ask. It does not generate content. It forces you to prove your content is investor-ready.
+
+**Q: What counts as valid traction?**
+Revenue (MRR/ARR), active users with cohort retention rates (D7, D30), week-over-week or month-over-month growth rate over 3+ periods, and engagement metrics (key action frequency per user). Downloads, waitlist signups, social media followers, demo requests, and 'strong interest' are vanity — they measure awareness, not value delivery.
+
+**Q: Can pre-revenue startups use this?**
+Yes. Pre-revenue traction includes: LOIs (letters of intent with named companies), paid pilots (even at discount), design partners with contractual commitments, or validated waitlists with deposit or credit card on file. The tool does not require revenue — it requires evidence that someone will pay. 'Strong interest' without commitment is not evidence.
+
+
 ## Installation & Usage
 
-To install and use the **Pitch Deck Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pitch-deck-prover](https://vinkius.com/mcp/pitch-deck-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pitch Deck Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pitch-deck-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pitch Deck Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pitch-deck-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

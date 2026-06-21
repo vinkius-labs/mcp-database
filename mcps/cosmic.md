@@ -1,7 +1,6 @@
 # Cosmic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cosmic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cosmic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cosmic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cosmic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Cosmic** MCP server us
 > Retrieving schema for 'products'... This type requires fields like 'name' (text), 'price' (number), 'description' (html), and 'image' (file). I can list all the specific validation rules for you.
 
 
+## ❓ FAQ
+
+**Q: Can my agent create new content objects in Cosmic?**
+Yes. Use the 'create_cms_object' tool. Provide the type slug, title, and a JSON object for metadata. The agent will command the backend to generate a new entry in your specified bucket.
+
+**Q: How do I audit the schema of an existing Object Type?**
+Provide the type slug to the 'get_schema_details' tool. Your agent will analyze the specific localized variables and decode the native boundaries, showing you exactly which fields and metadata parameters the schema requires.
+
+**Q: Can I permanently delete media assets via the agent?**
+Absolutely. The 'wipe_media_asset' tool allows you to irreversibly remove physical media from your Cosmic buckets. This is a powerful way to manage your storage quotas and cleanup dangling files directly from the chat.
+
+
 ## Installation & Usage
 
-To install and use the **Cosmic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cosmic](https://vinkius.com/mcp/cosmic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cosmic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cosmic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cosmic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cosmic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

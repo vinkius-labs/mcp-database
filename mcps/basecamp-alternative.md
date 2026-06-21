@@ -1,7 +1,6 @@
 # Basecamp MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/basecamp-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/basecamp-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/basecamp-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/basecamp-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -112,12 +111,52 @@ Here are some examples of how you can interact with the **Basecamp** MCP server 
 > I've retrieved 3 recent messages from the project board: 'Sprint 22 Kickoff Notes' by James T. (posted 2 hours ago), 'Q3 OKR Alignment Update' by Lisa K. (posted yesterday), and 'Design System Migration Plan' by Marcus R. (posted 3 days ago). Would you like to read the full content of any of these messages?
 
 
+## ❓ FAQ
+
+**Q: Can I create a to-do and assign it to a team member directly via the AI agent?**
+Yes! Use the `create_todo` tool with the to-do list ID, content, and the assignee person IDs. You can also set a due date. The to-do will be created and assigned instantly in Basecamp.
+
+**Q: How do I find the to-do list ID I need to create tasks in?**
+First, use `get_project` to retrieve the project details — the dock will contain the `todoset` ID. Then use the Basecamp UI or the to-do set to find your specific to-do list IDs within that project.
+
+**Q: Can I mark a to-do as completed and later reopen it if needed?**
+Absolutely. Use the `complete_todo` tool to mark a to-do as done, and `uncomplete_todo` to reopen it. This only affects the completion status — the to-do remains active and visible in the project.
+
+
 ## Installation & Usage
 
-To install and use the **Basecamp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/basecamp-alternative](https://vinkius.com/mcp/basecamp-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Basecamp** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `basecamp-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Basecamp** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "basecamp-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

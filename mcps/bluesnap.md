@@ -1,7 +1,6 @@
 # BlueSnap MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bluesnap)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bluesnap-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bluesnap-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bluesnap)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **BlueSnap** MCP server 
 > Retrieving balance... Your current payout balance is $1,250.40 USD and €450.00 EUR. There are no pending payout issues.
 
 
+## ❓ FAQ
+
+**Q: Can I check the status of a specific payment transaction?**
+Yes! Use the `get_transaction` tool with the Transaction ID. Your agent will fetch the latest status, including whether it is 'Success', 'Pending', or 'Failed'.
+
+**Q: How do I list all my active subscription plans?**
+Simply ask the agent to `list_plans`. It will retrieve all recurring billing plans configured in your BlueSnap account for you to review.
+
+**Q: Does the integration allow processing a new refund?**
+Currently, the toolset is focused on querying and monitoring (Read-Only). You can list and inspect transactions, but processing refunds or charges must be done through the BlueSnap portal for financial security.
+
+
 ## Installation & Usage
 
-To install and use the **BlueSnap** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bluesnap](https://vinkius.com/mcp/bluesnap)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BlueSnap** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bluesnap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BlueSnap** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bluesnap": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

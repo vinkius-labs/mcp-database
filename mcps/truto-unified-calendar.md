@@ -1,7 +1,6 @@
 # Truto Unified Calendar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/truto-unified-calendar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/truto-unified-calendar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/truto-unified-calendar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/truto-unified-calendar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Truto Unified Calendar
 > Details recovered. Meeting 'Q3 Alignment Sprint' goes from 2026-10-14T09:00Z to 2026-10-14T10:30Z. Video conferencing link appended natively. 4 attendees invited.
 
 
+## ❓ FAQ
+
+**Q: How and where do I collect my universal Truto API Token?**
+Navigate accurately toward your primary Truto management dashboard portal. Search intentionally along your workspace or developer settings focusing clearly on the `API Keys` section. Dictate the explicit creation of a new bearer credential. Lock the generated long string into your clipboard and transport it perfectly to the waiting field array below.
+
+**Q: What is the Truto Integrated Account ID and where is it?**
+Because Truto is unified, one single environment connects entirely to many different client calendars (e.g., your Google, a client's Outlook). The `Integrated Account ID` designates explicitly WHICH underlying calendar provider the agent should orchestrate right now. You fetch this prefix ID commonly starting with `ia_` precisely from the Integrations tab listed inside your Truto dashboard.
+
+**Q: Should I save the Truto API Token immediately?**
+Yes. Once you click 'Create API Token' and it gets generated, you must copy it immediately. Truto will only show the API Token once. If you close the window without securely saving it, you will have to create a new one.
+
+
 ## Installation & Usage
 
-To install and use the **Truto Unified Calendar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/truto-unified-calendar](https://vinkius.com/mcp/truto-unified-calendar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Truto Unified Calendar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `truto-unified-calendar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Truto Unified Calendar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "truto-unified-calendar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

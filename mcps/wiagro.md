@@ -1,7 +1,6 @@
 # Wiagro MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wiagro)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wiagro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wiagro-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wiagro)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -109,12 +108,52 @@ Here are some examples of how you can interact with the **Wiagro** MCP server us
 > Generating quality assessments... Silobag 1 (Soybeans): Quality score 91/100 — Excellent condition, stable temperature at 18°C, CO2 at 780 ppm. Estimated storage life: 4+ months. Silobag 2 (Wheat): Quality score 87/100 — Good condition, minor temperature variation (20-22°C), CO2 at 890 ppm. Storage life: 3+ months. Silobag 3 (Corn): Quality score 94/100 — Excellent condition, uniform temperature, CO2 at 920 ppm. Storage life: 4+ months. Silobag 7 (Sorghum): Quality score 72/100 — FAIR condition, elevated CO2 trend (1450 ppm), requires closer monitoring. Storage life: 1-2 months if conditions stabilize. Priority action: Investigate silobag 7 CO2 increase. Overall facility average: 86/100.
 
 
+## ❓ FAQ
+
+**Q: Can my AI detect if a silobag has been ruptured or damaged?**
+Yes! Use the `get_rupture_alerts` tool to check for satellite-detected silobag ruptures, tears, or structural damage. Wiagro uses satellite imagery analysis to identify breaches in silobag integrity that could expose grain to weather and pests. For a complete picture, combine with `get_alerts` to see temperature, humidity, and CO2 alerts that may indicate secondary effects of a rupture.
+
+**Q: How do I monitor CO2 levels to detect early grain spoilage in silobags?**
+Use the `get_co2_history` tool with your silobag ID and a date range (e.g., 30 days) to see CO2 trends over time. Rising CO2 levels indicate biological activity from mold, insects, or grain respiration — often appearing before temperature changes. Combine with `get_current_readings` for real-time CO2 status and `get_alerts` to check for any active CO2 warnings.
+
+**Q: Can I check the health status of sensors in my silobag monitoring system?**
+Yes! Use the `get_sensor_health` tool with your silobag ID to check battery levels, signal strength, and operational status of all IoT sensors. This helps you identify sensors that need battery replacement or have gone offline, ensuring continuous monitoring coverage. For a facility-wide view, use `get_facility_overview` to see the overall health of your monitoring system.
+
+
 ## Installation & Usage
 
-To install and use the **Wiagro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wiagro](https://vinkius.com/mcp/wiagro)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wiagro** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wiagro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wiagro** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wiagro": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

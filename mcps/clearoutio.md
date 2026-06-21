@@ -1,7 +1,6 @@
 # Clearout.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clearoutio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clearoutio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clearoutio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clearoutio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Clearout.io** MCP serv
 > Analyzing email domain... 'johndoe@gmail.com' is classified as a 'Personal' email account using a free public provider.
 
 
+## ❓ FAQ
+
+**Q: Can I verify if an email is a temporary or disposable address?**
+Yes! Use the `check_disposable_email` tool. The agent will check the email against Clearout's database of known disposable email providers and return a true/false result.
+
+**Q: How do I check the progress of a large email list I uploaded?**
+Use the `get_bulk_verification_status` tool with your list ID. Your agent will return the percentage completed, allowing you to monitor the cleaning process in real-time.
+
+**Q: Where do I find my Clearout API Token?**
+Log in to your Clearout dashboard, navigate to the **Developer** section, and select **API**. You can create and copy your API token from that page.
+
+
 ## Installation & Usage
 
-To install and use the **Clearout.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clearoutio](https://vinkius.com/mcp/clearoutio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clearout.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clearoutio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clearout.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clearoutio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

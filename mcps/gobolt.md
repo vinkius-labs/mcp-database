@@ -1,7 +1,6 @@
 # GoBolt MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gobolt)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gobolt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gobolt-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gobolt)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **GoBolt** MCP server us
 > Calculating best rate... The cheapest option for Toronto is 'Postal Surface' at $8.75 CAD with an estimated delivery in 6 business days.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Client ID and Secret for GoBolt?**
+Log in to the GoBolt Merchant Portal, navigate to Settings > API, and create a new Service User to generate your Client ID and Secret.
+
+**Q: What format should the addresses be in for rates?**
+Addresses should be provided as JSON objects with 'street', 'city', 'state_province', 'postal_code', and 'country' fields.
+
+**Q: Can I track a shipment without a GoBolt ID?**
+Yes! The 'track_shipment' tool accepts either a GoBolt Order ID or a Carrier Tracking Number.
+
+**Q: What label formats are supported?**
+The API supports 'pdf' for standard printers and 'zpl' for industrial thermal label printers.
+
+
 ## Installation & Usage
 
-To install and use the **GoBolt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gobolt](https://vinkius.com/mcp/gobolt)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GoBolt** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gobolt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GoBolt** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gobolt": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

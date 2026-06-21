@@ -1,7 +1,6 @@
 # Code Climate MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/code-climate)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/code-climate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/code-climate-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/code-climate)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Code Climate** MCP ser
 > Retrieving snapshots for frontend-app... I found 5 recent snapshots. The latest was triggered by commit 'abc1234' yesterday, with a maintainability rating of 'B' and 12 issues identified.
 
 
+## ❓ FAQ
+
+**Q: Can I see the maintainability rating for a specific repository?**
+Yes! Use the `get_repository_code_quality` tool with the unique repository ID. The agent will return the current maintainability grade (A-F) and other core health metrics provided by Code Climate.
+
+**Q: How do I check the test coverage percentage for a repository?**
+Use the `list_repository_test_reports` tool. Your agent will fetch all test coverage reports associated with the repository, showing the coverage percentage for the most recent runs.
+
+**Q: Where do I find my Code Climate API Token?**
+Log in to Code Climate, click on your avatar in the top right, go to **User Settings**, and select **Personal API Tokens**. You can generate and copy your token from that section.
+
+
 ## Installation & Usage
 
-To install and use the **Code Climate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/code-climate](https://vinkius.com/mcp/code-climate)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Code Climate** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `code-climate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Code Climate** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "code-climate": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

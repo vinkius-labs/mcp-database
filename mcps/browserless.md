@@ -1,7 +1,6 @@
 # Browserless MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browserless)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browserless-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browserless-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browserless)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Browserless** MCP serv
 > Retrieving product titles... I found 12 items, including 'Leather Jacket', 'Denim Jeans', and 'Cotton T-shirt'. Would you like the full list?
 
 
+## ❓ FAQ
+
+**Q: Can I take a full-page screenshot using the agent?**
+Yes! Use the `take_screenshot` tool and in the `options` field, provide a JSON string like `{"fullPage": true}`. Browserless will capture the entire length of the page.
+
+**Q: How do I convert a web page to a PDF?**
+Simply ask the agent to `generate_pdf` and provide the URL. It will use Browserless to render the page and return the generated PDF file (usually as a binary response or link).
+
+**Q: Does the integration allow scraping specific data fields?**
+Yes. Use the `run_scrape` action and provide the URL along with an `elements` array containing the selectors and names for the data you want to extract.
+
+
 ## Installation & Usage
 
-To install and use the **Browserless** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/browserless](https://vinkius.com/mcp/browserless)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Browserless** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `browserless` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Browserless** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "browserless": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

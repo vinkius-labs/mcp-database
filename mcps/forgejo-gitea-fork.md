@@ -1,7 +1,6 @@
 # Forgejo (Gitea Fork) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/forgejo-gitea-fork)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/forgejo-gitea-fork-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/forgejo-gitea-fork-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/forgejo-gitea-fork)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Forgejo (Gitea Fork)**
 > The workflow 'deploy.yaml' has been successfully dispatched for dev-team/main-app. You can monitor the progress in your Forgejo Actions dashboard.
 
 
+## ❓ FAQ
+
+**Q: How can I check which Forgejo version my instance is running?**
+You can use the `get_forgejo_version` tool. It will return the specific version string of your Forgejo instance, which is useful for debugging and feature compatibility checks.
+
+**Q: Can I trigger a CI/CD build manually through the AI?**
+Yes! Use the `dispatch_workflow` tool by providing the repository owner, name, and the workflow file name. This triggers actions configured with the 'workflow_dispatch' event.
+
+**Q: What is required to generate a new API token?**
+To use the `create_token` tool, you must have your Forgejo username and password configured in the credentials. This allows the agent to authenticate via BasicAuth and request a new token with your specified scopes.
+
+
 ## Installation & Usage
 
-To install and use the **Forgejo (Gitea Fork)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/forgejo-gitea-fork](https://vinkius.com/mcp/forgejo-gitea-fork)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Forgejo (Gitea Fork)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `forgejo-gitea-fork` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Forgejo (Gitea Fork)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "forgejo-gitea-fork": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

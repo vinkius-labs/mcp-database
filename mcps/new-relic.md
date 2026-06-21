@@ -1,7 +1,6 @@
 # New Relic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/new-relic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/new-relic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/new-relic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/new-relic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **New Relic** MCP server
 > Executing NRQL query... The results show the average duration per application over the last 24 hours. 'Web-Frontend' averaged 0.12s, 'Auth-API' averaged 0.08s, and 'DB-Proxy' averaged 0.45s. Shall I format this into a table for you?
 
 
+## ❓ FAQ
+
+**Q: Where do I find my User API Key?**
+In New Relic, go to the account dropdown > API keys. Look for a key of type 'USER'. This is required for NerdGraph access.
+
+**Q: Can I run any NRQL query through this server?**
+Yes! Use the `run_nrql` tool and provide your Account ID and the query string. This allows for extremely flexible data retrieval.
+
+**Q: What are APM golden metrics?**
+Golden metrics are the most critical performance indicators for an application: Response Time, Throughput, Error Rate, and Apdex (user satisfaction).
+
+
 ## Installation & Usage
 
-To install and use the **New Relic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/new-relic](https://vinkius.com/mcp/new-relic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **New Relic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `new-relic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **New Relic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "new-relic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

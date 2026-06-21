@@ -1,7 +1,6 @@
 # Deterministic 50/30/20 Budget Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-503020-budget-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-503020-budget-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-503020-budget-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-503020-budget-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Deterministic 50/30/20
 > Using the analyze_budget tool: The mathematical 50/30/20 algorithm confirms your target for the 'saving' category is exactly $1200.00.
 
 
+## ❓ FAQ
+
+**Q: Does the engine automatically guess the category of an expense?**
+No. The AI agent calling the tool is responsible for tagging each expense as 'need', 'want', or 'saving'. The MCP acts as an infallible mathematical referee, receiving the categorized list and computing the exact metrics and deviations.
+
+**Q: Why use an MCP instead of having the LLM do the math?**
+Because LLMs hallucinate math. If you give an AI 45 different expenses to sum up, it will almost certainly miscalculate the total or botch the exact percentage deviation. The V8 engine calculates numbers deterministically with 100% precision.
+
+**Q: What happens if I spend more than my income?**
+The engine perfectly calculates a negative surplus (deficit) and strictly alters the 'healthStatus' to 'Deficit', triggering a warning recommendation that instructs your agent to look at the deviations to cut costs.
+
+
 ## Installation & Usage
 
-To install and use the **Deterministic 50/30/20 Budget Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deterministic-503020-budget-engine](https://vinkius.com/mcp/deterministic-503020-budget-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deterministic 50/30/20 Budget Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deterministic-503020-budget-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deterministic 50/30/20 Budget Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deterministic-503020-budget-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

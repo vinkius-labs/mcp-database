@@ -1,7 +1,6 @@
 # Ele.me Open Platform / 饿了么 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eleme-open-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eleme-open-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eleme-open-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eleme-open-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Ele.me Open Platform /
 > The delivery state for order `ORD_8821` is currently 'In Transit'. The courier, 'Li Qiang', is on his way to the customer. He was last located 500 meters from the destination. I'll monitor for the 'Delivered' confirmation.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Ele.me App Key and Secret?**
+Log in to the [Ele.me Open Platform](https://open.shop.ele.me/), register your application, and you will find your App Key and App Secret in the application details overview.
+
+**Q: How do I get an Access Token?**
+Ele.me uses OAuth2. You must perform the authorization flow (linking your merchant account to your application) to generate an access token. This token must be provided in the credentials for this server.
+
+**Q: Can I cancel orders through the agent?**
+Yes! Use the `cancel_order` tool with the specific order ID and a valid reason code. Note that order cancellation usually requires justification and may be subject to merchant policies.
+
+
 ## Installation & Usage
 
-To install and use the **Ele.me Open Platform / 饿了么** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eleme-open-platform](https://vinkius.com/mcp/eleme-open-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ele.me Open Platform / 饿了么** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eleme-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ele.me Open Platform / 饿了么** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eleme-open-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

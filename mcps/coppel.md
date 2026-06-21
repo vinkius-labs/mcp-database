@@ -1,7 +1,6 @@
 # Coppel MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coppel)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coppel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coppel-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coppel)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Coppel** MCP server us
 > 3 active Buen Fin promotions found: 1. '20% off all Samsung TVs' (Nov 15-18). 2. '18 months interest-free on Whirlpool appliances' (Nov 15-18). 3. 'Buy 2 get 1 free on Nike shoes' (Nov 15-20). All promotions are stackable with the regular weekly credit plans. Want me to search specific products in these categories?
 
 
+## ❓ FAQ
+
+**Q: Can I check a customer's weekly payment amount and remaining credit balance?**
+Yes! Use the `get_customer_credit` tool with the customer's account number. It returns their approved credit limit, current outstanding balance, weekly payment amount (abono semanal), next payment due date, and their on-time payment streak.
+
+**Q: Can I find Coppel stores in a specific Mexican state?**
+Absolutely. Use the `list_stores` tool with the state parameter (e.g., 'Jalisco', 'Nuevo León', 'CDMX'). It returns all branches in that state with addresses, phone numbers, operating hours, and available services like BanCoppel banking.
+
+**Q: How do I search for products and see their credit payment plans?**
+Use the `search_products` tool with a keyword query. Each result includes the cash price, available weekly payment plan options (abonos), number of installments, and total credit cost. Use `get_product` for the full specification sheet of a specific item.
+
+
 ## Installation & Usage
 
-To install and use the **Coppel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coppel](https://vinkius.com/mcp/coppel)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Coppel** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coppel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Coppel** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coppel": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

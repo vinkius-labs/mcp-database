@@ -1,7 +1,6 @@
 # Together AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/together-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/together-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/together-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/together-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Ask if you want the embedding or image models only.
 [-0.0124, 0.0411, 0.0812, ... -0.0123]
 
 
+## ❓ FAQ
+
+**Q: Where do I obtain my Together AI API Key?**
+Log in to the developer portal via `api.together.xyz/settings/api-keys`. If you do not have an existing key, click **Create API Key**. This token enables the execution of remote inferences spanning their hosted clusters securely.
+
+**Q: Do I have to pay to use Together models through the agent?**
+Yes. This connector simply routes your instructions to Together AI. Any tokens consumed during chat completion, embeddings, images generation, or fine-tuning workloads are billed directly to your registered Together AI account balance according to their official compute pricing models.
+
+**Q: Can I access free models on Together AI?**
+Yes! Together AI frequently offers free tiers for certain open-source models intended for experimentation and research. You can query these directly from your agent without depleting your account balance, though specific free-tier rate limits will apply.
+
+
 ## Installation & Usage
 
-To install and use the **Together AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/together-ai](https://vinkius.com/mcp/together-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Together AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `together-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Together AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "together-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

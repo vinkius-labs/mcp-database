@@ -1,7 +1,6 @@
 # Confluent MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/confluent)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/confluent-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/confluent-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/confluent)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Would you like partition details for any of these?
 > The 'mysql-source' connector is actively running. There are 0 failed tasks, and it has successfully processed 45,000 records in the last hour.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Confluent Cloud API Key?**
+Log in to your Confluent Cloud dashboard. Go to **Cloud API Keys** under the administration menu. Click **Add key**, select the scope, and copy both the API Key and Secret.
+
+**Q: What is an Environment in Confluent?**
+An Environment is a logical boundary containing clusters, schema registries, and connectors. You often need the Environment ID when querying specific resources.
+
+**Q: Can the agent consume messages directly?**
+This integration focuses on control-plane tasks: managing topics, monitoring cluster status, and listing connectors. Direct message consumption from streams is not supported.
+
+
 ## Installation & Usage
 
-To install and use the **Confluent** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/confluent](https://vinkius.com/mcp/confluent)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Confluent** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `confluent` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Confluent** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "confluent": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

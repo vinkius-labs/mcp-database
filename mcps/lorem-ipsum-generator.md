@@ -1,7 +1,6 @@
 # Lorem Ipsum Generator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lorem-ipsum-generator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lorem-ipsum-generator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lorem-ipsum-generator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lorem-ipsum-generator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **Lorem Ipsum Generator*
 > 20 sentences generated — each 4-16 words, perfect for product description fields.
 
 
+## ❓ FAQ
+
+**Q: Why not just ask the AI to write placeholder text?**
+AI-generated placeholder text varies wildly in length, style, and content. One request gives 200 words, the next gives 500. This engine delivers predictable, consistent text every time — critical for pixel-perfect UI prototyping.
+
+**Q: Can I generate exactly 5 sentences?**
+Yes. Set unit to 'sentences' and count to 5. Each sentence will have 4-16 words.
+
+**Q: What's the maximum output I can generate?**
+50 units per request — 50 words, 50 sentences, or 50 paragraphs. That's enough for any mockup or database seed operation.
+
+
 ## Installation & Usage
 
-To install and use the **Lorem Ipsum Generator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lorem-ipsum-generator](https://vinkius.com/mcp/lorem-ipsum-generator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lorem Ipsum Generator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lorem-ipsum-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lorem Ipsum Generator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lorem-ipsum-generator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

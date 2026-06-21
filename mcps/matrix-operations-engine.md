@@ -1,7 +1,6 @@
 # Matrix Operations Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/matrix-operations-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/matrix-operations-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/matrix-operations-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/matrix-operations-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Matrix Operations Engi
 > The inverse matrix has been calculated with perfect precision. Multiplying A⁻¹ by your vector b will give you the exact solution vector x.
 
 
+## ❓ FAQ
+
+**Q: What happens if I try to invert a singular matrix?**
+The engine throws a deterministic mathematical error that the AI will report to you, instead of hallucinating fake numbers. This is by design — fail loud, not wrong.
+
+**Q: Is there a size limit for the matrices?**
+The engine handles very large matrices natively. The practical limit is your LLM's context window for serializing the JSON payload of the matrix data.
+
+**Q: Can I use it for dot products between 1D vectors?**
+Yes! Treat your 1D vectors as 1xN and Nx1 matrices, then use the 'multiply' operation to get the exact dot product result.
+
+
 ## Installation & Usage
 
-To install and use the **Matrix Operations Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/matrix-operations-engine](https://vinkius.com/mcp/matrix-operations-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Matrix Operations Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `matrix-operations-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Matrix Operations Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "matrix-operations-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

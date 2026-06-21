@@ -1,7 +1,6 @@
 # Finmo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finmo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/finmo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/finmo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finmo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Finmo** MCP server usi
 > Fetching live quote... The current exchange rate for 1000 USD is approximately 920.50 EUR. This quote is valid for the next 60 seconds if you wish to proceed with the conversion.
 
 
+## ❓ FAQ
+
+**Q: How can I check which local payment methods are supported in a specific country?**
+Use the 'list_payin_methods' tool and provide the ISO country code (e.g., 'SG' for Singapore or 'TH' for Thailand). The agent will return a list of available collection methods for that region.
+
+**Q: Is it possible to get a live exchange rate before converting funds?**
+Yes! The 'get_fx_rate' tool allows you to request a real-time quote by specifying the sell currency, buy currency, and the amount you wish to convert.
+
+**Q: Can I see all my wallet balances at once?**
+Absolutely. By using the 'list_wallets' tool, the agent will retrieve all organizational wallets, showing the balance and currency for each, providing a clear snapshot of your liquidity.
+
+
 ## Installation & Usage
 
-To install and use the **Finmo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/finmo](https://vinkius.com/mcp/finmo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Finmo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `finmo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Finmo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "finmo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

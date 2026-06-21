@@ -1,7 +1,6 @@
 # JD Cloud / 京东云 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jd-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jd-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jd-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jd-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **JD Cloud / 京东云**
 > I've retrieved your OSS bucket list. You have 5 buckets configured, including 'assets-prod', 'backup-logs', and 'user-uploads'. Would you like me to check the region and creation date for a specific bucket?
 
 
+## ❓ FAQ
+
+**Q: How do I find my JD Cloud Access Key and Secret Key?**
+Log in to the [JD Cloud Console](https://console.jdcloud.com/), navigate to [Account Management] -> [Access Key Management] to find or create your unique credentials.
+
+**Q: What regions are supported?**
+JD Cloud supports multiple regions including `cn-north-1` (Beijing), `cn-east-1` (Suzhou), `cn-east-2` (Shanghai), and `cn-south-1` (Guangzhou). Ensure you specify the correct region where your resources are located.
+
+**Q: Does this server handle JDCLOUD2-HMAC-SHA256 signatures?**
+Yes! The server automatically calculates the required Signature v2 (JDCLOUD2-HMAC-SHA256) for every request using your provided Secret Key, ensuring high security for your cloud orchestration.
+
+
 ## Installation & Usage
 
-To install and use the **JD Cloud / 京东云** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jd-cloud](https://vinkius.com/mcp/jd-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **JD Cloud / 京东云** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jd-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **JD Cloud / 京东云** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jd-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

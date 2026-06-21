@@ -1,7 +1,6 @@
 # Spotify Music MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spotify-music)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spotify-music-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spotify-music-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spotify-music)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,55 @@ Here are some examples of how you can interact with the **Spotify Music** MCP se
 > Top New Releases: 1. New Album - Artist A. 2. Single Release - Artist B. 3. EP - Artist C. 4. Album - Artist D. 5. Single - Artist E.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Spotify Access Token?**
+Go to the Spotify Developer Dashboard, log in with your Spotify account, click 'Create App', and generate a token. The token expires every hour.
+
+**Q: What are 'Audio Features'?**
+Audio features are data points Spotify calculates for every track, including Danceability (0-100%), Energy (0-100%), Tempo (BPM), and Valence (Positivity). You can use `get_audio_features` to analyze a song's vibe.
+
+**Q: Can I control playback on any device?**
+Yes! The player tools (`play`, `pause`, `add_to_queue`) work on your currently active Spotify device, whether it's your phone, computer, or smart speaker.
+
+**Q: Does it support podcasts?**
+This integration currently focuses on music and library management. Podcast playback is not directly exposed as native commands.
+
+
 ## Installation & Usage
 
-To install and use the **Spotify Music** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/spotify-music](https://vinkius.com/mcp/spotify-music)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Spotify Music** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `spotify-music` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Spotify Music** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "spotify-music": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

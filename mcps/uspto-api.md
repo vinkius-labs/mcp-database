@@ -1,7 +1,6 @@
 # USPTO API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uspto-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uspto-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uspto-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uspto-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **USPTO API** MCP server
 > I've scanned the classification catalog. It includes hundreds of codes covering diverse technological sectors from mechanics to biotechnology. I can help you filter the list by keyword.
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for USPTO API?**
+No. The USPTO Open Data API is a public and free service. This server works out of the box without any static credentials required.
+
+**Q: What types of patents can be audited?**
+You can search for utility, design, and plant patents registered in the United States, as well as patent applications and publications.
+
+**Q: Is trademark image data included?**
+The API primarily returns text-based metadata. For visual trademark records, your agent will retrieve the official USPTO link to the record where visual data can be viewed.
+
+
 ## Installation & Usage
 
-To install and use the **USPTO API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/uspto-api](https://vinkius.com/mcp/uspto-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **USPTO API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `uspto-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **USPTO API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "uspto-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

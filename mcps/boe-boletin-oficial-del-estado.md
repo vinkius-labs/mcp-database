@@ -1,7 +1,6 @@
 # BOE (Boletín Oficial del Estado) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boe-boletin-oficial-del-estado)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/boe-boletin-oficial-del-estado-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/boe-boletin-oficial-del-estado-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boe-boletin-oficial-del-estado)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **BOE (Boletín Oficial 
 > Analyzing BOE-A-2015-10565 (General Tax Law)... This law has 15 previous relations (norms it modifies or repeals) and 42 posterior relations. It covers subjects like 'Tax Administration' and 'Public Finance'. Should I list the specific laws it modifies?
 
 
+## ❓ FAQ
+
+**Q: How can I see all the laws and decrees published in the BOE on a specific date?**
+Use the `get_boe_summary` tool by providing the date in YYYYMMDD format. The agent will return the full index of documents and sections published on that day.
+
+**Q: Can I search for the most recent version of a specific law like the Civil Code?**
+Yes! You can use `search_consolidated_legislation` with a query like 'Código Civil' to find the latest updated version, or use `get_legislation_text` if you already have the ID (e.g., BOE-A-1889-4763).
+
+**Q: Is it possible to retrieve only a specific article of a law instead of the whole text?**
+Absolutely. First, use `get_legislation_text_index` to find the block ID for the article you need, then use `get_legislation_block` to fetch only that specific content.
+
+
 ## Installation & Usage
 
-To install and use the **BOE (Boletín Oficial del Estado)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/boe-boletin-oficial-del-estado](https://vinkius.com/mcp/boe-boletin-oficial-del-estado)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BOE (Boletín Oficial del Estado)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `boe-boletin-oficial-del-estado` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BOE (Boletín Oficial del Estado)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "boe-boletin-oficial-del-estado": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

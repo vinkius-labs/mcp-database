@@ -1,7 +1,6 @@
 # DataDive MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadive)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datadive-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datadive-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadive)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **DataDive** MCP server 
 > In the last 30 days, your Amazon sales generated a gross profit of $12,450 with a net margin of 18%. Your best-selling niche was 'Bamboo Bedding'. Should I show you the breakdown of Amazon fees for this period?
 
 
+## ❓ FAQ
+
+**Q: How do I get a DataDive API Key?**
+Log in to your DataDive account and navigate to the Account Settings or API section to generate a new API Key for integrations.
+
+**Q: What is Rank Radar?**
+Rank Radar is a DataDive feature that tracks the position of your products (ASINs) for specific keywords in both organic and paid (PPC) search results.
+
+**Q: Can I see my Amazon profits in the chat?**
+Yes, the agent can retrieve high-level summaries of your sales profits and financial performance if you have the Profits tool connected in your DataDive account.
+
+
 ## Installation & Usage
 
-To install and use the **DataDive** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/datadive](https://vinkius.com/mcp/datadive)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DataDive** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `datadive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DataDive** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "datadive": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

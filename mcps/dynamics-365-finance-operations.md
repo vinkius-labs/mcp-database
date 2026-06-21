@@ -1,7 +1,6 @@
 # Dynamics 365 Finance & Operations MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dynamics-365-finance-operations)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dynamics-365-finance-operations-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dynamics-365-finance-operations-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dynamics-365-finance-operations)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Dynamics 365 Finance &
 > I've retrieved 8 sales orders with a 'Pending' or 'Backordered' status. High-priority orders include 'SO-9988' for 'Tech Corp' and 'SO-7766' for 'Global Logistics'. Would you like the detailed status for SO-9988?
 
 
+## ❓ FAQ
+
+**Q: How do I get D365 F&O API credentials?**
+You must register an application in the **Azure Portal (App registrations)**, obtain a Client ID, Secret, and Tenant ID, and then register that Client ID in the **Microsoft Dynamics 365 Finance** instance under **System administration > Microsoft Entra ID applications**.
+
+**Q: Can the agent post ledger journals?**
+This integration currently focuses on listing and auditing records via the OData API. Posting journals or triggering complex business logic should be managed via the D365 F&O client or specific custom service endpoints.
+
+**Q: Does the integration support multiple legal entities?**
+Yes, the agent can retrieve data from any legal entity exposed via your environment URL and authorized for your Azure AD application user.
+
+
 ## Installation & Usage
 
-To install and use the **Dynamics 365 Finance & Operations** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dynamics-365-finance-operations](https://vinkius.com/mcp/dynamics-365-finance-operations)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dynamics 365 Finance & Operations** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dynamics-365-finance-operations` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dynamics 365 Finance & Operations** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dynamics-365-finance-operations": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

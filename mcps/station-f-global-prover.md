@@ -1,7 +1,6 @@
 # Station F Global Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/station-f-global-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/station-f-global-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/station-f-global-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/station-f-global-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,12 +62,52 @@ Here are some examples of how you can interact with the **Station F Global Prove
 > Strong foundation but execution gap on global axis. GDPR compliance IS your moat — sell it to German and Dutch enterprises. Capital efficient at .8M ARR with 18 months runway. Missing: international hires. Hire 1 country manager per market before launch. Ecosystem: join Station F Founders Program for DE/NL connections.
 
 
+## ❓ FAQ
+
+**Q: Why global from day one?**
+Station F houses 50+ nationalities for a reason. The EU single market has 450 million consumers. Spotify did not start with Stockholm — it launched across Europe. If you build for one country, you compete with local players. If you build for Europe, you compete with nobody.
+
+**Q: How is GDPR a moat?**
+GDPR compliance takes 12-18 months and costs hundreds of thousands. If you are already compliant, every new entrant faces that barrier. US companies selling to EU enterprises need GDPR compliance — and they buy from EU-compliant startups. The regulation protects you.
+
+**Q: Why capital efficiency over fundraising?**
+Xavier Niel self-funded Free.fr and disrupted French telecom. European startups raise half of US startups. That is not a disadvantage — it forces discipline. Revenue per euro raised. Months of runway. Burn multiple. Be twice as efficient, not twice as funded.
+
+
 ## Installation & Usage
 
-To install and use the **Station F Global Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/station-f-global-prover](https://vinkius.com/mcp/station-f-global-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Station F Global Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `station-f-global-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Station F Global Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "station-f-global-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

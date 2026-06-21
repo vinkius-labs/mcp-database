@@ -1,7 +1,6 @@
 # General Motors MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/general-motors)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/general-motors-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/general-motors-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/general-motors)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -108,12 +107,52 @@ Here are some examples of how you can interact with the **General Motors** MCP s
 > Navigation destination 'Home' sent to your 2024 Cadillac Escalade. The route will appear on the infotainment screen when you enter the vehicle. Estimated drive time: 25 minutes (14.2 miles via I-95 N). Current traffic: moderate.
 
 
+## ❓ FAQ
+
+**Q: Which vehicles are supported by this MCP server?**
+This MCP server supports GM vehicles from model year 2015 and newer that are equipped with OnStar connectivity. This includes most Chevrolet, GMC, Buick, and Cadillac models. You can verify compatibility by checking if your vehicle has the OnStar button or the myChevrolet/myGMC/myBuick/myCadillac app support.
+
+**Q: Do I need an active OnStar subscription to use this server?**
+Yes, an active OnStar subscription is required to access the GM Connected Vehicle API. The specific features available depend on your OnStar plan. Remote commands like lock/unlock, remote start, and diagnostics require a plan that includes those capabilities. Check your OnStar plan details at my.chevrolet.com or contact OnStar support for more information.
+
+**Q: How are vehicle commands secured?**
+All vehicle commands are authenticated through the GM Developer Portal OAuth flow. Each command requires a valid access token tied to your GM account. The MCP server does not store credentials; it uses the token provided during setup. Only vehicles linked to your GM account can be controlled, and all commands are logged in the OnStar activity history for audit purposes.
+
+
 ## Installation & Usage
 
-To install and use the **General Motors** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/general-motors](https://vinkius.com/mcp/general-motors)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **General Motors** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `general-motors` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **General Motors** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "general-motors": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

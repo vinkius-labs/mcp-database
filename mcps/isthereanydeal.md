@@ -1,7 +1,6 @@
 # IsThereAnyDeal MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/isthereanydeal)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/isthereanydeal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/isthereanydeal-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/isthereanydeal)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **IsThereAnyDeal** MCP s
 > The historical low for The Witcher 3: Wild Hunt was $7.99 (80% off) recorded on Steam and GOG. Compared to the current price of $9.99, you are very close to the all-time low.
 
 
+## ❓ FAQ
+
+**Q: How do I find the correct ID for a game to check its price?**
+Use the `search_games` tool with the game title. It will return a list of matching games along with their 'Plain ID', which you can then use in other tools like `get_prices` or `get_historical_low`.
+
+**Q: Can I see the best deals currently available globally?**
+Yes! Use the `get_deals` tool. You can optionally filter by region (e.g., 'us', 'eu1'), country, or specific shops to find exactly what you're looking for.
+
+**Q: Is it possible to convert a Steam AppID to an IsThereAnyDeal ID?**
+Absolutely. Use the `get_plain_id` tool, specifying 'steam' as the shop and the AppID as the game parameter. It will return the corresponding ITAD Plain ID.
+
+
 ## Installation & Usage
 
-To install and use the **IsThereAnyDeal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/isthereanydeal](https://vinkius.com/mcp/isthereanydeal)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IsThereAnyDeal** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `isthereanydeal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IsThereAnyDeal** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "isthereanydeal": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Kolide MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kolide)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kolide-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kolide-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kolide)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Kolide** MCP server us
 > Current fleet stats: 150 total devices, 92% compliance rate, 12 active issues, and 5 new devices enrolled this week. Overall health is 'Good'.
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Kolide API Token?**
+Log in to the Kolide dashboard, navigate to **Settings** in the bottom left, and select the **API** tab to generate a token.
+
+**Q: Can I see hardware details of a device?**
+Yes, the `get_device_details` tool returns hardware specifications along with security data.
+
+**Q: Does this support multi-tenant accounts?**
+The API key is typically scoped to a specific organization. Ensure you are using the token for the desired fleet.
+
+
 ## Installation & Usage
 
-To install and use the **Kolide** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kolide](https://vinkius.com/mcp/kolide)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kolide** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kolide` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kolide** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kolide": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

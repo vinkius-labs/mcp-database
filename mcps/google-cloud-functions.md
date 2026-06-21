@@ -1,7 +1,6 @@
 # Google Cloud Functions MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-cloud-functions)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-cloud-functions-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-cloud-functions-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-cloud-functions)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -55,12 +54,52 @@ Here are some examples of how you can interact with the **Google Cloud Functions
 > The invocation failed with a 'timeout' error. We may need to optimize the payload or function timeout settings.
 
 
+## ❓ FAQ
+
+**Q: Why limit the agent to a single Cloud Function?**
+To enforce zero-trust security. An autonomous AI agent should not have the ability to execute arbitrary serverless functions (like wiping a database or sending mass emails) across your cloud infrastructure.
+
+**Q: How are responses handled?**
+The MCP will automatically parse valid JSON responses returned by the Cloud Function. If the function returns an error or a timeout, the execution ID and the specific error string will be returned to the agent.
+
+**Q: Can it invoke Gen 2 Cloud Functions?**
+Yes! The tool uses the standard Google Cloud Functions REST API (`:call` endpoint), which is compatible with both 1st gen and 2nd gen functions, provided the IAM Service Account has the `roles/cloudfunctions.invoker` permission.
+
+
 ## Installation & Usage
 
-To install and use the **Google Cloud Functions** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-cloud-functions](https://vinkius.com/mcp/google-cloud-functions)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Cloud Functions** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-cloud-functions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Cloud Functions** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-cloud-functions": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

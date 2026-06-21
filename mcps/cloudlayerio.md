@@ -1,7 +1,6 @@
 # cloudlayer.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudlayerio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudlayerio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudlayerio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudlayerio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **cloudlayer.io** MCP se
 > Retrieving your history... I found 5 recent tasks including 3 PDFs from URLs, 1 HTML conversion, and 1 screenshot. Would you like the links for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I convert a specific URL to a PDF through the agent?**
+Yes! Use the `convert_url_to_pdf` tool with the public URL. The agent will instruct cloudlayer.io to render the page and return a link to the generated PDF.
+
+**Q: How do I see my current document generation usage?**
+Use the `get_cloudlayer_usage_stats` tool. Your agent will fetch your current usage data, showing how many documents and images you have generated against your quota.
+
+**Q: Where do I find my cloudlayer.io API Key?**
+Log in to your cloudlayer.io dashboard. You can find your API key in the main dashboard view or under the API settings section.
+
+
 ## Installation & Usage
 
-To install and use the **cloudlayer.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cloudlayerio](https://vinkius.com/mcp/cloudlayerio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **cloudlayer.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cloudlayerio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **cloudlayer.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cloudlayerio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # CDC WONDER (Epidemiologic Data) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cdc-wonder-epidemiologic-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cdc-wonder-epidemiologic-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cdc-wonder-epidemiologic-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cdc-wonder-epidemiologic-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **CDC WONDER (Epidemiolo
 > Querying the D10 Natality database for California. I'm applying the necessary location filters (F_ prefixes) to extract birth rates and maternal demographics. One moment while I retrieve the data.
 
 
+## ❓ FAQ
+
+**Q: Which databases can I access using this server?**
+You can query any database supported by the CDC WONDER API by providing its ID to the `query_wonder_database` tool. Common IDs include D76 (Detailed Mortality), D10 (Natality), and VAERS (Vaccine Adverse Event Reporting System).
+
+**Q: How should I format the parameters for a query?**
+Parameters should be provided as a JSON object using the standard CDC prefixes: B_ for by-variables, M_ for measures, V_ for values, F_ for filters, and O_ for other options. The `query_wonder_database` tool handles the XML conversion for you.
+
+**Q: Do I need to include the 'accept_datause_restrictions' parameter?**
+No. The `query_wonder_database` tool is designed to handle the data use restrictions agreement internally. You only need to provide the specific database ID and the analytical parameters for your search.
+
+
 ## Installation & Usage
 
-To install and use the **CDC WONDER (Epidemiologic Data)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cdc-wonder-epidemiologic-data](https://vinkius.com/mcp/cdc-wonder-epidemiologic-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CDC WONDER (Epidemiologic Data)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cdc-wonder-epidemiologic-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CDC WONDER (Epidemiologic Data)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cdc-wonder-epidemiologic-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Listmonk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/listmonk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/listmonk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/listmonk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/listmonk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **Listmonk** MCP server 
 > I've retrieved your templates. You have 3 available: 'Default', 'Newsletter-V2', and 'Transactional-Simple'. Which one would you like to use?
 
 
+## ❓ FAQ
+
+**Q: Can I search for subscribers using specific SQL-like attributes?**
+Yes! Use the `list_subscribers` tool with the `query` parameter. You can use SQL expressions to filter by attributes, names, or email patterns directly through the agent.
+
+**Q: How do I send a one-off transactional email to a user?**
+Use the `send_transactional` action. You just need to provide the subscriber's email or ID and the template ID you wish to use for the message.
+
+**Q: Can I stop an ongoing subscriber import if I notice an error?**
+Absolutely. Use the `stop_import` tool to immediately halt any active subscriber import process in your Listmonk instance.
+
+
 ## Installation & Usage
 
-To install and use the **Listmonk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/listmonk](https://vinkius.com/mcp/listmonk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Listmonk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `listmonk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Listmonk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "listmonk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

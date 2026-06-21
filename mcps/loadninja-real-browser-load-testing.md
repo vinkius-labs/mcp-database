@@ -1,7 +1,6 @@
 # LoadNinja (Real-Browser Load Testing) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/loadninja-real-browser-load-testing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/loadninja-real-browser-load-testing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/loadninja-real-browser-load-testing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/loadninja-real-browser-load-testing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **LoadNinja (Real-Browse
 > Retrieving metrics for run ID 'run-13579'… The test achieved a peak of 250 VUs with an average throughput of 45 requests/sec. The P95 transaction duration was 1.2s. No major bottlenecks detected. Would you like to see the raw metrics breakdown?
 
 
+## ❓ FAQ
+
+**Q: What is unique about LoadNinja's approach to load testing?**
+Unlike protocol-based tools, LoadNinja uses actual real browsers at scale. Your agent can trigger scenarios that execute scripts inside native browsers, ensuring your performance metrics accurately reflect the true end-user experience including client-side execution.
+
+**Q: Can I stop a running test through my agent if I see performance degradation?**
+Yes. Use the `stop_test_run` tool with the active Run ID. Your agent will dispatch an immediate halt command to LoadNinja, stopping all physical load processes and allowing you to analyze the metrics captured up to that point.
+
+**Q: How do I check my account's virtual user (VU) limits?**
+The `get_account` tool retrieves your subscription details and strict runtime VU limits. Your agent will report your current usage caps, ensuring you stay within your performance testing budget.
+
+
 ## Installation & Usage
 
-To install and use the **LoadNinja (Real-Browser Load Testing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/loadninja-real-browser-load-testing](https://vinkius.com/mcp/loadninja-real-browser-load-testing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LoadNinja (Real-Browser Load Testing)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `loadninja-real-browser-load-testing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LoadNinja (Real-Browser Load Testing)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "loadninja-real-browser-load-testing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

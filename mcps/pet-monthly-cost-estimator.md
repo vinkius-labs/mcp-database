@@ -1,7 +1,6 @@
 # Pet Monthly Cost Estimator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pet-monthly-cost-estimator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pet-monthly-cost-estimator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pet-monthly-cost-estimator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pet-monthly-cost-estimator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Pet Monthly Cost Estim
 > I will call `estimate_risk_and_leisure_expenses` using species='Small Mammal', sizeTier='Medium', and locationType='Urban' to find the recommended reserve.
 
 
+## ❓ FAQ
+
+**Q: What species are supported?**
+The estimator currently supports Dog, Cat, and Small Mammal.
+
+**Q: How does location affect the cost?**
+Urban locations typically have higher service premiums for grooming and veterinary care compared to Rural areas.
+
+**Q: Does the size of the pet matter?**
+Yes, the size tier (Small, Medium, Large) acts as a multiplier for food consumption and hygiene needs.
+
+
 ## Installation & Usage
 
-To install and use the **Pet Monthly Cost Estimator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pet-monthly-cost-estimator](https://vinkius.com/mcp/pet-monthly-cost-estimator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pet Monthly Cost Estimator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pet-monthly-cost-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pet Monthly Cost Estimator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pet-monthly-cost-estimator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

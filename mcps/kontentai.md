@@ -1,7 +1,6 @@
 # Kontent.ai MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kontentai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kontentai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kontentai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kontentai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Kontent.ai** MCP serve
 > Searching Delivery API… I found 2 items: 'Winter Sale Banner' and 'Promotion Rules'. I can retrieve the full content for either.
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Project ID?**
+Log in to Kontent.ai, go to **Project Settings** > **API keys**, and copy the Project ID.
+
+**Q: What is a codename?**
+A codename is a unique, URL-friendly identifier for content items, types, or elements (e.g., 'about_us_page').
+
+**Q: Is the Delivery API Key mandatory?**
+Only if you have enabled **Secure Access** in your project settings. Otherwise, the Project ID is enough.
+
+
 ## Installation & Usage
 
-To install and use the **Kontent.ai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kontentai](https://vinkius.com/mcp/kontentai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kontent.ai** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kontentai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kontent.ai** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kontentai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

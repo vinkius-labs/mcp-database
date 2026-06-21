@@ -1,7 +1,6 @@
 # Plex MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plex)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/plex-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/plex-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plex)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -113,12 +112,55 @@ Here are some examples of how you can interact with the **Plex** MCP server usin
 > On Deck: 1. 'The Mandalorian S03E05' — 2. 'Stranger Things S04E07' — 3. 'Ted Lasso S02E03' — 4. 'The Office S07E19' — 5. 'Severance S01E04'. All are next unwatched episodes of shows you're currently watching.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Plex Token?**
+Log in to your Plex account at [**plex.tv**](https://plex.tv), go to **Settings > Server > General** and look for 'X-Plex-Token'. Alternatively, check your browser's network tab when loading the Plex web app.
+
+**Q: What is my Server URL?**
+For local access: `http://YOUR_SERVER_IP:32400` (e.g. `http://192.168.1.100:32400`). For remote access: `https://YOUR_PLEX_SUBDOMAIN.plex.direct:32400`. The IP is your Plex server's local network address.
+
+**Q: Can I see what's currently playing?**
+Yes! Use get_sessions to see all active playback sessions. Each session shows the user, media title, playback position, player device and whether it's direct playing or transcoding.
+
+**Q: Can I search for specific media?**
+Yes! Use search_library with any title. Results include movies, TV shows, episodes, artists and albums matching your query. Optionally filter by library key to search in a specific library only.
+
+
 ## Installation & Usage
 
-To install and use the **Plex** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/plex](https://vinkius.com/mcp/plex)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Plex** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `plex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Plex** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "plex": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

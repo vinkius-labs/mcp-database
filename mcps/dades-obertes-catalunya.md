@@ -1,7 +1,6 @@
 # Dades Obertes Catalunya MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dades-obertes-catalunya)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dades-obertes-catalunya-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dades-obertes-catalunya-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dades-obertes-catalunya)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Dades Obertes Cataluny
 > I've queried `xyz1-2345` with `$q: "electric"`. I found records related to electric vehicle charging stations, including columns for 'location', 'power_kw', and 'status'.
 
 
+## ❓ FAQ
+
+**Q: How do I find the unique identifier for a specific dataset?**
+Use the `search_catalog` tool with a descriptive query. The response will include the 4x4 alphanumeric ID (e.g., 'abcd-1234') which you can then use with the `query_dataset` tool.
+
+**Q: Can I filter data by specific values like a city or a date range?**
+Yes! When using `query_dataset`, use the `$where` parameter to apply SoQL filters. For example, `$where: "poblacio > 5000"` or `$where: "comarca = 'Barcelonès'"`.
+
+**Q: Is a Socrata App Token mandatory to use this server?**
+No, it is optional. However, providing a `DADES_APP_TOKEN` allows for higher rate limits and prevents throttling during intensive data exploration.
+
+
 ## Installation & Usage
 
-To install and use the **Dades Obertes Catalunya** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dades-obertes-catalunya](https://vinkius.com/mcp/dades-obertes-catalunya)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dades Obertes Catalunya** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dades-obertes-catalunya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dades Obertes Catalunya** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dades-obertes-catalunya": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

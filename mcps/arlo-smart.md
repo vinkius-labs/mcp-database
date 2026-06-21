@@ -1,7 +1,6 @@
 # Arlo Smart MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arlo-smart)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arlo-smart-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arlo-smart-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arlo-smart)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -181,12 +180,55 @@ Here are some examples of how you can interact with the **Arlo Smart** MCP serve
 > Arming devices... Front Door basestation set to armed mode (mode1). Backyard Camera armed. Garage Camera armed. Side Door Camera armed. All cameras are now actively monitoring for motion and will record and send alerts when movement is detected.
 
 
+## ❓ FAQ
+
+**Q: What Arlo devices are supported by this API?**
+The Arlo Smart API supports all Arlo devices including: Arlo Basestations (VMB4500, VMB5000), Arlo Cameras (Pro, Ultra, Essential, Go), Video Doorbells, Floodlight Cameras, and Arlo Lights. Use `list_arlo_devices` to see all devices in your account with their types and connection status.
+
+**Q: How do I get an Arlo authentication token?**
+Authenticate with the Arlo API by sending your email and password to the Arlo auth endpoint (ocapi-app.arlo.com/api/auth). The API returns an authentication token that you can use for all subsequent requests. The token should be refreshed periodically as it expires after a set duration.
+
+**Q: What's the difference between arming and disarming an Arlo device?**
+**Arming** (mode1) enables motion detection and automatic recording on the device. When armed, the camera will detect motion, record video clips, and send alerts to your phone. **Disarming** (mode0) disables motion detection and recording. The camera remains powered on but won't trigger recordings. Use arming when you're away and want security monitoring, and disarming when you're home to avoid false alerts.
+
+**Q: How do I download recordings from Arlo?**
+Use `get_arlo_recordings` with a date range to retrieve recordings. The response includes `presignedContentUrl` for each recording — these are temporary download links that expire after a set time. You can directly download the MP4 video files using these URLs. For thumbnail images, use `presignedThumbnailUrl`. Use `get_recent_arlo_recordings` for a quick way to get today's recordings.
+
+
 ## Installation & Usage
 
-To install and use the **Arlo Smart** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/arlo-smart](https://vinkius.com/mcp/arlo-smart)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Arlo Smart** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `arlo-smart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Arlo Smart** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "arlo-smart": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

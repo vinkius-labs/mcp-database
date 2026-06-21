@@ -1,7 +1,6 @@
 # Amiibo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amiibo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amiibo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amiibo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amiibo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Amiibo** MCP server us
 > The Amiibo database was last updated on 2024-03-15. This ensures you have access to the most recent release information and metadata.
 
 
+## ❓ FAQ
+
+**Q: How can I filter Amiibos by a specific game series like Super Smash Bros.?**
+You can use the `list_amiibos` tool and provide the series name in the `amiiboseries` or `gameseries` parameter. The agent will return all matching figures and cards from that collection.
+
+**Q: Can I see all the different characters that have Amiibo versions?**
+Yes! Use the `list_characters` tool to retrieve a complete list of every character represented in the Amiibo database.
+
+**Q: How do I get the specific details of a single Amiibo if I have its ID?**
+Simply provide the 16-digit ID to the `get_amiibo` tool. It will return detailed information including the character, series, release dates, and image URL.
+
+
 ## Installation & Usage
 
-To install and use the **Amiibo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amiibo](https://vinkius.com/mcp/amiibo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amiibo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amiibo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amiibo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amiibo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Oracle Vector DB MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oracle-vector-db)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oracle-vector-db-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oracle-vector-db-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oracle-vector-db)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Oracle Vector DB** MCP
 > Oracle Database 23ai (23.4.0.24.05) — Free tier. Vector features: fully supported. VECTOR data type: available. VECTOR_DISTANCE function: available. HNSW index support: yes. Your instance is ready for vector similarity search operations.
 
 
+## ❓ FAQ
+
+**Q: Does it work with Oracle Autonomous Database?**
+Yes. Oracle Autonomous Database on OCI has ORDS enabled by default. Use the ORDS URL from your ADB instance (e.g., https://xxxxx.adb.us-ashburn-1.oraclecloudapps.com/ords), your schema name (typically ADMIN), and the admin credentials. The VECTOR type is available on all 23ai-compatible instances.
+
+**Q: Can I run arbitrary SQL — not just vector searches?**
+Yes. The execute_sql_query tool accepts any valid Oracle SQL statement and returns results through ORDS. Add FETCH FIRST N ROWS ONLY to keep payloads manageable. This makes the agent useful for relational queries too, not just vector operations.
+
+**Q: Which distance metrics are available for vector search?**
+Oracle 23ai supports COSINE and EUCLIDEAN (L2) distance metrics natively via VECTOR_DISTANCE. Specify the metric when running a search — cosine is recommended for most text embedding use cases, while L2 works better for image or audio embeddings.
+
+
 ## Installation & Usage
 
-To install and use the **Oracle Vector DB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/oracle-vector-db](https://vinkius.com/mcp/oracle-vector-db)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Oracle Vector DB** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `oracle-vector-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Oracle Vector DB** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "oracle-vector-db": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

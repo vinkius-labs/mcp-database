@@ -1,7 +1,6 @@
 # CMO Marketing Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cmo-marketing-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cmo-marketing-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cmo-marketing-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cmo-marketing-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **CMO Marketing Prover**
 > Awareness-to-trial gap indicates messaging-market mismatch. Impressions without conversion is vanity content. Audit the gap: is the value proposition clear in 5 seconds? Is the CTA friction-free? Test 3 positioning variants against conversion, not impressions.
 
 
+## ❓ FAQ
+
+**Q: Why does it reject 'better and faster'?**
+'Better' and 'faster' are feature comparisons, not positioning. A wartime CMO creates a category or names an enemy. Polarize the market — make people choose a side.
+
+**Q: What is dark social?**
+Word-of-mouth that platform attribution cannot track. Meta and Google take credit for conversions driven by podcasts, Slack mentions, and private DMs. Self-reported attribution ('How did you hear about us?') reveals the truth.
+
+**Q: Why add friction to funnels?**
+Frictionless funnels generate garbage leads that burn sales capacity. Intentional friction — visible pricing, work email gates, use case selection — disqualifies bad fits before they reach Sales.
+
+
 ## Installation & Usage
 
-To install and use the **CMO Marketing Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cmo-marketing-prover](https://vinkius.com/mcp/cmo-marketing-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CMO Marketing Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cmo-marketing-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CMO Marketing Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cmo-marketing-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

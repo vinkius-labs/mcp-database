@@ -1,7 +1,6 @@
 # Writer (AI Enterprise LLM) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/writer-ai-enterprise-llm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/writer-ai-enterprise-llm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/writer-ai-enterprise-llm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/writer-ai-enterprise-llm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Writer (AI Enterprise 
 > File 'report.pdf' has been uploaded successfully. Your current file list includes: 'report.pdf' (ID: file-123) and 'budget.xlsx' (ID: file-456).
 
 
+## ❓ FAQ
+
+**Q: How do I see which Palmyra models are available in my account?**
+Use the `list_models` tool. It will return a list of all active models in your Writer account, such as palmyra-x5 or palmyra-med.
+
+**Q: Can I use my own documents for AI responses?**
+Yes. First, use `upload_file` to add your documents, then `create_graph` and `add_file_to_graph` to build a Knowledge Graph for RAG-based querying.
+
+**Q: Does this support conversational history?**
+Yes, the `chat_completion` tool accepts a `messages` array, allowing you to maintain full context for multi-turn dialogues with the model.
+
+
 ## Installation & Usage
 
-To install and use the **Writer (AI Enterprise LLM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/writer-ai-enterprise-llm](https://vinkius.com/mcp/writer-ai-enterprise-llm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Writer (AI Enterprise LLM)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `writer-ai-enterprise-llm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Writer (AI Enterprise LLM)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "writer-ai-enterprise-llm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

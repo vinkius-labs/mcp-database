@@ -1,7 +1,6 @@
 # LocationIQ (Geocoding & Maps) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/locationiq-geocoding-maps)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/locationiq-geocoding-maps-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/locationiq-geocoding-maps-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/locationiq-geocoding-maps)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **LocationIQ (Geocoding 
 > Retrieving balance… You have 4,850 requests remaining out of your 5,000 daily limit. Your account is in good standing. Would you like me to perform any more geocoding lookups?
 
 
+## ❓ FAQ
+
+**Q: Can I convert GPS coordinates back to a physical address using my agent?**
+Yes. Use the `reverse_geocode` tool by providing the latitude and longitude. Your agent will return the human-readable address, including the house number, street, city, and postal code.
+
+**Q: How do I calculate the travel time between multiple points?**
+The `calculate_distance_matrix` tool allows you to submit a list of coordinates. Your agent will return a duration table for the specified profile (driving or walking), helping you optimize multi-stop routes.
+
+**Q: Can my agent check how many API requests I have remaining?**
+Absolutely. Use the `check_account_balance` tool to retrieve your current credit status. Your agent will report exactly how many OpenStreetMap queries remain for your API key during the current period.
+
+
 ## Installation & Usage
 
-To install and use the **LocationIQ (Geocoding & Maps)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/locationiq-geocoding-maps](https://vinkius.com/mcp/locationiq-geocoding-maps)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LocationIQ (Geocoding & Maps)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `locationiq-geocoding-maps` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LocationIQ (Geocoding & Maps)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "locationiq-geocoding-maps": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

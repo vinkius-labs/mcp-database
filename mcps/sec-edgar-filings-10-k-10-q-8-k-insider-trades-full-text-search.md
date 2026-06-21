@@ -1,7 +1,6 @@
 # SEC EDGAR Filings — 10-K, 10-Q, 8-K, Insider Trades & Full-Text Search MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Recent Form 4 filings for Microsoft:
 2. Form 4 - Brad Smith (2026-02-15) - Document URL: ...
 
 
+## ❓ FAQ
+
+**Q: What is the difference between 10-K, 10-Q, and 8-K?**
+10-K is the comprehensive annual report with audited financials (filed once/year). 10-Q is the quarterly update with unaudited financials (filed 3x/year). 8-K is a current report filed within 4 business days of material events — earnings, M&A, CEO changes, bankruptcy, etc.
+
+**Q: What does Form 4 report?**
+Form 4 must be filed by corporate insiders (officers, directors, or 10%+ shareholders) when they buy or sell their own company's stock. It reveals executive sentiment.
+
+**Q: How far back does the full-text search go?**
+The SEC EDGAR Full-Text Search generally indexes documents back to 2001, covering over two decades of corporate filings.
+
+
 ## Installation & Usage
 
-To install and use the **SEC EDGAR Filings — 10-K, 10-Q, 8-K, Insider Trades & Full-Text Search** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search](https://vinkius.com/mcp/sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SEC EDGAR Filings — 10-K, 10-Q, 8-K, Insider Trades & Full-Text Search** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SEC EDGAR Filings — 10-K, 10-Q, 8-K, Insider Trades & Full-Text Search** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

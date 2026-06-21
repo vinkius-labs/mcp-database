@@ -1,7 +1,6 @@
 # Datadog AI (LLM Observability) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-ai-llm-observability)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datadog-ai-llm-observability-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datadog-ai-llm-observability-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-ai-llm-observability)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Datadog AI (LLM Observ
 > You have 4 active AI monitors. [LLM-Latency-High] is currently in 'Alert' state, while [Token-Quota-Reached], [GPU-Utilization], and [Model-Drift] are 'OK'.
 
 
+## ❓ FAQ
+
+**Q: Can my agent check token usage for a specific LLM model?**
+Yes. Use the 'query_metrics' tool with a query like 'avg:datadog.llm_observability.tokens{model:gpt-4}'. The agent will retrieve the numeric timeseries data directly from Datadog's metrics engine.
+
+**Q: How do I search for specific prompt text in my logs?**
+Use the 'search_llm_spans' tool. Provide a search query matching your prompt identifiers. The agent will pull the explicit REST maps capturing the literal prompt logic text from your Datadog logs.
+
+**Q: Can I see if there are any active incidents affecting my AI services?**
+Absolutely. The 'list_incidents' tool tracks outages and service disruptions in real-time. This allows your agent to identify exactly which external factors might be blocking your multi-agent orchestration pipelines.
+
+
 ## Installation & Usage
 
-To install and use the **Datadog AI (LLM Observability)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/datadog-ai-llm-observability](https://vinkius.com/mcp/datadog-ai-llm-observability)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Datadog AI (LLM Observability)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `datadog-ai-llm-observability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Datadog AI (LLM Observability)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "datadog-ai-llm-observability": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

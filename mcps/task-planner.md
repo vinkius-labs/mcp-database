@@ -1,7 +1,6 @@
 # Workflow Orchestrator Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/task-planner)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/task-planner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/task-planner-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/task-planner)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Workflow Orchestrator 
 > Verdict: WORKFLOW_PROVEN. Orchestration architecture validated. You have demonstrated a resilient approach.
 
 
+## ❓ FAQ
+
+**Q: Does this Prover execute or deploy workflows?**
+No. The AI agent writes the code. This tool acts as an architectural gateway, validating error handling, backoff protocols, idempotency keys, and credentials before execution.
+
+**Q: How does the tool evaluate if the retry strategy is resilient?**
+The validation logic enforces structured decision pivots. If retry strategies ignore exponential backoff or lack idempotency keys, the engine rejects the proposed layout.
+
+**Q: Why is idempotency treated as a mandatory decision pivot?**
+Network timeouts are guaranteed. Idempotency keys are the only way to safely retry transactional API requests without double-processing or charging customers multiple times.
+
+
 ## Installation & Usage
 
-To install and use the **Workflow Orchestrator Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/task-planner](https://vinkius.com/mcp/task-planner)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Workflow Orchestrator Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `task-planner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Workflow Orchestrator Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "task-planner": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

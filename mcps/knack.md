@@ -1,7 +1,6 @@
 # Knack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/knack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/knack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/knack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/knack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **Knack** MCP server usi
 > Successfully created a new record in 'object_1'. Record ID: 65a4b3c2d1e0f. Field 1 (Name): Sarah, Field 2 (Email): sarah@example.com. Is there anything else you'd like to do with this record?
 
 
+## ❓ FAQ
+
+**Q: How do I find the Object Key for a specific table?**
+Use the `list_objects` tool. It will return all data objects in your application along with their names and unique keys (e.g., `object_1`). Use these keys for all subsequent record operations.
+
+**Q: Can I search records using multiple conditions?**
+Yes. Use the `search_records` tool and provide a JSON array of filter objects. For example: `[{"field":"field_1", "operator":"is", "value":"active"}, {"field":"field_2", "operator":"contains", "value":"premium"}]`.
+
+**Q: How do I know which fields to use when creating a record?**
+Use the `list_object_fields` tool with the target `object_key`. It will list all fields, their types, and their keys (e.g., `field_1`), which you must use as property names in your data JSON.
+
+
 ## Installation & Usage
 
-To install and use the **Knack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/knack](https://vinkius.com/mcp/knack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Knack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `knack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Knack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "knack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # WMATA MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wmata)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wmata-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wmata-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wmata)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **WMATA** MCP server usi
 > Fetching Metro Center (A01) entrances... Found 7 entrances. Closest to 12th Street: Entrance at 12th & G Streets NW — coordinates 38.8983, -77.0283, has escalator access. Also nearby: Entrance at 1155 Connecticut Ave NW — coordinates 38.9056, -77.0421, has elevator and escalator (accessible). Full list includes entrances on F Street, G Street, and Connecticut Avenue. Would you like walking directions from your current location to the closest entrance?
 
 
+## ❓ FAQ
+
+**Q: Can my AI check when the next Metrorail train is arriving at my station?**
+Yes! Use the `get_station_prediction` tool with the station code (e.g., "A01" for Metro Center, "B36" for Gallery Place). Your AI will return all upcoming trains with destination names, line colors (Red, Orange, Silver, Blue, Yellow, Green), predicted arrival times in minutes, and car counts. If you do not know the station code, first use `get_rail_stations` to find it by name. For a system-wide view of all upcoming trains, use `get_next_rail` without a station code.
+
+**Q: How do I check if there are any delays or incidents affecting my Metrorail line?**
+Use the `get_rail_incidents` tool to check all active service disruptions across the Metrorail system. This returns incident descriptions, affected stations and lines, incident types (delays, power problems, medical emergencies, track maintenance), and start times. You can also check `get_elevator_incidents` for elevator and escalator outages that may affect accessibility at your station. For Metrobus service issues, use `get_bus_incidents`.
+
+**Q: Can I track Metrobus vehicles in real-time to see when my bus will arrive?**
+Yes! Use `get_bus_positions` to see real-time GPS locations of all Metrobus vehicles, or filter by route ID (e.g., "30N", "X2") to track buses on a specific route. Returns vehicle IDs, route IDs, latitude/longitude, destinations, and schedule deviation in seconds. For detailed route information including stop sequences, use `get_bus_route_details` with the route ID. Use `get_bus_routes` first to find route IDs if unknown.
+
+
 ## Installation & Usage
 
-To install and use the **WMATA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wmata](https://vinkius.com/mcp/wmata)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WMATA** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wmata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WMATA** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wmata": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

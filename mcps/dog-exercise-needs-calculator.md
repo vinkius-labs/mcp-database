@@ -1,7 +1,6 @@
 # Dog Exercise Needs Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dog-exercise-needs-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dog-exercise-needs-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dog-exercise-needs-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dog-exercise-needs-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -57,12 +56,52 @@ Here are some examples of how you can interact with the **Dog Exercise Needs Cal
 > Insufficient exercise can lead to behavioral issues and joint stress. The system gives guidance on these risks, helping you understand why meeting the minimum minutes calculated by `calculate_exercise_needs` is crucial.
 
 
+## ❓ FAQ
+
+**Q: How do I determine the minimum required exercise time?**
+You can use the `calculate_exercise_needs` tool. Simply provide your dog's age, breed, and an energy level (1-5), and it will return the minimum recommended minutes and activity type.
+
+**Q: Does this calculator recommend activities that are too strenuous for my dog?**
+The system is designed to be safe. It uses the `calculate_exercise_needs` tool and considers your breed's inherent joint resilience when suggesting activity types, ensuring recommendations are appropriate for the dog's life stage.
+
+**Q: What if I don't know my dog's energy level?**
+The `classify_intensity` tool can help you understand the required effort. Even a rough estimate of your commitment level (1-5) will allow the system to generate safe and useful recommendations.
+
+
 ## Installation & Usage
 
-To install and use the **Dog Exercise Needs Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dog-exercise-needs-calculator](https://vinkius.com/mcp/dog-exercise-needs-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dog Exercise Needs Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dog-exercise-needs-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dog Exercise Needs Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dog-exercise-needs-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

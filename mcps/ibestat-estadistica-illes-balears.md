@@ -1,7 +1,6 @@
 # IBESTAT (Estadística Illes Balears) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ibestat-estadistica-illes-balears)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ibestat-estadistica-illes-balears-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ibestat-estadistica-illes-balears-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ibestat-estadistica-illes-balears)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **IBESTAT (Estadística 
 > I've fetched the data for resource 'T1'. It contains the annual growth metrics for the requested period. [JSON Data Displayed]. Would you like me to analyze these numbers for you?
 
 
+## ❓ FAQ
+
+**Q: How can I find out which statistical tables are available for a specific study?**
+Use the `list_resources` tool with the specific `operationId`. It will return a list of all available resources (tables) associated with that statistical operation.
+
+**Q: Can I retrieve the statistical data in different languages?**
+Yes. When using the `get_data` tool, you can specify the `lang` parameter. Supported languages typically include Catalan ('ca'), Spanish ('es'), and English ('en').
+
+**Q: What formats are available for downloading data?**
+The `get_data` tool allows you to choose between 'json', 'xml', and 'csv' formats via the `format` parameter, making it easy to integrate with different analysis tools.
+
+
 ## Installation & Usage
 
-To install and use the **IBESTAT (Estadística Illes Balears)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ibestat-estadistica-illes-balears](https://vinkius.com/mcp/ibestat-estadistica-illes-balears)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IBESTAT (Estadística Illes Balears)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ibestat-estadistica-illes-balears` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IBESTAT (Estadística Illes Balears)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ibestat-estadistica-illes-balears": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

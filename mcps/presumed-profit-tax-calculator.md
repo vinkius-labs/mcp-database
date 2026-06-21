@@ -1,7 +1,6 @@
 # Presumed Profit Tax Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/presumed-profit-tax-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/presumed-profit-tax-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/presumed-profit-tax-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/presumed-profit-tax-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,52 @@ Here are some examples of how you can interact with the **Presumed Profit Tax Ca
 > The `calculate_scll_liability` tool returns a total SCLL of 2,700 (9% rate).
 
 
+## ❓ FAQ
+
+**Q: How can I calculate the taxable base for a specific activity?**
+You can use the `get_taxable_base` tool by providing the gross revenue and the business activity type.
+
+**Q: Does this server handle the CIT surcharge?**
+Yes. The `calculate_cit_breakdown` tool calculates both the standard 15% rate and the 10% surcharge for amounts exceeding the monthly threshold.
+
+**Q: Can I get a full report of all taxes at once?**
+Yes, the `generate_tax_summary_report` tool provides a consolidated view including CIT, surcharge, and SCLL.
+
+
 ## Installation & Usage
 
-To install and use the **Presumed Profit Tax Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/presumed-profit-tax-calculator](https://vinkius.com/mcp/presumed-profit-tax-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Presumed Profit Tax Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `presumed-profit-tax-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Presumed Profit Tax Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "presumed-profit-tax-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

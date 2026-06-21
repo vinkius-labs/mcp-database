@@ -1,7 +1,6 @@
 # Harmonyscan (Harmony One Block Explorer API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harmonyscan-harmony-one-block-explorer-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/harmonyscan-harmony-one-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/harmonyscan-harmony-one-block-explorer-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harmonyscan-harmony-one-block-explorer-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Harmonyscan (Harmony O
 > I have retrieved the verified source code and ABI for the contract. It is a 'ViperSwap' liquidity pool contract compiled with Solidity 0.6.12. I can now help you analyze its functions or events.
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance of multiple Harmony addresses at once?**
+Yes! Use the `get_balance_multi` tool and provide a comma-separated list of addresses (up to 20). The agent will return the ONE balance for each address in a single response.
+
+**Q: How do I verify if a specific transaction was successful or failed?**
+You can use the `get_status` tool with the transaction hash. It returns a status code where '1' indicates success and '0' indicates failure, along with any available error messages.
+
+**Q: Is it possible to retrieve the source code of a smart contract?**
+Yes, provided the contract is verified on Harmonyscan. Use the `get_source_code` tool with the contract address to get the Solidity source code, compiler version, and optimization settings.
+
+
 ## Installation & Usage
 
-To install and use the **Harmonyscan (Harmony One Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/harmonyscan-harmony-one-block-explorer-api](https://vinkius.com/mcp/harmonyscan-harmony-one-block-explorer-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Harmonyscan (Harmony One Block Explorer API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `harmonyscan-harmony-one-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Harmonyscan (Harmony One Block Explorer API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "harmonyscan-harmony-one-block-explorer-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

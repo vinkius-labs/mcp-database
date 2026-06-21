@@ -1,7 +1,6 @@
 # Postman MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postman-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/postman-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/postman-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postman-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Postman** MCP server u
 > Running the check... All 3 monitors are currently active. 'Production Health' passed its last run, while 'Staging API' reported a minor latency warning. Should I drill down into the 'Staging' results?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details of a specific collection just by providing its ID?**
+Yes! Use the `get_collection_details` tool with the unique ID. Your agent will respond with complete structure, requests, and metadata in seconds.
+
+**Q: How do I check my API monitors status?**
+Simply ask the agent to run the `list_monitors` tool. It will compile all scheduled monitors and their latest results configured for your environment.
+
+**Q: Does the integration permit modifying collections?**
+No. The core set of tools focuses strictly on querying and analyzing API context—listing workspaces, collections, and environments. State alteration operations are not currently exposed.
+
+
 ## Installation & Usage
 
-To install and use the **Postman** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/postman-alternative](https://vinkius.com/mcp/postman-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Postman** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `postman-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Postman** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "postman-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

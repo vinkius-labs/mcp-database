@@ -1,7 +1,6 @@
 # Focus Logística MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/focus-logistica)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/focus-logistica-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/focus-logistica-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/focus-logistica)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,55 @@ Here are some examples of how you can interact with the **Focus Logística** MCP
 > XML downloaded. Ready for accounting integration.
 
 
+## ❓ FAQ
+
+**Q: What transport modalities are supported for CT-e?**
+CT-e supports all modalities: road (rodoviário), air (aéreo), rail (ferroviário), waterway (aquaviário), pipeline (dutoviário) and multimodal.
+
+**Q: When should I close an MDF-e?**
+You should close the MDF-e after the delivery is completed. Use the close_mdfe action to mark it as finished.
+
+**Q: Can I cancel an authorized CT-e?**
+Yes, as long as it hasn't been used for transport yet. Use cancel_cte with a valid justification reason.
+
+**Q: What documents are required to generate an MDF-e?**
+You need the related NFe (for own cargo) or CTe (for third-party cargo) references, as well as the vehicle's license plate and the driver's CPF.
+
+
 ## Installation & Usage
 
-To install and use the **Focus Logística** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/focus-logistica](https://vinkius.com/mcp/focus-logistica)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Focus Logística** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `focus-logistica` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Focus Logística** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "focus-logistica": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

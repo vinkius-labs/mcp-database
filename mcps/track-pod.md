@@ -1,7 +1,6 @@
 # Track-POD MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/track-pod)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/track-pod-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/track-pod-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/track-pod)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Track-POD** MCP server
 > Success! Order #ORD-9902 has been created for 'Tech Solutions' at the provided address. It is currently unscheduled. Would you like me to check the driver availability for dispatching?
 
 
+## ❓ FAQ
+
+**Q: Can I see all the orders for a specific client?**
+Yes! Use the `list_orders` tool. While it returns the full list, you can ask the AI agent to filter or identify all records matching a specific client name.
+
+**Q: How do I create a new delivery order via AI?**
+Use the `create_order` tool. You'll need to provide an Order Number, the Client Name, and an optional delivery address to register the new task in Track-POD.
+
+**Q: Is it possible to list all the drivers currently available in the fleet?**
+Absolutely. Use the `list_drivers` query. The agent will retrieve the complete directory of delivery drivers associated with your account, helping you coordinate assignments.
+
+
 ## Installation & Usage
 
-To install and use the **Track-POD** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/track-pod](https://vinkius.com/mcp/track-pod)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Track-POD** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `track-pod` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Track-POD** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "track-pod": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

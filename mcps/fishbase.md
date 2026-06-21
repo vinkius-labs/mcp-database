@@ -1,7 +1,6 @@
 # FishBase MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fishbase)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fishbase-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fishbase-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fishbase)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **FishBase** MCP server 
 > Using `get_docs_by_table` with `use_sealifebase` set to true, I've fetched the documentation for the 'species' table. This table contains primary taxonomic information and species-level metadata.
 
 
+## ❓ FAQ
+
+**Q: Can I switch between FishBase and SeaLifeBase data?**
+Yes. Most tools include a `use_sealifebase` parameter. Set it to `true` to query the SeaLifeBase database instead of the default FishBase.
+
+**Q: How do I find the common names for a specific fish species?**
+Use the `list_comnames` tool and provide the species name in the `species` parameter. You can also limit the results or filter specific fields.
+
+**Q: Where can I find documentation for the database tables?**
+You can use `get_docs` for general metadata or `get_docs_by_table` to get detailed documentation for a specific table name.
+
+
 ## Installation & Usage
 
-To install and use the **FishBase** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fishbase](https://vinkius.com/mcp/fishbase)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FishBase** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fishbase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FishBase** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fishbase": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

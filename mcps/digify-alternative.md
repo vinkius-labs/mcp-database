@@ -1,7 +1,6 @@
 # Digify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/digify-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/digify-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/digify-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/digify-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Digify** MCP server us
 > Fetching audit logs... The last 5 events include: @user1 viewed 'Asset_List.xlsx', @user2 downloaded the 'NDA', and 3 new guest invitations. Would you like the detailed timestamps for these activities?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Digify Key ID and Secret?**
+Log in to your account at [digify.com](https://digify.com/), navigate to the **API** section in your dashboard, and generate a new set of API keys.
+
+**Q: Can I prevent recipients from downloading protected files?**
+Yes! The `protect_file` tool includes an `allow_download` parameter. Set it to `false` to enable view-only access via the secure link.
+
+**Q: How do I invite multiple guests to a Data Room?**
+Use the `invite_guest` tool for each participant. You can ask your agent to process a list of emails to coordinate batch invitations.
+
+
 ## Installation & Usage
 
-To install and use the **Digify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/digify-alternative](https://vinkius.com/mcp/digify-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Digify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `digify-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Digify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "digify-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

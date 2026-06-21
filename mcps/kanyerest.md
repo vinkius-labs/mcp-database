@@ -1,7 +1,6 @@
 # Kanye.Rest MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kanyerest)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kanyerest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kanyerest-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kanyerest)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -64,12 +63,52 @@ Here are some examples of how you can interact with the **Kanye.Rest** MCP serve
 > According to the Kanye.Rest API: "I am the number one human being in music. That means any person that's living or breathing is number two."
 
 
+## ❓ FAQ
+
+**Q: What is the difference between the JSON and Text quote tools?**
+The `get_random_quote_json` tool returns a structured object which is better for programmatic use, while `get_random_quote_text` returns a simple string ideal for direct display in a chat.
+
+**Q: Are these real quotes from Kanye West?**
+Yes, the Kanye.Rest API aggregates real public statements and tweets made by Kanye West over the years.
+
+**Q: Is there a limit to how many quotes I can fetch?**
+The API is free and open, but it is recommended to use it reasonably. Both `get_random_quote_json` and `get_random_quote_text` are designed for on-demand requests.
+
+
 ## Installation & Usage
 
-To install and use the **Kanye.Rest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kanyerest](https://vinkius.com/mcp/kanyerest)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kanye.Rest** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kanyerest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kanye.Rest** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kanyerest": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

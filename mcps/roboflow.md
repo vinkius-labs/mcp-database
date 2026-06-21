@@ -1,7 +1,6 @@
 # Roboflow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/roboflow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/roboflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/roboflow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/roboflow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Roboflow** MCP server 
 > Fetching results for version 5... The model achieved a mAP of 88.5%, with a precision of 91.2% and recall of 84.7%. The training run is completed. Would you like to see the full metrics breakdown?
 
 
+## ❓ FAQ
+
+**Q: How can I verify if my Roboflow API key is correctly configured?**
+You can use the `get_root` tool. It will attempt to authenticate with your key and return the default workspace details if successful.
+
+**Q: Can I get the training performance metrics for a specific model version?**
+Yes! Use the `get_training_results` tool by providing the workspace, project, and version ID. It returns mAP, precision, recall, and other training metrics.
+
+**Q: Is it possible to export my dataset to a specific format like YOLOv5?**
+Absolutely. Use the `download_dataset` tool and specify the `format` parameter (e.g., 'yolov5pytorch') to receive a download link for your zipped dataset.
+
+
 ## Installation & Usage
 
-To install and use the **Roboflow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/roboflow](https://vinkius.com/mcp/roboflow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Roboflow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `roboflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Roboflow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "roboflow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

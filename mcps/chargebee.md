@@ -1,7 +1,6 @@
 # Chargebee MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chargebee)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chargebee-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chargebee-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chargebee)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Chargebee** MCP server
 > I iterated through your active billing ledger. I found 1 out of the 10 recent limits flagged as 'Payment Declined'. It belongs to customer 'cust_0102'. The gateway declined their card due to insufficient funds. Should I pause their software subscription?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically detect a declining card and cancel the recurring subscription?**
+Yes. Ask the agent to pull the most recent invoices and find the specific declined charges. Once identified, command the agent to cancel the associated subscription ID completely, putting an end to the service. All done natively through chat.
+
+**Q: How does the Hosted Checkout generation work?**
+When asked, the AI fetches your catalog items, finds the needed Plan ID, and hits the `generate_hosted_checkout` endpoint. It replies instantly with an ephemeral, safe URL you can copy-paste to your customer, capturing their payment securely before destroying the link lifespan.
+
+**Q: Can I halt billing charges for a specific timeframe?**
+Certainly. The `pause_subscription` command instructs Chargebee to freeze active charges and renewals on the provided subscription ID until you deliberately tell the AI to resume it later. Brilliant for seasonal B2B accounts.
+
+
 ## Installation & Usage
 
-To install and use the **Chargebee** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chargebee](https://vinkius.com/mcp/chargebee)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chargebee** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chargebee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chargebee** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chargebee": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

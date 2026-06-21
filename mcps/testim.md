@@ -1,7 +1,6 @@
 # Testim MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/testim)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/testim-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/testim-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/testim)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Status: **FAILED ❌**
 Error Details: At Step 4 (Verify Cart Element). Element `#checkout-btn` could not be located on the DOM within the 10000ms timeout threshold window. Screenshot payload available in dashboard.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent actually trigger test runs remotely?**
+Yes! You can ask your agent to list your available tests, pick an ID, and say 'Run this sequence'. Testim's dynamic runner architecture handles the load while your AI returns the execution ID for you to track.
+
+**Q: How can it help me troubleshoot a failed test run?**
+Typically, you'd open the Testim dashboard, navigate to the specific test suite run, and read the logs. With this integration, you just instruct the agent to retrieve results for that specific Execution ID; it will summarize error strings immediately in markdown.
+
+**Q: Can I merge test changes through the agent?**
+Absolutely. Because Testim supports branching, your agent can act as a command terminal. Ask to list branches, select a recently updated feature branch, and say 'Merge branch feature-login into master'.
+
+
 ## Installation & Usage
 
-To install and use the **Testim** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/testim](https://vinkius.com/mcp/testim)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Testim** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `testim` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Testim** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "testim": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

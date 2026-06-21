@@ -1,7 +1,6 @@
 # U.S. Census Full — Complete Demographic & Economic Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-census-full-complete-demographic-economic-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-census-full-complete-demographic-economic-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-census-full-complete-demographic-economic-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-census-full-complete-demographic-economic-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -109,12 +108,52 @@ The state with the lowest median age is:
 There is a strong positive correlation between the percentage of the population holding a Bachelor's degree and the state's median rent.
 
 
+## ❓ FAQ
+
+**Q: Why does it require an API key?**
+While the SEC and Treasury APIs do not require keys, the Census Bureau requires a free API key to handle the massive volume of hyper-local data (thousands of variables across millions of geographies). The key prevents rate limiting and ensures stable connections.
+
+**Q: What geographies can I query?**
+This MCP limits the main built-in endpoints to State, County and Place (cities). Detailed geometries like zip-codes, tracts, or congressional districts can be queried utilizing the `query_census` custom tool.
+
+**Q: Is Puerto Rico included?**
+Yes! Puerto Rico is treated internally as state FIPS code `72`.
+
+
 ## Installation & Usage
 
-To install and use the **U.S. Census Full — Complete Demographic & Economic Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-census-full-complete-demographic-economic-intelligence](https://vinkius.com/mcp/us-census-full-complete-demographic-economic-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **U.S. Census Full — Complete Demographic & Economic Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-census-full-complete-demographic-economic-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **U.S. Census Full — Complete Demographic & Economic Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-census-full-complete-demographic-economic-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

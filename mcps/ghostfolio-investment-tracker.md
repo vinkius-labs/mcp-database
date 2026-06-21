@@ -1,7 +1,6 @@
 # Ghostfolio (Investment Tracker) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ghostfolio-investment-tracker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ghostfolio-investment-tracker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ghostfolio-investment-tracker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ghostfolio-investment-tracker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Ghostfolio (Investment
 > I've successfully recorded the BUY activity for 10 shares of AAPL at $185.50. The transaction has been added to your 'Main Brokerage' account.
 
 
+## ❓ FAQ
+
+**Q: Can I see the current market value of all my holdings at once?**
+Yes! Use the `get_portfolio_holdings` tool. It retrieves a detailed list of all your current assets along with their latest valuations based on market data.
+
+**Q: How do I record a new stock purchase using the AI?**
+Simply provide the details to your agent. It will use the `create_activity` tool with the type 'BUY', including the symbol, quantity, unit price, and account ID to record the transaction.
+
+**Q: Can I check the price of a specific stock without looking at my portfolio?**
+Yes. The `get_market_data_price` tool allows you to fetch the latest price for any asset symbol (like 'AAPL' or 'BTC') directly from Ghostfolio's data providers.
+
+
 ## Installation & Usage
 
-To install and use the **Ghostfolio (Investment Tracker)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ghostfolio-investment-tracker](https://vinkius.com/mcp/ghostfolio-investment-tracker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ghostfolio (Investment Tracker)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ghostfolio-investment-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ghostfolio (Investment Tracker)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ghostfolio-investment-tracker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

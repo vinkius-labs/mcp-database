@@ -1,7 +1,6 @@
 # MoonClerk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moonclerk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moonclerk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moonclerk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moonclerk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **MoonClerk** MCP server
 > Inspecting form_123... This form is titled 'Donation Page', it is currently 'active', and has been used for 45 successful transactions. Would you like the checkout URL for this form?
 
 
+## ❓ FAQ
+
+**Q: Is the MoonClerk API read-only?**
+Yes, as per their official documentation, the MoonClerk API currently only supports retrieving information. Creating or modifying records must be done via their dashboard or forms.
+
+**Q: Can I see details about recurring plans?**
+Yes! Use the `list_plans` tool to see all your payment plans and `get_plan` for detailed information about a specific one.
+
+**Q: How do I find a specific subscription's status?**
+The `list_subscriptions` and `get_subscription` tools allow you to check the current state and recurrence details for any active customer subscription.
+
+
 ## Installation & Usage
 
-To install and use the **MoonClerk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/moonclerk](https://vinkius.com/mcp/moonclerk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MoonClerk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `moonclerk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MoonClerk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "moonclerk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Google Cloud Logging Stream MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-cloud-logging-stream)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-cloud-logging-stream-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-cloud-logging-stream-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-cloud-logging-stream)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -55,12 +54,52 @@ Here are some examples of how you can interact with the **Google Cloud Logging S
 > Applying the filter `jsonPayload.userId="user_8819"`, I found the specific event where the user triggered the payment webhook.
 
 
+## ❓ FAQ
+
+**Q: Why limit the agent to a single Log Name?**
+To enforce zero-trust security. An autonomous AI agent debugging an application shouldn't have access to read your organization's entire audit log history, IAM logs, or logs from other unrelated services.
+
+**Q: Can I use advanced GCP Log queries?**
+Yes! You can pass any standard GCP Logging filter (e.g., `textPayload:"Exception"` or `jsonPayload.status="500"`) via the `filter` argument. The server automatically merges your filter with the strict `logName` restriction.
+
+**Q: How are the results ordered?**
+Results are always returned in descending order (`timestamp desc`), meaning the AI agent gets the most recent logs first, which is ideal for real-time debugging.
+
+
 ## Installation & Usage
 
-To install and use the **Google Cloud Logging Stream** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-cloud-logging-stream](https://vinkius.com/mcp/google-cloud-logging-stream)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Cloud Logging Stream** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-cloud-logging-stream` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Cloud Logging Stream** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-cloud-logging-stream": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

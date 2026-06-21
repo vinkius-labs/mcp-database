@@ -1,7 +1,6 @@
 # LunarCrush (Social Intelligence for Crypto Assets) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lunarcrush-social-intelligence-for-crypto-assets)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lunarcrush-social-intelligence-for-crypto-assets-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lunarcrush-social-intelligence-for-crypto-assets-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lunarcrush-social-intelligence-for-crypto-assets)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **LunarCrush (Social Int
 > For Bitcoin (BTC) in the last 24h: Social mentions are at 120k, engagement is up 5%, and the overall sentiment remains 'Bullish' at 72%.
 
 
+## ❓ FAQ
+
+**Q: What does the Galaxy Score represent for a coin?**
+The Galaxy Score, retrieved via `get_galaxy_score`, indicates how a coin is performing relative to its own historical social and market performance. A higher score suggests stronger combined health.
+
+**Q: How can I compare a coin's social performance against the entire market?**
+Use the `get_altrank` tool. It measures a coin's social performance relative to the entire crypto market, helping you identify assets that are gaining significant social traction.
+
+**Q: Can I get social sentiment for specific time intervals?**
+Yes! The `get_social_metrics` tool allows you to specify an interval (1h, 24h, or 7d) to retrieve mentions, engagement, and sentiment for a specific coin symbol.
+
+
 ## Installation & Usage
 
-To install and use the **LunarCrush (Social Intelligence for Crypto Assets)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lunarcrush-social-intelligence-for-crypto-assets](https://vinkius.com/mcp/lunarcrush-social-intelligence-for-crypto-assets)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LunarCrush (Social Intelligence for Crypto Assets)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lunarcrush-social-intelligence-for-crypto-assets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LunarCrush (Social Intelligence for Crypto Assets)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lunarcrush-social-intelligence-for-crypto-assets": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

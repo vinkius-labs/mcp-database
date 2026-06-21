@@ -1,7 +1,6 @@
 # HackEDU (Security Journey) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hackedu-security-journey)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hackedu-security-journey-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hackedu-security-journey-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hackedu-security-journey)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,55 @@ Here are some examples of how you can interact with the **HackEDU (Security Jour
 > Security issue created! I've logged the 'BOLA vulnerability' in HackEDU. This will automatically trigger adaptive training plans for the relevant development team. Should I list the assigned users?
 
 
+## ❓ FAQ
+
+**Q: How do I find my HackEDU API Key?**
+Log in to your HackEDU Admin Dashboard and navigate to the API section. You will be able to generate and copy your unique X-API-Key from there.
+
+**Q: Can I track the training progress of a specific team?**
+Yes! Use the `get_team_progress` tool by providing the unique team ID. The agent will return the completion percentage and status for that team.
+
+**Q: What is 'Adaptive Training' in this integration?**
+Adaptive Training allows you to push real-world vulnerability findings (via `create_issue`) to HackEDU. The platform then automatically assigns relevant security lessons to developers to help them fix and prevent similar issues.
+
+**Q: Is HackEDU now part of Security Journey?**
+Yes, HackEDU was acquired by Security Journey. This integration works with accounts from both brands using the same API infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **HackEDU (Security Journey)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hackedu-security-journey](https://vinkius.com/mcp/hackedu-security-journey)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HackEDU (Security Journey)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hackedu-security-journey` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HackEDU (Security Journey)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hackedu-security-journey": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

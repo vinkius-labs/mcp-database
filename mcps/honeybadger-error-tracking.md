@@ -1,7 +1,6 @@
 # Honeybadger (Error Tracking) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/honeybadger-error-tracking)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/honeybadger-error-tracking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/honeybadger-error-tracking-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/honeybadger-error-tracking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Honeybadger (Error Tra
 > I've listed the 3 most recent deployments for project 9876: Revision 'a1b2c3d' by Alex (production, 2 hours ago), Revision 'e5f6g7h' by Sarah (staging, yesterday), and Revision 'i9j0k1l' by Alex (production, 3 days ago).
 
 
+## ❓ FAQ
+
+**Q: Can I see the exact backtrace of an error through my agent?**
+Yes. Use the `get_notice` tool with a specific Notice ID to retrieve the full backtrace and request data. This allows your agent to help you identify the exact line of code causing the exception.
+
+**Q: How do I mark an error as resolved from a conversation?**
+Use the `resolve_fault` tool by providing the Project ID and Fault ID. Your agent will update the status in Honeybadger, and you'll be notified if the same error occurs again in the future.
+
+**Q: Can I monitor site availability using my agent?**
+Absolutely. Use the `list_sites` tool to see all registered uptime monitoring checks. Your agent will return site names, URLs, and their current status to ensure your infrastructure is healthy.
+
+
 ## Installation & Usage
 
-To install and use the **Honeybadger (Error Tracking)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/honeybadger-error-tracking](https://vinkius.com/mcp/honeybadger-error-tracking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Honeybadger (Error Tracking)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `honeybadger-error-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Honeybadger (Error Tracking)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "honeybadger-error-tracking": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

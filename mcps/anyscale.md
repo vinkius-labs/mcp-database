@@ -1,7 +1,6 @@
 # Anyscale MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anyscale)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/anyscale-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/anyscale-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anyscale)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Anyscale** MCP server 
 > I've passed the text to your configured Anyscale embedding model. The embedding array generated successfully with 768 dimensions. Since the array is large, I've mapped the output directly to the data pipeline.
 
 
+## ❓ FAQ
+
+**Q: Can I query a Llama 3 model that is locally deployed in Anyscale?**
+Yes. First ask the agent to list the available model APIs using `list_models` so it can grab the precise namespace (e.g. meta-llama/Llama-3-70b-instruct). Then, ask it to run `chat_completion` pointing at that specific ID. You are now effectively chaining your local agent with an enterprise-sized foundational model in your own VPC.
+
+**Q: Is it possible to check whether my training job timed out without opening the Anyscale Dashboard?**
+Absolutely. Use the `list_jobs` tool directly from your chat workflow. It will pull down the state of recent tasks (running, failed, succeeded) alongside metrics. The agent can immediately summarize issues if it sees any errors, saving you a context switch.
+
+**Q: Can I use Anyscale to process my text chunks into Vectors inside a project pipeline?**
+Yes. This MCP comes with an explicit `generate_embeddings` tool mapped to your Anyscale endpoints. By providing arrays of chunks, the Anyscale fast backbone will return your high-dimensional vectors. Your custom Agent can wrap this into scripts to hydrate vector databases faster.
+
+
 ## Installation & Usage
 
-To install and use the **Anyscale** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/anyscale](https://vinkius.com/mcp/anyscale)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Anyscale** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `anyscale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Anyscale** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "anyscale": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

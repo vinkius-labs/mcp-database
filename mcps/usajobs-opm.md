@@ -1,7 +1,6 @@
 # USAJOBS (OPM) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usajobs-opm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/usajobs-opm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/usajobs-opm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usajobs-opm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **USAJOBS (OPM)** MCP se
 > I've fetched the code list. For Information Technology, the primary series is 2210. Other related codes include 1550 (Computer Science) and 0854 (Computer Engineering).
 
 
+## ❓ FAQ
+
+**Q: How can I filter jobs by a specific location and salary range?**
+Use the `search_jobs` tool. You can provide parameters like `LocationName` (e.g., 'Washington, DC') and `RemunerationMinimumAmount` to narrow down the results to your specific needs.
+
+**Q: Where can I find the full description of duties for a job posting?**
+The `get_announcement_text` tool is designed specifically for this. By providing the announcement number, the agent will retrieve the full text for Summary, Duties, and Qualifications.
+
+**Q: How do I know which codes to use for occupational series like IT or Engineering?**
+You can use the `get_code_list` tool with the endpoint 'occupationalseries'. This will return a list of all valid codes and their corresponding titles (e.g., 2210 for Information Technology).
+
+
 ## Installation & Usage
 
-To install and use the **USAJOBS (OPM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/usajobs-opm](https://vinkius.com/mcp/usajobs-opm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **USAJOBS (OPM)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `usajobs-opm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **USAJOBS (OPM)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "usajobs-opm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

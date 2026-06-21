@@ -1,7 +1,6 @@
 # Aliyun OSS / 阿里云对象存储 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aliyun-oss)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aliyun-oss-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aliyun-oss-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aliyun-oss)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Aliyun OSS / 阿里云
 > The public URL for your object is: `https://[bucket].[endpoint].aliyuncs.com/docs/manual.pdf`. Note that this URL will only work if the object has been granted 'public-read' permissions in your bucket settings.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Aliyun AccessKey and Endpoint?**
+Log in to the [Aliyun Console](https://oss.console.aliyun.com/), navigate to [AccessKey Management] to find your ID and Secret. Your Endpoint (e.g., `oss-cn-hangzhou.aliyuncs.com`) is visible in the bucket overview section.
+
+**Q: What file types can I upload through the agent?**
+This MCP server is optimized for text-based content and metadata management. For large binary files (images, videos), it is recommended to use the public URL or native Aliyun tools for the actual transfer, while using the agent to manage metadata and listing.
+
+**Q: Does this server handle signature calculation?**
+Yes! The server automatically calculates the required HMAC-SHA1 signature for every request using your provided AccessKey Secret, ensuring secure authorized communication with Aliyun OSS.
+
+
 ## Installation & Usage
 
-To install and use the **Aliyun OSS / 阿里云对象存储** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aliyun-oss](https://vinkius.com/mcp/aliyun-oss)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aliyun OSS / 阿里云对象存储** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aliyun-oss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aliyun OSS / 阿里云对象存储** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aliyun-oss": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

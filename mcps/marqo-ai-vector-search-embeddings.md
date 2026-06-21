@@ -1,7 +1,6 @@
 # Marqo AI (Vector Search & Embeddings) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marqo-ai-vector-search-embeddings)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/marqo-ai-vector-search-embeddings-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/marqo-ai-vector-search-embeddings-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marqo-ai-vector-search-embeddings)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Marqo AI (Vector Searc
 > Document added successfully to 'support-docs'. Marqo has vectorized the content using your configured embedding model. The document is now indexed and immediately available for semantic searches. Your new doc ID is 'marqo-12345'.
 
 
+## ❓ FAQ
+
+**Q: Does Marqo handle the vector embeddings for me through the agent?**
+Yes. Marqo is an end-to-end engine. When you use the `tensor_search` tool, you provide natural language and Marqo handles the model inference and vector extraction under the hood, returning semantically relevant results immediately.
+
+**Q: Can I add new data to a vector index through a conversation?**
+Absolutely. Use the `add_documents` tool by providing a JSON array of your documents. Your agent will synchronize these records into the target index, and they will be searchable via semantic query instantly.
+
+**Q: How do I check the stats of my vector index?**
+The `get_index_stats` tool retrieves critical metrics for a specific index. Your agent will report the document count, memory usage, and configuration details, helping you monitor the health of your vector store.
+
+
 ## Installation & Usage
 
-To install and use the **Marqo AI (Vector Search & Embeddings)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/marqo-ai-vector-search-embeddings](https://vinkius.com/mcp/marqo-ai-vector-search-embeddings)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Marqo AI (Vector Search & Embeddings)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `marqo-ai-vector-search-embeddings` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Marqo AI (Vector Search & Embeddings)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "marqo-ai-vector-search-embeddings": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

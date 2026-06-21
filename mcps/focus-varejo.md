@@ -1,7 +1,6 @@
 # Focus Varejo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/focus-varejo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/focus-varejo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/focus-varejo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/focus-varejo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,55 @@ Here are some examples of how you can interact with the **Focus Varejo** MCP ser
 > Found 12 received NFS-e. Latest: Service from XYZ Company, R$500.00.
 
 
+## ❓ FAQ
+
+**Q: What is NFCom?**
+NFCom (Nota Fiscal de Comunicação) is used for telecommunication services like internet, phone, and TV subscriptions.
+
+**Q: Why should I manifest NF-e?**
+Manifestation confirms that your company acknowledges receiving the goods. Events include Ciência da Operação (210750), Confirmação (210760), and others.
+
+**Q: Can I list all NFS-e received by my company?**
+Yes, use the `list_received_nfse` tool to see all service invoices where your company is the taker (tomador).
+
+**Q: Can I emit an NFC-e offline?**
+Yes, NFC-e allows issuance in offline contingency. Your AI agent can prepare and log the NFC-e locally until the connection is restored, then it will sync via the API.
+
+
 ## Installation & Usage
 
-To install and use the **Focus Varejo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/focus-varejo](https://vinkius.com/mcp/focus-varejo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Focus Varejo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `focus-varejo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Focus Varejo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "focus-varejo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

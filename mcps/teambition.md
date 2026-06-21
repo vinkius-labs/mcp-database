@@ -1,7 +1,6 @@
 # Teambition MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/teambition)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/teambition-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/teambition-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/teambition)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Teambition** MCP serve
 > I've listed the tasks for 'Internal Audit'. There are 8 pending tasks, including 'Inventory check' and 'Compliance review'. Should I filter them by status or assignee?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Teambition App ID and Secret?**
+Log in to the [Teambition Open Platform](https://open.teambition.com/), navigate to the 'Developer Center', and create a new application. Your App ID and App Secret will be generated there.
+
+**Q: Can I assign tasks to specific team members?**
+Yes. When using `create_task` or `update_task`, you can provide an `executorId` to assign the task to a specific user. You can find user IDs using the `list_members` or `list_users` tools.
+
+**Q: Does this server support Kanban stages?**
+Yes. You can use `list_task_groups` to see your project's lists and `list_stages` to see the specific columns (stages) within those groups, allowing you to track exactly where a task is in the workflow.
+
+
 ## Installation & Usage
 
-To install and use the **Teambition** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/teambition](https://vinkius.com/mcp/teambition)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Teambition** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `teambition` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Teambition** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "teambition": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

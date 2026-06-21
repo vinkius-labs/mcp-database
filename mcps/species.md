@@ -1,7 +1,6 @@
 # Species MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/species)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/species-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/species-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/species)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Species** MCP server u
 > For Taxon ID 5231190 (*Monachus monachus*), I have retrieved 3 synonyms and detailed descriptions regarding its habitat and conservation status. Would you like me to summarize the text?
 
 
+## ❓ FAQ
+
+**Q: How can I find the correct scientific name if I only have a common name or a partial name?**
+You can use the `match_species` tool for fuzzy matching against the GBIF Backbone, or `suggest_species` for quick autocomplete suggestions based on a search prefix.
+
+**Q: Is it possible to retrieve images or photos of a specific taxon?**
+Yes! By using the `get_species_media` tool with a valid GBIF Taxon ID, the agent can fetch available images and multimedia records associated with that species.
+
+**Q: Can I explore the classification levels (like Family or Order) for a species?**
+Absolutely. Use `get_species_parents` to see the full higher taxonomy hierarchy, or `get_species_children` to see lower taxonomic ranks within a group.
+
+
 ## Installation & Usage
 
-To install and use the **Species** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/species](https://vinkius.com/mcp/species)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Species** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `species` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Species** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "species": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

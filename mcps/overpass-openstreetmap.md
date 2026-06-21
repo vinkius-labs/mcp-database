@@ -1,7 +1,6 @@
 # Overpass (OpenStreetMap) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/overpass-openstreetmap)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/overpass-openstreetmap-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/overpass-openstreetmap-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/overpass-openstreetmap)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -114,12 +113,55 @@ Here are some examples of how you can interact with the **Overpass (OpenStreetMa
 > Found 45 EV charging stations in downtown SF. Includes Tesla Superchargers, ChargePoint, EVgo and Blink stations. Connector types, charging speeds and access info provided.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! Overpass API is completely free and open. No authentication required. Please be respectful with query sizes — avoid queries returning more than 10,000 elements.
+
+**Q: What is a bounding box?**
+A bounding box defines a geographic area using min_latitude, min_longitude, max_latitude, max_longitude. Example: "40.70,-74.01,40.72,-73.98" covers Lower Manhattan, NYC.
+
+**Q: Can I search near my current location?**
+Yes! Use search_nearby or search_nearby_amenities with your GPS coordinates and a radius in meters (e.g. lat=40.7128, lon=-74.0060, radius=1000 for 1km around NYC).
+
+**Q: What amenities can I search for?**
+Common amenities: restaurant, cafe, fast_food, bar, pub, hospital, clinic, pharmacy, school, university, library, atm, bank, fuel, parking, police, fire_station, post_office, toilets, cinema, theatre, nightclub, museum.
+
+
 ## Installation & Usage
 
-To install and use the **Overpass (OpenStreetMap)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/overpass-openstreetmap](https://vinkius.com/mcp/overpass-openstreetmap)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Overpass (OpenStreetMap)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `overpass-openstreetmap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Overpass (OpenStreetMap)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "overpass-openstreetmap": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

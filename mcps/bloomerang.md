@@ -1,7 +1,6 @@
 # Bloomerang MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bloomerang)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bloomerang-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bloomerang-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bloomerang)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Bloomerang** MCP serve
 > I've found the 5 most recent transactions. Notable entries include a $500 donation from Alice Johnson and a $1,000 pledge payment from the Global Foundation.
 
 
+## ❓ FAQ
+
+**Q: Can I check the total donation history for a specific donor?**
+Yes! Use the `get_constituent` tool with the Constituent ID to see their core profile, and use `list_transactions` to audit their individual gifts and pledges recorded in Bloomerang.
+
+**Q: How do I list all active fundraising campaigns?**
+Simply ask the agent to `list_campaigns`. It will retrieve all fundraising campaigns configured in your Bloomerang CRM for your review.
+
+**Q: Does the integration allow creating new donation transactions?**
+Currently, the toolset focuses on querying and auditing (listing constituents, checking transactions). For processing active payments and creating complex financial records, we recommend using the Bloomerang web interface or official forms.
+
+
 ## Installation & Usage
 
-To install and use the **Bloomerang** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bloomerang](https://vinkius.com/mcp/bloomerang)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bloomerang** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bloomerang` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bloomerang** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bloomerang": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Electricity Maps Carbon Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/electricity-maps-carbon-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/electricity-maps-carbon-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/electricity-maps-carbon-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/electricity-maps-carbon-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -55,12 +54,46 @@ Here are some examples of how you can interact with the **Electricity Maps Carbo
 > Retrieving data for France (FR)... The French grid is currently powered primarily by nuclear energy, followed by wind and hydro. The current carbon intensity is quite low at 45 gCO2eq/kWh. Would you like to see the exact MW breakdown?
 
 
+## ❓ FAQ
+
+**Q: Can I check the carbon intensity in Brazil?**
+Yes! Use the `get_carbon_intensity` tool with the zone code 'BR'. It will return the latest gCO2eq/kWh for the Brazilian grid.
+
+
 ## Installation & Usage
 
-To install and use the **Electricity Maps Carbon Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/electricity-maps-carbon-intelligence](https://vinkius.com/mcp/electricity-maps-carbon-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Electricity Maps Carbon Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `electricity-maps-carbon-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Electricity Maps Carbon Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "electricity-maps-carbon-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Notion MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/notion-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/notion-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/notion-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/notion-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -106,12 +105,55 @@ Here are some examples of how you can interact with the **Notion** MCP server us
 > Done! I've created a new page 'Review PR #234' in your Task Tracker database with status set to 'To Do'. The page URL is notion.so/your-workspace/... You can add more properties or blocks to it anytime.
 
 
+## ❓ FAQ
+
+**Q: How do I create a Notion Internal Integration Token?**
+Go to [**Notion Integrations**](https://www.notion.so/my-integrations), click **+ New integration**, give it a name, select the workspace and click **Submit**. Copy the **Internal Integration Secret** (starts with `ntn_`). Then, open any page or database in Notion, click **...** > **Add connections** and select your integration to grant access.
+
+**Q: Why can't the integration see my pages?**
+Notion integrations only have access to pages and databases you explicitly share with them. Open any page, click **...** (top-right) > **Add connections**, and select your integration. The integration will then have access to that page and all its children. Use the `search` tool to discover accessible content.
+
+**Q: Can I create new pages in a database?**
+Yes! Use `create_database_row` with the database ID and a properties JSON object. First use `get_database` to see the property schema (column names and types). Properties follow Notion's format: {"Name":{"title":[{"text":{"content":"My Page"}}]},"Status":{"select":{"name":"Done"}}}.
+
+**Q: Can I read and append page content?**
+Yes! Use `get_page_blocks` with a page ID to read all block children (paragraphs, headings, lists, etc.). Use `append_block` to add new blocks — provide the page ID and a JSON array of block objects following Notion's block schema.
+
+
 ## Installation & Usage
 
-To install and use the **Notion** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/notion-alternative](https://vinkius.com/mcp/notion-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Notion** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `notion-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Notion** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "notion-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

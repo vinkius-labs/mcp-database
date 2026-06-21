@@ -1,7 +1,6 @@
 # Cordial MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cordial)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cordial-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cordial-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cordial)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Cordial** MCP server u
 > The 'Active Customers' segment currently contains 45,600 contacts. It grew by 150 contacts in the last 24 hours. Would you like a breakdown by geographic region?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Cordial API Key?**
+Log in to your Cordial account, go to **Settings > API Keys**, and create a new key. Ensure you have the necessary permissions to manage contacts and messages.
+
+**Q: Can the agent trigger batch campaigns?**
+This integration currently focuses on listing and monitoring campaigns. To trigger sends, you should use the Cordial dashboard or specific automation workflows.
+
+**Q: What profile attributes can the agent update?**
+The agent can update any custom attributes defined in your Cordial schema, as well as channel subscription preferences, as long as the API Key has write access.
+
+
 ## Installation & Usage
 
-To install and use the **Cordial** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cordial](https://vinkius.com/mcp/cordial)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cordial** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cordial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cordial** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cordial": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

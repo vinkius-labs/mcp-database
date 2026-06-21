@@ -1,7 +1,6 @@
 # Open Food Facts API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-food-facts-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-food-facts-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-food-facts-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-food-facts-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Open Food Facts API** 
 > I've scanned the category catalog! There are thousands of groups available, including 'beverages', 'dairies', and 'snacks'. I can help you search for specific products in any of these thematic clusters.
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for Open Food Facts API?**
+No. Open Food Facts is a free and open database. This server works out of the box without any static credentials required.
+
+**Q: Can the agent look up international products?**
+Yes. Open Food Facts is a global database covering millions of food products from around the world using the same API metadata.
+
+**Q: What is the Nutri-Score?**
+It is a nutrition label that converts the nutritional value of products into a simple code of 5 colors and letters (A to E).
+
+
 ## Installation & Usage
 
-To install and use the **Open Food Facts API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/open-food-facts-api](https://vinkius.com/mcp/open-food-facts-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Open Food Facts API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `open-food-facts-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Open Food Facts API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "open-food-facts-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

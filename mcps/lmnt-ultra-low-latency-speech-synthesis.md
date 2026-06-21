@@ -1,7 +1,6 @@
 # LMNT (Ultra-low Latency Speech Synthesis) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lmnt-ultra-low-latency-speech-synthesis)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lmnt-ultra-low-latency-speech-synthesis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lmnt-ultra-low-latency-speech-synthesis-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lmnt-ultra-low-latency-speech-synthesis)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **LMNT (Ultra-low Latenc
 > Your account is currently on the 'Pro' plan. You have used 45,000 characters out of your 1,000,000 monthly limit. Your next billing cycle resets in 12 days.
 
 
+## ❓ FAQ
+
+**Q: Can I choose different audio formats like MP3 or WAV?**
+Yes. The `generate_speech` tool allows you to specify formats like mp3, wav, or mulaw, along with custom sample rates to fit your application's needs.
+
+**Q: How do I create a new voice clone?**
+Use the `create_voice` tool by providing a name and a base64-encoded audio sample. The system will process the file and return a new Voice ID for immediate use.
+
+**Q: How can I check how many characters I have left in my plan?**
+Run the `get_account` tool. It returns your current usage metrics and plan details directly from the LMNT API.
+
+
 ## Installation & Usage
 
-To install and use the **LMNT (Ultra-low Latency Speech Synthesis)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lmnt-ultra-low-latency-speech-synthesis](https://vinkius.com/mcp/lmnt-ultra-low-latency-speech-synthesis)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LMNT (Ultra-low Latency Speech Synthesis)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lmnt-ultra-low-latency-speech-synthesis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LMNT (Ultra-low Latency Speech Synthesis)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lmnt-ultra-low-latency-speech-synthesis": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

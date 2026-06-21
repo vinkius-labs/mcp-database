@@ -1,7 +1,6 @@
 # Bitquery (Web3 Blockchain GraphQL APIs) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bitquery-web3-blockchain-graphql-apis)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bitquery-web3-blockchain-graphql-apis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bitquery-web3-blockchain-graphql-apis-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bitquery-web3-blockchain-graphql-apis)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Bitquery (Web3 Blockch
 > I have successfully generated a new OAuth2 token using `generate_token`. You can now use this Bearer token for your subsequent GraphQL queries. Remember to keep this token secure.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between query_v1 and query_v2?**
+Use `query_v1` for historical data across 40+ legacy and non-EVM chains (like Bitcoin). Use `query_v2` for real-time streaming and advanced filtering on EVM chains and Solana, supporting complex joins like 'joinCalls'.
+
+**Q: How do I obtain an access token if I only have a Client ID and Secret?**
+You can use the `generate_token` tool. Provide your Bitquery Client ID and Secret, and the tool will return a Bearer token that you can use as your `BITQUERY_ACCESS_TOKEN` credential.
+
+**Q: Can I query data from multiple regions?**
+Yes. Both `query_v1` and `query_v2` support an optional `region` parameter. You can choose between 'global', 'asia', or 'us' to optimize latency based on your location.
+
+
 ## Installation & Usage
 
-To install and use the **Bitquery (Web3 Blockchain GraphQL APIs)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bitquery-web3-blockchain-graphql-apis](https://vinkius.com/mcp/bitquery-web3-blockchain-graphql-apis)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bitquery (Web3 Blockchain GraphQL APIs)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bitquery-web3-blockchain-graphql-apis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bitquery (Web3 Blockchain GraphQL APIs)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bitquery-web3-blockchain-graphql-apis": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

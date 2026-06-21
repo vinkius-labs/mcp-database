@@ -1,7 +1,6 @@
 # Zendesk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zendesk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zendesk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zendesk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zendesk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Zendesk** MCP server u
 > User ID 123456789 found: Name: John Doe, Email: john@example.com, Role: End-user, Organization: Acme Corp. He has 3 active tickets. Would you like me to list them for you?
 
 
+## ❓ FAQ
+
+**Q: Can I search for tickets with specific tags through the agent?**
+Yes. The `search_tickets` tool supports the full Zendesk advanced search syntax. You can search by tags, status, type, and more (e.g., `tags:billing status:pending`), making it easy to perform complex filtering via chat.
+
+**Q: How do I see the latest comments on a specific support ticket?**
+You can use the `get_ticket` tool. Provide the unique numeric ticket ID, and your agent will return the full metadata, including the ticket description and the most recent public or internal comments.
+
+**Q: Is it possible to see all my available support macros via chat?**
+Absolutely. Use the `list_macros` tool to retrieve a list of all active support macros (canned responses) configured in your Zendesk account, helping you verify your team's standard reply templates.
+
+
 ## Installation & Usage
 
-To install and use the **Zendesk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zendesk](https://vinkius.com/mcp/zendesk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zendesk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zendesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zendesk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zendesk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Freightview MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freightview)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freightview-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freightview-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freightview)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **Freightview** MCP serv
 > Retrieving carriers... You have 12 connected carriers, including 'Old Dominion', 'FedEx Freight', and 'XPO Logistics'. Would you like the contact details for any of them?
 
 
+## ❓ FAQ
+
+**Q: How do I get my API Keys for Freightview?**
+Log in to your Freightview account, click your Company Name, then go to Account Settings > API Keys to find your User and Account keys.
+
+**Q: Can I request live rates for a new shipment?**
+Yes! Use the 'request_rates' tool and provide the origin and destination zip codes. The agent will retrieve quotes from all your connected carriers.
+
+**Q: How do I check the current status of an active shipment?**
+Use the 'get_shipment_details' tool and provide the Shipment ID. The agent will return the most recent tracking metadata and location history.
+
+**Q: Can I see a list of all my connected carriers?**
+Yes! The 'list_connected_carriers' tool retrieves all carrier accounts currently linked to your Freightview platform.
+
+
 ## Installation & Usage
 
-To install and use the **Freightview** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/freightview](https://vinkius.com/mcp/freightview)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Freightview** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `freightview` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Freightview** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "freightview": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

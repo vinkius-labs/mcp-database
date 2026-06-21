@@ -1,7 +1,6 @@
 # RCSB PDB MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rcsb-pdb)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rcsb-pdb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rcsb-pdb-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rcsb-pdb)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **RCSB PDB** MCP server 
 > Found 10 ribosome structures determined by Cryo-EM. Highlights: Human 80S ribosome (PDB 4UG0) at 3.6 Å resolution — the molecular machine that translates mRNA into proteins. Also found: E. coli 70S ribosome with antibiotics bound (critical for understanding antibiotic mechanisms), and mitochondrial ribosome structures.
 
 
+## ❓ FAQ
+
+**Q: What experimental methods are represented in the PDB?**
+The PDB contains structures determined by four main methods: X-ray Crystallography (85% of entries, atomic resolution), Cryo-EM (rapidly growing, now 15%+ of new deposits), NMR Spectroscopy (solution-state structures), and Neutron Diffraction (hydrogen atom positions). Each entry lists its method and resolution.
+
+**Q: Do I need authentication to access PDB data?**
+No. RCSB PDB is completely free and open — funded by NSF, NIH, DOE, and international partners. All 220K+ structures are openly accessible without any registration or API key. The data is licensed under CC0 (public domain).
+
+**Q: What information does each PDB entry contain?**
+Each entry includes: PDB ID (4-character code), structure title, depositing authors, experimental method, resolution in Ångströms, source organism, release date, number of polymer chains, and bound non-polymer ligands (drugs, cofactors, ions). Higher resolution (lower number) means more precise atomic coordinates.
+
+
 ## Installation & Usage
 
-To install and use the **RCSB PDB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rcsb-pdb](https://vinkius.com/mcp/rcsb-pdb)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **RCSB PDB** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rcsb-pdb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **RCSB PDB** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rcsb-pdb": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

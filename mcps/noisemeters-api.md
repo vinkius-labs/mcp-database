@@ -1,7 +1,6 @@
 # NoiseMeters API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/noisemeters-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/noisemeters-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/noisemeters-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/noisemeters-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **NoiseMeters API** MCP 
 > I've identified the measurements for that instrument! There were 24 entries recorded since May 1st. I can assist you with an audit of the peak sound intensity and duration markers if you'd like.
 
 
+## ❓ FAQ
+
+**Q: How do I find my NoiseMeters API Key?**
+Log in to your [**NoiseMeters dashboard**](https://api.noisemeters.com/), and you will find your API Key under your account or integrations section. Copy and paste it below.
+
+**Q: Does it support real-time sound levels?**
+Yes. The `get_live_noise_data` tool provides the most recent decibel measurement received from the specified instrument ID.
+
+**Q: Can the agent list my monitoring instruments?**
+Yes. The `list_noise_instruments` tool retrieves all noise monitoring devices registered in your account with their unique identifiers and names.
+
+
 ## Installation & Usage
 
-To install and use the **NoiseMeters API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/noisemeters-api](https://vinkius.com/mcp/noisemeters-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NoiseMeters API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `noisemeters-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NoiseMeters API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "noisemeters-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

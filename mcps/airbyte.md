@@ -1,7 +1,6 @@
 # Airbyte MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airbyte)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/airbyte-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/airbyte-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airbyte)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Airbyte** MCP server u
 > I found 2 active connections reading from your Stripe source (ID: ...9ff). The first one syncs billing data to Snowflake every 10 minutes. The second pushes invoice records to an S3 log bucket daily.
 
 
+## ❓ FAQ
+
+**Q: Does this work with Airbyte Cloud and Self-Hosted Enterprise instances?**
+Yes. You are required to pass the URL parameter during setup. You can use 'https://api.airbyte.com/v1' for Airbyte Cloud, or point it directly to your private self-hosted API endpoint hostname.
+
+**Q: Can the agent create new connections or trigger sync jobs automatically?**
+Currently, this core MCP exposes read-only tools designed to safely list, track, and monitor your infrastructure without accidentally mutating mission-critical data warehouse state during conversational usage.
+
+**Q: How do I find a specific Connection ID to check its jobs?**
+Simply ask the agent to run the list connections tool first! It will output all active connections alongside their UUIDs, which you can then ask the agent to dive deeper into.
+
+
 ## Installation & Usage
 
-To install and use the **Airbyte** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/airbyte](https://vinkius.com/mcp/airbyte)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Airbyte** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `airbyte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Airbyte** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "airbyte": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

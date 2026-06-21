@@ -1,7 +1,6 @@
 # Epsilon3 Aerospace Operations MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epsilon3-aerospace-operations)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/epsilon3-aerospace-operations-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/epsilon3-aerospace-operations-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epsilon3-aerospace-operations)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Epsilon3 Aerospace Ope
 > Yes, 2 issues were flagged today: 'Sensor Calibration Delay' (Severity: Low) during Run #105 and 'Pressure Variance' (Severity: Medium) during Run #108. Would you like the operator comments for the Pressure Variance issue?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Epsilon3 API Key?**
+Log in to your Epsilon3 account, navigate to **Settings > API**, and you can generate or retrieve your unique **API Key** from there. Ensure you have the appropriate organizational permissions.
+
+**Q: Can the agent start a procedure run?**
+This integration currently focuses on listing and auditing procedures and runs. Starting or completing high-stakes operational procedures should be performed via the Epsilon3 execution interface to ensure safety and compliance.
+
+**Q: Does the integration show real-time telemetry?**
+Yes, you can use the get_run_execution_telemetry tool to retrieve the latest recorded inputs and progress for any active procedure run.
+
+
 ## Installation & Usage
 
-To install and use the **Epsilon3 Aerospace Operations** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/epsilon3-aerospace-operations](https://vinkius.com/mcp/epsilon3-aerospace-operations)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Epsilon3 Aerospace Operations** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `epsilon3-aerospace-operations` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Epsilon3 Aerospace Operations** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "epsilon3-aerospace-operations": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

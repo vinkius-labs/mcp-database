@@ -1,7 +1,6 @@
 # Xweather Renewable MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xweather-renewable)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/xweather-renewable-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/xweather-renewable-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xweather-renewable)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -109,12 +108,55 @@ Here are some examples of how you can interact with the **Xweather Renewable** M
 > Fetching historical solar irradiance for 34.05, -118.24 (Los Angeles area)... Monthly average GHI: 245 W/m², Peak daily GHI: 920 W/m² (clearest day), Average DNI: 680 W/m², Average DHI: 145 W/m². The site showed strong solar resource last month with 26 clear days and 4 partially cloudy days. Excellent PV generation conditions overall.
 
 
+## ❓ FAQ
+
+**Q: What weather and renewable energy data is available through the Xweather API?**
+The Xweather API provides: current conditions (temperature, humidity, wind, pressure, solar radiation), forecasts up to 15 days, historical weather observations, solar irradiance data (GHI, DNI, DHI) for PV assessment, wind speed/direction measurements, renewable energy farm power output data for US/Canada sites, weather alerts and advisories, and location search capabilities.
+
+**Q: How do I get Xweather API credentials (Client ID and Client Secret)?**
+Visit https://www.xweather.com/ and sign up for an Xweather Flex subscription. Once your account is provisioned, navigate to your developer dashboard to create an application and obtain your Client ID and Client Secret. These credentials authenticate your API requests and are tied to your subscription plan. The Renewables Add-on is required for energy farm data access.
+
+**Q: What location formats are supported for weather queries?**
+The API accepts multiple location formats: city names (e.g., 'Chicago,IL'), latitude/longitude coordinates (e.g., '41.88,-87.63'), weather station IDs, postal codes, and ICAO airport codes. You can also use the searchPlaces tool to find valid location identifiers or the getClosestStation tool to find the nearest weather station to any coordinates.
+
+**Q: How far ahead can the Xweather forecast predict?**
+Xweather provides detailed weather forecasts up to 15 days ahead. Short-term forecasts (1-7 days) are the most accurate, with gradually decreasing accuracy for longer horizons. The forecast includes temperature, weather conditions, wind, precipitation, and solar radiation data — all essential for renewable energy production planning.
+
+
 ## Installation & Usage
 
-To install and use the **Xweather Renewable** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/xweather-renewable](https://vinkius.com/mcp/xweather-renewable)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Xweather Renewable** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `xweather-renewable` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Xweather Renewable** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "xweather-renewable": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

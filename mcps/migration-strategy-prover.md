@@ -1,7 +1,6 @@
 # Migration Strategy Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/migration-strategy-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/migration-strategy-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/migration-strategy-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/migration-strategy-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Migration Strategy Pro
 > ROLLBACK_UNDEFINED — Risk assessment passes (dependencies mapped, blast radius identified). But rollback fails: 'we can always roll back to the monolith' is not a plan. When you extract 5 services, the monolith's database schema has diverged. The message queue has new topics. The third-party integrations now call service endpoints, not monolith routes. Define: (1) what specific metric triggers rollback, (2) how you re-converge diverged schemas, (3) how you handle data written to new service databases, (4) rollback timeline. Also: DATA_INTEGRITY_UNPROVEN — 'validate after' means finding corruption in production instead of preventing it.
 
 
+## ❓ FAQ
+
+**Q: Does it execute migrations?**
+No. It validates that your migration plan covers risk assessment, rollback, data integrity, cutover, and stakeholder alignment. It does not run scripts or move data — it forces you to prove the plan survives a production failure.
+
+**Q: What is the Strangler Fig pattern?**
+A migration strategy where you incrementally replace parts of the old system with the new one, routing traffic gradually until the old system handles zero requests. Named after strangler fig trees that grow around a host tree until it dies. It reduces blast radius because you migrate one capability at a time, with rollback at each stage.
+
+**Q: Can it validate cloud-to-cloud migrations?**
+Yes. The 5 pivots apply to any migration: database, cloud provider, monolith-to-microservices, CMS, or data warehouse. Risk assessment maps provider-specific dependencies (IAM, networking, managed services). Data integrity addresses format differences. Cutover handles DNS, CDN, and traffic shifting. The framework is migration-type agnostic.
+
+
 ## Installation & Usage
 
-To install and use the **Migration Strategy Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/migration-strategy-prover](https://vinkius.com/mcp/migration-strategy-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Migration Strategy Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `migration-strategy-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Migration Strategy Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "migration-strategy-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

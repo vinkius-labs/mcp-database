@@ -1,7 +1,6 @@
 # CRC32 Checksum Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crc32-checksum-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/crc32-checksum-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/crc32-checksum-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crc32-checksum-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **CRC32 Checksum Engine*
 > CRC32 hex: 5E9F3A21 | Append as 4-byte FCS trailer.
 
 
+## ❓ FAQ
+
+**Q: When would I use CRC32 instead of SHA-256?**
+CRC32 is for error detection (data integrity), not security. It's orders of magnitude faster than SHA-256. Use it for file validation, network checksums, and format compliance. Use SHA-256 for cryptographic security.
+
+**Q: Which output format should I use?**
+Hex (0xCBF43926) for file format headers and network protocols. Unsigned integer for database storage. Signed integer for C/Java compatibility.
+
+**Q: Is this the same CRC32 used in ZIP files?**
+Yes. CRC-32/ISO-HDLC — the exact same polynomial and algorithm used by ZIP, gzip, PNG, and Ethernet. Results match byte-for-byte.
+
+
 ## Installation & Usage
 
-To install and use the **CRC32 Checksum Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/crc32-checksum-engine](https://vinkius.com/mcp/crc32-checksum-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CRC32 Checksum Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `crc32-checksum-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CRC32 Checksum Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "crc32-checksum-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

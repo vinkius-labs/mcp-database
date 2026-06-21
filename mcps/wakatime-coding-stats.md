@@ -1,7 +1,6 @@
 # WakaTime (Coding Stats) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wakatime-coding-stats)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wakatime-coding-stats-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wakatime-coding-stats-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wakatime-coding-stats)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **WakaTime (Coding Stats
 > Yesterday, you logged 5 hours and 30 minutes of coding activity. You worked on 3 projects: 'API-Gateway' (3h), 'Frontend-App' (2h), and 'Documentation' (30m).
 
 
+## ❓ FAQ
+
+**Q: Can I get a summary of my coding activity for the last week?**
+Yes! Use the `get_stats` tool with the range 'last_7_days'. Your agent will return aggregated data including total time, languages used, and project breakdown.
+
+**Q: How do I check my progress on my coding goals?**
+Run the `list_goals` tool to see all your active goals and their current completion percentage. You can also use `get_goal` with a specific ID for deeper details.
+
+**Q: Can I see which projects I've been working on?**
+Yes, the `list_projects` tool will return a list of all projects detected by your WakaTime plugins. You can then use `list_summaries` to see time spent on them.
+
+
 ## Installation & Usage
 
-To install and use the **WakaTime (Coding Stats)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wakatime-coding-stats](https://vinkius.com/mcp/wakatime-coding-stats)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WakaTime (Coding Stats)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wakatime-coding-stats` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WakaTime (Coding Stats)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wakatime-coding-stats": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

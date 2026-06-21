@@ -1,7 +1,6 @@
 # GRACE Score Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grace-score-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grace-score-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grace-score-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grace-score-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **GRACE Score Calculator
 > The core calculation relies on inputting vitals like SBP, HR, and lab results (creatinine/troponin) via `calculate_grace_score` to generate the initial score.
 
 
+## ❓ FAQ
+
+**Q: What inputs are required for the GRACE score calculation?**
+The `calculate_grace_score` tool requires nine key parameters: age, heart rate, systolic blood pressure, potassium, creatinine, Killip class, cardiac arrest status, ST deviation, and enzyme elevation. Providing accurate data for all fields is critical for an accurate score.
+
+**Q: Does the tool provide more than just a numerical score?**
+No. The system uses `get_risk_category` to translate the raw score into an actionable risk category (Low, Intermediate, High), providing immediate clinical recommendations and estimated mortality ranges for both hospital stay and six months post-discharge.
+
+**Q: Is this tool suitable for all patients with chest pain?**
+The GRACE score is designed specifically for Acute Coronary Syndrome (ACS) patients. While the `calculate_grace_score` tool can accept general vital signs, clinical interpretation must be done by a qualified medical professional.
+
+
 ## Installation & Usage
 
-To install and use the **GRACE Score Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/grace-score-calculator](https://vinkius.com/mcp/grace-score-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GRACE Score Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `grace-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GRACE Score Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "grace-score-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

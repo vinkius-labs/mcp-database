@@ -1,7 +1,6 @@
 # AirOps MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airops)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/airops-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/airops-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airops)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **AirOps** MCP server us
 > I've searched the 'Knowledge Base' memory store. I found 2 relevant document snippets discussing REST API authentication and Webhook setup. Would you like me to summarize these guides for you?
 
 
+## ❓ FAQ
+
+**Q: How do I find my AirOps API Key?**
+Log in to your AirOps account, navigate to **Workspace Settings**, and look for the **API Keys** section. You can generate and copy your secure bearer token there.
+
+**Q: What is the difference between synchronous and asynchronous execution?**
+Synchronous execution (`execute_workflow_sync`) keeps the connection open until the AI finishes. Asynchronous (`execute_workflow_async`) returns an ID immediately, allowing you to check the status later, which is better for long-running tasks.
+
+**Q: Can I search through my uploaded documents?**
+Yes! Use the `search_memory_store` tool. It performs a semantic search across your managed memory stores, returning the most relevant document chunks for your query.
+
+
 ## Installation & Usage
 
-To install and use the **AirOps** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/airops](https://vinkius.com/mcp/airops)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AirOps** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `airops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AirOps** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "airops": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

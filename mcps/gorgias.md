@@ -1,7 +1,6 @@
 # Gorgias MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gorgias)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gorgias-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gorgias-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gorgias)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Would you like me to read the messages for Ticket #1042?
 Yes, I found a matching profile. Customer ID: 90210. Alex Smith currently has 2 resolved past tickets and 0 active issues.
 
 
+## ❓ FAQ
+
+**Q: Can I add an internal note to a ticket instead of replying to the customer?**
+Yes! When using the `create_message` tool, you can specify the channel as 'internal-note'. This allows the AI agent to leave insights or summaries for other human agents to read.
+
+**Q: How do I find a customer's recent tickets?**
+First, use `list_customers` with their email address to find their Customer ID. Then, you can use `list_tickets` or ask the AI to summarize their interaction history.
+
+**Q: Can the AI resolve tickets for me?**
+Yes. The agent can use the `update_ticket` tool to change the status of a ticket to 'closed' once an issue is verified as resolved.
+
+
 ## Installation & Usage
 
-To install and use the **Gorgias** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gorgias](https://vinkius.com/mcp/gorgias)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gorgias** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gorgias` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gorgias** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gorgias": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

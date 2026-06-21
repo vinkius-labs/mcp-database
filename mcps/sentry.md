@@ -1,7 +1,6 @@
 # Sentry MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sentry)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sentry-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sentry-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sentry)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Sentry** MCP server us
 > Got it. I've initiated an asynchronous payload signaling tool `resolve_issue` applied effectively corresponding to your specified ID within the active ecosystem. Subsequent polling shows this entity has correctly adopted the formal status value: 'RESOLVED'. Sentry charts will stop screaming out and notifying on channel hooks.
 
 
+## ❓ FAQ
+
+**Q: Can this AI integration actually mark errors as fixed?**
+Yes. This agent component possesses mutable write access. If you invoke the prompt properly, it will fire the `resolve_issue` tool, marking the corresponding exception ID completely dealt with inside the Sentry ecosystem. It can also erase bugs fully via `delete_issue`.
+
+**Q: What is the difference between inspecting an 'Issue' and an 'Event'?**
+An 'Issue' gathers underlying multiple occurrences of the identical stack exception into one overarching master group. In contrast, querying an 'Event' (`get_event_details`) focuses the AI on a strictly singular, point-in-time incidence where the system crashed.
+
+**Q: Do I need to supply the Organization Slug with every command?**
+You configure the overarching Organization Slug strictly at startup globally. For project-level filters, let your LLM query `list_projects` first to fetch internal slugs naturally into its memory buffer without constant repeated user inputs.
+
+
 ## Installation & Usage
 
-To install and use the **Sentry** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sentry](https://vinkius.com/mcp/sentry)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sentry** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sentry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sentry** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sentry": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

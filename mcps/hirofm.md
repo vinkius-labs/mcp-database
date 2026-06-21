@@ -1,7 +1,6 @@
 # Hiro.fm MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hirofm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hirofm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hirofm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hirofm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Hiro.fm** MCP server u
 > Episode 'Welcome Session' has been successfully added to your show. Your listeners will be able to stream it through their private feed immediately.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Hiro.fm API Key?**
+Log in to your Hiro.fm creator account, navigate to **Creator Settings** > **Integrations**, and copy your Bearer Token.
+
+**Q: Can I grant access to multiple shows?**
+Yes, you can use the `grant_access` tool multiple times for different `show_id` values to give a contact access to several podcasts.
+
+**Q: Does it support adding audio from URLs?**
+Yes, the `add_audio` tool requires a direct media URL to the audio file you want to add as a new episode.
+
+
 ## Installation & Usage
 
-To install and use the **Hiro.fm** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hirofm](https://vinkius.com/mcp/hirofm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hiro.fm** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hirofm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hiro.fm** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hirofm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

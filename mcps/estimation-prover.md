@@ -1,7 +1,6 @@
 # Estimation Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/estimation-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/estimation-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/estimation-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/estimation-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Estimation Prover** MC
 > Verdict: NO_BUFFER. You have omitted a contingency buffer. Even if requirements seem simple, SQLite sync conflicts are an identified risk. Apply a minimum 20% buffer to account for integration delays.
 
 
+## ❓ FAQ
+
+**Q: How does Estimation Prover validate an estimate?**
+It analyzes the inputs based on a 5-pivot validation. You provide the task decomposition, risk mapping, historical context, buffer metrics, and assumptions. It rejects single-line guesses or projects without buffers.
+
+**Q: What is the recommended buffer size?**
+The tool enforces a minimum 20% buffer on projects with clear precedents, and increases to 40% or more for complex integrations, new frameworks, or systems with high architectural risk.
+
+**Q: How does Reference Class Forecasting work here?**
+It forces you to compare the new project with similar work completed in the past. If your past authentication integration took 3 weeks instead of the planned 1 week, you must adjust the new estimate's baseline accordingly.
+
+
 ## Installation & Usage
 
-To install and use the **Estimation Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/estimation-prover](https://vinkius.com/mcp/estimation-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Estimation Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `estimation-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Estimation Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "estimation-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

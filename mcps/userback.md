@@ -1,7 +1,6 @@
 # Userback MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/userback)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/userback-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/userback-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/userback)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Userback** MCP server 
 > Success! The suggestion 'Add dark mode support' has been created for project 10293 (ID: fb_99023). I've added your notes and it is now visible in your dashboard.
 
 
+## ❓ FAQ
+
+**Q: Can I filter feedback by project ID?**
+Yes! Use the `list_feedbacks` tool and provide the optional `project_id` parameter to retrieve entries only for that specific project.
+
+**Q: How do I see the comments on a specific feedback item?**
+Run the `get_feedback_details` query with the unique Feedback ID. Your agent will retrieve the complete metadata, including any internal or user comments.
+
+**Q: Is it possible to create a new bug report via AI?**
+Absolutely. Use the `create_feedback_entry` action. Provide the Project ID, a title, and an optional comment to log a new entry in your Userback account.
+
+
 ## Installation & Usage
 
-To install and use the **Userback** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/userback](https://vinkius.com/mcp/userback)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Userback** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `userback` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Userback** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "userback": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

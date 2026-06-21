@@ -1,7 +1,6 @@
 # Apex Legends MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apex-legends)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apex-legends-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apex-legends-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apex-legends)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Apex Legends** MCP ser
 > Accessing the leaderboard... The top 5 Wraith players globally are: 1. PlayerA (210k kills), 2. PlayerB (195k kills), 3. PlayerC (188k kills), 4. PlayerD (182k kills), 5. PlayerE (175k kills).
 
 
+## ❓ FAQ
+
+**Q: How can I check if the Apex Legends servers are currently down?**
+You can use the `get_server_status` tool. It provides real-time connectivity data for various regions and platforms to confirm if there are any ongoing outages.
+
+**Q: Is it possible to see how many points I need to reach Apex Predator rank?**
+Yes! The `get_predator_requirements` tool returns the current RP/AP threshold required to enter the top 750 (Predator) rank on each platform.
+
+**Q: Can I track my match history automatically?**
+You can use `get_match_history` for recent data or `manage_legacy_match_history` to add your UID to the tracking system. Note that some tracking features require periodic bridge requests.
+
+
 ## Installation & Usage
 
-To install and use the **Apex Legends** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/apex-legends](https://vinkius.com/mcp/apex-legends)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Apex Legends** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `apex-legends` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Apex Legends** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "apex-legends": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

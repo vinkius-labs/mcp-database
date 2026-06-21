@@ -1,7 +1,6 @@
 # MusicBrainz MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/musicbrainz-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/musicbrainz-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/musicbrainz-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/musicbrainz-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **MusicBrainz** MCP serv
 > The ISRC USRC10301589 corresponds to the recording 'Seven Nation Army' by The White Stripes. It appears on the album 'Elephant' and has a duration of approximately 3:51.
 
 
+## ❓ FAQ
+
+**Q: How do I search for a specific artist if I don't have their MBID?**
+Use the `search_entities` tool. Set the `entity_type` to 'artist' and provide the name in the `query` field. The agent will return a list of matches with their respective MBIDs.
+
+**Q: Can I see all the recordings (songs) on a specific album?**
+Yes! Use the `lookup_entity` tool with the release MBID and include 'recordings' in the `inc` parameter. This will fetch the full tracklist and metadata for that release.
+
+**Q: Do I need an account to search the database?**
+No. Searching and looking up data only requires a `MUSICBRAINZ_USER_AGENT`. An Access Token is only needed for actions like `submit_tags`, `submit_ratings`, or `add_collection_items`.
+
+
 ## Installation & Usage
 
-To install and use the **MusicBrainz** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/musicbrainz-alternative](https://vinkius.com/mcp/musicbrainz-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MusicBrainz** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `musicbrainz-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MusicBrainz** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "musicbrainz-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

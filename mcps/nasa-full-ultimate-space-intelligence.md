@@ -1,7 +1,6 @@
 # NASA Full — Ultimate Space Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-full-ultimate-space-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nasa-full-ultimate-space-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nasa-full-ultimate-space-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-full-ultimate-space-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -156,12 +155,52 @@ Here are some examples of how you can interact with the **NASA Full — Ultimate
 > I retrieved the APOD for November 22, 2023, titled 'M31: The Andromeda Galaxy'. It's a stunning high-resolution mosaic showing the entire galaxy, dust lanes, and its two small satellite galaxies.
 
 
+## ❓ FAQ
+
+**Q: Why Full instead of individual servers?**
+The Full server has **all 32+ tools** from 10 NASA data sources. Query APOD AND asteroids AND Mars AND solar flares AND exoplanets in a single session. One API key covers everything.
+
+**Q: How many exoplanets does the API track?**
+The Exoplanet Archive API tracks over 5,700 confirmed exoplanets, including their detailed physical characteristics, orbital data, and habitable zone status.
+
+**Q: Does this include the Astronomy Picture of the Day (APOD)?**
+Yes, the Full server includes complete access to APOD, allowing you to get today's image, search by specific dates, or retrieve a random selection of breathtaking astronomy pictures.
+
+
 ## Installation & Usage
 
-To install and use the **NASA Full — Ultimate Space Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nasa-full-ultimate-space-intelligence](https://vinkius.com/mcp/nasa-full-ultimate-space-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NASA Full — Ultimate Space Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nasa-full-ultimate-space-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NASA Full — Ultimate Space Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nasa-full-ultimate-space-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

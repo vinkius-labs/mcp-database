@@ -1,7 +1,6 @@
 # Gatus (Health Dashboard) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gatus-health-dashboard)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gatus-health-dashboard-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gatus-health-dashboard-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gatus-health-dashboard)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Gatus (Health Dashboar
 > Fetching stats for 'database-service'... Average latency is 12ms, with a 99th percentile of 85ms. There have been 0 failures in the last 500 requests.
 
 
+## ❓ FAQ
+
+**Q: Can I see the status of all my services at once?**
+Yes! Use the `list_endpoints` tool to retrieve a complete list of all configured endpoints and their current health status across your Gatus instance.
+
+**Q: How do I check the performance history of a specific service?**
+You can use `get_endpoint_stats` with the endpoint's slugified key to see detailed performance statistics, or `get_endpoint_health` for recent health check results.
+
+**Q: Does this server provide raw metrics for analysis?**
+Yes, the `get_metrics` tool retrieves raw Prometheus-compatible metrics exported by Gatus, allowing your AI to perform deep technical analysis.
+
+
 ## Installation & Usage
 
-To install and use the **Gatus (Health Dashboard)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gatus-health-dashboard](https://vinkius.com/mcp/gatus-health-dashboard)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gatus (Health Dashboard)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gatus-health-dashboard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gatus (Health Dashboard)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gatus-health-dashboard": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

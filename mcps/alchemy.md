@@ -1,7 +1,6 @@
 # Alchemy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alchemy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/alchemy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/alchemy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alchemy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Alchemy** MCP server u
 > I've retrieved the latest block number for Ethereum Mainnet! It is currently identified as block #19,250,000 (hex: 0x125B9A0). I can assist you with a specific transaction audit from this block if needed.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Alchemy API Key?**
+Log in to your [**Alchemy dashboard**](https://dashboard.alchemy.com/), create an app for your desired network, and you will find your API Key in the 'API Key' section. Copy and paste it below.
+
+**Q: Which networks are supported?**
+Alchemy supports Ethereum, Polygon, Arbitrum, Optimism, and more. Ensure you provide the correct network slug (e.g., 'eth-mainnet') in the configuration.
+
+**Q: Can the agent show NFT metadata?**
+Yes. The `get_owned_nfts` tool retrieves the list of NFTs owned by an address, including titles and token IDs from the metadata.
+
+
 ## Installation & Usage
 
-To install and use the **Alchemy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/alchemy](https://vinkius.com/mcp/alchemy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Alchemy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `alchemy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Alchemy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "alchemy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

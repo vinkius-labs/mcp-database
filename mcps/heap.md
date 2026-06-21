@@ -1,7 +1,6 @@
 # Heap MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heap)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/heap-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/heap-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heap)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,55 @@ Here are some examples of how you can interact with the **Heap** MCP server usin
 > User identified! I've linked the anonymous session 'anon_552' to the identity 'john.doe@example.com' in Heap. Future events from this user will now be consolidated. Should I set any initial profile properties?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Heap App ID and API Key?**
+Log in to Heap, go to **Account > Projects**, and select your project. Your **App ID** will be visible there. For the **API Key**, navigate to the API section in your project settings to generate a server-side key.
+
+**Q: Can I track events server-side through this integration?**
+Yes! Use the `track_event` tool. You provide the user identity, event name, and optional properties. This is perfect for capturing actions that happen outside the client browser.
+
+**Q: How do I update user properties in bulk?**
+Use the `bulk_add_user_properties` tool. You must provide a JSON array containing objects with `identity` and `properties` for each user you wish to update.
+
+**Q: Is the data deletion tool permanent?**
+Yes. The `delete_user_data` tool triggers a permanent deletion of the user identity and all historical data from Heap, helping you comply with GDPR and CCPA requests.
+
+
 ## Installation & Usage
 
-To install and use the **Heap** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/heap](https://vinkius.com/mcp/heap)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Heap** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `heap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Heap** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "heap": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

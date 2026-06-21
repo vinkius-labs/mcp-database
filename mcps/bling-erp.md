@@ -1,7 +1,6 @@
 # Bling ERP MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bling-erp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bling-erp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bling-erp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bling-erp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,55 @@ Here are some examples of how you can interact with the **Bling ERP** MCP server
 > I parsed the order array. Yes, the invoice is marked internally as 'Issued'. The exact Brazilian legal protocol access key connected to the event states 3522-...
 
 
+## ❓ FAQ
+
+**Q: Does the integration support checking Brazilian Tax Invoices (NFe)?**
+Yes. Your AI agent natively interacts with API v3 executing tools like 'listar_nfe', 'listar_nfce', and 'listar_nfse', actively checking their valid SEFAZ digital status and exact final values.
+
+**Q: Can I actually create new Products or Contacts via my AI agent chat?**
+Yes. Utilizing the 'incluir_produto' and 'incluir_contato' tools, your AI can ingest unstructured raw data from an email or document and flawlessly mint it into structural tables on your Bling backend database.
+
+**Q: Can I check my Accounts Receivable and open Boletos directly?**
+Absolutely. The agent holds explicit operational authority across the 'contas_receber' tool, strictly reporting open invoices, boletos, PIX items, and the total value currently pending payment globally.
+
+**Q: Can I check stock levels across multiple warehouses?**
+Yes! Your agent can use the 'list_depositos' tool to see where your inventory is physically located across your different warehouses.
+
+
 ## Installation & Usage
 
-To install and use the **Bling ERP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bling-erp](https://vinkius.com/mcp/bling-erp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bling ERP** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bling-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bling ERP** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bling-erp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

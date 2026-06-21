@@ -1,7 +1,6 @@
 # Walmart Marketplace MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/walmart-marketplace)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/walmart-marketplace-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/walmart-marketplace-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/walmart-marketplace)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Walmart Marketplace** 
 > Bulk price adjustment initiated. 34 ASICS SKUs have been updated with a 5% markup submitted successfully.
 
 
+## ❓ FAQ
+
+**Q: Does this MCP server process fulfillment and orders?**
+No. This server strictly focuses on the Marketplace Catalog and Pricing to maintain secure boundaries. To manage orders, please use the `walmart-orders-mcp` server.
+
+**Q: Can I update prices or inventory for multiple SKUs at once?**
+Yes, the agent interacts with Walmart's Bulk operations endpoint to process batch updates efficiently without rate-limit throttling.
+
+**Q: Does this agent configure limited-time promotions for special events?**
+Yes. You can dynamically set promotional pricing algorithms by specifying precise start and end dates directly impacting your item's Buy Box.
+
+
 ## Installation & Usage
 
-To install and use the **Walmart Marketplace** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/walmart-marketplace](https://vinkius.com/mcp/walmart-marketplace)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Walmart Marketplace** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `walmart-marketplace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Walmart Marketplace** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "walmart-marketplace": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

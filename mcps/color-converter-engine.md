@@ -1,7 +1,6 @@
 # Color Converter Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/color-converter-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/color-converter-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/color-converter-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/color-converter-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **Color Converter Engine
 > Closest named color: 'coral' | HEX: #f0803c | Full RGB/HSL/CMYK breakdown included.
 
 
+## ❓ FAQ
+
+**Q: Why can't I just ask the AI to convert colors?**
+LLMs predict tokens, they don't do math. Ask the same conversion 3 times and you'll get 3 different HSL values. This engine uses the actual CSS color math — same input, same output, every time.
+
+**Q: Does it handle transparency and alpha channels?**
+Yes. Pass rgba(255,87,51,0.5), hsla(), or 8-digit hex (#ff573380) and the alpha value is preserved across all output formats.
+
+**Q: What if I pass a CSS named color like 'tomato'?**
+It works. Pass any of the 148 CSS named colors and get the full HEX/RGB/HSL/CMYK breakdown. It also works in reverse — pass any HEX and get the closest named color.
+
+
 ## Installation & Usage
 
-To install and use the **Color Converter Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/color-converter-engine](https://vinkius.com/mcp/color-converter-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Color Converter Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `color-converter-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Color Converter Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "color-converter-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

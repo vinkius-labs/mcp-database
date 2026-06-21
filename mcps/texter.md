@@ -1,7 +1,6 @@
 # Texter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/texter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/texter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/texter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/texter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Texter** MCP server us
 > Chat updated! I've marked chat 10293 as resolved and assigned the 'Support-Fixed' label (ID: lb_552). The conversation is now organized and closed.
 
 
+## ❓ FAQ
+
+**Q: Can I see the history of a specific chat via AI?**
+Yes! Use the `list_texter_messages` tool and provide the Chat ID. Your agent will retrieve the complete message log for that conversation.
+
+**Q: How do I send a WhatsApp template with parameters?**
+Use the `send_texter_template` action. Provide the destination number, Template ID, language, and a JSON array for the dynamic components to personalize the message.
+
+**Q: Is it possible to assign a label to a conversation via AI?**
+Absolutely. Use the `add_label_to_texter_chat` tool. Provide the Chat ID and the Label ID to organize your inbox programmatically.
+
+
 ## Installation & Usage
 
-To install and use the **Texter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/texter](https://vinkius.com/mcp/texter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Texter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `texter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Texter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "texter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

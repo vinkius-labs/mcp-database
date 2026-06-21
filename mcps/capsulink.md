@@ -1,7 +1,6 @@
 # Capsulink MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/capsulink)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/capsulink-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/capsulink-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/capsulink)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Capsulink** MCP server
 > The destination URL for link cap_123 has been successfully updated to the pricing page.
 
 
+## ❓ FAQ
+
+**Q: Can I change the destination of a link without changing the short URL?**
+Yes! Use the `edit_link_destination` tool with the Link ID. Your agent will update the target URL in Capsulink, and the existing short link will immediately point to the new destination.
+
+**Q: How do I check how many clicks a link received today?**
+Simply ask the agent to `get_link_daily_stats` and provide the Link ID. It will retrieve the click breakdown by day from your Capsulink account.
+
+**Q: Does the integration allow using a custom back-half for my links?**
+Yes. When using the `shorten_url` action, you can provide the `short_url` parameter (e.g., 'summer-promo'). If available, Capsulink will create the link with that specific back-half.
+
+
 ## Installation & Usage
 
-To install and use the **Capsulink** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/capsulink](https://vinkius.com/mcp/capsulink)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Capsulink** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `capsulink` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Capsulink** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "capsulink": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ThingsBoard MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thingsboard)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/thingsboard-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/thingsboard-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thingsboard)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **ThingsBoard** MCP serv
 > I found 2 critical alarms. One is a 'High Temperature' alarm on Thermostat-01 and the other is 'Connectivity Loss' on Gateway-Main.
 
 
+## ❓ FAQ
+
+**Q: Can I check the latest sensor readings for a specific device?**
+Yes. Use the `get_telemetry` tool by providing the entity type and ID. The agent will return the most recent time-series data points recorded for that device.
+
+**Q: Is it possible to trigger a physical action on a device, like turning on a light?**
+Absolutely. You can use `send_oneway_rpc` for simple commands or `send_twoway_rpc` if you need to wait for a confirmation response from the device hardware.
+
+**Q: How do I find all devices that currently have active critical alarms?**
+You can use the `find_alarms` tool with a query body specifying the severity as 'CRITICAL' and status as 'ACTIVE_UNACK' or 'ACTIVE_ACK'.
+
+
 ## Installation & Usage
 
-To install and use the **ThingsBoard** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/thingsboard](https://vinkius.com/mcp/thingsboard)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ThingsBoard** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `thingsboard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ThingsBoard** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "thingsboard": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

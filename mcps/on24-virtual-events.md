@@ -1,7 +1,6 @@
 # ON24 Virtual Events MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/on24-virtual-events)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/on24-virtual-events-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/on24-virtual-events-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/on24-virtual-events)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **ON24 Virtual Events** 
 > Retrieving survey data... For the 'Developer Workshop' survey, you received 85 responses. The average satisfaction score was 4.7/5. Key feedback included 'Great technical depth' and 'Clear examples'. Would you like the detailed Q&A log as well?
 
 
+## ❓ FAQ
+
+**Q: How do I get my ON24 API credentials?**
+Log in to your ON24 account and navigate to the API Management section in the Analytics or Integration menu to generate your Client ID, API Key, and Secret.
+
+**Q: Can I see attendee viewing time?**
+Yes! Use the `get_attendee_engagement` tool with the event ID and attendee email to retrieve detailed engagement metrics including total minutes watched.
+
+**Q: Does this support multi-registration tracking?**
+Yes, you can list registrants for any specific event using `list_event_registrants` and check individual registration statuses.
+
+
 ## Installation & Usage
 
-To install and use the **ON24 Virtual Events** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/on24-virtual-events](https://vinkius.com/mcp/on24-virtual-events)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ON24 Virtual Events** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `on24-virtual-events` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ON24 Virtual Events** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "on24-virtual-events": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

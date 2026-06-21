@@ -1,7 +1,6 @@
 # Perplexity AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/perplexity-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/perplexity-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/perplexity-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/perplexity-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -178,12 +177,55 @@ Would you like me to dive deeper into any specific country or manufacturer?
 Would you like me to summarize any of these articles in detail?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Perplexity API key?**
+Log in to your [**Perplexity AI account**](https://www.perplexity.ai/), go to **Settings > API**, and generate a new API key. Copy the key (it starts with `pplx-`) immediately. Paste it into the API key field below. This key authenticates all requests to https://api.perplexity.ai.
+
+**Q: What's the difference between Sonar, Sonar Pro, Deep Research, and Reasoning Pro models?**
+**Sonar** is the fastest model for quick factual answers and basic synthesis. **Sonar Pro** handles complex queries better with more thorough analysis and follow-up support. **Sonar Deep Research** performs exhaustive web searches and generates comprehensive reports with thorough citations — best for research papers and deep investigations. **Sonar Reasoning Pro** excels at logical reasoning, multi-step analysis, mathematical problems, and chain-of-thought tasks.
+
+**Q: Can I restrict search results to specific domains or time periods?**
+Yes! Use `chat_with_domain_filter` to restrict search to specific domains (e.g., arxiv.org, nih.gov, github.com). Use `chat_with_recency_filter` to get results only from the last hour, day, week, month, or year. You can also combine both for domain-specific recent information. Citations are automatically included to verify sources.
+
+**Q: How does Perplexity AI differ from regular search engines?**
+Unlike regular search engines that return a list of links, Perplexity AI reads the web in real-time, synthesizes information from multiple sources, and provides a direct, concise answer with citations. It's like having a research assistant that reads dozens of pages and summarizes the key findings with source links. You get answers, not just links.
+
+
 ## Installation & Usage
 
-To install and use the **Perplexity AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/perplexity-ai](https://vinkius.com/mcp/perplexity-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Perplexity AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `perplexity-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Perplexity AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "perplexity-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

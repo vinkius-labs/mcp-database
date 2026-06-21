@@ -1,7 +1,6 @@
 # ProfitWell MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/profitwell)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/profitwell-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/profitwell-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/profitwell)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,49 @@ Here are some examples of how you can interact with the **ProfitWell** MCP serve
 > Top 10 at-risk customers identified by ProfitWell Retain analysis. #1: DataFlow Inc ($2,400/mo MRR) has not logged in for 18 days and usage dropped 78%. #2: CloudBridge ($1,800/mo) downgraded payment method. #3: TechVentures ($1,500/mo) submitted 3 support tickets about limitations. #4: ScaleUp ($1,200/mo) has declining API calls. Combined at-risk MRR: $14,200. Recommended actions: schedule check-in calls for top 5, send personalized feature discovery emails to the remaining 5.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the MRR and churn metrics for the current month?**
+Yes! Use the `get_monthly_metrics` tool. Your agent will respond with complete metadata for all key metrics, including MRR, churned revenue, and active customers in seconds.
+
+**Q: How do I find my ProfitWell Private API Token?**
+Log in to your ProfitWell/Paddle account, navigate to **Account Settings** > **Integrations**, and look for the **ProfitWell API** card to find your Private Token.
+
+
 ## Installation & Usage
 
-To install and use the **ProfitWell** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/profitwell](https://vinkius.com/mcp/profitwell)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ProfitWell** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `profitwell` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ProfitWell** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "profitwell": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

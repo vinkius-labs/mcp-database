@@ -1,7 +1,6 @@
 # Tactiq MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tactiq)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tactiq-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tactiq-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tactiq)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Tactiq** MCP server us
 > Found 5 mentions across 3 meetings. The most detailed discussion was in 'Sales Review' (March 18), where the team spent 12 minutes on pricing tiers. Would you like to read that section?
 
 
+## ❓ FAQ
+
+**Q: How do I access meeting transcripts via AI?**
+Use `list_transcripts` to see all recorded meetings, then `get_transcript` with the transcript ID for the full text with speaker labels and timestamps.
+
+**Q: Can I extract action items from meetings?**
+Yes. Use `get_action_items` with a transcript ID to retrieve all AI-detected follow-ups, deadlines, and assigned tasks.
+
+**Q: How do I search across all my transcripts?**
+Use `search_transcripts` with any keyword or phrase to find matching content across all recorded meetings.
+
+
 ## Installation & Usage
 
-To install and use the **Tactiq** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tactiq](https://vinkius.com/mcp/tactiq)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tactiq** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tactiq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tactiq** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tactiq": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

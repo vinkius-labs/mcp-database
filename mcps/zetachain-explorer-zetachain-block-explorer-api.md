@@ -1,7 +1,6 @@
 # Zetachain Explorer (ZetaChain Block Explorer API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zetachain-explorer-zetachain-block-explorer-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zetachain-explorer-zetachain-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zetachain-explorer-zetachain-block-explorer-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zetachain-explorer-zetachain-block-explorer-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Zetachain Explorer (Ze
 > I've fetched the logs for transaction 0xabc123... It emitted 2 events: a 'Transfer' event from the USDC contract and a 'Swap' event from the DEX router. Do you need the decoded parameters for these logs?
 
 
+## ❓ FAQ
+
+**Q: Can I inspect the internal calls triggered by a specific transaction?**
+Yes. Use the `get_transaction_internal` tool with the transaction hash to retrieve all internal contract calls and operations associated with that transaction.
+
+**Q: How do I check all token balances for a specific wallet address?**
+Simply provide the wallet address to the `get_address_token_balances` tool. It will return a comprehensive list of all tokens held by that address on ZetaChain.
+
+**Q: Is it possible to view the source code or ABI of a smart contract?**
+Yes, the `get_smart_contract` tool allows you to fetch the metadata and details of a verified smart contract using its address.
+
+
 ## Installation & Usage
 
-To install and use the **Zetachain Explorer (ZetaChain Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zetachain-explorer-zetachain-block-explorer-api](https://vinkius.com/mcp/zetachain-explorer-zetachain-block-explorer-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zetachain Explorer (ZetaChain Block Explorer API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zetachain-explorer-zetachain-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zetachain Explorer (ZetaChain Block Explorer API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zetachain-explorer-zetachain-block-explorer-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

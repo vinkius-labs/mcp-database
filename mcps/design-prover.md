@@ -1,7 +1,6 @@
 # Design Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/design-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/design-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/design-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/design-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Design Prover** MCP se
 > 5 rejections. (1) FLAT_HIERARCHY — 'hero headline' is vague. Size? Font? Ratio? (2) CARD_GRID — 'hero + 3 cards + pricing' is the AI skeleton verbatim. (3) UNIFORM_SPACING — no whitespace contrast specified. (4) MUTED_TYPE — text-xl to text-4xl is Tailwind defaults, not design. (5) SAFE_PALETTE — blue-600 + gray-100 is the universal AI color kit. Fix all five.
 
 
+## ❓ FAQ
+
+**Q: Does Design Prover generate HTML or CSS?**
+No. Design Prover generates zero code. It forces the agent to make five concrete DESIGN DECISIONS — hierarchy, layout, whitespace, typography, color — before writing a single line of HTML. The decisions then guide the code. The tool catches AI patterns (card grids, uniform spacing, safe palette) and rejects until the design is intentional.
+
+**Q: Why does it reject card grids?**
+Three cards in a row is the #1 fingerprint of AI-generated design. It's the default every model reaches for because it's safe and symmetrical. Professional design uses spatial tension: asymmetric columns where one is 2x wider, elements that overlap or break containers, full-bleed images next to narrow text columns, alternating between dense data sections and generous white space. Card grids are assembly, not design.
+
+**Q: What does a 3:1 hierarchy ratio mean?**
+If your body text is 16px, your focal element should be at least 48px (3x) to create real visual dominance. AI agents typically use 32px headlines with 16px body — a 2:1 ratio that creates no drama. Professional design uses 5:1+ ratios: 72px display headlines, 120px metrics, oversized imagery. The bigger the ratio, the clearer the reading path.
+
+
 ## Installation & Usage
 
-To install and use the **Design Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/design-prover](https://vinkius.com/mcp/design-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Design Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `design-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Design Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "design-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # GiveWP MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/givewp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/givewp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/givewp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/givewp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,55 @@ Here are some examples of how you can interact with the **GiveWP** MCP server us
 > Retrieving stats... The 'Annual Fund' form has raised $12,450.00 from 145 unique donations. The average donation amount is $85.86.
 
 
+## ❓ FAQ
+
+**Q: How do I get API Keys for GiveWP?**
+Log in to your WordPress admin, go to your User Profile, and scroll to 'Account Management'. Check 'Generate API Keys' and update your profile to see your keys.
+
+**Q: What is the WordPress Base URL?**
+This is the root domain where your WordPress site is installed, for example: 'https://my-nonprofit.org'. Do not include '/wp-admin/'.
+
+**Q: Can I edit donation forms via the agent?**
+The current version of the GiveWP API tools is primarily designed for data retrieval and reporting. Editing capabilities are not supported in this release.
+
+**Q: How do I see donor history?**
+Use the 'find_donor_history' tool and provide the donor's email address. The agent will retrieve all donation records associated with that person.
+
+
 ## Installation & Usage
 
-To install and use the **GiveWP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/givewp](https://vinkius.com/mcp/givewp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GiveWP** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `givewp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GiveWP** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "givewp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

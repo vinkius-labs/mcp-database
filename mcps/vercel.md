@@ -1,7 +1,6 @@
 # Vercel MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vercel)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vercel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vercel-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vercel)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Vercel has acknowledged the deployment intent. The new processing ID assigned to
 You can access your newly compiled live preview here: [https://billing-service-pr-12-test.vercel.app](https://billing-service-pr-12-test.vercel.app)
 
 
+## ❓ FAQ
+
+**Q: Can I cancel a stuck Vercel deployment directly from my chat window?**
+Yes. If a build hangs, simply find its ID via `list_deployments` and tell the agent: `Abort the deployment execution 'dpl_9B...'`. The `cancelDeploymentTool` intercepts and kills the remote CI task instantly.
+
+**Q: How do I get the Preview URL of a newly built branch?**
+Instruct the AI manually: `Grab the deployment details for 'dpl_xx3'`. Using the `getDeploymentTool`, the agent will output the associated generated live `url` property for you to click without going to the dashboard notifications.
+
+**Q: Can I spin up an empty Vercel project programmatically through the agent before I even connect my repository?**
+Yes. Run the prompt: `Create a new Next.js project on Vercel named 'test-saas'`. The agent initiates `createProjectTool`, and Vercel will instantly return its new unique Project GUID, ready to be linked to code whenever you wish.
+
+
 ## Installation & Usage
 
-To install and use the **Vercel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vercel](https://vinkius.com/mcp/vercel)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vercel** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vercel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vercel** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vercel": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

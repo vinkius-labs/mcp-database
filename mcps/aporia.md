@@ -1,7 +1,6 @@
 # Aporia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aporia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aporia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aporia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aporia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Aporia** MCP server us
 > Pulling the most recent metrics for Customer Churn Predictor (mdl_a1b2). Inference count is up by 15% this week. We have a stable accuracy average, but there's a slight data drift warning emerging in the 'user_tenure' feature. Should I list the monitors associated with this feature?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent check for PII vulnerabilities in my conversation logs?**
+Yes. Provide a message context and prompt the agent to validate guardrails for a specific Aporia project. It will query the Aporia rules engine and return actionable insights immediately — ensuring that your outputs remain safe and compliant before deployment.
+
+**Q: How quickly can I review data drift alerts triggered over the weekend?**
+In seconds. During your Monday stand-up, ask your AI agent to fetch metrics for your primary model and list its monitors. The agent will pull up statistical variations and active alerts directly into your chat, saving you from navigating complex visual dashboards when you need a quick situational report.
+
+**Q: If a monitor seems stuck, can the agent force its execution?**
+Absolutely. If you suspect an anomaly, ask the agent to manually trigger the specific monitor ID. Instead of scheduling a redundant pipeline, the agent hits the Aporia backend to force a run, ensuring your MLOps workflow isn't blocked by cadence limitations.
+
+
 ## Installation & Usage
 
-To install and use the **Aporia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aporia](https://vinkius.com/mcp/aporia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aporia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aporia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aporia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aporia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

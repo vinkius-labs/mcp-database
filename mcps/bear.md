@@ -1,7 +1,6 @@
 # Bear MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bear)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bear-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bear-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bear)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Bear** MCP server usin
 > The note 'Meeting Notes - App V2' has been initialized via API injection and synced instantly. Its explicitly nested taxonomy tag 'work/meetings/vurb' binds correctly inside the local knowledge cache.
 
 
+## ❓ FAQ
+
+**Q: Can the AI precisely update a note without overwriting its entire content?**
+Yes. It uses the `add_text` mutation tool, seamlessly attaching blocks of text to either the absolute bottom (append) or the explicit top (prepend) of the given UUID note, leaving the core intact.
+
+**Q: Does it understand nested tags (like #work/design/logo)?**
+Bear relies heavily on tagging workflows. The agent natively queries and navigates explicit sub-tag pathways exactly like the application UI, mapping out your distinct taxonomy rules efficiently.
+
+**Q: Can it search for uncompleted action items across many notes?**
+Simply ask the agent to search for the specialized string '@todo'. Bear exposes these native markers directly via the API, returning every unique UUID containing a matching string checklist efficiently.
+
+
 ## Installation & Usage
 
-To install and use the **Bear** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bear](https://vinkius.com/mcp/bear)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bear** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bear` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bear** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bear": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

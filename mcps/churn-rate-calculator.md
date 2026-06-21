@@ -1,7 +1,6 @@
 # Churn Rate Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/churn-rate-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/churn-rate-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/churn-rate-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/churn-rate-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Churn Rate Calculator*
 > I will run `analyze_churn_health` for the 'ECommerce' segment using your provided CCR (0.12) and NRR (0.98). Please provide the starting customer count so I can calculate any missing baseline metrics.
 
 
+## ❓ FAQ
+
+**Q: How do I calculate the proportion of customers lost in a period?**
+You should use the `customer_churn_rate_calculator` tool. This function requires two inputs: the starting customer count and the ending customer count to determine the volume loss percentage.
+
+**Q: What is NRR, and how does it account for growth?**
+NRR accounts for both losses and gains. You calculate this using the `net_revenue_retention_calculator` tool, providing the starting ARR, lost revenue value, and crucially, the expansion revenue from existing clients.
+
+**Q: Does this system provide a general health score?**
+Yes. After running the core metrics, you must use the `analyze_churn_health` tool. This function compares your calculated rates against industry benchmarks (SaaS/ECommerce) to classify your company's overall retention health.
+
+
 ## Installation & Usage
 
-To install and use the **Churn Rate Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/churn-rate-calculator](https://vinkius.com/mcp/churn-rate-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Churn Rate Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `churn-rate-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Churn Rate Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "churn-rate-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

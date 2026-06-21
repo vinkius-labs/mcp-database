@@ -1,7 +1,6 @@
 # FDA (openFDA) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fda-openfda)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fda-openfda-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fda-openfda-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fda-openfda)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **FDA (openFDA)** MCP se
 > Retrieving Advil product label... I've found the official FDA labeling. It contains detailed indications, dosage instructions, and warnings. Would you like me to summarize the usage guidelines?
 
 
+## ❓ FAQ
+
+**Q: Do I need an API Key to use openFDA?**
+No, openFDA allows testing without a key (1,000 requests/day). However, registering for a free key increases your limits to 240 requests/minute and 120,000 requests/day.
+
+**Q: Can I search for side effects of specific drugs?**
+Yes! Use the `search_drug_adverse_events` tool. For example, query `openfda.generic_name:"aspirin"` to see reported adverse events for Aspirin.
+
+**Q: How can I track food recalls through this agent?**
+The `search_food_enforcement` tool allows you to query the CFSAN enforcement reports database. You can search by product description, state, or manufacturer.
+
+
 ## Installation & Usage
 
-To install and use the **FDA (openFDA)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fda-openfda](https://vinkius.com/mcp/fda-openfda)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FDA (openFDA)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fda-openfda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FDA (openFDA)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fda-openfda": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

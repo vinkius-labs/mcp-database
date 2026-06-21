@@ -1,7 +1,6 @@
 # Wise MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wise)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wise-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wise-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wise)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,55 @@ Here are some examples of how you can interact with the **Wise** MCP server usin
 > Your transfer of £15,000 to 'London Office Ltd' is currently in 'Processing' stage. Exchange rate locked at 1.2650 (USD→GBP). Estimated delivery: tomorrow by 3:00 PM GMT.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Wise API token?**
+You need a **Wise Business account** with 2-Step Verification enabled. Log in at **wise.com**, click your profile icon in the top right corner, then go to **Settings → API tokens → Add new token**. Name your token, complete the 2-Step Verification, and copy it immediately — it is only shown once. Paste it into the configuration below. Note: this feature is only available on the web — not the mobile app.
+
+**Q: Can I check how much a transfer will cost before sending money?**
+Yes. Ask your AI agent to get a quote for any currency pair and amount. It returns the live exchange rate, Wise's fee, the estimated delivery time, and the exact amount the recipient will receive — so you can make informed decisions before committing to a transfer.
+
+**Q: What if I need to track a transfer that seems delayed?**
+Just ask your AI agent 'What's the status of my last transfer?' It returns the current processing stage, estimated delivery date, exchange rate used, and any holds or compliance reviews in progress — all without opening Wise in a browser or switching contexts.
+
+**Q: Is this suitable for companies operating in multiple currencies?**
+Absolutely. Wise supports 50+ currencies, and your AI agent can check balances in all of them simultaneously. Perfect for global e-commerce businesses, international agencies, remote-first companies paying contractors worldwide, and treasury teams managing FX exposure across multiple regions.
+
+
 ## Installation & Usage
 
-To install and use the **Wise** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wise](https://vinkius.com/mcp/wise)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wise** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wise** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wise": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

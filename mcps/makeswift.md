@@ -1,7 +1,6 @@
 # Makeswift MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/makeswift)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/makeswift-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/makeswift-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/makeswift)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Makeswift** MCP server
 > Your site 'My Awesome Store' is on the 'Pro' plan. Primary hostname is 'example.com' and you have 2 locales configured (en-US, pt-BR).
 
 
+## ❓ FAQ
+
+**Q: Can I list all pages in my Makeswift site using my AI agent?**
+Yes! Use the `list_pages` tool. It will return a comprehensive list of all pages in your project, including their status and IDs.
+
+**Q: How do I create a new content snapshot programmatically?**
+Use the `create_snapshot` action. Provide a descriptive name for the snapshot to trigger a new version save of your current site content.
+
+**Q: Is it possible to check the locales configured for my site?**
+Yes, use the `list_locales` tool to retrieve all languages and regional settings defined for your site content.
+
+
 ## Installation & Usage
 
-To install and use the **Makeswift** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/makeswift](https://vinkius.com/mcp/makeswift)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Makeswift** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `makeswift` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Makeswift** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "makeswift": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

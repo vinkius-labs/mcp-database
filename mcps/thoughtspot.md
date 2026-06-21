@@ -1,7 +1,6 @@
 # ThoughtSpot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thoughtspot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/thoughtspot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/thoughtspot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thoughtspot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **ThoughtSpot** MCP serv
 4. 'All Users'
 
 
+## ❓ FAQ
+
+**Q: Where do I get my ThoughtSpot Secret Key?**
+You can find or generate your Secret Key in the ThoughtSpot instances under the **Develop** menu, inside the **Security settings** (specifically Trusted Authentication). Note that you need admin tracking rights or developer privileges to enable this type of access.
+
+**Q: Can the AI modify my dashboards?**
+No. The integration exclusively lists and searches metadata elements (Liveboards, Data connections, Answers, Users). It will not modify, overwrite, or delete any configurations or data objects.
+
+**Q: What types of metadata can I search for?**
+Liveboards (dashboards), Answers (individual charts and tables), Logical Tables, data source connections, users, user groups, and organizational tags.
+
+
 ## Installation & Usage
 
-To install and use the **ThoughtSpot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/thoughtspot](https://vinkius.com/mcp/thoughtspot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ThoughtSpot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `thoughtspot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ThoughtSpot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "thoughtspot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

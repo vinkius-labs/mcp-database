@@ -1,7 +1,6 @@
 # Einstein Thought Experiment Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/einstein-thought-experiment-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/einstein-thought-experiment-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/einstein-thought-experiment-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/einstein-thought-experiment-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Einstein Thought Exper
 > ASSUMPTIONS_UNCHALLENGED — Thought experiment and simplification pass. But assumptions fail: 'we have always used this structure,' 'that is just how it is done,' 'the standard approach,' 'the previous leadership decided' — four references to convention, zero justification. Einstein challenged 200 years of Newtonian absolute time. Is the departmental structure the right choice for YOUR workload? What are the processing characteristics — is it sequential or parallel? If parallel, did you evaluate a unified team model? WHERE did the departmental decision come from? Is it still valid at your scale? Additionally: 'works differently at the pilot site' — invariance is broken. Einstein's core principle: same laws for all observers. A simplified delivery method at the pilot is acceptable, but the core processing behavior must be identical. Does your retry logic work the same way with the simplified method?
 
 
+## ❓ FAQ
+
+**Q: Is this only for system architecture?**
+No. Einstein's method applies to any domain where complexity must be managed through reasoning before building — process design, organizational structure, workflow modeling, product strategy, resource allocation. The 5 pivots — thought experiment, simplification, assumption challenge, invariance, unification — work wherever you need to think before you build. If you can ask 'what does an observer see inside this system?' the method applies.
+
+**Q: What if the domain is genuinely complex?**
+Some domains have irreducible complexity — tax code, healthcare compliance, financial regulations. The engine does not demand false simplification. It demands JUSTIFIED complexity: for each component, you must explain why it is essential, not inherited. E=mc² is simple, but general relativity's field equations are not — because the problem genuinely requires that complexity. The key is separating essential complexity from accidental complexity (inherited, conventional, or adopted without examination).
+
+**Q: How does it differ from the Archimedes First Principles Prover?**
+Archimedes validates analytical DECOMPOSITION — axioms, recursive reduction, mathematical proof, boundary conditions, leverage. It asks 'can you prove this from first principles?' Einstein validates MENTAL MODELING — thought experiments, simplification, assumption challenge, invariance, unification. It asks 'have you imagined yourself inside the system and found the simplest formulation?' Archimedes proves correctness. Einstein finds elegance. Use Archimedes when you need rigorous proof. Use Einstein when you need structural clarity.
+
+
 ## Installation & Usage
 
-To install and use the **Einstein Thought Experiment Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/einstein-thought-experiment-prover](https://vinkius.com/mcp/einstein-thought-experiment-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Einstein Thought Experiment Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `einstein-thought-experiment-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Einstein Thought Experiment Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "einstein-thought-experiment-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

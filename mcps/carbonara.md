@@ -1,7 +1,6 @@
 # Carbonara MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/carbonara)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/carbonara-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/carbonara-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/carbonara)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Carbonara** MCP server
 > The SQL query has been 'cooked'. I've highlighted the requested lines and added the window controls as specified. [Image Attached]
 
 
+## ❓ FAQ
+
+**Q: Can I customize the syntax highlighting theme and font?**
+Yes! You can use the `theme` parameter (e.g., 'seti') and `fontFamily` or `fontSize` to match your preferred style perfectly.
+
+**Q: Is it possible to highlight specific lines of code in the image?**
+Absolutely. Use the `selectedLines` parameter to provide a comma-separated list of line numbers (e.g., '3,5,6') that you want to emphasize.
+
+**Q: Can I add window controls like the ones on macOS?**
+Yes, by setting `windowControls` to true, the generated image will include the classic close, minimize, and maximize buttons.
+
+
 ## Installation & Usage
 
-To install and use the **Carbonara** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/carbonara](https://vinkius.com/mcp/carbonara)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Carbonara** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `carbonara` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Carbonara** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "carbonara": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

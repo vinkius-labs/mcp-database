@@ -1,7 +1,6 @@
 # Clever Cloud (Developer PaaS API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clever-cloud-developer-paas-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clever-cloud-developer-paas-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clever-cloud-developer-paas-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clever-cloud-developer-paas-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Clever Cloud (Develope
 > You have 2 active add-ons: a PostgreSQL database (ID: addon_abc) and a Redis instance (ID: addon_xyz). Both are currently in 'running' status.
 
 
+## ❓ FAQ
+
+**Q: Can I trigger a new deployment for a specific application using this server?**
+Yes! Use the `trigger_deployment` tool by providing the `appId`. You can optionally specify deployment options like a commit ID in the request body.
+
+**Q: How do I see all the databases and services (add-ons) I have active?**
+Simply use the `list_addons` tool. It will return a list of all provisioned add-ons, including databases and other managed services across your account.
+
+**Q: Is it possible to manage applications within a specific organization?**
+Yes. You can use `list_organizations` to find the `orgId`, and then use `list_organization_applications` to see only the apps belonging to that specific organization.
+
+
 ## Installation & Usage
 
-To install and use the **Clever Cloud (Developer PaaS API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clever-cloud-developer-paas-api](https://vinkius.com/mcp/clever-cloud-developer-paas-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clever Cloud (Developer PaaS API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clever-cloud-developer-paas-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clever Cloud (Developer PaaS API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clever-cloud-developer-paas-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

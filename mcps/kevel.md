@@ -1,7 +1,6 @@
 # Kevel MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kevel)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kevel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kevel-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kevel)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Kevel** MCP server usi
 > I've listed the supported ad types. Your account supports 15 formats, including 'Banner', 'Native', 'Video', and 'Interstitial'.
 
 
+## ❓ FAQ
+
+**Q: Can I see the flights associated with a campaign?**
+Yes, use the `list_flights` tool to get a full list of flights, which includes their parent campaign IDs and targeting metadata.
+
+**Q: How do I check the status of my ad inventory sites?**
+The `list_sites` and `list_zones` tools provide real-time visibility into your inventory structure and the status of each placement.
+
+**Q: Is it possible to list all uploaded creatives?**
+Absolutely. Use the `list_creatives` tool to retrieve a comprehensive list of all ad creatives configured in your Kevel account.
+
+
 ## Installation & Usage
 
-To install and use the **Kevel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kevel](https://vinkius.com/mcp/kevel)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kevel** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kevel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kevel** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kevel": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

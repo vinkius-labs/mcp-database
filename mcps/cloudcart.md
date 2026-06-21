@@ -1,7 +1,6 @@
 # CloudCart MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudcart)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudcart-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudcart-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudcart)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **CloudCart** MCP server
 > Retrieving details for order 98765... The order is currently 'Shipped' and was picked up by the courier yesterday. The customer has been notified.
 
 
+## ❓ FAQ
+
+**Q: Can I see a list of abandoned carts through the agent?**
+Yes! Use the `get_abandoned_carts` tool. The agent will return all recent shopping sessions that were not completed, allowing you to plan recovery campaigns.
+
+**Q: How do I check the stock status or SKU for a product?**
+Use the `list_store_products` tool to see a summary, or `get_product_store_details` with the product ID for detailed inventory information.
+
+**Q: Where do I find my CloudCart API credentials?**
+Log in to your CloudCart admin panel, navigate to **Settings**, and select **API Keys**. You can generate a new Client ID and Client Secret there.
+
+
 ## Installation & Usage
 
-To install and use the **CloudCart** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cloudcart](https://vinkius.com/mcp/cloudcart)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CloudCart** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cloudcart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CloudCart** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cloudcart": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

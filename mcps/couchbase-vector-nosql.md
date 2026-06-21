@@ -1,7 +1,6 @@
 # Couchbase (Vector & NoSQL) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/couchbase-vector-nosql)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/couchbase-vector-nosql-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/couchbase-vector-nosql-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/couchbase-vector-nosql)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Couchbase (Vector & No
 > Query executed successfully! I've retrieved 5 items from 'travel-sample'. Results include 'Economy Flight' ($85) and 'Local Tour' ($45). I have the full JSON response if you need more details.
 
 
+## ❓ FAQ
+
+**Q: Can my agent perform K-Nearest Neighbor (KNN) vector searches in Couchbase?**
+Yes. Provide the search index name, the vector embedding array, and the number of results (k). The agent uses Couchbase's native vector capabilities to locate the most semantically similar documents in your cluster.
+
+**Q: How do I execute a N1QL query through the agent?**
+Use the 'execute_n1ql_query' tool and provide your SQL-like statement. The agent will fetch the structural JSON blocks directly from Couchbase, allowing you to perform complex data retrieval using familiar SQL syntax.
+
+**Q: Can I search documents using full-text query logic?**
+Absolutely. The 'fts_search' tool leverages Couchbase's Full-Text Search (FTS) engine. Provide an index name and a boolean query string to perform structural text-based extraction across your document trees.
+
+
 ## Installation & Usage
 
-To install and use the **Couchbase (Vector & NoSQL)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/couchbase-vector-nosql](https://vinkius.com/mcp/couchbase-vector-nosql)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Couchbase (Vector & NoSQL)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `couchbase-vector-nosql` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Couchbase (Vector & NoSQL)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "couchbase-vector-nosql": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

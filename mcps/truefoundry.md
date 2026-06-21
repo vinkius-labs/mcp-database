@@ -1,7 +1,6 @@
 # TrueFoundry MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/truefoundry)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/truefoundry-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/truefoundry-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/truefoundry)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **TrueFoundry** MCP serv
 > Processing native cluster allocation bounding resources via `deploy_mcp_server`. Configuration schemas synced into TrueFoundry engine cleanly. Running logs verify successful execution state bounds mapped efficiently.
 
 
+## ❓ FAQ
+
+**Q: Can I route conversational streams directly via the AI agent using the Universal Gateway?**
+Yes! You can orchestrate inferences parsing `run_gateway_chat` providing dedicated string formats mapping natively any enabled model.
+
+**Q: Is it possible to monitor crashed services or container states?**
+Absolutely. Target the instance ID and emit `get_deployment_status` explicitly bounding execution limits and fetching live log matrices.
+
+**Q: Are the deployment configuration variables isolated upon server launch?**
+Yes, using `deploy_mcp_server` dynamically provisions encapsulated boundaries. You stringify environment tokens seamlessly obscuring values into active runtimes only.
+
+
 ## Installation & Usage
 
-To install and use the **TrueFoundry** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/truefoundry](https://vinkius.com/mcp/truefoundry)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TrueFoundry** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `truefoundry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TrueFoundry** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "truefoundry": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

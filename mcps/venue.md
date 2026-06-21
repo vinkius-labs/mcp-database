@@ -1,7 +1,6 @@
 # Venue MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/venue)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/venue-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/venue-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/venue)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Venue** MCP server usi
 > Success! The 'AI Workshop' has been scheduled for 2024-12-10 at 14:00 UTC (ID: ev_8823). I've added the title and start time. Would you like to add a description or register a speaker now?
 
 
+## ❓ FAQ
+
+**Q: Can I list all the speakers registered in my Venue account?**
+Yes! Use the `list_speakers` tool. Your agent will retrieve the complete directory of guest speakers registered in your workspace.
+
+**Q: How do I see how many people registered for a specific event?**
+Run the `list_event_registrations` query with your Event ID. The agent will return the list of all registered participants for that specific session.
+
+**Q: Is it possible to retrieve engagement metrics for a past event?**
+Absolutely. Use the `get_event_analytics` tool and provide the Event ID. The agent will return attendance and engagement data to help you measure success.
+
+
 ## Installation & Usage
 
-To install and use the **Venue** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/venue](https://vinkius.com/mcp/venue)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Venue** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `venue` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Venue** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "venue": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

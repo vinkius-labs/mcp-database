@@ -1,7 +1,6 @@
 # Tomorrow.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomorrowio-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tomorrowio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tomorrowio-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomorrowio-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **Tomorrow.io** MCP serv
 > Historical weather for London on January 15, 2025: High 7.2°C, Low 2.1°C, 89% humidity, 22 km/h SW wind, 4.8mm rainfall recorded, overcast skies throughout the day. Visibility was reduced to 8km due to light drizzle in the morning.
 
 
+## ❓ FAQ
+
+**Q: What weather data points can I retrieve with this integration?**
+You can retrieve temperature, humidity, wind speed/direction/gusts, precipitation intensity/probability, UV index, visibility, cloud cover, dew point, pressure, snow accumulation, air quality index and more. Use the `get_timeline` tool to specify exactly which fields you need.
+
+**Q: How far back can I access historical weather data?**
+The `get_historical_weather` tool can access archived weather data going back up to 20 years. For the most recent 24 hours, use `get_recent_history` which provides higher-resolution data. Historical data availability depends on your Tomorrow.io plan tier.
+
+**Q: Can I get weather conditions along a driving route?**
+Yes! The `get_route_weather` tool accepts a series of waypoints (each with latitude, longitude and expected arrival time) and returns weather forecasts for each segment. Perfect for logistics planning, road trips and delivery optimization.
+
+
 ## Installation & Usage
 
-To install and use the **Tomorrow.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tomorrowio-alternative](https://vinkius.com/mcp/tomorrowio-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tomorrow.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tomorrowio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tomorrow.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tomorrowio-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Zyte MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zyte)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zyte-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zyte-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zyte)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Zyte** MCP server usin
 > Fetching your stats... You have made 1,250 requests this month with a 99.2% success rate. Your total estimated cost so far is $5.40.
 
 
+## ❓ FAQ
+
+**Q: Can I take a screenshot of a website using this server?**
+Yes! Use the `extract_data` tool and set the `screenshot` parameter to true. The agent will return the visual state of the page as requested.
+
+**Q: How do I get organic search results from Google?**
+Use the `search_data` tool, specifying 'google.com' as the domain and your keywords as the query. You can also set `maxResults` to control the list length.
+
+**Q: Is it possible to monitor my Zyte API spending?**
+Yes, by using the `get_stats` tool. Note that this requires you to provide your `ZYTE_DASHBOARD_API_KEY` during setup.
+
+
 ## Installation & Usage
 
-To install and use the **Zyte** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zyte](https://vinkius.com/mcp/zyte)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zyte** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zyte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zyte** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zyte": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

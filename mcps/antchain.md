@@ -1,7 +1,6 @@
 # AntChain MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/antchain)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/antchain-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/antchain-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/antchain)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,52 @@ Here are some examples of how you can interact with the **AntChain** MCP server 
 > ✅ Contract invocation successful! The 'transfer' method on 'TokenContract' executed successfully. Transaction hash: 0xdef456..., status: SUCCESS. Gas used: 45230. The transfer of 100 tokens to 0x123... has been confirmed on-chain.
 
 
+## ❓ FAQ
+
+**Q: How do I get my AntChain Access Key and Secret Key?**
+Log in to the AntChain BaaS console, navigate to the API Management or Developer Center section, and create a new API credential pair. You'll receive an Access Key (public identifier) and a Secret Key (used for HMAC-SHA256 signature generation). The Secret Key is shown only once — save it immediately. These credentials authenticate all your API requests.
+
+**Q: What's the difference between querying a block and querying a transaction?**
+A block query returns information about the container itself — block height, hash, timestamp, transaction count, and the previous block hash. A transaction query returns details about a specific operation within a block — sender/receiver addresses, gas used, execution status, return values, and whether the transaction succeeded or reverted. Use blocks to explore the chain structure, and transactions to verify individual operations.
+
+**Q: Can I deploy smart contracts through this MCP server?**
+Yes! Use the `deploy_contract` tool to upload and deploy compiled smart contract bytecode to your AntChain network. You'll need the contract bytecode (in hex format), a name for the contract, and optionally the ABI for future interactions. After deployment, you can invoke contract methods using the `invoke_contract` tool. Make sure your account has sufficient permissions and balance for deployment.
+
+
 ## Installation & Usage
 
-To install and use the **AntChain** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/antchain](https://vinkius.com/mcp/antchain)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AntChain** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `antchain` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AntChain** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "antchain": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ONES MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ones)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ones-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ones-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ones)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **ONES** MCP server usin
 > I've retrieved the organization summary. In the last 7 days, 150 tasks were created and 120 were completed across 8 projects. Your team velocity remains stable. Would you like a breakdown by project?
 
 
+## ❓ FAQ
+
+**Q: How do I generate an API Access Token in ONES?**
+Log in to your ONES Management Console, navigate to [Settings] → [API Authentication], and click 'Create Token'. Make sure to copy it immediately as it will only be shown once.
+
+**Q: Where can I find my Organization ID?**
+Your Organization ID (often a UUID) can be found in the URL of your ONES dashboard or in the [Organization Profile] section of the Management Console.
+
+**Q: Can I update the status of a task through the agent?**
+Yes. Use the `update_task` tool and provide the task UUID and the new status UUID. You can find available status UUIDs by checking the project's workflow with `list_workflows`.
+
+
 ## Installation & Usage
 
-To install and use the **ONES** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ones](https://vinkius.com/mcp/ones)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ONES** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ones` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ONES** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ones": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

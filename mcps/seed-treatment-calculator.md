@@ -1,7 +1,6 @@
 # Seed Treatment Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/seed-treatment-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/seed-treatment-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/seed-treatment-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/seed-treatment-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,52 @@ Here are some examples of how you can interact with the **Seed Treatment Calcula
 > The `calculate_treatment_cost` tool calculates a total cost of $65 for the batch.
 
 
+## ❓ FAQ
+
+**Q: How does the calculator handle different product types?**
+The `get_application_sequence` tool automatically identifies inoculants and ensures they are applied at the end of the sequence to prevent chemical degradation.
+
+**Q: Can I calculate costs for multiple products at once?**
+Yes, using `calculate_treatment_cost`, you can provide a JSON object containing the quantities and unit prices for all active ingredients in your batch.
+
+**Q: What is the standard unit for dosage?**
+All dosages and spray volumes are calculated based on a standardized 100kg unit of seed mass to ensure precision across different batch sizes.
+
+
 ## Installation & Usage
 
-To install and use the **Seed Treatment Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/seed-treatment-calculator](https://vinkius.com/mcp/seed-treatment-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Seed Treatment Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `seed-treatment-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Seed Treatment Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "seed-treatment-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

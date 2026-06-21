@@ -1,7 +1,6 @@
 # Customer Discovery Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/customer-discovery-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/customer-discovery-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/customer-discovery-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/customer-discovery-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Customer Discovery Pro
 > SEGMENTS_CONFLATED — Persona, problem, and methodology pass. But segments fail: 'SMBs in manufacturing' is one label, not segmented. A 20-person machine shop and a 180-person food processor have different inventory systems, compliance requirements, budgets, and decision makers. Separate by: company size, sub-industry, regulatory requirements, and buying process. Also: WTP fails — 'strong interest' and 'requested demos' are not commitment. Show deposits, LOIs, or pilot agreements with dates.
 
 
+## ❓ FAQ
+
+**Q: Does it conduct interviews?**
+No. It validates that your discovery process is grounded in real data — interview evidence, unbiased methodology, separated segments, and commitment-based WTP signals. It does not replace conversations with customers. It forces you to prove you had them.
+
+**Q: What is The Mom Test?**
+A framework by Rob Fitzpatrick for conducting customer interviews that produce truthful data. The core rule: never ask leading questions about the future ('Would you use this?'). Instead, ask about past behavior ('When did you last encounter X? What did you do?'). People lie about future behavior — past behavior is a reliable signal.
+
+**Q: Can pre-product startups use this?**
+Yes — it is designed for pre-product discovery. WTP signals for pre-product include: signed LOIs, paid design partnerships, deposits against future delivery, time commitments (agreed to a weekly feedback session), and reputation commitments (willing to be named as a design partner). You do not need a product to test willingness-to-pay.
+
+
 ## Installation & Usage
 
-To install and use the **Customer Discovery Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/customer-discovery-prover](https://vinkius.com/mcp/customer-discovery-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Customer Discovery Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `customer-discovery-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Customer Discovery Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "customer-discovery-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

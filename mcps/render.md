@@ -1,7 +1,6 @@
 # Render MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/render)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/render-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/render-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/render)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Render** MCP server us
 > Deploy triggered using `trigger_deploy` with instructions pointing at `srv-backend88`. As requested, I bypassed internal optimizations establishing a true clean slate by clearing the previous build cache prior to cloning code.
 
 
+## ❓ FAQ
+
+**Q: Can the AI clear the cache when triggering a deploy?**
+Yes, absolutely. The tool `trigger_deploy` incorporates an optional variable explicitly created for cache management. You can command the agent: "Redeploy the web app named Node-Backend and bypass rendering cache."
+
+**Q: Which type of new services can the AI deploy using `create_service`?**
+The MCP can provision and launch exactly three core resource forms utilizing GitHub repos: standard web services (`web_service`), private network-locked processes (`private_service`), and asynchronous task handlers (`background_worker`).
+
+**Q: Warning: Is there a confirmation before using `delete_service`?**
+Since natural language agents can occasionally misinterpret parameters, invoking the text request explicitly will route straight to the Render API resulting in instantaneous destruction. Please ensure absolute clarity when pointing the AI logic toward deletion operations.
+
+
 ## Installation & Usage
 
-To install and use the **Render** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/render](https://vinkius.com/mcp/render)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Render** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `render` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Render** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "render": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ManyChat MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/manychat-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/manychat-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/manychat-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/manychat-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **ManyChat** MCP server 
 > Subscriber found: Sarah Chen (ID: 890123). Channel: Instagram. Status: Subscribed. Current tags: 'Lead', 'Webinar_Attendee'. Tag added: 'VIP_Customer'. Custom fields: LTV = $450, Last_Purchase = Apr 15. Flow active: 'Post-Purchase Follow-up'.
 
 
+## ❓ FAQ
+
+**Q: Can I send broadcasts and track flows?**
+Yes. Create broadcasts, manage automation flows, and track engagement metrics like open and click rates.
+
+**Q: How does ManyChat authentication work?**
+ManyChat uses Bearer authentication against `api.manychat.com/fb` using your API Key.
+
+**Q: Can I manage tags and custom fields?**
+Yes. Create tags, update custom fields per subscriber, and use them for advanced segmentation.
+
+
 ## Installation & Usage
 
-To install and use the **ManyChat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/manychat-alternative](https://vinkius.com/mcp/manychat-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ManyChat** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `manychat-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ManyChat** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "manychat-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Filebase (Web3 Storage) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/filebase-web3-storage)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/filebase-web3-storage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/filebase-web3-storage-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/filebase-web3-storage)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Filebase (Web3 Storage
 > Your current usage is 4.2 GB out of your 10 GB limit. You have used 150 MB of bandwidth this month across 3 active buckets.
 
 
+## ❓ FAQ
+
+**Q: How do I pin a specific CID to ensure it stays on the network?**
+You can use the `rpc_pin_add` tool by providing the CID. This ensures the content is persistently stored on Filebase's IPFS infrastructure.
+
+**Q: Can I check my current storage usage and limits?**
+Yes! Use the `platform_get_usage` tool. It will return your total storage used, bandwidth metrics, and current subscription limits.
+
+**Q: How do I publish a CID to a mutable IPNS name?**
+Use the `rpc_name_publish` tool with the target CID. This maps your content to an IPNS address that stays the same even when the content updates.
+
+
 ## Installation & Usage
 
-To install and use the **Filebase (Web3 Storage)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/filebase-web3-storage](https://vinkius.com/mcp/filebase-web3-storage)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Filebase (Web3 Storage)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `filebase-web3-storage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Filebase (Web3 Storage)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "filebase-web3-storage": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

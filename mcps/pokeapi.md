@@ -1,7 +1,6 @@
 # PokéAPI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pokeapi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pokeapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pokeapi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pokeapi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -96,12 +95,52 @@ Here are some examples of how you can interact with the **PokéAPI** MCP server 
 > Eevee has 8 possible evolutions! Vaporeon (Water Stone), Jolteon (Thunder Stone), Flareon (Fire Stone), Espeon (high friendship during day), Umbreon (high friendship at night), Leafeon (near Moss Rock), Glaceon (near Ice Rock), and Sylveon (high affection with Fairy-type move).
 
 
+## ❓ FAQ
+
+**Q: Do I need a Pokémon Trainer Club account or API key?**
+No! PokéAPI is a completely free, open-source project. No authentication, no rate limits, no registration required.
+
+**Q: Can I look up Pokémon by name or ID number?**
+Yes! Both work perfectly. Use `get_pokemon` with either the Pokédex number (e.g., "25") or the name (e.g., "pikachu").
+
+**Q: Can I see a Pokémon's full evolution chain?**
+Yes! Use `get_pokemon_species` to get the species data which includes the evolution chain ID, then use `get_evolution_chain` to see the full family tree with all evolution conditions and requirements.
+
+
 ## Installation & Usage
 
-To install and use the **PokéAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pokeapi](https://vinkius.com/mcp/pokeapi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PokéAPI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pokeapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PokéAPI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pokeapi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

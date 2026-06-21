@@ -1,7 +1,6 @@
 # Bill.com MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/billcom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/billcom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/billcom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/billcom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,55 @@ Here are some examples of how you can interact with the **Bill.com** MCP server 
 > I found 5 vendors with payments exceeding $10,000 this quarter: AWS ($38,400), Gusto ($112,000), WeWork ($24,000), HubSpot ($15,600), and Notion ($11,200).
 
 
+## ❓ FAQ
+
+**Q: How do I get my BILL Developer Key?**
+Log in to your BILL account as an administrator at **app.bill.com**. Navigate to **Settings → Sync & Integrations → Manage Developer Keys**. Click **Generate developer key**, accept the Terms of Service, and click **Generate key**. You will also find your **Organization ID** (starts with '008') on this same page. Copy both values and paste them into the configuration below.
+
+**Q: Can my AI agent approve invoices and trigger payment runs?**
+Yes. Your AI agent can list pending invoices, review line-item details, and update approval statuses — all through natural conversation. It follows the same approval workflow rules configured in your BILL account, so no invoice gets paid without proper authorization. Payment operations respect your existing role-based permissions.
+
+**Q: How do I quickly check which invoices are overdue during a financial review?**
+Just ask your AI agent 'Show me all overdue invoices.' It pulls your invoice list filtered by past-due status, showing vendor name, amount, due date, and days overdue — giving you actionable data in seconds without generating reports or exporting spreadsheets.
+
+**Q: Can multiple team members use this with different permission levels?**
+Yes. BILL supports up to four developer keys per account. Each key inherits the permissions of the user who generated it. Finance managers can have full read-write access while auditors operate in read-only mode — ideal for growing companies, accounting firms, and multi-entity organizations.
+
+
 ## Installation & Usage
 
-To install and use the **Bill.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/billcom](https://vinkius.com/mcp/billcom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bill.com** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `billcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bill.com** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "billcom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

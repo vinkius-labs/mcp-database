@@ -1,7 +1,6 @@
 # Hipsy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hipsy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hipsy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hipsy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hipsy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Hipsy** MCP server usi
 > 3 past events this month. Total revenue: €32,780. Breakdown: 1) 'Jazz Night' (Apr 19) — €12,450 (185 tickets). Payment: 82% card, 18% iDEAL. 2) 'Art Exhibition Opening' (Apr 12) — €8,330 (92 tickets). Payment: 75% card, 25% iDEAL. 3) 'Comedy Show' (Apr 5) — €12,000 (240 tickets). Payment: 90% card, 10% iDEAL. Average ticket price: €63.40. Average attendance rate: 89.2%. Would you like to compare with last month or check webhook configurations?
 
 
+## ❓ FAQ
+
+**Q: Can I track ticket sales and revenue for a specific event?**
+Yes. Use `get_event_revenue` with an Event ID to retrieve total revenue, ticket sales breakdown by type, and payment method distribution. Use `list_orders_by_event` to see individual orders with buyer details and amounts. Use `list_ticket_types` to see pricing and availability per ticket tier.
+
+**Q: Can I monitor attendee check-ins in real time?**
+Yes. Use `list_attendees` to see all attendees with their check-in status. Use `list_scans` for individual scan entries with timestamps. Use `get_scan_stats` for aggregate metrics: total tickets scanned, unique scans, and overall scan rate percentage.
+
+**Q: Can I view only upcoming or past events separately?**
+Yes. Use `list_upcoming_events` for future events sorted by date, or `list_past_events` for completed events useful for post-event reporting. Use `list_events` for all events regardless of date, and `get_event` for complete details of any specific event.
+
+
 ## Installation & Usage
 
-To install and use the **Hipsy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hipsy](https://vinkius.com/mcp/hipsy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hipsy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hipsy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hipsy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hipsy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

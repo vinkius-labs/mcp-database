@@ -1,7 +1,6 @@
 # LendAPI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lendapi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lendapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lendapi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lendapi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **LendAPI** MCP server u
 > Successfully submitted application APP-12345 for decisioning. The automated engine is now reviewing the risk profile and generating a credit outcome.
 
 
+## ❓ FAQ
+
+**Q: How do I trigger an automated credit decision?**
+Use the `submit_loan_application` tool with the unique application ID. This will trigger the rules-based or AI-driven decision engine configured in your LendAPI account.
+
+**Q: Can I search for valid values for specific fields like 'purpose'?**
+Yes, the `get_lendapi_picklists` tool allows you to retrieve the full list of allowed values for various metadata fields, ensuring your application data is compliant.
+
+**Q: Is it possible to manage borrower profiles via the agent?**
+Absolutely. You can list all borrowers, retrieve detailed profile information, and create new borrower records using the specific borrower tools provided.
+
+
 ## Installation & Usage
 
-To install and use the **LendAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lendapi](https://vinkius.com/mcp/lendapi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LendAPI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lendapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LendAPI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lendapi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Modelbit (ML Model Deployments) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modelbit-ml-model-deployments)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/modelbit-ml-model-deployments-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/modelbit-ml-model-deployments-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modelbit-ml-model-deployments)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Modelbit (ML Model Dep
 > I've executed the `get_inference` tool for 'fraud_detection'. The model flagged the transaction as 'low risk' (score: 0.02).
 
 
+## ❓ FAQ
+
+**Q: Can I specify which version of a model to use for inference?**
+Yes. When using the `get_inference` tool, you can provide an optional `version` string (e.g., 'v1', 'latest', or a specific tag) to target a precise deployment.
+
+**Q: What format should the input data be in?**
+The `get_inference` tool accepts a `data` parameter which should be a JSON object or array, matching the input schema expected by your Modelbit deployment.
+
+**Q: Is an API Key required for all models?**
+The `MODELBIT_API_KEY` is optional. It is only required if your Modelbit deployment is private. Public deployments only require the `MODELBIT_WORKSPACE` name.
+
+
 ## Installation & Usage
 
-To install and use the **Modelbit (ML Model Deployments)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/modelbit-ml-model-deployments](https://vinkius.com/mcp/modelbit-ml-model-deployments)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Modelbit (ML Model Deployments)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `modelbit-ml-model-deployments` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Modelbit (ML Model Deployments)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "modelbit-ml-model-deployments": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

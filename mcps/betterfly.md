@@ -1,7 +1,6 @@
 # Betterfly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/betterfly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/betterfly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/betterfly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/betterfly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Betterfly** MCP server
 > Querying local incentives... You've got an active 'Starbucks Reserve' reward node requiring 500 coins, and an internal 'Company Extra Custom Day Off' tier requiring an incredible 12,000 accumulated coins to ignite.
 
 
+## ❓ FAQ
+
+**Q: Can I use the agent to modify a user's Bettercoin balance artificially?**
+No, this integration functions through strict read-only analytical endpoints aimed directly at corporate administrators, ESG managers, and HR querying metrics. It lacks underlying permissions to inject fraudulent activity data over any client app.
+
+**Q: How can I see if the global challenge is generating ESG donations?**
+Trigger the `list_donations` command. It bypasses conventional UI overhead and displays real-time statistics concerning social funds allocated using internal coin conversion strategies natively connected to ESG programs.
+
+**Q: Can I query a single user's detailed activity logging from last week?**
+Yes! Use the `list_activities` tool with their specific unique UUID as a custom parameter. It isolates tracking loops to just this singular corporate payload string.
+
+
 ## Installation & Usage
 
-To install and use the **Betterfly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/betterfly](https://vinkius.com/mcp/betterfly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Betterfly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `betterfly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Betterfly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "betterfly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

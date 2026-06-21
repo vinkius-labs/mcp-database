@@ -1,7 +1,6 @@
 # MTA MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mta)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mta-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mta)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **MTA** MCP server using
 > Checking MTA service alerts... Currently 2 active LIRR alerts: 1) Babylon Branch — Trains experiencing 10-15 minute delays due to earlier signal problem at Jamaica. Normal service expected to resume by 6:30 PM. 2) Port Jefferson Branch — Track work in effect between Huntington and Northport, expect single-tracking with 20 minute delays through 11:00 PM tonight. All other LIRR branches running on schedule. Penn Station and Grand Central Madison terminals operating normally. Would you like me to check specific train predictions for your branch?
 
 
+## ❓ FAQ
+
+**Q: Can my AI check when the next subway train is arriving at my station?**
+Yes! Use the `get_subway_feed` tool with the appropriate feed ID for your line. Feed IDs are grouped: "1" covers lines 1,2,3,4,5,6,S; "2" covers A,C,E; "3" covers B,D,F,M; "4" is G; "5" is J,Z; "6" covers N,Q,R,W; "7" is L; "11" is Staten Island Railway. This returns real-time GTFS-RT data with train positions, trip updates, scheduled vs. real-time arrivals, and delay information. For station-level predictions, combine with `get_stations` to find your station code first.
+
+**Q: How do I check when the next MTA bus is arriving at a specific stop?**
+First use `get_bus_stops` with a route ID to find the stop ID (MonitoringRef) for your location. Then use `get_bus_predictions` with that stop ID to get real-time estimated arrival times, route information, destinations, and delay indicators. For more targeted predictions, use `get_bus_estimated_arrival` which allows filtering by both stop ID and route ID. Stop IDs are numeric identifiers assigned by MTA to each physical bus stop across NYC.
+
+**Q: Are there any service disruptions affecting my subway line or bus route right now?**
+Use `get_service_alerts` to check all active service disruptions across the MTA system. This returns alerts with affected lines and stations, disruption descriptions, severity levels, cause types (maintenance, incident, weather, special events, construction), start and end timestamps, and alternative service recommendations. Covers NYC Subway, buses, LIRR, and Metro-North. Always check this before planning any journey to ensure you are aware of delays, planned work, or service changes.
+
+
 ## Installation & Usage
 
-To install and use the **MTA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mta](https://vinkius.com/mcp/mta)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MTA** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MTA** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mta": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

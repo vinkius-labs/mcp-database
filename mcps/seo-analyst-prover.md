@@ -1,7 +1,6 @@
 # SEO Analyst Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/seo-analyst-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/seo-analyst-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/seo-analyst-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/seo-analyst-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **SEO Analyst Prover** M
 > KEYWORD_VANITY — Technical passes. Keywords FAIL: KD 72 and 68 vs DA 45 = both impossible. Target KD ≤ 55. Content needs clusters. 'Content attracts links' is a myth — position #1 has 3.8x more RDs.
 
 
+## ❓ FAQ
+
+**Q: Why technical audit before content?**
+Content on a broken technical foundation gets zero traffic. If pages have noindex, broken canonicals, or 4s+ LCP, Google will not rank them regardless of quality. Fix crawlability, indexation, and CWV first.
+
+**Q: What is KD vs DA analysis?**
+Keyword Difficulty (KD) measures how hard to rank. Domain Authority (DA) measures your site strength. Target KD ≤ DA + 10 for realistic wins. KD 75 with DA 30 = impossible. KD 35 with DA 30 = winnable.
+
+**Q: Why do 90% of pages get zero traffic?**
+Ahrefs study: 90.63% of pages get zero Google traffic. Causes: targeting impossible keywords, no backlinks, thin content without topical authority, technical issues preventing indexation, no internal linking. The fix: technical audit + realistic keyword targeting + content clusters + link building.
+
+
 ## Installation & Usage
 
-To install and use the **SEO Analyst Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/seo-analyst-prover](https://vinkius.com/mcp/seo-analyst-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SEO Analyst Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `seo-analyst-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SEO Analyst Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "seo-analyst-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

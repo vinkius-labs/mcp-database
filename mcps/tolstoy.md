@@ -1,7 +1,6 @@
 # Tolstoy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tolstoy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tolstoy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tolstoy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tolstoy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Tolstoy** MCP server u
 > Import initiated! I've triggered the upload of 'Introduction v2' to your library. It should be available in your Tolstoy dashboard for interactive flow building shortly.
 
 
+## ❓ FAQ
+
+**Q: Can I see the conversion rate for my interactive videos via AI?**
+Yes! Use the `get_video_analytics` tool. Your agent will retrieve detailed performance metrics, including plays and the percentage of users who converted through the interactive elements.
+
+**Q: How do I import a new video into my library using the AI?**
+Use the `upload_video` action and provide the public URL of the video file. You can also specify an optional name for the video in your Tolstoy library.
+
+**Q: Is it possible to list all my branching video projects?**
+Absolutely. Use the `list_interactive_projects` tool to retrieve a directory of all your interactive flows and branching video experiences.
+
+
 ## Installation & Usage
 
-To install and use the **Tolstoy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tolstoy](https://vinkius.com/mcp/tolstoy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tolstoy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tolstoy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tolstoy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tolstoy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

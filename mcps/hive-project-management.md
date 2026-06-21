@@ -1,7 +1,6 @@
 # Hive (Project Management) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hive-project-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hive-project-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hive-project-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hive-project-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Hive (Project Manageme
 > I've identified 3 action templates in Engineering: 'Bug Report', 'Feature Specification', and 'Code Review Checklist'. You can use these templates to ensure all required fields are filled when creating new actions.
 
 
+## ❓ FAQ
+
+**Q: Can I create new tasks directly through my agent?**
+Yes. Use the `create_action` tool to generate new tasks in a specific workspace. You provide the title and workspace ID, and your agent will handle the backend orchestration to create the action instantly.
+
+**Q: How do I find my Workspace ID?**
+Ask your agent to `list_workspaces`. It will return a list of all workspaces you have access to, along with their unique IDs, which are required for project and action operations.
+
+**Q: Can I see the templates we have defined for repeatable workflows?**
+Absolutely. Use the `list_templates` tool to see all action templates in a workspace. This helps your agent understand the predefined workflows your team uses for consistent project delivery.
+
+
 ## Installation & Usage
 
-To install and use the **Hive (Project Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hive-project-management](https://vinkius.com/mcp/hive-project-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hive (Project Management)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hive-project-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hive (Project Management)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hive-project-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

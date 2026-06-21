@@ -1,7 +1,6 @@
 # Eventmix MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventmix)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eventmix-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eventmix-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventmix)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Eventmix** MCP server 
 > Scanning analytics... Your latest virtual event had a total of 150 unique viewers with an average duration of 45 minutes per attendee. Engagement peaked during the 'Q&A' session. Shall I check for poll results?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Eventmix API Key?**
+Log in to your account, navigate to **Account Settings** > **API**, and copy the **X-API-Key** displayed there.
+
+**Q: Can I check analytics for a specific event?**
+Yes! Use the `get_event_usage_analytics` tool with a specific event ID to retrieve metrics like total duration and engagement.
+
+**Q: Does it support sending registration codes?**
+Absolutely. The `send_registration_code` tool allows your agent to email a verification code to a user to start their registration.
+
+
 ## Installation & Usage
 
-To install and use the **Eventmix** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eventmix](https://vinkius.com/mcp/eventmix)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Eventmix** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eventmix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Eventmix** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eventmix": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

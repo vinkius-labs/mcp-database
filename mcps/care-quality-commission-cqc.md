@@ -1,7 +1,6 @@
 # Care Quality Commission (CQC) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/care-quality-commission-cqc)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/care-quality-commission-cqc-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/care-quality-commission-cqc-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/care-quality-commission-cqc)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Care Quality Commissio
 > Retrieving changes for January 2024... I found 150 updated records. 45 locations had their ratings upgraded, and 12 were downgraded. I can list the details for you.
 
 
+## ❓ FAQ
+
+**Q: Can I search for care homes in a specific area?**
+Yes! Use the `search_locations_by_postcode` tool with a UK postcode. The agent will return registered care services in that vicinity along with their latest ratings.
+
+**Q: How do I see the latest rating for a hospital?**
+First, find the hospital's location ID using `search_providers`, then use the `get_location` tool. The response will include the overall rating and breakdown by service area.
+
+**Q: Does this include data for Scotland or Wales?**
+No. The CQC only regulates health and adult social care services in England. Other regions have different regulatory bodies.
+
+
 ## Installation & Usage
 
-To install and use the **Care Quality Commission (CQC)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/care-quality-commission-cqc](https://vinkius.com/mcp/care-quality-commission-cqc)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Care Quality Commission (CQC)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `care-quality-commission-cqc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Care Quality Commission (CQC)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "care-quality-commission-cqc": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

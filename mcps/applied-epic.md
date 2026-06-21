@@ -1,7 +1,6 @@
 # Applied Epic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/applied-epic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/applied-epic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/applied-epic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/applied-epic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Applied Epic** MCP ser
 > Activity 'Renewal Follow-up' has been successfully created and linked to client 'C998877'.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Applied Epic API credentials?**
+Register your application in the [Applied Dev Center](https://developer.myappliedproducts.com/) to receive a Client ID and Client Secret. You will also need your Enterprise ID and Epic Database Name.
+
+**Q: What is the Database Name?**
+The Database Name is the internal name of your Applied Epic database. You can find this information in your Epic platform settings or by contacting your agency's system administrator.
+
+**Q: Can I see document attachments?**
+Yes, the `list_attachments` tool allows you to find documents and files linked to clients and policies, though the content itself remains secured in your Epic platform.
+
+
 ## Installation & Usage
 
-To install and use the **Applied Epic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/applied-epic](https://vinkius.com/mcp/applied-epic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Applied Epic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `applied-epic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Applied Epic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "applied-epic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

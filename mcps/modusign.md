@@ -1,7 +1,6 @@
 # Modusign MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modusign)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/modusign-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/modusign-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modusign)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Modusign** MCP server 
 > Retrieving audit logs for doc_987... The document was created at 10:00 AM, sent to ryan@example.com at 10:05 AM, and was opened by the participant at 10:15 AM. It is currently awaiting signature.
 
 
+## ❓ FAQ
+
+**Q: Can I see who has already signed a document?**
+Yes. Use the `get_document` tool with the specific Document ID. The agent will return the list of participants and their respective signing status.
+
+**Q: What is an audit log in Modusign?**
+An audit log records every action taken on a document, including when it was sent, opened, and signed, providing legal proof of the transaction. Use the `get_audit_logs` tool to retrieve this history.
+
+**Q: How do I reuse my existing contract templates?**
+Use the `list_templates` tool to find the Template ID you need, and then provide that ID to the `create_document_from_template` tool along with the signer's details.
+
+
 ## Installation & Usage
 
-To install and use the **Modusign** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/modusign](https://vinkius.com/mcp/modusign)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Modusign** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `modusign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Modusign** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "modusign": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

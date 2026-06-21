@@ -1,7 +1,6 @@
 # Datadog MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-extended)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datadog-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datadog-extended-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-extended)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Datadog** MCP server u
 > Retrieved 8 SLOs. 2 are at risk: 1) 'API Availability (99.9%)' — current status: 99.82%, error budget remaining: 12% (7-day window). At current burn rate, budget will be exhausted in 2.3 days. 2) 'Checkout Latency P95 < 800ms' — current status: 99.1%, error budget remaining: 28%. The other 6 SLOs are healthy with >60% budget remaining. Would you like to inspect the monitors tied to the at-risk SLOs?
 
 
+## ❓ FAQ
+
+**Q: Can I silence noisy monitors during scheduled maintenance?**
+Yes. The `mute_monitor` action silences a specific monitor by its ID, suppressing all alert notifications. This is ideal during deployment windows or planned maintenance. Use `search_monitors` to find the monitor by name or tag first, then mute it by ID.
+
+**Q: Does Datadog require two credentials to connect?**
+Yes. You need your **API Key** (found in Organization Settings > API Keys) and your **Base URL**, which depends on your Datadog site region: `https://api.datadoghq.com` for US1, `https://api.datadoghq.eu` for EU, or `https://api.us3.datadoghq.com` for US3. The API Key is sent via the `DD-API-KEY` header.
+
+**Q: Can I run time-series metric queries with custom time ranges?**
+Yes. The `query_metrics` tool accepts a Datadog metric query string (e.g., `avg:system.cpu.user{host:web-01}`), a start epoch timestamp, and an end epoch timestamp. It returns the time-series data points for that metric across the specified window.
+
+
 ## Installation & Usage
 
-To install and use the **Datadog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/datadog-extended](https://vinkius.com/mcp/datadog-extended)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Datadog** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `datadog-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Datadog** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "datadog-extended": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

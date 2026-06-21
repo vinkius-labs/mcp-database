@@ -1,7 +1,6 @@
 # Cat Body Language Decoder MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cat-body-language-decoder)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cat-body-language-decoder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cat-body-language-decoder-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cat-body-language-decoder)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Cat Body Language Deco
 > Running `query_emotional_state`... The data points toward a **Relaxed** state (Confidence: 0.95). This combination of languid body position and narrow pupils suggests deep comfort and low environmental threat.
 
 
+## ❓ FAQ
+
+**Q: What kind of details should I provide for the best analysis?**
+For the most accurate reading, provide detailed descriptions for all variables: posture, ear angle, tail movement, and pupil size. The `query_emotional_state` tool synthesizes these inputs to give a comprehensive result. If you are unsure if your observations conflict, use the `query_confidence_and_ambiguity` tool first to identify conflicting descriptors.
+
+**Q: What does a low confidence score mean?**
+A lower confidence score indicates that the provided observations are ambiguous or contradictory according to known feline ethology. If this happens, run `query_confidence_and_ambiguity` to see which descriptors clash, and then focus your next observation on resolving those conflicts.
+
+**Q: Can this tool tell me if my cat is sick?**
+This server decodes emotional state based on observed behavior, not medical conditions. However, extreme or persistent changes in body language--such as chronic flatness of ears or unusual stillness--are signals you should observe closely and discuss with a vet. The `query_emotional_state` tool helps pinpoint the *emotion* behind the signal.
+
+
 ## Installation & Usage
 
-To install and use the **Cat Body Language Decoder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cat-body-language-decoder](https://vinkius.com/mcp/cat-body-language-decoder)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cat Body Language Decoder** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cat-body-language-decoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cat Body Language Decoder** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cat-body-language-decoder": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

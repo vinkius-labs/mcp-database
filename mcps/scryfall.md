@@ -1,7 +1,6 @@
 # Scryfall MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scryfall)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scryfall-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scryfall-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scryfall)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Scryfall** MCP server 
 > In 2023, Scryfall records several major releases including 'Phyrexia: All Will Be One' (ONE), 'March of the Machine' (MOM), and 'Wilds of Eldraine' (WOE).
 
 
+## ❓ FAQ
+
+**Q: Does the search tool support complex Scryfall syntax like 't:creature c:g cmc=3'?**
+Yes! The `search_cards` tool accepts any valid Scryfall search query, allowing you to filter by type, color, mana cost, power/toughness, and more.
+
+**Q: Can I find a card even if I don't remember the exact spelling of its name?**
+Absolutely. Use the `get_card_named` tool with the `fuzzy` parameter. Scryfall's engine will suggest the closest match to your input.
+
+**Q: How do I get the official rulings for a specific card interaction?**
+You can use the `get_rulings_by_id` tool. By providing the card's Scryfall ID, the agent will return all official judge rulings and timing notes associated with that card.
+
+
 ## Installation & Usage
 
-To install and use the **Scryfall** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/scryfall](https://vinkius.com/mcp/scryfall)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Scryfall** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `scryfall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Scryfall** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "scryfall": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

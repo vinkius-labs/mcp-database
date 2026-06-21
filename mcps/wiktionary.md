@@ -1,7 +1,6 @@
 # Wiktionary MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wiktionary)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wiktionary-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wiktionary-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wiktionary)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Wiktionary** MCP serve
 > Analyzing... 'Serendipity' is a noun. It refers to the occurrence and development of events by chance in a happy or beneficial way. I can provide examples of how to use it in a sentence.
 
 
+## ❓ FAQ
+
+**Q: Can I get the definition of an obscure word like 'synecdoche'?**
+Yes! Use the `get_word_definition` tool with the word 'synecdoche'. It will return the definitions, examples, and the part of speech from Wiktionary.
+
+**Q: How do I see the part of speech for a word?**
+The `get_word_definition` tool automatically identifies if a word is a noun, verb, adjective, etc., and provides definitions for each relevant part of speech.
+
+**Q: Does it provide a summary for general topics?**
+Yes. Use the `get_word_summary` tool to retrieve a concise description of a word that also functions as an encyclopedic topic, suitable for quick overviews.
+
+
 ## Installation & Usage
 
-To install and use the **Wiktionary** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wiktionary](https://vinkius.com/mcp/wiktionary)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wiktionary** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wiktionary` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wiktionary** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wiktionary": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

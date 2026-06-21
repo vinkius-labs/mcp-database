@@ -1,7 +1,6 @@
 # Strava MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/strava-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/strava-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Strava** MCP server us
 > Activity 123456789 has been updated successfully. The name is now 'Epic Trail Run' and the description has been appended with your notes.
 
 
+## ❓ FAQ
+
+**Q: Can I see my heart rate and power zones using this integration?**
+Yes! You can use the `get_athlete_zones` tool to retrieve your configured heart rate and power zones directly from your Strava profile.
+
+**Q: Is it possible to update the name or description of an existing activity?**
+Absolutely. Use the `update_activity` tool by providing the Activity ID. You can modify the name, sport type, description, and even toggle commute or trainer status.
+
+**Q: How can I check my all-time running or cycling statistics?**
+You can use the `get_athlete_stats` tool with your Athlete ID to get a comprehensive breakdown of your totals, including distance, moving time, and elevation gain for all sports.
+
+
 ## Installation & Usage
 
-To install and use the **Strava** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/strava-alternative](https://vinkius.com/mcp/strava-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Strava** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `strava-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Strava** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "strava-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

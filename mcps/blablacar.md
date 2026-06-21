@@ -1,7 +1,6 @@
 # BlaBlaCar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blablacar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blablacar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blablacar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blablacar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **BlaBlaCar** MCP server
 > I'll search both carpool rides and BlaBlaCar Bus trips so you can compare all transportation options.
 
 
+## ❓ FAQ
+
+**Q: Can I book rides directly through this MCP server?**
+This MCP server provides search, comparison, and driver verification tools. Booking requires redirecting to the BlaBlaCar website or app via the trip link returned in search results. The agent can find the perfect ride, but final booking happens on BlaBlaCar's platform for security.
+
+**Q: Does this work for international trips between countries?**
+Yes! BlaBlaCar operates across 22 countries including France, Spain, Italy, Germany, Brazil, Mexico, India, and more. The search_international_trips tool lets you filter by country codes for cross-border rides. Perfect for Europe where BlaBlaCar has extensive international networks.
+
+**Q: How do I get a BlaBlaCar API key?**
+BlaBlaCar provides API access through partnerships. Contact BlaBlaCar's developer relations team or check if you have access through aggregator services like TripGo. For testing, you can explore public API documentation and request access via their developer portal.
+
+
 ## Installation & Usage
 
-To install and use the **BlaBlaCar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blablacar](https://vinkius.com/mcp/blablacar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BlaBlaCar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blablacar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BlaBlaCar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blablacar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

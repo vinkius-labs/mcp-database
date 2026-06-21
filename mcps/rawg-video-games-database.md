@@ -1,7 +1,6 @@
 # RAWG Video Games Database MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rawg-video-games-database)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rawg-video-games-database-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rawg-video-games-database-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rawg-video-games-database)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **RAWG Video Games Datab
 > Fetching the platform list... RAWG supports over 50 platforms, including current generation systems like PlayStation 5, Xbox Series S/X, and Nintendo Switch, as well as retro systems like the NES and Commodore 64.
 
 
+## ❓ FAQ
+
+**Q: Can I search for 'Cyberpunk 2077' and see its platforms?**
+Yes! Use the `search_video_games` tool with the query 'Cyberpunk 2077'. The results will show you all platforms where the game is available, such as PC, PlayStation, and Xbox.
+
+**Q: How do I see the average community rating?**
+The ratings are included in the game metadata retrieved by the `get_game_details` or `search_video_games` tools. It shows the average score given by RAWG users.
+
+**Q: Is it possible to list all games for a specific platform?**
+The current toolset focuses on searching and retrieving specific game details. To explore platforms, you can use the `list_platforms` tool to see all supported systems.
+
+
 ## Installation & Usage
 
-To install and use the **RAWG Video Games Database** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rawg-video-games-database](https://vinkius.com/mcp/rawg-video-games-database)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **RAWG Video Games Database** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rawg-video-games-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **RAWG Video Games Database** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rawg-video-games-database": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # API-Football MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/api-football)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/api-football-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/api-football-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/api-football)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **API-Football** MCP ser
 > I've analyzed the H2H history between Flamengo and Fluminense. In their last 10 encounters, Flamengo has won 4 times, Fluminense 3 times, and they have drawn 3 times. The average goals per game is 2.4. Would you like to see the details of their next scheduled derby?
 
 
+## ❓ FAQ
+
+**Q: How do I find my API-Football (API-SPORTS) Key?**
+Log in to the [API-SPORTS Dashboard](https://dashboard.api-football.com/), navigate to the 'API-Key' section, and copy your unique token.
+
+**Q: Does the API provide real-time updates?**
+Yes! The `list_live_fixtures` tool retrieves results from the real-time match engine of API-Football, covering goals, cards, and status updates as they happen.
+
+**Q: Can I filter leagues by country?**
+Yes! Use the `list_leagues` tool and provide the `country` parameter (e.g., 'Brazil', 'England') to see only the competitions available in that specific region.
+
+
 ## Installation & Usage
 
-To install and use the **API-Football** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/api-football](https://vinkius.com/mcp/api-football)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **API-Football** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `api-football` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **API-Football** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "api-football": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

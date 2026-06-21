@@ -1,7 +1,6 @@
 # Inworld AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inworld-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/inworld-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/inworld-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inworld-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Inworld AI** MCP serve
 > I'm using `design_voice` with your description. I've generated a preview for a 'Mysterious, deep-voiced wizard'. Would you like to hear the preview or publish this voice to your workspace?
 
 
+## ❓ FAQ
+
+**Q: How can I create a custom voice using only a text description?**
+You can use the `design_voice` tool. Simply provide a prompt like 'Warm, friendly male voice' and a preview text. The tool will generate voice options that you can later publish to your library.
+
+**Q: What is the difference between synchronous and streaming speech synthesis?**
+Use `synthesize_speech_sync` to receive the full audio file once processing is complete. Use `synthesize_speech_stream` for real-time applications where you want to receive audio chunks as they are generated for lower latency.
+
+**Q: Can I manage multiple AI characters or models through this server?**
+Yes. You can use `list_routers` and `get_router` to manage your orchestration layers, and `list_models` to see available AI models in your Inworld workspace.
+
+
 ## Installation & Usage
 
-To install and use the **Inworld AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/inworld-ai](https://vinkius.com/mcp/inworld-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Inworld AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `inworld-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Inworld AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "inworld-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

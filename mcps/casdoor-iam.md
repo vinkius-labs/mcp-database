@@ -1,7 +1,6 @@
 # Casdoor (IAM) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/casdoor-iam)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/casdoor-iam-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/casdoor-iam-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/casdoor-iam)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Casdoor (IAM)** MCP se
 > I have successfully created the user 'dev_user' in the 'engineering' organization. Would you like to set an email or display name for this user?
 
 
+## ❓ FAQ
+
+**Q: How do I list all users belonging to a specific organization?**
+Use the `list_users` tool and provide the organization name in the 'owner' parameter. The agent will return a list of all users registered under that organization.
+
+**Q: What format should I use to fetch a specific user's details?**
+When using the `get_user` tool, the ID must be formatted as `<organization>/<username>`. For example, to find user 'alice' in the 'built-in' organization, use 'built-in/alice'.
+
+**Q: Can I manage applications and organizations as well?**
+Yes. You can use `list_organizations` and `get_organization` to manage your hierarchy, and `list_applications` or `get_application` to inspect app-specific configurations.
+
+
 ## Installation & Usage
 
-To install and use the **Casdoor (IAM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/casdoor-iam](https://vinkius.com/mcp/casdoor-iam)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Casdoor (IAM)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `casdoor-iam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Casdoor (IAM)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "casdoor-iam": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

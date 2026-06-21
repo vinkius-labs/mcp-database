@@ -1,7 +1,6 @@
 # Play.ht (AI Voice Generation & TTS) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/playht-ai-voice-generation-tts)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/playht-ai-voice-generation-tts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/playht-ai-voice-generation-tts-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/playht-ai-voice-generation-tts)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Play.ht (AI Voice Gene
 > The conversion for 'trans_123' is complete! You can access your audio file at the generated URL.
 
 
+## ❓ FAQ
+
+**Q: How can I find the right voice ID for my language?**
+Use the `get_voices` tool. It returns a complete list of available voices, allowing you to filter by name, language, and gender to find the perfect match for your project.
+
+**Q: Can I control the speed and format of the generated audio?**
+Yes! When using `convert_tts`, you can specify the `speed` (from 0.5 to 2.0), the `output_format` (like mp3 or wav), and the `quality` level to suit your needs.
+
+**Q: What should I do if a conversion takes a long time?**
+For longer texts, use the `get_tts_status` tool with your `transcription_id`. This allows you to check if the audio is still processing or ready for download.
+
+
 ## Installation & Usage
 
-To install and use the **Play.ht (AI Voice Generation & TTS)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/playht-ai-voice-generation-tts](https://vinkius.com/mcp/playht-ai-voice-generation-tts)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Play.ht (AI Voice Generation & TTS)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `playht-ai-voice-generation-tts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Play.ht (AI Voice Generation & TTS)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "playht-ai-voice-generation-tts": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

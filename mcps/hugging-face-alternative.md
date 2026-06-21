@@ -1,7 +1,6 @@
 # Hugging Face MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hugging-face-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hugging-face-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hugging-face-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hugging-face-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Hugging Face** MCP ser
 > Found 15 datasets: 1) 'stanfordnlp/imdb' (25K reviews), 2) 'tweet_eval' (multi-task tweets), 3) 'amazon_reviews_multi' (200K reviews in 6 languages).
 
 
+## ❓ FAQ
+
+**Q: Can my AI run inference on Hugging Face models?**
+Yes. Use `run_inference`, `run_text_generation`, `run_text_classification`, or `run_summarization` to send input to any hosted model and get results instantly.
+
+**Q: How do I find the best model for a task?**
+Use `list_models_by_task` with a pipeline tag like 'text-generation' or 'image-classification'. Results are sorted by downloads so the most popular appear first.
+
+**Q: Can I browse datasets and Spaces?**
+Yes. `list_datasets` and `list_spaces` let you search by keyword, and `get_dataset` / `get_space` return full metadata.
+
+
 ## Installation & Usage
 
-To install and use the **Hugging Face** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hugging-face-alternative](https://vinkius.com/mcp/hugging-face-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hugging Face** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hugging-face-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hugging Face** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hugging-face-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

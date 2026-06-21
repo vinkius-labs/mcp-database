@@ -1,7 +1,6 @@
 # NeonCRM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neoncrm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/neoncrm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/neoncrm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neoncrm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **NeonCRM** MCP server u
 > Retrieving events... You have 3 upcoming events: 'Annual Spring Gala' (Scheduled: May 15th), 'Community Fun Run' (Scheduled: June 2nd), and 'Quarterly Board Meeting'. Would you like to see the registration list for the Spring Gala?
 
 
+## ❓ FAQ
+
+**Q: How do I find my NeonCRM Organization ID?**
+Your Organization ID (Org ID) is found in your NeonCRM instance URL: https://[OrgID].neoncrm.com.
+
+**Q: Where do I generate an API Key?**
+In your NeonCRM dashboard, navigate to Settings > Global Settings > API Settings to find or create your API keys.
+
+**Q: Can I see custom field data?**
+Yes! The `get_account` and `get_donation` tools will return custom field values if they are populated, and you can list all available fields using `list_custom_fields`.
+
+
 ## Installation & Usage
 
-To install and use the **NeonCRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/neoncrm](https://vinkius.com/mcp/neoncrm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NeonCRM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `neoncrm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NeonCRM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "neoncrm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

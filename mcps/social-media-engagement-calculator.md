@@ -1,7 +1,6 @@
 # Social Media Engagement Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/social-media-engagement-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/social-media-engagement-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/social-media-engagement-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/social-media-engagement-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Social Media Engagemen
 > The calculated LinkedIn engagement rate is 13.0%.
 
 
+## ❓ FAQ
+
+**Q: How is Instagram engagement calculated?**
+The `compute_instagram_lag` tool calculates the rate by summing likes, comments, and saves, then dividing that sum by the total number of impressions.
+
+**Q: What is a benchmark standard?**
+A benchmark standard is a target engagement rate based on your account size. You can use `retrieve_benchmark_standard` to find the appropriate target for Nano, Micro, Macro, or Mega tiers.
+
+**Q: Does this tool support LinkedIn?**
+Yes, the `compute_linkedin_engagement` tool calculates engagement rates for LinkedIn using likes, comments, and shares relative to impressions.
+
+
 ## Installation & Usage
 
-To install and use the **Social Media Engagement Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/social-media-engagement-calculator](https://vinkius.com/mcp/social-media-engagement-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Social Media Engagement Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `social-media-engagement-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Social Media Engagement Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "social-media-engagement-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Salesquared MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesquared)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salesquared-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salesquared-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesquared)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,49 @@ Here are some examples of how you can interact with the **Salesquared** MCP serv
 > SMS campaign sent to 156 hot prospect leads. Message: "Hi [Name], we'd love to show you how our platform can help your team. Book a personalized demo at your convenience: [booking_link]. Reply STOP to opt out." Delivery: 153 delivered (98.1%), 3 undeliverable. Personalization: first name and company name injected. Booking link: unique per recipient for tracking. Based on similar campaigns, expect 18-22 bookings (12-14% conversion). Campaign cost: $23.40.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically send a Voice OTP to verify a user's mobile number?**
+Yes! Use the `send_voice_otp` tool. Provide the mobile number and the OTP code, and your agent will trigger an automated call to deliver the security code instantly.
+
+**Q: How do I find my Salesquared API Key?**
+Log in to your Salesquared dashboard, navigate to the API or Developer section, and you will find your unique secret API Key there.
+
+
 ## Installation & Usage
 
-To install and use the **Salesquared** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/salesquared](https://vinkius.com/mcp/salesquared)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Salesquared** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `salesquared` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Salesquared** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "salesquared": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

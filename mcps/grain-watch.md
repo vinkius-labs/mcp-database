@@ -1,7 +1,6 @@
 # Grain Watch MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grain-watch)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grain-watch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grain-watch-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grain-watch)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -109,12 +108,52 @@ Here are some examples of how you can interact with the **Grain Watch** MCP serv
 > Generating facility overview... Total monitored silos: 12. Average temperature: 19.3C (normal range). Active hot spots: 1 (Silo 7, center-mid zone at 28.5C). Temperature alerts: 1 critical, 0 warnings. Sensor health: 96% online (1 sensor offline in Silo 4, scheduled maintenance). Overall spoilage risk: LOW for 10 silos, MODERATE for Silo 7, LOW for Silo 4. Priority action: Address hot spot in Silo 7 with immediate aeration. Schedule sensor replacement in Silo 4 within 1 week. Would you like detailed recommendations for each alert?
 
 
+## ❓ FAQ
+
+**Q: Can my AI detect hot spots developing in my grain silos before spoilage occurs?**
+Yes! Use the `get_hotspot_alerts` tool to check for active hot spot detections across your silos. Hot spots are localized temperature increases that indicate early biological activity (mold, insects, or grain respiration) before visible spoilage. For trend analysis, use `get_temperature_history` to see how temperatures have been changing over the past days or weeks. Early hot spot detection gives you critical time to activate aeration and prevent grain loss.
+
+**Q: How do I get the AI spoilage risk assessment for my silos?**
+Use the `get_spoilage_risk` tool with your silo ID. Grain Watch AI analyzes temperature trends, humidity patterns, and grain type to provide a risk level (low, moderate, high, critical), contributing factors, predicted days until spoilage if conditions persist, and recommended preventive actions. This combines multiple data sources into a single actionable assessment. For a facility-wide view, use `get_facility_overview` to see overall risk across all silos.
+
+**Q: Can I check the health of my temperature sensors to ensure reliable monitoring?**
+Yes! Use the `get_sensor_health` tool with your silo ID to check the status of all temperature and humidity sensors. This shows which sensors are active, offline, or faulted, along with last communication times and battery levels for wireless sensors. You can also use `get_sensor_map` to see the physical layout of all sensors in a silo, helping you understand which zones each sensor monitors.
+
+
 ## Installation & Usage
 
-To install and use the **Grain Watch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/grain-watch](https://vinkius.com/mcp/grain-watch)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Grain Watch** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `grain-watch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Grain Watch** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "grain-watch": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Censys MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/censys)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/censys-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/censys-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/censys)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **Censys** MCP server us
 > Found 500+ Let's Encrypt certificates expiring this month. Top issuers: R3, E1, E5. Common subjects include domains ending in .com, .org and .net. Most use RSA 2048-bit or ECDSA P-256 keys.
 
 
+## ❓ FAQ
+
+**Q: How do I get Censys API credentials?**
+Sign up for a free account at [**censys.io**](https://censys.io), go to your account page and generate API credentials. Free tier includes limited queries per day.
+
+**Q: What kind of hosts can I find?**
+Censys scans the entire IPv4 space regularly. You can find web servers, databases, SSH servers, mail servers, IoT devices, industrial control systems and any internet-facing service.
+
+**Q: What query syntax is supported?**
+Censys supports powerful query syntax: service name (services.service_name: HTTP), port (services.port:443), certificate fields (parsed.subject.country: US), OS detection (metadata.os: Linux), ASN, geographic location and boolean operators (AND, OR, NOT).
+
+
 ## Installation & Usage
 
-To install and use the **Censys** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/censys](https://vinkius.com/mcp/censys)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Censys** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `censys` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Censys** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "censys": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

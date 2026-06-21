@@ -1,7 +1,6 @@
 # Hevo Data (ETL & Data Pipeline) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hevo-data-etl-data-pipeline)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hevo-data-etl-data-pipeline-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hevo-data-etl-data-pipeline-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hevo-data-etl-data-pipeline)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Hevo Data (ETL & Data 
 > You've used 12.5 million rows out of your 20 million row monthly quota (62.5%). At current ingestion rates, you are projected to finish the month at 18.2 million rows. I can break down usage by pipeline if needed.
 
 
+## ❓ FAQ
+
+**Q: Can I check the status of my data destinations through my agent?**
+Yes. Use the `list_destinations` tool to see all your warehouse targets. Your agent will provide the status and details of where your data is being replicated, ensuring delivery to platforms like BigQuery or Snowflake.
+
+**Q: How do I find a specific pipeline's configuration?**
+Use the `get_pipeline` tool with a unique Pipeline ID to extract explicit routing mappings and ingestion frequencies. This is perfect for auditing specific ETL flows without manual searching.
+
+**Q: Can I monitor my account's row usage through a conversation?**
+Absolutely. The `get_usage` tool retrieves real-time account usage metrics and billing ceilings, helping you track how many rows have been replicated and ensure you stay within your plan's limits.
+
+
 ## Installation & Usage
 
-To install and use the **Hevo Data (ETL & Data Pipeline)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hevo-data-etl-data-pipeline](https://vinkius.com/mcp/hevo-data-etl-data-pipeline)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hevo Data (ETL & Data Pipeline)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hevo-data-etl-data-pipeline` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hevo Data (ETL & Data Pipeline)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hevo-data-etl-data-pipeline": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

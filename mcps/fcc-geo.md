@@ -1,7 +1,6 @@
 # FCC Geo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fcc-geo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fcc-geo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fcc-geo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fcc-geo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -57,12 +56,52 @@ Here are some examples of how you can interact with the **FCC Geo** MCP server u
 Coordinates map directly to California (State FIPS 06), Los Angeles County (County FIPS 06037). The block FIPS evaluates firmly to 060372074001004 natively effortlessly.
 
 
+## ❓ FAQ
+
+**Q: Do I need to pay or provide an API Key?**
+Neither! The FCC Geo API operates completely publicly. There are zero auth steps, meaning you can plug it into any AI agent securely and immediately.
+
+**Q: How accurate is the coordinate conversion?**
+It draws directly from US federal census files. When you submit raw geographic decimal degrees, the system instantly identifies the overlapping demographic and telecommunication limits with absolute national accuracy.
+
+**Q: Can I query locations outside of the United States?**
+No. The FCC Geo API specifically maps United States territories and census blocks. International coordinates will not return valid census or telecommunication zone data.
+
+
 ## Installation & Usage
 
-To install and use the **FCC Geo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fcc-geo](https://vinkius.com/mcp/fcc-geo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FCC Geo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fcc-geo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FCC Geo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fcc-geo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

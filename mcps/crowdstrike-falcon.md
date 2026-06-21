@@ -1,7 +1,6 @@
 # CrowdStrike Falcon MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crowdstrike-falcon)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/crowdstrike-falcon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/crowdstrike-falcon-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crowdstrike-falcon)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **CrowdStrike Falcon** M
 > 18 ransomware IOCs added this month: 8 SHA256 hashes (LockBit 3.0 variants), 5 domains (C2 infrastructure), 3 IPs (data exfiltration endpoints), 2 mutex names. Sources: CrowdStrike Intelligence (12), Custom (6). All set to 'Detect' action.
 
 
+## ❓ FAQ
+
+**Q: What authentication does CrowdStrike use?**
+CrowdStrike uses OAuth 2.0 Client Credentials. You create an API Client in the Falcon Console under Support > API Clients and Keys. The server automatically obtains and caches Bearer tokens using your Client ID and Secret.
+
+**Q: Which cloud regions are supported?**
+All CrowdStrike commercial clouds: US-1 (api.crowdstrike.com), US-2 (api.us-2.crowdstrike.com), EU-1 (api.eu-1.crowdstrike.com), and US-GOV-1. Configure the Base URL credential to match your tenant region.
+
+**Q: Can it triage detections automatically?**
+Yes. The list_detections tool returns severity, tactic, technique, and device context. An AI agent can use this to auto-triage low/medium detections and escalate critical ones, reducing SOC analyst workload by 60-80%.
+
+
 ## Installation & Usage
 
-To install and use the **CrowdStrike Falcon** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/crowdstrike-falcon](https://vinkius.com/mcp/crowdstrike-falcon)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CrowdStrike Falcon** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `crowdstrike-falcon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CrowdStrike Falcon** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "crowdstrike-falcon": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

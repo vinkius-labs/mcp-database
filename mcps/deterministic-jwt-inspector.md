@@ -1,7 +1,6 @@
 # Deterministic JWT Inspector MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-jwt-inspector)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-jwt-inspector-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-jwt-inspector-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-jwt-inspector)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Deterministic JWT Insp
 > Using the inspect_jwt tool: The header analysis indicates the token is using the 'RS256' algorithm.
 
 
+## ❓ FAQ
+
+**Q: Does this tool verify the JWT signature for authentication?**
+No. The JWT Inspector is strictly a structural diagnostic tool. It bypasses signature verification to allow the AI to inspect payloads and headers during development and debugging workflows. It should not be used as a backend authentication gate.
+
+**Q: Is it secure to decode tokens this way?**
+Extremely secure. Instead of pasting your token into a third-party website, the decoding happens entirely within the deterministic V8 engine of your local agent runtime, ensuring zero data leakage.
+
+**Q: Can it tell me if a token has expired?**
+Yes. The engine automatically parses the `exp` (expiration) and `iat` (issued at) claims, converting them from UNIX timestamps into human-readable ISO dates and returning a boolean flag indicating if it is expired.
+
+
 ## Installation & Usage
 
-To install and use the **Deterministic JWT Inspector** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deterministic-jwt-inspector](https://vinkius.com/mcp/deterministic-jwt-inspector)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deterministic JWT Inspector** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deterministic-jwt-inspector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deterministic JWT Inspector** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deterministic-jwt-inspector": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

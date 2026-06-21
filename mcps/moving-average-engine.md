@@ -1,7 +1,6 @@
 # Moving Average Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moving-average-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moving-average-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moving-average-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moving-average-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -45,12 +44,52 @@ Here are some examples of how you can interact with the **Moving Average Engine*
 > The computation has been executed with mathematical precision. All results are exact and ready for review.
 
 
+## ❓ FAQ
+
+**Q: SMA vs EMA?**
+SMA (Simple Moving Average) weights all data points equally. EMA (Exponential) gives more weight to recent prices, making it react faster to price changes.
+
+**Q: How large can the data array be?**
+It can handle arrays with tens of thousands of data points instantly, limited only by the Context Window used to pass the JSON to the tool.
+
+**Q: Is this identical to TradingView?**
+Yes, it uses the exact same mathematical formulas used by institutional platforms like TradingView and Bloomberg.
+
+
 ## Installation & Usage
 
-To install and use the **Moving Average Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/moving-average-engine](https://vinkius.com/mcp/moving-average-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Moving Average Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `moving-average-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Moving Average Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "moving-average-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

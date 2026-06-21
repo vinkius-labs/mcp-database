@@ -1,7 +1,6 @@
 # Fastn MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fastn)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fastn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fastn-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fastn)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Fastn** MCP server usi
 > Fetching trace for 'exec_789xyz'... The execution had 4 steps: 1. Auth (Success), 2. Fetch Data (Success), 3. Transform (Success), 4. Load (Success). Total duration was 450ms.
 
 
+## ❓ FAQ
+
+**Q: Can I trigger a flow and get the result immediately?**
+Yes. Use the `execute_flow` tool with the flow name and input data. It performs a real-time sync execution and returns the response directly to the agent.
+
+**Q: How can I debug a failed flow execution?**
+You can use `list_executions` to find the ID of the failed run, then use `get_execution` to retrieve a full step-by-step trace of what happened during that specific execution.
+
+**Q: Is it possible to update an existing workflow definition?**
+Absolutely. The `update_workflow` tool allows you to modify the JSON definition of any flow. Remember to use `publish_workflow` afterwards to deploy your changes to the live environment.
+
+
 ## Installation & Usage
 
-To install and use the **Fastn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fastn](https://vinkius.com/mcp/fastn)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fastn** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fastn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fastn** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fastn": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ArborNote MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arbornote)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arbornote-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arbornote-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arbornote)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **ArborNote** MCP server
 > Client orchestrated! I've successfully created the profile for John Doe (ID: cli_456) and applied the high-fidelity phone update. He is now active in your CRM and ready for a new proposal. Shall I list your available service types?
 
 
+## ❓ FAQ
+
+**Q: How do I find my ArborNote API Key?**
+Log in to your account, navigate to **Settings** > **API**, and generate or copy your unique secret access key.
+
+**Q: Can I update client details via AI?**
+Yes! The `update_arbornote_client` tool allows your agent to modify names, emails, and phone numbers for existing records programmatically.
+
+**Q: How do I check financial metrics?**
+Use the `get_arbornote_metrics` tool to retrieve a high-fidelity summary of your agency's financial and operational performance data.
+
+
 ## Installation & Usage
 
-To install and use the **ArborNote** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/arbornote](https://vinkius.com/mcp/arbornote)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ArborNote** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `arbornote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ArborNote** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "arbornote": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

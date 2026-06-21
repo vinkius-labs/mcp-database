@@ -1,7 +1,6 @@
 # ApplicantStack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/applicantstack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/applicantstack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/applicantstack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/applicantstack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **ApplicantStack** MCP s
 > Candidate 'C12345' has been successfully moved to the 'Hired' stage.
 
 
+## ❓ FAQ
+
+**Q: How do I find my ApplicantStack API Token?**
+Log in to ApplicantStack, go to **Settings**, then **Edit Settings**. Your API token will be listed under the API section.
+
+**Q: What is the subdomain?**
+The subdomain is the first part of your ApplicantStack URL (e.g., if your URL is `mycompany.applicantstack.com`, your subdomain is `mycompany`).
+
+**Q: Can I move a candidate to a new stage?**
+Yes, use the `update_candidate` tool and provide the new stage name in the `stage` field to advance them in your workflow.
+
+
 ## Installation & Usage
 
-To install and use the **ApplicantStack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/applicantstack](https://vinkius.com/mcp/applicantstack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ApplicantStack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `applicantstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ApplicantStack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "applicantstack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

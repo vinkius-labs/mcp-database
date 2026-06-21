@@ -1,7 +1,6 @@
 # 3D AI Studio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/3d-ai-studio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/3d-ai-studio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/3d-ai-studio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/3d-ai-studio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **3D AI Studio** MCP ser
 > Repairing mesh... Fixed 12 non-manifold edges, 3 holes filled, 8 inverted normals corrected. Model is now watertight. Calculating volume with PLA density (1.24 g/cm3): Volume: 45.8 cm3, Surface area: 128.4 cm2, Estimated weight: 56.8 grams, Bounding box: 6.2 x 4.1 x 3.8 cm. Converted to STL format for 3D printing. Download: https://cdn.3daistudio.com/repaired/model_printable.stl. The model is ready for slicing with Cura, PrusaSlicer, or Bambu Studio. Would you like me to optimize the mesh further for faster printing?
 
 
+## ❓ FAQ
+
+**Q: Can my AI generate a 3D model from a text description with specific style?**
+Yes! Use the `generate_text_to_3d` tool with your text prompt and style parameter. Choose from models like Hunyuan 3D Pro (highest quality), TRELLIS.2-4B (structured topology), or Tripo (fastest generation). Specify style as photorealistic, stylized, anime, cartoon, or lowpoly. Set face limits and density presets. Output in GLB, OBJ, FBX, STL, PLY, USDZ, or 3MF formats.
+
+**Q: How do I apply AI texturing to an existing 3D model?**
+Use the `generate_ai_texturing` tool with your existing 3D model URL. Provide a text prompt describing the desired material (e.g., rusty metal, polished wood, cartoon stone) or a style image URL for texture transfer. The API generates complete PBR texture sets including albedo, normal, metallic, and roughness maps. You can specify texture resolution from 1024 to 4096 pixels.
+
+**Q: Can I repair and prepare a 3D model for 3D printing?**
+Yes! Use `repair_3d_mesh` to fix non-manifold geometry, holes, and inverted normals making your model watertight for 3D printing. Then use `calculate_volume_3d` to get volume, surface area, and weight estimates for your chosen material (PLA, ABS, resin, metal). Finally use `convert_3d_format` to output in STL or 3MF format which are optimal for 3D printing slicers.
+
+
 ## Installation & Usage
 
-To install and use the **3D AI Studio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/3d-ai-studio](https://vinkius.com/mcp/3d-ai-studio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **3D AI Studio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `3d-ai-studio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **3D AI Studio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "3d-ai-studio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

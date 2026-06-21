@@ -1,7 +1,6 @@
 # MyCase Legal MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mycase-legal)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mycase-legal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mycase-legal-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mycase-legal)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -173,12 +172,55 @@ Here are some examples of how you can interact with the **MyCase Legal** MCP ser
 > Found 3 cases for John Smith: 1) Smith Divorce [open] — Family Law, filed 2025-03-15, 2) Smith Custody Modification [open] — Family Law, filed 2026-01-20, 3) Smith Estate Planning [closed] — Estate Planning, completed 2024-11-10. Total billable time across all matters: 32.5 hours.
 
 
+## ❓ FAQ
+
+**Q: What features of MyCase are available through this API?**
+The API provides access to: Matters/Cases (CRUD operations), Contacts/Clients (create and list), Documents (list by matter), Time Entries (list and create), Calendar Events (list), Invoices (list and get details), and Payments (list). You can search matters by keyword, filter by status and practice area, and view all cases for a specific client.
+
+**Q: How do I get a MyCase API key?**
+Log in to your MyCase account at mycase.com, navigate to Settings → API or Integrations, and generate an API key. The key gives you access to your firm's case data, client information, time entries, and billing data. Contact MyCase support if you don't see the API option in your account.
+
+**Q: Can I create new cases and clients through the API?**
+Yes! You can create new matters/cases with title, client assignment, status, and practice area. You can also create new contacts/clients with name, email, phone, and contact type (client, opposing party, witness, etc.). Use `create_mycase_matter` and `create_mycase_contact` tools for these operations.
+
+**Q: How do I track billable time with MyCase API?**
+Use `create_mycase_time_entry` to log time against any case. Provide the matter ID, description of work, and duration in minutes. You can specify whether the entry is billable and set a custom hourly rate. Use `list_mycase_time_entries` to view all time logged against a specific case.
+
+
 ## Installation & Usage
 
-To install and use the **MyCase Legal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mycase-legal](https://vinkius.com/mcp/mycase-legal)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MyCase Legal** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mycase-legal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MyCase Legal** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mycase-legal": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

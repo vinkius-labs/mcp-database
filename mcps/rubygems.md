@@ -1,7 +1,6 @@
 # RubyGems MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rubygems)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rubygems-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rubygems-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rubygems)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -106,12 +105,52 @@ Here are some examples of how you can interact with the **RubyGems** MCP server 
 > I've retrieved the stats using `get_gem_downloads`. For 'sidekiq' version 7.2.0, there have been approximately 1.2 million downloads. The total downloads for all versions of Sidekiq exceed 150 million.
 
 
+## ❓ FAQ
+
+**Q: Can I see which gems depend on a specific gem?**
+Yes! Use the `get_reverse_dependencies` tool with the gem name. It will return a list of all gems on RubyGems.org that list that gem as a dependency.
+
+**Q: How do I check my own gems and their status?**
+By providing your API key, you can use the `list_my_gems` tool. This will display all gems where you have push access and ownership rights.
+
+**Q: Can I get the full version history of a package?**
+Absolutely. The `get_gem_versions` tool retrieves every published version of a specific gem, allowing you to audit changes and release frequency.
+
+
 ## Installation & Usage
 
-To install and use the **RubyGems** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rubygems](https://vinkius.com/mcp/rubygems)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **RubyGems** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rubygems` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **RubyGems** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rubygems": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

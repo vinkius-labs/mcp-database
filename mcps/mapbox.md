@@ -1,7 +1,6 @@
 # Mapbox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapbox)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mapbox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mapbox-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapbox)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,55 @@ Here are some examples of how you can interact with the **Mapbox** MCP server us
 > Within 15 minutes driving from Times Square you can reach: most of Manhattan below 96th St, parts of Brooklyn (Williamsburg, DUMBO), Long Island City in Queens, and parts of the Bronx via the bridges. The isochrone polygon covers approximately 85 square km.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Mapbox Access Token?**
+Sign up for a free account at [**account.mapbox.com**](https://account.mapbox.com/access-tokens/), go to **Access Tokens** and create a new token. Copy the token — it starts with `pk.`.
+
+**Q: Can I get driving directions?**
+Yes! Use get_directions with coordinates and the 'driving' profile. Returns route distance, duration, step-by-step instructions and geometry. Also supports 'walking' and 'cycling' profiles.
+
+**Q: What are isochrones used for?**
+Isochrones show the area reachable within a specific time or distance from a location. Useful for delivery zones, commute analysis, real estate proximity and accessibility planning.
+
+**Q: Can I calculate distances between multiple locations?**
+Yes! Use get_distance_matrix with multiple coordinate pairs. Returns a matrix of durations (seconds) and distances (meters) between all source-destination pairs. Supports driving, walking and cycling profiles.
+
+
 ## Installation & Usage
 
-To install and use the **Mapbox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mapbox](https://vinkius.com/mcp/mapbox)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mapbox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mapbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mapbox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mapbox": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Google Analytics MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-analytics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-analytics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-analytics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -137,12 +136,55 @@ Here are some examples of how you can interact with the **Google Analytics** MCP
 **Biggest drop-off**: Between 'Viewed Product' and 'Added to Cart' — 60% of users leave here. This suggests product pages may need clearer CTAs, better pricing visibility, or faster load times.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Google Analytics API key and what type of credentials do I need?**
+You need an API Key from Google Cloud Console. Go to **console.cloud.google.com** → Select or create a project → Enable the **Google Analytics Data API v1** → Navigate to **APIs & Services > Credentials** → Click **Create Credentials > API Key**. Copy the key (starts with `AIzaSy...`). Then, in Google Analytics Admin, add the service account email with Viewer or Analyst role to your GA4 property. Paste the API key below.
+
+**Q: What metrics and dimensions are available in GA4 and how do I find them?**
+Use the `get_metadata` tool with your property_id to list all available metrics and dimensions. Common metrics include: `activeUsers`, `screenPageViews`, `sessions`, `eventCount`, `engagementRate`, `averageSessionDuration`, `conversions`. Common dimensions include: `city`, `country`, `deviceCategory`, `sessionDefaultChannelGrouping`, `pageTitle`, `pagePath`, `streamName`. The metadata response shows descriptions, types, and whether each field is a metric or dimension.
+
+**Q: Can I get realtime data and how far back does it go?**
+Yes! Use the `run_realtime_report` tool to get data from the last 30-60 minutes. Realtime reports show active users, events, and traffic sources as they happen on your site. This is useful for monitoring campaign launches, tracking live events, or checking if tracking is working correctly. Unlike standard reports which can take 24-48 hours to process, realtime data is available within minutes.
+
+**Q: How do I analyze funnel conversion rates and identify drop-off points?**
+Use the `run_funnel_report` tool with a funnel_spec JSON object defining your conversion steps. Each step includes a stepName, filterExpression (e.g., eventName equals 'page_view'), and optional breakdown settings. The response shows how many users entered each step, how many completed it, and where the biggest drop-offs occurred. This helps identify friction points in checkout flows, signup processes, or any multi-step user journey.
+
+
 ## Installation & Usage
 
-To install and use the **Google Analytics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-analytics](https://vinkius.com/mcp/google-analytics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Analytics** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Analytics** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-analytics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

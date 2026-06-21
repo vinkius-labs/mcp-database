@@ -1,7 +1,6 @@
 # Telegram Bot Notifier MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telegram-bot-notifier)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/telegram-bot-notifier-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/telegram-bot-notifier-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telegram-bot-notifier)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,51 @@ Here are some examples of how you can interact with the **Telegram Bot Notifier*
 > The HTML formatted alert has been delivered to your Telegram chat.
 
 
+## ❓ FAQ
+
+**Q: Can the agent read my Telegram messages with this?**
+No. This MCP only utilizes the 'sendMessage' API endpoint. It does not use `getUpdates` or webhooks, meaning it acts strictly as a one-way notification megaphone. It cannot see your replies.
+
+**Q: How do I get a Telegram Bot Token and Chat ID?**
+1. Message @BotFather on Telegram to create a bot and get the Token.
+2. Send a message to your new bot.
+3. Visit `https://api.telegram.org/bot<YourBotToken>/getUpdates` in your browser to find your Chat ID.
+
+
 ## Installation & Usage
 
-To install and use the **Telegram Bot Notifier** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/telegram-bot-notifier](https://vinkius.com/mcp/telegram-bot-notifier)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Telegram Bot Notifier** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `telegram-bot-notifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Telegram Bot Notifier** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "telegram-bot-notifier": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

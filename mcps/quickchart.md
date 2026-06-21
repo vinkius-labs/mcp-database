@@ -1,7 +1,6 @@
 # QuickChart MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quickchart)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/quickchart-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/quickchart-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quickchart)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **QuickChart** MCP serve
 > I've processed the text and generated a word cloud visualization for you: [Word Cloud URL]
 
 
+## ❓ FAQ
+
+**Q: What should I do if my chart configuration is too large for a standard URL?**
+You should use the `render_chart_post` tool. It sends the configuration via a POST request, which supports much larger datasets and complex Chart.js objects that would otherwise exceed URL length limits.
+
+**Q: Can I add a logo to the center of a QR code?**
+Yes! When using the `get_qr_url` tool, you can provide a URL in the `centerImageUrl` parameter to overlay an image or logo in the middle of your generated QR code.
+
+**Q: How can I get a permanent link for a chart to share with others?**
+Use the `create_chart_short_url` tool. It generates a permanent, short URL hosted by QuickChart that you can easily share in documents or messages.
+
+
 ## Installation & Usage
 
-To install and use the **QuickChart** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/quickchart](https://vinkius.com/mcp/quickchart)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **QuickChart** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `quickchart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **QuickChart** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "quickchart": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Estimote MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/estimote)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/estimote-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/estimote-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/estimote)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **Estimote** MCP server 
 > Retrieving analytics for 'Main Store'... Last month, there were approximately 1,200 unique visitors with an average dwell time of 15 minutes. Detection frequency peaked on Saturdays between 2 PM and 4 PM.
 
 
+## ❓ FAQ
+
+**Q: Can my agent check the battery levels of all my beacons?**
+Yes. Use the 'list_beacon_devices' tool. The agent retrieves the overarching inventory of your fleet, returning hardware types and precise battery levels for every registered device natively.
+
+**Q: How do I update the advertising interval of a beacon via chat?**
+Use the 'update_beacon_settings' tool. Provide the beacon identifier and a JSON object with the new settings (e.g., '{"settings": {"advertisingInterval": 300}}'). The changes are queued in the cloud shadow and synced automatically.
+
+**Q: Can I see real-time temperature data from my beacons through the agent?**
+Absolutely. Use the 'get_beacon_telemetry' tool. Your agent will fetch the most recent sensor readings, including temperature, light, and motion detection, directly from the beacon's cloud record.
+
+
 ## Installation & Usage
 
-To install and use the **Estimote** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/estimote](https://vinkius.com/mcp/estimote)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Estimote** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `estimote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Estimote** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "estimote": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

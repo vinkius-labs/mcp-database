@@ -1,7 +1,6 @@
 # Winevybe MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/winevybe)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/winevybe-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/winevybe-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/winevybe)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Winevybe** MCP server 
 > Accessing your cellar (User ID: currentUser)... You currently hold 14 active bottles, spanning 3 primary varietals. Recent additions include the 'Louis Roederer Brut 2014'. Which section should we audit?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically pull tasting notes and pairings out of a single bottle search?**
+Yes! Use the `get_wine_detail` and `get_pairings` tools. Your agent will respond with complete metadata regarding aromas, tannin complexity, and best foods to match with the queried bottle.
+
+**Q: How do I easily update the inventory inside my virtual cellar?**
+Simply ask the agent to run the `add_wine_to_cellar` action providing the Wine ID and Quantity. It will modify your inventory database safely without manually clicking through menus.
+
+**Q: Are there any destructive capabilities regarding regional scores or public metrics?**
+No. The core set of tools dealing with global data limits itself strictly to querying records like `get_vintage_scores`. All write operations are firmly locked to your private user cellar.
+
+
 ## Installation & Usage
 
-To install and use the **Winevybe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/winevybe](https://vinkius.com/mcp/winevybe)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Winevybe** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `winevybe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Winevybe** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "winevybe": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

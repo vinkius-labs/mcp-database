@@ -1,7 +1,6 @@
 # Dog CEO MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dog-ceo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dog-ceo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dog-ceo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dog-ceo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Dog CEO** MCP server u
 > Retrieving the list of sub-breeds for Hounds... I found several varieties including the Afghan, Basset, Blood, English, Ibizan, and Walker hounds. Would you like to see a picture of a specific one?
 
 
+## ❓ FAQ
+
+**Q: Can I get a photo of a specific breed like 'Husky'?**
+Yes! Use the `get_dog_by_breed` tool and set the `breed` parameter to 'husky'. It will return a random image of that breed.
+
+**Q: How do I list all available sub-breeds for a breed like 'Retriever'?**
+Use the `list_sub_breeds` tool and provide 'retriever' as the breed. It will return a list of all sub-breeds like 'golden', 'flat-coated', etc.
+
+**Q: Are there any copyrights on these dog images?**
+The Dog CEO API sources images from various open repositories. While most are free to use, you should check the source links for specific licensing if using them for commercial purposes.
+
+
 ## Installation & Usage
 
-To install and use the **Dog CEO** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dog-ceo](https://vinkius.com/mcp/dog-ceo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dog CEO** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dog-ceo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dog CEO** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dog-ceo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Karbon MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/karbon)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/karbon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/karbon-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/karbon)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Karbon** MCP server us
 > Successfully created the organization 'Tech Pioneers' in your Karbon contacts. The unique key assigned is 'CONTACT_987'.
 
 
+## ❓ FAQ
+
+**Q: Can the agent create new work items using templates?**
+Yes, the `create_work_item` tool allows specifying a work type, which corresponds to your templates in Karbon. This helps in quickly starting new client engagements.
+
+**Q: Can I filter contacts to see only organizations?**
+Absolutely. Use the `list_organizations` tool to retrieve only organizational entities, or `list_people` to see individual contacts.
+
+**Q: Is it possible to view the tasks inside a specific project?**
+Yes! Use the `list_work_tasks` tool with the unique work item key to see all associated checklist items and tasks.
+
+
 ## Installation & Usage
 
-To install and use the **Karbon** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/karbon](https://vinkius.com/mcp/karbon)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Karbon** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `karbon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Karbon** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "karbon": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

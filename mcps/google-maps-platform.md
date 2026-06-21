@@ -1,7 +1,6 @@
 # Google Maps Platform MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-maps-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-maps-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-maps-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-maps-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **Google Maps Platform**
 > Found 5 nearby: 1. Starbucks Reserve Roastery (4.8⭐). 2. Storyville Coffee (4.7⭐). 3. Cafe Campagne (4.5⭐).
 
 
+## ❓ FAQ
+
+**Q: How do I get a Google Maps API Key?**
+Go to the Google Cloud Console, create a project, enable the Maps APIs (Geocoding, Places, Directions, etc.), and generate an API Key in the Credentials section.
+
+**Q: What is a Place ID?**
+A Place ID is a unique text identifier for a place (e.g., 'ChIJN1t_tDeuEmsRUsoyG83frY4'). You can get it using the 'search_nearby_places' or 'find_place_from_text' tools, and use it to get detailed info via 'get_place_details'.
+
+**Q: Can I get travel times for public transit?**
+Yes! Use 'get_directions' or 'get_distance_matrix' with mode set to 'transit'. Note that transit data availability depends on the city and Google's coverage.
+
+
 ## Installation & Usage
 
-To install and use the **Google Maps Platform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-maps-platform](https://vinkius.com/mcp/google-maps-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Maps Platform** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-maps-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Maps Platform** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-maps-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

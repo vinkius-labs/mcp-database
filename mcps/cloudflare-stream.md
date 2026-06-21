@@ -1,7 +1,6 @@
 # Cloudflare Stream MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudflare-stream)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudflare-stream-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudflare-stream-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudflare-stream)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Here are some examples of how you can interact with the **Cloudflare Stream** MC
 > Fetching details... Video 'Marketing Launch' is 120MB, status is 'ready', and it was uploaded on Oct 12th. It currently requires signed URLs for viewing.
 
 
+## ❓ FAQ
+
+**Q: Can I filter my video list to see only videos that are ready to watch?**
+Yes! Use the `list_videos` tool and set the `status` parameter to 'ready'. You can also filter by type (vod or live) and search for specific names.
+
+**Q: How do I create a new live streaming endpoint?**
+You can use the `create_live_input` tool. You can optionally provide metadata like a stream name and configure whether the stream should be automatically recorded.
+
+**Q: Is it possible to update the metadata of an existing video?**
+Absolutely. Use the `edit_video` tool with the video's identifier. You can update the `meta` object, change `allowedOrigins`, or toggle `requireSignedURLs`.
+
+
 ## Installation & Usage
 
-To install and use the **Cloudflare Stream** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cloudflare-stream](https://vinkius.com/mcp/cloudflare-stream)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cloudflare Stream** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cloudflare-stream` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cloudflare Stream** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cloudflare-stream": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

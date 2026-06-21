@@ -1,7 +1,6 @@
 # Hurma MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hurma)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hurma-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hurma-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hurma)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Hurma** MCP server usi
 > Onboarding: 3 active. Maria Silva (60%), João Santos (40%), Ana Lima (20%). Departments: 6. Engineering (12), Product (4), Design (3), Marketing (5), Sales (8), HR (3). Total: 35 employees.
 
 
+## ❓ FAQ
+
+**Q: Can I manage the recruiting pipeline through the AI agent?**
+Yes. Use `list_candidates` to see all candidates with status, `get_candidate_details` for full profiles, and `create_candidate` to add new applicants.
+
+**Q: Can I monitor who is out of office today?**
+Yes. `list_out_of_office` retrieves all current and upcoming time-off entries. Use `list_leave_requests` for pending approvals and `get_leave_balances` for remaining vacation days.
+
+**Q: Does Hurma require a custom domain in addition to the API Key?**
+Yes. Each Hurma account has a unique subdomain. Provide the domain name and API Key. Requests go to `https://{domain}.hurma.work/api/v1` with a Bearer token.
+
+
 ## Installation & Usage
 
-To install and use the **Hurma** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hurma](https://vinkius.com/mcp/hurma)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hurma** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hurma` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hurma** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hurma": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

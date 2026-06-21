@@ -1,7 +1,6 @@
 # Cleveland Museum of Art MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cleveland-museum-of-art)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cleveland-museum-of-art-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cleveland-museum-of-art-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cleveland-museum-of-art)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Cleveland Museum of Ar
 > I've used `search_creators` to find Vincent van Gogh (ID: 1048). He was a Dutch Post-Impressionist painter (1853–1890). The museum holds several of his works, including 'The Large Plane Trees'.
 
 
+## ❓ FAQ
+
+**Q: How can I find artworks that are currently on view in the museum galleries?**
+You can use the `search_artworks` tool and set the `currently_on_view` parameter to true. This will filter the results to show only pieces you can see in person at the museum.
+
+**Q: Can I find visually similar artworks using an image file?**
+Yes! The `search_similar_artworks` tool allows you to provide a local file path to an image. The server will then return artworks from the collection that share visual characteristics.
+
+**Q: How do I get the full biography and details of a specific artist?**
+Use the `get_creator` tool with the specific creator's ID. It will return their full biographical record, nationality, birth/death dates, and associated artworks.
+
+
 ## Installation & Usage
 
-To install and use the **Cleveland Museum of Art** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cleveland-museum-of-art](https://vinkius.com/mcp/cleveland-museum-of-art)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cleveland Museum of Art** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cleveland-museum-of-art` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cleveland Museum of Art** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cleveland-museum-of-art": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

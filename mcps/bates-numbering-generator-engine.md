@@ -1,7 +1,6 @@
 # Bates Numbering Generator Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bates-numbering-generator-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bates-numbering-generator-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bates-numbering-generator-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bates-numbering-generator-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -45,12 +44,52 @@ Here are some examples of how you can interact with the **Bates Numbering Genera
 > The computation has been executed with mathematical precision. All results are exact and ready for review.
 
 
+## ❓ FAQ
+
+**Q: Does it support custom prefixes?**
+Yes, you can append any custom alpha-numeric prefix (e.g., 'EXHIBIT-A-' or 'CONFIDENTIAL-') before the numeral sequence.
+
+**Q: How does the zero-padding work?**
+You supply a padding integer. If padding is 4, document #5 becomes `0005`, maintaining perfect alphanumeric sorting in folder hierarchies.
+
+**Q: Is there a limit to generation size?**
+The engine scales effortlessly. Generating 100,000 distinct strings takes milliseconds, avoiding all standard AI token limitations.
+
+
 ## Installation & Usage
 
-To install and use the **Bates Numbering Generator Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bates-numbering-generator-engine](https://vinkius.com/mcp/bates-numbering-generator-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bates Numbering Generator Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bates-numbering-generator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bates Numbering Generator Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bates-numbering-generator-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

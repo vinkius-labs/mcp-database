@@ -1,7 +1,6 @@
 # Fixably MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fixably)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fixably-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fixably-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fixably)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Fixably** MCP server u
 > Checking inventory... At location 'stock_abc', you have several parts in stock, including 10 'LCD Assemblies' and 5 'Battery Modules'. Would you like the full product list?
 
 
+## ❓ FAQ
+
+**Q: How do I change the internal location of a device using the agent?**
+You can use the 'change_internal_location' tool. Simply provide the Order ID and the new location string (e.g., 'SERVICE', 'STORE', or 'CUSTOMER'). The agent will update the record in Fixably immediately.
+
+**Q: Can I see which products are available at a specific stock location?**
+Yes! Use the 'list_stock_products' tool and provide the Stock ID. The agent will return a list of all products currently held at that specific inventory location.
+
+**Q: How do I add an internal update to a repair order?**
+Use the 'add_order_note' tool. You'll need the Order ID and the text of your note. This allows you to document repair progress or internal findings directly from your chat interface.
+
+
 ## Installation & Usage
 
-To install and use the **Fixably** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fixably](https://vinkius.com/mcp/fixably)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fixably** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fixably` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fixably** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fixably": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

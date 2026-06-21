@@ -1,7 +1,6 @@
 # OPML Podcast & RSS Parser MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opml-podcast-rss-parser)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opml-podcast-rss-parser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opml-podcast-rss-parser-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opml-podcast-rss-parser)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -59,12 +58,52 @@ Here are some examples of how you can interact with the **OPML Podcast & RSS Par
 > Looking at your 45 subscriptions, your primary interests are: 1. Artificial Intelligence (12 feeds), 2. Economics (8 feeds), 3. Design (5 feeds).
 
 
+## ❓ FAQ
+
+**Q: Does it support nested subscription categories?**
+Yes! It recursively scans through folder nodes (like 'Tech News' -> 'AI') in the OPML file to extract the actual feed URLs, flattening them into a clean list for the AI.
+
+**Q: What specific data is extracted?**
+It extracts the Title, the XML (RSS) URL, and the HTML (Website) URL for every single subscription found in the file.
+
+**Q: Can it subscribe to new podcasts for me?**
+No, this is a read-only parsing tool. It allows the AI to understand what you currently listen to so it can make intelligent recommendations.
+
+
 ## Installation & Usage
 
-To install and use the **OPML Podcast & RSS Parser** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opml-podcast-rss-parser](https://vinkius.com/mcp/opml-podcast-rss-parser)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OPML Podcast & RSS Parser** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opml-podcast-rss-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OPML Podcast & RSS Parser** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opml-podcast-rss-parser": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

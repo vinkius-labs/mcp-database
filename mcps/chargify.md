@@ -1,7 +1,6 @@
 # Chargify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chargify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chargify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chargify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chargify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Would you like me to update a customer's subscription to one of these IDs?
 > Subscription `sub_899` stands irreversibly canceled. I mapped 'budget cuts' internally as the churn tracking reason for your financial analysts. The billing stream is officially terminated.
 
 
+## ❓ FAQ
+
+**Q: How can I pause billing for a client who needs a break?**
+Just tell your agent to 'Place a hold on subscription ID `123`'. It hits the `/holds.json` endpoint, clamping the account and completely forbidding the next billing cycle from firing until you choose to resume it.
+
+**Q: Can my agent upgrade a customer to a higher pricing tier instantly?**
+Absolutely. You can ask for a list of products to find the new Plan ID, then prompt the agent to update the subscription target. The platform handles the mid-cycle prorations automatically while your agent executes the switch.
+
+**Q: What happens when I cancel a subscription through the AI?**
+When you execute a cancellation, you can include a 'message' documenting the churn logic (e.g., 'Moving to competitor'). The AI executes an irreversible DELETE call stopping the MRR securely and appending your specific reason for analytics.
+
+
 ## Installation & Usage
 
-To install and use the **Chargify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chargify](https://vinkius.com/mcp/chargify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chargify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chargify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chargify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chargify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # WordPress MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wordpress)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wordpress-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wordpress-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wordpress)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **WordPress** MCP server
 > I found 4 categories: 'News' (ID: 1), 'Tutorials' (ID: 2), 'Product Updates' (ID: 3), and 'Case Studies' (ID: 4). Would you like to see how many posts are assigned to each?
 
 
+## ❓ FAQ
+
+**Q: Can I draft a new blog post using chat?**
+Yes. The `create_cms_post` tool allows your AI agent to create a new post. You can provide the title and content, and set the status to 'draft'. Once you are ready, you can update it to 'publish' using the same agent.
+
+**Q: How do I get the direct URL for an image in my WordPress library?**
+Use the `list_media_attachments` tool. Your AI agent will return a list of recently uploaded media files, including their filenames and the direct public source URLs for easy sharing or embedding.
+
+**Q: Is it possible to permanently delete a post instead of sending it to Trash?**
+Yes. When using the `delete_cms_post` tool, you can set the `force` parameter to true. This will bypass the WordPress Trash and permanently remove the post from your database.
+
+
 ## Installation & Usage
 
-To install and use the **WordPress** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wordpress](https://vinkius.com/mcp/wordpress)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WordPress** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wordpress` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WordPress** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wordpress": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

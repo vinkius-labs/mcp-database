@@ -1,7 +1,6 @@
 # FreeAgent MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freeagent)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freeagent-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freeagent-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freeagent)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **FreeAgent** MCP server
 > Retrieving P&L data... For the last month, your total income was £8,500.00 and total expenses were £3,200.00, resulting in a net profit of £5,300.00.
 
 
+## ❓ FAQ
+
+**Q: How do I connect my FreeAgent account?**
+This server uses OAuth 2.0. Simply click 'Connect' in the Vinkius interface, and you will be redirected to FreeAgent to authorize the integration.
+
+**Q: Can I see my actual bank transactions using the agent?**
+Yes! The 'list_bank_transactions' tool allows you to retrieve the history for any configured bank account in your FreeAgent profile.
+
+**Q: How do I filter for overdue invoices?**
+Use the 'list_invoices' tool and set the 'nested_state' parameter to 'Overdue'. The agent will return a list of all clients with outstanding payments.
+
+**Q: Is Profit and Loss data available?**
+Yes, the 'get_profit_and_loss' tool provides a summary report for any specified date range, helping you track your business health.
+
+
 ## Installation & Usage
 
-To install and use the **FreeAgent** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/freeagent](https://vinkius.com/mcp/freeagent)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FreeAgent** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `freeagent` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FreeAgent** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "freeagent": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

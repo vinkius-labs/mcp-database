@@ -1,7 +1,6 @@
 # Feynman Radical Simplification Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/feynman-radical-simplification-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/feynman-radical-simplification-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/feynman-radical-simplification-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/feynman-radical-simplification-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Feynman Radical Simpli
 > SIMPLIFICATION_FAILED — 'Too complex to explain simply' means you do not understand it yet. Feynman simplified quantum physics. What is the ONE bottleneck? Find your O-ring.
 
 
+## ❓ FAQ
+
+**Q: Does it generate simplified explanations?**
+No. It forces the agent to produce its OWN simplified explanation and then validates consistency. If the agent claims jargon is eliminated but uses 'synergize' or 'paradigm shift,' the engine rejects. The simplification must be genuine — not jargon renamed.
+
+**Q: How is this different from the Archimedes First Principles Prover?**
+Archimedes DECOMPOSES to fundamentals and derives proofs. Feynman SIMPLIFIES to clarity and exposes self-deception. Archimedes asks: 'what are the axioms?' Feynman asks: 'can you explain this to a teenager?' Archimedes validates logic. Feynman validates understanding.
+
+**Q: What is the 'O-ring test'?**
+During the Challenger investigation, everyone gave complex testimony. Feynman dropped a rubber O-ring in ice water. It became brittle. One gesture explained the entire disaster. The O-ring test: can you reduce your explanation to ONE thing that makes the failure — or success — obvious? If you cannot, you are hiding behind complexity.
+
+
 ## Installation & Usage
 
-To install and use the **Feynman Radical Simplification Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/feynman-radical-simplification-prover](https://vinkius.com/mcp/feynman-radical-simplification-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Feynman Radical Simplification Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `feynman-radical-simplification-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Feynman Radical Simplification Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "feynman-radical-simplification-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

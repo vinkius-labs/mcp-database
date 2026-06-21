@@ -1,7 +1,6 @@
 # TypeScript Excellence Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typescript-excellence-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/typescript-excellence-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/typescript-excellence-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typescript-excellence-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **TypeScript Excellence 
 > Verdict: WORKAROUND_DETECTED. Three violations: (1) @ts-ignore hides real type issues — use module augmentation or a .d.ts override. (2) Hardcoded strings are magic values — use as const objects or config files. (3) readFileSync blocks the event loop — use fs/promises.readFile or cache templates at startup.
 
 
+## ❓ FAQ
+
+**Q: Does it generate TypeScript code?**
+No. The agent writes the code. The tool VALIDATES it meets senior-level TypeScript standards — strict types, proper error handling, clean architecture, optimized async patterns. It catches the five failure modes before the code is committed.
+
+**Q: Why is type safety checked before everything else?**
+Because `any` defeats the entire purpose of TypeScript. A beautifully architected application with perfect error handling is still fragile if types are lies. Type safety is the foundation — everything else builds on top of accurate type information.
+
+**Q: What does it catch that a system prompt doesn't?**
+Prompt instructions are suggestions agents routinely ignore. Tool calls are obligations. The engine has 23 consistency rules catching: `any` usage, @ts-ignore, console.log, empty catch, sync I/O, magic values, .then() chains, unbounded arrays, vague type claims, and platitude conclusions. A prompt cannot enforce this — a schema can.
+
+
 ## Installation & Usage
 
-To install and use the **TypeScript Excellence Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/typescript-excellence-prover](https://vinkius.com/mcp/typescript-excellence-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TypeScript Excellence Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `typescript-excellence-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TypeScript Excellence Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "typescript-excellence-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

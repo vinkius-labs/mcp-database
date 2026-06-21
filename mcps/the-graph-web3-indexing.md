@@ -1,7 +1,6 @@
 # The Graph (Web3 Indexing) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-graph-web3-indexing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/the-graph-web3-indexing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/the-graph-web3-indexing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-graph-web3-indexing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **The Graph (Web3 Indexi
 > Executing GraphQL query on the Uniswap V3 subgraph... I've successfully fetched the latest price data. The ETH/USDC pool is currently trading at $2,450.32 with $12M in 24h volume. Do you need details on any other specific pool?
 
 
+## ❓ FAQ
+
+**Q: Can I query any specific subgraph if I have its ID?**
+Yes! Use the `query_subgraph` tool by providing the `subgraph_id` and your GraphQL `query` string. This allows for deep, custom data extraction beyond the standard tools.
+
+**Q: Does this server support Solana token data?**
+Absolutely. You can use `get_svm_transfers`, `get_svm_holders`, and `get_svm_swaps` to interact with SPL tokens and decentralized exchanges on the Solana network.
+
+**Q: Can I track historical balance changes for a specific wallet?**
+Yes, the `get_evm_historical_balances` tool provides historical balance data in OHLCV format for EVM chains, making it easy to analyze portfolio trends.
+
+
 ## Installation & Usage
 
-To install and use the **The Graph (Web3 Indexing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/the-graph-web3-indexing](https://vinkius.com/mcp/the-graph-web3-indexing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **The Graph (Web3 Indexing)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `the-graph-web3-indexing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **The Graph (Web3 Indexing)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "the-graph-web3-indexing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ChannelApe MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/channelape)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/channelape-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/channelape-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/channelape)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **ChannelApe** MCP serve
 > Retrieving today's orders... I found 5 recent items: Order #1001, #1002, #1003, #1004, and #1005. Would you like to check the fulfillment status for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I check inventory levels across multiple warehouses?**
+Yes! Use the `list_ape_inventory` tool. The agent will return stock levels across all your configured distribution centers and warehouses.
+
+**Q: How do I see details for a specific customer order?**
+Use the `get_ape_order_details` tool with the unique order ID. Your agent will fetch the full record, including line items and fulfillment status.
+
+**Q: Where do I find my Business ID and API Secret?**
+Login to your ChannelApe account and navigate to your business settings. Your Business ID is in the URL or settings page, and the API Secret can be generated in the API section.
+
+
 ## Installation & Usage
 
-To install and use the **ChannelApe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/channelape](https://vinkius.com/mcp/channelape)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ChannelApe** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `channelape` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ChannelApe** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "channelape": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

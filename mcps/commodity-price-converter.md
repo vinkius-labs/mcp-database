@@ -1,7 +1,6 @@
 # Commodity Price Converter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/commodity-price-converter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/commodity-price-converter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/commodity-price-converter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/commodity-price-converter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -51,12 +50,52 @@ Here are some examples of how you can interact with the **Commodity Price Conver
 > The `get_historical_market_trends` tool retrieved the following data: Min BRL 52, Max BRL 62, and Avg BRL 57.
 
 
+## ❓ FAQ
+
+**Q: How can I convert prices between different units?**
+Use the `convert_price_units` tool. Provide the initial price, its unit (e.g., saca), its currency, and the current USD/BRL exchange rate to get a complete list of all supported units.
+
+**Q: Can I calculate production costs per hectare?**
+Yes. The `calculate_cost_per_hectare` tool calculates the cost in BRL/ha by processing the commodity price and the land's yield per hectare.
+
+**Q: Does it provide historical data?**
+Yes, the `get_historical_market_trends` tool allows you to query minimum, maximum, and average prices for specific months and years stored in our dataset.
+
+
 ## Installation & Usage
 
-To install and use the **Commodity Price Converter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/commodity-price-converter](https://vinkius.com/mcp/commodity-price-converter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Commodity Price Converter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `commodity-price-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Commodity Price Converter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "commodity-price-converter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

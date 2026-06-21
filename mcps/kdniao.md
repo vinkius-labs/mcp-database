@@ -1,7 +1,6 @@
 # KDniao MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kdniao)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kdniao-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kdniao-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kdniao)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **KDniao** MCP server us
 > I've checked the route statistics. A standard SF Express shipment from Shanghai to Hangzhou typically arrives within 24 hours. Would you like me to check the estimated price for this route as well?
 
 
+## ❓ FAQ
+
+**Q: How do I find my KDniao EBusinessID and AppKey?**
+Log in to the [KDniao Portal](https://www.kdniao.com/), go to the 'User Center' or 'API Management' section, and you will find your unique EBusinessID and AppKey for integration.
+
+**Q: What is the 'CustomerName' parameter?**
+For some carriers like Shunfeng (SF) and ZTO, KDniao requires the last 4 digits of the recipient's phone number in the 'CustomerName' field to retrieve tracking data.
+
+**Q: Can I query shipping price estimates?**
+Yes. Use the `query_price` tool with the carrier code, origin city, destination city, and weight to retrieve estimated costs for that specific shipment.
+
+
 ## Installation & Usage
 
-To install and use the **KDniao** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kdniao](https://vinkius.com/mcp/kdniao)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **KDniao** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kdniao` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **KDniao** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kdniao": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

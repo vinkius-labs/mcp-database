@@ -1,7 +1,6 @@
 # Clover POS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clover-pos)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clover-pos-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clover-pos-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clover-pos)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,49 @@ Here are some examples of how you can interact with the **Clover POS** MCP serve
 > Accessing inventory... Your catalog includes 'Organic Coffee' ($18.00), 'Green Tea' ($12.00), and 'Pastry Box' ($25.00).
 
 
+## ❓ FAQ
+
+**Q: How do I find my Clover Merchant ID?**
+Log in to your [**Clover Dashboard**](https://www.clover.com/dashboard/). Your Merchant ID (mId) is typically displayed in the URL or under the 'Account & Setup' > 'Merchant Details' section.
+
+**Q: How do I generate an Access Token?**
+You must create a private app in the [**Clover Developer Portal**](https://www.clover.com/developers). Once created, you can generate an API Token for your merchant in the app settings.
+
+
 ## Installation & Usage
 
-To install and use the **Clover POS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clover-pos](https://vinkius.com/mcp/clover-pos)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clover POS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clover-pos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clover POS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clover-pos": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

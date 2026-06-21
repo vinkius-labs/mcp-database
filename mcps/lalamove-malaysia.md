@@ -1,7 +1,6 @@
 # Lalamove Malaysia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lalamove-malaysia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lalamove-malaysia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lalamove-malaysia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lalamove-malaysia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Lalamove Malaysia** MC
 > Processing cancellation request... Success! Order 'ord_999888777' has been cancelled. Please note that cancellation fees may apply based on the driver's current location.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically get a delivery quote before placing an order?**
+Yes! Use the `get_quotation` tool with the pickup and delivery addresses and vehicle type. Your agent will return the estimated cost and distance instantly.
+
+**Q: How do I track the real-time location of a Lalamove driver?**
+Use the `get_order_details` tool with your active Order ID. If a driver has been assigned, the agent will return their current GPS coordinates and contact information.
+
+**Q: Does Lalamove support motorcycle deliveries in Kuala Lumpur?**
+Yes! Use the `list_cities` tool to verify coverage and supported vehicle types. Motorcycles (MOTORCYCLE) are a standard vehicle option for Kuala Lumpur and most Malaysian cities.
+
+
 ## Installation & Usage
 
-To install and use the **Lalamove Malaysia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lalamove-malaysia](https://vinkius.com/mcp/lalamove-malaysia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lalamove Malaysia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lalamove-malaysia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lalamove Malaysia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lalamove-malaysia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

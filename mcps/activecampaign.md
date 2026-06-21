@@ -1,7 +1,6 @@
 # ActiveCampaign MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/activecampaign)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/activecampaign-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/activecampaign-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/activecampaign)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -60,12 +59,52 @@ Here are some examples of how you can interact with the **ActiveCampaign** MCP s
 > I've found the contact John Doe. He is currently subscribed to 2 lists and has 3 active deals in your sales pipeline. Would you like to see the details of his recent interactions?
 
 
+## ❓ FAQ
+
+**Q: How do I add a tag to a contact?**
+Use the `add_tag_to_contact` tool and provide the contact ID and the tag ID. Your agent will associate the tag with that specific contact in ActiveCampaign.
+
+**Q: What is the API rate limit for ActiveCampaign?**
+ActiveCampaign enforces a standard limit of 5 requests per second per account. Exceeding this returns a 429 error code.
+
+**Q: Should I use API version 1 or 3?**
+While version 1 is still technically supported, we always recommend (and this agent defaults to) RESTful API version 3 for performance and stability.
+
+
 ## Installation & Usage
 
-To install and use the **ActiveCampaign** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/activecampaign](https://vinkius.com/mcp/activecampaign)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ActiveCampaign** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `activecampaign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ActiveCampaign** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "activecampaign": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

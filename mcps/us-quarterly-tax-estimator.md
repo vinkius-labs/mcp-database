@@ -1,7 +1,6 @@
 # US Quarterly Tax Estimator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-quarterly-tax-estimator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-quarterly-tax-estimator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-quarterly-tax-estimator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-quarterly-tax-estimator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **US Quarterly Tax Estim
 > By using `evaluate_safe_harbor_compliance`, the system checks your $5,000 payment against the 90% current year or 100%/110% prior year threshold to determine if you are at risk of underpayment penalties.
 
 
+## ❓ FAQ
+
+**Q: How can I find my quarterly payment deadlines?**
+Use the `estimate_quarterly_payments` tool. It returns a list of all four quarterly deadlines along with the specific amount due for each period.
+
+**Q: What is the Safe Harbor rule?**
+The Safe Harbor rule allows you to avoid underpayment penalties by paying either 90% of your current year's tax or 100% (or 110% for high earners) of your prior year's tax.
+
+**Q: Can I check if my current payments are enough to avoid penalties?**
+Yes. The `evaluate_safe_harbor_compliance` tool compares your total paid to date against the required Safe Harbor thresholds.
+
+
 ## Installation & Usage
 
-To install and use the **US Quarterly Tax Estimator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-quarterly-tax-estimator](https://vinkius.com/mcp/us-quarterly-tax-estimator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **US Quarterly Tax Estimator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-quarterly-tax-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **US Quarterly Tax Estimator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-quarterly-tax-estimator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

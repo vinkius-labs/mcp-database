@@ -1,7 +1,6 @@
 # Checkly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/checkly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/checkly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Checkly** MCP server u
 > Checking heartbeats... You have 2 active heartbeats: 'Hourly DB Cleanup' (Active, Last ping 45m ago) and 'Daily Report Sync' (Active, Last ping 12h ago). Both are within their expected intervals.
 
 
+## ❓ FAQ
+
+**Q: Can I trigger an API check manually through the agent?**
+Yes! Use the `trigger_check_run` tool with the unique check ID. The agent will instruct Checkly to run the test immediately from its global network.
+
+**Q: How do I see the performance metrics for my homepage check?**
+Use the `get_check_performance_metrics` tool with the check ID. Your agent will fetch detailed analytics including success rates and response time percentiles.
+
+**Q: Where do I find my Checkly API Key and Account ID?**
+Log in to your Checkly account and navigate to **User Settings -> API Keys** for the key. The **Account ID** can be found in the **Account Settings** section.
+
+
 ## Installation & Usage
 
-To install and use the **Checkly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/checkly](https://vinkius.com/mcp/checkly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Checkly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `checkly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Checkly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "checkly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Relay Workflow Automation MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/relay-workflow-automation)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/relay-workflow-automation-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/relay-workflow-automation-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/relay-workflow-automation)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,55 @@ Here are some examples of how you can interact with the **Relay Workflow Automat
 > Run run_abc123: Status: completed. Output: Account created successfully.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Relay API Key?**
+Log in to your Relay account, navigate to Settings > API Keys, and generate a new key.
+
+**Q: Can I pass inputs to a workflow?**
+Yes! Use the run_workflow action with a JSON object of input variables that match your workflow's input schema.
+
+**Q: Can I cancel an active workflow run?**
+Yes! Use the cancel_run action with the run ID. This only works on runs that are currently in progress.
+
+**Q: Can I view the required inputs for a specific workflow?**
+Yes! Use the get_workflow action to see its required input schema before running it.
+
+
 ## Installation & Usage
 
-To install and use the **Relay Workflow Automation** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/relay-workflow-automation](https://vinkius.com/mcp/relay-workflow-automation)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Relay Workflow Automation** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `relay-workflow-automation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Relay Workflow Automation** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "relay-workflow-automation": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

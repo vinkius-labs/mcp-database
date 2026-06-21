@@ -1,7 +1,6 @@
 # Auth0 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/auth0)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/auth0-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/auth0-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/auth0)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Auth0** MCP server usi
 > Reviewing system logs from the past 4 hours. A surge of event `Type: fapi` (failed API calls) triggered the Anomaly Detection Shields. Approximately 300 identical sequential requests lacked a valid audience header originating uniformly from an AWS region subnet, tripping the brute-force threshold dynamically.
 
 
+## ❓ FAQ
+
+**Q: Can the agent show me the exact cause of a user's failed login attempt?**
+Absolutely. By asking the agent to search the tenant logs for the user's specific interactions, you receive exact JSON artifacts mapping the failure trigger—whether it was a brute-force IP rate limitation or an explicitly thrown error from a deployed Custom Action pipeline.
+
+**Q: Are user passwords exposed or compromised through this integration?**
+Never. The Auth0 Management API strictly strips raw authentication secrets and passwords from all JSON payloads by default. The agent can only interpret profile structures (metadata, log times, associated connections), ensuring top-tier infrastructure security.
+
+**Q: Does it support identifying all connections tied to one user (Social + DB)?**
+Yes. When retrieving a single user's profile, the agent parses the `identities` array object. This object arrays each distinct identity provider mapping—meaning you can see if the user signed in natively, merged to a Google account later, and the precise times of those connection lifecycle updates.
+
+
 ## Installation & Usage
 
-To install and use the **Auth0** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/auth0](https://vinkius.com/mcp/auth0)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Auth0** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `auth0` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Auth0** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "auth0": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

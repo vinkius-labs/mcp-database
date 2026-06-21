@@ -1,7 +1,6 @@
 # Amazon DynamoDB Table MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-dynamodb-table)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazon-dynamodb-table-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazon-dynamodb-table-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-dynamodb-table)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -57,12 +56,52 @@ Here are some examples of how you can interact with the **Amazon DynamoDB Table*
 > I've scanned the table and applied the filter. I found 15 users marked as inactive. Would you like me to delete them or just list their IDs?
 
 
+## ❓ FAQ
+
+**Q: Why limit the agent to a single table?**
+To enforce the principle of least privilege and zero-trust architecture. An autonomous agent shouldn't have the power to alter global cloud databases, which prevents accidental corruption of critical systems.
+
+**Q: Can my agent access multiple tables?**
+Each instance of this server is scoped to exactly one table. If your agent needs access to multiple tables, you can subscribe to this server multiple times — each with a different table configuration. This maintains strict isolation.
+
+**Q: Can I query using secondary indexes (GSI)?**
+Yes, you can specify the 'IndexName' inside your expression parameters when using the query tool, allowing the agent to perform efficient lookups on Global Secondary Indexes.
+
+
 ## Installation & Usage
 
-To install and use the **Amazon DynamoDB Table** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amazon-dynamodb-table](https://vinkius.com/mcp/amazon-dynamodb-table)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amazon DynamoDB Table** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amazon-dynamodb-table` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amazon DynamoDB Table** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amazon-dynamodb-table": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

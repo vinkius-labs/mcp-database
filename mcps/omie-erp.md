@@ -1,7 +1,6 @@
 # Omie ERP MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omie-erp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/omie-erp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/omie-erp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omie-erp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -163,12 +162,55 @@ The order is now in Omie and ready for invoicing. Would you like to generate the
 Would you like me to help you prioritize which payments to process first?
 
 
+## ❓ FAQ
+
+**Q: How do I get Omie API credentials (App Key and App Secret)?**
+Log in to your Omie ERP account, go to **Configurações > Aplicativos** (Settings > Applications), and create a new application. Omie will automatically generate an **App Key** and **App Secret** for you. Copy both values immediately — the App Secret is shown only once. Paste them into the respective fields below. These credentials are used to authenticate all API requests.
+
+**Q: Can I create new clients and products through this integration?**
+Yes! Use the `create_client` tool to add new clients (customers/suppliers) and `create_product` to add new products to your Omie catalog. You'll need to provide the data as JSON objects matching Omie's schema. The AI agent can help you structure the data correctly. After creation, you'll receive the new client or product code for future reference.
+
+**Q: How can I monitor overdue invoices and payments?**
+Use `list_accounts_receivable` to see all money owed to your company, and `list_accounts_payable` to see all money you owe. Each entry includes the due date, amount, and status. You can filter and identify overdue items by comparing the due date with today's date. The AI agent can help you analyze the results and highlight which invoices need immediate attention.
+
+**Q: What ERP modules are accessible through this API?**
+This integration covers the core Omie modules: **Clients** (customers, suppliers, transporters), **Products & Services** (catalog management), **Sales Orders** (pedidos de venda), **Accounts Receivable** (contas a receber), **Accounts Payable** (contas a pagar), **Bank Accounts** (contas correntes), and **Inventory/Stock** (estoque). Additional modules like NF-e, NFS-e, CRM, and purchases are available through Omie's full API but may be added in future updates.
+
+
 ## Installation & Usage
 
-To install and use the **Omie ERP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/omie-erp](https://vinkius.com/mcp/omie-erp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Omie ERP** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `omie-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Omie ERP** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "omie-erp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

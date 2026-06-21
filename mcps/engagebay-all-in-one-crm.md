@@ -1,7 +1,6 @@
 # EngageBay All-in-One CRM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/engagebay-all-in-one-crm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/engagebay-all-in-one-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/engagebay-all-in-one-crm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/engagebay-all-in-one-crm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **EngageBay All-in-One C
 > You have 5 upcoming tasks, including 'Follow up with Sarah Connor' (Due Tomorrow) and 'Send Proposal to Wayne Corp' (Due Friday). Should I list the customer contact details for Sarah Connor?
 
 
+## ❓ FAQ
+
+**Q: How do I get an EngageBay API Key?**
+Log in to your EngageBay account, navigate to **Account Settings > API**, and you can find your unique **REST API Key** there. API access is available across most plans.
+
+**Q: Can the agent create new deals?**
+This integration currently focuses on listing and auditing contacts, deals, and companies. Creating or updating CRM records should be managed via the EngageBay dashboard or specific automated workflows.
+
+**Q: Does the integration show pipeline reports?**
+Yes, you can use the list_sales_deals and list_latest_sales_opportunities tools to retrieve current pipeline data and analyze deal distribution by stage.
+
+
 ## Installation & Usage
 
-To install and use the **EngageBay All-in-One CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/engagebay-all-in-one-crm](https://vinkius.com/mcp/engagebay-all-in-one-crm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EngageBay All-in-One CRM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `engagebay-all-in-one-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EngageBay All-in-One CRM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "engagebay-all-in-one-crm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

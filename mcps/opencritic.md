@@ -1,7 +1,6 @@
 # OpenCritic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opencritic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opencritic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opencritic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opencritic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **OpenCritic** MCP serve
 > Fetching upcoming releases... I see several highly anticipated titles coming soon, such as 'Dragon's Dogma 2' and 'Hades II'. I can track their review status for you as they get closer to launch.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between 'Top Critic Average' and 'OpenCritic Rating'?**
+The 'Top Critic Average' is the simple numeric mean of scores, while the 'OpenCritic Rating' (Tier) categorizes the game into levels like Mighty, Strong, Fair, or Weak based on its performance relative to other games.
+
+**Q: Can I see reviews from a specific publication like IGN or GameSpot?**
+Yes! Use the `get_game_reviews` tool with the Game ID. The response will include a list of individual reviews, identifying the critic and their publication for each snippet.
+
+**Q: How do I find the best games released in a specific year?**
+Use the `get_hall_of_fame` tool and provide the target year. Your agent will retrieve the highest-rated games for that period according to OpenCritic's aggregate scores.
+
+
 ## Installation & Usage
 
-To install and use the **OpenCritic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opencritic](https://vinkius.com/mcp/opencritic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenCritic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opencritic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenCritic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opencritic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

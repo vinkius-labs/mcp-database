@@ -1,7 +1,6 @@
 # Brilliant Made MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brilliant-made)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brilliant-made-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brilliant-made-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brilliant-made)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Brilliant Made** MCP s
 > Variant var_123 is the 'Blue / Large' version of the Branded Hoodie. Its current price is $45.00 and it is in stock.
 
 
+## ❓ FAQ
+
+**Q: Can I check if a specific swag item is in stock?**
+Yes! Use the `get_inventory_status` tool. Your agent will fetch the real-time stock levels for all products in your Brilliant Made store.
+
+**Q: How do I see the fulfillment status of my last order?**
+Simply ask the agent to `get_order` and provide the Order ID. It will retrieve the current status, such as 'processing', 'shipped', or 'delivered', directly from Brilliant Made.
+
+**Q: Does the integration allow creating a new gift card?**
+Yes. Use the `create_gift_card` action and provide the amount. The card will be generated in your storefront and can then be assigned to a recipient.
+
+
 ## Installation & Usage
 
-To install and use the **Brilliant Made** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/brilliant-made](https://vinkius.com/mcp/brilliant-made)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Brilliant Made** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `brilliant-made` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Brilliant Made** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "brilliant-made": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

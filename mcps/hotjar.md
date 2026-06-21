@@ -1,7 +1,6 @@
 # Hotjar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hotjar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hotjar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hotjar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hotjar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Hotjar** MCP server us
 > User 'usr_12345': 7 sessions over 3 weeks. Device: Chrome/Desktop (5 sessions), Safari/Mobile (2). Total time on site: 48 minutes. Pages viewed: 23. Key behaviors: Visited /pricing 4 times but never clicked a CTA. Spent 8 minutes on /features reading comparison table. Submitted feedback: 'Pricing is confusing' (2 stars). Session recordings: 1) rec_7701 (Apr 20, 12 min, 6 pages — desktop). 2) rec_7689 (Apr 15, 8 min, 4 pages). 3) rec_7645 (Apr 10, 5 min, 3 pages — mobile). This user shows high interest but pricing friction. Would you like to watch a specific recording?
 
 
+## ❓ FAQ
+
+**Q: Can I view survey responses and NPS scores?**
+Yes. Use `list_surveys` to see all surveys with response counts and status. Use `get_survey_stats` for aggregate metrics including completion rate, NPS score, and response trends. Use `list_survey_responses` to read individual user responses. Use `get_survey` for the full question list and settings.
+
+**Q: Can I analyze heatmap data for specific pages?**
+Yes. Use `list_heatmaps` to browse all heatmap snapshots, then `get_heatmap` with a specific Heatmap ID to retrieve click, scroll, and move interaction data along with the page URL. This reveals where users focus attention and which elements they interact with most.
+
+**Q: Can I track conversion funnel drop-offs?**
+Yes. The `list_funnels` tool retrieves all configured conversion funnels with step-by-step drop-off data. Each funnel shows the number of users entering each step and the percentage that continue to the next, helping you identify exactly where users abandon the flow.
+
+
 ## Installation & Usage
 
-To install and use the **Hotjar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hotjar](https://vinkius.com/mcp/hotjar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hotjar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hotjar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hotjar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hotjar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

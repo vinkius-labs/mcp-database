@@ -1,7 +1,6 @@
 # Tango MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tango)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tango-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tango-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tango)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Tango** MCP server usi
 > Order initiated! I've triggered the delivery of a $25.00 Amazon reward to john.doe@example.com. The order ID is ord_88231. I'll let you know once the status shows it's successfully delivered.
 
 
+## ❓ FAQ
+
+**Q: Can I see my current account balance via AI?**
+Yes! Use the `get_account` tool and provide the Account Identifier. Your agent will retrieve the current balance and available funds for that specific funding account.
+
+**Q: How do I find the correct ID (UTID) for a specific gift card brand?**
+Run the `get_catalog` query. The agent will retrieve the full list of available brands and items, each with its unique UTID required for placing orders.
+
+**Q: Is it possible to track if a reward has been delivered?**
+Absolutely. Use the `get_order` tool and provide the Order ID. The agent will retrieve the status, delivery details, and even the credentials if the reward is ready.
+
+
 ## Installation & Usage
 
-To install and use the **Tango** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tango](https://vinkius.com/mcp/tango)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tango** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tango` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tango** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tango": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

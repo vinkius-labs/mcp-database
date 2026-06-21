@@ -1,7 +1,6 @@
 # Headscale (Tailscale Alternative) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/headscale-tailscale-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/headscale-tailscale-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/headscale-tailscale-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/headscale-tailscale-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Headscale (Tailscale A
 > Inspecting node 12... It's a Linux machine named 'dev-laptop-old'. I have now triggered the `expire_node` action. The machine will be disconnected and will require re-authentication to join the network again.
 
 
+## ❓ FAQ
+
+**Q: Can I move a registered machine from one user to another using the AI?**
+Yes. Use the `move_node` tool by providing the Node ID and the target User name. The agent will reassign the machine to the new namespace immediately.
+
+**Q: How do I generate a key for a new server to join the network without manual approval?**
+You can use the `create_preauth_key` tool. Specify the user, and optionally set it as reusable or ephemeral. The agent will return a key that can be used with the `tailscale up --login-server` command.
+
+**Q: Is it possible to see the IP addresses and status of all my machines?**
+Absolutely. The `list_nodes` tool retrieves a complete list of all registered devices, including their online status, assigned IP addresses, and the users they belong to.
+
+
 ## Installation & Usage
 
-To install and use the **Headscale (Tailscale Alternative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/headscale-tailscale-alternative](https://vinkius.com/mcp/headscale-tailscale-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Headscale (Tailscale Alternative)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `headscale-tailscale-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Headscale (Tailscale Alternative)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "headscale-tailscale-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

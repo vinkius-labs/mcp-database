@@ -1,7 +1,6 @@
 # Groq MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/groq)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/groq-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/groq-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/groq)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Groq** MCP server usin
 > Retrieving model metadata... Mixtral-8x7b-32768 is a high-performance LLM with a context window of 32,768 tokens. It supports chat completions and tool-calling on Groq's LPU architecture.
 
 
+## ❓ FAQ
+
+**Q: How fast are Groq's chat completions compared to standard GPUs?**
+Groq's LPU architecture is designed for extreme low-latency inference, often delivering hundreds of tokens per second. Your agent uses the 'chat' tool to execute these blazing-fast requests, returning AI responses almost instantly.
+
+**Q: Can my agent transcribe long audio files using Groq Whisper?**
+Yes. Use the 'transcribe' tool. Provide the public URL of your audio file and select a Whisper model (e.g., 'whisper-large-v3'). The agent will parse the stream and return the full text transcript flawlessly.
+
+**Q: How do I ensure the AI response is formatted as valid JSON via chat?**
+Use the 'chat_json' tool. This activates Groq's JSON mode, which explicitly constrains the text inference to rigid, valid JSON formatting, making it perfect for direct system integrations.
+
+
 ## Installation & Usage
 
-To install and use the **Groq** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/groq](https://vinkius.com/mcp/groq)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Groq** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `groq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Groq** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "groq": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Water Heater Comparator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/water-heater-comparator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/water-heater-comparator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/water-heater-comparator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/water-heater-comparator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Water Heater Comparato
 > The `evaluate_solar_thermal_system` tool will provide the percentage of heat provided by solar energy and the required backup heating costs.
 
 
+## ❓ FAQ
+
+**Q: What inputs are required for the calculations?**
+You need to provide the shower duration in minutes, the number of people in the household, and the desired target water temperature in Celsius.
+
+**Q: How does the solar thermal tool work?**
+The `evaluate_solar_thermal_system` tool estimates how much of your heating load is met by solar radiation and calculates the cost and emissions for the necessary electric backup heating.
+
+**Q: Does this tool account for carbon emissions?**
+Yes, all tools calculate the estimated CO2 impact based on the energy source's carbon intensity, such as grid electricity or natural gas combustion.
+
+
 ## Installation & Usage
 
-To install and use the **Water Heater Comparator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/water-heater-comparator](https://vinkius.com/mcp/water-heater-comparator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Water Heater Comparator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `water-heater-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Water Heater Comparator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "water-heater-comparator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

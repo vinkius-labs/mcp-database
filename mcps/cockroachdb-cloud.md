@@ -1,7 +1,6 @@
 # CockroachDB Cloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cockroachdb-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cockroachdb-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cockroachdb-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cockroachdb-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **CockroachDB Cloud** MC
 > Retrieving last operation... The most recent task was 'CLUSTER_UPDATE' (minor version upgrade) completed successfully two hours ago. It took approximately 15 minutes.
 
 
+## ❓ FAQ
+
+**Q: Can I see the status of all nodes in a cluster through the agent?**
+Yes! Use the `list_cluster_nodes` tool with the unique cluster ID. The agent will return a list of all nodes, their IP addresses, and their current health/operational state.
+
+**Q: How do I check for recent scaling or upgrade events on my database?**
+Use the `list_cluster_operations` tool. Your agent will fetch the management log for the cluster, showing you recent tasks, their progress, and whether they were successful.
+
+**Q: Where do I find my CockroachDB Cloud API Secret Key?**
+Log in to the CockroachDB Cloud Console, navigate to **Access Management**, and select **API Keys**. You can generate and copy a new Secret Key from that section.
+
+
 ## Installation & Usage
 
-To install and use the **CockroachDB Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cockroachdb-cloud](https://vinkius.com/mcp/cockroachdb-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CockroachDB Cloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cockroachdb-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CockroachDB Cloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cockroachdb-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

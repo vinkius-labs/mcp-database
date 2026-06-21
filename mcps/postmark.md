@@ -1,7 +1,6 @@
 # Postmark MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postmark)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/postmark-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/postmark-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postmark)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Postmark** MCP server 
 > Dispatched gracefully using `send_with_template`. Postmark accepted the request to route template `10101` towards `user@example.com` specifying the sender address `admin@yourdomain.com`. It resolved via message UUID `abc-123`.
 
 
+## ❓ FAQ
+
+**Q: Can the AI send emails dynamically using my existing templates?**
+Yes. Using `send_with_template`, you merely tell the AI the template ID and the JSON parameters (Template Model). It perfectly injects the data into your Postmark layouts.
+
+**Q: Is it possible to debug a complex email bounce natively inside Claude?**
+Absolutely. First command `list_bounces` to find failing message UUIDs. Then ask the agent to run `get_bounce_logs` on that UUID—it will interpret the pure SMTP error code for you naturally.
+
+**Q: Which Postmark token should I use?**
+This MCP server uses the Postmark Server Token. Each Server in Postmark functions as an isolated environment (e.g. Production Server vs Staging Server).
+
+
 ## Installation & Usage
 
-To install and use the **Postmark** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/postmark](https://vinkius.com/mcp/postmark)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Postmark** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `postmark` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Postmark** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "postmark": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

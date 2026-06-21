@@ -1,7 +1,6 @@
 # Fieldly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fieldly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fieldly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fieldly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fieldly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Fieldly** MCP server u
 > Retrieving invoices... I found 2 unpaid invoices: INV-202 ($5,400) and INV-205 ($3,200). Both are associated with the 'Downtown Plaza' project. Would you like me to fetch the customer contact info?
 
 
+## ❓ FAQ
+
+**Q: How do I obtain my Fieldly API credentials?**
+First, contact support@fieldly.com to enable the Public API. Once activated, you can find your Client ID and Client Secret in the **Integration Settings** of your Fieldly Admin panel.
+
+**Q: How long is the access token valid?**
+Fieldly access tokens are valid for one hour. The agent handles token renewal automatically so you don't have to worry about manual updates.
+
+**Q: Can I create new construction tasks via chat?**
+Yes! The `create_work_item` tool allows you to programmatically generate new construction tasks and work items directly within your AI-powered workflow flawlessy.
+
+
 ## Installation & Usage
 
-To install and use the **Fieldly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fieldly](https://vinkius.com/mcp/fieldly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fieldly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fieldly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fieldly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fieldly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

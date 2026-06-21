@@ -1,7 +1,6 @@
 # fal.ai 3D MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/falai-3d)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/falai-3d-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/falai-3d-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/falai-3d)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **fal.ai 3D** MCP server
 > Using TripoSR for fast generation... Processing sneaker image. Generation complete in 3 seconds! Model in GLB format (2.1 MB). Download: https://cdn.fal.ai/models/triposr/sneaker_3d.glb. Quick preview quality is suitable for e-commerce 3D viewers with basic textures. For production quality, I can regenerate using Rodin (higher quality, ~30 seconds) or Make3D (production-ready, ~45 seconds). Which would you prefer?
 
 
+## ❓ FAQ
+
+**Q: Can my AI generate a 3D model from a product photo?**
+Yes! Use the `generate_rodin_3d` tool for high-quality results or `generate_sf3d_3d` for a good balance of speed and quality. Simply provide the image URL as input and specify your preferred output format (glb, obj, or usdz). The AI will return a downloadable 3D model file with textures that you can use in game engines, 3D viewers, or e-commerce platforms.
+
+**Q: Which model should I use for the fastest 3D generation?**
+For the fastest generation, use `generate_tripo_sr_3d` (TripoSR) or `generate_instantmesh_3d` (InstantMesh). Both are optimized for speed and can produce usable 3D models in seconds. TripoSR is great for quick previews and batch processing, while InstantMesh is ideal for interactive applications. If you need higher quality and can wait a bit longer, try `generate_sf3d_3d` (Stable Fast 3D).
+
+**Q: Can I generate 3D models from text descriptions without any images?**
+Yes! Use the `generate_text_to_3d` tool with a text prompt describing the 3D object you want. For example: prompt="a red sports car" or prompt="a medieval sword". You can control the output quality with the guidance_scale parameter (higher values follow the prompt more closely) and steps parameter (more steps = higher quality but longer generation time). Returns 3D model files in your preferred format.
+
+
 ## Installation & Usage
 
-To install and use the **fal.ai 3D** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/falai-3d](https://vinkius.com/mcp/falai-3d)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **fal.ai 3D** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `falai-3d` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **fal.ai 3D** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "falai-3d": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

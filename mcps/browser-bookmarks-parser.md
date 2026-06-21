@@ -1,7 +1,6 @@
 # Browser Bookmarks Parser MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browser-bookmarks-parser)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browser-bookmarks-parser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browser-bookmarks-parser-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browser-bookmarks-parser)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -60,12 +59,52 @@ Here are some examples of how you can interact with the **Browser Bookmarks Pars
 - [React Documentation](https://react.dev/...)
 
 
+## ❓ FAQ
+
+**Q: Does it keep my nested folder structure?**
+Yes! The parser strictly maintains the exact folder hierarchy (e.g., 'Work -> Q3 Reports -> Sales.pdf') so the AI understands exactly how your bookmarks are categorized.
+
+**Q: Is my browsing data sent to the cloud?**
+No. The HTML parsing happens 100% locally on your machine. The engine only feeds the clean JSON representation back to your AI chat context.
+
+**Q: Can it identify broken links or 404 pages?**
+While the parser itself just extracts the URLs local, you can subsequently ask Claude to use a network tool to test if the extracted links are still active.
+
+
 ## Installation & Usage
 
-To install and use the **Browser Bookmarks Parser** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/browser-bookmarks-parser](https://vinkius.com/mcp/browser-bookmarks-parser)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Browser Bookmarks Parser** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `browser-bookmarks-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Browser Bookmarks Parser** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "browser-bookmarks-parser": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

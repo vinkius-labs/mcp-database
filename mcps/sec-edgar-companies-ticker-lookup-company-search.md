@@ -1,7 +1,6 @@
 # SEC EDGAR Companies — Ticker Lookup & Company Search MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar-companies-ticker-lookup-company-search)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sec-edgar-companies-ticker-lookup-company-search-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sec-edgar-companies-ticker-lookup-company-search-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar-companies-ticker-lookup-company-search)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ State: TX
 Fiscal Year End: 1231
 
 
+## ❓ FAQ
+
+**Q: What is a CIK number?**
+CIK (Central Index Key) is the SEC's unique identifier for every entity that files with the commission. It's a 10-digit number (zero-padded) used to access all filings, financial data, and company information on EDGAR.
+
+**Q: Are foreign companies included?**
+Yes, any company that issues securities to the U.S. public and is required to report to the SEC (including Foreign Private Issuers) will be listed in EDGAR and have a CIK.
+
+**Q: Do I need an API key for SEC lookup?**
+No, all data is accessed openly via SEC EDGAR endpoints. We only use a custom User-Agent to comply with their fairness policies.
+
+
 ## Installation & Usage
 
-To install and use the **SEC EDGAR Companies — Ticker Lookup & Company Search** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sec-edgar-companies-ticker-lookup-company-search](https://vinkius.com/mcp/sec-edgar-companies-ticker-lookup-company-search)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SEC EDGAR Companies — Ticker Lookup & Company Search** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sec-edgar-companies-ticker-lookup-company-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SEC EDGAR Companies — Ticker Lookup & Company Search** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sec-edgar-companies-ticker-lookup-company-search": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

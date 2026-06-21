@@ -1,7 +1,6 @@
 # Getpaid MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/getpaid)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/getpaid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/getpaid-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/getpaid)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **Getpaid** MCP server u
 > Refund processed! I have successfully initiated a full refund for payment pay_98765. The status is now 'refunded' and the customer will see the credit shortly.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Client ID and Secret for Getpaid?**
+Log in to your Getpaid dashboard, navigate to Settings > Integrations, and you can create a new API integration to retrieve your Client ID and Client Secret.
+
+**Q: In what units should I provide the payment amount?**
+The API uses minor units for currency. For example, to charge $1.00 USD, you must provide the value 100 (cents).
+
+**Q: Can I process refunds through the agent?**
+Yes! Use the 'refund_billing_payment' tool and provide the specific Payment ID. You can also specify a custom amount for a partial refund.
+
+**Q: How do I check if a checkout session was completed?**
+Use the 'get_checkout_status' tool with the Checkout ID. The agent will return the current state, such as 'completed', 'pending', or 'expired'.
+
+
 ## Installation & Usage
 
-To install and use the **Getpaid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/getpaid](https://vinkius.com/mcp/getpaid)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Getpaid** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `getpaid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Getpaid** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "getpaid": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

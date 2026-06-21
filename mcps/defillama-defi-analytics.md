@@ -1,7 +1,6 @@
 # DefiLlama (DeFi Analytics) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/defillama-defi-analytics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/defillama-defi-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/defillama-defi-analytics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/defillama-defi-analytics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **DefiLlama (DeFi Analyt
 > Fetching the price chart for USDC (ethereum:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48)... The data shows a stable peg at $1.00 with minor fluctuations over the last 24 hours.
 
 
+## ❓ FAQ
+
+**Q: How can I check the current TVL of a specific blockchain like Ethereum or Solana?**
+You can use the `get_current_tvl_chain` tool by providing the chain name. The agent will return the total value locked in USD for that specific network immediately.
+
+**Q: Is it possible to see a price chart for a specific token?**
+Yes! Use the `get_price_chart` tool with the token's chain and address (e.g., `ethereum:0x...`). It will provide historical price data points that your agent can use to describe trends.
+
+**Q: How do I find the highest yielding liquidity pools available?**
+The `get_all_pools` tool retrieves current APY and TVL data for all tracked pools. Your agent can then filter and sort these to find the best opportunities based on your criteria.
+
+
 ## Installation & Usage
 
-To install and use the **DefiLlama (DeFi Analytics)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/defillama-defi-analytics](https://vinkius.com/mcp/defillama-defi-analytics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DefiLlama (DeFi Analytics)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `defillama-defi-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DefiLlama (DeFi Analytics)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "defillama-defi-analytics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Submail / 赛邮云 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/submail)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/submail-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/submail-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/submail)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Submail / 赛邮云** 
 > I've initiated the voice verification call to `13800138000`. The code '1234' will be read to the user. Would you like me to monitor the call status for you?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Submail AppID and AppKey?**
+Log in to the [Submail Management Console](https://www.mysubmail.com/), navigate to the relevant project type (SMS, Mail, or Voice) and look for the 'AppID' and 'AppKey' in the project settings or credentials section.
+
+**Q: Does this server handle MD5 signatures?**
+Yes! The server automatically calculates the required MD5 signature for every request using your provided AppKey, ensuring secure authorized communication with Submail APIs.
+
+**Q: Can I send template-based SMS?**
+Yes! Use the `send_template_sms` tool. You will need the Project ID of your template and a JSON string containing the variables defined in that template.
+
+
 ## Installation & Usage
 
-To install and use the **Submail / 赛邮云** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/submail](https://vinkius.com/mcp/submail)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Submail / 赛邮云** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `submail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Submail / 赛邮云** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "submail": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

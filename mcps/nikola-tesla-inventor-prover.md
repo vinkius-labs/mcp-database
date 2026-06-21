@@ -1,7 +1,6 @@
 # Nikola Tesla Inventor Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nikola-tesla-inventor-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nikola-tesla-inventor-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nikola-tesla-inventor-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nikola-tesla-inventor-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Nikola Tesla Inventor 
 > SYSTEM_FRAGMENTED — Three independent divisions with separate records systems is not a system — it is a committee. Where is the unified field? Entries cross three divisional boundaries, three records systems, three failure domains. And 'adding extra shifts handles load' is brute force — you are paying for more capacity instead of finding resonance. Additionally, 'should scale well' is not a mathematical proof. Derive the bounds. Unify the system. Find the amplifier.
 
 
+## ❓ FAQ
+
+**Q: Does it generate architectures or write code?**
+No. It computes nothing and generates nothing. The LLM designs the structure — this tool validates that the reasoning is theoretically rigorous. If the LLM claims resonance but describes brute-force scaling, the tool rejects and explains why.
+
+**Q: Why does it reject Agile and MVPs?**
+Because 'build it and see what happens' is empirical guessing. Tesla built the AC motor in his imagination before touching metal. The tool forces the LLM to simulate the COMPLETE system mentally — process flow, failure modes, maximum load — before proposing a design. If you need a pilot to validate, you have not thought deeply enough.
+
+**Q: Can I use it for simple CRUD applications?**
+You can, but the value is highest for complex multi-stage operations, time-sensitive workflows, and high-volume processing chains. For a simple linear procedure, the resonance and friction pivots may not apply. The mental simulation pivot, however, is always valuable — even simple systems should be fully understood before execution begins.
+
+
 ## Installation & Usage
 
-To install and use the **Nikola Tesla Inventor Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nikola-tesla-inventor-prover](https://vinkius.com/mcp/nikola-tesla-inventor-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nikola Tesla Inventor Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nikola-tesla-inventor-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nikola Tesla Inventor Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nikola-tesla-inventor-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

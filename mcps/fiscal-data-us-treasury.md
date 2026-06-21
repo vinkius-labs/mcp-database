@@ -1,7 +1,6 @@
 # Fiscal Data (U.S. Treasury) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fiscal-data-us-treasury)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fiscal-data-us-treasury-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fiscal-data-us-treasury-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fiscal-data-us-treasury)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Fiscal Data (U.S. Trea
 > Accessing the `query_dataset` tool for the endpoint 'v1/accounting/od/daily_treasury_statement'. I've retrieved the daily cash balances and operating totals for the requested period.
 
 
+## ❓ FAQ
+
+**Q: How can I access specific datasets like the national debt or federal spending?**
+You can use the `query_dataset` tool. Simply provide the endpoint path (e.g., 'v1/debt/mspd/mspd_table_1' for the Monthly Statement of the Public Debt) and any optional filters to get the exact data you need.
+
+**Q: Can I filter the financial data by a specific date or currency?**
+Yes! All tools like `get_rates_of_exchange` and `get_mts_table_1` support a `filter` parameter. For example, use `record_date:eq:2023-12-31` to get data for a specific day or `country_currency_desc:eq:CANADA-DOLLAR` for specific currency rates.
+
+**Q: What is the difference between Table 1 and Table 9 in the Monthly Treasury Statement?**
+The `get_mts_table_1` tool provides a high-level summary of receipts, outlays, and the surplus or deficit. The `get_mts_table_9` tool provides a more granular breakdown of Budgetary Receipts by reporting entity and major source.
+
+
 ## Installation & Usage
 
-To install and use the **Fiscal Data (U.S. Treasury)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fiscal-data-us-treasury](https://vinkius.com/mcp/fiscal-data-us-treasury)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fiscal Data (U.S. Treasury)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fiscal-data-us-treasury` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fiscal Data (U.S. Treasury)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fiscal-data-us-treasury": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

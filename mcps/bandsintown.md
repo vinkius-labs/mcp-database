@@ -1,7 +1,6 @@
 # Bandsintown MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bandsintown)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bandsintown-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bandsintown-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bandsintown)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Bandsintown** MCP serv
 > Red Rocks Amphitheatre has 40+ upcoming shows. Notable acts: Zach Bryan (Jun 15), Tyler the Creator (Jul 22), Dead & Company (Aug 10), Widespread Panic (Sep 5-7). The iconic outdoor venue near Denver hosts concerts from May through October.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! Bandsintown's public API works without authentication using a default app_id. Just subscribe and start searching for concerts.
+
+**Q: Can I find concerts near me?**
+Yes! Use get_recommended_events with a city name (e.g. 'New York', 'London') or latitude/longitude coordinates. You can also set a search radius in miles.
+
+**Q: Can I see past tour dates?**
+Yes! Use get_artist_events with the date parameter set to 'past' to see completed shows, or 'all' to see both upcoming and past events.
+
+
 ## Installation & Usage
 
-To install and use the **Bandsintown** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bandsintown](https://vinkius.com/mcp/bandsintown)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bandsintown** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bandsintown` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bandsintown** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bandsintown": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

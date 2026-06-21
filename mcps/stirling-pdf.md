@@ -1,7 +1,6 @@
 # Stirling PDF MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stirling-pdf)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stirling-pdf-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stirling-pdf-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stirling-pdf)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Stirling PDF** MCP ser
 > Converting image... I have successfully generated 'report.pdf' from your image file using the maintainAspectRatio fit option.
 
 
+## ❓ FAQ
+
+**Q: Can I add a text watermark to a PDF document using this server?**
+Yes! Use the `add_watermark` tool. You can specify the text, font size, and opacity to apply a professional watermark to any PDF file provided in base64 format.
+
+**Q: How do I monitor the traffic and load on my Stirling PDF instance?**
+You can use `get_requests` to see POST counts, `get_load` for GET requests, or `get_prometheus_metrics` if you are on the Enterprise tier for detailed observability.
+
+**Q: Is it possible to perform other operations like merging or splitting PDFs?**
+Yes, the `run_generic_tool` action allows you to execute any Stirling PDF tool by its ID (e.g., 'merge-pdfs' or 'split-pages') by passing the required parameters.
+
+
 ## Installation & Usage
 
-To install and use the **Stirling PDF** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stirling-pdf](https://vinkius.com/mcp/stirling-pdf)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Stirling PDF** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stirling-pdf` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Stirling PDF** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stirling-pdf": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

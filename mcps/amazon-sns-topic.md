@@ -1,7 +1,6 @@
 # Amazon SNS Topic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-sns-topic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazon-sns-topic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazon-sns-topic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-sns-topic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -55,12 +54,52 @@ Here are some examples of how you can interact with the **Amazon SNS Topic** MCP
 > The notification has been successfully published to the topic.
 
 
+## ❓ FAQ
+
+**Q: Why limit the agent to a single topic?**
+To enforce zero-trust security. An autonomous agent shouldn't have the power to spam or accidentally publish alerts to unrelated corporate topics (like incident response channels).
+
+**Q: Can this tool read messages?**
+No. SNS is a pub/sub system designed for sending outward notifications. If you need the agent to read messages, use the Amazon SQS Queue MCP.
+
+**Q: What happens to the published messages?**
+The message is immediately fanned out by AWS to all endpoints subscribed to the configured Topic ARN (e.g. Lambda functions, SQS queues, SMS, email).
+
+
 ## Installation & Usage
 
-To install and use the **Amazon SNS Topic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amazon-sns-topic](https://vinkius.com/mcp/amazon-sns-topic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amazon SNS Topic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amazon-sns-topic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amazon SNS Topic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amazon-sns-topic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

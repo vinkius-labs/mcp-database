@@ -1,7 +1,6 @@
 # Click2Mail MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/click2mail)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/click2mail-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/click2mail-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/click2mail)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Click2Mail** MCP serve
 > Checking account balance... You currently have $150.75 in mailing credits available. This can be used for any future physical mailing jobs.
 
 
+## ❓ FAQ
+
+**Q: Can I check the cost of a mailing before I send it?**
+Yes! Use the `get_mail_job_cost` tool with the job ID. The agent will return the estimated production and postage costs for your mailing.
+
+**Q: How do I see if my documents have been printed and mailed?**
+Use the `get_mail_job_details` tool. Your agent will fetch the current production status (e.g., In Production, Mailed) and provide tracking info if available.
+
+**Q: Where do I find my Click2Mail API credentials?**
+Click2Mail uses your standard account Username and Password for API access. You can find your account details in the Click2Mail portal under Profile.
+
+
 ## Installation & Usage
 
-To install and use the **Click2Mail** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/click2mail](https://vinkius.com/mcp/click2mail)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Click2Mail** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `click2mail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Click2Mail** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "click2mail": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

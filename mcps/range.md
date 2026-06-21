@@ -1,7 +1,6 @@
 # Range MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/range)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/range-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/range-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/range)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Range** MCP server usi
 > 5 team objectives for Q2. "Launch Mobile App v2" at 78% (on track, 6 of 8 milestones complete). "Reduce Customer Churn" at 65% (slightly behind, churn down from 5.2% to 4.1%, target: 3.5%). "API Response Time < 200ms" at 92% (ahead of schedule, current avg: 187ms). "Onboard 50 Enterprise Clients" at 56% (28 onboarded, pace needs acceleration). "Complete SOC 2 Certification" at 85% (final audit scheduled May 28). Overall Q2 objective health: 75.2%.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the recent check-ins for a specific user?**
+Yes! Use the `list_updates` tool with the `for_user_id` parameter. Your agent will respond with the most recent check-in snippets and status updates in seconds.
+
+**Q: How do I find my Range API Key?**
+Log in to Range, go to **Settings** > **Developer Settings** > **API Keys**, and generate a new key for your account.
+
+**Q: Can I see team objectives via the AI?**
+Yes, use the `list_objectives` tool to retrieve all active goals and targets configured in your Range workspace.
+
+
 ## Installation & Usage
 
-To install and use the **Range** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/range](https://vinkius.com/mcp/range)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Range** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `range` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Range** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "range": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

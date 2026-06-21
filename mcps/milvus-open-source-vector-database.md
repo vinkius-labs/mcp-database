@@ -1,7 +1,6 @@
 # Milvus (Open-Source Vector Database) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/milvus-open-source-vector-database)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/milvus-open-source-vector-database-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/milvus-open-source-vector-database-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/milvus-open-source-vector-database)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Milvus (Open-Source Ve
 > Retrieving stats… The 'image_embeddings' collection contains 1,250,000 entities. It is currently occupying approximately 2.4 GB of memory. All indices are loaded and healthy. No anomalous data distribution detected.
 
 
+## ❓ FAQ
+
+**Q: How do I perform an ANN search through my agent?**
+Use the `search_vectors` tool by providing the collection name and a JSON float array matching the collection's dimensions. Your agent will perform an Approximate Nearest Neighbor search and return the most semantically relevant entities.
+
+**Q: Can I filter results using structured fields instead of just vectors?**
+Yes. Use the `query_entities` tool with a Milvus-style filter expression. This allows you to retrieve entities based on primary keys, tags, or other scalar fields without necessarily performing a vector similarity search.
+
+**Q: How do I check the schema and dimension requirements for a Milvus collection?**
+The `describe_collection` tool retrieves the complete schema mapping. Your agent will report the required vector dimensions, index types, and primary key names, helping you ensure your search queries are compatible with the database logic.
+
+
 ## Installation & Usage
 
-To install and use the **Milvus (Open-Source Vector Database)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/milvus-open-source-vector-database](https://vinkius.com/mcp/milvus-open-source-vector-database)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Milvus (Open-Source Vector Database)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `milvus-open-source-vector-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Milvus (Open-Source Vector Database)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "milvus-open-source-vector-database": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

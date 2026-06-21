@@ -1,7 +1,6 @@
 # Concurso Score Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/concurso-score-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/concurso-score-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/concurso-score-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/concurso-score-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -52,12 +51,52 @@ Here are some examples of how you can interact with the **Concurso Score Calcula
 > The `predict_ranking_position` tool would return an estimated rank of 2 and indicate the candidate is within the vacancy limit.
 
 
+## ❓ FAQ
+
+**Q: How does the weighted score calculation work?**
+The `calculate_weighted_score` tool multiplies each stage's achieved score by its assigned weight. The sum of all weights must equal exactly 1.0 for a valid calculation.
+
+**Q: What happens if a candidate fails a minimum threshold?**
+Using `verify_stage_thresholds`, the system checks every stage. If any score is below the required minimum, the candidate is marked as disqualified.
+
+**Q: How are ties resolved between candidates?**
+The `resolve_tiebreaker` tool uses a pre-defined hierarchy of stages. It compares scores stage-by-stage, starting with the most important stage, until a difference is found.
+
+
 ## Installation & Usage
 
-To install and use the **Concurso Score Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/concurso-score-calculator](https://vinkius.com/mcp/concurso-score-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Concurso Score Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `concurso-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Concurso Score Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "concurso-score-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

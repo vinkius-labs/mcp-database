@@ -1,7 +1,6 @@
 # Blocknative (Ethereum Mempool API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blocknative-ethereum-mempool-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blocknative-ethereum-mempool-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blocknative-ethereum-mempool-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blocknative-ethereum-mempool-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,12 +62,52 @@ Here are some examples of how you can interact with the **Blocknative (Ethereum 
 > Checking the mempool... Gas prices are currently elevated, with the 99% confidence tier at 45 Gwei. This suggests significant activity or a spike in demand on the network.
 
 
+## ❓ FAQ
+
+**Q: How can I get the most accurate gas price for an urgent Ethereum transaction?**
+Use the `get_gas_prices` tool. It fetches high-confidence suggestions directly from Blocknative's mempool monitoring, providing you with the exact values needed for rapid inclusion.
+
+**Q: What confidence levels does the gas price tool provide?**
+The `get_gas_prices` tool returns estimations for various confidence intervals (typically 99%, 95%, 90%, 80%, and 70%), allowing you to choose the right balance between cost and certainty.
+
+**Q: Does this tool monitor the live Ethereum mempool?**
+Yes. The `get_gas_prices` action leverages Blocknative's global node network to analyze pending transactions in the mempool, ensuring the suggestions reflect current network conditions.
+
+
 ## Installation & Usage
 
-To install and use the **Blocknative (Ethereum Mempool API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blocknative-ethereum-mempool-api](https://vinkius.com/mcp/blocknative-ethereum-mempool-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Blocknative (Ethereum Mempool API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blocknative-ethereum-mempool-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Blocknative (Ethereum Mempool API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blocknative-ethereum-mempool-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

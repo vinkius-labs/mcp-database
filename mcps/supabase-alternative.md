@@ -1,7 +1,6 @@
 # Supabase MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/supabase-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/supabase-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/supabase-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/supabase-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -106,12 +105,55 @@ Here are some examples of how you can interact with the **Supabase** MCP server 
 > Done! I've paused the 'dev-sandbox' project. All compute resources have been stopped and costs will no longer accrue. Your database and data are fully preserved. You can restore it anytime with `restore_project`.
 
 
+## ❓ FAQ
+
+**Q: How do I create a Supabase Personal Access Token?**
+Log in to the [**Supabase Dashboard**](https://supabase.com/dashboard/account/tokens), go to **Account Settings > Access Tokens**, click **Generate Token**, give it a name and copy it immediately — it won't be shown again. The token starts with `sbp_`.
+
+**Q: What happens when I pause a project?**
+Pausing a project stops all compute resources (API, Auth, Edge Functions) to reduce costs. Your database and all stored data are preserved. You can restore the project at any time with `restore_project` and all services will come back online with data intact.
+
+**Q: Can I manage environment secrets via the agent?**
+Yes! Use `list_secrets` to see all secret names (values are hidden for security), `create_secret` to add new ones with name and value, and `delete_secret` to remove them. You can scope secrets to specific branches using the slug parameter.
+
+**Q: Can I update PostgreSQL settings programmatically?**
+Yes! Use `get_postgres_config` to view current settings and `update_postgres_config` with a JSON object of settings to change (e.g. {"max_connections":200,"work_mem":"16MB"}). Some changes may require a database restart to take effect.
+
+
 ## Installation & Usage
 
-To install and use the **Supabase** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/supabase-alternative](https://vinkius.com/mcp/supabase-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Supabase** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `supabase-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Supabase** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "supabase-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

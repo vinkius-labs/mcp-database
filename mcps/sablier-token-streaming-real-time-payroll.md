@@ -1,7 +1,6 @@
 # Sablier (Token Streaming & Real-time Payroll) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sablier-token-streaming-real-time-payroll)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sablier-token-streaming-real-time-payroll-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sablier-token-streaming-real-time-payroll-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sablier-token-streaming-real-time-payroll)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Sablier (Token Streami
 > I found 3 active FlowStreams for that sender. Stream #101 is streaming USDC at a rate of 0.01 per second, and Stream #105 is streaming DAI.
 
 
+## ❓ FAQ
+
+**Q: How do I check if a user is eligible for a specific airdrop?**
+Use the `check_eligibility` tool. You will need the user's wallet address and the IPFS CID of the Sablier campaign. The agent will query the Merkle API and return the eligibility status.
+
+**Q: Can I create a new distribution list for an airdrop?**
+Yes! The `create_merkle_campaign` tool allows you to upload raw CSV content (addresses and amounts). It will generate the Merkle tree, pin it to IPFS, and return the root and CID.
+
+**Q: What data can I retrieve using the GraphQL tool?**
+The `query_graphql` tool can fetch any data indexed by Sablier, including LockupStreams, FlowStreams, and Campaign details. You can filter by sender, recipient, or token address.
+
+
 ## Installation & Usage
 
-To install and use the **Sablier (Token Streaming & Real-time Payroll)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sablier-token-streaming-real-time-payroll](https://vinkius.com/mcp/sablier-token-streaming-real-time-payroll)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sablier (Token Streaming & Real-time Payroll)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sablier-token-streaming-real-time-payroll` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sablier (Token Streaming & Real-time Payroll)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sablier-token-streaming-real-time-payroll": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

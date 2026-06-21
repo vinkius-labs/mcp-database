@@ -1,7 +1,6 @@
 # BookingLive MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bookinglive)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bookinglive-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bookinglive-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bookinglive)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **BookingLive** MCP serv
 > Order BKL-1002 has been successfully cancelled. The system has queued the cancellation confirmation email to the customer.
 
 
+## ❓ FAQ
+
+**Q: Can I search for all orders placed by a specific customer using their email?**
+Yes! Use the `get_orders_by_email` tool. Simply provide the customer's email address, and the agent will return a list of all associated orders and their current statuses.
+
+**Q: How do I cancel an existing reservation if a customer changes their mind?**
+You can use the `cancel_order` tool by providing the unique order reference. This will cancel the order in the system and trigger the standard cancellation email to the customer.
+
+**Q: Is it possible to view the full transaction history and items for a specific order?**
+Absolutely. The `get_order_details` tool fetches everything related to a reference, including totals, transaction types (Cash, PDQ, etc.), order items, and internal notes.
+
+
 ## Installation & Usage
 
-To install and use the **BookingLive** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bookinglive](https://vinkius.com/mcp/bookinglive)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BookingLive** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bookinglive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BookingLive** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bookinglive": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

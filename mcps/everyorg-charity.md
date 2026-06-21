@@ -1,7 +1,6 @@
 # Every.org Charity MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/everyorg-charity)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/everyorg-charity-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/everyorg-charity-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/everyorg-charity)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Every.org Charity** MC
 > Retrieving data for Doctors Without Borders (Médecins Sans Frontières)... They are a world-renowned medical humanitarian organization. I have their official EIN, mission overview, and Every.org profile link available.
 
 
+## ❓ FAQ
+
+**Q: Can I search for charities related to 'ocean conservation'?**
+Yes! Use the `search_charities` tool with the query 'ocean conservation'. It will return a list of registered non-profits working in that area.
+
+**Q: What is an EIN?**
+EIN stands for Employer Identification Number. It is a unique nine-digit number assigned by the IRS to business entities, including non-profits, for identification in the US.
+
+**Q: How do I find organizations by a specific cause?**
+Use the `search_charities` tool and include the cause name (like 'education' or 'health') in the query. The database will filter for organizations matching that mission focus.
+
+
 ## Installation & Usage
 
-To install and use the **Every.org Charity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/everyorg-charity](https://vinkius.com/mcp/everyorg-charity)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Every.org Charity** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `everyorg-charity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Every.org Charity** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "everyorg-charity": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

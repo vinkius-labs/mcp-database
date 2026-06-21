@@ -1,7 +1,6 @@
 # Lexware Office (Accounting & Invoicing) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lexware-office-accounting-invoicing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lexware-office-accounting-invoicing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lexware-office-accounting-invoicing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lexware-office-accounting-invoicing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Lexware Office (Accoun
 > I've identified 3 active payment conditions: 1) 'Immediate' (due on receipt), 2) '14 Days' (standard), and 3) '30 Days Net'. I can provide the specific UUIDs if you need to create a new invoice.
 
 
+## ❓ FAQ
+
+**Q: Can I create a new customer record through my agent?**
+Yes. Use the `create_contact` tool by providing the company name, contact person, and email. Your agent will format the data according to Lexware Office standards and assign the correct role ('customer' or 'vendor') instantly.
+
+**Q: How do I check the payment status of an invoice?**
+The `get_invoice` tool retrieves the complete document structure, including the current status (e.g., 'paid', 'open', or 'overdue'). Your agent can summarize these details for you directly in the conversation.
+
+**Q: Can my agent list all accounting categories available in my account?**
+Absolutely. Use the `list_posting_categories` tool to retrieve the defined chart of accounts. This is essential for understanding how revenues and expenses are mapped to your financial reports and DATEV exports.
+
+
 ## Installation & Usage
 
-To install and use the **Lexware Office (Accounting & Invoicing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lexware-office-accounting-invoicing](https://vinkius.com/mcp/lexware-office-accounting-invoicing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lexware Office (Accounting & Invoicing)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lexware-office-accounting-invoicing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lexware Office (Accounting & Invoicing)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lexware-office-accounting-invoicing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

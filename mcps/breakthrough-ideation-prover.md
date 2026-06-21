@@ -1,7 +1,6 @@
 # Breakthrough Ideation Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/breakthrough-ideation-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/breakthrough-ideation-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/breakthrough-ideation-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/breakthrough-ideation-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,55 @@ Here are some examples of how you can interact with the **Breakthrough Ideation 
 > Verdict: FANTASY_IDEATION. Triple failure. (1) 'Blockchain and quantum computing' are buzzwords — which blockchain? For what function? Quantum supply chain optimization is 5-10 years from viability. Cite ONE company doing this at scale TODAY. (2) 'Solve all inefficiencies' is fantasy — which SPECIFIC inefficiency? (3) 'No technical barriers' is false — quantum computers handle ~1,000 qubits with massive error rates. Ground in reality or discard.
 
 
+## ❓ FAQ
+
+**Q: Does Breakthrough Ideation Prover generate ideas?**
+No. The agent generates the idea. The tool VALIDATES that the idea is simultaneously radical (non-obvious, convention-challenging) AND realizable (fact-grounded, constraint-aware, with a concrete path and proven feasibility). It catches the two failure modes: ideas that are too safe and ideas that are pure fantasy.
+
+**Q: What makes this different from brainstorming prompts?**
+Brainstorming prompts say 'be creative.' This tool VALIDATES creativity against five structural requirements. Saying 'think outside the box' produces vague output. Forcing the agent to name the convention it's breaking, cite facts supporting the idea, list constraints it navigated, map concrete steps, and prove feasibility for each blocker produces ACTIONABLE innovation. The difference is between asking for creativity and PROVING creativity.
+
+**Q: What types of challenges does this apply to?**
+Any challenge where the conventional approach is insufficient and a breakthrough is needed. Product innovation, market entry strategy, technical architecture that seems impossible within constraints, business model disruption, process reinvention, competitive differentiation, resource-constrained growth. If the answer 'use what everyone else uses' is unacceptable, this tool forces the agent to find what no one else is using — and prove it works.
+
+**Q: Can this tool force genuinely novel ideas from an LLM?**
+It forces STRUCTURAL novelty. By requiring the agent to explicitly name the conventional approach and then demonstrate departure from it, the tool creates a cognitive constraint that prevents defaulting to the obvious. The agent must prove its idea shares less than 60% vocabulary with the convention, which structurally prevents rewording the same thing. Combined with the factual grounding requirement, this produces ideas that are novel applications of overlooked facts — the most powerful form of innovation.
+
+
 ## Installation & Usage
 
-To install and use the **Breakthrough Ideation Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/breakthrough-ideation-prover](https://vinkius.com/mcp/breakthrough-ideation-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Breakthrough Ideation Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `breakthrough-ideation-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Breakthrough Ideation Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "breakthrough-ideation-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

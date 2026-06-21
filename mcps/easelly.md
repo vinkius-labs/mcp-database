@@ -1,7 +1,6 @@
 # Easelly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/easelly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/easelly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/easelly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/easelly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Easelly** MCP server u
 > Image export complete! I've rendered 'User Onboarding Flow' as a high-quality PNG. You can access the direct link here: [link]. Would you like me to check the JSON structure of this design?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Easelly API Key?**
+Log in to your account and navigate to the settings or profile section to generate or copy your unique Pro API key.
+
+**Q: What file formats are supported for export?**
+You can export your infographics as PDF documents or high-quality JPG and PNG images using the respective generation tools.
+
+**Q: Is an Easelly Pro account required?**
+Yes, API access and advanced export features are exclusively available to Easelly Pro subscribers.
+
+
 ## Installation & Usage
 
-To install and use the **Easelly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/easelly](https://vinkius.com/mcp/easelly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Easelly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `easelly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Easelly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "easelly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

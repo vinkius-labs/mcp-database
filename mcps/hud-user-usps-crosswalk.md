@@ -1,7 +1,6 @@
 # HUD User (USPS Crosswalk) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hud-user-usps-crosswalk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hud-user-usps-crosswalk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hud-user-usps-crosswalk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hud-user-usps-crosswalk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -54,12 +53,52 @@ Here are some examples of how you can interact with the **HUD User (USPS Crosswa
 > I'll look up the congressional districts for that ZIP code.
 
 
+## ❓ FAQ
+
+**Q: How do I get a HUD User Access Token?**
+Register for an account at the HUD User API page (https://www.huduser.gov/portal/dataset/uspszip-api.html), confirm your email, and generate a token in your user dashboard.
+
+**Q: Which year of data is used?**
+By default, the API returns the most recent available data. You can optionally specify a year and quarter in each tool.
+
+**Q: Does it support mapping Tracts back to ZIP codes?**
+Yes, tools like tract_to_zip and county_to_zip allow bidirectional crosswalking between geography IDs and ZIP codes.
+
+
 ## Installation & Usage
 
-To install and use the **HUD User (USPS Crosswalk)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hud-user-usps-crosswalk](https://vinkius.com/mcp/hud-user-usps-crosswalk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HUD User (USPS Crosswalk)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hud-user-usps-crosswalk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HUD User (USPS Crosswalk)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hud-user-usps-crosswalk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

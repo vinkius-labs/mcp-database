@@ -1,7 +1,6 @@
 # Tesla Fleet API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tesla-fleet-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tesla-fleet-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tesla-fleet-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tesla-fleet-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Tesla Fleet API** MCP 
 > Validating native API timeouts smoothly tracking cleanly isolating `honk_horn` correctly asserting constraints parsing actively safely formatting physical responses perfectly cleanly.
 
 
+## ❓ FAQ
+
+**Q: Why does the API return HTTP 408 Timeout explicitly mapping bounds natively?**
+Because the physical hardware is in Sleep Mode natively. Invoke `wake_up_vehicle` and strictly wait 10 seconds securely before parsing safely natively.
+
+**Q: Can I explicitly control HVAC and climate parameters securely mapping local limits?**
+Yes! Utilize `trigger_climate` exposing logic explicitly securely passing true/false bounds natively generating outputs cleanly.
+
+**Q: What explicitly determines the API structural region explicitly mapping connections natively?**
+The logical standard `TESLA_REGION` proxy explicitly parsing `na` (NA), `eu` (EU) bounds directly over the SDK native HTTP client.
+
+
 ## Installation & Usage
 
-To install and use the **Tesla Fleet API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tesla-fleet-api](https://vinkius.com/mcp/tesla-fleet-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tesla Fleet API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tesla-fleet-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tesla Fleet API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tesla-fleet-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

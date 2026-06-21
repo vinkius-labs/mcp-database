@@ -1,7 +1,6 @@
 # Flightcontrol (AWS PaaS Deployments) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flightcontrol-aws-paas-deployments)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flightcontrol-aws-paas-deployments-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flightcontrol-aws-paas-deployments-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flightcontrol-aws-paas-deployments)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **Flightcontrol (AWS Paa
 > Starting environment creation... I've initiated the creation of the 'staging' environment for project 'proj_123' in the us-west-2 region. I'll let you know once the configuration is ready.
 
 
+## ❓ FAQ
+
+**Q: Can I see all my active projects and their IDs?**
+Yes! Use the `list_projects` tool to retrieve a complete list of projects owned by your team, including their unique identifiers and repository links.
+
+**Q: How do I check the configuration of a specific service?**
+Simply provide the Service ID to the `get_service` tool. Your agent will fetch the full details, including type, status, and current environment mapping.
+
+**Q: Is it possible to scale my services using the AI?**
+Yes, the `update_service_scaling` tool allows you to manually adjust the scaling parameters of your services directly through the conversation.
+
+
 ## Installation & Usage
 
-To install and use the **Flightcontrol (AWS PaaS Deployments)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flightcontrol-aws-paas-deployments](https://vinkius.com/mcp/flightcontrol-aws-paas-deployments)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Flightcontrol (AWS PaaS Deployments)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flightcontrol-aws-paas-deployments` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Flightcontrol (AWS PaaS Deployments)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flightcontrol-aws-paas-deployments": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # CourtListener MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/courtlistener)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/courtlistener-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/courtlistener-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/courtlistener)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **CourtListener** MCP se
 > I've found 3 active dockets for 'SpaceX' filed this year. They include a civil matter in Texas and an administrative appeal. Would you like the case numbers and court details?
 
 
+## ❓ FAQ
+
+**Q: How do I find my CourtListener API Key?**
+Log in to your [**CourtListener account**](https://www.courtlistener.com/profile/api/), and you will find your API Key under the **API Tokens** section. Copy and paste it below.
+
+**Q: Can the agent search for both opinions and dockets?**
+Yes. Use the `search_opinions` tool for legal judgments and `search_dockets` for case records. Your agent will return matching results from the Free Law Project database.
+
+**Q: Is it possible to list judicial citations via the agent?**
+Yes. The `list_citations` tool allows your agent to retrieve all precedents and subsequent citations for any opinion by providing its Opinion ID, helping you map the legal landscape.
+
+
 ## Installation & Usage
 
-To install and use the **CourtListener** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/courtlistener](https://vinkius.com/mcp/courtlistener)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CourtListener** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `courtlistener` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CourtListener** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "courtlistener": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

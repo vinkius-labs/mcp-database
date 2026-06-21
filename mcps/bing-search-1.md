@@ -1,7 +1,6 @@
 # Bing Search MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bing-search-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bing-search-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bing-search-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bing-search-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Bing Search** MCP serv
 > I extracted several image thumbnails with native pixel dimensions directly from Bing Images. Here they are... (Provides 10 high-resolution thumbnail URLs).
 
 
+## ❓ FAQ
+
+**Q: Can my agent search for recent news on a specific topic?**
+Yes. By using the 'search_news' tool, your AI agent can gather syndicated global PR articles grouped by timestamp, allowing you to instantly stay updated on competitive intelligence without opening multiple tabs.
+
+**Q: Does the agent understand specific entities like famous people or places?**
+Absolutely. The 'search_entities' tool taps directly into Microsoft's Knowledge Graph, returning deeply structured contextual data about notable people, places, or objects beyond normal organic links.
+
+**Q: Can I restrict AI searches to only my company's domain?**
+Yes. If you have a predefined Custom Configuration ID, the 'custom_search' tool strictly locks queries to your pre-built whitelisted domains, ensuring clean and verified business results.
+
+
 ## Installation & Usage
 
-To install and use the **Bing Search** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bing-search-1](https://vinkius.com/mcp/bing-search-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bing Search** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bing-search-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bing Search** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bing-search-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

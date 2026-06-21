@@ -1,7 +1,6 @@
 # FormKeep MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/formkeep)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/formkeep-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/formkeep-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/formkeep)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,55 @@ Here are some examples of how you can interact with the **FormKeep** MCP server 
 > Submission deleted! I've permanently removed the record from your FormKeep account. Your data library has been updated.
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Token for FormKeep?**
+You can find your secret API token in your FormKeep dashboard by navigating to the 'Reports' tab of your specific form.
+
+**Q: Can I filter out spam submissions via the agent?**
+Yes! The 'list_submissions' tool allows you to set the 'spam' parameter to false to exclude all entries flagged as spam by FormKeep.
+
+**Q: Is it possible to delete individual submissions using the agent?**
+Absolutely. Use the 'delete_submission' tool and provide the Form ID and Submission ID to permanently remove a record from your account.
+
+**Q: How do I find my Form ID?**
+The Form ID is the alphanumeric string found in your form's URL or under the 'Setup' tab in your FormKeep dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **FormKeep** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/formkeep](https://vinkius.com/mcp/formkeep)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FormKeep** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `formkeep` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FormKeep** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "formkeep": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

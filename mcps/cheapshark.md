@@ -1,7 +1,6 @@
 # CheapShark MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cheapshark)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cheapshark-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cheapshark-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cheapshark)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **CheapShark** MCP serve
 > Success! I've set a price alert for 'Elden Ring' (ID: 237788). You will receive an email at gamer@example.com as soon as the price hits $30.00 or lower.
 
 
+## ❓ FAQ
+
+**Q: How can I find the historical lowest price for a specific game?**
+Use the `get_game` tool with the specific game ID. It returns the 'cheapestPriceEver' metadata along with current deals across all stores.
+
+**Q: Can I filter for only highly-rated games on sale?**
+Yes! Use the `get_deals` tool and set the `steamRating` or `metacritic` parameters to filter for quality titles.
+
+**Q: How do I set up a notification for when a game goes on sale?**
+Use the `manage_alert` tool with the 'set' action, providing your email, the game ID, and your target price threshold.
+
+
 ## Installation & Usage
 
-To install and use the **CheapShark** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cheapshark](https://vinkius.com/mcp/cheapshark)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CheapShark** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cheapshark` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CheapShark** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cheapshark": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

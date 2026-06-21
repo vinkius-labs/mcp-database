@@ -1,7 +1,6 @@
 # Ayuntamiento de Madrid (CKAN) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ayuntamiento-de-madrid-ckan)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ayuntamiento-de-madrid-ckan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ayuntamiento-de-madrid-ckan-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ayuntamiento-de-madrid-ckan)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Ayuntamiento de Madrid
 > Inspecting 'puntos-muestreo-aire'... This dataset contains the air quality monitoring points in Madrid. It includes 4 resources in CSV and XML formats, maintained by the Environment Department.
 
 
+## ❓ FAQ
+
+**Q: How can I find datasets specifically about air quality or pollution?**
+You can use the `search_packages` tool with a query like 'aire' or 'contaminacion'. The agent will return a list of matching datasets available in the Madrid portal.
+
+**Q: Can I get the direct download link for a data file?**
+Yes. By using `get_package` or `get_resource`, the agent will provide the metadata which includes the 'url' field for the specific resources (CSV, PDF, etc.) associated with that dataset.
+
+**Q: How do I see which municipal department published a certain dataset?**
+Use the `get_package` tool for a specific dataset ID. The metadata returned will include the organization name. You can also use `list_organizations` to see all publishing entities.
+
+
 ## Installation & Usage
 
-To install and use the **Ayuntamiento de Madrid (CKAN)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ayuntamiento-de-madrid-ckan](https://vinkius.com/mcp/ayuntamiento-de-madrid-ckan)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ayuntamiento de Madrid (CKAN)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ayuntamiento-de-madrid-ckan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ayuntamiento de Madrid (CKAN)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ayuntamiento-de-madrid-ckan": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

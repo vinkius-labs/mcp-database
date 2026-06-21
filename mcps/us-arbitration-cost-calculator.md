@@ -1,7 +1,6 @@
 # US Arbitration Cost Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-arbitration-cost-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-arbitration-cost-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-arbitration-cost-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-arbitration-cost-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **US Arbitration Cost Ca
 > The estimated litigation cost is $105,500, consisting of $5,500 in court fees and $100,000 in legal counsel fees.
 
 
+## ❓ FAQ
+
+**Q: What institutions are supported?**
+The calculator supports fee schedules for AAA, JAMS, and ICDR. Tools available: `your_tool_name`.
+
+**Q: How is arbitrator compensation estimated?**
+Compensation is estimated by multiplying the expected procedural hours for a specific case type by the institution's hourly rate corresponding to the dispute value tier.
+
+**Q: Does this tool provide litigation benchmarks?**
+Yes, the `estimate_litigation_costs` logic provides a baseline for court filing fees and estimated legal counsel time to compare against arbitration.
+
+
 ## Installation & Usage
 
-To install and use the **US Arbitration Cost Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-arbitration-cost-calculator](https://vinkius.com/mcp/us-arbitration-cost-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **US Arbitration Cost Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-arbitration-cost-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **US Arbitration Cost Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-arbitration-cost-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

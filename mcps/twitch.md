@@ -1,7 +1,6 @@
 # Twitch MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twitch)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/twitch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/twitch-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twitch)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Twitch** MCP server us
 > I've retrieved the recent videos for ID 12345. You have 5 archives, including 'Tuesday Night Chill' and 'Ranked Climb'. Would you like the duration and view count for any of them?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Twitch Client ID and Access Token?**
+Go to the [**Twitch Developer Console**](https://dev.twitch.tv/console), create an App, and generate a Client Secret to get an App Access Token or perform the OAuth flow for a User Token. Copy and paste them below.
+
+**Q: Can the agent check if a channel is live?**
+Yes. Use the `get_streams` tool providing the user login. Your agent will return real-time status, including viewer count and game title if the channel is live.
+
+**Q: Is it possible to list top clips via the agent?**
+Yes. The `get_clips` tool allows your agent to retrieve the most popular clips for a specific broadcaster, helping you identify trending content moments.
+
+
 ## Installation & Usage
 
-To install and use the **Twitch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/twitch](https://vinkius.com/mcp/twitch)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Twitch** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `twitch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Twitch** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "twitch": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

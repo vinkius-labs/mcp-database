@@ -1,7 +1,6 @@
 # 99Minutos Express MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/99minutos-express)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/99minutos-express-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/99minutos-express-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/99minutos-express)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **99Minutos Express** MC
 > Here.
 
 
+## ❓ FAQ
+
+**Q: Are the pickup locations visible if I list coverage endpoints openly?**
+No. The system protects sensitive core nodes. Also, the primary Bearer Token connecting the logistic grid behaves with absolute `sensitive: true` markings eliminating API key peeking internally or across screen sharing software.
+
+**Q: Is it possible to estimate costs exclusively without mistakenly dispatching a live courier?**
+Definitely! Estimations are securely isolated using exclusively the `get_rates` endpoint. This acts as an inert sandbox fetching pure monetary quotes based on dimensions without generating 'Orders'. Live dispatch strictly requires `create_order` action flags limiting accidental triggers.
+
+**Q: Can I add multiple webhooks?**
+Yes, via the agent.
+
+
 ## Installation & Usage
 
-To install and use the **99Minutos Express** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/99minutos-express](https://vinkius.com/mcp/99minutos-express)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **99Minutos Express** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `99minutos-express` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **99Minutos Express** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "99minutos-express": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

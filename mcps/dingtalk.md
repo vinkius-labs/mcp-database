@@ -1,7 +1,6 @@
 # DingTalk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dingtalk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dingtalk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dingtalk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dingtalk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,52 @@ Here are some examples of how you can interact with the **DingTalk** MCP server 
 > 📊 Attendance report (Jan 15-19, 2024): **user1** - Mon: Check-in 08:55, Check-out 18:02 (Normal); Tue: Check-in 09:12 (Late by 12min), Check-out 18:00; Wed-Fri: Normal attendance. **user2** - All days normal with average check-in at 08:50. Both users show good attendance patterns with only one late occurrence.
 
 
+## ❓ FAQ
+
+**Q: How do I get my DingTalk App Key and App Secret?**
+Log in to the [DingTalk Developer Console](https://open-dev.dingtalk.com/), create an **Internal Enterprise Application**, then navigate to **App Information** > **Credentials** to find your AppKey and AppSecret. Make sure your application has the required API permissions (User Management, Department Management, Attendance, Approval) before using these tools.
+
+**Q: Can I send messages to external contacts or only internal employees?**
+This MCP server uses **Internal Enterprise Application** authentication, which means it can only send messages to users within your organization's DingTalk tenant. For external contacts or customer notifications, you would need a different DingTalk application type with extended permissions. All user IDs must belong to employees in your enterprise directory.
+
+**Q: How does the attendance tracking work? What data can I retrieve?**
+The attendance tool retrieves check-in/check-out records from DingTalk's attendance system. For each record, you get the user ID, timestamp, checkout type (上班签到=check-in, 下班签退=check-out), location information, and whether the attendance was normal or abnormal (late, early leave, missing punch). Date ranges are specified in YYYY-MM-DD format. This data integrates with DingTalk's physical attendance devices and mobile check-in features.
+
+
 ## Installation & Usage
 
-To install and use the **DingTalk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dingtalk](https://vinkius.com/mcp/dingtalk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DingTalk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dingtalk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DingTalk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dingtalk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

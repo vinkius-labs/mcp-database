@@ -1,7 +1,6 @@
 # Razorpay MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/razorpay)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/razorpay-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/razorpay-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/razorpay)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,49 @@ Here are some examples of how you can interact with the **Razorpay** MCP server 
 > Payment link created. Amount: ₹15,000. Purpose: Consulting Invoice #INV-2025-089. Short URL: rzp.io/l/cons089. Expiry: May 20, 2025. Accepted methods: UPI, Credit Card, Debit Card, Net Banking, Wallets. Partial payments: disabled. The link has been copied to your clipboard and is ready to share via email or WhatsApp. A payment receipt will be auto-generated upon successful payment.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific payment just by providing its ID?**
+Yes! Use the `get_payment` tool with the Payment ID. Your agent will respond with complete metadata, including capture status, refund history, and customer notes in seconds.
+
+**Q: How do I find my Razorpay Key ID and Key Secret?**
+Log in to your Razorpay dashboard, navigate to **Settings** > **API Keys**, and generate a new key pair. You will see the Key ID immediately and must download the Key Secret.
+
+
 ## Installation & Usage
 
-To install and use the **Razorpay** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/razorpay](https://vinkius.com/mcp/razorpay)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Razorpay** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `razorpay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Razorpay** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "razorpay": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

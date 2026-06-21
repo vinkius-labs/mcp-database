@@ -1,7 +1,6 @@
 # Editorial Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/editorial-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/editorial-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/editorial-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/editorial-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Editorial Prover** MCP
 > Editorial Report — 3 sections audited: Section 1 (intro): PUBLISH_READY. Section 2 (features): MONOTONE → revised → PUBLISH_READY. Section 3 (getting started): PUBLISH_READY. Recommendation: CONTENT_APPROVED. Revision cycles: 1. Average burstiness CV: 0.47 (human-like rhythm).
 
 
+## ❓ FAQ
+
+**Q: Does Editorial Prover detect AI-generated text?**
+No — and that's intentional. Detectors catch problems after the fact. Editorial Prover prevents them at the source by forcing the agent to think like an editor BEFORE writing. The only server-side check is burstiness (sentence length variance), which is a language-agnostic mathematical validation, not a detection algorithm.
+
+**Q: Does it work for languages other than English?**
+Yes — every language. The 5 Decision Pivots are universal editorial questions (who is the reader? does the opening grab? which sentence is weakest?) that work regardless of language. The burstiness check splits on sentence-ending punctuation (periods, question marks, exclamation marks — including CJK equivalents) and measures word count variance, which is pure math. There are no English-specific blocklists or grammar rules.
+
+**Q: Why does the agent send its own verdict instead of the tool computing it?**
+Because the commitment IS the thinking. If the server computed the verdict automatically, the agent would fill in fields mechanically without reasoning about the outcome. By forcing the agent to declare 'I believe this is PUBLISH_READY' and then validating that declaration against the pivots, the agent must actively reason about whether its editorial self-assessment is consistent. This is the same pattern used by Sequential Thinking — the LLM decides when it has thought enough, which is what makes it think more.
+
+
 ## Installation & Usage
 
-To install and use the **Editorial Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/editorial-prover](https://vinkius.com/mcp/editorial-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Editorial Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `editorial-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Editorial Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "editorial-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # People Data Labs MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/people-data-labs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/people-data-labs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/people-data-labs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/people-data-labs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **People Data Labs** MCP
 > I've identified 3 possible profiles for 'John Doe' at Google. One is a Software Engineer in Mountain View, another is a Product Manager in New York. Should I enrich the Software Engineer profile for you?
 
 
+## ❓ FAQ
+
+**Q: Can I enrich a profile using only a LinkedIn URL?**
+Yes! Use the `pdl_enrich_person` tool and provide the LinkedIn URL in the `profile` parameter. The agent will return the full professional profile associated with that URL.
+
+**Q: Is it possible to search for companies by industry and size using SQL?**
+Absolutely. Use the `pdl_search_company` tool and provide a SQL query like `SELECT * FROM company WHERE industry='software' AND employee_count > 500`. This gives you direct access to the full dataset.
+
+**Q: How many records can I enrich at once in bulk?**
+You can enrich up to 100 records per request using the `pdl_bulk_enrich_person` or `pdl_bulk_enrich_company` tools by passing a JSON array of request objects.
+
+
 ## Installation & Usage
 
-To install and use the **People Data Labs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/people-data-labs](https://vinkius.com/mcp/people-data-labs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **People Data Labs** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `people-data-labs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **People Data Labs** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "people-data-labs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

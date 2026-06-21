@@ -1,7 +1,6 @@
 # Kraken.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/krakenio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/krakenio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/krakenio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/krakenio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Kraken.io** MCP server
 > The image has been uploaded, resized to 200x200, and optimized. The final file is ready at: [URL]
 
 
+## ❓ FAQ
+
+**Q: How can I check my remaining Kraken.io quota?**
+Use the `get_user_status` tool. It will return your plan name, total quota, used quota, and exactly how much remains in your account.
+
+**Q: Can I resize an image while it's being optimized?**
+Yes! Both `optimize_url` and `upload_image` support a `resize` parameter. You can specify width, height, and a strategy like 'exact', 'portrait', or 'landscape'.
+
+**Q: Is there a way to test the API without using my paid credits?**
+Yes, you can set the `dev` parameter to true in your optimization requests. This uses the API Sandbox, which returns randomized results and does not consume your quota.
+
+
 ## Installation & Usage
 
-To install and use the **Kraken.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/krakenio](https://vinkius.com/mcp/krakenio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kraken.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `krakenio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kraken.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "krakenio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

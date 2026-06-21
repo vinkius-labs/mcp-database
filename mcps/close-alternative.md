@@ -1,7 +1,6 @@
 # Close MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/close-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/close-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/close-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/close-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Close** MCP server usi
 > You have 12 active opportunities worth a total of $284,500. The top 3 by value: 'Enterprise Deal - Acme Corp' ($85,000, Negotiation stage), 'DataBridge Annual Contract' ($52,000, Proposal stage), and 'TechFlow Migration' ($41,000, Demo stage). You also have 3 overdue tasks: a call with Acme Corp (2 days late), a proposal follow-up for DataBridge (1 day late), and a meeting note for NovaPay (3 days late).
 
 
+## ❓ FAQ
+
+**Q: Can I create new leads directly through the AI agent?**
+Yes! The `create_lead` tool accepts a company name and an optional website URL. Your agent will create the lead record in Close and return the new Lead ID for immediate reference.
+
+**Q: How does the API authentication work with Close?**
+Close uses HTTP Basic Authentication. Your API Key is sent as the username with an empty password. Navigate to Settings > Developer > API Keys in your Close dashboard to generate a new key. The key is encrypted at rest and injected securely at runtime.
+
+**Q: Can I view my sales opportunities and their current stages?**
+Yes. The `list_opportunities` tool retrieves all active deals in your pipeline, including stage name, expected value, probability, and projected close date. Combine it with `list_crm_tasks` to check pending follow-ups associated with each opportunity.
+
+
 ## Installation & Usage
 
-To install and use the **Close** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/close-alternative](https://vinkius.com/mcp/close-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Close** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `close-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Close** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "close-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

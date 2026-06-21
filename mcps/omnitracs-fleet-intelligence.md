@@ -1,7 +1,6 @@
 # Omnitracs Fleet Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omnitracs-fleet-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/omnitracs-fleet-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/omnitracs-fleet-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omnitracs-fleet-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Omnitracs Fleet Intell
 > Generating performance report... For this week, your fleet averaged 6.5 MPG with a total idle time of 12%. You had 2 safety alerts for hard braking. Would you like to see which vehicles contributed most to the idle time?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Omnitracs API Key?**
+You can obtain an API key by contacting your Omnitracs account representative or through the Omnitracs Customer Portal under the API/Integration settings section.
+
+**Q: Can I see real-time GPS locations?**
+Yes! Use the `get_vehicle_location` tool with a specific vehicle ID to retrieve the latest reported GPS coordinates and status.
+
+**Q: What metrics are included in fleet performance?**
+Performance metrics typically include fuel consumption data, engine hours, safety events (like hard braking), and overall idle time across the fleet.
+
+
 ## Installation & Usage
 
-To install and use the **Omnitracs Fleet Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/omnitracs-fleet-intelligence](https://vinkius.com/mcp/omnitracs-fleet-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Omnitracs Fleet Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `omnitracs-fleet-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Omnitracs Fleet Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "omnitracs-fleet-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

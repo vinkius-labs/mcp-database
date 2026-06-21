@@ -1,7 +1,6 @@
 # BlackTwist MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blacktwist)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blacktwist-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blacktwist-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blacktwist)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **BlackTwist** MCP serve
 > Accessing analytics... Yesterday you reached 1,500 views and 120 likes across all accounts. Your consistency score is holding at 98%. Would you like the detailed breakdown per profile?
 
 
+## ❓ FAQ
+
+**Q: How do I find my BlackTwist API Key?**
+Log in to your account, navigate to **Settings** > **API**, and click **Generate New API Key** to get your token.
+
+**Q: Can I schedule threads with media?**
+The current toolset is optimized for text-based post and thread orchestration to maintain high-fidelity engagement.
+
+**Q: How do I check my remaining post quota?**
+Use the `get_subscription_info` tool to retrieve your current plan details and remaining publication credits directly from the platform.
+
+
 ## Installation & Usage
 
-To install and use the **BlackTwist** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blacktwist](https://vinkius.com/mcp/blacktwist)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BlackTwist** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blacktwist` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BlackTwist** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blacktwist": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

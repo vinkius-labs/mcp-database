@@ -1,7 +1,6 @@
 # PandaDoc MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pandadoc-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pandadoc-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pandadoc-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pandadoc-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **PandaDoc** MCP server 
 > You have 12 templates available. Top 5 by usage: "Standard SaaS Agreement" (used 34 times), "Consulting Proposal" (28 uses), "NDA Mutual" (22 uses), "Statement of Work" (18 uses), and "Sales Quote" (15 uses). 3 templates were updated in the last 30 days. All templates support dynamic field merging with recipient and company data.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific document by its ID?**
+Yes! Use the `get_document` tool with the Document ID. Your agent will respond with complete metadata, including signature status, expiration dates, and recipient info in seconds.
+
+**Q: How do I find my PandaDoc API Key?**
+Log in to your PandaDoc account, navigate to **Settings** > **Integrations** > **API**, and click 'Generate API Key' to create your unique secret token.
+
+**Q: Can I generate a signing link for my app?**
+Absolutely. Use the `create_session` tool to generate an embedded signing session for a specific document. The agent will return a unique URL for your recipient to sign immediately.
+
+
 ## Installation & Usage
 
-To install and use the **PandaDoc** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pandadoc-alternative](https://vinkius.com/mcp/pandadoc-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PandaDoc** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pandadoc-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PandaDoc** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pandadoc-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

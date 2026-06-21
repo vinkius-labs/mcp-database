@@ -1,7 +1,6 @@
 # Critical Thinking Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/critical-thinking-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/critical-thinking-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/critical-thinking-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/critical-thinking-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,55 @@ Here are some examples of how you can interact with the **Critical Thinking Prov
 > Verdict: UNVERIFIED_CHANGES. Contradiction: files modified but changes are not verified, yet the verdict is "DELIVERY_PROVEN". Run testing commands or build tasks to prove correctness. Assuming code works without executing it leads to broken pipelines. Please provide actual execution outputs in the verificationLogs field.
 
 
+## ❓ FAQ
+
+**Q: Does Critical Thinking Prover generate answers to complex problems?**
+No. Critical Thinking Prover performs zero content generation. It forces the AI agent to structure its own reasoning into verifiable fields — assumptions, frameworks, evidence, consequences, confidence bounds — then validates that the reasoning is logically consistent. The agent does all the thinking. The tool catches blind spots.
+
+**Q: How is this different from Sequential Thinking?**
+Sequential Thinking structures thoughts in a linear chain — step 1, step 2, step 3. It's domain-agnostic and doesn't validate reasoning quality. Critical Thinking Prover is orthogonal: it doesn't sequence thoughts, it validates that the reasoning addresses five specific cognitive failure modes — assumption blindness, mono-perspective, confirmation bias, scope neglect, and false precision. You can use both together: Sequential Thinking to decompose the problem, Critical Thinking Prover to validate the conclusion.
+
+**Q: What types of problems does this apply to?**
+Any complex problem where the answer is not obvious and the reasoning matters more than the conclusion. Technical architecture decisions, business strategy, policy design, ethical dilemmas, resource allocation, organizational restructuring, risk assessment, investment analysis, product prioritization. If the problem has competing frameworks, hidden trade-offs, and uncertain outcomes — this tool forces the agent to reason through them instead of pattern-matching to a confident-sounding answer.
+
+**Q: Can the agent still reach a 'wrong' conclusion after passing validation?**
+Yes — and that's by design. Critical Thinking Prover validates reasoning PROCESS, not reasoning OUTCOMES. A conclusion can be well-reasoned and still turn out wrong — that's the nature of complex problems. What the tool guarantees is that the reasoning considered assumptions, multiple perspectives, counterevidence, consequences, and uncertainty bounds. A well-structured wrong answer is infinitely more useful than a confidently stated right one — because you can see WHERE the reasoning might break.
+
+
 ## Installation & Usage
 
-To install and use the **Critical Thinking Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/critical-thinking-prover](https://vinkius.com/mcp/critical-thinking-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Critical Thinking Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `critical-thinking-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Critical Thinking Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "critical-thinking-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

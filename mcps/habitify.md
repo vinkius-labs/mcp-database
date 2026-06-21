@@ -1,7 +1,6 @@
 # Habitify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/habitify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/habitify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/habitify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/habitify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,55 @@ Here are some examples of how you can interact with the **Habitify** MCP server 
 > Retrieving statistics... Last week, you completed 'Morning Meditation' 5 out of 7 days (71% consistency). Your longest streak for this habit is currently 12 days. Would you like to see the details for the missed days?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Habitify API Key?**
+Open the Habitify mobile app, go to **Settings > API Credentials** (or Settings > Account > API), and tap **Generate New Key**. Note that API access may require a premium subscription.
+
+**Q: Can I record progress for my habits via the AI agent?**
+Yes! Use the `add_habit_log` tool. You can specify the habit ID and the value you want to record (e.g., '10 reps' or '30 minutes').
+
+**Q: Does the integration support viewing statistics?**
+Yes, you can use the `get_habit_stats` tool to retrieve performance data for any habit within a specific date range, helping you analyze your consistency.
+
+**Q: Can I create new habits through this integration?**
+Yes! The `create_habit` tool allows you to add new habits to your Habitify account directly from your conversational interface.
+
+
 ## Installation & Usage
 
-To install and use the **Habitify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/habitify](https://vinkius.com/mcp/habitify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Habitify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `habitify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Habitify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "habitify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

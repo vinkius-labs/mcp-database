@@ -1,7 +1,6 @@
 # Arweave MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arweave)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arweave-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arweave-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arweave)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Arweave** MCP server u
 > Calculating storage price for 524,288,000 bytes... The current cost is approximately 45,200,000 Winstons (0.0000452 AR).
 
 
+## ❓ FAQ
+
+**Q: How do I check the cost to store a specific amount of data?**
+You can use the `get_storage_price` tool. Just provide the number of bytes you intend to store, and the agent will return the price in Winstons (where 1 AR = 10^12 Winstons).
+
+**Q: Can I retrieve the actual content of a transaction?**
+Yes. Use the `get_transaction_data` tool with the specific Transaction ID (txid). The agent will fetch the data associated with that transaction from the blockweave.
+
+**Q: How do I know if a transaction has been confirmed by the network?**
+Use the `get_transaction_status` tool. It will return the current status of the transaction, including whether it is pending or confirmed, and the number of confirmations if available.
+
+
 ## Installation & Usage
 
-To install and use the **Arweave** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/arweave](https://vinkius.com/mcp/arweave)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Arweave** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `arweave` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Arweave** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "arweave": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

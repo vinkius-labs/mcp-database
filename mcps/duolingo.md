@@ -1,7 +1,6 @@
 # Duolingo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/duolingo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/duolingo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/duolingo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/duolingo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,55 @@ Here are some examples of how you can interact with the **Duolingo** MCP server 
 > Top 5 Spanish learners today: 1. polyglot_pro (850 XP), 2. maria_es (720 XP), 3. john_doe (650 XP), 4. language_lover (580 XP), 5. spanish_student (510 XP).
 
 
+## ❓ FAQ
+
+**Q: Do I need a Duolingo account to use this?**
+No! Public endpoints like user profiles, version info and dictionary hints work without authentication. Just provide a username to look up. For private data (your own progress, store items), you'd need to be logged into Duolingo.
+
+**Q: What languages are supported?**
+Duolingo supports 40+ languages including English, Spanish, French, German, Italian, Portuguese, Japanese, Korean, Chinese, Hindi and many more. Use get_version_info to see the full list of supported language codes.
+
+**Q: Can I get my full learning progress?**
+The public API returns limited profile data. For full progress including individual skill levels and detailed stats, you need to be authenticated with your Duolingo session. The username-based endpoint returns basic info like total XP, streak and current language.
+
+**Q: Can I get translation hints for vocabulary?**
+Yes! Use get_dictionary_hints with target and source language codes plus a list of words. It returns common translations for each word, useful for building flashcards or studying vocabulary.
+
+
 ## Installation & Usage
 
-To install and use the **Duolingo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/duolingo](https://vinkius.com/mcp/duolingo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Duolingo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `duolingo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Duolingo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "duolingo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

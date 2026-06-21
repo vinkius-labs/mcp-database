@@ -1,7 +1,6 @@
 # IoTeX (IoTeX Block Explorer API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iotex-iotex-block-explorer-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/iotex-iotex-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/iotex-iotex-block-explorer-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iotex-iotex-block-explorer-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **IoTeX (IoTeX Block Exp
 > Analyzing token metadata... This contract corresponds to the 'MachineFi' token (MFI). It has a total supply of 1,000,000,000 and 18 decimals. Should I list the current top holders?
 
 
+## ❓ FAQ
+
+**Q: How can I see the transaction history for a specific IoTeX address?**
+You can use the `get_account_actions` tool. Simply provide the IoTeX address, and the agent will return a list of recent actions (transactions) associated with that account.
+
+**Q: Can I look up block details if I only have the block height?**
+Yes! Use the `get_block_by_height` tool and provide the numeric height. The agent will fetch the full block details including hash, timestamp, and transaction count.
+
+**Q: Is it possible to see who the top holders of a specific token are?**
+Yes, by using the `get_token_holders` tool with the token's contract address, you can retrieve a list of addresses that currently hold that specific XRC20 or XRC721 token.
+
+
 ## Installation & Usage
 
-To install and use the **IoTeX (IoTeX Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/iotex-iotex-block-explorer-api](https://vinkius.com/mcp/iotex-iotex-block-explorer-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IoTeX (IoTeX Block Explorer API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `iotex-iotex-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IoTeX (IoTeX Block Explorer API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "iotex-iotex-block-explorer-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

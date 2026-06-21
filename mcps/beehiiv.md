@@ -1,7 +1,6 @@
 # Beehiiv MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/beehiiv)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/beehiiv-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/beehiiv-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/beehiiv)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Beehiiv** MCP server u
 > Success! Explicit subscription request executed properly. The user alex@example.com has actively landed on the recipient pool correctly and will resolve in future workflows securely.
 
 
+## ❓ FAQ
+
+**Q: Can my AI instantly add a new user email to a Beehiiv segment?**
+Yes! The `create_subscription` endpoint natively pushes explicit subscriber payload strings confirming opt-ins organically inside the newsletter workflow without touching native browser forms.
+
+**Q: Will I be able to see exactly who clicked and opened my last post?**
+The agent can read macroscopic analytics via `get_post_stats` (broad open rates) or isolate users with `get_subscription`, but isolating granular mass clicking lists per individual post requires distinct specialized deep-dive pagination routines currently supported strictly at fundamental account-tiers.
+
+**Q: Can the agent write and automatically publish the newsletter draft?**
+No. The integration currently lists historical posts and retrieves specific delivered payloads as HTML (`get_post`). Native automation dictates safe draft creation remain manual to prevent unintentional spam emissions to thousands of active readers.
+
+
 ## Installation & Usage
 
-To install and use the **Beehiiv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/beehiiv](https://vinkius.com/mcp/beehiiv)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Beehiiv** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `beehiiv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Beehiiv** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "beehiiv": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

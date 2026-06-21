@@ -1,7 +1,6 @@
 # Fathom MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fathom-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fathom-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fathom-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fathom-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **Fathom** MCP server us
 > Fetching aggregations... For the last 7 days, site SHOP2 had 1,250 pageviews and 890 unique visitors.
 
 
+## ❓ FAQ
+
+**Q: Can I see how many people are on my website right now?**
+Yes! Use the `getCurrentVisitors` tool with your Site ID to get the current number of active visitors on your website in real-time.
+
+**Q: How do I get a summary of my traffic for a specific period?**
+You can use the `get_aggregations` tool. It allows you to specify metrics like `pageviews` or `uniques` and define time filters to get summarized data.
+
+**Q: Can I manage my site settings through this integration?**
+Absolutely. You can use `list_sites` to see all your sites, `create_site` to add new ones, and `update_site` to change names or sharing preferences.
+
+
 ## Installation & Usage
 
-To install and use the **Fathom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fathom-alternative](https://vinkius.com/mcp/fathom-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fathom** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fathom-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fathom** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fathom-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Nutshell CRM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nutshell-crm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nutshell-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nutshell-crm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nutshell-crm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Nutshell CRM** MCP ser
 > Retrieving activities... You have 3 scheduled items: 'Follow-up Call' with John Smith at 2:00 PM, 'Project Kickoff' tomorrow at 10:00 AM, and a 'Dinner Meeting'. Shall I retrieve the contact info for John Smith?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Nutshell API Key?**
+Log in to Nutshell, go to Settings > API Keys, and click 'Create New API Key'. You'll need to use this key as your password for authentication.
+
+**Q: What is Universal Search?**
+Universal Search allows you to search across Leads, Contacts, and Accounts at the same time using a single keyword or phrase, making it much faster to find what you need.
+
+**Q: Can I see my custom fields?**
+Yes! Use the `list_custom_fields` tool to retrieve all the unique data field definitions you have configured in your CRM instance.
+
+
 ## Installation & Usage
 
-To install and use the **Nutshell CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nutshell-crm](https://vinkius.com/mcp/nutshell-crm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nutshell CRM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nutshell-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nutshell CRM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nutshell-crm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

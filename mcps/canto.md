@@ -1,7 +1,6 @@
 # Canto MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/canto)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/canto-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/canto-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/canto)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Canto** MCP server usi
 > I pulled the metadata for asset 'J5R...', which originally contained a tag called 'In Review'. I submitted a metadata update patching the customFields to 'Approved'. Your changes are now live and visible in your Canto workspace.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent help me enforce metadata compliance across my Canto digital assets?**
+Yes. You can instruct your AI to search for assets matching specific parameters or lacking required EXIF data, and automatically apply bulk updates to those `customFields` using the update metadata tool. Marketing teams use this to standardize their entire unstructured media library inside Canto in seconds.
+
+**Q: Am I able to restructure my Canto hierarchy without using the web application?**
+Absolutely. Ask your agent to list your current folders and albums, and you can map out a totally new structure. The agent can dynamically create new folders and albums, and immediately assign existing media to these new groupings via the API, preventing any orphaned storage scenarios.
+
+**Q: Can the agent search for specific imagery based on broad keywords quickly?**
+Yes, the AI uses Canto's global asset search to bypass manual navigation loops. It can query across boundaries to pull up exactly the campaign shots or product imagery you need. You can then request the deep metadata details of any returned image directly through the conversation.
+
+
 ## Installation & Usage
 
-To install and use the **Canto** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/canto](https://vinkius.com/mcp/canto)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Canto** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `canto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Canto** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "canto": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

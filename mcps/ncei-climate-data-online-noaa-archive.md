@@ -1,7 +1,6 @@
 # NCEI Climate Data Online (NOAA Archive) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ncei-climate-data-online-noaa-archive)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ncei-climate-data-online-noaa-archive-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ncei-climate-data-online-noaa-archive-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ncei-climate-data-online-noaa-archive)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **NCEI Climate Data Onli
 > For the Daily Summaries (GHCND) dataset, available types include PRCP (Precipitation), SNOW (Snowfall), TAVG (Average Temperature), TMAX (Maximum Temperature), and TMIN (Minimum Temperature).
 
 
+## ❓ FAQ
+
+**Q: How do I find the specific ID for a weather station in a certain city?**
+You can use the `list_stations` tool and provide a `locationid`. To find the correct location ID first, use the `list_locations` tool to search by city or state name.
+
+**Q: What is the difference between a Data Category and a Data Type?**
+Data Categories (retrieved via `list_datacategories`) are broad groups like 'Temperature' or 'Precipitation'. Data Types (retrieved via `list_datatypes`) are specific codes like 'TMAX' (Maximum temperature) or 'PRCP' (Precipitation amount).
+
+**Q: Can I see what datasets are available for a specific date range?**
+Yes, the `list_datasets` tool accepts `startdate` and `enddate` parameters. This allows you to filter the archive for datasets that have coverage during your period of interest.
+
+
 ## Installation & Usage
 
-To install and use the **NCEI Climate Data Online (NOAA Archive)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ncei-climate-data-online-noaa-archive](https://vinkius.com/mcp/ncei-climate-data-online-noaa-archive)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NCEI Climate Data Online (NOAA Archive)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ncei-climate-data-online-noaa-archive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NCEI Climate Data Online (NOAA Archive)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ncei-climate-data-online-noaa-archive": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

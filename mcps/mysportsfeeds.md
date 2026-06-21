@@ -1,7 +1,6 @@
 # MySportsFeeds MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mysportsfeeds)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mysportsfeeds-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mysportsfeeds-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mysportsfeeds)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **MySportsFeeds** MCP se
 > I've scanned the latest NHL injury reports. Current notable injuries include Connor McDavid (Upper Body, Day-to-day) and Nathan MacKinnon (Lower Body, Out 2 weeks). Would you like the full list for a specific team?
 
 
+## ❓ FAQ
+
+**Q: Can I get cumulative player stats for a whole season?**
+Yes! Use the `get_player_stats_totals` tool. Provide the league (e.g., 'NBA') and season identifier (e.g., '2023-2024-regular') to receive a comprehensive list of player performance metrics.
+
+**Q: How do I see the starting lineup for a specific game?**
+Use the `get_game_lineup` tool with the specific league, season, and game identifier. It will return the active rosters and starting positions for both teams involved.
+
+**Q: Is it possible to track player injuries across a league?**
+Absolutely. Use the `get_player_injuries` tool to fetch the most recent injury reports for any supported league like NFL, MLB, or NHL.
+
+
 ## Installation & Usage
 
-To install and use the **MySportsFeeds** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mysportsfeeds](https://vinkius.com/mcp/mysportsfeeds)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MySportsFeeds** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mysportsfeeds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MySportsFeeds** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mysportsfeeds": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

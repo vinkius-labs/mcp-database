@@ -1,7 +1,6 @@
 # MyJohnDeere MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/myjohndeere)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/myjohndeere-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/myjohndeere-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/myjohndeere)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **MyJohnDeere** MCP serv
 > Fetching telematics for Tractor T100... Current fuel level is 65%, engine load is at 42%, and the GPS location is confirmed at the North Field boundary.
 
 
+## ❓ FAQ
+
+**Q: Can I see the physical boundaries of my fields through the AI?**
+Yes. By using the `list_boundaries` tool with a specific Organization ID and Field ID, the AI can retrieve the spatial limits and coordinates of your land.
+
+**Q: How do I check the current sensor readings or telematics for a specific tractor?**
+You can use the `list_machine_measurements` tool. Provide the Organization ID and the Machine ID to fetch the latest telematics and sensor data recorded for that asset.
+
+**Q: Is it possible to list all organizations I have access to?**
+Absolutely. Use the `list_organizations` tool to retrieve a complete list of all farms, dealerships, and entities associated with your MyJohnDeere credentials.
+
+
 ## Installation & Usage
 
-To install and use the **MyJohnDeere** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/myjohndeere](https://vinkius.com/mcp/myjohndeere)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MyJohnDeere** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `myjohndeere` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MyJohnDeere** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "myjohndeere": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

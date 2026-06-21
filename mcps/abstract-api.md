@@ -1,7 +1,6 @@
 # Abstract API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/abstract-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/abstract-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/abstract-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/abstract-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Abstract API** MCP ser
 > I've retrieved the public holidays for Brazil in 2024. Notable dates include Carnival on February 13th and Independence Day on September 7th. I can provide the full list if you'd like.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Abstract API Key?**
+Log in to your [**Abstract API dashboard**](https://app.abstractapi.com/), select the API you want to use, and you will find your API Key on the settings page. Copy and paste it below.
+
+**Q: Can the agent check if an email is real?**
+Yes. Use the `validate_email` tool providing the email address. Your agent will return a deliverability score and identify if the address is a disposable or role-based email.
+
+**Q: Is it possible to validate international VAT numbers?**
+Yes. The `validate_vat` tool allows your agent to verify VAT numbers for businesses across multiple jurisdictions, primarily in Europe.
+
+
 ## Installation & Usage
 
-To install and use the **Abstract API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/abstract-api](https://vinkius.com/mcp/abstract-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Abstract API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `abstract-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Abstract API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "abstract-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

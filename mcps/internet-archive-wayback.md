@@ -1,7 +1,6 @@
 # Internet Archive Wayback MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/internet-archive-wayback)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/internet-archive-wayback-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/internet-archive-wayback-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/internet-archive-wayback)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -100,12 +99,52 @@ Here are some examples of how you can interact with the **Internet Archive Wayba
 > Found captures for 15 subdomains of archive.org: www, web, developer, donate, help, blog, advancedsearch, petabox, us.archive.org, and others. Most captures are from www and web subdomains. Oldest capture dates back to 1998.
 
 
+## ❓ FAQ
+
+**Q: How far back does the Wayback Machine go?**
+The Wayback Machine has archived web pages since 1996. However, coverage varies significantly — major websites have captures going back 20+ years, while smaller or newer sites may have fewer or no captures. Use get_first_capture to find the earliest archived version of any URL.
+
+**Q: Can I find captures that returned 404 errors?**
+Yes! Use get_captures_by_status with status_code="404". This returns all archived versions where the page returned a Not Found error. This is useful for tracking when pages were removed or URLs changed structure.
+
+**Q: Can I discover all subdomains of a website that have been archived?**
+Yes! Use get_subdomain_captures with the base domain (e.g., "example.com"). This returns captures for all subdomains like www.example.com, blog.example.com, api.example.com, etc. It's useful for mapping the full archival footprint of an organization's web presence.
+
+
 ## Installation & Usage
 
-To install and use the **Internet Archive Wayback** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/internet-archive-wayback](https://vinkius.com/mcp/internet-archive-wayback)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Internet Archive Wayback** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `internet-archive-wayback` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Internet Archive Wayback** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "internet-archive-wayback": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

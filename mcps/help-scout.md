@@ -1,7 +1,6 @@
 # Help Scout MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/help-scout)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/help-scout-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/help-scout-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/help-scout)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,55 @@ Here are some examples of how you can interact with the **Help Scout** MCP serve
 > Note added! I've successfully logged your update to conversation 12345. This note is internal-only and will not be seen by the customer. Would you like to set the status to 'Pending' while we wait for the fix?
 
 
+## ❓ FAQ
+
+**Q: How do I get my Help Scout Access Token?**
+You can generate an OAuth2 Access Token by creating an application in the **Help Scout Developer Portal** (developer.helpscout.com). Alternatively, if you are using a personal script, you can use the Client Credentials flow to obtain a token.
+
+**Q: Can I add internal notes to conversations?**
+Yes! Use the `create_convo_note` tool. You must provide the `conversation_id` and the text of your note. This allows you to collaborate with your team without the customer seeing the message.
+
+**Q: How do I change the status of a support thread?**
+Use the `update_convo_status` tool. Provide the conversation ID and the new status (active, pending, or closed). This helps you keep your mailbox organized.
+
+**Q: Is the integration secure for managing support data?**
+Absolutely. The integration uses industry-standard OAuth 2.0 Bearer tokens over HTTPS. Your credentials are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Help Scout** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/help-scout](https://vinkius.com/mcp/help-scout)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Help Scout** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `help-scout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Help Scout** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "help-scout": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

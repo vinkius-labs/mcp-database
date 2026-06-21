@@ -1,7 +1,6 @@
 # Coda MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coda)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coda-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coda-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coda)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Would you like to read data from any of these?
 > Scanning the 'Sprint Board' table. Task 'Q3 Launch' is currently marked as 'In Progress'. It is assigned to Sarah and has a targeted delivery of this coming Friday.
 
 
+## ❓ FAQ
+
+**Q: How do I find my doc and table IDs?**
+You can find IDs in the document's URL, or use the 'list_docs' and 'list_tables' tools to discover them.
+
+**Q: What does 'HTTP 202 Accepted' mean?**
+Coda processes many changes asynchronously. This status means your request was queued and will be applied shortly.
+
+**Q: Can I trigger buttons in Coda?**
+Many Coda buttons are column actions that can be triggered by updating a row value. So yes, indirectly.
+
+
 ## Installation & Usage
 
-To install and use the **Coda** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coda](https://vinkius.com/mcp/coda)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Coda** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Coda** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coda": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

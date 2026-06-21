@@ -1,7 +1,6 @@
 # Egnyte MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/egnyte)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/egnyte-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/egnyte-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/egnyte)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Egnyte** MCP server us
 > Fetching audit logs... The last 5 events include a password change for user 'John', two folder deletions in /Private, and two successful admin logins. Would you like the detailed timestamps for these?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Egnyte domain?**
+The domain is the first part of your URL. For example, if you access Egnyte at `acme.egnyte.com`, your domain is `acme`.
+
+**Q: Can I search for files by content?**
+Yes! The `search_files` tool performs a full-text search across your Egnyte domain to find relevant documents and folders.
+
+**Q: How do I generate a shared link via AI?**
+Use the `create_shared_link` tool and provide the full path to the item. You can also specify access levels like 'public' or 'domain'.
+
+
 ## Installation & Usage
 
-To install and use the **Egnyte** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/egnyte](https://vinkius.com/mcp/egnyte)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Egnyte** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `egnyte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Egnyte** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "egnyte": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

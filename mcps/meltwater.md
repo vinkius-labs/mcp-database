@@ -1,7 +1,6 @@
 # Meltwater MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meltwater)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meltwater-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meltwater-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meltwater)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Meltwater** MCP server
 > Querying searches... You have 5 saved searches including 'Competitor Tracking' and 'Local News Monitor'.
 
 
+## ❓ FAQ
+
+**Q: How do I get Meltwater API credentials?**
+You need to log in to the Meltwater Developer Portal to generate your API Key and create an application to receive your OAuth 2.0 Client ID and Secret.
+
+**Q: What content can I search?**
+Meltwater allows you to search across millions of global news sources and various social media platforms like Twitter, Instagram, and Facebook.
+
+**Q: Is my media data secure?**
+Absolutely. Your credentials are encrypted at rest and injected securely at runtime.
+
+
 ## Installation & Usage
 
-To install and use the **Meltwater** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/meltwater](https://vinkius.com/mcp/meltwater)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Meltwater** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `meltwater` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Meltwater** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "meltwater": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

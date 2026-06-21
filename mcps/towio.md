@@ -1,7 +1,6 @@
 # Towio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/towio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/towio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/towio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/towio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Towio** MCP server usi
 > Success! The task 'Order 50 bags of cement' has been created for project 88231. I've logged it in your towio workspace. Would you like to assign an employee to it?
 
 
+## ❓ FAQ
+
+**Q: Can I see all the employees registered in our Towio account?**
+Yes! Use the `list_employees` tool. Your agent will retrieve the complete directory of staff members registered in your workspace.
+
+**Q: How do I create a new task for a project via AI?**
+Use the `create_task` tool. Provide a title, an optional description, and the Project ID. The agent will instantly add the task to your workspace.
+
+**Q: Is it possible to see recent delivery documents?**
+Absolutely. Use the `list_delivery_documents` query to retrieve a list of all recent delivery notes and associated files tracked in Towio.
+
+
 ## Installation & Usage
 
-To install and use the **Towio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/towio](https://vinkius.com/mcp/towio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Towio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `towio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Towio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "towio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

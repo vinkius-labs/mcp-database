@@ -1,7 +1,6 @@
 # OPM Operating Status MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opm-operating-status)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opm-operating-status-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opm-operating-status-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opm-operating-status)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,12 +62,52 @@ Here are some examples of how you can interact with the **OPM Operating Status**
 > Checking `get_operating_status`... The OPM has issued an 'Early Departure' notice. Employees are authorized to leave 3 hours earlier than their normal departure time.
 
 
+## ❓ FAQ
+
+**Q: Does this tool provide the operating status for federal offices outside of Washington, DC?**
+No. The `get_operating_status` tool specifically retrieves the status for federal offices in the Washington, DC area as defined by the OPM.
+
+**Q: How often is the government status updated?**
+The tool fetches data in real-time. Whenever the OPM updates their official status page, the `get_operating_status` tool will reflect those changes immediately.
+
+**Q: Does this include specific dismissal procedures for snow or emergencies?**
+Yes. When you run `get_operating_status`, the response includes the full text of the OPM instructions, which cover telework requirements, excused absences, and staggered arrival/departure times.
+
+
 ## Installation & Usage
 
-To install and use the **OPM Operating Status** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opm-operating-status](https://vinkius.com/mcp/opm-operating-status)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OPM Operating Status** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opm-operating-status` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OPM Operating Status** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opm-operating-status": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

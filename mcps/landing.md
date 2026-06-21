@@ -1,7 +1,6 @@
 # Landing MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/landing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/landing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/landing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/landing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Landing** MCP server u
 > Templates: 15 available. Categories: SaaS (4), E-commerce (3), Education (2), Agency (3), Event (3). Webinar analytics: Views: 2.1K (7 days). Unique visitors: 1.8K. Conversion: 12.3% (258 registrations). Bounce rate: 38%. Avg time on page: 1.8 min. Traffic: Organic 40%, Paid 35%, Social 25%.
 
 
+## ❓ FAQ
+
+**Q: Can I track leads and conversion rates?**
+Yes. Browse all captured leads with form data, traffic source, and timestamp. Monitor conversion rates per page.
+
+**Q: Can I manage and create landing pages?**
+Yes. List all pages with status, create new pages, and manage page settings and publication status.
+
+**Q: What API does Landing use?**
+Bearer authentication against `api.landing.com/v1`.
+
+
 ## Installation & Usage
 
-To install and use the **Landing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/landing](https://vinkius.com/mcp/landing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Landing** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `landing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Landing** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "landing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

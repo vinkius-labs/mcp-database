@@ -1,7 +1,6 @@
 # 2Chat MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/2chat)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/2chat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/2chat-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/2chat)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **2Chat** MCP server usi
 > The group 'Project Gamma' has been successfully created and +198765432 has been added as a participant. You can now send messages to this group through 2Chat.
 
 
+## ❓ FAQ
+
+**Q: Can I manage WhatsApp groups with this server?**
+Yes! 2Chat provides dedicated tools to create groups, list groups your number belongs to, and send messages to group UUIDs.
+
+**Q: Do I need official WhatsApp Business API approval?**
+No. 2Chat works by linking your existing WhatsApp number (Personal or Business) via a QR code, so you don't need official Meta approval or template restrictions.
+
+**Q: How can I check if a number is on WhatsApp?**
+You can use the `check_number` tool to verify if a specific phone number is registered on WhatsApp before attempting to send a message.
+
+
 ## Installation & Usage
 
-To install and use the **2Chat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/2chat](https://vinkius.com/mcp/2chat)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **2Chat** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `2chat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **2Chat** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "2chat": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # GatherContent MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gathercontent)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gathercontent-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gathercontent-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gathercontent)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,55 @@ Here are some examples of how you can interact with the **GatherContent** MCP se
 > Retrieving item content... For item 98765, I found fields for 'Headline', 'Body Copy', and 'Meta Description'. The body copy currently contains 450 words and is marked as 'Ready for Review'.
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Key for GatherContent?**
+Log in to your GatherContent account, click on your profile avatar, navigate to Personal Settings > API, and you can generate a new API Key there.
+
+**Q: What email should I use for authentication?**
+You must use the exact email address associated with your GatherContent user account. This email is used as the username for Basic Authentication.
+
+**Q: Can I see the structured fields of a content item?**
+Yes! The 'get_item_content' tool retrieves the full metadata and content for any item, including the specific data values stored in each defined field.
+
+**Q: How do I find my Project ID?**
+You can use the 'list_content_projects' tool to see all your active projects and their corresponding IDs, or look at the URL when you are viewing a project in your browser.
+
+
 ## Installation & Usage
 
-To install and use the **GatherContent** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gathercontent](https://vinkius.com/mcp/gathercontent)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GatherContent** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gathercontent` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GatherContent** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gathercontent": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Permify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/permify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/permify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/permify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/permify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Permify** MCP server u
 > Executing `create_tenant`... Success! The tenant 'client-alpha-test' has been created with ID 'cat-9920'. You can now start writing its authorization schema.
 
 
+## ❓ FAQ
+
+**Q: Can I check permissions for multiple users or resources at once?**
+Yes! Use the `bulk_check_permissions` tool. It allows you to send a list of check requests in a single call, making it efficient for auditing complex views or batch processing.
+
+**Q: How do I update only a small part of my authorization model?**
+You can use the `partial_write_schema` tool. Instead of overwriting the entire model, you provide a map of entity updates to modify specific parts of your schema.
+
+**Q: Is it possible to manage isolated environments for different customers?**
+Absolutely. Use the `create_tenant` tool to spin up new isolated authorization silos. You can then use `list_tenants` to keep track of all active environments.
+
+
 ## Installation & Usage
 
-To install and use the **Permify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/permify](https://vinkius.com/mcp/permify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Permify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `permify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Permify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "permify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

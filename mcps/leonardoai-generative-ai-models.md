@@ -1,7 +1,6 @@
 # Leonardo.ai (Generative AI & Models) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leonardoai-generative-ai-models)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/leonardoai-generative-ai-models-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/leonardoai-generative-ai-models-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leonardoai-generative-ai-models)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Leonardo.ai (Generativ
 > Retrieving metrics for user 'alex_designer'… You currently have 1,240 tokens remaining for today. Your daily limit is 2,000. You have performed 45 generations so far in this billing cycle.
 
 
+## ❓ FAQ
+
+**Q: Can I check the progress of my image generation through my agent?**
+Yes. Use the `get_generation_status` tool with the Generation ID provided when you started the request. Your agent will poll the Leonardo API and return the final image URLs and metadata once the process is complete.
+
+**Q: How do I find which AI models are available for generation?**
+Ask your agent to `list_platform_models` or `list_custom_models`. It will return a list of available UUIDs and model names (like Phoenix or Kino XL), which are required when triggering a new image generation request.
+
+**Q: Can my agent perform image-to-image transformations?**
+Absolutely. Use the `upload_init_image` tool to acquire a secure presigned URL for your source image. Once uploaded, you can command your agent to trigger a generation that uses that image as a reference for guided AI transformations.
+
+
 ## Installation & Usage
 
-To install and use the **Leonardo.ai (Generative AI & Models)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/leonardoai-generative-ai-models](https://vinkius.com/mcp/leonardoai-generative-ai-models)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Leonardo.ai (Generative AI & Models)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `leonardoai-generative-ai-models` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Leonardo.ai (Generative AI & Models)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "leonardoai-generative-ai-models": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

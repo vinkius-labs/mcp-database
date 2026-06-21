@@ -1,7 +1,6 @@
 # Pexels MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pexels-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pexels-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pexels-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pexels-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Pexels** MCP server us
 > Accessing your collection... I've retrieved 12 items (8 photos and 4 videos) from your 'Project Assets' collection. Would you like the download links for any of them?
 
 
+## ❓ FAQ
+
+**Q: Can I search for photos that match a specific brand color?**
+Yes! Use the `search_photos` tool and provide a hex code or color name in the `color` parameter to filter results by that specific palette.
+
+**Q: How do I get the highest resolution link for a specific video?**
+Use the `get_video` tool with the target Video ID. The agent will return all available file qualities and their direct download URLs.
+
+**Q: Can I see the media inside my own Pexels collections?**
+First, use `get_my_collections` to find your collection ID, then use `get_collection_media` with that ID to list all photos and videos stored inside.
+
+
 ## Installation & Usage
 
-To install and use the **Pexels** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pexels-alternative](https://vinkius.com/mcp/pexels-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pexels** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pexels-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pexels** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pexels-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

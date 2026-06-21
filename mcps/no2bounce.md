@@ -1,7 +1,6 @@
 # No2Bounce MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/no2bounce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/no2bounce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/no2bounce-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/no2bounce)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **No2Bounce** MCP server
 > Bulk validation started for 10 addresses. Your tracking ID is `nb_99210`. You can ask me to check the results using this ID later.
 
 
+## ❓ FAQ
+
+**Q: How do I submit multiple emails for validation at once?**
+Use the `validate_bulk` tool and provide an array of email addresses in the `emailList` parameter. The server will return a `trackingId` which you can use to check the results.
+
+**Q: How can I check if my bulk validation task is finished?**
+You can use the `get_validation_status` tool by providing the `trackingId` received during the submission. It will return the current progress or the final validation results.
+
+**Q: Is there a way to prevent sending the same validation request twice?**
+Yes, when using `validate_bulk`, you can provide an optional `hashkey`. This unique string prevents duplicate requests from being processed within a 3-minute window.
+
+
 ## Installation & Usage
 
-To install and use the **No2Bounce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/no2bounce](https://vinkius.com/mcp/no2bounce)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **No2Bounce** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `no2bounce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **No2Bounce** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "no2bounce": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

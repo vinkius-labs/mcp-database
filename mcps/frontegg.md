@@ -1,7 +1,6 @@
 # Frontegg MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/frontegg)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/frontegg-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/frontegg-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/frontegg)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,55 @@ Here are some examples of how you can interact with the **Frontegg** MCP server 
 > Tenant created! I have successfully provisioned the new tenant 'Stark Industries' in your Frontegg environment. The new Tenant ID is tnt_789012.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Client ID and API Key for Frontegg?**
+Log in to the Frontegg Portal, select your workspace/environment, go to 'Environment Settings' > 'API Keys', and create a Vendor token to get your Client ID and API Key.
+
+**Q: Does this support multi-tenant management?**
+Yes! The agent can list, create, and delete individual tenants (customer accounts) within your environment using the 'list_tenants' and 'create_tenant' tools.
+
+**Q: Can I search for a user across all tenants?**
+Yes, use the 'list_users' tool and provide an exact 'email' parameter. The agent will search across all tenants in the environment to find the user profile.
+
+**Q: Is it possible to view role permissions?**
+You can use the 'list_system_roles' to view all roles and the 'list_permissions' tool to see the granular permissions available for assignment.
+
+
 ## Installation & Usage
 
-To install and use the **Frontegg** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/frontegg](https://vinkius.com/mcp/frontegg)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Frontegg** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `frontegg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Frontegg** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "frontegg": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Procore MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/procore)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/procore-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/procore-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/procore)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Both blocking work on floors 27-30. Check pending submittals too?
 8 items due before March 30 inspections. Show the full list?
 
 
+## ❓ FAQ
+
+**Q: Can my AI give me a full project status including open RFIs, pending submittals, and punch items?**
+Yes! Ask 'Give me a full status for project 2847.' It calls `list_rfis`, `list_submittals`, and `list_punch_items` to compile a consolidated briefing: 4 open RFIs (2 overdue), 7 pending submittals, and 12 punch items. A field-ready summary in seconds.
+
+**Q: How can I review what happened on my jobsite yesterday?**
+Ask 'Show me yesterday's daily log for project 2847.' The `list_daily_logs` tool returns weather, workforce headcount by trade, equipment on site, work completed, delays, and superintendent notes. Your complete jobsite briefing without a single phone call.
+
+**Q: Is this integration read-only?**
+Yes, entirely read-only. All 8 tools list and retrieve data — none can create, modify, or delete project records. Your OAuth credentials control which projects are accessible, matching your Company Admin permissions.
+
+
 ## Installation & Usage
 
-To install and use the **Procore** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/procore](https://vinkius.com/mcp/procore)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Procore** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `procore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Procore** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "procore": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

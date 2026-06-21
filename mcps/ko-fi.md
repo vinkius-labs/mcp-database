@@ -1,7 +1,6 @@
 # Ko-fi MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ko-fi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ko-fi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ko-fi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ko-fi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Ko-fi** MCP server usi
 > Here are the latest messages: 'Keep up the great work!' from Sarah ($10) and 'Love the new tutorial!' from Mike ($5). Would you like me to summarize all feedback from this week?
 
 
+## ❓ FAQ
+
+**Q: Can I see recent donations and messages from my supporters?**
+Yes! By using the `list_transactions` tool, your agent will fetch the most recent activity, including the supporter's name, the amount donated, and any message they left for you.
+
+**Q: Does this tool include shop orders and commissions?**
+Yes, the `list_transactions` tool polls the Ko-fi API for all types of transactions, which includes donations, recurring subscriptions, and shop orders.
+
+**Q: Can I send messages or replies back to supporters through this integration?**
+No. The current version of the Ko-fi MCP server is focused on querying and monitoring data using the `list_transactions` tool. It does not currently support write operations or sending messages.
+
+
 ## Installation & Usage
 
-To install and use the **Ko-fi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ko-fi](https://vinkius.com/mcp/ko-fi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ko-fi** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ko-fi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ko-fi** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ko-fi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

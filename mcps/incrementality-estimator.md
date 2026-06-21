@@ -1,7 +1,6 @@
 # Incrementality Estimator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/incrementality-estimator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/incrementality-estimator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/incrementality-estimator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/incrementality-estimator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -59,12 +58,52 @@ Here are some examples of how you can interact with the **Incrementality Estimat
 > I will use `calculate_roas_comparison` directly. I need to input incremental conversions=120, total campaign cost=$5,000, and average conversion value=$75. This gives us the most accurate profitability metric.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between reported ROAS and true incremental ROAS?**
+Reported ROAS treats all conversions as campaign-attributable, which usually overestimates value. True Incremental ROAS uses the `calculate_roas_comparison` tool to factor in the baseline conversion rate derived from the control group, providing a much more accurate measure of marginal return.
+
+**Q: I only have raw cohort sizes and conversions. What should I run first?**
+You must start by using the `calculate_baseline_metrics` tool. This establishes the fundamental conversion rates (Control CR and Exposed CR) needed for all subsequent lift calculations.
+
+**Q: How do I find the absolute number of extra conversions? Which tool handles this?**
+The `calculate_incrementality_metrics` tool is designed for this. It takes your baseline CR and exposed performance data to calculate the absolute incremental conversions, telling you exactly how many extra sales were achieved.
+
+
 ## Installation & Usage
 
-To install and use the **Incrementality Estimator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/incrementality-estimator](https://vinkius.com/mcp/incrementality-estimator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Incrementality Estimator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `incrementality-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Incrementality Estimator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "incrementality-estimator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

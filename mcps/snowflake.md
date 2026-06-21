@@ -1,7 +1,6 @@
 # Snowflake MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snowflake)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/snowflake-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/snowflake-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snowflake)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Digging into `ANALYTICS_GOLD` using `list_tables`:
 I am ready to help build your exact JOINS. For example, `fct_sales_records.customer_id` directly joins on `dim_customers.id`.
 
 
+## ❓ FAQ
+
+**Q: Can my AI actually read the raw table rows via an execute statement?**
+Yes. When the AI uses `execute_sql` with something like `SELECT * FROM schema.users LIMIT 10`, the MCP integration parses the exact row outputs. The LLM consumes the tabular data back into context so you can converse naturally about the dataset findings.
+
+**Q: Is it completely safe to give AI power over a Data Warehouse?**
+Safety stems from principle of least privilege. Supply a Snowflake Token tied strictly to a read-only role or a heavily scoped down service account. This allows the AI to navigate schemas and extract data without risking destructive schema mutations like DROPs or DELETEs.
+
+**Q: Can it search for a column name if I don't know the exact schema?**
+Yes! Tell your agent: 'Find which table in the SALES_DB database has a column named customer_churn_score'. Due to its autonomous workflow, the bot will pull schemas, subsequently loop over `list_tables`, query Snowflake’s internal information_schema if necessary, and deduce it entirely for you.
+
+
 ## Installation & Usage
 
-To install and use the **Snowflake** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/snowflake](https://vinkius.com/mcp/snowflake)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Snowflake** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `snowflake` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Snowflake** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "snowflake": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

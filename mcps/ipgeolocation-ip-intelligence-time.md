@@ -1,7 +1,6 @@
 # IPGeolocation (IP Intelligence & Time) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ipgeolocation-ip-intelligence-time)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ipgeolocation-ip-intelligence-time-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ipgeolocation-ip-intelligence-time-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ipgeolocation-ip-intelligence-time)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **IPGeolocation (IP Inte
 > Retrieving astronomy data for Lisbon… Today, the sun rises at 7:12 AM and sets at 6:45 PM. The solar noon occurs at 12:58 PM, and the total day length will be 11 hours and 33 minutes.
 
 
+## ❓ FAQ
+
+**Q: Can I resolve a location using GPS coordinates instead of an IP address?**
+Yes. Tools like `get_timezone` and `get_astronomy` accept optional latitude and longitude parameters. This allows your agent to retrieve environmental and temporal data for any point on Earth, even if you don't have a target IP.
+
+**Q: How do I check if a specific location is currently observed in Daylight Saving Time (DST)?**
+Use the `get_timezone` tool by providing a timezone name (e.g. 'America/New_York'). Your agent will return the full timezone payload, including the `is_dst` boolean and current UTC offset.
+
+**Q: Can my agent find out the sunrise and sunset times for a given IP?**
+Absolutely. Use the `get_astronomy` tool and provide the target IP. Your agent will calculate the precise location and return astronomical data including sunrise, sunset, solar noon, and day length.
+
+
 ## Installation & Usage
 
-To install and use the **IPGeolocation (IP Intelligence & Time)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ipgeolocation-ip-intelligence-time](https://vinkius.com/mcp/ipgeolocation-ip-intelligence-time)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IPGeolocation (IP Intelligence & Time)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ipgeolocation-ip-intelligence-time` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IPGeolocation (IP Intelligence & Time)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ipgeolocation-ip-intelligence-time": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

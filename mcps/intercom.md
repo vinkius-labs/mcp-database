@@ -1,7 +1,6 @@
 # Intercom MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/intercom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/intercom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/intercom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/intercom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,55 @@ Here are some examples of how you can interact with the **Intercom** MCP server 
 > I found 14 companies on the Enterprise plan. Top 5 by user count: Acme Corp (250 users), GlobalTech (180 users), DataFlow Inc (95 users), CloudFirst (72 users), and SecureStack (45 users).
 
 
+## ❓ FAQ
+
+**Q: How do I get my Intercom Access Token?**
+Go to the **Intercom Developer Hub** at **app.intercom.com/a/developer-hub/**. Click **New app**, give it a name, and select the workspace to install it in. Once created, click on your app, then navigate to **Authentication** in the left sidebar. Your **Access Token** will be displayed on this page. Configure the required permissions (scopes) — such as Read/Write People, Conversations, or Companies — and click **Save**. Copy the token and paste it below.
+
+**Q: Can I look up a customer's full conversation history instantly?**
+Yes. Just ask your AI agent 'Show me all conversations with john@acme.com' and it retrieves every conversation — open, closed, and snoozed — including message content, agent assignments, tags, and resolution times. Perfect for getting full context before a customer call.
+
+**Q: Can I track support team performance metrics?**
+Yes. Your AI agent can pull conversation counts, average response times, resolution rates, and open ticket volumes — giving managers instant visibility into team workload and SLA compliance without building custom reports or opening the Intercom analytics dashboard.
+
+**Q: Is my customer data secure?**
+Your Access Token is a private app token that only accesses data in your own Intercom workspace. It respects your workspace's permission model — the token only has access to the scopes you explicitly grant. All API calls are made over HTTPS, and the token is never shared with third parties.
+
+
 ## Installation & Usage
 
-To install and use the **Intercom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/intercom](https://vinkius.com/mcp/intercom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Intercom** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `intercom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Intercom** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "intercom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

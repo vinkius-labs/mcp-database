@@ -1,7 +1,6 @@
 # Dropbox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dropbox)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dropbox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dropbox-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dropbox)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Dropbox** MCP server u
 > Retrieving storage info... You are using 1.2 GB of your 2.0 GB total capacity (60% used). You have approximately 800 MB of space remaining.
 
 
+## ❓ FAQ
+
+**Q: Can my agent list files in a specific Dropbox folder?**
+Yes. Use the 'list_folder' tool. Provide the folder path (use an empty string for the root). The agent will return an array of items including names, types, and modification dates.
+
+**Q: How do I find a file by its name through natural conversation?**
+Use the 'search_files' tool. Provide your query string, and the agent will execute a structural match against your indexed Dropbox files, returning the most relevant results.
+
+**Q: Can I check how much storage space I have left via the agent?**
+Absolutely. The 'get_space_usage' tool retrieves your physical allocation blocks. It will show you exactly how many bytes are used versus your total account capacity.
+
+
 ## Installation & Usage
 
-To install and use the **Dropbox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dropbox](https://vinkius.com/mcp/dropbox)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dropbox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dropbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dropbox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dropbox": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

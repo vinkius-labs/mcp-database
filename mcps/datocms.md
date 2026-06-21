@@ -1,7 +1,6 @@
 # DatoCMS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datocms)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datocms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datocms-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datocms)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **DatoCMS** MCP server u
 > I found 5 recent uploads. The latest is 'hero-banner.jpg' (ID: 999), followed by 'logo-white.png' and 'team-photo.webp'. All assets are being proxied via Imgix for optimization.
 
 
+## ❓ FAQ
+
+**Q: Can my agent execute custom GraphQL queries against DatoCMS?**
+Yes. Use the 'execute_graphql_cda' tool. You can provide any valid GraphQL query string to fetch data from the Content Delivery API (CDA) tree, bypassing rigid limits and retrieving exactly what your agent needs.
+
+**Q: How do I create a new content item using the agent?**
+Use the 'create_cms_record' tool. Provide the Item Type ID and a JSON object containing the attributes. The agent will orchestrate the absolute explicit bindings to generate a new record in your DatoCMS project.
+
+**Q: Can I inspect the available content models through chat?**
+Absolutely. The 'list_global_models' tool enumerates all registered item types and models. This allows your agent to identify precisely what schemas bind to your editor blocks and which fields are available for data mutations.
+
+
 ## Installation & Usage
 
-To install and use the **DatoCMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/datocms](https://vinkius.com/mcp/datocms)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DatoCMS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `datocms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DatoCMS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "datocms": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

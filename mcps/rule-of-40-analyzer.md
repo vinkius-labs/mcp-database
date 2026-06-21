@@ -1,7 +1,6 @@
 # Rule of 40 Analyzer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rule-of-40-analyzer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rule-of-40-analyzer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rule-of-40-analyzer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rule-of-40-analyzer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -49,12 +48,52 @@ Here are some examples of how you can interact with the **Rule of 40 Analyzer** 
 > The TTM Rule of 40 score is 45% with a declining trend status.
 
 
+## ❓ FAQ
+
+**Q: What is the Rule of 40?**
+The Rule of 40 is a metric used to measure the balance between growth and profitability in SaaS companies. It is calculated by adding the revenue growth rate to the profit margin.
+
+**Q: How do I interpret the performance tiers?**
+A score below 40% is considered 'Risk', a score between 40% and 60% is 'Healthy', and a score above 60% is 'Elite'.
+
+**Q: Can I analyze historical trends?**
+Yes, by using the `compute_ttm_metrics` tool, you can provide quarterly data to calculate the Trailing Twelve Months (TTM) score and see if your performance trend is improving or declining.
+
+
 ## Installation & Usage
 
-To install and use the **Rule of 40 Analyzer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rule-of-40-analyzer](https://vinkius.com/mcp/rule-of-40-analyzer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rule of 40 Analyzer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rule-of-40-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rule of 40 Analyzer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rule-of-40-analyzer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

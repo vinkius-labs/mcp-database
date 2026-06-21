@@ -1,7 +1,6 @@
 # iSpring Learn MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ispring-learn)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ispring-learn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ispring-learn-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ispring-learn)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **iSpring Learn** MCP se
 > Departments: 6. Engineering (12 people, 89% complete). Product (4, 95%). Design (3, 100% ✅). Marketing (5, 72% ⚠️). Sales (8, 81%). HR (3, 100% ✅). Overall: 35 employees, 85% average completion. Marketing needs attention: 2 learners haven't started GDPR.
 
 
+## ❓ FAQ
+
+**Q: Can I track learner progress across courses?**
+Yes. List learners and inspect individual progress including course completion percentages, quiz scores, and time spent. Track enrollments across all courses.
+
+**Q: Does iSpring Learn require a custom instance URL?**
+Yes. Each iSpring Learn account has a unique URL (e.g., `https://your-company.ispringlearn.com`). Provide this along with the API Key. Bearer token against `{url}/api/v1`.
+
+**Q: Can I review quiz results and assessment scores?**
+Yes. Browse quiz results with pass/fail status, scores, and attempt details for any course or learner.
+
+
 ## Installation & Usage
 
-To install and use the **iSpring Learn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ispring-learn](https://vinkius.com/mcp/ispring-learn)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **iSpring Learn** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ispring-learn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **iSpring Learn** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ispring-learn": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

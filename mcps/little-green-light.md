@@ -1,7 +1,6 @@
 # Little Green Light MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/little-green-light)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/little-green-light-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/little-green-light-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/little-green-light)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Little Green Light** M
 > I found 3 active appeals: 'Winter Mailing 2024 (ID: 987)', 'Annual Gala (ID: 654)', and 'Building Fund (ID: 321)'.
 
 
+## ❓ FAQ
+
+**Q: How do I find my LGL API Key?**
+Log in to your Little Green Light account, navigate to Settings > Integration Settings > LGL API to enable and copy your unique API key.
+
+**Q: What fields are required to create a gift?**
+You must provide a `constituent_id`, an `amount` (numerical), and a `gift_date` (YYYY-MM-DD).
+
+**Q: Can I associate a gift with a specific campaign?**
+Yes, when using the `record_new_donation` tool, you can include a `campaign_id`, `appeal_id`, or `fund_id` within the JSON body.
+
+
 ## Installation & Usage
 
-To install and use the **Little Green Light** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/little-green-light](https://vinkius.com/mcp/little-green-light)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Little Green Light** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `little-green-light` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Little Green Light** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "little-green-light": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

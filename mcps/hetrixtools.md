@@ -1,7 +1,6 @@
 # HetrixTools MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hetrixtools)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hetrixtools-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hetrixtools-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hetrixtools)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,55 @@ Here are some examples of how you can interact with the **HetrixTools** MCP serv
 > Maintenance mode updated! Monitor m123 is now in mode 3 (Maintenance without notifications). You can perform your updates without triggering any alerts. Should I list your other monitors?
 
 
+## ❓ FAQ
+
+**Q: How do I find my HetrixTools API Token?**
+Log in to your HetrixTools account, navigate to **Account Settings**, and click on the **API** tab. You will be able to generate and copy your unique API Token from there.
+
+**Q: Can I perform on-demand blacklist checks?**
+Yes! Use the `check_ip_blacklist` or `check_domain_blacklist` tools. These trigger real-time scans across 90+ blacklists. Note that these requests can take a few minutes to complete.
+
+**Q: What are the maintenance modes for monitors?**
+The integration supports three modes: 1 (Normal), 2 (Maintenance with notifications enabled), and 3 (Maintenance without notifications). Use `set_maintenance_mode` to toggle these.
+
+**Q: Is the integration secure for monitoring data?**
+Absolutely. The integration uses industry-standard Bearer tokens (v3) or secure URL tokens over HTTPS. Your credentials are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **HetrixTools** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hetrixtools](https://vinkius.com/mcp/hetrixtools)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HetrixTools** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hetrixtools` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HetrixTools** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hetrixtools": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

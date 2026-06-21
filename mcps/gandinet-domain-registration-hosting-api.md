@@ -1,7 +1,6 @@
 # Gandi.net (Domain Registration & Hosting API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gandinet-domain-registration-hosting-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gandinet-domain-registration-hosting-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gandinet-domain-registration-hosting-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gandinet-domain-registration-hosting-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Gandi.net (Domain Regi
 > Fetching DNS records for 'example.com'... I found 4 records: an A record pointing to 93.184.216.34, two MX records for mail, and a TXT record for verification. Do you need to modify any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I check if a domain is available for registration using this tool?**
+Yes! Use the `check_domain` tool with the FQDN you're interested in. The agent will return the availability status directly from Gandi's registry.
+
+**Q: How do I update a DNS record for one of my domains?**
+You can use the `update_dns_record` tool. You'll need to provide the domain (fqdn), the record name (like 'www'), the type (like 'A'), and the new record data in JSON format.
+
+**Q: Can I see my hosting instances and their status?**
+Absolutely. Use the `list_hosting_instances` tool to get an overview of all your hosting services, or `get_hosting_instance` for detailed information on a specific one.
+
+
 ## Installation & Usage
 
-To install and use the **Gandi.net (Domain Registration & Hosting API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gandinet-domain-registration-hosting-api](https://vinkius.com/mcp/gandinet-domain-registration-hosting-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gandi.net (Domain Registration & Hosting API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gandinet-domain-registration-hosting-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gandi.net (Domain Registration & Hosting API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gandinet-domain-registration-hosting-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

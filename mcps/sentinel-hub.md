@@ -1,7 +1,6 @@
 # Sentinel Hub MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sentinel-hub)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sentinel-hub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sentinel-hub-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sentinel-hub)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -108,12 +107,52 @@ Here are some examples of how you can interact with the **Sentinel Hub** MCP ser
 > I've listed the available band combinations. For wildfire assessment, you should use the **Burn Severity (NBR)** index which combines bands B08 (NIR) and B12 (SWIR) from Sentinel-2. For broader context, the **SWIR** composite (B12, B8A, B04) highlights burned areas in distinctive colors. The **False Color (Vegetation)** combination (B08, B04, B03) also clearly distinguishes healthy vegetation from burned areas. Would you like me to process burn severity for a specific region?
 
 
+## ❓ FAQ
+
+**Q: What is an evalscript and how do I use one?**
+An evalscript is a small JavaScript program that tells Sentinel Hub how to process satellite bands into an output image. It defines which bands to use, how to combine them, and what colors to assign. You can use the generate_ndvi_evalscript or generate_true_color_evalscript tools to get ready-made evalscripts, then pass them to the process_image tool.
+
+**Q: Can I analyze vegetation health with this server?**
+Absolutely. Generate an NDVI evalscript with the generate_ndvi_evalscript tool, then process imagery for your area of interest with the process_image tool. For time-series analysis, use the get_statistics tool with temporal aggregation to track vegetation changes over weeks or months. The search_cloud_free tool helps you find clean scenes without cloud contamination.
+
+**Q: What is the difference between this server and the Copernicus Data Space server?**
+The Copernicus Data Space server focuses on product catalogue search and download — finding and retrieving raw satellite data files. Sentinel Hub focuses on on-the-fly processing — rendering images, computing indices, and generating statistics without downloading raw data. They complement each other: use Copernicus for data discovery and bulk download, Sentinel Hub for real-time analysis and visualization.
+
+
 ## Installation & Usage
 
-To install and use the **Sentinel Hub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sentinel-hub](https://vinkius.com/mcp/sentinel-hub)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sentinel Hub** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sentinel-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sentinel Hub** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sentinel-hub": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

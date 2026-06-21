@@ -1,7 +1,6 @@
 # Flowise MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flowise)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flowise-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flowise-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flowise)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Flowise** MCP server u
 > Retrieving history... For 'Legal-Assistant' (ID: 789), I found 10 recent executions. Highlights include a query about 'GDPR compliance' and another regarding 'Contract Review'. Would you like the logs for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can my agent run a prediction against a specific Flowise chatflow?**
+Yes. Use the 'predict' tool. Provide the 'chatflow_id' and your question. The agent will command the Flowise backend to process the logic chain and return the AI-generated response directly in your chat.
+
+**Q: How do I see the past conversational logs for a chatflow via chat?**
+Use the 'get_history' tool with the 'chatflow_id'. Your agent will retrieve the past execution traces and logs, helping you understand how users have interacted with that specific logic chain natively.
+
+**Q: Can I list all custom tools configured in my Flowise instance through the agent?**
+Absolutely. Use the 'list_tools' tool. Your agent will retrieve custom tools and integrations configured in your environment, allowing you to audit available capabilities through natural conversation.
+
+
 ## Installation & Usage
 
-To install and use the **Flowise** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flowise](https://vinkius.com/mcp/flowise)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Flowise** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flowise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Flowise** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flowise": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

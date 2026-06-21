@@ -1,7 +1,6 @@
 # Vocabulary Forge MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vocabulary-forge)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vocabulary-forge-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vocabulary-forge-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vocabulary-forge)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Vocabulary Forge** MCP
 > Multiple rejections. (1) VOICE_ABSENT — "senior PM who communicates clearly" is a LinkedIn headline, not a voice. (2) FLAT_REGISTER — "professional throughout" is the strongest AI signal. Map 3 zones. (3) AI_LEXICON — only 2 banned words, minimum is 8. (4) STERILE — "none" for colloquialisms = no human roughness. (5) FORGETTABLE — "none needed" for signatures = no identity. Fix all five.
 
 
+## ❓ FAQ
+
+**Q: Does Vocabulary Forge write content?**
+No. Vocabulary Forge generates zero content. It forces the AI agent to build a complete vocabulary PROFILE — voice, register, banned words, colloquialisms, signatures — before writing anything. The profile then guides the agent's word choices. The tool validates the profile's depth and consistency, not the final text.
+
+**Q: What is the anti-vocabulary and why is it the most important part?**
+The anti-vocabulary is the list of words the voice MUST NEVER use. AI detectors work by scanning for the presence of ~30-40 signal words that appear in AI output 10-100x more than in human text. If those words are absent, the detector's primary signal disappears. Banning 'delve', 'leverage', 'comprehensive', 'robust', 'furthermore' does more to defeat detection than adding human words. Absence is stronger than camouflage.
+
+**Q: Does it work for languages other than English?**
+Yes — any language. The five pivots are universal: every language has human voices, register shifts, AI-overused words, colloquialisms, and signature patterns. The engine validates depth and consistency without prescribing English-specific rules. For Portuguese, ban 'além disso', 'abrangente', 'robusto'. For French, ban 'en outre', 'exhaustif'. For Japanese, identify the keigo/casual register shifts your voice uses. The colloquialisms must be native to the target language.
+
+
 ## Installation & Usage
 
-To install and use the **Vocabulary Forge** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vocabulary-forge](https://vinkius.com/mcp/vocabulary-forge)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vocabulary Forge** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vocabulary-forge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vocabulary Forge** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vocabulary-forge": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

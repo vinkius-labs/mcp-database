@@ -1,7 +1,6 @@
 # Telegram Bot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telegram-bot-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/telegram-bot-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/telegram-bot-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telegram-bot-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Telegram Bot** MCP ser
 > I've found 3 administrators in that chat: 'Marcus R.' (Owner), 'Jane Doe', and 'BotAssistant'. Would you like their specific permission sets?
 
 
+## ❓ FAQ
+
+**Q: How do I get my Telegram Bot Token?**
+Message [**@BotFather**](https://t.me/botfather) on Telegram and follow the simple steps to create a new bot. He will provide a token string which you should paste here.
+
+**Q: Can the agent send images to a group?**
+Yes. Use the `send_photo` tool providing the target Chat ID and a public image URL. Your agent will confirm the delivery and provide the message metadata.
+
+**Q: Is it possible to check who are the administrators of a chat?**
+Yes. The `get_chat_administrators` tool retrieves a list of all users with admin privileges in a specific group or channel, including their custom titles.
+
+
 ## Installation & Usage
 
-To install and use the **Telegram Bot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/telegram-bot-alternative](https://vinkius.com/mcp/telegram-bot-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Telegram Bot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `telegram-bot-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Telegram Bot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "telegram-bot-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

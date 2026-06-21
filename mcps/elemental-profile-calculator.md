@@ -1,7 +1,6 @@
 # Elemental Profile Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elemental-profile-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elemental-profile-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elemental-profile-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elemental-profile-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Elemental Profile Calc
 > The dominant elements are Air. The identified elemental deficiencies are Earth and Water.
 
 
+## ❓ FAQ
+
+**Q: How do I calculate my elemental distribution?**
+You can use the `calculate_elemental_weights` tool. Simply provide your Sun and Moon signs, and optionally your Ascendant sign, to get a breakdown of Fire, Earth, Air, and Water counts.
+
+**Q: What does an elemental deficiency mean?**
+An elemental deficiency occurs when an element has a weight of zero in your calculation. You can identify these gaps using the `evaluate_elemental_profile` tool.
+
+**Q: Can I check the element of a specific sign?**
+Yes, use the `lookup_sign_element` tool to instantly find which element (Fire, Earth, Air, or Water) is associated with any zodiac sign.
+
+
 ## Installation & Usage
 
-To install and use the **Elemental Profile Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/elemental-profile-calculator](https://vinkius.com/mcp/elemental-profile-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Elemental Profile Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `elemental-profile-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Elemental Profile Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "elemental-profile-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Rendi MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rendi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rendi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rendi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rendi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Rendi** MCP server usi
 > FFprobe analysis complete. File: presentation.mp4. Container: MPEG-4 Part 14. Duration: 45:12. Size: 1.2 GB. Video stream: H.264 (High Profile), 1920x1080, 30fps, 3.2 Mbps bitrate, YUV420p color space. Audio stream 1: AAC LC, 48kHz, stereo, 192 kbps. Audio stream 2: AAC LC, 48kHz, 5.1 surround, 384 kbps. Subtitle stream: SRT (English). Metadata: creation date May 10, 2025, encoder: HandBrake 1.7.3.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically convert a video file into an MP3 audio track using Rendi?**
+Yes! Use the `run_ffmpeg_command` tool with the conversion parameters (e.g., 'ffmpeg -i input.mp4 output.mp3'). Your agent will execute the command in the cloud and return the result URL instantly.
+
+**Q: How do I find my Rendi API Key?**
+Log in to your Rendi dashboard at rendi.dev, and your unique secret API key will be displayed on the main page or under account settings.
+
+**Q: What is the format for chained FFmpeg commands?**
+Use the `run_chained_ffmpeg_commands` tool and provide an array of strings, where each string is a valid FFmpeg command. Rendi will execute them sequentially in a single processing job.
+
+
 ## Installation & Usage
 
-To install and use the **Rendi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rendi](https://vinkius.com/mcp/rendi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rendi** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rendi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rendi** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rendi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

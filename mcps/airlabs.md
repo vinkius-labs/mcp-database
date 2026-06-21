@@ -1,7 +1,6 @@
 # AirLabs MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airlabs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/airlabs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/airlabs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airlabs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **AirLabs** MCP server u
 > Checking ORD delay statistics and departures... Current delay data for Chicago O'Hare: Average departure delay is 23 minutes, average arrival delay is 18 minutes. On-time performance: 68% of flights departing within 15 minutes of schedule. Weather-related delays: moderate (gusty winds at 22 knots). Now checking active departures: I found 47 flights currently departing or scheduled for departure in the next 2 hours. Notable departures include: UA1545 (Boeing 737-900 to SFO, Gate C18, delayed 35 minutes), AA2891 (Airbus A321 to DFW, Gate H12, on-time departure), DL1723 (Boeing 757-200 to ATL, Gate C24, departed 12 minutes ago), and WN3456 (Boeing 737-MAX 8 to DEN, Gate B15, boarding). Would you like complete departure board details?
 
 
+## ❓ FAQ
+
+**Q: Can my AI search for all active flights operated by a specific airline like United or Delta?**
+Yes! Use the `get_flights` tool with the airline IATA code parameter (e.g., "UA" for United, "DL" for Delta, "BA" for British Airways). Your AI agent will return all currently active flights with flight numbers, aircraft types, departure and arrival airports, current positions, altitudes, speeds, and flight statuses. For a complete list of all routes that an airline operates, use `get_airline_routes` with the same airline IATA code. This gives you both real-time operational data and the full route network.
+
+**Q: How do I check flight schedules between two specific airports for travel planning?**
+Use the `get_schedules` tool with the airline IATA code, and optionally the departure airport IATA (dep_iata) and arrival airport IATA (arr_iata) parameters. For example, to see all schedules from JFK to LAX, you would specify dep_iata="JFK" and arr_iata="LAX". The API will return all scheduled flights with airlines, flight numbers, aircraft types, departure and arrival times, and days of operation. You can also filter by a specific date to see schedules for your exact travel day.
+
+**Q: Can I look up the complete fleet composition and aircraft details for an airline?**
+Absolutely! Use the `get_airline_fleet` tool with the airline IATA code (e.g., "UA" for United, "EK" for Emirates). Your AI will return the complete fleet with all aircraft registrations, types (Boeing 737, Airbus A380, etc.), ages, delivery dates, and operational status. This is perfect for fleet analysis, understanding airline strategy, comparing competitor fleets, or researching aircraft utilization patterns.
+
+
 ## Installation & Usage
 
-To install and use the **AirLabs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/airlabs](https://vinkius.com/mcp/airlabs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AirLabs** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `airlabs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AirLabs** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "airlabs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Widen (Acquia DAM) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/widen-acquia-dam)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/widen-acquia-dam-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/widen-acquia-dam-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/widen-acquia-dam)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Widen (Acquia DAM)** M
 > I found 5 top-level categories: 'Brand Guidelines', 'Product Photos', 'Marketing Campaigns', 'Internal Documentation', and 'Legacy Archive'. Which category would you like to explore?
 
 
+## ❓ FAQ
+
+**Q: Can I search for assets using specific categories through the agent?**
+Yes. The `search_widen_assets` tool supports Widen's internal search syntax. You can use 'cat:' followed by the category name or ID to filter your search results to a specific folder or organizational node.
+
+**Q: How do I get the direct public URL for an image to use on my website?**
+You can use the `list_cdn_embed_links` tool. Provide the unique asset ID, and your AI agent will return all active CDN embed links and HTML snippets (like iFrame tags) available for that file.
+
+**Q: Is it possible to update an asset's description via chat?**
+Absolutely. Use the `update_asset_metadata` tool. Provide the asset ID and a JSON object containing the field updates (e.g., `{ 'description': 'New project photo' }`), and your agent will apply the changes instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Widen (Acquia DAM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/widen-acquia-dam](https://vinkius.com/mcp/widen-acquia-dam)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Widen (Acquia DAM)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `widen-acquia-dam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Widen (Acquia DAM)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "widen-acquia-dam": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Zotero MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zotero)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zotero-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zotero-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zotero)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Zotero** MCP server us
 > Fetching details for item ABCD1234... This is a journal article titled 'Neural Networks for Beginners' by Smith et al. (2023), published in the Journal of AI Research. It currently has 5 tags and 2 attached notes.
 
 
+## ❓ FAQ
+
+**Q: Can I search for specific items in my library using keywords?**
+Yes! Use the `list_items` tool with the `q` parameter. It performs a quick search across titles and creators to find exactly what you need.
+
+**Q: How do I view the subcollections nested inside a main collection?**
+Simply use the `list_subcollections` tool and provide the `collection_key` of the parent collection. The agent will return all nested folders.
+
+**Q: Does this support shared group libraries or only my personal library?**
+It supports both! Most tools, like `list_collections` or `list_items`, accept an optional `group_id`. If provided, the agent will query that specific group library instead of your personal one.
+
+
 ## Installation & Usage
 
-To install and use the **Zotero** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zotero](https://vinkius.com/mcp/zotero)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zotero** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zotero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zotero** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zotero": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

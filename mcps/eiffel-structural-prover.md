@@ -1,7 +1,6 @@
 # Eiffel Structural Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eiffel-structural-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eiffel-structural-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eiffel-structural-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eiffel-structural-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Eiffel Structural Prov
 > ENVIRONMENT_IGNORED — Load passes: 850 orders/day baseline, 4,200 yield point — forces quantified. Modularity passes: 3 independent stations with quality audits. But environment fails catastrophically: 'assuming no disruptions' and 'under standard volume' are sunny-day thinking. The Eiffel Tower's curve is an exponential function minimizing WIND — the force nobody plans for. What happens during a promotional spike (wind)? During December volume surge (temperature)? When the supplier discontinues the old format (corrosion)? When the new safety regulation takes effect (seismic)? Additionally: 'too technical to explain to the leadership team' — Eiffel published structural calculations in newspapers when 300 artists attacked. Translate: transition cost ($X) vs throughput exposure ($Y per incident). 'Trust us' is not alignment.
 
 
+## ❓ FAQ
+
+**Q: How does this differ from the Brunel Engineering Prover?**
+Brunel validates engineering at unprecedented SCALE — what breaks at 10x/100x, innovation when precedent fails. Eiffel validates structural INTEGRITY under load — quantified forces, modular prefabrication, environmental pressures, mathematical proof, stakeholder communication. Brunel asks 'can this survive growing 10x?' Eiffel asks 'have you calculated the exact force each component must bear?' Use Brunel for scale planning, Eiffel for load-bearing structural rigor.
+
+**Q: What kind of mathematical proof does the engine expect?**
+Not academic proofs — engineering calculations. Queuing theory for throughput depth (L = λW), Amdahl's Law for parallelism limits, capacity models (volume × avg_processing_time = concurrent_workload), cost projections (operating_cost × scale_factor), utilization ratio calculations, resource pool sizing formulas. The inputs must be MEASURED — not 'roughly estimated.' The result must be a specific number. The safety margin must quantify headroom. Eiffel predicted tower deflection to centimeters. Your capacity model should predict failure threshold to specific volumes.
+
+**Q: Why does it require stakeholder alignment?**
+Because the best engineering fails if nobody funds, approves, or operates it. When 300 prominent artists signed a petition calling the Eiffel Tower 'a dishonor to Paris,' Eiffel published his structural calculations in Le Temps. He translated iron and wind into public understanding. 'Too technical to explain' means your engineering cannot survive the organization that builds it. Bold operational decisions — restructuring a process, adopting a new methodology, replacing a legacy procedure — need business-language evidence: cost delta, timeline, risk probability, opportunity cost of not doing it.
+
+
 ## Installation & Usage
 
-To install and use the **Eiffel Structural Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eiffel-structural-prover](https://vinkius.com/mcp/eiffel-structural-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Eiffel Structural Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eiffel-structural-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Eiffel Structural Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eiffel-structural-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Jina AI (Search Foundation & LLM Grounding) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jina-ai-search-foundation-llm-grounding)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jina-ai-search-foundation-llm-grounding-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jina-ai-search-foundation-llm-grounding-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jina-ai-search-foundation-llm-grounding)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Jina AI (Search Founda
 > Segmenting content… I've broken your text into 5 semantically distinct segments. Each segment focuses on a single core topic (e.g., Introduction, Architecture, Benchmarks). This is now optimized for vector storage and RAG retrieval.
 
 
+## ❓ FAQ
+
+**Q: How can Jina AI help my agent provide more accurate answers?**
+Use the `read_url_content` tool to give your agent access to live web data. By converting URLs into clean Markdown, your agent can 'read' the latest information from documentation or news sites, grounding its answers in up-to-date facts.
+
+**Q: What is the difference between search and rerank?**
+Search (embeddings) helps you find a broad set of relevant documents quickly. Rerank takes that smaller set and uses a more powerful cross-encoder model to sort them by exact semantic matching, ensuring the absolute best context is sent to the LLM.
+
+**Q: Can I search the web through my agent using Jina?**
+Absolutely. Use the `search_web_jina` tool to dispatch a semantic query. Your agent will return structured results including snippets and titles from top web pages, allowing it to synthesize answers from the live internet.
+
+
 ## Installation & Usage
 
-To install and use the **Jina AI (Search Foundation & LLM Grounding)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jina-ai-search-foundation-llm-grounding](https://vinkius.com/mcp/jina-ai-search-foundation-llm-grounding)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Jina AI (Search Foundation & LLM Grounding)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jina-ai-search-foundation-llm-grounding` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Jina AI (Search Foundation & LLM Grounding)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jina-ai-search-foundation-llm-grounding": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

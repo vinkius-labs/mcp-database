@@ -1,7 +1,6 @@
 # Mobile Action MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mobile-action)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mobile-action-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mobile-action-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mobile-action)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Mobile Action** MCP se
 > Searching Google Play Brazil... I found several news apps including 'G1', 'UOL', 'CNN Brasil', and 'Folha de S.Paulo'. Shall I retrieve the market estimations for G1?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Mobile Action API Token?**
+API access is available for Enterprise customers. You can find or request your token in the API section of the Mobile Action dashboard.
+
+**Q: Which app stores are covered?**
+Mobile Action covers both the Apple App Store (iOS) and Google Play Store (Android).
+
+**Q: What is the format for country codes?**
+Use standard ISO 3166-1 alpha-2 codes (e.g., 'US' for United States, 'BR' for Brazil, 'GB' for United Kingdom).
+
+
 ## Installation & Usage
 
-To install and use the **Mobile Action** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mobile-action](https://vinkius.com/mcp/mobile-action)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mobile Action** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mobile-action` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mobile Action** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mobile-action": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

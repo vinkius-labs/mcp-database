@@ -1,7 +1,6 @@
 # Odicci MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/odicci)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/odicci-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/odicci-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/odicci)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Odicci** MCP server us
 > I found 456 customers who engaged with loyalty-tagged experiences. Top segment: "Repeat Buyers" with 203 customers (45%). Average interactions per customer: 3.2. Most active customer: Sarah Martinez with 12 completed experiences. 78% of these customers have opted in for email communications.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific experience by its ID?**
+Yes! Use the `get_experience` tool with the Experience ID. Your agent will respond with complete metadata for the campaign, including title, type, and current status in seconds.
+
+**Q: How do I find my Odicci Secret API Key?**
+Log in to your Odicci account, navigate to **Settings** > **Access Management** > **API**, and you will find your unique secret token there. You may need admin privileges to see it.
+
+**Q: Can I create a new customer via the AI?**
+Absolutely. Use the `create_customer` tool. Provide the customer name and other metadata, and the agent will add the record to your Odicci database immediately.
+
+
 ## Installation & Usage
 
-To install and use the **Odicci** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/odicci](https://vinkius.com/mcp/odicci)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Odicci** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `odicci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Odicci** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "odicci": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Watt Efficiency Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/watt-efficiency-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/watt-efficiency-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/watt-efficiency-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/watt-efficiency-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Watt Efficiency Prover
 > FEEDBACK_MISSING — Waste and measurement pass: 73% in quality inspection, 340 min baseline via time study — good. But feedback fails: 'we review reports every morning' and 'someone monitors during peak hours' are reactive human monitoring, not feedback loops. Watt's centrifugal governor adjusts AUTOMATICALLY — no engineer in the loop. What happens on a holiday weekend when nobody is reviewing reports and cycle time spikes to 800 minutes? Define: signal (average cycle time per order), threshold (> 150 min for 3 consecutive batches), automatic action (redistribute workload, escalate at 250 min), damping (15-minute cooldown). Also: 'quality inspection is always the bottleneck' — WHICH checks? WHICH items? Manual verification or automated checks? Process analysis or gut feeling?
 
 
+## ❓ FAQ
+
+**Q: Is this only for operations performance?**
+No. Watt's method applies to any system where resources are consumed and efficiency matters — manufacturing throughput, service delivery speed, administrative processing time, supply chain turnaround, team productivity, budget utilization, equipment uptime. The 5 pivots — waste identification, measurement, feedback, bottleneck isolation, quantification — work wherever you can measure input vs. useful output.
+
+**Q: What counts as a valid feedback loop?**
+Four elements: (1) a SIGNAL — a metric that indicates drift (cycle time rising, defect rate climbing, queue growing), (2) a THRESHOLD — a specific value that triggers action (cycle time > 200 minutes for 3 consecutive batches), (3) an AUTOMATIC ACTION — something that happens without human intervention (reallocate resources, activate backup capacity, redistribute workload), (4) DAMPING — a mechanism to prevent oscillation (cooldown period, gradual scaling, minimum stable period before further changes). 'We check reports' is monitoring. Watt's centrifugal governor is a feedback loop — it adjusts without an engineer.
+
+**Q: How does it differ from the Brunel Engineering Prover?**
+Brunel validates engineering at SCALE — what breaks at 10x/100x, integration contracts, specification tolerances, risk quantification, precedent challenge. Watt validates EFFICIENCY — where waste occurs, measurement instrumentation, feedback control, bottleneck isolation, quantified improvement. Brunel asks 'will this survive growing 10x?' Watt asks 'where is 80% of your resources being wasted right now, and can you prove the optimization worked?' Use Brunel for scale planning, Watt for performance tuning.
+
+
 ## Installation & Usage
 
-To install and use the **Watt Efficiency Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/watt-efficiency-prover](https://vinkius.com/mcp/watt-efficiency-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Watt Efficiency Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `watt-efficiency-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Watt Efficiency Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "watt-efficiency-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

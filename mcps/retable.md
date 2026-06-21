@@ -1,7 +1,6 @@
 # Retable MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/retable)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/retable-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/retable-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/retable)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -61,12 +60,52 @@ Here are some examples of how you can interact with the **Retable** MCP server u
 > Record created! ID: rec_8291 in table 'Leads'. Fields: name='NewClient', status='New'. Would you like to update any fields?
 
 
+## ❓ FAQ
+
+**Q: Can my AI create and update records in Retable?**
+Yes. Use `create_record` to add new rows and `update_record` to modify existing ones. Both accept a JSON string with field values.
+
+**Q: How do I query records from a specific table?**
+Use `list_records` with the table ID. The agent returns all rows with their field values.
+
+**Q: Can I delete records through the AI?**
+Yes. The `delete_record` tool permanently removes a row from a table by table ID and record ID.
+
+
 ## Installation & Usage
 
-To install and use the **Retable** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/retable](https://vinkius.com/mcp/retable)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Retable** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `retable` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Retable** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "retable": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

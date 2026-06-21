@@ -1,7 +1,6 @@
 # World Time (Keyless) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/world-time-keyless)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/world-time-keyless-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/world-time-keyless-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/world-time-keyless)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **World Time (Keyless)**
 > Checking Europe/London… Yes, London is currently observing Daylight Saving Time (BST). The offset is UTC +01:00. The transition back to GMT will occur later this year.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key to use this World Time server?**
+No. This server uses the World Time API, which is a public keyless micro-service. You can start using it immediately without any manual configuration or signup processes.
+
+**Q: Can I check the time based on my current location?**
+Yes. Using the `get_current_time` tool with the parameter 'ip', your agent will automatically infer your location from the network IP address and return the correct local time and timezone details.
+
+**Q: How do I find the correct string for a specific timezone?**
+You can use the `list_available_timezones` tool. It will return a complete list of valid IANA timezone identifiers (like 'Asia/Tokyo' or 'Australia/Sydney') supported by the service.
+
+
 ## Installation & Usage
 
-To install and use the **World Time (Keyless)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/world-time-keyless](https://vinkius.com/mcp/world-time-keyless)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **World Time (Keyless)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `world-time-keyless` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **World Time (Keyless)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "world-time-keyless": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # InnoVint MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/innovint)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/innovint-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/innovint-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/innovint)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -106,12 +105,52 @@ Here are some examples of how you can interact with the **InnoVint** MCP server 
 > There are currently 6 empty vessels available: 4 stainless steel tanks (T-02, T-05, T-12, T-14) and 2 concrete eggs. Total available capacity is 18,500L.
 
 
+## ❓ FAQ
+
+**Q: How do I get InnoVint API access?**
+Contact InnoVint support at support@innovint.us to request a Personal Access Token. You'll need an active InnoVint account.
+
+**Q: Can I record lab analysis results using this integration?**
+Yes, you can input new lab readings such as pH, TA, Brix, and free SO2 directly for a specific lot or vessel using natural language, and the AI will post them to the InnoVint API.
+
+**Q: Does this support managing multiple wineries under the same account?**
+Yes, if your InnoVint integrator account has access to multiple wineries, you can scope your API requests to a specific Winery ID to manage lots and vessels across different properties.
+
+
 ## Installation & Usage
 
-To install and use the **InnoVint** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/innovint](https://vinkius.com/mcp/innovint)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **InnoVint** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `innovint` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **InnoVint** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "innovint": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

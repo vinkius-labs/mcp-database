@@ -1,7 +1,6 @@
 # ECB Full — Complete Eurozone Financial Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecb-full-complete-eurozone-financial-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ecb-full-complete-eurozone-financial-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ecb-full-complete-eurozone-financial-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecb-full-complete-eurozone-financial-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -102,12 +101,52 @@ Here are some examples of how you can interact with the **ECB Full — Complete 
 > The latest broad monetary aggregate M3 shows an annual growth rate of 4.2%. I can break this down into M1 and M2 components if you'd like to dive deeper.
 
 
+## ❓ FAQ
+
+**Q: Why Full instead of individual servers?**
+The Full server has all 14 tools covering exchange rates, interest rates, monetary aggregates, yield curves, and data discovery. Query EUR/USD AND deposit rates AND yield curves AND M3 in a single session. Completely free and unrestricted.
+
+**Q: Does the ECB Full server have authentication requirements?**
+No, all 14 tools use the official public ECB SDMX APIs which require absolutely no authentication, tokens, or registration.
+
+**Q: How quickly is the data refreshed?**
+Data strictly reflects the European Central Bank's schedule in real-time. For example, the euro foreign exchange reference rates are updated every working day around 16:00 CET.
+
+
 ## Installation & Usage
 
-To install and use the **ECB Full — Complete Eurozone Financial Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ecb-full-complete-eurozone-financial-intelligence](https://vinkius.com/mcp/ecb-full-complete-eurozone-financial-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ECB Full — Complete Eurozone Financial Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ecb-full-complete-eurozone-financial-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ECB Full — Complete Eurozone Financial Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ecb-full-complete-eurozone-financial-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

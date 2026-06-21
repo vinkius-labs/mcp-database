@@ -1,7 +1,6 @@
 # Uptime.com MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uptimecom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uptimecom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uptimecom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uptimecom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Uptime.com** MCP serve
 > Retrieving statistics... The 'Main Website' (ID: 10293) has an uptime of 99.98% over the last 30 days, with an average response time of 150ms. No significant failures detected recently.
 
 
+## ❓ FAQ
+
+**Q: Can I see the reason why my website went down via AI?**
+Yes! Use the `get_root_cause_analysis` tool and provide the Alert ID (PK). Your agent will retrieve the detailed RCA report explaining the failure.
+
+**Q: How do I create a new HTTP check to monitor a URL?**
+Use the `create_check` action. Provide the name, address (URL), and set the `check_type` to 'HTTP'. The agent will instantly register the new monitor.
+
+**Q: Is it possible to see the performance statistics for a monitor?**
+Absolutely. Run the `get_check_stats` query with your Check ID to retrieve performance and uptime metrics for that specific service.
+
+
 ## Installation & Usage
 
-To install and use the **Uptime.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/uptimecom](https://vinkius.com/mcp/uptimecom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Uptime.com** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `uptimecom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Uptime.com** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "uptimecom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

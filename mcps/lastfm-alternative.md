@@ -1,7 +1,6 @@
 # Last.fm MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lastfm-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lastfm-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lastfm-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lastfm-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Last.fm** MCP server u
 > I've retrieved the profile for 'music_fan_123'. They have been a member since 2015 and have a total playcount of 45,000 tracks. Their top artist is Radiohead.
 
 
+## ❓ FAQ
+
+**Q: Can I manually scrobble a track I just finished listening to?**
+Yes! Use the `scrobble_track` tool by providing the artist, track name, and a Unix timestamp. The agent will log the play to your Last.fm history immediately.
+
+**Q: How do I update my 'Now Playing' status for my followers?**
+Simply use the `update_now_playing` tool with the artist and track name. This notifies Last.fm that you have started listening to the song.
+
+**Q: Can I get information about a specific music genre or tag?**
+Yes, use the `get_tag_info` tool with the tag name (e.g., 'rock' or 'synthwave') to fetch metadata and descriptions for that specific tag.
+
+
 ## Installation & Usage
 
-To install and use the **Last.fm** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lastfm-alternative](https://vinkius.com/mcp/lastfm-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Last.fm** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lastfm-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Last.fm** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lastfm-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

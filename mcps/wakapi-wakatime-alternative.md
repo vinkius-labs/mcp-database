@@ -1,7 +1,6 @@
 # Wakapi (WakaTime Alternative) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wakapi-wakatime-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wakapi-wakatime-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wakapi-wakatime-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wakapi-wakatime-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Wakapi (WakaTime Alter
 > Generating summary for that week... You logged a total of 32 hours. Your peak activity was on Tuesday with 8 hours of work across 3 different projects.
 
 
+## ❓ FAQ
+
+**Q: How can I see my coding statistics for the last 7 days?**
+You can use the `get_stats` tool and specify 'last_7_days' as the range. The agent will return a breakdown of your languages, editors, and projects for that period.
+
+**Q: Can I get a list of all projects I have ever tracked in Wakapi?**
+Yes! Use the `list_projects` tool. It will retrieve all project names associated with your account, allowing you to see the scope of your tracked work.
+
+**Q: Is it possible to track activity for a specific date range?**
+Absolutely. Use the `get_summaries` tool by providing a 'start' and 'end' date in YYYY-MM-DD format. You can even filter this by a specific project name.
+
+
 ## Installation & Usage
 
-To install and use the **Wakapi (WakaTime Alternative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wakapi-wakatime-alternative](https://vinkius.com/mcp/wakapi-wakatime-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wakapi (WakaTime Alternative)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wakapi-wakatime-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wakapi (WakaTime Alternative)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wakapi-wakatime-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

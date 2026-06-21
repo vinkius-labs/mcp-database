@@ -1,7 +1,6 @@
 # Elvanto MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elvanto)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elvanto-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elvanto-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elvanto)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,12 +102,52 @@ Here are some examples of how you can interact with the **Elvanto** MCP server u
 > I will use the `get_person` tool with ID `12345` to fetch their complete profile information.
 
 
+## ❓ FAQ
+
+**Q: How can I search for a specific person in my Elvanto database?**
+You can use the `search_people` tool. Provide search criteria as key-value pairs (for example, `{"volunteer": "yes"}`) to find matching profiles instantly.
+
+**Q: Can I add a person to a specific step in a People Flow?**
+Yes! Use the `add_person_to_flow_step` tool by passing the target `step_id` and the `person_id` to assign them to that flow step.
+
+**Q: How do I view all custom fields configured in my account?**
+Simply ask the agent to run the `list_custom_fields` tool. It will retrieve all custom fields defined in your Elvanto account.
+
+
 ## Installation & Usage
 
-To install and use the **Elvanto** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/elvanto](https://vinkius.com/mcp/elvanto)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Elvanto** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `elvanto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Elvanto** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "elvanto": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

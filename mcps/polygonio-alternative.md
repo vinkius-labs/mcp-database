@@ -1,7 +1,6 @@
 # Polygon.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/polygonio-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/polygonio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/polygonio-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/polygonio-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Polygon.io** MCP serve
 > The U.S. stock market is currently 'open'. Forex and Crypto markets are also active. Regarding holidays, the next market closure is for Presidents' Day on February 19th. Is there anything else you'd like to check?
 
 
+## ❓ FAQ
+
+**Q: How can I get historical price data for a specific stock like Apple?**
+You can use the `get_custom_bars` tool. Provide the ticker 'AAPL', a multiplier (e.g., '1'), a timespan (e.g., 'day'), and the date range ('from' and 'to') to receive detailed OHLC and volume data.
+
+**Q: Can I check if the stock market is currently open or if there's a holiday?**
+Yes. Use `get_market_status` to see the current state of various exchanges, and `get_market_holidays` to see upcoming dates when the markets will be closed.
+
+**Q: How do I find the ticker symbol for a company if I only know its name?**
+Use the `list_tickers` tool and provide the company name in the `search` parameter. The agent will return a list of matching tickers along with their primary exchange and asset class.
+
+
 ## Installation & Usage
 
-To install and use the **Polygon.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/polygonio-alternative](https://vinkius.com/mcp/polygonio-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Polygon.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `polygonio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Polygon.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "polygonio-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

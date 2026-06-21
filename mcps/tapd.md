@@ -1,7 +1,6 @@
 # TAPD MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tapd)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tapd-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tapd-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tapd)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **TAPD** MCP server usin
 > I've listed the iterations for 'Cloud Infrastructure'. You have 3 iterations defined, including 'Q2 Milestone' (In Progress) and 'Security Patch v1.1' (Planned). Which one would you like to audit?
 
 
+## ❓ FAQ
+
+**Q: How do I find my TAPD API User and Password?**
+Log in to TAPD, go to Company Management (公司管理) → Open Integration (开放集成) → API Account Management (API 账号管理), and generate your credentials there.
+
+**Q: Can I report bugs directly through the agent?**
+Yes. Use the `create_bug` tool. You will need to provide the workspace ID and a title. You can also add a detailed description with reproduction steps for your developers.
+
+**Q: What is a 'Story' in TAPD?**
+In TAPD, a Story represents a product requirement or feature. You can manage these using the `list_stories` and `create_story` tools to keep your product backlog organized.
+
+
 ## Installation & Usage
 
-To install and use the **TAPD** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tapd](https://vinkius.com/mcp/tapd)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TAPD** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tapd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TAPD** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tapd": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

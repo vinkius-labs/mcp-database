@@ -1,7 +1,6 @@
 # Roblox Experience Discovery MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/roblox-experience-discovery)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/roblox-experience-discovery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/roblox-experience-discovery-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/roblox-experience-discovery)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Roblox Experience Disc
 > Inspecting universe metadata... Universe ID '123456789' was created on 2021-05-12. It has reached over 1 billion visits and is currently active. I also have the root place ID and technical description. Would you like to see the official icon URL?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the live player count for a specific Roblox game?**
+Yes! Use the `search_roblox_games` tool. Your agent will retrieve real-time data from the Roblox backend, showing exactly how many users are currently active in that experience.
+
+**Q: How do I check the community rating (likes/dislikes) for a universe?**
+Simply provide the Universe ID to the agent and ask for voting stats. It will run the `get_game_votes` action to retrieve the official percentage of upvotes and downvotes directly from the track.
+
+**Q: Does the integration permit listing trending games globally?**
+Yes. The `get_game_sorts` tool allows your agent to fetch current global categories like 'Top Rated', 'Popular', and 'Trending' to identify high-momentum titles in seconds.
+
+
 ## Installation & Usage
 
-To install and use the **Roblox Experience Discovery** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/roblox-experience-discovery](https://vinkius.com/mcp/roblox-experience-discovery)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Roblox Experience Discovery** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `roblox-experience-discovery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Roblox Experience Discovery** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "roblox-experience-discovery": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

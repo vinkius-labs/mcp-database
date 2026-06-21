@@ -1,7 +1,6 @@
 # Reply.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/replyio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/replyio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/replyio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/replyio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,55 @@ Here are some examples of how you can interact with the **Reply.io** MCP server 
 > 11 positive replies this week: 4 from 'CTO Outreach' (interested in demo), 5 from 'Series B Founders' (want pricing info), and 2 from 'VP Sales Q2' (scheduling calls). I can show you the reply content for any of them.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Reply.io API key?**
+Log in to your Reply.io account at **app.reply.io**. Click **Settings** in the left sidebar (gear icon). Navigate to the **API Key** section. Your API key is displayed directly on this page — click the **copy icon** to copy it. If no key exists, click **Generate API Key**. Paste it into the configuration field below. The API key has the same permissions as your user account.
+
+**Q: Can I track LinkedIn and email engagement together?**
+Yes. Reply.io's multi-channel sequences combine email, LinkedIn, calls, and SMS in a single workflow. Your AI agent can pull engagement data across all channels — showing you which touchpoints drive the most replies and converting the best for each campaign.
+
+**Q: Can my agent find prospect emails using Reply.io's database?**
+Yes. Reply.io includes a built-in contact database. Your AI agent can search by company, job title, location, and industry to find verified prospect emails — then add them directly to outreach campaigns in one conversation.
+
+**Q: What happens if a prospect replies while I'm using the agent?**
+Reply.io automatically pauses the sequence for that prospect when they reply. Your AI agent can read the reply content and status via the API — so you always have up-to-date engagement signals to decide on next steps.
+
+
 ## Installation & Usage
 
-To install and use the **Reply.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/replyio](https://vinkius.com/mcp/replyio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Reply.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `replyio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Reply.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "replyio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

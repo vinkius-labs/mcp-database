@@ -1,7 +1,6 @@
 # SparkPost MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sparkpost)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sparkpost-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sparkpost-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sparkpost)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,52 @@ Subject: Account Review
 SparkPost acknowledged the request and the payload is now actively pushing to ISP delivery paths.
 
 
+## ❓ FAQ
+
+**Q: Can the AI rewrite an old HTML email template and import it straight into SparkPost?**
+Yes! The bot reads your existing content using `get_template_details`, uses its intelligence to fully redesign the HTML block recursively (e.g. updating tables to modern styling natively), and finally invokes `create_template` to overwrite or deploy the modernized file safely to the cloud.
+
+**Q: How easy is it to send a test email from the IDE without a UI interface?**
+It takes one sentence. You can type: 'Send via SparkPost a test email to admin@test.com titled Server OK'. The LLM gathers the keys, utilizes `send_email`, structures the JSON transmission array natively, and confirms back to you upon a 2xx HTTP delivery success.
+
+**Q: Can it search for specifically why emails are bouncing from a certain provider?**
+Yes. While the `list_bounce_events` gets the core list, prompting the LLM to 'diagnose our latest bounces' lets the AI digest all textual rejection codes (e.g., SMTP 550 spam blocks vs 421 rate limits) and present a structured summary of where and why deliverability is faltering.
+
+
 ## Installation & Usage
 
-To install and use the **SparkPost** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sparkpost](https://vinkius.com/mcp/sparkpost)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SparkPost** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sparkpost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SparkPost** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sparkpost": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

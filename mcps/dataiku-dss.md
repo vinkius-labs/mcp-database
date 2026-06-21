@@ -1,7 +1,6 @@
 # Dataiku DSS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dataiku-dss)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dataiku-dss-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dataiku-dss-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dataiku-dss)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Dataiku DSS** MCP serv
 > Scenario triggered! 'REBUILD_PIPELINE' is now executing in project 'SALES'. The system is rebuilding the underlying datasets and recipes. I will notify you once the run is complete.
 
 
+## ❓ FAQ
+
+**Q: Can my agent trigger a Dataiku automation scenario?**
+Yes. Use the 'run_scenario' tool. Provide the project key and the scenario ID. The agent will command the backend to orchestrate the absolute workflow rules, triggering a new execution run for your pipeline or model retraining.
+
+**Q: How do I check the schema of a specific dataset via chat?**
+Provide the project key and dataset name to the 'dataset_schema' tool. Your agent will validate the API arrays structurally and return the dataset column names and types natively, helping you understand your data boundaries.
+
+**Q: Can I monitor the performance of saved ML models?**
+Absolutely. Use the 'get_model' tool. Your agent retrieves the metadata and performance metrics defining specific trained schema layers, allowing you to audit model quality and drift without opening the DSS UI.
+
+
 ## Installation & Usage
 
-To install and use the **Dataiku DSS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dataiku-dss](https://vinkius.com/mcp/dataiku-dss)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dataiku DSS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dataiku-dss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dataiku DSS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dataiku-dss": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

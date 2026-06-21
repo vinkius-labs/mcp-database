@@ -1,7 +1,6 @@
 # InflatableOffice MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inflatableoffice)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/inflatableoffice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/inflatableoffice-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inflatableoffice)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **InflatableOffice** MCP
 > Customers: 156 total. Top by revenue: 1) Johnson Family — 8 events, $3,400 lifetime. 2) Martinez Events — 5 events, $2,800. 3) Smith Corp — 3 events, $2,100. Recent customers: Garcia Wedding (new, 1 event). Community Center (recurring, 12 events). Average lifetime value: $425. Repeat rate: 42%. Would you like to create a lead or check events?
 
 
+## ❓ FAQ
+
+**Q: Can I manage leads and create bookings through the AI agent?**
+Yes. Use `list_leads` to see all leads, `get_lead_details` for full profiles, and `create_new_lead` to add potential customers. Use `list_scheduled_events` to see all bookings.
+
+**Q: Can I check equipment availability and pricing?**
+Yes. `list_rental_inventory` retrieves all equipment with pricing, categories, and current availability status. This includes inflatables, tables, chairs, tents, and other party rental items.
+
+**Q: How does InflatableOffice authentication work?**
+InflatableOffice uses a **Public Key** passed as a query parameter (`?public_key=YOUR_KEY`) in all requests to `inflatableoffice.com/api2/`. This is different from Bearer token authentication.
+
+
 ## Installation & Usage
 
-To install and use the **InflatableOffice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/inflatableoffice](https://vinkius.com/mcp/inflatableoffice)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **InflatableOffice** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `inflatableoffice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **InflatableOffice** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "inflatableoffice": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Context Engineering Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/context-engineering-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/context-engineering-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/context-engineering-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/context-engineering-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Context Engineering Pr
 > CONTEXT_UNGROUNDED — Structure and ordering pass, but the grounding fails. 'I think it helps' and 'best practice' are not evidence. Cite a test result: 'delimiters improved accuracy by X% on N eval cases.' Cite a documented pattern: 'diminishing returns beyond 3 examples.' Also: 'it fits' is not a token budget — allocate per block with waste ratio. 'Looks better' is not a metric — define baseline, target, and measurement method.
 
 
+## ❓ FAQ
+
+**Q: Why can't I just include everything in the context?**
+Attention decay. Research shows models lose 15-20% recall accuracy on content in the middle of long contexts — the 'lost in the middle' phenomenon. Including irrelevant context doesn't just waste tokens — it actively degrades output quality by diluting attention on the content that matters.
+
+**Q: What counts as 'evidence' for grounding instructions?**
+A/B test results — 'structured delimiters improved accuracy by 23% on 50 eval cases.' Documented patterns — 'diminishing returns beyond 3 few-shot examples.' Measured improvements — 'first-position tokens get 3x attention weight.' Comparative analysis with numbers. 'Best practice' and 'usually works' are not evidence.
+
+**Q: Does it generate prompts for me?**
+No. It computes nothing. It validates that your context construction passes five structural checks — relevance, structure, bounds, grounding, and measurement. The reasoning is yours. The discipline is enforced by the tool. If your context can't survive the audit, it won't survive production.
+
+
 ## Installation & Usage
 
-To install and use the **Context Engineering Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/context-engineering-prover](https://vinkius.com/mcp/context-engineering-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Context Engineering Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `context-engineering-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Context Engineering Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "context-engineering-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

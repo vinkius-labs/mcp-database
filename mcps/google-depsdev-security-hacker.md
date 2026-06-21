@@ -1,7 +1,6 @@
 # Google Deps.dev Security Hacker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-depsdev-security-hacker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-depsdev-security-hacker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-depsdev-security-hacker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-depsdev-security-hacker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,46 @@ Here are some examples of how you can interact with the **Google Deps.dev Securi
 > Let me check the latest versions on deps.dev. The older 2.14.x versions are famously compromised (Log4Shell - CVE-2021-44228, CVSS 10.0). However, the latest version `2.20.0` has **✅ No known security advisories** and is safe to use. Always ensure you are pinning the latest version.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key for this?**
+No! The Google deps.dev API is completely free and public. Just connect the MCP and your AI agent can start auditing immediately.
+
+
 ## Installation & Usage
 
-To install and use the **Google Deps.dev Security Hacker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-depsdev-security-hacker](https://vinkius.com/mcp/google-depsdev-security-hacker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Deps.dev Security Hacker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-depsdev-security-hacker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Deps.dev Security Hacker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-depsdev-security-hacker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

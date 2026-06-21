@@ -1,7 +1,6 @@
 # Mercury MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mercury)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mercury-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mercury-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mercury)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,55 @@ Here are some examples of how you can interact with the **Mercury** MCP server u
 > You have 12 saved recipients. Here are the top 5 by frequency: AWS (ACH), Gusto Payroll (ACH), WeWork (Wire), Stripe Atlas (ACH), and Latham & Watkins (Wire).
 
 
+## ❓ FAQ
+
+**Q: How do I get my Mercury API token?**
+Log in to your Mercury account at app.mercury.com. Go to **Settings → API Tokens** and click **Create Token**. Choose the token type (Read Only for balance checks, or Read and Write for managing recipients). Copy the token immediately — it will only be shown once. Paste it into the configuration field below, and you're ready. No code, no SDK, no webhooks.
+
+**Q: Can my AI agent check my startup's runway instantly during a board meeting?**
+Absolutely. Just ask your AI agent 'What's my current balance across all Mercury accounts?' and it returns real-time balances for every account — checking, savings, and treasury — in seconds. No tab-switching, no logging in, no waiting for the dashboard to load.
+
+**Q: What if I need to review recent transactions for month-end close?**
+Ask your AI agent to pull transactions from any date range. It retrieves each transaction with amount, counterparty, status, and date — perfect for reconciliation. You can filter by account, ask for Wire vs ACH breakdowns, or request only transactions above a specific threshold, all without exporting CSVs.
+
+**Q: Is this suitable for companies with multiple Mercury accounts?**
+Yes. The integration retrieves data across all accounts linked to your API token — operating accounts, savings accounts, and treasury balances. Perfect for venture-backed startups managing multiple entities, holding companies, or finance teams tracking cash positions across subsidiaries.
+
+
 ## Installation & Usage
 
-To install and use the **Mercury** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mercury](https://vinkius.com/mcp/mercury)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mercury** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mercury` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mercury** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mercury": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

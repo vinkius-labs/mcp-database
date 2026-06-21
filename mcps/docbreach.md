@@ -1,7 +1,6 @@
 # DocBreach MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docbreach)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docbreach-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docbreach-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docbreach)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,58 @@ Here are some examples of how you can interact with the **DocBreach** MCP server
 > According to the React 19 documentation, `useActionState` returns an array with three values: `[state, formAction, isPending]`. The `isPending` boolean is new and replaces the need for `useFormStatus` in many cases. Do you want to see a full implementation example?
 
 
+## ❓ FAQ
+
+**Q: How does DocBreach bypass modern Single Page Application (SPA) barriers?**
+DocBreach features a built-in hydration engine. Rather than relying on a heavy headless browser, it intercepts and evaluates underlying framework payloads (like `__NEXT_DATA__` for Next.js or Docusaurus state) to extract the raw documentation text directly. This makes it blisteringly fast and resource-efficient.
+
+**Q: What documentation formats and frameworks are officially supported?**
+It natively parses OpenAPI/Swagger specifications, Postman Collections, and standard `llms.txt` files. For web-based docs, it surgically cleans noise from 12+ major frameworks including Docusaurus, Nextra, VitePress, Mintlify, GitBook, and ReadMe, returning LLM-optimized Markdown.
+
+**Q: Do I need any third-party API keys or paid scraping subscriptions?**
+Absolutely not. DocBreach is designed to operate completely independently. It accesses public documentation directly via optimized HTTP clients using smart resolution strategies, eliminating the need for proxy services, SaaS subscriptions, or scraping API keys.
+
+**Q: How does this MCP server improve my AI Agent's performance?**
+AI Agents typically hallucinate when APIs are updated or when facing undocumented endpoints. By equipping your agent with DocBreach, it can autonomously search, map, and read the definitive, up-to-date source of truth before writing a single line of code, ensuring deterministic integrations.
+
+**Q: Can it extract specific endpoints from massive OpenAPI specifications?**
+Yes! The `docs.extract` tool is built precisely for this. Instead of loading a 5MB JSON spec into your agent's context window (which wastes tokens and ruins attention), DocBreach parses the spec server-side and allows your agent to query exactly the endpoints and methods it needs.
+
+
 ## Installation & Usage
 
-To install and use the **DocBreach** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/docbreach](https://vinkius.com/mcp/docbreach)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DocBreach** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `docbreach` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DocBreach** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "docbreach": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

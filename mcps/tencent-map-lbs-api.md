@@ -1,7 +1,6 @@
 # Tencent Map LBS API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-map-lbs-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tencent-map-lbs-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tencent-map-lbs-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-map-lbs-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Tencent Map LBS API** 
 > I've planned the transit route. The best option is taking Metro Line 11 directly, which takes about 35 minutes. Would you like a step-by-step breakdown of the transit directions?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Tencent Map API Key?**
+Log in to the [Tencent Map Open Platform Console](https://lbs.qq.com/dev/console/key/manage), create an application, and your Key will be displayed. You can also configure the optional Secret Key (SK) in the key settings.
+
+**Q: When should I provide the Secret Key (SK)?**
+Provide the SK if you have enabled 'Signature Verification' (sig) in your Tencent Map key settings. This server will automatically calculate the MD5 signature for every request if the SK is provided.
+
+**Q: Can I use this for international geocoding?**
+Tencent Map is highly optimized for mainland China, Hong Kong, and Macau. While some international coverage exists, results outside these regions may be less detailed than local providers.
+
+
 ## Installation & Usage
 
-To install and use the **Tencent Map LBS API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tencent-map-lbs-api](https://vinkius.com/mcp/tencent-map-lbs-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tencent Map LBS API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tencent-map-lbs-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tencent Map LBS API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tencent-map-lbs-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

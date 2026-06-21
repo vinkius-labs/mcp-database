@@ -1,7 +1,6 @@
 # EOD Historical Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eod-historical-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eod-historical-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eod-historical-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eod-historical-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **EOD Historical Data** 
 > I found 3 recent insider transactions for MSFT. The most notable was a sale of 10,000 shares by a Senior VP on 2023-10-15 at an average price of $330.10. Two other directors exercised options earlier this month.
 
 
+## ❓ FAQ
+
+**Q: How can I retrieve historical price data for a specific stock?**
+Use the `get_eod_historical` tool by providing the ticker symbol and exchange (e.g., AAPL.US). You can specify the date range and period (daily, weekly, or monthly) to get adjusted OHLCV data.
+
+**Q: Can I access company financial statements and fundamental ratios?**
+Yes! The `get_fundamentals` tool provides comprehensive data including balance sheets, income statements, cash flows, and key ratios for stocks and ETFs globally.
+
+**Q: How do I check my current API usage and subscription limits?**
+Simply use the `get_user` tool. It will return your account details, current API usage statistics, and daily rate limits associated with your token.
+
+
 ## Installation & Usage
 
-To install and use the **EOD Historical Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eod-historical-data](https://vinkius.com/mcp/eod-historical-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EOD Historical Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eod-historical-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EOD Historical Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eod-historical-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

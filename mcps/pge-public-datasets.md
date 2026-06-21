@@ -1,7 +1,6 @@
 # PG&E Public Datasets MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pge-public-datasets)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pge-public-datasets-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pge-public-datasets-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pge-public-datasets)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **PG&E Public Datasets**
 > Yearly trends (2020-2024): 2020: 82,400 GWh (pandemic dip), 2021: 85,100 GWh (+3.3%), 2022: 87,800 GWh (+3.2%), 2023: 86,200 GWh (-1.8%, mild weather), 2024: 89,500 GWh (+3.8%, data center growth). Gas trends: declining 2% annually due to electrification and heat pump adoption.
 
 
+## ❓ FAQ
+
+**Q: Is any authentication required?**
+No! All PG&E Public Datasets are completely free and accessible without any API key or authentication. Just subscribe and start querying energy data immediately.
+
+**Q: What customer segments are available?**
+PG&E provides data for four customer segments: Residential (homes), Commercial (businesses), Industrial (manufacturing), and Agricultural (farming). Each segment has different consumption patterns and billing structures.
+
+**Q: Can I compare multiple ZIP codes?**
+Yes! Use the compare_regions tool with comma-separated ZIP codes (e.g., "94102,94103,94104"). It returns side-by-side usage data, customer counts, and average bills for each region, making it easy to identify geographic differences in energy consumption.
+
+
 ## Installation & Usage
 
-To install and use the **PG&E Public Datasets** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pge-public-datasets](https://vinkius.com/mcp/pge-public-datasets)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PG&E Public Datasets** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pge-public-datasets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PG&E Public Datasets** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pge-public-datasets": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

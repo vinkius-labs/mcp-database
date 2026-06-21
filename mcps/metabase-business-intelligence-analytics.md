@@ -1,7 +1,6 @@
 # Metabase (Business Intelligence & Analytics) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/metabase-business-intelligence-analytics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/metabase-business-intelligence-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/metabase-business-intelligence-analytics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/metabase-business-intelligence-analytics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Metabase (Business Int
 > Retrieving card metadata… For 'Monthly Recurring Revenue' (ID: 654), the visualization type is 'Line Chart' and it queries the 'stripe_data' database. The underlying logic uses a filtered aggregation on the 'invoices' table. Would you like to see the full structural JSON?
 
 
+## ❓ FAQ
+
+**Q: Does this work with self-hosted Metabase instances?**
+Yes. You just need to provide your full Metabase Base URL (e.g., http://metabase.your-domain.com). Your agent will connect securely to your private instance using your API Key.
+
+**Q: Can I see the SQL code behind a specific Metabase card through my agent?**
+Yes. Use the `get_card` tool with a specific Card ID. Your agent will retrieve the complete mapping logic, exposing the underlying SQL query (if it's a SQL question) or the structural query parameters used to generate the visualization.
+
+**Q: Can my agent list all databases currently connected to Metabase?**
+Absolutely. Use the `list_databases` tool to identify all physical data warehouse integrations. Your agent will report the database names, types (e.g., PostgreSQL, Snowflake), and internal IDs available for querying.
+
+
 ## Installation & Usage
 
-To install and use the **Metabase (Business Intelligence & Analytics)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/metabase-business-intelligence-analytics](https://vinkius.com/mcp/metabase-business-intelligence-analytics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Metabase (Business Intelligence & Analytics)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `metabase-business-intelligence-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Metabase (Business Intelligence & Analytics)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "metabase-business-intelligence-analytics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

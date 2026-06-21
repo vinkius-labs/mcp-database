@@ -1,7 +1,6 @@
 # Legito MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/legito)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/legito-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/legito-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/legito)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Legito** MCP server us
 > Processing download for 'SA-99' in docx format... Done! You can access the document via this generated link: [Download SA-99.docx].
 
 
+## ❓ FAQ
+
+**Q: Can I download a specific document version in PDF format?**
+Yes! Use the `download_document_version` tool by providing the document code and specifying 'pdf' as the format. Your agent will retrieve the download link or data immediately.
+
+**Q: How do I see all available template suites in my workspace?**
+Simply ask the agent to run the `list_template_suites` action. It will return a complete list of all template suites configured in your Legito environment.
+
+**Q: Is it possible to check what permissions a specific user has?**
+Yes. By using the `get_user_permissions` tool with a user's identifier, the agent can retrieve the exact permission set assigned to that user in the workspace.
+
+
 ## Installation & Usage
 
-To install and use the **Legito** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/legito](https://vinkius.com/mcp/legito)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Legito** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `legito` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Legito** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "legito": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

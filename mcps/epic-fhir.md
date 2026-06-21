@@ -1,7 +1,6 @@
 # Epic Fhir MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epic-fhir)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/epic-fhir-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/epic-fhir-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epic-fhir)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -111,12 +110,52 @@ The A1c and fasting glucose are slightly elevated, suggesting prediabetic range.
 No known allergies documented. Want me to check the immunization record or upcoming appointments?
 
 
+## ❓ FAQ
+
+**Q: Can I search for a patient and instantly see their full medical timeline?**
+Yes! Use `search_patients` with name or MRN to find the patient, then chain `list_encounters`, `list_conditions`, and `list_medications` to build a full clinical picture. Your agent compiles everything in seconds — no chart-clicking required.
+
+**Q: How do I prepare a patient summary before a care coordination meeting?**
+Ask your agent to pull everything at once: 'Show me the full medical history for patient ID abc123.' It will call `get_patient` for demographics, `list_conditions` for active diagnoses, `list_medications` for current prescriptions, and `list_allergies` for safety alerts — delivering a structured briefing ready for your meeting.
+
+**Q: Is this integration read-only? Can it modify patient data?**
+This integration is entirely read-only. All 10 tools are query operations — search, list, and retrieve. No tool can create, update, or delete any clinical data. Your Epic FHIR access token controls exactly which patients and resources are visible, enforcing your existing HIPAA access controls.
+
+
 ## Installation & Usage
 
-To install and use the **Epic Fhir** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/epic-fhir](https://vinkius.com/mcp/epic-fhir)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Epic Fhir** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `epic-fhir` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Epic Fhir** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "epic-fhir": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

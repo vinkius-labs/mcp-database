@@ -1,7 +1,6 @@
 # Typebot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typebot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/typebot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/typebot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typebot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Typebot** MCP server u
 > Success! The latest changes for bot bot_10293 have been published to production. Your conversational form is now up-to-date at its public URL.
 
 
+## ❓ FAQ
+
+**Q: Can I publish a bot after making changes via AI?**
+Yes! Use the `publish_typebot` action and provide the unique bot ID. Your agent will instantly deploy the latest changes to the public URL.
+
+**Q: How do I see the submissions or leads collected by a bot?**
+Run the `list_typebot_results` query with your Typebot ID. The agent will retrieve the complete history of user responses and collected data.
+
+**Q: Is it possible to list bots from a specific workspace?**
+Absolutely. Use the `list_typebots` tool and provide the optional `workspace_id` to retrieve only the bots associated with that team area.
+
+
 ## Installation & Usage
 
-To install and use the **Typebot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/typebot](https://vinkius.com/mcp/typebot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Typebot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `typebot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Typebot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "typebot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

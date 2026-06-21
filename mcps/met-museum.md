@@ -1,7 +1,6 @@
 # Met Museum MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/met-museum)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/met-museum-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/met-museum-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/met-museum)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Met Museum** MCP serve
 > Object 436535 is 'Wheat Field with Cypresses' by Vincent van Gogh (1889). It is an oil on canvas from the European Paintings department. I have also retrieved the primary image URL for you.
 
 
+## ❓ FAQ
+
+**Q: How can I search for artworks by a specific artist that have images available?**
+You can use the `search_objects` tool. Set the `q` parameter to the artist's name and set `hasImages` to `true`. This will return a list of Object IDs matching those criteria.
+
+**Q: Can I get the full historical record and image URL for a specific piece of art?**
+Yes! Use the `get_object` tool with the specific `objectID`. It returns detailed metadata including the artist, medium, dimensions, and `primaryImage` or `additionalImages` URLs.
+
+**Q: How do I find out which departments exist in the Met Museum?**
+Use the `list_departments` tool. It will provide a complete list of all valid departments along with their unique `departmentId`, which you can then use to filter your searches.
+
+
 ## Installation & Usage
 
-To install and use the **Met Museum** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/met-museum](https://vinkius.com/mcp/met-museum)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Met Museum** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `met-museum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Met Museum** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "met-museum": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

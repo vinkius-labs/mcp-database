@@ -1,7 +1,6 @@
 # Kong Gateway MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kong-gateway)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kong-gateway-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kong-gateway-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kong-gateway)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -107,12 +106,52 @@ Here are some examples of how you can interact with the **Kong Gateway** MCP ser
 > The Kong node is healthy. Database is reachable, and there are currently 124 active connections. The server has been up for 14 days.
 
 
+## ❓ FAQ
+
+**Q: How can I check if my Kong Gateway instance is running correctly?**
+You can use the `get_status` tool. It will return the current status of the Kong node, including database connectivity and server metrics.
+
+**Q: Can I list all the plugins currently enabled on my gateway?**
+Yes! Use the `list_plugins` tool to retrieve a complete list of all configured plugins across your entire Kong instance.
+
+**Q: Is it possible to create a new service and its route through the AI?**
+Absolutely. You can use `create_service` to define your upstream and then `create_route` to specify how traffic should reach that service.
+
+
 ## Installation & Usage
 
-To install and use the **Kong Gateway** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kong-gateway](https://vinkius.com/mcp/kong-gateway)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kong Gateway** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kong-gateway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kong Gateway** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kong-gateway": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

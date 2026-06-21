@@ -1,7 +1,6 @@
 # Coqui TTS (Open Source Speech Studio API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coqui-tts-open-source-speech-studio-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coqui-tts-open-source-speech-studio-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coqui-tts-open-source-speech-studio-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coqui-tts-open-source-speech-studio-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Coqui TTS (Open Source
 > Let me check your Coqui server... It currently reports 3 active models: a standard English model, a multilingual XTTS model, and a fast VITS model. Would you like to see the full technical IDs for these?
 
 
+## ❓ FAQ
+
+**Q: How can I check which voice models are currently installed on my server?**
+You can use the `list_models` tool. Your agent will query the Coqui server and return a list of all available TTS models ready for synthesis.
+
+**Q: Is it possible to generate audio files from a text string directly?**
+Yes! Use the `synthesize_speech` tool by providing the text you want to convert. The agent will process it through Coqui and return the audio metadata.
+
+**Q: What do I need to provide to connect my local Coqui instance?**
+You only need to provide the `COQUI_SERVER_URL`. This is the base address where your Coqui Speech Studio API is reachable (e.g., http://localhost:5002).
+
+
 ## Installation & Usage
 
-To install and use the **Coqui TTS (Open Source Speech Studio API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coqui-tts-open-source-speech-studio-api](https://vinkius.com/mcp/coqui-tts-open-source-speech-studio-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Coqui TTS (Open Source Speech Studio API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coqui-tts-open-source-speech-studio-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Coqui TTS (Open Source Speech Studio API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coqui-tts-open-source-speech-studio-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

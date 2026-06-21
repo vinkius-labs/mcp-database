@@ -1,7 +1,6 @@
 # Sugar Syrup Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sugar-syrup-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sugar-syrup-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sugar-syrup-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sugar-syrup-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -49,12 +48,52 @@ Here are some examples of how you can interact with the **Sugar Syrup Calculator
 > The `estimate_final_syrup_yield` tool predicts an estimated final yield of [FINAL_YIELD] grams. This accounts for the expected moisture loss over 15 minutes, which is primarily due to boil-off.
 
 
+## ❓ FAQ
+
+**Q: Does this calculator account for water loss during cooking?**
+Yes. The system uses the `estimate_final_syrup_yield` tool to calculate predicted final yield, which accounts for estimated weight loss due to evaporation over time. This ensures that your calculated initial weights are scaled correctly for the actual product you will achieve.
+
+**Q: How can I verify if my target consistency (like 'Soft Ball') is safe?**
+You must use the `get_standard_temperatures` tool. This function provides standardized boiling points and mandatory safety warnings for common culinary states, acting as a critical cross-check against your recipe ratios.
+
+**Q: Should I use volume measurements or weight measurements?**
+Always use weight (grams). The core calculation tool, `calculate_sugar_for_syrup`, is designed exclusively for mass balance. Using weights ensures the results are chemically accurate and not skewed by variations in ingredient density.
+
+
 ## Installation & Usage
 
-To install and use the **Sugar Syrup Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sugar-syrup-calculator](https://vinkius.com/mcp/sugar-syrup-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sugar Syrup Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sugar-syrup-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sugar Syrup Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sugar-syrup-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

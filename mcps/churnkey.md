@@ -1,7 +1,6 @@
 # Churnkey MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/churnkey)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/churnkey-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/churnkey-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/churnkey)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Churnkey** MCP server 
 > Checking history for cust_123... I found 2 sessions. In January they accepted a '3 month pause', and yesterday they proceeded with the cancellation due to 'Product complexity'.
 
 
+## ❓ FAQ
+
+**Q: Can I see the most common reason users are trying to cancel?**
+Yes! Use the `get_session_aggregates` tool. The agent will return grouped data showing which reasons are being selected most frequently in your cancellation flows.
+
+**Q: How do I update the billing contact for a customer whose payment failed?**
+Use the `update_billing_contacts` tool. Provide the customer ID and the new contact details. This ensures Churnkey sends dunning and recovery emails to the right person.
+
+**Q: Where do I find my Churnkey Data API Key and App ID?**
+Log in to your Churnkey dashboard and navigate to **Settings > Account**. You can find your App ID and generate a Data API Key in the API section.
+
+
 ## Installation & Usage
 
-To install and use the **Churnkey** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/churnkey](https://vinkius.com/mcp/churnkey)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Churnkey** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `churnkey` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Churnkey** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "churnkey": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

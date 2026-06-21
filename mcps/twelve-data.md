@@ -1,7 +1,6 @@
 # Twelve Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twelve-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/twelve-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/twelve-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twelve-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **Twelve Data** MCP serv
 > 1,000 USD = 921.50 EUR at the current exchange rate of 0.9215. Rate updated in real-time.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Twelve Data API Key?**
+Visit [**Twelve Data**](https://twelvedata.com/), sign up for a free account, and copy your API key from the dashboard. Free tier includes 800 API credits/day.
+
+**Q: What technical indicators are available?**
+SMA (Simple Moving Average), EMA (Exponential MA), RSI (Relative Strength Index), MACD, Bollinger Bands, and Stochastic Oscillator — all with customizable periods.
+
+**Q: Can I get real-time crypto and forex prices?**
+Yes! Use `get_quote` or `get_real_time_price` with any symbol. Crypto pairs like BTC/USD and forex pairs like EUR/USD are supported.
+
+
 ## Installation & Usage
 
-To install and use the **Twelve Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/twelve-data](https://vinkius.com/mcp/twelve-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Twelve Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `twelve-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Twelve Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "twelve-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

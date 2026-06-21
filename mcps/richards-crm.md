@@ -1,7 +1,6 @@
 # Richards CRM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/richards-crm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/richards-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/richards-crm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/richards-crm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,49 @@ Here are some examples of how you can interact with the **Richards CRM** MCP ser
 > Lead created successfully. Company: TechVentures Inc. Primary contact: David Chen (CTO). Email: d.chen@techventures.io. Phone: +1-555-0234. Estimated value: $75,000. Project type: Custom Software Development. Stage: New. Source: Website Form. Assigned to: Sarah (Sales). Lead score: 72/100. Follow-up task created: "Initial discovery call" scheduled for tomorrow at 2 PM. Auto-nurture email sequence activated with 3-email welcome series.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details and status for a specific project just by providing its ID?**
+Yes! Use the `get_project` tool with the Project ID. Your agent will respond with complete metadata, including job status, linked leads, and material requirements in seconds.
+
+**Q: How do I find my Richards CRM API Key?**
+Log in to your Richards CRM account, navigate to the integration or API settings section, and you will find your unique secret API key there.
+
+
 ## Installation & Usage
 
-To install and use the **Richards CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/richards-crm](https://vinkius.com/mcp/richards-crm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Richards CRM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `richards-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Richards CRM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "richards-crm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

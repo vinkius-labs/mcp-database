@@ -1,7 +1,6 @@
 # Brunel Engineering Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brunel-engineering-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brunel-engineering-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brunel-engineering-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brunel-engineering-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Brunel Engineering Pro
 > INTEGRATION_NEGLECTED — Scale analysis passes: 10x add stations, 100x needs larger facility — trajectory identified. But integration fails catastrophically: 'independently managed and self-contained' and 'worry about handoffs later' is exactly the failure Brunel engineered against. The Great Western Railway worked because gauge, tunnels, stations, and rolling stock were designed as ONE system. When Sorting slows by 50% under holiday load, does Intake overflow in 30 minutes and cascade to Verification? When your packaging materials run out, does every upstream stage continue blindly filling a staging area with nowhere to go? Map your handoff contracts: item format, timing, capacity limits, overflow protocol, escalation threshold. NOW — not later.
 
 
+## ❓ FAQ
+
+**Q: Is this only for physical infrastructure?**
+No. Brunel engineered railways, ships, tunnels, and bridges — different domains, same method. This tool applies to any system that must survive its own success: warehouse operations, manufacturing lines, logistics networks, organizational processes, supply chains, service delivery systems. The 5 pivots — scale analysis, integration mapping, specification rigor, risk quantification, and precedent challenge — apply wherever a system must work at a scale it has not yet experienced.
+
+**Q: What makes a specification 'rigorous' enough?**
+Four elements: (1) exact number at a specific threshold — 'process 95% of orders within 4 hours' not 'fast turnaround,' (2) tolerance band — '3-5 hours acceptable, >6 hours triggers escalation,' (3) measurement method — 'supervisor time-checks on a sample of 30 orders per shift from 3 zones,' (4) violation consequence — 'alert manager at >5 hours, add overtime staff at >6 hours, halt intake at >8 hours.' If any of these four is missing, the engine rejects. Brunel counted every brick course in Box Tunnel.
+
+**Q: How does it differ from the Archimedes First Principles Prover?**
+Archimedes validates analytical reasoning — axioms, decomposition, proof, boundaries, leverage. It asks 'is this actually true?' Brunel validates engineering execution — scale thresholds, interface contracts, specification tolerances, quantified risks, precedent challenges. It asks 'will this actually work at 10x?' Archimedes proves your logic. Brunel proves your infrastructure survives contact with reality.
+
+
 ## Installation & Usage
 
-To install and use the **Brunel Engineering Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/brunel-engineering-prover](https://vinkius.com/mcp/brunel-engineering-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Brunel Engineering Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `brunel-engineering-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Brunel Engineering Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "brunel-engineering-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

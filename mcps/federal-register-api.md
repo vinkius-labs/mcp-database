@@ -1,7 +1,6 @@
 # Federal Register API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/federal-register-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/federal-register-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/federal-register-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/federal-register-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Federal Register API**
 > I've scanned the agency catalog! There are hundreds of federal entities listed, including the EPA, Department of Energy, and the FDA. I can help you search for specific documents from any of these thematic clusters.
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for Federal Register API?**
+No. The Federal Register API is a free and open service provided by the United States government. This server works out of the box without any static credentials required.
+
+**Q: What types of documents are available?**
+The API provides access to rules, proposed rules, notices, and presidential documents published in the Federal Register.
+
+**Q: Can the agent show agency publication counts?**
+Yes. The `list_federal_agencies` tool retrieves the list of agencies along with their metadata, assisting in identifying which entities publish most frequently.
+
+
 ## Installation & Usage
 
-To install and use the **Federal Register API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/federal-register-api](https://vinkius.com/mcp/federal-register-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Federal Register API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `federal-register-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Federal Register API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "federal-register-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

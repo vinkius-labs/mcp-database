@@ -1,7 +1,6 @@
 # Modio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modio-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/modio-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/modio-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modio-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Here are some examples of how you can interact with the **Modio** MCP server usi
 > Checking your profile... You are currently subscribed to 3 mods: 'Realistic Physics', 'Night Sky Mod', and 'Custom Shaders'. Would you like to check for updates on any of these?
 
 
+## ❓ FAQ
+
+**Q: How can I check the player statistics for a specific game?**
+You can use the `get_game_stats` tool by providing the specific Game ID. The agent will return detailed metrics including total downloads, subscribers, and active mod counts.
+
+**Q: Can I browse my own uploaded mods using this integration?**
+Yes! The `list_my_mods` tool allows you to retrieve a list of all mods you have authored or managed on the platform.
+
+**Q: Is it possible to see the files available for a specific mod?**
+Absolutely. Use the `list_mod_files` tool with the corresponding Game ID and Mod ID to see all uploaded versions and file details.
+
+
 ## Installation & Usage
 
-To install and use the **Modio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/modio-1](https://vinkius.com/mcp/modio-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Modio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `modio-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Modio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "modio-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Lunatask MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lunatask)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lunatask-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lunatask-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lunatask)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Lunatask** MCP server 
 > I've sent the request to create the task. While I cannot read it back due to encryption, the new entry has been successfully added to your area 'area-abc'.
 
 
+## ❓ FAQ
+
+**Q: Why can't the agent read my task names?**
+Lunatask uses end-to-end encryption. Task names and note bodies are encrypted on your device before being sent to the server. The API only has access to metadata like IDs and statuses.
+
+**Q: Where do I find my Area ID?**
+In the Lunatask desktop app, go to an Area's settings. The unique Area ID (UUID) is displayed there for use in the API.
+
+**Q: Can I track habits using this agent?**
+Yes, use the `track_habit_completion` tool with the unique habit ID to log a successful completion event.
+
+
 ## Installation & Usage
 
-To install and use the **Lunatask** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lunatask](https://vinkius.com/mcp/lunatask)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lunatask** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lunatask` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lunatask** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lunatask": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # BotGenuity MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/botgenuity)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/botgenuity-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/botgenuity-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/botgenuity)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **BotGenuity** MCP serve
 > Bot response received: 'Our standard shipping is $5.99, or free for orders over $50.' Shall I check the session logs for this interaction?
 
 
+## ❓ FAQ
+
+**Q: How do I find my BotGenuity API Key?**
+Log in to your account, select a chatbot, navigate to **Settings** > **Security**, and generate your API Bearer Token.
+
+**Q: Can I test bot responses via AI?**
+Yes! The `chat_with_bot` tool allows you to interact with your chatbots and retrieve high-fidelity AI responses programmatically.
+
+**Q: How do I retrieve captured leads?**
+Use the `list_captured_leads` tool with a specific chatbot ID to retrieve all contact information collected during user sessions.
+
+
 ## Installation & Usage
 
-To install and use the **BotGenuity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/botgenuity](https://vinkius.com/mcp/botgenuity)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BotGenuity** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `botgenuity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BotGenuity** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "botgenuity": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

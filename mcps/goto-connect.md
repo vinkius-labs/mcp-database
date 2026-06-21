@@ -1,7 +1,6 @@
 # GoTo Connect MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goto-connect)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/goto-connect-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/goto-connect-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goto-connect)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **GoTo Connect** MCP ser
 Yes, there is currently one untouched voice message (14 seconds long) originating from a classified client left at 9:00 AM.
 
 
+## ❓ FAQ
+
+**Q: Can I send an SMS message directly from the AI chat?**
+Yes! Use the `send_sms` tool. Provide the sender number (one of your GoTo Connect numbers), the recipient's number, and the message body. The AI will send the text on your behalf.
+
+**Q: How do I check my missed calls or voicemails?**
+First, you can use `get_me` to confirm your User ID. Then, use `get_call_records` to view your call history (including missed calls) or `list_voicemails` to see if anyone left a message.
+
+**Q: Is it possible to lookup extensions for active users?**
+Yes. Using the directory management tools, you can actively search for any colleague by name or department to fetch their direct extension securely.
+
+
 ## Installation & Usage
 
-To install and use the **GoTo Connect** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/goto-connect](https://vinkius.com/mcp/goto-connect)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GoTo Connect** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `goto-connect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GoTo Connect** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "goto-connect": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

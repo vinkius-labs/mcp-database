@@ -1,7 +1,6 @@
 # Funnel Conversion Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/funnel-conversion-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/funnel-conversion-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/funnel-conversion-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/funnel-conversion-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Funnel Conversion Calc
 > The `identify_bottleneck` tool confirms that the Consideration stage presents the highest relative loss point, requiring immediate focus to maximize return on investment.
 
 
+## ❓ FAQ
+
+**Q: Does this tool only calculate the conversion rate?**
+No. The `calculate_funnel_metrics` function establishes your baseline, but the real power comes from using `identify_bottleneck`. This second tool finds the weakest point, and then you use `simulate_improvement_impact` to quantify the financial value of fixing it.
+
+**Q: Can I test how much revenue an improvement will generate?**
+Yes. The `simulate_improvement_impact` tool is designed for this purpose. You input your target percentage lifts, and the function returns a concrete dollar figure of projected revenue uplift.
+
+**Q: What if my funnel has multiple bottlenecks?**
+`identify_bottleneck` pinpoints the single highest relative loss area. However, you can run `simulate_improvement_impact` multiple times, focusing on different stages in sequence to model overall improvement across several bottlenecks.
+
+
 ## Installation & Usage
 
-To install and use the **Funnel Conversion Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/funnel-conversion-calculator](https://vinkius.com/mcp/funnel-conversion-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Funnel Conversion Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `funnel-conversion-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Funnel Conversion Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "funnel-conversion-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

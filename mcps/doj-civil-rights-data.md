@@ -1,7 +1,6 @@
 # DOJ Civil Rights Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doj-civil-rights-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/doj-civil-rights-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/doj-civil-rights-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doj-civil-rights-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **DOJ Civil Rights Data*
 > Fetching details for blog entry 550e8400... The entry is titled 'Civil Rights Division Update' and discusses recent enforcement actions. The full body text is now available.
 
 
+## ❓ FAQ
+
+**Q: Can I filter blog entries by a specific topic like 'Civil Rights'?**
+Yes. Use the `list_blog_entries` tool and set the `title` parameter to 'Civil Rights'. This will return entries matching that specific keyword.
+
+**Q: How do I get the full text of a press release?**
+Once you have the UUID from a list, use the `get_press_release` tool with that `uuid`. It will return the full body, URL, and metadata.
+
+**Q: Can I control how many results are returned per query?**
+Yes, use the `pagesize` parameter (default 20, max 50) and the `page` parameter to navigate through the results.
+
+
 ## Installation & Usage
 
-To install and use the **DOJ Civil Rights Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/doj-civil-rights-data](https://vinkius.com/mcp/doj-civil-rights-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DOJ Civil Rights Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `doj-civil-rights-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DOJ Civil Rights Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "doj-civil-rights-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

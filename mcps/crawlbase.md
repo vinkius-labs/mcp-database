@@ -1,7 +1,6 @@
 # Crawlbase MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crawlbase)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/crawlbase-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/crawlbase-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crawlbase)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Crawlbase** MCP server
 > Screenshot requested! Crawlbase is generating the snapshot. You can access the rendered image at this temporary proxy link: [Crawlbase Screenshot URL].
 
 
+## ❓ FAQ
+
+**Q: When should I use the JavaScript (JS) Token versus the Normal Token?**
+Use the Normal Token for fast, static HTML extraction. Switch to the JavaScript Token when the target site uses frameworks like React or Angular, where content is rendered dynamically in the browser. The 'scrape_js_rendered' tool requires the JS Token to function.
+
+**Q: Can my agent bypass CAPTCHAs while scraping Google or LinkedIn?**
+Yes. Crawlbase is built to handle CAPTCHAs and blocks natively. When you use specialized tools like 'scrape_google_serp' or 'scrape_linkedin', the agent routes your requests through Crawlbase's advanced proxy infrastructure to ensure successful data extraction.
+
+**Q: How do I get a structured JSON response instead of raw HTML?**
+Use the 'scrape_json_format' tool or the specialized scraper tools (Amazon, LinkedIn, etc.). These trigger Crawlbase's auto-extraction pipelines, which analyze the page structure and return specific data fields in a clean JSON format.
+
+
 ## Installation & Usage
 
-To install and use the **Crawlbase** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/crawlbase](https://vinkius.com/mcp/crawlbase)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Crawlbase** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `crawlbase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Crawlbase** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "crawlbase": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

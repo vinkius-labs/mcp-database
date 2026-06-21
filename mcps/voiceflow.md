@@ -1,7 +1,6 @@
 # Voiceflow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/voiceflow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/voiceflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/voiceflow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/voiceflow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Voiceflow** MCP server
 > I've fetched the transcripts. Here are the 3 most recent sessions: User_8823 (Success), User_8824 (Dropped), and User_8825 (Handoff to Human). Shall I retrieve the dialogue for the dropped session?
 
 
+## ❓ FAQ
+
+**Q: Can I query my Voiceflow Knowledge Base directly via AI?**
+Yes! Use the `query_kb` tool with your question. Your agent will trigger the Voiceflow RAG system and return the answer based on your uploaded documents.
+
+**Q: How do I see the transcripts for a specific project?**
+Run the `list_transcripts` query with your Project ID. The agent will return a list of past conversation logs, which you can then inspect using `get_transcript`.
+
+**Q: Is it possible to reset a user's session via AI?**
+Absolutely. Use the `delete_state` tool and provide the User ID. This will permanently clear the conversation history and variables for that specific session.
+
+
 ## Installation & Usage
 
-To install and use the **Voiceflow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/voiceflow](https://vinkius.com/mcp/voiceflow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Voiceflow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `voiceflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Voiceflow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "voiceflow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

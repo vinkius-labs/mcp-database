@@ -1,7 +1,6 @@
 # Lindy (Autonomous AI Employees) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lindy-autonomous-ai-employees)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lindy-autonomous-ai-employees-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lindy-autonomous-ai-employees-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lindy-autonomous-ai-employees)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Lindy (Autonomous AI E
 > I've identified 3 active triggers: 1) Webhook (ID: tr-123) for 'Support-Lindy', 2) Scheduled Cron (Daily at 9 AM) for 'Report-Lindy', and 3) Manual API trigger for all assistants. I can provide the specific webhook URLs if needed.
 
 
+## ❓ FAQ
+
+**Q: Can I see exactly how my Lindy made a specific decision?**
+Yes. Use the `get_run_logs` tool with a specific Run ID. Your agent will retrieve the literal LLM reasoning loops and step-by-step validations, giving you full transparency into the autonomous agent's logic.
+
+**Q: How do I trigger an autonomous task through a conversation?**
+The `trigger_lindy` tool allows you to start an asynchronous task run. You just need to provide the Lindy ID and a JSON payload defining the inputs for the task. Your agent will fire the job and return a Run ID for status tracking.
+
+**Q: Can my agent list which third-party apps my Lindies are connected to?**
+Absolutely. Use the `list_integrations` tool to retrieve all active third-party app connections. Your agent will report which channels (like Slack, Gmail, or HubSpot) are securely connected to your workspace.
+
+
 ## Installation & Usage
 
-To install and use the **Lindy (Autonomous AI Employees)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lindy-autonomous-ai-employees](https://vinkius.com/mcp/lindy-autonomous-ai-employees)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lindy (Autonomous AI Employees)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lindy-autonomous-ai-employees` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lindy (Autonomous AI Employees)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lindy-autonomous-ai-employees": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Squarespace MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/squarespace)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/squarespace-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/squarespace-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/squarespace)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Found **42** recent transactions stored loosely across internal responses. After
 All remaining logs read normal processed settled positive values.
 
 
+## ❓ FAQ
+
+**Q: Is there any risk of the AI accidentally deleting or corrupting my live Squarespace products?**
+No. This tool operates exclusively in a secure 'Read-Only' capacity. It can only ingest matrices and extract data from existing records mapping to tools like `list_products` or `list_orders`. It does not possess foundational modules to execute POST or DELETE endpoints.
+
+**Q: Wait, so I can fetch orders but I cannot ship them using this specific integration right?**
+Exactly. This version is designed entirely for read operations safeguarding users managing analytical reports. If you need powerful backend modification logic (like dispatching orders), implement the 'Squarespace Commerce' MCP package instead.
+
+**Q: Do I need any specialized third-party proxy tools to make this connect to Squarespace?**
+No extra software. The integration passes traffic straight calling the official native Squarespace API channels endpoints connecting symmetrically to your environment 1:1 using only your standard Bearer key.
+
+
 ## Installation & Usage
 
-To install and use the **Squarespace** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/squarespace](https://vinkius.com/mcp/squarespace)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Squarespace** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `squarespace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Squarespace** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "squarespace": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

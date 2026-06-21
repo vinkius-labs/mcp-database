@@ -1,7 +1,6 @@
 # Internet Archive MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/internet-archive)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/internet-archive-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/internet-archive-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/internet-archive)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,12 +102,55 @@ Here are some examples of how you can interact with the **Internet Archive** MCP
 > Found 185,000+ NASA items in the Internet Archive. The NASA collection includes: Apollo mission photographs, Hubble Space Telescope images, satellite imagery, astronaut training footage, Space Shuttle launches, ISS documentation, and planetary exploration photos. Items span from the 1960s to present day. Would you like to narrow by specific mission, decade, or image type?
 
 
+## ❓ FAQ
+
+**Q: Is any authentication required to use the Internet Archive API?**
+No! All search, metadata, and Wayback Machine features are completely free and public — no API key or account needed. You can search 40M+ items, get item details, and check archived URLs immediately. Authentication is only required if you want to upload content (which this MCP server doesn't support).
+
+**Q: How do I find and download files from an archived item?**
+First, use search to find items matching your query and note the identifier (e.g., "big_buck_bunny"). Then use get_item_files to see all available files with their formats (PDF, MP4, MP3, etc.). Files can be downloaded directly from: https://archive.org/download/{identifier}/{filename}. Many items offer multiple formats for the same content.
+
+**Q: How can I use the Wayback Machine to find archived websites snapshots?**
+Use the wayback_availability tool with any full URL (e.g., "https://example.com"). It returns the closest archived snapshot with its timestamp. The archived page can be viewed at: https://web.archive.org/web/{timestamp}/{original_url}. Note: Not all URLs are archived — the Wayback Machine selectively crawls and saves web pages.
+
+**Q: What collections are available in the Internet Archive?**
+Major collections include: Prelinger Archives (ephemeral films), Project Gutenberg (free ebooks), NASA (space images and videos), TV News Archive, FedFlix (government films), Open Source Movies, Netlabels (independent music), Software Library (classic games and apps), American Libraries, Biodiversity Heritage Library, and thousands of community collections. Use search_by_collection to explore any collection.
+
+
 ## Installation & Usage
 
-To install and use the **Internet Archive** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/internet-archive](https://vinkius.com/mcp/internet-archive)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Internet Archive** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `internet-archive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Internet Archive** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "internet-archive": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # OneTrust MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/onetrust)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/onetrust-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/onetrust-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/onetrust)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -112,12 +111,55 @@ Would you like me to trigger automated reminders for these vendors?
 The CRM system is fully compliant with current policies.
 
 
+## ❓ FAQ
+
+**Q: How do I get started with OneTrust?**
+Subscribe, then enter your OneTrust API token (from **Admin Console → Integration → API Access**) and your base URL (e.g., app.onetrust.com or app-eu.onetrust.com). Your AI agent connects instantly. No code, no SDK — just connect and start managing privacy compliance.
+
+**Q: Can my AI agent handle GDPR data subject access requests?**
+Yes. Create DSARs directly from conversation — specify the subject's name, email, and request type (access, deletion, rectification, portability, opt-out). OneTrust automatically calculates regulatory deadlines (30 days for GDPR, 45 days for CCPA) and routes the request to the right handler.
+
+**Q: How do I check which vendors have overdue security assessments?**
+Ask your agent "show me vendors with overdue assessments" and it lists every third-party vendor with their risk score, questionnaire status, and last review date. You see exactly which processors need follow-up — all without logging into OneTrust or switching tabs.
+
+**Q: Is this suitable for multi-regulation compliance (GDPR + CCPA + HIPAA)?**
+Absolutely. OneTrust is built for multi-regulation environments. Browse your entire data inventory mapped to processing purposes and legal bases, track DSARs across any regulation, manage privacy impact assessments, and monitor incidents with regulatory notification requirements — perfect for enterprises, healthcare organizations, and global companies operating across jurisdictions.
+
+
 ## Installation & Usage
 
-To install and use the **OneTrust** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/onetrust](https://vinkius.com/mcp/onetrust)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OneTrust** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `onetrust` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OneTrust** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "onetrust": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

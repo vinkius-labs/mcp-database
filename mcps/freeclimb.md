@@ -1,7 +1,6 @@
 # FreeClimb MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freeclimb)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freeclimb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freeclimb-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freeclimb)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **FreeClimb** MCP server
 > Call initiated! I've started an outbound call via FreeClimb using app_987. The call ID is 'call_xyz789'. You can track its status in real-time.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Account ID and API Key for FreeClimb?**
+Log in to your FreeClimb dashboard at https://www.freeclimb.com/dashboard to find your credentials prominently displayed on the main page.
+
+**Q: What is an 'Application ID' required for making calls?**
+An Application ID points to a specific voice or SMS configuration in your FreeClimb account. You can list your active apps using the 'list_applications' tool.
+
+**Q: Can I search for new phone numbers to buy?**
+Yes, use the 'list_buyable_numbers' tool to see available inventory in the FreeClimb network.
+
+**Q: Is global SMS supported?**
+Yes, FreeClimb supports sending SMS messages to over 190 countries worldwide.
+
+
 ## Installation & Usage
 
-To install and use the **FreeClimb** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/freeclimb](https://vinkius.com/mcp/freeclimb)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FreeClimb** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `freeclimb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FreeClimb** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "freeclimb": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

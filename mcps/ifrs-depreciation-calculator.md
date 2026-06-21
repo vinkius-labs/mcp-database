@@ -1,7 +1,6 @@
 # IFRS Depreciation Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ifrs-depreciation-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ifrs-depreciation-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ifrs-depreciation-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ifrs-depreciation-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **IFRS Depreciation Calc
 > Year 1: $8,000 expense; Year 2: $5,333.33 expense; Year 3: $2,666.67 expense.
 
 
+## ❓ FAQ
+
+**Q: What depreciation methods are supported?**
+The server supports Straight-Line, Units of Production, and Sum-of-the-Years'-Digits (SYD) methods.
+
+**Q: How do I calculate depreciation based on usage?**
+Use the `get_units_production_schedule` tool by providing the initial cost, residual value, total capacity, and a list of units produced in each period.
+
+**Q: Does this follow IFRS standards?**
+Yes, the calculations are designed to align with IAS 16 (Property, Plant, and Equipment) principles.
+
+
 ## Installation & Usage
 
-To install and use the **IFRS Depreciation Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ifrs-depreciation-calculator](https://vinkius.com/mcp/ifrs-depreciation-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IFRS Depreciation Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ifrs-depreciation-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IFRS Depreciation Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ifrs-depreciation-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

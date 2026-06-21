@@ -1,7 +1,6 @@
 # Recurly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recurly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/recurly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/recurly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recurly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Recurly** MCP server u
 > I invoked `get_account_details` for 'cus_alpha_92'. The account corresponds to 'Alpha Corp'. It currently has an active subscription to the 'Enterprise Tier' and zero past due payments.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Subdomain and API Key?**
+Your subdomain is the first part of your Recurly portal URL (e.g., if you log in at `myproject.recurly.com`, your subdomain is `myproject`). To get your API Key, navigate inside Recurly to Integrations > API Credentials and generate or copy your 'Private API Key'.
+
+**Q: Can it accidentally charge my customers?**
+While the server can manage subscriptions (e.g., setting up a customer with a plan), it strictly follows the billing logic predefined in your Recurly catalog settings. It doesn't bypass credit card validation or execute arbitrary charges directly without a plan context.
+
+**Q: Does cancelling a subscription remove the account entirely?**
+No, using `cancel_subscription` stops future renewals for that specific plan item instance. The underlying user billing account remains intact and can hold other valid subscriptions or past invoices.
+
+
 ## Installation & Usage
 
-To install and use the **Recurly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/recurly](https://vinkius.com/mcp/recurly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Recurly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `recurly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Recurly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "recurly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

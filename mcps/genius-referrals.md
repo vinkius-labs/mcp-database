@@ -1,7 +1,6 @@
 # Genius Referrals MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/genius-referrals)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/genius-referrals-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/genius-referrals-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/genius-referrals)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,55 @@ Here are some examples of how you can interact with the **Genius Referrals** MCP
 > Fetching referrals... I found 5 recent conversions. 3 are currently 'Verified' and 2 are 'Pending' verification. Would you like to see the associated bonus amounts?
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Token for Genius Referrals?**
+Log in to your Genius Referrals dashboard, click your name in the top-left corner, and select 'API Access' to find your API token.
+
+**Q: Can I manually track a referral conversion via the agent?**
+Yes! Use the 'log_referral_conversion' tool. You must provide the advocate's email and the email of the person they referred to trigger the tracking logic.
+
+**Q: How do I register a new advocate through the chat?**
+Use the 'register_advocate' tool and provide the person's email and full name. The agent will add them to your program and generate their referral link.
+
+**Q: Is it possible to see who my best advocates are?**
+Yes, the 'list_top_performers' tool retrieves a list of advocates sorted by their referral count, helping you identify your most active promoters.
+
+
 ## Installation & Usage
 
-To install and use the **Genius Referrals** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/genius-referrals](https://vinkius.com/mcp/genius-referrals)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Genius Referrals** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `genius-referrals` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Genius Referrals** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "genius-referrals": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # OpenAlex MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openalex)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openalex-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openalex-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openalex)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **OpenAlex** MCP server 
 > Top 5 research topics by published works: 1) Medicine (45M+ works, 1.2B citations), 2) Biology (35M+ works), 3) Chemistry (30M+ works), 4) Computer Science (20M+ works), 5) Physics (18M+ works). At the granular level, trending sub-topics include: Large Language Models, mRNA therapeutics, CRISPR applications, and climate modeling.
 
 
+## ❓ FAQ
+
+**Q: Is the OpenAlex API key free and how do I get one?**
+Yes, the API key is completely free. OpenAlex provides 100,000 credits per day at no cost. Create your free account at openalex.org, then navigate to Settings → API to generate your key. The key is required since February 2026 when OpenAlex retired the 'polite pool' system.
+
+**Q: How does OpenAlex compare to Scopus and Web of Science?**
+OpenAlex is a fully open, CC0-licensed alternative covering 250M+ works — comparable in scope to Scopus (90M+) and far exceeding Web of Science (90M+). It provides citation metrics, h-indexes, institutional data, and open access detection. The key difference: OpenAlex is completely free with no institutional subscription required, while Scopus and WoS cost thousands of dollars per year.
+
+**Q: What data is available for each scholarly work?**
+Each work includes: title, authors with institutional affiliations, publication year, journal/source, DOI, work type, citation count, open access status and URL, research topics/concepts, and a reconstructed abstract. Author profiles add h-index, total publications, and career affiliations. Institutions include country, type, and research area specializations.
+
+
 ## Installation & Usage
 
-To install and use the **OpenAlex** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openalex](https://vinkius.com/mcp/openalex)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenAlex** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openalex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenAlex** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openalex": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

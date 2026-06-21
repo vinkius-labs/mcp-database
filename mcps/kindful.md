@@ -1,7 +1,6 @@
 # Kindful MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kindful)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kindful-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kindful-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kindful)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Kindful** MCP server u
 > I found 8 transactions for campaign 123 since January 1st, 2024, totaling $2,450. The largest single donation was $1,000 from donor ID 4567.
 
 
+## ❓ FAQ
+
+**Q: How can I find donors located in a specific area?**
+You can use the `query_contacts` tool with the `near_postal` parameter, providing a zip code and a radius to filter donors by geography.
+
+**Q: Can I see the total amount raised for my active campaigns?**
+Yes! The `get_campaigns` tool returns a list of all campaigns including the `raised` amount and the `goal` for each one.
+
+**Q: Is it possible to filter transactions by a specific date range?**
+Absolutely. Use the `query_transactions` tool with the `after` and `before` parameters (formatted as yyyy/mm/dd) to isolate records within a timeframe.
+
+
 ## Installation & Usage
 
-To install and use the **Kindful** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kindful](https://vinkius.com/mcp/kindful)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kindful** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kindful` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kindful** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kindful": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

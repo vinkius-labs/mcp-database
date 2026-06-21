@@ -1,7 +1,6 @@
 # PayFit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payfit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/payfit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/payfit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payfit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **PayFit** MCP server us
 > Pulled exact structures hitting `get_accounting_entries`. The payload reveals 12 distinct localized payroll ledger objects matching explicit debit and credit rules. Should I serialize these dynamically strictly into a table visual format for your review?
 
 
+## ❓ FAQ
+
+**Q: Can I automatically fetch raw PDF files of individual payslips?**
+Currently the AI fetches structured JSON metadata representing the explicit payslip limits generated in the pay run, rather than arbitrary PDF media binaries. This ensures high-speed, secure token-based programmatic observation.
+
+**Q: Do I need special scopes permitted via PayFit's platform security?**
+Yes. Ensure the API token generated internally on PayFit's Admin panel is bound physically to 'Collaborators', 'Payslips', and 'Accounting' read boundaries. Without the proper scope, the endpoints strictly deny payloads.
+
+**Q: How do accounting entries handle multiple logical company subsidiaries?**
+The tool bounds its exact logic based directly on the explicit `Company ID` provided in the plugin settings. To query disparate subsidiaries, adjust the Company ID dynamically.
+
+
 ## Installation & Usage
 
-To install and use the **PayFit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/payfit](https://vinkius.com/mcp/payfit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PayFit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `payfit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PayFit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "payfit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

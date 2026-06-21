@@ -1,7 +1,6 @@
 # Anaplan MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anaplan)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/anaplan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/anaplan-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anaplan)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Anaplan** MCP server u
 > The process task 'p_456' has completed successfully. All 3 sub-actions within the process were finished without errors.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Workspace and Model IDs?**
+You can use the `list_workspaces` and `list_models` tools provided by this server. They will return a list of all accessible environments along with their unique IDs.
+
+**Q: Are actions in Anaplan synchronous or asynchronous?**
+Most data actions (imports, exports, processes) are asynchronous. When you run them, they return a Task ID. You should then use `get_task_status` to monitor the progress until it reaches a 'COMPLETE' state.
+
+**Q: Can I trigger an Anaplan process that contains multiple actions?**
+Yes, use the `run_process` tool. Processes in Anaplan are designed to run a sequence of imports, exports, and other actions in a specific order. You can monitor the entire process using the returned Task ID.
+
+
 ## Installation & Usage
 
-To install and use the **Anaplan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/anaplan](https://vinkius.com/mcp/anaplan)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Anaplan** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `anaplan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Anaplan** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "anaplan": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

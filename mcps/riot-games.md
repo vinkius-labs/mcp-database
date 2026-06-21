@@ -1,7 +1,6 @@
 # Riot Games MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/riot-games)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/riot-games-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/riot-games-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/riot-games)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,12 +102,55 @@ Here are some examples of how you can interact with the **Riot Games** MCP serve
 > Found 5 recent matches: KR_7234567890, KR_7234567889, KR_7234567888, KR_7234567887, KR_7234567886. Use get_match to see full details for any match.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Riot Games API key?**
+Register at [**developer.riotgames.com**](https://developer.riotgames.com/) and sign in with your Riot account to get your personal development API key. It's free and works immediately.
+
+**Q: What is a PUUID?**
+PUUID (Player Universally Unique Identifier) is a unique ID assigned to every Riot account. It's required for most API calls like match history and champion masteries. Get it using get_account_by_riot_id with the player's game name and tag line.
+
+**Q: What are platform codes?**
+Platform codes identify specific game servers: na1 (North America), euw1 (Europe West), eun1 (Europe Nordic & East), kr (Korea), br1 (Brazil), jp1 (Japan), la1/la2 (Latin America), tr1 (Turkey), oc1 (Oceania). Match history uses regional routing instead: americas, europe, asia, sea.
+
+**Q: What are the API rate limits?**
+Development API keys are limited to 20 requests per second and 100 requests per 2 minutes. If you exceed these limits, the API returns a 429 error. Wait a moment and retry.
+
+
 ## Installation & Usage
 
-To install and use the **Riot Games** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/riot-games](https://vinkius.com/mcp/riot-games)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Riot Games** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `riot-games` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Riot Games** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "riot-games": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

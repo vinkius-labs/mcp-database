@@ -1,7 +1,6 @@
 # OpenCart MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opencart)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opencart-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opencart-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opencart)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **OpenCart** MCP server 
 > Customer #42: Sarah Johnson (sarah@example.com). Registered: Jan 15, 2024. Newsletter: subscribed. Default address: 456 Oak Ave, Portland, OR 97201. 12 orders placed, total lifetime value: $2,340. Last order: March 28 (#1241). Want me to pull that order's details?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent update order statuses — like marking an order as shipped?**
+Yes. The add_order_history tool pushes a new status entry to any order. Provide the order ID, the OpenCart status ID (e.g., 3 for Shipped), and an optional comment. The status change appears immediately in the admin panel and triggers any configured email notifications.
+
+**Q: Does it work with any OpenCart version?**
+This integration uses the native OpenCart REST API available in OpenCart 2.x and later. If your store is running OpenCart 1.x, the API endpoints won't be available. For OpenCart 3.x and 4.x, the API user setup is the same — just ensure the API user is enabled in System > Users > API.
+
+**Q: What about IP restrictions — will the API reject requests?**
+OpenCart's API enforces an IP whitelist by default. When creating your API user, add the IP address of your server to the 'IP Addresses' tab. If you're running through a cloud proxy, add that proxy's IP. Without this step, all API requests will be rejected with a permission error.
+
+
 ## Installation & Usage
 
-To install and use the **OpenCart** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opencart](https://vinkius.com/mcp/opencart)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenCart** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opencart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenCart** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opencart": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # OpenNode MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opennode)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opennode-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opennode-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opennode)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **OpenNode** MCP server 
 > Inspecting charge `ch_abc123` using `get_charge`... The charge is marked as 'paid' for 5000 satoshis, created on 2023-10-27, with the description 'API Access'.
 
 
+## ❓ FAQ
+
+**Q: How do I generate a new Bitcoin payment request?**
+Use the `create_charge` tool. Provide the amount in satoshis (or specify a currency like USD) and an optional description. The tool returns a BOLT11 Lightning invoice and an on-chain address.
+
+**Q: Can I preview a withdrawal before confirming it?**
+Yes. Call `initiate_withdrawal` with `auto_confirm` set to false. This generates a preview. You can then finalize it using `confirm_chain_withdrawal` or `confirm_ln_withdrawal` depending on the type.
+
+**Q: How do I check my past withdrawals?**
+You can use the `list_withdrawals` tool to retrieve a list of past withdrawals, with optional filters for page size, page number, and withdrawal type (like 'ln' or 'chain').
+
+
 ## Installation & Usage
 
-To install and use the **OpenNode** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opennode](https://vinkius.com/mcp/opennode)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenNode** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opennode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenNode** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opennode": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

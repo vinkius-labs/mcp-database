@@ -1,7 +1,6 @@
 # Vendor Scorecard Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vendor-scorecard-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vendor-scorecard-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vendor-scorecard-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vendor-scorecard-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Vendor Scorecard Calcu
 > Yes, Vendor B is currently at risk as their score is near the threshold for the Conditional tier.
 
 
+## ❓ FAQ
+
+**Q: How are vendor scores calculated?**
+Scores are calculated by multiplying each performance metric (like OTIF or Quality) by its assigned weight and summing the results. All weights must total 100%.
+
+**Q: Can I identify vendors at risk of disqualification?**
+Yes, by using the `detect_at_risk_vendors` tool, you can identify suppliers whose scores are approaching a lower performance tier based on a specified margin.
+
+**Q: What metrics are supported?**
+The system supports OTIF, Quality, Flexibility, Cost, and Responsiveness.
+
+
 ## Installation & Usage
 
-To install and use the **Vendor Scorecard Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vendor-scorecard-calculator](https://vinkius.com/mcp/vendor-scorecard-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vendor Scorecard Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vendor-scorecard-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vendor Scorecard Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vendor-scorecard-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

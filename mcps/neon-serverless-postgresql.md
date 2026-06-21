@@ -1,7 +1,6 @@
 # Neon (Serverless PostgreSQL) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neon-serverless-postgresql)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/neon-serverless-postgresql-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/neon-serverless-postgresql-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neon-serverless-postgresql)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Neon (Serverless Postg
 > Retrieving branch inventory… On 'br-12345', I've identified 2 databases: 'main_app' and 'analytics'. There are 3 active roles: 'neondb_owner', 'app_writer', and 'readonly_user'. I can help you verify the specific permissions for any of these roles if you'd like.
 
 
+## ❓ FAQ
+
+**Q: What is Neon's 'Zero-Copy Branching' and how do I use it through the agent?**
+Zero-copy branching allows you to clone a multi-terabyte database instantly using Copy-on-Write (CoW). Use the `create_branch` tool by providing a parent branch ID. Your agent will trigger the backend to generate an isolated clone in milliseconds, perfect for running migrations or testing features against production-like data.
+
+**Q: Can my agent retrieve the exact connection strings for my compute endpoints?**
+Yes. Use the `list_endpoints` tool with your Project ID. Your agent will retrieve the explicit hostnames (e.g., `ep-misty-water-123.aws.neon.tech`) used to actively ingest real query traffic to your serverless Postgres branches.
+
+**Q: How do I check the storage consumption for a specific Neon branch?**
+The `get_branch` tool retrieves the deconstructed execution footprint of an individual branch. Your agent will report the storage limits and exact number of bytes consumed uniquely by that branch's data delta since it split from its parent.
+
+
 ## Installation & Usage
 
-To install and use the **Neon (Serverless PostgreSQL)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/neon-serverless-postgresql](https://vinkius.com/mcp/neon-serverless-postgresql)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Neon (Serverless PostgreSQL)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `neon-serverless-postgresql` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Neon (Serverless PostgreSQL)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "neon-serverless-postgresql": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

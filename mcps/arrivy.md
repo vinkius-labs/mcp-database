@@ -1,7 +1,6 @@
 # Arrivy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arrivy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arrivy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arrivy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arrivy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Arrivy** MCP server us
 > Task 'T12345' is currently 'In Progress'. The crew arrived at 10:15 AM and is expected to complete the work by 11:30 AM.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Arrivy API Key?**
+Log in to your Arrivy account, go to **Settings > Integrations**, and you will find your API Key under the **Developer** or **API** section.
+
+**Q: Can I assign a crew to a task via this server?**
+Yes, you can use the `update_task` tool and provide the crew IDs in the update body to assign or reassign tasks.
+
+**Q: Does Arrivy support real-time ETAs?**
+Yes, Arrivy calculates real-time ETAs based on field personnel location. You can retrieve these via the `get_task` or `list_locations` tools.
+
+
 ## Installation & Usage
 
-To install and use the **Arrivy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/arrivy](https://vinkius.com/mcp/arrivy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Arrivy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `arrivy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Arrivy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "arrivy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Jotform MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jotform-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jotform-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jotform-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jotform-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Jotform** MCP server u
 > Job Application fields: 10. Full Name (text, required), Email (email, required), Phone (phone), Resume (file upload, PDF only, max 10MB), Cover Letter (textarea), Position (dropdown: Engineer, Designer, PM, Sales), Experience (number), LinkedIn (URL), Start Date (date), Referral Source (radio). This week: 8 submissions. Engineers: 4, Designers: 2, PMs: 1, Sales: 1. 6 have resumes attached.
 
 
+## ❓ FAQ
+
+**Q: Can I read form submissions and filter by date?**
+Yes. List all submissions for any form with date filters. Inspect individual entries with all field data including file uploads, signatures, and payment information.
+
+**Q: Can I access form analytics and reports?**
+Yes. View form reports with submission counts, conversion rates, and response analytics. Access aggregate data and trends for each form.
+
+**Q: Can I inspect form fields and configuration?**
+Yes. Use the form properties tools to see all fields, their types, validation rules, and form settings including notifications and integrations.
+
+
 ## Installation & Usage
 
-To install and use the **Jotform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jotform-alternative](https://vinkius.com/mcp/jotform-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Jotform** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jotform-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Jotform** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jotform-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

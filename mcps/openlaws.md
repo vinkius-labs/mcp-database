@@ -1,7 +1,6 @@
 # OpenLaws MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openlaws)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openlaws-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openlaws-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openlaws)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -155,12 +154,55 @@ Both citations are correctly formatted and verified against government sources.
 Would you like the full text of any of these updates, or shall I search for specific topics like 'remote work' or 'overtime'?
 
 
+## ❓ FAQ
+
+**Q: How do I get an OpenLaws API key and what authentication method is used?**
+Visit [**openlaws.us/api**](https://openlaws.us/api/) and click **Get API Access** to register. Once approved, you'll receive a Bearer token. Include it in the Authorization header as `Authorization: Bearer YOUR_TOKEN`. The API uses standard Bearer token authentication for all v1 endpoints at `https://api.openlaws.us/api/v1/`.
+
+**Q: Can I search statutes across all 50 states simultaneously?**
+Yes! Use the `search_statutes` tool without specifying a jurisdiction parameter to search all 53 jurisdictions (50 states + DC + Puerto Rico + federal) at once. This is perfect for 50-state surveys. Alternatively, scope your search to a specific jurisdiction by providing its ID (e.g., 'ca' for California, 'ny' for New York, 'us' for federal).
+
+**Q: How does citation validation work and what formats are supported?**
+Use the `validate_citation` tool with any standard legal citation format. The API will identify the original government source, validate the citation accuracy, and flag malformed citations. It supports Bluebook format (e.g., '42 U.S.C. § 1983', '347 U.S. 483 (Brown v. Board)'), state citations for all 50 states, DC, and Puerto Rico. This is ideal for validating citations in legal documents, spreadsheets, and databases.
+
+**Q: What legal data sources does OpenLaws cover?**
+OpenLaws covers ~4.3 million tracked sections across 53 jurisdictions with 100% federal statutes and regulations coverage. Data includes: United States Code (USC), Code of Federal Regulations (CFR), all 50 state statutes and regulations, DC and Puerto Rico laws, ~5-6 million case opinions (from Harvard CAP and CourtListener), US Constitution and all 50 state constitutions, and legislative history for federal laws.
+
+
 ## Installation & Usage
 
-To install and use the **OpenLaws** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openlaws](https://vinkius.com/mcp/openlaws)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenLaws** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openlaws` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenLaws** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openlaws": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

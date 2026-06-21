@@ -1,7 +1,6 @@
 # OKX MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/okx)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/okx-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/okx-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/okx)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **OKX** MCP server using
 > Market buy order for 0.01 BTC on BTC-USDT has been placed successfully. Order ID: 192837465. Trade mode: cash.
 
 
+## ❓ FAQ
+
+**Q: Can I check my current balance for specific coins like BTC or USDT?**
+Yes! Use the `get_balance` tool and provide a comma-separated list of currencies in the `ccy` parameter. The agent will return the available and frozen balances for those specific assets.
+
+**Q: How do I see my open positions for futures or swap markets?**
+You can use the `get_positions` tool. You can filter by `instType` (e.g., 'FUTURES' or 'SWAP') or provide a specific `instId` like 'BTC-USDT-SWAP' to see your entry price, size, and PnL.
+
+**Q: Is it possible to cancel an order if I change my mind?**
+Absolutely. Use the `cancel_order` tool by providing the `instId` and the `ordId` of the pending order. The agent will confirm if the cancellation was successful.
+
+
 ## Installation & Usage
 
-To install and use the **OKX** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/okx](https://vinkius.com/mcp/okx)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OKX** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `okx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OKX** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "okx": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

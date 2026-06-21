@@ -1,7 +1,6 @@
 # Instatus (Status Pages API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/instatus-status-pages-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/instatus-status-pages-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/instatus-status-pages-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/instatus-status-pages-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **Instatus (Status Pages
 > The 'Database' component on page cl-12345 has been successfully updated to 'OPERATIONAL'.
 
 
+## ❓ FAQ
+
+**Q: Can I update the status of a specific component like 'API' or 'Database'?**
+Yes! Use the `update_component` tool by providing the Page ID and Component ID. You can set the status to 'OPERATIONAL', 'PARTIAL_OUTAGE', 'MAJOR_OUTAGE', or 'UNDER_MAINTENANCE' instantly.
+
+**Q: How do I list all current incidents for a specific status page?**
+Simply ask the agent to run the `list_incidents` action for your target Page ID. It will return a list of all recorded incidents, including their current status and history.
+
+**Q: Is it possible to create a new incident report through the AI?**
+Absolutely. Use the `add_incident` tool. You can provide a name, message, and status, and the AI will publish the incident to your Instatus page immediately.
+
+
 ## Installation & Usage
 
-To install and use the **Instatus (Status Pages API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/instatus-status-pages-api](https://vinkius.com/mcp/instatus-status-pages-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Instatus (Status Pages API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `instatus-status-pages-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Instatus (Status Pages API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "instatus-status-pages-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

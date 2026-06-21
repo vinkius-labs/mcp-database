@@ -1,7 +1,6 @@
 # Zephyr Scale (SmartBear) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zephyr-scale-smartbear)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zephyr-scale-smartbear-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zephyr-scale-smartbear-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zephyr-scale-smartbear)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Zephyr Scale (SmartBea
 > Execution 12345678 Result: FAILED. Total steps: 5. Steps 1-3 Passed, Step 4 Failed: 'Clicking submit button returned no response'. Time taken: 45s. Would you like me to pull the linked Jira issue?
 
 
+## ❓ FAQ
+
+**Q: Can I check the specific test steps for a case through the agent?**
+Yes. The `get_test_case` tool allows your AI agent to retrieve the full script for any test key, providing the exact sequence of steps, test data, and expected results defined in Zephyr Scale.
+
+**Q: How do I see the progress of a specific test cycle via chat?**
+Use the `get_test_cycle` tool. Provide the unique cycle key, and your agent will return the cycle status, planned dates, and high-level execution statistics to help you monitor testing progress.
+
+**Q: Is it possible to see the results of individual test runs?**
+Absolutely. Using the `get_execution_details` tool, your agent can retrieve step-by-step results for any execution, including comments and execution time, helping you identify exactly where a test failed.
+
+
 ## Installation & Usage
 
-To install and use the **Zephyr Scale (SmartBear)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zephyr-scale-smartbear](https://vinkius.com/mcp/zephyr-scale-smartbear)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zephyr Scale (SmartBear)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zephyr-scale-smartbear` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zephyr Scale (SmartBear)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zephyr-scale-smartbear": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

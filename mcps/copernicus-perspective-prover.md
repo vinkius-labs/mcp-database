@@ -1,7 +1,6 @@
 # Copernicus Perspective Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/copernicus-perspective-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/copernicus-perspective-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/copernicus-perspective-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/copernicus-perspective-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Copernicus Perspective
 > EPICYCLES_IGNORED — 'Every new feature needs a new cache-busting strategy' — that is the epicycle signal. Ptolemy added a new epicycle for every planetary anomaly. You are adding a new invalidation rule for every feature. Count them: how many invalidation strategies exist today? Are they growing with each release? Redis Streams is ANOTHER epicycle on top of a model that may be fundamentally wrong. What if caching is not the right frame? What if the data model itself — if restructured — eliminates the need for most caching? Move the observer: look at this from the data consistency perspective, not the performance perspective.
 
 
+## ❓ FAQ
+
+**Q: How is this different from the Einstein Thought Experiment Prover?**
+Einstein changes the RULES — 'what if you rode a light beam?' He explores hypothetical scenarios by modifying physical laws. Copernicus changes the POSITION — 'what if the center is different?' He reframes existing reality from a different vantage point. Einstein creates new physics. Copernicus reorganizes existing observations.
+
+**Q: What is an 'epicycle' in a business context?**
+A workaround, exception, or special case added to make the current model work despite evidence it is wrong. 'We can work around that,' 'just add a flag for this case,' 'one more exception.' Ptolemy added 40+ epicycles to geocentrism. Each was logical. Together they proved the model was wrong. Count your workarounds — when they accumulate, the model needs replacing, not patching.
+
+**Q: Can I use this when I am satisfied with the current approach?**
+Especially then. Satisfaction with the current approach IS the default-lock. The geocentrists were satisfied for 1,400 years. The tool does not force you to change — it forces you to CHECK. If the current frame has few workarounds and the alternative is more complex, the verdict confirms: PERSPECTIVE_PROVEN with the old frame validated.
+
+
 ## Installation & Usage
 
-To install and use the **Copernicus Perspective Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/copernicus-perspective-prover](https://vinkius.com/mcp/copernicus-perspective-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Copernicus Perspective Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `copernicus-perspective-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Copernicus Perspective Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "copernicus-perspective-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

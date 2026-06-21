@@ -1,7 +1,6 @@
 # DOL (Department of Labor) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dol-department-of-labor)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dol-department-of-labor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dol-department-of-labor-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dol-department-of-labor)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **DOL (Department of Lab
 > Querying WHD compliance data for Texas... I have compiled the investigation records, including case IDs and findings related to the Fair Labor Standards Act (FLSA) for various employers in the region.
 
 
+## ❓ FAQ
+
+**Q: Can I filter OSHA inspection data by a specific state?**
+Yes! You can use the `filter` parameter in the `get_osha_inspections` tool with OData syntax, such as `state_code eq 'CA'` for California.
+
+**Q: What kind of information does the ETA data tool provide?**
+The `get_eta_data` tool fetches information regarding employment and training programs, as well as various labor market statistics managed by the Employment and Training Administration.
+
+**Q: How can I limit the number of results returned from a query?**
+All tools, such as `get_msha_violations` or `get_whd_compliance`, include a `top` parameter. Simply specify a number to limit the results to that amount.
+
+
 ## Installation & Usage
 
-To install and use the **DOL (Department of Labor)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dol-department-of-labor](https://vinkius.com/mcp/dol-department-of-labor)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DOL (Department of Labor)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dol-department-of-labor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DOL (Department of Labor)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dol-department-of-labor": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

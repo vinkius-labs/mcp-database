@@ -1,7 +1,6 @@
 # OpenSea MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opensea)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opensea-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opensea-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opensea)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Here are some examples of how you can interact with the **OpenSea** MCP server u
 > For wallet 0x123..., the profile name is 'CryptoCollector'. The account holds 2.5 ETH and 500 USDC. Would you like to see their NFT holdings as well?
 
 
+## ❓ FAQ
+
+**Q: Can I check the floor price and volume for a specific NFT collection?**
+Yes! Use the `get_collection_stats` tool with the collection slug. The agent will return real-time metrics including floor price, total volume, and sales counts.
+
+**Q: How do I retrieve the image and metadata for a specific NFT?**
+You can use the `get_nft_metadata` tool by providing the chain, contract address, and token ID. It returns detailed metadata including image URLs and external links.
+
+**Q: Can I see which wallets hold the most items in a collection?**
+Yes, the `get_collection_holders` tool provides a list of wallet addresses that currently hold items within a specific collection slug.
+
+
 ## Installation & Usage
 
-To install and use the **OpenSea** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opensea](https://vinkius.com/mcp/opensea)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenSea** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opensea` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenSea** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opensea": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

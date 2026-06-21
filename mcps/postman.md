@@ -1,7 +1,6 @@
 # Postman MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postman)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/postman-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/postman-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postman)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Postman** MCP server u
 > Looking at the `list_monitors` data, your 'Checkout Flow Monitor' failed consecutively on Saturday morning. The internal log indicates an assertion error mapping a `502 Bad Gateway` status on step 3 (`POST /cart`). All other monitors are currently healthy and passing.
 
 
+## ❓ FAQ
+
+**Q: Can the AI automatically write code using my internal API documentation?**
+Absolutely. If you use `get_collection` the AI unpacks the entire Postman hierarchy. Combine this by asking the AI to 'write a Python script to hit my Users Endpoint' and it will natively respect your headers, payload requirements, and auth settings without any context copy-pasting.
+
+**Q: How does the agent handle environments like production vs staging variables?**
+The agent can call `list_environments` exposing active configurations inside your workspace. If a collection points to `{{base_url}}`, the AI reads your environments array to resolve exactly what URLs or access keys map to staging versus production natively.
+
+**Q: Can I query test success rates via AI instead of dashboards?**
+Yes. The `list_monitors` connection unrolls the cron checks tied to your Postman collections. The AI inherently sees whether the latest automated integration tests succeeded or failed, making status reports conversational.
+
+
 ## Installation & Usage
 
-To install and use the **Postman** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/postman](https://vinkius.com/mcp/postman)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Postman** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `postman` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Postman** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "postman": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

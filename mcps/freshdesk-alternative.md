@@ -1,7 +1,6 @@
 # Freshdesk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshdesk-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freshdesk-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freshdesk-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshdesk-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Freshdesk** MCP server
 > Done! I've created the new ticket for Sarah. The ID is 103 and I've set the priority to 'Low'. Your team will see this in the Freshdesk queue immediately.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Freshdesk API Key?**
+Log in to Freshdesk, click your profile icon (top right), and select **Profile Settings**. Your API Key is displayed on the right sidebar.
+
+**Q: Can I filter tickets by specific status codes?**
+Yes! Use the `list_tickets` tool and specify filters like 'open', 'pending', or use json for granular status values (e.g. 2 for Open, 5 for Closed).
+
+**Q: Is it possible to list knowledge base folders via AI?**
+Absolutely. Use the `list_help_folders` tool to retrieve the organizational structure of your Freshdesk help center.
+
+
 ## Installation & Usage
 
-To install and use the **Freshdesk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/freshdesk-alternative](https://vinkius.com/mcp/freshdesk-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Freshdesk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `freshdesk-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Freshdesk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "freshdesk-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

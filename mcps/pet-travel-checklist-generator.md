@@ -1,7 +1,6 @@
 # Pet Travel Checklist Generator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pet-travel-checklist-generator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pet-travel-checklist-generator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pet-travel-checklist-generator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pet-travel-checklist-generator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,52 @@ Here are some examples of how you can interact with the **Pet Travel Checklist G
 > The `estimate_prep_timeline` tool will calculate the recommended preparation days and breakdown stages like crate training for your rabbit.
 
 
+## ❓ FAQ
+
+**Q: What information do I need to provide?**
+You need to specify the destination type (Domestic or International), the transport mode (Air, Car, or Bus), and the species of your pet.
+
+**Q: Does it cover international travel requirements?**
+Yes, the `check_documentation_requirements` tool provides specific details for international travel, including microchip verification and health certificate protocols.
+
+**Q: Can I get advice on pet carriers?**
+Yes, use the `get_carrier_guidelines` tool to find recommended crate specifications and safety features based on your travel method.
+
+
 ## Installation & Usage
 
-To install and use the **Pet Travel Checklist Generator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pet-travel-checklist-generator](https://vinkius.com/mcp/pet-travel-checklist-generator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pet Travel Checklist Generator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pet-travel-checklist-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pet Travel Checklist Generator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pet-travel-checklist-generator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

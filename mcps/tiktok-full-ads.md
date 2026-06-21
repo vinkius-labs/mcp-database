@@ -1,7 +1,6 @@
 # TikTok Full Ads MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tiktok-full-ads)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tiktok-full-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tiktok-full-ads-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tiktok-full-ads)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **TikTok Full Ads** MCP 
 > I've generated the integrated report. Your total spend was $1,500 with 250,000 impressions and a CTR of 1.2%. Would you like a breakdown by ad group?
 
 
+## ❓ FAQ
+
+**Q: How do I get my TikTok Ads Access Token?**
+Create a Developer account at [**TikTok for Business**](https://ads.tiktok.com/marketing_api/homepage), create an App, and perform the OAuth flow to generate a long-lived Access Token. Copy and paste it below.
+
+**Q: Can the agent list my creative video assets?**
+Yes. Use the `list_creatives` tool providing your Advertiser ID. Your agent will retrieve metadata for all uploaded creative assets, helping you audit your content library.
+
+**Q: Is it possible to see audience lists via the agent?**
+Yes. The `list_audiences` tool allows your agent to retrieve all custom audiences configured in your advertiser account, ensuring your segmentation is on track.
+
+
 ## Installation & Usage
 
-To install and use the **TikTok Full Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tiktok-full-ads](https://vinkius.com/mcp/tiktok-full-ads)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TikTok Full Ads** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tiktok-full-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TikTok Full Ads** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tiktok-full-ads": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

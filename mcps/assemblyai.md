@@ -1,7 +1,6 @@
 # AssemblyAI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/assemblyai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/assemblyai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/assemblyai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/assemblyai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **AssemblyAI** MCP serve
 > I've retrieved your transcript history. You have 10 completed jobs, including recordings from last week's webinars. Would you like the details for any specific job?
 
 
+## ❓ FAQ
+
+**Q: How do I find my AssemblyAI API Key?**
+Log in to your [**AssemblyAI dashboard**](https://www.assemblyai.com/app), and you will find your API Key on the main home page. Copy and paste it below.
+
+**Q: What audio formats are supported?**
+AssemblyAI supports most common audio and video formats, including MP3, WAV, AAC, MP4, and others. Simply provide a public URL to the file.
+
+**Q: Can the agent identify different speakers?**
+Yes. When starting a job via `transcribe_audio`, set the `speaker_labels` parameter to true. Your agent will return the text categorized by speaker ID.
+
+
 ## Installation & Usage
 
-To install and use the **AssemblyAI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/assemblyai](https://vinkius.com/mcp/assemblyai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AssemblyAI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `assemblyai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AssemblyAI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "assemblyai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

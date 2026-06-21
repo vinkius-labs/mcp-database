@@ -1,7 +1,6 @@
 # GoTo Meeting MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goto-meeting)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/goto-meeting-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/goto-meeting-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goto-meeting)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **GoTo Meeting** MCP ser
 > Last month's meeting history: 47 meetings held. Total duration: 62 hours 15 minutes. Average meeting length: 1h 19m. Most active day: Wednesday (14 meetings). Longest meeting: 'Board Review Q1' (3h 12m, 12 attendees). Organizers in your account: 1) Sarah Chen (sarah@company.com, Admin). 2) Mike Torres (mike@company.com, Organizer). 3) Lisa Park (lisa@company.com, Organizer). 4) API Bot (bot@company.com, Organizer). Would you like to schedule a new meeting or check details for a specific past session?
 
 
+## ❓ FAQ
+
+**Q: Can I schedule a meeting directly through the AI agent?**
+Yes! The `create_meeting` action accepts a subject, start time (ISO 8601), end time (ISO 8601), and an optional meeting type ('immediate', 'scheduled', or 'recurring'). It returns the meeting ID, connection URL, and dial-in details. Use `list_meetings` to verify the meeting appears in your upcoming schedule.
+
+**Q: Can I view the history of past meetings including attendance?**
+Yes. The `list_meeting_history` tool retrieves all past meetings with start times, durations, and attendance records. Use `get_meeting_details` with a specific Meeting ID for the complete configuration and connection details of any meeting.
+
+**Q: How does GoTo Meeting authentication work?**
+GoTo Meeting uses OAuth 2.0 with an **Access Token** sent as a Bearer token. You can generate a Personal Access Token from the GoTo Developer Portal or configure a full OAuth client for production use. The token authenticates against the `api.getgo.com/G2M/v3` endpoint.
+
+
 ## Installation & Usage
 
-To install and use the **GoTo Meeting** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/goto-meeting](https://vinkius.com/mcp/goto-meeting)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GoTo Meeting** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `goto-meeting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GoTo Meeting** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "goto-meeting": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

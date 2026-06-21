@@ -1,7 +1,6 @@
 # Public Suffix Extractor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/public-suffix-extractor)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/public-suffix-extractor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/public-suffix-extractor-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/public-suffix-extractor)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -52,12 +51,52 @@ Here are some examples of how you can interact with the **Public Suffix Extracto
 > Domain: mybucket.s3.amazonaws.com | TLD: s3.amazonaws.com (PSL-listed cloud suffix)
 
 
+## ❓ FAQ
+
+**Q: Why can't I just split the domain by dots?**
+Because TLDs like .co.uk, .com.br, and .org.au have multiple parts. Splitting by dots would incorrectly identify the root domain. The PSL has 9,000+ entries.
+
+**Q: Does it handle cloud provider domains?**
+Yes. Domains like *.amazonaws.com, *.azurewebsites.net, and *.cloudfront.net are in the PSL and handled correctly.
+
+**Q: Can I pass a full URL with protocol and path?**
+Yes. The engine automatically strips the protocol (http/https), path, and query parameters before parsing.
+
+
 ## Installation & Usage
 
-To install and use the **Public Suffix Extractor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/public-suffix-extractor](https://vinkius.com/mcp/public-suffix-extractor)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Public Suffix Extractor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `public-suffix-extractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Public Suffix Extractor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "public-suffix-extractor": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

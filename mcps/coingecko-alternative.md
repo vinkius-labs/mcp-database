@@ -1,7 +1,6 @@
 # CoinGecko MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coingecko-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coingecko-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coingecko-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coingecko-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Here are some examples of how you can interact with the **CoinGecko** MCP server
 > The total crypto market cap is approximately $2.45 trillion, with a 24h volume of $85 billion. Bitcoin dominance stands at 52.1% and Ethereum at 16.8%.
 
 
+## ❓ FAQ
+
+**Q: How can I check the current price of multiple cryptocurrencies at once?**
+You can use the `get_simple_price` tool. Just provide a comma-separated list of IDs (e.g., 'bitcoin,ethereum,solana') and the target currency (e.g., 'usd') to get instant valuations.
+
+**Q: Can the AI identify which coins are currently trending in the market?**
+Yes! By using the `get_trending` tool, your agent will retrieve the top-7 trending coins on CoinGecko as searched by users in the last 24 hours.
+
+**Q: Is it possible to get detailed information about a specific token's contract on a network?**
+Absolutely. Use the `get_onchain_token` tool with the network ID and contract address to fetch precise on-chain data, including pool information and token metadata.
+
+
 ## Installation & Usage
 
-To install and use the **CoinGecko** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coingecko-alternative](https://vinkius.com/mcp/coingecko-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CoinGecko** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coingecko-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CoinGecko** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coingecko-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

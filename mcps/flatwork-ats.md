@@ -1,7 +1,6 @@
 # Flatwork ATS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flatwork-ats)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flatwork-ats-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flatwork-ats-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flatwork-ats)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Flatwork ATS** MCP ser
 > Hiring stage updated! Application 'app_987' has been moved to 'Interview'. The candidate and hiring team have been notified of the stage change in the system.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Flatwork API Key?**
+Log in to your Flatwork account, navigate to **Settings** > **API**, and generate or copy your unique secret key.
+
+**Q: Can I move a candidate to a custom hiring stage?**
+Yes! Use the `update_application_status` tool and provide the string name of your custom stage as defined in your ATS workflow.
+
+**Q: How do I add new candidates found via LinkedIn?**
+Use the `create_applicant` tool and pass a JSON string containing the candidate's details like first name, last name, and email address.
+
+
 ## Installation & Usage
 
-To install and use the **Flatwork ATS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flatwork-ats](https://vinkius.com/mcp/flatwork-ats)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Flatwork ATS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flatwork-ats` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Flatwork ATS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flatwork-ats": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

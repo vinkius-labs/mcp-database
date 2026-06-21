@@ -1,7 +1,6 @@
 # Player Spending LTV Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/player-spending-ltv-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/player-spending-ltv-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/player-spending-ltv-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/player-spending-ltv-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -49,12 +48,52 @@ Here are some examples of how you can interact with the **Player Spending LTV Ca
 > Reducing the churn rate by one percentage point results in a value increase of 0.70 per player.
 
 
+## ❓ FAQ
+
+**Q: What is the purpose of this MCP server?**
+It provides tools to calculate key gaming metrics like LTV, Breakeven CAC, and the impact of churn reduction.
+
+**Q: How is the revenue distribution calculated?**
+It uses a hardcoded 80/20 rule principle common in mobile gaming to distribute revenue across free, dolphin, and whale segments.
+
+**Q: Can I calculate the value of a 1% churn reduction?**
+Yes, using the `get_retention_impact` tool, you can see exactly how much revenue is unlocked by reducing monthly churn.
+
+
 ## Installation & Usage
 
-To install and use the **Player Spending LTV Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/player-spending-ltv-calculator](https://vinkius.com/mcp/player-spending-ltv-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Player Spending LTV Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `player-spending-ltv-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Player Spending LTV Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "player-spending-ltv-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

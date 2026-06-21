@@ -1,7 +1,6 @@
 # Microsoft Teams Webhook Notifier MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/microsoft-teams-webhook-notifier)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/microsoft-teams-webhook-notifier-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/microsoft-teams-webhook-notifier-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/microsoft-teams-webhook-notifier)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,49 @@ Here are some examples of how you can interact with the **Microsoft Teams Webhoo
 > The rich MessageCard alert detailing the bug has been successfully posted to Teams.
 
 
+## ❓ FAQ
+
+**Q: Can the agent read messages from Teams with this?**
+No. Teams Incoming Webhooks are strictly unidirectional (Push only). The agent can only *send* messages to the authorized channel. It cannot read the channel history, see replies, or access other channels or SharePoint files. This ensures absolute Zero-Trust containment.
+
+**Q: How do I create an MS Teams Webhook URL?**
+In Microsoft Teams, navigate to the channel, click '...', select 'Connectors', search for 'Incoming Webhook', and add it. Name your webhook and copy the generated URL.
+
+
 ## Installation & Usage
 
-To install and use the **Microsoft Teams Webhook Notifier** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/microsoft-teams-webhook-notifier](https://vinkius.com/mcp/microsoft-teams-webhook-notifier)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Microsoft Teams Webhook Notifier** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `microsoft-teams-webhook-notifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Microsoft Teams Webhook Notifier** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "microsoft-teams-webhook-notifier": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

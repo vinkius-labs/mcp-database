@@ -1,7 +1,6 @@
 # ECB Exchange Rates — Official EUR Reference Rates MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecb-exchange-rates-official-eur-reference-rates)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ecb-exchange-rates-official-eur-reference-rates-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ecb-exchange-rates-official-eur-reference-rates-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecb-exchange-rates-official-eur-reference-rates)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ ECB reference rates, 2026-04-03
 Data synced directly securely globally.
 
 
+## ❓ FAQ
+
+**Q: When are ECB rates published?**
+ECB reference rates are published every business day at approximately 16:00 CET. They are not published on TARGET closing days (weekends and certain holidays).
+
+**Q: Do I need an API key to access the ECB exchange rates?**
+No. The ECB provides its reference exchange rates as a completely free and open public good, requiring no authentication or API keys for retrieval.
+
+**Q: Can I query historical data and past performance?**
+Yes, you can pull complete structural snapshots covering specific chronological windows daily, monthly, or annually scaling back efficiently using the respective historical endpoints provided.
+
+
 ## Installation & Usage
 
-To install and use the **ECB Exchange Rates — Official EUR Reference Rates** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ecb-exchange-rates-official-eur-reference-rates](https://vinkius.com/mcp/ecb-exchange-rates-official-eur-reference-rates)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ECB Exchange Rates — Official EUR Reference Rates** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ecb-exchange-rates-official-eur-reference-rates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ECB Exchange Rates — Official EUR Reference Rates** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ecb-exchange-rates-official-eur-reference-rates": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

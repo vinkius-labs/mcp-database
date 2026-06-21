@@ -1,7 +1,6 @@
 # Stanford CrossRef MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-crossref)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stanford-crossref-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stanford-crossref-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-crossref)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -114,12 +113,52 @@ Here are some examples of how you can interact with the **Stanford CrossRef** MC
 > I've retrieved all DOI-registered works for this ORCID via CrossRef, showing titles, journals, publication dates, and citation counts for each.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No. The CrossRef API is fully public. Including a mailto address gets you into the "polite pool" with higher rate limits, which this server handles automatically.
+
+**Q: What is a DOI?**
+A Digital Object Identifier (DOI) is a unique, permanent identifier assigned to academic publications, datasets, and other research outputs. Format: "10.1038/s41586-021-03819-2". CrossRef is the largest DOI registration agency with over 150 million registered DOIs.
+
+**Q: Can I search by ORCID?**
+Yes. You can look up all works associated with a researcher's ORCID identifier. ORCID provides a unique, persistent identifier for researchers — similar to what DOI does for publications.
+
+
 ## Installation & Usage
 
-To install and use the **Stanford CrossRef** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stanford-crossref](https://vinkius.com/mcp/stanford-crossref)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Stanford CrossRef** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stanford-crossref` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Stanford CrossRef** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stanford-crossref": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

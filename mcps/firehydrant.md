@@ -1,7 +1,6 @@
 # FireHydrant MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firehydrant)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firehydrant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firehydrant-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firehydrant)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **FireHydrant** MCP serv
 > Note added! Your update has been successfully posted to the timeline for incident 'inc_123'. Responders will see this investigation update immediately.
 
 
+## ❓ FAQ
+
+**Q: How do I declare a new incident using the agent?**
+You can use the 'create_incident' tool. Simply provide a name and optionally a summary and severity level. The agent will trigger the declaration in FireHydrant and return the new incident details.
+
+**Q: Can I see recent infrastructure changes using this server?**
+Yes! The 'list_change_events' tool retrieves a history of recent changes. This is extremely useful for identifying potential root causes during an active incident investigation.
+
+**Q: How do I add a status update to an ongoing incident?**
+Use the 'add_incident_note' tool. You'll need the Incident ID and the text of your update. The note will be immediately posted to the incident's timeline for all responders to see.
+
+
 ## Installation & Usage
 
-To install and use the **FireHydrant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/firehydrant](https://vinkius.com/mcp/firehydrant)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FireHydrant** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `firehydrant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FireHydrant** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "firehydrant": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

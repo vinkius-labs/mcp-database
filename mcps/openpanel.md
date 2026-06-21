@@ -1,7 +1,6 @@
 # OpenPanel MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openpanel)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openpanel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openpanel-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openpanel)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **OpenPanel** MCP server
 > Successfully incremented the 'credits' property by 50 for profile pro_user_01.
 
 
+## ❓ FAQ
+
+**Q: How do I track a specific user action like a button click?**
+Use the `track_event` tool. Provide the event name (e.g., 'Button Clicked') and optionally include a `profile_id` and custom `properties` to add context to the action.
+
+**Q: Can I update user profile information or traits?**
+Yes! Use the `identify_user` tool with the user's `profile_id`. You can pass a JSON object of `properties` to set or update traits like email, name, or subscription status.
+
+**Q: How do I manage numeric counters like 'points' or 'credits' for a user?**
+You can use `increment_property` to increase a value or `decrement_property` to decrease it. Just specify the `profile_id`, the `property` name, and the `value` to change.
+
+
 ## Installation & Usage
 
-To install and use the **OpenPanel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openpanel](https://vinkius.com/mcp/openpanel)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenPanel** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openpanel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenPanel** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openpanel": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

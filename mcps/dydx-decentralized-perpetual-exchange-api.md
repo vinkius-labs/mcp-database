@@ -1,7 +1,6 @@
 # dYdX (Decentralized Perpetual Exchange API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dydx-decentralized-perpetual-exchange-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dydx-decentralized-perpetual-exchange-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dydx-decentralized-perpetual-exchange-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dydx-decentralized-perpetual-exchange-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **dYdX (Decentralized Pe
 > Checking account state... You have one open long position in BTC-USD (size: 0.1 BTC). Your total equity is $5,200.40 with a buying power of $15,000.
 
 
+## ❓ FAQ
+
+**Q: Can I check my current open positions and account balance?**
+Yes. You can use `v4_list_positions` to see all active trades and `v4_get_account` with your address to retrieve balances and equity.
+
+**Q: How do I get the latest market price and orderbook depth?**
+Use the `v4_get_market` tool for general info or `v4_get_orderbook` for the current L2 state of any specific market like BTC-USD.
+
+**Q: Is it possible to place or cancel trades through the AI?**
+Yes. The `v4_create_order` tool allows you to place limit or market orders, and `v4_cancel_order` lets you cancel them using their Order ID.
+
+
 ## Installation & Usage
 
-To install and use the **dYdX (Decentralized Perpetual Exchange API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dydx-decentralized-perpetual-exchange-api](https://vinkius.com/mcp/dydx-decentralized-perpetual-exchange-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **dYdX (Decentralized Perpetual Exchange API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dydx-decentralized-perpetual-exchange-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **dYdX (Decentralized Perpetual Exchange API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dydx-decentralized-perpetual-exchange-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

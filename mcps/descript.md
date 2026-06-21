@@ -1,7 +1,6 @@
 # Descript MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/descript)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/descript-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/descript-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/descript)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,55 @@ Here are some examples of how you can interact with the **Descript** MCP server 
 > Your export of 'Q1 Product Demo' is complete. Format: MP4 (1080p). File size: 245 MB. Download link is ready and valid for 24 hours.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Descript API token?**
+Log in to your Descript account at **descript.com**. Navigate to **Settings** (click your profile icon). In the left sidebar, select **API tokens**. Click the **Create token** button, give it a descriptive name, and select the specific **Drive** you want it associated with. Copy the token immediately — it will **not** be shown again after you close the window. Paste it into the configuration field below.
+
+**Q: Can I convert a podcast transcript into a blog post automatically?**
+Yes. Ask your AI agent to pull the full transcript from a Descript project, then instruct it to reformat the content into a structured blog post. It retrieves speaker labels, timestamps, and the complete text — perfect for creating show notes, summaries, or full articles from your recordings.
+
+**Q: What if I work across multiple Descript drives?**
+Each API token is tied to a specific Drive. If you work across multiple drives (e.g., separate drives for different shows or clients), generate a separate token for each drive and configure multiple integrations. Your AI agent can then query projects from any of your drives.
+
+**Q: Is this useful for agencies producing video content for clients?**
+Absolutely. Agencies can use the AI agent to pull transcripts across client projects, track export statuses, and retrieve download links — all from a single conversational interface. No need to log in and out of different client workspaces or manually download files from the Descript dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **Descript** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/descript](https://vinkius.com/mcp/descript)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Descript** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `descript` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Descript** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "descript": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

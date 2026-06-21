@@ -1,7 +1,6 @@
 # Motion (AI Calendar & Task Management) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/motion-ai-calendar-task-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/motion-ai-calendar-task-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/motion-ai-calendar-task-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/motion-ai-calendar-task-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Motion (AI Calendar & 
 > Retrieving AI-optimized schedule… I've identified your time blocks for today: 1) 09:00 - 'Email Triage', 2) 10:30 - 'Review PR #456', 3) 14:00 - 'Design Sync'. Motion has successfully resolved 5 tasks into your free slots. No priority conflicts detected.
 
 
+## ❓ FAQ
+
+**Q: How does Motion's AI auto-scheduling work through the agent?**
+When you use the `create_task` tool, you specify a priority (ASAP to LOW). Your agent dispatches this to Motion, which immediately finds the best available blocks in your calendar, ensuring your high-priority items are scheduled first without manual intervention.
+
+**Q: Can I move tasks between different workspaces through a conversation?**
+Yes. Use the `move_task` tool by providing the Task ID and the Destination Workspace ID. Your agent will update the task's logic container, allowing you to organize your schedule across personal and professional boundaries seamlessly.
+
+**Q: How do I see my projected completion times for all tasks in a workspace?**
+The `get_schedule` tool retrieves the AI-optimized timeline for a specific Workspace ID. Your agent will report the projected time blocks for each task, showing you exactly how Motion's AI has resolved your daily priorities.
+
+
 ## Installation & Usage
 
-To install and use the **Motion (AI Calendar & Task Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/motion-ai-calendar-task-management](https://vinkius.com/mcp/motion-ai-calendar-task-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Motion (AI Calendar & Task Management)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `motion-ai-calendar-task-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Motion (AI Calendar & Task Management)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "motion-ai-calendar-task-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Payhip MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payhip)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/payhip-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/payhip-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payhip)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Payhip** MCP server us
 > License LK-8847-ABCD is valid and active. Product: Premium Plugin Suite. Purchased by: tech@meridian.io on March 15, 2025. Current usage: 3 of 5 allowed activations. Last activation: May 2nd from IP 192.168.1.45. The license is set to renew annually on March 15, 2026.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific coupon by its ID?**
+Yes! Use the `get_coupon` tool with the Coupon ID. Your agent will respond with complete metadata, including discount type, value, and usage limits in seconds.
+
+**Q: How do I find my Payhip API Key?**
+Log in to your Payhip account, navigate to **Account** > **Settings** > **Developer**, and you will find your unique secret API key there.
+
+**Q: Does this work for physical products?**
+The current MCP implementation focuses on coupon management and digital license verification. Physical product orchestration may be added as Payhip expands its API capabilities.
+
+
 ## Installation & Usage
 
-To install and use the **Payhip** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/payhip](https://vinkius.com/mcp/payhip)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Payhip** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `payhip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Payhip** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "payhip": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

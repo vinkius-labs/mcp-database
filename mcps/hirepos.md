@@ -1,7 +1,6 @@
 # HirePOS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hirepos)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hirepos-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hirepos-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hirepos)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **HirePOS** MCP server u
 > Unpaid invoices: 5 outstanding. 1) INV-2089 — BuildCo, $1,350 (Hire #1045, Excavator). 2) INV-2091 — QuickBuild, $540 (Hire #1052, Mixers). 3) INV-2094 — HomeReno, $280 (Hire #1058, Scaffolding). 4) INV-2095 — GardenPro, $190 (Hire #1060, Mower). 5) INV-2096 — CleanCrew, $475 (Hire #1061, Pressure Washer). Total outstanding: $2,835. Power Tools category: 8 items. Available: Circular Saw ($35/day), Angle Grinder ($25/day), Impact Driver ($20/day), Jigsaw ($15/day). On hire: Drill Press, Router, Planer, Belt Sander.
 
 
+## ❓ FAQ
+
+**Q: Can I check if a specific item is available for a date range?**
+Yes. Use `check_item_availability` with the Item ID, start date, and end date (YYYY-MM-DD format) to verify if the item is free for that period. Use `list_availability` for a complete overview of all items and their current availability status.
+
+**Q: Can I track overdue rentals that haven't been returned?**
+Yes. The `list_overdue_hires` tool retrieves all rentals past their return date with customer info, item details, and days overdue. Use `list_hires_by_status` with 'overdue' status for the same result, or filter by 'active', 'returned', or 'pending'.
+
+**Q: Can I create a new rental booking through the AI agent?**
+Yes. Use `create_hire` with a JSON payload containing customer ID, item IDs, start date, end date, and any special instructions. Use `list_items` to browse available equipment and `list_customers` to find the customer. Use `create_customer` to add a new customer if needed.
+
+
 ## Installation & Usage
 
-To install and use the **HirePOS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hirepos](https://vinkius.com/mcp/hirepos)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HirePOS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hirepos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HirePOS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hirepos": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

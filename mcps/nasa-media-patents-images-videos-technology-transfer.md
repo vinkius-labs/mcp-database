@@ -1,7 +1,6 @@
 # NASA Media & Patents — Images, Videos & Technology Transfer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-media-patents-images-videos-technology-transfer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nasa-media-patents-images-videos-technology-transfer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nasa-media-patents-images-videos-technology-transfer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-media-patents-images-videos-technology-transfer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Each with full-resolution download URLs.
 > NASA holds numerous robotics patents available for licensing. Notable ones include a 'Robotic Gripper with Tactile Feedback' developed for the ISS, and a 'Tendon-Driven Anthropomorphic Robotic Hand' from JPL.
 
 
+## ❓ FAQ
+
+**Q: Can I use NASA images commercially?**
+Most NASA images are in the public domain and free for commercial use. Some images from partner agencies (ESA, JAXA) may have restrictions — check the copyright field in the metadata.
+
+**Q: Are audio files also included in the media library?**
+Yes, the NASA Image and Video Library includes historical audio clips, such as the Apollo 11 moon landing broadcasts, space shuttle mission communications, and sonifications of cosmic data.
+
+**Q: What kind of technologies are listed under Technology Transfer?**
+The Technology Transfer portfolio includes software, patents, and spinoff technologies originally developed for space exploration, ranging from advanced materials to health and medicine innovations.
+
+
 ## Installation & Usage
 
-To install and use the **NASA Media & Patents — Images, Videos & Technology Transfer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nasa-media-patents-images-videos-technology-transfer](https://vinkius.com/mcp/nasa-media-patents-images-videos-technology-transfer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NASA Media & Patents — Images, Videos & Technology Transfer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nasa-media-patents-images-videos-technology-transfer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NASA Media & Patents — Images, Videos & Technology Transfer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nasa-media-patents-images-videos-technology-transfer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

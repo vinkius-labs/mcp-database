@@ -1,7 +1,6 @@
 # CloudLex Legal MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudlex-legal)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudlex-legal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudlex-legal-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudlex-legal)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -157,12 +156,55 @@ Here are some examples of how you can interact with the **CloudLex Legal** MCP s
 > Case created successfully! 'Smith v. ABC Corporation - Workplace Injury' has been created and linked to client John Smith. Case status is set to Open, practice area is Workers' Compensation. You can now add documents, medical records, tasks, and track expenses for this case.
 
 
+## ❓ FAQ
+
+**Q: What features of CloudLex are available through this API?**
+The API provides access to: Cases/Matters (CRUD operations), Contacts/Clients (create and list), Documents (list by case), Tasks (list by case), Medical Records (list by case), Liens (list by case), Communications (list by case), and Expenses (list by case). You can search cases by keyword, filter by status and practice area, and view all cases for a specific client.
+
+**Q: How do I get a CloudLex API key?**
+Log in to your CloudLex account at cloudlex.com, navigate to Settings → Integrations or API Settings, and generate an API key. The key gives you access to your firm's case data, client information, documents, medical records, and expenses. Contact CloudLex support if you don't see the API option in your account.
+
+**Q: Can I create new cases and clients through the API?**
+Yes! You can create new cases with case name, client assignment, status, practice area, and incident date. You can also create new contacts with first name, last name, email, phone, and contact type (Client, Opposing Party, Witness, Medical Provider, Expert). Use `create_cloudlex_case` and `create_cloudlex_client` tools for these operations.
+
+**Q: What types of contacts can I manage in CloudLex?**
+CloudLex supports multiple contact types essential for personal injury practice: Clients (injured parties), Opposing Parties (defendants, insurance adjusters), Witnesses (eyewitnesses, expert witnesses), Medical Providers (doctors, hospitals, physical therapists), and Experts (medical experts, accident reconstructionists, economists). Each contact type can be linked to specific cases and communications.
+
+
 ## Installation & Usage
 
-To install and use the **CloudLex Legal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cloudlex-legal](https://vinkius.com/mcp/cloudlex-legal)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CloudLex Legal** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cloudlex-legal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CloudLex Legal** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cloudlex-legal": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

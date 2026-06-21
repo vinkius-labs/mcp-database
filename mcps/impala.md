@@ -1,7 +1,6 @@
 # Impala MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/impala)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/impala-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/impala-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/impala)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Impala** MCP server us
 > I found 8 hotels in central Tokyo matching your criteria. Top suggestions include The Ritz-Carlton Tokyo (4.8/5) and the Palace Hotel Tokyo (4.7/5). Would you like to check their current rates?
 
 
+## ❓ FAQ
+
+**Q: What is Impala?**
+Impala is a unified hotel data platform — the 'Stripe for hotels.' One API to search, compare, and book hotels worldwide.
+
+**Q: Does Impala provide real-time availability and pricing?**
+Yes, Impala connects directly to property management systems (PMS) to provide real-time room availability, up-to-date dynamic pricing, and exact cancellation policies.
+
+**Q: Is test data available for developers without making real bookings?**
+Yes, Impala provides a Sandbox environment with realistic test data, allowing developers to safely test search, availability updates, and simulated booking flows.
+
+
 ## Installation & Usage
 
-To install and use the **Impala** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/impala](https://vinkius.com/mcp/impala)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Impala** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `impala` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Impala** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "impala": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

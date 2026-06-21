@@ -1,7 +1,6 @@
 # Buy Me A Coffee MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buy-me-a-coffee)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/buy-me-a-coffee-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/buy-me-a-coffee-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buy-me-a-coffee)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Buy Me A Coffee** MCP 
 > You have 3 extras available: 'E-book: Creator Guide' ($15), '1-on-1 Consultation' ($50), and 'Custom Illustration' ($30).
 
 
+## ❓ FAQ
+
+**Q: Can I check my total number of supporters using the agent?**
+Yes! Use the `get_account_stats` tool. Your agent will fetch the core statistics, including the total count of supporters from your Buy Me A Coffee account.
+
+**Q: How do I list all my active membership subscriptions?**
+Simply ask the agent to `list_memberships`. It will retrieve the list of all active and inactive subscriptions from your Buy Me A Coffee account, including payer names and emails.
+
+**Q: Does the integration allow creating a new post?**
+The current toolset is focused on querying and monitoring (Read-Only) for safety and data retrieval. Creating or updating posts should be managed through the Buy Me A Coffee creator dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **Buy Me A Coffee** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/buy-me-a-coffee](https://vinkius.com/mcp/buy-me-a-coffee)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Buy Me A Coffee** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `buy-me-a-coffee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Buy Me A Coffee** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "buy-me-a-coffee": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

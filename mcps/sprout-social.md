@@ -1,7 +1,6 @@
 # Sprout Social MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sprout-social)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sprout-social-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sprout-social-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sprout-social)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,52 @@ Your X profile sustained healthy organic virality this period. Should I query th
 The post successfully resides securely encapsulated within Sprout Social backend ready to automatically clear pipelines at your allocated interval block. Use `list_scheduled_posts` to re-audit if desired.
 
 
+## ❓ FAQ
+
+**Q: Can the AI really create and publish a post sequentially?**
+Yes. Once you gather valid endpoints using `list_profiles`, you can instruct the AI to construct content. When instructed, the bot calls `create_social_post`, supplying your generated text payload and matching the ID, broadcasting it natively. It can also assign scheduled timestamps for delayed publishing.
+
+**Q: How can I extract sentiment from a listening topic intelligently?**
+Use the tool `list_listening_topics` to find the exact ID representing a brand trend. Ask the AI: "Diagnose listening id '123' for the past month". It will automatically run `get_listening_analytics`, interpreting the JSON outputs consisting of sentiment ratios, mention volumes, and mapping the sentiment securely inside your chat.
+
+**Q: Do I need to leave a tab logged into Sprout Social open?**
+No, this is completely headless. As long as you provided the `SP_TOKEN` and `SP_CUSTOMER_ID` strings globally to your MCP integration parameters, the AI interacts with REST endpoints securely and natively in the background.
+
+
 ## Installation & Usage
 
-To install and use the **Sprout Social** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sprout-social](https://vinkius.com/mcp/sprout-social)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sprout Social** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sprout-social` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sprout Social** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sprout-social": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

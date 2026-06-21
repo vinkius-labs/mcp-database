@@ -1,7 +1,6 @@
 # Webflow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webflow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/webflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/webflow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webflow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,55 @@ Here are some examples of how you can interact with the **Webflow** MCP server u
 > Blog post created in your 'Blog Posts' collection. Title: 'How AI Transforms Marketing'. Slug: how-ai-transforms-marketing. Status: Draft (unpublished). You can ask me to add body content or publish the site when ready.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Webflow API token?**
+Log in to your Webflow Dashboard. Open the site you want to connect and click the **gear icon** to access Site Settings. In the left sidebar, click **Apps & integrations**. Scroll to the **API access** section at the bottom and click **Generate API token**. Name your token, select the required permission scopes (e.g., CMS read/write, Sites publish), and click **Generate token**. Copy it immediately — Webflow will not show the full token again. Each site can have up to 5 tokens. Tokens expire after 365 days of inactivity.
+
+**Q: Can my AI agent publish a blog post to my Webflow site?**
+Yes. Your AI agent can create CMS collection items (like blog posts), set all fields including title, body, slug, thumbnail, and publish date, then trigger a site publish — all in one conversation. Perfect for content teams who want to skip the Webflow designer and go from draft to live in seconds.
+
+**Q: What if I manage multiple client sites as an agency?**
+Each Webflow site has its own API token, so you can configure multiple integrations — one per client site. This lets your AI agent switch between projects, bulk-update CMS content across sites, or publish changes to specific client domains without mixing data between accounts.
+
+**Q: Can I track e-commerce orders through my AI agent?**
+Yes. If you use Webflow's built-in e-commerce, your AI agent can retrieve orders, order details, fulfillment statuses, and product inventory — giving you a real-time view of sales activity without opening the Webflow dashboard or exporting reports.
+
+
 ## Installation & Usage
 
-To install and use the **Webflow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/webflow](https://vinkius.com/mcp/webflow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Webflow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `webflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Webflow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "webflow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

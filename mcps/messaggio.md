@@ -1,7 +1,6 @@
 # Messaggio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/messaggio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/messaggio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/messaggio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/messaggio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Messaggio** MCP server
 > Fetching the list of senders associated with the specified project...
 
 
+## ❓ FAQ
+
+**Q: What is failover routing?**
+It's the ability to automatically try alternative channels (like SMS) if the primary channel (like WhatsApp) fails or the message isn't read.
+
+**Q: Can the agent check if a message was read?**
+Yes, by using the get_messages_status tool, the agent can retrieve the 'read' status for supported channels like Viber and WhatsApp.
+
+**Q: Does it support templates?**
+Yes, you can configure WhatsApp and Viber templates in the Messaggio dashboard and have the agent trigger them via the send tool.
+
+
 ## Installation & Usage
 
-To install and use the **Messaggio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/messaggio](https://vinkius.com/mcp/messaggio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Messaggio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `messaggio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Messaggio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "messaggio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

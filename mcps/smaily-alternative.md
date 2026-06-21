@@ -1,7 +1,6 @@
 # Smaily MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smaily-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smaily-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smaily-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smaily-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Smaily** MCP server us
 > Automation 50 has been successfully triggered for hello@world.com. They should receive the first email in the workflow shortly.
 
 
+## ❓ FAQ
+
+**Q: Can I add a new subscriber with custom fields using the AI?**
+Yes! Use the `add_update_subscriber` tool. You can provide the email and a JSON string for the `fields` parameter to include custom data like names or preferences.
+
+**Q: How do I trigger an automated email for a specific user?**
+Simply use the `trigger_automation` tool by providing the `automation_id` and the subscriber's `email`. This will immediately start the workflow for that contact.
+
+**Q: Is it possible to see the content of my email templates?**
+Yes, you can use `list_templates` to find the ID and then `get_template` to retrieve the full details and structure of a specific email template.
+
+
 ## Installation & Usage
 
-To install and use the **Smaily** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/smaily-alternative](https://vinkius.com/mcp/smaily-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Smaily** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `smaily-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Smaily** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "smaily-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

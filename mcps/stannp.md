@@ -1,7 +1,6 @@
 # Stannp MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stannp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stannp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stannp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stannp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,46 @@ Here are some examples of how you can interact with the **Stannp** MCP server us
 > Postcard campaign created: "VIP Loyalty Reward". Recipients: 50 top customers (by lifetime value). Personalization: first name, unique discount code per recipient (VIP-[NAME]-20). Design: A5 size, full-color front with product image, personalized back with message and QR code to redemption page. Print status: queued for next business day. Estimated delivery: 3-5 business days. Cost: £22.50 (£0.45/piece). Tracking: Royal Mail tracked. Redemption tracking: unique codes linked to CRM profiles.
 
 
+## ❓ FAQ
+
+**Q: Can I send a physical letter using my AI agent?**
+Yes! Use the `create_physical_letter` action. Provide the recipient details and a template ID to trigger printing and mailing programmatically.
+
+
 ## Installation & Usage
 
-To install and use the **Stannp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stannp](https://vinkius.com/mcp/stannp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Stannp** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stannp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Stannp** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stannp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # X (Twitter) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/x-twitter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/x-twitter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/x-twitter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/x-twitter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **X (Twitter)** MCP serv
 > The tweet 'Just shipped the new API v2!' has 4,500 likes, 320 retweets, and 12 replies so far. The engagement rate seems healthy based on your average metrics.
 
 
+## ❓ FAQ
+
+**Q: Can my AI search for tweets containing a specific competitor's hashtag?**
+Yes. Ask the agent to run a recent search tool utilizing your query (e.g., '#competitor'). It will grab the last 10 matching tweets within seconds, giving you raw sentiment and user commentary without opening the app.
+
+**Q: How far back in time can the agent search for tweets?**
+The tool uses the standard v2 API limited to Recent Searches. This means the agent can perfectly fetch any matching tweets published in the last 7 days. It is optimized for reactive, fast-paced monitoring workflows.
+
+**Q: Can it show me how many followers a user has or where they are located?**
+Absolutely. Providing the agent with the user's handle will invoke the lookup tool. It returns exactly what the developer sees: follower metrics, account description, and geographic location if public.
+
+
 ## Installation & Usage
 
-To install and use the **X (Twitter)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/x-twitter](https://vinkius.com/mcp/x-twitter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **X (Twitter)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `x-twitter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **X (Twitter)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "x-twitter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

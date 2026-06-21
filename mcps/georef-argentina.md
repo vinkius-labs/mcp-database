@@ -1,7 +1,6 @@
 # Georef Argentina MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/georef-argentina)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/georef-argentina-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/georef-argentina-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/georef-argentina)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Georef Argentina** MCP
 > Those coordinates correspond to the Obelisco area in the Autonomous City of Buenos Aires (CABA), specifically within the San Nicolás neighborhood.
 
 
+## ❓ FAQ
+
+**Q: Can I find the coordinates of a specific address string?**
+Yes! Use the `normalize_direccion` tool. It will parse the address and return the structured components along with geographic coordinates.
+
+**Q: How do I list all departments within a specific province?**
+Use the `get_departamentos` tool and provide the province name or ID in the `provincia` parameter to filter the results.
+
+**Q: Can I get the administrative location of a specific latitude and longitude?**
+Yes, the `reverse_geocoding` tool takes `lat` and `lon` parameters and returns the corresponding province, department, and municipality.
+
+
 ## Installation & Usage
 
-To install and use the **Georef Argentina** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/georef-argentina](https://vinkius.com/mcp/georef-argentina)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Georef Argentina** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `georef-argentina` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Georef Argentina** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "georef-argentina": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

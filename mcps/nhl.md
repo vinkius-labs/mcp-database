@@ -1,7 +1,6 @@
 # NHL MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nhl)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nhl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nhl-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nhl)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -111,12 +110,52 @@ Here are some examples of how you can interact with the **NHL** MCP server using
 > Searching for Connor McDavid... Found Player ID 8478402. He currently has 132 points this season (32 goals, 100 assists) in 76 games played.
 
 
+## ❓ FAQ
+
+**Q: How can I see the live scores for games happening right now?**
+Use the `get_live_scores` tool. It will return all active NHL games with their current scores, period information, and clock status.
+
+**Q: Can I get a detailed breakdown of a specific game's performance?**
+Yes! By using the `get_game_boxscore` tool with a valid Game ID, you can retrieve full team statistics, individual player contributions, and scoring summaries.
+
+**Q: How do I find advanced statistics for skaters like powerplay goals?**
+You can use the `get_skater_powerplay` or `get_skater_summary` tools to fetch specialized performance metrics across the league.
+
+
 ## Installation & Usage
 
-To install and use the **NHL** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nhl](https://vinkius.com/mcp/nhl)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NHL** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nhl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NHL** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nhl": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

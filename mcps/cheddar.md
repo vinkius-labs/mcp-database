@@ -1,7 +1,6 @@
 # Cheddar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cheddar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cheddar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cheddar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cheddar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Cheddar** MCP server u
 > Checking plans... You have 3 active plans: 'Basic' ($29/mo), 'Pro' ($99/mo), and 'Enterprise' (Usage-based). I can show you the specific tracked items for each.
 
 
+## ❓ FAQ
+
+**Q: Can I record a new usage event for a customer?**
+Yes! Use the `add_cheddar_charge` tool with the customer code, charge code (tracked item), and quantity. The agent will record the usage in Cheddar immediately.
+
+**Q: How do I see the billing history for a specific person?**
+Use the `get_cheddar_customer_details` tool with the unique customer code. Your agent will fetch the full record, including active plans, status, and associated invoices.
+
+**Q: Where do I find my Product Secret and Product Code?**
+Log in to your Cheddar dashboard and look for 'Product Settings'. You can view and copy your unique Product Code and generate a Secret Key from there.
+
+
 ## Installation & Usage
 
-To install and use the **Cheddar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cheddar](https://vinkius.com/mcp/cheddar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cheddar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cheddar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cheddar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cheddar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

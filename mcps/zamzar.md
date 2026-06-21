@@ -1,7 +1,6 @@
 # Zamzar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zamzar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zamzar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zamzar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zamzar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Zamzar** MCP server us
 > The job 456789 is now 'successful'. I am now retrieving the file content for you using the associated file ID.
 
 
+## ❓ FAQ
+
+**Q: How can I check if Zamzar supports converting a specific file type?**
+You can use the `get_format` tool by providing the extension (e.g., 'pdf'). The agent will return all possible target formats and the associated credit cost for that conversion.
+
+**Q: How do I know when my file conversion is finished and ready for download?**
+After starting a job, use the `get_job` tool with your Job ID. It will report the current status. Once it shows 'successful', you can proceed to download the file.
+
+**Q: Can I download the converted file directly through the AI?**
+Yes. Once the job is successful, use the `get_file_content` tool with the resulting File ID to retrieve the binary data and metadata of the converted file.
+
+
 ## Installation & Usage
 
-To install and use the **Zamzar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zamzar](https://vinkius.com/mcp/zamzar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zamzar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zamzar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zamzar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zamzar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

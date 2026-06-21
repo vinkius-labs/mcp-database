@@ -1,7 +1,6 @@
 # Temu Seller Hub MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/temu-seller-hub)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/temu-seller-hub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/temu-seller-hub-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/temu-seller-hub)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Temu Seller Hub** MCP 
 > Inventory updated! SKU TMU-SHOE-42BLK is now set to 250 units (previously 45 units). The change will be reflected on the Temu storefront within 5 minutes. Note: this SKU had 3 pending orders — the new stock level comfortably covers demand. Should I run a full inventory audit across all your active SKUs?
 
 
+## ❓ FAQ
+
+**Q: How do I obtain the Access Token required for authentication?**
+You must complete the OAuth 2.0 authorization flow using your App Key through your specific seller account on the Temu Open Platform. The flow will generate an Access Token that grants scoped permissions to your store's order, inventory, and logistics data.
+
+**Q: Can I manage inventory across multiple SKU variants simultaneously?**
+Yes! The `sync_inventory` tool accepts batch SKU updates. You can push quantity changes for multiple product variants in a single call, and the engine handles all MD5 signature computation and parameter encoding automatically.
+
+**Q: Is there any risk of accidentally modifying live product listings or canceling orders?**
+All write operations require explicit parameters — order IDs, SKU identifiers, tracking numbers — that must be deliberately specified. The Access Token is scoped to your seller account, and the MD5 signature layer prevents request forgery. Critical actions like order cancellation are logged and require confirmation parameters.
+
+
 ## Installation & Usage
 
-To install and use the **Temu Seller Hub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/temu-seller-hub](https://vinkius.com/mcp/temu-seller-hub)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Temu Seller Hub** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `temu-seller-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Temu Seller Hub** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "temu-seller-hub": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

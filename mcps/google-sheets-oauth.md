@@ -1,7 +1,6 @@
 # Google Sheets (OAuth) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-sheets-oauth)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-sheets-oauth-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-sheets-oauth-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-sheets-oauth)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **Google Sheets (OAuth)*
 > Retrieving spreadsheet info... Title: 'Budget 2026'. Sheets: 'Jan-March', 'April-June'. Locale: en_US. Timezone: UTC. I can also retrieve the grid properties or specific range data for you.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Google OAuth2 access token for this server?**
+You can use the Google OAuth Playground (select Sheets API v4 and authorize) or run 'gcloud auth print-access-token' in your terminal. Note that these tokens are typically valid for 1 hour.
+
+**Q: Can my agent create a new spreadsheet and add data to it in one go?**
+Yes. The agent can orchestrate multiple operations. First, use 'create_spreadsheet' to get the new ID, and then use 'write_data' or 'append_data' to populate it with your JSON arrays natively.
+
+**Q: What is the benefit of batch reading through the agent?**
+Batch reading allowing your agent to retrieve data from multiple non-contiguous ranges (e.g., 'Sheet1!A1:B10' and 'Sheet2!C5:D15') in a single request, improving context efficiency and reasoning accuracy flawlessly.
+
+
 ## Installation & Usage
 
-To install and use the **Google Sheets (OAuth)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-sheets-oauth](https://vinkius.com/mcp/google-sheets-oauth)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Sheets (OAuth)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-sheets-oauth` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Sheets (OAuth)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-sheets-oauth": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

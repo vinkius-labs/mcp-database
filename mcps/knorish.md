@@ -1,7 +1,6 @@
 # Knorish MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/knorish)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/knorish-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/knorish-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/knorish)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Knorish** MCP server u
 > Python for Beginners: 8 modules. 1) 'Introduction' (3 lessons, 45 min). 2) 'Variables & Types' (4 lessons, 60 min). 3) 'Control Flow' (5 lessons, 75 min). 4) 'Functions' (4 lessons, 60 min). 5) 'Data Structures' (6 lessons, 90 min). 6) 'OOP' (5 lessons, 80 min). 7) 'Projects' (3 lessons, 120 min). 8) 'Final Exam'. Total: 30 lessons, 8.5 hours. This month's sales: 42 orders, $2,058. Refunds: 2 ($98).
 
 
+## ❓ FAQ
+
+**Q: Can I track student progress and completion rates?**
+Yes. Browse all students with course progress percentages, lesson completion, time spent, and engagement metrics. Track completion certificates.
+
+**Q: Does Knorish require two credentials?**
+Yes. Knorish requires an **App ID** and **App Key** pair for authentication against `api.knorish.com/v1`.
+
+**Q: Can I monitor sales and enrollment analytics?**
+Yes. Track total revenue, order counts, conversion rates, enrollment trends, and refund rates across all courses.
+
+
 ## Installation & Usage
 
-To install and use the **Knorish** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/knorish](https://vinkius.com/mcp/knorish)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Knorish** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `knorish` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Knorish** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "knorish": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

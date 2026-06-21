@@ -1,7 +1,6 @@
 # Paperspace MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paperspace)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/paperspace-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/paperspace-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paperspace)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Paperspace** MCP serve
 > Parsed global arrays confirming absolute account identities. Account belongs to "Team Vinkius". Billing Profile: Active Card. Support Plan: Developer. Storage constraint ceiling set to strictly 2000 GB.
 
 
+## ❓ FAQ
+
+**Q: Are Paperspace Core machines dynamically mapped?**
+Yes. The `list_machines` query returns deeply structured attributes associated exactly with the base compute objects provisioning storage arrays, IPs, and states running natively over Paperspace Core.
+
+**Q: Can I spin up new Jupyter Gradient instances?**
+Currently, this module focuses strictly on dynamic observability — pulling down Notebooks arrays, Teams constraints, and extracting native deploy mapping contexts. Write operations to spin up environments are out-of-scope for read workflows.
+
+**Q: How do I fetch the resource specs belonging to a specific ID?**
+After listing the overall arrays, provide the `psxxxxxx` ID identifier securely to the `get_machine_details` extractor to generate raw hardware limitations mapped logically inside that node.
+
+
 ## Installation & Usage
 
-To install and use the **Paperspace** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/paperspace](https://vinkius.com/mcp/paperspace)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Paperspace** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `paperspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Paperspace** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "paperspace": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

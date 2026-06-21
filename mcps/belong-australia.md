@@ -1,7 +1,6 @@
 # Belong Australia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/belong-australia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/belong-australia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/belong-australia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/belong-australia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Belong Australia** MCP
 > Your current account balance is $0.00. I found 1 saved payment method: 'Visa ending in 1234'. Your next bill is scheduled for April 15th.
 
 
+## ❓ FAQ
+
+**Q: Can I check how much data I have left on my mobile plan?**
+Yes! Use the `get_usage_data` tool with your Service ID. Your agent will fetch the latest data consumption statistics directly from Belong.
+
+**Q: How do I see my last 3 invoices?**
+Simply ask the agent to `list_invoices`. It will retrieve the history of recent bills linked to your account, showing dates and amounts.
+
+**Q: Does the integration allow me to change my internet plan?**
+Currently, the toolset focuses on querying and monitoring (Read-Only). You can list and inspect services, usage, and invoices, but plan changes must be performed via the official Belong website or mobile app for security.
+
+
 ## Installation & Usage
 
-To install and use the **Belong Australia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/belong-australia](https://vinkius.com/mcp/belong-australia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Belong Australia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `belong-australia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Belong Australia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "belong-australia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

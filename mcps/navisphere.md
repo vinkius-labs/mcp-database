@@ -1,7 +1,6 @@
 # Navisphere MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/navisphere)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/navisphere-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/navisphere-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/navisphere)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Navisphere** MCP serve
 > Shipment 992288 is currently 'In Transit'. The latest milestone was 'Departed Chicago Terminal' at 08:00 AM. The estimated arrival in Dallas is tomorrow at 04:30 PM.
 
 
+## ❓ FAQ
+
+**Q: How do I find available loads for a specific route and equipment type?**
+Use the `search_available_loads` tool. You can filter by `originCity`, `destinationCity`, and `equipmentType` (e.g., 'V' for Van, 'R' for Reefer) to see all matching freight opportunities.
+
+**Q: Can I update the location and status of a shipment while in transit?**
+Yes! Use the `update_shipment_status` tool with the `shipmentId`. You can provide a JSON object containing the new status code (e.g., 'Arrived') and current GPS coordinates.
+
+**Q: How do I submit a price bid for a load I found?**
+Use the `submit_bid` tool. Provide the `loadNumber`, your `bidAmount`, the `currency`, and a `contactName`. The system will register your offer directly in the Navisphere ecosystem.
+
+
 ## Installation & Usage
 
-To install and use the **Navisphere** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/navisphere](https://vinkius.com/mcp/navisphere)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Navisphere** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `navisphere` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Navisphere** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "navisphere": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

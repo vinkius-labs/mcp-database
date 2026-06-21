@@ -1,7 +1,6 @@
 # Open Food Facts MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-food-facts)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-food-facts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-food-facts-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-food-facts)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -60,12 +59,52 @@ Here are some examples of how you can interact with the **Open Food Facts** MCP 
 > A standard can of Coca-Cola is classified under NOVA Group 4, which means it is an ultra-processed food product. It also holds a Nutri-Score of E due to its high sugar content.
 
 
+## ❓ FAQ
+
+**Q: What is Nutri-Score?**
+Nutri-Score is a front-of-pack nutrition label that rates food products from A (healthiest) to E (least healthy). It's widely used across Europe and helps consumers make informed dietary choices at a glance.
+
+**Q: What is the NOVA classification?**
+The NOVA classification assigns a score from 1 to 4 depending on how much a food is processed. 1 means unprocessed/minimally processed foods, while 4 indicates ultra-processed food and drink products.
+
+**Q: Is the allergen data reliable?**
+The allergen data is derived from product labels uploaded by contributors. While extensive, you should always double-check physical packaging for severe allergies as formulations can change.
+
+
 ## Installation & Usage
 
-To install and use the **Open Food Facts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/open-food-facts](https://vinkius.com/mcp/open-food-facts)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Open Food Facts** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `open-food-facts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Open Food Facts** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "open-food-facts": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

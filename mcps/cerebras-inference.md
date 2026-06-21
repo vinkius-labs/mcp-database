@@ -1,7 +1,6 @@
 # Cerebras Inference MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cerebras-inference)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cerebras-inference-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cerebras-inference-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cerebras-inference)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Cerebras Inference** M
 > I've checked the status using `get_batch`. The job 'batch_abc123' is currently 'completed'. You can now retrieve the results using the file tools.
 
 
+## ❓ FAQ
+
+**Q: How do I check which models are available for inference?**
+Use the `list_models` tool. It will return a list of all supported models, including high-performance options like Llama 3.1, which you can then use in `create_chat_completion`.
+
+**Q: Can I process thousands of requests at once?**
+Yes. Use `upload_file` to provide your JSONL data and then `create_batch` to start an asynchronous processing job. You can monitor progress with `get_batch`.
+
+**Q: Does this server support tool calling and structured outputs?**
+Yes. The `create_chat_completion` tool supports `tools`, `tool_choice`, and `response_format` parameters, allowing the model to interact with other functions or return valid JSON.
+
+
 ## Installation & Usage
 
-To install and use the **Cerebras Inference** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cerebras-inference](https://vinkius.com/mcp/cerebras-inference)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cerebras Inference** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cerebras-inference` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cerebras Inference** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cerebras-inference": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

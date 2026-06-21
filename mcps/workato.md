@@ -1,7 +1,6 @@
 # Workato MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workato)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/workato-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/workato-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workato)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Workato** MCP server u
 > Checking connections… Your Salesforce, Slack, and NetSuite connections are 'ACTIVE'. However, your Jira connection is 'DISCONNECTED'. Would you like me to pull the connection details to help you re-authenticate?
 
 
+## ❓ FAQ
+
+**Q: Can I check if my automations failed recently through the agent?**
+Yes. The `list_recipe_jobs` tool allows your AI agent to retrieve the execution history for any recipe ID, showing you which jobs succeeded and which encountered errors so you can monitor health through chat.
+
+**Q: How do I know if an app connection is still active?**
+You can use the `list_app_connections` tool. It will return all configured connections in your Workato account along with their current status, helping you identify disconnected apps immediately.
+
+**Q: Can I see which workflows are available as REST APIs?**
+Absolutely. Use the `get_api_collections` tool to retrieve a list of all API collections exposed by your Workato tenant, showing you which recipes are ready for external invocation.
+
+
 ## Installation & Usage
 
-To install and use the **Workato** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/workato](https://vinkius.com/mcp/workato)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Workato** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `workato` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Workato** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "workato": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

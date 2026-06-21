@@ -1,7 +1,6 @@
 # Room Acoustics Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/room-acoustics-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/room-acoustics-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/room-acoustics-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/room-acoustics-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,52 @@ Here are some examples of how you can interact with the **Room Acoustics Calcula
 > Yes, the room has problematic frequencies at 17.2Hz and 34.3Hz that may require bass traps to manage resonance.
 
 
+## ❓ FAQ
+
+**Q: What are room modes?**
+Room modes are standing waves that occur when sound reflects between parallel surfaces in a room, creating peaks and nulls at specific frequencies.
+
+**Q: How do I estimate RT60?**
+Use the `estimate_reverberation_time` tool by providing your room dimensions and a JSON mapping of surface materials like 'floor' or 'ceiling' to materials from our catalog.
+
+**Q: What is the Schroeder frequency?**
+It is the threshold frequency below which individual room modes are distinct and above which the sound field behaves statistically.
+
+
 ## Installation & Usage
 
-To install and use the **Room Acoustics Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/room-acoustics-calculator](https://vinkius.com/mcp/room-acoustics-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Room Acoustics Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `room-acoustics-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Room Acoustics Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "room-acoustics-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # HeyReach MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heyreach)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/heyreach-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/heyreach-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heyreach)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,55 @@ Here are some examples of how you can interact with the **HeyReach** MCP server 
 > Accessing inbox... You have 5 recent replies, including messages from 'Mark Thompson' (High interest) and 'Elena Rossi'. Mark says: 'Interesting proposal, let's talk next Tuesday'. Would you like to send a reply to Mark?
 
 
+## ❓ FAQ
+
+**Q: How do I find my HeyReach API Key?**
+Log in to your HeyReach account, navigate to **Settings**, and you will find your unique **API Key** in the API section. Ensure you have the necessary administrative permissions.
+
+**Q: Can I add leads to a campaign that hasn't been launched?**
+No, campaigns must be launched at least once in the HeyReach web interface before you can add leads to them via the API or this integration.
+
+**Q: How many leads can I add in one request?**
+The `add_leads_to_campaign` tool supports adding up to 100 leads in a single batch request to ensure optimal performance and adherence to rate limits.
+
+**Q: Is the integration secure for my LinkedIn data?**
+Absolutely. The integration uses official HeyReach API keys over HTTPS. Your credentials and LinkedIn access tokens are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **HeyReach** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/heyreach](https://vinkius.com/mcp/heyreach)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HeyReach** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `heyreach` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HeyReach** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "heyreach": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

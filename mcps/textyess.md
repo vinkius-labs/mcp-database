@@ -1,7 +1,6 @@
 # TextYess MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/textyess)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/textyess-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/textyess-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/textyess)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **TextYess** MCP server 
 > I've fetched the interaction logs. Here are the 3 most recent sessions: User_8823 (Completed Purchase), User_8824 (Question about sizing), and User_8825 (Inquiry about shipping). Would you like to see the full transcript for any of them?
 
 
+## ❓ FAQ
+
+**Q: Can I see how much revenue a specific WhatsApp campaign generated?**
+Yes! Use the `get_campaign_analytics` tool and provide the Campaign ID. Your agent will retrieve detailed performance metrics including total revenue and number of orders.
+
+**Q: How do I check the stock level for a product in my TextYess catalog?**
+Run the `get_product_details` query with your Product ID. The agent will retrieve the complete metadata, including current stock status synced from your e-commerce platform.
+
+**Q: Is it possible to monitor recent interactions between customers and the AI agent?**
+Absolutely. Use the `list_ai_conversations` query. The agent will retrieve a log of recent interactions, allowing you to monitor the quality and flow of your conversational sales.
+
+
 ## Installation & Usage
 
-To install and use the **TextYess** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/textyess](https://vinkius.com/mcp/textyess)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TextYess** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `textyess` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TextYess** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "textyess": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

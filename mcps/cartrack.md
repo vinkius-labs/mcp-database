@@ -1,7 +1,6 @@
 # Cartrack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cartrack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cartrack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cartrack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cartrack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Cartrack** MCP server 
 > Scanning fleet fuel status... Most vehicles are above 70%. However, vehicle 'XYZ-789' is low at 12%. Should I notify the driver?
 
 
+## ❓ FAQ
+
+**Q: Can I see where a specific vehicle is right now?**
+Yes! Use the `get_vehicle_position` tool with the vehicle's registration or ID. The agent will return the latest GPS coordinates and the formatted address.
+
+**Q: How do I check if there were any speeding alerts today?**
+Use the `list_fleet_alerts` tool. Your agent will fetch recent events, allowing you to filter for speeding incidents and see which vehicles and drivers were involved.
+
+**Q: Where do I find my API Base URL?**
+The URL depends on your region. Common ones include `https://fleetapi-za.cartrack.com/rest/` for South Africa or `https://fleetapi-sg.cartrack.com/rest/` for Singapore. Check the Cartrack Developer Portal for your specific region.
+
+
 ## Installation & Usage
 
-To install and use the **Cartrack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cartrack](https://vinkius.com/mcp/cartrack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cartrack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cartrack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cartrack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cartrack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

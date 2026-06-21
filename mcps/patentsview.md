@@ -1,7 +1,6 @@
 # PatentsView MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/patentsview)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/patentsview-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/patentsview-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/patentsview)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **PatentsView** MCP serv
 > Retrieving details for patent #10,000,000... This patent is for a 'Coherent frequency-shifted reference beam interferometry' system. It was granted on June 19, 2018. Would you like to read the abstract?
 
 
+## ❓ FAQ
+
+**Q: Can I find all patents assigned to a specific inventor?**
+Yes! Use the `search_inventors` tool with the inventor's last name. The response will include their ID, and you can then retrieve their full portfolio of granted patents.
+
+**Q: How can I get the full technical abstract of a patent?**
+Use the `get_patent_details` tool with the specific patent number. The engine will return exhaustive metadata, including the official abstract filed with the USPTO.
+
+**Q: Is it possible to see which company owns a patent?**
+Yes. The patent details include the 'assignee organization' field, which identifies the company or entity that currently holds the rights to the patent.
+
+
 ## Installation & Usage
 
-To install and use the **PatentsView** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/patentsview](https://vinkius.com/mcp/patentsview)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PatentsView** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `patentsview` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PatentsView** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "patentsview": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

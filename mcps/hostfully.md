@@ -1,7 +1,6 @@
 # Hostfully MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hostfully)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hostfully-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hostfully-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hostfully)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **Hostfully** MCP server
 > Here are your service providers: 1. 'Prime Cleaners' (Housekeeping, ID: SP-01). 2. 'QuickFix Plumbing' (Maintenance, ID: SP-02). Let me know if you need to dispatch an emergency order to them.
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Hostfully API Key?**
+You can find your API key in the Integration Settings of your Hostfully dashboard.
+
+**Q: Is the Agency UID required?**
+It is required for most property and lead related tools. You can find it at the bottom of your Agency Settings page.
+
+**Q: Can I see guest details?**
+Yes, the list_guests tool provides access to guest information associated with your agency.
+
+
 ## Installation & Usage
 
-To install and use the **Hostfully** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hostfully](https://vinkius.com/mcp/hostfully)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hostfully** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hostfully` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hostfully** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hostfully": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Open Food Facts MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-food-facts-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-food-facts-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-food-facts-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-food-facts-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Open Food Facts** MCP 
 > Searching the database... I've found several additive-free beverages, including various mineral waters and pure fruit juices like 'Innocent Orange Juice'. Would you like the details for any of these?
 
 
+## ❓ FAQ
+
+**Q: How do I look up a specific food item using its barcode?**
+Use the `get_product` tool and provide the barcode (EAN-13). The agent will return the product name, ingredients, Nutri-Score, and detailed nutritional facts.
+
+**Q: Can I search for products that are specifically labeled as Organic or Vegan?**
+Yes! Use the `search_products` tool and specify the `labels` parameter (e.g., 'Organic' or 'Vegan') to filter the results accordingly.
+
+**Q: Is it possible to filter out products that contain additives?**
+Absolutely. When using the `search_products` tool, set the `additives` parameter to 'without' to find products that do not contain any food additives.
+
+
 ## Installation & Usage
 
-To install and use the **Open Food Facts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/open-food-facts-alternative](https://vinkius.com/mcp/open-food-facts-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Open Food Facts** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `open-food-facts-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Open Food Facts** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "open-food-facts-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

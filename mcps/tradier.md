@@ -1,7 +1,6 @@
 # Tradier MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tradier)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tradier-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tradier-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tradier)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Tradier** MCP server u
 > I've retrieved the option chain for NVDA for the Jan 17, 2025 expiration. There are 45 strikes available, ranging from $100 to $150. Would you like to filter for specific strikes or see the Greeks for the At-The-Money calls?
 
 
+## ❓ FAQ
+
+**Q: Can I check real-time prices for multiple stocks at once?**
+Yes. Use the `get_quotes` tool and provide a comma-separated list of symbols (e.g., 'AAPL,TSLA,NVDA'). The agent will return the latest market data for all requested tickers.
+
+**Q: Is it possible to view my current portfolio holdings and buying power?**
+Absolutely. Use `get_account_positions` to see your current holdings and `get_account_balances` to check your available cash and buying power for a specific account ID.
+
+**Q: Can I place option trades through this integration?**
+Yes. The `place_order` tool supports both 'equity' and 'option' asset classes. You can specify the side (e.g., buy_to_open), quantity, and order type to execute your strategy.
+
+
 ## Installation & Usage
 
-To install and use the **Tradier** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tradier](https://vinkius.com/mcp/tradier)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tradier** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tradier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tradier** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tradier": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

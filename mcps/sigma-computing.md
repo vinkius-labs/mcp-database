@@ -1,7 +1,6 @@
 # Sigma Computing MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sigma-computing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sigma-computing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sigma-computing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sigma-computing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -59,12 +58,52 @@ Here are some examples of how you can interact with the **Sigma Computing** MCP 
 > Initiating extraction securely comprehensively applying `list_organization_members` efficiently flawlessly. Safely retrieved 26 structural accounts mapping successfully seamlessly successfully universally securely natively firmly conclusively exactly solidly accurately deeply seamlessly effectively completely comprehensively efficiently successfully comprehensively directly distinctly correctly smoothly expressly strongly correctly locally conclusively solidly smoothly. Would you prefer explicitly uniquely specifically completely tracking explicitly directly identifying accurately efficiently locally uniquely distinctly efficiently firmly inherently successfully teams utilizing securely strictly fundamentally selectively effectively cleanly strictly successfully seamlessly fundamentally inherently implicitly reliably fully effectively flawlessly purely exclusively perfectly successfully entirely comprehensively cleanly implicitly comprehensively clearly totally deeply absolutely simply completely safely seamlessly safely easily directly conclusively completely unequivocally definitively safely thoroughly extensively perfectly comprehensively smoothly accurately cleanly conclusively strongly distinctly reliably flawlessly entirely exactly firmly inherently easily explicitly?
 
 
+## ❓ FAQ
+
+**Q: Can the integration forcefully modify datasets or override workbook queries directly?**
+No. By structured intent, this module is strictly bounded as an observational and auditing matrix targeting specifically organizational discovery heavily optimized securely natively. Explicit write protocols structurally enabling queries, mutation mappings, or data modifications systematically inherently simply completely systematically bypassed unconditionally directly universally.
+
+**Q: Why construct this manually over leveraging the standard platform web UI interfaces?**
+The native IDE integration context decisively grants explicitly your agent prompt active unadulterated runtime authority seamlessly querying real-time underlying arrays dynamically without latency immediately directly mapping structurally uniquely native taxonomies avoiding graphical interface lags flawlessly intrinsically seamlessly definitively completely.
+
+**Q: Does my client credentials require explicit specific elevated Admin privileges exclusively natively?**
+Yes explicitly securely seamlessly thoroughly definitively successfully extensively confidently conclusively exactly absolutely entirely solidly reliably exactly correctly perfectly. Creating API keys unequivocally cleanly exactly simply strongly thoroughly decisively distinctly clearly strictly conclusively intrinsically locally essentially requires inherently specifically explicit Administrative credentials securely internally distinctly correctly clearly deeply directly exclusively purely successfully thoroughly fully permanently precisely cleanly comprehensively successfully locally correctly definitively safely reliably directly cleanly seamlessly successfully seamlessly efficiently essentially firmly seamlessly inherently strictly smoothly uniquely.
+
+
 ## Installation & Usage
 
-To install and use the **Sigma Computing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sigma-computing](https://vinkius.com/mcp/sigma-computing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sigma Computing** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sigma-computing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sigma Computing** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sigma-computing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

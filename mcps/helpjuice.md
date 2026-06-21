@@ -1,7 +1,6 @@
 # Helpjuice MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helpjuice)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/helpjuice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/helpjuice-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helpjuice)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,55 @@ Here are some examples of how you can interact with the **Helpjuice** MCP server
 > Retrieving analytics... Article ID 1021 ('Advanced Filtering') has had 450 views and 32 upvotes this month. It is currently one of your top-performing pieces of documentation. Would you like to see recent search terms that led users here?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Helpjuice API Key?**
+Log in to your Helpjuice account, go to **Settings**, and you will find your **API Key** listed in the account or integration section. Ensure you have the necessary permissions to access API settings.
+
+**Q: What is the Helpjuice 'Subdomain'?**
+The subdomain is the unique part of your Helpjuice URL (e.g., if your KB is at `mycompany.helpjuice.com`, your subdomain is `mycompany`).
+
+**Q: Can I search for specific terms across my documentation?**
+Yes! Use the `search_kb` tool. It performs a real-time search across article titles and body content, returning the most relevant results from your knowledge base.
+
+**Q: Is the integration secure for managing documentation?**
+Absolutely. The integration uses official Helpjuice API keys over HTTPS. Your credentials are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Helpjuice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/helpjuice](https://vinkius.com/mcp/helpjuice)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Helpjuice** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `helpjuice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Helpjuice** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "helpjuice": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

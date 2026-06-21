@@ -1,7 +1,6 @@
 # Skyscanner MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skyscanner)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/skyscanner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/skyscanner-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skyscanner)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Skyscanner** MCP serve
 > Tokyo airports: NRT (Narita Intl), HND (Haneda). City code: TYOA (both airports). Use TYOA for searches that include both airports.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! Skyscanner's Travel API is free with a public key. No registration needed for basic access.
+
+**Q: How do I find airport codes?**
+Use autosuggest_places to search for airports and cities by name. It returns IATA codes and place IDs you can use in flight searches.
+
+**Q: Are these real-time prices?**
+Prices are indicative and cached. They're useful for exploring price ranges and comparing dates, but may differ slightly from live booking prices.
+
+
 ## Installation & Usage
 
-To install and use the **Skyscanner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/skyscanner](https://vinkius.com/mcp/skyscanner)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Skyscanner** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `skyscanner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Skyscanner** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "skyscanner": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

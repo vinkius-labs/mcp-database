@@ -1,7 +1,6 @@
 # AdButler MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adbutler)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adbutler-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adbutler-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adbutler)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **AdButler** MCP server 
 > I've found 5 active zones for publisher 12345: 'Sidebar Banner', 'Top Leaderboard', 'Interstitial', and others. Would you like to check the current fill rate for these zones?
 
 
+## ❓ FAQ
+
+**Q: Where do I find my AdButler API Key?**
+Log in to your AdButler dashboard, go to **Settings** > **API Settings**. You can generate your Secret API Key there. Note that API access requires the API add-on to be enabled.
+
+**Q: Can I see real-time impressions and clicks?**
+Yes! Use the `get_report` tool to retrieve up-to-the-minute statistics for your campaigns, zones, or entire network.
+
+**Q: Does this server support creative management?**
+Yes, you can use the `list_creatives` tool to audit and manage the ad assets associated with your account.
+
+
 ## Installation & Usage
 
-To install and use the **AdButler** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/adbutler](https://vinkius.com/mcp/adbutler)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AdButler** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `adbutler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AdButler** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "adbutler": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

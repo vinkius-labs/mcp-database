@@ -1,7 +1,6 @@
 # Gumlet MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gumlet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gumlet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gumlet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gumlet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Gumlet** MCP server us
 > Fetching analytics... Your latest video has 1,250 unique views and has consumed 45GB of bandwidth this month. Most viewers are based in North America and Europe.
 
 
+## ❓ FAQ
+
+**Q: How do I start a video upload?**
+Use the `create_video_upload` tool, which will create the asset in your specified collection and provide a temporary `upload_url` for your file.
+
+**Q: Can I update the thumbnail for a video already uploaded?**
+Yes! The `update_video_thumbnail` tool allows you to specify a time offset in seconds. Gumlet will extract that specific frame and set it as the new thumbnail.
+
+**Q: Does it support viewing stats and bandwidth usage?**
+The `get_video_analytics` tool provides detailed viewing metrics and bandwidth consumption data for any video ID in your account.
+
+
 ## Installation & Usage
 
-To install and use the **Gumlet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gumlet](https://vinkius.com/mcp/gumlet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gumlet** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gumlet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gumlet** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gumlet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

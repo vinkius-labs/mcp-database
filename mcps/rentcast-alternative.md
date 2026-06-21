@@ -1,7 +1,6 @@
 # RentCast MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rentcast-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rentcast-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rentcast-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rentcast-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **RentCast** MCP server 
 > For zip code 90210, the median sale price is currently [Price] with an average of [Days] days on market. Rental yields in this area average [Percentage]. Would you like to see how this compares to last quarter?
 
 
+## ❓ FAQ
+
+**Q: How can I find the estimated rental income for a specific property?**
+You can use the `get_rental_avm_long_term` tool for traditional rentals or `get_rental_avm_short_term` for vacation rentals. Simply provide the property address to get an automated valuation (AVM).
+
+**Q: Can I search for properties within a specific geographic area?**
+Yes! Tools like `get_property_records` and `get_sale_listings` support searching by city, state, zip code, or even circular searches using `latitude`, `longitude`, and `radius` parameters.
+
+**Q: Does this server provide historical listing data?**
+Yes, both `get_sale_listings` and `get_rental_listings` allow you to query historical data by setting the `status` parameter to 'Inactive' or filtering by date ranges.
+
+
 ## Installation & Usage
 
-To install and use the **RentCast** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rentcast-alternative](https://vinkius.com/mcp/rentcast-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **RentCast** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rentcast-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **RentCast** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rentcast-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

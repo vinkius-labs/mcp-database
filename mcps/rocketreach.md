@@ -1,7 +1,6 @@
 # RocketReach MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rocketreach)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rocketreach-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rocketreach-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rocketreach)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **RocketReach** MCP serv
 > Profile found: David Chen, CEO & Co-founder, Meridian Corp. Email: d.chen@meridiancorp.com (verified, last validated 3 days ago). Phone: +1-415-555-0198 (direct line). LinkedIn: linkedin.com/in/davidchen-meridian. Location: San Francisco, CA. Company: Meridian Corp (Enterprise SaaS, 340 employees, Series C $52M). Previous: CTO at DataFlow (2018-2021), Senior Engineer at Google (2014-2018). Education: Stanford CS MS, MIT BS. Board member: 2 advisory roles.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically enrich a person's contact info using their LinkedIn URL?**
+Yes! Use the `person_lookup` tool. Provide the `linkedin_url`, and your agent will return the verified email addresses and phone numbers associated with that professional profile instantly.
+
+**Q: How do I check how many RocketReach credits I have left?**
+Simply ask the agent to run the `get_account_info` or `get_usage_stats` action. It will retrieve your current plan details and remaining search/lookup credits.
+
+**Q: How do I find my RocketReach API Key?**
+Log in to your RocketReach account, navigate to **Account** > **API Usage & Settings**, and you will find your unique secret API key there.
+
+
 ## Installation & Usage
 
-To install and use the **RocketReach** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rocketreach](https://vinkius.com/mcp/rocketreach)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **RocketReach** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rocketreach` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **RocketReach** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rocketreach": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

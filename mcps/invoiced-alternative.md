@@ -1,7 +1,6 @@
 # Invoiced MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/invoiced-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/invoiced-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/invoiced-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/invoiced-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Invoiced** MCP server 
 > You have 4 pending estimates totaling ,000. The oldest is EST-0034 (,500) sent 12 days ago. Would you like to follow up with the customer?
 
 
+## ❓ FAQ
+
+**Q: Can I create invoices directly from my AI agent?**
+Yes. Use the `create_invoice` tool with a customer ID and line items. The invoice is created instantly in your Invoiced account.
+
+**Q: How do I track outstanding payments?**
+Use `list_payments` to see all payment transactions or `list_invoices` to review invoices with their payment status and outstanding balances.
+
+**Q: Can I manage customers and credit notes?**
+Absolutely. Use `create_customer` to add new accounts, `list_customers` to browse, and `list_credit_notes` to review all issued credits.
+
+
 ## Installation & Usage
 
-To install and use the **Invoiced** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/invoiced-alternative](https://vinkius.com/mcp/invoiced-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Invoiced** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `invoiced-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Invoiced** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "invoiced-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

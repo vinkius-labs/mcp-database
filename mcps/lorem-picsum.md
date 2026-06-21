@@ -1,7 +1,6 @@
 # Lorem Picsum MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lorem-picsum)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lorem-picsum-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lorem-picsum-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lorem-picsum)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Lorem Picsum** MCP ser
 > Image ID 237 was captured by André Spieker. Its original dimensions are 3500x2095. You can view it here: https://picsum.photos/id/237/3500/2095
 
 
+## ❓ FAQ
+
+**Q: How can I get a blurred or grayscale version of a random image?**
+You can use the `get_random_image_url` tool and set the `blur` parameter (1-10) or the `grayscale` boolean to true. The agent will construct the correct URL for you.
+
+**Q: Is it possible to always get the same image for a specific UI element?**
+Yes! Use the `get_seed_image_url` tool with a unique `seed` string. This ensures that the same image is returned every time you use that specific seed.
+
+**Q: Can I find out who the author of a specific image is?**
+Absolutely. Use the `get_image_info` tool with the image ID. It will return the author's name, the original dimensions, and the source URL.
+
+
 ## Installation & Usage
 
-To install and use the **Lorem Picsum** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lorem-picsum](https://vinkius.com/mcp/lorem-picsum)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lorem Picsum** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lorem-picsum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lorem Picsum** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lorem-picsum": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

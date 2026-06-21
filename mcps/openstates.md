@@ -1,7 +1,6 @@
 # OpenStates MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openstates)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openstates-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openstates-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openstates)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **OpenStates** MCP serve
 > Fetching details for Texas HB-500... The most recent action was 'Passed in the House' yesterday. It has now been referred to the Senate State Affairs committee. Would you like to see the full list of sponsors?
 
 
+## ❓ FAQ
+
+**Q: Which US states are covered by this integration?**
+OpenStates covers all 50 states, the District of Columbia, and Puerto Rico. You can use the `list_jurisdictions` tool to see the full list of currently active jurisdictions.
+
+**Q: Can I search for bills by specific keywords like 'environment' or 'education'?**
+Yes! Use the `search_bills` tool, provide the state name in the `jurisdiction` parameter, and your keywords in the `q` parameter. Your agent will return all matching legislation.
+
+**Q: How do I get the contact information for my state representative?**
+First, find the legislator using `search_legislators` with their name or district. Then, use the `get_legislator_details` tool with their ID to retrieve their official email, office address, and phone number.
+
+
 ## Installation & Usage
 
-To install and use the **OpenStates** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openstates](https://vinkius.com/mcp/openstates)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenStates** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openstates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenStates** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openstates": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

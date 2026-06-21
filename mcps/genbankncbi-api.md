@@ -1,7 +1,6 @@
 # GenBank/NCBI API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/genbankncbi-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/genbankncbi-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/genbankncbi-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/genbankncbi-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **GenBank/NCBI API** MCP
 > I've scanned the database catalog from NCBI! There are over 30 biological databases available, including PubMed, Protein, and Nucleotide. I can help you search for specific records in any of these thematic clusters.
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for GenBank/NCBI API?**
+No. The NCBI E-utilities API is a free and open service provided by the United States government. This server works out of the box without any static credentials required.
+
+**Q: Which databases are supported?**
+The API supports multiple databases including 'nuccore' (Nucleotide), 'protein', 'pubmed', and 'gene'. Use the `list_ncbi_databases` tool to see the full list.
+
+**Q: What is an NCBI UID?**
+A UID is a unique identifier assigned to each record in an NCBI database. Your agent uses these UIDs to retrieve specific summaries and detailed metadata.
+
+
 ## Installation & Usage
 
-To install and use the **GenBank/NCBI API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/genbankncbi-api](https://vinkius.com/mcp/genbankncbi-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GenBank/NCBI API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `genbankncbi-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GenBank/NCBI API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "genbankncbi-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

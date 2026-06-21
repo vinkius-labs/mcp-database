@@ -1,7 +1,6 @@
 # Autodesk Construction Cloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/autodesk-construction-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/autodesk-construction-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/autodesk-construction-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/autodesk-construction-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Autodesk Construction 
 > Scanning 'Structural Designs'... I found 3 files: 'Foundation_Plan.rvt', 'Steel_Framing_Detail.dwg', and 'Load_Calculations.pdf'. Would you like to see the metadata for the Revit model?
 
 
+## ❓ FAQ
+
+**Q: How do I get my Autodesk APS Client ID and Secret?**
+You need to register an application at [**Autodesk Platform Services**](https://aps.autodesk.com/myapps/). Create a 'Web App' to receive your unique Client ID and Client Secret credentials.
+
+**Q: Does my account administrator need to authorize this integration?**
+Yes. An Account Admin must add your Client ID under Account Admin > Settings > Custom Integrations within the Autodesk Construction Cloud dashboard for the server to access your data.
+
+**Q: Can the AI help me find specific files or issues by name?**
+Yes! You can ask the agent to search through your project's folders or issue lists. It will use the `get_folder_contents` and `get_issues` tools to filter and find the exact item you need in seconds.
+
+
 ## Installation & Usage
 
-To install and use the **Autodesk Construction Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/autodesk-construction-cloud](https://vinkius.com/mcp/autodesk-construction-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Autodesk Construction Cloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `autodesk-construction-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Autodesk Construction Cloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "autodesk-construction-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

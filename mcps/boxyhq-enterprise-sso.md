@@ -1,7 +1,6 @@
 # BoxyHQ (Enterprise SSO) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boxyhq-enterprise-sso)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/boxyhq-enterprise-sso-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/boxyhq-enterprise-sso-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boxyhq-enterprise-sso)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **BoxyHQ (Enterprise SSO
 > The Okta SCIM directory for piedpiper has been created. SCIM Base URL: `https://sso.boxyhq.com/api/scim/v2.0/piedpiper`. Please provide this to the customer to start syncing users.
 
 
+## ❓ FAQ
+
+**Q: Can I configure a SAML connection using just the metadata URL?**
+Yes! Use the `add_connection` tool and provide the `metadataUrl`. The server will fetch and process the IdP configuration automatically.
+
+**Q: How do I find the clientID for an existing connection?**
+You can use the `get_connections` tool by providing the `tenant` and `product` IDs. It will return all matching connections including their unique clientIDs.
+
+**Q: Does this support SCIM for automated user provisioning?**
+Absolutely. Use the `create_directory` tool to set up a SCIM 2.0 directory for providers like Okta, Azure AD, or Google, including webhook support for events.
+
+
 ## Installation & Usage
 
-To install and use the **BoxyHQ (Enterprise SSO)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/boxyhq-enterprise-sso](https://vinkius.com/mcp/boxyhq-enterprise-sso)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BoxyHQ (Enterprise SSO)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `boxyhq-enterprise-sso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BoxyHQ (Enterprise SSO)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "boxyhq-enterprise-sso": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

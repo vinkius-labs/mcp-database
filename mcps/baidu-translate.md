@@ -1,7 +1,6 @@
 # Baidu Translate / 百度翻译 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baidu-translate)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baidu-translate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baidu-translate-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baidu-translate)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Baidu Translate / 百�
 > I've translated the technical note for you. In English, it reads: 'This interface supports second-level response speed.' Should I check the API status to ensure consistent performance for your project?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Baidu Translate App ID and Secret Key?**
+Log in to the [Baidu Translate Open Platform](https://api.fanyi.baidu.com/), navigate to the 'Developer Information' (开发者信息) section in your management console to find your unique App ID and Secret Key.
+
+**Q: Which language codes are supported?**
+Baidu uses standard codes like `zh` (Chinese), `en` (English), `pt` (Portuguese), `spa` (Spanish), and `fra` (French). You can use `auto` for the source language to let the API detect it automatically.
+
+**Q: Is there a limit to text length?**
+The general translation API supports up to 6000 characters per request. For extremely long documents, it is recommended to split the text into multiple smaller segments.
+
+
 ## Installation & Usage
 
-To install and use the **Baidu Translate / 百度翻译** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/baidu-translate](https://vinkius.com/mcp/baidu-translate)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Baidu Translate / 百度翻译** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `baidu-translate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Baidu Translate / 百度翻译** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "baidu-translate": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # AddSearch MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/addsearch)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/addsearch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/addsearch-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/addsearch)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Would you like the full URL and snippet for the top result?
 The system confirms the index is correctly populating typed suggestions for this entity.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent manually index new pages?**
+Yes. If you provide the AddSearch Secret Key, your agent can use the `index_document` tool. You can supply a URL and a JSON payload containing the title and body, and the agent will push it directly into your live search index without waiting for the web scraper.
+
+**Q: What kind of search analytics can I retrieve?**
+Using the Secret Key, your agent can call two analytics endpoints: `stats_queries` (to see what users searched for, including top searches and zero-result queries) and `stats_clicks` (to see the click-through rates and popular URLs users navigated to from the search bar).
+
+**Q: Do I need the Secret Key if I just want to test search queries?**
+No, if your goal is solely to run searches, paginate results, or check auto-suggestions, the public 'Site Key' is completely sufficient. The Secret Key is only required to list all documents, modify the index, and fetch analytics.
+
+
 ## Installation & Usage
 
-To install and use the **AddSearch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/addsearch](https://vinkius.com/mcp/addsearch)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AddSearch** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `addsearch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AddSearch** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "addsearch": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

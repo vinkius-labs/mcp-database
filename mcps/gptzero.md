@@ -1,7 +1,6 @@
 # GPTZero MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gptzero)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gptzero-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gptzero-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gptzero)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **GPTZero** MCP server u
 > Retrieving interpretation guide... Perplexity measures how 'surprised' a language model would be by the text. A score below 10 is usually AI, while human writing typically scores much higher due to creative word choices. Shall I explain burstiness next?
 
 
+## ❓ FAQ
+
+**Q: How do I find my GPTZero API Key?**
+Log in to your GPTZero dashboard, navigate to the **API** section, and copy your unique identifier.
+
+**Q: What do the perplexity and burstiness scores indicate?**
+Perplexity measures randomness; low scores suggest predictability (likely AI). Burstiness measures structural variation; low variation is typical in AI-generated content.
+
+**Q: Can I provide feedback if a result is incorrect?**
+Yes! Use the `submit_prediction_feedback` tool to provide the correct classification, which helps improve GPTZero's detection model.
+
+
 ## Installation & Usage
 
-To install and use the **GPTZero** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gptzero](https://vinkius.com/mcp/gptzero)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GPTZero** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gptzero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GPTZero** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gptzero": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

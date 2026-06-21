@@ -1,7 +1,6 @@
 # LiteLLM (LLM Proxy & Spend Tracking) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/litellm-llm-proxy-spend-tracking)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/litellm-llm-proxy-spend-tracking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/litellm-llm-proxy-spend-tracking-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/litellm-llm-proxy-spend-tracking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **LiteLLM (LLM Proxy & S
 > Retrieving data for user 'alex_dev'… So far today, this user has consumed 12,450 total tokens across 45 requests, resulting in a total cost of $0.85 USD. Their most used model is 'gpt-3.5-turbo'. Would you like to see their remaining daily budget?
 
 
+## ❓ FAQ
+
+**Q: Can I check the budget and rate limits for a specific proxy key?**
+Yes. Use the `get_key_info` tool with the specific Key ID. Your agent will retrieve the exact rate limits, budget constraints, and current RPM usage associated with that token.
+
+**Q: How do I see the model fallback paths configured in my proxy?**
+The `get_model_info` tool allows your agent to extract the global model directory. You'll see the exact fallback chains (e.g., if OpenAI fails, use Anthropic) and the physical endpoints assigned to each model name.
+
+**Q: Can my agent create a new team to track specific division costs?**
+Absolutely. Use the `create_team` tool and provide a JSON payload defining the team name and optional budget limits. Your agent will provision the new team identity in LiteLLM, allowing for precise organizational cost tracking.
+
+
 ## Installation & Usage
 
-To install and use the **LiteLLM (LLM Proxy & Spend Tracking)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/litellm-llm-proxy-spend-tracking](https://vinkius.com/mcp/litellm-llm-proxy-spend-tracking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LiteLLM (LLM Proxy & Spend Tracking)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `litellm-llm-proxy-spend-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LiteLLM (LLM Proxy & Spend Tracking)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "litellm-llm-proxy-spend-tracking": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

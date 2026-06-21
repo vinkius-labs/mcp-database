@@ -1,7 +1,6 @@
 # Evergiving Fundraising MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evergiving-fundraising)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/evergiving-fundraising-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/evergiving-fundraising-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evergiving-fundraising)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Evergiving Fundraising
 > John Doe is scheduled for the 'Downtown Plaza' location today from 9:00 AM to 5:00 PM. They are currently assigned to the 'Children's Health' campaign. Would you like to see their conversion rate for this week?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Evergiving API Key?**
+Log in to your Evergiving account, navigate to **Settings > API**, and you can generate or retrieve your unique API Key from there. Ensure your account has the necessary permissions for API access.
+
+**Q: Can the agent process live payments?**
+This integration currently focuses on listing and auditing donations, campaigns, and staff. Processing live credit card or direct debit transactions should be handled via the Evergiving secure mobile app or web portal to ensure PCI compliance.
+
+**Q: Does the integration show recurring status?**
+Yes, you can use the list_active_recurring_pledges tool to retrieve information on monthly or annual donations and check their current billing frequency.
+
+
 ## Installation & Usage
 
-To install and use the **Evergiving Fundraising** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/evergiving-fundraising](https://vinkius.com/mcp/evergiving-fundraising)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Evergiving Fundraising** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `evergiving-fundraising` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Evergiving Fundraising** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "evergiving-fundraising": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

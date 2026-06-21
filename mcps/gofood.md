@@ -1,7 +1,6 @@
 # GoFood MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gofood)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gofood-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gofood-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gofood)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,55 @@ Here are some examples of how you can interact with the **GoFood** MCP server us
 > Promo created successfully! The 20% discount campaign is now active for 'Nasi Goreng Sudirman' and will run through the weekend. Customers will see the offer when browsing your GoFood listing.
 
 
+## ❓ FAQ
+
+**Q: How do I get my GoBiz OAuth 2.0 access token?**
+Authenticate via the GoBiz OAuth endpoint at https://accounts.go-jek.com/oauth2/token using your merchant credentials. The resulting JWT Bearer token should be pasted into the credential field. Tokens expire periodically, so refresh as needed.
+
+**Q: Can my AI automatically accept incoming GoFood orders?**
+Yes! Use the `accept_order` tool with the outlet ID, order type, and order ID. Your agent will confirm and accept the order for processing immediately.
+
+**Q: Does this integration support sandbox/testing environments?**
+Yes, the server is configured to use the GoBiz sandbox API by default (https://api.partner-sandbox.gobiz.co.id). When you're ready for production, update the base URL to https://api.gobiz.co.id in the engine configuration.
+
+**Q: Can I update menu stock levels in bulk?**
+Absolutely. Use the `update_menu_stocks` tool and pass an array of items with their stock levels as a JSON string. You can update dozens of items in a single API call.
+
+
 ## Installation & Usage
 
-To install and use the **GoFood** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gofood](https://vinkius.com/mcp/gofood)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GoFood** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gofood` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GoFood** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gofood": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

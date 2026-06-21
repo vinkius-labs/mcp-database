@@ -1,7 +1,6 @@
 # NetEase BUFF MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/netease-buff)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/netease-buff-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/netease-buff-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/netease-buff)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **NetEase BUFF** MCP ser
 > Valuation scripts actively indexing bound token pools... The portfolio ends calculating at exactly 154,200 CNY. Huge percentage dominated by 3 consecutive factory-new knives isolated inside of the list fetched efficiently mapping out details natively right now strictly here. Would you like a JSON export detailing every individual piece weighting that overall score down broadly?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically aggregate current floor prices of an item pulling multiple active sales dynamically avoiding website refreshes?**
+Yes! Utilize the `get_item_prices` tool targeting a precise numeric class string. Your agent pings the ledger aggregating lowest-pings without waiting dragging visuals across the network pulling only dense JSON formats natively rendering prices instantly.
+
+**Q: How do I easily discover what phase of float the latest sales belong to without deep-diving?**
+Direct your agent to use the `get_recent_sales` tool checking the exact weapon ID. It spits out sequential arrays detailing raw money paired explicitly alongside float decay values saving hours of click fatigue pulling tabular lists directly.
+
+**Q: Are there vulnerabilities enabling irreversible edits like purchasing or selling automatically draining bounds without consent?**
+No. The architecture provides rigid read-only isolation fetching economy tables keeping write protocols like 'Buy' or 'Sell' totally locked off ensuring zero risk of asset drain mapping only market pulses organically natively seamlessly tracking strictly analytically permanently secured strictly completely today out of the box fully.
+
+
 ## Installation & Usage
 
-To install and use the **NetEase BUFF** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/netease-buff](https://vinkius.com/mcp/netease-buff)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NetEase BUFF** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `netease-buff` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NetEase BUFF** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "netease-buff": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

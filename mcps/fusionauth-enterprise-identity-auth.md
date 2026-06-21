@@ -1,7 +1,6 @@
 # FusionAuth (Enterprise Identity & Auth) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fusionauth-enterprise-identity-auth)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fusionauth-enterprise-identity-auth-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fusionauth-enterprise-identity-auth-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fusionauth-enterprise-identity-auth)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -120,12 +119,52 @@ Here are some examples of how you can interact with the **FusionAuth (Enterprise
 > User 'test_user' has been created successfully with ID 9b1... and email 'test@example.com'. I can now assign roles to this user if you provide an application ID.
 
 
+## ❓ FAQ
+
+**Q: Can I search for a user using their username instead of an ID?**
+Yes! The `get_user` tool allows you to search by `username`, `email`, or `loginId` in addition to the `userId` UUID.
+
+**Q: How do I list all the roles defined for a specific application?**
+Use the `list_application_roles` tool and provide the `applicationId`. It will return all roles like 'admin', 'user', or custom roles configured for that environment.
+
+**Q: Is it possible to update only a few fields of a user without sending the whole object?**
+Yes, use the `patch_user` tool. It allows you to send a partial JSON body containing only the specific fields you wish to modify.
+
+
 ## Installation & Usage
 
-To install and use the **FusionAuth (Enterprise Identity & Auth)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fusionauth-enterprise-identity-auth](https://vinkius.com/mcp/fusionauth-enterprise-identity-auth)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FusionAuth (Enterprise Identity & Auth)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fusionauth-enterprise-identity-auth` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FusionAuth (Enterprise Identity & Auth)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fusionauth-enterprise-identity-auth": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

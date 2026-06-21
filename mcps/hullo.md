@@ -1,7 +1,6 @@
 # Hullo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hullo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hullo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hullo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hullo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Hullo** MCP server usi
 > Member created! Name: Carlos Mendes, Email: carlos@example.com, Phone: +55 11 9876-5432, ID: member_043. You now have 43 members. Welcome message sent! ✅ To: Carlos Mendes (member_043). Content: 'Welcome to our community, Carlos! We're excited to have you aboard. Here are some resources to get you started...' Delivery: confirmed. A new conversation has been created (conv_090). Would you like to view his profile or list all conversations?
 
 
+## ❓ FAQ
+
+**Q: Can I send messages to members through the AI agent?**
+Yes. The `send_message` tool sends a direct message to a member. Provide a JSON payload with the `member_id`, `content` (the message text), and `type` (message type). Use `list_members` first to find the member ID.
+
+**Q: Can I view the full conversation history with a member?**
+Yes. Use `list_conversations` to see all active conversations, then `get_conversation` with a specific conversation ID to retrieve the full message thread including sender, timestamp, and content for each message.
+
+**Q: Can I create new member profiles and manage their contact information?**
+Yes. Use `create_member` with a JSON payload containing `first_name`, `last_name`, `email`, `phone`, and other contact details. Use `list_members` to browse existing members and `get_member` to inspect a specific profile.
+
+
 ## Installation & Usage
 
-To install and use the **Hullo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hullo](https://vinkius.com/mcp/hullo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hullo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hullo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hullo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hullo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

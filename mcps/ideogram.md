@@ -1,7 +1,6 @@
 # Ideogram MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ideogram)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ideogram-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ideogram-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ideogram)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Ideogram** MCP server 
 > Recent images: 8 generated this week. 1) Futuristic cityscape (4K, realistic). 2) Logo design 'TechFlow' (1:1, design). 3) Mountain landscape (16:9, realistic). 4) Product mockup (4:3). Remixing #1 with winter theme... Done! New image: Same cityscape composition but with snow-covered buildings, ice reflections, aurora borealis sky, and frost on windows. Style maintained, season transformed. Would you like to compare or edit?
 
 
+## ❓ FAQ
+
+**Q: Can I generate images with specific styles and aspect ratios?**
+Yes. The `generate_image` tool accepts a text prompt along with style presets (realistic, design, 3D, anime), aspect ratio (1:1, 16:9, 9:16, etc.), and model version. You can control the output precisely for different use cases.
+
+**Q: Can I edit specific parts of an existing image?**
+Yes. Use `edit_image` with a source image and mask to modify specific regions using inpainting. Use `remix_image` to transform an image with a new prompt while preserving its overall composition and structure.
+
+**Q: How does Ideogram authentication work?**
+Ideogram uses a custom `Api-Key` header (not Bearer). Your API key is generated from the Ideogram developer dashboard and sent in all requests to `api.ideogram.ai`.
+
+
 ## Installation & Usage
 
-To install and use the **Ideogram** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ideogram](https://vinkius.com/mcp/ideogram)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ideogram** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ideogram` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ideogram** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ideogram": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

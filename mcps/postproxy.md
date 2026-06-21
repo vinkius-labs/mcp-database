@@ -1,7 +1,6 @@
 # Postproxy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postproxy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/postproxy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/postproxy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postproxy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Postproxy** MCP server
 > Here are the latest comments from your recent post. Let me know if you would like me to reply or hide any of them.
 
 
+## ❓ FAQ
+
+**Q: Can the AI Agent schedule posts for any future date?**
+Yes, as long as you provide a valid ISO date, your AI Agent can schedule posts using Postproxy.
+
+**Q: Can I manage comments directly from the AI Agent?**
+Absolutely. You can list, like, reply, hide, or unhide comments across your posts seamlessly.
+
+**Q: Does the AI Agent support grouping profiles?**
+Yes! The AI Agent can retrieve your Profile Groups so you can target multiple social media accounts at once.
+
+
 ## Installation & Usage
 
-To install and use the **Postproxy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/postproxy](https://vinkius.com/mcp/postproxy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Postproxy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `postproxy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Postproxy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "postproxy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Goody MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goody)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/goody-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/goody-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goody)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Goody** MCP server usi
 > Checking recent orders... You sent 3 gifts last week. 'Artisanal Chocolate Box' to Sarah P. was delivered yesterday. 'Wellness Candle' to Mike R. is currently 'Shipped' (ETA tomorrow). 'Succulent Trio' to Jane D. is 'Pending Acceptance'.
 
 
+## ❓ FAQ
+
+**Q: Can I allow recipients to choose their own gift or swap an item?**
+Yes! Goody is designed for flexibility. When you send a gift via the AI agent, the recipient receives a link where they can accept the gift, swap it for an alternative, and provide their preferred shipping address.
+
+**Q: How do I track the shipping status of a gift I just sent?**
+Simply ask the agent to `list_orders` or `get_order` with the specific ID. You'll see real-time updates including 'accepted', 'shipped', and 'delivered', along with tracking numbers when available.
+
+**Q: Can I send gifts to multiple people at once with a single command?**
+Yes! Use the `create_order_batch` tool. You can provide a list of recipients, and the AI agent will organize them into a single batch, generating individual gift links for everyone involved.
+
+
 ## Installation & Usage
 
-To install and use the **Goody** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/goody](https://vinkius.com/mcp/goody)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Goody** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `goody` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Goody** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "goody": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

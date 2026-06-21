@@ -1,7 +1,6 @@
 # Chess.com MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chesscom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chesscom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chesscom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chesscom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -114,12 +113,52 @@ Here are some examples of how you can interact with the **Chess.com** MCP server
 > Here are the current top 5 players on the Chess.com blitz leaderboard: 1. **Hikaru** (3254), 2. **DrNykterstein** (3215), 3. **ArjunErigaisi** (3198), 4. **DanielNaroditsky** (3176), 5. **CrazyBishop** (3145). These are some of the strongest blitz players in the world. Want me to pull detailed stats for any of them?
 
 
+## ❓ FAQ
+
+**Q: Do I need a Chess.com API key or authentication to use this server?**
+No! The Chess.com public API is completely open and requires no authentication. All endpoints are read-only, so you can start querying player profiles, stats, games, and puzzles immediately after installation without any API keys or tokens.
+
+**Q: Can I retrieve my complete game history with PGN data for a specific month?**
+Yes! Use the `get_player_monthly_games` tool with your username, year, and month (1-12). It returns all finished games with full PGN strings, opponent usernames, opening names, time controls, accuracy ratings, and game end reasons. First use `get_player_game_archives` to discover which months have available data for any player.
+
+**Q: How can I find chess puzzles for practice or training?**
+Use `get_daily_puzzle` for the official Chess.com daily puzzle that changes once per day, or use `get_random_puzzle` for unlimited random puzzles from the Chess.com database. Both return the puzzle position (FEN), the complete solution moves, puzzle rating, and the source game information — perfect for tactical training sessions.
+
+
 ## Installation & Usage
 
-To install and use the **Chess.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chesscom](https://vinkius.com/mcp/chesscom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chess.com** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chesscom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chess.com** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chesscom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

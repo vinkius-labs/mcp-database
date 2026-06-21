@@ -1,7 +1,6 @@
 # API-Futebol (Brazilian Football) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/api-futebol-brazilian-football)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/api-futebol-brazilian-football-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/api-futebol-brazilian-football-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/api-futebol-brazilian-football)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **API-Futebol (Brazilian
 > Inspecting the scoring charts... I've retrieved the top scorers for the Copa do Brasil. Currently, the leader is 'Player Name' with 7 goals. I have the full list of the top 10. Shall I provide their club details as well?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the current G-4 of Brasileirão Série A?**
+Yes! Use the `get_championship_standings` tool with the ID for Série A (e.g., 10). Your agent will respond with the top 4 teams, their points, and current win streaks in seconds.
+
+**Q: How do I check the match history between Flamengo and Fluminense?**
+You can ask the agent to search for both teams to get their IDs and then run `get_team_matches` for either club. It will compile all recorded results, allowing the AI to analyze the head-to-head performance.
+
+**Q: Are live scores for State Championships (Estaduais) available?**
+Absolutely. The `get_live_matches` tool monitors all ongoing professional matches in Brazil covered by your plan, including Paulistão, Carioca, and other state-level competitions.
+
+
 ## Installation & Usage
 
-To install and use the **API-Futebol (Brazilian Football)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/api-futebol-brazilian-football](https://vinkius.com/mcp/api-futebol-brazilian-football)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **API-Futebol (Brazilian Football)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `api-futebol-brazilian-football` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **API-Futebol (Brazilian Football)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "api-futebol-brazilian-football": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

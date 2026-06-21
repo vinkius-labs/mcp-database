@@ -1,7 +1,6 @@
 # Pocket Network (Decentralized RPC Nodes API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pocket-network-decentralized-rpc-nodes-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pocket-network-decentralized-rpc-nodes-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pocket-network-decentralized-rpc-nodes-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pocket-network-decentralized-rpc-nodes-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Pocket Network (Decent
 > Sending relay request through Pocket nodes... The request was successful. The current block height on the target chain is 18,450,210.
 
 
+## ❓ FAQ
+
+**Q: Can I send requests to other blockchains like Ethereum using this server?**
+Yes. Use the `relay_request` tool to send RPC payloads to external chains. You will need to provide the payload, metadata, and session proof.
+
+**Q: How do I check which nodes are currently serving my application?**
+You can use the `get_session` tool by providing your App Public Key and the Blockchain ID. It will return the set of nodes assigned to that specific session.
+
+**Q: Is it possible to submit POKT transactions through this interface?**
+Yes, the `submit_transaction` tool allows you to send hex-encoded signed transactions directly to the Pocket Network.
+
+
 ## Installation & Usage
 
-To install and use the **Pocket Network (Decentralized RPC Nodes API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pocket-network-decentralized-rpc-nodes-api](https://vinkius.com/mcp/pocket-network-decentralized-rpc-nodes-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pocket Network (Decentralized RPC Nodes API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pocket-network-decentralized-rpc-nodes-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pocket Network (Decentralized RPC Nodes API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pocket-network-decentralized-rpc-nodes-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

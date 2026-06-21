@@ -1,7 +1,6 @@
 # Appointlet MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appointlet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/appointlet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/appointlet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appointlet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Appointlet** MCP serve
 > For booking bk_71m (Acme Corp Discovery), the attendee listed 'Company Size' as '50-100 employees', 'Primary Challenge' as 'Slow CI/CD pipelines', and 'Tech Stack' as 'NextJS and Vercel'. They selected the 'Yes' checkbox for possessing spending authority.
 
 
+## ❓ FAQ
+
+**Q: Can the AI agent cancel an upcoming meeting on my behalf?**
+Yes. Provide the booking ID (which you can ask the agent to find) and the cancellation reason. The agent triggers the exact routine in Appointlet to withdraw the booking and safely releases the block on your calendar while notifying the invitee.
+
+**Q: I need attendee form answers before a call. Can the agent get them?**
+Absolutely. Using the `get_booking` and `list_bookings` capabilities, your AI agent surfaces the raw intake form fields filled out by attendees when booking their time. It's an instant method to read out context without switching screens.
+
+**Q: Can I edit the schedule of round-robin assignees using the agent?**
+No. The MCP server is optimized as an observability, lookup, and action-oriented companion. It reads the organizational hierarchy, list members, and checks statuses, but modifying overarching structural logic requires entering the Appointlet dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **Appointlet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/appointlet](https://vinkius.com/mcp/appointlet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Appointlet** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `appointlet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Appointlet** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "appointlet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

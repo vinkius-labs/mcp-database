@@ -1,7 +1,6 @@
 # UniCourt MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unicourt)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unicourt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unicourt-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unicourt)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **UniCourt** MCP server 
 > Retrieving analytics for attorney ATTY-98765... This attorney has handled 150+ cases, primarily in Intellectual Property. Their win rate in federal courts is approximately 65%. Would you like a breakdown of their most recent cases?
 
 
+## ❓ FAQ
+
+**Q: How can I search for court cases involving a specific company?**
+Use the `search_cases` tool with a query like `caseName:"Company Name"`. The agent will return a list of matching cases with their UniCourt IDs and basic details.
+
+**Q: Can the AI automatically track a case for new updates?**
+Yes! By using the `track_case` tool with a specific `caseId`, you can set up automated monitoring. You can even specify a `refreshWindow` like '1d' for daily updates.
+
+**Q: Is it possible to get professional background data for an attorney?**
+Absolutely. Use `search_norm_attorney` to find the attorney and then `get_norm_attorney` with their ID to retrieve detailed analytics and professional history.
+
+
 ## Installation & Usage
 
-To install and use the **UniCourt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/unicourt](https://vinkius.com/mcp/unicourt)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **UniCourt** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `unicourt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **UniCourt** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "unicourt": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

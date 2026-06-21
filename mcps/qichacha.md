@@ -1,7 +1,6 @@
 # Qichacha / 企查查 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qichacha)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qichacha-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qichacha-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qichacha)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Qichacha / 企查查**
 > I've retrieved the risk indicators for Ant Group. There are no critical industrial abnormalities, but there are 3 recent court cases listed. Should I retrieve the details for these cases?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Qichacha App Key and Secret?**
+Log in to the [Qichacha OpenAPI Platform](https://openapi.qcc.com/), go to [Console] -> [My Interfaces], and you will find your unique App Key and Secret Key there.
+
+**Q: Is there a limit to the search queries?**
+The search limits depend on your Qichacha OpenAPI subscription plan. You can use the `get_account_status` tool to check your current balance and usage limits.
+
+**Q: Can I check risk information for multiple companies?**
+Yes. You can use the `list_risks` tool sequentially for different company names to retrieve risk indicators and court cases for each enterprise.
+
+
 ## Installation & Usage
 
-To install and use the **Qichacha / 企查查** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/qichacha](https://vinkius.com/mcp/qichacha)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Qichacha / 企查查** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `qichacha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Qichacha / 企查查** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "qichacha": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

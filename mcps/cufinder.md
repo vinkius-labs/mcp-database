@@ -1,7 +1,6 @@
 # CUFinder MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cufinder)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cufinder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cufinder-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cufinder)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **CUFinder** MCP server 
 > Enrichment complete! For the provided profile, I've retrieved full metadata including professional title, current company (Apple), and verified contact information. I've updated the profile record with these insights.
 
 
+## ❓ FAQ
+
+**Q: Can I find the official website for a company via AI?**
+Yes! Use the `find_company_domain` tool and provide the company name. Your agent will return the primary web domain registered for that entity.
+
+**Q: How do I see the estimated revenue for a specific company?**
+Run the `get_company_revenue` query and provide the domain. The agent will retrieve the estimated annual revenue range from CUFinder's database.
+
+**Q: Is it possible to list employees for a domain via AI?**
+Absolutely. Use the `find_company_employees` tool. The agent will retrieve a list of known employees and decision makers associated with that specific company domain.
+
+
 ## Installation & Usage
 
-To install and use the **CUFinder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cufinder](https://vinkius.com/mcp/cufinder)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CUFinder** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cufinder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CUFinder** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cufinder": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

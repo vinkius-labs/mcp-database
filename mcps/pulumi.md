@@ -1,7 +1,6 @@
 # Pulumi MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pulumi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pulumi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pulumi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pulumi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,55 @@ Here are some examples of how you can interact with the **Pulumi** MCP server us
 > The prod stack exports the following outputs: `api_url: https://api.example.com`, `cdn_url: https://cdn.example.com`, `db_endpoint: postgres://db.example.com:5432`, `s3_bucket_arn: arn:aws:s3:::my-prod-bucket` and `vpc_id: vpc-0abc123`. Would you like details on any of these?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Pulumi Access Token?**
+Log in to the [**Pulumi Console**](https://app.pulumi.com), go to **Account Settings > Access Tokens**, click **Create Token**, give it a name and copy the token immediately — it starts with `pul_` and won't be shown again.
+
+**Q: What is a Pulumi stack?**
+A stack is an isolated, independently configurable instance of your Pulumi program. Stacks typically represent different environments like dev, staging and prod. Each stack has its own configuration, state, outputs and deployment history. Use list_stacks to discover all stacks in an organization.
+
+**Q: Can I see the deployment history of a stack?**
+Yes! Use `list_deployments` with the org name, project name and stack name. It returns the update history showing version number, status (succeeded, failed, in-progress), start/end time and resource change counts. Use `get_deployment` with a specific version for detailed logs and error messages.
+
+**Q: Can I view the outputs of a stack?**
+Yes! Use `get_stack_outputs` with the org name, project name and stack name. It returns all exported output values from the latest successful deployment, such as URLs, IP addresses, resource IDs and connection strings. This is useful for discovering endpoint addresses after infrastructure deployment.
+
+
 ## Installation & Usage
 
-To install and use the **Pulumi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pulumi](https://vinkius.com/mcp/pulumi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pulumi** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pulumi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pulumi** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pulumi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

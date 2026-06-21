@@ -1,7 +1,6 @@
 # Drata MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drata)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/drata-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/drata-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drata)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **Drata** MCP server usi
 > You have 2 active frameworks: SOC 2 Type II (85% Ready) and ISO 27001 (72% Ready). I can provide a breakdown of the remaining controls for either framework.
 
 
+## ❓ FAQ
+
+**Q: Can my agent check if specific employees have finished their security training?**
+Yes. Use the 'list_personnel' or 'get_personnel_status' tools. The agent retrieves the onboarding state, including Security Awareness Training completion and background check clearance for any tracked individual.
+
+**Q: How do I monitor which compliance controls are currently failing?**
+Use the 'list_controls' tool to see all controls and 'get_control' for specific details. The agent will fetch exact evaluation states and automated test results to identify failing requirements and their risk logic.
+
+**Q: Can I see my SOC 2 readiness score through natural conversation?**
+Absolutely. Use the 'list_frameworks' tool. Your agent will pull the top-level standard boundaries and provide overall readiness scores and aggregated control completion percentages for frameworks like SOC 2.
+
+
 ## Installation & Usage
 
-To install and use the **Drata** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/drata](https://vinkius.com/mcp/drata)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Drata** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `drata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Drata** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "drata": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

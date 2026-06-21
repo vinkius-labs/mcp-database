@@ -1,7 +1,6 @@
 # Change Order Impact Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/change-order-impact-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/change-order-impact-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/change-order-impact-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/change-order-impact-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Change Order Impact Ca
 > The project is at medium risk level because the percentage drift is 20.00%.
 
 
+## ❓ FAQ
+
+**Q: How does the tool calculate the total price of a change order?**
+The `calculate_change_order_price` tool takes the direct cost and an overhead/profit rate (e.g., 0.20 for 20%) to calculate the final price charged to the client.
+
+**Q: Can I track the total impact of all changes on my project timeline?**
+Yes, using `calculate_cumulative_impact`, you can input your original contract value and previous change orders to see the updated contract total and estimated project delay in days.
+
+**Q: How is project risk determined?**
+The `assess_project_risk_level` tool compares the total volume of change orders against the original contract value to categorize the project as low, medium, or high risk.
+
+
 ## Installation & Usage
 
-To install and use the **Change Order Impact Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/change-order-impact-calculator](https://vinkius.com/mcp/change-order-impact-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Change Order Impact Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `change-order-impact-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Change Order Impact Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "change-order-impact-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

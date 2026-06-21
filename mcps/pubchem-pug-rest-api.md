@@ -1,7 +1,6 @@
 # PubChem PUG REST API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pubchem-pug-rest-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pubchem-pug-rest-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pubchem-pug-rest-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pubchem-pug-rest-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **PubChem PUG REST API**
 > I've scanned the PubChem database for glucose! I've identified several matching CIDs, including 5793 and 107526. I can provide the full metadata for any of these identifiers to help you in your research.
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for PubChem API?**
+No. PubChem is a free and open service provided by the NIH. This server works out of the box without any static credentials required.
+
+**Q: What is a CID?**
+CID stands for Compound Identifier. It is a unique numerical ID assigned to each chemical compound in the PubChem database.
+
+**Q: Can the agent show molecular formulas?**
+Yes. The compound details retrieved by your agent include the molecular formula and IUPAC name metadata where available.
+
+
 ## Installation & Usage
 
-To install and use the **PubChem PUG REST API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pubchem-pug-rest-api](https://vinkius.com/mcp/pubchem-pug-rest-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PubChem PUG REST API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pubchem-pug-rest-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PubChem PUG REST API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pubchem-pug-rest-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

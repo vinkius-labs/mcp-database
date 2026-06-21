@@ -1,7 +1,6 @@
 # NeverBounce MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neverbounce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/neverbounce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/neverbounce-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neverbounce)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **NeverBounce** MCP serv
 > Inspecting job 123456... This job is currently 75% complete. Out of 1,000 emails, 600 have been verified as Valid and 150 as Invalid so far. I'll let you know when it reaches 100%.
 
 
+## ❓ FAQ
+
+**Q: Where do I find my NeverBounce API Key?**
+Log in to your NeverBounce dashboard and navigate to the API section to create or copy your 'Secret Key'.
+
+**Q: What do the different result statuses mean?**
+'Valid' means the email is safe to send. 'Invalid' will bounce. 'Disposable' are temporary addresses, and 'Catchall' means the domain accepts all mail, making deliverability uncertain.
+
+**Q: How do I start a bulk verification job?**
+First, use `create_job_from_url` or `create_job_from_input`. Then, call `parse_job` followed by `start_job` to begin the verification process.
+
+
 ## Installation & Usage
 
-To install and use the **NeverBounce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/neverbounce](https://vinkius.com/mcp/neverbounce)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NeverBounce** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `neverbounce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NeverBounce** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "neverbounce": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

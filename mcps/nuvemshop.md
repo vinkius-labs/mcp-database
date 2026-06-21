@@ -1,7 +1,6 @@
 # Nuvemshop MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nuvemshop)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nuvemshop-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nuvemshop-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nuvemshop)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -217,12 +216,55 @@ The coupon is now active and ready for customers to use at checkout.
 Would you like to update stock quantities for any of these products?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Nuvemshop Access Token and Store ID?**
+Go to the [**Nuvemshop Developer Portal**](https://dev.nuvemshop.com.br/), create an application, and follow the OAuth 2.0 Authorization Code flow to generate your access token. The token format is `AT-{store_id}-{hash}`. Your Store ID is the numeric part of the token or can be found in your store URL/dashboard settings. Use both the access token and store ID to authenticate API requests.
+
+**Q: What are the API rate limits and how can I avoid hitting them?**
+Nuvemshop uses a Leaky Bucket algorithm with a default limit of 2 requests/second and a burst maximum of 40. Next and Evolution plans have this limit multiplied by 10. Monitor the `x-rate-limit-remaining` header in responses. If you hit the limit, the API returns HTTP 429. To avoid this, implement request queuing and respect the rate limit headers in your integrations.
+
+**Q: Can I create orders manually through the API?**
+Yes! Use the `create_order` tool with customer information and order items. This is perfect for phone orders, in-person sales, bulk order imports, or orders from other sales channels. You need to provide at minimum the customer email and at least one item with product ID and quantity. The order will appear in your Nuvemshop dashboard as a manual order.
+
+**Q: How do I manage product variants like size and color?**
+Use `list_variants` with a product_id to see all variants for a product. Each variant has its own SKU, price, and stock quantity. Variants are created when you set up product options (like size or color) in the product creation or update process. The API handles variants as part of the product object, and you can manage inventory for each variant individually.
+
+
 ## Installation & Usage
 
-To install and use the **Nuvemshop** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nuvemshop](https://vinkius.com/mcp/nuvemshop)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nuvemshop** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nuvemshop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nuvemshop** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nuvemshop": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

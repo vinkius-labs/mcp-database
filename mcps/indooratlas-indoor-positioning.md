@@ -1,7 +1,6 @@
 # IndoorAtlas (Indoor Positioning) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/indooratlas-indoor-positioning)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/indooratlas-indoor-positioning-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/indooratlas-indoor-positioning-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/indooratlas-indoor-positioning)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **IndoorAtlas (Indoor Po
 > I've found 12 positioning sessions from today. The longest session lasted 45 minutes in the 'Corporate HQ'. Average accuracy across all sessions is 2.4 meters. Would you like to inspect the trace data for the most active session?
 
 
+## ❓ FAQ
+
+**Q: How do I start the map generation process for a new floor plan?**
+Use the `trigger_map_generation` tool with your Floorplan ID. This initiates the server-side computation that creates the positioning model. It's a critical step before indoor positioning can work on that level.
+
+**Q: Can I determine a position using Wi-Fi scans through my agent?**
+Yes. The `position_from_wifi_scan` tool allows you to submit observed Wi-Fi signal strengths. Your agent will return estimated coordinates and floor level, which is perfect for server-side positioning logic.
+
+**Q: How can I analyze visitor traffic patterns in our building?**
+Use the `list_positioning_sessions` tool to retrieve historical traces. Your agent can help you analyze occupancy patterns and dwell times by processing the timestamped coordinate fixes from past sessions.
+
+
 ## Installation & Usage
 
-To install and use the **IndoorAtlas (Indoor Positioning)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/indooratlas-indoor-positioning](https://vinkius.com/mcp/indooratlas-indoor-positioning)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IndoorAtlas (Indoor Positioning)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `indooratlas-indoor-positioning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IndoorAtlas (Indoor Positioning)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "indooratlas-indoor-positioning": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

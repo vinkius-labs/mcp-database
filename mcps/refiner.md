@@ -1,7 +1,6 @@
 # Refiner MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/refiner)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/refiner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/refiner-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/refiner)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Refiner** MCP server u
 > Event tracked! I've logged 'Clicked Upgrade' for mike@example.com in Refiner. If you have any micro-surveys targeted to this event, they will be triggered for the user automatically.
 
 
+## ❓ FAQ
+
+**Q: Can I check the responses for a specific survey via AI?**
+Yes! Use the `list_refiner_responses` tool and provide the Survey UUID. Your agent will retrieve the latest submissions, which you can then ask the AI to summarize or filter by date.
+
+**Q: How do I identify a user and add custom traits using the agent?**
+Use the `identify_refiner_user` action. Provide the User ID or Email and a JSON string of `traits` (e.g., '{"plan":"pro"}'). This helps you target surveys based on specific user metadata.
+
+**Q: Is it possible to track a custom event to trigger a survey via AI?**
+Absolutely. Use the `track_refiner_event` tool. Provide the event name and the user's ID/Email. When this event is logged, Refiner will trigger any surveys you have configured for that specific action.
+
+
 ## Installation & Usage
 
-To install and use the **Refiner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/refiner](https://vinkius.com/mcp/refiner)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Refiner** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `refiner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Refiner** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "refiner": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

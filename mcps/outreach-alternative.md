@@ -1,7 +1,6 @@
 # Outreach MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/outreach-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/outreach-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/outreach-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/outreach-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Outreach** MCP server 
 > 14 prospects replied positively to "Enterprise Cold Outreach" in the past week. Notable responses include Maria Chen (VP Engineering at DataFlow), who requested a demo for next Tuesday, and James Park (CTO at ScaleUp), who asked for pricing details. 5 prospects were automatically moved to your "Meeting Booked" stage.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific prospect by their ID?**
+Yes! Use the `get_prospect` tool with the Prospect ID. Your agent will respond with complete metadata for the record, including custom fields, sequence history, and owner info in seconds.
+
+**Q: How do I find my Outreach.io OAuth2 Access Token?**
+Log in to your Outreach Developer Portal, create a new **App**, and use the provided client credentials to perform the OAuth 2.0 flow to obtain a secret access token.
+
+**Q: Does this work with the Outreach API v2?**
+Yes, this MCP server is specifically built using the Outreach JSON:API v2 specification to ensure full compatibility with modern sales workflows.
+
+
 ## Installation & Usage
 
-To install and use the **Outreach** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/outreach-alternative](https://vinkius.com/mcp/outreach-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Outreach** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `outreach-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Outreach** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "outreach-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

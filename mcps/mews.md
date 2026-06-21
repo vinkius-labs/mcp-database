@@ -1,7 +1,6 @@
 # Mews MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mews)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mews-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mews-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mews)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Here are some examples of how you can interact with the **Mews** MCP server usin
 > The projected Average Daily Rate (ADR) for this upcoming Friday to Sunday is $245. This is driven by high demand and strong performance in our premium suite categories.
 
 
+## ❓ FAQ
+
+**Q: What types of hotels use Mews?**
+Mews serves 5,000+ properties in 85+ countries — from boutique hotels and hostels to luxury resorts and hotel groups. It's a cloud-native PMS designed for modern hospitality.
+
+**Q: Is the Mews API suitable for large hotel groups?**
+Yes, Mews provides a robust API that supports multi-property operations, making it ideal for hotel groups to manage central reservations, corporate billing, and group-wide reporting.
+
+**Q: Can I check room housekeeping status in real-time?**
+Yes, you can query Mews to get the real-time status of any room, including whether it is clean, dirty, inspected, or out of order, which helps prioritize housekeeping efforts.
+
+
 ## Installation & Usage
 
-To install and use the **Mews** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mews](https://vinkius.com/mcp/mews)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mews** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mews` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mews** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mews": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Paymo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paymo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/paymo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/paymo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paymo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Paymo** MCP server usi
 > Passed JSON commands explicitly natively validating insertion logic cleanly in Paymo arrays running background logic. Logged exactly exactly '240 minutes' natively (4 hrs). The pipeline recorded constraints tied properly to task bounds successfully.
 
 
+## ❓ FAQ
+
+**Q: How exactly does the AI log time tracking entries to a task?**
+Through explicit invocation by pushing bounds mapped securely over `create_time_entry`. You instruct exactly 'Add 2 hours for task XY', and the node bridges those limits pushing explicitly into the structural API.
+
+**Q: Are milestone objects connected to project extractions natively?**
+Yes. When extracting specific metadata loops using list queries, milestones return explicit JSON bounds resolving the connected project parent limits gracefully revealing dates strictly.
+
+**Q: Can it trace users and identify the ID mapped over each collaborator logically?**
+Absolutely, dispatching `list_users` isolates parameters matching team structures natively to evaluate specific user metadata IDs reliably required by other explicit creation blocks.
+
+
 ## Installation & Usage
 
-To install and use the **Paymo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/paymo](https://vinkius.com/mcp/paymo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Paymo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `paymo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Paymo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "paymo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

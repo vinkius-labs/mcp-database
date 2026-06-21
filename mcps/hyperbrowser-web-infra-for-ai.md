@@ -1,7 +1,6 @@
 # Hyperbrowser (Web Infra for AI) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hyperbrowser-web-infra-for-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hyperbrowser-web-infra-for-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hyperbrowser-web-infra-for-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hyperbrowser-web-infra-for-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **Hyperbrowser (Web Infr
 > I've found 2 active browser sessions: 1) Session ID 'sb-123' (Running for 12 mins, US-East Proxy), 2) Session ID 'sb-456' (Running for 2 mins, Stealth Mode). Would you like to terminate either of these?
 
 
+## ❓ FAQ
+
+**Q: Can my agent extract specific product data from an e-commerce site?**
+Yes. Use the `extract_data` tool and provide the target URL along with a prompt like 'Extract product name, price, and customer rating'. Hyperbrowser's LLM will render the page and return clean JSON data according to your request.
+
+**Q: How do I handle websites that require dynamic JavaScript loading?**
+Hyperbrowser is built for dynamic content. Tools like `page_content` and `start_scrape` wait for JavaScript to settle before returning results, ensuring your agent sees the fully rendered version of any web application.
+
+**Q: Can I run custom automation scripts in the cloud?**
+Absolutely. The `run_script` tool allows you to execute JavaScript strings inside an active browser session. This is perfect for simulating complex user interactions or extracting data that requires custom logic.
+
+
 ## Installation & Usage
 
-To install and use the **Hyperbrowser (Web Infra for AI)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hyperbrowser-web-infra-for-ai](https://vinkius.com/mcp/hyperbrowser-web-infra-for-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hyperbrowser (Web Infra for AI)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hyperbrowser-web-infra-for-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hyperbrowser (Web Infra for AI)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hyperbrowser-web-infra-for-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

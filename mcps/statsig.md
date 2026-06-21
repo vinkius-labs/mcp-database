@@ -1,7 +1,6 @@
 # Statsig MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/statsig)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/statsig-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/statsig-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/statsig)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -100,12 +99,52 @@ Here are some examples of how you can interact with the **Statsig** MCP server u
 > The feature gate 'mobile_redesign' has been successfully created in your project.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between the Server Secret Key and the Console API Key?**
+The Server Secret Key is used for evaluation tools like `check_gate` and `get_config`. The Console API Key is required for management actions like `list_gates` or `create_gate`.
+
+**Q: How do I evaluate a gate for a specific user?**
+Use the `check_gate` tool. You must provide the `gateName` and a `user` JSON object containing at least a `userID` (e.g., `{"userID": "123"}`).
+
+**Q: Can I log custom events for analytics?**
+Yes, use the `log_event` tool to send an array of event objects including name, value, and user metadata to Statsig for real-time metric calculation.
+
+
 ## Installation & Usage
 
-To install and use the **Statsig** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/statsig](https://vinkius.com/mcp/statsig)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Statsig** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `statsig` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Statsig** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "statsig": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

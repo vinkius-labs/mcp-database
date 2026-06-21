@@ -1,7 +1,6 @@
 # Stability AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stability-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stability-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stability-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stability-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Do you wish to iterate computationally adjusting resolution density with `upscal
 > Executing `remove_background` routine... Done. Background eradicated cleanly.
 
 
+## ❓ FAQ
+
+**Q: Can the language model visually analyze the specific outputs generated from the APIs recursively?**
+Stability AI’s underlying architecture transmits the resultant graphical files returning strictly formatted Base64 encoded outputs or structured CDN links. Assuming your interface possesses multimodal capability, it is logically capable of assessing graphic properties accurately post generation.
+
+**Q: Who possesses ownership over the raw generated assets computationally rendered here?**
+By adhering definitively to official usage terms, creations executed natively belong securely entirely to the account producing them (you). Generative visual models execute entirely adhering to a clear framework of user copyright ownership fundamentally aligned with typical platform specifications.
+
+**Q: Which image formats does the API return?**
+The API typically returns PNG images encoded as Base64 strings or direct CDN URLs. The exact format depends on the endpoint and parameters used in the generation request.
+
+
 ## Installation & Usage
 
-To install and use the **Stability AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stability-ai](https://vinkius.com/mcp/stability-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Stability AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stability-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Stability AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stability-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

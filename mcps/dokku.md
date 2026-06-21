@@ -1,7 +1,6 @@
 # Dokku MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dokku)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dokku-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dokku-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dokku)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **Dokku** MCP server usi
 > Retrieving logs for 'frontend-web'... [Agent pulls precise system execution tails showing request logs, node backtraces, or slow queries happening inside the containers].
 
 
+## ❓ FAQ
+
+**Q: Can my agent scale my Dokku processes automatically?**
+Yes. Use the 'ps_scale' tool. You can specify the application name and the target replica count for processes like 'web' or 'worker'. The agent will manipulate the explicit counts within your Dokku cluster instantly.
+
+**Q: How do I update environment variables via chat?**
+Use the 'set_config' tool. Provide the app name, key, and value. The agent will inject the pair into the Docker environment mapping, which typically triggers a rolling deployment to apply the new configuration safely.
+
+**Q: Can I run database migrations through the agent?**
+Absolutely. Use the 'run_command' tool. It boots an ephemeral isolated container cloning your production image, allowing you to run maintenance commands like 'rake db:migrate' or custom scripts without affecting live traffic.
+
+
 ## Installation & Usage
 
-To install and use the **Dokku** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dokku](https://vinkius.com/mcp/dokku)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dokku** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dokku` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dokku** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dokku": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

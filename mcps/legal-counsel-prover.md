@@ -1,7 +1,6 @@
 # Legal Counsel Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/legal-counsel-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/legal-counsel-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/legal-counsel-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/legal-counsel-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,55 @@ Here are some examples of how you can interact with the **Legal Counsel Prover**
 > Verdict: RISK_WHITEWASHED. Multiple failures. (1) 'No risk' and 'certainly win' are dangerous overstatements — whistleblower retaliation cases are notoriously complex. (2) The NDA may contain arbitration clauses affecting the procedural path. (3) The employer WILL argue the NDA applies and may seek injunctive relief. (4) Clean Water Act Section 507 has specific filing requirements (30 days from retaliation) — mapped those? Overconfidence is the most dangerous failure mode in legal analysis.
 
 
+## ❓ FAQ
+
+**Q: Does Legal Counsel Prover generate legal analysis or draft documents?**
+No. Legal Counsel Prover performs zero content generation. It forces the AI agent to structure its own legal reasoning into verifiable fields, then validates that the reasoning is logically consistent. The agent does all the thinking — the tool catches jurisdiction gaps, unverifiable citations, procedural omissions, one-sided risk assessments, and fact-disconnected analysis.
+
+**Q: What does it catch that a system prompt instruction doesn't?**
+Prompt instructions are suggestions — agents routinely ignore 'always cite the specific statute' or 'consider the opposing argument.' Tool calls are obligations — the agent must fill every field. Beyond that, Legal Counsel Prover has 12 consistency rules that catch legal-specific anti-patterns: vague citations ('the law says', 'applicable provisions'), dismissive adverse analysis ('no counterargument', 'guaranteed outcome'), boilerplate risk assessments ('consult a lawyer', 'no risk'), and hypothetical fact analysis ('in general', 'typically'). A prompt can't enforce these — a tool schema can.
+
+**Q: Does it replace a human attorney?**
+Absolutely not. Legal Counsel Prover is a quality gate for AI-assisted legal reasoning. It ensures the AI agent has done the minimum due diligence before presenting analysis to an attorney for review. The tool validates reasoning structure — jurisdiction, citations, procedure, adverse analysis, fact connection — but it cannot verify the accuracy of legal citations or the correctness of legal conclusions. A human attorney must always review the output.
+
+**Q: Which legal systems and jurisdictions does it support?**
+Legal Counsel Prover is jurisdiction-agnostic — it validates reasoning structure, not legal content. It works with any legal system: common law, civil law, hybrid systems. The consistency rules check that the agent HAS identified a jurisdiction, cited verifiable law, and mapped procedural requirements — not whether those citations are correct. Whether you're analyzing Brazilian Civil Code, US federal statute, or French administrative law, the reasoning validation applies equally.
+
+
 ## Installation & Usage
 
-To install and use the **Legal Counsel Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/legal-counsel-prover](https://vinkius.com/mcp/legal-counsel-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Legal Counsel Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `legal-counsel-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Legal Counsel Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "legal-counsel-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

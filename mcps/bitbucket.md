@@ -1,7 +1,6 @@
 # Bitbucket MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bitbucket)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bitbucket-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bitbucket-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bitbucket)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Bitbucket** MCP server
 > Retrieving commits... The last 5 commits include updates to the README, a bugfix for the API client, and new tests for the auth module.
 
 
+## ❓ FAQ
+
+**Q: Can I check the status of my latest Bitbucket Pipeline?**
+Yes! Use the `list_pipelines` tool with your Workspace and Repository slug. Your agent will fetch the latest build statuses, showing if they passed or failed.
+
+**Q: How do I list all open pull requests for a repository?**
+Simply ask the agent to `list_pull_requests` and provide the Workspace and Repository slug. It will retrieve all current PRs awaiting review.
+
+**Q: Does the integration allow merging code directly?**
+Currently, the toolset is focused on querying and monitoring (Read-Only). You can list and inspect PRs, commits, and branches, but destructive actions like merging or deleting branches must be done through the Bitbucket UI for safety.
+
+
 ## Installation & Usage
 
-To install and use the **Bitbucket** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bitbucket](https://vinkius.com/mcp/bitbucket)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bitbucket** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bitbucket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bitbucket** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bitbucket": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

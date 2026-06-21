@@ -1,7 +1,6 @@
 # Certn MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/certn)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/certn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/certn-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/certn)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Certn** MCP server usi
 > I've generated the PDF report for applicant 550e8400. You can access the document here: [Link].
 
 
+## ❓ FAQ
+
+**Q: Can I instantly screen an applicant if I already have their data and consent?**
+Yes! Use the `quick_hr_application` or `quick_pm_application` tools. These allow you to submit all applicant information and consent proof immediately for instant processing.
+
+**Q: How do I get a shareable link for a background check report?**
+You can use the `get_hr_report_link` tool. It generates a hosted PDF link for a specific report ID that remains valid for one hour.
+
+**Q: Can I add more checks to an application that has already been submitted?**
+Yes, the `add_hr_packages` tool allows you to append additional background checks (like credit checks or criminal records) to an existing applicant ID.
+
+
 ## Installation & Usage
 
-To install and use the **Certn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/certn](https://vinkius.com/mcp/certn)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Certn** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `certn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Certn** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "certn": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

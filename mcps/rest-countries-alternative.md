@@ -1,7 +1,6 @@
 # REST Countries MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rest-countries-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rest-countries-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rest-countries-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rest-countries-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **REST Countries** MCP s
 > The Japanese Yen (JPY) is the official currency of Japan. It is one of the most traded currencies in the world. Would you like to see more economic data for Japan?
 
 
+## ❓ FAQ
+
+**Q: How do I retrieve a list of all countries with specific data points?**
+Use the `get_all_countries` tool. You must provide a comma-separated list in the `fields` parameter (e.g., 'name,capital,population') to specify exactly which information you want to receive.
+
+**Q: Can I find countries based on the currency they use?**
+Yes! Use the `search_by_currency` tool and provide the currency name or code (like 'euro' or 'USD'). The agent will return all countries where that currency is legal tender.
+
+**Q: Is it possible to filter countries by their geographic region?**
+Absolutely. Use the `filter_by_region` tool with values like 'Europe', 'Americas', 'Asia', 'Africa', or 'Oceania' to get a list of countries in that specific part of the world.
+
+
 ## Installation & Usage
 
-To install and use the **REST Countries** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rest-countries-alternative](https://vinkius.com/mcp/rest-countries-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **REST Countries** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rest-countries-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **REST Countries** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rest-countries-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Typesense Vector Search MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typesense-vector-search)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/typesense-vector-search-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/typesense-vector-search-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typesense-vector-search)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Typesense Vector Searc
 > The collection 'products_inventory' uses 4 strict fields: `product_id` (string), `name` (string), `popularity` (int32), and critically `embeddings` formulated as a `float[]` of 768 dimensions representing product semantics.
 
 
+## ❓ FAQ
+
+**Q: Can the agent perform vector plus text-filtering search combined natively?**
+Yes. Provide the agent with the collection name alongside the text payload and tell it the exact vector structure. It leverages internal filters querying natively and returns the nearest neighbors with exact accuracy scores.
+
+**Q: How do I make the AI create a semantic collection ready for embeddings (OpenAI 1536 dims)?**
+Ask the agent to use 'create_collection'. Provide standard JSON declaring the name, the field structure, and explicitly define the `float[]` field tracking the 1536 dims length. The cluster will spin the framework up instantly.
+
+**Q: Can it delete problematic vectors holding bad geometry data manually?**
+Absolutely. Supplying the explicit collection target and the item 'id' to the delete_document prompt securely wipes out all traces from the dataset. Use this sparingly as it can't be undone easily.
+
+
 ## Installation & Usage
 
-To install and use the **Typesense Vector Search** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/typesense-vector-search](https://vinkius.com/mcp/typesense-vector-search)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Typesense Vector Search** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `typesense-vector-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Typesense Vector Search** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "typesense-vector-search": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

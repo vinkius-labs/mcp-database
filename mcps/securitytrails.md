@@ -1,7 +1,6 @@
 # SecurityTrails MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/securitytrails)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/securitytrails-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/securitytrails-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/securitytrails)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **SecurityTrails** MCP s
 > I performed a reverse IP lookup on 8.8.8.8 (Google Public DNS). As expected for a public resolver, there are millions of historical records pointing here, but currently, domains like dns.google and google-public-dns-a.google.com resolve directly to this IP address.
 
 
+## ❓ FAQ
+
+**Q: Is the SecurityTrails API free to use?**
+SecurityTrails offers a Free Tier API plan which allows 50 API requests per month. This is excellent for specific, targeted OSINT investigations. For automated or large-scale recon, you would need a commercial subscription.
+
+**Q: What is historical DNS good for?**
+Companies often migrate infrastructure and hide behind WAFs like Cloudflare. Historical DNS reveals the original origin IP addresses used before the WAF was implemented, which might still be active and vulnerable to direct attacks. It's a critical tool in penetration testing.
+
+**Q: How can I find related domains for a target company?**
+Use the `get_associated_domains` tool. It uses proprietary correlation to find other domains owned by the same entity. You can also use `get_domains_by_ip` to find what else is hosted on their IP space.
+
+
 ## Installation & Usage
 
-To install and use the **SecurityTrails** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/securitytrails](https://vinkius.com/mcp/securitytrails)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SecurityTrails** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `securitytrails` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SecurityTrails** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "securitytrails": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

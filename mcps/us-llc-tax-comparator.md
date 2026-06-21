@@ -1,7 +1,6 @@
 # US LLC Tax Comparator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-llc-tax-comparator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-llc-tax-comparator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-llc-tax-comparator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-llc-tax-comparator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **US LLC Tax Comparator*
 > Calling `get_state_tax_context` for NY... The estimated state income tax rate is [Rate] and it is classified as a [Tier] burden state.
 
 
+## ❓ FAQ
+
+**Q: How can I compare taxes for different business types?**
+Use the `calculate_tax_comparison` tool by providing your annual profit, owner salary, and state code to see a side-by-side breakdown of liabilities.
+
+**Q: Can I estimate the benefits of an S-Corp election?**
+Yes. The `evaluate_s_corp_savings_potential` tool specifically calculates the potential net savings and percentage reduction in tax burden.
+
+**Q: Does the tool account for state-specific taxes?**
+Yes, by using `get_state_tax_context` or providing a `stateCode` to other tools, the server retrieves relevant state income tax rates.
+
+
 ## Installation & Usage
 
-To install and use the **US LLC Tax Comparator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-llc-tax-comparator](https://vinkius.com/mcp/us-llc-tax-comparator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **US LLC Tax Comparator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-llc-tax-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **US LLC Tax Comparator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-llc-tax-comparator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

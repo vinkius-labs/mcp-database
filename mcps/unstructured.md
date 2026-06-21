@@ -1,7 +1,6 @@
 # Unstructured MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unstructured)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unstructured-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unstructured-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unstructured)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Would you like me to share more log details about the failed job?
 > I have successfully triggered the workflow `wf_eng_onboarding`. The execution has started with Job ID `job_12bxc6`. It is currently processing files from your Google Drive source. Do you want me to monitor it and let you know when it's populated into the Vector DB?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent trigger an immediate document processing job?**
+Yes! If you have a workflow configured to pull files from an S3 bucket and load them into a Pinecone index, you can ask your agent to `trigger workflow XYZ`. It will start the execution and return the new Job ID, which you can use to track the progress.
+
+**Q: How can I verify if my RAG pipelines are failing or succeeding?**
+Ask your agent to list your workflow jobs. It will securely connect to Unstructured's engine and return historical and active executions, displaying statuses such as 'completed', 'failed', or 'in_progress'. This is extremely useful for MLOps engineers diagnosing ingestion alerts directly in their terminal.
+
+**Q: Can I edit the destination database directly through the agent?**
+This server is focused on auditing and executing your existing pipelines. Currently, you can list all connections (sources and destinations) and obtain their details, but creating or destructively modifying vector database connectors must be done inside the Unstructured dashboard for security.
+
+
 ## Installation & Usage
 
-To install and use the **Unstructured** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/unstructured](https://vinkius.com/mcp/unstructured)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Unstructured** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `unstructured` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Unstructured** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "unstructured": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

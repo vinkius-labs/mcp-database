@@ -1,7 +1,6 @@
 # Atlassian (Jira & Confluence) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/atlassian-jira-confluence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/atlassian-jira-confluence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/atlassian-jira-confluence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/atlassian-jira-confluence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Atlassian (Jira & Conf
 > You currently have 4 active Jira Boards. Expanding Board `CORE-BACKEND` reveals an active 'Sprint 44' closing in 2 days. Board `MOBILE-REVAMP` holds 'Sprint 12' with 49 open tasks. Which one would you like to inspect?
 
 
+## ❓ FAQ
+
+**Q: Can my AI write JQL or CQL queries for me automatically?**
+Yes. AI models are exceptionally good at transforming natural phrases like 'find all high-priority bugs open in project X' into structurally valid JQL (`project = X AND priority = High AND status = Open`). The same applies to CQL searches in Confluence.
+
+**Q: How does the agent handle Confluence pages with heavy formatting or macros?**
+The integration extracts the core text node data of the page. This guarantees that your AI agent only consumes dense factual text (like code snippets and bullet instructions) without wasting token context on layout elements.
+
+**Q: Am I limited to only Jira Software or does this include Jira Service Management?**
+The unified underlying Atlassian API allows JQL queries across almost all generic issue types within your authorized Domain instance. You can search bugs in Jira Software or service requests residing structurally alongside them equally.
+
+
 ## Installation & Usage
 
-To install and use the **Atlassian (Jira & Confluence)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/atlassian-jira-confluence](https://vinkius.com/mcp/atlassian-jira-confluence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Atlassian (Jira & Confluence)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `atlassian-jira-confluence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Atlassian (Jira & Confluence)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "atlassian-jira-confluence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # NotCo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/notco)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/notco-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/notco-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/notco)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **NotCo** MCP server usi
 > Based on current global commodity rates for the specified plant extracts (Coconut Oil, Faba Bean, etc.), the estimated cost for Formulation #CM-882 is $1.15 USD per kg. This represents a 12% cost advantage compared to the current dairy milk spot pricing.
 
 
+## ❓ FAQ
+
+**Q: Can I use this to generate a formula for a new plant-based meat?**
+Yes! Use the `create_formulation` tool to instruct Giuseppe to model a specific animal product (e.g., 'Target: Pulled Pork'). You can pass constraints like 'no soy' or 'must contain pea protein'. Giuseppe will return a mathematically generated formula combining plant extracts that mimic the target's molecular profile.
+
+**Q: How does Giuseppe match specific flavors?**
+The `search_flavor_matches` tool analyzes NotCo's proprietary database. Instead of searching for 'beef flavor', Giuseppe searches for the specific volatile molecular compounds that create the beef flavor, and then finds combinations of seemingly unrelated plants (like pineapple and cabbage) that, when combined mathematically, replicate that exact molecular behavior.
+
+**Q: Can I predict the cost of a new formulation before making it?**
+Absolutely. Once Giuseppe generates a formulation, you can pass its ID to the `estimate_cost` tool. The API cross-references the required plant ingredients with global B2B commodity pricing databases to give you an estimated per-kilogram cost for mass production.
+
+
 ## Installation & Usage
 
-To install and use the **NotCo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/notco](https://vinkius.com/mcp/notco)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NotCo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `notco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NotCo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "notco": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

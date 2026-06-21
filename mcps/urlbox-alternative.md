@@ -1,7 +1,6 @@
 # Urlbox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/urlbox-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/urlbox-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/urlbox-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/urlbox-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Urlbox** MCP server us
 > Selective render complete! I've captured only the element matching '#pricing-table' from 'https://mysaas.com'. Here is the cropped image: [Element URL].
 
 
+## ❓ FAQ
+
+**Q: Can I capture only a specific part of a webpage?**
+Yes! Use the `render_selector` tool. Provide the URL and the CSS selector (e.g., #my-chart) to capture only that specific element instead of the whole page.
+
+**Q: How do I see how many credits I have left?**
+Run the `get_credit_usage` query. Your agent will retrieve your current credit balance and monthly rendering metrics directly from Urlbox.
+
+**Q: Can this tool convert a URL directly to PDF?**
+Absolutely. Use the `capture_pdf` tool by providing the URL. You can also specify an optional page size like 'A4' or 'Letter'.
+
+
 ## Installation & Usage
 
-To install and use the **Urlbox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/urlbox-alternative](https://vinkius.com/mcp/urlbox-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Urlbox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `urlbox-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Urlbox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "urlbox-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

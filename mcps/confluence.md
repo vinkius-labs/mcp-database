@@ -1,7 +1,6 @@
 # Confluence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/confluence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/confluence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/confluence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/confluence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Confluence** MCP serve
 > I found 14 active pages in the 'HR' space, including 'Employee Onboarding', 'Leave Policies', and 'Corporate Benefits'. Which one would you like to review?
 
 
+## ❓ FAQ
+
+**Q: How do I generate an Atlassian API Token?**
+Log into your Atlassian account at id.atlassian.com, navigate to the **Security** tab, and click on **API tokens**. Select 'Create and manage API tokens' to generate a new key for this integration.
+
+**Q: Can the AI edit all spaces within my Confluence account?**
+The AI integration adheres strictly to the permissions of the user generating the API token. It can only read and modify the spaces that your specific Atlassian user account has authorization to access.
+
+**Q: Does a published Confluence page support Markdown?**
+Yes, Confluence correctly processes standard formatting such as headings, lists, code blocks, and rich text when the AI agent generates and uploads content.
+
+
 ## Installation & Usage
 
-To install and use the **Confluence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/confluence](https://vinkius.com/mcp/confluence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Confluence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `confluence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Confluence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "confluence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

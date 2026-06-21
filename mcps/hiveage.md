@@ -1,7 +1,6 @@
 # Hiveage MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hiveage)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hiveage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hiveage-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hiveage)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,55 @@ Here are some examples of how you can interact with the **Hiveage** MCP server u
 > Accessing estimate details... Estimate ests_992 is for 'Website Redesign' totaling $2,500.00. It was sent to 'Acme Corp' last Tuesday and is currently in 'PENDING' status. Would you like to convert this estimate into an invoice?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Hiveage API Key?**
+Log in to your Hiveage account, go to **Settings > API**, and you will find your unique API key there. This key is used as the username for Basic Authentication.
+
+**Q: What is the Hiveage 'Subdomain'?**
+The subdomain is the unique part of your Hiveage URL (e.g., if you access Hiveage at `mycompany.hiveage.com`, your subdomain is `mycompany`).
+
+**Q: Can I record a partial payment for an invoice?**
+Yes! When using the `record_payment` tool, you can specify any amount in the `body_json`. Hiveage will automatically update the invoice balance based on the recorded payment.
+
+**Q: Is the integration secure for financial data?**
+Absolutely. The integration uses official Hiveage API keys over HTTPS. Your credentials and billing data are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Hiveage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hiveage](https://vinkius.com/mcp/hiveage)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hiveage** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hiveage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hiveage** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hiveage": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

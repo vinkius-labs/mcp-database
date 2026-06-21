@@ -1,7 +1,6 @@
 # Candid (GuideStar) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/candid-guidestar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/candid-guidestar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/candid-guidestar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/candid-guidestar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Candid (GuideStar)** M
 > EIN 52-153xxxx is currently listed as a 501(c)(3) public charity in good standing with the IRS. They are eligible to receive tax-deductible contributions.
 
 
+## ❓ FAQ
+
+**Q: Can I verify if a non-profit is eligible for tax-deductible donations?**
+Yes! Use the `verify_charity_status` tool with the organization's EIN. Your agent will fetch the real-time compliance status from Candid's Charity Check API.
+
+**Q: How do I find the EIN for an organization if I only have its name?**
+Simply ask the agent to `search_nonprofits` and provide the name. The search results will include the EIN for each matching organization, which you can then use for deeper lookups.
+
+**Q: Does the integration allow accessing diversity and inclusion data?**
+Yes. Use the `get_demographics` tool. It will retrieve the DEI metadata provided by the organization to Candid, helping you understand their leadership and staff representation.
+
+
 ## Installation & Usage
 
-To install and use the **Candid (GuideStar)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/candid-guidestar](https://vinkius.com/mcp/candid-guidestar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Candid (GuideStar)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `candid-guidestar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Candid (GuideStar)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "candid-guidestar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

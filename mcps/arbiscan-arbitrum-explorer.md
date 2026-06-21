@@ -1,7 +1,6 @@
 # Arbiscan (Arbitrum Explorer) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arbiscan-arbitrum-explorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arbiscan-arbitrum-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arbiscan-arbitrum-explorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arbiscan-arbitrum-explorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Arbiscan (Arbitrum Exp
 > I have successfully fetched the ABI for the Arbitrum (ARB) token contract. It contains 24 functions, including `transfer`, `balanceOf`, and `delegate`. Do you need the JSON schema for a specific function?
 
 
+## ❓ FAQ
+
+**Q: Can I check the balances of multiple Arbitrum addresses at once?**
+Yes! Use the `get_balance_multi` tool and provide a comma-separated list of addresses. The agent will return the Ether balance for each one in a single response.
+
+**Q: How do I view the source code of a verified smart contract?**
+Simply provide the contract address to the `get_source_code` tool. If the contract is verified on Arbiscan, your agent will retrieve the full source code for you to inspect.
+
+**Q: Can I track NFT (ERC721) transfers for a specific wallet?**
+Yes, the `get_token_nft_tx` tool allows you to list ERC721 token transfer events associated with any Arbitrum address, including block numbers and transaction hashes.
+
+
 ## Installation & Usage
 
-To install and use the **Arbiscan (Arbitrum Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/arbiscan-arbitrum-explorer](https://vinkius.com/mcp/arbiscan-arbitrum-explorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Arbiscan (Arbitrum Explorer)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `arbiscan-arbitrum-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Arbiscan (Arbitrum Explorer)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "arbiscan-arbitrum-explorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Optimizely MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/optimizely)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/optimizely-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/optimizely-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/optimizely)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Optimizely** MCP serve
 > Experiment 67890 ('Hero Banner v2') has been successfully paused.
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Personal Access Token?**
+In Optimizely, go to **Profile Settings** > **API Access** and generate a new Personal Access Token. Ensure it has the necessary permissions for the projects you want to manage.
+
+**Q: Can I start an experiment that is in draft mode?**
+Yes, using the `start_experiment` tool will attempt to set the status to 'running'. However, Optimizely requires the experiment to be valid and fully configured before it can transition from draft to running.
+
+**Q: How do I find my Project ID?**
+You can use the `list_projects` tool to see all projects associated with your account along with their IDs. You can also find it in the URL when viewing a project in the Optimizely dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **Optimizely** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/optimizely](https://vinkius.com/mcp/optimizely)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Optimizely** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `optimizely` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Optimizely** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "optimizely": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

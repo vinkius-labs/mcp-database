@@ -1,7 +1,6 @@
 # BILL (Bill.com) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bill-billcom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bill-billcom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bill-billcom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bill-billcom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **BILL (Bill.com)** MCP 
 > Retrieving invoices... Your 5 most recent customer invoices include 'INV-1001' (Status: Paid) and 'INV-1005' (Status: Unpaid). Would you like to see the amount for the unpaid invoice?
 
 
+## ❓ FAQ
+
+**Q: Can I check the status of a specific bill using the agent?**
+Yes! Use the `get_bill` tool with the Bill ID. Your agent will fetch the latest status, including whether it is unpaid, partially paid, or fully paid.
+
+**Q: How do I list all my active vendors in BILL?**
+Simply ask the agent to `list_vendors`. It will retrieve the directory of all business vendors registered in your BILL account.
+
+**Q: Does the integration support paying bills directly through the agent?**
+No. For security and to comply with MFA requirements for financial transactions, the current toolset is focused on querying and auditing (listing bills, checking statuses). Initiating payments must be done through the official BILL platform.
+
+
 ## Installation & Usage
 
-To install and use the **BILL (Bill.com)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bill-billcom](https://vinkius.com/mcp/bill-billcom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BILL (Bill.com)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bill-billcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BILL (Bill.com)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bill-billcom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

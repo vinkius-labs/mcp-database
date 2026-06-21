@@ -1,7 +1,6 @@
 # Faker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/faker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/faker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/faker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/faker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Faker** MCP server usi
 > I've retrieved 3 mock books: 'The Silent Echo' by Jane Doe, 'Digital Horizons' by John Smith, and 'Beyond the Veil' by Alice Johnson.
 
 
+## ❓ FAQ
+
+**Q: Can I generate data in specific languages like Brazilian Portuguese or French?**
+Yes! Use the `_locale` parameter with codes like `pt_BR` or `fr_FR`. This ensures that names, addresses, and other fields follow the conventions of that specific region.
+
+**Q: How do I ensure I get the same random data every time for my tests?**
+You can use the `_seed` parameter. By providing the same integer seed in your request, the generator will produce identical results, which is perfect for regression testing.
+
+**Q: What is the maximum amount of data I can request in a single call?**
+The `_quantity` parameter allows you to request between 1 and 1000 rows of data per tool execution.
+
+
 ## Installation & Usage
 
-To install and use the **Faker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/faker](https://vinkius.com/mcp/faker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Faker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `faker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Faker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "faker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

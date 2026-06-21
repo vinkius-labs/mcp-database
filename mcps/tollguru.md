@@ -1,7 +1,6 @@
 # TollGuru MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tollguru)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tollguru-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tollguru-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tollguru)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **TollGuru** MCP server 
 > Optimizing multi-stop route... Original order: New York → Philadelphia → Baltimore → Washington DC. Optimized order (lowest tolls): New York → Baltimore → Washington DC → Philadelphia. Total distance: 287 miles. Toll plazas: NJ Turnpike ($13.85 tag), Baltimore Harbor Tunnel ($4.00 tag), I-95 Delaware Memorial Bridge ($5.00 tag). Total optimized toll cost: $22.85 with tag, $28.25 cash. Savings from optimization: $6.40 in tolls. Fuel cost: $38.50. Total trip cost: $61.35-$66.75. Would you like detailed waypoint-by-waypoint breakdown?
 
 
+## ❓ FAQ
+
+**Q: Can my AI calculate the total toll costs for a road trip from New York to Boston?**
+Yes! Use the `calculate_toll_route` tool with origin="New York, NY" and destination="Boston, MA". You can specify your vehicle type (2AxlesAuto for regular cars, 2AxlesEV for electric vehicles, or truck types like 5AxlesTruck for commercial vehicles). The API returns detailed toll plaza names, tag and cash costs for each plaza, total toll cost, fuel cost estimate, and optional driver cost. You can also request costs in different currencies and compare payment methods (tag vs cash vs prepaid card).
+
+**Q: How do I get toll costs for a route I already have from Google Maps?**
+Use the `calculate_toll_from_polyline` tool with the encoded polyline from Google Maps. Set source="google" and paste the polyline string. This calculates tolls for your exact route without re-routing. You can also specify vehicle type and currency. This is perfect when you have an existing route and need toll costs for trip budgeting or fleet expense tracking.
+
+**Q: Can I optimize a multi-stop delivery route to minimize toll costs?**
+Absolutely! Use the `calculate_toll_multi_stop` tool with your origin, destination, and comma-separated waypoints. Set optimize_waypoints="true" to let TollGuru find the most cost-effective waypoint order. The API returns the optimized route with total toll costs, fuel costs, and detailed plaza-by-plaza breakdown. This is essential for logistics planning, delivery route optimization, and fleet cost management.
+
+
 ## Installation & Usage
 
-To install and use the **TollGuru** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tollguru](https://vinkius.com/mcp/tollguru)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TollGuru** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tollguru` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TollGuru** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tollguru": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

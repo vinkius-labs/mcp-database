@@ -1,7 +1,6 @@
 # BookStack (Wiki) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bookstack-wiki)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bookstack-wiki-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bookstack-wiki-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bookstack-wiki)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Here are some examples of how you can interact with the **BookStack (Wiki)** MCP
 > I have triggered the export for page ID 88 in PDF format. The content is being processed for download.
 
 
+## ❓ FAQ
+
+**Q: Can I search across all my books and chapters at once?**
+Yes! Use the `search` tool with your query string. It will return relevant results from pages, chapters, and books across your entire BookStack instance.
+
+**Q: Is it possible to retrieve a page's content in Markdown format?**
+Absolutely. Use the `export_page` tool and set the format to 'markdown'. You can also export to PDF, HTML, or plaintext.
+
+**Q: How do I see what was recently deleted?**
+You can use the `list_recycle_bin` tool to view items that have been moved to the recycle bin before they are permanently removed from the system.
+
+
 ## Installation & Usage
 
-To install and use the **BookStack (Wiki)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bookstack-wiki](https://vinkius.com/mcp/bookstack-wiki)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BookStack (Wiki)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bookstack-wiki` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BookStack (Wiki)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bookstack-wiki": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

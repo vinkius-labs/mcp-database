@@ -1,7 +1,6 @@
 # Art Institute of Chicago MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/art-institute-of-chicago)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/art-institute-of-chicago-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/art-institute-of-chicago-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/art-institute-of-chicago)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Art Institute of Chica
 > Here are the first 5 galleries: Gallery 101 (Ancient Art), Gallery 102, Gallery 103, Gallery 104, and Gallery 105. Would you like to know which artworks are currently displayed in any of these?
 
 
+## ❓ FAQ
+
+**Q: How can I find artworks by a specific artist like Van Gogh?**
+You can use the `search_artworks` tool with the query 'Van Gogh'. This will return a list of matching artworks. You can then use `get_artwork` with a specific ID to see full details.
+
+**Q: Can I access high-resolution image data for these artworks?**
+Yes. By using the `get_artwork_manifest` tool with an artwork ID, the server retrieves the IIIF Manifest, which contains links to high-resolution image endpoints and structural metadata.
+
+**Q: Is it possible to find where a specific artwork is located in the museum?**
+Yes, many artworks include gallery information. You can also use `list_galleries` to see a list of physical spaces and `get_artwork` to check the `gallery_title` or `gallery_id` fields for a specific piece.
+
+
 ## Installation & Usage
 
-To install and use the **Art Institute of Chicago** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/art-institute-of-chicago](https://vinkius.com/mcp/art-institute-of-chicago)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Art Institute of Chicago** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `art-institute-of-chicago` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Art Institute of Chicago** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "art-institute-of-chicago": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

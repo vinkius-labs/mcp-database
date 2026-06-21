@@ -1,7 +1,6 @@
 # Aikido Security MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aikido-security)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aikido-security-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aikido-security-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aikido-security)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -136,12 +135,55 @@ Here are some examples of how you can interact with the **Aikido Security** MCP 
 > You have 3 connected cloud accounts: AWS (production), GCP (staging), Azure (dev). In the last 7 days, Aikido found 5 new cloud misconfigurations: 2 public S3 buckets in production AWS, 1 over-permissive IAM role in GCP, and 2 unencrypted RDS instances in AWS staging. All are classified as HIGH priority. Would you like the details of any specific misconfiguration?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Aikido API token and where do I find it?**
+Log in to your Aikido dashboard, click on **User Settings** in the header, then navigate to **Personal Access Tokens**. Click to create a new token and copy it immediately — you'll only see it once. The token typically starts with `aik_`. Paste it into the API token field below.
+
+**Q: What types of security issues can Aikido detect?**
+Aikido detects a wide range of security issues including: open source vulnerabilities (CVEs in dependencies), leaked secrets and API keys, cloud misconfigurations (AWS, GCP, Azure), SAST findings (code-level vulnerabilities), IaC issues (Terraform, CloudFormation), container vulnerabilities, DAST findings, malware detection, end-of-life dependencies, SCM security issues, and license compliance. You can filter issues by type when querying.
+
+**Q: Can I check my compliance status for ISO 27001 and SOC2?**
+Yes! Use the `get_iso_compliance` tool for ISO 27001 and `get_soc2_compliance` for SOC2. These endpoints provide a complete compliance overview showing which controls or criteria are passing, failing, or need attention. Both are available on all paid Aikido plans and are perfect for audit preparation and ongoing compliance monitoring.
+
+**Q: How does Aikido prioritize security issues?**
+Aikido automatically prioritizes open issue groups by priority (descending). The prioritization considers factors like severity (critical, high, medium, low), exploitability, whether the vulnerability is actively exploited in the wild, and the context of the affected resource. This means you always see the most dangerous and actionable vulnerabilities first, helping your team focus on what matters most.
+
+
 ## Installation & Usage
 
-To install and use the **Aikido Security** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aikido-security](https://vinkius.com/mcp/aikido-security)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aikido Security** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aikido-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aikido Security** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aikido-security": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

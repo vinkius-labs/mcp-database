@@ -1,7 +1,6 @@
 # OilPrice MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oilprice)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oilprice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oilprice-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oilprice)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -230,12 +229,55 @@ Here are some examples of how you can interact with the **OilPrice** MCP server 
 > Fetching both benchmarks... WTI Crude is at $78.45/bbl while Brent Crude is at $82.30/bbl. The WTI-Brent spread is currently $3.85, which is within the normal range. Brent's premium reflects tighter global supply and stronger international demand compared to US inventories.
 
 
+## ❓ FAQ
+
+**Q: How often are oil and gas prices updated?**
+Oil, gas, and refined product prices (WTI, Brent, Natural Gas, Diesel, Gasoline, etc.) are updated every 5 minutes during market hours. Coal prices update daily. This ensures you have near real-time data for trading decisions and cost monitoring.
+
+**Q: How do I get an OilPriceAPI key and what does the free trial include?**
+Visit https://oilpriceapi.com/ and sign up for a free account. The 7-day free trial includes 10,000 API requests, access to all 50+ commodities, all endpoints (latest, past day, past week, past month), and no credit card required. After the trial, paid plans start at $15/month. Rate limit on free tier: 60 requests/minute.
+
+**Q: What commodity codes are available?**
+The API offers 50+ energy commodities. Key codes include: WTI_USD (WTI Crude), BRENT_CRUDE_USD (Brent Crude), NATURAL_GAS_USD (Henry Hub Gas), DIESEL_USD (Ultra Low Sulfur Diesel), GASOLINE_USD (RBOB Gasoline), HEATING_OIL_USD (No. 2 Heating Oil), JET_FUEL_USD (Aviation Fuel/Kerosene), COAL_USD (Newcastle Thermal Coal). Use the `list_commodities` tool to see the full catalog.
+
+**Q: Can I access historical price data for trend analysis?**
+Yes! The free tier includes past_day (24h hourly), past_week (7d daily), and past_month (30d daily) endpoints. For custom date ranges beyond 30 days, use the `get_historical_prices` tool which requires a paid subscription. This is ideal for long-term trend analysis, backtesting trading strategies, and academic research.
+
+
 ## Installation & Usage
 
-To install and use the **OilPrice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/oilprice](https://vinkius.com/mcp/oilprice)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OilPrice** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `oilprice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OilPrice** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "oilprice": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

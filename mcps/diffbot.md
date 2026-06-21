@@ -1,7 +1,6 @@
 # Diffbot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/diffbot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/diffbot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/diffbot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/diffbot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Diffbot** MCP server u
 > Analyzing news list... I found 5 related items including 'New Model Release' and 'Partnership with Apple'. Each item has a title, direct link, and content snippet. Would you like me to extract the full text for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can my agent automatically identify what kind of page a URL points to?**
+Yes. Use the 'analyze_page' tool. Diffbot uses ML to classify the URL as an article, product, image, video, or list, and returns the appropriate structured JSON payload automatically.
+
+**Q: How do I extract only the main text from a blog post without comments?**
+Use the 'extract_article' tool and set the 'discussion' parameter to 'false'. The agent will retrieve the clean text and HTML body while explicitly ignoring any forum threads or review blocks on the page.
+
+**Q: Can I use custom extraction rules I've defined in my Diffbot dashboard?**
+Absolutely. Use the 'extract_custom_api' tool. Provide your trained 'api_name' and the target URL. Diffbot will extract the data according to your specific structural ruleset natively.
+
+
 ## Installation & Usage
 
-To install and use the **Diffbot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/diffbot](https://vinkius.com/mcp/diffbot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Diffbot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `diffbot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Diffbot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "diffbot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

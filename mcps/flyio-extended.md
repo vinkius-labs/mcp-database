@@ -1,7 +1,6 @@
 # Fly.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flyio-extended)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flyio-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flyio-extended-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flyio-extended)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **Fly.io** MCP server us
 > I've initiated the creation of a 10GB volume 'data_vol' in Amsterdam (ams) for 'db-primary'. The volume ID is vol_z9rj5k2m1l. It is now ready to be attached to a machine.
 
 
+## ❓ FAQ
+
+**Q: Can I start or stop a specific Fly Machine using this server?**
+Yes. You can use the `start_machine` and `stop_machine` tools by providing the app name and the specific Machine ID. You can also use `suspend_machine` for compatible workloads.
+
+**Q: How do I create a new application in a specific organization?**
+Use the `create_app` tool. You will need to provide a unique `app_name` and the `org_slug` of the target organization where you want the app to be provisioned.
+
+**Q: Is it possible to manage persistent storage volumes?**
+Absolutely. The server includes tools like `create_volume`, `list_volumes`, `extend_volume`, and `delete_volume` to handle the full lifecycle of your Fly Volumes.
+
+
 ## Installation & Usage
 
-To install and use the **Fly.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flyio-extended](https://vinkius.com/mcp/flyio-extended)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fly.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flyio-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fly.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flyio-extended": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

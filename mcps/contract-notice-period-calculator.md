@@ -1,7 +1,6 @@
 # Contract Notice Period Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contract-notice-period-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contract-notice-period-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contract-notice-period-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contract-notice-period-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Contract Notice Period
 > You can use `check_jurisdiction_validity` to confirm if Germany is within the supported scope and see its regulatory level.
 
 
+## ❓ FAQ
+
+**Q: What contract types are supported?**
+The server supports employment, commercial lease, and service agreement contracts.
+
+**Q: Which jurisdictions are covered?**
+The engine covers various states in the USA and national-level regulations across Europe.
+
+**Q: How do I calculate a termination date?**
+Use the `calculate_effective_date` tool by providing the notice date in YYYY-MM-DD format and the number of days in the notice period.
+
+
 ## Installation & Usage
 
-To install and use the **Contract Notice Period Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/contract-notice-period-calculator](https://vinkius.com/mcp/contract-notice-period-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Contract Notice Period Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `contract-notice-period-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Contract Notice Period Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "contract-notice-period-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

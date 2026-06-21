@@ -1,7 +1,6 @@
 # RSS / Atom Reader MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rss-atom-reader)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rss-atom-reader-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rss-atom-reader-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rss-atom-reader)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Do you want me to summarize any of these in detail?
 > The most recent article from the tech news feed is 'Quantum Computing Breakthrough'. It was published 2 hours ago. The summary states scientists have achieved a new milestone in qubit stability. Should I provide the full link?
 
 
+## ❓ FAQ
+
+**Q: Are specific RSS/Atom formats parsed incorrectly?**
+The tool uses modern XML parsers logically built to consume seamlessly both widely structured and legacy encoded Atom and standard RSS payloads perfectly consistently directly from organic sources mitigating rendering discrepancies.
+
+**Q: What is the difference between `read_feed` and `read_default_feed`?**
+`read_feed` requires you to provide a URL each time you call it. `read_default_feed` uses a pre-configured URL so you can check your favorite source without repeating the address every time.
+
+**Q: How many articles can I retrieve per request?**
+You can fetch between 1 and 50 items per call using the `limit` parameter. The default is 10 if no limit is specified.
+
+
 ## Installation & Usage
 
-To install and use the **RSS / Atom Reader** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rss-atom-reader](https://vinkius.com/mcp/rss-atom-reader)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **RSS / Atom Reader** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rss-atom-reader` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **RSS / Atom Reader** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rss-atom-reader": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

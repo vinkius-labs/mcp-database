@@ -1,7 +1,6 @@
 # Wherefour MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wherefour)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wherefour-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wherefour-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wherefour)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,49 @@ Here are some examples of how you can interact with the **Wherefour** MCP server
 > There are 2 pending production orders for 'Acme Supermarkets': PO-7381 (Organic Oatmeal) and PO-7389 (Almond Milk), both scheduled for completion this Friday. I also checked their billing records; Invoice #INV-5920 from last month is marked as 'Paid in Full'.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Wherefour API Key and Secret?**
+Log in to your Wherefour account, navigate to **Settings** > **API**, and generate a new set of credentials for your integration.
+
+**Q: Can the agent check lot availability for a specific item?**
+Yes! Use the `list_stock_lots` tool to retrieve all available batches and their current quantities for any item in your catalog.
+
+
 ## Installation & Usage
 
-To install and use the **Wherefour** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wherefour](https://vinkius.com/mcp/wherefour)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wherefour** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wherefour` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wherefour** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wherefour": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

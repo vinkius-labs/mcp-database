@@ -1,7 +1,6 @@
 # ContactOut MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contactout)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contactout-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contactout-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contactout)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **ContactOut** MCP serve
 > Scanning account... You currently have 1,240 credits remaining in your account. Your connection is active and healthy. Need help enriching another lead list?
 
 
+## ❓ FAQ
+
+**Q: How do I find my ContactOut API Key?**
+Log in to your account, navigate to **Settings** > **API**, and copy your unique access token.
+
+**Q: Can I search for people by skills and location?**
+Yes! The `search_people` tool accepts a JSON object with filters like `skills`, `location`, and `job_title` programmatically.
+
+**Q: How do I find an email using a LinkedIn URL?**
+Use the `find_email_by_linkedin` tool and provide the full LinkedIn profile URL to retrieve verified contact details.
+
+
 ## Installation & Usage
 
-To install and use the **ContactOut** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/contactout](https://vinkius.com/mcp/contactout)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ContactOut** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `contactout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ContactOut** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "contactout": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

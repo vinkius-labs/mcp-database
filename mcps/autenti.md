@@ -1,7 +1,6 @@
 # Autenti MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/autenti)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/autenti-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/autenti-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/autenti)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Autenti** MCP server u
 > Contact created! John Doe has been successfully added to your Autenti address book (ID: cont_456). He is now available for process association. Shall I start a new signature workflow for him?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Autenti Access Token?**
+Log in to the [**Autenti Developer Portal**](https://developers.autenti.com/), navigate to your application settings, and generate an OAuth 2.0 Access Token.
+
+**Q: Can I discover valid actions via AI?**
+Yes! The `list_available_process_actions` tool retrieves a dynamic list of valid operations (like SEND or SIGN) based on the document's high-fidelity status.
+
+**Q: How do I add a new contact programmatically?**
+Use the `add_new_contact` tool to register a name and email in your Autenti address book for future high-fidelity signature requests.
+
+
 ## Installation & Usage
 
-To install and use the **Autenti** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/autenti](https://vinkius.com/mcp/autenti)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Autenti** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `autenti` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Autenti** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "autenti": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

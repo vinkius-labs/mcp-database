@@ -1,7 +1,6 @@
 # OpenAQ MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openaq)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openaq-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openaq-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openaq)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **OpenAQ** MCP server us
 > Retrieved 48 O3 readings from Paris monitoring stations in the last 24 hours. Average: 65 µg/m³, Peak: 92 µg/m³ at 14:00. All readings within acceptable range. Highest reading was at the Paris 18ème station.
 
 
+## ❓ FAQ
+
+**Q: How do I get an OpenAQ API Key?**
+Visit [**OpenAQ Platform**](https://platform.openaq.org/), create a free account, and generate your API key from the dashboard. Free tier includes 1,000 requests/hour.
+
+**Q: What air quality parameters can I monitor?**
+PM2.5, PM10, O3 (ozone), NO2, SO2, CO, BC (black carbon), and more. Use `get_parameters` to see the full list with units and classifications.
+
+**Q: Can I get historical air quality data?**
+Yes! Use `get_measurements` with date_from and date_to parameters in ISO 8601 format to retrieve time-series data for any location and parameter.
+
+
 ## Installation & Usage
 
-To install and use the **OpenAQ** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openaq](https://vinkius.com/mcp/openaq)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenAQ** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openaq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenAQ** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openaq": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

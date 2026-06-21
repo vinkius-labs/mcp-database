@@ -1,7 +1,6 @@
 # MeiQia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meiqia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meiqia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meiqia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meiqia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **MeiQia** MCP server us
 > I've retrieved the profile for Mario. He is a high-value customer from 'Tech Corp' with a history of 12 interactions. Would you like me to list his recent messages or update his contact info?
 
 
+## ❓ FAQ
+
+**Q: How do I obtain a MeiQia Access Token?**
+Log in to your MeiQia workspace, go to [Settings] → [Developer] → [APIs], and generate a new Access Token. Make sure to copy it carefully.
+
+**Q: Can I reply to customers through the agent?**
+Yes. Use the `send_message` tool with the specific conversation ID and your message content. This allows for rapid responses directly from your AI workspace.
+
+**Q: Is it possible to see the current team workload?**
+Yes! Use the `get_workload_summary` tool to retrieve a real-time overview of how many active chats each agent is handling, helping you manage team capacity.
+
+
 ## Installation & Usage
 
-To install and use the **MeiQia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/meiqia](https://vinkius.com/mcp/meiqia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MeiQia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `meiqia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MeiQia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "meiqia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

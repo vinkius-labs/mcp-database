@@ -1,7 +1,6 @@
 # Energy Efficiency Estimator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/energy-efficiency-estimator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/energy-efficiency-estimator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/energy-efficiency-estimator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/energy-efficiency-estimator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Energy Efficiency Esti
 > Run `query_orientation_bias` specifying 'North' and 'Europe'. Next, use `query_structure_thermal_score`, ensuring the roof U-value is accurately input. This combined data will help determine if your North exposure needs specific compensation.
 
 
+## ❓ FAQ
+
+**Q: What inputs are needed to get the initial score?**
+The core metrics include total heated area, wall thickness, and combined U-values. The `query_structure_thermal_score` tool uses these inputs to generate the raw thermal index.
+
+**Q: Does my home's direction matter for the score?**
+Yes. The `query_orientation_bias` tool accounts for passive solar gain and wind loads (e.g., South-East vs. North). This factor modifies the score to give a regionally accurate assessment.
+
+**Q: How do I know what to fix after the rating?**
+After receiving your A-E classification, use the `query_improvement_recommendations` tool. It analyzes component weaknesses and provides a prioritized list of actionable upgrades (e.g., upgrading glazing or improving roof insulation).
+
+
 ## Installation & Usage
 
-To install and use the **Energy Efficiency Estimator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/energy-efficiency-estimator](https://vinkius.com/mcp/energy-efficiency-estimator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Energy Efficiency Estimator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `energy-efficiency-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Energy Efficiency Estimator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "energy-efficiency-estimator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

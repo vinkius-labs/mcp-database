@@ -1,7 +1,6 @@
 # Storm Glass Marine & Weather MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/storm-glass-marine-weather)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/storm-glass-marine-weather-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/storm-glass-marine-weather-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/storm-glass-marine-weather)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Storm Glass Marine & W
 > Retrieving astronomical data... For Rio de Janeiro, sunrise was at 06:12. The current moon phase is a Waxing Gibbous (72% illumination).
 
 
+## ❓ FAQ
+
+**Q: Can I get the water temperature in the Mediterranean Sea?**
+Yes! Use the `get_marine_weather` tool and provide the latitude and longitude for the specific point in the Mediterranean. It will return the latest water temperature along with other marine data.
+
+**Q: How can I check the tide schedule for a coastal city?**
+Use the `get_tide_extremes` tool with the coordinates of the target city. The response will provide the timestamps and heights for the next few high and low tide events.
+
+**Q: Does this server provide sunrise and sunset times?**
+Yes. The `get_astronomy_data` tool retrieves sunrise, sunset, moonrise, and moonset times, as well as the current moon phase for any given location.
+
+
 ## Installation & Usage
 
-To install and use the **Storm Glass Marine & Weather** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/storm-glass-marine-weather](https://vinkius.com/mcp/storm-glass-marine-weather)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Storm Glass Marine & Weather** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `storm-glass-marine-weather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Storm Glass Marine & Weather** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "storm-glass-marine-weather": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

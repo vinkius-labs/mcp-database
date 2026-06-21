@@ -1,7 +1,6 @@
 # Lead Scoring Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lead-scoring-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lead-scoring-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lead-scoring-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lead-scoring-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -51,12 +50,52 @@ Here are some examples of how you can interact with the **Lead Scoring Calculato
 > The scoring process is complete. The final calculated score is [TOTAL_SCORE]/100, classifying the lead as a [STATUS]. This indicates a strong potential for conversion, with an estimated probability range of [PROBABILITY]% to [HIGH_END]%.
 
 
+## ❓ FAQ
+
+**Q: What types of signals does the calculator use?**
+The scoring model is comprehensive. It combines static **Firmographic Signals** (like company size and industry sector) retrieved via `query_lead_profile_data` with dynamic **Behavioral Signals** (such as page visits or emails opened). The final score weights these signals to give a true picture of intent.
+
+**Q: How configurable are the scoring rules?**
+The model is highly flexible. It fetches all necessary weights and thresholds using `query_scoring_configuration`. This allows administrators to adjust the importance of any attribute (e.g., boosting the value of a 'Director' title) without changing core code.
+
+**Q: What inputs are needed to get a final score?**
+To calculate the final result, three pieces of information are required. First, you need raw lead data using `query_lead_profile_data`. Second, you must provide the scoring weights from `query_scoring_configuration`. These inputs feed into the core function, `calculate_converted_score`, which provides the total score and status.
+
+
 ## Installation & Usage
 
-To install and use the **Lead Scoring Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lead-scoring-calculator](https://vinkius.com/mcp/lead-scoring-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lead Scoring Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lead-scoring-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lead Scoring Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lead-scoring-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

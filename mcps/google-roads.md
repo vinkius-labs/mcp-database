@@ -1,7 +1,6 @@
 # Google Roads MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-roads)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-roads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-roads-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-roads)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Google Roads** MCP ser
 > Finding nearest roads... Point 1 (34.0522, -118.2437) snapped to Spring Street, Los Angeles CA, placeId: ChIJYWRSrVHHwoARpVl2b3cFzQE. Point 2 (34.0530, -118.2445) snapped to Broadway, Los Angeles CA, placeId: ChIJYWRSrVHHwoARpVl2b3cFzQF. Both points are in downtown Los Angeles within 15 meters of major roads. Would you like speed limits for these road segments?
 
 
+## ❓ FAQ
+
+**Q: Can my AI snap a GPS track to the actual roads travelled?**
+Yes! Use the `snap_to_roads` tool with your GPS coordinates in path format (latitude,longitude pairs separated by pipes). For example: path=40.7128,-74.0060|40.7135,-74.0055|40.7142,-74.0048. Set interpolate=true for smoother road geometry with additional interpolated points between your input coordinates. The response includes snapped coordinates, original coordinates, and place IDs for each road segment.
+
+**Q: How do I get speed limit data for a specific road segment?**
+Use the `get_speed_limits` tool with place IDs obtained from snap_to_roads or get_nearest_roads responses. For example: place_ids=ChIJplaceId1|ChIJplaceId2|ChIJplaceId3. The API returns speed limits in km/h for each road segment. If you need both snapped coordinates AND speed limits in one call, use `get_snapped_speed_limits` with a GPS path instead.
+
+**Q: What is the difference between snap_to_roads and get_nearest_roads?**
+snap_to_roads assumes your coordinates form a continuous path and snaps them to the most likely sequence of roads travelled, with optional interpolation for smoother geometry. get_nearest_roads treats each coordinate independently and finds the nearest road segment for each point without assuming they form a path. Use snap_to_roads for GPS tracks and routes, and get_nearest_roads for scattered individual points.
+
+
 ## Installation & Usage
 
-To install and use the **Google Roads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-roads](https://vinkius.com/mcp/google-roads)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Roads** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-roads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Roads** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-roads": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

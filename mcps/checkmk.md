@@ -1,7 +1,6 @@
 # Checkmk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkmk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/checkmk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/checkmk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkmk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Checkmk** MCP server u
 > Triggering activation of changes... The activation run has started. I will notify you once the monitoring core has been successfully updated with the new configuration.
 
 
+## ❓ FAQ
+
+**Q: Can I see failing services across all my hosts?**
+Yes! Use the `list_all_monitored_services` tool. The agent will return a comprehensive list of services, and you can ask it to filter for those in CRITICAL or WARNING states.
+
+**Q: How do I apply changes I made in WATO through the agent?**
+Use the `activate_checkmk_changes` tool. Your agent will trigger the activation process in Checkmk, pushing all pending configurations to the monitoring core.
+
+**Q: Where do I find my Checkmk Automation Secret?**
+Log in to your Checkmk site, go to 'Setup' -> 'Users', and edit your automation user. You will see the 'Automation secret' field there.
+
+
 ## Installation & Usage
 
-To install and use the **Checkmk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/checkmk](https://vinkius.com/mcp/checkmk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Checkmk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `checkmk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Checkmk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "checkmk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

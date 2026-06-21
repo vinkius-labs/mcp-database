@@ -1,7 +1,6 @@
 # Blockscout MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blockscout)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blockscout-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blockscout-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blockscout)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Blockscout** MCP serve
 > Transaction 0x5c50... was successful. It was included in block 12,345,678 and used 21,000 gas units with a total fee of 0.000441 ETH.
 
 
+## ❓ FAQ
+
+**Q: Can I see all the different tokens owned by a specific wallet address?**
+Yes. By using the `list_token_balances` tool with the wallet's address hash, the agent will return a comprehensive list of all ERC-20, ERC-721, and ERC-1155 tokens associated with that account.
+
+**Q: Is it possible to check if the Blockscout explorer is fully updated with the latest chain data?**
+Absolutely. You can use the `get_indexing_status` tool to check the synchronization progress, including the indexing ratios for blocks and internal transactions.
+
+**Q: Can I retrieve the ABI of a verified smart contract to interact with it?**
+Yes, for verified contracts, you can use the `get_contract_abi` tool. This provides the Application Binary Interface required for decoding transactions or making contract calls.
+
+
 ## Installation & Usage
 
-To install and use the **Blockscout** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blockscout](https://vinkius.com/mcp/blockscout)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Blockscout** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blockscout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Blockscout** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blockscout": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

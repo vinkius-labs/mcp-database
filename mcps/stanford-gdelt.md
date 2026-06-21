@@ -1,7 +1,6 @@
 # Stanford GDELT MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-gdelt)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stanford-gdelt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stanford-gdelt-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-gdelt)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -118,12 +117,52 @@ Here are some examples of how you can interact with the **Stanford GDELT** MCP s
 > I've found TV news clips mentioning "quantum computing" from GDELT's TV news archive. Clips include segments from CNN, MSNBC, and Fox Business discussing breakthroughs and investment in quantum technology.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No. The GDELT API is completely free and requires no authentication or registration.
+
+**Q: How often is GDELT updated?**
+GDELT updates every 15 minutes, making it one of the most real-time global news monitoring platforms available. It processes news from virtually every country on Earth in over 100 languages.
+
+**Q: Can I search TV news transcripts?**
+Yes. GDELT provides access to closed caption transcripts from major TV news networks including CNN, Fox News, MSNBC, BBC, and many international broadcasters. You can search by keyword and get clip galleries with timestamps.
+
+
 ## Installation & Usage
 
-To install and use the **Stanford GDELT** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stanford-gdelt](https://vinkius.com/mcp/stanford-gdelt)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Stanford GDELT** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stanford-gdelt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Stanford GDELT** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stanford-gdelt": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

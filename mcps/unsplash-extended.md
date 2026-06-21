@@ -1,7 +1,6 @@
 # Unsplash MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unsplash-extended)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unsplash-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unsplash-extended-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unsplash-extended)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Unsplash** MCP server 
 > The user 'unsplash_photographer' has impressive engagement: 1.2M total views and 450k downloads across their 120 uploaded photos. Would you like to see their most popular collections?
 
 
+## ❓ FAQ
+
+**Q: Can I fetch a random photo based on a specific search term or topic?**
+Yes! Use the `get_random_photo` tool. You can provide a `query` (like 'nature') or `topics` IDs to filter the random selection to exactly what you need.
+
+**Q: Is it possible to create and manage my own photo collections via the AI?**
+Absolutely. With a valid Bearer Token, you can use `create_collection`, `add_photo_to_collection`, and `remove_photo_from_collection` to curate your Unsplash assets directly through conversation.
+
+**Q: How can I check the performance or popularity of a specific photo?**
+You can use the `get_photo_statistics` tool by providing the photo ID. It will return detailed metrics including total views and downloads.
+
+
 ## Installation & Usage
 
-To install and use the **Unsplash** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/unsplash-extended](https://vinkius.com/mcp/unsplash-extended)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Unsplash** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `unsplash-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Unsplash** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "unsplash-extended": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

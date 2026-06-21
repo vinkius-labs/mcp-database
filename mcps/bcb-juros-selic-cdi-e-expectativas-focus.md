@@ -1,7 +1,6 @@
 # BCB Juros — Selic, CDI e Expectativas Focus MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bcb-juros-selic-cdi-e-expectativas-focus)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bcb-juros-selic-cdi-e-expectativas-focus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bcb-juros-selic-cdi-e-expectativas-focus-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bcb-juros-selic-cdi-e-expectativas-focus)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Source: BCB, SGS series 432
 > The median Focus panel agreement projects the Selic ending next year's cycle at approximately 9.50% p.a.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between Selic and CDI?**
+Selic is the overnight rate for government bond-backed interbank loans, set/targeted by the COPOM. CDI is the interbank rate for unsecured overnight deposits between banks. CDI closely tracks Selic and is the most common benchmark for fixed-income investments in Brazil.
+
+**Q: Can I trust the Selic Daily effective values?**
+Yes. The module pipes data strictly authenticated by the Brazilian Central Bank. The effective Selic updates are legally suitable for debt recalculations and financial modeling.
+
+**Q: Does it include expected adjustments set by COPOM?**
+Absolutely. By integrating the Focus expectations array, your AI is acutely aware of forward market opinions preceding actual COPOM rate cut decisions.
+
+
 ## Installation & Usage
 
-To install and use the **BCB Juros — Selic, CDI e Expectativas Focus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bcb-juros-selic-cdi-e-expectativas-focus](https://vinkius.com/mcp/bcb-juros-selic-cdi-e-expectativas-focus)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BCB Juros — Selic, CDI e Expectativas Focus** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bcb-juros-selic-cdi-e-expectativas-focus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BCB Juros — Selic, CDI e Expectativas Focus** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bcb-juros-selic-cdi-e-expectativas-focus": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

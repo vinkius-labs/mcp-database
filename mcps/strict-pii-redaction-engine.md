@@ -1,7 +1,6 @@
 # Strict PII Redaction Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strict-pii-redaction-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/strict-pii-redaction-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/strict-pii-redaction-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strict-pii-redaction-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -45,12 +44,52 @@ Here are some examples of how you can interact with the **Strict PII Redaction E
 > The computation has been executed with mathematical precision. All results are exact and ready for review.
 
 
+## ❓ FAQ
+
+**Q: Does it read the meaning of the text?**
+No, it strictly executes compiled local mathematical regex patterns, ensuring it never hallucinates or leaks contextual data.
+
+**Q: What data points are redacted?**
+The engine strips standard email addresses, 16-digit credit cards, US SSNs, Brazilian CPFs, and generic phone number formats.
+
+**Q: Is the original text preserved?**
+The tool returns a completely sanitized clone of the document string, leaving the raw client source completely untouched locally.
+
+
 ## Installation & Usage
 
-To install and use the **Strict PII Redaction Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/strict-pii-redaction-engine](https://vinkius.com/mcp/strict-pii-redaction-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Strict PII Redaction Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `strict-pii-redaction-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Strict PII Redaction Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "strict-pii-redaction-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

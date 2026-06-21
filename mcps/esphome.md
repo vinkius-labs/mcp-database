@@ -1,7 +1,6 @@
 # ESPHome MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/esphome)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/esphome-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/esphome-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/esphome)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **ESPHome** MCP server u
 > Executing the close action on the garage door cover. The command has been sent successfully.
 
 
+## ❓ FAQ
+
+**Q: Can I control my lights and set specific colors using this server?**
+Yes! Use the `light_action` tool. You can specify the entity name, the action (turn_on), and optional parameters like brightness (0-255) and RGB values (r, g, b) to get the perfect ambiance.
+
+**Q: How do I check the current temperature or humidity from my sensors?**
+Simply use the `get_entity_state` tool. Provide the domain (e.g., 'sensor') and the entity ID. The agent will return the current value and state of that specific hardware component.
+
+**Q: Is it possible to trigger a physical button or restart a device?**
+Yes. If you have a button entity configured in ESPHome (like a restart button), you can use the `button_press` tool with the entity name to trigger that action remotely.
+
+
 ## Installation & Usage
 
-To install and use the **ESPHome** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/esphome](https://vinkius.com/mcp/esphome)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ESPHome** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `esphome` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ESPHome** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "esphome": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

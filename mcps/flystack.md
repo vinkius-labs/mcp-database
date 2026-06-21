@@ -1,7 +1,6 @@
 # Flystack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flystack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flystack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flystack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flystack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Flystack** MCP server 
 > I've identified the deployment 'api-gateway'! It is running in the 'us-east-1' region and was last updated 2 days ago. I can provide the unique ID and cluster metadata to help you identify it in your workflow.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Flystack API Key?**
+Log in to your [**Flystack dashboard**](https://app.flystack.dev/), go to your account settings or API section, and generate a new token. Copy and paste it below.
+
+**Q: Does it support real-time metrics?**
+Yes. The `get_cluster_metrics` tool retrieves the latest available CPU and memory usage metadata for your specified infrastructure cluster.
+
+**Q: Can the agent list multiple deployments?**
+Yes. The `list_flystack_deployments` tool provides a comprehensive list of all active deployments in your account instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Flystack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flystack](https://vinkius.com/mcp/flystack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Flystack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flystack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Flystack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flystack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

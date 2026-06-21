@@ -1,7 +1,6 @@
 # Workvivo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workvivo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/workvivo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/workvivo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workvivo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Workvivo** MCP server 
 > Event 'Monthly Town Hall' (ID: ev-999): Starts at 03:00 PM UTC, Location: Main Auditorium / Zoom. Description: Q1 strategy update and open Q&A with the CEO. No agenda attachments found.
 
 
+## ❓ FAQ
+
+**Q: Can I check which users belong to a specific collaboration space?**
+Yes. The `get_space_details` tool allows your AI agent to retrieve the membership count and configuration for any specific space ID, helping you monitor team alignment directly through chat.
+
+**Q: How do I see the contact details for a colleague using chat?**
+You can use the `get_employee_profile` tool. Simply provide the unique employee ID, and your agent will return their full profile details, including email, job title, and department information.
+
+**Q: Can I post an announcement to the global activity feed via chat?**
+Absolutely. Use the `create_social_post` tool and provide your update text. If you don't specify a space ID, the post will be shared to the main company activity feed, making it visible to all users.
+
+
 ## Installation & Usage
 
-To install and use the **Workvivo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/workvivo](https://vinkius.com/mcp/workvivo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Workvivo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `workvivo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Workvivo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "workvivo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

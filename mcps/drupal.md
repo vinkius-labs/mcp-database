@@ -1,7 +1,6 @@
 # Drupal MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drupal)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/drupal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/drupal-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drupal)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Drupal** MCP server us
 > Retrieving tags... I found 10 registered terms including 'Technology', 'Tutorial', 'Drupal', and 'API'. Would you like the metadata for a specific tag?
 
 
+## ❓ FAQ
+
+**Q: Can my agent create a new content node in Drupal?**
+Yes. Use the 'create_cms_node' tool. Provide the node type (e.g., 'article') and a JSON object with the attributes. The agent will orchestrate the HTTP POST request to your Drupal JSON:API to persist the entity.
+
+**Q: How do I list all taxonomy terms for a specific vocabulary?**
+Use the 'list_term_vocabularies' tool. Provide the vocabulary ID (e.g., 'tags'). Your agent will execute bulk iterations to track explicitly registered terms and return them within your chat context.
+
+**Q: Can I retrieve the direct URL for a managed image file?**
+Absolutely. Use the 'get_file_metadata' tool with the file ID. The agent will analyze the explicit UUID bounds and fetch the literal URL parameters, providing the public location of the managed attachment.
+
+
 ## Installation & Usage
 
-To install and use the **Drupal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/drupal](https://vinkius.com/mcp/drupal)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Drupal** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `drupal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Drupal** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "drupal": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

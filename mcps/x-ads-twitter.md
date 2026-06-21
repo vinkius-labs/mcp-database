@@ -1,7 +1,6 @@
 # X Ads (Twitter) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/x-ads-twitter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/x-ads-twitter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/x-ads-twitter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/x-ads-twitter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -135,12 +134,52 @@ The retargeting line item is outperforming by CTR. Would you like a day-by-day b
 Want me to pull engagement stats for any of these?
 
 
+## ❓ FAQ
+
+**Q: Where do I find the four credentials I need?**
+In the [X Developer Portal](https://developer.x.com/), open your App under your Project. Under **Keys and Tokens**, you will find the **API Key** (Consumer Key) and **API Key Secret** (Consumer Secret). Below that, generate your **Access Token** and **Access Token Secret**. All four are required because the X Ads API uses OAuth 1.0a request signing.
+
+**Q: Do I need Ads API approval from X?**
+Yes. The X Ads API is access-gated. You need to apply through the [X Developer Portal](https://developer.x.com/) and receive explicit approval before your credentials will work with Ads endpoints. Standard developer accounts only have access to the general X API.
+
+**Q: Can I pull analytics for a specific date range?**
+Yes. The analytics tool accepts start and end dates in ISO 8601 format along with metric groups such as Engagement, Billing, or Video. Just ask your agent something like 'show me engagement metrics for campaign X from June 1 to June 15' and it will build the right query.
+
+
 ## Installation & Usage
 
-To install and use the **X Ads (Twitter)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/x-ads-twitter](https://vinkius.com/mcp/x-ads-twitter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **X Ads (Twitter)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `x-ads-twitter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **X Ads (Twitter)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "x-ads-twitter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

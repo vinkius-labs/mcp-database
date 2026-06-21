@@ -1,7 +1,6 @@
 # Thinkific MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thinkific)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/thinkific-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/thinkific-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thinkific)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Thinkific** MCP server
 > Enrollment successful! I've added user_8823 to course_5521. The enrollment is set to expire on 2024-12-01. The student will receive a notification in their dashboard.
 
 
+## ❓ FAQ
+
+**Q: Can I manually enroll a student in a course using the AI?**
+Yes! Use the `enroll_user` tool. Provide the User ID and the Course ID to instantly create a new enrollment for that student in your Thinkific academy.
+
+**Q: How do I see the full list of registered students?**
+Run the `list_users` query. You can optionally use the `page` and `limit` parameters to navigate through your entire student directory.
+
+**Q: Is it possible to check recent revenue or orders via AI?**
+Absolutely. Use the `list_orders` query. Your agent will retrieve the history of all transactions and orders processed through your Thinkific site.
+
+
 ## Installation & Usage
 
-To install and use the **Thinkific** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/thinkific](https://vinkius.com/mcp/thinkific)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Thinkific** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `thinkific` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Thinkific** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "thinkific": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

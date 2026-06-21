@@ -1,7 +1,6 @@
 # AssessTEAM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/assessteam)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/assessteam-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/assessteam-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/assessteam)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **AssessTEAM** MCP serve
 > I've fetched the evaluations. Over the last quarter, 15 reviews were completed. Average KPI score is 4.2/5.0. Shall I retrieve the detailed feedback for the 'Engineering' team?
 
 
+## ❓ FAQ
+
+**Q: Can I see the profitability metrics for a specific project?**
+Yes! Use the `get_profitability_report` tool. Your agent will retrieve detailed financial data, including cost vs. revenue and margin analysis for your active projects.
+
+**Q: How do I add a new timesheet entry for an employee?**
+Use the `create_timesheet_entry` action. Provide the Employee ID, Project ID, number of hours, and the date in YYYY-MM-DD format to log the work instantly.
+
+**Q: Is it possible to list all team members via AI?**
+Absolutely. Use the `list_employees` query. The agent will retrieve the complete directory of collaborators and team members associated with your account.
+
+
 ## Installation & Usage
 
-To install and use the **AssessTEAM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/assessteam](https://vinkius.com/mcp/assessteam)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AssessTEAM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `assessteam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AssessTEAM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "assessteam": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

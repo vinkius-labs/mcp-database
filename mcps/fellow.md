@@ -1,7 +1,6 @@
 # Fellow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fellow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fellow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fellow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fellow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Here are some examples of how you can interact with the **Fellow** MCP server us
 > Retrieving recordings... Here are the 3 most recent: 'Strategic Planning' (1h 20m), 'Daily Standup' (15m), and 'Design Review' (45m). Which one would you like the transcript or recording URL for?
 
 
+## ❓ FAQ
+
+**Q: Can my agent retrieve the full transcript of a specific meeting recording in Fellow?**
+Yes. Use the 'get_transcript' tool. Provide the recording ID, and the agent will return the speaker-attributed text with timestamps, allowing you to review critical discussions or extract insights limitlessly.
+
+**Q: How do I mark an action item as complete via chat?**
+Use the 'complete_action_item' tool. Provide the item ID. Your agent will update the task status in Fellow and notify the relevant stakeholders, ensuring your project progress is updated synchronously.
+
+**Q: Can I see all meeting notes in my workspace through the agent?**
+Absolutely. The 'list_notes' tool identifies bounded records inside your workspace, returning note IDs, titles, meeting dates, and participants to help you browse your meeting history natively.
+
+
 ## Installation & Usage
 
-To install and use the **Fellow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fellow](https://vinkius.com/mcp/fellow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fellow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fellow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fellow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fellow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

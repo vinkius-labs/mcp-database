@@ -1,7 +1,6 @@
 # CaptivateIQ MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/captivateiq)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/captivateiq-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/captivateiq-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/captivateiq)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **CaptivateIQ** MCP serv
 > You have 3 active workbooks: 'Global Sales Plan 2026', 'Manager Incentive Tier', and 'Referral Program Logic'. Which one would you like to explore?
 
 
+## ❓ FAQ
+
+**Q: Can I check the total commission for a specific employee using the agent?**
+Yes! Use the `get_employee_details` tool or the `list_payout_statements` tool. Your agent will fetch the relevant data, including the total commission amount for the period.
+
+**Q: How do I list all the processed payouts for my team?**
+Simply ask the agent to `list_commission_payouts`. It will retrieve the full history of processed payouts from your CaptivateIQ account, including dates and totals.
+
+**Q: Does the integration allow creating a new payout manual adjustment?**
+The current toolset focuses on querying and monitoring (Read-Only) for data analysis and payroll extraction. Adjustments or changes to the calculation logic should be managed via the CaptivateIQ web platform.
+
+
 ## Installation & Usage
 
-To install and use the **CaptivateIQ** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/captivateiq](https://vinkius.com/mcp/captivateiq)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CaptivateIQ** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `captivateiq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CaptivateIQ** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "captivateiq": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

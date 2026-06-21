@@ -1,7 +1,6 @@
 # Qencode MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qencode)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qencode-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qencode-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qencode)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Qencode** MCP server u
 > Live stream 'Webinar' has been created. Stream ID: st_98234. You can now start the stream using the `start_live_stream` tool.
 
 
+## ❓ FAQ
+
+**Q: How can I check if my video is finished encoding?**
+Use the `get_task_status` tool with your task tokens. It returns the current state such as 'downloading', 'encoding', 'saving', or 'completed' for one or more tasks.
+
+**Q: Can I stream to multiple platforms like YouTube and Twitch at once?**
+Yes! First create a stream with `create_live_stream`, then use `add_simulcast_target` to add external destinations to your live feed.
+
+**Q: Do I need to get an access token before every transcoding task?**
+Yes, you must call `get_access_token` to receive a session-based token required by the `create_task` tool. For live streaming, use `get_live_access_token` instead.
+
+
 ## Installation & Usage
 
-To install and use the **Qencode** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/qencode](https://vinkius.com/mcp/qencode)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Qencode** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `qencode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Qencode** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "qencode": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

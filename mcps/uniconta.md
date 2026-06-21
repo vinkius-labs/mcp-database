@@ -1,7 +1,6 @@
 # Uniconta MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uniconta)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uniconta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uniconta-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uniconta)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Uniconta** MCP server 
 > Details isolated for ID 993: Legal Name represents "Acme Wholesale UK". Address logged sits at 1st London Ave. Their credit limit stands currently at max $250,000 threshold.
 
 
+## ❓ FAQ
+
+**Q: Can it search through all GL accounts at once?**
+Yes. Command the LLM to 'list_gl_accounts'. It connects directly to the ERP tables handling your General Ledger mappings and provides a comprehensive, raw listing natively within seconds.
+
+**Q: How do I securely retrieve the data from a single specific Debtor when preparing for a client call?**
+Have the agent execute 'get_debtor_details' by supplying their account code or RowID. It extracts all assigned contacts, limits, local address formats, and primary balance metrics directly into reading text.
+
+**Q: Is it possible to inspect pending inventory items and pricing directly dynamically and easily?**
+Yes, trigger 'list_inventory_items' via standard chat protocols. The bot will automatically retrieve available catalogs, yielding active identifiers and current pricing arrays inherently.
+
+
 ## Installation & Usage
 
-To install and use the **Uniconta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/uniconta](https://vinkius.com/mcp/uniconta)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Uniconta** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `uniconta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Uniconta** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "uniconta": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

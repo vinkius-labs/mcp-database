@@ -1,7 +1,6 @@
 # BTC.com API (BTC.com Explorer & Pool API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/btccom-api-btccom-explorer-pool-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/btccom-api-btccom-explorer-pool-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/btccom-api-btccom-explorer-pool-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/btccom-api-btccom-explorer-pool-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **BTC.com API (BTC.com E
 > I've fetched your worker list. You have 12 active workers. Worker 'Antminer_S19_01' is currently hashing at 104 TH/s.
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance of a specific Bitcoin address without an API key?**
+Yes. Explorer tools like `get_address_summary` and `get_address_transactions` are public and do not require a BTC_COM_ACCESS_KEY.
+
+**Q: How do I monitor the status of my mining workers?**
+You can use `get_worker_list` to see all workers and their status (Active/Inactive/Dead), or `get_worker_stats` with a specific Worker ID for detailed metrics.
+
+**Q: Does this server support unconfirmed transactions?**
+Yes, the `get_unconfirmed_transactions` tool allows you to fetch a list of transactions currently in the Bitcoin mempool.
+
+
 ## Installation & Usage
 
-To install and use the **BTC.com API (BTC.com Explorer & Pool API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/btccom-api-btccom-explorer-pool-api](https://vinkius.com/mcp/btccom-api-btccom-explorer-pool-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BTC.com API (BTC.com Explorer & Pool API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `btccom-api-btccom-explorer-pool-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BTC.com API (BTC.com Explorer & Pool API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "btccom-api-btccom-explorer-pool-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

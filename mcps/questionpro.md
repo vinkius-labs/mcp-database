@@ -1,7 +1,6 @@
 # QuestionPro MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/questionpro)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/questionpro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/questionpro-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/questionpro)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **QuestionPro** MCP serv
 > Analytics report generated for "Customer Experience 2025". Total responses: 3,421. Overall satisfaction: 4.3/5. Key findings: Product quality rated highest (4.6/5), pricing perceived as competitive by 72% of respondents, support response time is the top improvement area (mentioned 890 times). Demographics: 55% enterprise, 30% mid-market, 15% SMB. Trends vs last quarter: satisfaction up 0.3 points, NPS improved from 67 to 72. Report exported in PDF and Excel formats.
 
 
+## ❓ FAQ
+
+**Q: Can I view response details?**
+Yes, access individual survey responses with complete answer data and timestamps, or list all responses for analysis.
+
+**Q: Can I export data from folders?**
+Yes, you can filter and retrieve all surveys or specific responses contained within a specific folder.
+
+**Q: How to handle API Limits?**
+The API includes rate limits depending on your plan. The MCP handles basic pagination efficiently to avoid exceeding them.
+
+
 ## Installation & Usage
 
-To install and use the **QuestionPro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/questionpro](https://vinkius.com/mcp/questionpro)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **QuestionPro** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `questionpro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **QuestionPro** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "questionpro": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

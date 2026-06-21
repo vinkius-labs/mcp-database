@@ -1,7 +1,6 @@
 # Groove MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/groove)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/groove-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/groove-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/groove)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Groove** MCP server us
 > Sending reply... Success! I've posted the message to Ticket #402 informing the customer about their refund. The ticket state remains 'pending'. Should I mark it as closed?
 
 
+## ❓ FAQ
+
+**Q: Can my agent create an internal note instead of replying to the customer in Groove?**
+Yes. When using the 'create_message' tool, you can specify that the message is an internal note. The agent will then post it privately within the ticket flawlessly, visible only to your team.
+
+**Q: How do I update the status of a ticket to 'closed' via chat?**
+You can use the 'update_ticket_state' tool. Provide the Ticket Number and set the state parameter to 'closed'. Your agent will then organize your inbox by resolving the ticket programmatically flawlessy.
+
+**Q: Can I list all support agents to check who is assigned to a ticket through the agent?**
+Absolutely. Use the 'list_agents' tool. Your agent will retrieve a full list of support staff, allowing you to audit assignments or identify the primary owner of any customer conversation natively.
+
+
 ## Installation & Usage
 
-To install and use the **Groove** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/groove](https://vinkius.com/mcp/groove)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Groove** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `groove` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Groove** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "groove": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

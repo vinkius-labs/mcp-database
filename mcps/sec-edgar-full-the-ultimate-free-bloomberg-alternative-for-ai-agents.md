@@ -1,7 +1,6 @@
 # SEC EDGAR Full — The Ultimate Free Bloomberg Alternative for AI Agents MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar-full-the-ultimate-free-bloomberg-alternative-for-ai-agents)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sec-edgar-full-the-ultimate-free-bloomberg-alternative-for-ai-agents-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sec-edgar-full-the-ultimate-free-bloomberg-alternative-for-ai-agents-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar-full-the-ultimate-free-bloomberg-alternative-for-ai-agents)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -113,12 +112,52 @@ Found 45,210 mentions in recent filings, primarily across the Manufacturing and 
 - Apple: Tim Cook sold 80,000 shares on 2026-02-15.
 
 
+## ❓ FAQ
+
+**Q: How does this compare to Bloomberg Terminal?**
+Bloomberg Terminal costs $24,000/year. This MCP server provides free, direct access to the same SEC EDGAR data that Bloomberg uses as a primary source. While Bloomberg offers real-time market data, charting, and news, this server covers the fundamental financial data: company filings (10-K, 10-Q, 8-K), XBRL financial statements, insider trading, and full-text search — all for free through the SEC's official APIs.
+
+**Q: Is this server rate-limited?**
+The SEC limits API traffic to 10 requests per second. The MCP server honors these requirements by acting transparently and using a respectful User-Agent.
+
+**Q: Is all data strictly accurate?**
+Yes, the data is pulled unaltered straight from the SEC's government endpoints. Be mindful that company financial reporting itself may occasionally be updated or reclassified by the companies themselves.
+
+
 ## Installation & Usage
 
-To install and use the **SEC EDGAR Full — The Ultimate Free Bloomberg Alternative for AI Agents** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sec-edgar-full-the-ultimate-free-bloomberg-alternative-for-ai-agents](https://vinkius.com/mcp/sec-edgar-full-the-ultimate-free-bloomberg-alternative-for-ai-agents)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SEC EDGAR Full — The Ultimate Free Bloomberg Alternative for AI Agents** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sec-edgar-full-the-ultimate-free-bloomberg-alternative-for-ai-agents` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SEC EDGAR Full — The Ultimate Free Bloomberg Alternative for AI Agents** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sec-edgar-full-the-ultimate-free-bloomberg-alternative-for-ai-agents": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

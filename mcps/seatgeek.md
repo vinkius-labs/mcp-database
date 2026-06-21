@@ -1,7 +1,6 @@
 # SeatGeek MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/seatgeek)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/seatgeek-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/seatgeek-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/seatgeek)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **SeatGeek** MCP server 
 > I've retrieved the taxonomies. Categories include 'sports', 'concert', 'theater', 'ncaa_basketball', 'broadway_tickets_national', and many more. Which category are you interested in?
 
 
+## ❓ FAQ
+
+**Q: How can I find events happening in a specific city?**
+You can use the `list_events` tool and provide the city name in the `venue_city` parameter. For example, searching for 'New York' will return all upcoming events in that location.
+
+**Q: Can I get detailed information about a specific music band or athlete?**
+Yes! Use the `list_performers` tool to search for them by name, and then use `get_performer` with their specific ID to retrieve full metadata and bios.
+
+**Q: How do I see what types of event categories SeatGeek supports?**
+Simply run the `list_taxonomies` tool. It will return a comprehensive list of all event categories (like sports, concerts, or theater) used by the platform.
+
+
 ## Installation & Usage
 
-To install and use the **SeatGeek** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/seatgeek](https://vinkius.com/mcp/seatgeek)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SeatGeek** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `seatgeek` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SeatGeek** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "seatgeek": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

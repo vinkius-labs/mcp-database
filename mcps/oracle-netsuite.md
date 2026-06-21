@@ -1,7 +1,6 @@
 # Oracle NetSuite MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oracle-netsuite)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oracle-netsuite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oracle-netsuite-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oracle-netsuite)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,55 @@ Here are some examples of how you can interact with the **Oracle NetSuite** MCP 
 > Sales Order SO-2026-04567 created successfully! Customer: CUST-1045, Item: SKU-2024-A, Qty: 100, Unit Price: $45.00, Total: $4,500.00. Status: Pending Fulfillment. Would you like me to check stock availability or generate the pick ticket?
 
 
+## ❓ FAQ
+
+**Q: What credentials do I need for NetSuite authentication?**
+You need 5 values for Token-Based Authentication (TBA): Account ID, Consumer Key, Consumer Secret, Token ID, and Token Secret. All are generated within your NetSuite account under Setup > Integration.
+
+**Q: Can I run custom SuiteQL queries?**
+Yes. The `execute_suiteql` tool executes SQL-like queries against the SuiteQL endpoint. You can query any record type, join tables, and use aggregation functions — all through natural language that the agent translates to SuiteQL.
+
+**Q: Does it support NetSuite saved searches?**
+Absolutely. Use the `run_saved_search` tool with the saved search ID to retrieve its results. This works with any existing saved search in your account — transactions, customers, items, or custom records.
+
+**Q: Can I create sales orders through the agent?**
+Yes. The `create_record` tool with the `salesOrder` record type lets you create full sales orders with line items, pricing, shipping addresses, and payment terms — all through conversation.
+
+
 ## Installation & Usage
 
-To install and use the **Oracle NetSuite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/oracle-netsuite](https://vinkius.com/mcp/oracle-netsuite)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Oracle NetSuite** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `oracle-netsuite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Oracle NetSuite** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "oracle-netsuite": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

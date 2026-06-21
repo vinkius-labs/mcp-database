@@ -1,7 +1,6 @@
 # Hexometer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hexometer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hexometer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hexometer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hexometer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,55 @@ Here are some examples of how you can interact with the **Hexometer** MCP server
 > SEO audit complete! I've scanned the post. Meta titles and descriptions are well-optimized. However, 2 images are missing alt tags and there is no H1 header defined. Would you like me to suggest some improvements?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Hexometer API Key?**
+Log in to Hexometer, select a property from your dashboard, navigate to **Settings**, and you will find your unique **API Key** listed in the API section.
+
+**Q: Can I trigger a performance check for any URL?**
+Yes! The `check_speed_desktop`, `check_speed_mobile`, and `run_seo_audit` tools allow you to provide any URL. Hexometer will perform a real-time analysis and return the results.
+
+**Q: Does the integration detect broken links?**
+Yes, you can use the `check_broken_links` tool with a property ID to retrieve a list of all detected 404 errors and dead links identified by Hexometer's automated scans.
+
+**Q: Is the integration secure for monitoring data?**
+Absolutely. The integration uses official Hexometer API keys over HTTPS. Your credentials are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Hexometer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hexometer](https://vinkius.com/mcp/hexometer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hexometer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hexometer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hexometer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hexometer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

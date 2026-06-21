@@ -1,7 +1,6 @@
 # Checkfront MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkfront)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/checkfront-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/checkfront-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkfront)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Checkfront** MCP serve
 > Checking inventory for August 15th (12:00 PM - 5:00 PM)... Yes, there are exactly 9 double kayaks and 4 single kayaks available for booking.
 
 
+## ❓ FAQ
+
+**Q: What businesses use Checkfront?**
+Checkfront is used by tour operators, activity providers, rental companies, and experience businesses worldwide to manage online booking and inventory.
+
+**Q: Can I query available slots for a given rental gear category?**
+Yes! The MCP directly interfaces with the Checkfront Item/Category API. You can ask exactly how many mountain bikes or kayaks remain available for next Saturday.
+
+**Q: Will an AI cancellation automatically refund my guest's payment?**
+By default, the AI cancels the booking status but defers payment refunds to your manual Payment Gateway configuration out of safety, unless strictly instructed other configurations.
+
+
 ## Installation & Usage
 
-To install and use the **Checkfront** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/checkfront](https://vinkius.com/mcp/checkfront)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Checkfront** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `checkfront` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Checkfront** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "checkfront": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

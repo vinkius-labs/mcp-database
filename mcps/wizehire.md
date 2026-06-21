@@ -1,7 +1,6 @@
 # Wizehire MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wizehire)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wizehire-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wizehire-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wizehire)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,49 @@ Here are some examples of how you can interact with the **Wizehire** MCP server 
 > Fetching applicants... I've found 5 recent candidates for the Sales Executive role. Notable ones include John Doe (DISC+: High D). Should I pull his full profile?
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Wizehire API Key?**
+Log in to your Wizehire account, go to **Account** > **API Keys**, and generate your unique Bearer token.
+
+**Q: Can I view DISC+ assessment results via AI?**
+Yes! The `get_candidate_details` tool retrieves full profile data, which typically includes the results from the DISC+ assessment screening.
+
+
 ## Installation & Usage
 
-To install and use the **Wizehire** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wizehire](https://vinkius.com/mcp/wizehire)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wizehire** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wizehire` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wizehire** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wizehire": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

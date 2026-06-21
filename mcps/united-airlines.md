@@ -1,7 +1,6 @@
 # United Airlines MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/united-airlines)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/united-airlines-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/united-airlines-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/united-airlines)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -105,12 +104,58 @@ Here are some examples of how you can interact with the **United Airlines** MCP 
 > Yes, I found 3 delayed United arrivals at ORD: UA1234 from Denver (delayed by 45 min), UA567 from Washington Dulles (delayed by 30 min), and UA890 from San Francisco (delayed by 1 hour 15 min). All are expected to land within the next 2 hours.
 
 
+## ❓ FAQ
+
+**Q: Can I track a specific United Airlines flight in real-time?**
+Yes! Use the `get_flight_status` tool with the flight number (just the numeric part, e.g., "123" for UA123). You'll receive live status updates including departure/arrival times, gate, terminal, baggage belt, and whether the flight is scheduled, active, landed, delayed, or cancelled.
+
+**Q: How can I see all United flights departing from a specific airport today?**
+Use the `get_departures` tool with the airport's IATA code (e.g., "SFO" for San Francisco, "EWR" for Newark). Optionally provide a date in YYYY-MM-DD format. This returns all United departures with flight numbers, destinations, times, gates, and current status.
+
+**Q: Can I check if United Airlines operates a route between two specific airports?**
+Absolutely! Use the `get_route` tool with the origin and destination airport IATA codes (e.g., from_iata="SFO", to_iata="LHR"). It will tell you if United serves that route and provide route details including codeshare information.
+
+**Q: Can I find all delayed or cancelled United flights at an airport?**
+Yes! Use the `get_flights_by_status` tool with the airport IATA code, set status to "delayed" or "cancelled", and specify "departure" or "arrival". This is invaluable for assessing operational disruptions and planning alternatives.
+
+**Q: Can I review historical flight performance to check if a route is typically on-time?**
+Yes! Use the `get_flight_history` tool with the airport IATA code, a past date in YYYY-MM-DD format, and "departure" or "arrival" type. You'll see actual vs scheduled times, delays, and cancellations to analyze punctuality patterns.
+
+
 ## Installation & Usage
 
-To install and use the **United Airlines** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/united-airlines](https://vinkius.com/mcp/united-airlines)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **United Airlines** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `united-airlines` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **United Airlines** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "united-airlines": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

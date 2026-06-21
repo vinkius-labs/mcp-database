@@ -1,7 +1,6 @@
 # Ometria Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ometria-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ometria-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ometria-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ometria-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Ometria Intelligence**
 > Fetching segment details... The 'High LTV' segment currently contains 1,250 members. This audience consists of customers who have placed at least 5 orders in the last 12 months. Would you like to see the recent order history for this group?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Ometria API Key?**
+You can generate an API key in the Ometria settings dashboard under the API tab. This key should be used for the `X-Ometria-Auth` header.
+
+**Q: Can I see customer lifetime value (LTV)?**
+Yes! Use the `get_contact_details` tool with a specific contact ID to retrieve their full profile, which includes segment associations and calculated lifetime metrics.
+
+**Q: Does this support real-time campaign stats?**
+Yes, the `get_campaign_stats` tool retrieves current engagement metrics directly from Ometria for any specific campaign ID.
+
+
 ## Installation & Usage
 
-To install and use the **Ometria Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ometria-intelligence](https://vinkius.com/mcp/ometria-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ometria Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ometria-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ometria Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ometria-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

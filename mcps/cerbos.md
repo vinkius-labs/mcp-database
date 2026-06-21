@@ -1,7 +1,6 @@
 # Cerbos MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cerbos)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cerbos-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cerbos-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cerbos)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Cerbos** MCP server us
 > I've retrieved the server info using `get_server_info`. Your instance is running version 0.34.0, built on 2024-01-15.
 
 
+## ❓ FAQ
+
+**Q: Can I check if a specific user has permission to access a resource?**
+Yes. Use the `check_resources` tool by providing the principal (user) details and the resource information. The agent will return an evaluation of allowed or denied actions.
+
+**Q: How do I generate a filter for my database based on user permissions?**
+Use the `plan_resources` tool. It produces a query plan (AST) that you can use to construct database queries, ensuring users only see records they are authorized to access.
+
+**Q: Is it possible to verify the Cerbos server version via AI?**
+Yes, the `get_server_info` tool retrieves the version, build date, and commit hash of your connected Cerbos instance.
+
+
 ## Installation & Usage
 
-To install and use the **Cerbos** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cerbos](https://vinkius.com/mcp/cerbos)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cerbos** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cerbos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cerbos** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cerbos": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

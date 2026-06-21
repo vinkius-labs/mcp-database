@@ -1,7 +1,6 @@
 # Aero Workflow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aero-workflow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aero-workflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aero-workflow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aero-workflow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Aero Workflow** MCP se
 > Accessing productivity data... For this week, your firm has logged a total of 120 billable hours across 8 active clients. Highlights include 40 hours for 'Global Tech'. Need the high-fidelity staff utilization report?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Aero Account ID and API Key?**
+Log in as an Admin, navigate to **Admin** > **Aero API** to generate your key. Your Account ID is the unique identifier in your browser's URL.
+
+**Q: Can I record time logs via AI?**
+Yes! The `create_new_workflow_task` tool allows you to include time metadata when creating or updating tasks to maintain accurate high-fidelity billing records.
+
+**Q: How do I retrieve client directories?**
+Use the `list_firm_customers` tool to retrieve your complete directory of managed business entities and individual client accounts programmatically.
+
+
 ## Installation & Usage
 
-To install and use the **Aero Workflow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aero-workflow](https://vinkius.com/mcp/aero-workflow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aero Workflow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aero-workflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aero Workflow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aero-workflow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

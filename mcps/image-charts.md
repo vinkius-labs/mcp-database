@@ -1,7 +1,6 @@
 # Image-Charts MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/image-charts)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/image-charts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/image-charts-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/image-charts)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Image-Charts** MCP ser
 > Since the dataset is large, I've used `render_chart_post` to generate the image. Here is the visualization of your monthly data.
 
 
+## ❓ FAQ
+
+**Q: When should I use generate_chart_url versus render_chart_post?**
+Use `generate_chart_url` for standard charts where the total URL length is under 2KB. For large datasets or complex configurations that exceed this limit, use `render_chart_post` to send data via a POST request and receive the image as a Base64 string.
+
+**Q: Can I generate QR codes with this server?**
+Yes! By setting the `cht` parameter to `qr` in either tool, you can generate high-quality QR codes. You can customize the size (`chs`) and the encoded data (`chl`) easily.
+
+**Q: Does this support animated charts?**
+Absolutely. You can use the `chan` parameter to specify animation duration and easing functions, and set `chof` to `.gif` to receive an animated chart image.
+
+
 ## Installation & Usage
 
-To install and use the **Image-Charts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/image-charts](https://vinkius.com/mcp/image-charts)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Image-Charts** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `image-charts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Image-Charts** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "image-charts": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

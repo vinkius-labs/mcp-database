@@ -1,7 +1,6 @@
 # Zenvia Conversion MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zenvia-conversion)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zenvia-conversion-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zenvia-conversion-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zenvia-conversion)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,49 @@ Here are some examples of how you can interact with the **Zenvia Conversion** MC
 > Successfully created the lead for Alice. She has been added to your inbox and is now visible as a new prospect. Would you like to send her a template message?
 
 
+## ❓ FAQ
+
+**Q: What is the difference between a Lead and a Prospect?**
+In Zenvia Conversion, a Lead is an initial contact entry. Once a lead is processed or created via the API, it becomes a Prospect in your CRM pipeline.
+
+**Q: Can I start a WhatsApp conversation with a new number?**
+Yes, but you must use an approved HSM template to initiate a new conversation. Free-text messages can only be sent to active conversations within the 24-hour window.
+
+
 ## Installation & Usage
 
-To install and use the **Zenvia Conversion** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zenvia-conversion](https://vinkius.com/mcp/zenvia-conversion)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zenvia Conversion** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zenvia-conversion` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zenvia Conversion** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zenvia-conversion": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

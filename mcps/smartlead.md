@@ -1,7 +1,6 @@
 # SmartLead MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartlead)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smartlead-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smartlead-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartlead)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,55 @@ Here are some examples of how you can interact with the **SmartLead** MCP server
 > 500 leads uploaded to 'SaaS Founders'. 487 accepted, 8 duplicates skipped, 5 invalid emails rejected. Campaign will automatically distribute new leads across your 12 active sending accounts.
 
 
+## ❓ FAQ
+
+**Q: How do I get my SmartLead API key?**
+Log in to your SmartLead account at **app.smartlead.ai**. Click **Settings** in the left sidebar. Navigate to the **API** section. Your API key is displayed on this page — click **Copy**. Paste it into the configuration field below.
+
+**Q: Can I manage hundreds of sending accounts?**
+Yes. SmartLead is built for scale. Your AI agent can manage mailbox rotation, warm-up status, and daily sending limits across all accounts from a single conversation.
+
+**Q: How does mailbox rotation work?**
+SmartLead automatically distributes outgoing emails across your connected mailboxes, keeping each under safe daily sending limits. Your AI agent monitors this rotation and alerts you if any account approaches its limit.
+
+**Q: Is SmartLead good for agencies?**
+Yes. SmartLead is built specifically for cold email agencies with white-label capabilities, client management, and unlimited mailbox connections — all accessible through your AI agent.
+
+
 ## Installation & Usage
 
-To install and use the **SmartLead** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/smartlead](https://vinkius.com/mcp/smartlead)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SmartLead** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `smartlead` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SmartLead** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "smartlead": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

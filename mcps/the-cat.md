@@ -1,7 +1,6 @@
 # The Cat MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-cat)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/the-cat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/the-cat-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-cat)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **The Cat** MCP server u
 > Retrieving your favorites... You have 5 favorited images. The most recent one is a beautiful Siamese cat (ID: xyz123).
 
 
+## ❓ FAQ
+
+**Q: How do I find high-quality cat images of a specific breed?**
+You can use the `search_images` tool and specify the `size` as 'full' and `has_breeds` as true. To find a specific breed's ID first, use the `search_breeds` tool.
+
+**Q: Can I see all the images I have previously favorited?**
+Yes! Use the `get_favourites` tool. It will retrieve a list of all cat images you have saved to your account.
+
+**Q: How do I cast a vote on a cat image?**
+Use the `create_vote` tool. You'll need the `image_id` and a `value` (1 for an upvote, 0 for a downvote).
+
+
 ## Installation & Usage
 
-To install and use the **The Cat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/the-cat](https://vinkius.com/mcp/the-cat)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **The Cat** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `the-cat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **The Cat** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "the-cat": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

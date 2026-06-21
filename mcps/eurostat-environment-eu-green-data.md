@@ -1,7 +1,6 @@
 # Eurostat Environment — EU Green Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-environment-eu-green-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eurostat-environment-eu-green-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eurostat-environment-eu-green-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-environment-eu-green-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,46 @@ EU targets: -55% by 2030, net-zero by 2050.
 Energy sector: largest reduction. Agriculture: stagnant.
 
 
+## ❓ FAQ
+
+**Q: Does this include EU Green Deal data?**
+Yes! GHG emissions, renewable energy share, energy efficiency, and waste recycling rates are the core metrics the European Commission uses to track Green Deal progress. This server provides all of them.
+
+
 ## Installation & Usage
 
-To install and use the **Eurostat Environment — EU Green Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eurostat-environment-eu-green-data](https://vinkius.com/mcp/eurostat-environment-eu-green-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Eurostat Environment — EU Green Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eurostat-environment-eu-green-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Eurostat Environment — EU Green Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eurostat-environment-eu-green-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

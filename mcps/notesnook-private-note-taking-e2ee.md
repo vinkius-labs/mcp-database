@@ -1,7 +1,6 @@
 # Notesnook (Private Note Taking & E2EE) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/notesnook-private-note-taking-e2ee)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/notesnook-private-note-taking-e2ee-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/notesnook-private-note-taking-e2ee-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/notesnook-private-note-taking-e2ee)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Notesnook (Private Not
 > Retrieving tags… I've identified 4 cross-cutting categories in your vault: 'Confidential', 'Drafts', 'Research', and 'Personal'. I can help you list all notes associated with the 'Confidential' tag if you'd like.
 
 
+## ❓ FAQ
+
+**Q: How does Notesnook ensure my notes remain private through the agent?**
+Notesnook uses end-to-end encryption (E2EE). When your agent uses the `create_note` or `get_note` tools, it handles encrypted envelopes. This ensures that only authorized clients with your keys can decrypt the actual text body, maintaining zero-knowledge security natively.
+
+**Q: Can I see all my notebooks and tags using my agent?**
+Yes. Use the `list_notebooks` and `list_tags` tools to retrieve the organizational hierarchy of your vault. Your agent will report the names and IDs, helping you understand how your encrypted information is classified across your account.
+
+**Q: How do I trigger a synchronization between my vault and the server?**
+The `sync_items` tool allows your agent to initiate a full or incremental state resolution. By providing a Unix timestamp, your agent can fetch only the most recent encrypted binary objects, ensuring your local environment matches the server's state.
+
+
 ## Installation & Usage
 
-To install and use the **Notesnook (Private Note Taking & E2EE)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/notesnook-private-note-taking-e2ee](https://vinkius.com/mcp/notesnook-private-note-taking-e2ee)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Notesnook (Private Note Taking & E2EE)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `notesnook-private-note-taking-e2ee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Notesnook (Private Note Taking & E2EE)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "notesnook-private-note-taking-e2ee": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

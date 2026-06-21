@@ -1,7 +1,6 @@
 # Frontify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/frontify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/frontify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/frontify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/frontify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Frontify** MCP server 
 > Invitation sent! I've commanded Frontify to add designer@example.com to project abc-123. They will receive an email to join the workspace and access the assets immediately.
 
 
+## ❓ FAQ
+
+**Q: Can my agent search for brand assets across multiple projects in Frontify?**
+Yes. You can use the 'list_workspace_projects' tool to see all project IDs, and then use 'get_project_assets' or a custom 'execute_graphql_payload' to search across your entire workspace or specific brands synchronously.
+
+**Q: How do I update the title of a digital asset via chat?**
+Use the 'patch_asset_metadata' tool. Provide the 'asset_id' and the new 'title'. The agent will trigger a GraphQL mutation to substitute the attribute securely, updating the label in your Frontify DAM immediately.
+
+**Q: Can I invite a new team member to a project through the agent?**
+Absolutely. Use the 'invite_workspace_user' mutation. Provide the email address and the target Project ID. Your agent will command the backend to map the new user limit directly into the designated workspace flawlessly.
+
+
 ## Installation & Usage
 
-To install and use the **Frontify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/frontify](https://vinkius.com/mcp/frontify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Frontify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `frontify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Frontify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "frontify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

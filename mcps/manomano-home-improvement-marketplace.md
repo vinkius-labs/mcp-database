@@ -1,7 +1,6 @@
 # ManoMano (Home Improvement Marketplace) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/manomano-home-improvement-marketplace)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/manomano-home-improvement-marketplace-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/manomano-home-improvement-marketplace-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/manomano-home-improvement-marketplace)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **ManoMano (Home Improve
 > Retrieving fulfillment stock… I've identified several items in the ManoMano managed warehouse. You have 150 units of SKU 'DRILL-01' and 45 units of SKU 'SAW-05'. No low-stock alerts detected for today.
 
 
+## ❓ FAQ
+
+**Q: Can I update my product prices on ManoMano through my agent?**
+Yes. Use the `update_offer_price` tool with a specific Offer ID. Your agent will safely modify the VAT-included price in EUR, allowing you to react to market changes instantly through conversation.
+
+**Q: How do I mark a ManoMano order as shipped?**
+The `ship_order` tool allows your agent to transition an accepted order into 'Shipped' status. You must provide the tracking number and the carrier name (e.g., DHL, UPS) to update the logistical state correctly.
+
+**Q: Can my agent check the stock levels in ManoMano's own warehouse?**
+Absolutely. Use the `list_fulfillment_stock` tool to retrieve the physical quantities maintained via ManoFulfillment. Your agent will report the current inventory levels available in the ManoMano managed warehouse.
+
+
 ## Installation & Usage
 
-To install and use the **ManoMano (Home Improvement Marketplace)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/manomano-home-improvement-marketplace](https://vinkius.com/mcp/manomano-home-improvement-marketplace)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ManoMano (Home Improvement Marketplace)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `manomano-home-improvement-marketplace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ManoMano (Home Improvement Marketplace)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "manomano-home-improvement-marketplace": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Browse AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browse-ai-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browse-ai-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browse-ai-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browse-ai-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,52 @@ By cross-referencing with your monitors list, the 'Competitor Price Tracker' is 
 I have the full JSON array stored in context if you want to perform deep filtering on the other 27 scraped items.
 
 
+## ❓ FAQ
+
+**Q: Can my AI start a data extraction and let me know when it finishes?**
+Yes! You can ask your agent to `run_robot` on a certain URL. The agent receives the newly created task ID and can immediately invoke `get_task` sequentially to poll for completion. Once successful, it calls `get_task_data` to dump the JSON right into your conversation without breaking workflow.
+
+**Q: How do bulk operations work natively through the agent?**
+When you have a trained robot, you can feed the `run_bulk_task` command an array of different URLs. Browse AI's backend splits them virtually into independent task instances. Your agent tracks the bulk run via `get_bulk_task` and eventually pulls the mega JSON merge using `download_bulk_data`.
+
+**Q: Is there a risk of my agent suddenly spending all my API credits?**
+You have complete visibility—the agent can query `list_credits` at any moment to inform you precisely of your available balance and monthly limit. Also, since tools execute your natural directives, your AI agent only triggers extractions you specifically prompt for.
+
+
 ## Installation & Usage
 
-To install and use the **Browse AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/browse-ai-1](https://vinkius.com/mcp/browse-ai-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Browse AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `browse-ai-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Browse AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "browse-ai-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

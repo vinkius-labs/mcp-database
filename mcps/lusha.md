@@ -1,7 +1,6 @@
 # Lusha MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lusha)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lusha-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lusha-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lusha)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,55 @@ Here are some examples of how you can interact with the **Lusha** MCP server usi
 > Found 28 Marketing Directors at fintech companies in London. Top 3: Emma Clarke (Revolut, verified email + direct dial), David Park (Monzo, verified email), and Sarah Ahmed (Starling Bank, verified email + mobile).
 
 
+## ❓ FAQ
+
+**Q: How do I get my Lusha API key?**
+Log in to your Lusha account at **dashboard.lusha.com**. Click the **Settings** (gear icon) in the left sidebar. Navigate to the **API** section. Your API key is displayed on this page — click **Copy** to copy it. Paste it into the configuration field below. API access is available on Lusha's **Premium** and **Scale** plans.
+
+**Q: Can I find phone numbers and emails for a specific prospect?**
+Yes. Provide a person's name and company, and Lusha returns verified business email, personal email, direct dial, mobile number, and LinkedIn profile — all from its database of 100M+ business profiles.
+
+**Q: How many credits does each search consume?**
+Each contact enrichment uses 1 credit from your Lusha plan. Credits refresh monthly. Your AI agent reports remaining credits so you always know your usage — no surprises on your bill.
+
+**Q: Is the data GDPR compliant?**
+Yes. Lusha is ISO 27701 certified and GDPR/CCPA compliant. All contact data is sourced from publicly available information and community-contributed data with proper consent mechanisms.
+
+
 ## Installation & Usage
 
-To install and use the **Lusha** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lusha](https://vinkius.com/mcp/lusha)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lusha** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lusha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lusha** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lusha": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

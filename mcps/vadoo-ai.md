@@ -1,7 +1,6 @@
 # Vadoo AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vadoo-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vadoo-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vadoo-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vadoo-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Vadoo AI** MCP server 
 > Here is the information you requested based on the execution of the tools.
 
 
+## ❓ FAQ
+
+**Q: Can I generate an entire podcast just from a topic string?**
+Yes. By invoking the 'vadooai_generate_podcast' tool and supplying a simple topic, the API synthesizes the audio and returns a task ID to track it.
+
+**Q: How do I download the generated video?**
+Use the 'vadooai_check_video_status' tool with your Task/Video ID. Once generation is complete, the API will return the direct download URL.
+
+**Q: Is it possible to extract short clips from a YouTube URL?**
+Yes. Provide the video URL to the 'vadooai_create_clips' tool, and Vadoo AI will automatically parse the video and generate short-form clips.
+
+
 ## Installation & Usage
 
-To install and use the **Vadoo AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vadoo-ai](https://vinkius.com/mcp/vadoo-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vadoo AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vadoo-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vadoo AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vadoo-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

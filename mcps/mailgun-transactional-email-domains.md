@@ -1,7 +1,6 @@
 # Mailgun (Transactional Email & Domains) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailgun-transactional-email-domains)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailgun-transactional-email-domains-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailgun-transactional-email-domains-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailgun-transactional-email-domains)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Mailgun (Transactional
 > Retrieving bounce logs… I've identified 3 bounced addresses: 'old-user@gmail.com' (5.1.1 User unknown), 'invalid-addr@yahoo.com', and 'full-mailbox@outlook.com'. Would you like me to remove 'full-mailbox@outlook.com' from the suppression list so you can try again?
 
 
+## ❓ FAQ
+
+**Q: Can I check if my domain's DNS records are correctly configured?**
+Yes. Use the `get_domain` tool by providing your verified domain name. Your agent will retrieve the status of SPF, DKIM, and MX records, helping you identify if any DNS dependencies are missing or misconfigured.
+
+**Q: How do I see which emails have recently bounced from my domain?**
+The `list_bounces` tool allows your agent to extract the suppression logs for a specific domain. You'll see the email addresses that failed to deliver, providing insights into audience health or sending boundaries.
+
+**Q: Can my agent validate an email address before I send a message?**
+Absolutely. Use the `validate_email` tool to check if an address is valid, deliverable, and doesn't belong to a disposable service. This is perfect for ensuring high-quality data before triggering outbound sends.
+
+
 ## Installation & Usage
 
-To install and use the **Mailgun (Transactional Email & Domains)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mailgun-transactional-email-domains](https://vinkius.com/mcp/mailgun-transactional-email-domains)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mailgun (Transactional Email & Domains)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mailgun-transactional-email-domains` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mailgun (Transactional Email & Domains)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mailgun-transactional-email-domains": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

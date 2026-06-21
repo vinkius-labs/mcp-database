@@ -1,7 +1,6 @@
 # ExhibitDay Trade Show Planning MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exhibitday-trade-show-planning)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/exhibitday-trade-show-planning-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/exhibitday-trade-show-planning-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exhibitday-trade-show-planning)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **ExhibitDay Trade Show 
 > I've retrieved 2 shipments for the upcoming show: 'Main Backdrop' (Delivered via FedEx) and 'Collateral Boxes' (In Transit via UPS, Expected tomorrow). Would you like the tracking link for the UPS shipment?
 
 
+## ❓ FAQ
+
+**Q: How do I get an ExhibitDay API Key?**
+Log in to your ExhibitDay account, navigate to **Settings > API Integration**, and you can generate or retrieve your unique **REST API Key** from there. API access is typically available on professional and higher plans.
+
+**Q: Does the integration show real-time budget status?**
+Yes, you can use the get_event_budget_summary tool to retrieve high-level financial data, including total estimated expenses compared to actual logged costs for a specific show.
+
+**Q: Can the agent track material shipments?**
+Yes, you can use the list_booth_shipments tool to retrieve tracking numbers, carrier names, and current delivery statuses for all booth materials associated with your events.
+
+
 ## Installation & Usage
 
-To install and use the **ExhibitDay Trade Show Planning** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/exhibitday-trade-show-planning](https://vinkius.com/mcp/exhibitday-trade-show-planning)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ExhibitDay Trade Show Planning** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `exhibitday-trade-show-planning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ExhibitDay Trade Show Planning** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "exhibitday-trade-show-planning": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # WooCommerce Coupon Creator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/woocommerce-coupon-creator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/woocommerce-coupon-creator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/woocommerce-coupon-creator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/woocommerce-coupon-creator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -37,12 +36,46 @@ Here are some examples of how you can interact with the **WooCommerce Coupon Cre
 > I've created a single-use 15% off coupon for the customer. The code is `DELAYED15`.
 
 
+## ❓ FAQ
+
+**Q: Can the AI give everyone a 100% discount?**
+You control the AI's system prompt. You should instruct the AI on your specific business rules (e.g., "Never give a discount larger than 15% or $20"). The tool itself will execute what the AI requests, so proper prompt engineering is recommended for customer-facing bots.
+
+
 ## Installation & Usage
 
-To install and use the **WooCommerce Coupon Creator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/woocommerce-coupon-creator](https://vinkius.com/mcp/woocommerce-coupon-creator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WooCommerce Coupon Creator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `woocommerce-coupon-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WooCommerce Coupon Creator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "woocommerce-coupon-creator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

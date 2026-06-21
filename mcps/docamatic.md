@@ -1,7 +1,6 @@
 # Docamatic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docamatic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docamatic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docamatic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docamatic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Docamatic** MCP server
 > Visual captured! I've taken a high-quality full-page screenshot of the specified news URL. You can view the image here: [image_url]. Shall I check your recent generation history for other files?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Docamatic API Key?**
+Log in to your account and navigate to the **API Key** section in your settings to generate or copy your unique access token.
+
+**Q: Can I use my own custom HTML strings?**
+Yes! The `generate_pdf_from_html` and `generate_image_from_html` tools accept raw HTML strings as source input.
+
+**Q: Does it support merging existing PDF files?**
+Absolutely. Use the `merge_multiple_pdfs` tool and provide an array of public URLs to combine them into a single PDF document.
+
+
 ## Installation & Usage
 
-To install and use the **Docamatic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/docamatic](https://vinkius.com/mcp/docamatic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Docamatic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `docamatic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Docamatic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "docamatic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Clari MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clari)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clari-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clari-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clari)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Clari** MCP server usi
 > Retrieving account ownership data... The Top 10 accounts are managed by: Sarah Miller (4 accounts), Mike Scott (3 accounts), and John Doe (3 accounts).
 
 
+## ❓ FAQ
+
+**Q: Can I see my team's forecast for this quarter?**
+Yes! Use the `list_clari_forecasts` tool. The agent will return the latest forecast submissions and historical values, allowing you to see the projected revenue for the current fiscal period.
+
+**Q: How do I check for recent changes in a specific opportunity?**
+Use the `list_clari_audit_logs` tool. Your agent will fetch the platform's audit trail, which includes updates to opportunity stages, amounts, and other key revenue metrics.
+
+**Q: Where do I find my Clari API Token?**
+Clari API tokens are typically provided through your Clari Settings page. If you don't see the API section, you may need to contact your Clari account manager or support team to enable Export API access.
+
+
 ## Installation & Usage
 
-To install and use the **Clari** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clari](https://vinkius.com/mcp/clari)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clari** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clari` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clari** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clari": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

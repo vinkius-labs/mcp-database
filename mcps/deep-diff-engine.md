@@ -1,7 +1,6 @@
 # Deep Diff Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deep-diff-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deep-diff-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deep-diff-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deep-diff-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -54,12 +53,52 @@ Here are some examples of how you can interact with the **Deep Diff Engine** MCP
 > No structural differences found. The payloads are semantically identical.
 
 
+## ❓ FAQ
+
+**Q: Why shouldn't I just use string comparison?**
+String comparison fails if the keys are reordered (e.g., `{"a":1,"b":2}` vs `{"b":2,"a":1}`). This engine understands JSON structure, so it correctly identifies that reordered keys are not semantic changes.
+
+**Q: What do the 'kind' letters mean in the output?**
+'N' means a newly added property. 'D' means a deleted property. 'E' means an edited/changed property. 'A' means a change occurred within an array.
+
+**Q: Can this be used for config drift detection?**
+Absolutely. Agents can fetch the desired state from Git, fetch the actual state from the live API, and use this engine to generate a list of exact properties that have drifted.
+
+
 ## Installation & Usage
 
-To install and use the **Deep Diff Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deep-diff-engine](https://vinkius.com/mcp/deep-diff-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deep Diff Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deep-diff-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deep Diff Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deep-diff-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

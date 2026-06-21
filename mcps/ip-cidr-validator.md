@@ -1,7 +1,6 @@
 # IP & CIDR Validator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ip-cidr-validator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ip-cidr-validator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ip-cidr-validator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ip-cidr-validator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -52,12 +51,52 @@ Here are some examples of how you can interact with the **IP & CIDR Validator** 
 > IP Validation: Successfully parsed.
 
 
+## ❓ FAQ
+
+**Q: Does it support IPv6?**
+Yes, it fully supports parsing and subnet matching for both IPv4 and IPv6 standard formats.
+
+**Q: What happens if I pass an invalid IP?**
+The engine will safely catch the error and return a validation failure, preventing the agent from proceeding with bad data.
+
+**Q: Does it connect to the network to ping the IP?**
+No. All checks are mathematical format and binary range checks performed entirely local.
+
+
 ## Installation & Usage
 
-To install and use the **IP & CIDR Validator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ip-cidr-validator](https://vinkius.com/mcp/ip-cidr-validator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IP & CIDR Validator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ip-cidr-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IP & CIDR Validator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ip-cidr-validator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

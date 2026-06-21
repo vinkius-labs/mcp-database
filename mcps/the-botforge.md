@@ -1,7 +1,6 @@
 # The Botforge MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-botforge)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/the-botforge-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/the-botforge-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-botforge)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **The Botforge** MCP ser
 > Fetching status... Bot bot_10293 ('Customer Support') is currently 'Online' and responding normally. Last interaction was recorded 5 minutes ago.
 
 
+## ❓ FAQ
+
+**Q: Can I check if a specific chatbot is online via AI?**
+Yes! Use the `get_bot_status` tool and provide the Bot ID. Your agent will retrieve the current operational state of that specific bot.
+
+**Q: How do I submit data to my bot's contact form using the agent?**
+Use the `submit_contact` action. Provide the contact details (name, email, message) in a JSON string. The agent will transmit this data directly to the bot engine.
+
+**Q: Is it possible to see which fields my bot expects in its form?**
+Absolutely. Use the `get_samples` query. The agent will retrieve sample data based on your bot's configured form fields, helping you understand the required structure.
+
+
 ## Installation & Usage
 
-To install and use the **The Botforge** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/the-botforge](https://vinkius.com/mcp/the-botforge)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **The Botforge** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `the-botforge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **The Botforge** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "the-botforge": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

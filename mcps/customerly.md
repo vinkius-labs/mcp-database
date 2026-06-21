@@ -1,7 +1,6 @@
 # Customerly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/customerly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/customerly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/customerly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/customerly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Customerly** MCP serve
 > Fetching transcript... Conversation conv_456 features a discussion about 'Pricing Plans' from 2 hours ago. Agent Sarah provided the link to the Pro plan. Would you like to add an internal note?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Customerly Access Token?**
+Log in to your Customerly dashboard, navigate to **Settings** > **API**, and generate or copy your Access Token.
+
+**Q: Can I read full chat histories?**
+Yes! The `get_conversation` tool retrieves the detailed message log and interaction metadata for any specific conversation ID.
+
+**Q: How do I add tags to a user?**
+Use the `add_tag` tool and provide the tag name along with either the user's `email` or their unique `user_id`.
+
+
 ## Installation & Usage
 
-To install and use the **Customerly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/customerly](https://vinkius.com/mcp/customerly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Customerly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `customerly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Customerly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "customerly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Lit Protocol (Decentralized Access Control) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lit-protocol-decentralized-access-control)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lit-protocol-decentralized-access-control-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lit-protocol-decentralized-access-control-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lit-protocol-decentralized-access-control)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Lit Protocol (Decentra
 > Group 'Beta Testers' has been created successfully with ID 'group_987'. You can now add PKPs to this group using the `add_pkp_to_group` tool.
 
 
+## ❓ FAQ
+
+**Q: Can I execute custom JavaScript code securely within a TEE?**
+Yes! Use the `execute_lit_action` tool. You can provide either inline JavaScript code or an IPFS CID to run immutable programs inside Lit's Trusted Execution Environments.
+
+**Q: How do I see all the decentralized wallets (PKPs) associated with my account?**
+Simply use the `list_wallets` tool. It will return all Programmable Key Pairs (PKPs) owned by your account, including their IDs and addresses.
+
+**Q: Is it possible to organize access control by grouping different identities?**
+Absolutely. You can use `add_group` to create a new group and then `add_pkp_to_group` to manage which decentralized identities belong to that specific access schema.
+
+
 ## Installation & Usage
 
-To install and use the **Lit Protocol (Decentralized Access Control)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lit-protocol-decentralized-access-control](https://vinkius.com/mcp/lit-protocol-decentralized-access-control)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lit Protocol (Decentralized Access Control)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lit-protocol-decentralized-access-control` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lit Protocol (Decentralized Access Control)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lit-protocol-decentralized-access-control": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

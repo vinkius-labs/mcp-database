@@ -1,7 +1,6 @@
 # Bridge Data Output MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bridge-data-output)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bridge-data-output-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bridge-data-output-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bridge-data-output)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Bridge Data Output** M
 > Property 12345-6789 is a Single Family Home located at 742 Evergreen Terrace. It features 3 bedrooms, 2 bathrooms, 2,500 sqft, and was last modified on March 20th.
 
 
+## ❓ FAQ
+
+**Q: Can I filter listings by a specific price range?**
+Yes! Use the `search_properties_by_price` tool and provide the minimum price. You can also use the `list_properties` tool with a custom OData `$filter` for more complex criteria.
+
+**Q: How do I see which MLS datasets I have access to?**
+Simply ask the agent to `list_data_systems`. It will return a list of all data sources currently enabled for your server token.
+
+**Q: Does the integration provide access to property photos?**
+Yes. Use the `list_media` tool with the Dataset ID. It will retrieve the media associated with the properties, providing URLs for images and virtual tours.
+
+
 ## Installation & Usage
 
-To install and use the **Bridge Data Output** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bridge-data-output](https://vinkius.com/mcp/bridge-data-output)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bridge Data Output** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bridge-data-output` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bridge Data Output** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bridge-data-output": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

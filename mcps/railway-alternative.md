@@ -1,7 +1,6 @@
 # Railway MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/railway-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/railway-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/railway-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/railway-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,55 @@ Here are some examples of how you can interact with the **Railway** MCP server u
 > The api-web service has 4 deployments. The most recent one deployed successfully 2 hours ago with image tag v2.3.1. The previous deployment (v2.3.0) failed due to a missing environment variable. Would you like more details?
 
 
+## ❓ FAQ
+
+**Q: How do I create a Railway Personal Access Token?**
+Log in to the [**Railway Dashboard**](https://railway.com/dashboard), go to **Account Settings** > **Tokens**, and click **Create Token**. You can create a no-workspace token for broad access or a project-scoped token for limited access. Copy the token immediately — it won't be shown again.
+
+**Q: Can I manage environment variables via the agent?**
+Yes! Use `list_variables` to see all variable names (values are hidden for security) for a service in an environment. Use `set_variable` to create or update a variable with a name and value, and `delete_variable` to remove one. You'll need the service_id and environment_id from the list tools.
+
+**Q: What types of services does Railway support?**
+Railway supports any containerized service: web applications (Node.js, Python, Go, Rust, Java), databases (PostgreSQL, MySQL, Redis, MongoDB), message brokers and custom Docker images. Each service is deployed as an isolated container with its own environment variables, domains and persistent volumes.
+
+**Q: How do I find my service_id and environment_id?**
+Use `list_projects` to get your project_id, then `list_environments` with that project_id to get the environment_id. Next, use `list_services` with the project_id (and optionally environment_id) to get the service_id. These IDs are required for variable, deployment and domain operations.
+
+
 ## Installation & Usage
 
-To install and use the **Railway** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/railway-alternative](https://vinkius.com/mcp/railway-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Railway** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `railway-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Railway** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "railway-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

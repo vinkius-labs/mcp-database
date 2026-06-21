@@ -1,7 +1,6 @@
 # Bandwidth MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bandwidth)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bandwidth-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bandwidth-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bandwidth)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Bandwidth** MCP server
 > The structural check returned a 200 OK. The Bandwidth Messaging services are explicitly operating without upstream incidents or structural latency problems over current regions.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent check if my 10DLC campaign is cleared for high-volume SMS?**
+Yes. Ask the agent to list your 10DLC campaigns or check a specific campaign ID. It natively surfaces throughput limits (like TPS bounds) set by TCR preventing you from getting blocked by aggressive mobile carriers.
+
+**Q: How do I troubleshoot SMS delivery failures using the agent?**
+You can tell the agent to 'List messages filtered by phone number +1XXXXXXXXXX'. The tool natively reaches Bandwidth's logs and pulls exactly what operational state the message failed in, bypassing complex raw log exports.
+
+**Q: Does the system support sending localized multimedia messages (MMS) directly?**
+Yes. Provide the agent with the from address, the to address, the text block, and a direct URL to a hosted JPEG/PNG image. The agent explicitly commands the send_mms tool injecting image packets into the phone line seamlessly.
+
+
 ## Installation & Usage
 
-To install and use the **Bandwidth** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bandwidth](https://vinkius.com/mcp/bandwidth)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bandwidth** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bandwidth` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bandwidth** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bandwidth": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

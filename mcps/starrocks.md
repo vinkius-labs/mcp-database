@@ -1,7 +1,6 @@
 # StarRocks MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/starrocks)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/starrocks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/starrocks-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/starrocks)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **StarRocks** MCP server
 > I've checked the backend nodes. All 10 Backend (BE) nodes are currently online and healthy. CPU and memory usage across the cluster is within normal limits.
 
 
+## ❓ FAQ
+
+**Q: How do I find my StarRocks FE Host and Port?**
+The FE Host is the IP address or domain of your StarRocks Frontend node. The default HTTP port is 8030. You can verify these in your deployment configuration or by contacting your administrator.
+
+**Q: Can I execute DELETE or UPDATE queries through this server?**
+Yes. Use the `execute_query` tool. As long as your authenticated user has the necessary permissions in StarRocks, you can execute any valid SQL statement, including DDL and DML operations.
+
+**Q: Is it possible to monitor cluster health through the agent?**
+Yes! Use the `get_cluster_info` and `list_nodes` tools to retrieve real-time status for all Frontend and Backend nodes, helping you identify offline or overloaded nodes instantly.
+
+
 ## Installation & Usage
 
-To install and use the **StarRocks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/starrocks](https://vinkius.com/mcp/starrocks)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **StarRocks** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `starrocks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **StarRocks** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "starrocks": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

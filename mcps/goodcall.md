@@ -1,7 +1,6 @@
 # Goodcall MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goodcall)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/goodcall-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/goodcall-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goodcall)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Goodcall** MCP server 
 > Monthly analytics: Total calls: 342. Answer rate: 89.5% (306 answered, 36 missed). Bookings: 78 appointments made (25.5% booking conversion). Average call duration: 2m 48s. Peak hours: 10-11 AM (52 calls) and 2-3 PM (41 calls). Agent breakdown: 1) 'Main Office' — 198 calls, 92% answer rate, 45 bookings. 2) 'After Hours' — 89 calls, 85% answer rate, 22 bookings. 3) 'Spanish Line' — 55 calls, 87% answer rate, 11 bookings. Would you like to update agent scripts or review missed calls?
 
 
+## ❓ FAQ
+
+**Q: Can I review what my AI phone agent said during a customer call?**
+Yes. Use `get_transcript` with a Call ID to retrieve the full conversation transcript between the AI agent and the caller. For a quick overview, use `get_call_summary` which provides an AI-generated summary with key topics discussed and the call outcome (e.g., booking made, question answered, callback requested).
+
+**Q: Can I track missed calls and see which ones need follow-up?**
+Yes. The `list_missed_calls` tool retrieves all calls that were missed or abandoned, including caller phone number, timestamp, and any partial interaction data. This helps you prioritize follow-up callbacks and identify peak call times when your agents may be overloaded.
+
+**Q: Can I see appointments booked by the AI agent during calls?**
+Yes. The `list_bookings` tool retrieves all appointments booked by the AI agent during customer calls, including date, time, caller details, and the associated call ID. Use `get_analytics` to track your booking conversion rate — the percentage of calls that result in a scheduled appointment.
+
+
 ## Installation & Usage
 
-To install and use the **Goodcall** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/goodcall](https://vinkius.com/mcp/goodcall)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Goodcall** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `goodcall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Goodcall** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "goodcall": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

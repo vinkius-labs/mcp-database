@@ -1,7 +1,6 @@
 # ORCID MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/orcid)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/orcid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/orcid-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/orcid)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **ORCID** MCP server usi
 > I've retrieved the 'works' section. There are 12 items listed. Notable titles include 'Toward a Unified Theory of High-Energy Metrology'. Would you like the full details for any specific work?
 
 
+## ❓ FAQ
+
+**Q: Can I search for researchers by their name or email address?**
+Yes! Use the `search` tool with Solr syntax (e.g., `family-name:Smith` or `email:user@example.com`) to find matching records in the ORCID registry.
+
+**Q: How do I retrieve the full details of a specific publication?**
+First, use `get_section` with the section 'works' to find the item's `put_code`. Then, use the `get_item` tool with that code to fetch the complete metadata for that specific work.
+
+**Q: Do I need a Member API account to add or update records?**
+Yes. While reading public data works with the Public API, tools like `create_item`, `update_item`, and `delete_item` require Member API access and the `useMemberApi` configuration set to true.
+
+
 ## Installation & Usage
 
-To install and use the **ORCID** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/orcid](https://vinkius.com/mcp/orcid)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ORCID** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `orcid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ORCID** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "orcid": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

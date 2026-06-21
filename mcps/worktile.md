@@ -1,7 +1,6 @@
 # Worktile MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/worktile)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/worktile-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/worktile-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/worktile)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Worktile** MCP server 
 > I've posted your update to the 'General' channel. Your team has been notified that the kickoff is now at 2 PM.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Worktile Client ID and Secret?**
+Log in to the Worktile Admin Console, go to [App Management] → [My Apps], and create a new application. Your Client ID and Client Secret will be generated there.
+
+**Q: Can I send messages to private channels?**
+Yes, as long as the application has the necessary permissions and the authorized account is a member of the private channel, you can use the `send_message` tool.
+
+**Q: How do I find the correct state ID to update a task?**
+Use the `list_task_states` tool with the project ID. It will return all available statuses (like 'Todo', 'In Progress', 'Done') along with their corresponding IDs.
+
+
 ## Installation & Usage
 
-To install and use the **Worktile** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/worktile](https://vinkius.com/mcp/worktile)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Worktile** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `worktile` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Worktile** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "worktile": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

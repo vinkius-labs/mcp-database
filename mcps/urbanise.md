@@ -1,7 +1,6 @@
 # Urbanise MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/urbanise)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/urbanise-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/urbanise-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/urbanise)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Urbanise** MCP server 
 > Success! The maintenance job 'Fix leaking pipe in Room 402' has been created in the FM module with ID JOB-10293. I'll let you know once a supplier is assigned.
 
 
+## ❓ FAQ
+
+**Q: Can I create a new maintenance job for a property via AI?**
+Yes! Use the `create_maintenance_job` tool and provide a title and description. This will instantly register a new task in the Facility Management (FM) module.
+
+**Q: How do I see all residents living in a specific property plan?**
+Run the `list_property_occupants` query. Your agent will retrieve the complete list of owners and residents across your managed property plans.
+
+**Q: Is it possible to check the remaining budget for a building via AI?**
+Absolutely. Use the `list_property_budgets` query to retrieve the current budget definitions and allocations for your managed properties.
+
+
 ## Installation & Usage
 
-To install and use the **Urbanise** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/urbanise](https://vinkius.com/mcp/urbanise)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Urbanise** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `urbanise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Urbanise** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "urbanise": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

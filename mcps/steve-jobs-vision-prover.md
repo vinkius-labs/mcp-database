@@ -1,7 +1,6 @@
 # Steve Jobs Vision Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/steve-jobs-vision-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/steve-jobs-vision-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/steve-jobs-vision-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/steve-jobs-vision-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Steve Jobs Vision Prov
 > TECH_FIRST — You started with 'proprietary transformer model.' That is your plumbing, not your product. Then 'clean and modern interface' — that describes every app ever made. Then 'customizable dashboards' — cowardice. Then 'integrate with all major LMS' — fragmentation. Three failures in one pitch. Start over: what does the STUDENT feel the moment they open it?
 
 
+## ❓ FAQ
+
+**Q: Does it generate product designs?**
+No. It computes nothing and generates nothing. The LLM designs the product — this tool validates that the reasoning behind the design is rigorous. It catches contradictions: if the LLM claims zero configuration but describes a settings panel, the tool rejects and explains why.
+
+**Q: What does it catch that a prompt instruction doesn't?**
+A prompt says 'think like Steve Jobs.' The LLM nods and generates bloated designs anyway. This tool forces the LLM to fill in specific fields — name what it killed, describe the human moment without tech words, explain how the system decides. Tool calls are obligations. Instructions are suggestions. The LLM cannot skip the reflection.
+
+**Q: Can I use it for developer tools and APIs, not just consumer products?**
+Yes. The principles apply universally. A CLI tool with 47 flags is the same failure as a consumer app with a settings menu — you pushed decisions to the user. The 'experience backwards' pivot works for developers too: start with the developer's workflow, not your architecture.
+
+
 ## Installation & Usage
 
-To install and use the **Steve Jobs Vision Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/steve-jobs-vision-prover](https://vinkius.com/mcp/steve-jobs-vision-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Steve Jobs Vision Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `steve-jobs-vision-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Steve Jobs Vision Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "steve-jobs-vision-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

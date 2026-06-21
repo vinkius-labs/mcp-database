@@ -1,7 +1,6 @@
 # Jinshuju / 金数据 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jinshuju)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jinshuju-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jinshuju-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jinshuju)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Jinshuju / 金数据**
 > Done! I've programmatically submitted the new entry to form XYZ-789. The entry has been assigned serial number '8821'.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Jinshuju API Key and Secret?**
+Log in to your Jinshuju account, click on your avatar, go to [Personal Center] -> [API], and you will find your unique API Key and Secret there.
+
+**Q: Can I update existing form entries through the agent?**
+Yes. Use the `update_entry` tool with the form ID and the specific entry ID (serial number). You can provide a JSON string of the fields you wish to modify.
+
+**Q: Is it possible to monitor webhook status?**
+Yes! Use the `list_webhooks` tool to retrieve a list of all configured webhooks for a specific form, helping you audit your automated data pipelines.
+
+
 ## Installation & Usage
 
-To install and use the **Jinshuju / 金数据** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jinshuju](https://vinkius.com/mcp/jinshuju)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Jinshuju / 金数据** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jinshuju` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Jinshuju / 金数据** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jinshuju": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

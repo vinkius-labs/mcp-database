@@ -1,7 +1,6 @@
 # Azure DevOps MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-devops)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/azure-devops-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/azure-devops-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-devops)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Azure DevOps** MCP ser
 > Retrieving build history... The latest build for 'Internal Tools' (ID: 10293) was 'Succeeded' 2 hours ago. It was triggered by Mike Ross on the 'main' branch.
 
 
+## ❓ FAQ
+
+**Q: Can I see if a build pipeline failed via the AI?**
+Yes! Use the `list_builds` tool and provide the Project ID. Your agent will retrieve the history of recent executions, including their final status (succeeded, failed, inProgress).
+
+**Q: How do I list the Git repositories for a project?**
+Run the `list_repositories` query with your Project ID. The agent will return all Git repositories associated with that project in your Azure DevOps account.
+
+**Q: Is it possible to see recent bugs or tasks assigned to a project?**
+Absolutely. Use the `list_work_items` tool. Your agent will retrieve a list of recent work items, including bugs, tasks, and stories, for the specified project.
+
+
 ## Installation & Usage
 
-To install and use the **Azure DevOps** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/azure-devops](https://vinkius.com/mcp/azure-devops)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Azure DevOps** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `azure-devops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Azure DevOps** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "azure-devops": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

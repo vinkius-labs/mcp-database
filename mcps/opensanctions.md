@@ -1,7 +1,6 @@
 # OpenSanctions MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opensanctions)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opensanctions-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opensanctions-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opensanctions)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,55 @@ Here are some examples of how you can interact with the **OpenSanctions** MCP se
 > Available datasets: US OFAC (9,000+ entities), EU Consolidated List (6,000+), UN Security Council (700+), UK HMT (3,000+), and 40+ more global sanctions regimes.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! OpenSanctions is completely free for non-commercial use. No authentication required.
+
+**Q: What sanctions lists are included?**
+OpenSanctions aggregates data from OFAC (US), EU Consolidated List, UN Security Council, UK HMT, and many other global sanctions regimes.
+
+**Q: How accurate is the name matching?**
+The API uses fuzzy matching with configurable thresholds (0.0-1.0). Default threshold of 0.85 balances accuracy and recall for most use cases.
+
+**Q: Can I screen companies, not just individuals?**
+Yes! Use search_company to find sanctioned companies, or use the general search with schema='Company' filter.
+
+
 ## Installation & Usage
 
-To install and use the **OpenSanctions** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opensanctions](https://vinkius.com/mcp/opensanctions)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenSanctions** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opensanctions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenSanctions** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opensanctions": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

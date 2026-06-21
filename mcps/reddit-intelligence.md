@@ -1,7 +1,6 @@
 # Reddit Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reddit-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reddit-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reddit-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reddit-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Reddit Intelligence** 
 > I searched for 'SaaS founder' communities. Top results: r/SaaS (187k subscribers, 1.2k active now), r/startups (1.1M subscribers), r/Entrepreneur (3.2M subscribers), r/indiehackers (52k subscribers), and r/microsaas (28k subscribers). I recommend starting with r/SaaS for the most targeted audience and r/indiehackers for bootstrapped founders.
 
 
+## ❓ FAQ
+
+**Q: Do I need a Reddit account to use this?**
+You need a free Reddit app. Go to reddit.com/prefs/apps, click 'create app', select 'script', and copy your Client ID and Client Secret. The whole process takes less than a minute and is completely free.
+
+**Q: Can I monitor multiple subreddits at the same time?**
+Yes! Use the `get_multi_feed` tool with a comma-separated list of subreddits (e.g. 'marketing,entrepreneur,smallbusiness'). It aggregates posts from all of them into a single ranked feed.
+
+**Q: How do I find which subreddits are most relevant for my niche?**
+Use the `search_subreddits` tool with a keyword describing your niche (e.g. 'SaaS', 'fitness', 'crypto trading'). It returns matching communities sorted by subscriber count so you can prioritize the largest ones.
+
+
 ## Installation & Usage
 
-To install and use the **Reddit Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/reddit-intelligence](https://vinkius.com/mcp/reddit-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Reddit Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `reddit-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Reddit Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "reddit-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

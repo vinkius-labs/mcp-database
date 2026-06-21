@@ -1,7 +1,6 @@
 # PubMed Central MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pubmed-central)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pubmed-central-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pubmed-central-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pubmed-central)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **PubMed Central** MCP s
 > The DOI 10.1038/s41586-020-2012-7 maps to PMCID: PMC7095063 (and PMID: 32015508).
 
 
+## ❓ FAQ
+
+**Q: How do I convert a DOI or PMID into a PMCID for full-text access?**
+Use the `convert_ids` tool. Provide a comma-separated list of identifiers, and the agent will return the mapped PMCID, which is required for many other PMC retrieval tools.
+
+**Q: Can I retrieve the actual content of an article, not just the abstract?**
+Yes. If the article is in the Open Access subset, use `get_bioc_article` with the PMCID. You can specify 'json' or 'xml' format to get the full-text sections.
+
+**Q: How can I find which papers have cited a specific study?**
+Use the `get_citing_articles` tool by providing the PubMed ID (PMID) of the study. It will return a list of PMC articles that reference that specific work.
+
+
 ## Installation & Usage
 
-To install and use the **PubMed Central** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pubmed-central](https://vinkius.com/mcp/pubmed-central)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PubMed Central** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pubmed-central` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PubMed Central** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pubmed-central": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Tencent START MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-start)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tencent-start-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tencent-start-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-start)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Tencent START** MCP se
 > Connecting to capacity management... Concurrency limit for 'CrossFire' (ID: game_202) has been successfully updated to 100. The infrastructure is scaling to match.
 
 
+## ❓ FAQ
+
+**Q: Can I automatically list all available games on the platform?**
+Yes! Use the `list_games` tool. It will retrieve metadata for all configured cloud games, including their names and unique identifiers.
+
+**Q: How do I check the status of my cloud gaming workers?**
+Use the `list_workers` tool. It returns the availability and current operational state of all server instances allocated to your account.
+
+**Q: Can I dynamically modify the concurrency limit for a game?**
+Yes! Use the `modify_capacity_limit` tool with the target Game ID and the new maximum concurrent user count to scale your capacity.
+
+
 ## Installation & Usage
 
-To install and use the **Tencent START** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tencent-start](https://vinkius.com/mcp/tencent-start)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tencent START** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tencent-start` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tencent START** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tencent-start": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

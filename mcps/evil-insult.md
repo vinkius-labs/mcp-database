@@ -1,7 +1,6 @@
 # Evil Insult MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evil-insult)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/evil-insult-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/evil-insult-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evil-insult)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Evil Insult** MCP serv
 > Executing generate_insult for French... Result: 'Tu es tellement moche que même les aveugles ferment les yeux.'
 
 
+## ❓ FAQ
+
+**Q: Can I choose the language of the insult?**
+Yes! Use the `generate_insult` tool and provide a language code like 'en', 'es', 'fr', 'ru', or 'de' in the `lang` parameter.
+
+**Q: Where do these insults come from?**
+All insults are fetched in real-time from the official Evil Insult Generator API.
+
+**Q: Is there a limit to how many insults I can generate?**
+The tool generates one insult per request. You can call the `generate_insult` tool as many times as you need to get fresh results.
+
+
 ## Installation & Usage
 
-To install and use the **Evil Insult** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/evil-insult](https://vinkius.com/mcp/evil-insult)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Evil Insult** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `evil-insult` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Evil Insult** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "evil-insult": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

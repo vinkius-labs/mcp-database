@@ -1,7 +1,6 @@
 # CoinMarketCap MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coinmarketcap)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coinmarketcap-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coinmarketcap-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coinmarketcap)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Would you like price details or 24h change for any?
 > Dogecoin (DOGE) was listed on CoinMarketCap on Dec 15, 2013, with an initial tracked market cap around $3.5M. Present market cap is $16.9B.
 
 
+## ❓ FAQ
+
+**Q: How do I get a CoinMarketCap API key?**
+Register at pro.coinmarketcap.com to get your API key. Copy it and paste it below.
+
+**Q: Are there limits on the free plan?**
+Yes. The free tier has limited daily/monthly credits and excludes some advanced endpoints like historical data.
+
+**Q: Can I convert between any two currencies?**
+Yes. The conversion tool supports hundreds of cryptocurrencies and dozens of fiat currencies tracked by CoinMarketCap.
+
+
 ## Installation & Usage
 
-To install and use the **CoinMarketCap** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coinmarketcap](https://vinkius.com/mcp/coinmarketcap)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CoinMarketCap** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coinmarketcap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CoinMarketCap** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coinmarketcap": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

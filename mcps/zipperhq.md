@@ -1,7 +1,6 @@
 # zipperHQ MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zipperhq)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zipperhq-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zipperhq-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zipperhq)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **zipperHQ** MCP server 
 > Recording architecture orchestrated! I've identified 2 high-fidelity video emails currently in 'Pending' status, including 'Contract Update' for 'Jane Client'. I've retrieved the technical session IDs for your review. Shall I notify the team to complete these recordings?
 
 
+## ❓ FAQ
+
+**Q: How do I find my zipperHQ API Key?**
+Log in to your account, navigate to **Settings** > **API**, and copy your unique access token from the credentials section.
+
+**Q: Can I check video recording status via AI?**
+Yes! The `list_videos` tool allows your agent to retrieve status metadata for all your video emails.
+
+**Q: How do I list my sent videos?**
+Use the `list_videos` tool to retrieve your complete video directory along with the unique identifiers for all managed assets.
+
+
 ## Installation & Usage
 
-To install and use the **zipperHQ** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zipperhq](https://vinkius.com/mcp/zipperhq)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **zipperHQ** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zipperhq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **zipperHQ** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zipperhq": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # BrandMentions MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brandmentions)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brandmentions-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brandmentions-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brandmentions)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **BrandMentions** MCP se
 > Retrieving influencers... The top voices discussing your brand are TechReviewer (Score: 95) and MarketingGuru (Score: 88).
 
 
+## ❓ FAQ
+
+**Q: Can I perform a quick search for a brand name?**
+Yes! Use the `post_search` action to trigger an immediate query. The tool will return a search hash, which you can then use with `get_mentions` to read the results.
+
+**Q: How do I see the influencers for my tracked project?**
+Simply ask the agent to `get_influencers` and provide the Project ID. It will return the list of top voices mentioning your brand.
+
+**Q: Does creating a search consume my account API credits?**
+Yes, standard API billing applies. You can always use the `get_remaining_credits` tool to check your quota before running large queries.
+
+
 ## Installation & Usage
 
-To install and use the **BrandMentions** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/brandmentions](https://vinkius.com/mcp/brandmentions)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BrandMentions** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `brandmentions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BrandMentions** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "brandmentions": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

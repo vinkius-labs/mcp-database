@@ -1,7 +1,6 @@
 # Fly.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flyio-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flyio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flyio-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flyio-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -106,12 +105,55 @@ Here are some examples of how you can interact with the **Fly.io** MCP server us
 > Done! I've created a 10GB persistent volume called 'data' in the iad (Virginia) region for your database app. The volume is ready to be attached to a machine via its mount configuration.
 
 
+## ❓ FAQ
+
+**Q: How do I create a Fly.io Personal Access Token?**
+Log in to the [**Fly.io Dashboard**](https://fly.io/dashboard), go to **Settings** > **Personal Access Tokens**, click **Create**, name your token and copy it immediately — it won't be shown again. Alternatively, use `fly tokens create` from the CLI after authenticating with `fly auth login`.
+
+**Q: What is a Fly.io Machine and how does it work?**
+A Machine is a Fly.io VM (micro-VM) that runs your Docker container image. Each machine has its own CPU, memory, storage and IP address. Machines can be started, stopped, restarted and updated independently. They can run in any of Fly.io's 30+ global regions and are the fundamental compute unit of the platform.
+
+**Q: Can I start and stop machines to save costs?**
+Yes! Use `stop_machine` to halt a machine and release its compute resources, and `start_machine` to boot it again. Stopped machines don't incur compute charges. This is perfect for development/staging environments that don't need to run 24/7. Persistent volumes attached to stopped machines retain all data.
+
+**Q: How do I deploy a machine in a specific region?**
+Use the `create_machine` tool with the `region` parameter set to your desired Fly.io region code. Common regions include: `iad` (Virginia, US), `sjc` (San Jose, US), `nrt` (Tokyo, Japan), `fra` (Frankfurt, Germany), `syd` (Sydney, Australia). The full list is available in the Fly.io documentation.
+
+
 ## Installation & Usage
 
-To install and use the **Fly.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flyio-alternative](https://vinkius.com/mcp/flyio-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fly.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flyio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fly.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flyio-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

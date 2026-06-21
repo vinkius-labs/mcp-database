@@ -1,7 +1,6 @@
 # Checkbook.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkbookio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/checkbookio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/checkbookio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkbookio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Checkbook.io** MCP ser
 > Checking your linked banks... You have 2 accounts connected: 'Chase Checking (****1234)' and 'Wells Fargo Savings (****5678)'. Both are verified and ready for use.
 
 
+## ❓ FAQ
+
+**Q: Can I send a physical check through the agent?**
+Yes! Use the `send_physical_check` tool. Provide the recipient's name, email, and amount. Checkbook.io will print and mail a physical check to the recipient.
+
+**Q: How do I check if a check has been deposited?**
+Use the `get_check_details` tool with the unique check ID. Your agent will fetch the current status (e.g., IN_PROCESS, PAID, VOID).
+
+**Q: Where do I find my Checkbook API Key and Secret?**
+Log in to your Checkbook.io account and navigate to **Settings -> Developer**. You can generate and copy your API Key and Secret from that section.
+
+
 ## Installation & Usage
 
-To install and use the **Checkbook.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/checkbookio](https://vinkius.com/mcp/checkbookio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Checkbook.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `checkbookio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Checkbook.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "checkbookio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Common Room MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/common-room)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/common-room-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/common-room-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/common-room)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Would you like to explore any of these?
 > Successfully added 'Alex Chen' to the 'Enterprise Leads' segment. They are now in 3 segments total.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Common Room API token?**
+Go to **Settings > API Tokens** in Common Room and generate a new token. Copy it and paste it into the field below.
+
+**Q: What is a segment in Common Room?**
+A segment is a group of contacts or organizations defined by specific criteria or manually curated. They help you target and analyze subsets of your community.
+
+**Q: Can I track custom activities?**
+Yes, but you first need to set up an API Signal in Common Room to receive custom activity data. Once configured, the agent can query those activities.
+
+
 ## Installation & Usage
 
-To install and use the **Common Room** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/common-room](https://vinkius.com/mcp/common-room)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Common Room** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `common-room` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Common Room** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "common-room": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

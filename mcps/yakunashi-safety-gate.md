@@ -1,7 +1,6 @@
 # Yakunashi-Safety Gate MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yakunashi-safety-gate)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/yakunashi-safety-gate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/yakunashi-safety-gate-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yakunashi-safety-gate)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,12 +62,52 @@ Here are some examples of how you can interact with the **Yakunashi-Safety Gate*
 > Verdict: VERACITY_PROVEN. (1) Preconditions: Set of all order values and count. (2) Sufficiency: Met. 3 orders with specific values are fully present. (3) Speculation: Zero. (4) Calibration: High confidence justified by complete dataset. Output: $20.00.
 
 
+## ❓ FAQ
+
+**Q: What is a Beta-Ori response or safe folding?**
+Beta-Ori represents the tactical decision to remain silent or state what is missing rather than speculating. Safe folding triggers this state, outputting a precise checklist of missing parameters instead of an uncalibrated answer.
+
+**Q: How does it detect yakunashi (speculation)?**
+The tool audits the agent's confidence trace against the mapped evidence. If variables are missing but the agent claims high confidence, the safety gate flags it as yakunashi.
+
+**Q: How do I configure Yakunashi-Safety Gate with external prompts?**
+You do not need external files. Call the validate_yakunashi tool directly inside your agent loop before generating any answers to questions requiring data that may be missing.
+
+
 ## Installation & Usage
 
-To install and use the **Yakunashi-Safety Gate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/yakunashi-safety-gate](https://vinkius.com/mcp/yakunashi-safety-gate)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Yakunashi-Safety Gate** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `yakunashi-safety-gate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Yakunashi-Safety Gate** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "yakunashi-safety-gate": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # EventMobi Experience MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventmobi-experience)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eventmobi-experience-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eventmobi-experience-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventmobi-experience)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **EventMobi Experience**
 > I've found 12 attendees with the 'Director' role, including 'Sarah Connor' (IT Director) and 'John Doe' (Marketing Director). All are registered for the main event. Would you like to see Sarah's full speaker bio?
 
 
+## ❓ FAQ
+
+**Q: How do I get an EventMobi API Key?**
+Log in to your EventMobi account, navigate to **Settings > API Integration**, and you can generate or retrieve your unique API Key from there. API access is typically enabled for most enterprise plans.
+
+**Q: Does the integration show real-time analytics?**
+Yes, you can use the get_event_engagement_analytics tool to retrieve high-level engagement data such as app views and session interactions as reported by the EventMobi platform.
+
+**Q: Can the agent send push notifications?**
+This integration currently focuses on listing and auditing event data and analytics. Sending live push notifications or updating app content should be managed via the EventMobi Experience Manager dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **EventMobi Experience** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eventmobi-experience](https://vinkius.com/mcp/eventmobi-experience)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EventMobi Experience** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eventmobi-experience` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EventMobi Experience** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eventmobi-experience": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

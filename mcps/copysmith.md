@@ -1,7 +1,6 @@
 # Copysmith MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/copysmith)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/copysmith-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/copysmith-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/copysmith)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Copysmith** MCP server
 > Scanning account... You have 1,240 credits remaining. Based on your current usage, you can generate approximately 50 more high-quality articles. Need any help with a new campaign?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Copysmith API Key?**
+Log in to your account, navigate to **Settings** > **API**, and copy your secret access token from the dashboard.
+
+**Q: How many credits are used per generation?**
+Credit consumption depends on the complexity and length of the content generated. You can check your balance using the `get_credits` tool.
+
+**Q: Can I list available templates via AI?**
+Yes! The `list_templates` tool retrieves all active copywriting models available for your account.
+
+
 ## Installation & Usage
 
-To install and use the **Copysmith** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/copysmith](https://vinkius.com/mcp/copysmith)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Copysmith** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `copysmith` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Copysmith** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "copysmith": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

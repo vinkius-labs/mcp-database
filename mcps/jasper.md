@@ -1,7 +1,6 @@
 # Jasper MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jasper)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jasper-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jasper-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jasper)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -128,12 +127,55 @@ Try it free → [link]
 #AI #ProductLaunch #Automation
 
 
+## ❓ FAQ
+
+**Q: How do I get my Jasper API token?**
+You need a **Jasper Business plan** to access the API. Log in at **app.jasper.ai**, go to **Settings → Dev Tools → API Tokens** (direct link: app.jasper.ai/settings/dev-tools/tokens). Click **Generate** to create a new token. Copy it immediately and paste it below. Only users with **Admin** or **Developer** roles can manage API tokens. If you don't see the Dev Tools option, verify your account is on the Business plan or contact your Jasper account admin.
+
+**Q: Can my AI agent write ad copy in my brand's voice?**
+Yes. Jasper's Brand Voice feature ensures all generated content matches your company's tone, vocabulary, and style guidelines. Your AI agent accesses your configured brand voices and applies them automatically — so copy for Google Ads, LinkedIn posts, and email campaigns all sound authentically like your brand.
+
+**Q: What if I need variations for A/B testing?**
+Just tell your AI agent 'Generate 5 headline variations for my Google Ads campaign.' Jasper produces multiple distinct alternatives per request, each maintaining your brand voice but varying the angle, hook, or call-to-action — giving your growth team ready-to-test creative in seconds.
+
+**Q: Is the Jasper Business plan required?**
+Yes. API access is exclusive to the Jasper Business plan. If you're currently on Creator or Teams, you'll need to upgrade. Contact the Jasper sales team through jasper.ai to discuss Enterprise pricing — most marketing teams find the ROI justifies the investment within the first month of automated content production.
+
+
 ## Installation & Usage
 
-To install and use the **Jasper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jasper](https://vinkius.com/mcp/jasper)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Jasper** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jasper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Jasper** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jasper": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # LeadConnector MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leadconnector)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/leadconnector-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/leadconnector-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leadconnector)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -64,12 +63,52 @@ Here are some examples of how you can interact with the **LeadConnector** MCP se
 > Search execution verified robustly flawlessly securely efficiently statically naturally optimally smoothly. Pulled 2 calendar hooks: 'Demo Setup' (tomorrow at 11 AM) and 'Strategy Audit' (Friday at 4 PM). Can check attendees directly inside natively organically cleanly seamlessly unhindered gracefully if that aids explicitly generally cleanly securely.
 
 
+## ❓ FAQ
+
+**Q: Can this server orchestrate updates and pipeline stage jumps natively without visual workflows?**
+No, primarily owing to ecosystem security constraints. Destructive or massive state alterations (jumping 500 leads through Won status) is locked locally. The MCP handles hyper-efficient readout arrays, querying contacts, opportunities, and schedules purely functionally cleanly extracting without overriding.
+
+**Q: Which token variant of GoHighLevel (Agency or Location) is required internally here natively?**
+Always use the Sub-Account / Location API Key. The server logic scopes specifically on granular contact nodes and calendars inherent to single business entities (Locations) rather than acting system-wide across all Agency children elements effectively reducing collateral scope issues robustly securely logically accurately safely naturally simply effortlessly clean unified precise.
+
+**Q: How is the heavy load of thousands of contacts handled without exhausting memory?**
+Graceful chunking and meticulous egress parameterization handle the heavy lifting securely flawlessly effectively stably accurately dependably successfully naturally consistently purely organically functionally cleanly intuitively rapidly cleanly continuously formally directly robustly generally systematically efficiently cohesively cleanly.
+
+
 ## Installation & Usage
 
-To install and use the **LeadConnector** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/leadconnector](https://vinkius.com/mcp/leadconnector)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LeadConnector** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `leadconnector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LeadConnector** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "leadconnector": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

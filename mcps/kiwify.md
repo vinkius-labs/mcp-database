@@ -1,7 +1,6 @@
 # Kiwify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kiwify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kiwify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kiwify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kiwify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Kiwify** MCP server us
 > Customers: 4,190 total. This month: +248 new. Top by lifetime value: 1) João Silva — R$2,388 (All Access + courses). 2) Maria Santos — R$1,594 (3 products). 3) Carlos Mendes — R$1,291 (2 products + subscription). Average LTV: R$253. Repeat buyers: 18%.
 
 
+## ❓ FAQ
+
+**Q: Can I track orders and revenue performance?**
+Yes. Browse all orders with status (approved, refunded, pending), amounts, and customer data. Track revenue metrics and trends.
+
+**Q: Can I monitor subscriptions and churn?**
+Yes. Track active subscriptions, upcoming renewals, cancellations, and churn rates across all products.
+
+**Q: Does Kiwify require two credentials?**
+Yes. Kiwify requires an **Access Token** and **Account ID**. Bearer authentication against `public-api.kiwify.com/v1`.
+
+
 ## Installation & Usage
 
-To install and use the **Kiwify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kiwify](https://vinkius.com/mcp/kiwify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kiwify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kiwify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kiwify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kiwify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

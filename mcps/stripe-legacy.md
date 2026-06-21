@@ -1,7 +1,6 @@
 # Stripe Legacy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stripe-legacy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stripe-legacy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stripe-legacy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stripe-legacy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,46 @@ Here are some examples of how you can interact with the **Stripe Legacy** MCP se
 > Account balance: Available $34,560. Pending: $12,340 (clears in 2 days). Connect reserved: $0. Total: $46,900. Recent payouts: May 15 - $28,900 (completed, bank ending 4521). May 12 - $24,500 (completed). May 9 - $31,200 (completed). Payout schedule: daily (automatic). Next payout: tomorrow, estimated $18,400. Monthly summary: $156,000 gross volume, $4,524 in fees (2.9%). Net deposits: $151,476. Currency breakdown: 78% USD, 14% EUR, 8% GBP.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Stripe Secret Key?**
+Log in to your Stripe dashboard, navigate to **Developers** > **API keys**, and you will find your Secret Key (starting with sk_live_ or sk_test_) there.
+
+
 ## Installation & Usage
 
-To install and use the **Stripe Legacy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stripe-legacy](https://vinkius.com/mcp/stripe-legacy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Stripe Legacy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stripe-legacy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Stripe Legacy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stripe-legacy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Medusa (Headless E-commerce Engine) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/medusa-headless-e-commerce-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/medusa-headless-e-commerce-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/medusa-headless-e-commerce-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/medusa-headless-e-commerce-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Medusa (Headless E-com
 > Executing payment capture… Success. For order 'order-987', the funds have been captured from the customer's payment method. The order status has been updated to 'Awaiting Fulfillment' in Medusa.
 
 
+## ❓ FAQ
+
+**Q: Can I capture a payment for an authorized order using my agent?**
+Yes. Use the `capture_payment` tool with a specific Order UUID. Your agent will trigger the action against your payment provider (e.g., Stripe) to finalize the fund transfer for the order immediately.
+
+**Q: How do I check the tax rates and currencies for a specific region?**
+The `list_regions` tool retrieves all configured geographical zones in Medusa. Your agent will expose the localized currency logic, tax rates, and enabled payment methods assigned to each region.
+
+**Q: Can my agent retrieve the detailed variants and prices for a product?**
+Absolutely. Use the `get_product` tool by providing the Product ID. Your agent will fetch the full object including nested variants, options (size, color), and pricing arrays for all configured regions.
+
+
 ## Installation & Usage
 
-To install and use the **Medusa (Headless E-commerce Engine)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/medusa-headless-e-commerce-engine](https://vinkius.com/mcp/medusa-headless-e-commerce-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Medusa (Headless E-commerce Engine)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `medusa-headless-e-commerce-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Medusa (Headless E-commerce Engine)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "medusa-headless-e-commerce-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

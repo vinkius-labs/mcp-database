@@ -1,7 +1,6 @@
 # Volcengine RTC MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/volcengine-rtc)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/volcengine-rtc-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/volcengine-rtc-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/volcengine-rtc)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,46 @@ Here are some examples of how you can interact with the **Volcengine RTC** MCP s
 > I queried the `ListRooms` API. There are currently 12 distinct rooms broadcasting, pulling a total of 58 users.
 
 
+## ❓ FAQ
+
+**Q: Does this support Volcengine HMAC-SHA256 V4 Signatures?**
+Absolutely. Generating ByteDance's API signatures programmatically is challenging for raw agents. This backend completely conceals the cryptography layer so your agent can execute queries instantly just by having the Secret Key stored securely.
+
+
 ## Installation & Usage
 
-To install and use the **Volcengine RTC** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/volcengine-rtc](https://vinkius.com/mcp/volcengine-rtc)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Volcengine RTC** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `volcengine-rtc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Volcengine RTC** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "volcengine-rtc": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

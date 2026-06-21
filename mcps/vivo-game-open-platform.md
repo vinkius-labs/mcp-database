@@ -1,7 +1,6 @@
 # Vivo Game Open Platform MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vivo-game-open-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vivo-game-open-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vivo-game-open-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vivo-game-open-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Vivo Game Open Platfor
 > Retrieving server list... I found 3 active servers: 1. Asia-East (ID: srv_1), 2. Global-South (ID: srv_2), 3. Test-Net (ID: srv_3). All are currently 'online'.
 
 
+## ❓ FAQ
+
+**Q: How do I validate a Vivo login token from my backend?**
+Use the `validate_login` tool with the user's token provided by the Vivo SDK. The agent will connect to the Vivo verification server and return the `openid` if the session is legitimate.
+
+**Q: Can I automatically query the status of a specific order?**
+Yes! Use the `query_order` tool with your CP Order ID. Your agent will retrieve the payment status, amount, and internal transaction reference directly from the Vivo gateway.
+
+**Q: How do I report character role information to the platform?**
+Use the `report_role_info` tool with a JSON string containing the character details (name, level, server). This is essential for compliance and social features within the Vivo ecosystem.
+
+
 ## Installation & Usage
 
-To install and use the **Vivo Game Open Platform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vivo-game-open-platform](https://vinkius.com/mcp/vivo-game-open-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vivo Game Open Platform** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vivo-game-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vivo Game Open Platform** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vivo-game-open-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

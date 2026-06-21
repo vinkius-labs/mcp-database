@@ -1,7 +1,6 @@
 # Datadog MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datadog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datadog-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Here are some examples of how you can interact with the **Datadog** MCP server u
 > Checking Datadog monitors... I found 2 monitors in 'Alert' state: [Free Disk Space Low] on 'db-node-1' and [High Request Latency] on 'api-gateway'.
 
 
+## ❓ FAQ
+
+**Q: Can my agent query specific Datadog metrics using DDQL?**
+Yes. Use the 'query_metrics' tool. Provide your DDQL query string and the target time range. The agent will fetch the numeric timeseries data directly from Datadog's telemetry datastores.
+
+**Q: How do I search for a specific error message across my application logs?**
+Use the 'search_logs' tool. Provide a query matching your error string and an ISO time boundary. The agent will retrieve the structural extraction of logs matching those parameters to help you identify failures.
+
+**Q: Can I see which monitors are currently in an alert state?**
+Absolutely. The 'list_monitors' tool allows you to filter by group state (e.g., 'alert,warn'). The agent pulls the explicitly configured system triggers to show you which services are currently unhealthy.
+
+
 ## Installation & Usage
 
-To install and use the **Datadog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/datadog](https://vinkius.com/mcp/datadog)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Datadog** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `datadog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Datadog** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "datadog": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

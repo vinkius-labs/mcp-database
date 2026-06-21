@@ -1,7 +1,6 @@
 # Tock Reservations MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tock-reservations)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tock-reservations-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tock-reservations-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tock-reservations)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Tock Reservations** MC
 > Sarah Connor has visited your venues 5 times. Their last visit was on March 15th at the 'Downtown Bistro'. They are flagged as a 'VIP Guest'. Would you like to see their dietary preferences and special notes?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Tock API Key?**
+Log in to your Tock dashboard as an administrator, navigate to **Settings > API**, and you can generate or retrieve your unique **REST API Key** from there. Ensure you have an active business subscription.
+
+**Q: Does the integration show guest dietary preferences?**
+Yes, you can use the get_reservation_details tool to retrieve specific guest notes, which typically include dietary restrictions, special occasions, and seating preferences.
+
+**Q: Can the agent make new reservations?**
+This integration currently focuses on listing and auditing existing reservations, guests, and events. Making new reservations or processing payments should be handled via the Tock booking widget or dashboard interface.
+
+
 ## Installation & Usage
 
-To install and use the **Tock Reservations** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tock-reservations](https://vinkius.com/mcp/tock-reservations)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tock Reservations** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tock-reservations` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tock Reservations** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tock-reservations": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

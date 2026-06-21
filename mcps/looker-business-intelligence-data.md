@@ -1,7 +1,6 @@
 # Looker (Business Intelligence & Data) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/looker-business-intelligence-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/looker-business-intelligence-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/looker-business-intelligence-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/looker-business-intelligence-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Looker (Business Intel
 > I've searched your content metadata and identified 2 dashboards: 'Global Marketing ROI' (ID: 987) and 'Channel Specific ROI - Beta' (ID: 654). I can fetch the UUIDs and folder paths for either of these.
 
 
+## ❓ FAQ
+
+**Q: Can I run a dynamic query against a LookML model through my agent?**
+Yes. Use the `run_inline_query` tool by providing the model name, view, and specific fields. Your agent will execute the query securely and return up to 100 rows of data, perfect for rapid data validation.
+
+**Q: How do I see the filters applied to a specific Looker dashboard?**
+The `get_dashboard` tool retrieves the complete configuration for a Dashboard UUID. Your agent will expose the applied filters, element layouts, and underlying query structures directly in your chat interface.
+
+**Q: Can my agent help me find reports in my Looker account?**
+Absolutely. Use the `search_content` tool to perform a deep search across content metadata. Your agent will identify dashboards and looks matching your text query, helping you locate critical data assets instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Looker (Business Intelligence & Data)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/looker-business-intelligence-data](https://vinkius.com/mcp/looker-business-intelligence-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Looker (Business Intelligence & Data)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `looker-business-intelligence-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Looker (Business Intelligence & Data)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "looker-business-intelligence-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

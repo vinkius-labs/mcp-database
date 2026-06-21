@@ -1,7 +1,6 @@
 # Kong (AI API Gateway) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kong-ai-api-gateway)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kong-ai-api-gateway-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kong-ai-api-gateway-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kong-ai-api-gateway)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Kong (AI API Gateway)*
 > I've identified 3 consumers: 'MobileApp_Prod', 'ThirdParty_Partner', and 'InternalAdmin_CLI'. 'MobileApp_Prod' has 2 active API keys. Would you like to generate a new key for 'ThirdParty_Partner'?
 
 
+## ❓ FAQ
+
+**Q: Can I use this server to manage Kong's AI Proxy plugin?**
+Absolutely. The `create_ai_plugin` tool is specifically designed to inject the `ai-proxy` plugin onto Services. You can define providers like OpenAI or Anthropic and manage model routing directly through your agent.
+
+**Q: How do I create a new API route through a conversation?**
+Use the `create_route` tool and provide a JSON payload defining the paths and the Service ID it should point to. Your agent will handle the Admin API call to provision the routing rule instantly.
+
+**Q: Can my agent generate new API keys for consumers?**
+Yes. The `create_consumer_key` tool allows you to provision new credentials for specific Consumers. This is perfect for onboarding new tenants or rotating keys for downstream applications securely.
+
+
 ## Installation & Usage
 
-To install and use the **Kong (AI API Gateway)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kong-ai-api-gateway](https://vinkius.com/mcp/kong-ai-api-gateway)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kong (AI API Gateway)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kong-ai-api-gateway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kong (AI API Gateway)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kong-ai-api-gateway": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

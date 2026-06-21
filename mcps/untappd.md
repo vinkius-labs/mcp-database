@@ -1,7 +1,6 @@
 # Untappd MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/untappd)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/untappd-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/untappd-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/untappd)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Here are some examples of how you can interact with the **Untappd** MCP server u
 > I found 'Stone Brewing' (ID: 1204) located in Escondido, CA. They have over 500 beers listed and a brewery rating of 4.02. Would you like to see their most popular beers?
 
 
+## ❓ FAQ
+
+**Q: How can I see what my friends have been drinking recently?**
+You can use the `get_friend_activity` tool. It fetches the latest check-in feed from your Untappd friends, including beer names, ratings, and locations.
+
+**Q: Can I get detailed information about a specific beer if I have its ID?**
+Yes! Use the `get_beer_info` tool with the Beer ID (bid). It will return comprehensive metadata, including ABV, IBU, brewery details, and global ratings.
+
+**Q: Is it possible to add a new beer check-in through the AI agent?**
+Absolutely. The `add_checkin` tool allows you to post a new check-in by providing the Beer ID, and optionally a rating, comments, and location.
+
+
 ## Installation & Usage
 
-To install and use the **Untappd** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/untappd](https://vinkius.com/mcp/untappd)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Untappd** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `untappd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Untappd** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "untappd": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

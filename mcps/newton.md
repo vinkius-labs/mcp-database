@@ -1,7 +1,6 @@
 # Newton MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/newton)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/newton-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/newton-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/newton)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Newton** MCP server us
 > The area under the curve x^3 from 2 to 4 is 60.
 
 
+## ❓ FAQ
+
+**Q: How do I handle fractions when simplifying expressions?**
+When using the `math_simplify` tool, use the keyword '(over)' to separate the numerator and denominator. For example, to simplify 2/4, use '2(over)4'.
+
+**Q: Can I find the area under a specific curve between two points?**
+Yes! Use the `math_area` tool by providing the `start_x`, `end_x`, and the function `expression`. It will calculate the definite integral for that range.
+
+**Q: How do I calculate a logarithm with a base other than 10 or e?**
+Use the `math_log` tool. It requires two parameters: the `base` (e.g., 2) and the `value` (e.g., 8) you want to calculate the logarithm for.
+
+
 ## Installation & Usage
 
-To install and use the **Newton** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/newton](https://vinkius.com/mcp/newton)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Newton** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `newton` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Newton** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "newton": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

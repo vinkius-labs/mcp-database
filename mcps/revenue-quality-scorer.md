@@ -1,7 +1,6 @@
 # Revenue Quality Scorer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/revenue-quality-scorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/revenue-quality-scorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/revenue-quality-scorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/revenue-quality-scorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,52 @@ Here are some examples of how you can interact with the **Revenue Quality Scorer
 > In the Europe region, your geographic score is 85 and product score is 70. Primary revenue drivers include Enterprise Software and Cloud Services.
 
 
+## ❓ FAQ
+
+**Q: What does the overall score represent?**
+The overall score is a weighted average of six dimensions: recurring revenue, concentration risk, expansion mix, stability, geography, and product diversification. A higher score indicates more predictable and stable revenue.
+
+**Q: How can I check if a specific customer is causing high risk?**
+Use the `analyze_concentration_risk` tool. By setting a `minRevenueThreshold`, you can see how much revenue is tied to your largest customers and identify if the concentration level is high risk.
+
+**Q: Can I filter analysis by region?**
+Yes, the `analyze_market_breadth` tool allows you to provide a `region` parameter to focus your geographic diversification analysis on specific areas like 'Europe' or 'North America'.
+
+
 ## Installation & Usage
 
-To install and use the **Revenue Quality Scorer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/revenue-quality-scorer](https://vinkius.com/mcp/revenue-quality-scorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Revenue Quality Scorer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `revenue-quality-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Revenue Quality Scorer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "revenue-quality-scorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Brawl Stars MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brawl-stars)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brawl-stars-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brawl-stars-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brawl-stars)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Brawl Stars** MCP serv
 > Checking event rotation... Currently active: Gem Grab on 'Hard Rock Mine', Solo Showdown on 'Feast or Famine', and Brawl Ball on 'Pinhole Punt'. New events will rotate in 4 hours. Should I check the upcoming maps as well?
 
 
+## ❓ FAQ
+
+**Q: Can I see a player's recent match history?**
+Yes! Use the `get_player_battlelog` tool with the player's tag to retrieve the last 25 battles, including game modes, results, and trophies gained or lost.
+
+**Q: How do I find the best players for a specific brawler?**
+Use the `get_brawler_rankings` tool. You will need to provide a country code (or 'global') and the numeric ID of the brawler, which you can find using `list_brawlers`.
+
+**Q: Can I check which maps are currently active in the game?**
+Yes, the `get_event_rotation` tool provides real-time information on all current and upcoming map rotations across different game modes.
+
+
 ## Installation & Usage
 
-To install and use the **Brawl Stars** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/brawl-stars](https://vinkius.com/mcp/brawl-stars)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Brawl Stars** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `brawl-stars` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Brawl Stars** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "brawl-stars": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

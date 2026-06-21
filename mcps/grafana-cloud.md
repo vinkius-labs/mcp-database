@@ -1,7 +1,6 @@
 # Grafana Cloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grafana-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grafana-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grafana-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grafana-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Grafana Cloud** MCP se
 > Successfully created the API key 'automation-token' with Admin role. The key is: `glc_...`. Please store it securely as it won't be shown again.
 
 
+## ❓ FAQ
+
+**Q: Can I see which users have access to my Grafana Cloud organization?**
+Yes. Use the `list_org_users` tool with your organization slug. The agent will return a list of all members associated with that specific organization.
+
+**Q: Is it possible to provision a new Grafana stack using this server?**
+Absolutely. The `create_instance` tool allows you to spin up a new instance by providing a name, organization slug, and an optional plan (like 'free' or 'pro').
+
+**Q: How do I revoke an API key that is no longer needed?**
+You can use the `delete_api_key` mutation. You'll need to provide the organization slug and the specific `key_id` you wish to remove.
+
+
 ## Installation & Usage
 
-To install and use the **Grafana Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/grafana-cloud](https://vinkius.com/mcp/grafana-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Grafana Cloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `grafana-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Grafana Cloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "grafana-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

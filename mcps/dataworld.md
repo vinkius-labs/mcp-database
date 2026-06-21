@@ -1,7 +1,6 @@
 # data.world MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dataworld)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dataworld-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dataworld-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dataworld)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **data.world** MCP serve
 > I've found 2 insights for 'Retail Trends': 'Q1 Growth Patterns' and 'Customer Demographics Shift'. Both were published by 'DataTeam_Alpha'. Would you like to see the full content of these insights?
 
 
+## ❓ FAQ
+
+**Q: How do I get a data.world API Token?**
+Log in to data.world, go to your user settings, and navigate to the **Advanced > API Tokens** section to generate a new token.
+
+**Q: Can the agent run SQL queries?**
+This integration currently focuses on discovering assets and retrieving saved query definitions. Executing arbitrary SQL queries is managed via the data.world interface or specialized SDKs.
+
+**Q: Does the integration support private datasets?**
+Yes, as long as the provided API Token has the necessary permissions, the agent can list and retrieve information for any dataset you have access to, including private ones.
+
+
 ## Installation & Usage
 
-To install and use the **data.world** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dataworld](https://vinkius.com/mcp/dataworld)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **data.world** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dataworld` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **data.world** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dataworld": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

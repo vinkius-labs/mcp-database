@@ -1,7 +1,6 @@
 # Salesbricks MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesbricks)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salesbricks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salesbricks-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesbricks)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Salesbricks** MCP serv
 > Reviewing seamlessly cleanly naturally safely flawlessly optimally effectively efficiently correctly completely your general accounting ledger nicely natively accurately, there are exactly precisely directly safely safely neatly 2 invoices marked officially explicitly cleanly organically purely 'past_due' securely flawlessly gracefully neatly elegantly cleanly cleanly gracefully elegantly natively magically quickly successfully purely purely gracefully reliably securely smartly successfully quickly correctly.
 
 
+## ❓ FAQ
+
+**Q: Can the AI forcefully complete, cancel, or permanently delete invoices natively in Salesbricks?**
+No. The integration ensures strict read and record functionalities largely scoped. Tools exist to list your active ledgers, check subscriptions, and securely create items. Hard deletions of generated financial objects are intrinsically abstracted to preserve data health seamlessly natively.
+
+**Q: Does the `create_customer` feature directly start building and processing a payable cart?**
+The `create_customer` tool is explicitly isolated to constructing a metadata profile strictly in the Salesbricks directory to link future purchases manually. To initiate a true subscription pipeline dynamically to them, the specialized `create_subscription` method is typically handled passing precise product details independently.
+
+**Q: What happens when I trigger the `record_usage` event through the AI interface chat organically?**
+Invoking `record_usage` accepts a simple JSON object constructed by the AI modeling your required data shape accurately. Salesbricks smoothly processes this metered data to bill users correctly based exactly efficiently organically natively purely precisely on the event consumed flawlessly in your infrastructure correctly nicely accurately cleanly completely elegantly automatically faithfully successfully.
+
+
 ## Installation & Usage
 
-To install and use the **Salesbricks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/salesbricks](https://vinkius.com/mcp/salesbricks)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Salesbricks** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `salesbricks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Salesbricks** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "salesbricks": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

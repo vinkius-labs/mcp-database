@@ -1,7 +1,6 @@
 # LegiScan Legislation Lookup MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/legiscan-legislation-lookup)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/legiscan-legislation-lookup-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/legiscan-legislation-lookup-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/legiscan-legislation-lookup)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **LegiScan Legislation L
 > I've scanned the federal legislative database. There are currently 12 active bills related to AI, including the 'AI Disclosure Act' and the 'Algorithmic Accountability Act'. I can provide summaries for each of them.
 
 
+## ❓ FAQ
+
+**Q: Can I search for bills in a specific state?**
+Yes! Use the `get_bill_list` tool and provide the state code (e.g., 'CA' for California, 'NY' for New York). It will return all active bills for the current session.
+
+**Q: Does this include the full text of the bills?**
+The integration currently retrieves bill summaries and status updates. For the full legal text, the tool provides reference links to the official state or federal repositories.
+
+**Q: How can I see how my representative voted?**
+Use the `get_bill_details` tool with the Bill ID. The response includes a roll call section with the results of all votes taken on that specific piece of legislation.
+
+
 ## Installation & Usage
 
-To install and use the **LegiScan Legislation Lookup** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/legiscan-legislation-lookup](https://vinkius.com/mcp/legiscan-legislation-lookup)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LegiScan Legislation Lookup** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `legiscan-legislation-lookup` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LegiScan Legislation Lookup** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "legiscan-legislation-lookup": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

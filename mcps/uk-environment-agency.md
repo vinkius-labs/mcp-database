@@ -1,7 +1,6 @@
 # UK Environment Agency MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uk-environment-agency)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uk-environment-agency-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uk-environment-agency-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uk-environment-agency)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,55 @@ Here are some examples of how you can interact with the **UK Environment Agency*
 > Aggregating hydrology reports... Overall levels are within nominal boundaries across major river checkpoints.
 
 
+## ❓ FAQ
+
+**Q: How do I get started?**
+Subscribe to the server and you're ready. The UK Environment Agency API is entirely public open data. No code, no setup, no webhooks — just connect and start querying through your AI agent.
+
+**Q: Can my AI agent check for active flood warnings in specific areas?**
+Yes. Your agent queries the live flood alert endpoints, giving you precise warnings, severity levels, and regional bounds instantaneously. It handles the whole diagnostic flow directly from your prompt.
+
+**Q: What happens when I need to check exact river depth history?**
+Just tell your AI agent. It targets individual measurement stations and reads their active water flow and level records, saving you from navigating complex CSV government databases.
+
+**Q: Can I monitor multiple geographic metrics simultaneously?**
+Absolutely. Combine requests for hydrology network grids, list all active flood stations across county borders, and map their measures. Perfect for logistics teams, civic planners, and researchers parsing country-wide status loops.
+
+
 ## Installation & Usage
 
-To install and use the **UK Environment Agency** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/uk-environment-agency](https://vinkius.com/mcp/uk-environment-agency)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **UK Environment Agency** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `uk-environment-agency` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **UK Environment Agency** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "uk-environment-agency": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

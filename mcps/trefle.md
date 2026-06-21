@@ -1,7 +1,6 @@
 # Trefle MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trefle)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/trefle-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/trefle-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trefle)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Trefle** MCP server us
 > Fetching data for Rosa canina (Dog rose)... It belongs to the Rosaceae family and was first described in 1753. It is widely distributed across Europe and North Africa.
 
 
+## ❓ FAQ
+
+**Q: Can I search for plants using a simple text query?**
+Yes, use the `search_plants` tool. It allows you to find main plant species by providing a query string like 'rose' or 'oak'.
+
+**Q: How can I filter plants by a specific family, like Orchidaceae?**
+You can use the `list_plants` tool and provide a JSON string in the `query_params` field, such as `{"filter[family_name]": "Orchidaceae"}`.
+
+**Q: Is it possible to get info on sub-species and varieties?**
+Absolutely. While `list_plants` focuses on main species, the `list_species` and `search_species` tools include all sub-taxa, varieties, and hybrids.
+
+
 ## Installation & Usage
 
-To install and use the **Trefle** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/trefle](https://vinkius.com/mcp/trefle)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Trefle** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `trefle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Trefle** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "trefle": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Feedly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/feedly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/feedly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/feedly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/feedly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Feedly** MCP server us
 > Searching the Feedly index... I found several relevant feeds including 'The Edge Blog' and 'Computing Weekly'. Would you like the stream IDs to add them to your collections?
 
 
+## ❓ FAQ
+
+**Q: How do I obtain a Feedly Developer Token?**
+Log in to your Feedly account and navigate to the **Settings > Developer** page to generate a personal access token for prototyping and individual use.
+
+**Q: Can I mark articles as read using this agent?**
+Yes! Use the `mark_as_read` tool with the entry IDs of the articles you wish to clear from your unread stream.
+
+**Q: Is it possible to search for new feeds through the agent?**
+Absolutely. The `search_feeds` tool allows you to search the Feedly global index for specific topics or site URLs to add to your collections.
+
+
 ## Installation & Usage
 
-To install and use the **Feedly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/feedly](https://vinkius.com/mcp/feedly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Feedly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `feedly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Feedly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "feedly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

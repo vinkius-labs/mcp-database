@@ -1,7 +1,6 @@
 # Coding.net MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/codingnet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/codingnet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/codingnet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/codingnet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Coding.net** MCP serve
 > I've retrieved the branches for 'main-api'. You have 3 active branches: 'master', 'develop', and 'feature/api-v2'. Should I check for the latest commit on any of them?
 
 
+## ❓ FAQ
+
+**Q: How do I find my CODING Team Domain?**
+Your team domain is the unique URL you use to access CODING, typically in the format `your-team.coding.net`. You can find it in your browser's address bar when logged in.
+
+**Q: How do I generate a Personal Access Token (PAT)?**
+Log in to CODING, go to [Personal Settings] → [Access Tokens], and click on [New Token]. Ensure you grant the necessary permissions for the resources you want to manage.
+
+**Q: Can I access multiple repositories in a project?**
+Yes. Use the `list_repos` tool with your project name to see all available Git depots. You can then use `get_repo` or `list_branches` with specific repository names.
+
+
 ## Installation & Usage
 
-To install and use the **Coding.net** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/codingnet](https://vinkius.com/mcp/codingnet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Coding.net** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `codingnet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Coding.net** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "codingnet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

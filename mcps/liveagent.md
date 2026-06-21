@@ -1,7 +1,6 @@
 # LiveAgent MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/liveagent)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/liveagent-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/liveagent-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/liveagent)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **LiveAgent** MCP server
 > I've found the agent profile. Name: Sarah Connor, Role: Senior Support, Status: Active. Would you like to see her recent time reports?
 
 
+## ❓ FAQ
+
+**Q: Can I add internal notes to a ticket that the customer won't see?**
+Yes! Use the `add_conversation_message` tool and set the `type` parameter to 'N' (Note). This will append an internal note to the conversation visible only to your team.
+
+**Q: How can I see the history of changes for a specific ticket?**
+You can use the `list_ticket_history` tool. It provides a chronological record of all actions and changes associated with your tickets.
+
+**Q: Is it possible to list all companies registered in my LiveAgent account?**
+Yes, the `list_companies` tool allows you to retrieve a list of all companies stored in your CRM database within LiveAgent.
+
+
 ## Installation & Usage
 
-To install and use the **LiveAgent** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/liveagent](https://vinkius.com/mcp/liveagent)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LiveAgent** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `liveagent` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LiveAgent** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "liveagent": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

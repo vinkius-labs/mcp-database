@@ -1,7 +1,6 @@
 # Airtable MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airtable-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/airtable-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/airtable-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airtable-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Airtable** MCP server 
 > Accessing base architecture... Base app123XYZ contains 3 tables: 'Leads', 'Interactions', and 'Revenue'. I've retrieved the high-fidelity field definitions and view IDs to help with automated data entry. Need a summary of the field types?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Airtable Personal Access Token?**
+Log in to your account, navigate to the [**Developer Hub**](https://airtable.com/create/tokens), and click **Create token**. Ensure you grant `data.records:read`, `data.records:write`, and `schema.bases:read` scopes.
+
+**Q: Can I filter records using formulas via AI?**
+Yes! The `list_airtable_records` tool accepts a `filter_by_formula` parameter where you can provide native Airtable query logic programmatically.
+
+**Q: How do I find my Base and Table IDs?**
+Base IDs are found in the URL (starts with 'app'). You can use the `get_airtable_base_schema` tool to retrieve Table IDs and field names programmatically.
+
+
 ## Installation & Usage
 
-To install and use the **Airtable** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/airtable-alternative](https://vinkius.com/mcp/airtable-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Airtable** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `airtable-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Airtable** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "airtable-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

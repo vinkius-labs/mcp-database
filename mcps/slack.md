@@ -1,7 +1,6 @@
 # Slack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/slack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/slack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/slack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/slack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,55 @@ Here are some examples of how you can interact with the **Slack** MCP server usi
 > I found 8 messages mentioning 'API outage'. The first report came from @alex in #incidents at 2:34 PM on Monday. The root cause was identified as a database connection pool exhaustion. Would you like to see the full thread?
 
 
+## ❓ FAQ
+
+**Q: How do I get started with Slack MCP?**
+Subscribe, then create a Slack App at **api.slack.com/apps → Create New App**. Go to **OAuth & Permissions**, add the required bot scopes (channels:read, chat:write, search:read, users:read), install the app to your workspace, and paste the **Bot User OAuth Token** (starts with xoxb-) here. No code, no webhooks — just connect and go.
+
+**Q: Can my AI agent send messages and reply in threads?**
+Yes. Your agent can post to any channel the bot has been invited to — including threaded replies. Just say 'post in #engineering that the deploy is complete' or 'reply in the thread about the bug fix'. It supports Slack's full mrkdwn formatting including bold, links, code blocks, and mentions.
+
+**Q: How can I find a specific conversation from last week?**
+Tell your agent to search for it — 'find messages about the Q3 budget review' or 'search for messages from @sarah about the client proposal'. The agent uses Slack's search API with support for modifiers like from:user, in:channel, and date ranges. No more scrolling through channels — your agent retrieves the exact messages you need.
+
+**Q: Can I manage multiple channels and monitor team activity?**
+Absolutely. List all channels to get an overview of your workspace structure, read history from specific channels to audit conversations, and check team member profiles, statuses, and timezones. Perfect for distributed teams, engineering organizations, and operations managers who need a bird's-eye view of communication across dozens of channels.
+
+
 ## Installation & Usage
 
-To install and use the **Slack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/slack](https://vinkius.com/mcp/slack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Slack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `slack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Slack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "slack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

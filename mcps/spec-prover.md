@@ -1,7 +1,6 @@
 # Spec Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spec-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spec-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spec-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spec-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Spec Prover** MCP serv
 > Verdict: ORPHAN_CONSTANTS. DRAG_COEFFICIENT=0.47 is declared but never referenced in any computation step. Either integrate it into the trajectory formula (if drag affects the physics model) or remove it from the constants list to avoid confusing the developer.
 
 
+## ❓ FAQ
+
+**Q: Does Spec Prover compute or verify the arithmetic itself?**
+No. Spec Prover performs zero computation. It forces the AI agent to structure its own reasoning into traceable steps, then validates that the reasoning is logically consistent. If the agent says the output matches the trace but also says the spec is wrong, the tool rejects the contradiction. The agent does all the math — the tool enforces honesty.
+
+**Q: What happens when the tool rejects my proof?**
+The tool returns a detailed consistency error explaining exactly which Decision Pivot contradicts your verdict. For example, if you mark `outputMatchesTrace: true` but choose `SPEC_WRONG`, the rejection will explain that if the output matches your trace, the formula cannot be wrong — re-examine your trace arithmetic. Fix the contradiction and call the tool again with `isRevision: true`.
+
+**Q: What kind of edge cases should I trace?**
+The tool requires edge case inputs that differ from your normal inputs. Focus on boundaries: zero values (0 cycles), negative results (subtraction below zero), maximum values (24 hours, 1440 minutes), wrap-around conditions (midnight crossover), and empty/null inputs. The tool rejects edge cases that are identical to normal inputs — a second normal case is not an edge case.
+
+
 ## Installation & Usage
 
-To install and use the **Spec Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/spec-prover](https://vinkius.com/mcp/spec-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Spec Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `spec-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Spec Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "spec-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

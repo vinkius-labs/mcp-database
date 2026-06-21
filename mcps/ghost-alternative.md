@@ -1,7 +1,6 @@
 # Ghost MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ghost-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ghost-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ghost-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ghost-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **Ghost** MCP server usi
 > Fetching member directory... You have 150 registered members. Recent subscribers include 'Alice' (alice@example.com) and 'Bob' (bob@example.com). Would you like to check their membership tiers?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Ghost Admin API Key?**
+Log in to your Ghost admin panel, navigate to **Settings** > **Integrations**, click **Add custom integration**, and copy the Admin API Key and API URL.
+
+**Q: What is the Admin Domain?**
+It is the API URL provided in your custom integration settings (e.g., `https://your-site.ghost.io`). Do not include the `/ghost/api/admin/` part.
+
+**Q: Can I publish a post immediately via AI?**
+Yes! When using the `create_post` tool, set the `status` parameter to 'published' to make your content live instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Ghost** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ghost-alternative](https://vinkius.com/mcp/ghost-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ghost** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ghost-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ghost** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ghost-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

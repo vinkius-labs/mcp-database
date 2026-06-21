@@ -1,7 +1,6 @@
 # Slack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/slack-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/slack-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/slack-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/slack-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,46 @@ Here are some examples of how you can interact with the **Slack** MCP server usi
 > Message posted to #engineering. Content: "🚨 *Deployment Freeze Notice* 🚨\n\nTeam, we have a deployment freeze from Monday May 19 through Friday May 23 for the quarterly release preparation. All PRs must be merged by Friday EOD. Emergency hotfixes only during the freeze window. Please coordinate with @release-team for any exceptions.\n\n📋 Freeze checklist: https://wiki.internal/release-prep\n🗓 Release date: May 26". Message ID: msg_1716234567. Reactions received within 5 minutes: 12 (👍 8, 👀 4). Thread reply from @sarah: "Got it, finishing my PR today."
 
 
+## ❓ FAQ
+
+**Q: How do I find my Slack Bot User OAuth Token?**
+Log in to [**Slack API**](https://api.slack.com/apps), select your app, and navigate to **OAuth & Permissions**. You will find the token starting with `xoxb-` under the **OAuth Tokens for Your Workspace** section.
+
+
 ## Installation & Usage
 
-To install and use the **Slack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/slack-alternative](https://vinkius.com/mcp/slack-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Slack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `slack-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Slack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "slack-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

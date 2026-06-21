@@ -1,7 +1,6 @@
 # Inventory Turnover Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inventory-turnover-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/inventory-turnover-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/inventory-turnover-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inventory-turnover-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Inventory Turnover Cal
 > A turnover ratio of 5.0 is considered Optimal for the Manufacturing sector, as it falls within the target range of 4 to 8 times per year.
 
 
+## ❓ FAQ
+
+**Q: What is the Inventory Turnover Ratio?**
+It is a metric indicating how many times a company has replaced its inventory during a specific period, calculated by dividing annual COGS by average inventory value.
+
+**Q: How do I calculate Days Sales of Inventory (DSI)?**
+The `calculate_turnover_metrics` tool calculates DSI automatically by dividing the number of days in a year by your turnover ratio.
+
+**Q: What sectors are covered by the benchmarks?**
+The system provides hardcoded performance targets for Retail, Manufacturing, and Distribution sectors.
+
+
 ## Installation & Usage
 
-To install and use the **Inventory Turnover Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/inventory-turnover-calculator](https://vinkius.com/mcp/inventory-turnover-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Inventory Turnover Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `inventory-turnover-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Inventory Turnover Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "inventory-turnover-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

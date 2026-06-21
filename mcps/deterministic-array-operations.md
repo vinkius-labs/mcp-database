@@ -1,7 +1,6 @@
 # Deterministic Array Operations MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-array-operations)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-array-operations-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-array-operations-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-array-operations)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -51,12 +50,52 @@ Here are some examples of how you can interact with the **Deterministic Array Op
 > Using the chunk_array tool (size=50): Generated 3 chunks (two with 50 items, one with 45 items).
 
 
+## ❓ FAQ
+
+**Q: Why use an MCP for Array Chunking?**
+AI models process text sequentially and struggle with counting large sequences. If you ask an AI to chunk an array of 50 items into groups of 7, it will likely miscount or hallucinate records. A deterministic Javascript tool guarantees zero data loss.
+
+**Q: Can it deduplicate objects, not just strings?**
+Yes! The `deduplicate_array` tool performs deep stringification for objects. If you want to deduplicate by a specific property, just pass the `key` parameter (e.g., `id` or `email`), and it will filter unique records based on that key.
+
+**Q: Are my data payloads sent externally during intersection?**
+No. The entire engine executes natively within your local V8 environment. Zero API requests are made, ensuring strict security compliance.
+
+
 ## Installation & Usage
 
-To install and use the **Deterministic Array Operations** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deterministic-array-operations](https://vinkius.com/mcp/deterministic-array-operations)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deterministic Array Operations** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deterministic-array-operations` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deterministic Array Operations** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deterministic-array-operations": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

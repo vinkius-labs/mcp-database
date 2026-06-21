@@ -1,7 +1,6 @@
 # Common Room MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/common-room-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/common-room-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/common-room-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/common-room-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Common Room** MCP serv
 > Activity ingested! I've successfully registered the new Slack signal for member abc-123. The interaction is now visible in their community timeline and engagement score. Need help with other members?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Common Room API Token?**
+Log in to your account, navigate to **Settings** > **API Tokens**, and generate a new Bearer Token for your integration.
+
+**Q: What is the Person360™ engine?**
+Person360™ is Common Room's identity resolution engine that unifies data from multiple platforms into one single member profile.
+
+**Q: Can the agent ingest custom social signals?**
+Yes! The `ingest_activity` tool allows you to push any user interaction into a member's community timeline programmatically.
+
+
 ## Installation & Usage
 
-To install and use the **Common Room** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/common-room-alternative](https://vinkius.com/mcp/common-room-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Common Room** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `common-room-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Common Room** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "common-room-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

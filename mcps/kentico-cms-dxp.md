@@ -1,7 +1,6 @@
 # Kentico (CMS & DXP) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kentico-cms-dxp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kentico-cms-dxp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kentico-cms-dxp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kentico-cms-dxp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Kentico (CMS & DXP)** 
 > I've retrieved 12 entries from 'MyCompany.Inventory'. Highlights include items 'SKU-101' (Stock: 45), 'SKU-105' (Stock: 12), and 'SKU-108' (Stock: 0). Would you like to see the detailed audit logs for these items?
 
 
+## ❓ FAQ
+
+**Q: Can I update a specific page property using my agent?**
+Yes. Use the `update_site_document` tool. You just need to provide the site name, culture, and alias path, along with a JSON block of the fields you want to mutate. Your agent will process the update through the Kentico REST service instantly.
+
+**Q: How do I list rows from a custom table defined in Kentico?**
+The `list_custom_table_rows` tool allows your agent to extract tabular data contents from any custom table item structured within your project. You just need to provide the target table name to retrieve the current entries.
+
+**Q: Can my agent manage system objects like user roles?**
+Absolutely. Use tools like `list_system_objects` and `update_system_object` with the object type `cms.role`. Your agent can help you audit current roles and mutate their properties through natural conversation.
+
+
 ## Installation & Usage
 
-To install and use the **Kentico (CMS & DXP)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kentico-cms-dxp](https://vinkius.com/mcp/kentico-cms-dxp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kentico (CMS & DXP)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kentico-cms-dxp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kentico (CMS & DXP)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kentico-cms-dxp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

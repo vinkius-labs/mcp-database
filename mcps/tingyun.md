@@ -1,7 +1,6 @@
 # Tingyun / 听云 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tingyun)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tingyun-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tingyun-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tingyun)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Tingyun / 听云** MCP
 > I've checked for alerts. There is 1 Critical alert for 'High Latency' on the 'Payment Service' and 2 Warnings regarding disk usage. Should I retrieve the alert detail for the high latency incident?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Tingyun API Key and Secret?**
+Log in to your Tingyun console, go to [Account Management] → [API], and you will find your unique API Key and Secret Key there. Ensure you have the necessary permissions enabled.
+
+**Q: Can I query specific metric data through this server?**
+Yes. Use the `get_metrics` tool with the application ID and a comma-separated list of metric names. Your agent will retrieve the data points for the specified metrics.
+
+**Q: Is it possible to monitor frontend performance?**
+Yes! Use the `list_browser_apps` tool to access performance data from Tingyun RUM (Real User Monitoring) for your web and browser applications.
+
+
 ## Installation & Usage
 
-To install and use the **Tingyun / 听云** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tingyun](https://vinkius.com/mcp/tingyun)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tingyun / 听云** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tingyun` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tingyun / 听云** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tingyun": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

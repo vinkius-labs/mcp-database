@@ -1,7 +1,6 @@
 # EIA Electricity — Power Grid Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eia-electricity-power-grid-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eia-electricity-power-grid-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eia-electricity-power-grid-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eia-electricity-power-grid-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -96,12 +95,46 @@ Avg capacity factor: ~28%
 Arizona ranks #3 nationally in installed solar capacity.
 
 
+## ❓ FAQ
+
+**Q: Does EIA track real-time grid data?**
+Yes! The EIA-930 survey collects hourly data from all major U.S. balancing authorities. This includes demand, net generation, and interchange — updated daily with hourly granularity.
+
+
 ## Installation & Usage
 
-To install and use the **EIA Electricity — Power Grid Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eia-electricity-power-grid-intelligence](https://vinkius.com/mcp/eia-electricity-power-grid-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EIA Electricity — Power Grid Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eia-electricity-power-grid-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EIA Electricity — Power Grid Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eia-electricity-power-grid-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

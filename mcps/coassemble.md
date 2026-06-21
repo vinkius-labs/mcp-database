@@ -1,7 +1,6 @@
 # Coassemble MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coassemble)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coassemble-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coassemble-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coassemble)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Coassemble** MCP serve
 > Retrieving completion data... You had 12 new course completions today. The average grade is 92%, with 'Onboarding' having the highest success rate.
 
 
+## ❓ FAQ
+
+**Q: Can I see the completion results for a specific student?**
+Yes! Use the `get_training_completion_results` tool. The agent will return completion data and grades for enrolments, allowing you to track individual or aggregate success.
+
+**Q: How do I check which groups a member belongs to?**
+Use the `get_member_group_associations` tool with the member ID. Your agent will fetch all groups the specific member is part of, giving you context on their organizational alignment.
+
+**Q: Where do I find my Coassemble User ID and Token?**
+Log in to Coassemble, navigate to **Settings**, and select **API**. You can generate and copy your User ID and API User Token from that section.
+
+
 ## Installation & Usage
 
-To install and use the **Coassemble** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coassemble](https://vinkius.com/mcp/coassemble)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Coassemble** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coassemble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Coassemble** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coassemble": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Shippo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shippo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shippo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shippo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shippo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Shippo** MCP server us
 > Processing address validation... The address is valid and identified as a commercial location. Should I use it to get shipping rates for your next package?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the tracking status for a package using only the carrier and tracking number?**
+Yes! Use the `get_tracking` tool. Provide the carrier name (e.g., 'usps', 'fedex') and the tracking number, and your agent will return the real-time status and estimated delivery date.
+
+**Q: How do I compare shipping rates for a new shipment?**
+Simply ask the agent to run the `create_shipment` action with the package details and addresses. It will retrieve and compare pricing from all configured carrier accounts.
+
+**Q: How do I find my Shippo API Token?**
+Log in to your Shippo account, navigate to **Settings** > **API**, and you will find your unique Live or Test API Token there.
+
+
 ## Installation & Usage
 
-To install and use the **Shippo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shippo](https://vinkius.com/mcp/shippo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Shippo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shippo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Shippo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shippo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

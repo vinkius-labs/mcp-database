@@ -1,7 +1,6 @@
 # Pelias Geocoder MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pelias-geocoder)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pelias-geocoder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pelias-geocoder-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pelias-geocoder)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Pelias Geocoder** MCP 
 > Processed parameter logically extracting lists mapped explicitly in 'autocomplete' natively limits safely. First bound gracefully resolving is structurally 'Statue of Liberty, NY' explicitly internally validating bounds gracefully directly.
 
 
+## ❓ FAQ
+
+**Q: Can I use Pelias bounds configuring explicit extraction of local custom data stores?**
+Yes. This configuration inherently parses dynamic host architecture. You explicitly bind the native Base URL to point strictly toward your configured self-hosted arrays or Pelias-compatible public limit providers natively globally.
+
+**Q: How explicitly strict are the parameter bounds when I invoke bounded reversed logistics natively?**
+You map explicit limits using standard decimal notation gracefully parsing constraints natively: `lat=40.73` and `lon=-73.93`. The limits parse efficiently checking the closest explicit street JSON outputs securely returning structured bounded nodes.
+
+**Q: Is the structured Autocomplete log bound explicitly evaluating live typing constraints?**
+Absolutely structurally globally bound. Command the `search_autocomplete` natively with partial strings (e.g., '100 Main S'), and the AI extracts arrays modeling how your specific UI limit bounds react dynamically effortlessly.
+
+
 ## Installation & Usage
 
-To install and use the **Pelias Geocoder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pelias-geocoder](https://vinkius.com/mcp/pelias-geocoder)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pelias Geocoder** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pelias-geocoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pelias Geocoder** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pelias-geocoder": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

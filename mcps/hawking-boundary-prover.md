@@ -1,7 +1,6 @@
 # Hawking Boundary Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hawking-boundary-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hawking-boundary-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hawking-boundary-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hawking-boundary-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Hawking Boundary Prove
 > COMMUNICATION_OPAQUE — Boundary passes: zero and max cases handled. But communication fails: 'self-explanatory,' 'anyone can see,' 'straightforward' — Hawking did not say quantum cosmology was 'self-explanatory.' He wrote A Brief History of Time. Can you explain your purchase processing in ONE sentence? Can a new team member follow the flow in 2 minutes? What is your analogy? Additionally: 'ideally we would' and 'if the staff were larger' — constraints ignored, designing for a world that does not exist. And 'we accept this tradeoff, deal with it later' — paradox unresolved. Hawking confronted the information paradox for decades. Which side wins: accuracy or speed? What is sacrificed? What is the measured impact?
 
 
+## ❓ FAQ
+
+**Q: Is this only for error handling?**
+No. Boundary analysis applies to any system with edges — process design (what happens with zero submissions?), user experience (what happens with zero results?), workflow management (what happens with blank values?), pricing (what happens with zero quantity?), compliance (what happens with maximum-length input?). Hawking studied the boundary between a black hole and empty space. Every system has an event horizon — the point where normal behavior breaks down. This tool finds yours.
+
+**Q: Why require probability quantification?**
+Because 'should never happen' is not physics. Hawking radiation has a precise temperature: T = ℏc³/8πGMk. Your service commitment says 99.95% reliability — that is 21.9 minutes of unavailability per month. What happens during those 21.9 minutes? Your primary supplier has had 7 major disruptions in 5 years — that is a 0.03% probability per month. What is your response when it happens? Probability quantification forces you to plan for reality, not hope for perfection.
+
+**Q: How does it differ from the Einstein Thought Experiment Prover?**
+Einstein validates MENTAL MODELING and SIMPLIFICATION — thought experiments, reducing complexity, challenging assumptions, verifying invariance, unifying patterns. It asks 'have you found the simplest formulation?' Hawking validates BOUNDARY ANALYSIS and RESILIENCE — edge cases, accessible communication, real constraints, paradox resolution, probability quantification. It asks 'what happens at the edge?' Use Einstein when designing structure. Use Hawking when hardening it against reality.
+
+
 ## Installation & Usage
 
-To install and use the **Hawking Boundary Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hawking-boundary-prover](https://vinkius.com/mcp/hawking-boundary-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hawking Boundary Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hawking-boundary-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hawking Boundary Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hawking-boundary-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

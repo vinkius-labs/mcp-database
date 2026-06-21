@@ -1,7 +1,6 @@
 # Incident Postmortem Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/incident-postmortem-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/incident-postmortem-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/incident-postmortem-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/incident-postmortem-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -57,12 +56,52 @@ Here are some examples of how you can interact with the **Incident Postmortem Pr
 > Verdict: ROOT_CAUSE_SHALLOW. 'Forgot to update config' is blame, not root cause. Systemic question: WHY is config managed manually? WHY does the deploy pipeline not validate config? WHY is there no pre-deploy diff check? The root cause is the absence of automated config validation.
 
 
+## ❓ FAQ
+
+**Q: What makes a timeline 'complete'?**
+Minute-by-minute entries from first alert to full resolution. Each entry: [HH:MM] [Actor] [Action] [Outcome]. 'Around 3 PM' is rejected. '15:03 — PagerDuty alert fired for p95 > 2s on /api/orders' is accepted.
+
+**Q: How deep should the 5 Whys analysis go?**
+Until you reach a SYSTEMIC root — not a human error. 'Bob forgot to restart' is blame. 'The deployment pipeline has no post-deploy health check' is a system fix. The 5th Why should expose a process, architecture, or policy gap.
+
+**Q: What makes an action item 'accountable'?**
+Three requirements: (1) Named owner — not 'the team'. (2) Deadline — not 'soon'. (3) Success metric — not 'improved'. Example: 'Owner: @maria, Deadline: 2024-02-15, Metric: p95 latency < 500ms for 7 consecutive days.'
+
+
 ## Installation & Usage
 
-To install and use the **Incident Postmortem Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/incident-postmortem-prover](https://vinkius.com/mcp/incident-postmortem-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Incident Postmortem Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `incident-postmortem-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Incident Postmortem Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "incident-postmortem-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

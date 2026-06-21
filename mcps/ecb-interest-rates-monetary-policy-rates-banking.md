@@ -1,7 +1,6 @@
 # ECB Interest Rates — Monetary Policy Rates & Banking MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecb-interest-rates-monetary-policy-rates-banking)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ecb-interest-rates-monetary-policy-rates-banking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ecb-interest-rates-monetary-policy-rates-banking-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecb-interest-rates-monetary-policy-rates-banking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Next meeting: 17 April 2026
 > The current spread between the Main Refinancing Operations (MRO) rate and the Deposit Facility Rate (DFR) is 15 basis points. The MRO is at 2.65% while the DFR is at 2.50%.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between MRO and DFR?**
+MRO (Main Refinancing Operations) is the rate at which banks can borrow from the ECB for one week. DFR (Deposit Facility Rate) is the rate banks earn on overnight deposits. Since 2019, DFR has become the de facto benchmark for money markets in the eurozone.
+
+**Q: Does this server also track commercial bank interest rates?**
+Yes, it provides access to MFI (Monetary Financial Institutions) lending and deposit rates, which reflect the commercial banks' rates passed on to households and non-financial corporations.
+
+**Q: Are the rates updated immediately after the ECB Governing Council decisions?**
+Yes, the official policy rates (MRO, DFR, MLFR) are updated in the ECB's Statistical Data Warehouse generally very shortly after the official announcement by the Governing Council.
+
+
 ## Installation & Usage
 
-To install and use the **ECB Interest Rates — Monetary Policy Rates & Banking** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ecb-interest-rates-monetary-policy-rates-banking](https://vinkius.com/mcp/ecb-interest-rates-monetary-policy-rates-banking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ECB Interest Rates — Monetary Policy Rates & Banking** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ecb-interest-rates-monetary-policy-rates-banking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ECB Interest Rates — Monetary Policy Rates & Banking** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ecb-interest-rates-monetary-policy-rates-banking": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Cloudbeds MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudbeds)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudbeds-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudbeds-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudbeds)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Cloudbeds** MCP server
 > Guest profile fetched. Thomas Anderson occupies Room 205 (Ocean View). Checked in on Tuesday, scheduled to check out tomorrow at 11 AM. Balance owed: $0.00.
 
 
+## ❓ FAQ
+
+**Q: How many properties use Cloudbeds?**
+Cloudbeds serves 20,000+ properties in 150+ countries — hotels, hostels, vacation rentals, B&Bs, and hotel groups. It's the most widely used all-in-one hospitality platform.
+
+**Q: Can I use the AI to manage the cleaning schedule?**
+Yes! The MCP communicates directly with the Cloudbeds Housekeeping module. You can query dirty rooms, assign staff, and update statuses like 'Inspected' conversationally.
+
+**Q: Is the dashboard data delayed?**
+No, it pulls strictly real-time numbers natively routed from the Cloudbeds API covering exact metrics on ADR, current Occupancy, and live Check-in progress.
+
+
 ## Installation & Usage
 
-To install and use the **Cloudbeds** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cloudbeds](https://vinkius.com/mcp/cloudbeds)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cloudbeds** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cloudbeds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cloudbeds** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cloudbeds": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

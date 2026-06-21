@@ -1,7 +1,6 @@
 # Blackboard Learn MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blackboard-learn)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blackboard-learn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blackboard-learn-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blackboard-learn)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Blackboard Learn** MCP
 > Fetching attendance for meeting 98765... I found 25 records. 22 students are marked as 'Present', 2 as 'Absent', and 1 as 'Late'. Would you like the specific names of the absent students?
 
 
+## ❓ FAQ
+
+**Q: How can I check the attendance records for a specific class meeting?**
+You can use the `get_meeting_attendance` tool by providing the Course ID and Meeting ID. The agent will retrieve the full list of users and their current attendance status (e.g., Present, Absent).
+
+**Q: Is it possible to see recent changes in student grades?**
+Yes, use the `get_recent_grade_changes` tool. It allows you to monitor updates in the gradebook, helping you stay informed about recent evaluations and adjustments.
+
+**Q: Can I post a new announcement to my students through the AI?**
+Absolutely. Use the `create_course_announcement` tool. Just provide the Course ID, a title, and the body of your message, and the agent will publish it to the course immediately.
+
+
 ## Installation & Usage
 
-To install and use the **Blackboard Learn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blackboard-learn](https://vinkius.com/mcp/blackboard-learn)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Blackboard Learn** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blackboard-learn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Blackboard Learn** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blackboard-learn": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Vidyard MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vidyard)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vidyard-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vidyard-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vidyard)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Vidyard** MCP server u
 > Success! I've created the player 'Website Homepage' (ID: pl-999) and attached the video 'Company Vision 2026' (ID: vy-888) to it. The player is now ready for embedding.
 
 
+## ❓ FAQ
+
+**Q: Can I get direct download links for my videos through the agent?**
+Yes. The `get_video_source_files` tool allows your agent to retrieve direct MP4 download links and stream URLs for different qualities (like 720p or 1080p), making it easy to share raw files or use them in other applications.
+
+**Q: How do I add a video to a specific player?**
+Use the `attach_video_to_player` tool. You'll need to provide the `player_id` and the `video_id`. Your agent can help you find these IDs by listing your players and videos first.
+
+**Q: Can I create new video players through conversation?**
+Absolutely. The `create_empty_player` tool lets you provision a new player container with a descriptive name. Once created, you can attach videos to it and manage its settings directly through your agent.
+
+
 ## Installation & Usage
 
-To install and use the **Vidyard** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vidyard](https://vinkius.com/mcp/vidyard)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vidyard** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vidyard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vidyard** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vidyard": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

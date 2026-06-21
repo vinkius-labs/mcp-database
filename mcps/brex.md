@@ -1,7 +1,6 @@
 # Brex MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brex)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brex-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brex-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brex)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,55 @@ Here are some examples of how you can interact with the **Brex** MCP server usin
 > I performed a granular array analysis of over 50 transaction payloads returning from the last 30 intervals. Brex logs exactly three occurrences of AWS charges on the 'Engineering Budget'. Amounting to roughly $3,000 cumulatively.
 
 
+## ❓ FAQ
+
+**Q: Can the agent truly issue a real, functioning corporate card?**
+Yes! The `brex_create_card` logic specifically maps to creating a virtual limit card. By default, it operates completely valid via Visa/Mastercard configurations matching Brex internals. The agent handles setting its name and tying it strictly to the user id.
+
+**Q: What acts as the final authentication key for Brex?**
+You only need a `User Token`. Brex explicitly supports personal workflow automation using `user_tokens` which perfectly mimic your permissions. It typically begins literally with the string `user_token_` followed by hashes.
+
+**Q: Will vendor payments via AI require external 2FA from my side?**
+To enforce safety in the integration, the `approval_type` parameter when sending vendor money defaults to `'MANUAL'`. This means the AI structures all the math, formatting, routing inputs perfectly but leaves the final 'Accept' button queued on your dashboard.
+
+**Q: How can I see my user lists across Brex?**
+Run a request on `brex_list_users`. The AI will natively stream the company's organizational tree mapping the emails to Brex UUIDs required for triggering corporate card injections.
+
+
 ## Installation & Usage
 
-To install and use the **Brex** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/brex](https://vinkius.com/mcp/brex)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Brex** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `brex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Brex** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "brex": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # PDFShift MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pdfshift-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pdfshift-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pdfshift-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pdfshift-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **PDFShift** MCP server 
 > Fetching your recent logs... Here are the last 5 conversions, including status codes, source URLs, and processing times.
 
 
+## ❓ FAQ
+
+**Q: Can I test the conversion without spending my credits?**
+Yes. Use the `sandbox` parameter set to `true` in tools like `convert_to_pdf`. This generates a watermarked document for development purposes at no credit cost.
+
+**Q: How do I generate a document using a saved template?**
+First, ensure your template is created using `create_template`. Then, use `generate_from_template` providing the template slug and the dynamic data you want to inject.
+
+**Q: Can I capture a full-page screenshot as an image?**
+Absolutely. Use `convert_to_png`, `convert_to_jpeg`, or `convert_to_webp` and set the `fullpage` parameter to `true` to capture the entire scrollable area.
+
+
 ## Installation & Usage
 
-To install and use the **PDFShift** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pdfshift-alternative](https://vinkius.com/mcp/pdfshift-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PDFShift** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pdfshift-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PDFShift** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pdfshift-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

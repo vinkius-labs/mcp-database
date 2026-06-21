@@ -1,7 +1,6 @@
 # Neptune.ai (ML Experiment Tracking) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neptuneai-ml-experiment-tracking)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/neptuneai-ml-experiment-tracking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/neptuneai-ml-experiment-tracking-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neptuneai-ml-experiment-tracking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Neptune.ai (ML Experim
 > I've identified 3 promoted models in 'Fraud-Detection': 'XGBoost-Classifier-v2', 'RandomForest-Baseline', and 'NeuralNet-Prod-v1'. All models are mapped to production-ready weights. Which one would you like to inspect for version history?
 
 
+## ❓ FAQ
+
+**Q: Can I see the accuracy metrics for a specific ML run through my agent?**
+Yes. Use the `get_attributes` tool with your Project ID and Run ID. Your agent will retrieve the detailed telemetry logged during that execution, including accuracy, loss, and any custom attributes defined in your code.
+
+**Q: How do I check which model versions are currently stable in my registry?**
+The `list_models` tool retrieves all packaged ML models within a project. Your agent will expose the promoted model versions, helping you distinguish between experimental runs and stable candidates ready for deployment.
+
+**Q: Can my agent search through hundreds of past ML experimentation runs?**
+Absolutely. Use the `search_runs` tool with your Project ID. Your agent will query Neptune's tracking server to identify historical experiment state checkpoints, making it easy to locate specific training results across your entire research timeline.
+
+
 ## Installation & Usage
 
-To install and use the **Neptune.ai (ML Experiment Tracking)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/neptuneai-ml-experiment-tracking](https://vinkius.com/mcp/neptuneai-ml-experiment-tracking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Neptune.ai (ML Experiment Tracking)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `neptuneai-ml-experiment-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Neptune.ai (ML Experiment Tracking)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "neptuneai-ml-experiment-tracking": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

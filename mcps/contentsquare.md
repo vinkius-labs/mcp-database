@@ -1,7 +1,6 @@
 # Contentsquare MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentsquare)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contentsquare-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contentsquare-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentsquare)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Contentsquare** MCP se
 > Export job initiated! Job ID: 'export_abc123'. Contentsquare is now processing the raw session chunks for yesterday. I can check the status for you in a few minutes.
 
 
+## ❓ FAQ
+
+**Q: Can my agent export raw session data from Contentsquare?**
+Yes. Use the 'create_export_job' tool with your desired date range and data type (sessions or pageviews). The agent will initiate the asynchronous extraction and provide you with a job ID to monitor the download status.
+
+**Q: How do I enrich an active session with offline sales data?**
+Provide the session ID and a JSON object containing the properties you want to append. The 'enrich_session' tool will push these attributes directly to the active interaction block within the Contentsquare engine.
+
+**Q: Can I check the engagement metrics for a specific landing page URL?**
+Absolutely. Use the 'get_page_metrics' tool. Provide the exact page URL and a date range. Your agent will return detailed statistical bodies including bounce rates and behavioral limits for that specific web document.
+
+
 ## Installation & Usage
 
-To install and use the **Contentsquare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/contentsquare](https://vinkius.com/mcp/contentsquare)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Contentsquare** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `contentsquare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Contentsquare** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "contentsquare": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

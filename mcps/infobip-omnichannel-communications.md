@@ -1,7 +1,6 @@
 # Infobip (Omnichannel Communications) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/infobip-omnichannel-communications)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/infobip-omnichannel-communications-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/infobip-omnichannel-communications-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/infobip-omnichannel-communications)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Infobip (Omnichannel C
 > Retrieving delivery reports… For today's messages, 92% were successfully delivered, 5% are still pending, and 3% failed due to invalid numbers. I can provide the exact Message IDs for the failures if you need to audit them.
 
 
+## ❓ FAQ
+
+**Q: Can I send a WhatsApp message using my agent?**
+Yes. Use the `dispatch_whatsapp_message` tool. You'll need to provide your verified WhatsApp Business number and the target recipient's phone number. Your agent will handle the omnichannel routing to deliver the text instantly.
+
+**Q: How do I check if an SMS was actually delivered?**
+The `get_delivery_reports` tool allows your agent to pull raw status updates from Infobip. You can see if terminal carriers processed the text accurately and identify if any packets bounced or failed.
+
+**Q: Can I manage customer profiles in People CDP through a conversation?**
+Absolutely. Use tools like `upsert_crm_person` and `list_crm_people` to manage your audience database. Your agent can create new marketing profiles or update existing ones with structured traits directly from your chat.
+
+
 ## Installation & Usage
 
-To install and use the **Infobip (Omnichannel Communications)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/infobip-omnichannel-communications](https://vinkius.com/mcp/infobip-omnichannel-communications)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Infobip (Omnichannel Communications)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `infobip-omnichannel-communications` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Infobip (Omnichannel Communications)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "infobip-omnichannel-communications": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

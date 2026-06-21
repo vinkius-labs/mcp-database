@@ -1,7 +1,6 @@
 # Northflank (Developer Cloud & Orchestration) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/northflank-developer-cloud-orchestration)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/northflank-developer-cloud-orchestration-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/northflank-developer-cloud-orchestration-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/northflank-developer-cloud-orchestration)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Northflank (Developer 
 > Retrieving secret vaults… I've identified 2 logical groups: 'Production-Secrets' (Group ID: sec-987) and 'Shared-API-Keys'. I can provide the names of the environment variables mapped within these groups if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Can I restart my application containers through the agent without a full rebuild?**
+Yes. Use the `restart_service` tool by providing your Project ID and Service ID. Your agent will signal Northflank to gracefully cycle the container replicas, effectively refreshing the running environment while maintaining your current code version.
+
+**Q: How do I trigger a fresh build and deployment from my GitHub repository?**
+The `trigger_build` tool hooks into your linked VCS. Your agent will command Northflank to fetch the latest commits from your repository and start an automated build and release cycle, promoting the new image to production immediately.
+
+**Q: Can my agent check the status of my periodic cron-jobs?**
+Absolutely. Use the `list_jobs` tool to identify all isolated background processes within a project. Your agent will report the current execution statuses and schedule parameters for both ad-hoc batch tasks and recurring cron-jobs.
+
+
 ## Installation & Usage
 
-To install and use the **Northflank (Developer Cloud & Orchestration)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/northflank-developer-cloud-orchestration](https://vinkius.com/mcp/northflank-developer-cloud-orchestration)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Northflank (Developer Cloud & Orchestration)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `northflank-developer-cloud-orchestration` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Northflank (Developer Cloud & Orchestration)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "northflank-developer-cloud-orchestration": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

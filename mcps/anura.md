@@ -1,7 +1,6 @@
 # Anura MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anura)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/anura-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/anura-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anura)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Anura** MCP server usi
 > You have 5 active campaigns being monitored: 'Spring_Launch', 'Summer_Sale', 'Retargeting_Global', 'New_User_Offer', and 'Brand_Awareness'.
 
 
+## ❓ FAQ
+
+**Q: What information is needed to validate a visitor?**
+At a minimum, you need the visitor's IP address and User-Agent string. Providing additional info like source or campaign IDs helps Anura provide more contextual fraud detection.
+
+**Q: How do I access the fraud reports?**
+You can use the `get_report_list` tool to see all available reports. Then, use `get_report_details` for a summary or `download_report` to get a link to the full data file.
+
+**Q: What do 'Good', 'Warning', and 'Bad' mean in Anura?**
+'Good' means the visitor is likely human. 'Bad' indicates clear fraud (GIVT/SIVT). 'Warning' means the visitor shows suspicious traits and requires closer monitoring or additional validation.
+
+
 ## Installation & Usage
 
-To install and use the **Anura** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/anura](https://vinkius.com/mcp/anura)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Anura** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `anura` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Anura** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "anura": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

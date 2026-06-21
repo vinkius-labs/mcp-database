@@ -1,7 +1,6 @@
 # Beeminder MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/beeminder)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/beeminder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/beeminder-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/beeminder)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Beeminder** MCP server
 > The goal 'Gym' is currently yellow. You have 2 days until derailment. You need to add a datapoint soon to stay on the road!
 
 
+## ❓ FAQ
+
+**Q: Can I add a new datapoint to a goal from the agent?**
+Yes! Use the `add_datapoint` action with the goal slug and the value. You can also add an optional comment. Your agent will log it to Beeminder instantly.
+
+**Q: How do I check if I'm in danger of derailing on a goal?**
+Simply ask the agent to `get_goal_status` with the Goal Slug. It will return the road status color (e.g., green, yellow, orange, red) and a summary of how much time or value remains.
+
+**Q: Does the integration allow me to create new goals?**
+Currently, the toolset focuses on managing existing goals (logging data, checking status). Creating new goals with complex 'Yellow Brick Road' configurations must be done on the Beeminder website.
+
+
 ## Installation & Usage
 
-To install and use the **Beeminder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/beeminder](https://vinkius.com/mcp/beeminder)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Beeminder** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `beeminder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Beeminder** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "beeminder": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

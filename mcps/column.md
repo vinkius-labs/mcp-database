@@ -1,7 +1,6 @@
 # Column MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/column)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/column-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/column-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/column)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Column** MCP server us
 > Direct ACH operation generated natively. The target identifier '02844' has successfully been locked onto and 5,000 cents equivalents dispatched along standard US Clearing timelines.
 
 
+## ❓ FAQ
+
+**Q: Is 'column_create_check' actually sending out physical US Mail?**
+Yes! Column natively operates check printing infrastructure lockboxes. By providing a proper US Address in your chat interface to `column_create_check`, Column mechanically generates the cheque deducting the amount initially and mails it sequentially. It is incredibly useful for archaic landlord payouts and contractor duties.
+
+**Q: How are Webhooks handled in the AI interaction space?**
+With `column_list_webhooks`, you give your AI agent deep systemic oversight over what automated routing endpoints are configured to hear back clearance metrics. An AI could check if an engineer correctly connected your primary SaaS billing app to Column's wire settlements.
+
+**Q: Does Column authentication require extensive mTLS configurations as well?**
+No, US Banking BaaS endpoints standardly utilize simpler Auth mappings than LATAM. Column simply relies on Basic Authentication mapping natively your standard alphanumeric `API KEY` which the framework seamlessly encodes securely for you under the hood.
+
+
 ## Installation & Usage
 
-To install and use the **Column** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/column](https://vinkius.com/mcp/column)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Column** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `column` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Column** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "column": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

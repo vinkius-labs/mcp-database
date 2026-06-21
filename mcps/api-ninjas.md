@@ -1,7 +1,6 @@
 # API Ninjas MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/api-ninjas)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/api-ninjas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/api-ninjas-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/api-ninjas)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **API Ninjas** MCP serve
 > Your BMR is 1,795 calories/day. This is the number of calories your body burns at rest. For daily calorie needs, multiply by activity factor (1.2-1.9).
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Ninjas key?**
+Sign up for free at [**api-ninjas.com/register**](https://api-ninjas.com/register). Free tier includes 10,000 requests/month.
+
+**Q: What exercises are available?**
+The database includes 1000+ exercises covering cardio, strength training, stretching, plyometrics, powerlifting, Olympic weightlifting and strongman. Each exercise includes step-by-step instructions and equipment needed.
+
+**Q: How can I calculate my daily calorie needs?**
+Use the `calculate_bmr` tool to find your Basal Metabolic Rate, then multiply it by your activity level to get your TDEE (Total Daily Energy Expenditure). This tells you exactly how many calories you need to maintain your current weight.
+
+
 ## Installation & Usage
 
-To install and use the **API Ninjas** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/api-ninjas](https://vinkius.com/mcp/api-ninjas)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **API Ninjas** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `api-ninjas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **API Ninjas** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "api-ninjas": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

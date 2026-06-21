@@ -1,7 +1,6 @@
 # Woodpecker CI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/woodpecker-ci)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/woodpecker-ci-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/woodpecker-ci-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/woodpecker-ci)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Here are some examples of how you can interact with the **Woodpecker CI** MCP se
 > Here are the 5 most recent pipelines for repo 42: #153 (Success), #152 (Failure), #151 (Success), #150 (Success), and #149 (Cancelled). Pipeline #152 failed at the 'test' step. Would you like to see the config for that build?
 
 
+## ❓ FAQ
+
+**Q: Can I trigger a new pipeline build for a specific repository?**
+Yes. Use the `trigger_pipeline` tool by providing the repository ID. You can also specify a branch or commit if needed to start a new execution immediately.
+
+**Q: How do I check if my build agents are online and healthy?**
+You can use `list_agents` to see all connected agents and their status. For more detail on a specific agent, use `get_agent` or `list_agent_tasks` to see what it's currently working on.
+
+**Q: Is it possible to manage environment secrets through this agent?**
+Yes, the server includes tools like `create_repo_secret` and `list_repo_secrets` to manage sensitive variables at the repository level, as well as global and organization-level secret tools.
+
+
 ## Installation & Usage
 
-To install and use the **Woodpecker CI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/woodpecker-ci](https://vinkius.com/mcp/woodpecker-ci)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Woodpecker CI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `woodpecker-ci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Woodpecker CI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "woodpecker-ci": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

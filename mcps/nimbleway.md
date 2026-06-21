@@ -1,7 +1,6 @@
 # Nimbleway MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nimbleway)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nimbleway-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nimbleway-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nimbleway)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Nimbleway** MCP server
 > Retrieving usage data... You have used 15GB of bandwidth this month out of your 50GB limit. You also have 4,500 successful extraction credits remaining. Your account status is 'ACTIVE'.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Nimbleway API Key?**
+Log in to your Nimbleway dashboard, navigate to Settings or API section, and generate a new Bearer Token for access.
+
+**Q: What is stealth mode in extraction?**
+Nimbleway's extraction tools automatically use advanced fingerprinting and proxy rotation to mimic real human browsers, allowing you to access content protected by anti-bot measures.
+
+**Q: Can I search Google or Bing with this server?**
+Yes! The `search_web` tool uses Nimble Search to query major search engines and return the results as structured JSON, perfect for agentic workflows.
+
+
 ## Installation & Usage
 
-To install and use the **Nimbleway** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nimbleway](https://vinkius.com/mcp/nimbleway)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nimbleway** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nimbleway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nimbleway** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nimbleway": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

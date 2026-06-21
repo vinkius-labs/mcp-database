@@ -1,7 +1,6 @@
 # AI21 Studio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ai21-studio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ai21-studio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ai21-studio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ai21-studio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **AI21 Studio** MCP serv
 > The segmentation engine split the text into 12 distinct sentences based on grammatical boundaries, ignoring false periods like 'Dr.' or 'Mr.'. Would you like me to process them individually now?
 
 
+## ❓ FAQ
+
+**Q: Does this support AI21's Jamba models?**
+Yes. You can invoke the chat completion tool and instruct your agent to use specific model parameters like 'jamba-1.5-large' or 'jamba-1.5-mini' directly to leverage their native SSM-Transformer hybrid architecture.
+
+**Q: Why use the specific summarization endpoint instead of a generic prompt?**
+AI21 has trained dedicated models purely for tasks like summarization and grammatical correction. Using these specialized task endpoints often yields much higher reliability, speed, and fidelity than trying to force a conversational chatbot to do the exact same task.
+
+**Q: What languages are supported for grammar corrections?**
+Currently, AI21's dedicated Grammar and Paraphrase tools perform spectacularly on English, with varying outcomes for other localized languages. It is highly recommended to check their official documentation for the exact status of multi-language support boundaries.
+
+
 ## Installation & Usage
 
-To install and use the **AI21 Studio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ai21-studio](https://vinkius.com/mcp/ai21-studio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AI21 Studio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ai21-studio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AI21 Studio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ai21-studio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

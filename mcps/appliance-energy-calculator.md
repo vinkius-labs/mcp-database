@@ -1,7 +1,6 @@
 # Appliance Energy Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appliance-energy-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/appliance-energy-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/appliance-energy-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appliance-energy-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Appliance Energy Calcu
 > The bulb uses 0.72 kWh daily, which totals approximately 21.6 kWh per month and costs $4.32 monthly.
 
 
+## ❓ FAQ
+
+**Q: How do I calculate daily energy usage?**
+You can use the `calculate_daily_consumption` tool by providing the appliance's power rating in Watts and the number of hours it is used per day.
+
+**Q: Can I estimate monthly electricity costs?**
+Yes, the `calculate_monthly_expenses` tool allows you to input daily kWh usage and your local energy tariff to find the total cost for a specific number of days.
+
+**Q: What information is needed for a full summary?**
+The `get_appliance_impact_summary` tool requires the power rating in Watts, hours used per day, energy tariff, and optionally the number of days in the month.
+
+
 ## Installation & Usage
 
-To install and use the **Appliance Energy Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/appliance-energy-calculator](https://vinkius.com/mcp/appliance-energy-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Appliance Energy Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `appliance-energy-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Appliance Energy Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "appliance-energy-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

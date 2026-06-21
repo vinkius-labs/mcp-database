@@ -1,7 +1,6 @@
 # Webhook.site MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webhooksite)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/webhooksite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/webhooksite-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webhooksite)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Webhook.site** MCP ser
 > I have successfully deleted all requests received before 'now-7d' for the specified token. Your request history is now cleared of older entries.
 
 
+## ❓ FAQ
+
+**Q: How can I create a temporary webhook URL that expires after one hour?**
+Use the `create_token` tool and set the `expiry` parameter to 3600 seconds. You can also add an `alias` to make the URL easier to identify.
+
+**Q: Can I see the headers and body of the requests sent to my webhook?**
+Yes! Use the `get_requests` tool with your Token ID. It will return a list of captured requests including full headers, query strings, and the raw payload content.
+
+**Q: Is it possible to make the webhook return a specific JSON response?**
+Absolutely. Use the `set_response` tool to define a custom `content` (base64 encoded), `status` code, and JSON `headers` for any specific request received by your token.
+
+
 ## Installation & Usage
 
-To install and use the **Webhook.site** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/webhooksite](https://vinkius.com/mcp/webhooksite)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Webhook.site** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `webhooksite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Webhook.site** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "webhooksite": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

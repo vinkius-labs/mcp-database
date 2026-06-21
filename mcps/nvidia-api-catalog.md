@@ -1,7 +1,6 @@
 # NVIDIA API Catalog MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-api-catalog)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nvidia-api-catalog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nvidia-api-catalog-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-api-catalog)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **NVIDIA API Catalog** M
 > Execution logic parameters strictly extracting values safely allocating implicitly natively `generate_embeddings`. Payload correctly returned arrays naturally formatting vector bindings efficiently bounds.
 
 
+## ❓ FAQ
+
+**Q: Can I explicitly route specific embedding vectors natively using the NVIDIA integration matrix?**
+Yes! Utilize `generate_embeddings` providing explicit logic extracting arrays natively isolating endpoints safely.
+
+**Q: How do I explicitly explore active LLMs natively hosted inside the NVIDIA catalog bounds?**
+Target explicit matrices natively calling `list_foundation_models` returning catalog endpoints safely explicitly mapping bounds secure natively.
+
+**Q: Does this require local Docker execution mapping explicitly NVIDIA parameters transparently?**
+No, this explicitly pings the hosted Cloud API. For local Docker metrics natively, switch to `nvidia-nim-mcp` enforcing natively local boundaries.
+
+
 ## Installation & Usage
 
-To install and use the **NVIDIA API Catalog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nvidia-api-catalog](https://vinkius.com/mcp/nvidia-api-catalog)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NVIDIA API Catalog** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nvidia-api-catalog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NVIDIA API Catalog** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nvidia-api-catalog": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # CMS.gov Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cmsgov-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cmsgov-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cmsgov-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cmsgov-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **CMS.gov Data** MCP ser
 > I've retrieved the Medicare provider profile for NPI 1234567890. This is Dr. John Smith, a board-certified Internal Medicine specialist practicing at 123 Main Street, New York, NY 10001. Their Medicare enrollment ID is active and they accept Medicare assignment. Would you like to search for other providers in the same specialty or area?
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key to use this server?**
+No. The CMS.gov Provider Data API is completely public and requires no authentication. Simply subscribe to this server to start querying Medicare provider data, hospital ratings, and open datasets immediately.
+
+**Q: How current is the data?**
+CMS updates the Provider Data Catalog periodically, typically on a quarterly or monthly basis depending on the dataset. Hospital quality ratings are updated annually through the Hospital Compare program. All data is sourced directly from the official CMS.gov open data APIs.
+
+**Q: What is an NPI number?**
+The National Provider Identifier (NPI) is a unique 10-digit identification number issued by CMS to every US healthcare provider. It's the universal standard for identifying doctors, hospitals, and healthcare organizations in Medicare and Medicaid transactions. You can search for any provider by their NPI using this server.
+
+
 ## Installation & Usage
 
-To install and use the **CMS.gov Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cmsgov-data](https://vinkius.com/mcp/cmsgov-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CMS.gov Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cmsgov-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CMS.gov Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cmsgov-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

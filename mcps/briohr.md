@@ -1,7 +1,6 @@
 # BrioHR MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/briohr)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/briohr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/briohr-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/briohr)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **BrioHR** MCP server us
 > Connecting to BrioHR payroll service... For January 2024, the total headcount was 50 employees. Total payroll costs processed: RM 250,000.00. Status: Fully processed. Would you like the department breakdown?
 
 
+## ❓ FAQ
+
+**Q: How do I get API access for BrioHR?**
+You must reach out to the BrioHR support team at support@briohr.com. They will provide your credentials and require your IP addresses for whitelisting before you can connect.
+
+**Q: Can my AI automatically list all active job postings?**
+Yes! Use the `list_job_postings` tool. Your agent will retrieve all current vacancies from your BrioHR recruitment module, including titles and IDs.
+
+**Q: How do I retrieve the payroll summary for a specific month?**
+Use the `get_payroll_summary` tool with the month (MM) and year (YYYY). The agent will return the headcount and total calculations for that period.
+
+
 ## Installation & Usage
 
-To install and use the **BrioHR** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/briohr](https://vinkius.com/mcp/briohr)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BrioHR** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `briohr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BrioHR** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "briohr": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

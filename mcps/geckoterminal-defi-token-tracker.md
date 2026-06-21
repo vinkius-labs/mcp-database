@@ -1,7 +1,6 @@
 # GeckoTerminal (DeFi Token Tracker) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geckoterminal-defi-token-tracker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/geckoterminal-defi-token-tracker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/geckoterminal-defi-token-tracker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geckoterminal-defi-token-tracker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **GeckoTerminal (DeFi To
 > Analyzing token data... For the provided address on Ethereum, the token is identified as 'ExampleToken' (EXT). It has a current market cap of $5M and is traded primarily on Uniswap. Would you like to see the top liquidity pools for this token?
 
 
+## ❓ FAQ
+
+**Q: Can I see the trending liquidity pools on a specific network like Solana?**
+Yes! Use the `get_trending_pools_network` tool with the network ID 'solana'. The agent will return a list of the most active pools currently trending on that blockchain.
+
+**Q: How do I get historical price data (OHLCV) for a specific token pool?**
+You can use the `get_ohlcv` tool. Provide the network ID and the pool address to retrieve historical open, high, low, close, and volume data for various timeframes.
+
+**Q: Is it possible to list the most recent trades for a pair?**
+Absolutely. Use the `list_trades` tool with the network ID and pool address. It will fetch the latest transaction history, including trade size and timestamps.
+
+
 ## Installation & Usage
 
-To install and use the **GeckoTerminal (DeFi Token Tracker)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/geckoterminal-defi-token-tracker](https://vinkius.com/mcp/geckoterminal-defi-token-tracker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GeckoTerminal (DeFi Token Tracker)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `geckoterminal-defi-token-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GeckoTerminal (DeFi Token Tracker)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "geckoterminal-defi-token-tracker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

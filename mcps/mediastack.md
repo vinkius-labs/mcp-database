@@ -1,7 +1,6 @@
 # Mediastack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mediastack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mediastack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mediastack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mediastack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Mediastack** MCP serve
 > Searching archives... I found 5 articles about SpaceX from January 15th, 2024. The top headline is 'Starship Flight Test Update'. Shall I provide the full details?
 
 
+## ❓ FAQ
+
+**Q: Can I filter news by specific countries or languages?**
+Yes! Use the `get_news` tool and specify the `countries` (e.g., 'us') or `languages` (e.g., 'en') parameters to narrow down your search results.
+
+**Q: How do I find which news sources are available?**
+Simply use the `list_sources` tool. You can optionally filter the list by category, country, or language to find the exact publishers supported by Mediastack.
+
+**Q: Can I search for news from a specific date in the past?**
+Absolutely. The `get_news` tool accepts a `date` parameter. You can provide a single date (YYYY-MM-DD) or a date range to retrieve historical articles.
+
+
 ## Installation & Usage
 
-To install and use the **Mediastack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mediastack](https://vinkius.com/mcp/mediastack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mediastack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mediastack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mediastack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mediastack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

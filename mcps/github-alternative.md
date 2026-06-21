@@ -1,7 +1,6 @@
 # GitHub MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/github-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/github-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/github-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/github-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,55 @@ Here are some examples of how you can interact with the **GitHub** MCP server us
 > I found several highly-starred Python ML repos: huggingface/transformers (119k stars), scikit-learn/scikit-learn (58k stars), tensorflow/tensorflow (185k stars), pytorch/pytorch (79k stars) and microsoft/ML-For-Beginners (27k stars). Would you like more details on any of these?
 
 
+## ❓ FAQ
+
+**Q: How do I create a GitHub Personal Access Token?**
+Go to [**Settings > Developer settings > Personal access tokens**](https://github.com/settings/tokens), click **Generate new token (classic)**, give it a descriptive name, select the scopes you need (recommended: repo, workflow, read:org) and click **Generate token**. Copy the token immediately — it starts with `ghp_` and won't be shown again.
+
+**Q: Can I create issues with labels via the agent?**
+Yes! Use the `create_issue` tool with the owner, repo and title parameters. Optionally provide a Markdown body and comma-separated labels (e.g. "bug,high-priority"). The agent will create the issue and return its number, title and URL.
+
+**Q: How do I search for repositories with specific criteria?**
+Use the `search_repos` tool with GitHub's query syntax. Examples: "machine learning in:name language:python stars:>1000" finds Python ML repos with 1k+ stars; "org:microsoft pushed:>2024-01-01" finds Microsoft repos updated in 2024. The query supports qualifiers for language, stars, forks, org, topic, size and more.
+
+**Q: Does this tool support GitHub Actions workflow monitoring?**
+Yes! Use `list_workflow_runs` to see recent CI/CD executions for a repository. You can filter by branch and see each run's status (queued, in_progress, completed) and conclusion (success, failure, cancelled). This is useful for checking if recent deployments or builds passed without opening the Actions tab.
+
+
 ## Installation & Usage
 
-To install and use the **GitHub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/github-alternative](https://vinkius.com/mcp/github-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GitHub** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `github-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GitHub** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "github-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

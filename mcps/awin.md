@@ -1,7 +1,6 @@
 # Awin MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/awin)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/awin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/awin-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/awin)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Awin** MCP server usin
 > Analyzing your performance for the last 7 days... You had 1,200 clicks, 45 conversions, and an estimated commission of €350. This is a 10% increase compared to the previous week.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Publisher ID for queries?**
+Use the `list_accounts` tool. It will return all accounts associated with your token, including their unique IDs and account types (Publisher or Advertiser).
+
+**Q: Can I filter transactions by status?**
+Yes. When using the `list_transactions` tool, you can provide a status parameter such as 'pending', 'approved', 'declined', or 'deleted' to narrow down your results.
+
+**Q: How far back can I retrieve transaction data?**
+The Awin API allows you to retrieve individual transactions for a maximum range of 31 days per request. For longer periods, you may need to perform multiple targeted queries.
+
+
 ## Installation & Usage
 
-To install and use the **Awin** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/awin](https://vinkius.com/mcp/awin)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Awin** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `awin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Awin** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "awin": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

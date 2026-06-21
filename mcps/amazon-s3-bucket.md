@@ -1,7 +1,6 @@
 # Amazon S3 Bucket MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-s3-bucket)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazon-s3-bucket-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazon-s3-bucket-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-s3-bucket)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,55 @@ Here are some examples of how you can interact with the **Amazon S3 Bucket** MCP
 > I've retrieved the bucket policy. The current configuration allows read access from a specific IAM role and denies all public access. The bucket also has server-side encryption (AES-256) enforced on all PUT operations. Your setup looks secure. Would you like me to also check the ACL?
 
 
+## ❓ FAQ
+
+**Q: How is this different from the full Amazon S3 server?**
+The full Amazon S3 server gives the agent access to all buckets in your AWS account — it can list, create, and delete buckets. This server scopes the agent to a single, pre-configured bucket. The agent can only read, write, and manage objects within that bucket. This follows the principle of least privilege, which is critical for secure agent deployments.
+
+**Q: How do I get my AWS Access Key and Secret Key?**
+Log in to the AWS Management Console, navigate to IAM (Identity and Access Management), and create a user with programmatic access. For this integration, we recommend a policy scoped to a single bucket (e.g., `s3:GetObject`, `s3:PutObject`, `s3:DeleteObject`, `s3:ListBucket` limited to your target bucket ARN).
+
+**Q: Can I upload large files using this integration?**
+The `put_object` tool handles standard REST uploads and is best suited for small to medium-sized files or JSON data. For very large files, standard AWS tools utilizing Multipart Uploads are recommended.
+
+**Q: Can my agent access multiple buckets?**
+Each instance of this server is scoped to exactly one bucket. If your agent needs access to multiple buckets, you can subscribe to this server multiple times — each with a different bucket configuration. This maintains strict isolation between data boundaries.
+
+
 ## Installation & Usage
 
-To install and use the **Amazon S3 Bucket** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amazon-s3-bucket](https://vinkius.com/mcp/amazon-s3-bucket)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amazon S3 Bucket** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amazon-s3-bucket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amazon S3 Bucket** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amazon-s3-bucket": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

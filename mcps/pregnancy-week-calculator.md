@@ -1,7 +1,6 @@
 # Pregnancy Week Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pregnancy-week-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pregnancy-week-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pregnancy-week-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pregnancy-week-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,52 @@ Here are some examples of how you can interact with the **Pregnancy Week Calcula
 > At week 12, your baby is about the size of a lime and important organs are continuing to develop.
 
 
+## ❓ FAQ
+
+**Q: How can I find out my current gestational age?**
+Use the `calculate_gestation` tool by providing your last menstrual period or conception date.
+
+**Q: Can I see what is happening with my baby this week?**
+Yes, the `get_weekly_milestone` tool provides developmental updates and size comparisons for any specific week.
+
+**Q: How do I know which trimester I am in?**
+The `get_pregnancy_stage` tool calculates your current stage based on your pregnancy progress.
+
+
 ## Installation & Usage
 
-To install and use the **Pregnancy Week Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pregnancy-week-calculator](https://vinkius.com/mcp/pregnancy-week-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pregnancy Week Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pregnancy-week-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pregnancy Week Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pregnancy-week-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

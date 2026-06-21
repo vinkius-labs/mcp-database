@@ -1,7 +1,6 @@
 # Gravity Forms MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gravity-forms)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gravity-forms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gravity-forms-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gravity-forms)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Gravity Forms** MCP se
 > Adding note... Success! I've added the internal note to Entry #1042. It is now visible to the support team in your WordPress dashboard.
 
 
+## ❓ FAQ
+
+**Q: Can my agent create or submit a form entry in Gravity Forms?**
+Yes. Use the 'submit_form' tool. By passing the field values mapping, the agent can programmatically submit data to any form, triggering all configured validations, email notifications, and third-party feeds automatically.
+
+**Q: How do I look up specific customer submissions via chat?**
+You can use the 'list_entries' tool with optional filters. For example, you can filter by Form ID or search terms to locate specific records and then use 'get_entry' to retrieve the full details of that submission.
+
+**Q: Can I add internal notes to entries through the agent?**
+Absolutely. Use the 'create_entry_note' tool. This allows your agent to leave context or internal documentation on specific form submissions, visible to other team members in the WordPress admin area.
+
+
 ## Installation & Usage
 
-To install and use the **Gravity Forms** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gravity-forms](https://vinkius.com/mcp/gravity-forms)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gravity Forms** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gravity-forms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gravity Forms** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gravity-forms": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

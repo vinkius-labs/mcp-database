@@ -1,7 +1,6 @@
 # Matillion (Cloud Data Integration & ELT) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/matillion-cloud-data-integration-elt)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/matillion-cloud-data-integration-elt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/matillion-cloud-data-integration-elt-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/matillion-cloud-data-integration-elt)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Matillion (Cloud Data 
 > I've identified 3 destination environments: 'Snowflake-Prod' (Targeting: SF_WH_01), 'Redshift-Staging' (Targeting: AWS_NODE_ALPHA), and 'BigQuery-Analytics' (Targeting: GCP_DATASET_V1). I can provide the project mappings for these environments if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Can I see the status of recent ELT pipeline executions through my agent?**
+Yes. Use the `list_executions` tool to retrieve the audit trail of recent Matillion workflows. Your agent will report which pipelines succeeded, which failed, and provide the operational context for each run.
+
+**Q: How do I check which cloud data warehouse environments are configured?**
+The `list_environments` tool extracts the destination structures attached to your account. Your agent will list environments pointing to Snowflake, Redshift, or BigQuery, helping you verify your data distribution endpoints.
+
+**Q: Can my agent track the health of active Matillion runtime agents?**
+Absolutely. Use the `list_agents` tool to monitor active Hybrid SaaS agents. Your agent will report which runtime components are currently resolving operations across your network, ensuring your data productivity is uninterrupted.
+
+
 ## Installation & Usage
 
-To install and use the **Matillion (Cloud Data Integration & ELT)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/matillion-cloud-data-integration-elt](https://vinkius.com/mcp/matillion-cloud-data-integration-elt)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Matillion (Cloud Data Integration & ELT)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `matillion-cloud-data-integration-elt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Matillion (Cloud Data Integration & ELT)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "matillion-cloud-data-integration-elt": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

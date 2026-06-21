@@ -1,7 +1,6 @@
 # SurveyMethods MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/surveymethods)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/surveymethods-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/surveymethods-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/surveymethods)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **SurveyMethods** MCP se
 > Survey ID 3042 has been successfully marked as Closed and will no longer accept responses.
 
 
+## ❓ FAQ
+
+**Q: Can I check the completion rate of a live survey?**
+Yes, specify the Survey ID and the agent will extract the current views, starts, and full completions.
+
+**Q: How do I fetch individual user responses?**
+You can request the raw data for specific respondents if your integration permissions allow reading payload data.
+
+**Q: Is it possible to close a survey via the AI?**
+If write access is enabled, you can command the AI to change a survey's status from 'Open' to 'Closed'.
+
+
 ## Installation & Usage
 
-To install and use the **SurveyMethods** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/surveymethods](https://vinkius.com/mcp/surveymethods)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SurveyMethods** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `surveymethods` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SurveyMethods** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "surveymethods": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

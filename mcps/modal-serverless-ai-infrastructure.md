@@ -1,7 +1,6 @@
 # Modal (Serverless AI Infrastructure) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modal-serverless-ai-infrastructure)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/modal-serverless-ai-infrastructure-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/modal-serverless-ai-infrastructure-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modal-serverless-ai-infrastructure)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Modal (Serverless AI I
 > I've identified 3 persistent disk volumes: 'model-cache-v1' (Size: 50GB), 'training-datasets' (Size: 200GB), and 'user-data-store'. I can provide the mount paths for any of these volumes if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Can I stop a running Modal app through my agent to save costs?**
+Yes. Use the `stop_app` tool with an active App ID. Your agent will dispatch a termination command to Modal, gracefully stopping the serverless container spin-up and preventing further billing for that specific execution.
+
+**Q: How do I check which web endpoints are active for my deployments?**
+The `list_deployments` and `get_deployment` tools retrieve the Promoted image data. Your agent will expose the public URL endpoints and serving metadata associated with your long-running Modal deployments.
+
+**Q: Can my agent audit the secrets and persistent volumes in my workspace?**
+Absolutely. Use the `list_secrets` and `list_volumes` tools to monitor your infrastructure assets. Your agent will report the names and references for your stored secrets and network block storage mounts attached to your compute instances.
+
+
 ## Installation & Usage
 
-To install and use the **Modal (Serverless AI Infrastructure)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/modal-serverless-ai-infrastructure](https://vinkius.com/mcp/modal-serverless-ai-infrastructure)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Modal (Serverless AI Infrastructure)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `modal-serverless-ai-infrastructure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Modal (Serverless AI Infrastructure)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "modal-serverless-ai-infrastructure": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

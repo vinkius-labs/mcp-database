@@ -1,7 +1,6 @@
 # UtilityAPI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/utilityapi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/utilityapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/utilityapi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/utilityapi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -108,12 +107,55 @@ Here are some examples of how you can interact with the **UtilityAPI** MCP serve
 > Found interval data for 2 authorized PG&E meters. Meter 44445555 (Electric, Residential): 3,650 interval readings over 30 days, averaging 1.2 kWh per 15-min interval. Peak usage between 2-6 PM (AC usage). Meter 44445556 (Gas, Residential): 720 readings, averaging 0.08 therms per hour. Highest gas usage during morning hours (6-9 AM) for water heating.
 
 
+## ❓ FAQ
+
+**Q: How do I get access to a customer's utility billing and usage data?**
+First, create an authorization form using `create_auth_form` with the customer's utility code. Share the form URL with the customer to complete authorization. Once authorized, use `list_meters` to find their service points, then `get_bills` and `get_intervals` with the meter UID to retrieve their data. You can also activate historical collection with `activate_historical_collection` to backfill past data.
+
+**Q: What's the difference between bills and intervals data?**
+Bills provide monthly (or billing cycle) summaries: total cost, total usage (kWh/therms), and billing period dates. Intervals provide granular time-series data from smart meters — typically 15-minute or hourly readings showing exact consumption patterns throughout the day. Use bills for cost analysis and trend overview; use intervals for detailed energy modeling, peak demand identification, and time-of-use analysis.
+
+**Q: Which utility companies are supported?**
+UtilityAPI supports 100+ US utilities including PG&E (Pacific Gas & Electric), Southern California Edison (SCE), Con Edison, National Grid, SDG&E, LADWP, CenterPoint Energy, and many more. Use the `list_utilities` tool to see the complete, up-to-date list of supported utilities with their codes. Coverage varies by state and continues to expand.
+
+**Q: Can I test the authorization flow before going to production?**
+Yes! Use `create_auth_form` to create a form, then `test_form_submission` with utility='DEMO' and scenario='residential' (or 'commercial'). This simulates a customer authorizing their data and returns a referral_code. Use this code with `list_authorizations?referrals=YOUR_CODE&include=meters` to retrieve test authorization and meter data without needing a real customer.
+
+
 ## Installation & Usage
 
-To install and use the **UtilityAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/utilityapi](https://vinkius.com/mcp/utilityapi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **UtilityAPI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `utilityapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **UtilityAPI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "utilityapi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

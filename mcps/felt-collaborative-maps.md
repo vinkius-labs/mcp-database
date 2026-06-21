@@ -1,7 +1,6 @@
 # Felt (Collaborative Maps) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/felt-collaborative-maps)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/felt-collaborative-maps-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/felt-collaborative-maps-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/felt-collaborative-maps)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Felt (Collaborative Ma
 > I've added the point to the layer. The new element ID is `elem_9876`. You can now see it on your map.
 
 
+## ❓ FAQ
+
+**Q: Can I upload my own geographic data files to a map?**
+Yes! Use the `create_layer` tool by providing a public URL to your GeoJSON, CSV, or KML file. The server will initiate the upload and processing into your specified Felt map.
+
+**Q: How do I add a specific point or shape to an existing layer?**
+You can use the `add_elements` tool. Simply provide the `layer_id` and a JSON array of GeoJSON features (points, lines, or polygons) you want to add to that layer.
+
+**Q: Is it possible to change the visual style of a map layer?**
+Yes. Use the `update_layer` tool and provide a 'Felt Style Object' (FSO) in the `style` parameter to programmatically change colors, icons, or visibility rules.
+
+
 ## Installation & Usage
 
-To install and use the **Felt (Collaborative Maps)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/felt-collaborative-maps](https://vinkius.com/mcp/felt-collaborative-maps)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Felt (Collaborative Maps)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `felt-collaborative-maps` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Felt (Collaborative Maps)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "felt-collaborative-maps": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

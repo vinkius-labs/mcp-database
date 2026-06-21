@@ -1,7 +1,6 @@
 # StayFi MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stayfi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stayfi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stayfi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stayfi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **StayFi** MCP server us
 > Fetching your collection stats... This month, your portfolio has collected 342 new emails with an average opt-in rate of 68% across all splash pages. 'Downtown Loft' is your highest-performing property with 85 new contacts.
 
 
+## ❓ FAQ
+
+**Q: How can my AI retrieve the list of guests who connected to the WiFi at a specific property?**
+Simply use the `get_property_guests` tool providing the specific property ID. Your agent will instantly compile a list of all guests captured via the captive portal, including their names, emails, and phone numbers.
+
+**Q: Can I automatically check if all my routers are online across my portfolio?**
+Yes! Ask the agent to run the `check_router_health` action. It will scan all your StayFi routers in real-time and report back any offline devices, ensuring your guest networks are always functional.
+
+**Q: Is it possible to track the total number of emails collected this month?**
+Absolutely. By utilizing the `get_collection_stats` tool, your agent can instantly fetch the email collection analytics across all properties, giving you an immediate view of your marketing data growth.
+
+
 ## Installation & Usage
 
-To install and use the **StayFi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stayfi](https://vinkius.com/mcp/stayfi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **StayFi** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stayfi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **StayFi** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stayfi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Nubank MX MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nubank-mx)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nubank-mx-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nubank-mx-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nubank-mx)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **Nubank MX** MCP server
 > Your spending last month totaled $28,450 MXN across 67 transactions. Top categories: 🍔 Food & Dining: $8,200 (29%) — top merchant: Uber Eats. 🚗 Transportation: $4,500 (16%) — top: Uber rides. 🏠 Housing: $5,000 (18%) — rent payment. 🛒 Shopping: $3,850 (14%). 🎮 Entertainment: $2,100 (7%). Compared to the previous month, you spent 12% more on dining. Would you like detailed insights on any category?
 
 
+## ❓ FAQ
+
+**Q: Can I send SPEI transfers to any Mexican bank from my AI agent?**
+Yes! Use the `create_transfer` tool with the recipient's 18-digit CLABE number, the amount in MXN, and an optional concept description. Transfers are processed instantly during banking hours through Mexico's SPEI interbank system.
+
+**Q: Can I see which purchases were made with meses sin intereses?**
+Yes. Use `list_credit_card_transactions` to see all your credit card charges. Each transaction includes its installment details — whether it was a single payment or spread across 3, 6, 12, or 18 months interest-free (meses sin intereses), along with the remaining installments.
+
+**Q: How does the spending analytics feature work?**
+Use `get_spending_analytics` with a period (last_month, last_3_months, last_year). It returns your spending broken down by category (food, transport, entertainment, etc.), your top merchants, and comparison percentages against your previous period.
+
+
 ## Installation & Usage
 
-To install and use the **Nubank MX** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nubank-mx](https://vinkius.com/mcp/nubank-mx)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nubank MX** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nubank-mx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nubank MX** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nubank-mx": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

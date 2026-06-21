@@ -1,7 +1,6 @@
 # Rappi API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rappi-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rappi-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rappi-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rappi-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Rappi API** MCP server
 > Order cancellation request dispatched forcing priority queue... Order 88910 has been successfully aborted and zeroed out. The refund algorithm triggered automatically citing error 'Items Missing against receipt'. The credits should append to your vault safely. Want me to draft an escalated complaint?
 
 
+## ❓ FAQ
+
+**Q: Does order placement via the API bypass the normal Rappi checkout security rules?**
+No. The `place_order` tool uses your pre-authenticated method securely. Bank validations, anti-fraud algorithms, and location checks apply exactly as they would natively in the application avoiding compliance breaches entirely.
+
+**Q: Can I explicitly track multiple concurrent active orders dynamically simultaneously?**
+Yes! Your agent can iterate over an array of active Order IDs using the `get_order_status` tool consistently. It parses coordinate updates and ETA drops, outputting a consolidated table summing up your entire inbound fleet seamlessly.
+
+**Q: Are the store identifiers (storeId) universally stable across regions?**
+Store IDs are fundamentally unique keys generated explicitly by Rappi's catalog backend. They remain static for the lifetime of that specific branch location. Searching via `list_nearby_stores` initially is recommended to cache the correct target IDs dynamically.
+
+
 ## Installation & Usage
 
-To install and use the **Rappi API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rappi-api](https://vinkius.com/mcp/rappi-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rappi API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rappi-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rappi API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rappi-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

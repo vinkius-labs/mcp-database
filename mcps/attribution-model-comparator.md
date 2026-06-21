@@ -1,7 +1,6 @@
 # Attribution Model Comparator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/attribution-model-comparator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/attribution-model-comparator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/attribution-model-comparator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/attribution-model-comparator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **Attribution Model Comp
 > I will call `calculate_attribution_shares` multiple times using the full list of models: 'First Touch', 'Last Touch', 'Linear', 'Time Decay', and 'Position-Based'. This provides a complete picture before running any delta comparison.
 
 
+## ❓ FAQ
+
+**Q: What is the necessary input data to start an attribution comparison?**
+You must first use the `get_customer_journey` tool, providing a customer ID and conversion date. This establishes the ordered sequence of touchpoints needed for all subsequent calculations.
+
+**Q: How do I get the financial value used as a baseline for attribution?**
+Use `fetch_conversion_metrics` with the specific conversion ID. This tool retrieves the total revenue amount, which serves as the single, absolute figure that all five attribution models will proportionally divide.
+
+**Q: After calculating shares for multiple models, how do I find out which model is most biased?**
+The `calculate_attribution_delta` tool takes the full results from all share calculations (via `calculate_attribution_shares`) and compares them. It quantifies the revenue gain or loss for a specific channel across models, highlighting discrepancies.
+
+
 ## Installation & Usage
 
-To install and use the **Attribution Model Comparator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/attribution-model-comparator](https://vinkius.com/mcp/attribution-model-comparator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Attribution Model Comparator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `attribution-model-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Attribution Model Comparator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "attribution-model-comparator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

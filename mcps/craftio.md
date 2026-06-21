@@ -1,7 +1,6 @@
 # Craft.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/craftio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/craftio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/craftio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/craftio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Craft.io** MCP server 
 > Success! The feature 'AI Search Integration' has been created in workspace ws_88231 with ID item_10293. I've added it to your product backlog in Craft.io.
 
 
+## ❓ FAQ
+
+**Q: Can I see all the items in a specific workspace via AI?**
+Yes! Use the `list_workspace_items` tool and provide the Workspace ID. Your agent will retrieve all features, stories, and epics organized within that environment.
+
+**Q: How do I add a new feature to my backlog using the agent?**
+Use the `create_product_item` action. Provide the Workspace ID and the title of the feature. The agent will instantly create the record in your Craft.io account.
+
+**Q: Is it possible to list all my product portfolios via AI?**
+Absolutely. Use the `list_product_portfolios` query. The agent will retrieve the complete list of portfolios configured in your account, allowing you to monitor high-level strategy.
+
+
 ## Installation & Usage
 
-To install and use the **Craft.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/craftio](https://vinkius.com/mcp/craftio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Craft.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `craftio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Craft.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "craftio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

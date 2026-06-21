@@ -1,7 +1,6 @@
 # Deep Talk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deep-talk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deep-talk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deep-talk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deep-talk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Deep Talk** MCP server
 > The sentiment analysis for your latest support dataset shows 65% Positive, 20% Neutral, and 15% Negative interactions. Sentiment has improved by 10% compared to last month. Would you like to see the clusters with the most negative sentiment?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Deep Talk API Key?**
+Log in to your Deep Talk account, navigate to the API section in your settings, and you can generate or retrieve your unique API Key from there.
+
+**Q: Can the agent process real-time conversations?**
+This integration currently focuses on analyzing datasets that have already been uploaded and processed within Deep Talk. Real-time streaming analysis is managed via the Deep Talk dashboard or webhook integrations.
+
+**Q: What languages are supported for analysis?**
+Deep Talk supports multiple languages for NLP analysis, including English, Spanish, Portuguese, and French. The agent retrieves results based on the analysis performed in your account.
+
+
 ## Installation & Usage
 
-To install and use the **Deep Talk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deep-talk](https://vinkius.com/mcp/deep-talk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deep Talk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deep-talk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deep Talk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deep-talk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Eventmaker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventmaker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eventmaker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eventmaker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventmaker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Eventmaker** MCP serve
 > The 'Autumn Trade Show' has 1,200 registrations and a 75% check-in rate. Session 'New Tech Demo' was the most attended. 45 leads were scanned by exhibitors on average. Should I check the detailed session breakdown?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Eventmaker API Key?**
+Log in to your Eventmaker account, navigate to **Account Settings > API**, and you can generate or retrieve your unique API Key from there. Ensure you have an active plan that supports API access.
+
+**Q: Can the agent perform onsite check-ins?**
+This integration currently focuses on listing and auditing events, participants, and check-in logs. Performing live check-ins or scanning badges should be managed via the Eventmaker mobile app or onsite hardware.
+
+**Q: Does the integration show real-time attendance rates?**
+Yes, you can use the get_event_performance_stats tool to retrieve real-time data on check-in rates and total registrations compared to onsite attendance.
+
+
 ## Installation & Usage
 
-To install and use the **Eventmaker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eventmaker](https://vinkius.com/mcp/eventmaker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Eventmaker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eventmaker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Eventmaker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eventmaker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Requirement Decomposition Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/requirement-decomposition-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/requirement-decomposition-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/requirement-decomposition-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/requirement-decomposition-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Requirement Decomposit
 > Verdict: REQUIREMENTS_PROVEN. Happy path fully specified with inputs/outputs. Error states mapped with HTTP codes and recovery. Edge cases covered (unicode, max length, concurrency, empty). Security validated (bcrypt, rate limiting, CSRF, sanitization). Observability planned (structured logs, Sentry, p99). Ready for implementation.
 
 
+## ❓ FAQ
+
+**Q: Does this replace writing user stories or PRDs?**
+No. It supplements them by forcing the AI to decompose beyond the happy path. Most user stories specify what should happen. This tool forces specification of what happens when things go wrong — the failure modes, edge cases, security vectors, and observability requirements that stories typically omit.
+
+**Q: Should I call this before or after Code Integrity Prover?**
+Before. Requirement Decomposition ensures the SPECIFICATION is complete. Code Integrity ensures the IMPLEMENTATION is clean. The workflow: decompose requirements → generate code → validate code integrity. Fixing incomplete requirements after code exists is expensive — fixing them before code exists is free.
+
+**Q: How does the prover validate security requirements?**
+It checks the specification against the OWASP Top 10 guidelines (such as SQL injection, XSS, and broken auth). It flags statements that treat inputs as implicitly trusted.
+
+
 ## Installation & Usage
 
-To install and use the **Requirement Decomposition Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/requirement-decomposition-prover](https://vinkius.com/mcp/requirement-decomposition-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Requirement Decomposition Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `requirement-decomposition-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Requirement Decomposition Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "requirement-decomposition-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

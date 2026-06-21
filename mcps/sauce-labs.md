@@ -1,7 +1,6 @@
 # Sauce Labs MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sauce-labs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sauce-labs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sauce-labs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sauce-labs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Sauce Labs** MCP serve
 > I've successfully terminated Job ID 4f4f391e0. The status has changed to 'aborted' and the underlying machine node has been freed, releasing 1 concurrent session to the pool.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent stop a runaway test job automatically?**
+Yes. If you notice a particular build is stuck, you can tell your agent: 'Check the currently running jobs in Sauce Labs and stop any that have been running for more than 40 minutes.' The agent will use `list_jobs` and conditionally call `stop_job` on the offending ones to free up your concurrency limit.
+
+**Q: How do I securely inspect the exact failure from an automation script?**
+If a CI action fails, ask the agent to 'List the latest builds.' Note the failing Build ID, request 'Get details for the failing jobs in this build'. The agent can return the exact error message, browser specs, and direct URL to the video session inside Sauce Labs.
+
+**Q: Can the agent tell me why my cloud jobs are in a 'queued' status?**
+Yes. This is a common DevOps question. You can prompt: 'Check our concurrency limits and active tunnels.' The agent will use `get_concurrency` to see if your team maxed out available nodes and `list_tunnels` to ensure Sauce Connect hasn’t dropped the connection.
+
+
 ## Installation & Usage
 
-To install and use the **Sauce Labs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sauce-labs](https://vinkius.com/mcp/sauce-labs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sauce Labs** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sauce-labs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sauce Labs** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sauce-labs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

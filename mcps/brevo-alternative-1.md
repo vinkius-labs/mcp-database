@@ -1,7 +1,6 @@
 # Brevo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brevo-alternative-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brevo-alternative-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brevo-alternative-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brevo-alternative-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -109,12 +108,52 @@ Here are some examples of how you can interact with the **Brevo** MCP server usi
 > Fetching SMS reports... In the last 30 days, you sent 150 messages with a 98% delivery rate and 0% hard bounces. Would you like to see the unaggregated event logs for more detail?
 
 
+## ❓ FAQ
+
+**Q: Can I send a custom transactional email using a JSON payload?**
+Yes! Use the `send_transactional_email` tool. You can provide a full JSON payload including sender details, recipients, subject line, and HTML content to trigger an immediate delivery.
+
+**Q: How do I check the performance of my email activity for a specific period?**
+You can use the `get_email_statistics_reports` tool. It provides aggregated transactional email activity per day, allowing you to filter by date or other optional parameters.
+
+**Q: Is it possible to manage my email templates directly through the AI?**
+Absolutely. You have access to a full suite of tools: `list_email_templates` to see what's available, `create_email_template` to build new ones, and `update_email_template` to modify existing designs.
+
+
 ## Installation & Usage
 
-To install and use the **Brevo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/brevo-alternative-1](https://vinkius.com/mcp/brevo-alternative-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Brevo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `brevo-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Brevo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "brevo-alternative-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

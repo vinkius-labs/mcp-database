@@ -1,7 +1,6 @@
 # DeepSource MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepsource)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deepsource-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deepsource-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepsource)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -156,12 +155,55 @@ Recommended action: Upgrade lodash and express immediately due to high reachabil
 Would you like to see what issues were found in the most recent run, or should I help investigate the failed payment analysis?
 
 
+## ❓ FAQ
+
+**Q: How do I get a DeepSource Personal Access Token and where do I find it?**
+Log in to your DeepSource account, go to **Account Settings** → **Personal Access Tokens**, and click **Create New Token**. Give it a descriptive name (e.g., 'Vinkius MCP') and copy the token immediately — it won't be shown again. Paste this token into the API key field below. The token is used as a Bearer token in the Authorization header for all GraphQL requests to `https://api.deepsource.com/graphql/`.
+
+**Q: What types of code issues can DeepSource detect and how are they categorized?**
+DeepSource detects various code quality issues including code smells, anti-patterns, performance issues, security vulnerabilities, and bugs. Issues are categorized by severity (CRITICAL, HIGH, MEDIUM, LOW) and by analyzer type (e.g., PYTHON for Python issues, JS-A1 for JavaScript anti-patterns, GO for Go issues). Each issue includes a shortcode, title, category, and file locations with line numbers. You can filter issues by analyzer short code when querying repositories.
+
+**Q: How does DeepSource detect dependency vulnerabilities and what information is provided?**
+DeepSource uses Supply Chain Analysis (SCA) to scan dependency manifest files (package.json, requirements.txt, Gemfile, etc.) for known vulnerabilities. Each vulnerability includes: CVE ID, CVSS score (0-10), severity level, description, affected package name and version, ecosystem (npm, pip, etc.), reachability status (whether the vulnerable code is actually called), and fixability (whether a fix version is available). This helps prioritize which vulnerabilities to address first based on real risk rather than just theoretical severity.
+
+**Q: What is the API rate limit and how many requests can I make per hour?**
+DeepSource enforces a rate limit of 5,000 requests per hour per user account. This limit covers both read (queries) and write (mutations) operations. If you exceed this limit, the API will return HTTP 429 (Too Many Requests). For most code review and monitoring workflows, this limit is more than sufficient. If you need higher limits for large-scale analysis, contact DeepSource support.
+
+
 ## Installation & Usage
 
-To install and use the **DeepSource** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deepsource](https://vinkius.com/mcp/deepsource)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DeepSource** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deepsource` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DeepSource** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deepsource": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

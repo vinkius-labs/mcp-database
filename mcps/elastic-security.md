@@ -1,7 +1,6 @@
 # Elastic Security MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elastic-security)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elastic-security-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elastic-security-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elastic-security)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **Elastic Security** MCP
 > Retrieving signals for 'admin_root'... I found 2 alerts: 'Suspicious LDAP Query' at 10:15 AM and 'Brute Force Attempt' at 10:45 AM. I can provide the source IP and process tree for these signals.
 
 
+## ❓ FAQ
+
+**Q: Can my agent list all detection rules currently active in my SIEM?**
+Yes. Use the 'list_detection_rules' tool. It returns both custom rules and Elastic prepackaged ML algorithms, which is vital for mapping your MITRE ATT&CK coverage.
+
+**Q: How do I whitelist a hostname to resolve a false positive via chat?**
+Use the 'add_exception' mutation. Provide the Exception List ID and the hostname string. The agent will update the container, implicitly ignoring telemetry matched on this host for any bound rule.
+
+**Q: Can I search for security alerts (Signals) using KQL through the agent?**
+Absolutely. The 'search_signals' tool allows you to retrieve critical alert logs. You can provide an optional KQL query to filter for specific users, hostnames, or process trees within your security telemetry.
+
+
 ## Installation & Usage
 
-To install and use the **Elastic Security** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/elastic-security](https://vinkius.com/mcp/elastic-security)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Elastic Security** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `elastic-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Elastic Security** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "elastic-security": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

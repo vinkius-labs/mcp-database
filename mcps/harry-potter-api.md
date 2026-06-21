@@ -1,7 +1,6 @@
 # Harry Potter API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harry-potter-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/harry-potter-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/harry-potter-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harry-potter-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Harry Potter API** MCP
 > Hogwarts staff includes: Albus Dumbledore (Headmaster, Gryffindor), Minerva McGonagall (Transfiguration, Gryffindor), Severus Snape (Potions/DADA, Slytherin), Filius Flitwick (Charms, Ravenclaw), Pomona Sprout (Herbology, Hufflepuff), Rubeus Hagrid (Care of Magical Creatures, Gryffindor), Argus Filch (caretaker), Sybill Trelawney (Divination) and more.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! The Harry Potter API (hp-api.onrender.com) is completely free and requires no authentication. Just subscribe and start exploring.
+
+**Q: What houses are available?**
+All four Hogwarts houses: gryffindor, slytherin, ravenclaw and hufflepuff. Use get_house_characters to filter by any house.
+
+**Q: Does the API include creatures and non-human characters?**
+Yes! get_all_characters includes humans, magical creatures, ghosts and sentient beings. Each entry includes species info (human, half-giant, house-elf, centaur, etc.).
+
+
 ## Installation & Usage
 
-To install and use the **Harry Potter API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/harry-potter-api](https://vinkius.com/mcp/harry-potter-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Harry Potter API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `harry-potter-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Harry Potter API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "harry-potter-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

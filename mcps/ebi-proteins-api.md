@@ -1,7 +1,6 @@
 # EBI Proteins API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ebi-proteins-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ebi-proteins-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ebi-proteins-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ebi-proteins-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -117,12 +116,52 @@ Here are some examples of how you can interact with the **EBI Proteins API** MCP
 > I've mapped BRCA1 (P38398) to genome coordinates. The protein maps to chromosome 17 on the GRCh38 assembly, with Ensembl gene ID ENSG00000012048 and transcript ID ENST00000357654. The coding region spans a large genomic interval on the reverse strand, reflecting BRCA1's complex exon structure. This mapping allows you to cross-reference protein-level variant annotations with genomic positions.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key to use this server?**
+No. The EMBL-EBI Proteins API is completely public and requires no authentication. Simply subscribe to this server and enter any placeholder value in the API key field to start querying protein data immediately.
+
+**Q: What kind of variant data is available?**
+The server aggregates genetic variants from multiple authoritative sources: UniProtKB curated variants, ClinVar clinical significance data, gnomAD population frequencies, 1000 Genomes Project, COSMIC somatic mutations, TOPMed whole-genome sequencing, ExAC exome data, and TCGA cancer variants. Each variant includes consequence type, clinical significance, and source cross-references.
+
+**Q: Can I map protein positions to genome coordinates?**
+Yes. The get_coordinates tool maps any UniProt protein to reference genome coordinates on GRCh38 and GRCh37 assemblies. It returns Ensembl gene, transcript, and translation identifiers along with chromosome, start/end positions, and strand orientation. This bridges the gap between protein-level annotations and genomic-level analyses.
+
+
 ## Installation & Usage
 
-To install and use the **EBI Proteins API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ebi-proteins-api](https://vinkius.com/mcp/ebi-proteins-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EBI Proteins API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ebi-proteins-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EBI Proteins API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ebi-proteins-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

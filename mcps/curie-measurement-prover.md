@@ -1,7 +1,6 @@
 # Curie Measurement Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/curie-measurement-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/curie-measurement-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/curie-measurement-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/curie-measurement-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Curie Measurement Prov
 > CROSS_DOMAIN_UNVALIDATED — Measurement and isolation are excellent: 847→312min, process 42%, supplier 27%, schedule 31%, 3 runs with ±8min variance. Rigorous isolation across two facilities. But cross-domain fails: 'not yet tested under peak season demand, we assume it transfers.' Curie's measurements were reproducible in EVERY laboratory in Europe. Normal conditions are NOT peak conditions: peak season has different volumes, different material quality, different team fatigue levels, different equipment utilization rates. Run the new process through one peak season cycle, measure for a full cycle under real conditions, then compare.
 
 
+## ❓ FAQ
+
+**Q: Is this only for performance optimization?**
+No. Curie's method applies to any domain requiring empirical validation — process improvement (measure before/after cycle times, isolate each change), vendor evaluation (measure cost/quality/reliability, not 'it seems better'), risk assessment (quantify probability and impact, not 'the risk is minimal'), method selection (benchmark each candidate in isolation), controlled experiments (single variable, controlled conditions). Anywhere you would say 'better' or 'faster' or 'more reliable,' replace the adjective with a number.
+
+**Q: What if isolation is impractical?**
+Sometimes variables are genuinely coupled — changing the supplier requires changing the delivery schedule. The engine does not demand artificial isolation. It demands AWARENESS of what was changed together and WHY isolation was impractical. Document: 'We changed X and Y together because X requires Y. We cannot isolate their effects. We accept that the 67% improvement is from X+Y combined, with Y alone contributing approximately 15% based on a separate controlled test.' Honest documentation of coupled changes is acceptable. Pretending 3 changes are one is not.
+
+**Q: How does it differ from the Watt Efficiency Prover?**
+Watt validates EFFICIENCY ENGINEERING — finding waste, instrumenting baselines, designing feedback loops, isolating bottlenecks, quantifying improvements. It asks 'where is the bottleneck?' Curie validates EMPIRICAL RIGOR — measuring instead of claiming, isolating variables, cross-domain validation, persistence, risk quantification. It asks 'where is the number?' Watt finds WHERE to optimize. Curie proves THAT you optimized. Use Watt to identify bottlenecks. Use Curie to prove your fix actually worked — with numbers, not adjectives.
+
+
 ## Installation & Usage
 
-To install and use the **Curie Measurement Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/curie-measurement-prover](https://vinkius.com/mcp/curie-measurement-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Curie Measurement Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `curie-measurement-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Curie Measurement Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "curie-measurement-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

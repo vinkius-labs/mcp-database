@@ -1,7 +1,6 @@
 # CNMC (Comisión Mercados y Competencia) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cnmc-comision-mercados-y-competencia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cnmc-comision-mercados-y-competencia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cnmc-comision-mercados-y-competencia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cnmc-comision-mercados-y-competencia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **CNMC (Comisión Mercad
 > I've identified the 'Consumo de gas natural' dataset. Applying the filter for 2022... I found 12 monthly records. Would you like a summary of the total consumption?
 
 
+## ❓ FAQ
+
+**Q: How do I find the resource_id needed for data retrieval?**
+Use the `package_search` tool with a query related to your topic. The response will include a list of resources, each with a unique `id` (the resource_id) that you can then use in `datastore_search`.
+
+**Q: Can I limit the number of records returned to avoid large payloads?**
+Yes! The `datastore_search` tool includes an optional `limit` parameter. You can specify exactly how many rows you want to retrieve (e.g., 10 or 100) to keep the response concise.
+
+**Q: Is it possible to filter data by a specific field, like a year or a city?**
+Absolutely. Use the `filters` parameter in `datastore_search`. It accepts a JSON string (e.g., `{"Year": "2023"}`) to return only the records that match your criteria.
+
+
 ## Installation & Usage
 
-To install and use the **CNMC (Comisión Mercados y Competencia)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cnmc-comision-mercados-y-competencia](https://vinkius.com/mcp/cnmc-comision-mercados-y-competencia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CNMC (Comisión Mercados y Competencia)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cnmc-comision-mercados-y-competencia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CNMC (Comisión Mercados y Competencia)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cnmc-comision-mercados-y-competencia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

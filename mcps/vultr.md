@@ -1,7 +1,6 @@
 # Vultr MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vultr)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vultr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vultr-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vultr)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Vultr** MCP server usi
 > I've listed the available applications. You can deploy 'Docker', 'WordPress', 'cPanel', or 'LAMP' as one-click apps, or choose from various Marketplace images like 'Plesk' or 'OpenVPN'. Which one would you like to deploy?
 
 
+## ❓ FAQ
+
+**Q: Can I reboot a bare metal server using this integration?**
+Yes! Use the `reboot_bare_metal` tool with the specific Instance ID. Your agent will send the reboot signal to the physical hardware immediately.
+
+**Q: How do I see my account's BGP info?**
+Simply run the `get_account_bgp` action. It will return your Autonomous System Number (ASN), BGP status, and the password required for your configuration.
+
+**Q: Can I manage my API keys through the AI agent?**
+Yes, you can use `list_api_keys` to view existing keys and `create_api_key` to generate new ones with specific names and expiration dates.
+
+
 ## Installation & Usage
 
-To install and use the **Vultr** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vultr](https://vinkius.com/mcp/vultr)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vultr** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vultr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vultr** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vultr": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

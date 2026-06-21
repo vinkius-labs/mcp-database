@@ -1,7 +1,6 @@
 # Nile (PostgreSQL for Multi-Tenant Apps) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nile-postgresql-for-multi-tenant-apps)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nile-postgresql-for-multi-tenant-apps-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nile-postgresql-for-multi-tenant-apps-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nile-postgresql-for-multi-tenant-apps)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Nile (PostgreSQL for M
 > Retrieving performance metrics… For 'production-v1', you currently have 45 active connections out of a 100 limit. Storage usage is at 2.4 GB (12% of cap). Compute utilization averaged 15% over the last hour. Everything looks healthy. Would you like a list of active users?
 
 
+## ❓ FAQ
+
+**Q: How does Nile handle tenant isolation through the agent?**
+Nile uses virtualized multi-tenancy. When your agent uses the `create_tenant` tool, Nile's control plane automatically generates a distinct routing logic container within Postgres, ensuring that data for the new B2B client is logically separated from other tenants.
+
+**Q: Can I monitor the health of my Nile databases through a conversation?**
+Yes. Use the `get_metrics` tool with a specific database name. Your agent will retrieve real-time operational performance numbers, including active connections and compute utilization, helping you identify load spikes or storage exhaustion instantly.
+
+**Q: Can my agent list all registered users and see which tenants they belong to?**
+Absolutely. Use the `list_users` tool to enumerate all identities natively authenticated within Nile. Your agent will report the user mappings to internal virtual tenants, making it easy to audit cross-tenant access control across your entire database ecosystem.
+
+
 ## Installation & Usage
 
-To install and use the **Nile (PostgreSQL for Multi-Tenant Apps)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nile-postgresql-for-multi-tenant-apps](https://vinkius.com/mcp/nile-postgresql-for-multi-tenant-apps)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nile (PostgreSQL for Multi-Tenant Apps)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nile-postgresql-for-multi-tenant-apps` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nile (PostgreSQL for Multi-Tenant Apps)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nile-postgresql-for-multi-tenant-apps": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

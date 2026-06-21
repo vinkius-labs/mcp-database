@@ -1,7 +1,6 @@
 # Cloudinary MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudinary)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudinary-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudinary-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudinary)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Cloudinary** MCP serve
 > Searching media library... I found 2 MP4 videos uploaded since yesterday: 'demo-tutorial-v2' and 'customer-interview-final'. Would you like to see their metadata?
 
 
+## ❓ FAQ
+
+**Q: Can I see my bandwidth usage for this month?**
+Yes! Use the `get_cloudinary_usage_report` tool. The agent will return core usage statistics, including current bandwidth and storage utilization compared to your plan limits.
+
+**Q: How do I find all images tagged with 'summer'?**
+Use the `search_media_library` tool with an expression like `tags:summer`. Your agent will fetch all matching resources directly from your library.
+
+**Q: Where do I find my Cloudinary API Secret and Cloud Name?**
+Log in to your Cloudinary Console. You can find your Cloud Name, API Key, and API Secret on the **Dashboard** main page under 'Account Details'.
+
+
 ## Installation & Usage
 
-To install and use the **Cloudinary** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cloudinary](https://vinkius.com/mcp/cloudinary)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cloudinary** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cloudinary` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cloudinary** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cloudinary": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

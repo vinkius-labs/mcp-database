@@ -1,7 +1,6 @@
 # Upstash MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upstash)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/upstash-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/upstash-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upstash)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -137,12 +136,55 @@ Here are some examples of how you can interact with the **Upstash** MCP server u
 > I found 5 keys matching 'session:*'. Checking their types: `session:abc` is a hash, `session:def` is a hash, `session:ghi` is a string, `session:jkl` is a set, and `session:mno` is a list. Most sessions are stored as hashes (field-value pairs for user data).
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Upstash REST URL and Token?**
+Log in to the [**Upstash Console**](https://console.upstash.com), select your Redis database, and look for the **REST API** section. You'll find the HTTPS Endpoint (your REST URL, e.g. `https://xxx-yyy-12345.upstash.io`) and the **Token** value. Copy both and paste them here. There are two token types: Standard (full access) and Read-Only (read-only commands). Use Standard for full functionality.
+
+**Q: What Redis commands are supported via the REST API?**
+The Upstash REST API supports most Redis commands including: Strings (GET, SET, DEL, EXISTS, EXPIRE, TTL, INCR, DECR), Hashes (HSET, HGET, HGETALL), Lists (LPUSH, RPUSH, LRANGE, LLEN), Sets (SADD, SMEMBERS, SISMEMBER, SREM), Keys (KEYS, TYPE, PING), and Pub/Sub (PUBLISH). The pipeline endpoint allows executing multiple commands in a single request. Blocking commands (BLPOP, BRPOP) and WATCH/UNWATCH are not supported.
+
+**Q: Can I execute multiple commands atomically?**
+The `pipeline` tool sends multiple commands in a single HTTP request for efficiency, but it is NOT atomic — other commands may interleave between them. For atomic multi-command execution, Upstash supports the `/multi-exec` endpoint (same syntax as pipeline but guarantees atomicity). However, this MCP server currently exposes the standard pipeline tool for batch operations.
+
+**Q: Is the Upstash REST API rate-limited?**
+Upstash does not enforce a fixed RPS limit. Instead, your plan defines a daily command limit. Each REST call counts as one command (or multiple commands if using pipeline). If you exceed your daily limit, commands will fail with a 400 error. Check your Upstash console for current usage. For high-throughput scenarios, consider using the pipeline endpoint to batch multiple commands into single HTTP requests.
+
+
 ## Installation & Usage
 
-To install and use the **Upstash** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/upstash](https://vinkius.com/mcp/upstash)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Upstash** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `upstash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Upstash** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "upstash": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

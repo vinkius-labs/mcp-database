@@ -1,7 +1,6 @@
 # Google Pub/Sub Subscription MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-pubsub-subscription)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-pubsub-subscription-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-pubsub-subscription-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-pubsub-subscription)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **Google Pub/Sub Subscri
 > Successfully acknowledged 2 messages. They will no longer appear in the queue.
 
 
+## ❓ FAQ
+
+**Q: Why limit the agent to a single Pub/Sub Subscription?**
+To enforce zero-trust security. An autonomous AI agent pulling its worker tasks should not have access to read messages from unrelated subscriptions, such as system audit logs or financial events.
+
+**Q: Why do I need to acknowledge messages?**
+Pub/Sub uses at-least-once delivery. If you pull a message but don't acknowledge it using its `ackId`, the message will reappear in the queue after the acknowledgment deadline expires.
+
+**Q: Does the agent handle base64 decoding?**
+Yes! The MCP Engine automatically decodes the `data` field of every incoming message from base64 into an easily readable UTF-8 string/JSON.
+
+
 ## Installation & Usage
 
-To install and use the **Google Pub/Sub Subscription** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-pubsub-subscription](https://vinkius.com/mcp/google-pubsub-subscription)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Pub/Sub Subscription** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-pubsub-subscription` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Pub/Sub Subscription** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-pubsub-subscription": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

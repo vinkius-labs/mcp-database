@@ -1,7 +1,6 @@
 # Harmonic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harmonic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/harmonic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/harmonic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harmonic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **Harmonic** MCP server 
 > Retrieving portfolio... Sequoia Capital has invested in over 1,500 companies, including giants like Apple, Google, and Stripe. Recently, they've been active in the AI sector with investments in 'Harvey' and 'Glean'. Would you like more details on their recent AI deals?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Harmonic API Key?**
+Log in to your Harmonic account, go to the **Console**, and navigate to the **API** section. You will be able to generate and copy your unique apikey from there.
+
+**Q: What happens if a company is not found in the database?**
+If a company is not found, Harmonic will return a `201 Enrichment Triggered` status. This means a background update has been queued. You can check the status later using the `get_enrichment_status` tool.
+
+**Q: Can I search for companies based on specific criteria?**
+Yes! Use the `search_startups` tool. You can provide a JSON string with filters like headcount, location, or industry to find companies that match your investment or sales criteria.
+
+**Q: Is the integration secure?**
+Absolutely. The integration only accesses your data through your unique API key. Your credentials are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Harmonic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/harmonic](https://vinkius.com/mcp/harmonic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Harmonic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `harmonic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Harmonic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "harmonic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

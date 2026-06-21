@@ -1,7 +1,6 @@
 # Meditation Session Planner MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meditation-session-planner)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meditation-session-planner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meditation-session-planner-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meditation-session-planner)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Meditation Session Pla
 > Use `plan_session` with goal='sleep' to get the ideal structure. Run `allocate_durations` for totalMinutes=45. Then, use `get_practice_guidance` on each phase name that results.
 
 
+## ❓ FAQ
+
+**Q: What if I don't know the right structure for my goal?**
+Start with `plan_session`. This tool uses your stated goal (like 'anxiety') to map out the mandatory sequence of phases, ensuring you begin with grounding techniques before progressing.
+
+**Q: How does the planner manage my total time limit?**
+After `plan_session` defines the phases, you must use `allocate_durations`. This tool takes your minutes (5-60) and intelligently distributes them across all required stages, preventing any single phase from being neglected.
+
+**Q: Can I get specific instructions for a phase?**
+Yes. Once you have the phase name (e.g., 'Core Practice') and your goal, run `get_practice_guidance`. This tool provides detailed, actionable guidance specific to both the technique and your mental objective.
+
+
 ## Installation & Usage
 
-To install and use the **Meditation Session Planner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/meditation-session-planner](https://vinkius.com/mcp/meditation-session-planner)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Meditation Session Planner** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `meditation-session-planner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Meditation Session Planner** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "meditation-session-planner": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

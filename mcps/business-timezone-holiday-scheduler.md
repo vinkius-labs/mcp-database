@@ -1,7 +1,6 @@
 # Business Timezone & Holiday Scheduler MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/business-timezone-holiday-scheduler)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/business-timezone-holiday-scheduler-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/business-timezone-holiday-scheduler-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/business-timezone-holiday-scheduler)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -54,12 +53,49 @@ Skipping all weekends and public holidays in Brazil (BR), your deadline falls pr
 Your launch in Tokyo will be early the next morning.
 
 
+## ❓ FAQ
+
+**Q: Does this require an API key?**
+No. The timezone logic runs directly inside the Vinkius Edge process. For holiday lookups, it uses the free, public Nager.Date API without requiring authentication.
+
+**Q: Why use this instead of letting the AI guess?**
+AIs do not have access to live calendars or global holiday databases. They will frequently schedule your deadlines on a Sunday or a major national holiday. This MCP enforces absolute temporal accuracy.
+
+
 ## Installation & Usage
 
-To install and use the **Business Timezone & Holiday Scheduler** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/business-timezone-holiday-scheduler](https://vinkius.com/mcp/business-timezone-holiday-scheduler)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Business Timezone & Holiday Scheduler** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `business-timezone-holiday-scheduler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Business Timezone & Holiday Scheduler** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "business-timezone-holiday-scheduler": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

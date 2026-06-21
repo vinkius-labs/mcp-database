@@ -1,7 +1,6 @@
 # Snov.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snovio-alternative-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/snovio-alternative-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/snovio-alternative-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snovio-alternative-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Snov.io** MCP server u
 > Successfully added Alice Johnson to list 987654. She is now ready for your outreach campaigns.
 
 
+## ❓ FAQ
+
+**Q: How can I find all email addresses for a specific company domain?**
+Use the `domain_search` tool by providing the target domain (e.g., 'example.com'). You can also filter by type (personal or generic) and set a limit on the number of results.
+
+**Q: Can I verify if a list of emails is safe to send to?**
+Yes! Use the `verify_emails` tool with an array of email addresses. The agent will return the verification status for each, identifying valid, invalid, or catch-all addresses.
+
+**Q: How do I add a new lead to a specific Snov.io list?**
+Use the `add_prospect` action. Provide the email address and the `listId`. You can also optionally include the prospect's first and last name.
+
+
 ## Installation & Usage
 
-To install and use the **Snov.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/snovio-alternative-1](https://vinkius.com/mcp/snovio-alternative-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Snov.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `snovio-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Snov.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "snovio-alternative-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Osu! MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/osu)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/osu-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/osu-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/osu)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Osu!** MCP server usin
 > With DoubleTime applied, beatmap 987654 increases from 5.2 stars to 7.4 stars. The Approach Rate (AR) is now 10.3 and the BPM has increased to 270.
 
 
+## ❓ FAQ
+
+**Q: Can I calculate the difficulty of a beatmap with specific mods like DoubleTime or HardRock?**
+Yes! Use the `get_beatmap_attributes` tool. You can provide the Beatmap ID and an array of mods to get the adjusted difficulty metrics like Star Rating, AR, and OD.
+
+**Q: How do I find my own profile statistics?**
+Simply run the `get_me` tool. It will return your public profile data, including your global rank, PP, and accuracy for your primary ruleset.
+
+**Q: Is it possible to search for new beatmapsets by a specific artist?**
+Yes, use the `search_beatmapsets` tool with a query string. For example, searching for 'Camellia' will return all relevant beatmapsets associated with that artist.
+
+
 ## Installation & Usage
 
-To install and use the **Osu!** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/osu](https://vinkius.com/mcp/osu)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Osu!** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `osu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Osu!** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "osu": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

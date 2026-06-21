@@ -1,7 +1,6 @@
 # Freshmarketer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshmarketer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freshmarketer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freshmarketer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshmarketer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,55 @@ Here are some examples of how you can interact with the **Freshmarketer** MCP se
 > Email triggered! The transactional 'Welcome Email' has been successfully dispatched to newuser@example.com.
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Key for Freshmarketer?**
+Log in to your Freshmarketer account, go to Settings (gear icon), and select API Settings to generate or view your API Key.
+
+**Q: What is my 'Domain prefix'?**
+Your domain prefix is the first part of your Freshmarketer URL (e.g. if your URL is 'acme.freshmarketer.com', the prefix is 'acme').
+
+**Q: Can I send a one-off transactional email through the agent?**
+Yes, use the 'send_transactional_email' tool and provide the recipient's email and the Campaign ID configured in your account.
+
+**Q: How do I trigger an automation journey via chat?**
+Use the 'post_custom_event' tool to log an event for a specific contact. If a journey is configured to start on that event, it will trigger automatically.
+
+
 ## Installation & Usage
 
-To install and use the **Freshmarketer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/freshmarketer](https://vinkius.com/mcp/freshmarketer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Freshmarketer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `freshmarketer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Freshmarketer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "freshmarketer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

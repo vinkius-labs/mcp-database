@@ -1,7 +1,6 @@
 # Skedda MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skedda)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/skedda-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/skedda-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skedda)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Let me know if you need to adjust or update the allocated timeframe.
 Both have been successfully deleted from the platform.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find an available room for tomorrow and book it?**
+Yes. While your agent can list existing schedules across specific dates using ISO 8601 timeframes, it can dynamically cross-reference that with your list of available spaces. Once a gap is confirmed, the agent will prompt the booking creation tool linking your user ID to instantly reserve the room.
+
+**Q: How will my AI know which space ID to book if I only know its name?**
+You can simply mention the plain name (e.g., 'Book the Innovation Boardroom'). The agent will intelligently call the 'list_spaces' tool in the background first, match your requested string to the correct internal resource ID, and generate the final reservation seamlessly.
+
+**Q: Can I bulk cancel multiple reservations if an event reschedules?**
+Absolutely. You can request your AI to 'list all bookings for Monday', ask it to filter down to specific ones based on timeframe or assignee, and instruct it to execute a deletion for each matching reservation sequentially.
+
+
 ## Installation & Usage
 
-To install and use the **Skedda** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/skedda](https://vinkius.com/mcp/skedda)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Skedda** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `skedda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Skedda** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "skedda": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

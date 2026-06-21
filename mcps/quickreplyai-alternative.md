@@ -1,7 +1,6 @@
 # QuickReply.ai MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quickreplyai-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/quickreplyai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/quickreplyai-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quickreplyai-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **QuickReply.ai** MCP se
 > I've retrieved the stats for your campaigns. In the last 24 hours, you had 1,250 messages sent with a 98% delivery rate and 45% read rate.
 
 
+## ❓ FAQ
+
+**Q: Can I trigger a WhatsApp journey using a webhook receiver ID?**
+Yes! Use the `trigger_journey_event` tool with the specific receiver ID generated from your Webhook Data Source. You can also pass custom fields to personalize the journey.
+
+**Q: How do I send a pre-approved WhatsApp template with variables?**
+Use the `send_template` tool. Provide the `template_id`, the recipient's phone number, and an array of `params` to replace the variables in your template body.
+
+**Q: Can I send free-form text messages to customers?**
+Yes, as long as it is within the 24-hour service window. Use the `send_session_message` tool to send text and optional images to your users.
+
+
 ## Installation & Usage
 
-To install and use the **QuickReply.ai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/quickreplyai-alternative](https://vinkius.com/mcp/quickreplyai-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **QuickReply.ai** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `quickreplyai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **QuickReply.ai** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "quickreplyai-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Poké MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/poke)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/poke-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/poke-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/poke)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -112,12 +111,52 @@ Here are some examples of how you can interact with the **Poké** MCP server usi
 > I found several encounter methods, including 'walk' (walking in tall grass), 'old-rod' (fishing), 'surf' (moving on water), and 'headbutt' (shaking trees). Which one would you like to explore further?
 
 
+## ❓ FAQ
+
+**Q: How can I find the specific details of a berry by its name?**
+Use the `get_berry` tool and provide the name (e.g., 'cheri'). The agent will return its growth time, max harvest, size, and smoothness.
+
+**Q: Can I list all the different ways a Pokémon can be encountered?**
+Yes, use the `list_encounter_methods` tool. It provides a paginated list of all methods like 'walk', 'old-rod', or 'surf' used in the games.
+
+**Q: Is it possible to check the effects of Pokémon Contests?**
+Absolutely. You can use `list_contest_effects` to see available effects or `get_contest_effect` with a specific ID to see the detailed appeal and jam metadata.
+
+
 ## Installation & Usage
 
-To install and use the **Poké** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/poke](https://vinkius.com/mcp/poke)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Poké** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `poke` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Poké** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "poke": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

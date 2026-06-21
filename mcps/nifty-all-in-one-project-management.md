@@ -1,7 +1,6 @@
 # Nifty (All-in-One Project Management) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nifty-all-in-one-project-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nifty-all-in-one-project-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nifty-all-in-one-project-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nifty-all-in-one-project-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Nifty (All-in-One Proj
 > Retrieving portfolios… I've identified 2 grouped collections: 'Engineering Initiatives' (Spanning 5 projects) and 'Corporate Program Management'. I can provide the project rollup data for either of these portfolios if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Can I see the backlog of tasks for a specific Nifty project through my agent?**
+Yes. Use the `list_tasks` tool with a specific Project ID. Your agent will retrieve all active tasks, their current statuses, and assigned members, allowing you to monitor project progress without opening the Nifty dashboard.
+
+**Q: How do I check the sprint milestones for my team?**
+The `list_milestones` tool allows your agent to extract the chronological timeline constraints for a given Project ID. You'll see the planned phases and delivery dates, helping you analyze the high-level roadmap through conversation.
+
+**Q: Can my agent list all members in our Nifty workspace?**
+Absolutely. Use the `list_members` tool to retrieve the directory of registered users scoped against your Nifty domain. Your agent will report the member names and internal account IDs used for task assignments.
+
+
 ## Installation & Usage
 
-To install and use the **Nifty (All-in-One Project Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nifty-all-in-one-project-management](https://vinkius.com/mcp/nifty-all-in-one-project-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nifty (All-in-One Project Management)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nifty-all-in-one-project-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nifty (All-in-One Project Management)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nifty-all-in-one-project-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

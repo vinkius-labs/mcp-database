@@ -1,7 +1,6 @@
 # Figma MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/figma)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/figma-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/figma-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/figma)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Figma** MCP server usi
 > Generating images... I've rendered the requested nodes. You can view them here: [Link to Node 1:2], [Link to Node 1:5]. These links are valid for 30 days flawlessly.
 
 
+## ❓ FAQ
+
+**Q: How do I obtain my Figma Personal Access Token?**
+Log in to Figma, click on your name in the top-left to go to **Account Settings**, scroll down to the **Personal access tokens** section, and click **Create a new personal access token**.
+
+**Q: Where can I find the File Key?**
+Open any Figma file in your browser. The URL will look like `https://www.figma.com/file/:key/:title`. The random string of characters after `/file/` is your File Key.
+
+**Q: Can I render design layers as images via chat?**
+Yes! The `get_images` tool allows you to specify a File Key and Node IDs to receive high-quality render URLs in PNG, SVG, or PDF formats flawlessy.
+
+
 ## Installation & Usage
 
-To install and use the **Figma** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/figma](https://vinkius.com/mcp/figma)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Figma** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `figma` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Figma** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "figma": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

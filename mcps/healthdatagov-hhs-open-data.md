@@ -1,7 +1,6 @@
 # HealthData.gov (HHS Open Data) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/healthdatagov-hhs-open-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/healthdatagov-hhs-open-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/healthdatagov-hhs-open-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/healthdatagov-hhs-open-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **HealthData.gov (HHS Op
 > Fetching the first 10 entries from the HealthData.gov catalog... I've retrieved datasets including 'Medicare Provider Utilization', 'Community Health Status Indicators', and 'National Health Nutrition Examination Survey'. Which one would you like to explore?
 
 
+## ❓ FAQ
+
+**Q: How do I find a specific dataset about 'Medicare'?**
+Use the `get_catalog` tool and provide 'Medicare' in the `q` parameter. This will return a list of relevant datasets along with their unique identifiers (dataset_id).
+
+**Q: Can I filter results to only show data from a specific state?**
+Yes! When using `query_dataset`, use the `$where` parameter with a SoQL filter like `state='NY'`. You can also use `$select` to pick specific columns.
+
+**Q: Is an API key required to access this data?**
+No, the data is public. However, providing a `HEALTHDATA_APP_TOKEN` is recommended for higher rate limits if you plan to perform many queries.
+
+
 ## Installation & Usage
 
-To install and use the **HealthData.gov (HHS Open Data)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/healthdatagov-hhs-open-data](https://vinkius.com/mcp/healthdatagov-hhs-open-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HealthData.gov (HHS Open Data)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `healthdatagov-hhs-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HealthData.gov (HHS Open Data)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "healthdatagov-hhs-open-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

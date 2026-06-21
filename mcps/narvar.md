@@ -1,7 +1,6 @@
 # Narvar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/narvar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/narvar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/narvar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/narvar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Narvar** MCP server us
 > I have triggered the 'DELIVERED_CONFIRMATION' notification for order ORD-123. It has been sent to customer@example.com via Email.
 
 
+## ❓ FAQ
+
+**Q: Can I track a package without knowing the carrier?**
+Yes, although providing the carrier helps accuracy. Use `get_tracking` with the tracking number, and the system will attempt to retrieve the latest events from Narvar's network.
+
+**Q: How do I generate a return label for a customer?**
+Use the `create_return` tool. You will need to provide the order number, customer details, and the items being returned. The agent will then initiate the return flow in Narvar.
+
+**Q: Can I get delivery estimates before an order is placed?**
+Absolutely. Use the `get_estimated_delivery_dates` tool by providing the origin, destination, and items. This is perfect for showing accurate shipping times during checkout.
+
+
 ## Installation & Usage
 
-To install and use the **Narvar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/narvar](https://vinkius.com/mcp/narvar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Narvar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `narvar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Narvar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "narvar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

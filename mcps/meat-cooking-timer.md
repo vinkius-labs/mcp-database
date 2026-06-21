@@ -1,7 +1,6 @@
 # Meat Cooking Timer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meat-cooking-timer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meat-cooking-timer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meat-cooking-timer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meat-cooking-timer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Meat Cooking Timer** M
 > By using `validate_cooking_context`, the system can confirm if your specific cut is compatible with the Grill method.
 
 
+## ❓ FAQ
+
+**Q: How can I find the correct temperature for chicken?**
+You can use the `get_target_temperature` tool. It will return the required Celsius and Fahrenheit temperatures, ensuring they meet USDA safety minimums for poultry.
+
+**Q: Can I estimate cooking time for a specific weight?**
+The tool `calculate_cooking_time` allows you to input the meat type, cut, weight in grams, and method to get an estimated duration.
+
+**Q: Does it support Sous Vide cooking?**
+Yes. The `calculate_cooking_time` tool specifically accounts for the Sous Vide method, adjusting the duration multiplier accordingly.
+
+
 ## Installation & Usage
 
-To install and use the **Meat Cooking Timer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/meat-cooking-timer](https://vinkius.com/mcp/meat-cooking-timer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Meat Cooking Timer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `meat-cooking-timer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Meat Cooking Timer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "meat-cooking-timer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

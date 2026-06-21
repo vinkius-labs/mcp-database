@@ -1,7 +1,6 @@
 # Fauna (Serverless DB) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fauna-serverless-db)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fauna-serverless-db-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fauna-serverless-db-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fauna-serverless-db)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Fauna (Serverless DB)*
 > Executing `Logs.create({ message: 'System started' })`. The document has been successfully created with a new timestamp.
 
 
+## ❓ FAQ
+
+**Q: Can I perform write operations like creating or updating documents?**
+Yes. The `execute_fql` tool allows any valid FQL command. If your Fauna Secret has the appropriate permissions (e.g., 'server' or 'admin' role), you can create, update, and delete data.
+
+**Q: How do I handle complex query arguments?**
+You can use the optional `arguments` parameter in the `execute_fql` tool. Pass a JSON object containing your variables, and reference them within your FQL string.
+
+**Q: Does this support Fauna's regional endpoints?**
+Yes. You can provide a `FAUNA_REGION_URL` (e.g., for US or EU regions) as an optional credential during setup to ensure the agent connects to the correct database cluster.
+
+
 ## Installation & Usage
 
-To install and use the **Fauna (Serverless DB)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fauna-serverless-db](https://vinkius.com/mcp/fauna-serverless-db)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fauna (Serverless DB)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fauna-serverless-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fauna (Serverless DB)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fauna-serverless-db": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

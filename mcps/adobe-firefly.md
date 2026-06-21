@@ -1,7 +1,6 @@
 # Adobe Firefly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-firefly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adobe-firefly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adobe-firefly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-firefly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Adobe Firefly** MCP se
 > Processing image... I've commanded Adobe Firefly to remove the background from img_789. I'll provide the transparent PNG link for you synchronously.
 
 
+## ❓ FAQ
+
+**Q: Can my agent generate SVG vector files using Adobe Firefly?**
+Yes. Use the 'text_to_vector' tool. Provide a descriptive prompt, and the agent will command the Firefly engine to produce editable SVG vector graphics natively, which are perfect for use in Adobe Illustrator.
+
+**Q: How do I perform generative fill on an image via chat?**
+First, use 'upload_image' to get an 'image_id'. Then, use the 'generative_fill' tool by providing the image ID, a mask ID (for the area to fill), and your prompt. The agent will execute the AI fill synchronously.
+
+**Q: Can I remove the background of an image through the agent?**
+Absolutely. Use the 'remove_background' tool. After uploading your source image and retrieving its ID, the agent will command Firefly to process the file and return a transparent PNG body synchronously.
+
+
 ## Installation & Usage
 
-To install and use the **Adobe Firefly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/adobe-firefly](https://vinkius.com/mcp/adobe-firefly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Adobe Firefly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `adobe-firefly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Adobe Firefly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "adobe-firefly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

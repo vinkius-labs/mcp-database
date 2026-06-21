@@ -1,7 +1,6 @@
 # CloudTalk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudtalk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudtalk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudtalk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudtalk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **CloudTalk** MCP server
 > Call initiated to +123456789 from your extension (ext. 204). Status: ringing. Call ID: call_8f3a2b. You'll receive a notification when the call connects.
 
 
+## ❓ FAQ
+
+**Q: How do I find my CloudTalk API credentials?**
+You can find your API Access Key ID and Secret in the CloudTalk Dashboard under Account > Settings > API keys.
+
+**Q: Can I record calls with this MCP server?**
+While the server doesn't initiate recording itself, it can retrieve links to call recordings if they were enabled in your CloudTalk settings.
+
+**Q: Which numbers can I use for making calls?**
+You can use any of your verified CloudTalk numbers as the sender and any valid international phone number as the recipient.
+
+
 ## Installation & Usage
 
-To install and use the **CloudTalk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cloudtalk](https://vinkius.com/mcp/cloudtalk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CloudTalk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cloudtalk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CloudTalk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cloudtalk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # TrueReview MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/truereview)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/truereview-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/truereview-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/truereview)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **TrueReview** MCP serve
 > I've fetched your report summary. Over the last 30 days, you've received 12 new reviews with an average rating of 4.8 stars. Your response rate is currently 92%. Shall I list the individual feedback comments?
 
 
+## ❓ FAQ
+
+**Q: Can I send a review request via SMS using the AI?**
+Yes! Use the `send_review_request` tool. Provide the Contact ID and set the type to 'sms'. The agent will trigger the SMS request through TrueReview instantly.
+
+**Q: How do I see the overall feedback summary for my business?**
+Run the `get_report_summary` query. The agent will retrieve a concise report of your review performance and customer satisfaction metrics.
+
+**Q: Is it possible to add a new customer contact via AI?**
+Absolutely. Use the `create_contact` action. Provide the first name, last name, and email or phone number to register a new customer for future review requests.
+
+
 ## Installation & Usage
 
-To install and use the **TrueReview** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/truereview](https://vinkius.com/mcp/truereview)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TrueReview** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `truereview` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TrueReview** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "truereview": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Mashvisor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mashvisor)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mashvisor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mashvisor-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mashvisor)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Mashvisor** MCP server
 > Austin, TX rental estimates: 1BR: $1,400/mo | 2BR: $1,750/mo | 3BR: $2,100/mo | 4BR: $2,600/mo | 5BR: $3,200/mo. The 3BR average is based on 1,200+ comparable rentals in the area.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Mashvisor API Key?**
+Sign up at [**Mashvisor**](https://www.mashvisor.com/), go to your account settings, and generate an API key. API access requires an active subscription.
+
+**Q: What investment metrics are available?**
+Cap rate, cash-on-cash return, occupancy rate, average daily rate (ADR), monthly/annual revenue, RevPAR, and rental rates for both Airbnb (STR) and traditional (LTR) strategies.
+
+**Q: Can I compare Airbnb vs traditional rental income?**
+Yes! Every property analysis includes both STR (Airbnb) and LTR (traditional) metrics side by side, including cap rates and cash-on-cash returns for each strategy.
+
+
 ## Installation & Usage
 
-To install and use the **Mashvisor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mashvisor](https://vinkius.com/mcp/mashvisor)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mashvisor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mashvisor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mashvisor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mashvisor": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

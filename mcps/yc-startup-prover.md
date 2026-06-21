@@ -1,7 +1,6 @@
 # YC Startup Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yc-startup-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/yc-startup-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/yc-startup-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yc-startup-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **YC Startup Prover** MC
 > Two axes pass (problem, unscalable). Three fail. VANITY METRICS: signups, page views, downloads are vanity. What is weekly RETENTION? Revenue? Default alive? FEATURE BLOAT: 4 live + 8 planned = 12 features. What is the ONE thing? Strip to the core 10x value.
 
 
+## ❓ FAQ
+
+**Q: Why does it reject 'our proprietary algorithm'?**
+PG: 'Make something people want.' Not 'build something cool.' Start from the problem. Who has it? How do they solve it today? How much do they pay? The technology is the last step, not the first.
+
+**Q: What does 'default alive' mean?**
+At current growth rate and burn rate, will you reach profitability before running out of money? Yes = default alive. No = default dead. This single question determines if you survive.
+
+**Q: Why ONE thing instead of many features?**
+Dropbox: file sync. Stripe: payments in 7 lines of code. The feature list is the problem. Find the one thing you do 10x better and strip everything else. Users describe you by your one thing or they do not describe you at all.
+
+
 ## Installation & Usage
 
-To install and use the **YC Startup Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/yc-startup-prover](https://vinkius.com/mcp/yc-startup-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **YC Startup Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `yc-startup-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **YC Startup Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "yc-startup-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

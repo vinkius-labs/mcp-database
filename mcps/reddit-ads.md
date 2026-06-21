@@ -1,7 +1,6 @@
 # Reddit Ads MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reddit-ads)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reddit-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reddit-ads-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reddit-ads)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Reddit Ads** MCP serve
 > I've generated your report for last week. Your total spend was $450 with an average CPC of $0.85. Would you like a breakdown by ad group?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Reddit Ads Access Token?**
+Go to your Reddit account settings, under **App Management**, and create a new script app to generate an OAuth token. Copy and paste it into the field below.
+
+**Q: Can the agent list performance for specific ad groups?**
+Yes. Use the `get_report` tool providing the Ad Account ID and the desired date range. Your agent will return detailed metrics such as impressions, clicks, and spend.
+
+**Q: Is it possible to check the status of my creative assets?**
+Yes. The `list_creative_assets` tool allows your agent to retrieve all uploaded media and their metadata, ensuring your creative pipeline is ready.
+
+
 ## Installation & Usage
 
-To install and use the **Reddit Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/reddit-ads](https://vinkius.com/mcp/reddit-ads)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Reddit Ads** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `reddit-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Reddit Ads** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "reddit-ads": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

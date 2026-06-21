@@ -1,7 +1,6 @@
 # EBI InterPro MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ebi-interpro)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ebi-interpro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ebi-interpro-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ebi-interpro)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -117,12 +116,52 @@ Here are some examples of how you can interact with the **EBI InterPro** MCP ser
 > I found the Pfam entry PF00069 (protein kinase domain) and retrieved its InterPro integration (IPR000719). The taxonomic distribution shows this domain is universally conserved across all kingdoms of life — from bacteria and archaea to plants, fungi, and animals. The human genome alone contains hundreds of kinase domain-containing proteins, making this one of the most expanded protein families in eukaryotic evolution.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No. The InterPro API is completely public and requires no authentication. Enter any placeholder value in the API key field to activate the server immediately.
+
+**Q: What databases does InterPro integrate?**
+InterPro integrates 13+ member databases including Pfam (protein families), CDD (conserved domains from NCBI), SMART (signalling domains), Prosite (patterns and profiles), PANTHER (evolutionary classification), Gene3D (structural domains from CATH), HAMAP (microbial families), PRINTS (fingerprints), PIRSF (classification system), SFLD (superfamilies), and NCBIfam. This gives you a unified view of protein domain and family annotations from the world's leading classification resources.
+
+**Q: Can I find which organisms have a specific protein domain?**
+Yes. Use the get_entry_taxonomy tool with any InterPro accession to see the taxonomic distribution of that domain or family. This shows which organisms — from bacteria to humans — contain proteins with that specific domain. It is one of the most powerful tools for evolutionary biology, revealing how protein domains have been conserved or diversified across the tree of life.
+
+
 ## Installation & Usage
 
-To install and use the **EBI InterPro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ebi-interpro](https://vinkius.com/mcp/ebi-interpro)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EBI InterPro** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ebi-interpro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EBI InterPro** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ebi-interpro": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

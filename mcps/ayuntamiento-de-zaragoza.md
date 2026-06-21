@@ -1,7 +1,6 @@
 # Ayuntamiento de Zaragoza MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ayuntamiento-de-zaragoza)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ayuntamiento-de-zaragoza-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ayuntamiento-de-zaragoza-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ayuntamiento-de-zaragoza)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **Ayuntamiento de Zarago
 > Checking the 'Padron' agenda... There are 3 available slots tomorrow: 09:00, 10:30, and 11:15. Would you like me to book one of these for you?
 
 
+## ❓ FAQ
+
+**Q: How can I find specific monuments or restaurants in Zaragoza?**
+Use the `query_dataset` tool. You can specify the dataset (e.g., 'monumento' or 'restaurante') and apply filters like 'q' for names or 'point' and 'distance' for proximity searches.
+
+**Q: Can I report a broken street light or a pothole using this server?**
+Yes! Use the `submit_open311_request` tool. You'll need to provide the `service_code` (which you can find via `list_open311_services`) and a description of the issue.
+
+**Q: How do I check if there are available slots for a city hall appointment?**
+First, list available agendas with `list_agendas`, then use `get_agenda_availability` with the specific agenda ID to see open time slots.
+
+
 ## Installation & Usage
 
-To install and use the **Ayuntamiento de Zaragoza** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ayuntamiento-de-zaragoza](https://vinkius.com/mcp/ayuntamiento-de-zaragoza)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ayuntamiento de Zaragoza** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ayuntamiento-de-zaragoza` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ayuntamiento de Zaragoza** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ayuntamiento-de-zaragoza": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

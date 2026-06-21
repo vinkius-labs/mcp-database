@@ -1,7 +1,6 @@
 # Lodgify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lodgify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lodgify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lodgify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lodgify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Lodgify** MCP server u
 > In the last 30 days, your website received 1,200 views resulting in 48 quotes and 15 confirmed bookings. This represents a 1.25% visitor-to-booking conversion rate, slightly up from last month.
 
 
+## ❓ FAQ
+
+**Q: What is Lodgify?**
+Lodgify is a vacation rental management platform with built-in booking website builder, channel manager, and payment processing. Used by 100,000+ property managers.
+
+**Q: Can I process direct reservations automatically?**
+Yes, you can request the AI to check availability, calculate quotes, and generate reservation drafts for direct bookings. However, capturing payment details is handled securely by Lodgify's checkout flow.
+
+**Q: Does this sync with other channels like Airbnb or Booking.com?**
+Since this MCP interacts with Lodgify's core database, any updates to rates, availability, or reservations are automatically pushed to your connected OTA channels via Lodgify's built-in channel manager.
+
+
 ## Installation & Usage
 
-To install and use the **Lodgify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lodgify](https://vinkius.com/mcp/lodgify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lodgify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lodgify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lodgify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lodgify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

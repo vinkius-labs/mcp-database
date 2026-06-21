@@ -1,7 +1,6 @@
 # Trakt MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trakt)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/trakt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/trakt-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trakt)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -117,12 +116,55 @@ Here are some examples of how you can interact with the **Trakt** MCP server usi
 > The Matrix (1999) — Directors: Lana Wachowski, Lilly Wachowski. Cast: Keanu Reeves (Neo), Laurence Fishburne (Morpheus), Carrie-Anne Moss (Trinity), Hugo Weaving (Agent Smith), Joe Pantoliano (Cypher).
 
 
+## ❓ FAQ
+
+**Q: How do I get a Trakt Client ID?**
+Sign up for a free Trakt account at [**trakt.tv**](https://trakt.tv), go to [**OAuth Applications**](https://trakt.tv/oauth/applications), click 'Create an Application' and fill in the details. Your Client ID is displayed immediately.
+
+**Q: Can I use IDs from IMDb or TVDB?**
+Yes! Trakt accepts Trakt IDs, URL slugs (e.g. 'the-matrix'), IMDb IDs (e.g. 'tt0133093') and TMDB IDs for movies. For shows it accepts Trakt IDs, slugs, TVDB IDs and TMDB IDs.
+
+**Q: What's the difference between trending and popular?**
+Trending shows what users are actively watching RIGHT NOW (real-time). Popular shows have the highest overall engagement over time. Trending is more dynamic and changes frequently.
+
+**Q: Can I sync my watchlist and history?**
+Yes! Use get_watchlist, get_watched, get_collection and get_history with OAuth authentication. These endpoints require an access token in addition to your Client ID. Visit trakt.tv/oauth/applications to set up OAuth.
+
+
 ## Installation & Usage
 
-To install and use the **Trakt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/trakt](https://vinkius.com/mcp/trakt)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Trakt** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `trakt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Trakt** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "trakt": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Later (Social Media Management) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/later-social-media-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/later-social-media-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/later-social-media-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/later-social-media-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Later (Social Media Ma
 > Retrieving analytics for 'techcorp_ig'… Last month, you achieved 125,400 total impressions, reached 45,200 unique accounts, and had 3,850 total interactions (likes, comments, saves). This is a 12% increase compared to the previous month. Great progress!
 
 
+## ❓ FAQ
+
+**Q: Can I schedule posts for different social networks at once?**
+Yes. The `create_post` tool allows you to specify a profile ID. You can command your agent to create multiple posts targeting different profiles (e.g., Instagram and TikTok) sequentially using the same or different captions.
+
+**Q: How do I see my upcoming scheduled content across all profiles?**
+Use the `get_calendar` tool and provide a date range (start and end dates). Your agent will retrieve the global content calendar, identifying all structural post boundaries across your entire Later account.
+
+**Q: Can my agent retrieve analytics for a specific time period?**
+Absolutely. The `get_analytics` tool allows your agent to fetch rolled-up metrics like impressions and reach for a specific profile between two dates, providing a rapid summary of your social performance.
+
+
 ## Installation & Usage
 
-To install and use the **Later (Social Media Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/later-social-media-management](https://vinkius.com/mcp/later-social-media-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Later (Social Media Management)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `later-social-media-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Later (Social Media Management)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "later-social-media-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

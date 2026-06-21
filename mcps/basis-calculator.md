@@ -1,7 +1,6 @@
 # Basis Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/basis-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/basis-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/basis-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/basis-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -49,12 +48,52 @@ Here are some examples of how you can interact with the **Basis Calculator** MCP
 > During the Harvest season, the basis movement direction is typically identified as part of the seasonal behavior profile.
 
 
+## ❓ FAQ
+
+**Q: How can I calculate the current market parity?**
+Use the `calculate_current_basis` tool by providing the local physical price and the futures contract price for the same maturity.
+
+**Q: Can I check historical basis values for specific regions?**
+Yes. By using `get_historical_averages`, an agent can retrieve hardcoded historical mean basis values for a given location and commodity.
+
+**Q: Does the server provide information on seasonal trends?**
+Yes, the `get_seasonality_trend` tool identifies expected basis movements (Increasing, Decreasing, or Stable) based on whether it is currently Harvest or Off-season.
+
+
 ## Installation & Usage
 
-To install and use the **Basis Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/basis-calculator](https://vinkius.com/mcp/basis-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Basis Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `basis-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Basis Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "basis-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

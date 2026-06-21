@@ -1,7 +1,6 @@
 # Viesus MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/viesus)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/viesus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/viesus-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/viesus)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Viesus** MCP server us
 > Fetching metadata... The image (ID: img_10293) has a resolution of 4000x3000px, uses the sRGB color space, and is in JPEG format. Shall we apply an enhancement preset to it?
 
 
+## ❓ FAQ
+
+**Q: Can I check how many credits I have left in Viesus?**
+Yes! Use the `get_account_credit_balance` tool. Your agent will retrieve the current number of processing credits available in your account.
+
+**Q: How do I download the enhanced version of my image?**
+Once the job status is 'completed', use the `get_enhanced_image_url` tool with your Job ID to get the direct download link for the final photo.
+
+**Q: What are the supported file formats for enhancement?**
+You can run the `list_supported_file_formats` query to see a complete and up-to-date list of all input and output formats supported by the Viesus API.
+
+
 ## Installation & Usage
 
-To install and use the **Viesus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/viesus](https://vinkius.com/mcp/viesus)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Viesus** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `viesus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Viesus** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "viesus": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

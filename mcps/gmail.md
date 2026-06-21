@@ -1,7 +1,6 @@
 # Gmail MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gmail)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gmail-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gmail-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gmail)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -145,12 +144,52 @@ Here are some examples of how you can interact with the **Gmail** MCP server usi
 > Successfully filtered 14 emails inside standard promotions and altered their flags globally to 'read'. The inbox footprint is clean.
 
 
+## ❓ FAQ
+
+**Q: Can the AI send emails autonomously on my behalf?**
+Yes, if authorized by you in the conversational context. The `send_email` tool allows fully crafting, attaching subject lines, and dispatching payloads out of your alias.
+
+**Q: How does searching work in a massively clogged inbox?**
+The integration exposes a wrapper around Google's native filtering syntax. You simply supply native params like "is:unread from:dev" and the egress bounds automatically stream only small context snippets.
+
+**Q: Is my email data retained or trained by the server?**
+No, Vurb MCP architecture operates exclusively locally. The network connection executes your query endpoint-to-endpoint securely matching Google standard scopes directly to your client.
+
+
 ## Installation & Usage
 
-To install and use the **Gmail** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gmail](https://vinkius.com/mcp/gmail)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gmail** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gmail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gmail** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gmail": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Rockefeller Monopoly Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rockefeller-monopoly-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rockefeller-monopoly-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rockefeller-monopoly-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rockefeller-monopoly-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Rockefeller Monopoly P
 > Consolidation opportunity validated. Distressed targets at 8+6+4 = 18% would give you 46% combined share. But: vertical integration matters more than horizontal. Do these acquisitions give you control of a critical supply chain chokepoint? Acquire the chokepoint, not just the market share.
 
 
+## ❓ FAQ
+
+**Q: Why does it reject 'healthy competition'?**
+Competition is inefficiency. Rockefeller acquired 90% of US refining capacity — he did not differentiate, he consolidated. Acquire, partner, or make their economics untenable. Coexistence is a strategy for the weak.
+
+**Q: Why does it demand cost-per-unit tracking?**
+Rockefeller tracked every cork, every drop of solder, every nail. His refining cost was 1/3 of competitors. If you cannot name your cost-per-unit, you are not managing costs — you are hoping. Dominance requires 30%+ cost advantage.
+
+**Q: What is DEPENDENCY_ABSENT?**
+Your customers can leave tomorrow. Rockefeller controlled the pipelines — there was no transport without Standard Oil. What infrastructure do YOU control that makes switching impossible? If they can leave, you have a preference, not dominance.
+
+
 ## Installation & Usage
 
-To install and use the **Rockefeller Monopoly Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rockefeller-monopoly-prover](https://vinkius.com/mcp/rockefeller-monopoly-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rockefeller Monopoly Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rockefeller-monopoly-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rockefeller Monopoly Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rockefeller-monopoly-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

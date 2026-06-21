@@ -1,7 +1,6 @@
 # Documo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/documo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/documo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/documo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/documo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Documo** MCP server us
 > Fax 'FAX-9988' sent to '+1 (555) 4444' is currently 'Delivered'. It was 4 pages long and transmitted via the 'Main Office' line. Should I pull the delivery receipt?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Documo (mFax) API Key?**
+Log in to your Documo/mFax portal, navigate to **Settings > API**, and you can generate or retrieve your unique API Key from there. Ensure you have the necessary plan permissions.
+
+**Q: Can the agent send new faxes?**
+This integration currently focuses on listing and auditing faxes, numbers, and users. Sending new faxes with attachments should be managed via the Documo web portal or print driver.
+
+**Q: Does it support HIPAA compliant faxing?**
+Documo/mFax is built for security and compliance (including HIPAA). This integration uses official API protocols to access your secure transmission data.
+
+
 ## Installation & Usage
 
-To install and use the **Documo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/documo](https://vinkius.com/mcp/documo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Documo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `documo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Documo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "documo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

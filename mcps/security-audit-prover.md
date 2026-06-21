@@ -1,7 +1,6 @@
 # Security Audit Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/security-audit-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/security-audit-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/security-audit-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/security-audit-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Security Audit Prover*
 > Verdict: SECRETS_EXPOSED. Saving credentials directly in keys.js is a critical security vulnerability. Move the secrets to environment variables, access them using process.env, and add keys.js to .gitignore. Git history preserves committed credentials even if you delete them later.
 
 
+## ❓ FAQ
+
+**Q: How does Security Audit Prover analyze my code?**
+It validates security decisions using a 5-pivot structured reasoning engine. You feed it your validation techniques, secret storage strategy, database parameterized query mappings, and auth setup. It rejects configurations that expose you to vulnerability.
+
+**Q: Does it replace automated scanners like SonarQube?**
+No. Scanners run post-build to detect patterns. This tool forces pre-build cognitive reflection. It ensures the AI agent or developer maps out and implements a security strategy before writing code, preventing vulnerable patterns from ever being written.
+
+**Q: What security standards are enforced?**
+It uses the OWASP Top 10 (2025) vulnerability list, CWE/SANS Top 25 most dangerous software weaknesses, and NIST AI RMF safety guidelines for agentic code execution.
+
+
 ## Installation & Usage
 
-To install and use the **Security Audit Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/security-audit-prover](https://vinkius.com/mcp/security-audit-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Security Audit Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `security-audit-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Security Audit Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "security-audit-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

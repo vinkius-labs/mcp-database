@@ -1,7 +1,6 @@
 # Directus MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/directus)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/directus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/directus-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/directus)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Directus** MCP server 
 > Retrieving fields for 'orders'... This collection includes columns like 'customer_id' (UUID), 'order_date' (Timestamp), 'total_amount' (Decimal), and 'status' (String). I can provide the detailed configuration for each field.
 
 
+## ❓ FAQ
+
+**Q: Can my agent list all collections and their fields in Directus?**
+Yes. Use the 'list_schema_collections' tool to see all tables, and then use 'list_collection_fields' for a specific collection. The agent retrieves the absolute structural details defining precisely which fields accept formatting.
+
+**Q: How do I create a new record in a specific Directus collection?**
+Use the 'create_cms_record' tool. Provide the collection name and a JSON payload mapping the columns. Your agent will orchestrate the request to drop the formatted endpoint into your database and return the new UUID.
+
+**Q: Can I audit authorized users and their roles via the agent?**
+Absolutely. The 'list_directus_users' tool retrieves the explicitly mapped profile arrays iterating the exact users authorized within the database layer. This helps you monitor RBAC boundaries and organizational identities.
+
+
 ## Installation & Usage
 
-To install and use the **Directus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/directus](https://vinkius.com/mcp/directus)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Directus** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `directus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Directus** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "directus": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

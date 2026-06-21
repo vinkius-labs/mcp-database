@@ -1,7 +1,6 @@
 # Clearstory MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clearstory)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clearstory-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clearstory-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clearstory)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Clearstory** MCP serve
 > Retrieving rates for City Hospital... The standard labor rate is $85/hr for Journeymen and $65/hr for Apprentices. These are configured under the project's LMEO settings.
 
 
+## ❓ FAQ
+
+**Q: Can I see the total amount of outstanding CORs for a project?**
+Yes! Use the `list_change_order_requests` tool. The agent will return all CORs, and you can ask it to calculate or filter for the total value of those in 'Pending' or 'Under Review' status.
+
+**Q: How do I check the latest T&M tags from the field through the agent?**
+Use the `list_tm_tags` tool. Your agent will fetch the most recent digital Time & Material tags, allowing you to review labor hours and material usage without opening the web app.
+
+**Q: Where do I find my Clearstory API Key?**
+Log in to Clearstory, navigate to **Settings > Offices**, select your office, and go to the **Integrations** tab. You can generate and copy your API key from there.
+
+
 ## Installation & Usage
 
-To install and use the **Clearstory** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clearstory](https://vinkius.com/mcp/clearstory)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clearstory** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clearstory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clearstory** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clearstory": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

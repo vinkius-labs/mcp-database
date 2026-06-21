@@ -1,7 +1,6 @@
 # arXiv MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arxiv)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arxiv-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arxiv-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arxiv)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **arXiv** MCP server usi
 > Found 10 preprints in quant-ph on quantum error correction. Top results: 'Suppressing quantum errors by scaling a surface code logical qubit' — demonstrates below-threshold error rates using Google's Sycamore processor. Also: topological codes, Floquet codes, and bosonic qubit approaches. Each result includes arXiv ID, authors, abstract, and direct PDF link for immediate reading.
 
 
+## ❓ FAQ
+
+**Q: What is a preprint and how does arXiv work?**
+A preprint is a scientific paper shared publicly before formal peer review. arXiv allows researchers to share their findings immediately upon completion, accelerating scientific communication. Papers are assigned a permanent arXiv ID (e.g., 2106.09685) and are freely accessible forever. Many landmark papers in AI, physics, and math appeared on arXiv months or years before journal publication.
+
+**Q: What scientific categories and disciplines does arXiv cover?**
+arXiv covers 8 major domains: Physics (astro-ph, cond-mat, hep, quant-ph), Mathematics (math.*), Computer Science (cs.AI, cs.LG, cs.CL, cs.CV, cs.CR, etc.), Quantitative Biology (q-bio), Quantitative Finance (q-fin), Statistics (stat), Electrical Engineering (eess), and Economics (econ). Each domain has multiple sub-categories for precise filtering.
+
+**Q: Is arXiv free and do I need an API key?**
+Yes, arXiv is completely free and operated as a non-profit by Cornell University. No API key or registration is required for search queries. The only limitation is a rate limit of approximately 1 request per 3 seconds for the search API. All papers are freely downloadable as PDF and accessible in perpetuity.
+
+
 ## Installation & Usage
 
-To install and use the **arXiv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/arxiv](https://vinkius.com/mcp/arxiv)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **arXiv** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `arxiv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **arXiv** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "arxiv": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

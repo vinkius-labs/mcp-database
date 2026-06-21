@@ -1,7 +1,6 @@
 # New Relic AI (LLM Observability) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/new-relic-ai-llm-observability)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/new-relic-ai-llm-observability-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/new-relic-ai-llm-observability-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/new-relic-ai-llm-observability)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **New Relic AI (LLM Obse
 > Executing custom NRQL query… I've identified 12 LLM events in the last hour that exceeded 2 seconds in duration. This represents approximately 3% of your total traffic. Would you like me to facet these slow events by model or region?
 
 
+## ❓ FAQ
+
+**Q: Can I check my total AI token costs through my agent?**
+Yes. Use the `query_llm_costs` tool. Your agent will execute a NRQL aggregation summing the `tokenSpanCost` property from your LLM events over the last 24 hours, faceted by model, to provide a clear financial breakdown.
+
+**Q: How do I monitor the p95 latency of my LLM generations?**
+The `query_llm_latency` tool retrieves the average duration and latency matrices for your AI providers. Your agent will report the results as a timesheet or summary, helping you identify performance bottlenecks instantly.
+
+**Q: Can my agent run custom NRQL queries against my telemetry data?**
+Absolutely. Use the `custom_nrql` tool to provide any valid read-only NRQL string. Your agent will query New Relic's NerdGraph API and return the resulting dataset, allowing for complete flexibility in how you analyze your AI operations.
+
+
 ## Installation & Usage
 
-To install and use the **New Relic AI (LLM Observability)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/new-relic-ai-llm-observability](https://vinkius.com/mcp/new-relic-ai-llm-observability)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **New Relic AI (LLM Observability)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `new-relic-ai-llm-observability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **New Relic AI (LLM Observability)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "new-relic-ai-llm-observability": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

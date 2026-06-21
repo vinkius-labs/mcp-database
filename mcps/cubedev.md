@@ -1,7 +1,6 @@
 # Cube.dev MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cubedev)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cubedev-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cubedev-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cubedev)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Cube.dev** MCP server 
 > I've triggered the pre-aggregation job for the 'Sales' cube using `trigger_pre_aggregation_job`. You can check the status using the job token provided.
 
 
+## ❓ FAQ
+
+**Q: Can I see the exact SQL that Cube generates for a specific query?**
+Yes. You can use the `get_sql` tool. By providing the query JSON, the agent will return the generated SQL string, which is perfect for debugging or verifying your data logic.
+
+**Q: How do I refresh the data cache or pre-aggregations using the AI?**
+You can use the `trigger_pre_aggregation_job` tool. You can specify which cubes or data sources to target, and the agent will initiate the background build process for you.
+
+**Q: Is it possible to explore the available measures and dimensions?**
+Absolutely. Use the `get_meta` tool to fetch all metadata. This allows the AI to understand what data is available to be queried, including views and segments.
+
+
 ## Installation & Usage
 
-To install and use the **Cube.dev** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cubedev](https://vinkius.com/mcp/cubedev)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cube.dev** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cubedev` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cube.dev** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cubedev": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

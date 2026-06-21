@@ -1,7 +1,6 @@
 # OneSoil MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/onesoil)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/onesoil-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/onesoil-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/onesoil)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **OneSoil** MCP server u
 > Fetching the forecast for those coordinates... Expect clear skies for the next 3 days with temperatures between 18°C and 24°C, followed by light rain on Thursday.
 
 
+## ❓ FAQ
+
+**Q: How can I check the vegetation health of a specific field?**
+Use the `get_ndvi` tool with the Field ID. It returns historical vegetation index data points to help you analyze crop development and identify potential issues.
+
+**Q: How do I get the weather for a specific field location?**
+You can use `get_current_weather` for real-time data or `get_weather_forecast` for a 7-day outlook by providing the latitude and longitude coordinates of the field.
+
+**Q: Is it possible to add new field boundaries through the AI?**
+Yes, the `create_field` tool allows you to define new boundaries by providing a name and a GeoJSON Polygon geometry object directly in the conversation.
+
+
 ## Installation & Usage
 
-To install and use the **OneSoil** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/onesoil](https://vinkius.com/mcp/onesoil)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OneSoil** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `onesoil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OneSoil** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "onesoil": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

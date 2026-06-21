@@ -1,7 +1,6 @@
 # AstrologyAPI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/astrologyapi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/astrologyapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/astrologyapi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/astrologyapi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **AstrologyAPI** MCP ser
 > I've generated the numerology report for John Doe. Your Destiny Number is 3, reflecting creativity and self-expression. Your Radical Number is 6. Would you like me to provide a detailed explanation of what these numbers mean for your personal growth?
 
 
+## ❓ FAQ
+
+**Q: How do I find my AstrologyAPI User ID and Key?**
+Log in to the [AstrologyAPI Dashboard](https://astrologyapi.com/), navigate to the 'API Settings' or 'My Account' section, and copy your unique User ID and API Key.
+
+**Q: What is the coordinate format for birth charts?**
+AstrologyAPI requires numeric Latitude and Longitude. For example, London is approximately `lat: 51.5` and `lon: -0.12`. You should also provide the correct timezone offset (e.g., `0` for London).
+
+**Q: Does the API support Vedic astrology?**
+Yes! AstrologyAPI is a leader in Vedic calculations. Tools like `get_basic_panchang` and `get_yoga_analysis` provide deep insights based on traditional Vedic principles.
+
+
 ## Installation & Usage
 
-To install and use the **AstrologyAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/astrologyapi](https://vinkius.com/mcp/astrologyapi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AstrologyAPI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `astrologyapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AstrologyAPI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "astrologyapi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

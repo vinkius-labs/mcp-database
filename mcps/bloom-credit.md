@@ -1,7 +1,6 @@
 # Bloom Credit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bloom-credit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bloom-credit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bloom-credit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bloom-credit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Bloom Credit** MCP ser
 > Retrieving data for order ord_99283... I found a FICO score of 720 and 5 active tradelines. Would you like a detailed summary of the payment history?
 
 
+## ❓ FAQ
+
+**Q: Can I order a credit report for a new consumer using the agent?**
+Yes! First use `create_consumer` to register the individual, then use `create_order` with their Consumer ID and specify 'credit_report' as the type.
+
+**Q: How do I see the detailed data from a previously ordered report?**
+Simply ask the agent to `get_report_data` and provide the Order ID. It will retrieve the standardized credit data, including scores and tradelines, from the Bloom Credit engine.
+
+**Q: Does the integration allow reporting payment history to credit bureaus?**
+Yes. You can use the `list_furnishments` tool to monitor your reporting accounts. To submit new data, we recommend using your primary system integrated with the Bloom Credit API according to their furnishment JSON specs.
+
+
 ## Installation & Usage
 
-To install and use the **Bloom Credit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bloom-credit](https://vinkius.com/mcp/bloom-credit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bloom Credit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bloom-credit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bloom Credit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bloom-credit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

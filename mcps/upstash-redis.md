@@ -1,7 +1,6 @@
 # Upstash Redis MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upstash-redis)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/upstash-redis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/upstash-redis-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upstash-redis)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Upstash Redis** MCP se
 > Using the `delete` tool, I have entirely removed the 'user_193_avatar' cache key structure from the Upstash datastore instance. Future calls seeking this key limit will return null entries until regenerated.
 
 
+## ❓ FAQ
+
+**Q: Where do I locate my Upstash REST URL and Token?**
+Sign into your Upstash management console and load your specific Redis cluster. Scroll down visually on the main 'Details' page until you hit the 'REST API' section block. You will see both your 'UPSTASH_REDIS_REST_URL' and the alphanumeric 'UPSTASH_REDIS_REST_TOKEN' ready to be copied.
+
+**Q: Can the agent interact with standard Redis connections (redis://)?**
+No, this specific MCP connection module specifically utilizes Upstash's serverless HTTP/REST endpoints. It bypasses conventional persistent TCP Redis sockets to provide highly secure and connection-agnostic read/write integrations optimized for AI servers.
+
+**Q: Are there limitations to wildcard patterns when doing list_keys?**
+Yes, standard Redis operational caveats apply. Searching broadly via a '*' (asterisk) scan across massively populated environments isn't recommended. Aim to request the AI narrow down patterns, like 'session:*' instead of blank wildcards.
+
+
 ## Installation & Usage
 
-To install and use the **Upstash Redis** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/upstash-redis](https://vinkius.com/mcp/upstash-redis)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Upstash Redis** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `upstash-redis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Upstash Redis** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "upstash-redis": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

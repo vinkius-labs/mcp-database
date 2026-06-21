@@ -1,7 +1,6 @@
 # Mattermost MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mattermost)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mattermost-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mattermost-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mattermost)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Mattermost** MCP serve
 > Found 1 matching thread in #backend. Original (Apr 12): 'We are hitting the API rate limit on the third-party integration.' Replies: 4. @sarah: 'I will increase the backoff time.' @mike: 'Done, PR #45 merged.' @sarah: 'Metrics look stable now ✅'.
 
 
+## ❓ FAQ
+
+**Q: Can I read messages and reply to threads?**
+Yes. Browse channel history, read specific threads, and post replies or new messages with markdown formatting.
+
+**Q: How does Mattermost authentication work?**
+Mattermost requires your instance's **Base URL** and a Personal **Access Token** for Bearer authentication.
+
+**Q: Can I manage channels and users?**
+Yes. Create new public/private channels, invite users, and check their online status.
+
+
 ## Installation & Usage
 
-To install and use the **Mattermost** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mattermost](https://vinkius.com/mcp/mattermost)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mattermost** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mattermost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mattermost** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mattermost": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

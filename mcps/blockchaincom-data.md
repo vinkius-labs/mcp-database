@@ -1,7 +1,6 @@
 # Blockchain.com Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blockchaincom-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blockchaincom-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blockchaincom-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blockchaincom-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Blockchain.com Data** 
 > Bitcoin is currently trading at $65,420.50 USD. In other currencies, it's €60,123.40 EUR and £51,234.80 GBP.
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance of any Bitcoin address?**
+Yes! Use the `get_address` tool with the public Bitcoin address. Your agent will fetch the current balance (in Satoshis) and the transaction history directly from the blockchain.
+
+**Q: How do I see the current price of Bitcoin in USD?**
+Simply ask the agent to `get_ticker`. It will retrieve the latest exchange rates for BTC across multiple currencies, including USD, EUR, and GBP.
+
+**Q: Does the integration allow sending Bitcoin?**
+No. For security reasons, the current toolset is focused exclusively on blockchain data discovery and analysis (Read-Only). Sending transactions requires a private wallet and specialized signing procedures not supported by this data-centric server.
+
+
 ## Installation & Usage
 
-To install and use the **Blockchain.com Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blockchaincom-data](https://vinkius.com/mcp/blockchaincom-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Blockchain.com Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blockchaincom-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Blockchain.com Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blockchaincom-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Giftpack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/giftpack-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/giftpack-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/giftpack-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/giftpack-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Giftpack** MCP server 
 > Tracking order ord_101... The gift is currently 'In Transit' via FedEx and is expected to arrive at the recipient's location in London by tomorrow. Here is the tracking link: [link].
 
 
+## ❓ FAQ
+
+**Q: How do I find my Giftpack API Key?**
+Log in to your Giftpack business dashboard and navigate to the **Settings** or **API** section to generate your unique key.
+
+**Q: Can I search for gifts in a specific region?**
+Yes! The `search_gift_catalog` tool allows you to include regional filters in your query to find products available for specific countries.
+
+**Q: How do I track the delivery status of a gift?**
+Use the `get_order_fulfillment_status` tool with the unique order ID to retrieve real-time shipping updates and tracking links.
+
+
 ## Installation & Usage
 
-To install and use the **Giftpack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/giftpack-alternative](https://vinkius.com/mcp/giftpack-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Giftpack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `giftpack-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Giftpack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "giftpack-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

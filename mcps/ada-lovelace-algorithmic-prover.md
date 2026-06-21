@@ -1,7 +1,6 @@
 # Ada Lovelace Algorithmic Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ada-lovelace-algorithmic-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ada-lovelace-algorithmic-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ada-lovelace-algorithmic-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ada-lovelace-algorithmic-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Ada Lovelace Algorithm
 > EDGE_CASES_IGNORED — 'Move customer records from old to new' has no edge case analysis. What happens with NULL fields in the old schema that are required in the new? Records with foreign key dependencies — what order do you migrate? Duplicate emails across old and new? Interrupted migration at row 50,000 of 200,000 — do you resume or restart? Ada defined iteration termination in Note G. 'Assuming valid data' is NOT analysis — test the boundaries.
 
 
+## ❓ FAQ
+
+**Q: How is this different from the Archimedes First Principles Prover?**
+Archimedes decomposes the PROBLEM — axioms, components, boundaries. Ada decomposes the SOLUTION — precise step sequences, primitive operations, edge cases, scope limits. Archimedes asks 'what are the fundamental components?' Ada asks 'what is the exact step-by-step procedure?' They complement: Archimedes decomposes the problem, Ada sequences the solution.
+
+**Q: What counts as 'scope overclaiming'?**
+Claiming capabilities without stating limitations. 'Handles everything,' 'complete solution,' 'no limitations.' Ada stated both: the Engine CAN compute Bernoulli numbers, BUT it 'has no pretensions whatever to originate anything.' She bounded what it CANNOT do. Every solution has limits — state them.
+
+**Q: Can I use this for non-technical workflows?**
+Yes. Any procedure benefits from algorithmic precision. 'Onboard a new client' — what are the exact steps, in what order, with what inputs? What happens if a step fails? What does this process NOT cover? Ada's method applies to any sequential process, not just computation.
+
+
 ## Installation & Usage
 
-To install and use the **Ada Lovelace Algorithmic Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ada-lovelace-algorithmic-prover](https://vinkius.com/mcp/ada-lovelace-algorithmic-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ada Lovelace Algorithmic Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ada-lovelace-algorithmic-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ada Lovelace Algorithmic Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ada-lovelace-algorithmic-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

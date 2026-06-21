@@ -1,7 +1,6 @@
 # OptimoRoute MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/optimoroute)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/optimoroute-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/optimoroute-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/optimoroute)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **OptimoRoute** MCP serv
 > Driver D2 is currently at 42.3601, -71.0589 (near Faneuil Hall, Boston). Last ping: 12 seconds ago. Speed: 28 km/h. Currently en route to stop 4 of 8 (ETA: 5 minutes). Want me to pull the full route manifest for D2?
 
 
+## ❓ FAQ
+
+**Q: How long does route optimization take to complete?**
+It depends on the number of orders and drivers. Small batches (under 100 stops) typically finish in under 30 seconds. Large-scale plans can take several minutes. The agent checks the planning status endpoint so you can monitor progress, and you can abort and capture the best partial solution at any time.
+
+**Q: Can I verify if a delivery was actually completed with proof?**
+Yes. The get_order_pod tool pulls completion details including driver-captured signatures, photos, and timestamped notes. This data comes directly from the OptimoRoute driver app and provides auditable proof of delivery for dispute resolution and compliance.
+
+**Q: Can I update a driver's working hours and vehicle capacity on the fly?**
+Yes. The update_driver_shifts tool lets you change working hours, speed profiles, and load capacities for any driver. Changes take effect on the next optimization run. Useful for adjusting schedules when a driver calls in sick or a vehicle needs to be swapped.
+
+
 ## Installation & Usage
 
-To install and use the **OptimoRoute** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/optimoroute](https://vinkius.com/mcp/optimoroute)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OptimoRoute** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `optimoroute` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OptimoRoute** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "optimoroute": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

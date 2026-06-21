@@ -1,7 +1,6 @@
 # Payload CMS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payload-cms-extended)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/payload-cms-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/payload-cms-extended-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payload-cms-extended)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Payload CMS** MCP serv
 > Retrieving document... Here are the details for 'Wireless Headphones' (ID: 64f123456789). It has a price of $199, stock level of 45, and is linked to the 'Electronics' category. I've also retrieved the associated image metadata.
 
 
+## ❓ FAQ
+
+**Q: How can I see all the available content types in my Payload instance?**
+You can use the `list_collections` tool. Your agent will query your Payload instance and return a list of all registered collections and globals, helping you understand what data is available to interact with.
+
+**Q: Is it possible to search for documents with specific criteria, like a slug or status?**
+Yes! Use the `find_documents` tool. You can provide a collection name and filter parameters (e.g., `where[slug][equals]=my-post`). The agent will return the matching documents including their full metadata.
+
+**Q: Can I retrieve the full data of a single document if I have its ID?**
+Absolutely. Use the `get_document` tool by providing the collection name and the unique Document ID. This is perfect for inspecting deep nested relationships or specific field values.
+
+
 ## Installation & Usage
 
-To install and use the **Payload CMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/payload-cms-extended](https://vinkius.com/mcp/payload-cms-extended)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Payload CMS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `payload-cms-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Payload CMS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "payload-cms-extended": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # World Bank Climate & Energy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/world-bank-climate-energy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/world-bank-climate-energy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/world-bank-climate-energy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/world-bank-climate-energy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,55 @@ The USA's per capita emissions have declined from ~20 to ~14 metric tons. China'
 Brazil's forest area has declined from approximately 65% to 59% of total land area over three decades, representing the loss of millions of hectares — though recent policies have begun slowing the rate of deforestation.
 
 
+## ❓ FAQ
+
+**Q: How do I get started?**
+Our World Bank Open Data servers require absolutely zero authentication. You do not need to register, get an API key, or setup webhooks. Just instantly connect and your AI agent can begin querying decades of global data.
+
+**Q: Can it track if a nation's CO2 emissions are rising?**
+Yes! Your agent pulls historical CO2 per capita statistics so it can mathematically verify if a nation is adhering to its climate pledges.
+
+**Q: Can it map national deforestation trends?**
+Absolutely. The AI pulls 'forest area (% of land area)' indicators to provide accurate insights into conservation or deforestation across entire continents.
+
+**Q: What is the scale of the data I can access?**
+You have direct access to 64 years of historical data covering 196+ sovereign states and global regional aggregates, powered directly by the World Bank's robust open data initiatives.
+
+
 ## Installation & Usage
 
-To install and use the **World Bank Climate & Energy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/world-bank-climate-energy](https://vinkius.com/mcp/world-bank-climate-energy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **World Bank Climate & Energy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `world-bank-climate-energy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **World Bank Climate & Energy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "world-bank-climate-energy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

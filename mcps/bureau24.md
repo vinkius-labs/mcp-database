@@ -1,7 +1,6 @@
 # Bureau24 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bureau24)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bureau24-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bureau24-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bureau24)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Bureau24** MCP server 
 > Fetching messages... Your latest notification (ID: msg_10293) is a summary of today's morning activity: 2 successfully handled calls and 1 urgent callback request from 'Tech Solutions'. Would you like the callback details?
 
 
+## ❓ FAQ
+
+**Q: Can I update my availability status via AI for the secretary?**
+Yes! Use the `update_secretary_status` action. You can provide a new status (like 'busy') and an optional note to tell the secretary exactly what to say to callers.
+
+**Q: How do I see the notes from the last call handled by Bureau24?**
+Run the `list_calls` query to find the recent interactions. You can then use `get_call` with the specific Call ID to retrieve all notes and details from the receptionist.
+
+**Q: Is it possible to add a regular customer to my address book via AI?**
+Absolutely. Use the `create_contact` tool. Provide the customer's name, phone number, and optional email to help the virtual secretary identify them in future calls.
+
+
 ## Installation & Usage
 
-To install and use the **Bureau24** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bureau24](https://vinkius.com/mcp/bureau24)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bureau24** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bureau24` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bureau24** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bureau24": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

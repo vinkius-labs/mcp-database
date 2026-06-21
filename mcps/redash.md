@@ -1,7 +1,6 @@
 # Redash MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/redash)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/redash-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/redash-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/redash)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Redash** MCP server us
 > I've fetched the 'Sales Overview' dashboard (slug: sales-overview). It contains 4 widgets: Revenue Chart, Regional Breakdown, Top Sales Reps, and Monthly Target Progress.
 
 
+## ❓ FAQ
+
+**Q: How do I run a query and get the results?**
+Use the `execute_query` tool. If the query takes time, it returns a `job_id`. You can then use `get_job` to check the status, and once successful, use `get_query_result` with the provided ID to fetch the data.
+
+**Q: Can I update the SQL of an existing query through the agent?**
+Yes! Use the `update_query` tool by providing the Query ID and the new SQL string in the `query` parameter. You can also update the name or data source ID.
+
+**Q: How do I find a specific dashboard and its widgets?**
+First, use `list_dashboards` to find the slug of the dashboard you need. Then, use the `get_dashboard` tool with that slug to retrieve all its configuration details and widgets.
+
+
 ## Installation & Usage
 
-To install and use the **Redash** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/redash](https://vinkius.com/mcp/redash)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Redash** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `redash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Redash** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "redash": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

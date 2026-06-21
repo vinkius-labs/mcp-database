@@ -1,7 +1,6 @@
 # FundraisingBox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fundraisingbox)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fundraisingbox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fundraisingbox-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fundraisingbox)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **FundraisingBox** MCP s
 > You have 156 active recurring donations totaling €8,420/month. 89 have been active for more than 12 months (long-term supporters). Top 5 by monthly amount: 1) Corporate Foundation (€500/month, since 2022). 2) Anonymous (€250/month, since 2023). 3) Hans Schmidt (€50/month, since 2024). 4) Green Family Trust (€100/month, since 2021). 5) Dr. Weber (€75/month, since 2023). Total annual recurring revenue: €101,040. Would you like to segment donors by campaign or see which recurring donations were recently paused?
 
 
+## ❓ FAQ
+
+**Q: Can I see the full donation history for a specific donor?**
+Yes. Use `search_donors` to find a donor by name or email, then call `get_donor_history` with their Donor ID to retrieve every donation they've made — including amounts, dates, campaign allocations, and payment methods. Use `get_donor` for their full profile with contact details and total lifetime giving.
+
+**Q: Can I monitor campaign progress toward fundraising goals?**
+Yes. The `list_campaigns` tool retrieves all fundraising campaigns with their goals and current progress. Use `get_campaign` with a Campaign ID for detailed statistics including donor count, average donation, and progress percentage. Combine with `list_donations_by_project` to see every donation linked to a specific campaign.
+
+**Q: Can I access donation tax receipts for annual fiscal reporting?**
+Yes. The `list_receipts` tool retrieves all generated donation tax receipts across your organization. Each receipt includes the donor name, donation amount, date, and receipt number. Use `get_dashboard` for aggregate fundraising metrics to supplement your annual reporting.
+
+
 ## Installation & Usage
 
-To install and use the **FundraisingBox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fundraisingbox](https://vinkius.com/mcp/fundraisingbox)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FundraisingBox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fundraisingbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FundraisingBox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fundraisingbox": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

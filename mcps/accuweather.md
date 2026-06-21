@@ -1,7 +1,6 @@
 # AccuWeather MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accuweather)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/accuweather-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/accuweather-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accuweather)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **AccuWeather** MCP serv
 > There is currently a Heat Advisory in effect for Miami-Dade County until 7 PM EDT. Heat index values up to 41°C are expected. Take precautions for heat-related illness. No other active alerts for this area.
 
 
+## ❓ FAQ
+
+**Q: How do I get weather for a specific city?**
+First use `search_location` with the city name (e.g. 'Tokyo') to find its AccuWeather location key. Then use that key with `get_current_conditions` for current weather, `get_daily_forecast` for the forecast, or `get_hourly_forecast` for hour-by-hour details.
+
+**Q: What's the difference between daily and hourly forecasts?**
+Daily forecasts (1-15 days) give you one summary per day with high/low temperatures and overall conditions. Hourly forecasts (12-120 hours) give you weather for each individual hour — perfect for knowing exactly when rain will start, when temperatures peak, or the best time for outdoor activities. Use hourly for precise timing, daily for general planning.
+
+**Q: Can I get severe weather alerts?**
+Yes. Use the `get_weather_alarms` tool with a location key to check for active severe weather alerts. This includes hurricanes, tornadoes, flood warnings, heat advisories, winter storm warnings, and more. Returns empty if no active alarms. Essential for emergency preparedness and travel safety decisions.
+
+
 ## Installation & Usage
 
-To install and use the **AccuWeather** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/accuweather](https://vinkius.com/mcp/accuweather)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AccuWeather** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `accuweather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AccuWeather** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "accuweather": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Gipuzkoa Irekia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gipuzkoa-irekia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gipuzkoa-irekia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gipuzkoa-irekia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gipuzkoa-irekia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Gipuzkoa Irekia** MCP 
 > Fetching metadata for 'presupuestos-municipales'... This dataset contains municipal budget information. It includes resources in CSV and XLS formats, last updated recently by the Finance Department. Do you want the specific resource IDs for downloading?
 
 
+## ❓ FAQ
+
+**Q: How can I search for datasets related to a specific topic like 'transport'?**
+You can use the `search_packages` tool. Simply provide the search term in the `q` parameter (e.g., 'transport'), and the agent will return a list of matching datasets from the Gipuzkoa Irekia catalog.
+
+**Q: Can I see which organizations are publishing data on this portal?**
+Yes! Use the `list_organizations` tool to get a complete list of all departments, municipalities, and entities that contribute to the Gipuzkoa Irekia open data catalog.
+
+**Q: How do I get the download links or format details for a specific data file?**
+Use the `show_resource` tool with the specific Resource ID. It will provide detailed metadata, including the file format (CSV, JSON, etc.) and the direct URL to access the data.
+
+
 ## Installation & Usage
 
-To install and use the **Gipuzkoa Irekia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gipuzkoa-irekia](https://vinkius.com/mcp/gipuzkoa-irekia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gipuzkoa Irekia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gipuzkoa-irekia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gipuzkoa Irekia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gipuzkoa-irekia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

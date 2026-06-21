@@ -1,7 +1,6 @@
 # Wave Accounting MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wave-accounting)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wave-accounting-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wave-accounting-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wave-accounting)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Wave Accounting** MCP 
 > Here are your 3 most recent invoices: 1. Inv #101 (PAID, 500 USD), 2. Inv #102 (SAVED, 1200 USD - Overdue), and 3. Inv #103 (DRAFT, 300 USD). Would you like to see the details for the overdue invoice?
 
 
+## ❓ FAQ
+
+**Q: Can I check if an invoice has been paid through the agent?**
+Yes. The `list_accounting_invoices` tool allows your AI agent to see the current status of all invoices, including whether they are 'PAID', 'SAVED' (unpaid), or still in 'DRAFT' status.
+
+**Q: How do I add a new client to my Wave account using chat?**
+You can use the `create_accounting_customer` tool. Just provide the customer's name and email address, and your agent will register them in your Wave business instantly.
+
+**Q: Can I delete a draft invoice if I made a mistake?**
+Yes. The `delete_draft_invoice` tool allows you to permanently remove unfinalized draft invoices. Note that once an invoice is approved (SAVED) or paid, it cannot be deleted through this specific tool.
+
+
 ## Installation & Usage
 
-To install and use the **Wave Accounting** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wave-accounting](https://vinkius.com/mcp/wave-accounting)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wave Accounting** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wave-accounting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wave Accounting** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wave-accounting": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

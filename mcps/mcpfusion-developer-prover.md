@@ -1,7 +1,6 @@
 # MCPFusion Developer Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mcpfusion-developer-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mcpfusion-developer-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mcpfusion-developer-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mcpfusion-developer-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **MCPFusion Developer Pr
 > Verdict: SEMANTIC_VERB_WRONG. Search is a READ — use f.query('logs.search'), not f.mutation(). mutation=destructive (create/delete). Also: .handle() auto-wraps with success() — remove the manual success() call, just return data.
 
 
+## ❓ FAQ
+
+**Q: Does this generate MCP server code?**
+No. The agent writes the code. This tool VALIDATES that the code follows MCPFusion's MVA architecture — defineModel() for entities, Presenters for egress, semantic verbs for operations, and correct file structure. It teaches the framework through rejection messages.
+
+**Q: Why does the LLM need this if it can read documentation?**
+Documentation reading is one-shot — the LLM reads once and forgets. This tool forces structured reflection on EVERY tool being built. Each field is a micro-lesson: modelStrategy forces naming m.casts() fields, presenterStrategy forces explaining .returns(), toolDesign forces choosing the right semantic verb. Repetition through obligation, not suggestion.
+
+**Q: What if my MCP doesn't return data (reasoning-only)?**
+Reasoning MCPs still use MVA. The Model defines the verdict/message shape. The Presenter renders the verdict. The tool forces structured input. Even a tool that computes nothing needs defineModel() for its response and a Presenter for its output. The same architecture applies — the Presenter is the egress contract.
+
+
 ## Installation & Usage
 
-To install and use the **MCPFusion Developer Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mcpfusion-developer-prover](https://vinkius.com/mcp/mcpfusion-developer-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MCPFusion Developer Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mcpfusion-developer-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MCPFusion Developer Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mcpfusion-developer-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

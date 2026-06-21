@@ -1,7 +1,6 @@
 # TfL MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tfl)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tfl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tfl-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tfl)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -108,12 +107,52 @@ Here are some examples of how you can interact with the **TfL** MCP server using
 > Checking TfL line status... Victoria Line: Good Service — trains running frequently with no reported delays. Jubilee Line: Minor Delays — signal failure at Westminster causing 5-10 minute delays eastbound. Expected resolution by 18:30. All other Underground lines running normally. Would you like me to suggest alternative routes if you are traveling on the Jubilee Line?
 
 
+## ❓ FAQ
+
+**Q: Can my AI check when the next Tube train is arriving at my station?**
+Yes! First use `search_stop_point` with the station name (e.g., "Oxford Circus", "King's Cross") to find the stop ID. Then use `get_arrivals` with that stop ID to get real-time arrival predictions with line names, destinations, time to station in minutes, and platform information. This covers all TfL modes including Tube, bus, DLR, Overground, Elizabeth line, tram, river, and cable-car.
+
+**Q: How do I plan a journey from Heathrow Airport to central London using public transport?**
+Use the `get_journey` tool with "Heathrow Airport" as the origin and your destination (e.g., "Oxford Circus", "Tower Bridge"). The TfL Journey Planner will return multiple route options combining Elizabeth line, Piccadilly line, Heathrow Express, and connecting Tube/bus services. Each option includes total duration, fare estimates, walking distances, number of interchanges, and step-by-step instructions with station sequences. You can also specify preferences for accessibility or cycling options.
+
+**Q: Are there any Tube line closures or major disruptions right now?**
+Use `get_line_status` with modes="tube" to check all Tube line statuses, or call it without a mode filter for system-wide status across all transport modes. This returns each line's current status (Good Service, Minor Delays, Severe Delays, Part Suspended, Planned Work) with detailed descriptions and reasons. Always check this before planning any London journey to avoid unexpected disruptions.
+
+
 ## Installation & Usage
 
-To install and use the **TfL** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tfl](https://vinkius.com/mcp/tfl)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TfL** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tfl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TfL** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tfl": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Zuora MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zuora)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zuora-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zuora-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zuora)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Zuora** MCP server usi
 > Billing simulation for S-00001 complete. The projected charge for the next period (2026-04-01 to 2026-05-01) is $1,250.00 plus tax. No amendments were detected. Would you like me to generate a formal quote?
 
 
+## ❓ FAQ
+
+**Q: Can I preview how much a customer will be charged before updating their subscription?**
+Yes. The `preview_subscription` tool simulates a run of the billing engine for a specific subscription ID. Your AI agent will return the projected charges and billing dates without committing any actual changes to the account.
+
+**Q: How do I see the invoice history for a specific billing account?**
+You can use the `get_invoices` tool. Provide the unique Zuora account ID or number, and your agent will retrieve a list of all invoices generated for that customer, helping you audit their billing history.
+
+**Q: Is it possible to update a customer's billing contact info via chat?**
+Absolutely. Using the `update_account` tool, you can provide a JSON payload with updated fields (e.g., billing email or address) for a specific account ID, and your agent will apply the changes in Zuora instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Zuora** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zuora](https://vinkius.com/mcp/zuora)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zuora** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zuora` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zuora** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zuora": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

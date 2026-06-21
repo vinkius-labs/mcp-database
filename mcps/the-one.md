@@ -1,7 +1,6 @@
 # The One MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-one)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/the-one-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/the-one-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-one)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **The One** MCP server u
 > Inspecting character data... Frodo Baggins is a Hobbit of the Shire. He was born on September 22, TA 2968. His wiki link is available for more deep lore if you're interested.
 
 
+## ❓ FAQ
+
+**Q: Can I get all quotes spoken by a specific character like Gandalf?**
+Yes! Use the `list_character_quotes` tool with the character's unique ID. The agent will return a list of all recorded movie quotes for that specific character.
+
+**Q: Does this server include data from The Hobbit movies?**
+Yes, the `list_movies` tool retrieves data for both The Lord of the Rings trilogy and The Hobbit trilogy, including metadata like runtime and academy award wins.
+
+**Q: How do I browse the chapters of a specific book?**
+First, use `list_books` to find the book's ID, then use the `list_book_chapters` tool with that ID to see all chapters contained within that volume.
+
+
 ## Installation & Usage
 
-To install and use the **The One** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/the-one](https://vinkius.com/mcp/the-one)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **The One** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `the-one` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **The One** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "the-one": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

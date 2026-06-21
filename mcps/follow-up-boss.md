@@ -1,7 +1,6 @@
 # Follow Up Boss MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/follow-up-boss)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/follow-up-boss-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/follow-up-boss-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/follow-up-boss)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **Follow Up Boss** MCP s
 > Note added! I've successfully posted the update to Jane Doe's timeline. Your team will see this interest recorded.
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Key for Follow Up Boss?**
+Admins can generate API keys in the Follow Up Boss dashboard under Admin > API.
+
+**Q: Can I see notes for a specific contact?**
+Yes, the 'list_person_notes' tool allows you to retrieve all notes associated with a specific person by their ID.
+
+**Q: What are Smart Lists?**
+Smart Lists are saved filters in Follow Up Boss that automatically group leads based on specific criteria (e.g., 'Leads to call today').
+
+**Q: Can I update a lead's status via the agent?**
+You can use the 'updateTask' or other modification tools to manage engagement. Status updates are pushed directly to the FUB core CRM.
+
+
 ## Installation & Usage
 
-To install and use the **Follow Up Boss** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/follow-up-boss](https://vinkius.com/mcp/follow-up-boss)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Follow Up Boss** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `follow-up-boss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Follow Up Boss** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "follow-up-boss": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Grafana k6 Cloud (Load Testing) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grafana-k6-cloud-load-testing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grafana-k6-cloud-load-testing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grafana-k6-cloud-load-testing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grafana-k6-cloud-load-testing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Grafana k6 Cloud (Load
 > Trigging new run for 'Checkout Flow'… Done. New Run ID is 'run-13579'. It's currently in the QUEUED state. I'll let you know when the first VUs start injecting traffic.
 
 
+## ❓ FAQ
+
+**Q: Can I see if a load test passed its performance thresholds using my agent?**
+Yes. Use the `get_run_thresholds` tool with a specific Run ID. Your agent will retrieve the final evaluation for all defined thresholds in the script, indicating which specific SLOs passed or failed.
+
+**Q: How do I start a new k6 Cloud test run through a conversation?**
+Use the `start_test_run` tool by providing the Test ID. Your agent will trigger the execution on k6 Cloud infrastructure and return an active Run ID that you can use to track real-time progress.
+
+**Q: Can my agent retrieve the raw performance metrics for a completed run?**
+Absolutely. The `get_run_metrics` tool allows your agent to aggregate data like `http_req_duration`, error counts, and total iterations, providing a rapid summary of your application's behavior under load.
+
+
 ## Installation & Usage
 
-To install and use the **Grafana k6 Cloud (Load Testing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/grafana-k6-cloud-load-testing](https://vinkius.com/mcp/grafana-k6-cloud-load-testing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Grafana k6 Cloud (Load Testing)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `grafana-k6-cloud-load-testing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Grafana k6 Cloud (Load Testing)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "grafana-k6-cloud-load-testing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

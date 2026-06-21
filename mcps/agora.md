@@ -1,7 +1,6 @@
 # Agora MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agora)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agora-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agora-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agora)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Agora** MCP server usi
 > Fetching Agora usage metrics... In the last 7 days, your project consumed 1,200 video minutes (HD) and 450 audio minutes. Peak concurrency was 25 users on April 10th.
 
 
+## ❓ FAQ
+
+**Q: Can I automatically list all active users in an Agora channel?**
+Yes! Use the `list_channel_users` tool with the project AppID and the target Channel Name. Your agent will return a list of UIDs currently connected to that session.
+
+**Q: How do I start a cloud recording session via the AI agent?**
+Use the `start_cloud_recording` tool with the necessary parameters (AppID, Channel Name, and recording config). The agent will trigger the Agora cloud recording engine and return the Resource ID and SID.
+
+**Q: Can I monitor the total minutes consumed by my project this month?**
+Yes! The `get_usage_metrics` tool retrieves granular consumption data, including audio and video minutes, filtered by date range or project.
+
+
 ## Installation & Usage
 
-To install and use the **Agora** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/agora](https://vinkius.com/mcp/agora)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Agora** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `agora` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Agora** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "agora": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

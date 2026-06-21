@@ -1,7 +1,6 @@
 # MYOB MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/myob)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/myob-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/myob-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/myob)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **MYOB** MCP server usin
 > Querying customer payments... I've listed the recent transactions. There was a significant payment of $5,000.00 received yesterday from 'Global Industries'. Should I check which invoices this payment cleared?
 
 
+## ❓ FAQ
+
+**Q: How can I view my company's chart of accounts?**
+Use the `list_gl_accounts` tool by providing your Company File URI. You can optionally filter the results using OData expressions to find specific account types.
+
+**Q: Can I check the status of my sales orders?**
+Yes! The `list_sale_orders` tool retrieves all sale orders for a specified company file, allowing your AI to analyze order volumes and statuses.
+
+**Q: Is it possible to see the tax codes configured in my MYOB file?**
+Absolutely. Use the `list_gl_tax_codes` tool to fetch all tax codes associated with your company file, ensuring your AI has the correct context for financial calculations.
+
+
 ## Installation & Usage
 
-To install and use the **MYOB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/myob](https://vinkius.com/mcp/myob)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MYOB** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `myob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MYOB** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "myob": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

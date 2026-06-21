@@ -1,7 +1,6 @@
 # 42Crunch MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/42crunch)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/42crunch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/42crunch-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/42crunch)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Should I propose the exact YAML additions required to resolve these?
 > A new static security audit has been triggered for the API definition. I will retrieve the fresh score and finding report momentarily...
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent explain the vulnerabilities found in a 42Crunch audit?**
+Yes. After retrieving an audit report using your agent, you can ask the agent to act as a DevSecOps engineer. It can break down exactly why you received a low score, explain specific OWASP findings, and write the YAML or JSON patch needed to fix your OpenAPI spec instantly.
+
+**Q: How do I test a new API update before merging?**
+Simply paste your updated OpenAPI definitions into your AI agent's chat context. Ask the agent to import the new API definition into a staging collection. The platform will automatically run a static security audit upon import, and your agent can report back the new security score before you hit merge.
+
+**Q: What is the difference between static audits and dynamic conformance scans?**
+Audits strictly verify the design of your JSON/YAML contract against security best practices without making network calls. Scans, however, send live HTTP traffic against your implemented endpoint to make sure your back-end truly conforms to what you wrote. Your agent can retrieve both reports for side-by-side comparison.
+
+
 ## Installation & Usage
 
-To install and use the **42Crunch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/42crunch](https://vinkius.com/mcp/42crunch)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **42Crunch** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `42crunch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **42Crunch** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "42crunch": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

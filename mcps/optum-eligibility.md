@@ -1,7 +1,6 @@
 # Optum Eligibility MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/optum-eligibility)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/optum-eligibility-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/optum-eligibility-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/optum-eligibility)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Optum Eligibility** MC
 > Located dependents under subscriber UB-11202: 1 Spouse (Active) and 2 Toddler dependents (Active) currently attached.
 
 
+## ❓ FAQ
+
+**Q: Can this Optum Server submit medical claims or process remittances automatically?**
+Absolutely strictly not. Per rigorous Least Privilege modeling common to US Healthcare operations, Front-Desk tasks (Eligibility) are decoupled natively from Back-Office operations. For submitting medical claims, integrate the `optum-claims-mcp` array safely.
+
+**Q: How does the agent handle HIPAA compliance for patient data?**
+The MCP server transmits data directly via secure Optum APIs over TLS. No PHI (Protected Health Information) is cached locally, ensuring full compliance with HIPAA regulations.
+
+**Q: Can I check out-of-network benefits?**
+Yes. The eligibility payload returns detailed tiered benefits including deductibles and coinsurance for out-of-network services based on the specific policy details.
+
+
 ## Installation & Usage
 
-To install and use the **Optum Eligibility** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/optum-eligibility](https://vinkius.com/mcp/optum-eligibility)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Optum Eligibility** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `optum-eligibility` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Optum Eligibility** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "optum-eligibility": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

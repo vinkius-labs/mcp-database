@@ -1,7 +1,6 @@
 # CrewAI Platform MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crewai-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/crewai-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/crewai-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crewai-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **CrewAI Platform** MCP 
 > Retrieving agent details... Agent 'agent_789' is a 'Senior Research Analyst'. Backstory: 'Expert in gathering and synthesizing complex data from multiple sources to provide actionable insights.'
 
 
+## ❓ FAQ
+
+**Q: Can my agent kickoff a new CrewAI workflow?**
+Yes. Use the 'kickoff_crew' tool. Provide the Crew ID and a JSON object with the required inputs. The agent will activate the multi-agent processing immediately, returning a run ID for tracking.
+
+**Q: How do I monitor the progress of an active agent run?**
+Use the 'get_run_status' tool with your Crew ID and Run ID. Your agent will grab the live execution state, showing you which agents are currently working and which tasks have been completed.
+
+**Q: Can I cancel a running crew via the agent?**
+Absolutely. The 'cancel_run' tool dispatches an instant interrupt signal to the CrewAI platform, hard-stopping active LLM contexts and terminating the execution flow immediately.
+
+
 ## Installation & Usage
 
-To install and use the **CrewAI Platform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/crewai-platform](https://vinkius.com/mcp/crewai-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CrewAI Platform** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `crewai-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CrewAI Platform** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "crewai-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

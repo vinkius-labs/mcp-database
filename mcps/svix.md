@@ -1,7 +1,6 @@
 # Svix MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/svix)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/svix-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/svix-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/svix)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Svix** MCP server usin
 > Fetching message details... Message msg_4W... was sent with event type 'invoice.paid'. It has been successfully delivered to 1 endpoint and is currently pending on another.
 
 
+## ❓ FAQ
+
+**Q: How can I see all my current Svix applications?**
+Simply ask the agent to run the `list_applications` tool. It will return a complete list of applications in your Svix workspace along with their IDs and names.
+
+**Q: Can I check why a specific webhook message failed to deliver?**
+Yes! Use the `list_message_attempts` tool with the message ID. Your agent will fetch the history of delivery attempts, including response codes and timestamps for debugging.
+
+**Q: Is it possible to temporarily stop sending webhooks to a specific URL?**
+Yes. You can use the `update_endpoint` tool and set the `disabled` parameter to `true` for that specific endpoint ID. This will pause delivery without deleting the configuration.
+
+
 ## Installation & Usage
 
-To install and use the **Svix** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/svix](https://vinkius.com/mcp/svix)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Svix** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `svix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Svix** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "svix": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

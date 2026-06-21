@@ -1,7 +1,6 @@
 # JustCall MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/justcall-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/justcall-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/justcall-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/justcall-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **JustCall** MCP server 
 > Recordings: 28 this week. Longest: 'Enterprise Deal — Acme Corp' (22 min, Sarah Chen). Shortest: 'Quick Follow-up' (1 min). Total recording time: 4h 15m. Contacts: 456 total. New this week: 12. By tag: Leads (89), Customers (234), Partners (45), Prospects (88). Would you like to play a recording or create a contact?
 
 
+## ❓ FAQ
+
+**Q: Can I make calls and send SMS through the AI agent?**
+Yes. Make outbound calls with destination number and track status. Send SMS messages to any contact with delivery tracking. Use contact management tools to find recipient numbers.
+
+**Q: Does JustCall require two credentials?**
+Yes. JustCall uses an **API Key** and **API Secret** pair for authentication. Both are sent as Bearer credentials against `api.justcall.io/v1`.
+
+**Q: Can I listen to call recordings and track agent performance?**
+Yes. Access call recordings with duration and metadata. Monitor agent call volumes, average handle time, and availability status.
+
+
 ## Installation & Usage
 
-To install and use the **JustCall** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/justcall-alternative](https://vinkius.com/mcp/justcall-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **JustCall** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `justcall-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **JustCall** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "justcall-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Uber MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uber)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uber-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uber-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uber)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **Uber** MCP server usin
 > I'll check available products and pickup times at your location.
 
 
+## ❓ FAQ
+
+**Q: Can this MCP server book rides automatically?**
+This MCP server provides price estimates, time estimates, product availability, and trip history. Direct ride booking requires additional Uber API permissions (Requests API) available only to approved enterprise partners. Use this server for planning and comparison workflows.
+
+**Q: What Uber API permissions do I need?**
+You need a Server Token from the Uber Developer Portal with access to: Products, Price Estimates, Time Estimates, History, User Profile, and Places endpoints. These are available in the standard developer tier without special approval.
+
+**Q: Does this work with Uber Eats deliveries?**
+This MCP server focuses on Uber ride-sharing products (UberX, Black, Comfort, etc.). For Uber Eats merchant/delivery operations, a separate integration would be needed. Contact Uber for Eats API access.
+
+
 ## Installation & Usage
 
-To install and use the **Uber** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/uber](https://vinkius.com/mcp/uber)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Uber** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `uber` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Uber** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "uber": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

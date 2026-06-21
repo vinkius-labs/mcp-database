@@ -1,7 +1,6 @@
 # Cloopen / 容联云 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloopen)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloopen-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloopen-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloopen)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Cloopen / 容联云** 
 > I've listed your approved SMS templates. You have 3 templates ready for use: 'Verification Code', 'Order Notification', and 'Promotion Alert'. Which one would you like to use?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Cloopen Account Sid and Token?**
+Log in to the Cloopen Console dashboard. You will find your Account Sid and Auth Token in the account information section on the homepage.
+
+**Q: Can I query the status of a specific SMS message?**
+Yes. Use the `query_sms` tool with the `smsMessageSid` returned from the send operation to retrieve the current delivery status.
+
+**Q: Is it possible to send voice verification codes?**
+Yes! Use the `list_voice_codes` tool to initiate an automated call that will speak the verification code to the recipient's phone.
+
+
 ## Installation & Usage
 
-To install and use the **Cloopen / 容联云** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cloopen](https://vinkius.com/mcp/cloopen)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cloopen / 容联云** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cloopen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cloopen / 容联云** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cloopen": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

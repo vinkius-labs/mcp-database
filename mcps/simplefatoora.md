@@ -1,7 +1,6 @@
 # SimpleFatoora MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simplefatoora)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/simplefatoora-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/simplefatoora-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simplefatoora)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **SimpleFatoora** MCP se
 > Credit note successfully created and linked to invoice #1234. The adjustment for the partial return has been recorded and stamped for ZATCA Phase 2 compliance. Do you need to apply this credit to the customer's balance?
 
 
+## ❓ FAQ
+
+**Q: How can my AI generate ZATCA-compliant invoices?**
+Simply use the `create_invoice` tool. Your agent can instantly generate six types of invoices (including B2C and B2B), all fully compliant with ZATCA Phase 2, complete with QR codes, UUIDs, and cryptographic stamps.
+
+**Q: Is it possible to programmatically access my client list and VAT numbers?**
+Yes. By executing the `list_customers` action, your AI agent can retrieve your entire client registry, including tax identification numbers, addresses, and contact details for seamless CRM integration.
+
+**Q: Can I automatically issue credit notes for partial returns?**
+Absolutely. Ask the agent to use the `create_credit_note` tool. It will safely generate a ZATCA-compliant credit note linked to the original invoice, adjusting the accounting records automatically.
+
+
 ## Installation & Usage
 
-To install and use the **SimpleFatoora** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/simplefatoora](https://vinkius.com/mcp/simplefatoora)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SimpleFatoora** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `simplefatoora` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SimpleFatoora** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "simplefatoora": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

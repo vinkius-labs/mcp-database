@@ -1,7 +1,6 @@
 # Orbit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/orbit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/orbit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/orbit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/orbit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,12 +62,52 @@ Here are some examples of how you can interact with the **Orbit** MCP server usi
 > The note has been successfully added to member 98765's profile. It will be visible to your team in Orbit.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Orbit API Key?**
+In your Orbit account, go to **Settings** > **Account Settings**. Your API token is listed in the 'API Token' section.
+
+**Q: Where is the Workspace ID located?**
+The Workspace ID is the unique slug found in the URL of your Orbit dashboard (e.g., `app.orbit.love/YOUR_WORKSPACE_ID`).
+
+**Q: Can I add custom activities for members?**
+Yes! Use the `create_orbit_activity` tool. You can specify the `activity_type` and provide a link or unique key to record any community interaction.
+
+
 ## Installation & Usage
 
-To install and use the **Orbit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/orbit](https://vinkius.com/mcp/orbit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Orbit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `orbit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Orbit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "orbit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

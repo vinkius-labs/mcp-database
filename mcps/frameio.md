@@ -1,7 +1,6 @@
 # Frame.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/frameio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/frameio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/frameio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/frameio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **Frame.io** MCP server 
 > Comment added! Your feedback has been successfully posted to 'vid_9876' at the 02:00 mark. Your team will see your approval in the project timeline.
 
 
+## ❓ FAQ
+
+**Q: How do I get an Access Token for Frame.io?**
+You can generate a Personal Access Token in the Frame.io Developer Portal at https://developer.frame.io.
+
+**Q: Can I add comments with a specific timecode using the agent?**
+Yes! The 'add_comment' tool accepts an optional 'timestamp' parameter in seconds, allowing you to pin your feedback to a specific moment in the video.
+
+**Q: How do I see the assets inside a specific folder?**
+Use the 'list_assets' tool and provide the Folder ID as the 'parentId'. The agent will return all files and sub-folders contained within that directory.
+
+**Q: Is it possible to list external review links?**
+Yes! Use the 'list_review_links' tool and provide the Project ID. The agent will retrieve all active shared links for that project.
+
+
 ## Installation & Usage
 
-To install and use the **Frame.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/frameio](https://vinkius.com/mcp/frameio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Frame.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `frameio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Frame.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "frameio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

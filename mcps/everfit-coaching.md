@@ -1,7 +1,6 @@
 # Everfit Coaching MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/everfit-coaching)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/everfit-coaching-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/everfit-coaching-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/everfit-coaching)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Everfit Coaching** MCP
 > For client ID 'CUST-12345', I've retrieved the metrics: 10,500 average daily steps, 7.5 hours of sleep, and 4 workouts completed this week. Their weight has decreased by 2kg this month. Would you like to see the detailed step trend?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Everfit API Key?**
+Log in to your Everfit Business dashboard, navigate to **Settings > API Integration**, and you can generate or retrieve your unique **API Key** from there. API access usually requires a specific coaching plan.
+
+**Q: Can the agent update workout results?**
+This integration currently focuses on listing and auditing clients, workouts, and tasks. Logging actual workout results (reps, weight) or completing tasks should be managed via the Everfit mobile app by the client or trainer.
+
+**Q: Does the integration show real-time activity?**
+Yes, you can use the list_client_daily_tasks and get_client_performance_metrics tools to retrieve the latest recorded data and completion status for any client.
+
+
 ## Installation & Usage
 
-To install and use the **Everfit Coaching** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/everfit-coaching](https://vinkius.com/mcp/everfit-coaching)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Everfit Coaching** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `everfit-coaching` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Everfit Coaching** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "everfit-coaching": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

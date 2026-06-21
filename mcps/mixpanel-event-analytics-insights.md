@@ -1,7 +1,6 @@
 # Mixpanel (Event Analytics & Insights) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mixpanel-event-analytics-insights)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mixpanel-event-analytics-insights-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mixpanel-event-analytics-insights-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mixpanel-event-analytics-insights)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Mixpanel (Event Analyt
 > I've retrieved 4 behavioral cohorts: 'Power Users' (Size: 1,250), 'Trial Expired' (Size: 4,500), 'Recent Churn' (Size: 890), and 'iOS Users' (Size: 12,450). Which cohort would you like to query profile traits for?
 
 
+## ❓ FAQ
+
+**Q: Can I query my conversion funnels through my agent?**
+Yes. Use the `query_funnel` tool with a specific Funnel ID and date range. Your agent will retrieve the step-by-step conversion percentages and drop-off counts, allowing you to identify exactly where users are leaving your flow.
+
+**Q: How do I filter user profiles using specific properties through a conversation?**
+The `query_profiles` tool allows your agent to execute JQL expressions. You can ask your agent to find users matching literal conditions like `properties['plan'] == 'pro'`, and it will retrieve the corresponding profiles and metadata securely.
+
+**Q: Can my agent check user retention for my application?**
+Absolutely. Use the `query_retention` tool by providing a 'born' event (first action) and a recurring 'return' event. Your agent will compute the N-Day retention curve, showing you how sticky your product is for specific user cohorts.
+
+
 ## Installation & Usage
 
-To install and use the **Mixpanel (Event Analytics & Insights)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mixpanel-event-analytics-insights](https://vinkius.com/mcp/mixpanel-event-analytics-insights)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mixpanel (Event Analytics & Insights)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mixpanel-event-analytics-insights` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mixpanel (Event Analytics & Insights)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mixpanel-event-analytics-insights": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

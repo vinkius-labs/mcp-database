@@ -1,7 +1,6 @@
 # zrok (Open-Source Tunnel) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zrok-open-source-tunnel)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zrok-open-source-tunnel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zrok-open-source-tunnel-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zrok-open-source-tunnel)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **zrok (Open-Source Tunn
 > Fetching account details... Your account is active. You are currently using 3 out of 10 allowed environments and 5 out of 20 allowed shares. Your data transfer for this period is at 15%.
 
 
+## ❓ FAQ
+
+**Q: How do I create a public tunnel for my local web server?**
+Use the `create_share` tool. Specify the `backend` (e.g., http://localhost:8080), set `share_mode` to 'public', and `backend_mode` to 'proxy'. The agent will return the public URL.
+
+**Q: Can I see all my currently active tunnels across all environments?**
+Yes! Run the `list_shares` tool. It will retrieve a list of all active shares associated with your account, including their tokens and backend configurations.
+
+**Q: How do I stop an environment from being active in zrok?**
+You can use the `disable_environment` tool. This will remove the environment registration from the zrok controller, effectively disconnecting that machine or container.
+
+
 ## Installation & Usage
 
-To install and use the **zrok (Open-Source Tunnel)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zrok-open-source-tunnel](https://vinkius.com/mcp/zrok-open-source-tunnel)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **zrok (Open-Source Tunnel)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zrok-open-source-tunnel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **zrok (Open-Source Tunnel)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zrok-open-source-tunnel": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

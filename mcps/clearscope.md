@@ -1,7 +1,6 @@
 # Clearscope MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clearscope)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clearscope-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clearscope-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clearscope)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Clearscope** MCP serve
 > Extracting structural hierarchy for 'report_456'... Top competitors consistently use headings like 'What is AI Search', 'Key Benefits', and 'Pricing Comparison'. I can list the full H2/H3 structure for the top 3 results.
 
 
+## ❓ FAQ
+
+**Q: Can my agent grade my content drafts in real-time?**
+Yes. Provide the report ID and your content text. The agent calls Clearscope's NLP engine to return an exact SEO grade (from A++ to F), identifying which terms you've covered and which ones are missing for optimal ranking.
+
+**Q: How can I extract the structural outline of my top search competitors?**
+Use the 'get_outline' tool. Your agent will fetch the H2 and H3 heading hierarchies from the top-ranking results for your keyword, helping you understand the document structure needed to compete on Google.
+
+**Q: Does the agent help with keyword research and traffic volume?**
+Absolutely. The 'get_keyword_research' tool provides search volume, CPC, and competitiveness data directly from Clearscope's database. This allows your agent to suggest target keywords based on actual market demand.
+
+
 ## Installation & Usage
 
-To install and use the **Clearscope** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clearscope](https://vinkius.com/mcp/clearscope)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clearscope** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clearscope` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clearscope** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clearscope": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

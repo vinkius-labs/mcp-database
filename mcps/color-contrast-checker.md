@@ -1,7 +1,6 @@
 # Color Contrast Checker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/color-contrast-checker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/color-contrast-checker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/color-contrast-checker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/color-contrast-checker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,46 @@ Here are some examples of how you can interact with the **Color Contrast Checker
 > Contrast ratio: 4.0:1. ❌ Fails WCAG AA for normal text (needs 4.5:1). ✅ Passes WCAG AA for large text (needs 3:1). Consider darkening to #2563EB (contrast 5.4:1) for full AA compliance.
 
 
+## ❓ FAQ
+
+**Q: What accessibility standards does it check?**
+It checks against both WCAG 2.1 Level AA (minimum 4.5:1 for normal text, 3:1 for large text) and Level AAA (7:1 for normal text, 4.5:1 for large text).
+
+
 ## Installation & Usage
 
-To install and use the **Color Contrast Checker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/color-contrast-checker](https://vinkius.com/mcp/color-contrast-checker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Color Contrast Checker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `color-contrast-checker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Color Contrast Checker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "color-contrast-checker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Omnivore (Read-Later) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omnivore-read-later)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/omnivore-read-later-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/omnivore-read-later-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omnivore-read-later)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Omnivore (Read-Later)*
 > Successfully saved the URL to your Omnivore library. It is now available in your inbox for later reading.
 
 
+## ❓ FAQ
+
+**Q: Can I filter my search by labels or read status?**
+Yes. Use the `search_articles` tool with Omnivore's search syntax, such as `label:AI` or `is:unread`, to narrow down your results.
+
+**Q: How do I get the actual text of a saved page for analysis?**
+Use the `get_article` tool by providing the article's unique slug and the owner's username. The agent will retrieve the full text content and metadata.
+
+**Q: Is it possible to add new links to my library via the agent?**
+Yes, the `save_url` action allows you to send any web link directly to your Omnivore library for later reading.
+
+
 ## Installation & Usage
 
-To install and use the **Omnivore (Read-Later)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/omnivore-read-later](https://vinkius.com/mcp/omnivore-read-later)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Omnivore (Read-Later)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `omnivore-read-later` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Omnivore (Read-Later)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "omnivore-read-later": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # FBI Crime Data Explorer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fbi-crime-data-explorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fbi-crime-data-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fbi-crime-data-explorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fbi-crime-data-explorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **FBI Crime Data Explore
 > Querying NIBRS demographics for New York... The data shows that the largest group of robbery victims falls within the 25-34 age range, accounting for approximately 28% of reported incidents. Would you like to see the breakdown by race or sex instead?
 
 
+## ❓ FAQ
+
+**Q: How do I find data for a specific local police department?**
+You can use the `get_agency_summarized` tool. You will need the agency's 9-character ORI (Originating Agency Identifier) to retrieve their specific reported statistics.
+
+**Q: What kind of demographic information is available for crime victims?**
+The `get_nibrs_victim_demographics` tool allows you to filter victim data by age, race, or sex for specific offenses in states that support NIBRS reporting.
+
+**Q: Can I compare crime trends over multiple years?**
+Yes. Tools like `get_national_estimates` and `get_state_summarized` accept `start_year` and `end_year` parameters to provide data across a historical range.
+
+
 ## Installation & Usage
 
-To install and use the **FBI Crime Data Explorer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fbi-crime-data-explorer](https://vinkius.com/mcp/fbi-crime-data-explorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FBI Crime Data Explorer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fbi-crime-data-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FBI Crime Data Explorer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fbi-crime-data-explorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

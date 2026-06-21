@@ -1,7 +1,6 @@
 # Numbers API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/numbers-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/numbers-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/numbers-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/numbers-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Numbers API** MCP serv
 > Retrieving a random mathematical property... Did you know that 1729 is the smallest number expressible as the sum of two cubes in two different ways? It's known as the Hardy-Ramanujan number.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key to use this server?**
+No, the Numbers API is completely free and does not require any authentication or API keys.
+
+**Q: Can I search for facts about specific dates like my birthday?**
+Yes! Use the `get_date_fact` tool and provide the month and day. Your agent will return a historical event associated with that specific calendar day.
+
+**Q: What kind of mathematical facts are available?**
+The `get_math_fact` tool provides properties like whether a number is a prime, Fibonacci number, perfect number, or has other unique mathematical characteristics.
+
+
 ## Installation & Usage
 
-To install and use the **Numbers API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/numbers-api](https://vinkius.com/mcp/numbers-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Numbers API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `numbers-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Numbers API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "numbers-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

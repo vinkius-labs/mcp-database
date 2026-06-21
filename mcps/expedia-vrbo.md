@@ -1,7 +1,6 @@
 # Expedia Vrbo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia-vrbo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/expedia-vrbo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/expedia-vrbo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia-vrbo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,52 @@ Here are some examples of how you can interact with the **Expedia Vrbo** MCP ser
 > I've retrieved 24 photos for Villa Caribe (VR-82914). The gallery includes: exterior with infinity pool overlooking the Caribbean (main photo), 4 bedroom shots (all with ocean-facing windows), the open-plan kitchen with marble countertops, a rooftop lounge area, and 3 beach access views. The property looks exactly as described — modern construction with direct beach access. Want me to compare this visually against Casa del Sol as well?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent find entire homes for a group trip with specific amenities like a pool or hot tub?**
+Yes. Use the `search_rentals` tool with your destination, dates, guest count, and amenity preferences. The agent will filter results to show only properties matching your criteria, including pricing per night and total stay cost. You can then drill into any listing with `get_rental_details` for the full amenity breakdown.
+
+**Q: How can I check which dates a property is available before booking?**
+The `get_rental_calendar` tool pulls the full availability calendar for any property. It shows open dates, blocked periods, nightly rates per date, and minimum stay requirements. Your agent can scan multiple weeks or months to identify the optimal booking window based on your budget and schedule.
+
+**Q: Can I see photos of a rental property before making a decision?**
+Yes. The `get_rental_images` tool returns the complete photo gallery for any property, including high-resolution images of bedrooms, living areas, kitchen, exterior, and amenities. Your agent can provide direct image URLs that you can preview in your browser or include in a planning document.
+
+
 ## Installation & Usage
 
-To install and use the **Expedia Vrbo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/expedia-vrbo](https://vinkius.com/mcp/expedia-vrbo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Expedia Vrbo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `expedia-vrbo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Expedia Vrbo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "expedia-vrbo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Techstars Mentor Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/techstars-mentor-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/techstars-mentor-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/techstars-mentor-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/techstars-mentor-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,12 +62,52 @@ Here are some examples of how you can interact with the **Techstars Mentor Prove
 > Four axes pass — mentors challenging, feedback integrated, market validated with paying customers, revenue active at  MRR. Network axis fails: zero strategic partnerships means zero unfair distribution. Name 5 connectors. Build 3 partnerships. Revenue without distribution leverage is fragile.
 
 
+## ❓ FAQ
+
+**Q: Why does it demand 3 mentors?**
+Techstars Mentor Madness puts founders in front of 100+ mentors in 3 weeks. Every blind spot gets exposed. Brad Feld: 'Give first — then the network compounds.' Three mentors is the minimum to triangulate truth and avoid echo chambers.
+
+**Q: Why is 'users love it' flagged as avoidance?**
+If no one told you something that hurt, you are not asking hard enough questions. 'Users love it' is confirmation bias. Name 3 things a mentor or customer said that made you uncomfortable — and what you changed because of it.
+
+**Q: Why charge from day one?**
+'We'll monetize later' is the most common epitaph on startup gravestones. Even $1 proves willingness to pay. Techstars demo day demands revenue metrics. Free users are not customers — they are users of free things.
+
+
 ## Installation & Usage
 
-To install and use the **Techstars Mentor Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/techstars-mentor-prover](https://vinkius.com/mcp/techstars-mentor-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Techstars Mentor Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `techstars-mentor-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Techstars Mentor Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "techstars-mentor-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

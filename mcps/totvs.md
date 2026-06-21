@@ -1,7 +1,6 @@
 # TOTVS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/totvs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/totvs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/totvs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/totvs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **TOTVS** MCP server usi
 > Fetching Fluig task list... I found 8 pending requests: 1. Purchase Requisition #101, 2. Vacation Request #202, 3. Travel Expense #303... Which one would you like to advance?
 
 
+## ❓ FAQ
+
+**Q: Which TOTVS systems are compatible with this MCP?**
+This MCP is designed to work with standard REST APIs from Protheus, RM, and Fluig. Ensure your specific instance has the relevant API modules enabled.
+
+**Q: How do I find my TOTVS Base URL?**
+The Base URL is the address of your ERP or Fluig web service (e.g., `https://erp.mycompany.com:8080/rest`). You can find this in your system's technical documentation or environment settings.
+
+**Q: Can I automatically advance a Fluig process request?**
+Yes! Use the `advance_process` tool with the specific Process Instance ID. Your agent will trigger the workflow transition based on the logic defined in Fluig.
+
+
 ## Installation & Usage
 
-To install and use the **TOTVS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/totvs](https://vinkius.com/mcp/totvs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TOTVS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `totvs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TOTVS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "totvs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

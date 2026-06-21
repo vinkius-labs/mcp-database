@@ -1,7 +1,6 @@
 # Lago MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lago)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lago-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lago-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lago)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Lago** MCP server usin
 > I've retrieved the latest invoices. You have 3 pending invoices for this month and 12 paid invoices from the previous quarter. Would you like to see the details for a specific one?
 
 
+## ❓ FAQ
+
+**Q: How do I track a new usage event for a customer?**
+Use the `send_event` tool. You'll need to provide the customer's external ID and the metric code to record the consumption in real-time.
+
+**Q: Can I create a new billing plan with specific charges?**
+Yes, use the `create_plan` tool. You can define the name, interval, and base amount, as well as pass a JSON object for specific charges.
+
+**Q: Is it possible to apply a discount to a customer?**
+Absolutely. First, create a coupon using `create_coupon`, then use the `apply_coupon` tool to link it to a specific customer's external ID.
+
+
 ## Installation & Usage
 
-To install and use the **Lago** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lago](https://vinkius.com/mcp/lago)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lago** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lago` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lago** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lago": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

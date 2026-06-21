@@ -1,7 +1,6 @@
 # Granola MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/granola)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/granola-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/granola-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/granola)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Granola** MCP server u
 > Searching documents... I found 2 meeting documents mentioning 'competitor analysis'. The most relevant is 'Marketing Strategy Sync' from March 20. I can retrieve the full structured content or transcript for you.
 
 
+## ❓ FAQ
+
+**Q: Can my agent retrieve the AI summary of a specific Granola meeting?**
+Yes. Use the 'get_summary' tool. The agent will fetch the native generative results, reducing the bulk meeting content into synthesized blocks and key takeaways flawlessly.
+
+**Q: How do I extract action items from recorded notes via chat?**
+Use the 'get_action_items' tool. Your agent will isolate targeted steps inferred from the meeting intent, enabling you to automate your post-meeting follow-up workflows natively.
+
+**Q: Can I search for meetings from a specific date range through the agent?**
+Absolutely. Use the 'list_by_date' tool. Provide the start and end dates in ISO 8601 format. The agent will trigger temporal scoping routines to expose specific documents mapped historically.
+
+
 ## Installation & Usage
 
-To install and use the **Granola** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/granola](https://vinkius.com/mcp/granola)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Granola** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `granola` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Granola** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "granola": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

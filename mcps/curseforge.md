@@ -1,7 +1,6 @@
 # CurseForge MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/curseforge)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/curseforge-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/curseforge-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/curseforge)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **CurseForge** MCP serve
 > For Minecraft (ID: 432), I found categories such as 'Adventure and RPG', 'Magic', 'Technology', and 'Storage'. Which category would you like to explore?
 
 
+## ❓ FAQ
+
+**Q: How can I find mods for a specific game like Minecraft?**
+You can use the `search_mods` tool. For Minecraft, use `gameId: 432`. You can further filter by `searchFilter` for keywords or `classId` for specific types like Modpacks or Resource Packs.
+
+**Q: Can I get the direct download link for a mod file?**
+Yes! Use the `get_mod_file_download_url` tool with the specific `modId` and `fileId`. It will return the official URL to download the file.
+
+**Q: How do I identify a mod if I only have the file fingerprint?**
+Use the `get_fingerprints_matches` tool. By providing the numeric fingerprint of a file, the API will return the matching mod and file details from the CurseForge database.
+
+
 ## Installation & Usage
 
-To install and use the **CurseForge** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/curseforge](https://vinkius.com/mcp/curseforge)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CurseForge** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `curseforge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CurseForge** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "curseforge": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

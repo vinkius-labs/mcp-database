@@ -1,7 +1,6 @@
 # Sally MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sally)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sally-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sally-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sally)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Sally** MCP server usi
 > Here's the board for 'API Redesign': **Backlog** (3 tasks), **In Progress** (4 tasks, including 'Implement auth middleware' P2), **In Review** (2 tasks), **Done** (3 tasks). Would you like to update the status of any task?
 
 
+## ❓ FAQ
+
+**Q: Can I create a task with priority, labels, and status in one step?**
+Yes! Use `create_task` with the project ID, title, priority (P1-P4), status name, and comma-separated labels. The task is created instantly with all metadata.
+
+**Q: How do I view my Kanban board from the AI agent?**
+Use `get_board` to retrieve the aggregated board data. Optionally pass a project ID to scope it to a specific project. Tasks are grouped by their status columns.
+
+**Q: Does Sally require a hosted instance or cloud account?**
+Sally is a self-hosted, API-first project management system. You need your own Sally instance URL, an API key (atpm_ prefix), and your workspace slug to connect.
+
+
 ## Installation & Usage
 
-To install and use the **Sally** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sally](https://vinkius.com/mcp/sally)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sally** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sally` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sally** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sally": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Amazon SQS Queue MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-sqs-queue)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazon-sqs-queue-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazon-sqs-queue-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-sqs-queue)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -55,12 +54,52 @@ Here are some examples of how you can interact with the **Amazon SQS Queue** MCP
 > The message has been successfully deleted from the queue. It will no longer be processed.
 
 
+## ❓ FAQ
+
+**Q: Why limit the agent to a single queue?**
+To enforce the principle of least privilege and zero-trust architecture. An autonomous agent shouldn't have the power to read or delete messages from critical system queues.
+
+**Q: Can I process messages automatically with this?**
+This server gives the agent the tools to pull (ReceiveMessage). The agent itself must decide when to call this tool, or be orchestrated by a cyclic prompt to continuously poll the queue.
+
+**Q: What is the ReceiptHandle?**
+It's a unique token returned when you receive a message. You must provide this exact token to the delete_message tool to successfully remove the message from the queue.
+
+
 ## Installation & Usage
 
-To install and use the **Amazon SQS Queue** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amazon-sqs-queue](https://vinkius.com/mcp/amazon-sqs-queue)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amazon SQS Queue** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amazon-sqs-queue` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amazon SQS Queue** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amazon-sqs-queue": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # NeetoInvoice MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neetoinvoice)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/neetoinvoice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/neetoinvoice-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neetoinvoice)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **NeetoInvoice** MCP ser
 > Processing... I have successfully generated the invoice for project 555. You can now review it in your NeetoInvoice dashboard.
 
 
+## ❓ FAQ
+
+**Q: How do I log hours for a specific project?**
+You can use the `create_time_entry` tool. Just provide the project ID and the duration of work to record it in NeetoInvoice immediately.
+
+**Q: Can I add a new team member to a project via AI?**
+Yes! Use the `add_project_user` tool by specifying the Project ID, User ID, and their role (e.g., 'project_manager' or 'regular_user').
+
+**Q: How can I check the billing details of a project?**
+Use the `get_project` tool with the Project ID. It will return the billing method, tasks, and other metadata associated with that project.
+
+
 ## Installation & Usage
 
-To install and use the **NeetoInvoice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/neetoinvoice](https://vinkius.com/mcp/neetoinvoice)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NeetoInvoice** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `neetoinvoice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NeetoInvoice** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "neetoinvoice": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

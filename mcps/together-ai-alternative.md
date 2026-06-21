@@ -1,7 +1,6 @@
 # Together AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/together-ai-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/together-ai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/together-ai-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/together-ai-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **Together AI** MCP serv
 > Fetching model list... You have access to over 100 models, including Llama-3.3-70B, Mixtral-8x7B, Flux.1, and various embedding models. Would you like to filter by type?
 
 
+## ❓ FAQ
+
+**Q: How do I generate a chat response using a specific model like Llama 3.3?**
+Use the `create_chat_completion` tool. Specify the model name (e.g., 'meta-llama/Llama-3.3-70B-Instruct-Turbo') and provide an array of messages. The agent will return the generated response from the model.
+
+**Q: Can I create images from text prompts with this server?**
+Yes! Use the `create_image_generation` tool. You can specify the model, the prompt description, and optional parameters like width, height, and steps to get high-quality visual outputs.
+
+**Q: How can I check the status of my asynchronous batch jobs?**
+You can use `list_batches` to see all your current batch jobs or `get_batch` with a specific Job ID to retrieve detailed status and results for a particular task.
+
+
 ## Installation & Usage
 
-To install and use the **Together AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/together-ai-alternative](https://vinkius.com/mcp/together-ai-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Together AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `together-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Together AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "together-ai-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

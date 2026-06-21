@@ -1,7 +1,6 @@
 # Metorial MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/metorial)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/metorial-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/metorial-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/metorial)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Metorial** MCP server 
 > Engaged explicit backend orchestrations bounding limits natively (`deploy_server`). Cloud infrastructure received limits provisioning bounds parameters completely functionally sound.
 
 
+## ❓ FAQ
+
+**Q: Can I automatically deploy a new MCP logic container natively using Metorial?**
+Yes! Utilize `deploy_server` explicit limits passing configurations to provision instances dynamically spinning up natively isolated.
+
+**Q: Is it possible to track the detailed error bounds of a specific proxy execution?**
+Yes! Interrogating the UUID via `get_trace_details` dumps end-to-end telemetry bounds explicitly isolating variables successfully.
+
+**Q: Does the system aggregate LLM latency usage inherently?**
+Exactly, call `get_usage_metrics` declaring explicitly bounding day limits to receive grouped logic matrices seamlessly.
+
+
 ## Installation & Usage
 
-To install and use the **Metorial** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/metorial](https://vinkius.com/mcp/metorial)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Metorial** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `metorial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Metorial** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "metorial": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

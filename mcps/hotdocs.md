@@ -1,7 +1,6 @@
 # HotDocs MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hotdocs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hotdocs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hotdocs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hotdocs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -150,12 +149,55 @@ The document is now ready. I found 1 assembled document: 'Employment_Contract_Jo
 > I found 8 work items created in the date range 2024-03-08 to 2024-04-07. Checking documents for unanswered variables... I noticed 2 work items have incomplete interviews with unanswered variables: 'contract-2024-005' has 3 unanswered variables (emergency_contact, benefits_selection, stock_options) and 'nda-2024-012' has 1 unanswered variable (jurisdiction_state). Would you like me to provide the details of these unanswered variables?
 
 
+## ❓ FAQ
+
+**Q: What credentials do I need to connect HotDocs Advance to this MCP server?**
+You need four pieces of information: (1) your **Tenancy Moniker** (the subdomain in your HotDocs URL, e.g., 'mycompany' from mycompany.hotdocsadvance.com), (2) the **API Client Display Name** you created in Manage API Credentials, (3) the **Service Principal Name** you added to that client, and (4) the **Service Principal Password** (which is shown only once during creation). All of these are obtained from the HotDocs Advance Auth portal.
+
+**Q: Can I assemble documents automatically without going through the interview UI?**
+Yes! Use the `create_work_item` tool to initialize a work item, then use `update_answers` to inject your data as HotDocs answer XML, and finally call `complete_assembly` to trigger document generation. This fully automated bypasses the interactive interview UI entirely, perfect for batch processing or integrating with external data sources.
+
+**Q: How do I find and download documents that have already been assembled?**
+Use the `list_documents` tool with your workItemId to see all assembled documents and their IDs. Then use `get_document_content` with the workItemId and documentId to retrieve the actual file content. The response includes both the raw content and a direct download URL for easy access to your PDFs or Word documents.
+
+**Q: What is a work item and why is it important?**
+A work item is a unique container in HotDocs Advance that holds interview answers, template associations, and assembled documents for a specific case. Think of it as a 'file folder' for each document automation request. It's identified by a unique ID you assign (like 'contract-john-doe-2024') and persists all data so you can revisit, update, and reassemble documents at any time.
+
+
 ## Installation & Usage
 
-To install and use the **HotDocs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hotdocs](https://vinkius.com/mcp/hotdocs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HotDocs** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hotdocs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HotDocs** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hotdocs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

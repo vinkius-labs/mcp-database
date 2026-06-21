@@ -1,7 +1,6 @@
 # Rightmove MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rightmove)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rightmove-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rightmove-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rightmove)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Rightmove** MCP server
 > Processing removal for 'REF-555'... I have sent the removal request with reason code 1 (Sold). The property will no longer appear as active on the portal.
 
 
+## ❓ FAQ
+
+**Q: How do I update the price of an existing property listing?**
+Use the `send_property` tool. If you provide an `agent_ref` that already exists in your Rightmove inventory, the system will automatically update the listing with the new `price_info` you provide.
+
+**Q: What information do I get when checking property performance?**
+By using the `get_property_performance` tool with a `branch_id` and `agent_ref`, you will receive statistics such as 'Detail Views' (how many people clicked the listing) and 'Search Appearances'.
+
+**Q: Can I specify why a property is being removed?**
+Yes. When using the `remove_property` tool, you must provide a `removal_reason` code (for example, 1 for Sold or 2 for Withdrawn) to maintain accurate records on the portal.
+
+
 ## Installation & Usage
 
-To install and use the **Rightmove** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rightmove](https://vinkius.com/mcp/rightmove)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rightmove** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rightmove` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rightmove** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rightmove": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

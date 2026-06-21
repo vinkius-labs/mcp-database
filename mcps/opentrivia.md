@@ -1,7 +1,6 @@
 # OpenTrivia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opentrivia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opentrivia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opentrivia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opentrivia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **OpenTrivia** MCP serve
 > The global database currently contains over 4,000 verified questions, with several hundred pending review. Total questions across all categories are distributed between multiple choice and true/false formats.
 
 
+## ❓ FAQ
+
+**Q: How do I ensure I don't get the same trivia question twice?**
+First, use the `request_token` tool to generate a session token. Then, include this token in your `get_questions` requests. The API will track your history and exclude previously seen questions for 6 hours.
+
+**Q: How can I find the ID for a specific category like 'Science & Nature'?**
+Use the `get_categories` tool. It returns a complete list of all available trivia categories along with their unique numerical IDs, which you can then use to filter your questions.
+
+**Q: Is there a way to check how many questions are available in a specific category?**
+Yes, use the `get_category_count` tool and provide the category ID. It will return the total number of questions available for that specific topic, including difficulty breakdowns.
+
+
 ## Installation & Usage
 
-To install and use the **OpenTrivia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opentrivia](https://vinkius.com/mcp/opentrivia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenTrivia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opentrivia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenTrivia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opentrivia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

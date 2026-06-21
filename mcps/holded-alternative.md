@@ -1,7 +1,6 @@
 # Holded MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/holded-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/holded-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/holded-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/holded-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Holded** MCP server us
 > Fetching recent expenses... Here are the last 5: 'Office Supplies' (€45.00), 'Software Subscription' (€29.99), 'Travel' (€120.00), 'Utilities' (€85.50), and 'Marketing' (€200.00). Total for these entries is €480.49.
 
 
+## ❓ FAQ
+
+**Q: Where do I find my API Key?**
+You can generate your API key inside your Holded account under **Settings** > **Developers**.
+
+**Q: Does the integration support inventory management?**
+Yes, you can list and manage products, variants, and stock levels using the `list_products` and related tools.
+
+**Q: Can I create invoices automatically with my AI agent?**
+Yes, the server includes tools to create sales invoices, quotes, and credit notes by providing the necessary customer and item details.
+
+
 ## Installation & Usage
 
-To install and use the **Holded** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/holded-alternative](https://vinkius.com/mcp/holded-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Holded** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `holded-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Holded** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "holded-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Galileo Experimental Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/galileo-experimental-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/galileo-experimental-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/galileo-experimental-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/galileo-experimental-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Galileo Experimental P
 > VARIABLES_UNCONTROLLED — Three things changed simultaneously: removed meetings, changed tool, added written updates. Which caused the improvement? Galileo varied ONLY the angle — same ball, same surface, same timing. Change ONE variable at a time.
 
 
+## ❓ FAQ
+
+**Q: How is this different from the Curie Measurement Prover?**
+Curie forces measurement rigor in existing data. Galileo forces experimental DESIGN — question authority, create a NEW test, predict outcomes, revise beliefs. Curie asks 'did you measure correctly?' Galileo asks 'did you design the right experiment?'
+
+**Q: What counts as 'authority deference'?**
+Accepting a claim because of WHO said it. 'The documentation recommends,' 'the industry standard says,' 'leading companies use' — all authority deference. The source's prestige does not make the claim true. Galileo TESTED Aristotle instead of citing him.
+
+**Q: Can I use this for business decisions?**
+Yes. 'Customers prefer feature X' — design a test, control variables, predict the outcome, measure. The Galilean method applies wherever claims need testing against reality.
+
+
 ## Installation & Usage
 
-To install and use the **Galileo Experimental Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/galileo-experimental-prover](https://vinkius.com/mcp/galileo-experimental-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Galileo Experimental Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `galileo-experimental-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Galileo Experimental Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "galileo-experimental-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

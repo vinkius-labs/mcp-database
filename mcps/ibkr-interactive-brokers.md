@@ -1,7 +1,6 @@
 # IBKR (Interactive Brokers) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ibkr-interactive-brokers)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ibkr-interactive-brokers-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ibkr-interactive-brokers-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ibkr-interactive-brokers)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **IBKR (Interactive Brok
 > I have successfully sent a cancellation request for order ID 1001 on account U1234567. The status is now 'Cancelled'.
 
 
+## ❓ FAQ
+
+**Q: How do I prevent my IBKR API session from timing out?**
+You can use the `tickle_session` tool. It is designed to maintain the Client Portal API session by sending a heartbeat, preventing timeouts due to inactivity.
+
+**Q: Can I retrieve historical trade reports through this server?**
+Yes. First, use `send_flex_request` with your Flex Query ID to generate a report. Then, use the returned Reference Code with `get_flex_statement` to download the data.
+
+**Q: How do I check my current buying power and margin requirements?**
+Use the `get_account_summary` tool with your Account ID. It returns a comprehensive summary of equity, margin, and other key financial metrics for the specified account.
+
+
 ## Installation & Usage
 
-To install and use the **IBKR (Interactive Brokers)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ibkr-interactive-brokers](https://vinkius.com/mcp/ibkr-interactive-brokers)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IBKR (Interactive Brokers)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ibkr-interactive-brokers` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IBKR (Interactive Brokers)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ibkr-interactive-brokers": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

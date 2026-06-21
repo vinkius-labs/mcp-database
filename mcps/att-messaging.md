@@ -1,7 +1,6 @@
 # AT&T Messaging MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/att-messaging)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/att-messaging-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/att-messaging-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/att-messaging)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **AT&T Messaging** MCP s
 > Retrieved 12 inbound messages in the last 24 hours. Found 1 opt-out: +13105554567 sent 'STOP' to shortcode 12345 at 14:32 UTC. This number has been added to your suppression list and will not receive further messages. The remaining 11 messages are keyword responses and customer replies.
 
 
+## ❓ FAQ
+
+**Q: What sender IDs can I use to send SMS messages?**
+You must use a registered AT&T shortcode or dedicated long code as the sender ID. Unregistered or random numbers will be rejected by the carrier. You can provision new shortcodes with keywords using the `create_shortcode` tool, or check your existing ones through the messaging dashboard. Each shortcode can be configured with multiple keyword auto-responses.
+
+**Q: Can I send MMS with images and what formats are supported?**
+Yes. The `send_mms` tool accepts a publicly accessible media URL. Supported formats include JPEG, PNG, GIF for images, MP4 for video, and common audio formats. The media URL must be reachable by AT&T's servers -- local or private URLs will fail. Maximum file size limits apply per carrier specifications, typically up to 1MB for images and 3.5MB for video.
+
+**Q: How do I handle customer opt-out requests like STOP?**
+AT&T Messaging automatically processes standard opt-out keywords (STOP, CANCEL, UNSUBSCRIBE, QUIT). When a customer sends one of these, they are added to your suppression list and will no longer receive messages from that shortcode. You can monitor inbound messages with `get_inbound_messages` to track opt-out activity and verify your keyword configuration with `get_keyword_responses`.
+
+
 ## Installation & Usage
 
-To install and use the **AT&T Messaging** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/att-messaging](https://vinkius.com/mcp/att-messaging)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AT&T Messaging** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `att-messaging` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AT&T Messaging** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "att-messaging": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

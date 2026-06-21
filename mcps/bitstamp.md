@@ -1,7 +1,6 @@
 # Bitstamp MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bitstamp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bitstamp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bitstamp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bitstamp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Bitstamp** MCP server 
 > I've retrieved your open orders. You have 2 active limit orders: a buy order for 0.1 BTC at $85,000 and a sell order for 1 ETH at $3,500.
 
 
+## ❓ FAQ
+
+**Q: Is it safe to enter my Bitstamp API keys?**
+Yes. Your keys are handled securely by the Vinkius Cloud environment and are never logged or exposed. We recommend creating an API key with only 'Read' and 'Trade' permissions, excluding 'Withdraw' for maximum safety.
+
+**Q: What currency pairs are supported?**
+Bitstamp supports a wide range of pairs including BTC, ETH, XRP, LTC, BCH, and many more against USD, EUR, and GBP. Use the `list_trading_pairs` tool to see the full current list.
+
+**Q: How do I find my Bitstamp API credentials?**
+Log in to your Bitstamp account, navigate to **Settings** > **API Control**, and click **New API Key**. Make sure to save your Key and Secret immediately as they won't be shown again.
+
+
 ## Installation & Usage
 
-To install and use the **Bitstamp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bitstamp](https://vinkius.com/mcp/bitstamp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bitstamp** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bitstamp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bitstamp** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bitstamp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

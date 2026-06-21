@@ -1,7 +1,6 @@
 # Rick and Morty MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rick-and-morty-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rick-and-morty-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rick-and-morty-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rick-and-morty-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Rick and Morty** MCP s
 > I've retrieved the data for the first three episodes: 'Pilot' (S01E01), 'Lawnmower Dog' (S01E02), and 'Anatomy Park' (S01E03). They aired between December 2013 and December 2013. Which one should we look into?
 
 
+## ❓ FAQ
+
+**Q: Can I filter characters by their status like 'Alive' or 'Dead'?**
+Yes! Use the `list_characters` tool and provide the `status` parameter (alive, dead, or unknown). You can also combine this with name or species filters.
+
+**Q: How do I get details for a specific episode?**
+You can use the `get_episode` tool by providing the unique Episode ID. If you don't know the ID, use `list_episodes` first to search by name or episode code (e.g., 'S01E01').
+
+**Q: Can I look up multiple locations at once?**
+Absolutely. Use the `get_multiple_locations` tool and provide a comma-separated string of IDs (e.g., '1,2,3') to fetch metadata for all of them in a single request.
+
+
 ## Installation & Usage
 
-To install and use the **Rick and Morty** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rick-and-morty-alternative](https://vinkius.com/mcp/rick-and-morty-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rick and Morty** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rick-and-morty-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rick and Morty** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rick-and-morty-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

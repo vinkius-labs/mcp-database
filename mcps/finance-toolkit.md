@@ -1,7 +1,6 @@
 # Finance Toolkit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finance-toolkit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/finance-toolkit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/finance-toolkit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finance-toolkit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -60,12 +59,52 @@ Here are some examples of how you can interact with the **Finance Toolkit** MCP 
 > Using the calculate_roi tool: The net profit is $6,200, resulting in a phenomenal ROI of 248%.
 
 
+## ❓ FAQ
+
+**Q: Why doesn't the amortization tool return the full 360-month table?**
+Returning 360 lines of JSON would severely bloat the LLM's context window, increasing API costs and causing distraction. We return a "Smart Summary" (total paid, total interest, first and last installments) which is perfect for AI decision-making.
+
+**Q: Are the compound interest calculations precise enough for banking?**
+Yes. The underlying engine relies on JavaScript's high-precision floating-point arithmetic (IEEE 754 standard). Outputs are rounded to 2 decimal places specifically for financial display standards.
+
+**Q: Can it compare SAC vs PRICE automatically?**
+An AI agent using this MCP can execute the tool twice in parallel—once for SAC and once for PRICE—and instantly write a comparative analysis report for you based on the exact totals.
+
+
 ## Installation & Usage
 
-To install and use the **Finance Toolkit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/finance-toolkit](https://vinkius.com/mcp/finance-toolkit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Finance Toolkit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `finance-toolkit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Finance Toolkit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "finance-toolkit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

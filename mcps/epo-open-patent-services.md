@@ -1,7 +1,6 @@
 # EPO Open Patent Services MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epo-open-patent-services)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/epo-open-patent-services-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/epo-open-patent-services-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epo-open-patent-services)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **EPO Open Patent Servic
 > I've retrieved the bibliographic metadata for US20230000001! It is a patent titled [Title] by applicant [Applicant]. I can provide the abstract and classification markers to help you identify it in your workflow.
 
 
+## ❓ FAQ
+
+**Q: How do I find my EPO Credentials?**
+Register for an account at the [**EPO OPS developer portal**](https://developers.epo.org/), create an application, and you will receive your Consumer Key and Consumer Secret. Copy and paste them below.
+
+**Q: Does it support legal status checks?**
+Yes. The `get_patent_legal_status` tool retrieves the current administrative and legal status metadata for specified patent publications.
+
+**Q: What format is required for Doc IDs?**
+The API uses standard EPODOC format (e.g., EP1234567) for patent identifiers across all retrieval tools.
+
+
 ## Installation & Usage
 
-To install and use the **EPO Open Patent Services** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/epo-open-patent-services](https://vinkius.com/mcp/epo-open-patent-services)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EPO Open Patent Services** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `epo-open-patent-services` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EPO Open Patent Services** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "epo-open-patent-services": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

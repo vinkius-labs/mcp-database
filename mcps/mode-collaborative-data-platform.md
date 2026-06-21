@@ -1,7 +1,6 @@
 # Mode (Collaborative Data Platform) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mode-collaborative-data-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mode-collaborative-data-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mode-collaborative-data-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mode-collaborative-data-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Mode (Collaborative Da
 > I've identified 3 active data sources: 'Snowflake-Prod' (Type: snowflake), 'Postgres-Analytics' (Type: postgres), and 'BigQuery-Warehouse'. I can provide the mapped schema identifiers for any of these sources if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Can I see the chart configurations for a specific Mode report through my agent?**
+Yes. Use the `get_report` tool with a specific Report Token. Your agent will retrieve the detailed analytical parameters, exposing the chart configurations and the underlying query logic used to generate the report data.
+
+**Q: How do I check which databases are currently linked to my Mode workspace?**
+The `list_data_sources` tool retrieves all database and warehouse connectors bound to your account. Your agent will report the source names and mapped schemas, helping you identify which data is available for SQL reporting.
+
+**Q: Can my agent help me find specific reports across different organizational spaces?**
+Absolutely. Use the `search_reports` tool with a search query. Your agent will filter through the metadata of all reports across your workspace, helping you locate critical data insights instantly without manual navigation.
+
+
 ## Installation & Usage
 
-To install and use the **Mode (Collaborative Data Platform)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mode-collaborative-data-platform](https://vinkius.com/mcp/mode-collaborative-data-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mode (Collaborative Data Platform)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mode-collaborative-data-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mode (Collaborative Data Platform)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mode-collaborative-data-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

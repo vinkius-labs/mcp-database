@@ -1,7 +1,6 @@
 # Daftra MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/daftra-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/daftra-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/daftra-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/daftra-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Daftra** MCP server us
 > Accessing financial records... Your Main Cash account has $5,420.00 and the Business Bank account (ID: tr_456) shows $12,800.00. Both are in good standing. Need a summary of recent expenses?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Daftra API Key?**
+Log in to your account, navigate to **Settings** > **API** > **API Keys**, and click **Add** to generate a new key.
+
+**Q: What is the subdomain in Daftra?**
+The subdomain is the part of your Daftra URL before '.daftra.com'. For example, if you access at `acme.daftra.com`, your subdomain is `acme`.
+
+**Q: Can I create invoices with multiple items?**
+Yes! The `create_invoice` tool accepts a JSON array of items, allowing you to specify names, unit prices, and quantities for each line.
+
+
 ## Installation & Usage
 
-To install and use the **Daftra** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/daftra-alternative](https://vinkius.com/mcp/daftra-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Daftra** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `daftra-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Daftra** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "daftra-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

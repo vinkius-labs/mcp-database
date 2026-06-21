@@ -1,7 +1,6 @@
 # Pinecone MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pinecone)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pinecone-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pinecone-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pinecone)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Pinecone** MCP server 
 > You have 2 active collection snapshots stored mapping to production: `backup-q1-2026` and `knowledge-base-staging`.
 
 
+## ❓ FAQ
+
+**Q: Can the AI execute raw vector similarity searches?**
+Yes, absolutely. Once you supply the raw semantic embedding coordinates (normally a float array generated previously), the LLM can funnel it through the `query_vectors` tool. The Pinecone DB will process this and return the top-K closest vector matches along with embedded metadata.
+
+**Q: How do I check my remaining vector storage capacity?**
+It's extremely simple. Just ask the connected AI agent to 'Get the index stats'. It will internally call `get_index_stats` against the specified index namespace, returning total vector count and physical dimensionality limits to your chat window.
+
+**Q: Is it safe to delete vectors dynamically using the chat terminal?**
+Yes, but with standard precautions. The `delete_vectors` tool operates exactly as the official SDK. As long as you maintain clear contextual scopes and ID filtering in your prompts, the execution is purely deterministic and secure.
+
+
 ## Installation & Usage
 
-To install and use the **Pinecone** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pinecone](https://vinkius.com/mcp/pinecone)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pinecone** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pinecone` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pinecone** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pinecone": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

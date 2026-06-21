@@ -1,7 +1,6 @@
 # GrainSure MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grainsure)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grainsure-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grainsure-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grainsure)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -109,12 +108,52 @@ Here are some examples of how you can interact with the **GrainSure** MCP server
 > Creating delivery order for Silo 2 (Barley)... Order confirmed! Order ID: ORD-2026-0417. Quantity: 30 tonnes of Barley. Preferred delivery date: April 21, 2026. Estimated supplier response time: 24 hours. Current silo status: 45% full (90 tonnes), predicted to last 28 days. This delivery will bring the silo to approximately 90% capacity. You will receive confirmation from the supplier within 24 hours. Would you like to set up an automatic reorder threshold for this silo?
 
 
+## ❓ FAQ
+
+**Q: Can my AI predict when my silo will run empty based on current usage?**
+Yes! Use the `get_days_to_empty` tool with your silo ID. GrainSure AI analyzes current fill levels and historical usage patterns to predict exactly how many days until the silo runs empty, with a confidence score. For deeper analysis, combine with `get_usage_history` to see the consumption trends that drive the prediction. This gives you proactive warning to schedule deliveries before running out.
+
+**Q: How do I set up low stock alerts for my silos?**
+Use the `update_silo_settings` tool to configure your low stock threshold percentage (e.g., 20% means alert when silo drops below 20% full). Then use `get_low_stock_alerts` to check for any active alerts. GrainSure will automatically monitor fill levels and trigger alerts when thresholds are breached, giving you timely warning to plan deliveries.
+
+**Q: Can I create a delivery order directly through the API?**
+Yes! Use the `create_delivery_order` tool with the silo ID, quantity in tonnes, and optionally a preferred delivery date and supplier. The API will confirm your order with an order ID and estimated delivery date. You can also use `get_days_to_empty` predictions to automatically trigger orders when silos reach critical levels.
+
+
 ## Installation & Usage
 
-To install and use the **GrainSure** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/grainsure](https://vinkius.com/mcp/grainsure)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GrainSure** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `grainsure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GrainSure** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "grainsure": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

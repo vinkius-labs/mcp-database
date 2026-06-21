@@ -1,7 +1,6 @@
 # Eco Savings Tracker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eco-savings-tracker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eco-savings-tracker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eco-savings-tracker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eco-savings-tracker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Eco Savings Tracker** 
 > By calling `get_environmental_milestones` with 50kg, you can see your current ecological achievement tier.
 
 
+## ❓ FAQ
+
+**Q: How can I calculate the impact of a specific habit change?**
+Use the `calculate_impact_of_change` tool by providing the habit type and the magnitude of the change.
+
+**Q: Can I see my total environmental savings?**
+Yes. By passing your history of changes to the `get_total_savings` tool, you can retrieve aggregated CO2 and water savings.
+
+**Q: How are ecological milestones determined?**
+The `get_environmental_milestones` tool calculates tree planting equivalents and achievement tiers based on your total CO2 saved.
+
+
 ## Installation & Usage
 
-To install and use the **Eco Savings Tracker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eco-savings-tracker](https://vinkius.com/mcp/eco-savings-tracker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Eco Savings Tracker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eco-savings-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Eco Savings Tracker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eco-savings-tracker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

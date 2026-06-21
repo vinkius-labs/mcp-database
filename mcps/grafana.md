@@ -1,7 +1,6 @@
 # Grafana MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grafana)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grafana-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grafana-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grafana)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Grafana** MCP server u
 > Checking alert rules... Yes, I found 1 firing alert: 'High Error Rate' on service 'API-v1'. It has been firing for 15 minutes. All other 12 alert rules are currently in 'Normal' state.
 
 
+## ❓ FAQ
+
+**Q: Can my agent search for specific dashboards in my Grafana instance?**
+Yes. Use the 'search_dashboards' tool. You can provide an optional query string to match titles or tags. The agent will return basic info including the unique UID required for deeper inspection.
+
+**Q: How do I extract the PromQL or SQL queries from a dashboard panel via chat?**
+Use the 'get_dashboard' tool with the dashboard UID. Your agent will retrieve the full JSON configuration, including all panels and their underlying data queries, enabling you to review the exact metrics logic natively.
+
+**Q: Can I see firing alerts through the agent?**
+Absolutely. Use the 'list_alerts' tool. The agent retrieves all configured alert rules and their current statuses, allowing you to identify which monitors are currently in a firing state synchronousy.
+
+
 ## Installation & Usage
 
-To install and use the **Grafana** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/grafana](https://vinkius.com/mcp/grafana)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Grafana** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `grafana` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Grafana** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "grafana": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

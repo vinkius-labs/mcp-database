@@ -1,7 +1,6 @@
 # UPYUN Developer Platform MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upyun-developer-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/upyun-developer-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/upyun-developer-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upyun-developer-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -61,12 +60,49 @@ Here are some examples of how you can interact with the **UPYUN Developer Platfo
 > I've successfully created the file `/hello.txt` in your UPYUN bucket and uploaded the text string you requested.
 
 
+## ❓ FAQ
+
+**Q: Where do I find my UPYUN Operator details?**
+Log into your UPYUN console, click on 'Cloud Storage' -> 'Your Service/Bucket' -> 'Configuration' -> 'Operators'. From there you can copy the operator name and the generated password.
+
+**Q: Does the AI see my files if I connect this?**
+The AI uses this MCP to only perform the standard API queries you allow it. Use an Operator with specific folder limits if you wish to restrict directory access.
+
+
 ## Installation & Usage
 
-To install and use the **UPYUN Developer Platform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/upyun-developer-platform](https://vinkius.com/mcp/upyun-developer-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **UPYUN Developer Platform** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `upyun-developer-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **UPYUN Developer Platform** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "upyun-developer-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

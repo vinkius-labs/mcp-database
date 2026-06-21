@@ -1,7 +1,6 @@
 # AB.GL MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/abgl)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/abgl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/abgl-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/abgl)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **AB.GL** MCP server usi
 > You have 3 bio pages: 'Marketing Team' (12 links, 3.4k views), 'Product Launch Q4' (8 links, 1.2k views), and 'Personal Portfolio' (5 links, 890 views). Would you like to inspect any of them?
 
 
+## ❓ FAQ
+
+**Q: Can my AI create branded short links with custom aliases?**
+Yes. Use the `create_short_link` tool with the URL and an optional alias parameter. For example, ask your agent to shorten 'example.com/campaign' with alias 'summer24'.
+
+**Q: How do I view click analytics for a specific link?**
+Use the `get_link_stats` tool with the link ID. The agent returns total clicks, referrer sources, device breakdown, and geographic distribution.
+
+**Q: Can I manage and delete links through the AI?**
+Yes. The `update_link` tool changes the destination URL of an existing link, and `delete_link` permanently removes it from your account. Both require the link ID.
+
+
 ## Installation & Usage
 
-To install and use the **AB.GL** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/abgl](https://vinkius.com/mcp/abgl)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AB.GL** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `abgl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AB.GL** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "abgl": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

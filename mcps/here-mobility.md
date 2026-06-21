@@ -1,7 +1,6 @@
 # HERE Mobility MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/here-mobility)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/here-mobility-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/here-mobility-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/here-mobility)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **HERE Mobility** MCP se
 > I'll search for trips combining transit and bicycle modes for an efficient journey.
 
 
+## ❓ FAQ
+
+**Q: Which cities and countries does HERE Transit cover?**
+HERE Transit provides coverage in 70+ countries worldwide, including major cities in North America, Europe, Asia, South America, and Australia. Coverage includes bus, train, subway, tram, and ferry networks. Check coverage at developer.here.com for your specific city.
+
+**Q: Is real-time transit data available through this MCP?**
+Yes! The schedule endpoint returns real-time departure and arrival estimates where available. Many transit agencies provide real-time GTFS-RT feeds that HERE integrates. Actual vs scheduled times are returned so you can see delays. Coverage varies by transit agency.
+
+**Q: Can I plan wheelchair-accessible transit routes?**
+Yes! Use the get_station_details tool to check wheelchair accessibility for each station. Station details include elevator availability, step-free access, and accessibility amenities. Combine this with trip planning to ensure all transfer points are accessible for mobility-impaired travelers.
+
+
 ## Installation & Usage
 
-To install and use the **HERE Mobility** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/here-mobility](https://vinkius.com/mcp/here-mobility)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HERE Mobility** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `here-mobility` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HERE Mobility** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "here-mobility": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

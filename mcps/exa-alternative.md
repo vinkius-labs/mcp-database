@@ -1,7 +1,6 @@
 # Exa MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exa-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/exa-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/exa-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exa-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Exa** MCP server using
 > Extraction complete! I've retrieved the cleaned text content for the arXiv paper (ID: 2312.00752). It contains the abstract, full body text, and author metadata. Would you like me to summarize the key findings for you?
 
 
+## ❓ FAQ
+
+**Q: Can I perform a meaning-based search instead of keywords via AI?**
+Yes! Use the `search` tool. Provide your query and enable `useAutoprompt`. Exa will use its neural embeddings to find links that match the intent of your question.
+
+**Q: How do I find articles similar to a specific URL?**
+Use the `find_similar` tool. Provide the seed URL, and the agent will retrieve a list of pages that are semantically related to that content.
+
+**Q: Is it possible to extract cleaned text from multiple pages via AI?**
+Absolutely. Use the `get_contents` query. Provide an array of URLs or Exa IDs, and the agent will return the cleaned text content and metadata for each page.
+
+
 ## Installation & Usage
 
-To install and use the **Exa** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/exa-alternative](https://vinkius.com/mcp/exa-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Exa** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `exa-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Exa** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "exa-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

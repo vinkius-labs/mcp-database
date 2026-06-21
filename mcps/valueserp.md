@@ -1,7 +1,6 @@
 # ValueSERP MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/valueserp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/valueserp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/valueserp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/valueserp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **ValueSERP** MCP server
 > Based on real-time Google Autocomplete, the most frequent continuations for 'how to start a' are currently: 'business', 'clothing brand', 'llc', 'conversation', 'cover letter', and 'nonprofit'. These reflect high-volume search intents. Let's dig into 'clothing brand' if you'd like to do further research on that vertical.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent find real-time product prices on Google Shopping?**
+Yes! You can ask your agent: `search Google Shopping for 'Sony WH-1000XM5 headphones' in the US`. The agent uses the `googleShoppingTool` to instantly return a clean, structured list of current prices, merchant names, and direct links without ever getting blocked by Captchas.
+
+**Q: How can I discover what questions people are asking about a topic?**
+Content marketers adore this. Instead of manually clicking through Google's 'People Also Ask' boxes, just tell your AI: `get related questions for 'indoor plants care'`. The agent dynamically queries the SERP and extracts all those rich question snippets perfectly formatted for outlining your next blog post.
+
+**Q: Can I perform a highly localized/geo-specific search?**
+Absolutely. ValueSERP natively supports extreme customization. You can ask your agent to `perform a custom search for 'best coffee shops' simulating a mobile device physically located in Brooklyn, NY`. The AI maps your intent into precise API parameters (`gl`, `hl`, `location`, `device`) yielding exactly what local users see.
+
+
 ## Installation & Usage
 
-To install and use the **ValueSERP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/valueserp](https://vinkius.com/mcp/valueserp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ValueSERP** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `valueserp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ValueSERP** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "valueserp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # MRR and ARR Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mrr-and-arr-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mrr-and-arr-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mrr-and-arr-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mrr-and-arr-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -55,12 +54,52 @@ Here are some examples of how you can interact with the **MRR and ARR Calculator
 > Use the `calculate_churn_impact` tool. Input your $80,000 MRR and 5% churn rate to understand the potential revenue loss.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between MRR and ARR?**
+MRR tracks predictable monthly revenue. To annualize this, use the `calculate_arr` tool. It takes your calculated MRR figure and multiplies it by twelve to give you the Annual Recurring Revenue (ARR).
+
+**Q: How do I separate New, Expansion, and Churn revenue?**
+You must first use the `calculate_mrr` tool to get the total MRR. Then, pass this detailed output into a subsequent aggregation step (conceptually represented by `aggregate_mrr_components`) to get the breakdown of New, Expansion, and Churn revenue streams.
+
+**Q: Can I project future revenue based on current growth?**
+Yes. After calculating your Net New MRR, you can use the `project_revenue` tool. This tool takes a starting MRR and the number of months (1-36) to generate a projected revenue total.
+
+
 ## Installation & Usage
 
-To install and use the **MRR and ARR Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mrr-and-arr-calculator](https://vinkius.com/mcp/mrr-and-arr-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MRR and ARR Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mrr-and-arr-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MRR and ARR Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mrr-and-arr-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

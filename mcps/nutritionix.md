@@ -1,7 +1,6 @@
 # Nutritionix MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nutritionix)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nutritionix-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nutritionix-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nutritionix)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Total: 365 kcal, 11g protein, 63g carbs, 10g fat.
 > A Starbucks Grande (16 oz) Caramel Macchiato made with almond milk contains approximately 190 calories, 4g of protein, 5g of fat, and 27g of carbohydrates (including 25g of sugar).
 
 
+## ❓ FAQ
+
+**Q: How accurate is the NLP food analysis?**
+Nutritionix's NLP engine is used by major fitness and health apps globally. It can parse complex meal descriptions including quantities, cooking methods, and brand names with high accuracy, backed by a verified database of 1M+ food items.
+
+**Q: Can it recognize branded foods or restaurant items?**
+Yes, Nutritionix excels at this. If you type '1 Big Mac and a medium fries from McDonald's', it will correctly map these to specific branded items in its database.
+
+**Q: Does it track micronutrients?**
+Yes, in addition to macros (proteins, fats, carbs), it returns data on dietary fiber, sugars, sodium, cholesterol, and potassium for an incredibly comprehensive nutritional profile.
+
+
 ## Installation & Usage
 
-To install and use the **Nutritionix** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nutritionix](https://vinkius.com/mcp/nutritionix)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nutritionix** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nutritionix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nutritionix** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nutritionix": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

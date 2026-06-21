@@ -1,7 +1,6 @@
 # Megaventory MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/megaventory)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/megaventory-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/megaventory-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/megaventory)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Megaventory** MCP serv
 > Querying sales orders... I found your most recent orders, including SO-12345 for Client 'TechCorp' and SO-12344 for 'Global Solutions'.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Megaventory API Key?**
+Log in to Megaventory, go to Settings, and look for the API section to generate or copy your API Key.
+
+**Q: Can I check stock levels for a specific SKU?**
+Yes! Use the `get_product_stock` tool and provide the product SKU to see current availability across all locations.
+
+**Q: Is my inventory data secure?**
+Absolutely. Your token is encrypted at rest and injected securely at runtime.
+
+
 ## Installation & Usage
 
-To install and use the **Megaventory** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/megaventory](https://vinkius.com/mcp/megaventory)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Megaventory** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `megaventory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Megaventory** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "megaventory": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

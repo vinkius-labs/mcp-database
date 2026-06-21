@@ -1,7 +1,6 @@
 # Tatum (Blockchain Infra) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tatum-blockchain-infra)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tatum-blockchain-infra-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tatum-blockchain-infra-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tatum-blockchain-infra)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Tatum (Blockchain Infr
 > The current exchange rate is 1 BTC = 64,250.50 USD. Would you like to check the rate for another pair or calculate a specific conversion?
 
 
+## ❓ FAQ
+
+**Q: Can I estimate gas for a specific EVM transaction before sending it?**
+Yes! Use the `estimate_evm_gas` tool by providing the chain, sender, recipient, and amount. It will return the estimated gas limit and price for that specific interaction.
+
+**Q: How do I monitor a wallet for new incoming transactions automatically?**
+You can use the `create_subscription` tool to set up a webhook. This allows you to receive real-time notifications whenever a transaction occurs on the specified address and chain.
+
+**Q: Can I check balances for multiple token types at once?**
+Yes, the `get_wallet_portfolio` tool allows you to specify token types like 'native', 'fungible' (ERC-20), and 'nft' to get a comprehensive view of an address's holdings.
+
+
 ## Installation & Usage
 
-To install and use the **Tatum (Blockchain Infra)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tatum-blockchain-infra](https://vinkius.com/mcp/tatum-blockchain-infra)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tatum (Blockchain Infra)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tatum-blockchain-infra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tatum (Blockchain Infra)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tatum-blockchain-infra": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

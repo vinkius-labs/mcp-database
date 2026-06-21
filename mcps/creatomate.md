@@ -1,7 +1,6 @@
 # Creatomate MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/creatomate)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/creatomate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/creatomate-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/creatomate)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Creatomate** MCP serve
 > I've found 4 templates in your project: 'Instagram Story Ad', 'YouTube Intro', 'Product Demo', and 'Customer Testimonial'. Which one would you like to use for a new render?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Creatomate API Key?**
+Log in to your Creatomate account, select your project, and navigate to **Project Settings > API Keys** to generate a secret key.
+
+**Q: Can I provide dynamic text for videos?**
+Yes, you can use the 'modifications' parameter in the render_video tool to swap text, images, or colors defined in your template.
+
+**Q: What is the rendering time?**
+Rendering time depends on video length and complexity, but Creatomate is optimized for speed. You can use the get_render_status tool to check when it's done.
+
+
 ## Installation & Usage
 
-To install and use the **Creatomate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/creatomate](https://vinkius.com/mcp/creatomate)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Creatomate** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `creatomate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Creatomate** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "creatomate": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

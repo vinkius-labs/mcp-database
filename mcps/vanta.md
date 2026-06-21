@@ -1,7 +1,6 @@
 # Vanta MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vanta)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vanta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vanta-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vanta)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -96,12 +95,52 @@ Here are some examples of how you can interact with the **Vanta** MCP server usi
 > You have 14 active integrations serving as authorized subprocessors logged in Vanta. Major ones include Amazon Web Services, GitHub, Slack, and Datadog. Three minor vendors are currently unverified and missing full justification descriptions in the system policy context.
 
 
+## ❓ FAQ
+
+**Q: How can I easily check if an employee completed their security training?**
+Provide the specific email or ID and ask the agent: `get the Vanta compliance details for John Doe`. The `getUserTool` will retrieve all local profile assertions, confirming immediately whether John completed the security training modules and signed the internal policies.
+
+**Q: Can I automatically view which vulnerabilities span past our SLA threshold?**
+Yes. Ask the agent to `list our security vulnerabilities and highlight any that are missing their SLA timelines`. It will fetch the complete collection from Vanta, compute the statuses, and list out the critical unresolved issues requiring immediate developer engineering attention natively.
+
+**Q: What happens when an employee terminates contract? Can I use the agent?**
+Absolutely. You can implement instantaneous offboarding by prompting the AI: `deactivate Vanta compliance monitoring for user ID 123456`. The agent utilizes the `updateUserTool` switching their active flags internally to false. Offboarding checklists just got significantly faster.
+
+
 ## Installation & Usage
 
-To install and use the **Vanta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vanta](https://vinkius.com/mcp/vanta)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vanta** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vanta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vanta** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vanta": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

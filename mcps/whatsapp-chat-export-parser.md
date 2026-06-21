@@ -1,7 +1,6 @@
 # WhatsApp Chat Export Parser MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whatsapp-chat-export-parser)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/whatsapp-chat-export-parser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/whatsapp-chat-export-parser-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whatsapp-chat-export-parser)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **WhatsApp Chat Export P
 > Participant stats: João (1,204 messages), Ana (892), Pedro (456). João sends 42% of all messages.
 
 
+## ❓ FAQ
+
+**Q: Are my private chats sent to the cloud?**
+Never. The parsing is 100% local. Only the structured text representation is sent to the AI chat context during your session.
+
+**Q: How do I export a WhatsApp chat?**
+Open the chat in WhatsApp, tap the three dots > More > Export Chat > Without Media. Save the .txt file to your computer.
+
+**Q: What if the chat has 50,000 messages?**
+The engine uses a token-safe strategy: it sends only the first 100 and last 50 messages, plus full participant stats. Ask the AI to filter by sender or date for specific results.
+
+
 ## Installation & Usage
 
-To install and use the **WhatsApp Chat Export Parser** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/whatsapp-chat-export-parser](https://vinkius.com/mcp/whatsapp-chat-export-parser)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WhatsApp Chat Export Parser** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `whatsapp-chat-export-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WhatsApp Chat Export Parser** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "whatsapp-chat-export-parser": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

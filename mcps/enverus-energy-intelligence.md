@@ -1,7 +1,6 @@
 # Enverus Energy Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/enverus-energy-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/enverus-energy-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/enverus-energy-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/enverus-energy-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Enverus Energy Intelli
 > I've retrieved 5 recent deals, including the '$2.5B Acquisition of Bakken Assets' by 'Continental Resources' and a '$500M divestiture' in the Eagle Ford. Would you like to see the asset breakdown for the Bakken deal?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Enverus API Key?**
+You need an active Enverus subscription. Log in to your [**Enverus Developer Portal**](https://developer.enverus.com), navigate to your account settings, and you can generate or retrieve your unique **API Key** from there.
+
+**Q: Does the integration cover global basins?**
+Yes, Enverus tracks asset activity globally. Availability of specific data for basins like Permian, Bakken, or international fields depends on your subscription level and API permissions.
+
+**Q: Is production data real-time?**
+Production data is updated as frequently as reported by operators and regulatory agencies. You can retrieve the latest available telemetry using the get_well_production_telemetry tool.
+
+
 ## Installation & Usage
 
-To install and use the **Enverus Energy Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/enverus-energy-intelligence](https://vinkius.com/mcp/enverus-energy-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Enverus Energy Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `enverus-energy-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Enverus Energy Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "enverus-energy-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

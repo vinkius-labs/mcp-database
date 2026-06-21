@@ -1,7 +1,6 @@
 # Steam Performance & Scouting Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/steam-performance-scouting-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/steam-performance-scouting-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/steam-performance-scouting-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/steam-performance-scouting-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Steam Performance & Sc
 > Inspecting achievements... You have unlocked 'Achievement A', which only 2.5% of players globally possess. However, you are missing 'Achievement B', which 15% have already completed. Would you like the full technical list of missing achievements?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically analyze technical stats for a specific game like Deadlock?**
+Yes! By using tools like `get_user_game_stats` and `get_game_schema`, your agent can retrieve the full list of technical counters (souls, damage, objectives) recorded by the Steam backend for that specific title.
+
+**Q: How do I check if a player has any active bans before inviting them to a tournament?**
+Use the `get_player_bans` tool. Your agent will instantly retrieve the official status for VAC bans, community bans, and economy bans, ensuring the integrity of your competitive event.
+
+**Q: Does the integration allow comparing performance between two different players?**
+Yes. The `get_user_game_stats` action retrieves data for multiple SteamIDs and compiles a side-by-side comparison of their technical metrics, allowing the agent to identify who has higher efficiency in specific areas.
+
+
 ## Installation & Usage
 
-To install and use the **Steam Performance & Scouting Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/steam-performance-scouting-intelligence](https://vinkius.com/mcp/steam-performance-scouting-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Steam Performance & Scouting Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `steam-performance-scouting-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Steam Performance & Scouting Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "steam-performance-scouting-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

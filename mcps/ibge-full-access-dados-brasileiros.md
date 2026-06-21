@@ -1,7 +1,6 @@
 # IBGE Full Access — Dados Brasileiros MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ibge-full-access-dados-brasileiros)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ibge-full-access-dados-brasileiros-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ibge-full-access-dados-brasileiros-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ibge-full-access-dados-brasileiros)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,12 +102,46 @@ Cross-domain query executed: Names API + CNAE API in one shot!
 - Brazil density: 25/km² | Argentina: 17/km²
 
 
+## ❓ FAQ
+
+**Q: Why choose the Full server instead of individual ones?**
+The Full server bundles **all 15 tools** from all 5 domain-specific servers plus 2 exclusive extras (News + Countries). Ideal for multi-disciplinary AI agents that need cross-domain Brazilian intelligence in a single integration.
+
+
 ## Installation & Usage
 
-To install and use the **IBGE Full Access — Dados Brasileiros** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ibge-full-access-dados-brasileiros](https://vinkius.com/mcp/ibge-full-access-dados-brasileiros)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IBGE Full Access — Dados Brasileiros** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ibge-full-access-dados-brasileiros` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IBGE Full Access — Dados Brasileiros** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ibge-full-access-dados-brasileiros": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

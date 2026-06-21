@@ -1,7 +1,6 @@
 # PostHog MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/posthog-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/posthog-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/posthog-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/posthog-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -106,12 +105,55 @@ Here are some examples of how you can interact with the **PostHog** MCP server u
 > Here's the profile for user_12345: email is jane@example.com, signed up 3 months ago, last active 2 hours ago. Properties include plan:premium, company:Acme Inc, and role:admin. They've triggered 847 events including 120 pageviews and 45 purchases.
 
 
+## ❓ FAQ
+
+**Q: How do I create a PostHog Personal API Key?**
+Log in to [**PostHog**](https://app.posthog.com), click your profile icon > **Personal API keys**, then **+ Create a Personal API Key**. Give it a label, select the required scopes and copy the key immediately — it won't be shown again after page refresh.
+
+**Q: Can I toggle feature flags via the agent?**
+Yes! Use `create_feature_flag` to add new flags, `update_feature_flag` to modify existing ones (name, description, enabled status), and `delete_feature_flag` to remove them. You'll need the numeric flag ID from `list_feature_flags` for update and delete operations.
+
+**Q: What's the difference between events and persons?**
+**Events** are actions that happen in your product (pageviews, button clicks, purchases). **Persons** are the users who perform those actions, identified by distinct_id. Events are linked to persons, so you can see what actions a specific user has taken. Use `list_events` to browse activity and `get_person` to see a user's profile.
+
+**Q: Can I use this with a self-hosted PostHog instance?**
+Yes! The tools default to `https://app.posthog.com` for the US cloud, but you can set the `host` parameter to your self-hosted instance URL (e.g. `https://posthog.yourcompany.com`). EU cloud users should set the host to `https://eu.posthog.com`.
+
+
 ## Installation & Usage
 
-To install and use the **PostHog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/posthog-alternative](https://vinkius.com/mcp/posthog-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PostHog** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `posthog-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PostHog** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "posthog-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

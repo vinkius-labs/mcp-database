@@ -1,7 +1,6 @@
 # Orderry MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/orderry)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/orderry-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/orderry-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/orderry)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,49 @@ Here are some examples of how you can interact with the **Orderry** MCP server u
 > Work order #WO-5923 created successfully. Service: MacBook Pro Battery Replacement. Customer: James Wilson (cust_2847). Estimated cost: $189. Parts required: 1x A2141 battery module (in stock). Assigned to technician: David Park. Estimated completion: May 13th. Customer has been notified via email.
 
 
+## ❓ FAQ
+
+**Q: Can I check stock levels across warehouses?**
+Yes, the list_inventory_stock tool provides real-time availability across all configured storage locations.
+
+**Q: How do I create a new repair ticket?**
+Use the create_order tool and provide a detailed description of the problem or task.
+
+
 ## Installation & Usage
 
-To install and use the **Orderry** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/orderry](https://vinkius.com/mcp/orderry)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Orderry** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `orderry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Orderry** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "orderry": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

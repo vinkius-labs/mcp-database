@@ -1,7 +1,6 @@
 # SenseCore Platform MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sensecore-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sensecore-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sensecore-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sensecore-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **SenseCore Platform** M
 > Querying service health metrics... Service 'svc_gpu_999' is currently 'Healthy'. Uptime: 99.98%, P99 Latency: 45ms, and Request Success Rate: 100% over the last 60 minutes.
 
 
+## ❓ FAQ
+
+**Q: Can I automatically list all available models in my SenseCore project?**
+Yes! Use the `list_models` tool. Your agent will retrieve a complete list of all SenseTime foundation models and specialized variants currently active in your account.
+
+**Q: How do I check the health status of my deployed model services?**
+Use the `get_service_health` tool with the specific Service ID. The agent will return real-time metrics on availability, throughput, and average latency.
+
+**Q: Can I monitor GPU resource utilization via the AI agent?**
+Yes! The `get_resource_usage` tool retrieves granular metrics on compute node utilization and remaining quota for your specific project environment.
+
+
 ## Installation & Usage
 
-To install and use the **SenseCore Platform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sensecore-platform](https://vinkius.com/mcp/sensecore-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SenseCore Platform** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sensecore-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SenseCore Platform** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sensecore-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # NASA Earth — Full-Disk Imagery & Natural Events MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-earth-full-disk-imagery-natural-events)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nasa-earth-full-disk-imagery-natural-events-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nasa-earth-full-disk-imagery-natural-events-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-earth-full-disk-imagery-natural-events)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **NASA Earth — Full-Di
 > I found 13 full-disk images of Earth taken by the EPIC camera on Jan 1, 2020. The first image taken at 00:15 UT shows the Pacific Ocean, Australia, and parts of Asia fully illuminated.
 
 
+## ❓ FAQ
+
+**Q: What is the DSCOVR satellite?**
+DSCOVR orbits at the L1 Lagrange point, 1.5 million km from Earth. Its EPIC camera takes full-disk images of Earth every 1-2 hours, always showing the sunlit face.
+
+**Q: What is EONET?**
+EONET (Earth Observatory Natural Event Tracker) provides real-time data on active natural events. It tracks wildfires, severe storms, volcanoes, and more, updated daily from satellite sources.
+
+**Q: Can I get historical data using the EPIC camera?**
+Yes, you can browse images by specific dates since the DSCOVR satellite began taking regular photos in 2015, allowing you to see Earth on a specific past day.
+
+
 ## Installation & Usage
 
-To install and use the **NASA Earth — Full-Disk Imagery & Natural Events** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nasa-earth-full-disk-imagery-natural-events](https://vinkius.com/mcp/nasa-earth-full-disk-imagery-natural-events)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NASA Earth — Full-Disk Imagery & Natural Events** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nasa-earth-full-disk-imagery-natural-events` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NASA Earth — Full-Disk Imagery & Natural Events** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nasa-earth-full-disk-imagery-natural-events": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

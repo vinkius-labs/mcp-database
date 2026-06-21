@@ -1,7 +1,6 @@
 # Supply Chain Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/supply-chain-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/supply-chain-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/supply-chain-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/supply-chain-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -64,12 +63,52 @@ Here are some examples of how you can interact with the **Supply Chain Prover** 
 > SINGLE_SOURCE_NAIVE — Forecast and inventory pass. Suppliers FAIL: 100% in Guangdong = catastrophic geographic concentration. Lead time CV 0.41 = unreliable. Diversify to at least 2 regions. Then fix monthly batching (bullwhip amplification).
 
 
+## ❓ FAQ
+
+**Q: Why is gut-feel forecasting dangerous?**
+'We expect demand to grow' is a hope, not a forecast. Statistical forecasting uses historical decomposition (trend + seasonality + noise), selects the right model (exponential smoothing for stable demand, ARIMA for complex patterns), provides confidence intervals ('10,000 ± 1,500 units at 95%'), and measures accuracy with MAPE. Toyota measures forecast error weekly. What is yours?
+
+**Q: What is the bullwhip effect?**
+A 10% demand increase at retail becomes a 20% order increase at distributor, 40% at manufacturer, and 80% at raw material supplier. Each echelon amplifies the signal 2-5x. Causes: order batching, price fluctuations, demand forecasting errors, lead time inflation. Mitigate with: POS data sharing upstream (Walmart/P&G model), smaller and more frequent orders, price stabilization, and lead time compression.
+
+**Q: Why does last-mile cost 40-53% of total logistics?**
+Container shipping moves 20,000 TEUs at $0.10-0.30/kg. A truck moves 20 tons at $0.50-2.00/kg. A delivery van moves 200 packages at $5-15 each. Each step loses economies of scale. The last mile has the smallest vehicles, most stops, most failed deliveries (15-20% not-at-home), and highest labor cost per unit. Solving last-mile is a $100B+ industry problem.
+
+
 ## Installation & Usage
 
-To install and use the **Supply Chain Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/supply-chain-prover](https://vinkius.com/mcp/supply-chain-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Supply Chain Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `supply-chain-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Supply Chain Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "supply-chain-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

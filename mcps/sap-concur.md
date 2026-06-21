@@ -1,7 +1,6 @@
 # SAP Concur MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sap-concur)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sap-concur-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sap-concur-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sap-concur)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Would you like the full report for any of these?
 - Manager ID: E-3300
 
 
+## ❓ FAQ
+
+**Q: How do I get my Concur Client ID and Secret?**
+Register a new application in the SAP Concur Developer Portal. Once approved, you'll receive a Client ID and Client Secret.
+
+**Q: What is the Refresh Token used for?**
+SAP Concur uses OAuth 2.0. The Refresh Token automatically generates short-lived access tokens without requiring manual login each time.
+
+**Q: Can I submit an expense report via this integration?**
+The current version focuses on reading and listing data. Submit and approve capabilities may be added in future updates.
+
+
 ## Installation & Usage
 
-To install and use the **SAP Concur** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sap-concur](https://vinkius.com/mcp/sap-concur)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SAP Concur** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sap-concur` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SAP Concur** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sap-concur": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # WhatsApp Business MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whatsapp-business)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/whatsapp-business-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/whatsapp-business-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whatsapp-business)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **WhatsApp Business** MC
 > I've dispatched the interactive message block to +123456789. The user will see 'How would you like to proceed?' followed by your 3 custom buttons.
 
 
+## ❓ FAQ
+
+**Q: Can I send a message to a customer who hasn't messaged me in the last 24 hours?**
+Yes, but you must use the `send_template_message` tool. WhatsApp requires Meta-approved templates to initiate contact outside the 24-hour service window. For active conversations within that window, you can use the `send_text_message` tool for free-form replies.
+
+**Q: How many quick-reply buttons can I send at once?**
+Using the `send_quick_reply_buttons` tool, you can send up to 3 interactive buttons along with a message block. This is ideal for helping users choose between options like 'Confirm', 'Cancel', or 'Reschedule' with a single tap.
+
+**Q: Can I share images or PDF documents through this server?**
+Absolutely. Use the `send_media_message` tool and provide a public URL to your asset. You can specify the type as 'image' or 'document' and even add a custom caption to the message.
+
+
 ## Installation & Usage
 
-To install and use the **WhatsApp Business** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/whatsapp-business](https://vinkius.com/mcp/whatsapp-business)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WhatsApp Business** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `whatsapp-business` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WhatsApp Business** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "whatsapp-business": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

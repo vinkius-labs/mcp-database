@@ -1,7 +1,6 @@
 # Pushbullet MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pushbullet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pushbullet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pushbullet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pushbullet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Pushbullet** MCP serve
 > Link shared successfully. URL: https://docs.example.com/q2-report. Pushed to your 4 devices with preview: "Q2 Revenue Report - Interactive Dashboard". Copy sent to james@meridian.io via Pushbullet channel (delivered in 0.5s). James will see it on his connected devices. You can track if he opened it in your push history. The link was automatically saved to your clipboard on your active MacBook.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically send a link to my phone from my computer?**
+Yes! Use the `create_push` tool with type 'link'. Provide the URL and optionally a `device_iden` (or leave blank to push to all), and your agent will deliver the link instantly.
+
+**Q: How do I find the identifier (iden) for a specific device?**
+Simply ask the agent to run the `list_devices` action. It will retrieve the full list of your associated phones, tablets, and browsers along with their unique `iden` codes.
+
+**Q: How do I find my Pushbullet Access Token?**
+Log in to your Pushbullet account on the web, navigate to the [**Settings**](https://www.pushbullet.com/#settings) page, and click 'Create Access Token' under the Account section.
+
+
 ## Installation & Usage
 
-To install and use the **Pushbullet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pushbullet](https://vinkius.com/mcp/pushbullet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pushbullet** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pushbullet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pushbullet** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pushbullet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

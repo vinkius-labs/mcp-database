@@ -1,7 +1,6 @@
 # Wolfram Alpha Solver MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wolfram-alpha-solver)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wolfram-alpha-solver-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wolfram-alpha-solver-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wolfram-alpha-solver)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -57,12 +56,49 @@ New York City is significantly denser than Tokyo.
 - **Wind:** 11 mph.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+Yes. You must sign up for a free Wolfram Alpha Developer account and generate an App ID.
+
+**Q: Is the Wolfram Alpha API free?**
+Yes, Wolfram Alpha provides a generous free tier for non-commercial use, allowing up to 2,000 requests per month. This is more than enough for individual AI agent workloads.
+
+
 ## Installation & Usage
 
-To install and use the **Wolfram Alpha Solver** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wolfram-alpha-solver](https://vinkius.com/mcp/wolfram-alpha-solver)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wolfram Alpha Solver** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wolfram-alpha-solver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wolfram Alpha Solver** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wolfram-alpha-solver": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

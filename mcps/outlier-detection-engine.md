@@ -1,7 +1,6 @@
 # Outlier Detection Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/outlier-detection-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/outlier-detection-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/outlier-detection-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/outlier-detection-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -54,12 +53,52 @@ Here are some examples of how you can interact with the **Outlier Detection Engi
 > Yes. Using Z-Score analysis, 3 network requests had ping times exceeding 3 standard deviations (Z > 3): rows 44 (Z=3.9), 128 (Z=3.5), and 302 (Z=3.2).
 
 
+## ❓ FAQ
+
+**Q: What is the difference between Z-Score and IQR?**
+Z-Score assumes data is normally distributed and is sensitive to extreme outliers. IQR is based on percentiles (25th and 75th), making it robust and ideal for skewed or non-normal data.
+
+**Q: Can I customize the outlier sensitivity threshold?**
+Yes! You set the threshold parameter: typically 3 for Z-Score (flagging values beyond 3 standard deviations) or 1.5 for IQR (the standard Tukey fence multiplier).
+
+**Q: Does it automatically remove the outliers?**
+No. The engine flags the outliers and provides their exact Z-Scores or IQR bounds so the AI can report them to you. The decision to drop or keep them remains with you.
+
+
 ## Installation & Usage
 
-To install and use the **Outlier Detection Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/outlier-detection-engine](https://vinkius.com/mcp/outlier-detection-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Outlier Detection Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `outlier-detection-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Outlier Detection Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "outlier-detection-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

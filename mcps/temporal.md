@@ -1,7 +1,6 @@
 # Temporal MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/temporal)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/temporal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/temporal-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/temporal)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Temporal** MCP server 
 According to Temporal, the next execution for `DatabaseColdBackup` is scheduled to start in 5 hours and 14 minutes.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent debug a failed Temporal workflow run directly?**
+Yes. Instead of browsing the Temporal UI to manually dissect the execution, feed the workflow ID directly to your AI agent. It can seamlessly fetch the entire event history, identify the exact panic line or activity timeout, and immediately suggest code fixes within your IDE.
+
+**Q: How complex can the visibility searches be via natural language?**
+Very complex. Because your agent understands your codebase, you can ask 'Find all workflows of type ProcessPayment that failed in the last 2 hours'. The agent formulates the perfect SQL-like syntax for the backend, parses the matching pages, and surfaces exactly which transactions failed.
+
+**Q: Can it read scheduled jobs and Cron jobs configurations inside Temporal?**
+Absolutely. You can request a list of all active schedules mapped to your namespace. Your agent unpacks JSON configurations, showing definitions of workflow recurrence, enabling you to detect missing crons without interrupting your workflow.
+
+
 ## Installation & Usage
 
-To install and use the **Temporal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/temporal](https://vinkius.com/mcp/temporal)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Temporal** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `temporal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Temporal** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "temporal": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

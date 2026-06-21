@@ -1,7 +1,6 @@
 # Colossyan MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/colossyan)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/colossyan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/colossyan-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/colossyan)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Colossyan** MCP server
 > The video generation for `vid_conf_123` is finished! You can view it here: [Public URL]. The video is 45 seconds long and ready for download.
 
 
+## ❓ FAQ
+
+**Q: How can I check if my video has finished rendering?**
+You can use the `get_job_status` tool by providing the `videoId`. The agent will return the current status, such as 'finished', 'generating', or 'failed'.
+
+**Q: Can I generate videos using my existing Colossyan templates?**
+Yes! Use the `generate_from_template` tool. You'll need the `templateJobId` and a JSON object for `dynamicVariables` to fill in the placeholders in your template.
+
+**Q: How do I see which AI avatars are available in my account?**
+Simply ask the agent to run the `list_actors` tool. It will retrieve all available avatars, including Studio, Scenario, and Instant types configured for your workspace.
+
+
 ## Installation & Usage
 
-To install and use the **Colossyan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/colossyan](https://vinkius.com/mcp/colossyan)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Colossyan** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `colossyan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Colossyan** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "colossyan": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

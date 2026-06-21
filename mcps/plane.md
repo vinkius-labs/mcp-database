@@ -1,7 +1,6 @@
 # Plane MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plane)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/plane-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/plane-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plane)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Plane** MCP server usi
 > Extracted the data entity mapped to `3841-A`. Title: `Handle missing env parameters explicitly during build steps`. It carries the labels 'High Priority' and 'DevOps'. The raw issue content requests adding an abort sequence checking for missing variables natively during CI initialization. How would you like me to script this?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically aggregate all open issues inside our active sprint?**
+Yes. First, request the active iteration window by calling `list_cycles`. The agent will isolate today's active cycle bounds. Following that, it will invoke `list_work_items` directly constrained by that cycle object, outputting an exhaustive summary of untouched or blocking tickets.
+
+**Q: How does the agent handle custom workspace slugs or self-hosted URLs?**
+The system dynamically accepts a `PLANE_BASE_URL` credential. If you are doing an on-premise installation running inside your homelab or company AWS cloud, you merely inject your private domain (e.g., `https://plane.internal.acme.com`). The workspace slug is seamlessly accepted as a contextual execution parameter during standard query prompts.
+
+**Q: Can I request specific details of a long-term module (epic)?**
+You can instruct the agent to execute `list_modules`. It extracts the cross-functional epics spanning your workspace project. Your AI can read these top-level module architectures to contextually understand what the core functionality of the project repository aims to achieve.
+
+
 ## Installation & Usage
 
-To install and use the **Plane** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/plane](https://vinkius.com/mcp/plane)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Plane** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `plane` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Plane** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "plane": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

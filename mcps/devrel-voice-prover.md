@@ -1,7 +1,6 @@
 # DevRel Voice Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/devrel-voice-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/devrel-voice-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/devrel-voice-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/devrel-voice-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **DevRel Voice Prover** 
 > Verdict: FEATURE_DUMP. Developer voice is acceptable (no buzzwords), community vaguely referenced ('we heard from the community' — but WHICH community signals? No issue numbers, no Discord threads, no feedback votes). Critical failure: pure feature list without WHY. 'Added GraphQL subscriptions' — SO WHAT? Why does a developer care? Was polling killing performance? Was issue #189 about real-time updates? 'Improved error messages' — improved HOW? Before: 'Error 500'. After: 'Postgr...
 
 
+## ❓ FAQ
+
+**Q: Does this tool write DevRel content?**
+No. The agent writes the content. The tool VALIDATES that it communicates like authentic DevRel — developer voice, community awareness, value articulation, actionable paths, and authentic engagement. It catches the five failure modes that make AI-generated developer communications sound like press releases.
+
+**Q: What types of content does it validate?**
+Changelogs, release notes, blog posts, tutorials, migration guides, breaking change notices, community updates, retrospectives, roadmap updates, incident postmortems, feature announcements, deprecation notices, getting started guides, and API/SDK updates. Each type has different tone, urgency, and structure requirements that the tool validates.
+
+**Q: Why does the tool reject 'We are excited to announce'?**
+Because developers don't care about your excitement — they care about their problems. 'We are excited to announce' is corporate speak that signals 'marketing wrote this.' DevRel says: 'We shipped WebSocket support because issue #247 showed polling was killing your API rate limits. Here's how to migrate in 3 steps.' Direct, technical, problem-focused. That's what builds trust.
+
+
 ## Installation & Usage
 
-To install and use the **DevRel Voice Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/devrel-voice-prover](https://vinkius.com/mcp/devrel-voice-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DevRel Voice Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `devrel-voice-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DevRel Voice Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "devrel-voice-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

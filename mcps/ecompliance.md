@@ -1,7 +1,6 @@
 # eCompliance MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecompliance)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ecompliance-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ecompliance-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecompliance)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **eCompliance** MCP serv
 > There are 5 outstanding action items, including 'Repair Guardrail' (Due: March 30) and 'Update Safety Signage'. 2 items are currently past their due date. Would you like me to pull the assigned employee names for these items?
 
 
+## ❓ FAQ
+
+**Q: How do I get an eCompliance API Key?**
+Log in to your eCompliance account as an administrator, navigate to **Settings > API**, and you can generate or retrieve your unique API Key from there. You will also need your Site ID.
+
+**Q: Can the agent create new incident reports?**
+This integration currently focuses on listing and auditing safety data. Filing new incident reports or performing inspections should be completed via the eCompliance mobile app or web portal to ensure proper capture of media and signatures.
+
+**Q: Does the integration show employee safety training?**
+Yes, you can use the list_site_employees tool to retrieve basic employee profile details. Detailed training records may vary based on your specific API permissions and account configuration.
+
+
 ## Installation & Usage
 
-To install and use the **eCompliance** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ecompliance](https://vinkius.com/mcp/ecompliance)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **eCompliance** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ecompliance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **eCompliance** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ecompliance": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

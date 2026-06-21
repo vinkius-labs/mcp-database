@@ -1,7 +1,6 @@
 # Elsevier ScienceDirect MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elsevier-sciencedirect)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elsevier-sciencedirect-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elsevier-sciencedirect-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elsevier-sciencedirect)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Elsevier ScienceDirect
 > Checking hosting permissions for PII S0022-2836(21)00123-4... This article has an active embargo period ending on 2024-12-01. After this date, it can be hosted in institutional repositories.
 
 
+## ❓ FAQ
+
+**Q: Can I search for specific authors or titles using this server?**
+Yes! Use the `search_sciencedirect` tool with specific query syntax like `auth(name)` for authors or `tak(query)` for Title/Abstract/Keywords to find exactly what you need.
+
+**Q: How do I check if my institution has access to a specific paper?**
+You can use the `get_article_entitlement` tool. By providing the DOI or PII, the agent will verify if the authenticated user or institution has the rights to access the full text.
+
+**Q: Can I retrieve metadata for a journal if I only have the ISSN?**
+Absolutely. Use the `get_serial_title` tool and provide the ISSN. The agent will return the journal's metadata, including title and subject classifications.
+
+
 ## Installation & Usage
 
-To install and use the **Elsevier ScienceDirect** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/elsevier-sciencedirect](https://vinkius.com/mcp/elsevier-sciencedirect)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Elsevier ScienceDirect** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `elsevier-sciencedirect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Elsevier ScienceDirect** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "elsevier-sciencedirect": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

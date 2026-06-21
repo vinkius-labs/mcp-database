@@ -1,7 +1,6 @@
 # Reportei MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reportei)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reportei-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reportei-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reportei)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Reportei** MCP server 
 > 8 active projects. "Main Brand" has 6 integrations: Google Analytics (synced 2h ago), Instagram (synced 1h ago), Facebook (synced 1h ago), LinkedIn (synced 3h ago), Google Ads (synced 2h ago), YouTube (synced 4h ago). "Client: Meridian" has 4 integrations: Google Analytics, Instagram, Facebook, Google Ads (all synced within 2h). "Client: TechFlow" has 3 integrations. 5 additional client projects with combined 18 integrations. All connections healthy. 1 integration warning: LinkedIn token expires in 5 days.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific project just by providing its ID?**
+Yes! Use the `list_reportei_projects` tool. Your agent will respond with complete metadata for all your projects, allowing you to identify and inspect individual client accounts in seconds.
+
+**Q: How do I find my Reportei API Token?**
+Log in to your Reportei account, navigate to **Settings** > **Company** > **Reportei API**, and you will find your unique secret token there.
+
+**Q: Can I retrieve metrics for a specific date range?**
+Yes, using the `get_reportei_metrics` tool, you can provide `start_date` and `end_line` parameters to fetch consolidated marketing data for any specific period.
+
+
 ## Installation & Usage
 
-To install and use the **Reportei** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/reportei](https://vinkius.com/mcp/reportei)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Reportei** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `reportei` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Reportei** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "reportei": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

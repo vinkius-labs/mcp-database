@@ -1,7 +1,6 @@
 # ContentStudio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstudio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contentstudio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contentstudio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstudio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **ContentStudio** MCP se
 > Fetching analytics for Instagram account (acc_118)... Your top 3 posts last month by engagement: 1) Product demo reel — 12,400 impressions, 842 likes, 156 comments. 2) Behind-the-scenes story — 9,200 impressions, 621 likes, 89 saves. 3) Customer testimonial carousel — 8,100 impressions, 534 likes, 72 shares. Total follower growth: +1,240 (3.2% increase). Would you like detailed analytics for any specific post?
 
 
+## ❓ FAQ
+
+**Q: Can I create and schedule posts to multiple social accounts at once?**
+Yes! The `create_post` action accepts a JSON payload with content, media attachments, schedule date, and target account IDs. You can publish to Instagram, Twitter, LinkedIn, and Facebook simultaneously in a single command.
+
+**Q: Can I track how individual posts are performing?**
+Yes. Use `get_post_analytics` with a specific Post ID to retrieve likes, shares, comments, impressions, and reach for that post. For account-wide metrics, use `get_analytics` with the Social Account ID to see follower growth, engagement rates, and top-performing content.
+
+**Q: Can I filter posts by their publishing status?**
+Yes. The `list_posts_by_status` tool accepts a status parameter — 'draft', 'scheduled', 'published', or 'failed'. This lets you quickly find posts that need review (drafts), are queued for delivery (scheduled), or encountered errors during publishing (failed).
+
+
 ## Installation & Usage
 
-To install and use the **ContentStudio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/contentstudio](https://vinkius.com/mcp/contentstudio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ContentStudio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `contentstudio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ContentStudio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "contentstudio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ContentStack (Management) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstack-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contentstack-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contentstack-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstack-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **ContentStack (Manageme
 > Force-deploy operation concluded with extreme prejudice. Node `bltpxxxx` has effectively severed ties from local staging and violently propagated mapping beautifully to the `production` frontline. The world can now parse its contents.
 
 
+## ❓ FAQ
+
+**Q: How do I secure an overarching Management Token?**
+Force your way strictly into the core matrix of your ContentStack account parameters. Narrow down specifically pointing to the target Stack, descend structurally mapping heading straight towards **Settings** and aggressively slide onto **Tokens**. Finally land squarely unearthing the **Management Tokens** barrier. Carve a new powerful signature assigning it write-focused clearance and safely lock the output away.
+
+**Q: Can I mistakenly overwrite or entirely delete entire arrays of structural data?**
+Undeniably yes. Because this integration strictly wields the Content Management API (CMA), your AI holds lethal permissions empowering destructive actions ranging from updating structures natively, unpublishing assets directly causing 404 breaks, to definitively purging entries aggressively. Tread with meticulous care and double-check commands systematically.
+
+**Q: Are cross-regional Google or Azure hubs holistically braced for incoming calls?**
+Aggressively affirmed. This environment natively intertwines handling expansive multi-continental requests harmonizing interactions cleanly sweeping heavily from United States (US) borders, European Union (EU) layers, up through resilient Azure enclaves (NA/EU) and Google Cloud bastions scaling flawlessly.
+
+
 ## Installation & Usage
 
-To install and use the **ContentStack (Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/contentstack-management](https://vinkius.com/mcp/contentstack-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ContentStack (Management)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `contentstack-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ContentStack (Management)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "contentstack-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

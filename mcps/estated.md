@@ -1,7 +1,6 @@
 # Estated MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/estated)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/estated-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/estated-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/estated)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Estated** MCP server u
 > I've located 742 Evergreen Terrace. This property features a lot size of 0.25 acres and includes structural details such as a finished basement and an attached garage.
 
 
+## ❓ FAQ
+
+**Q: How can I look up a property if I only have a single address string?**
+Use the `get_property_combined_address` tool. Just provide the full address as a single string (e.g., '151 Battle Green Dr, Rochester, NY 14624') and the agent will handle the rest.
+
+**Q: Can I search for a property using its tax identifier?**
+Yes! Use the `get_property_fips_apn` tool by providing the 5-digit county FIPS code and the Assessor's Parcel Number (APN).
+
+**Q: What should I use if I have specific address parts like street name and unit number?**
+The `get_property_parsed_address` tool is best for this. It allows for high accuracy by accepting structured components like street name, suffix, unit type, and unit number.
+
+
 ## Installation & Usage
 
-To install and use the **Estated** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/estated](https://vinkius.com/mcp/estated)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Estated** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `estated` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Estated** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "estated": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

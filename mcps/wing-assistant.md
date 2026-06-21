@@ -1,7 +1,6 @@
 # Wing Assistant MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wing-assistant)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wing-assistant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wing-assistant-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wing-assistant)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,49 @@ Here are some examples of how you can interact with the **Wing Assistant** MCP s
 > I've retrieved Maria's current queue. She is currently working on 3 active tasks, including 'Weekly Expense Report' (in progress) and 'Data Entry for Lead Gen' (pending). Would you like to view the details for any of these?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Wing Assistant API Token?**
+Log in to your Wing Assistant dashboard, navigate to the API section in your settings, and you will find your unique Bearer Access Token listed there.
+
+**Q: Does this work with human-assisted tasks?**
+Yes! Wing Assistant specializes in providing managed human talent. This integration allows you to send tasks to those real assistants via your AI agent.
+
+
 ## Installation & Usage
 
-To install and use the **Wing Assistant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wing-assistant](https://vinkius.com/mcp/wing-assistant)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wing Assistant** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wing-assistant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wing Assistant** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wing-assistant": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

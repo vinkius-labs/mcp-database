@@ -1,7 +1,6 @@
 # YouTube MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/youtube)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/youtube-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/youtube-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/youtube)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **YouTube** MCP server u
 > The channel 'Google for Developers' (ID: UC_...) currently has 2.45 million subscribers and a total of 1,250 videos. The total view count across all videos is approximately 450 million.
 
 
+## ❓ FAQ
+
+**Q: Can I see how many likes and views a video has through the agent?**
+Yes. The `get_video_details` tool allows your AI agent to retrieve full real-time statistics for any YouTube video ID, including view counts, like counts, and the total number of comments.
+
+**Q: How do I find out the subscriber count for a specific channel?**
+You can use the `get_channel_details` tool. Provide the unique channel ID, and your agent will return the channel's performance statistics, including subscriber counts, total views, and video counts.
+
+**Q: Is it possible to read the comments on a video via chat?**
+Absolutely. Use the `list_video_comments` tool to retrieve the top most relevant or recent comment threads from any video ID, helping you perform rapid sentiment analysis through conversation.
+
+
 ## Installation & Usage
 
-To install and use the **YouTube** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/youtube](https://vinkius.com/mcp/youtube)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **YouTube** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `youtube` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **YouTube** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "youtube": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

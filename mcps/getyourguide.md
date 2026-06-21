@@ -1,7 +1,6 @@
 # GetYourGuide MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/getyourguide)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/getyourguide-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/getyourguide-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/getyourguide)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,55 @@ Here are some examples of how you can interact with the **GetYourGuide** MCP ser
 > Fetching booking... Your reservation for the 'Venice Gondola Ride' is 'Confirmed'. The meeting point is San Marco Square at 10:30 AM tomorrow. Would you like the meeting point coordinates?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Access Token for GetYourGuide?**
+You must register as a Partner or Distributor. Once approved, you can find your Access Token in the GetYourGuide Integrator Portal.
+
+**Q: Can I search for activities using coordinates?**
+Yes! The 'search_travel_activities' tool accepts location strings which can include latitude/longitude coordinates to find tours near a specific point.
+
+**Q: How do I check if a tour is available on a specific date?**
+Use the 'check_activity_availability' tool. Provide the Tour ID and an ISO date (YYYY-MM-DD) to see all open slots and vacancies for that day.
+
+**Q: What is a 'Booking Hash'?**
+The Booking Hash is a unique alphanumeric identifier for a reservation. You need it to retrieve booking details or to cancel a reservation via the agent.
+
+
 ## Installation & Usage
 
-To install and use the **GetYourGuide** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/getyourguide](https://vinkius.com/mcp/getyourguide)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GetYourGuide** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `getyourguide` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GetYourGuide** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "getyourguide": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

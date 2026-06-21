@@ -1,7 +1,6 @@
 # HappierLeads MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/happierleads-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/happierleads-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/happierleads-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/happierleads-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **HappierLeads** MCP ser
 > Found 12 fintech visitors this month. Most engaged: 'PayStream Technologies' (visitor_891, fintech, 180 employees, London). 6 sessions over 3 weeks. Session breakdown: Session 1 (Apr 5): /home → /features → /pricing (8 min total). Session 2 (Apr 9): /blog/payment-apis → /integrations (12 min). Session 3 (Apr 14): /pricing → /enterprise → /security (15 min). Session 4 (Apr 18): /case-studies/fintech → /demo (6 min). Session 5 (Apr 22): /api-docs → /developer (18 min). Session 6 (Apr 25): /contact (2 min). This shows a classic evaluation journey — from research to technical review to contact. High priority for outreach!
 
 
+## ❓ FAQ
+
+**Q: Can I identify which companies are visiting my website?**
+Yes! The `list_visitors` tool retrieves all identified B2B website visitors with company name, industry, employee count, and visit details. Use `search_visitors` to find specific companies by name or domain, and `list_visitors_by_country` to filter by geographic region. Use `get_visitor` for the full company profile.
+
+**Q: Can I see which pages each company visited and how long they stayed?**
+Yes. Use `list_sessions` with a Visitor ID to see all browsing sessions, then `get_session` for page-by-page navigation paths with time spent per page. Use `list_page_views` to get all pages viewed by a specific visitor. This reveals purchase intent — visitors spending time on pricing or demo pages are warm leads.
+
+**Q: Can I focus only on high-intent qualified leads?**
+Yes. The `list_qualified_leads` tool retrieves only leads that meet your qualification criteria (e.g., multiple visits, pricing page views, minimum session duration). Use `list_leads_by_industry` to further filter by vertical. Use `list_notifications` for real-time alerts when high-value visitors are on your site.
+
+
 ## Installation & Usage
 
-To install and use the **HappierLeads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/happierleads-alternative](https://vinkius.com/mcp/happierleads-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HappierLeads** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `happierleads-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HappierLeads** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "happierleads-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

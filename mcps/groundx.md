@@ -1,7 +1,6 @@
 # GroundX MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/groundx)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/groundx-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/groundx-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/groundx)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **GroundX** MCP server u
 > Bucket 101 ('Knowledge Base') currently contains 14,502 indexed documents.
 
 
+## ❓ FAQ
+
+**Q: How do I query my indexed documents?**
+Simply ask the AI agent to search for a specific term or concept, and it will query the GroundX API to retrieve the most relevant textual chunks.
+
+**Q: Can I manage data buckets from the agent?**
+Yes, you can list your active buckets, check their document count, and verify index status.
+
+**Q: Does it support adding new files to a bucket?**
+Currently, the integration focuses on querying the optimized indexes. File ingestion should be managed through the GroundX dashboard or a separate pipeline.
+
+
 ## Installation & Usage
 
-To install and use the **GroundX** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/groundx](https://vinkius.com/mcp/groundx)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GroundX** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `groundx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GroundX** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "groundx": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

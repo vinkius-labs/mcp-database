@@ -1,7 +1,6 @@
 # Eden AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eden-ai-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eden-ai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eden-ai-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eden-ai-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Eden AI** MCP server u
 > I've checked your account. You currently have 45.50 credits remaining in your Eden AI balance.
 
 
+## ❓ FAQ
+
+**Q: How can I use Eden AI's smart routing to find the best model for a chat?**
+Simply use the `chat_completions` tool and set the `model` parameter to `@edenai`. This will automatically route your request to the most suitable provider based on performance and cost.
+
+**Q: How do I handle long-running AI tasks like Speech-to-Text?**
+Use the `universal_ai_async` tool to start the job. You will receive a job ID which you can then use with the `get_async_job` tool to check the status and retrieve the final results once finished.
+
+**Q: Can I manage the files I upload for AI processing?**
+Yes. You can use `upload_file` to send data, `list_files` to see everything in your storage, and `delete_files` to remove them when they are no longer needed.
+
+
 ## Installation & Usage
 
-To install and use the **Eden AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eden-ai-alternative](https://vinkius.com/mcp/eden-ai-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Eden AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eden-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Eden AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eden-ai-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

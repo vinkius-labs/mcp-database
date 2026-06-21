@@ -1,7 +1,6 @@
 # Zoho Invoice MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-invoice-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-invoice-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-invoice-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-invoice-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Zoho Invoice** MCP ser
 > I retrieved 12 business expenses for this month. The highest expense is $850.00 for 'Software Subscriptions' (Expense ID: 40392). It was billed by 'TechCloud' and is assigned to the 'Internal IT' project.
 
 
+## ❓ FAQ
+
+**Q: Can I check the status of a specific invoice via AI?**
+Yes! Use the `get_invoice` tool and provide the Invoice ID. Your agent will retrieve the real-time status to see if it has been viewed, paid, or is overdue.
+
+**Q: How do I add a new customer to my Zoho Invoice directory?**
+Use the `create_customer` action. Provide the company name and contact details. The agent will instantly register the new profile in your account.
+
+**Q: Is it possible to list all unpaid invoices via AI?**
+Absolutely. Use the `list_invoices` query. The agent will retrieve all your billing documents, and you can then ask the AI to identify or filter those with an unpaid or overdue status.
+
+
 ## Installation & Usage
 
-To install and use the **Zoho Invoice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zoho-invoice-alternative](https://vinkius.com/mcp/zoho-invoice-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zoho Invoice** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zoho-invoice-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zoho Invoice** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zoho-invoice-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

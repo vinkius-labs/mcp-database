@@ -1,7 +1,6 @@
 # Engineering Reasoning Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/engineering-reasoning-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/engineering-reasoning-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/engineering-reasoning-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/engineering-reasoning-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Engineering Reasoning 
 > CALCULATION_GAP — Seismic design for LA (Seismic Design Category D/E) requires specific calculations: site class per ASCE 7-22 Ch. 11, spectral accelerations Ss and S1 from USGS, response modification R for SMF (R=8), drift limits per ASCE 7-22 §12.12. Show the base shear calculation V = CsW.
 
 
+## ❓ FAQ
+
+**Q: What standards are supported by this prover?**
+It covers global regulatory and engineering standards, including ISO 9001/14001/45001 for quality/safety, IEC 61508/ISO 26262 for functional safety, ASME BPVC and API standards for pressure equipment, Eurocodes, and NFPA.
+
+**Q: How does the prover handle jurisdiction differences?**
+It validates that calculations and standard references specify the governing jurisdiction, the authority having jurisdiction (AHJ), the applicable code edition year, and any local amendments.
+
+**Q: Can the prover verify calculations?**
+Yes, it requires explicit verification of design inputs, analytical methods, mathematical calculations, safety factor criteria, and safety margins rather than qualitative assertions of adequacy.
+
+
 ## Installation & Usage
 
-To install and use the **Engineering Reasoning Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/engineering-reasoning-prover](https://vinkius.com/mcp/engineering-reasoning-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Engineering Reasoning Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `engineering-reasoning-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Engineering Reasoning Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "engineering-reasoning-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

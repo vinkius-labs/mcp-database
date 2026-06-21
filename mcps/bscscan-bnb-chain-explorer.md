@@ -1,7 +1,6 @@
 # BscScan (BNB Chain Explorer) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bscscan-bnb-chain-explorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bscscan-bnb-chain-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bscscan-bnb-chain-explorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bscscan-bnb-chain-explorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **BscScan (BNB Chain Exp
 > I've fetched the verified source code for the PancakeSwap: Token contract. It includes the Solidity files and compiler settings used for deployment.
 
 
+## ❓ FAQ
+
+**Q: Can I check the BNB balance for multiple wallet addresses at once?**
+Yes! Use the `get_bnb_balance_multi` tool and provide a comma-separated list of BSC addresses to get all balances in a single request.
+
+**Q: How do I view the NFT transfer history for a specific address?**
+You can use the `get_bep721_transfers` tool. Simply provide the target BSC address, and the agent will list the recent BEP-721 token transfer events.
+
+**Q: Is it possible to inspect the source code of a smart contract?**
+Yes, provided the contract is verified on BscScan. Use the `get_contract_source_code` tool with the contract address to retrieve its source code and metadata.
+
+
 ## Installation & Usage
 
-To install and use the **BscScan (BNB Chain Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bscscan-bnb-chain-explorer](https://vinkius.com/mcp/bscscan-bnb-chain-explorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BscScan (BNB Chain Explorer)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bscscan-bnb-chain-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BscScan (BNB Chain Explorer)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bscscan-bnb-chain-explorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

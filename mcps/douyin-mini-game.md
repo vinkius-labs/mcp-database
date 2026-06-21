@@ -1,7 +1,6 @@
 # Douyin Mini-Game MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/douyin-mini-game)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/douyin-mini-game-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/douyin-mini-game-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/douyin-mini-game)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Douyin Mini-Game** MCP
 > ✅ Content check passed! 'TestUser123' is safe to use as a nickname. No policy violations detected.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Douyin Mini-Game App ID and Secret?**
+Register at the [Douyin Open Platform](https://developer.open-douyin.com/), create a mini-game application, and find your App ID and Secret in the application settings. You'll need entity verification for production deployment.
+
+**Q: What is cloud storage used for?**
+Cloud storage saves user game data (progress, settings, high scores) as key-value pairs. Each user gets their own storage space. Use setUserStorage to save data and getUserStorage to load it. This is essential for cross-device game continuity.
+
+**Q: How does content moderation work?**
+The content security API checks user-generated text (nicknames, chat, custom names) against Douyin's content policies. Submit text via the check_content_security tool and receive a pass/fail result. This is mandatory for games with user-generated content features.
+
+
 ## Installation & Usage
 
-To install and use the **Douyin Mini-Game** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/douyin-mini-game](https://vinkius.com/mcp/douyin-mini-game)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Douyin Mini-Game** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `douyin-mini-game` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Douyin Mini-Game** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "douyin-mini-game": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

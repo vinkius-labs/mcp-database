@@ -1,7 +1,6 @@
 # CERN Open Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cern-open-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cern-open-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cern-open-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cern-open-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -116,12 +115,52 @@ Here are some examples of how you can interact with the **CERN Open Data** MCP s
 > According to the CERN physics glossary, luminosity is a measure of the number of collisions that can be produced in a particle accelerator. It is one of the most important parameters of an accelerator, directly related to the number of events observed. Integrated luminosity (measured in inverse femtobarns, fb⁻¹) quantifies the total data collected during a run period. Higher luminosity means more collision events and greater chances of observing rare processes like Higgs boson production.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key to use this server?**
+No. The CERN Open Data Portal API is completely public and requires no authentication. Simply subscribe to this server and enter any placeholder value in the API key field to start querying particle physics datasets immediately.
+
+**Q: What kind of data can I access from CERN?**
+You can access over 66,000 datasets from major LHC experiments (CMS, ATLAS, ALICE, LHCb) and legacy experiments (DELPHI, OPERA). This includes real collision data, Monte Carlo simulations, derived datasets, analysis software, physics glossary entries, and detailed documentation. Data covers Higgs boson searches, Dark Matter studies, exotic particle searches, heavy-ion physics, and more.
+
+**Q: Can I use CERN data for machine learning projects?**
+Absolutely. CERN provides labeled datasets specifically designed for ML applications, including particle identification, jet classification, event reconstruction, and anomaly detection. Use the search tools with queries like 'machine learning' or filter by file type 'csv' or 'nanoaodsim' to find ML-ready formats. The CMS experiment alone has published thousands of simulated datasets with known physics labels.
+
+
 ## Installation & Usage
 
-To install and use the **CERN Open Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cern-open-data](https://vinkius.com/mcp/cern-open-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CERN Open Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cern-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CERN Open Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cern-open-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

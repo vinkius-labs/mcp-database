@@ -1,7 +1,6 @@
 # Magento (Adobe Commerce) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/magento-adobe-commerce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/magento-adobe-commerce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/magento-adobe-commerce-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/magento-adobe-commerce)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Magento (Adobe Commerc
 > Retrieving stock for 'TSHIRT-BLUE-L'… Currently, you have 45 units in stock. The item is marked as 'In Stock'. Minimum sale quantity is 1 and maximum is 100. Would you like to check other sizes?
 
 
+## ❓ FAQ
+
+**Q: Can I search for products by SKU through my agent?**
+Yes. Use the `mg.get_product` tool and provide the exact SKU. Your agent will fetch the full record, including pricing, stock status, and custom attributes directly from your Magento catalog.
+
+**Q: How do I check the status history of a specific order?**
+The `mg.get_order` tool retrieves the complete order entity by ID. Your agent will expose the status history, payment info, and line items, helping you track the fulfillment lifecycle of any order.
+
+**Q: Can my agent list the entire category tree of my store?**
+Absolutely. Use the `mg.list_categories` tool to retrieve the complete category hierarchy. Your agent will report the IDs, names, and product counts for each level, ensuring you have a full view of your store's taxonomy.
+
+
 ## Installation & Usage
 
-To install and use the **Magento (Adobe Commerce)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/magento-adobe-commerce](https://vinkius.com/mcp/magento-adobe-commerce)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Magento (Adobe Commerce)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `magento-adobe-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Magento (Adobe Commerce)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "magento-adobe-commerce": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

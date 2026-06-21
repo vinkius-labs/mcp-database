@@ -1,7 +1,6 @@
 # Auth0 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/auth0-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/auth0-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/auth0-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/auth0-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -107,12 +106,55 @@ Here are some examples of how you can interact with the **Auth0** MCP server usi
 > You have 6 connections configured: 'Username-Password-Authentication' (database), 'google-oauth2' (Google), 'github' (GitHub), 'Okta' (oidc), 'SAML-Enterprise' (samlp) and 'sms' (passwordless).
 
 
+## ❓ FAQ
+
+**Q: How do I get an Auth0 Management API Token?**
+Go to [**Auth0 Dashboard > Applications > APIs**](https://manage.auth0.com/#/apis), find the **Auth0 Management API**, create a **Machine to Machine Application**, authorize it with the scopes you need (e.g. read:users, create:users, read:logs), and copy the generated token.
+
+**Q: Can I search for users by email?**
+Yes! Use `get_user_by_email` for a quick lookup, or `list_users` with the `q` parameter using Lucene syntax (e.g. `email:*@example.com` to find all users from a domain). The search supports all user fields.
+
+**Q: Can I audit failed login attempts?**
+Yes! Use `list_logs` with type filter `f` (failed login) or `fu` (failed login with invalid email) to see all failed authentication attempts. For a specific user's history, use `list_user_logs` with their user_id.
+
+**Q: Can I create and manage users programmatically?**
+Yes! Use `create_user` with a connection name, email and optional password. Use `update_user` to modify any user property (email, name, metadata, blocked status) and `delete_user` to remove them.
+
+
 ## Installation & Usage
 
-To install and use the **Auth0** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/auth0-alternative](https://vinkius.com/mcp/auth0-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Auth0** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `auth0-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Auth0** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "auth0-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

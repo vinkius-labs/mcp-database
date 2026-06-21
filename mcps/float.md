@@ -1,7 +1,6 @@
 # Float MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/float)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/float-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/float-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/float)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Float** MCP server usi
 > Checking time off... This month, Sarah is on vacation from the 10th to the 15th, and Mike has a personal day on the 22nd. Would you like me to check capacity for the rest of the team?
 
 
+## ❓ FAQ
+
+**Q: How do I check if a team member is available for a specific date range?**
+You can use the 'list_allocations' tool to see current schedules. By asking the agent, 'Is John available next week?', it will scan existing task allocations and time off to provide a clear answer.
+
+**Q: Can I assign a person to a project directly through the agent?**
+Yes! The 'create_allocation' tool allows you to schedule a person to a project by providing their ID, the project ID, start/end dates, and the number of hours per day.
+
+**Q: How do I see who is currently on vacation?**
+Use the 'list_time_offs' tool. It retrieves all scheduled vacations, sick leave, and holidays, giving you an immediate view of who is away from the office.
+
+
 ## Installation & Usage
 
-To install and use the **Float** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/float](https://vinkius.com/mcp/float)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Float** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `float` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Float** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "float": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

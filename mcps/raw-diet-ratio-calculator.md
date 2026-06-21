@@ -1,7 +1,6 @@
 # Raw Diet Ratio Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/raw-diet-ratio-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/raw-diet-ratio-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/raw-diet-ratio-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/raw-diet-ratio-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Raw Diet Ratio Calcula
 > The 80/10/5/5 protocol is a nutritional balance of 80% muscle meat, 10% bone, 5% organ, and 5% vegetable.
 
 
+## ❓ FAQ
+
+**Q: What is the 80/10/5/5 protocol?**
+It is a dietary ratio consisting of 80% muscle meat, 10% meaty bones, 5% organs, and 5% vegetables.
+
+**Q: How do I calculate the total food needed?**
+Use the `calculate_daily_mass_requirement` tool by entering your pet's weight in kg and their activity level.
+
+**Q: Can I use this for both dogs and cats?**
+Yes, the calculator works for any pet following these raw feeding ratios.
+
+
 ## Installation & Usage
 
-To install and use the **Raw Diet Ratio Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/raw-diet-ratio-calculator](https://vinkius.com/mcp/raw-diet-ratio-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Raw Diet Ratio Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `raw-diet-ratio-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Raw Diet Ratio Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "raw-diet-ratio-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

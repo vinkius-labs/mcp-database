@@ -1,7 +1,6 @@
 # OpenMeter (Usage Metering for AI/Cloud Billing) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openmeter-usage-metering-for-aicloud-billing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openmeter-usage-metering-for-aicloud-billing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openmeter-usage-metering-for-aicloud-billing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openmeter-usage-metering-for-aicloud-billing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **OpenMeter (Usage Meter
 > Retrieved customer: ACME Corp (ID: `cust_abc123`). Usage is attributed to subjects: `['acme-corp-001']`.
 
 
+## ❓ FAQ
+
+**Q: How do I record that a user just consumed 500 tokens in an AI prompt?**
+Use the `ingest_event` tool. Provide the event type (e.g., 'prompt'), the subject (customer ID), and a JSON payload containing the count (e.g., `{"tokens": 500}`). OpenMeter will handle the aggregation automatically.
+
+**Q: Can I check the current status and metadata of a specific billable customer?**
+Yes! Use the `get_customer` tool with the customer's ID or Key. It will return the customer's name, usage attribution settings, and internal identifiers.
+
+**Q: How do I set a usage limit or entitlement for a customer?**
+Use the `create_entitlement` tool. You'll need the `customerId` and a JSON configuration defining the feature and the limit (e.g., a hard limit of 1000 units per month).
+
+
 ## Installation & Usage
 
-To install and use the **OpenMeter (Usage Metering for AI/Cloud Billing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openmeter-usage-metering-for-aicloud-billing](https://vinkius.com/mcp/openmeter-usage-metering-for-aicloud-billing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenMeter (Usage Metering for AI/Cloud Billing)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openmeter-usage-metering-for-aicloud-billing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenMeter (Usage Metering for AI/Cloud Billing)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openmeter-usage-metering-for-aicloud-billing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

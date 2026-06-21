@@ -1,7 +1,6 @@
 # UKG Pro Learning MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ukg-pro-learning)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ukg-pro-learning-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ukg-pro-learning-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ukg-pro-learning)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -50,12 +49,49 @@ Remaining modules: 'Data Privacy Basics'.
 > Executing `assign_curriculum`... Successfully enrolled 12 new Engineering hires into 'Cybersecurity 101' (Curriculum ID: 4022). Due date set for 30 days from today.
 
 
+## ❓ FAQ
+
+**Q: What learning data can AI agents manage?**
+Agents can access training courses, curricula, learning paths, employee enrollments, and completion records.
+
+**Q: How is authentication handled for UKG Pro Learning?**
+Authentication relies on an API key or an OAuth2 access token provided by your UKG Pro Learning / Schoox environment.
+
+
 ## Installation & Usage
 
-To install and use the **UKG Pro Learning** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ukg-pro-learning](https://vinkius.com/mcp/ukg-pro-learning)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **UKG Pro Learning** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ukg-pro-learning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **UKG Pro Learning** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ukg-pro-learning": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

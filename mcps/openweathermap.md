@@ -1,7 +1,6 @@
 # OpenWeatherMap MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openweathermap)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openweathermap-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openweathermap-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openweathermap)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **OpenWeatherMap** MCP s
 > Running `get_air_pollution` for those coordinates... The Air Quality Index is 2 (Fair). PM2.5 is at 12.5 μg/m³ and CO is at 320.4 μg/m³.
 
 
+## ❓ FAQ
+
+**Q: How do I get a comprehensive weather report including hourly and daily forecasts?**
+Use the `get_onecall` tool with latitude and longitude. It provides current data, 48-hour hourly forecasts, and 8-day daily forecasts in a single request.
+
+**Q: Can I check the air quality for a specific location?**
+Yes, the `get_air_pollution` tool returns real-time data for pollutants including CO, NO2, O3, and particulate matter (PM2.5/PM10) for any coordinates.
+
+**Q: How do I find coordinates for a city name to use with the weather tools?**
+Use the `direct_geocoding` tool. Simply provide the city name (and optionally state/country), and it will return the latitude and longitude needed for tools like `get_onecall`.
+
+
 ## Installation & Usage
 
-To install and use the **OpenWeatherMap** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openweathermap](https://vinkius.com/mcp/openweathermap)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenWeatherMap** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openweathermap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenWeatherMap** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openweathermap": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

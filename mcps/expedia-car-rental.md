@@ -1,7 +1,6 @@
 # Expedia Car Rental MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia-car-rental)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/expedia-car-rental-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/expedia-car-rental-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia-car-rental)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Expedia Car Rental** M
 > I've processed the cancellation for itinerary ITN-4829173. The reservation for a Ford Explorer at MIA (Jan 10-15) has been cancelled successfully. Since the booking had a free cancellation policy, no charges will apply. You'll receive a confirmation email from the rental agency within 24 hours.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent find available rental cars at a specific airport for my travel dates?**
+Yes. Use the `search_cars` tool with the airport code, pickup and return dates, and any vehicle preferences. The agent will return available vehicles from all participating agencies at that location, including pricing per day and total cost breakdowns.
+
+**Q: Can I see all pickup and drop-off locations near my destination before searching for cars?**
+Absolutely. The `get_pickup_locations` tool returns all available rental counters near a given location, including airport terminals, downtown offices, and hotel desks. This helps you choose the most convenient pickup point before running a vehicle search.
+
+**Q: Does this integration support booking and cancellation, or is it search only?**
+Full lifecycle support. You can search and compare vehicles (read), then book a rental via the `book_car` tool and manage or cancel existing reservations with `get_itinerary` and `cancel_itinerary`. All transactions go through the official Rapid API with standard cancellation policies enforced by the rental agency.
+
+
 ## Installation & Usage
 
-To install and use the **Expedia Car Rental** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/expedia-car-rental](https://vinkius.com/mcp/expedia-car-rental)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Expedia Car Rental** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `expedia-car-rental` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Expedia Car Rental** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "expedia-car-rental": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

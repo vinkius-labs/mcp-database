@@ -1,7 +1,6 @@
 # Accounting & Audit Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accounting-audit-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/accounting-audit-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/accounting-audit-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accounting-audit-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Accounting & Audit Pro
 > Verdict: ROMM_IGNORED. You cited the standard, set materiality, and proposed procedures, but completely skipped the Risk of Material Misstatement assessment. Is inherent risk high? Control risk low? Assess ROMM before testing.
 
 
+## ❓ FAQ
+
+**Q: Can this MCP perform financial reconciliations?**
+No. This is a strictly stateless reasoning gatekeeper. It does not perform mathematical reconciliations, access ERP systems, or review ledgers. It validates the logical structure of the AI's accounting/audit reasoning based on the inputs provided.
+
+**Q: Why did the Prover reject my accounting memo with STANDARD_COMPLIANCE_BLIND?**
+Because the reasoning relied on vague appeals like 'according to GAAP' or 'standard accounting practice'. To pass the Prover, you must cite specific US standards (e.g., FASB ASC 606, PCAOB AS 2110).
+
+**Q: What does ROMM mean and why is it required?**
+ROMM stands for Risk of Material Misstatement. In auditing, you cannot propose substantive procedures without first assessing the inherent and control risks that could lead to a material error. The Prover forces this assessment.
+
+
 ## Installation & Usage
 
-To install and use the **Accounting & Audit Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/accounting-audit-prover](https://vinkius.com/mcp/accounting-audit-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Accounting & Audit Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `accounting-audit-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Accounting & Audit Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "accounting-audit-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

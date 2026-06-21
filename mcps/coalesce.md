@@ -1,7 +1,6 @@
 # Coalesce MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coalesce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coalesce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coalesce-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coalesce)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Would you like to check the failed run details?
 > The production pipeline (Run ID: run-9g1l) is currently at 85%. All dimension tables have refreshed successfully, and the fact nodes are currently materializing in Snowflake.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Coalesce API token?**
+In the Coalesce UI, go to **Organization Settings > API Tokens** and generate a new token. Copy it and paste it below.
+
+**Q: Does this work with Snowflake?**
+Yes. Coalesce is built specifically for Snowflake. The API triggers jobs that run directly on your Snowflake instance.
+
+**Q: What is a Node Selector?**
+A Node Selector lets you filter which transformation nodes to include in a run, based on name, type, or tags.
+
+
 ## Installation & Usage
 
-To install and use the **Coalesce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coalesce](https://vinkius.com/mcp/coalesce)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Coalesce** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coalesce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Coalesce** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coalesce": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Chuanglan 253 / 创蓝 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chuanglan-253)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chuanglan-253-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chuanglan-253-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chuanglan-253)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Chuanglan 253 / 创蓝
 > Your current Chuanglan account balance is 15,240 credits. This should be sufficient for your upcoming promotional campaign. Would you like me to alert you if it drops below 1,000?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Chuanglan Account and Password?**
+Log in to the [Chuanglan Developer Portal](https://open.253.com/), navigate to the 'Application Management' or 'API Settings' section, and you will find your unique Account (username) and Password/Key for integration.
+
+**Q: What is Variable SMS?**
+Variable SMS allows you to send template-based messages where specific placeholders (like names or codes) are replaced with different values for each recipient in a single API call.
+
+**Q: Does this work for international numbers?**
+Yes! Use the `send_intl_sms` tool to reach users globally. Ensure you provide the phone number with the correct international country code.
+
+
 ## Installation & Usage
 
-To install and use the **Chuanglan 253 / 创蓝** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chuanglan-253](https://vinkius.com/mcp/chuanglan-253)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chuanglan 253 / 创蓝** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chuanglan-253` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chuanglan 253 / 创蓝** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chuanglan-253": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

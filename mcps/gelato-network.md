@@ -1,7 +1,6 @@
 # Gelato Network MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gelato-network)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gelato-network-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gelato-network-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gelato-network)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Gelato Network** MCP s
 > I've calculated the gas limits for your UserOperation on Optimism. The estimated callGasLimit is 45000 and verificationGasLimit is 120000.
 
 
+## ❓ FAQ
+
+**Q: How can I track the status of a transaction I just relayed?**
+Use the `relayer_get_status` tool with the Task ID returned during submission. It will provide the current execution state and, if completed, the transaction receipt logs.
+
+**Q: Can I get a fee quote before sending a transaction?**
+Yes! Use `relayer_get_fee_quote` by providing the chain ID, target token, and estimated gas amount. The agent will return the exact fee required for the operation.
+
+**Q: Does this server support ERC-4337 Account Abstraction?**
+Absolutely. You can use `bundler_send_user_operation` to submit operations and `bundler_estimate_user_operation_gas` to calculate the necessary gas limits for smart contract wallets.
+
+
 ## Installation & Usage
 
-To install and use the **Gelato Network** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gelato-network](https://vinkius.com/mcp/gelato-network)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gelato Network** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gelato-network` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gelato Network** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gelato-network": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

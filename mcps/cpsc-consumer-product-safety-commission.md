@@ -1,7 +1,6 @@
 # CPSC (Consumer Product Safety Commission) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cpsc-consumer-product-safety-commission)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cpsc-consumer-product-safety-commission-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cpsc-consumer-product-safety-commission-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cpsc-consumer-product-safety-commission)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **CPSC (Consumer Product
 > I am checking the database for model 'XYZ123'. No active recalls were found for this specific model number in the CPSC records. Would you like me to search by the manufacturer name instead?
 
 
+## ❓ FAQ
+
+**Q: Can I filter recalls by a specific hazard type like 'Fire' or 'Choking'?**
+Yes! Use the `search_recalls` tool and provide the hazard keyword in the `Hazard` parameter. The agent will return all matching products associated with that specific risk.
+
+**Q: Is it possible to search for recalls from a specific manufacturer or brand?**
+Absolutely. You can use the `Manufacturer` parameter in the `search_recalls` tool to list all safety notices issued for products from a particular company.
+
+**Q: Can I search for a recall using a specific Product UPC?**
+Yes, the `search_recalls` tool includes a `ProductUPC` field. This allows for precise identification of specific items that may be subject to safety recalls.
+
+
 ## Installation & Usage
 
-To install and use the **CPSC (Consumer Product Safety Commission)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cpsc-consumer-product-safety-commission](https://vinkius.com/mcp/cpsc-consumer-product-safety-commission)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CPSC (Consumer Product Safety Commission)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cpsc-consumer-product-safety-commission` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CPSC (Consumer Product Safety Commission)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cpsc-consumer-product-safety-commission": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

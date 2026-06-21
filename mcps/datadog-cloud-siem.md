@@ -1,7 +1,6 @@
 # Datadog Cloud SIEM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-cloud-siem)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datadog-cloud-siem-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datadog-cloud-siem-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-cloud-siem)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **Datadog Cloud SIEM** M
 > Signal 'sig_123' has been archived! State updated to 'archived' with reason: 'false_positive'. This action is logged in your Datadog security timeline.
 
 
+## ❓ FAQ
+
+**Q: Can my agent help me triage security alerts in Datadog?**
+Yes. Use the 'triage_signal' tool. You can update active threats from 'open' to 'archived', providing a required justification like 'false_positive'. The agent will push the status update directly to the Datadog SIEM platform.
+
+**Q: How do I search for malicious activities matching specific IP addresses?**
+Use the 'get_raw_log_context' tool. Provide the suspicious IP address, and the agent will perform a threat-hunting search with a 10s lookbehind to capture highly localized context matching that source, helping you verify attacker footprints.
+
+**Q: Can I see all active security detection rules through the agent?**
+Absolutely. The 'list_detection_rules' tool returns all custom and prepackaged Datadog Cloud SIEM rules. Your agent can then inspect specific rule schemas to verify evaluation windows, trigger cases, and notification hooks.
+
+
 ## Installation & Usage
 
-To install and use the **Datadog Cloud SIEM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/datadog-cloud-siem](https://vinkius.com/mcp/datadog-cloud-siem)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Datadog Cloud SIEM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `datadog-cloud-siem` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Datadog Cloud SIEM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "datadog-cloud-siem": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

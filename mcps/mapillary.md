@@ -1,7 +1,6 @@
 # Mapillary MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapillary)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mapillary-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mapillary-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapillary)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Mapillary** MCP server
 > Found 8 detections: regulatory--maximum-speed-limit-50--g1, information--parking--g1, warning--curve-left--g1, object--street-light--g1, and 4 more. Each with value, geometry and confidence score.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Mapillary access token?**
+Sign up at [**mapillary.com/developer**](https://www.mapillary.com/developer) and create an application to get your access token.
+
+**Q: What is a bounding box?**
+A bounding box defines a geographic area using min_longitude, min_latitude, max_longitude, max_latitude. Example: "-0.15,51.50,-0.10,51.52" covers central London.
+
+**Q: What map features are available?**
+Mapillary detects traffic signs (stop, speed limit, yield, etc.), road objects (fire hydrants, mailboxes, etc.) and road markings. Use get_map_features to search by area.
+
+
 ## Installation & Usage
 
-To install and use the **Mapillary** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mapillary](https://vinkius.com/mcp/mapillary)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mapillary** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mapillary` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mapillary** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mapillary": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

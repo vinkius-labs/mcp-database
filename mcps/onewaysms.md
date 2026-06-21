@@ -1,7 +1,6 @@
 # OneWaySMS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/onewaysms)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/onewaysms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/onewaysms-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/onewaysms)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **OneWaySMS** MCP server
 > Your current credit balance is 4,532 SMS credits. Transaction MT-28341 status: Delivered successfully. The message was sent to +60123456789 on May 8th at 2:15 PM and confirmed delivered at 2:15:03 PM (3 second delivery time).
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the delivery status for a specific SMS by its transaction ID?**
+Yes! Use the `get_status` tool with the Transaction ID (MTID). Your agent will respond with the current delivery state (e.g., Delivered, Failed, or Pending) in seconds.
+
+**Q: How do I find my OneWaySMS API Username and Password?**
+Log in to your OneWaySMS dashboard, navigate to the **API** section, and you will find your dedicated API Username and API Password (which are different from your web login).
+
+**Q: What is the character limit for ASCII vs Unicode messages?**
+Standard ASCII messages allow up to 160 characters per SMS. Unicode messages (which support special characters and emojis) are limited to 70 characters per SMS.
+
+
 ## Installation & Usage
 
-To install and use the **OneWaySMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/onewaysms](https://vinkius.com/mcp/onewaysms)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OneWaySMS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `onewaysms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OneWaySMS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "onewaysms": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

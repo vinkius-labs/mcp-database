@@ -1,7 +1,6 @@
 # LeadSquared MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leadsquared)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/leadsquared-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/leadsquared-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leadsquared)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **LeadSquared** MCP serv
 > Successfully captured Alice Smith as a new lead in your LeadSquared CRM. Her profile has been created with ID '98765'.
 
 
+## ❓ FAQ
+
+**Q: Where do I find my regional API Host?**
+Log in to LeadSquared and go to Settings > API and Webhooks. Your regional host (e.g., `api-us11.leadsquared.com`) will be displayed there.
+
+**Q: Can the agent automatically handle duplicate leads?**
+Yes, the `capture_lead` and `create_or_update_lead` tools use LeadSquared's internal logic to identify and merge duplicates based on email or phone number.
+
+**Q: Is it possible to list activities for a specific opportunity?**
+Absolutely. Use the `list_opportunity_activities` tool with the target `opportunityId` to retrieve its full interaction history.
+
+
 ## Installation & Usage
 
-To install and use the **LeadSquared** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/leadsquared](https://vinkius.com/mcp/leadsquared)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LeadSquared** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `leadsquared` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LeadSquared** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "leadsquared": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

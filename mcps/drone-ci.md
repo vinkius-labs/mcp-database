@@ -1,7 +1,6 @@
 # Drone CI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drone-ci)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/drone-ci-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/drone-ci-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drone-ci)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -105,12 +104,52 @@ Here are some examples of how you can interact with the **Drone CI** MCP server 
 > I've initiated the creation of the secret 'DB_PASSWORD' for 'acme/web-app' using `create_secret`. Please provide the value you would like to assign to this secret.
 
 
+## ❓ FAQ
+
+**Q: Can I view the logs of a specific build to debug an error?**
+Yes, use the `get_build_logs` tool by providing the owner, repo name, and build number. Your agent will retrieve the full output from the pipeline steps.
+
+**Q: How do I trigger a new build for a repository?**
+You can use the `create_build` tool to trigger a new build or `restart_build` to re-run an existing build number for a specific repository.
+
+**Q: Is it possible to manage environment secrets through this agent?**
+Absolutely. You can use `list_secrets`, `create_secret`, and `update_secret` to manage your repository's sensitive data securely from the conversation.
+
+
 ## Installation & Usage
 
-To install and use the **Drone CI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/drone-ci](https://vinkius.com/mcp/drone-ci)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Drone CI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `drone-ci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Drone CI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "drone-ci": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

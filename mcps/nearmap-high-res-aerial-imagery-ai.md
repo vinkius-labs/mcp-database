@@ -1,7 +1,6 @@
 # Nearmap (High-Res Aerial Imagery & AI) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nearmap-high-res-aerial-imagery-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nearmap-high-res-aerial-imagery-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nearmap-high-res-aerial-imagery-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nearmap-high-res-aerial-imagery-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Nearmap (High-Res Aeri
 > Retrieving oblique perspective… I've fetched the perspective tile looking North for your target. This view clearly shows the structural facade and roof orientation. Would you like me to retrieve the South or East perspectives for a complete comparison?
 
 
+## ❓ FAQ
+
+**Q: How high is the resolution of Nearmap imagery compared to standard satellite maps?**
+Nearmap provides high-resolution aerial imagery at sub-15cm (approx. 6 inch) Ground Sample Distance (GSD). This is significantly sharper than typical satellite imagery (usually 30cm-50cm), allowing your agent to identify fine site details like roof vents, pavement cracks, or pool conditions.
+
+**Q: Can my agent automatically detect solar panels or swimming pools on a property?**
+Yes. Use the `get_ai_detected_features` tool. Nearmap's AI analyzes recent surveys to return vector geometries for specific feature classes like 'Solar Panels' or 'Swimming Pools', including confidence thresholds and area measurements.
+
+**Q: What is 'Oblique' imagery and how do I access it through the agent?**
+Oblique imagery is captured at a 45-degree angle rather than straight down. Use the `get_oblique_tile` tool and specify a direction (North, South, East, West). This allows your agent to audit building facades, structural heights, and side-view property details.
+
+
 ## Installation & Usage
 
-To install and use the **Nearmap (High-Res Aerial Imagery & AI)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nearmap-high-res-aerial-imagery-ai](https://vinkius.com/mcp/nearmap-high-res-aerial-imagery-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nearmap (High-Res Aerial Imagery & AI)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nearmap-high-res-aerial-imagery-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nearmap (High-Res Aerial Imagery & AI)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nearmap-high-res-aerial-imagery-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Resend MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/resend)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/resend-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/resend-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/resend)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Would you like me to trigger DNS verification for the pending domain?
 Would you like to add a new contact or inspect a specific subscriber?
 
 
+## ❓ FAQ
+
+**Q: Can I send an email with HTML content and track whether it was delivered?**
+Absolutely. Use the `send_email` tool with your HTML body, then use `get_email` with the returned ID to check delivery status, open events, and bounce details in real time.
+
+**Q: How do I check if my sending domain DNS records are correctly configured?**
+Run `list_domains` to find your domain ID, then use `get_domain` to inspect the full DNS record set (SPF, DKIM, return path). If records are pending, trigger `verify_domain` to re-check.
+
+**Q: Can I add subscribers to an audience for broadcast campaigns?**
+Yes. First use `list_audiences` to get the target audience ID, then call `create_contact` with the subscriber's email and optional name fields. The contact is immediately available for broadcast targeting.
+
+
 ## Installation & Usage
 
-To install and use the **Resend** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/resend](https://vinkius.com/mcp/resend)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Resend** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `resend` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Resend** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "resend": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

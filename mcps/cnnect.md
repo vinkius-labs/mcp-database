@@ -1,7 +1,6 @@
 # Cnnect MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cnnect)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cnnect-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cnnect-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cnnect)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Cnnect** MCP server us
 > Scanning analytics... Your card has been tapped 150 times this month with a 30% lead conversion rate. Engagement is up by 15% compared to last month. Would you like a breakdown of clicks by social platform?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Cnnect API Token?**
+Log in to the Cnnect Business Portal, navigate to **Settings** > **API**, and copy your unique Bearer Token.
+
+**Q: Can I see real-time analytics for my card taps?**
+Yes! The `get_analytics_summary` tool retrieves the most current engagement data including total taps and new lead counts.
+
+**Q: Can the agent update my LinkedIn link on the card?**
+Yes, using the `update_profile` tool, you can programmatically modify any of the social links or contact details on your digital business card.
+
+
 ## Installation & Usage
 
-To install and use the **Cnnect** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cnnect](https://vinkius.com/mcp/cnnect)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cnnect** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cnnect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cnnect** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cnnect": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

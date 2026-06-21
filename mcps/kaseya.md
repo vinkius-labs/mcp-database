@@ -1,7 +1,6 @@
 # Kaseya MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kaseya)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kaseya-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kaseya-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kaseya)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Kaseya** MCP server us
 > I found 8 machine groups in your Kaseya instance, including 'Laptops', 'Production Servers', and 'Retail POS Systems'.
 
 
+## ❓ FAQ
+
+**Q: Can I see the software installed on a specific device?**
+Yes, the `get_agent_details` tool returns comprehensive information about the target device, including installed software, hardware specs, and network status.
+
+**Q: How do I monitor active alerts across all my clients?**
+You can use the `list_alarms` tool to fetch all current system alerts and agent-triggered alarms from your VSA 10 instance in real-time.
+
+**Q: Is it possible to list available automation scripts?**
+Absolutely. The `list_scripts` and `list_workflows` tools provide visibility into your entire library of automation assets configured in Kaseya.
+
+
 ## Installation & Usage
 
-To install and use the **Kaseya** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kaseya](https://vinkius.com/mcp/kaseya)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kaseya** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kaseya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kaseya** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kaseya": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

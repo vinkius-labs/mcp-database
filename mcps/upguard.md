@@ -1,7 +1,6 @@
 # UpGuard MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upguard)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/upguard-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/upguard-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upguard)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **UpGuard** MCP server u
 > Inspecting breach data... I found one recent identity breach affecting 3 employees. It occurred on a third-party site 'TrainingPortal.com'. Would you like the list of affected email addresses?
 
 
+## ❓ FAQ
+
+**Q: How do I check the security score of a specific vendor?**
+Use the `get_vendor` tool and provide the Vendor ID. Your agent will retrieve the complete security profile, including the overall score and metadata for that vendor.
+
+**Q: Can I see all active risks across my entire account?**
+Yes! Use the `list_account_risks` query. This retrieves all active security risks detected across your own digital infrastructure (BreachSight).
+
+**Q: Is it possible to monitor data breaches affecting our employees?**
+Absolutely. Use the `list_identity_breaches` query to retrieve data on identity breaches affecting your workforce, helping you take proactive security measures.
+
+
 ## Installation & Usage
 
-To install and use the **UpGuard** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/upguard](https://vinkius.com/mcp/upguard)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **UpGuard** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `upguard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **UpGuard** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "upguard": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

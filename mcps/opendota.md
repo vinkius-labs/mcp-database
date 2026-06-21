@@ -1,7 +1,6 @@
 # OpenDota MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opendota)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opendota-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opendota-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opendota)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -123,12 +122,55 @@ Here are some examples of how you can interact with the **OpenDota** MCP server 
 > All-time kill record: 75 kills in a single match by a player on Morphling. Other top records include 70 kills (Phantom Assassin), 65 kills (Medusa) and 60 kills (Juggernaut). These are from public matches tracked by OpenDota.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! OpenDota provides free access with 60,000 requests/hour without any API key. An optional free API key is available from opendota.com for higher rate limits, but it's not required.
+
+**Q: How do I find a player's account ID?**
+Use the search tool with the player's name (e.g. 'Arteezy', 'SumaiL', 'Topson'). The results include their Steam account ID which you can then use with player-specific tools. You can also find account IDs on sites like dotabuff.com or stratz.com.
+
+**Q: What data is available for matches?**
+Match data includes: all 10 players' heroes, items, KDA, GPM, XPM, hero damage, tower damage, healing, lane positions, draft picks, chat logs, team objectives, ability builds and more. Professional matches have even more detailed data including observer ward placements and rune pickups.
+
+**Q: How many heroes are in Dota 2?**
+Dota 2 currently has 124 heroes, each with unique abilities and roles. Use list_heroes to see the complete list with their IDs, names, primary attributes (Strength, Agility, Intelligence, Universal) and roles (carry, support, offlane, mid).
+
+
 ## Installation & Usage
 
-To install and use the **OpenDota** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opendota](https://vinkius.com/mcp/opendota)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenDota** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opendota` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenDota** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opendota": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Qdrant MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qdrant)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qdrant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qdrant-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qdrant)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,55 @@ Should I inspect `docs-embeddings` further?
 3. ID: `9d8e4`, Payload: { "role": "user", "department": "sales" }
 
 
+## ❓ FAQ
+
+**Q: How do I find my Qdrant URL and API Key?**
+For **Qdrant Cloud**: Go to the Qdrant Cloud Console, select your cluster to open the Cluster Detail Page. The endpoint will be displayed there (e.g., `xyz.us-east4-0.gcp.cloud.qdrant.io`), and you can generate Database API Keys underneath it (they start with `eyJhb`). For **Self-hosted**: Provide your custom URL and the static custom key you defined in your `config.yaml`.
+
+**Q: Can my AI use this for a RAG architecture directly?**
+Yes contextually, but practically your agent acts as the database debugger. It can formulate vector arrays to query `search_points`, retrieving identical payload structures. It's meant for the *engineer building the RAG*, helping you inspect distances and debug faulty retrieval mechanisms mid-code.
+
+**Q: Does it support deleting vectors?**
+Yes. If an embedding got corrupted or references dropped articles, use the `delete` tool. Pass the collection name and the list of specific IDs. Qdrant handles the mutation instantly and updates the index without rebuilding.
+
+**Q: What if I have millions of points?**
+Instead of overloading your chat context, instruct your agent to use the `count` tool to grasp the scale, and the `scroll` tool with a small limit constraint (e.g., 5-10 records at a time). This paginates large bodies cleanly when analyzing index health.
+
+
 ## Installation & Usage
 
-To install and use the **Qdrant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/qdrant](https://vinkius.com/mcp/qdrant)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Qdrant** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `qdrant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Qdrant** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "qdrant": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Setback Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/setback-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/setback-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/setback-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/setback-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -51,12 +50,52 @@ Here are some examples of how you can interact with the **Setback Calculator** M
 > I will call `calculate_land_utilization_metrics` using totalLandAreaSqMeters=800 and buildingFootprintAreaSqMeters=512. This calculation gives the utilization percentage, confirming compliance.
 
 
+## ❓ FAQ
+
+**Q: What is the first step in calculating buildable dimensions?**
+You must first use the `calculate_usable_dimensions` tool. This function takes your total lot size and mandatory setbacks (front, rear, side A, side B) to determine the absolute maximum buildable length and width.
+
+**Q: How do I find the total area of my potential building?**
+Once you have the usable dimensions, pass them to the `calculate_building_footprint` tool. This calculates the maximum rectangular area (the footprint) and its perimeter based on those restricted measurements.
+
+**Q: Does this calculator tell me if my lot size is efficient?**
+Yes. By using the `calculate_land_utilization_metrics` tool, you compare your calculated building footprint area against the total land area. This gives you a utilization percentage (0-100%), helping you assess zoning compliance risk.
+
+
 ## Installation & Usage
 
-To install and use the **Setback Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/setback-calculator](https://vinkius.com/mcp/setback-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Setback Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `setback-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Setback Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "setback-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

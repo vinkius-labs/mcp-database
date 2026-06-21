@@ -1,7 +1,6 @@
 # Ugosign MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ugosign)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ugosign-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ugosign-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ugosign)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Ugosign** MCP server u
 > I've retrieved your organization details. Your account is 'Vinkius Legal' (ID: 552) and you have unlimited signature requests remaining on your current plan.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Ugosign API Key?**
+Log in to your Ugosign account, navigate to the **Developer API** or **Integrations** section, and copy your secret Bearer Token.
+
+**Q: Can I track the status of a specific signature request?**
+Yes, use the `get_signature_request` tool with the unique ID to see if it is 'pending', 'viewed', or 'signed'.
+
+**Q: Does it support multiple recipients?**
+Absolutely. You can specify one or more recipients when creating a new signature request via the `create_signature_request` tool.
+
+
 ## Installation & Usage
 
-To install and use the **Ugosign** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ugosign](https://vinkius.com/mcp/ugosign)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ugosign** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ugosign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ugosign** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ugosign": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

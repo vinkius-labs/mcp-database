@@ -1,7 +1,6 @@
 # Chargeblast MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chargeblast)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chargeblast-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chargeblast-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chargeblast)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Chargeblast** MCP serv
 > Retrieving today's deflection logs... Chargeblast successfully blocked 5 chargeback attempts today through automated RDR and digital receipt deflections, saving a total of $425.00.
 
 
+## ❓ FAQ
+
+**Q: Can I see my CDRN and Ethoca alerts in one place?**
+Yes! Use the `list_dispute_alerts` tool. The agent will retrieve all intercepted alerts from various networks (CDRN, Ethoca, RDR) and display them in a unified list.
+
+**Q: How do I mark an alert as refunded?**
+Use the `update_alert_status` tool with the alert ID and set the status to `refunded`. This notifies Chargeblast that you have resolved the dispute manually.
+
+**Q: Where do I find my Chargeblast API Key?**
+Log in to your Chargeblast Dashboard and look for 'API Key' or 'Account Settings'. You can copy your key from that section for integration.
+
+
 ## Installation & Usage
 
-To install and use the **Chargeblast** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chargeblast](https://vinkius.com/mcp/chargeblast)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chargeblast** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chargeblast` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chargeblast** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chargeblast": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

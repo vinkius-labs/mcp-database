@@ -1,7 +1,6 @@
 # Global Effective Tax Rate & Pillar Two Compliance MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/global-effective-tax-rate-pillar-two-compliance)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/global-effective-tax-rate-pillar-two-compliance-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/global-effective-tax-rate-pillar-two-compliance-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/global-effective-tax-rate-pillar-two-compliance)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Global Effective Tax R
 > Your total effective liability is $15,000.
 
 
+## ❓ FAQ
+
+**Q: What is the purpose of the `calculate_jurisdictional_deficiency` tool?**
+It determines if a specific country's tax rate is below the 15% OECD threshold and calculates the resulting top-up tax liability based on the profit amount.
+
+**Q: How does `calculate_global_etr` work?**
+The tool calculates a single weighted average tax rate for all provided jurisdictions by dividing the total taxes paid by the aggregate profit.
+
+**Q: Can I calculate my total enterprise tax burden?**
+Yes, using the `calculate_consolidated_burden` tool, you can sum all local taxes and top-up taxes to find your total effective liability.
+
+
 ## Installation & Usage
 
-To install and use the **Global Effective Tax Rate & Pillar Two Compliance** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/global-effective-tax-rate-pillar-two-compliance](https://vinkius.com/mcp/global-effective-tax-rate-pillar-two-compliance)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Global Effective Tax Rate & Pillar Two Compliance** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `global-effective-tax-rate-pillar-two-compliance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Global Effective Tax Rate & Pillar Two Compliance** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "global-effective-tax-rate-pillar-two-compliance": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

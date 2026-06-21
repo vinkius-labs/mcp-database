@@ -1,7 +1,6 @@
 # Scholarship Eligibility Checker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scholarship-eligibility-checker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scholarship-eligibility-checker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scholarship-eligibility-checker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scholarship-eligibility-checker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Scholarship Eligibilit
 > The `retrieve_program_requirements` tool shows that STATE_GRANT allows up to 2x the minimum wage.
 
 
+## ❓ FAQ
+
+**Q: How do I check if I am eligible for ProUni?**
+Use the `check_program_eligibility` tool with the `PROUNI_FULL` or `PROUNI_PARTIAL` program type and your calculated per capita income. Tools available: `your_tool_name`.
+
+**Q: What is per capita income?**
+It is the total gross family income divided by the number of people living in your household. You can calculate this using the `calculate_per_capita_income` tool.
+
+**Q: Can I check requirements for FIES?**
+Yes, use the `retrieve_program_requirements` tool with the `FIES_STANDARD` program type to see the income thresholds.
+
+
 ## Installation & Usage
 
-To install and use the **Scholarship Eligibility Checker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/scholarship-eligibility-checker](https://vinkius.com/mcp/scholarship-eligibility-checker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Scholarship Eligibility Checker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `scholarship-eligibility-checker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Scholarship Eligibility Checker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "scholarship-eligibility-checker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

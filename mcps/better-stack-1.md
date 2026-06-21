@@ -1,7 +1,6 @@
 # Better Stack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/better-stack-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/better-stack-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/better-stack-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/better-stack-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Better Stack** MCP ser
 > Fetching incident #8012. The log dump points to a 502 Bad Gateway response received structurally from your Nginx server physically hosted in the EU region during the ping interval causing manual threshold failures.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically acknowledge an incident so my phone stops ringing?**
+Yes! Running the `acknowledge_incident` capability pushes a verified API command halting escalation cycles (like SMS and phone calls) natively while you debug.
+
+**Q: Is it possible to see the exact HTTP response body or headers that caused a monitor to fail?**
+Yes, pulling details via `get_incident` exposes the raw nested trace containing the root cause payloads and server errors Better Stack historically received when the check failed.
+
+**Q: Can the agent create new monitors automatically?**
+No. The integration focuses safely on observation, alerting resolution, and tracking currently. Creation endpoints represent mutation vectors decoupled to ensure you preserve billing and account structure intentionally.
+
+
 ## Installation & Usage
 
-To install and use the **Better Stack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/better-stack-1](https://vinkius.com/mcp/better-stack-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Better Stack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `better-stack-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Better Stack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "better-stack-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Maxar (Satellite Imagery) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/maxar-satellite-imagery)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/maxar-satellite-imagery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/maxar-satellite-imagery-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/maxar-satellite-imagery)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Maxar (Satellite Image
 > Fetching ARD tile metadata... Tile '1234567890' is part of the 'Bay Area' dataset, processed on 2024-01-10. It includes 8-band multispectral data and has been orthorectified to UTM Zone 10N.
 
 
+## ❓ FAQ
+
+**Q: How do I search for satellite imagery in a specific geographic area?**
+You can use the `search_discovery` tool by providing a bounding box (bbox) array with [min_lon, min_lat, max_lon, max_lat] coordinates and an optional datetime interval.
+
+**Q: Can I get streaming links for use in GIS software like QGIS or ArcGIS?**
+Yes! Use the `get_mws_endpoints` tool to retrieve the base URLs for OGC-compliant WMS and WMTS services provided by Maxar Web Services.
+
+**Q: What information is required to order a specific image?**
+To use the `create_order` tool, you need the unique `item_id` of the image, the desired `product_type` (e.g., visual), and a `delivery_config` JSON specifying the destination.
+
+
 ## Installation & Usage
 
-To install and use the **Maxar (Satellite Imagery)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/maxar-satellite-imagery](https://vinkius.com/mcp/maxar-satellite-imagery)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Maxar (Satellite Imagery)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `maxar-satellite-imagery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Maxar (Satellite Imagery)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "maxar-satellite-imagery": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Anthropic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anthropic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/anthropic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/anthropic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anthropic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Anthropic** MCP server
 > I've initiated a new Message Batch (ID: msgbatch_abc123) with your 100 requests. You can check the status periodically using `get_batch`. Processing usually takes less than 24 hours.
 
 
+## ❓ FAQ
+
+**Q: What is the benefit of the Batch API?**
+The Message Batch API allows you to send large numbers of requests to be processed asynchronously within 24 hours. The main benefits are a 50% discount on token pricing and higher rate limits compared to standard requests.
+
+**Q: Can I use this server to switch between Claude 3.5 Sonnet and Opus?**
+Yes! You can specify the model ID in the `create_message` tool. This allows your agent to leverage different models depending on the complexity of the task.
+
+**Q: How do I monitor my rate limits?**
+Use the `check_rate_limits` tool. It queries Anthropic's API and extracts the current remaining tokens and requests from the response headers, helping you avoid 429 errors.
+
+
 ## Installation & Usage
 
-To install and use the **Anthropic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/anthropic](https://vinkius.com/mcp/anthropic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Anthropic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `anthropic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Anthropic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "anthropic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

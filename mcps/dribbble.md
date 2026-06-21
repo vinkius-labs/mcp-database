@@ -1,7 +1,6 @@
 # Dribbble MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dribbble)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dribbble-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dribbble-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dribbble)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Dribbble** MCP server 
 > Project 'Brand Identity 2024' has been successfully created. You can now start adding shots to this project to organize your branding work.
 
 
+## ❓ FAQ
+
+**Q: Can I upload a new design to Dribbble using this tool?**
+Yes! Use the `create_shot` tool. You can provide an image URL or file data, along with a title and description, to publish a new shot to your profile instantly.
+
+**Q: How do I organize my work into different collections?**
+You can use the `create_project` and `list_projects` tools to manage your Dribbble projects, allowing you to categorize your shots and keep your portfolio organized.
+
+**Q: Is it possible to add high-resolution files to my shots?**
+Yes, if you have a Pro or Team account, you can use the `create_attachment` tool to add files (up to 10MB) to any of your existing shots.
+
+
 ## Installation & Usage
 
-To install and use the **Dribbble** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dribbble](https://vinkius.com/mcp/dribbble)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dribbble** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dribbble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dribbble** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dribbble": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

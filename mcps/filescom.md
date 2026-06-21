@@ -1,7 +1,6 @@
 # Files.com MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/filescom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/filescom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/filescom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/filescom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Files.com** MCP server
 > Success! The folder '/Archive-2023' has been created in your Files.com account. You can now start moving your legacy assets into this directory.
 
 
+## ❓ FAQ
+
+**Q: Can I see who downloaded a specific file via AI?**
+Yes! Use the `list_activity_history` tool. Your agent will retrieve the audit logs, which you can filter to find download events for a particular file or user.
+
+**Q: How do I create a new folder in my secure storage?**
+Use the `create_folder` action. Provide the path where you want the new directory to be created (e.g., '/projects/2024') and the agent will register it in Files.com instantly.
+
+**Q: Is it possible to list all users in my Files.com instance via AI?**
+Absolutely. Use the `list_users` query. The agent will retrieve the complete directory of users configured for your company's instance.
+
+
 ## Installation & Usage
 
-To install and use the **Files.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/filescom](https://vinkius.com/mcp/filescom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Files.com** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `filescom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Files.com** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "filescom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ScrapingBee MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scrapingbee-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scrapingbee-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scrapingbee-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scrapingbee-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **ScrapingBee** MCP serv
 > For the Amazon product (ASIN: B08N5WRWNW), the current price is $999.00 with a rating of 4.8 stars based on 12,450 reviews.
 
 
+## ❓ FAQ
+
+**Q: Can I extract specific data from a page using natural language instead of CSS selectors?**
+Yes! Use the `scrape_html` tool and provide your request in the `ai_query` parameter. The server will use ScrapingBee's AI capabilities to parse the HTML and return exactly what you asked for.
+
+**Q: How do I handle websites that require JavaScript to load content?**
+The `scrape_html` tool has `render_js` enabled by default. You can also use `wait` or `wait_for` parameters to ensure the page is fully loaded before the data is captured.
+
+**Q: Can I get structured results from Google Search directly?**
+Absolutely. Use the `search_google` tool with your query. It returns structured JSON containing organic results, ads, and related searches, saving you from parsing search result pages manually.
+
+
 ## Installation & Usage
 
-To install and use the **ScrapingBee** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/scrapingbee-alternative](https://vinkius.com/mcp/scrapingbee-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ScrapingBee** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `scrapingbee-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ScrapingBee** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "scrapingbee-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

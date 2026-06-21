@@ -1,7 +1,6 @@
 # Open Emoji API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-emoji-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-emoji-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-emoji-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-emoji-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Open Emoji API** MCP s
 > I've scanned the category catalog. There are 10 main groups available, including 'smileys-emotion', 'people-body', 'animals-nature', and 'activities'. I can help you search for emojis in any of these categories.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Open Emoji API Key?**
+Register for a free account at [**emoji-api.com**](https://emoji-api.com/), and you will receive your API access key via email. Copy and paste it below.
+
+**Q: Can the agent search for specific emojis?**
+Yes. Use the `search_emojis` tool providing a keyword (e.g., 'smile' or 'coffee'). Your agent will return matching characters and metadata instantly.
+
+**Q: Does it support emoji categories?**
+Yes. The `list_emoji_categories` and `get_emojis_by_category` tools allow your agent to audit symbols by their thematic groupings.
+
+
 ## Installation & Usage
 
-To install and use the **Open Emoji API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/open-emoji-api](https://vinkius.com/mcp/open-emoji-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Open Emoji API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `open-emoji-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Open Emoji API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "open-emoji-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

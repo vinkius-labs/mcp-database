@@ -1,7 +1,6 @@
 # Poe MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/poe)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/poe-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/poe-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/poe)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Poe** MCP server using
 > 🤖 Claude-3.5-Sonnet responded: 'Key AI trends include multimodal models, agentic workflows, and reasoning capabilities...' Response received successfully.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Poe API access token?**
+Go to [creator.poe.com](https://creator.poe.com/), navigate to Settings > API, and generate an access token. This token authenticates all API requests for bot management.
+
+**Q: What AI models can I query through Poe?**
+Poe has GPT-4, GPT-4o, Claude 3.5 Sonnet, Claude 3 Opus, Llama 3, and dozens of specialized bots. Use query_bot to chain responses from multiple models in your workflows.
+
+**Q: How does bot chaining work?**
+Using Poe API v2, your bot can query any other bot on Poe for free. The response becomes input for your bot's processing. Costs are covered by the user's free message limit or subscription.
+
+
 ## Installation & Usage
 
-To install and use the **Poe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/poe](https://vinkius.com/mcp/poe)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Poe** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `poe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Poe** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "poe": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

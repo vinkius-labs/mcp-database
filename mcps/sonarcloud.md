@@ -1,7 +1,6 @@
 # SonarCloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sonarcloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sonarcloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sonarcloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sonarcloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Let me know if you need specific details for one logical group alone.
 3. ⚠️ **MAJOR** (Code Smell): Cognitive complexity of `handleUserProcess()` exceeds tier 18 inside `controller.js` (Key: `AYx99m`)
 
 
+## ❓ FAQ
+
+**Q: Can the AI rewrite my code so it passes the Sonar Quality Gate?**
+Yes! The bot uses `get_issue_details` and `get_quality_gate_status` to absorb exactly what SonarCloud requires. By operating inside your IDE (e.g. Cursor, Copilot), the LLM reads its own localized codebase, applies the requested Sonar rules, and proposes a completely polished update resolving the warnings.
+
+**Q: How do I check if my test coverage is sufficient using prompts?**
+You don't need distinct commands. Simply ask: 'Show me the coverage and bug count metrics for the MY-CORE-API project'. The autonomous agent triggers `get_project_measures` extracting precise variables (e.g., metricKeys='coverage,bugs') dropping them beautifully formatted on your screen.
+
+**Q: Will my organization see when I retrieve security issues via AI?**
+The integration processes calls entirely under your designated SonarCloud User Token privileges. It acts as an API bridge simulating legitimate network traffic like a dashboard plugin would. All requests to SonarCloud are encrypted from your client PC. No prompt data or bug details are permanently warehoused by Vinkius systems.
+
+
 ## Installation & Usage
 
-To install and use the **SonarCloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sonarcloud](https://vinkius.com/mcp/sonarcloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SonarCloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sonarcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SonarCloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sonarcloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

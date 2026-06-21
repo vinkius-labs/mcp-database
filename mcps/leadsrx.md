@@ -1,7 +1,6 @@
 # LeadsRx MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leadsrx)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/leadsrx-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/leadsrx-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leadsrx)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **LeadsRx** MCP server u
 > Retrieving your marketing ecosystem... I found 5 primary channels (Search, Social, Display, Email, Referral) and a total of 24 active touchpoints. Would you like to see the performance of the 'Search' channel specifically?
 
 
+## ❓ FAQ
+
+**Q: Can I add conversions manually through the agent?**
+Yes. Use the `add_conversion` tool by providing a Conversion ID and a value. This is useful for tracking offline or server-side events directly from your chat.
+
+**Q: How do I find a specific Campaign ID?**
+You can use the `list_campaigns` tool to see all active and historical campaigns along with their unique identifiers.
+
+**Q: Does this support multi-touch attribution?**
+Yes, LeadsRx is built for multi-touch attribution. This server provides the data based on the attribution models configured in your LeadsRx dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **LeadsRx** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/leadsrx](https://vinkius.com/mcp/leadsrx)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LeadsRx** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `leadsrx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LeadsRx** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "leadsrx": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

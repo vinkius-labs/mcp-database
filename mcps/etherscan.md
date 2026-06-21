@@ -1,7 +1,6 @@
 # Etherscan MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/etherscan)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/etherscan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/etherscan-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/etherscan)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Etherscan** MCP server
 > Querying Polygon scan... I found 10 recent transactions for that address. The latest was a contract interaction with Uniswap V3. Would you like me to list the specific transaction hashes?
 
 
+## ❓ FAQ
+
+**Q: How can I check the balance of multiple Ethereum addresses at once?**
+You can use the `get_balance_multi` tool. Provide the `chainid` (e.g., 1 for Ethereum) and a comma-separated list of up to 20 addresses to retrieve all balances in a single request.
+
+**Q: Can I track NFT transfers for a specific wallet?**
+Yes! Use the `get_token_nft_tx` tool. By providing the wallet address and the appropriate `chainid`, the agent will list ERC-721 transfer events associated with that account.
+
+**Q: Does this support networks other than Ethereum Mainnet?**
+Yes, as long as you use the correct `chainid`. For example, use 1 for Ethereum, 137 for Polygon, or 10 for Optimism, provided your API key has access to those Etherscan-equivalent explorers.
+
+
 ## Installation & Usage
 
-To install and use the **Etherscan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/etherscan](https://vinkius.com/mcp/etherscan)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Etherscan** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `etherscan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Etherscan** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "etherscan": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

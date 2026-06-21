@@ -1,7 +1,6 @@
 # Certifier MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/certifier)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/certifier-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/certifier-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/certifier)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Certifier** MCP server
 > I found 5 credentials matching 'example.com': 3 issued, 1 draft, and 1 sent. The most recent is a 'Workshop Badge' issued to Sarah Lee yesterday. Would you like to see the full details for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I create a certificate and send it to someone in one workflow?**
+Yes! First use `create_credential` with the recipient details and template ID, then `issue_credential` to make it official, and finally `send_credential` to deliver it via email.
+
+**Q: How do I find the right template ID to use when creating a credential?**
+Use the `list_credential_templates` tool to browse all available templates. Each template includes its ID, name, and description. Copy the ID and use it in the `create_credential` tool.
+
+**Q: Can I search for a credential by the recipient's email address?**
+Absolutely. Use the `search_credentials` tool and enter the recipient's email as the query. It will return all credentials matching that email address.
+
+
 ## Installation & Usage
 
-To install and use the **Certifier** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/certifier](https://vinkius.com/mcp/certifier)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Certifier** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `certifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Certifier** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "certifier": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

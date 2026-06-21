@@ -1,7 +1,6 @@
 # ProcessOn MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/processon)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/processon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/processon-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/processon)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **ProcessOn** MCP server
 > I've processed the export for you. Your diagram 'Architecture V2' is now ready in PNG format. You can download it here: [link].
 
 
+## ❓ FAQ
+
+**Q: How do I find my ProcessOn API Key and Secret?**
+Log in to your ProcessOn account, navigate to the [API Developer Center](https://www.processon.com/api), and apply for developer credentials to receive your unique API Key and Secret.
+
+**Q: Can I export my mind maps to PDF through the agent?**
+Yes. Use the `export_file` tool with the diagram file ID and specify 'pdf' as the format. Your agent will provide the download link for the exported file.
+
+**Q: Does ProcessOn support real-time collaboration?**
+Yes, ProcessOn is natively built for visual collaboration. You can list existing collaborators for any diagram using the `list_collaborators` tool.
+
+
 ## Installation & Usage
 
-To install and use the **ProcessOn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/processon](https://vinkius.com/mcp/processon)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ProcessOn** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `processon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ProcessOn** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "processon": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

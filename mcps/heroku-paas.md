@@ -1,7 +1,6 @@
 # Heroku (PaaS) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heroku-paas)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/heroku-paas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/heroku-paas-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heroku-paas)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Heroku (PaaS)** MCP se
 > Maintenance mode is currently DISABLED for 'staging-web'. Would you like to enable it before performing your database migration?
 
 
+## ❓ FAQ
+
+**Q: Can I see the status of my dynos through my agent?**
+Yes. Use the `list_dynos` tool to see the real-time status of each container process (e.g. web.1, worker.1). You'll know exactly if a dyno is up, crashed, starting, or idle.
+
+**Q: How do I check my application's environment variables?**
+The `list_config_vars` tool allows your agent to dump the full dictionary of environment variables injected into your dynos, including sensitive keys like DATABASE_URL or API tokens.
+
+**Q: Can my agent restart a specific hung worker without affecting the web traffic?**
+Absolutely. Use the `restart_specific_dyno` tool to reboot a single instance (e.g. worker.2). This is perfect for unsticking hung asynchronous queue workers without impacting your primary frontend traffic.
+
+
 ## Installation & Usage
 
-To install and use the **Heroku (PaaS)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/heroku-paas](https://vinkius.com/mcp/heroku-paas)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Heroku (PaaS)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `heroku-paas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Heroku (PaaS)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "heroku-paas": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

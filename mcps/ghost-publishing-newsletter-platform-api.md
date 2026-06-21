@@ -1,7 +1,6 @@
 # Ghost (Publishing & Newsletter Platform API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ghost-publishing-newsletter-platform-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ghost-publishing-newsletter-platform-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ghost-publishing-newsletter-platform-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ghost-publishing-newsletter-platform-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Ghost (Publishing & Ne
 > I found 2 active tiers: 'Free' and 'Premium ($5/mo)'. Both are currently available for new signups.
 
 
+## ❓ FAQ
+
+**Q: Can I create and publish a new post directly using this integration?**
+Yes! You can use the `admin_create_post` tool. You can specify the title, HTML content, and status (e.g., 'draft' or 'published') to manage your content lifecycle.
+
+**Q: How do I filter posts by a specific tag or author?**
+You can use the `filter` parameter in tools like `content_list_posts`. Ghost uses NQL (Netvibe Query Language), so you can pass strings like `tag:news` or `author:john` to narrow down your results.
+
+**Q: Does this server support viewing private site settings?**
+The `content_get_settings` tool retrieves public site settings like the title, description, and logo. For more sensitive administrative data, the Admin API tools provide access based on your provided Admin Token.
+
+
 ## Installation & Usage
 
-To install and use the **Ghost (Publishing & Newsletter Platform API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ghost-publishing-newsletter-platform-api](https://vinkius.com/mcp/ghost-publishing-newsletter-platform-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ghost (Publishing & Newsletter Platform API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ghost-publishing-newsletter-platform-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ghost (Publishing & Newsletter Platform API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ghost-publishing-newsletter-platform-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

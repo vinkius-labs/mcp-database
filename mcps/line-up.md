@@ -1,7 +1,6 @@
 # Line-Up MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/line-up)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/line-up-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/line-up-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/line-up)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Line-Up** MCP server u
 > I found 5 recent orders. Notable ones include Order #ORD-987 from 'John Smith' ($150.00) and Order #ORD-986 from 'Alice Doe' ($75.00).
 
 
+## ❓ FAQ
+
+**Q: How do I check if tickets are available for a specific date?**
+First, use `list_event_performances` to get the performance ID for your target date, then use `check_ticket_availability` with that ID to see current stock.
+
+**Q: What is required to confirm an order?**
+You typically need to create a reservation first using `create_ticket_reservation`, then provide the resulting reservation data to the `confirm_ticket_order` tool.
+
+**Q: Where do I find my API Key?**
+Log in to your Line-Up dashboard and navigate to Settings > API to generate and copy your Secret API Key.
+
+
 ## Installation & Usage
 
-To install and use the **Line-Up** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/line-up](https://vinkius.com/mcp/line-up)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Line-Up** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `line-up` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Line-Up** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "line-up": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

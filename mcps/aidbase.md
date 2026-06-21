@@ -1,7 +1,6 @@
 # Aidbase MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aidbase)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aidbase-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aidbase-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aidbase)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Aidbase** MCP server u
 > Chatbot response received: 'Our refund policy allows for full returns within 30 days of purchase.' I've documented the session ID for your high-fidelity interaction logs.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Aidbase API Key?**
+Log in to your account, navigate to **Settings** > **API Keys**, and generate a new key for your integration.
+
+**Q: Can I test bot responses via AI?**
+Yes! The `send_aidbase_reply` tool allows your agent to interact with specific bots and retrieve high-fidelity AI responses programmatically.
+
+**Q: How do I teach the AI a new URL?**
+Use the `add_aidbase_website_knowledge` tool and provide the target URL. Aidbase will automatically crawl and index the content for your bots.
+
+
 ## Installation & Usage
 
-To install and use the **Aidbase** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aidbase](https://vinkius.com/mcp/aidbase)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aidbase** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aidbase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aidbase** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aidbase": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

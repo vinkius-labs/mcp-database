@@ -1,7 +1,6 @@
 # Drip MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drip-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/drip-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/drip-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drip-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Drip** MCP server usin
 > The custom event 'Signed Up' has been recorded for 'john@doe.com' in Drip.
 
 
+## ❓ FAQ
+
+**Q: Can the AI Agent send email broadcasts automatically?**
+No, the agent can only read existing broadcasts and campaigns, and add subscribers or trigger events that might lead to emails being sent by Drip's rules.
+
+**Q: Does it support Drip custom fields and tags?**
+Yes! You can list available custom fields and apply multiple tags or custom properties to any subscriber.
+
+**Q: Can I remove a subscriber from Drip entirely using the agent?**
+Yes, you can instruct the agent to delete a subscriber completely, or simply unsubscribe them from all mailings.
+
+
 ## Installation & Usage
 
-To install and use the **Drip** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/drip-alternative](https://vinkius.com/mcp/drip-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Drip** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `drip-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Drip** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "drip-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

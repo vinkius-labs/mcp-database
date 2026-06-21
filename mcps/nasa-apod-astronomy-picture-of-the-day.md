@@ -1,7 +1,6 @@
 # NASA APOD — Astronomy Picture of the Day MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-apod-astronomy-picture-of-the-day)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nasa-apod-astronomy-picture-of-the-day-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nasa-apod-astronomy-picture-of-the-day-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-apod-astronomy-picture-of-the-day)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,46 @@ Here are some examples of how you can interact with the **NASA APOD — Astronom
 Each includes detailed astronomer explanations.
 
 
+## ❓ FAQ
+
+**Q: How far back does the APOD archive go?**
+APOD has been publishing a new image or video every day since June 16, 1995 — over 10,000 entries spanning 30+ years of astronomical imagery.
+
+
 ## Installation & Usage
 
-To install and use the **NASA APOD — Astronomy Picture of the Day** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nasa-apod-astronomy-picture-of-the-day](https://vinkius.com/mcp/nasa-apod-astronomy-picture-of-the-day)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NASA APOD — Astronomy Picture of the Day** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nasa-apod-astronomy-picture-of-the-day` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NASA APOD — Astronomy Picture of the Day** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nasa-apod-astronomy-picture-of-the-day": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

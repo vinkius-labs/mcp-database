@@ -1,7 +1,6 @@
 # Baremetrics MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baremetrics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baremetrics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baremetrics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baremetrics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Baremetrics** MCP serv
 > I found John Smith (OID: `cus_123`). He currently has 1 active 'Pro Plan' subscription at $99/month, which started on Jan 15th, 2025.
 
 
+## ❓ FAQ
+
+**Q: Can I check my current MRR through the agent?**
+Yes. Use the `get_mrr` tool to retrieve your current Monthly Recurring Revenue. Your agent will return the latest calculated value directly in the chat.
+
+**Q: How do I find a specific customer's subscription history?**
+First, use `list_customers` with a search term to find the customer's OID. Then, your agent can retrieve their detailed profile and subscription logs to summarize their journey.
+
+**Q: Can the agent analyze churn rates for specific periods?**
+Absolutely. Use the `get_churn_rate` tool and provide a `start_date` and `end_date` (as Unix timestamps) to see the churn metrics for that specific timeframe.
+
+
 ## Installation & Usage
 
-To install and use the **Baremetrics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/baremetrics](https://vinkius.com/mcp/baremetrics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Baremetrics** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `baremetrics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Baremetrics** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "baremetrics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

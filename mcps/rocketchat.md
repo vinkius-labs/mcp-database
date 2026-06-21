@@ -1,7 +1,6 @@
 # Rocket.Chat MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rocketchat)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rocketchat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rocketchat-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rocketchat)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Rocket.Chat** MCP serv
 > I utilized the `get_user_info` tool passing the specific ID. The resulting payload revealed this belongs to user 'Richard', logged as active, carrying an 'Admin' organizational role within your servers. I can list their joined groups next if you want.
 
 
+## ❓ FAQ
+
+**Q: Can the assistant create new channels or invite new users to the Rocket.Chat workspace?**
+No. This tool package is primarily focused on organic text-based communication, message manipulation (sending, modifying, deleting), and environment querying (listing what already exists). The generative capability to create workspace structural entities like 'new channels' or provisioning administrative user accounts is deactivated for baseline security in this module.
+
+**Q: How does `chat_post_message` differ from `chat_send_message`?**
+`chat_send_message` uses a unique alphanumeric `Room ID` (e.g. 'cxyz123') to target an exact space unambiguously. Meanwhile, `chat_post_message` is designed to be human-readable, allowing your assistant to route messages to named destinations like '#general', '#dev-team', or directly to a user like '@johndoe'.
+
+**Q: Can the AI edit or delete messages sent by other users?**
+Only if the authenticated account has the required admin or moderator permissions in the target channel. The AI inherits the same role-based restrictions as the user whose token is configured.
+
+
 ## Installation & Usage
 
-To install and use the **Rocket.Chat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rocketchat](https://vinkius.com/mcp/rocketchat)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rocket.Chat** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rocketchat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rocket.Chat** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rocketchat": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

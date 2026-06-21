@@ -1,7 +1,6 @@
 # EBI PDBe MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ebi-pdbe)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ebi-pdbe-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ebi-pdbe-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ebi-pdbe)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -116,12 +115,52 @@ Here are some examples of how you can interact with the **EBI PDBe** MCP server 
 > I've found multiple ribosome structures determined by cryo-electron microscopy. The search returned entries from various organisms including E. coli, human, and yeast ribosomes at resolutions ranging from 2.0 to 4.0 Å. These include 70S and 80S ribosomes in complex with mRNA, tRNA, and various translation factors.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No. The PDBe API is completely public and requires no authentication. Enter any placeholder value in the API key field to activate the server immediately.
+
+**Q: What types of structures are available?**
+The PDBe contains over 200,000 experimentally determined 3D structures of proteins, nucleic acids, and complex assemblies. Structures are determined by X-ray crystallography, cryo-electron microscopy (cryo-EM), NMR spectroscopy, and other methods. This includes enzymes, receptors, antibodies, viral proteins, ribosomes, and drug-target complexes.
+
+**Q: Can I find drug binding sites?**
+Yes. Use get_binding_sites to retrieve all annotated ligand binding pockets with their constituent residues. Combine with get_ligand_monomers to identify the small molecules bound in the structure, and get_cofactors for prosthetic groups. This workflow is essential for structure-based drug design and virtual screening target preparation.
+
+
 ## Installation & Usage
 
-To install and use the **EBI PDBe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ebi-pdbe](https://vinkius.com/mcp/ebi-pdbe)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EBI PDBe** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ebi-pdbe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EBI PDBe** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ebi-pdbe": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Meituan Waimai MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meituan-waimai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meituan-waimai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meituan-waimai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meituan-waimai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,52 @@ Here are some examples of how you can interact with the **Meituan Waimai** MCP s
 > ✅ Refund approved and processed successfully! Order ORD-789 refund has been approved. The refund amount (¥56.00) will be returned to the customer's original payment method within 1-3 business days. The customer has been notified of the successful refund.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Meituan Waimai App ID and App Secret?**
+Log in to the [Meituan Waimai Developer Console](https://developer.waimai.meituan.com/), navigate to **API Documentation** > **Access Guide**, and register your application. You'll receive an App ID and App Secret. Make sure your application has the required API permissions for order management, menu access, and refund handling. The signature algorithm uses MD5 hashing of sorted parameters combined with your App Secret.
+
+**Q: What's the order lifecycle in Meituan Waimai?**
+The typical order flow is: **1) Pending (待确认, status=1)** — Customer placed order, awaiting merchant confirmation. **2) Confirmed (已确认, status=3)** — Merchant accepted the order, kitchen starts preparation. **3) Delivering (配送中, status=5)** — Food is out for delivery with rider. **4) Completed (已完成, status=7)** — Customer received the order, payment settled. **5) Cancelled (已取消, status=8)** — Order was cancelled by merchant or customer. At each stage, you can query details, and merchants can confirm, mark delivering, or complete the order.
+
+**Q: How do I handle stock management and sold-out items?**
+Use the `update_stock` tool to set stock quantities for menu items. Set `stock=0` to mark an item as sold out (it will immediately disappear from the customer menu). Set a positive number to replenish stock. Get the food ID from the `list_menus` tool first. This is critical during peak hours when ingredients run out — quickly updating stock prevents customers from ordering unavailable items and reduces refund requests.
+
+
 ## Installation & Usage
 
-To install and use the **Meituan Waimai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/meituan-waimai](https://vinkius.com/mcp/meituan-waimai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Meituan Waimai** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `meituan-waimai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Meituan Waimai** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "meituan-waimai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

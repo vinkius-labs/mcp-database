@@ -1,7 +1,6 @@
 # PeopleDB MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/peopledb)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/peopledb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/peopledb-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/peopledb)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **PeopleDB** MCP server 
 > I found 2,150 CTOs in SaaS companies based in San Francisco. Do you want me to filter them further by company size or specific skills like 'Machine Learning'?
 
 
+## ❓ FAQ
+
+**Q: How does person enrichment work?**
+Provide an email, LinkedIn URL, name+company, or phone number and receive full professional profile including title, company, skills, education, and social links.
+
+**Q: Can I clean messy data?**
+Yes, use cleaner tools to standardize names into first/middle/last, locations into city/region/country, and company names into canonical forms.
+
+**Q: Is email verification supported?**
+Yes, you can directly verify if an email address is valid, deliverable, and safe to use in your outbound campaigns.
+
+
 ## Installation & Usage
 
-To install and use the **PeopleDB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/peopledb](https://vinkius.com/mcp/peopledb)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PeopleDB** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `peopledb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PeopleDB** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "peopledb": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

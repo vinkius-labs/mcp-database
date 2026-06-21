@@ -1,7 +1,6 @@
 # PractiTest MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/practitest-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/practitest-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/practitest-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/practitest-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **PractiTest** MCP serve
 > I've retrieved the details for test run ID 456. Here is the current status...
 
 
+## ❓ FAQ
+
+**Q: Can the AI Agent execute tests inside PractiTest?**
+While the agent cannot run automated testing scripts directly in PractiTest, it can create Test Runs, log results into Instances, and manage the administrative side of QA efficiently.
+
+**Q: Are custom fields supported when creating new tests?**
+Yes! The AI agent formats API requests dynamically. If your workspace requires custom fields, simply instruct the agent on which attributes to include during the test creation.
+
+**Q: Is there a limit on how many tests the agent can list at once?**
+The agent adheres to PractiTest API pagination limits. By default, it returns a single page of results, but you can explicitly ask the AI to query a different page number or limit.
+
+
 ## Installation & Usage
 
-To install and use the **PractiTest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/practitest-alternative](https://vinkius.com/mcp/practitest-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PractiTest** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `practitest-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PractiTest** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "practitest-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

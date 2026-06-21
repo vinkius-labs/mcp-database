@@ -1,7 +1,6 @@
 # Sergipe Dados Abertos MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sergipe-dados-abertos)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sergipe-dados-abertos-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sergipe-dados-abertos-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sergipe-dados-abertos)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Sergipe Dados Abertos*
 > I've accessed the personnel records. There are thousands of active employees across various departments. Would you like to see a summary of positions or filter by a specific employment bond type?
 
 
+## ❓ FAQ
+
+**Q: Can I filter state expenditures by a specific government body?**
+Yes. Use the `get_despesas` tool and provide the `codigoOrgao` parameter along with the fiscal year to see spending for a specific department.
+
+**Q: Is it possible to see the salary and position of state employees?**
+Yes, the `get_servidores` tool allows you to fetch personnel data, including positions and remuneration, filtered by month, year, and type of bond.
+
+**Q: How can I check the total budget approved for a specific year?**
+You can use the `get_orcamento` tool by passing the `exercicio` (year) parameter. It will return data regarding the Annual Budget Law (LOA) and its execution.
+
+
 ## Installation & Usage
 
-To install and use the **Sergipe Dados Abertos** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sergipe-dados-abertos](https://vinkius.com/mcp/sergipe-dados-abertos)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sergipe Dados Abertos** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sergipe-dados-abertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sergipe Dados Abertos** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sergipe-dados-abertos": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

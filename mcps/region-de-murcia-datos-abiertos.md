@@ -1,7 +1,6 @@
 # Región de Murcia Datos Abiertos MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/region-de-murcia-datos-abiertos)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/region-de-murcia-datos-abiertos-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/region-de-murcia-datos-abiertos-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/region-de-murcia-datos-abiertos)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Región de Murcia Dato
 > I've retrieved the list of organizations. There are many contributors, including 'Consejería de Salud', 'Ayuntamiento de Murcia', and 'Servicio Murciano de Salud'. Which organization's data are you interested in?
 
 
+## ❓ FAQ
+
+**Q: How can I find datasets related to a specific topic like 'transport'?**
+You can use the `search_datasets` tool. Just provide a query string like 'transporte' and the agent will return all matching packages from the Murcia portal.
+
+**Q: Can I see which public data is currently trending or most popular?**
+Yes! Use the `get_most_viewed_datasets` tool to retrieve the ten most visited datasets in the portal, or `get_most_recent_datasets` for the latest additions.
+
+**Q: How do I get the full details and download links for a specific dataset?**
+Use the `get_dataset` tool with the dataset's ID or name. It will provide complete metadata, including descriptions of the resources and their access URLs.
+
+
 ## Installation & Usage
 
-To install and use the **Región de Murcia Datos Abiertos** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/region-de-murcia-datos-abiertos](https://vinkius.com/mcp/region-de-murcia-datos-abiertos)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Región de Murcia Datos Abiertos** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `region-de-murcia-datos-abiertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Región de Murcia Datos Abiertos** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "region-de-murcia-datos-abiertos": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

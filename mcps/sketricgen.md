@@ -1,7 +1,6 @@
 # SketricGen MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sketricgen)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sketricgen-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sketricgen-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sketricgen)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **SketricGen** MCP serve
 > You have two active knowledge bases: 'Internal HR Docs' (connected to the HR Assistant agent) and 'Public FAQs' (connected to the Support Bot and Sales Bot). The 'Public FAQs' base currently contains 45 indexed documents.
 
 
+## ❓ FAQ
+
+**Q: How can my AI analyze the execution steps of a specific workflow?**
+Simply use the `debug_workflow_trace` tool. Your agent will instantly retrieve the execution trace, detailing every tool call, data transfer between agents, and total credit consumption per run.
+
+**Q: Is it possible to programmatically manage and query documents for my agents?**
+Yes. By executing the `manage_knowledge_base` action, your AI agent can upload files (PDF, DOCX, TXT, HTML) or search existing repositories to provide context-aware, highly accurate responses.
+
+**Q: Can I automatically trigger workflows tied to specific customer records?**
+Absolutely. Ask the agent to use the `run_workflow_for_contact` tool. It will execute the designated workflow while injecting the specific contact's history, enabling personalized, data-driven outputs.
+
+
 ## Installation & Usage
 
-To install and use the **SketricGen** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sketricgen](https://vinkius.com/mcp/sketricgen)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SketricGen** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sketricgen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SketricGen** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sketricgen": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

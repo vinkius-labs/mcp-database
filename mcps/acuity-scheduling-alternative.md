@@ -1,7 +1,6 @@
 # Acuity Scheduling MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/acuity-scheduling-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/acuity-scheduling-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/acuity-scheduling-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/acuity-scheduling-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Acuity Scheduling** MC
 > I've successfully cancelled appointment 987654321. I've also verified that the slot is now back in your availability for other clients.
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Acuity User ID and API Key?**
+Log in to your Acuity Scheduling account, go to **Settings** > **Integrations** > **API**, and you will find both there. Copy and paste them into the fields below.
+
+**Q: Can the agent check real-time availability?**
+Yes. Use the `get_availability` tool providing the Appointment Type ID and the target month. Your agent will return all open slots instantly.
+
+**Q: Is it possible to reschedule an existing appointment?**
+Yes. The `reschedule_appointment` tool allows your agent to move an existing booking to a new datetime using the original Appointment ID.
+
+
 ## Installation & Usage
 
-To install and use the **Acuity Scheduling** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/acuity-scheduling-alternative](https://vinkius.com/mcp/acuity-scheduling-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Acuity Scheduling** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `acuity-scheduling-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Acuity Scheduling** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "acuity-scheduling-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Fortnite Player Stats & News Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fortnite-player-stats-news-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fortnite-player-stats-news-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fortnite-player-stats-news-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fortnite-player-stats-news-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Fortnite Player Stats 
 > Inspecting Creative mode news... 2 new featured maps were highlighted today, including a new 'Zone Wars' experience. I also found an update regarding new assets available for creators. Would you like the island codes?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the K/D ratio and winrate for a specific Fortnite player?**
+Yes! Use the `get_player_br_stats` tool. Your agent will query the Fortnite-API database and return granular metrics including total kills, deaths, wins, and win percentages for the current season or lifetime.
+
+**Q: How do I check the latest 'Patch Notes' or mission updates for Save the World?**
+Simply ask the agent to run the `get_save_the_world_news` tool. It will retrieve official mission briefings and update logs directly from Epic's news feed.
+
+**Q: Does the integration permit comparing the performance of two different users side-by-side?**
+Yes. The `get_player_br_stats` action allows your agent to fetch data for multiple usernames and compile a technical comparison of their seasonal performance, allowing for direct skill auditing.
+
+
 ## Installation & Usage
 
-To install and use the **Fortnite Player Stats & News Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fortnite-player-stats-news-intelligence](https://vinkius.com/mcp/fortnite-player-stats-news-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fortnite Player Stats & News Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fortnite-player-stats-news-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fortnite Player Stats & News Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fortnite-player-stats-news-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

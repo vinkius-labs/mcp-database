@@ -1,7 +1,6 @@
 # Bread Proofing Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bread-proofing-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bread-proofing-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bread-proofing-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bread-proofing-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,52 @@ Here are some examples of how you can interact with the **Bread Proofing Calcula
 > The environment is viable, but there is a risk of over-proofing due to the high temperature.
 
 
+## ❓ FAQ
+
+**Q: How accurate are the fermentation estimates?**
+Estimates are based on biological models of yeast activity. Accuracy depends on the stability of your inputs, which is reflected in the confidence score returned by `get_bulk_fermentation_duration`.
+
+**Q: Can I calculate the delay for cold proofing?**
+Yes. Use the `calculate_cold_delay` tool by providing your base duration, fridge temperature, and ambient temperature.
+
+**Q: Does the tool check for extreme temperatures?**
+Yes, the `validate_fermentation_environment` tool identifies if your yeast and temperature settings are within standard baking parameters or at risk of failure.
+
+
 ## Installation & Usage
 
-To install and use the **Bread Proofing Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bread-proofing-calculator](https://vinkius.com/mcp/bread-proofing-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bread Proofing Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bread-proofing-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bread Proofing Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bread-proofing-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ComboCurve MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/combocurve)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/combocurve-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/combocurve-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/combocurve)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Decline rate: ~4.8%/month. Would you like gas and NGL volumes as well?
 > Type Curve parameters for 'Wolfcamp A': Initial decline (Di) is 65%, with a b-factor of 1.2, transitioning to a terminal decline (d_term) of 6% at month 36. EUR is estimated at 450 MBOE.
 
 
+## ❓ FAQ
+
+**Q: How do I get my ComboCurve API key?**
+Go to **Admin > API Keys** in the ComboCurve UI and generate a new key. Copy it and paste it below.
+
+**Q: What is the Bearer Token?**
+ComboCurve uses a JWT (Bearer Token) generated from a Service Account for authentication. You can generate it using their SDKs or a custom script.
+
+**Q: Can I update well data?**
+The current version focuses on reading data. Write operations for wells and forecasts may be added in future updates.
+
+
 ## Installation & Usage
 
-To install and use the **ComboCurve** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/combocurve](https://vinkius.com/mcp/combocurve)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ComboCurve** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `combocurve` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ComboCurve** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "combocurve": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

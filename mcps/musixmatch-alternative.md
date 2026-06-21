@@ -1,7 +1,6 @@
 # Musixmatch MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/musixmatch-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/musixmatch-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/musixmatch-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/musixmatch-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Musixmatch** MCP serve
 > I've retrieved the synchronized subtitles for 'Imagine'. They are in LRC format, starting with: [00:14.63] Imagine there's no heaven... Would you like the full file?
 
 
+## ❓ FAQ
+
+**Q: Can I search for a song if I only remember a few words from the lyrics?**
+Yes! You can use the `search_tracks` tool and provide the lyrics snippet in the `q_lyrics` parameter. The AI will return the most relevant song matches.
+
+**Q: How do I get synchronized lyrics for a karaoke application?**
+Use the `get_track_subtitle` tool. It provides time-coded lyrics in formats like LRC, which are perfect for displaying lyrics in sync with the music.
+
+**Q: Is it possible to see which artists are currently trending in a specific country?**
+Absolutely. Use the `get_chart_artists` tool and specify the `country` code (e.g., 'US', 'BR', 'FR') to get a list of the top-performing artists in that region.
+
+
 ## Installation & Usage
 
-To install and use the **Musixmatch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/musixmatch-alternative](https://vinkius.com/mcp/musixmatch-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Musixmatch** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `musixmatch-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Musixmatch** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "musixmatch-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

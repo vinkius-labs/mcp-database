@@ -1,7 +1,6 @@
 # Nextcloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nextcloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nextcloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nextcloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nextcloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **Nextcloud** MCP server
 > Your status has been updated to 'away' and your custom message is now 'Out for lunch 🍕'.
 
 
+## ❓ FAQ
+
+**Q: How do I create a public share link for a specific folder?**
+Use the `create_share` tool. Provide the `path` to your folder and set `shareType` to 3 (Public Link). You can also optionally set a `password` for added security.
+
+**Q: Can I change my online status message using the AI?**
+Yes! You can use `set_user_status` to change your availability (e.g., 'dnd', 'away') and `set_user_status_message` to set a custom text and emoji icon.
+
+**Q: Is it possible to see which apps are enabled on my Nextcloud server?**
+Absolutely. Use the `get_capabilities` tool to retrieve a full list of server features, version information, and all currently enabled applications.
+
+
 ## Installation & Usage
 
-To install and use the **Nextcloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nextcloud](https://vinkius.com/mcp/nextcloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nextcloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nextcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nextcloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nextcloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # TollGuru MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tollguru-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tollguru-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tollguru-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tollguru-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **TollGuru** MCP server 
 > Fetching heavy vehicle rates for the Chicago-Miami corridor... For a 5-axle truck, the total estimated toll cost is $145.00. I have the breakdown of state-by-state charges and tag vs cash options ready for you.
 
 
+## ❓ FAQ
+
+**Q: Can I calculate tolls for multiple vehicle types like cars and trucks?**
+Yes! All toll calculation tools (`calculate_tolls_by_address`, `calculate_tolls_by_coordinates`, `calculate_tolls_by_polyline`, `calculate_tolls_by_gps`) accept a `vehicle_type` parameter. Supported types include `2AxlesAuto`, `2AxlesTaxi`, `2AxlesMotorcycle`, `3AxlesTruck`, and up to 9-axle configurations.
+
+**Q: Does the result show both cash and electronic tag prices?**
+Absolutely. The `TollPresenter` displays the costs for different payment methods whenever available from the API, allowing you to choose the best option.
+
+**Q: What addresses should I use for origin and destination?**
+You can provide full physical addresses, city names, or even specific coordinates. The more precise the address, the more accurate the toll calculation will be.
+
+
 ## Installation & Usage
 
-To install and use the **TollGuru** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tollguru-alternative](https://vinkius.com/mcp/tollguru-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TollGuru** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tollguru-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TollGuru** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tollguru-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

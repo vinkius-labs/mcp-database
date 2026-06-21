@@ -1,7 +1,6 @@
 # ChartHop MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/charthop)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/charthop-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/charthop-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/charthop)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **ChartHop** MCP server 
 > Searching for 'John Smith'... I found 1 matching profile. John is a 'Senior Software Engineer' in the 'Engineering' department, reporting to 'Jane Smith'. He started on 2022-05-10.
 
 
+## ❓ FAQ
+
+**Q: Can I see all open job positions in my company?**
+Yes! Use the `list_organization_jobs` tool. The agent will return all roles, and you can filter or identify those that are currently marked as open or unfilled.
+
+**Q: How do I check the reporting line for a specific person?**
+Use the `get_person_details` tool with the person's unique ID. Your agent will fetch the full profile, which includes their manager and organizational placement data.
+
+**Q: Where do I find my ChartHop Org ID and API Token?**
+You can find your Org ID in the URL when logged into ChartHop. To get an API Token, you typically need to create a 'ChartHop App' or request one from your administrator.
+
+
 ## Installation & Usage
 
-To install and use the **ChartHop** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/charthop](https://vinkius.com/mcp/charthop)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ChartHop** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `charthop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ChartHop** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "charthop": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

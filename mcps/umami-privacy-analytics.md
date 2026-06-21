@@ -1,7 +1,6 @@
 # Umami (Privacy Analytics) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/umami-privacy-analytics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/umami-privacy-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/umami-privacy-analytics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/umami-privacy-analytics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -117,12 +116,52 @@ Here are some examples of how you can interact with the **Umami (Privacy Analyti
 > Fetching user list... I found 3 users: 'admin' (Role: admin), 'editor_jane' (Role: user), and 'viewer_bob' (Role: user).
 
 
+## ❓ FAQ
+
+**Q: Can I use this with my self-hosted Umami instance?**
+Yes. You can provide your custom instance URL and use the `login` tool to authenticate, or provide a pre-generated API key/token.
+
+**Q: How do I track a custom event from the AI?**
+Use the `send_event` tool. You'll need to provide the `website` ID and the `url`. You can also include optional metadata like `name` and `data` objects.
+
+**Q: Can I manage other users if I am an admin?**
+Absolutely. If your credentials have admin rights, you can use `admin_list_users`, `create_user`, `update_user`, and `delete_user` to manage the instance population.
+
+
 ## Installation & Usage
 
-To install and use the **Umami (Privacy Analytics)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/umami-privacy-analytics](https://vinkius.com/mcp/umami-privacy-analytics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Umami (Privacy Analytics)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `umami-privacy-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Umami (Privacy Analytics)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "umami-privacy-analytics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

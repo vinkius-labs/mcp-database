@@ -1,7 +1,6 @@
 # Spoonacular MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spoonacular-extended)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spoonacular-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spoonacular-extended-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spoonacular-extended)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Spoonacular** MCP serv
 > I've queried `find_recipes_by_nutrients` for those specific macros. I found a 'High-Protein Turkey Chili' (35g protein, 420 cal). Would you like to see the ingredient list?
 
 
+## ❓ FAQ
+
+**Q: Can I find recipes based on specific ingredients I already have?**
+Yes! Use the `find_recipes_by_ingredients` tool. Just list your ingredients, and the agent will return recipes that maximize the use of what you have while minimizing missing items.
+
+**Q: How do I get the full nutritional breakdown of a specific recipe?**
+You can use the `get_recipe_information` tool with the recipe ID and set `includeNutrition` to true. This provides calories, macros, and vitamins for the dish.
+
+**Q: Can the AI extract a recipe from a website link?**
+Absolutely. Use the `extract_recipe` tool and provide the URL. The agent will parse the website and return a structured recipe with ingredients and instructions.
+
+
 ## Installation & Usage
 
-To install and use the **Spoonacular** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/spoonacular-extended](https://vinkius.com/mcp/spoonacular-extended)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Spoonacular** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `spoonacular-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Spoonacular** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "spoonacular-extended": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

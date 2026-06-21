@@ -1,7 +1,6 @@
 # Clio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clio-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clio-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clio-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -132,12 +131,61 @@ Here are some examples of how you can interact with the **Clio** MCP server usin
 > Retrieving financial overview... You have 15 unbilled activities totaling $2,450.00 and 3 outstanding invoices. Your largest pending bill is for 'Global Tech' (ID: b_789). Would you like the detailed breakdown?
 
 
+## ❓ FAQ
+
+**Q: How do I connect my Clio account?**
+After subscribing, the setup wizard will guide you through 3 simple steps: 1) Select your data region (US, Canada, EU, or Australia). 2) Enter the Client ID and Client Secret from your Clio Developer Application. 3) Click the **Connect with Clio** button — a popup will open where you approve access. That's it! No manual token exchange or curl commands required.
+
+**Q: Where do I find the Redirect URI for my Clio Developer Application?**
+When creating your Developer Application in Clio, set the **Redirect URI** to: `https://api.vinkius.com/marketplace/oauth/callback`. This is the platform's secure callback endpoint that completes the OAuth authorization automatically.
+
+**Q: How do I get my Client ID and Client Secret?**
+Sign in to Clio and go to **Settings → Developer Applications** (direct link: `https://app.clio.com/settings/developer_applications`). Click **New Application**, give it a name, and set the **Redirect URI** to `https://api.vinkius.com/marketplace/oauth/callback`. Save the app and copy the **Client ID** and **Client Secret** (the secret is shown only once — copy it immediately).
+
+**Q: Can I create new legal cases via AI?**
+Yes! The `create_matter` tool allows the agent to register new legal cases by providing a display number, description, and client ID.
+
+**Q: Do I need to refresh my tokens manually?**
+No. The platform automatically refreshes your access token in the background. You only need to click **Connect with Clio** once during setup, and the integration will keep working indefinitely.
+
+**Q: Which Clio regions are supported?**
+All four Clio regions are supported: United States (app.clio.com), Canada (ca.app.clio.com), Europe/UK (eu.app.clio.com), and Australia (au.app.clio.com). Select your region in the first step of the setup wizard.
+
+
 ## Installation & Usage
 
-To install and use the **Clio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clio-alternative](https://vinkius.com/mcp/clio-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clio-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

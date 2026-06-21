@@ -1,7 +1,6 @@
 # GiveForms MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/giveforms)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/giveforms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/giveforms-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/giveforms)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,55 @@ Here are some examples of how you can interact with the **GiveForms** MCP server
 > Fetching campaign donations... For campaign 98765, I found 5 recent contributions. All are processed successfully. Would you like to see the donor names?
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Key for GiveForms?**
+Log in to your GiveForms dashboard, navigate to Settings > Integrations, and look for the REST API section to find your Organization ID and API Key.
+
+**Q: Can I manually add donations via the agent?**
+The current version of the GiveForms API is primarily designed for data retrieval and auditing. Creation tools may be added in future updates.
+
+**Q: How do I find a specific Campaign ID?**
+The Campaign ID is the number found at the end of the URL when you view or edit a campaign within your GiveForms dashboard.
+
+**Q: Is the donation data returned in real-time?**
+Yes, all data retrieved through this MCP server is fetched directly from the GiveForms REST API, providing you with the latest available donation records.
+
+
 ## Installation & Usage
 
-To install and use the **GiveForms** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/giveforms](https://vinkius.com/mcp/giveforms)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GiveForms** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `giveforms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GiveForms** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "giveforms": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

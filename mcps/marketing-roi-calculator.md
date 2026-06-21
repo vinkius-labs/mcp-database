@@ -1,7 +1,6 @@
 # Marketing ROI Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marketing-roi-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/marketing-roi-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/marketing-roi-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marketing-roi-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -51,12 +50,52 @@ Here are some examples of how you can interact with the **Marketing ROI Calculat
 > I will use the `calculate_attributed_revenue` tool, specifying campaignId='Spring2024_Launch', reportingPeriodStartDate='2024-01-01', reportingPeriodEndDate='2024-03-31', attributionModelType='TIME_DECAY', rawRevenue=500000, and conversionCount=100. This gives the most accurate gross revenue figure.
 
 
+## ❓ FAQ
+
+**Q: How does the system account for all types of spending?**
+The `query_marketing_investment_total` tool handles this by aggregating four distinct cost categories: media spend, production costs, headcount overhead, and tools expense. This ensures your total investment is accurate before any ROI calculation begins.
+
+**Q: Which attribution model should I use for the most accurate revenue figure?**
+The `calculate_attributed_revenue` tool supports LAST_TOUCH, FIRST_TOUCH, and TIME_DECAY. We recommend starting with TIME_DECAY for complex B2B sales cycles as it provides the most weighted view of customer influence.
+
+**Q: Can I compare multiple campaigns in one go?**
+Yes. The `compute_rois_metrics_comparative` tool is designed for this, allowing you to pass a list of campaign IDs and generate a side-by-side comparison of ROI, payback months, and efficiency metrics.
+
+
 ## Installation & Usage
 
-To install and use the **Marketing ROI Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/marketing-roi-calculator](https://vinkius.com/mcp/marketing-roi-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Marketing ROI Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `marketing-roi-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Marketing ROI Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "marketing-roi-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

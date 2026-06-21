@@ -1,7 +1,6 @@
 # AdRoll MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adroll)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adroll-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adroll-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adroll)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **AdRoll** MCP server us
 > I've retrieved the creatives for EID 'AD1234567890'. You have 12 assets including 8 static banners and 4 video ads. Would you like to see the status or dimensions for any of them?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Advertisable EID?**
+Use the `list_advertisables` tool. It will return a list of all advertiser accounts linked to your organization, each with its unique 22-character EID.
+
+**Q: Can I see conversions and spend via the agent?**
+Yes! Use the `get_reporting` tool to retrieve performance metrics including total conversions, total spend, and cost per acquisition (CPA).
+
+**Q: Does this support Facebook and Instagram campaigns?**
+Yes, if your AdRoll account is connected to social channels, the `list_campaigns` tool will include campaigns running on external networks like Facebook.
+
+
 ## Installation & Usage
 
-To install and use the **AdRoll** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/adroll](https://vinkius.com/mcp/adroll)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AdRoll** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `adroll` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AdRoll** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "adroll": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

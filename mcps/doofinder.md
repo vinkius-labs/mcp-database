@@ -1,7 +1,6 @@
 # Doofinder MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doofinder)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/doofinder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/doofinder-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doofinder)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Doofinder** MCP server
 > Suggestions for 'iph': 'iphone 15', 'iphone case', 'iphone screen protector', and 'iphone charger'. Which one are you looking for?
 
 
+## ❓ FAQ
+
+**Q: Can my agent perform filtered searches using specific product attributes?**
+Yes. Use the 'search_filtered' tool. You can specify the 'filter_name' (e.g., 'brand', 'color') and the 'filter_value'. The agent will analyze the global bounds and return results restricted strictly to those custom limits.
+
+**Q: How do I monitor the click-through rate (CTR) of my search engine via chat?**
+Use the 'get_stats' tool. Your agent will pull raw status configurations and capture exact CTR, total clicks, and query velocity numbers for your search engine, helping you track performance without manual dashboard checks.
+
+**Q: Can I check which search engines and indices are active in my account?**
+Absolutely. The 'get_search_engines' and 'get_indices' tools allow your agent to dump all isolated tenant indexes mapping explicit hash strings, giving you a full view of your Doofinder infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Doofinder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/doofinder](https://vinkius.com/mcp/doofinder)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Doofinder** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `doofinder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Doofinder** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "doofinder": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

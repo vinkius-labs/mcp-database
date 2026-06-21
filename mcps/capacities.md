@@ -1,7 +1,6 @@
 # Capacities MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/capacities)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/capacities-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/capacities-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/capacities)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Capacities** MCP serve
 > I've appended your block of Python code and a quick summary as Markdown directly into today's daily note in your primary space. It’s logged permanently mapping your bugfix securely in Capacities.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent automatically funnel research links into my Capacities daily note?**
+Yes. It can append raw Markdown to your Daily Note dynamically, or use the dedicated WebLink endpoint to natively scrape and save beautifully previewed URLs into your specified space. This gives you a fast workflow for daily link-hoarding right from your chat tools.
+
+**Q: Will the agent know the specific object structures configured in my custom Capacities space?**
+Absolutely. Before creating nodes, your agent pulls constraints using the `get_structures` capability. It reads the schemas, understands which properties are locked or required (e.g., Dates vs Checkboxes), and constructs the new object JSON mapping perfectly inside the space.
+
+**Q: Is the agent capable of categorizing objects with new tags automatically?**
+Yes. Once an object is created or fetched via lookup, the AI can employ the tag modification tool to link categorical boundaries accurately. It's a frictionless way to organize hundreds of loosely coupled notes into connected knowledge topics without any manual toggles.
+
+
 ## Installation & Usage
 
-To install and use the **Capacities** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/capacities](https://vinkius.com/mcp/capacities)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Capacities** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `capacities` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Capacities** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "capacities": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # tl;dv MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tldv)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tldv-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tldv-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tldv)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **tl;dv** MCP server usi
 > I've retrieved the attendee list for mtg_88231. Participants included: Alex Rivera (External), Sarah Smith (Product), and Mike Ross (Engineering). The recording duration was 45 minutes.
 
 
+## ❓ FAQ
+
+**Q: Can I see the AI-generated notes for a specific meeting?**
+Yes! Use the `get_meeting_notes` tool and provide the Meeting ID. Your agent will retrieve the complete AI summary and key points recorded for that session.
+
+**Q: How do I search for a specific discussion point in the transcript?**
+Run the `get_meeting_transcript` query with the Meeting ID. The agent will retrieve the full text, allowing you to ask the AI to find or summarize specific parts of the conversation.
+
+**Q: Is it possible to list the participants of a meeting via AI?**
+Absolutely. Use the `get_meeting_participants` tool and provide the Meeting ID. The agent will return the directory of everyone who attended the recorded session.
+
+
 ## Installation & Usage
 
-To install and use the **tl;dv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tldv](https://vinkius.com/mcp/tldv)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **tl;dv** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tldv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **tl;dv** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tldv": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Tenable MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tenable)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tenable-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tenable-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tenable)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Tenable** MCP server u
 > Scan a981bf93 has been successfully commanded to start. The job run ID is c2f90a1-xxxxx. It has been pushed to the scanner queues and will evaluate all tied network zones independently. Let me know when you want to retrieve the results.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent trigger vulnerability scans directly?**
+Yes! You can ask your agent to list all mapped scan profiles. Once you copy the ID for something like 'External Perimeter Quick Scan', you can tell the agent to seamlessly launch that specific scan ID out of standard bounds.
+
+**Q: How easy is it to investigate an alert about a single compromised asset?**
+Extremely fast. If an IP triggers an alert downstream, ask your agent to retrieve asset details tracking that IP, obtain its specific Asset ID, and immediately pull vulnerabilities. You will instantly get a markdown table of CVEs missing on the endpoint without complex GUI clicking.
+
+**Q: Can the agent interact with scanner appliances (Nessus)?**
+Yes. It can fetch your entire scanner inventory across Tenable.io. This includes the internal Nessus agents linked to the account, their connection status, license states, and underlying software versions so you know if your fleet is healthy.
+
+
 ## Installation & Usage
 
-To install and use the **Tenable** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tenable](https://vinkius.com/mcp/tenable)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tenable** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tenable` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tenable** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tenable": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Square MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/square-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/square-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/square-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/square-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,46 @@ Here are some examples of how you can interact with the **Square** MCP server us
 > Customer: David Chen (ID: cust_abc123). Member since: March 2024. Total orders: 23. Lifetime value: $4,567. Last order: May 14 (order #SQ-4501, $234, 3 items). Favorite items: "Espresso Blend" (ordered 12 times), "Ceramic Mug" (3 times). Average order: $198.57. Payment methods on file: Visa ending 4521, Apple Pay. Loyalty points: 2,340. Rewards redeemed: 4 ($120 total). Last visit: Downtown Store (2 days ago). Preferred location: Downtown Store (18 of 23 orders).
 
 
+## ❓ FAQ
+
+**Q: How do I find my Square Personal Access Token?**
+Log in to your [**Square Developer Dashboard**](https://developer.squareup.com/apps), create or select an application, and you will find your Personal Access Token in the **Credentials** section. Ensure you use the Production token for live data.
+
+
 ## Installation & Usage
 
-To install and use the **Square** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/square-alternative](https://vinkius.com/mcp/square-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Square** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `square-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Square** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "square-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

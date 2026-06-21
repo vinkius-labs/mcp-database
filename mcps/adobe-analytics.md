@@ -1,7 +1,6 @@
 # Adobe Analytics MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-analytics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adobe-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adobe-analytics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-analytics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Adobe Analytics** MCP 
 > I've retrieved your segments. You have 25 active segments, including 'Mobile Users', 'Purchasers', and 'New Visitors'. Would you like to see the definition for a specific segment?
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Global Company ID?**
+The easiest way is to log in to the Adobe Developer Console and check your project settings. Alternatively, once you have an access token, the `list_report_suites` tool will return your authorized company metadata.
+
+**Q: Are reports returned in real-time?**
+Yes. Unlike older versions of the API, the v2.0 Reporting API is synchronous and returns the data directly in the request response, making it perfect for AI interactions.
+
+**Q: Does this support complex breakdowns?**
+Yes, the `get_report` tool accepts a JSON payload that supports the full range of Adobe Analytics v2.0 reporting features, including nested breakdowns and metric filters.
+
+
 ## Installation & Usage
 
-To install and use the **Adobe Analytics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/adobe-analytics](https://vinkius.com/mcp/adobe-analytics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Adobe Analytics** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `adobe-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Adobe Analytics** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "adobe-analytics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

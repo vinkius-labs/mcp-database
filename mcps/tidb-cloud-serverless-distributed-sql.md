@@ -1,7 +1,6 @@
 # TiDB Cloud (Serverless Distributed SQL) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tidb-cloud-serverless-distributed-sql)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tidb-cloud-serverless-distributed-sql-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tidb-cloud-serverless-distributed-sql-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tidb-cloud-serverless-distributed-sql)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **TiDB Cloud (Serverless
 > Checking dedicated clusters for project 103... I found one Dedicated cluster named 'Analytics-Main' with 3 TiKV nodes and 2 TiDB nodes. It is healthy and active.
 
 
+## ❓ FAQ
+
+**Q: Can I see both serverless and dedicated clusters with this server?**
+Yes. Use `list_instances` to see TiDB X instances (Serverless/Starter/Premium) and `list_clusters` to view your Dedicated cluster infrastructure.
+
+**Q: How do I get the ID of a specific project to query its instances?**
+You can run the `list_projects` tool first. It will return a list of all accessible projects along with their unique IDs, which you can then use in `list_instances` or `list_clusters`.
+
+**Q: Does this tool allow me to delete or create new clusters?**
+No. The current version of the TiDB Cloud MCP server is focused on discovery and inspection (read-only operations) such as `list_projects`, `get_project`, and `list_clusters` to ensure safe infrastructure monitoring.
+
+
 ## Installation & Usage
 
-To install and use the **TiDB Cloud (Serverless Distributed SQL)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tidb-cloud-serverless-distributed-sql](https://vinkius.com/mcp/tidb-cloud-serverless-distributed-sql)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TiDB Cloud (Serverless Distributed SQL)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tidb-cloud-serverless-distributed-sql` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TiDB Cloud (Serverless Distributed SQL)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tidb-cloud-serverless-distributed-sql": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

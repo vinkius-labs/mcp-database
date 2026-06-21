@@ -1,7 +1,6 @@
 # Correios API (REST) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/correios-api-rest)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/correios-api-rest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/correios-api-rest-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/correios-api-rest)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Correios API (REST)** 
 > The package AA987654321BR was 'Delivered' today at 2:30 PM in Curitiba.
 
 
+## ❓ FAQ
+
+**Q: What information do I need to calculate a shipping price?**
+You need to provide the origin and destination ZIP codes (CEP), the service code (e.g., 04014 for SEDEX), weight, package format, and dimensions (length, height, width) using the `calculate_price_deadline` tool.
+
+**Q: Can I track multiple objects at once?**
+The `track_object` tool currently processes one tracking code per request to ensure detailed event history for that specific item.
+
+**Q: What is the 'idLote' field in the shipping calculation?**
+The `idLote` (Batch ID) is a required identifier for the Correios API request. It can be any string or number used to identify your specific calculation request in their logs.
+
+
 ## Installation & Usage
 
-To install and use the **Correios API (REST)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/correios-api-rest](https://vinkius.com/mcp/correios-api-rest)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Correios API (REST)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `correios-api-rest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Correios API (REST)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "correios-api-rest": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

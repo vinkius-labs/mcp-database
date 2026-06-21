@@ -1,7 +1,6 @@
 # Eurostat Full Access — EU Statistical Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-full-access-eu-statistical-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eurostat-full-access-eu-statistical-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eurostat-full-access-eu-statistical-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-full-access-eu-statistical-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -163,12 +162,46 @@ Cross-domain query using economy + population + environment tools.
 Discovery + query in a single session.
 
 
+## ❓ FAQ
+
+**Q: Why Full instead of individual servers?**
+The Full server has **all 26 tools** including cross-domain queries. Ask about GDP AND unemployment AND emissions in one session. Plus the Discovery tools to find any of 7,000+ datasets on the fly.
+
+
 ## Installation & Usage
 
-To install and use the **Eurostat Full Access — EU Statistical Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eurostat-full-access-eu-statistical-intelligence](https://vinkius.com/mcp/eurostat-full-access-eu-statistical-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Eurostat Full Access — EU Statistical Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eurostat-full-access-eu-statistical-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Eurostat Full Access — EU Statistical Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eurostat-full-access-eu-statistical-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

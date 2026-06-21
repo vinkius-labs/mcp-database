@@ -1,7 +1,6 @@
 # Reversibility Architect Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reversibility-architect-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reversibility-architect-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reversibility-architect-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reversibility-architect-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Reversibility Architec
 > Verdict: REVERSIBILITY_PROVEN. Architecture is safe to deploy.
 
 
+## ❓ FAQ
+
+**Q: Why force a post-mortem simulation?**
+Optimism bias. Forcing the AI to explain WHY the deployment failed before it happens exposes edge cases it ignored.
+
+**Q: Why is data corruption the first pivot?**
+Code can be rolled back. Data loss is permanent. If data isn't safe, the architecture is invalid.
+
+**Q: What counts as a rollback criterion?**
+Measurable SLA violations, like '5xx errors > 1%' or 'Latency > 200ms'.
+
+
 ## Installation & Usage
 
-To install and use the **Reversibility Architect Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/reversibility-architect-prover](https://vinkius.com/mcp/reversibility-architect-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Reversibility Architect Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `reversibility-architect-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Reversibility Architect Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "reversibility-architect-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

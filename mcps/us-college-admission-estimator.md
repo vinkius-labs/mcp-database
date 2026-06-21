@@ -1,7 +1,6 @@
 # US College Admission Estimator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-college-admission-estimator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-college-admission-estimator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-college-admission-estimator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-college-admission-estimator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,55 @@ Adjusted for Out-of-State + Average extracurriculars: 58
 At Mid-Sized Private tier, that's a comfortable Safety zone -- you're looking at solid admission odds. Even at Flagship Public State, you'd land in the Match-to-Safety range with decent probabilities. Don't waste time applying to Elite Private schools; the odds there will be thin.
 
 
+## ❓ FAQ
+
+**Q: Do I need both SAT and ACT scores to get an estimate?**
+No. The `calculate_applicant_score` tool accepts either your SAT composite (400-1600) or your ACT total (1-36), or even just your weighted GPA alone. It weights everything into a 0-100 score so you get a solid baseline no matter what data you have.
+
+**Q: How does residency status change my admission odds?**
+Public universities heavily favor in-state applicants. When you pass your composite score through the `adjust_for_contextual_modifiers` tool with In-State residency, the adjusted score goes up. Out-of-State gets a smaller bump, and International status applies a slight reduction. This mirrors how real admissions committees weigh state residency.
+
+**Q: Can I estimate chances at specific named universities?**
+Not by individual school name -- not yet. The `estimate_admission_probability` tool groups schools into three tiers: Elite Private, Flagship Public State, and Mid-Sized Private. You get percentages for real universities within each tier, which gives you a practical safety/match/reach breakdown to plan your application list.
+
+**Q: What counts as my weighted GPA?**
+Your weighted GPA factors in AP, IB, or honors class rigor. It can go up to 5.0 (or even higher at some schools). Just enter whatever your high school reports -- the `calculate_applicant_score` tool normalizes it into a fair composite that plays well with both tested and test-optional profiles.
+
+
 ## Installation & Usage
 
-To install and use the **US College Admission Estimator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-college-admission-estimator](https://vinkius.com/mcp/us-college-admission-estimator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **US College Admission Estimator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-college-admission-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **US College Admission Estimator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-college-admission-estimator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

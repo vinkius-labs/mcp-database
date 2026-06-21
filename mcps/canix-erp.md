@@ -1,7 +1,6 @@
 # Canix ERP MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/canix-erp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/canix-erp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/canix-erp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/canix-erp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Canix ERP** MCP server
 > Retrieving cultivation data... You currently have 150 plants in the 'Flowering' phase across 3 facilities.
 
 
+## ❓ FAQ
+
+**Q: Can I check the weight of a specific package using the agent?**
+Yes! Use the `get_package_details` tool with the Package ID. Your agent will fetch the detailed metadata, which includes the weight and unit of measure directly from Canix.
+
+**Q: How do I list all the plants in a specific growth phase?**
+Simply ask the agent to `list_plants`. You can then filter the results by growth phase or status metadata using the agent's natural language capabilities.
+
+**Q: Does the integration allow creating a new sales order?**
+The current toolset is focused on querying and monitoring (Read-Only) for operational oversight. Creating or updating sales orders should be managed through the Canix web interface or dedicated sales terminal.
+
+
 ## Installation & Usage
 
-To install and use the **Canix ERP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/canix-erp](https://vinkius.com/mcp/canix-erp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Canix ERP** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `canix-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Canix ERP** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "canix-erp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

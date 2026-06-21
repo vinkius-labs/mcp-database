@@ -1,7 +1,6 @@
 # SEC EDGAR Financials — Revenue, Income, Assets, EPS & Industry Comparison MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar-financials-revenue-income-assets-eps-industry-comparison)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sec-edgar-financials-revenue-income-assets-eps-industry-comparison-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sec-edgar-financials-revenue-income-assets-eps-industry-comparison-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar-financials-revenue-income-assets-eps-industry-comparison)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Top reporting entities for CY2024 by US-GAAP Revenues:
 3. Apple Inc: $383,285,000,000
 
 
+## ❓ FAQ
+
+**Q: What is XBRL?**
+XBRL (eXtensible Business Reporting Language) is a standardized format for financial data required by the SEC since 2009. It tags every financial number (revenue, assets, debt, etc.) with a machine-readable label, making it possible to extract and compare financial data across companies automatically.
+
+**Q: What is a US-GAAP concept?**
+US-GAAP comprises the standard accounting principles in the US. Each accounting term (like 'Revenues' or 'NetIncomeLoss') maps directly to specific facts filed in XBRL format.
+
+**Q: What are frames?**
+The SEC provides 'Frames' to view an entire industry's metric at once (e.g., all revenues in Q1 2024) instead of polling company-by-company.
+
+
 ## Installation & Usage
 
-To install and use the **SEC EDGAR Financials — Revenue, Income, Assets, EPS & Industry Comparison** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sec-edgar-financials-revenue-income-assets-eps-industry-comparison](https://vinkius.com/mcp/sec-edgar-financials-revenue-income-assets-eps-industry-comparison)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SEC EDGAR Financials — Revenue, Income, Assets, EPS & Industry Comparison** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sec-edgar-financials-revenue-income-assets-eps-industry-comparison` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SEC EDGAR Financials — Revenue, Income, Assets, EPS & Industry Comparison** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sec-edgar-financials-revenue-income-assets-eps-industry-comparison": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

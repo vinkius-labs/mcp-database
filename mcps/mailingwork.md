@@ -1,7 +1,6 @@
 # Mailingwork MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailingwork)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailingwork-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailingwork-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailingwork)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Mailingwork** MCP serv
 > Spring Newsletter click map: 'Shop Now' button (142 clicks, 55%). 'Read More' link (68, 26%). 'Social links' (34, 13%). 'Unsubscribe' (15, 6%). Deliverability: Delivered: 3,168 (99%). Soft bounce: 22 (0.7%). Hard bounce: 10 (0.3%). Spam: 2 (0.06%). Inbox placement: 96% (estimated).
 
 
+## ❓ FAQ
+
+**Q: Can I manage campaigns and track delivery?**
+Yes. Create and schedule campaigns, track opens, clicks, bounces, and monitor sender reputation.
+
+**Q: Does Mailingwork use Basic Auth?**
+Yes. Mailingwork uses **HTTP Basic Auth** with username and password against `api.mailingwork.de/webservice/v2`.
+
+**Q: Is Mailingwork GDPR-compliant?**
+Yes. Mailingwork is a German email platform built for GDPR compliance with data processing in EU data centers.
+
+
 ## Installation & Usage
 
-To install and use the **Mailingwork** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mailingwork](https://vinkius.com/mcp/mailingwork)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mailingwork** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mailingwork` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mailingwork** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mailingwork": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

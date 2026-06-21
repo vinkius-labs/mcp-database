@@ -1,7 +1,6 @@
 # Freelancer Budget Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freelancer-budget-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freelancer-budget-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freelancer-budget-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freelancer-budget-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Freelancer Budget Prov
 > CASHFLOW_BLIND — No late payment buffer, no emergency fund, no seasonal gap plan. Pricing from competitors not from YOUR costs.
 
 
+## ❓ FAQ
+
+**Q: Why is $100/hr × 2,080 a fantasy?**
+Freelancers are billable 60-70% of working hours after admin, sales, learning, and vacation. Real: 1,352 hours × $100 = $135,200 — not $208,000.
+
+**Q: How do I calculate minimum viable rate?**
+Total costs ($82K) ÷ (1 - target margin 20%) = $102,500 ÷ 1,300 billable hours = $78.85/hr minimum. Below this you lose money.
+
+**Q: How does scope creep destroy profitability?**
+20h project at $100/hr = $2,000. Client adds 'small changes.' Actual: 35h. Effective rate: $57.14/hr — 43% reduction. If minimum viable is $79/hr, you worked 15 hours below cost.
+
+
 ## Installation & Usage
 
-To install and use the **Freelancer Budget Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/freelancer-budget-prover](https://vinkius.com/mcp/freelancer-budget-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Freelancer Budget Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `freelancer-budget-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Freelancer Budget Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "freelancer-budget-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

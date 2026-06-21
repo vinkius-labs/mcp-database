@@ -1,7 +1,6 @@
 # QA Arbiter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qa-arbiter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qa-arbiter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qa-arbiter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qa-arbiter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,55 @@ Here are some examples of how you can interact with the **QA Arbiter** MCP serve
 > Session Summary — 6 analyzed: 4 TEST_ERROR, 1 ENGINE_DEFECT, 1 BOTH_WRONG. Recommendation: MIXED. Fix your 4 test assertions first, then report the engine defect with traced proof to the developer agent.
 
 
+## ❓ FAQ
+
+**Q: Does QA Arbiter run my tests or compute expected values?**
+No. QA Arbiter performs zero computation and zero side effects. It forces the AI agent to structure its own reasoning into verifiable steps, then validates that the reasoning is logically consistent. Think of it as a reasoning enforcer — like Sequential Thinking, but specialized for test failure diagnosis.
+
+**Q: What are Decision Pivots?**
+Decision Pivots are minimal, verifiable checkpoints that all correct reasoning paths must pass through — a concept from the ROMA research framework. In QA Arbiter, the two pivots are boolean fields: `receivedMatchesTrace` (does the engine's output match the hand-traced computation?) and `expectedMatchesTrace` (does the test's expected value match?). The verdict is derived deterministically from these two booleans, making it impossible to reach a wrong conclusion without contradicting yourself.
+
+**Q: How does it prevent pipeline deadlocks in multi-agent systems?**
+In a typical QA→Developer pipeline, when tests fail, the system routes back to the developer. But if the tests themselves are wrong (QA's fault), the developer can't fix them — creating an infinite retry loop. QA Arbiter forces the QA agent to determine fault attribution BEFORE the pipeline routes: if it's TEST_ERROR, the QA agent fixes its own tests; if it's ENGINE_DEFECT, it routes to the developer with traced proof. The aggregate summary tells the orchestrator exactly what to do.
+
+**Q: What happens if the agent lies about the boolean pivots?**
+The consistency validation catches direct contradictions — e.g., if the agent says both values match the trace but chose TEST_ERROR instead of FALSE_ALARM, the tool rejects it. For subtler misrepresentations, the `engineTrace` field creates an auditable trail: post-hoc analysis can cross-reference the trace against the actual engine source code. The structured format makes deception mechanically harder than with free-form text.
+
+
 ## Installation & Usage
 
-To install and use the **QA Arbiter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/qa-arbiter](https://vinkius.com/mcp/qa-arbiter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **QA Arbiter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `qa-arbiter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **QA Arbiter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "qa-arbiter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

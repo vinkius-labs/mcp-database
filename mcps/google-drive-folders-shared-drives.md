@@ -1,7 +1,6 @@
 # Google Drive: Folders & Shared Drives MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-drive-folders-shared-drives)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-drive-folders-shared-drives-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-drive-folders-shared-drives-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-drive-folders-shared-drives)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Google Drive: Folders 
 > Creating shortcut... Success! I've created a shortcut named 'Link to Price List' in the 'Sales_Team_Quick_Access' folder, pointing to the original 'Price_List_Global' document.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between this and the regular Google Drive server?**
+This version is specialized for folder management, hierarchical organization, and Shared Drives. It includes specific tools for moving files between folders, managing Shared Drive memberships, and creating shortcuts to maintain a clean workspace.
+
+**Q: Can I move an entire folder structure to a Shared Drive?**
+Yes! You can use the `move_file_to_folder` tool (which also works for folders) to transfer a root folder into a Shared Drive ID. The AI agent will handle the parent reassignment via the API.
+
+**Q: How do I create a shortcut to a document in another folder?**
+Use the `create_shortcut` tool. Provide the name for the shortcut, the ID of the target document, and the ID of the folder where you want the shortcut to appear.
+
+
 ## Installation & Usage
 
-To install and use the **Google Drive: Folders & Shared Drives** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-drive-folders-shared-drives](https://vinkius.com/mcp/google-drive-folders-shared-drives)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Drive: Folders & Shared Drives** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-drive-folders-shared-drives` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Drive: Folders & Shared Drives** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-drive-folders-shared-drives": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

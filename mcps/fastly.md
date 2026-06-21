@@ -1,7 +1,6 @@
 # Fastly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fastly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fastly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fastly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fastly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Fastly** MCP server us
 > Cache purge initiated! I've issued a global HTTP PURGE for service 1a2b. All static content has been invalidated, and the network will fetch fresh data from your origins immediately.
 
 
+## ❓ FAQ
+
+**Q: Can my agent purge the entire Fastly cache for a specific service?**
+Yes. Use the 'purge_all_cache' tool with your Service ID. The agent will issue absolute HTTP PURGE instructions globally, vaporizing the complete surrogate cache for static endpoints immediately.
+
+**Q: How do I activate a drafted configuration version via chat?**
+Use the 'activate_service_version' tool. Provide the Service ID and the version number. The agent will force the compilation of that VCL version and promote the draft to active, promoting your changes to production flawlessly.
+
+**Q: Can I check which backend origins are connected to a service version through the agent?**
+Absolutely. Use the 'list_version_backends' tool. Your agent will read the exact upstream AWS/GCP endpoints mapped inside your active or drafted configuration, helping you verify origin and port constraints.
+
+
 ## Installation & Usage
 
-To install and use the **Fastly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fastly](https://vinkius.com/mcp/fastly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fastly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fastly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fastly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fastly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

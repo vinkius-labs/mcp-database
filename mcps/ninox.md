@@ -1,7 +1,6 @@
 # Ninox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ninox)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ninox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ninox-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ninox)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Ninox** MCP server usi
 > New record created successfully in the Orders table (Record ID: 1847). Customer: Acme Corp, Amount: $4,500.00, Status: Pending. The record was automatically timestamped with today's date and linked to the existing Acme Corp entry in your Customers table.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find my Team ID for me?**
+The Team ID is required during initial setup. You can find it in your browser URL when you are inside your Ninox workspace (e.g., `app.ninox.com/team/ABC123XYZ`).
+
+**Q: How do I find my Ninox Personal Access Token?**
+Log in to your Ninox account at app.ninox.com, click the gear icon for Settings, and navigate to the **API** section to generate your unique secret token.
+
+**Q: Can I run native Ninox scripts via the AI?**
+Yes! Use the `execute_ninox_script` tool. Provide your database ID and the script body, and the AI will perform the operation using Ninox's native server-side scripting engine.
+
+
 ## Installation & Usage
 
-To install and use the **Ninox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ninox](https://vinkius.com/mcp/ninox)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ninox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ninox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ninox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ninox": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

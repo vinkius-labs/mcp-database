@@ -1,7 +1,6 @@
 # Indeed MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/indeed)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/indeed-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/indeed-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/indeed)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -64,12 +63,52 @@ Here are some examples of how you can interact with the **Indeed** MCP server us
 > Here are the most recent Data Scientist listings, sorted by date. The newest post was added just 2 hours ago. Do you want to filter these by a specific job type?
 
 
+## ❓ FAQ
+
+**Q: Can I filter by job type like 'full-time' or 'contract'?**
+Yes! Use the `search_jobs` tool with the `jt` parameter. You can specify 'fulltime', 'parttime', 'contract', 'internship', or 'temporary' to narrow down your results.
+
+**Q: How do I sort the results to see the newest jobs first?**
+Simply set the `sort` parameter to 'date' when calling the `search_jobs` tool. By default, results are sorted by relevance.
+
+**Q: Is it possible to search within a specific radius of a city?**
+Yes, you can use the `radius` parameter to define the distance in miles from your target location (provided in the `l` parameter).
+
+
 ## Installation & Usage
 
-To install and use the **Indeed** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/indeed](https://vinkius.com/mcp/indeed)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Indeed** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `indeed` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Indeed** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "indeed": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

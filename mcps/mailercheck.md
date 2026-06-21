@@ -1,7 +1,6 @@
 # MailerCheck MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailercheck)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailercheck-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailercheck-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailercheck)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **MailerCheck** MCP serv
 > I've queried the results for batch 123. There are 45 valid email addresses, including 'admin@corp.com' and 'sales@firm.io'. I've filtered out risky and invalid results.
 
 
+## ❓ FAQ
+
+**Q: What is the accuracy of MailerCheck verification?**
+MailerCheck uses advanced multi-layer checks including syntax, DNS, and SMTP handshake to provide highly accurate results categorized into valid, risky, and invalid.
+
+**Q: Can I verify large lists of emails?**
+Yes, use the `create_verification_batch` tool to upload a JSON array of email addresses. You can then monitor the progress and retrieve results once completed.
+
+**Q: How do I check my remaining credits?**
+Use the `get_account_info` tool to retrieve your profile details and the current balance of verification credits in your account.
+
+
 ## Installation & Usage
 
-To install and use the **MailerCheck** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mailercheck](https://vinkius.com/mcp/mailercheck)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MailerCheck** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mailercheck` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MailerCheck** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mailercheck": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

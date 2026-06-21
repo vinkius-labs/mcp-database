@@ -1,7 +1,6 @@
 # CardanoScan (Cardano Block Explorer API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cardanoscan-cardano-block-explorer-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cardanoscan-cardano-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cardanoscan-cardano-block-explorer-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cardanoscan-cardano-block-explorer-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **CardanoScan (Cardano B
 > I've compiled a list of registered stake pools. Notable pools currently active include 'IOG1', 'POOL2', and 'ADA3'. Would you like the specific metadata for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I see the specific inputs and outputs of a transaction hash?**
+Yes. Use the `get_transaction_utxos` tool with the transaction hash. It will return the detailed list of all UTXO inputs and outputs associated with that specific record.
+
+**Q: How do I check the current progress of the Cardano network epoch?**
+You can use the `get_latest_epoch` tool to retrieve details about the current epoch, or `get_epoch` for a specific epoch number to see its timing and block count.
+
+**Q: Is it possible to find information about a specific native asset or token?**
+Absolutely. Use the `get_asset` tool with the Asset ID (Policy ID + Asset Name) to fetch its metadata, supply, and other on-chain characteristics.
+
+
 ## Installation & Usage
 
-To install and use the **CardanoScan (Cardano Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cardanoscan-cardano-block-explorer-api](https://vinkius.com/mcp/cardanoscan-cardano-block-explorer-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CardanoScan (Cardano Block Explorer API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cardanoscan-cardano-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CardanoScan (Cardano Block Explorer API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cardanoscan-cardano-block-explorer-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

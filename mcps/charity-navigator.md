@@ -1,7 +1,6 @@
 # Charity Navigator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/charity-navigator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/charity-navigator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/charity-navigator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/charity-navigator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,55 @@ Here are some examples of how you can interact with the **Charity Navigator** MC
 > No active advisories found for American Red Cross (EIN: 53-0196605). The organization has a clean record with no warnings or flags from Charity Navigator.
 
 
+## ❓ FAQ
+
+**Q: How do I get Charity Navigator API credentials?**
+Visit [**charitynavigator.org**](https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=6322), register for a free developer account, and you'll receive an App ID and App Key. Both are required for API access.
+
+**Q: What does the rating scale mean?**
+Charity Navigator rates nonprofits on a 0-4 star scale. 4 stars = exceptional performance, 3 stars = strong, 2 stars = adequate, 1 star = needs improvement, 0 = unrated or flagged. Ratings are based on financial health, accountability and transparency.
+
+**Q: How do I search for charities by cause?**
+Use get_categories to get all cause/category IDs, then use search_charities with the category_id parameter. Popular categories include education, health, environment, animal welfare, arts & culture, and human services.
+
+**Q: What is an EIN?**
+EIN stands for Employer Identification Number, a unique 9-digit identifier assigned by the IRS to US nonprofits. It's used as the primary key for looking up specific charities. You can find EINs in search results or on the charity's tax filings.
+
+
 ## Installation & Usage
 
-To install and use the **Charity Navigator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/charity-navigator](https://vinkius.com/mcp/charity-navigator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Charity Navigator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `charity-navigator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Charity Navigator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "charity-navigator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Health XML Export Parser MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/health-xml-export-parser)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/health-xml-export-parser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/health-xml-export-parser-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/health-xml-export-parser)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **Health XML Export Pars
 > Apple tracks sleep using a StartDate, EndDate, and a 'value' string representing the sleep state (e.g., Core, REM, Deep).
 
 
+## ❓ FAQ
+
+**Q: Will it send my raw heart rate data to the AI?**
+No, to protect your privacy and token limit, it only sends a summary of what data exists (the schema) and a tiny sample (the first 50 records) to Claude. The rest never leaves your computer.
+
+**Q: Can it process a 1GB Apple Health export file?**
+Yes, the XML parser is highly optimized. However, parsing massive 1GB XML files requires sufficient available RAM on your local machine.
+
+**Q: Does it work with Google Fit?**
+Yes! If Google Fit data is exported as an XML structure, this engine will parse and summarize its root nodes perfectly.
+
+
 ## Installation & Usage
 
-To install and use the **Health XML Export Parser** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/health-xml-export-parser](https://vinkius.com/mcp/health-xml-export-parser)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Health XML Export Parser** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `health-xml-export-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Health XML Export Parser** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "health-xml-export-parser": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

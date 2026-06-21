@@ -1,7 +1,6 @@
 # OneNote MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/onenote)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/onenote-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/onenote-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/onenote)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **OneNote** MCP server u
 > Target page contents successfully dumped bounding natively. The text asserts a series of meeting notes dated Monday clearly outlining the revised UI design specifications and highlighting assigned sprint velocity points for backend devs gracefully logically ordered. I can summarize it entirely.
 
 
+## ❓ FAQ
+
+**Q: Can the integration delete entire extensive notebooks or important local sections?**
+No. The integration exclusively binds heavily to Reading methods (list, search, get) mapped safely alongside minimal Write interactions specifically scoped to Appending fresh notes. Destructive end-points are intrinsically restricted protecting vital long-term data persistently.
+
+**Q: Does it parse images contained inside OneNote native pages automatically?**
+Currently, fetching Page contents operates exclusively translating returned DOM hierarchies returning raw string-based text bounds flawlessly. Purely visual bitmaps or native handwritten encodings skip the explicit parsing stream avoiding LLM hallucinations fundamentally.
+
+**Q: Why does OneNote demand a generic Graph Access Token explicitly here?**
+Microsoft explicitly deprecated discrete independent silo APIs unifying all native core tenant structures explicitly over the single Microsoft Graph perimeter gateway. OneNote resources are canonically navigated traversing this exact Graph endpoint hierarchy natively.
+
+
 ## Installation & Usage
 
-To install and use the **OneNote** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/onenote](https://vinkius.com/mcp/onenote)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OneNote** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `onenote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OneNote** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "onenote": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

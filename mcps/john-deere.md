@@ -1,7 +1,6 @@
 # John Deere MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/john-deere)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/john-deere-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/john-deere-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/john-deere)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ This is 8% above your 5-year average of 202 bu/acre for this field. Want me to c
 The tractor alert is urgent. Should I pull the full machine details?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent locate all my machines in real time and tell me which fields they're working?**
+Yes! Use `list_organizations` to pick your farm, then `get_machine_locations` to fetch live GPS coordinates and telemetry for every machine. Cross-reference with `list_fields` to match coordinates to specific fields. Your agent builds the complete picture in one conversation.
+
+**Q: How can I quickly review harvest yields across all my fields for the season?**
+Ask your agent to iterate through your fields: 'Show me harvest data for all fields in org X.' It will call `list_fields` then `get_field_operations` for each, filtering for harvest operations. You get yield per acre, product totals, and operator names — perfect for end-of-season reporting without exporting spreadsheets.
+
+**Q: Does this integration modify any data on my John Deere account?**
+No. All 7 tools are read-only query operations — they list and retrieve data but never create, update, or delete anything. Your OAuth access token scope controls exactly which organizations and data types are accessible, matching the permissions you configured in the John Deere Developer Portal.
+
+
 ## Installation & Usage
 
-To install and use the **John Deere** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/john-deere](https://vinkius.com/mcp/john-deere)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **John Deere** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `john-deere` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **John Deere** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "john-deere": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

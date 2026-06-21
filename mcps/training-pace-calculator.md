@@ -1,7 +1,6 @@
 # Training Pace Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/training-pace-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/training-pace-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/training-pace-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/training-pace-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Training Pace Calculat
 > With a VO2max of 45 ml/kg/min, your estimated training zones are: Easy (06:10 min/km), Aerobic (05:50 min/km), Tempo (05:35 min/km), Interval (05:20 min/km), and VO2max (05:05 min/km).
 
 
+## ❓ FAQ
+
+**Q: How do I calculate my training zones from a recent race?**
+Use the `calculate_zones_from_pace` tool. Provide your recent race pace in 'mm:ss' format and the distance of that race (e.g., 5K or 10K).
+
+**Q: Can I estimate my marathon pace from a 5K result?**
+Yes, you can use the `estimate_distance_conversion` tool. Input your current 5K pace and set the target distance to 'Marathon' to see the predicted performance.
+
+**Q: What if I don't have a recent race time?**
+You can use the `calculate_zones_from_vo2max` tool. Simply provide your VO2max value in ml/kg/min to get your estimated training zones.
+
+
 ## Installation & Usage
 
-To install and use the **Training Pace Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/training-pace-calculator](https://vinkius.com/mcp/training-pace-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Training Pace Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `training-pace-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Training Pace Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "training-pace-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

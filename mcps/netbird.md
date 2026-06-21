@@ -1,7 +1,6 @@
 # NetBird MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/netbird)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/netbird-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/netbird-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/netbird)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -155,12 +154,52 @@ Here are some examples of how you can interact with the **NetBird** MCP server u
 > The current user is 'Admin' with email 'admin@company.com'. Your role is 'Owner' and you have full access to the account settings.
 
 
+## ❓ FAQ
+
+**Q: How can I see all users currently registered in my NetBird network?**
+You can use the `list_users` tool. It will return a complete list of users, including their IDs, roles, and current status.
+
+**Q: Is it possible to invite a new user to the network via AI?**
+Yes! Use the `create_user_invite` tool to generate an invitation link, or `create_user` to invite a regular user directly by providing the necessary JSON payload.
+
+**Q: Can I manage pending user approvals through this integration?**
+Absolutely. Use `approve_user` to grant access to a pending user or `reject_user` to deny their request using their specific User ID.
+
+
 ## Installation & Usage
 
-To install and use the **NetBird** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/netbird](https://vinkius.com/mcp/netbird)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NetBird** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `netbird` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NetBird** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "netbird": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

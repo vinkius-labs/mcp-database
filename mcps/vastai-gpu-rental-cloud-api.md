@@ -1,7 +1,6 @@
 # Vast.ai (GPU Rental Cloud API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vastai-gpu-rental-cloud-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vastai-gpu-rental-cloud-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vastai-gpu-rental-cloud-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vastai-gpu-rental-cloud-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Vast.ai (GPU Rental Cl
 > You have one active instance (ID: 1029384) running an RTX 4090. Status: 'running', IP: 123.45.67.89, Cost: $0.42/hr.
 
 
+## ❓ FAQ
+
+**Q: How can I find a specific GPU model like an RTX 4090?**
+Use the `search_offers` tool with a query like `{"gpu_name": {"eq": "RTX 4090"}}`. The agent will return a list of available offers matching that hardware.
+
+**Q: What information do I need to rent a new GPU instance?**
+You need an `offer_id` (from search results) and a Docker `image` name (e.g., 'pytorch/pytorch'). You can also optionally specify the `disk` size in GB using the `rent_instance` tool.
+
+**Q: How do I stop an instance to avoid further charges?**
+Simply use the `delete_instance` tool with the specific `instance_id`. This will terminate the instance and release the GPU back to the marketplace.
+
+
 ## Installation & Usage
 
-To install and use the **Vast.ai (GPU Rental Cloud API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vastai-gpu-rental-cloud-api](https://vinkius.com/mcp/vastai-gpu-rental-cloud-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vast.ai (GPU Rental Cloud API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vastai-gpu-rental-cloud-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vast.ai (GPU Rental Cloud API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vastai-gpu-rental-cloud-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

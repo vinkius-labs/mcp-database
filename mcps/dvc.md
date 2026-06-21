@@ -1,7 +1,6 @@
 # DVC MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dvc)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dvc-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dvc-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dvc)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **DVC** MCP server using
 > Retrieving views... You have 2 active dashboard layouts: 'Main-Metrics-Grid' and 'Validation-Plots'. Would you like the detailed settings for either of them?
 
 
+## ❓ FAQ
+
+**Q: Can my agent list all experiments for a specific DVC project?**
+Yes. Use the 'list_experiments' tool. Provide the project ID, and the agent will iterate through the model runs, returning a detailed history of metrics and execution logs for that project.
+
+**Q: How do I see my custom dashboard views via chat?**
+Use the 'list_views' tool to see all your dashboard layouts. You can then use 'get_view' with a specific ID to retrieve the structural configuration and settings for that exact UI representation.
+
+**Q: Can I audit my DVC Studio project settings through the agent?**
+Absolutely. The 'list_projects' and 'get_project' tools allow your agent to analyze identifier boundaries and repository metadata, helping you verify project connections and team mappings natively.
+
+
 ## Installation & Usage
 
-To install and use the **DVC** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dvc](https://vinkius.com/mcp/dvc)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DVC** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dvc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DVC** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dvc": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

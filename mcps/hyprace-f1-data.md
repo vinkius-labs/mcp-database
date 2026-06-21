@@ -1,7 +1,6 @@
 # Hyprace F1 Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hyprace-f1-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hyprace-f1-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hyprace-f1-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hyprace-f1-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Hyprace F1 Data** MCP 
 > Retrieving driver profile... Ayrton Senna (Brazil, 1960–1994): 3× World Champion (1988, 1990, 1991), 161 race starts, 41 victories, 80 podiums, 65 pole positions, and 19 fastest laps. He raced for Toleman, Lotus, McLaren, and Williams across 11 seasons. Would you like to see his season-by-season results or compare him with another legendary driver?
 
 
+## ❓ FAQ
+
+**Q: How quickly are race results available after a session ends?**
+Results for active sessions — Practice, Qualifying, Sprint, and Race — are typically published within minutes of the chequered flag. Use the `get_race_results` or `get_qualifying_results` tools with the relevant season and Grand Prix to retrieve the latest classifications instantly.
+
+**Q: Can I compare driver performance across different decades of Formula 1?**
+Absolutely. The Hyprace database covers every F1 season since the inaugural championship in 1950. Use `get_driver` to retrieve career statistics for any pilot — from Juan Manuel Fangio to Max Verstappen — and `get_standings` to compare how they ranked against their contemporaries in specific seasons.
+
+**Q: Is this integration read-only, or can it modify F1 data?**
+All 12 tools are strictly read-only query operations against the Hyprace data archive. The integration cannot modify, create, or delete any records. Your RapidAPI key is used solely for authenticated data retrieval, ensuring complete safety of your API quota and account.
+
+
 ## Installation & Usage
 
-To install and use the **Hyprace F1 Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hyprace-f1-data](https://vinkius.com/mcp/hyprace-f1-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hyprace F1 Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hyprace-f1-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hyprace F1 Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hyprace-f1-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

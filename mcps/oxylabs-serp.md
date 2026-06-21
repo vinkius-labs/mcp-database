@@ -1,7 +1,6 @@
 # Oxylabs SERP MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oxylabs-serp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oxylabs-serp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oxylabs-serp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oxylabs-serp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Oxylabs SERP** MCP ser
 > I've pulled the youtube_search results. Top videos are: 1. 'Next.js 15 Crash Course' by Traversy Media (500K views, uploaded 1 mo ago). 2. 'What's new in Next 15?' by Vercel (1.2M views). 3. 'Next.js App Router Masterclass' by Lee Robinson. Want the direct links to these videos?
 
 
+## ❓ FAQ
+
+**Q: Are the exported results structured JSON or raw HTML?**
+The API returns highly structured, pre-parsed JSON. For example, a Google Search request directly returns organized arrays of organic results, related queries, ads, and knowledge panels — there's no need to write code to parse the HTML DOM.
+
+**Q: Do I need to manage my own residential proxies?**
+No. Oxylabs handles all infrastructure on the backend, automatically rotating residential proxies, fingerprinting, and bypassing CAPTCHAs. You just provide the search query.
+
+**Q: Can I search Google News for PR tracking?**
+Yes, the google_news_search tool natively queries the News tab, returning structured articles with publishers, titles, snippets, and exact publication timestamps, making it highly effective for PR and brand tracking.
+
+
 ## Installation & Usage
 
-To install and use the **Oxylabs SERP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/oxylabs-serp](https://vinkius.com/mcp/oxylabs-serp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Oxylabs SERP** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `oxylabs-serp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Oxylabs SERP** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "oxylabs-serp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

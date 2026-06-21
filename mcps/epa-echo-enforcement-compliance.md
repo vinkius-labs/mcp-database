@@ -1,7 +1,6 @@
 # EPA ECHO (Enforcement & Compliance) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epa-echo-enforcement-compliance)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/epa-echo-enforcement-compliance-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/epa-echo-enforcement-compliance-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epa-echo-enforcement-compliance)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **EPA ECHO (Enforcement 
 > Generating effluent chart data for TX0004567... I've retrieved the permitted limits vs. actual measurements for parameters like Nitrogen and TSS. There was one exceedance recorded in Q3 of last year.
 
 
+## ❓ FAQ
+
+**Q: How can I get the full compliance history for a specific facility?**
+Use the `get_detailed_facility_report` tool with the specific Facility ID (p_id). This returns a comprehensive 'Detailed Facility Report' (DFR) covering all environmental programs, violations, and inspections.
+
+**Q: Can I search for facilities by city or state?**
+Yes! Tools like `search_all_facilities` or `search_water_facilities` accept `p_ct` (City) and `p_st` (State abbreviation) parameters to filter results geographically.
+
+**Q: What information is included in the effluent charts?**
+The `get_effluent_chart` tool provides data on permitted discharge limits, actual measured releases, and any exceedances or violations for Clean Water Act (NPDES) permits.
+
+
 ## Installation & Usage
 
-To install and use the **EPA ECHO (Enforcement & Compliance)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/epa-echo-enforcement-compliance](https://vinkius.com/mcp/epa-echo-enforcement-compliance)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EPA ECHO (Enforcement & Compliance)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `epa-echo-enforcement-compliance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EPA ECHO (Enforcement & Compliance)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "epa-echo-enforcement-compliance": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

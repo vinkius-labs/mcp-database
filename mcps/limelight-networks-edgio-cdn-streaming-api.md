@@ -1,7 +1,6 @@
 # Limelight Networks (Edgio CDN & Streaming API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/limelight-networks-edgio-cdn-streaming-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/limelight-networks-edgio-cdn-streaming-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/limelight-networks-edgio-cdn-streaming-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/limelight-networks-edgio-cdn-streaming-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Limelight Networks (Ed
 > Playback session initialized. Here is your HLS URL: https://content.uplynk.com/d4e5f6.m3u8?pbs=xyz123&ad=midroll_test. The session is ready for secure delivery.
 
 
+## ❓ FAQ
+
+**Q: How do I generate a playback URL for a specific video asset?**
+You should use the `initialize_preplay_session` tool with the Asset ID. This will return a session-based playback URL (HLS or DASH) including metadata for SSAI and security.
+
+**Q: Can I start and stop live broadcasts using this server?**
+Yes. Use `start_event` to signal the beginning of a live stream and `stop_event` to end it. You can also use `create_event` to schedule new broadcasts.
+
+**Q: Is it possible to update video metadata like titles or tags?**
+Absolutely. The `update_asset` tool allows you to modify metadata fields for any existing VOD asset by providing its ID and the new JSON metadata.
+
+
 ## Installation & Usage
 
-To install and use the **Limelight Networks (Edgio CDN & Streaming API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/limelight-networks-edgio-cdn-streaming-api](https://vinkius.com/mcp/limelight-networks-edgio-cdn-streaming-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Limelight Networks (Edgio CDN & Streaming API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `limelight-networks-edgio-cdn-streaming-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Limelight Networks (Edgio CDN & Streaming API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "limelight-networks-edgio-cdn-streaming-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

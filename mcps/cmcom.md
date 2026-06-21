@@ -1,7 +1,6 @@
 # CM.com MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cmcom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cmcom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cmcom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cmcom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **CM.com** MCP server us
 > WhatsApp template message sent! From: +31201234567, To: +44789012345. Template: 'appointment_confirmation' (namespace: 'my_business_ns'). Status: accepted by WhatsApp Business API. The recipient will see the formatted message in their WhatsApp chat. Note: template messages require prior approval from Meta. Would you like to also send an SMS fallback?
 
 
+## ❓ FAQ
+
+**Q: Can I send messages through WhatsApp, Viber, and other rich channels?**
+Yes! The `send_rich_message` action lets you send through WhatsApp, Viber, RCS, or Apple Messages by specifying the channel parameter. For WhatsApp Business specifically, use `send_whatsapp` to send pre-approved template messages with a template ID and namespace.
+
+**Q: Can I implement two-factor authentication with OTP verification?**
+Yes. Use `send_otp_sms` to deliver a verification code via SMS — it returns a verification ID. Then call `verify_otp` with that verification ID and the code the user enters. For voice-based OTP delivery, use `send_voice_otp` to read the code to the user via an automated phone call.
+
+**Q: Can I check my CM.com credit balance before sending campaigns?**
+Yes. The `get_balance` tool retrieves your current credit balance. Use `list_numbers` to see all virtual phone numbers in your account. Both tools help you plan campaigns before committing to bulk sends via `send_bulk_sms`.
+
+
 ## Installation & Usage
 
-To install and use the **CM.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cmcom](https://vinkius.com/mcp/cmcom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CM.com** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cmcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CM.com** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cmcom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

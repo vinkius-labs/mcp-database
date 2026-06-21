@@ -1,7 +1,6 @@
 # Copernicus Data Space MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/copernicus-data-space)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/copernicus-data-space-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/copernicus-data-space-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/copernicus-data-space)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -109,12 +108,52 @@ Here are some examples of how you can interact with the **Copernicus Data Space*
 > Fetching available collections... The Copernicus Data Space currently hosts 15 data collections including SENTINEL-1 (C-band SAR radar), SENTINEL-2 (multispectral optical at 10-60m), SENTINEL-3 (ocean color and land surface), SENTINEL-5P (tropospheric monitoring), SENTINEL-6 (precise ocean altimetry), plus Landsat-5/7/8/9, SMOS, MERIS, and DEM datasets. Would you like details about a specific collection?
 
 
+## ❓ FAQ
+
+**Q: How do I get Copernicus OAuth2 credentials?**
+Register for free at dataspace.copernicus.eu, navigate to your User Settings dashboard, and create a new OAuth client. You'll receive a Client ID and Client Secret — enter them in the format client_id:client_secret. The entire process takes under 2 minutes.
+
+**Q: What satellite data is available through this server?**
+You can access data from all Copernicus Sentinel missions: Sentinel-1 (SAR radar imagery), Sentinel-2 (high-resolution optical imagery at 10m), Sentinel-3 (ocean and land monitoring), Sentinel-5P (atmospheric composition), Sentinel-6 (sea level altimetry), plus complementary data from Landsat, SMOS, and MERIS missions.
+
+**Q: Can I download satellite products through this server?**
+Yes. Use the get_product_download_url tool with a product UUID to generate a time-limited authenticated download URL. The URL and Bearer token are valid for approximately one hour. Products are typically in ESA SAFE format and can range from hundreds of megabytes to several gigabytes.
+
+
 ## Installation & Usage
 
-To install and use the **Copernicus Data Space** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/copernicus-data-space](https://vinkius.com/mcp/copernicus-data-space)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Copernicus Data Space** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `copernicus-data-space` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Copernicus Data Space** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "copernicus-data-space": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

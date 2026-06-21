@@ -1,7 +1,6 @@
 # Elasticsearch Vector MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elasticsearch-vector)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elasticsearch-vector-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elasticsearch-vector-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elasticsearch-vector)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Elasticsearch Vector**
 > Retrieving indexes... I found 3 vector-enabled indexes: 'product-embeddings' (1536 dims), 'image-features' (512 dims), and 'text-semantic-v1' (768 dims). Which one would you like to inspect?
 
 
+## ❓ FAQ
+
+**Q: Can my agent perform kNN searches using raw vector arrays?**
+Yes. Use the 'search' tool. Provide the index name and a JSON array representing your query vector. The agent will perform raw K-Nearest Neighbors computations to find the most semantically similar documents.
+
+**Q: How do I create a new vector index with specific dimensions via chat?**
+Use the 'create_index' tool. You can specify the index name and the number of dimensions (e.g., 1536 for OpenAI embeddings). The agent will provision the strictly typed data structure in your Elasticsearch cluster.
+
+**Q: Can I delete a single document from a vector index through the agent?**
+Absolutely. Use the 'delete_document' tool with the index and document ID. The agent will enforce immediate document vaporization, stripping the record from the physical Lucene partitions.
+
+
 ## Installation & Usage
 
-To install and use the **Elasticsearch Vector** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/elasticsearch-vector](https://vinkius.com/mcp/elasticsearch-vector)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Elasticsearch Vector** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `elasticsearch-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Elasticsearch Vector** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "elasticsearch-vector": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

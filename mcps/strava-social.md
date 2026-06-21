@@ -1,7 +1,6 @@
 # Strava Social MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-social)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/strava-social-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/strava-social-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-social)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **Strava Social** MCP se
 > Found 5 comments: 1) Sarah M.: "Great pace on that ride! 💪" 2) Tom K.: "Nice work! How did the new route feel?" 3) Lisa P.: "Solid effort 🚴" 4) Mike R.: "Let's do this route together next week" 5) Anna D.: "Impressive elevation gain!"
 
 
+## ❓ FAQ
+
+**Q: Can I see who liked my activities?**
+Yes! Use the get_activity_kudos tool with any activity ID. It returns the full list of athletes who gave kudos to that activity, including their names, cities, and profile pictures. This helps you understand who's following and supporting your training.
+
+**Q: How can I discover popular segments in a new city?**
+Use the explore_segments tool with a bounding box of the area you're interested in. The bounds format is "southwest_lng,southwest_lat,northeast_lng,northeast_lat". For example, "-74.00,40.70,-73.95,40.75" covers Manhattan. You can filter by activity_type ("riding" or "running") and difficulty category (0-5, where 0 is hardest).
+
+**Q: Can I see what my club members have been doing?**
+Yes! Use list_club_activities with the club ID. It returns the 30 most recent activities from club members with athlete names, activity types, distances, and dates. Paginate through results to see more. This is great for staying connected with your training group's activities.
+
+
 ## Installation & Usage
 
-To install and use the **Strava Social** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/strava-social](https://vinkius.com/mcp/strava-social)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Strava Social** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `strava-social` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Strava Social** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "strava-social": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

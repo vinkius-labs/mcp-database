@@ -1,7 +1,6 @@
 # OpenAI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openai-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openai-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openai-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -105,12 +104,55 @@ Here are some examples of how you can interact with the **OpenAI** MCP server us
 > You have 8 files uploaded: 3 for fine-tuning (training JSONL files), 2 for Assistants (knowledge base PDFs), 2 for batch processing (request JSONL files) and 1 vector store file. Total storage used: 45MB.
 
 
+## ❓ FAQ
+
+**Q: How do I get my OpenAI API Key?**
+Log in to the [**OpenAI Platform**](https://platform.openai.com/api-keys), go to **API Keys** in the left sidebar, click **Create new secret key**, give it a name and copy the key immediately — it starts with `sk-proj-` and won't be shown again.
+
+**Q: Can I monitor my fine-tuning jobs?**
+Yes! Use `list_fine_tunes` to see all fine-tuning jobs with their status (validating_files, queued, running, succeeded, failed, cancelled). Use `get_fine_tune` with a specific job ID for detailed info including training progress, estimated finish time and result model ID. You can also cancel running jobs with `cancel_fine_tune`.
+
+**Q: Can I manage batch processing jobs?**
+Yes! Use `list_batches` to see all batch jobs, `create_batch` to submit new batches with an input file ID and endpoint, `get_batch` to check progress and `cancel_batch` to stop running jobs. Batches process requests asynchronously at a lower cost than individual API calls.
+
+**Q: Can I list and inspect my Assistants?**
+Yes! Use `list_assistants` to see all configured Assistants with their models, tools (code interpreter, file search, function calling) and instructions. Use `get_assistant` with a specific assistant ID for full details including file IDs and metadata.
+
+
 ## Installation & Usage
 
-To install and use the **OpenAI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openai-alternative](https://vinkius.com/mcp/openai-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenAI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenAI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openai-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

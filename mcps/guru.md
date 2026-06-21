@@ -1,7 +1,6 @@
 # Guru MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/guru)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/guru-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/guru-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/guru)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **Guru** MCP server usin
 > Card created! I've successfully added 'How to setup MCP' to the Engineering collection. The card ID is crd_98765 and it is currently in 'Draft' status.
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Token for Guru?**
+Log in to Guru, click your avatar > Team Settings > API Access, and you can generate a new user token there.
+
+**Q: What is a 'Card' in Guru?**
+A Card is the fundamental unit of knowledge in Guru. It contains a specific piece of information that can be verified by subject matter experts.
+
+**Q: Can I search for knowledge across all collections?**
+Yes! Use the 'search_knowledge_base' tool. It iterates across all enterprise knowledge silos to find relevant cards based on your query.
+
+**Q: How do I find my Collection ID?**
+Use the 'list_knowledge_collections' tool. The agent will return all accessible collections along with their unique IDs and names.
+
+
 ## Installation & Usage
 
-To install and use the **Guru** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/guru](https://vinkius.com/mcp/guru)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Guru** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `guru` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Guru** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "guru": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ClickHouse (Vector Search) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clickhouse-vector-search)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clickhouse-vector-search-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clickhouse-vector-search-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clickhouse-vector-search)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **ClickHouse (Vector Sea
 > Stats for 'sales_data': 1.2M rows, 450MB total size, 4.2x compression ratio. The table is currently healthy and responsive.
 
 
+## ❓ FAQ
+
+**Q: Can my agent perform high-speed vector similarity searches?**
+Yes. Provide the database, table, and the vector embedding array in JSON format. The agent uses ClickHouse's native distance functions (cosine or L2) to return the closest matches, leveraging ClickHouse's industry-leading OLAP performance.
+
+**Q: Can I execute arbitrary SQL commands directly through the agent?**
+Absolutely. The 'execute_sql' tool allows you to push any valid ClickHouse SQL (DML, DDL, or SELECT) to your cluster. This is perfect for managing tables, updating records, or generating custom analytical reports on the fly.
+
+**Q: How do I check if my ClickHouse instance supports HNSW indices?**
+Ask your agent to get the version details. The agent checks your ClickHouse build and identifies exactly which capability branches are active, confirming if advanced vector features like HNSW support are available in your runtime environment.
+
+
 ## Installation & Usage
 
-To install and use the **ClickHouse (Vector Search)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clickhouse-vector-search](https://vinkius.com/mcp/clickhouse-vector-search)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ClickHouse (Vector Search)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clickhouse-vector-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ClickHouse (Vector Search)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clickhouse-vector-search": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # DocsGenFlow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docsgenflow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docsgenflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docsgenflow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docsgenflow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **DocsGenFlow** MCP serv
 > Operational monitoring orchestrated! This month, your account has processed 1,000 document generation requests, with a 99% success rate. Your API connection is healthy. Shall I retrieve the detailed template usage breakdown?
 
 
+## ❓ FAQ
+
+**Q: How do I find my DocsGenFlow API Key?**
+Log in to your account, navigate to **Settings** > **API**, and copy your unique access token from the credentials section.
+
+**Q: Can I retrieve generation status via AI?**
+Yes! The `list_history` tool allows your agent to retrieve status metadata for all your document generation requests.
+
+**Q: How do I list my document templates?**
+Use the `list_templates` tool to retrieve your complete directory along with the unique identifiers for all managed assets.
+
+
 ## Installation & Usage
 
-To install and use the **DocsGenFlow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/docsgenflow](https://vinkius.com/mcp/docsgenflow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DocsGenFlow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `docsgenflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DocsGenFlow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "docsgenflow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

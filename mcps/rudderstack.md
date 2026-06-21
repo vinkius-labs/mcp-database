@@ -1,7 +1,6 @@
 # RudderStack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rudderstack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rudderstack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rudderstack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rudderstack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **RudderStack** MCP serv
 > The 'iOS App' source is currently linked to the 'Mobile E-commerce v2' tracking plan. This plan enforces strict schemas for 15 standard commerce events.
 
 
+## ❓ FAQ
+
+**Q: Can the AI change tracking plans or modify data source schemas directly?**
+No, this integration limits actions inherently strictly internally seamlessly natively gracefully fully perfectly properly reliably securely precisely solely toward organically gracefully strictly accessing read-only operations effectively smoothly efficiently successfully parsing natively purely locally correctly efficiently safely retrieving data logically effortlessly organically reliably cleanly dynamically dynamically safely correctly reading data purely explicitly properly.
+
+**Q: Can the AI list audience segments and their sync status?**
+Yes. Use `list_audiences` to retrieve all configured audience segments, including their names and associated destination syncs. This is useful for verifying remarketing pipelines.
+
+**Q: Which destination types does the integration support?**
+The integration queries any destination configured in your RudderStack workspace — data warehouses, analytics platforms, marketing tools, and cloud storage. Use `list_destinations` to see all active endpoints.
+
+
 ## Installation & Usage
 
-To install and use the **RudderStack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rudderstack](https://vinkius.com/mcp/rudderstack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **RudderStack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rudderstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **RudderStack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rudderstack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

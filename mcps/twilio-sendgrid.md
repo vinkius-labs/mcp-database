@@ -1,7 +1,6 @@
 # Twilio SendGrid MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twilio-sendgrid)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/twilio-sendgrid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/twilio-sendgrid-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twilio-sendgrid)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **Twilio SendGrid** MCP 
 > I've engaged `list_dynamic_templates` surveying your internal dashboard environment. Your vault holds 7 different distinct design layouts. The most recently updated is the 'Welcome Onboarding Form' attached to template ID (d-f018x8axxx...). Would you like me to dive into `get_template_details` for that specific iteration to reverse-engineer its internal blocks?
 
 
+## ❓ FAQ
+
+**Q: Can the agent automatically send emails on my behalf?**
+Yes. The integration natively wraps the `dispatch_email` mutation tool. If adequately prompted, the system will formulate HTML payloads and broadcast them assuming you explicitly provide the verified Sender Identity (from_email) corresponding to your account.
+
+**Q: How do I remove an email block suppressing one of my clients?**
+You don't need to manually interact with the web app anymore. Dictate to the LLM: 'Unblock client@gmail.com from my bounce list'. The agent will instantly leverage `delete_bounce` removing the suspension logic behind the scenes.
+
+**Q: Can I query spam complaints regarding my outgoing templates?**
+Absolutely. Utilize the command prompt sequence to call `list_spam_reports`. It retrieves detailed events pointing precisely to domains triggering those complaints, empowering you to adjust or purge bad contacts dynamically.
+
+
 ## Installation & Usage
 
-To install and use the **Twilio SendGrid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/twilio-sendgrid](https://vinkius.com/mcp/twilio-sendgrid)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Twilio SendGrid** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `twilio-sendgrid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Twilio SendGrid** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "twilio-sendgrid": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

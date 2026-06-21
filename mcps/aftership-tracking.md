@@ -1,7 +1,6 @@
 # AfterShip Tracking MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aftership-tracking)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aftership-tracking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aftership-tracking-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aftership-tracking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **AfterShip Tracking** M
 > I've filtered your shipments. You have 2 packages with an 'Exception' status, both due to incorrect address information. I've listed the details so you can contact the customers.
 
 
+## ❓ FAQ
+
+**Q: How do I add a new tracking number?**
+Use the `create_tracking` tool and provide the tracking number and the courier slug (e.g., 'fedex', 'dhl'). Your agent will add it to AfterShip and start monitoring the status.
+
+**Q: Can the agent automatically detect the courier?**
+Yes! Use the `detect_courier` tool with any tracking number. AfterShip will analyze the format and return a list of potential carrier matches.
+
+**Q: What tracking statuses are supported?**
+AfterShip normalizes tracking data into standard statuses: Pending, In Transit, Out for Delivery, Delivered, Exception, and Failed Attempt.
+
+
 ## Installation & Usage
 
-To install and use the **AfterShip Tracking** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aftership-tracking](https://vinkius.com/mcp/aftership-tracking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AfterShip Tracking** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aftership-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AfterShip Tracking** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aftership-tracking": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

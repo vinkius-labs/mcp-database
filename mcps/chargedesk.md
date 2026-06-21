@@ -1,7 +1,6 @@
 # ChargeDesk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chargedesk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chargedesk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chargedesk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chargedesk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **ChargeDesk** MCP serve
 > Checking connected gateways... You have 3 active gateways: Stripe (Live), PayPal (Live), and Braintree (Sandbox). All are reporting a healthy connection.
 
 
+## ❓ FAQ
+
+**Q: Can I process a refund through the agent?**
+Yes! Use the `refund_chargedesk_payment` tool with the charge ID. You can also specify an optional amount for a partial refund. The agent will trigger the refund on the original gateway.
+
+**Q: How do I see all payments from a specific customer?**
+Use the `get_customer_details` tool with the unique customer ID. Your agent will fetch the profile, which includes a list of all successful and failed charges.
+
+**Q: Where do I find my ChargeDesk Secret Key?**
+Log in to your ChargeDesk account and go to **Account Settings -> API**. You can view and copy your Secret Key from there.
+
+
 ## Installation & Usage
 
-To install and use the **ChargeDesk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chargedesk](https://vinkius.com/mcp/chargedesk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ChargeDesk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chargedesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ChargeDesk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chargedesk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

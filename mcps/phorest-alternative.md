@@ -1,7 +1,6 @@
 # Phorest MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/phorest-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/phorest-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/phorest-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/phorest-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Phorest** MCP server u
 > Accessing staff timetable... Staff member 5544 is working from 9:00 AM to 6:00 PM today with a break scheduled at 1:00 PM. They have 3 available slots remaining.
 
 
+## ❓ FAQ
+
+**Q: Can I check in a client for their appointment using the AI?**
+Yes! Use the `checkin_appointment` tool with the Business ID, Branch ID, and Appointment ID. The agent will process the check-in immediately.
+
+**Q: How do I see a specific staff member's schedule?**
+You can use the `get_staff_timetable` tool. Just provide the Business ID, Branch ID, and Staff ID to see their working hours and availability.
+
+**Q: Is it possible to export client data to CSV?**
+Yes, you can initiate an export using `create_csv_export_job` and then retrieve the status or file using `get_csv_export_job`.
+
+
 ## Installation & Usage
 
-To install and use the **Phorest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/phorest-alternative](https://vinkius.com/mcp/phorest-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Phorest** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `phorest-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Phorest** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "phorest-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

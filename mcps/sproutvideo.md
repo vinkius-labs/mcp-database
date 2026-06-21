@@ -1,7 +1,6 @@
 # SproutVideo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sproutvideo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sproutvideo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sproutvideo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sproutvideo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,46 @@ Here are some examples of how you can interact with the **SproutVideo** MCP serv
 > Playlist created: "Product Tutorials". 5 videos added by view count: 1) "Getting Started Tutorial" (3,200 plays, 12 min). 2) "Feature Walkthrough" (1,890 plays, 8 min). 3) "Advanced Configuration" (1,234 plays, 15 min). 4) "API Integration Guide" (987 plays, 20 min). 5) "Mobile App Setup" (756 plays, 6 min). Total playlist duration: 61 minutes. Privacy: public (embeddable). Custom thumbnail generated from first video. Embed code and share link ready. SEO metadata: title and description auto-populated. Player: branded with company colors.
 
 
+## ❓ FAQ
+
+**Q: Can I list all my hosted videos using my AI agent?**
+Yes! Use the `list_videos` tool to retrieve a comprehensive list of all videos currently hosted in your account.
+
+
 ## Installation & Usage
 
-To install and use the **SproutVideo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sproutvideo](https://vinkius.com/mcp/sproutvideo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SproutVideo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sproutvideo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SproutVideo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sproutvideo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

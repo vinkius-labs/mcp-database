@@ -1,7 +1,6 @@
 # Natural Light Estimator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/natural-light-estimator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/natural-light-estimator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/natural-light-estimator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/natural-light-estimator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -61,12 +60,52 @@ Here are some examples of how you can interact with the **Natural Light Estimato
 > You can use the `recommend_improvements` tool, passing in 'dim' as the category. This will return concrete suggestions for increasing natural light or improving window placement.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between minimum area and window dimensions?**
+The system first calculates a 'minimum area' (e.g., 1/6 of floor space). The `normalizeAreaToWindowDimensions` tool then takes this abstract minimum and determines the most structurally sound width and height that achieves or exceeds that required area.
+
+**Q: Can I use these tools for a whole building, not just one room?**
+Yes. The `generateRoomSpecificationReport` tool accepts an array of multiple rooms and processes them sequentially. This allows you to generate a full specification report for every space in your floor plan.
+
+**Q: What if the required minimum area is too large for standard windows?**
+The `normalizeAreaToWindowDimensions` tool includes checks against physical feasibility. If a calculation results in dimensions that are structurally questionable or too large for typical openings, it will issue a warning flag within the final report.
+
+
 ## Installation & Usage
 
-To install and use the **Natural Light Estimator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/natural-light-estimator](https://vinkius.com/mcp/natural-light-estimator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Natural Light Estimator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `natural-light-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Natural Light Estimator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "natural-light-estimator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

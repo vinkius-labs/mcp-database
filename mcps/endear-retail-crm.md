@@ -1,7 +1,6 @@
 # Endear Retail CRM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/endear-retail-crm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/endear-retail-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/endear-retail-crm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/endear-retail-crm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Endear Retail CRM** MC
 > I've found 3 customers matching 'Sarah': 'Sarah Miller', 'Sarah Connor', and 'Sarah Williams'. All are in the 'Loyalty Member' segment. Would you like the profile details for Sarah Miller?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Endear API Key?**
+Log in to your Endear dashboard, navigate to **Settings > API**, and you can generate or retrieve your unique API Key from there. API access is typically available on professional and enterprise plans.
+
+**Q: Can the agent send messages to customers?**
+This integration currently focuses on listing and auditing customers, notes, and orders. Sending outbound SMS or emails via Endear should be managed through the Endear mobile app or dashboard clienteling interface.
+
+**Q: Does the integration show real-time stock levels?**
+You can retrieve product metadata using the list_retail_products tool. While it shows current product availability, detailed granular inventory across all locations should be confirmed within the Endear inventory module.
+
+
 ## Installation & Usage
 
-To install and use the **Endear Retail CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/endear-retail-crm](https://vinkius.com/mcp/endear-retail-crm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Endear Retail CRM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `endear-retail-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Endear Retail CRM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "endear-retail-crm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

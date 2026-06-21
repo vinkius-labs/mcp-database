@@ -1,7 +1,6 @@
 # Pesticide Dilution Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pesticide-dilution-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pesticide-dilution-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pesticide-dilution-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pesticide-dilution-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Pesticide Dilution Cal
 > The pre-harvest interval for atrazine is 30 days.
 
 
+## ❓ FAQ
+
+**Q: How do I calculate the amount of product per tank?**
+Use the `calculate_mixing_ratio` tool by providing the recommended dose, spray volume per hectare, and your tank capacity.
+
+**Q: Can I calculate total costs for a large area?**
+Yes, the `calculate_total_deployment` tool calculates the number of tanks required and the cost per hectare based on your total area.
+
+**Q: How do I find safety intervals for specific chemicals?**
+Use the `lookup_safety_warnings` tool with the name of the active ingredient to find the required pre-harvest interval.
+
+
 ## Installation & Usage
 
-To install and use the **Pesticide Dilution Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pesticide-dilution-calculator](https://vinkius.com/mcp/pesticide-dilution-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pesticide Dilution Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pesticide-dilution-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pesticide Dilution Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pesticide-dilution-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

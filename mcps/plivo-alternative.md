@@ -1,7 +1,6 @@
 # Plivo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plivo-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/plivo-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/plivo-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plivo-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Plivo** MCP server usi
 > I've retrieved the pricing for Brazil (BR). Outbound SMS is $0.05 per message, and inbound is free for mobile numbers. Would you like the voice rates as well?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Plivo Auth ID and Auth Token?**
+Log in to your [**Plivo Dashboard**](https://console.plivo.com/dashboard/), and you will find your Auth ID and Auth Token right on the front page. Copy and paste them below.
+
+**Q: Can the agent check international pricing?**
+Yes. Use the `list_pricing` tool providing the country ISO code (e.g., 'US', 'GB', 'BR'). Your agent will return detailed rates for inbound and outbound messages and calls.
+
+**Q: Is it possible to trigger an outbound call via the agent?**
+Yes. The `make_call` tool allows your agent to start an outbound voice call. You must provide a valid `answerUrl` which Plivo will fetch for instructions when the call is answered.
+
+
 ## Installation & Usage
 
-To install and use the **Plivo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/plivo-alternative](https://vinkius.com/mcp/plivo-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Plivo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `plivo-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Plivo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "plivo-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

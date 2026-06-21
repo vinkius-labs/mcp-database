@@ -1,7 +1,6 @@
 # BCB Inflação — IPCA, IGP-M, INPC e Expectativas MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bcb-inflacao-ipca-igp-m-inpc-e-expectativas)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bcb-inflacao-ipca-igp-m-inpc-e-expectativas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bcb-inflacao-ipca-igp-m-inpc-e-expectativas-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bcb-inflacao-ipca-igp-m-inpc-e-expectativas)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Source: BCB/IBGE, SGS series 433
 > The rental inflation tracker, IGP-M, retreated slightly by -0.15% pulling the 12-month accumulated down to an adjusted 4.83%.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between IPCA and IGP-M?**
+IPCA measures consumer prices (retail) for families with 1-40 minimum wages and is the official inflation target. IGP-M includes wholesale (60% IPA), consumer (30% IPC) and construction (10% INCC) prices, making it more volatile. IGP-M is used to adjust rents and contracts.
+
+**Q: Are Focus expectations updated regularly?**
+Yes. Market macroeconomic estimates are extracted fresh and synced weekly, mirroring the Monday morning official issues.
+
+**Q: Why should I use the INPC metric?**
+INPC restricts the coverage to households earning 1 to 5 minimum wages. It is predominantly requested by HR analysts when updating labor union contracts or social benefits bounds.
+
+
 ## Installation & Usage
 
-To install and use the **BCB Inflação — IPCA, IGP-M, INPC e Expectativas** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bcb-inflacao-ipca-igp-m-inpc-e-expectativas](https://vinkius.com/mcp/bcb-inflacao-ipca-igp-m-inpc-e-expectativas)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BCB Inflação — IPCA, IGP-M, INPC e Expectativas** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bcb-inflacao-ipca-igp-m-inpc-e-expectativas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BCB Inflação — IPCA, IGP-M, INPC e Expectativas** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bcb-inflacao-ipca-igp-m-inpc-e-expectativas": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

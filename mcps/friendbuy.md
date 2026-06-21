@@ -1,7 +1,6 @@
 # Friendbuy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/friendbuy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/friendbuy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/friendbuy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/friendbuy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,55 @@ Here are some examples of how you can interact with the **Friendbuy** MCP server
 > Purchase tracked successfully! The $50 conversion for order ORD-987 has been logged, and the referral reward logic for advocate Jane has been triggered.
 
 
+## ❓ FAQ
+
+**Q: How do I get my API Keys for Friendbuy?**
+Log in to your Friendbuy account, go to Settings > Developer, and you will find your Access Key and Secret Key.
+
+**Q: Can I manually log a purchase through the agent?**
+Yes! Use the 'track_conversion_purchase' tool. Provide the Order ID, amount, and customer email. If you include the 'referralCode', it will trigger the advocate's reward.
+
+**Q: How do I verify if a referral code is still valid?**
+Use the 'get_referral_code_status' tool. The agent will check the Developer API and return the active status and associated reward value.
+
+**Q: Is it possible to list webhooks?**
+Yes, the 'list_webhooks' tool retrieves all active webhook configurations so you can verify where real-time reward notifications are being sent.
+
+
 ## Installation & Usage
 
-To install and use the **Friendbuy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/friendbuy](https://vinkius.com/mcp/friendbuy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Friendbuy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `friendbuy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Friendbuy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "friendbuy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

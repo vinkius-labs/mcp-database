@@ -1,7 +1,6 @@
 # Urlbox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/urlbox)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/urlbox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/urlbox-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/urlbox)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Urlbox** MCP server us
 > Conversion complete! I've generated a professional PDF of the BBC homepage. You can download the document using the provided URL. Would you like me to capture any other site?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Urlbox API Key?**
+Log in to your [**Urlbox dashboard**](https://urlbox.io/dashboard), and you will find your API Key on the main page. Copy and paste it below.
+
+**Q: Can the agent take screenshots for mobile devices?**
+Yes. Use the `take_mobile_screenshot` tool. Your agent will render the website using a mobile user agent to verify how it looks on smartphones.
+
+**Q: Does it support high-resolution (Retina) images?**
+Yes. The `take_retina_screenshot` tool enables 2x scaling to provide high-density images suitable for high-resolution displays.
+
+
 ## Installation & Usage
 
-To install and use the **Urlbox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/urlbox](https://vinkius.com/mcp/urlbox)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Urlbox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `urlbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Urlbox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "urlbox": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

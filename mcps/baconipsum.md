@@ -1,7 +1,6 @@
 # BaconIpsum MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baconipsum)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baconipsum-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baconipsum-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baconipsum)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -64,12 +63,52 @@ Here are some examples of how you can interact with the **BaconIpsum** MCP serve
 > I've prepared 2 paragraphs wrapped in HTML tags: '<p>Bacon ipsum dolor sit amet...</p><p>Drumstick shoulder ball tip...</p>'
 
 
+## ❓ FAQ
+
+**Q: Can I mix bacon with standard Lorem Ipsum text?**
+Yes! When using the `generate_text` tool, set the `type` parameter to `meat-and-filler`. This will provide a mix of bacon-themed words and traditional Latin filler.
+
+**Q: Is it possible to generate a specific number of sentences instead of full paragraphs?**
+Absolutely. Use the `sentences` parameter in the `generate_text` tool. If provided, it will override the paragraph count and give you exactly the number of sentences requested.
+
+**Q: Can the tool return text with HTML tags already included?**
+Yes. By setting the `format` parameter to `html`, the `generate_text` tool will wrap the generated content in `<p>` tags, making it ready to paste directly into your web projects.
+
+
 ## Installation & Usage
 
-To install and use the **BaconIpsum** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/baconipsum](https://vinkius.com/mcp/baconipsum)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BaconIpsum** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `baconipsum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BaconIpsum** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "baconipsum": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

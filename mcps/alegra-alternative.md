@@ -1,7 +1,6 @@
 # Alegra MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alegra-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/alegra-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/alegra-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alegra-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Alegra** MCP server us
 > Your account has 5 tax configurations: IVA General (19%), IVA Reducido (5%), IVA Excluido (0%), ReteFuente (3.5% — applied on purchases over $1,165,000 COP), and ReteICA Bogotá (0.414%). All are active and properly mapped to their DIAN codes. Need me to check which items have which taxes assigned?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent issue a DIAN-compliant electronic invoice for Colombia?**
+Yes! Use the `create_invoice` tool with the client ID, line items, and dates. Alegra automatically handles DIAN electronic validation and stamping for Colombian tax compliance. The invoice number sequence is managed by Alegra's configured resolution.
+
+**Q: How do I look up a client's outstanding balance and contact details?**
+Use the `get_contact` tool with the client's Alegra ID. You'll receive their complete profile including legal name, NIT or CC number, fiscal regime, address, phone, email, and any outstanding receivable balance.
+
+**Q: Can I manage inventory across multiple warehouses through my AI agent?**
+Yes. Use `list_warehouses` to see all your configured locations, then use `list_items` to browse your catalog with stock levels per warehouse. You can also create new items with `create_item` specifying their type (product or service) and pricing.
+
+
 ## Installation & Usage
 
-To install and use the **Alegra** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/alegra-alternative](https://vinkius.com/mcp/alegra-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Alegra** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `alegra-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Alegra** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "alegra-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

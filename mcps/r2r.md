@@ -1,7 +1,6 @@
 # R2R MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/r2r)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/r2r-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/r2r-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/r2r)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,55 @@ Here are some examples of how you can interact with the **R2R** MCP server using
 > I executed the `get_health` probe. The R2R server replied with `status: ok` and is primed to accept vector operations.
 
 
+## ❓ FAQ
+
+**Q: What URL should I use for the R2R API URL?**
+If you are running R2R locally via Docker, it's typically `http://localhost:7272`. If you are using SciPhi Cloud or have it deployed on your own infrastructure, provide the exact public or private endpoint.
+
+**Q: Do I need an R2R API Key?**
+It depends on your deployment. Open deployments for local testing may not require a key. Production deployments or SciPhi Cloud environments require you to provide the generated key.
+
+**Q: What is the difference between RAG and Search?**
+The `search` tool issues a standard vector similarity match—it returns relevant raw snippets from your database. The `rag_query` tool asks the R2R server to perform the search and compute an intelligent answer wrapping those snippets using an LLM.
+
+**Q: Are document ingestions possible via chat?**
+No. This integration is designed for observational toolsets (listing documents, inspecting states, querying the index). Heavy ingestions of PDFs or websites should be handled through scripts or the dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **R2R** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/r2r](https://vinkius.com/mcp/r2r)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **R2R** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `r2r` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **R2R** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "r2r": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

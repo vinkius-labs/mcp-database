@@ -1,7 +1,6 @@
 # YMovE Fitness MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ymove-fitness)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ymove-fitness-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ymove-fitness-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ymove-fitness)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **YMovE Fitness** MCP se
 > Based on the YMovE nutrition database, a medium generic banana (118g) contains 105 calories. The macros are: 1.3g Protein, 27g Carbohydrates (including 3.1g of fiber and 14.4g of sugar), and 0.4g Fat.
 
 
+## ❓ FAQ
+
+**Q: Are the exercise videos permanent or temporary?**
+The video and thumbnail URLs returned by the API are pre-signed links that expire after 48 hours. If you are developing an app, you should not cache these URLs; instead, refetch the exercise details when displaying them.
+
+**Q: Can I generate a full weekly workout program?**
+Yes! Use the `generate_program` tool. You can specify your primary goal (like hypertrophy), the number of weeks, the equipment you have available, and how many days per week you plan to train. The agent will return a complete, day-by-day split.
+
+**Q: How does the meal plan generator work?**
+The `generate_meal_plan` tool uses a mathematical algorithm to select balanced recipes from the database (breakfast, lunch, dinner, snacks) that collectively hit your precise target calories and follow specific constraints like vegan or paleo.
+
+
 ## Installation & Usage
 
-To install and use the **YMovE Fitness** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ymove-fitness](https://vinkius.com/mcp/ymove-fitness)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **YMovE Fitness** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ymove-fitness` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **YMovE Fitness** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ymove-fitness": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

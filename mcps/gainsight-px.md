@@ -1,7 +1,6 @@
 # Gainsight PX MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gainsight-px)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gainsight-px-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gainsight-px-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gainsight-px)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **Gainsight PX** MCP ser
 > Event tracked! The 'Clicked Upgrade Button' event has been successfully logged for user_123. This data will now appear in your product usage analytics.
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Key for Gainsight PX?**
+Log in to Gainsight PX, go to Administration > Products, select your product, and you will find the API Key in the product settings.
+
+**Q: Which region should I select?**
+Select 'US' if your account is hosted at api.aptrinsic.com, or 'EU' if it is hosted at api-eu.aptrinsic.com.
+
+**Q: Can I identify new users through the agent?**
+Yes! Use the 'identify_px_user' tool and provide a unique 'identifyId'. The agent will create or update the user profile in Gainsight PX instantly.
+
+**Q: Does this server support tracking custom events?**
+Yes, the 'track_server_event' tool allows you to log custom behavioral events for any identified user directly from your backend or chat interface.
+
+
 ## Installation & Usage
 
-To install and use the **Gainsight PX** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gainsight-px](https://vinkius.com/mcp/gainsight-px)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gainsight PX** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gainsight-px` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gainsight PX** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gainsight-px": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

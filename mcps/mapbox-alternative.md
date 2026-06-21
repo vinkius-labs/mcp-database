@@ -1,7 +1,6 @@
 # Mapbox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapbox-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mapbox-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mapbox-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapbox-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Mapbox** MCP server us
 > I found 3 datasets for 'dev_user': 'city-parks-v1' (ID: cl123...), 'office-locations' (ID: cl456...), and 'transit-routes' (ID: cl789...). Which one would you like to inspect?
 
 
+## ❓ FAQ
+
+**Q: Can I calculate driving directions between two points using this server?**
+Yes! Use the `get_directions` tool. You need to provide a routing profile (like `mapbox/driving`) and the coordinates as a semicolon-separated string of longitude and latitude.
+
+**Q: How do I find information about map features at a specific coordinate?**
+You can use the `get_tilequery` tool. By providing a tileset ID and the longitude/latitude, the agent will retrieve data about the specific features located at that point.
+
+**Q: Is it possible to update my Mapbox datasets through the AI?**
+Yes, the `update_dataset_feature` tool allows you to modify a specific feature within a dataset by providing the dataset ID, feature ID, and the new GeoJSON data.
+
+
 ## Installation & Usage
 
-To install and use the **Mapbox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mapbox-alternative](https://vinkius.com/mcp/mapbox-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mapbox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mapbox-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mapbox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mapbox-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

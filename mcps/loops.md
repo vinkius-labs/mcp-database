@@ -1,7 +1,6 @@
 # Loops MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/loops)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/loops-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/loops-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/loops)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,55 @@ Here are some examples of how you can interact with the **Loops** MCP server usi
 > I sent the 'user-signed-up' event for newuser@example.com. This will trigger the welcome email journey in Loops.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Loops API key?**
+Log in to your Loops account, go to **Settings** → **API**, and generate a new API key. Ensure it has the necessary permissions. Then provide it when prompted by the MCP server setup.
+
+**Q: What operations are supported by this MCP server?**
+The server supports: testing API key validity, finding/creating/updating/deleting contacts, listing mailing lists, sending events to trigger email journeys, sending transactional emails, listing sent transactional emails, and checking contact suppression status.
+
+**Q: What is the difference between mailing lists and transactional emails in Loops?**
+Mailing lists are used for marketing campaigns and automated email journeys. Transactional emails are one-off, triggered messages like receipts, password resets, or order confirmations. Both are supported by this MCP server.
+
+**Q: How can I check if an email is suppressed in Loops?**
+Use the 'get_contact_suppression' tool provided by this MCP server. Simply ask the AI to check the suppression status for any email address, and it will tell you if that email is currently suppressed from receiving emails.
+
+
 ## Installation & Usage
 
-To install and use the **Loops** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/loops](https://vinkius.com/mcp/loops)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Loops** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `loops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Loops** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "loops": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

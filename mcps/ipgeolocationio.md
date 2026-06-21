@@ -1,7 +1,6 @@
 # IPGeolocation.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ipgeolocationio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ipgeolocationio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ipgeolocationio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ipgeolocationio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **IPGeolocation.io** MCP
 > Using the timezone conversion tool... 10:00 AM in America/New_York corresponds to 3:00 PM in Europe/London on the same day.
 
 
+## ❓ FAQ
+
+**Q: Can I detect if an IP address is a VPN or a security risk?**
+Yes. Use the `get_security` tool to retrieve a threat score and detect if the IP belongs to a VPN, Proxy, or Tor network. You can also use `bulk_security` for multiple IPs.
+
+**Q: How do I find the local time for a specific IP address?**
+Simply use the `get_timezone` tool with the target IP. It will return the current time, date, and full timezone details for that specific geographical location.
+
+**Q: Can I look up ASN information for a network?**
+Yes, the `get_asn` tool provides detailed information about Autonomous System Numbers, including routes and WHOIS responses for a specific ASN or IP.
+
+
 ## Installation & Usage
 
-To install and use the **IPGeolocation.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ipgeolocationio](https://vinkius.com/mcp/ipgeolocationio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IPGeolocation.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ipgeolocationio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IPGeolocation.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ipgeolocationio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

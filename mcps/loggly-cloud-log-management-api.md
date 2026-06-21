@@ -1,7 +1,6 @@
 # Loggly (Cloud Log Management API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/loggly-cloud-log-management-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/loggly-cloud-log-management-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/loggly-cloud-log-management-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/loggly-cloud-log-management-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Loggly (Cloud Log Mana
 > I've retrieved the user list. You have 3 active users: 'admin_user' (Role: Administrator), 'dev_user' (Role: User), and 'audit_bot' (Role: Read-Only).
 
 
+## ❓ FAQ
+
+**Q: How do I search for logs and see the results?**
+Searching is a two-step process: first, use `search_events` with your Lucene query to get a Result Set ID (rsid). Then, use `get_events` with that rsid to retrieve the actual log data.
+
+**Q: Can I send JSON logs directly from the AI?**
+Yes! Use the `send_event` tool and set `is_json` to true. You can pass a JSON string in the `event_data` field, and Loggly will parse it as a structured object.
+
+**Q: How can I see which fields are most common in my logs?**
+You can use `list_fields` to see all available fields, or use `get_field_values` with a specific field name to get a count of the top values (faceting) for that field.
+
+
 ## Installation & Usage
 
-To install and use the **Loggly (Cloud Log Management API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/loggly-cloud-log-management-api](https://vinkius.com/mcp/loggly-cloud-log-management-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Loggly (Cloud Log Management API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `loggly-cloud-log-management-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Loggly (Cloud Log Management API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "loggly-cloud-log-management-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

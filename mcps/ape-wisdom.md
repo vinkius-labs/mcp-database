@@ -1,7 +1,6 @@
 # Ape Wisdom MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ape-wisdom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ape-wisdom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ape-wisdom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ape-wisdom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Ape Wisdom** MCP serve
 > Here's your market snapshot. For stocks, NVDA and AMD are dominating the conversation. For crypto, BTC and ETH remain at the top, with a surge in interest for modular blockchains.
 
 
+## ❓ FAQ
+
+**Q: Is an API key required for Ape Wisdom?**
+No, this server uses Ape Wisdom's public API v1.0, which does not require authentication for basic usage.
+
+**Q: Which social platforms are tracked?**
+Ape Wisdom primarily tracks popular investment-related subreddits on Reddit (like r/wallstreetbets, r/stocks, r/CryptoCurrency) and the /biz/ board on 4chan.
+
+**Q: What does the sentiment value represent?**
+The sentiment value indicates the general tone of the social conversation. Values closer to 1.0 indicate highly positive sentiment, while lower values suggest negative or cautious conversation.
+
+
 ## Installation & Usage
 
-To install and use the **Ape Wisdom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ape-wisdom](https://vinkius.com/mcp/ape-wisdom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ape Wisdom** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ape-wisdom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ape Wisdom** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ape-wisdom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

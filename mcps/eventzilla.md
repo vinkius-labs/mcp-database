@@ -1,7 +1,6 @@
 # Eventzilla MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventzilla)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eventzilla-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eventzilla-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventzilla)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Eventzilla** MCP serve
 > For event ID '12345', you have 3 active discount codes: 'EARLYBIRD' (20% off), 'VIPACCESS' (Free), and 'GROUP10'. EARLYBIRD has been used 45 times out of 50. Would you like to see the usage for VIPACCESS?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Eventzilla API Key?**
+Log in to your Eventzilla account, navigate to **Settings > API Integration**, and you can generate or retrieve your unique API Key from there. API access is available for all professional and higher plans.
+
+**Q: Does the integration support webinars?**
+Yes, Eventzilla supports various event types including in-person events, webinars, and hybrid classes. You can manage them all through the standard events tools.
+
+**Q: Can the agent validate discount codes?**
+Yes, you can use the list_event_discount_codes tool to retrieve all active codes for an event and check their current usage limits and validity.
+
+
 ## Installation & Usage
 
-To install and use the **Eventzilla** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eventzilla](https://vinkius.com/mcp/eventzilla)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Eventzilla** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eventzilla` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Eventzilla** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eventzilla": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

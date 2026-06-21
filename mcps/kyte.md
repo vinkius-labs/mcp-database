@@ -1,7 +1,6 @@
 # Kyte MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kyte)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kyte-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kyte-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kyte)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Kyte** MCP server usin
 > Checking inventory… 2 products are below your warning level: 'Artisanal Honey' (2 left) and 'Handmade Soap' (0 left). Should I list these for your next supplier order?
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Kyte API Key?**
+Log in to the Kyte web dashboard or app, navigate to **Settings**, and look for the **API** or **Developer** section to generate a key.
+
+**Q: Can I see stock levels for specific products?**
+Yes, use the `get_inventory_status` tool to see quantities for all products in your catalog.
+
+**Q: Does this support multiple store locations?**
+The API key is typically linked to a specific store account. Ensure you are using the correct key for the desired store.
+
+
 ## Installation & Usage
 
-To install and use the **Kyte** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kyte](https://vinkius.com/mcp/kyte)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kyte** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kyte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kyte** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kyte": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

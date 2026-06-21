@@ -1,7 +1,6 @@
 # Revolut Business MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/revolut-business)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/revolut-business-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/revolut-business-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/revolut-business)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -132,12 +131,52 @@ Here are some examples of how you can interact with the **Revolut Business** MCP
 > Completed profile injection! 'AWS Services' is now established within your internal directory and readily accepts mass payouts.
 
 
+## ❓ FAQ
+
+**Q: Will an AI mistake drain our corporate funds globally?**
+Fortunately, the Revolut API restricts direct instantaneous payouts primarily via Drafts. If you trigger `revolut_create_draft_payment`, the LLM compiles and packages up perfectly formatted vendor-payments pushing them into your queue. A Human Finance Administrator generally just presses 'Approve' inside their Revolut Business app. Total isolation of power.
+
+**Q: Can I convert currencies with the robot?**
+Yes! Revolut Business is famous for inter-banking rates. Use the `revolut_exchange_currency` tool dictating you wish to move 5,000 USD to your GBP corporate holding account. Instantly, the system executes an institutional-tier forex buy sequence under the hood settling immediately.
+
+**Q: How do I access full transaction histories?**
+The tool `revolut_get_transactions` hooks straight into Revolut's raw global event log, feeding exactly dates, references, and amounts for AI auditing.
+
+
 ## Installation & Usage
 
-To install and use the **Revolut Business** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/revolut-business](https://vinkius.com/mcp/revolut-business)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Revolut Business** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `revolut-business` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Revolut Business** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "revolut-business": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

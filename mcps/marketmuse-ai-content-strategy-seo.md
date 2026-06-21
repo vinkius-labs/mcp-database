@@ -1,7 +1,6 @@
 # MarketMuse (AI Content Strategy & SEO) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marketmuse-ai-content-strategy-seo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/marketmuse-ai-content-strategy-seo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/marketmuse-ai-content-strategy-seo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marketmuse-ai-content-strategy-seo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **MarketMuse (AI Content
 > Analyzing draft… Your current Content Score is 18/100. To improve, you should include terms like 'Knowledge Graph', 'Search Intent', and 'Topic Authority' which are currently missing. The recommended target score for this topic is 35+. Would you like more term suggestions?
 
 
+## ❓ FAQ
+
+**Q: Can my agent tell me which topics I need to include to rank for a keyword?**
+Yes. Use the `get_topic_model` tool by providing your target keyword. Your agent will return a full semantic list of related entities and importance scores, showing you exactly what topics Google expects high-authority content to cover.
+
+**Q: How do I check if my draft content is well-optimized through a conversation?**
+The `score_content` tool allows your agent to compare your text against MarketMuse's AI models. You'll receive a content score (0-100) and a list of missing terms or topics needed to increase your semantic authority.
+
+**Q: Can my agent help me find content gaps on my website?**
+Absolutely. Use the `competitive_analysis` tool with your URL and a target topic. Your agent will visualize which related topics your competitors cover that you are currently missing, identifying clear opportunities for expansion.
+
+
 ## Installation & Usage
 
-To install and use the **MarketMuse (AI Content Strategy & SEO)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/marketmuse-ai-content-strategy-seo](https://vinkius.com/mcp/marketmuse-ai-content-strategy-seo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MarketMuse (AI Content Strategy & SEO)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `marketmuse-ai-content-strategy-seo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MarketMuse (AI Content Strategy & SEO)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "marketmuse-ai-content-strategy-seo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

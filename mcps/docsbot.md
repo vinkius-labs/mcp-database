@@ -1,7 +1,6 @@
 # DocsBot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docsbot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docsbot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docsbot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docsbot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **DocsBot** MCP server u
 > The last 5 questions for 'Sales Bot' include: 'What are your pricing plans?', 'Do you offer an annual discount?', and 'How do I upgrade?'. All questions received valid AI answers. Should I pull the detailed logs for any of them?
 
 
+## ❓ FAQ
+
+**Q: How do I get a DocsBot API Key?**
+Log in to your DocsBot account, navigate to the API section in your account settings, and you can generate or retrieve your unique API Key from there.
+
+**Q: Can the agent train my bots?**
+This integration currently focuses on querying bots and auditing sources. Adding new sources or triggering full training cycles should be managed via the DocsBot dashboard.
+
+**Q: Which AI models are used?**
+DocsBot supports various models including GPT-3.5 and GPT-4. The agent will retrieve results based on the specific model configured for your bot in your account.
+
+
 ## Installation & Usage
 
-To install and use the **DocsBot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/docsbot](https://vinkius.com/mcp/docsbot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DocsBot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `docsbot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DocsBot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "docsbot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

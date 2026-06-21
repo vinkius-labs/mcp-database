@@ -1,7 +1,6 @@
 # lemon.markets MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lemonmarkets)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lemonmarkets-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lemonmarkets-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lemonmarkets)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **lemon.markets** MCP se
 > I've retrieved your orders. You have 2 active orders: a BUY for Apple (quantity: 10) and a SELL for BMW (quantity: 5). Both are currently in 'activated' status.
 
 
+## ❓ FAQ
+
+**Q: How do I search for an instrument if I don't have the ISIN?**
+Use the `search_market_instruments` tool with a keyword like 'Apple' or 'Tesla' to retrieve a list of matching assets and their unique ISINs.
+
+**Q: Do I need to activate an order after placing it?**
+Yes, lemon.markets usually requires orders to be explicitly activated using the `activate_pending_order` tool before they are sent to the exchange.
+
+**Q: Can I see my current portfolio positions?**
+Absolutely. Use the `list_active_positions` tool to retrieve a list of all instruments you currently hold in your brokerage account.
+
+
 ## Installation & Usage
 
-To install and use the **lemon.markets** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lemonmarkets](https://vinkius.com/mcp/lemonmarkets)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **lemon.markets** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lemonmarkets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **lemon.markets** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lemonmarkets": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

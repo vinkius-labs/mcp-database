@@ -1,7 +1,6 @@
 # Midjourney MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/midjourney)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/midjourney-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/midjourney-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/midjourney)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Midjourney** MCP serve
 > 📝 Generated prompt: 'ethereal watercolor painting of a lone wolf howling at a blood moon, dark forest silhouette, mystical atmosphere --ar 16:9 --v 6'. Use this prompt with imagine to recreate a similar image.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Midjourney API key?**
+Sign up at [Ace Data Cloud](https://acedata.cloud/) and subscribe to the Midjourney Imagine API service. You'll receive an API key that works with this MCP server.
+
+**Q: What's the difference between upscale and variation?**
+Upscale increases resolution of a specific grid image (1-4) to full quality. Variation creates 4 new creative alternatives based on that image's style and composition. Use upscale for final output, variation for exploration.
+
+**Q: How long does image generation take?**
+Typically 30-60 seconds. Use get_task_status to check progress. The API returns a task ID immediately, and you can poll for completion or set a callback URL for async notification.
+
+
 ## Installation & Usage
 
-To install and use the **Midjourney** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/midjourney](https://vinkius.com/mcp/midjourney)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Midjourney** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `midjourney` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Midjourney** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "midjourney": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

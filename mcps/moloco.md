@@ -1,7 +1,6 @@
 # Moloco MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moloco)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moloco-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moloco-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moloco)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Moloco** MCP server us
 > Retrieving balance... Your AdAccount AC-12345 has a remaining balance of $2,450.00 with a daily budget threshold of $500.00. Based on your current spend, this should last for approximately 5 days.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Moloco API Key?**
+You can generate an API Key in the Moloco Ads Developer Portal. This key allows the server to authenticate requests on your behalf.
+
+**Q: Can I pause a campaign using this server?**
+Yes! Use the `update_campaign_status` tool and set the status to 'PAUSED'. You can also re-enable it by setting the status to 'ENABLED'.
+
+**Q: What kind of analytics reports can I generate?**
+The `get_analytics_report` tool allows you to retrieve performance metrics for an AdAccount within a specific date range, helping you track spend, impressions, and conversions.
+
+
 ## Installation & Usage
 
-To install and use the **Moloco** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/moloco](https://vinkius.com/mcp/moloco)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Moloco** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `moloco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Moloco** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "moloco": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

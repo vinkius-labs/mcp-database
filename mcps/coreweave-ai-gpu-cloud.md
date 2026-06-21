@@ -1,7 +1,6 @@
 # CoreWeave (AI GPU Cloud) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coreweave-ai-gpu-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coreweave-ai-gpu-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coreweave-ai-gpu-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coreweave-ai-gpu-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **CoreWeave (AI GPU Clou
 > I've compiled the list. You have 3 active inference gateways routing traffic to 5 deployments, including your 'llama-3-70b-prod' service. All gateways are reporting healthy status.
 
 
+## ❓ FAQ
+
+**Q: Can I list all my active Kubernetes clusters across the CoreWeave infrastructure?**
+Yes. By using the `list_clusters` tool, your agent will retrieve a complete list of all bare-metal Kubernetes clusters (CKS) managed under your account.
+
+**Q: How do I check the specific network configuration of a VPC?**
+You can use the `get_vpc` tool by providing the specific VPC ID. The agent will return detailed information about network isolation and configuration for that resource.
+
+**Q: Is it possible to create a new inference gateway via the AI agent?**
+Absolutely. Use the `create_gateway` tool with the required specification JSON. This allows you to set up routing and authentication for your AI model traffic programmatically.
+
+
 ## Installation & Usage
 
-To install and use the **CoreWeave (AI GPU Cloud)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coreweave-ai-gpu-cloud](https://vinkius.com/mcp/coreweave-ai-gpu-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CoreWeave (AI GPU Cloud)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coreweave-ai-gpu-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CoreWeave (AI GPU Cloud)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coreweave-ai-gpu-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

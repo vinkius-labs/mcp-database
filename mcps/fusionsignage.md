@@ -1,7 +1,6 @@
 # FusionSignage MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fusionsignage)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fusionsignage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fusionsignage-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fusionsignage)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **FusionSignage** MCP se
 > Active schedules: 4. 1) 'Business Hours' — Mon-Fri 8AM-6PM, plays 'Corporate News' on all lobby screens. 2) 'Lunch Menu' — Mon-Fri 11AM-2PM, plays 'Daily Menu' on cafeteria screens. 3) 'Weekend Mode' — Sat-Sun all day, plays 'Welcome Loop' on reception. 4) 'After Hours' — Mon-Fri 6PM-8AM, plays 'Security Info' on all screens. Screen groups: 1) 'Lobby' (3 screens). 2) 'Cafeteria' (2 screens). 3) 'Meeting Rooms' (5 screens). 4) 'External' (2 screens). Would you like to create a new schedule or modify a group?
 
 
+## ❓ FAQ
+
+**Q: Can I monitor which screens are online or offline in real time?**
+Yes. Use `list_screens` to see all screens with their current online/offline status and assigned content. For a specific screen, use `get_screen_status` to check real-time connectivity and playback status. Use `get_screen` for detailed configuration including orientation and playlist assignment.
+
+**Q: Can I create a playlist and assign it to a screen?**
+Yes. Use `create_playlist` with a JSON payload containing name and media items. Then use `assign_playlist` with the screen ID and playlist ID to push it to a display. Use `update_playlist` to modify content order or add new media, and `delete_playlist` to remove unused playlists.
+
+**Q: Can I schedule content to play at specific times?**
+Yes. The `create_schedule` tool accepts a JSON configuration with time slots, playlist rotations, and screen assignments. Use `list_schedules` to view all active schedules. Combine with `list_groups` to manage multiple screens simultaneously through group assignments.
+
+
 ## Installation & Usage
 
-To install and use the **FusionSignage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fusionsignage](https://vinkius.com/mcp/fusionsignage)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FusionSignage** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fusionsignage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FusionSignage** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fusionsignage": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

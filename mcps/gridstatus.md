@@ -1,7 +1,6 @@
 # GridStatus MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gridstatus)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gridstatus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gridstatus-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gridstatus)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -340,12 +339,55 @@ Here are some examples of how you can interact with the **GridStatus** MCP serve
 > Fetching PJM day-ahead LMP... Tomorrow's hourly prices at the Houston hub range from $18/MWh (3 AM) to $42/MWh (7 PM peak). The daily average is $28/MWh. Cheapest hours are 2-5 AM ($18-20/MWh), most expensive are 5-8 PM ($38-42/MWh). Prices are moderate compared to recent weeks.
 
 
+## ❓ FAQ
+
+**Q: Which US electricity grid operators (ISOs) are supported?**
+The GridStatus API supports all major US Independent System Operators: ERCOT (Texas), CAISO (California), PJM (Mid-Atlantic/Midwest), MISO (Midwest), NYISO (New York), ISO-NE (New England), and SPP (Southwest/Central). Each ISO provides different datasets including load, fuel mix, LMP pricing, and standardized data depending on what they report.
+
+**Q: How do I get a GridStatus API key and what are the usage limits?**
+Visit https://www.gridstatus.io/ and create a free account. Your API key will be available in your account settings. The free tier includes 500,000 rows per month, which is sufficient for most research and analysis use cases. Use the `get_api_usage` tool to monitor your remaining quota. Higher tiers are available for commercial applications requiring more data access.
+
+**Q: What is the difference between LMP and SPP pricing data?**
+LMP (Locational Marginal Pricing) is used by most ISOs (PJM, CAISO, MISO, NYISO, ISO-NE, SPP) and represents the wholesale electricity price at specific nodes. SPP (Settlement Point Price) is ERCOT's equivalent for Texas. Both measure $/MWh but use different market mechanisms. LMP has day-ahead hourly and real-time 5-minute intervals. ERCOT SPP has day-ahead hourly and real-time 15-minute intervals. Both include prices at trading hubs (e.g. HB_HOUSTON, HB_NORTH), load zones, and resource zones.
+
+**Q: Can I get renewable energy percentage data from the fuel mix?**
+Yes! Use the `get_fuel_mix` tool with ISOs that support it (ERCOT, CAISO, ISO-NE). The response includes generation breakdown by source: solar, wind, hydro, natural_gas, coal, nuclear, and others. You can calculate the renewable percentage by summing solar + wind + hydro and dividing by total generation. Note that fuel mix data availability varies by ISO — ERCOT and CAISO have the most comprehensive renewable tracking.
+
+
 ## Installation & Usage
 
-To install and use the **GridStatus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gridstatus](https://vinkius.com/mcp/gridstatus)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GridStatus** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gridstatus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GridStatus** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gridstatus": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

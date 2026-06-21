@@ -1,7 +1,6 @@
 # API Design Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/api-design-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/api-design-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/api-design-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/api-design-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **API Design Prover** MC
 > Verdict: SHAPE_INCONSISTENT. Your responses lack a unified envelope. Returning raw arrays on lists and raw objects on detail/creation routes prevents consistent client-side parsing. Standardize using an envelope structure first.
 
 
+## ❓ FAQ
+
+**Q: Why does API Design Prover require RFC 7807?**
+RFC 7807 (Problem Details) is the industry standard for HTTP API error shapes. It ensures that regardless of the endpoint or technology, client developers receive errors they can easily parse and handle.
+
+**Q: What versioning methods are supported?**
+Path versioning (e.g., `/v1/users`), media type/header versioning, or query parameters. Path versioning is highly recommended due to its simple implementation and client compatibility.
+
+**Q: Does it enforce GraphQL standards?**
+This tool is focused on REST APIs and HTTP resource design. For GraphQL or gRPC, you can adapt the pivots, but out-of-the-box checks validate HTTP status, HTTP verbs, and REST envelope consistency.
+
+
 ## Installation & Usage
 
-To install and use the **API Design Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/api-design-prover](https://vinkius.com/mcp/api-design-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **API Design Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `api-design-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **API Design Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "api-design-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

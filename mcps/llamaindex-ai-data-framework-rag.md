@@ -1,7 +1,6 @@
 # LlamaIndex (AI Data Framework & RAG) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/llamaindex-ai-data-framework-rag)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/llamaindex-ai-data-framework-rag-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/llamaindex-ai-data-framework-rag-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/llamaindex-ai-data-framework-rag)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **LlamaIndex (AI Data Fr
 > I've identified 3 active LlamaCloud projects: 'Customer-Service-RAG' (ID: proj-001), 'Internal-Knowledge-Base' (ID: proj-005), and 'Market-Analysis-Tools' (ID: proj-008). Each project manages its own set of pipelines and indices. Which one would you like to explore?
 
 
+## ❓ FAQ
+
+**Q: Can I query my indexed documents using natural language through my agent?**
+Yes. Use the `query_pipeline` tool by providing the Pipeline ID and your natural language question. Your agent will trigger a real-time RAG extraction and return a synthesized answer based on the relevant source documents found in the index.
+
+**Q: How do I check which files have been successfully ingested into a pipeline?**
+The `list_files` tool allows your agent to retrieve explicit metadata for all physical documents attached to a pipeline. This is perfect for auditing your data source boundaries and ensuring all required documents are correctly indexed.
+
+**Q: Can my agent manage multiple semantic indices?**
+Absolutely. Use the `list_indexes` tool to see all active semantic stores managed by LlamaCloud. Your agent will report the index names and types, making it easy to identify the correct target for your search or ingestion workflows.
+
+
 ## Installation & Usage
 
-To install and use the **LlamaIndex (AI Data Framework & RAG)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/llamaindex-ai-data-framework-rag](https://vinkius.com/mcp/llamaindex-ai-data-framework-rag)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LlamaIndex (AI Data Framework & RAG)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `llamaindex-ai-data-framework-rag` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LlamaIndex (AI Data Framework & RAG)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "llamaindex-ai-data-framework-rag": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

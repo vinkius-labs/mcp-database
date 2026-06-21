@@ -1,7 +1,6 @@
 # ERS USDA (Economic Research) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ers-usda-economic-research)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ers-usda-economic-research-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ers-usda-economic-research-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ers-usda-economic-research)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **ERS USDA (Economic Res
 > I've found the available farm types. Categories include 'operator households', 'commercial farms', and various other classifications based on production and economic size.
 
 
+## ❓ FAQ
+
+**Q: What is required to fetch specific survey results using this server?**
+To use the `get_arms_surveydata` tool, you must provide at least one year and either a 'report' name (like income+statement) or a specific 'variable' ID (like igcfi).
+
+**Q: Can I see which states are available in the ARMS dataset?**
+Yes! Use the `get_arms_states` tool to retrieve a list of all U.S. states covered by the survey along with their associated metadata.
+
+**Q: How do I find the meaning of a specific variable code like 'igcfi'?**
+You can use the `get_arms_variables` tool to fetch detailed metadata and descriptions for all variables used in the Agricultural Resource Management Survey.
+
+
 ## Installation & Usage
 
-To install and use the **ERS USDA (Economic Research)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ers-usda-economic-research](https://vinkius.com/mcp/ers-usda-economic-research)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ERS USDA (Economic Research)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ers-usda-economic-research` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ERS USDA (Economic Research)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ers-usda-economic-research": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # FMCSA SaferWeb (Carrier Safety) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fmcsa-saferweb-carrier-safety)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fmcsa-saferweb-carrier-safety-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fmcsa-saferweb-carrier-safety-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fmcsa-saferweb-carrier-safety)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **FMCSA SaferWeb (Carrie
 > Querying MC 987654... The electronic record for this carrier indicates 42 driver inspections with a 2.4% out-of-service rate, which is below the national average. There have been 2 tow-away crashes recorded in the past two years.
 
 
+## ❓ FAQ
+
+**Q: Can I look up a trucking company using just its legal name?**
+Yes! Use the `get_company_snapshot` tool and set the `query_param` to `COMPANY_NAME`. The agent will search the FMCSA database and return the most relevant carrier record.
+
+**Q: What specific safety data is included in the snapshot?**
+The `get_company_snapshot` tool provides a full record including USDOT/MC numbers, operation status, inspection totals (Driver, Vehicle, Hazmat), crash summaries, and the official safety rating.
+
+**Q: Does this tool support searching by MC or MX numbers?**
+Absolutely. Simply provide the MC/MX number to the `get_company_snapshot` tool with the `query_param` set to `MC_MX` to retrieve the carrier's electronic record.
+
+
 ## Installation & Usage
 
-To install and use the **FMCSA SaferWeb (Carrier Safety)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fmcsa-saferweb-carrier-safety](https://vinkius.com/mcp/fmcsa-saferweb-carrier-safety)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FMCSA SaferWeb (Carrier Safety)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fmcsa-saferweb-carrier-safety` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FMCSA SaferWeb (Carrier Safety)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fmcsa-saferweb-carrier-safety": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

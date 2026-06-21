@@ -1,7 +1,6 @@
 # Skylink MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skylink)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/skylink-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/skylink-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skylink)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Skylink** MCP server u
 > Fetching team metrics... This month, Sarah leads with 142 calls made and 8 closed deals ($52k revenue). Mark follows with 95 calls and 4 closed deals ($28k revenue). Would you like to review the call outcome distributions?
 
 
+## ❓ FAQ
+
+**Q: How can my AI retrieve the list of new leads that haven't been contacted yet?**
+Simply use the `list_new_leads` tool. Your agent will instantly retrieve all uncontacted prospects in your CRM, complete with contact details and source information, allowing you to prioritize outreach without opening the dashboard.
+
+**Q: Is it possible to track the total value of deals currently in negotiation?**
+Yes. By utilizing the `get_pipeline_deals` action and filtering by the 'negotiation' stage, your AI agent can compile all active opportunities along with their monetary value and estimated close dates.
+
+**Q: Can I automatically monitor the performance and call metrics of my sales team?**
+Absolutely. Ask the agent to run the `get_agent_metrics` tool. It will compile calls made, deals closed, and revenue generated per agent, giving you an immediate view of team accountability and coaching needs.
+
+
 ## Installation & Usage
 
-To install and use the **Skylink** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/skylink](https://vinkius.com/mcp/skylink)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Skylink** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `skylink` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Skylink** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "skylink": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

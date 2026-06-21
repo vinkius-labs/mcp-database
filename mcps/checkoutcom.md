@@ -1,7 +1,6 @@
 # Checkout.com MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkoutcom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/checkoutcom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/checkoutcom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkoutcom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Checkout.com** MCP ser
 > Processing refund of $10.50 (1050 minor units) for pay_789... The refund has been successfully requested. The new status will be reflected in the payment actions shortly.
 
 
+## ❓ FAQ
+
+**Q: Can I process a refund for a payment ID through the agent?**
+Yes! Use the `refund_checkout_payment` tool with the payment ID. You can also specify an optional amount in minor units for a partial refund. The agent will trigger the refund process in Checkout.com immediately.
+
+**Q: How do I see the full history of actions for a payment?**
+Use the `list_payment_actions` tool with the unique payment ID. Your agent will fetch all lifecycle events, such as Authorization, Capture, and Refund, along with their timestamps.
+
+**Q: Where do I find my API Prefix?**
+The API Prefix is the first 8 characters of your client_id (excluding the cli_ prefix). You can also find it in your Checkout.com Hub under Developers -> API Keys.
+
+
 ## Installation & Usage
 
-To install and use the **Checkout.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/checkoutcom](https://vinkius.com/mcp/checkoutcom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Checkout.com** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `checkoutcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Checkout.com** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "checkoutcom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

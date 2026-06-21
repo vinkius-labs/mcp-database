@@ -1,7 +1,6 @@
 # Spellbook Legal AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spellbook-legal-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spellbook-legal-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spellbook-legal-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spellbook-legal-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -167,12 +166,55 @@ Here are some examples of how you can interact with the **Spellbook Legal AI** M
 > Market Comparison for Indemnification: 1) Market Standard (65% of contracts): Mutual indemnification for IP infringement, confidentiality breaches, and third-party claims, 2) Pro-Buyer Position (20%): Seller indemnifies buyer for all claims arising from seller's performance, with no cap, 3) Pro-Seller Position (15%): Limited indemnification capped at fees paid in prior 12 months, excluding consequential damages. Your current clause aligns with Market Standard.
 
 
+## ❓ FAQ
+
+**Q: What types of contracts can Spellbook analyze?**
+Spellbook can analyze a wide range of commercial contracts including NDAs, MSAs, SOWs, employment agreements, vendor agreements, customer contracts, licensing agreements, real estate contracts, and more. The AI is trained on thousands of market precedents and can identify risks, non-standard terms, and missing clauses across all common commercial contract types.
+
+**Q: How does the market comparison feature work?**
+The market comparison feature compares your contract clauses against 2,000+ market precedents to show how your terms compare to market standards. It shows pro-buyer, pro-seller, and market-standard positions for each clause type, helping you understand whether your terms are favorable, aggressive, or in line with market norms.
+
+**Q: How do I get a Spellbook API key?**
+Visit Spellbook.legal and sign up for an account. Navigate to Settings → Integrations or API Settings in your account dashboard to generate an API key. The key gives you access to contract analysis, clause drafting, risk detection, and market comparison features. Contact Spellbook support if you need help setting up API access.
+
+**Q: Can Spellbook draft custom clauses for specific jurisdictions?**
+Yes! When drafting clauses with `draft_spellbook_clause`, you can specify the jurisdiction (e.g. New York, Delaware, California, UK, EU), party position (pro-buyer, pro-seller, neutral), and custom instructions. The AI generates clauses tailored to the specified jurisdiction's legal requirements and your preferred negotiating position.
+
+
 ## Installation & Usage
 
-To install and use the **Spellbook Legal AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/spellbook-legal-ai](https://vinkius.com/mcp/spellbook-legal-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Spellbook Legal AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `spellbook-legal-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Spellbook Legal AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "spellbook-legal-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

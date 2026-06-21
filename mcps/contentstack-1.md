@@ -1,7 +1,6 @@
 # Contentstack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstack-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contentstack-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contentstack-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstack-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Contentstack** MCP ser
 > Retrieving schema for 'product_schema'... This model includes fields like 'product_name' (Text), 'sku' (Symbol), 'price' (Number), and 'gallery' (File Reference). I can decode the specific validation rules for you.
 
 
+## ❓ FAQ
+
+**Q: Can my agent create new entries in Contentstack?**
+Yes. Use the 'create_cms_entry' tool. Provide the content type UID and a JSON object containing the entry fields. The agent will orchestrate the absolute explicit bindings to generate a new draft in your stack.
+
+**Q: How do I publish an entry to multiple environments via chat?**
+Use the 'publish_to_environment' tool. Provide the content type UID, the entry UID, and a comma-separated list of environments (e.g., 'production,staging'). The agent will trigger the exact sequence to push your data live.
+
+**Q: Can I inspect the fields and validation rules of a content type?**
+Absolutely. The 'get_schema_details' tool retrieves the structural extraction of properties for a specific content type UID, showing you exactly which fields are required and what data the database expects.
+
+
 ## Installation & Usage
 
-To install and use the **Contentstack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/contentstack-1](https://vinkius.com/mcp/contentstack-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Contentstack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `contentstack-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Contentstack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "contentstack-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

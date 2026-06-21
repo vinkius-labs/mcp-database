@@ -1,7 +1,6 @@
 # American Airlines MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/american-airlines)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/american-airlines-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/american-airlines-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/american-airlines)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **American Airlines** MC
 > I'll get the terminal information and services for ORD airport.
 
 
+## ❓ FAQ
+
+**Q: Can I book flights using this MCP server?**
+No, this server is for informational and tracking purposes only. It provides flight status, schedules, and airport info. Booking requires a separate commercial integration or using the AA website/app directly.
+
+**Q: Which flights are supported?**
+This API supports American Airlines and American Eagle flights. It provides data for flights operated by AA, including code-share flights where AA is the marketing carrier.
+
+**Q: How do I get an API key?**
+You can register for a free API key at the [American Airlines Developer Portal](https://developer.aa.com/). Once registered, create a new application to generate your key for testing and development.
+
+
 ## Installation & Usage
 
-To install and use the **American Airlines** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/american-airlines](https://vinkius.com/mcp/american-airlines)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **American Airlines** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `american-airlines` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **American Airlines** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "american-airlines": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

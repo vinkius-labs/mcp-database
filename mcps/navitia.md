@@ -1,7 +1,6 @@
 # Navitia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/navitia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/navitia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/navitia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/navitia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -106,12 +105,52 @@ Here are some examples of how you can interact with the **Navitia** MCP server u
 > Generating isochrone from Lyon Part-Dieu with 45-minute radius (2700 seconds)... The reachable area covers most of Lyon metropolitan area including: City center (Presqu'ile) — 15 minutes by Metro A, Villeurbanne — 10 minutes by Metro A or Tram T1, Confluence district — 20 minutes by Tram T1, Gerland — 15 minutes by Metro B, Vaise — 20 minutes by Metro D, Caluire-et-Cuire — 25 minutes by Bus C, Ecully — 30 minutes by Tram T6, Bron — 30 minutes by Tram T3, Venissieux — 25 minutes by Metro D, and Oullins — 15 minutes by Metro B. Total accessible area spans approximately 12km radius. Would you like the full GeoJSON polygon for mapping, or details about accessibility to any specific neighborhood?
 
 
+## ❓ FAQ
+
+**Q: Can my AI plan a complete multimodal trip from a Paris metro station to a suburb using public transit?**
+Yes! Use the `plan_journey` tool with the origin station name or coordinates (e.g., "Gare du Nord, Paris" or "2.3553;48.8800") and the destination (e.g., "La Defense, Puteaux" or coordinates). Navitia will return complete multimodal itineraries combining metro, RER, bus, tram, and walking with departure times, arrival times, total duration, number of transfers, detailed legs with line names and operators, walking distances, real-time disruption alerts, and accessibility information. You can specify traveler profiles including wheelchair access, slow walker, or luggage for tailored routing.
+
+**Q: How do I check if there are any metro or bus disruptions affecting my planned route in Paris?**
+Use the `get_disruptions` tool with the region parameter set to "fr-idf" for Ile-de-France (Paris region). This returns all active disruptions with affected lines, routes, stops, severity levels, cause types (incident, maintenance, strike, weather), start and end timestamps, and impact descriptions. You can also check disruptions directly within journey planning results, as Navitia automatically injects disruption information into journey responses. For station-specific checks, use `get_departures` which includes delay and cancellation indicators for individual services.
+
+**Q: Can I generate an isochrone map to see what areas I can reach within 30 minutes by public transit from my hotel?**
+Absolutely! Use the `get_isochrone` tool with your hotel coordinates as the origin and "1800" (30 minutes in seconds) as the max_duration parameter. Navitia will return a GeoJSON polygon showing all areas reachable within your time limit using public transit combinations. This is perfect for real estate location analysis, understanding neighborhood accessibility, job market research, and planning your accommodation based on transit connectivity. You can adjust the max_duration for different time ranges (1800 for 30min, 3600 for 1 hour).
+
+
 ## Installation & Usage
 
-To install and use the **Navitia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/navitia](https://vinkius.com/mcp/navitia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Navitia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `navitia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Navitia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "navitia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

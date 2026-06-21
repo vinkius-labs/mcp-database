@@ -1,7 +1,6 @@
 # FlightStats MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flightstats)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flightstats-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flightstats-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flightstats)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **FlightStats** MCP serv
 > Invoking `get_flights_near`... I detected 3 active flights in this radius: AS 342 (Boeing 737 at 12,000ft), QX 5021 (Embraer E175 descending to PDX), and UA 1822 (Airbus A320 cruising at 34,000ft).
 
 
+## ❓ FAQ
+
+**Q: How do I check the live status of a specific flight?**
+You can use the `get_flight_status` tool by providing the carrier code, flight number, and departure date. The agent will return real-time gate, delay, and timing information.
+
+**Q: Can I see which flights are currently departing from a specific airport?**
+Yes, use the `get_airport_status` tool. Specify the airport code (e.g., 'LAX'), set the direction to 'dep' (departures), and provide the date and hour to get a complete list of scheduled and active departures.
+
+**Q: Is it possible to track flights flying over my current location?**
+Absolutely. By using the `get_flights_near` tool with your latitude, longitude, and a search radius in miles, your agent will list all active flights currently in that airspace.
+
+
 ## Installation & Usage
 
-To install and use the **FlightStats** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flightstats](https://vinkius.com/mcp/flightstats)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FlightStats** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flightstats` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FlightStats** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flightstats": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Brevo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brevo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brevo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brevo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brevo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Brevo** MCP server usi
 > The SMS alert has been handed off to the Brevo gateway. It normally delivers under ~200ms depending on explicit telco routes. Logs reflect an affirmative dispatch signal.
 
 
+## ❓ FAQ
+
+**Q: Can I format the transactional emails organically via prompt?**
+Absolutely. Using the `send_transactional_email` operation, the AI dynamically renders the HTML body from your specific text instructions or leverages pre-made numeric Brevo templates.
+
+**Q: Is it possible to assign custom CRM attributes when creating a contact?**
+Yes. The `create_contact` tool exposes a JSON parameter block mapping fields perfectly (like FIRSTNAME, LASTNAME, CITY) directly alongside their assigned inclusion lists.
+
+**Q: Are the SMS dispatched globally?**
+Yes! Brevo's massive routing handles global cellular numbers, and the `send_sms` command executes that payload identically as long as your Brevo account remains credit-funded and active.
+
+
 ## Installation & Usage
 
-To install and use the **Brevo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/brevo](https://vinkius.com/mcp/brevo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Brevo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `brevo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Brevo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "brevo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Shoplazza / 店匠 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shoplazza)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shoplazza-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shoplazza-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shoplazza)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Shoplazza / 店匠** M
 > I've retrieved the inventory data for item 'inv-123456'. Current stock level is 15 units. Would you like me to notify you if it falls below a certain threshold?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Shoplazza Access Token?**
+Log in to the [Shoplazza Partner Platform](https://partners.shoplazza.com/), create an application, and follow the OAuth 2.0 flow to obtain your Admin API Access Token.
+
+**Q: What is the 'shop_domain' format?**
+Your shop domain should be the full URL of your Shoplazza admin instance, typically in the format: `your-store.myshoplazza.com`.
+
+**Q: Can I check inventory for specific items?**
+Yes. Use the `get_inventory_levels` tool. You can optionally provide a comma-separated list of `inventory_item_ids` to retrieve the stock levels for those specific items.
+
+
 ## Installation & Usage
 
-To install and use the **Shoplazza / 店匠** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shoplazza](https://vinkius.com/mcp/shoplazza)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Shoplazza / 店匠** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shoplazza` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Shoplazza / 店匠** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shoplazza": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

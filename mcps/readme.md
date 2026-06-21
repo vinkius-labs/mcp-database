@@ -1,7 +1,6 @@
 # ReadMe MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/readme)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/readme-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/readme-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/readme)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **ReadMe** MCP server us
 > I fetched the configuration using `list_categories`. There are 4 global categories: 'Getting Started', 'Authentication', 'REST API Reference', and 'Webhooks Guide'.
 
 
+## ❓ FAQ
+
+**Q: Where do I obtain my ReadMe API Key?**
+Log into your ReadMe dashboard. Navigate to your specific project, then open 'Configuration' and click on 'API Key'. You will use this key as the authentication parameter (our integration handles it natively as a Basic Auth username).
+
+**Q: Does the server allow me to write or edit documentation?**
+Currently, the MCP server is focused on read-only operations. It can query, retrieve, and search changelogs, custom pages, and standard documentation categories, bringing context to the AI securely without risking accidental overwrites.
+
+**Q: In what format is the document content returned?**
+All text and page content uses native Markdown format directly fetched from ReadMe's engine. This makes it perfect for the AI to interpret, syntax-highlight, and display naturally within chat or code comments.
+
+
 ## Installation & Usage
 
-To install and use the **ReadMe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/readme](https://vinkius.com/mcp/readme)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ReadMe** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `readme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ReadMe** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "readme": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

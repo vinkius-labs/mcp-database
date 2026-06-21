@@ -1,7 +1,6 @@
 # Task Completion Enforcer Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/task-completion-enforcer-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/task-completion-enforcer-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/task-completion-enforcer-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/task-completion-enforcer-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Task Completion Enforc
 > PLACEHOLDER_INFECTION — Four placeholders found: 'TODO for email verification' (not done), 'implement similar logic' (not done), middleware stub returning true (not done), 2 skipped tests (not done). Replace EVERY placeholder with actual implementation. A skeleton is not a building. Do the work, then call again.
 
 
+## ❓ FAQ
+
+**Q: Why do LLMs forget requirements?**
+Autoregressive generation allocates decreasing attention to earlier tokens as output grows. A 10-step task at token 200 competes with 2,000 tokens of generated output for attention. The model literally loses track of requirement #7 while implementing requirement #3. The fix: force a re-read of ALL requirements before declaring completion.
+
+**Q: What counts as 'completion evidence'?**
+Not 'I implemented the function.' Evidence means: 'Requirement 1: POST /users endpoint at src/routes/users.ts lines 15-42, validates email/name/role via Zod schema, returns 201 with user object.' File path, line number, specific behavior. If you cannot point to the exact artifact, it is not done.
+
+**Q: What happens when gaps are found?**
+The LLM MUST close them immediately — not later, not in a follow-up. Do the remaining work NOW. Then call this tool AGAIN to verify the gaps are actually closed. The loop continues until EVERY requirement has concrete evidence. 'I will do it later' is rejected. 'I just did it, here is the evidence' is accepted.
+
+
 ## Installation & Usage
 
-To install and use the **Task Completion Enforcer Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/task-completion-enforcer-prover](https://vinkius.com/mcp/task-completion-enforcer-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Task Completion Enforcer Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `task-completion-enforcer-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Task Completion Enforcer Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "task-completion-enforcer-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

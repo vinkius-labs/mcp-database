@@ -1,7 +1,6 @@
 # ArcGIS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arcgis-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arcgis-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arcgis-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arcgis-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,55 @@ Here are some examples of how you can interact with the **ArcGIS** MCP server us
 > Route from DC to NYC: 225 miles, estimated 3 hours 45 minutes driving time. Route goes through Baltimore, Philadelphia and into Manhattan. Total tolls approximately $45.
 
 
+## ❓ FAQ
+
+**Q: How do I get an ArcGIS API key?**
+Log in to the [**ArcGIS Developer Dashboard**](https://developers.arcgis.com/dashboard/), create or select an application, and generate an API key. Configure the scopes you need (geocoding, routing, places, elevation). Free tier includes generous usage limits.
+
+**Q: Can I calculate driving directions?**
+Yes! Use `get_route` with stops specified as semicolon-separated longitude,latitude pairs. For example, '-77.0365,38.8977;-74.0060,40.7128' for Washington DC to NYC. Optionally set travel mode to Driving, Trucking or Walking.
+
+**Q: Can I find nearby places?**
+Yes! Use `search_places` with a location (longitude,latitude) and optionally a category like 'Coffee Shop', 'Restaurant', 'Gas Station' or 'Hotel'. Set the radius in meters to control the search area. Returns places with names, addresses, categories and distances.
+
+**Q: Can I get elevation data?**
+Yes! Use `get_elevation` with locations specified as semicolon-separated longitude,latitude pairs. Returns elevation in meters for each location. You can query multiple locations in a single request.
+
+
 ## Installation & Usage
 
-To install and use the **ArcGIS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/arcgis-alternative](https://vinkius.com/mcp/arcgis-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ArcGIS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `arcgis-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ArcGIS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "arcgis-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

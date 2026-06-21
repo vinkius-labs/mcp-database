@@ -1,7 +1,6 @@
 # RunPod MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/runpod)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/runpod-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/runpod-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/runpod)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **RunPod** MCP server us
 > Pod 'pod_xyz_980' has been carefully stopped securely. Active hourly billing operations to compute cycles for this specific cloud target are halted.
 
 
+## ❓ FAQ
+
+**Q: Can the AI forcefully terminate or delete critical production endpoint fleets on demand?**
+No. This module safely allows the AI to only pause and manage running instances. Destructive deletion actions (like completely erasing a pod) are intentionally prohibited by the tooling design to protect your critical compute resources from unintended loss.
+
+**Q: Can the AI provision large GPU arrays automatically?**
+Yes. Using the `create_pod` capability, the AI can query the available hardware models (such as A100 or H100) and immediately launch new Docker clusters based on existing community templates, simplifying complex DevOps scaling actions significantly.
+
+**Q: Will the AI know the billing state or the real-time cost of running each endpoint?**
+No. The current RunPod AI module is concentrated on operational control and system orchestration, such as discovering inactive processes and booting new instances. Deep billing analytics or invoice extraction is not natively integrated in the commands exposed to the AI at this time.
+
+
 ## Installation & Usage
 
-To install and use the **RunPod** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/runpod](https://vinkius.com/mcp/runpod)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **RunPod** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `runpod` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **RunPod** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "runpod": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

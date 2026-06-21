@@ -1,7 +1,6 @@
 # Discord MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/discord-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/discord-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/discord-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/discord-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Discord** MCP server u
 > Message sent! I've posted your welcome note to the specified channel (ID: 456). The message ID is 'msg_789'. I'll monitor for any immediate reactions.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Discord Bot Token?**
+Log in to the Discord Developer Portal, select your Application, navigate to the **Bot** tab, and click **Reset Token** or **Copy** to retrieve your secret key.
+
+**Q: Why can't my agent read messages?**
+You must enable the **Message Content Intent** in the Bot section of the Discord Developer Portal for the agent to retrieve text content.
+
+**Q: How do I get the ID of a server or channel?**
+Enable **Developer Mode** in your Discord client settings (Advanced), then right-click a server or channel name and select **Copy ID**.
+
+
 ## Installation & Usage
 
-To install and use the **Discord** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/discord-alternative](https://vinkius.com/mcp/discord-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Discord** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `discord-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Discord** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "discord-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

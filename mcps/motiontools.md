@@ -1,7 +1,6 @@
 # MotionTools MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/motiontools)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/motiontools-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/motiontools-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/motiontools)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **MotionTools** MCP serv
 > Initializing new booking... I've successfully created booking 'BK-999' from 123 Main St to 456 Oak Ave. The status is 'unassigned'. Shall I find an available driver in the 'Downtown' service area?
 
 
+## ❓ FAQ
+
+**Q: How do I get a MotionTools API Token?**
+You can generate a long-lived API token in your MotionTools dashboard. These are specifically designed for server-to-server integrations.
+
+**Q: Can I track individual driver statuses?**
+Yes! Use the `get_driver` tool with a specific Driver ID to see their current availability and assignment status.
+
+**Q: How do I see our operational areas?**
+The `list_service_areas` tool will provide all defined geographic zones in your account, and `get_service_area` will give you the specific boundaries for a zone.
+
+
 ## Installation & Usage
 
-To install and use the **MotionTools** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/motiontools](https://vinkius.com/mcp/motiontools)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MotionTools** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `motiontools` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MotionTools** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "motiontools": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Captain Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/captain-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/captain-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/captain-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/captain-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Captain Data** MCP ser
 > Enrichment complete for Vinkius. They are a high-growth tech company specialized in AI and Edge computing, with 50-100 employees.
 
 
+## ❓ FAQ
+
+**Q: Can I enrich a professional profile using a LinkedIn URL?**
+Yes! Use the `enrich_person` tool and provide the `li_profile_url`. Your agent will trigger the enrichment in Captain Data and return the detailed profile data.
+
+**Q: How do I check my remaining API credits?**
+Simply ask the agent to `get_api_quotas`. It will retrieve your current usage and remaining quotas for different types of operations from your Captain Data account.
+
+**Q: Does the integration allow finding companies by their domain name?**
+Yes. Use the `find_company` tool and provide the `domain` (e.g., 'google.com'). It will retrieve the basic company identifiers and metadata from the Captain Data database.
+
+
 ## Installation & Usage
 
-To install and use the **Captain Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/captain-data](https://vinkius.com/mcp/captain-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Captain Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `captain-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Captain Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "captain-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Import.io (Web Data Extraction) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/importio-web-data-extraction)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/importio-web-data-extraction-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/importio-web-data-extraction-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/importio-web-data-extraction)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Import.io (Web Data Ex
 > You've used 12,450 credits out of your 50,000 monthly limit (24.9%). You have 37,550 credits remaining for this billing cycle. Your account health is excellent.
 
 
+## ❓ FAQ
+
+**Q: Can I extract data from a website without a pre-configured extractor?**
+Yes. Use the `run_magic_api` tool. It uses Import.io's AI logic to automatically detect and extract structured or tabular data from any URL, making it ideal for quick exploration of new data sources.
+
+**Q: How do I monitor the progress of a bulk crawl job?**
+Use the `get_crawl_status` tool by providing the Crawl ID returned when you started the job. Your agent will report the current state, number of pages processed, and success rate in real-time.
+
+**Q: Can I get my extracted data in CSV format for spreadsheet analysis?**
+Absolutely. Use the `download_csv` tool with a completed Run ID. Your agent will retrieve the extraction data in CSV format, perfect for processing in tools like Excel or Google Sheets.
+
+
 ## Installation & Usage
 
-To install and use the **Import.io (Web Data Extraction)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/importio-web-data-extraction](https://vinkius.com/mcp/importio-web-data-extraction)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Import.io (Web Data Extraction)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `importio-web-data-extraction` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Import.io (Web Data Extraction)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "importio-web-data-extraction": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

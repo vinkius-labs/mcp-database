@@ -1,7 +1,6 @@
 # Veryfi MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/veryfi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/veryfi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/veryfi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/veryfi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -136,12 +135,52 @@ Would you like me to list the line items?
 - **Date of Birth**: 1990-01-01
 
 
+## ❓ FAQ
+
+**Q: Can I process unstructured documents that are not standard receipts or invoices?**
+Yes! You can use the `process_any_document` tool with a specific blueprint name (such as a driver's license or insurance card) to extract structured data from almost any unstructured document type.
+
+**Q: How do I extract data from a tax form like a W-2 or W-9?**
+Simply use the dedicated tools `process_w2s` or `process_w9s` and provide the file URL or base64 data. The agent will return structured fields specific to those tax forms.
+
+**Q: Can I update fields on a document after it has been processed?**
+Yes, you can use the `update_documents` tool by passing the document ID and a JSON string of the fields you want to update.
+
+
 ## Installation & Usage
 
-To install and use the **Veryfi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/veryfi](https://vinkius.com/mcp/veryfi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Veryfi** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `veryfi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Veryfi** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "veryfi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

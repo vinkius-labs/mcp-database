@@ -1,7 +1,6 @@
 # Coder (Remote Dev) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coder-remote-dev)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coder-remote-dev-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coder-remote-dev-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coder-remote-dev)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -150,12 +149,52 @@ Here are some examples of how you can interact with the **Coder (Remote Dev)** M
 > I've fetched the SSH config. The hostname prefix is 'coder.' and the suffix is '.dev'. You can use these to configure your local SSH client for workspace access.
 
 
+## ❓ FAQ
+
+**Q: Can I check the health and usage of my Coder deployment?**
+Yes. Use the `get_deployment_stats` tool to retrieve workspace and session statistics, providing a clear overview of your infrastructure's current state.
+
+**Q: How do I see which AI models are available in my Coder instance?**
+Simply run the `list_ai_models` tool. It will return a list of all AI models currently configured and available through the Coder AI Bridge.
+
+**Q: Can I view logs for a specific workspace agent to debug issues?**
+Yes! Use the `get_agent_logs` tool with the target `agent_id`. This allows you to stream and inspect logs directly from the remote environment.
+
+
 ## Installation & Usage
 
-To install and use the **Coder (Remote Dev)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coder-remote-dev](https://vinkius.com/mcp/coder-remote-dev)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Coder (Remote Dev)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coder-remote-dev` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Coder (Remote Dev)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coder-remote-dev": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

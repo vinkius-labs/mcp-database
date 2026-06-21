@@ -1,7 +1,6 @@
 # Lanhu MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lanhu)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lanhu-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lanhu-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lanhu)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Lanhu** MCP server usi
 > I've retrieved the layers for 'homepage-main'. It includes the 'Header', 'Hero_Section', 'Features_Grid', and 'Footer' groups. Which section would you like to inspect further?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Lanhu Access Token?**
+Log in to Lanhu, go to [User Settings] → [Access Token], and generate a new token. Copy it immediately as it won't be shown again.
+
+**Q: Can I read design layer information through the agent?**
+Yes. Use the `list_layers` tool with the design file ID. This allows your agent to retrieve the layer structure and design nodes for that specific file.
+
+**Q: Does Lanhu support team-based organization?**
+Yes. You can list all your teams using the `list_teams` tool and then explore projects and members specifically for each team using their IDs.
+
+
 ## Installation & Usage
 
-To install and use the **Lanhu** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lanhu](https://vinkius.com/mcp/lanhu)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lanhu** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lanhu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lanhu** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lanhu": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Hootsuite (Social Media Management) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hootsuite-social-media-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hootsuite-social-media-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hootsuite-social-media-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hootsuite-social-media-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Hootsuite (Social Medi
 > I've retrieved 3 scheduled messages for today: 'Q2 Roadmap Highlights' (2 PM), 'Customer Spotlight' (4 PM), and 'Industry News' (6 PM). Would you like to see the full text or social profiles for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I schedule a post for multiple social networks at once?**
+Yes. The `schedule_message` tool accepts an array of social profile IDs. Your agent can send the same text content to all selected networks (e.g. Twitter and LinkedIn) in a single command, ensuring cross-platform consistency.
+
+**Q: How do I find the ID of a social profile?**
+Ask your agent to `list_social_profiles`. It will return all connected accounts along with their unique IDs, network type (TWITTER, FACEBOOK, etc.), and usernames, making it easy to identify the correct target for your posts.
+
+**Q: Can I delete a scheduled post if I find an error?**
+Absolutely. Use the `delete_message` tool with the specific Message ID. Your agent will remove the pending post from the Hootsuite queue, preventing it from being published.
+
+
 ## Installation & Usage
 
-To install and use the **Hootsuite (Social Media Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hootsuite-social-media-management](https://vinkius.com/mcp/hootsuite-social-media-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hootsuite (Social Media Management)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hootsuite-social-media-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hootsuite (Social Media Management)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hootsuite-social-media-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

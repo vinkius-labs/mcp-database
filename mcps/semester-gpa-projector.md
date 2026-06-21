@@ -1,7 +1,6 @@
 # Semester GPA Projector MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/semester-gpa-projector)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/semester-gpa-projector-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/semester-gpa-projector-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/semester-gpa-projector)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Semester GPA Projector
 > Validation failed: The course 'Physics' has weights (0.4 + 0.7) that sum to 1.1, which exceeds the required total of 1.0.
 
 
+## ❓ FAQ
+
+**Q: How do the performance scenarios work?**
+The tool uses three models: 'maintain' assumes your future grades match current ones, 'improve' assumes a 20% increase in performance for remaining assessments, and 'decline' assumes a 20% decrease.
+
+**Q: Can I check if my course data is valid?**
+Yes, use the `validate_course_structure` tool to verify that the completed and remaining weights for every course in your list sum exactly to 1.0.
+
+**Q: How does this affect my graduation GPA?**
+By using `calculate_cumulative_impact`, you can input your current cumulative GPA and credits to see the exact delta (increase or decrease) that this semester's projected performance will cause.
+
+
 ## Installation & Usage
 
-To install and use the **Semester GPA Projector** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/semester-gpa-projector](https://vinkius.com/mcp/semester-gpa-projector)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Semester GPA Projector** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `semester-gpa-projector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Semester GPA Projector** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "semester-gpa-projector": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

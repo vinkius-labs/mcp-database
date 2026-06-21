@@ -1,7 +1,6 @@
 # Duffel MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/duffel)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/duffel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/duffel-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/duffel)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Duffel** MCP server us
 > Searching for stays in Tokyo... I found several accommodations. The 'Park Hyatt Tokyo' and 'Shinjuku Prince Hotel' are available for those dates. Should I fetch the specific rates for one of these?
 
 
+## ❓ FAQ
+
+**Q: How do I search for flights between two cities?**
+Use the `create_offer_request` tool. You'll need to provide the origin, destination, departure date, and passenger details. The agent will then return available flight offers.
+
+**Q: Can I see the seat map before booking a flight?**
+Yes! Once you have an Offer ID, use the `get_seat_maps` tool to retrieve the visual layout and availability of seats for that specific flight offer.
+
+**Q: How do I find hotel rates for a specific search result?**
+After performing a search with `search_stays`, use the `fetch_stay_rates` tool with the `search_result_id` to get all available pricing and room options for that accommodation.
+
+
 ## Installation & Usage
 
-To install and use the **Duffel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/duffel](https://vinkius.com/mcp/duffel)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Duffel** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `duffel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Duffel** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "duffel": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

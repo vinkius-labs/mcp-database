@@ -1,7 +1,6 @@
 # IP Address Parser MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ip-address-parser)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ip-address-parser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ip-address-parser-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ip-address-parser)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **IP Address Parser** MC
 > IPv6 Mapped: ::ffff:192.168.1.100 | Kind: ipv4 | Range: private.
 
 
+## ❓ FAQ
+
+**Q: How does it know if an IP is private or public?**
+It follows the IANA reserved ranges defined in RFC 5735 (IPv4) and RFC 4291 (IPv6). 10.x.x.x, 172.16-31.x.x, and 192.168.x.x are classified as 'private'. 127.x.x.x as 'loopback'. Everything else as 'unicast' (public).
+
+**Q: Can I check if an IP belongs to a specific CIDR range?**
+Yes. Pass the CIDR notation like '10.0.0.0/8' and the engine returns the network address, prefix length, and address kind. Parse both the IP and the CIDR to compare.
+
+**Q: Does it work with IPv6 addresses?**
+Yes. Full IPv6 support including compressed notation (::1), IPv4-mapped (::ffff:192.168.1.1), and all RFC 4291 scoped addresses.
+
+
 ## Installation & Usage
 
-To install and use the **IP Address Parser** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ip-address-parser](https://vinkius.com/mcp/ip-address-parser)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IP Address Parser** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ip-address-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IP Address Parser** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ip-address-parser": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

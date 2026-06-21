@@ -1,7 +1,6 @@
 # TaxJar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/taxjar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/taxjar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/taxjar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/taxjar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ The total tax liability is $4.44 (8.875% combined state, county, and city rate).
 Yes, your account reflects an active economic nexus in California (CA). Your threshold was crossed on Jan 14th, meaning you must collect and remit sales tax for transactions in CA.
 
 
+## ❓ FAQ
+
+**Q: Can it calculate tax for complex multi-item orders?**
+Yes. The `calculate_sales_tax` tool accepts full order payloads including multiple line items, shipping costs, and customer addresses to return precise tax breakdowns.
+
+**Q: What are nexus regions?**
+A nexus is a state or jurisdiction where your business has a tax obligation. Use `list_nexus_regions` to see where you're registered to collect sales tax.
+
+**Q: Does it support sandbox mode?**
+Yes. TaxJar provides sandbox API tokens for testing. Use a sandbox token to test tax calculations without affecting your live account or generating real transactions.
+
+
 ## Installation & Usage
 
-To install and use the **TaxJar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/taxjar](https://vinkius.com/mcp/taxjar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TaxJar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `taxjar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TaxJar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "taxjar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

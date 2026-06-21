@@ -1,7 +1,6 @@
 # ThePDFMaker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thepdfmaker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/thepdfmaker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/thepdfmaker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thepdfmaker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **ThePDFMaker** MCP serv
 > You have 8 templates. "Corporate Invoice v3" was last modified on May 1st and is your most used template (234 generations). "Sales Quote" modified April 28th (89 uses). "NDA Template" updated April 15th (45 uses). "Certificate of Completion" from March 20th (67 uses). 4 additional templates available with combined 123 generations.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific template by its ID?**
+Yes! Use the `get_template` tool with the Template ID. Your agent will respond with complete metadata for the model, including all available placeholder fields in seconds.
+
+**Q: How do I find my PDFMaker API Key?**
+Log in to your PDFMaker account, navigate to **Settings** > **API Key**, and you will find your unique secret token there.
+
+**Q: What document formats does PDFMaker support for templates?**
+PDFMaker supports a variety of sources including native HTML templates, MS Word (.docx), and Google Docs, allowing you to choose the best editor for your needs.
+
+
 ## Installation & Usage
 
-To install and use the **ThePDFMaker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/thepdfmaker](https://vinkius.com/mcp/thepdfmaker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ThePDFMaker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `thepdfmaker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ThePDFMaker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "thepdfmaker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

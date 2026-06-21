@@ -1,7 +1,6 @@
 # Unsplash MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unsplash)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unsplash-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unsplash-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unsplash)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Unsplash** MCP server 
 > I've hit the latest unformatted feed natively. The top fresh photos display a significant trend in abstract landscapes and minimalist tech setups from users across Europe. Returning a list of their IDs alongside URLs right now.
 
 
+## ❓ FAQ
+
+**Q: Can it automatically fetch 5 relevant images based on an abstract concept and give me direct URLs?**
+Yes. Command the LLM using 'search_photos' with a query like 'Serenity' and 'per_page: 5'. It leverages the native search algorithm to bring back structured output containing precise image hotlinks alongside the photographers' names for attribution.
+
+**Q: If I am building a mock UI, can it provide a purely random high-res placeholder image?**
+A perfect use case! Instruct the AI to call 'get_random_photo'. It skips conventional heavy searches pulling one brilliant, random massive resolution photo. You can even filter the chaos slightly (e.g., random 'architecture').
+
+**Q: How do I ensure I get photos only from a specific trusted photographer I like?**
+If you know their handle, fire off the 'get_photographer_photos' payload. The bot will bypass generic listings entirely, retrieving paginated bundles of art exclusively captured and uploaded by that precise account profile natively.
+
+
 ## Installation & Usage
 
-To install and use the **Unsplash** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/unsplash](https://vinkius.com/mcp/unsplash)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Unsplash** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `unsplash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Unsplash** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "unsplash": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

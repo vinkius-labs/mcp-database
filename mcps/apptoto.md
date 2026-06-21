@@ -1,7 +1,6 @@
 # Apptoto MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apptoto)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apptoto-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apptoto-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apptoto)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Apptoto** MCP server u
 > The appointment 'Site Audit' has been successfully created for tomorrow at 9:00 AM.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Apptoto API Key?**
+Log in to Apptoto, go to **Settings > API**, and you will find your API Key there. If you don't see it, contact Apptoto support.
+
+**Q: Can I create new appointments via the API?**
+Yes, you can use the `create_event` tool to add new appointments to your Apptoto calendar. Provide the subject, start time, and end time.
+
+**Q: Does Apptoto support two-way messaging?**
+Yes, Apptoto supports two-way SMS and email messaging. While this server focuses on event and contact management, the contacts you retrieve feed into your messaging workflows.
+
+
 ## Installation & Usage
 
-To install and use the **Apptoto** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/apptoto](https://vinkius.com/mcp/apptoto)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Apptoto** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `apptoto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Apptoto** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "apptoto": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

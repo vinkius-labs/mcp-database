@@ -1,7 +1,6 @@
 # Counterfactual-Variant Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/counterfactual-variant-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/counterfactual-variant-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/counterfactual-variant-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/counterfactual-variant-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,12 +62,52 @@ Here are some examples of how you can interact with the **Counterfactual-Variant
 > Verdict: LOGIC_PROVEN. All steps validated. (1) Classic template Cheryl's Birthday recognized. (2) Variables isolated: month and day sets. (3) Discrepancies mapped: new date list. (4) First-principles calculation: Albert's first statement rules out May and June because they contain unique days (19 and 18). Left with July 14, 16 and August 14, 15, 17. For Bernard to now know, the day cannot be 14 (appears twice). Left with July 16 and August 15, 17. For Albert to now know, the month must be July (has only 16 left, whereas August has two dates: 15 and 17). Correct answer: July 16.
 
 
+## ❓ FAQ
+
+**Q: How does Counterfactual-Variant Prover stop recitation bias?**
+By introducing structural friction. When an agent is forced to fill a schema requiring explicit separation of variables, mapping of differences, and step-by-step logic, it cannot rely on automatic token generation. The tool rejects any attempt to skip these steps or leak classic parameters.
+
+**Q: What happens if a puzzle has no classic equivalent?**
+If no classic signature is detected, the model sets recitationSignatureDetected to false, maps variables, and solves it. However, if the text contains keywords of known puzzles (e.g. Monty Hall, Cheryl), the engine enforces the full counterfactual check to avoid semantic traps.
+
+**Q: Can it be used alongside other reasoning provers?**
+Yes. It works as an orthogonal check. While the Critical Thinking Prover checks overall cognitive quality, the Counterfactual-Variant Prover focuses specifically on variable isolation and preventing memorization loops in logic and mathematics.
+
+
 ## Installation & Usage
 
-To install and use the **Counterfactual-Variant Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/counterfactual-variant-prover](https://vinkius.com/mcp/counterfactual-variant-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Counterfactual-Variant Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `counterfactual-variant-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Counterfactual-Variant Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "counterfactual-variant-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

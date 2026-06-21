@@ -1,7 +1,6 @@
 # RecruSpace MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recruspace)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/recruspace-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/recruspace-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recruspace)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,49 @@ Here are some examples of how you can interact with the **RecruSpace** MCP serve
 > Candidate added to "Future Engineering Talent" pool. Name: Lisa Wang. Skills: React, TypeScript, Node.js, AWS. Experience: 5 years. Source: Tech Conference referral. The talent pool now has 134 candidates. Lisa has been tagged with "Frontend", "Cloud", and "Mid-Senior". An automated nurture email sequence will begin in 24 hours with company culture content. You'll be notified when matching positions open.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific candidate by providing their ID?**
+Yes! Use the `get_candidate_details` tool with the Candidate ID. Your agent will respond with the complete metadata for the profile, including qualifications and status in seconds.
+
+**Q: How do I find my RecruSpace API Key?**
+Log in to your RecruSpace account, navigate to the **Settings** or **API** section, and you will find your unique secret API key there.
+
+
 ## Installation & Usage
 
-To install and use the **RecruSpace** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/recruspace](https://vinkius.com/mcp/recruspace)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **RecruSpace** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `recruspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **RecruSpace** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "recruspace": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

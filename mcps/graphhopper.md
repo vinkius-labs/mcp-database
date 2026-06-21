@@ -1,7 +1,6 @@
 # GraphHopper MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/graphhopper)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/graphhopper-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/graphhopper-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/graphhopper)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **GraphHopper** MCP serv
 > Coordinates matched! The location for 48.85, 2.35 corresponds to 'Rue de Rivoli, Paris, France'. It is located in the 4th arrondissement. Would you like more venue details for this spot?
 
 
+## ❓ FAQ
+
+**Q: Can my agent calculate reachability zones using time limits?**
+Yes. Use the 'calculate_reachability_polygon' tool. Provide a starting point and a time limit in seconds. The agent will retrieve the isochrone polygon defining exactly what area is reachable within that duration natively.
+
+**Q: How do I optimize a multi-stop delivery route via chat?**
+Use the 'submit_vrp_optimizer' tool. Provide a JSON payload defining your vehicles and service stops. The agent will trigger the VRP solver to calculate the most efficient sequence, accounting for time windows and capacities synchronously.
+
+**Q: Can I perform reverse geocoding to find a street name through the agent?**
+Absolutely. Use the 'reverse_geocode' tool. Provide the latitude and longitude. Your agent will analyze the global OSM bounds to match the coordinates exactly against the nearest physical street address flawlessy.
+
+
 ## Installation & Usage
 
-To install and use the **GraphHopper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/graphhopper](https://vinkius.com/mcp/graphhopper)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GraphHopper** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `graphhopper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GraphHopper** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "graphhopper": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

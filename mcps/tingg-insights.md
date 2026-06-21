@@ -1,7 +1,6 @@
 # Tingg Insights MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tingg-insights)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tingg-insights-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tingg-insights-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tingg-insights)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Tingg Insights** MCP s
 > Retrieving payout info... Payout payout_10293 is currently 'Processed Successfully'. The funds have been sent to the recipient's mobile money wallet. Is there anything else you'd like to track?
 
 
+## ❓ FAQ
+
+**Q: Can I check the status of a specific payment request via AI?**
+Yes! Use the `get_transaction_status` tool and provide the Checkout Request ID. Your agent will retrieve the real-time payment status from Tingg.
+
+**Q: How do I see my latest bank settlements?**
+Run the `list_account_settlements` query. The agent will retrieve a list of all funds that have been settled from your Tingg account to your linked bank account.
+
+**Q: Is it possible to send money to a recipient (payout) via AI?**
+Absolutely. Use the `initiate_payout_request` action. Provide the payout details including amount, currency, and recipient info in the JSON payload to start the disbursement.
+
+
 ## Installation & Usage
 
-To install and use the **Tingg Insights** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tingg-insights](https://vinkius.com/mcp/tingg-insights)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tingg Insights** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tingg-insights` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tingg Insights** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tingg-insights": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

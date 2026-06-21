@@ -1,7 +1,6 @@
 # Lamha MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lamha)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lamha-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lamha-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lamha)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Lamha** MCP server usi
 > Engineering team: 18 employees. Manager: Sarah Ahmed. Payroll summary: Total: SAR 285K/mo. Average: SAR 15.8K. Range: SAR 8K-35K. New hires (90 days): 2. Attendance rate: 94%. Leave utilization: 62%. Top: Ali Hassan (Senior Dev, 5 yrs), Maryam Khalil (Lead, 4 yrs).
 
 
+## ❓ FAQ
+
+**Q: Can I track employee attendance and leave?**
+Yes. Monitor check-in/out records, view attendance summaries, and track leave balances, requests, and approvals for any employee.
+
+**Q: How does Lamha authentication work?**
+Lamha uses a **Token** header (not Bearer) for authentication against `app.lamha.sa/api/v2`. This is a custom token format.
+
+**Q: Can I browse the organizational structure?**
+Yes. Navigate departments, teams, and reporting hierarchies within the organization.
+
+
 ## Installation & Usage
 
-To install and use the **Lamha** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lamha](https://vinkius.com/mcp/lamha)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lamha** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lamha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lamha** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lamha": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

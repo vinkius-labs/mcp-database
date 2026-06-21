@@ -1,7 +1,6 @@
 # Deliveroo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deliveroo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deliveroo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deliveroo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deliveroo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Deliveroo** MCP server
 > I've sent the sync status update for order 'ORD-456'. It is marked as 'failed' with the reason: 'items_out_of_stock'.
 
 
+## ❓ FAQ
+
+**Q: Can I reject an order if an ingredient is unavailable?**
+Yes. Use the `update_order_status` tool with the status 'rejected' and provide 'ingredient_unavailable' as the reason.
+
+**Q: How do I notify the rider that the food is ready for collection?**
+You can use the `create_prep_stage` tool and set the stage to 'ready_for_collection'. This updates both Deliveroo and the rider.
+
+**Q: Is it possible to see only the orders that are currently active?**
+Yes, use the `get_orders` tool and set the `live_orders` parameter to true to filter for ongoing deliveries.
+
+
 ## Installation & Usage
 
-To install and use the **Deliveroo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deliveroo](https://vinkius.com/mcp/deliveroo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deliveroo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deliveroo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deliveroo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deliveroo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

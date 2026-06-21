@@ -1,7 +1,6 @@
 # Podchaser Podcast API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/podchaser-podcast-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/podchaser-podcast-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/podchaser-podcast-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/podchaser-podcast-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Podchaser Podcast API*
 > I've retrieved the details for The Daily! It is currently identified as a 'News' podcast with a high rating. I can provide the unique ID and host metadata to help you identify it in your workflow.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Podchaser API Key?**
+Log in to your [**Podchaser developer portal**](https://api.podchaser.com/), create an application, and you will find your API Token in your dashboard. Copy and paste it below.
+
+**Q: Can I search for podcasts by host?**
+Yes. The search tools allow you to use host names as keywords to retrieve podcasts and creators from the Podchaser database.
+
+**Q: Does it support episode descriptions?**
+Yes. The `get_podcast_details` and `list_podcast_episodes` tools retrieve detailed descriptions and show notes for podcasts and episodes.
+
+
 ## Installation & Usage
 
-To install and use the **Podchaser Podcast API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/podchaser-podcast-api](https://vinkius.com/mcp/podchaser-podcast-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Podchaser Podcast API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `podchaser-podcast-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Podchaser Podcast API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "podchaser-podcast-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

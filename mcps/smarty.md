@@ -1,7 +1,6 @@
 # Smarty MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smarty)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smarty-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smarty-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smarty)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Smarty** MCP server us
 Would you like me to run a full DPV validation on the Salt Lake City result?
 
 
+## ❓ FAQ
+
+**Q: Can the AI find an address hidden inside a block of text automatically?**
+Yes! You can paste an entire email string or customer support note into your prompt and ask the AI: 'Extract any addresses mentioned in this text.' The agent triggers the `extract_addresses` engine to return the geolocated and sanitized address format purely.
+
+**Q: How accurate is the address verification?**
+Smarty ensures the address is validated against official sources like the USPS using DPV (Delivery Point Validation) for US requests, guaranteeing a package can actually be delivered to the mapped coordinate. Your AI agent returns this rigorous underlying metadata.
+
+**Q: Can I use the agent to fix my dataset dynamically without coding?**
+Yes. If you have 20 poorly formatted customer addresses, you can simply paste them in the prompt, asking your AI to 'Run each of these through Smarty and return a markdown table of the normalized addresses.' The agent handles the iteration loop for you via the tools.
+
+
 ## Installation & Usage
 
-To install and use the **Smarty** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/smarty](https://vinkius.com/mcp/smarty)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Smarty** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `smarty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Smarty** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "smarty": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

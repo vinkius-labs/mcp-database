@@ -1,7 +1,6 @@
 # Metabolic Energy Estimator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/metabolic-energy-estimator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/metabolic-energy-estimator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/metabolic-energy-estimator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/metabolic-energy-estimator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -57,12 +56,52 @@ Here are some examples of how you can interact with the **Metabolic Energy Estim
 > Using the calculate_weight_loss_projection tool: To lose 10kg, you need to burn 77,000 calories. At a 500/day deficit, it will take exactly 154 days (22 weeks).
 
 
+## ❓ FAQ
+
+**Q: How does it calculate the calories burned?**
+The estimate_calories_burned tool uses the standard metabolic formula: Calories = MET * weight(kg) * time(hours). It pulls the exact MET value from its internal activity catalog.
+
+**Q: What formula is used for Basal Metabolic Rate (BMR)?**
+The calculate_tdee tool uses the Mifflin-St Jeor equation, which is currently considered the most accurate standard for predicting resting metabolic rate.
+
+**Q: How does it project weight loss?**
+The calculate_weight_loss_projection tool uses the biological constant that 1kg of body fat equals approximately 7700 calories. It divides the total required deficit by your daily deficit to predict the exact timeline.
+
+
 ## Installation & Usage
 
-To install and use the **Metabolic Energy Estimator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/metabolic-energy-estimator](https://vinkius.com/mcp/metabolic-energy-estimator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Metabolic Energy Estimator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `metabolic-energy-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Metabolic Energy Estimator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "metabolic-energy-estimator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

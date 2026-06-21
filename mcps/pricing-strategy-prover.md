@@ -1,7 +1,6 @@
 # Pricing Strategy Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pricing-strategy-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pricing-strategy-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pricing-strategy-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pricing-strategy-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Pricing Strategy Prove
 > UNIT_ECONOMICS_BROKEN — Value metric, WTP, and segmentation pass. But unit economics fail for Segment A: LTV/CAC of 2.1x is below the 3x threshold. Solopreneur segment has 12-month retention at $50/month = $600 LTV against $290 CAC. Options: (1) reduce solopreneur CAC to under $200 via PLG/referral, (2) increase retention to 18+ months via engagement loops, (3) increase ARPU to $65+/month, or (4) deprioritize solopreneurs and focus acquisition on agencies where LTV/CAC is 24.8x.
 
 
+## ❓ FAQ
+
+**Q: Does it calculate prices?**
+No. It validates that your pricing strategy is grounded in value metrics, WTP research, segmentation, unit economics, and packaging design. It does not generate prices — it forces you to prove you derived them from data, not competitor pages.
+
+**Q: What is Van Westendorp PSM?**
+The Price Sensitivity Meter asks 4 questions: at what price is it too cheap (quality doubt), a bargain (great value), getting expensive (think twice), too expensive (never buy). The intersections define the acceptable price range. It requires 100-300 respondents from your target segment to produce reliable data.
+
+**Q: Can early-stage startups use this before having revenue data?**
+Yes. Pre-revenue startups use proxy data: Van Westendorp on 30+ prospect interviews, competitor pricing as anchor (not source), current workaround spend as floor, and projected CAC from channel tests. Unit economics use conservative assumptions. The tool forces you to document assumptions instead of skipping the analysis.
+
+
 ## Installation & Usage
 
-To install and use the **Pricing Strategy Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pricing-strategy-prover](https://vinkius.com/mcp/pricing-strategy-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pricing Strategy Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pricing-strategy-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pricing Strategy Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pricing-strategy-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

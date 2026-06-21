@@ -1,7 +1,6 @@
 # Agro MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agro)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agro-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agro)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Agro** MCP server usin
 > Checking soil conditions... At those coordinates, the current soil moisture is 0.28 m3/m3 and the surface temperature is 22.4°C (72.3°F).
 
 
+## ❓ FAQ
+
+**Q: How do I define a new field for monitoring?**
+Use the `create_polygon` tool. You need to provide a name and the area's geometry in GeoJSON format (coordinates). This polygon ID will then be used for satellite and soil queries.
+
+**Q: Can I check the historical health of my crops?**
+Yes! Use the `get_ndvi_history` tool with your Polygon ID and a time range. It returns NDVI and EVI data, which are key indicators of vegetation vigor and growth.
+
+**Q: What kind of soil data can I retrieve?**
+You can use `get_current_soil` or `get_historical_soil` to get moisture levels and surface temperature for a specific polygon, helping you optimize irrigation schedules.
+
+
 ## Installation & Usage
 
-To install and use the **Agro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/agro](https://vinkius.com/mcp/agro)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Agro** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `agro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Agro** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "agro": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

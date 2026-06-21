@@ -1,7 +1,6 @@
 # AT&T 5G MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/att-5g)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/att-5g-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/att-5g-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/att-5g)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -96,12 +95,52 @@ Here are some examples of how you can interact with the **AT&T 5G** MCP server u
 > Number Verify completed successfully for +14155559876. The phone number is confirmed to match the device currently active on the AT&T 5G network. Confidence score: 99.2%. No OTP was sent -- verification was silent and frictionless. User can proceed with login.
 
 
+## ❓ FAQ
+
+**Q: What are Open Gateway / CAMARA APIs and why do they matter?**
+Open Gateway is a global initiative by GSMA and the Linux Foundation that standardizes telecom network APIs across carriers. CAMARA is the open-source project defining these API specifications. Instead of carrier-specific integrations, developers get universal, consistent endpoints for Number Verify, Device Location, SIM Swap, Quality on Demand, and more. AT&T is a founding participant, meaning these APIs work the same way across compatible networks worldwide.
+
+**Q: Does Device Location require user consent?**
+Yes. Per CAMARA standards, the Device Location API requires explicit user consent before returning any positioning data. The API will fail with an authentication error if consent has not been granted. This is a security and privacy safeguard -- network-level location cannot be retrieved silently without the user's knowledge.
+
+**Q: What is Network Slicing and when should I use it?**
+Network Slicing creates logically isolated 5G network segments with guaranteed SLA parameters (latency, bandwidth, reliability). Use it for IoT deployments requiring guaranteed connectivity, private enterprise networks, mission-critical applications like remote surgery or autonomous vehicles, and any scenario where best-effort public network performance is insufficient. You can create, monitor, and delete slices directly through your AI agent.
+
+
 ## Installation & Usage
 
-To install and use the **AT&T 5G** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/att-5g](https://vinkius.com/mcp/att-5g)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AT&T 5G** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `att-5g` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AT&T 5G** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "att-5g": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

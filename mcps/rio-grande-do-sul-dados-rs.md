@@ -1,7 +1,6 @@
 # Rio Grande do Sul (Dados RS) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rio-grande-do-sul-dados-rs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rio-grande-do-sul-dados-rs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rio-grande-do-sul-dados-rs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rio-grande-do-sul-dados-rs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Rio Grande do Sul (Dad
 > The dataset 'Receita Corrente Líquida' contains metadata about state revenue. It includes 3 resources (CSV and PDF) and is maintained by the Secretaria da Fazenda.
 
 
+## ❓ FAQ
+
+**Q: How can I search for datasets related to a specific topic like 'COVID'?**
+Use the `search_datasets` tool with the `q` parameter set to your topic. For example, searching for 'covid' will return all matching packages from the portal.
+
+**Q: Can I perform advanced data analysis using SQL on the portal's data?**
+Yes! The `search_datastore_sql` tool allows you to execute full SQL SELECT statements against datasets stored in the CKAN DataStore, enabling complex filtering and aggregation.
+
+**Q: How do I find which government departments are publishing data?**
+Use the `list_organizations` tool to get a complete list of all government bodies. You can then use `show_organization` with a specific ID to see their metadata and datasets.
+
+
 ## Installation & Usage
 
-To install and use the **Rio Grande do Sul (Dados RS)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rio-grande-do-sul-dados-rs](https://vinkius.com/mcp/rio-grande-do-sul-dados-rs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rio Grande do Sul (Dados RS)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rio-grande-do-sul-dados-rs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rio Grande do Sul (Dados RS)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rio-grande-do-sul-dados-rs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Rows MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rows)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rows-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rows-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rows)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,49 @@ Here are some examples of how you can interact with the **Rows** MCP server usin
 > Spreadsheet "Q3 Planning" created. 5 columns populated: Department, Q2 Actual, Q3 Budget, Variance, Status. Engineering: $890K actual / $950K budget. Marketing: $234K / $280K. Sales: $456K / $500K. Product: $178K / $200K. Operations: $123K / $140K. Total row: $1.88M actual / $2.07M budget (9.2% planned increase). Conditional formatting applied: green for under budget, yellow for within 5%, red for over. Chart widget added for visual comparison.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the values for a specific cell range in a Rows spreadsheet?**
+Yes! Use the `get_range_values` tool. Provide the Spreadsheet ID, Table ID, and the Range (e.g., 'A1:C10'), and your agent will return the current values instantly.
+
+**Q: How do I find my Rows.com API Key?**
+Log in to Rows, go to your **Workspace Settings**, click the **Rows API** tab, and you will find your unique secret API key there.
+
+
 ## Installation & Usage
 
-To install and use the **Rows** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rows](https://vinkius.com/mcp/rows)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rows** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rows` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rows** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rows": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

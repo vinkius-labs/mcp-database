@@ -1,7 +1,6 @@
 # SugarCRM (Enterprise CRM & Customer Success API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sugarcrm-enterprise-crm-customer-success-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sugarcrm-enterprise-crm-customer-success-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sugarcrm-enterprise-crm-customer-success-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sugarcrm-enterprise-crm-customer-success-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **SugarCRM (Enterprise C
 > I've found 3 contacts related to that account: John Doe, Jane Smith, and Robert Brown. Do you need the contact info for any of them?
 
 
+## ❓ FAQ
+
+**Q: Can I filter records by specific criteria like account name?**
+Yes! Use the `list_records` tool with a JSON filter string. For example, you can pass `[{"name": "Nelson Inc"}]` to find specific accounts matching that name.
+
+**Q: How do I see all opportunities linked to a specific account?**
+Use the `list_related_records` tool by providing the primary module (Accounts), the record ID, and the link name (e.g., 'opportunities').
+
+**Q: Is it possible to get a total count of records in a module?**
+Absolutely. The `count_records` tool allows you to retrieve the total number of records in any module, optionally filtered by specific conditions.
+
+
 ## Installation & Usage
 
-To install and use the **SugarCRM (Enterprise CRM & Customer Success API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sugarcrm-enterprise-crm-customer-success-api](https://vinkius.com/mcp/sugarcrm-enterprise-crm-customer-success-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SugarCRM (Enterprise CRM & Customer Success API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sugarcrm-enterprise-crm-customer-success-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SugarCRM (Enterprise CRM & Customer Success API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sugarcrm-enterprise-crm-customer-success-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

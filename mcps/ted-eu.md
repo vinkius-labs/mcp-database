@@ -1,7 +1,6 @@
 # TED EU MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ted-eu)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ted-eu-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ted-eu-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ted-eu)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Showing 3 of 15. Filter by country or narrow the value range?
 Top countries: Germany (71), France (54), Spain (38), Italy (42). Want me to drill into a specific sector or country?
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key to use TED?**
+No! The TED Search API allows anonymous access for basic queries. An API key only increases your rate limits for high-volume usage. You can start searching tenders immediately without any credentials. If you need higher throughput, get a free key at developer.ted.europa.eu.
+
+**Q: How can I find IT contracts over 500K EUR in Germany?**
+Combine tools: use `search_by_cpv` with code 72000000 (IT services) or `search_by_country` with code DE, then ask your agent to filter by value. Or use `search_by_value` with min_value 500000 and max_value 10000000. Your agent cross-references the results to show only German IT contracts above your threshold.
+
+**Q: Is TED data limited to EU countries only?**
+TED primarily covers the 27 EU member states, but it also includes notices from EEA countries (Norway, Iceland, Liechtenstein), EU candidate countries, and some international organizations. All tools return data across this full scope. The `search_by_country` tool supports ISO codes for all covered territories.
+
+
 ## Installation & Usage
 
-To install and use the **TED EU** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ted-eu](https://vinkius.com/mcp/ted-eu)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TED EU** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ted-eu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TED EU** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ted-eu": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

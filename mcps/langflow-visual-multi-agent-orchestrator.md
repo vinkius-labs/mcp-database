@@ -1,7 +1,6 @@
 # Langflow (Visual Multi-agent Orchestrator) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/langflow-visual-multi-agent-orchestrator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/langflow-visual-multi-agent-orchestrator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/langflow-visual-multi-agent-orchestrator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/langflow-visual-multi-agent-orchestrator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Langflow (Visual Multi
 > I found 2 projects: 'Production Agents' (ID: proj-001) and 'Experimental Lab' (ID: proj-002).
 
 
+## ❓ FAQ
+
+**Q: Can I run a flow using its name instead of a long UUID?**
+Yes! The `run_flow` tool accepts either the Flow ID or the Flow Name in the `flow_id` parameter, making it easy to trigger specific logic by name.
+
+**Q: How do I see all the available projects and folders in my Langflow instance?**
+Use the `list_projects` tool. It will return a list of all projects (folders) which help organize your flows and components.
+
+**Q: Is it possible to trigger a flow from an external webhook payload?**
+Absolutely. Use the `trigger_webhook` tool by providing the `flow_id` and the `data` JSON payload you want to send to the flow's entry point.
+
+
 ## Installation & Usage
 
-To install and use the **Langflow (Visual Multi-agent Orchestrator)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/langflow-visual-multi-agent-orchestrator](https://vinkius.com/mcp/langflow-visual-multi-agent-orchestrator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Langflow (Visual Multi-agent Orchestrator)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `langflow-visual-multi-agent-orchestrator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Langflow (Visual Multi-agent Orchestrator)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "langflow-visual-multi-agent-orchestrator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

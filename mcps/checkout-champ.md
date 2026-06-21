@@ -1,7 +1,6 @@
 # Checkout Champ MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkout-champ)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/checkout-champ-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/checkout-champ-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkout-champ)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Checkout Champ** MCP s
 > Retrieving active campaigns... I found 3: 'Summer Sale 2024', 'Retargeting Blitz', and 'New Product Launch'. I can provide performance data for each if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Can I see the reason why a transaction failed?**
+Yes! Use the `list_champ_transactions` tool. The agent will retrieve recent transactions including the decline reason and response from the payment gateway.
+
+**Q: How do I list my latest leads from a specific campaign?**
+Use the `list_champ_leads` tool. You can then ask the agent to filter the results by campaign name or ID to see who signed up recently.
+
+**Q: Where do I find my API Login ID and Password?**
+Log in to Checkout Champ and go to the 'Settings' or 'Admin' section to manage API Users. You can create a dedicated API user and get the credentials there.
+
+
 ## Installation & Usage
 
-To install and use the **Checkout Champ** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/checkout-champ](https://vinkius.com/mcp/checkout-champ)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Checkout Champ** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `checkout-champ` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Checkout Champ** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "checkout-champ": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

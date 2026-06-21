@@ -1,7 +1,6 @@
 # Steam Platform & Hype Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/steam-platform-hype-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/steam-platform-hype-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/steam-platform-hype-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/steam-platform-hype-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Steam Platform & Hype 
 > Inspecting latest updates... I found a significant patch from today regarding map adjustments on Mirage and sub-tick networking improvements. I have the full summary of technical changes. Would you like the details on weapon balance adjustments?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the AppID of a game using only its name?**
+Yes! Use the `search_all_steam_apps` tool. Your agent will scan the Steam database and return matching AppIDs, which are required for all other technical tools.
+
+**Q: Is it possible to monitor the live player count for a new game like Deadlock?**
+Absolutely. The `get_current_player_count` tool provides real-time data from Steam servers, allowing you to quantify the hype and player base of any specific title at any moment.
+
+**Q: How do I find a user's SteamID64 if I only have their profile URL?**
+Use the `resolve_vanity_url` tool with the custom part of the URL. The agent will return the unique 64-bit identifier required for all user-specific statistical queries.
+
+
 ## Installation & Usage
 
-To install and use the **Steam Platform & Hype Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/steam-platform-hype-intelligence](https://vinkius.com/mcp/steam-platform-hype-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Steam Platform & Hype Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `steam-platform-hype-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Steam Platform & Hype Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "steam-platform-hype-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

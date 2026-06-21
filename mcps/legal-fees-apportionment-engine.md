@@ -1,7 +1,6 @@
 # Legal Fees Apportionment Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/legal-fees-apportionment-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/legal-fees-apportionment-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/legal-fees-apportionment-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/legal-fees-apportionment-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -45,12 +44,52 @@ Here are some examples of how you can interact with the **Legal Fees Apportionme
 > The computation has been executed with mathematical precision. Attorney fees total $40,000.00, split equally at $20,000.00 per firm.
 
 
+## ❓ FAQ
+
+**Q: Does it handle unequal weights?**
+Yes. Each party can have a custom weight. The engine computes exact ratios based on the total sum of all weights, ensuring mathematically perfect proportional distribution.
+
+**Q: How precise is the rounding?**
+The engine calculates ratios to 6 decimal places internally and outputs currency amounts rounded to exactly 2 decimal places, matching court-standard precision.
+
+**Q: Can I deduct fees before splitting?**
+Absolutely. You specify the fee percentage and the engine automatically separates the fee amount from the net award before distributing among parties.
+
+
 ## Installation & Usage
 
-To install and use the **Legal Fees Apportionment Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/legal-fees-apportionment-engine](https://vinkius.com/mcp/legal-fees-apportionment-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Legal Fees Apportionment Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `legal-fees-apportionment-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Legal Fees Apportionment Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "legal-fees-apportionment-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Firebase (REST & Admin APIs) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firebase-rest-admin-apis)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firebase-rest-admin-apis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firebase-rest-admin-apis-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firebase-rest-admin-apis)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Firebase (REST & Admin
 > The user has been successfully created. The new UID is `abc123xyz`. I've also received an ID token for this session. Should I look up the profile details for this new account?
 
 
+## ❓ FAQ
+
+**Q: Can I read data from a specific path in the Realtime Database?**
+Yes. Use the `rtdb_get` tool and provide the database path (e.g., 'users/jack/profile'). You can also set the `shallow` parameter to true if you only want to see the keys at that level.
+
+**Q: How do I create a new document in a Firestore collection?**
+Use the `firestore_create_doc` tool. Specify the `collectionPath` and provide the document data as a JSON string. If you don't provide a `documentId`, Firestore will generate one automatically.
+
+**Q: Can I check a user's profile information if I have their ID token?**
+Absolutely. The `auth_lookup` tool allows you to retrieve full user profile data from Firebase Auth by providing a valid `idToken` obtained during sign-in.
+
+
 ## Installation & Usage
 
-To install and use the **Firebase (REST & Admin APIs)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/firebase-rest-admin-apis](https://vinkius.com/mcp/firebase-rest-admin-apis)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Firebase (REST & Admin APIs)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `firebase-rest-admin-apis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Firebase (REST & Admin APIs)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "firebase-rest-admin-apis": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

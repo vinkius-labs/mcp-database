@@ -1,7 +1,6 @@
 # Umbraco MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/umbraco)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/umbraco-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/umbraco-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/umbraco)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Umbraco** MCP server u
 > Done. The document d6ef43... has been successfully nuked from the active Umbraco Management context.
 
 
+## ❓ FAQ
+
+**Q: Can it easily retrieve the content of a page assuming I only know its URL path?**
+Absolutely. Instruct the agent to 'get_delivery_content_by_path' and supply something like '/home/about'. It traverses the Delivery API native routing map and returns perfectly all inner block grids and content variables attached.
+
+**Q: How do I ensure the JSON payloads for `create_cms_document` are exactly what Umbraco expects?**
+Use the agent to first run 'list_document_types'. It pulls down the global schema blueprints. The LLM can explicitly read the allowed field types (like rich text or media pickers) and logically construct the insertion matching it exactly.
+
+**Q: Does it pull media details dynamically?**
+Yes. Pinging 'list_media_assets' grants full insight over all stored visuals inside your Umbraco media containers, returning URL addresses alongside fundamental dimension formats so the agent can reference them anywhere.
+
+
 ## Installation & Usage
 
-To install and use the **Umbraco** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/umbraco](https://vinkius.com/mcp/umbraco)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Umbraco** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `umbraco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Umbraco** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "umbraco": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

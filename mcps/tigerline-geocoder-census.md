@@ -1,7 +1,6 @@
 # TIGER/Line Geocoder (Census) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tigerline-geocoder-census)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tigerline-geocoder-census-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tigerline-geocoder-census-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tigerline-geocoder-census)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **TIGER/Line Geocoder (C
 > I've retrieved the available benchmarks. You can use 'Public_AR_Current' (ID: 4), 'Public_AR_Census2020' (ID: 2020), or 'Public_AR_Census2010' (ID: 10) for your queries.
 
 
+## ❓ FAQ
+
+**Q: Can I get census tract and block information from a single address string?**
+Yes! Use the `geocode_oneline` tool with `returntype` set to 'geographies'. Provide the address and a benchmark (like 'Public_AR_Current') to receive full geographic metadata.
+
+**Q: How do I find out which census area a specific GPS coordinate belongs to?**
+Use the `geocode_coordinates` tool. Input the longitude (x) and latitude (y) along with a benchmark and vintage. The agent will return the specific census layers for that point.
+
+**Q: Does this server support geocoding for addresses in Puerto Rico?**
+Yes, specifically via the `geocode_address_pr` tool. It includes fields for 'urb' (Urbanization) and 'municipio' which are essential for accurate Puerto Rico address matching.
+
+
 ## Installation & Usage
 
-To install and use the **TIGER/Line Geocoder (Census)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tigerline-geocoder-census](https://vinkius.com/mcp/tigerline-geocoder-census)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TIGER/Line Geocoder (Census)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tigerline-geocoder-census` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TIGER/Line Geocoder (Census)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tigerline-geocoder-census": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

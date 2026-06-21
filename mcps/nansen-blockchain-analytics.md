@@ -1,7 +1,6 @@
 # Nansen (Blockchain Analytics) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nansen-blockchain-analytics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nansen-blockchain-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nansen-blockchain-analytics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nansen-blockchain-analytics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -112,12 +111,52 @@ Here are some examples of how you can interact with the **Nansen (Blockchain Ana
 > Analyzing PnL for the specified address... This wallet has an aggregate realized profit of $1.2M, with its most profitable trade being in SHIB. Would you like to see the full transaction history?
 
 
+## ❓ FAQ
+
+**Q: How can I track where Smart Money is moving capital?**
+Use the `smart_money_netflow` tool to see net capital flows (inflows vs outflows) for tokens, or `smart_money_holdings` to see aggregated balances held by these sophisticated entities.
+
+**Q: Can I identify the behavior or identity of a specific wallet?**
+Yes, use `profiler_labels` or `profiler_premium_labels` to retrieve behavioral tags (like 'Smart Money', 'Heavy DEX User', or ENS names) associated with any blockchain address.
+
+**Q: How do I analyze the performance of a specific address?**
+Use `profiler_pnl_summary` to get an aggregate view of profits and losses, or `profiler_pnl` for a detailed breakdown of performance for a specific address and token pair.
+
+
 ## Installation & Usage
 
-To install and use the **Nansen (Blockchain Analytics)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nansen-blockchain-analytics](https://vinkius.com/mcp/nansen-blockchain-analytics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nansen (Blockchain Analytics)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nansen-blockchain-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nansen (Blockchain Analytics)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nansen-blockchain-analytics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

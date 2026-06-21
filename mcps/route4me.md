@@ -1,7 +1,6 @@
 # Route4Me MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/route4me)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/route4me-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/route4me-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/route4me)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Route4Me** MCP server 
 > I submitted the textual string through the `geocode_address` algorithmic logic. It precisely matched the parameter converting it effectively into verifiable numerical tracking values. Your coordinates output confirms standard positioning: Latitude 40.750, Longitude -73.996.
 
 
+## ❓ FAQ
+
+**Q: Can the AI automatically assign drivers to newly generated routes?**
+This particular capability set focuses heavily on querying navigational routes, analyzing optimizations, and live tracking variables. Assigning specific user accounts or driver individuals to dispatched routes typically requires organizational-level management directly performed through your centralized Route4Me web board to appropriately handle real payroll, licensing, or schedule complications instead of conversational automation.
+
+**Q: How does `get_route_gps_tracking` update if the vehicle goes offline?**
+If a Route4Me integrated tracking application or native vehicular telematics unit temporarily loses signal, the platform caches the latest recorded ping. Therefore, running the tracking querying task via the AI returns the last reliable known geographical timestamp instead of an extrapolated error, keeping expectations transparent to operational visibility parameters.
+
+**Q: Can I add a new stop to an already-active route without re-optimizing everything?**
+Yes. The `insert_stop_into_route` tool lets you inject a new address into an existing dispatched route. The platform appends it without recalculating the full optimization, keeping the rest of the sequence intact.
+
+
 ## Installation & Usage
 
-To install and use the **Route4Me** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/route4me](https://vinkius.com/mcp/route4me)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Route4Me** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `route4me` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Route4Me** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "route4me": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

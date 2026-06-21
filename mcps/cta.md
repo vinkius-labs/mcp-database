@@ -1,7 +1,6 @@
 # CTA MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cta)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cta-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cta)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -106,12 +105,52 @@ Here are some examples of how you can interact with the **CTA** MCP server using
 > Checking CTA route status... System overview: Red Line — GOOD, Blue Line — GOOD, Brown Line — GOOD, Green Line — GOOD, Orange Line — GOOD, Purple Line — GOOD, Pink Line — GOOD, Yellow Line — GOOD. All L lines currently running on schedule with no major disruptions. For bus routes, most routes are operating normally. Would you like me to check specific alerts for a particular line or route, or get arrival predictions for your commute?
 
 
+## ❓ FAQ
+
+**Q: Can my AI check when the next L train is arriving at my station?**
+Yes! Use the `get_train_arrivals` tool with the station mapId (a 5-digit parent station ID, e.g., 40360 for Clark/Lake, 40900 for Jackson). Your AI will return all upcoming trains with destination names, line colors (Red, Blue, Brown, Green, Orange, Purple, Pink, Yellow), predicted arrival times in minutes, operating status (on-time, delayed, approaching, boarding, departing), and whether the train is scheduled or real-time tracked. If you do not know the mapId, it can be found in the CTA GTFS static data feed.
+
+**Q: How do I check when the next CTA bus is arriving at a specific stop?**
+First use `get_bus_stops` with a route ID to find the stop ID (stpid) for your location. Then use `get_bus_predictions` with that stop ID to get real-time estimated arrival times, route information, destination descriptions, and vehicle IDs. For route-filtered predictions, you can also pass the route ID to narrow results to a specific bus line. Stop IDs are numeric identifiers assigned by CTA to each physical bus stop across Chicago.
+
+**Q: Are there any service disruptions affecting the Red Line or my bus route right now?**
+Use `get_service_alerts` to check all active service disruptions across the CTA system. This returns alerts with affected routes and stations, disruption descriptions, severity levels, cause types (maintenance, incident, weather, special events, construction), and detour information. You can also use `get_route_status` for a quick system-wide health check showing which L lines and bus routes are running on-time, delayed, or have planned work. Always check this before planning any CTA journey.
+
+
 ## Installation & Usage
 
-To install and use the **CTA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cta](https://vinkius.com/mcp/cta)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CTA** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CTA** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cta": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

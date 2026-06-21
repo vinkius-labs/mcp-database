@@ -1,7 +1,6 @@
 # Road511 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/road511)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/road511-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/road511-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/road511)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Road511** MCP server u
 > Fetching Road511 system summary... Currently tracking across 65 jurisdictions (50 US states + 13 Canadian provinces). Active incidents: 1,247 (312 major, 523 moderate, 412 minor). Construction zones: 892 active. Closures: 67 active. Data source health: 61 of 65 jurisdictions reporting healthy, 3 degraded, 1 temporarily down. Average data freshness: 2.3 minutes. Camera network: 8,456 active feeds operational. API response time: 142ms average. Would you like a breakdown by specific state or incident type?
 
 
+## ❓ FAQ
+
+**Q: Can my AI check for traffic incidents on a specific highway like I-405 in California?**
+Yes! Use the `get_events` tool with road=I-405 and jurisdiction=CA to filter incidents specifically on that highway. You can further filter by type (incidents, construction, closures) and severity (minor, moderate, major, critical). The results include incident descriptions, affected lanes, estimated clearance times, and alternate route suggestions. For mapping visualization, use `get_events_geojson` to get the same data in GeoJSON format ready for Mapbox or Leaflet.
+
+**Q: How do I find traffic cameras and EV charging stations along my route?**
+Use the `get_features` tool with type=cameras to find all traffic cameras in a jurisdiction, or type=ev_chargers for EV charging stations. You can filter by bounding box (bbox) or by radius from a lat/lon point. For mapping applications, use `get_features_geojson` which returns data in GeoJSON format ready for direct integration with mapping libraries. Camera features include live stream URLs and road conditions include surface status and weather impacts.
+
+**Q: Can I analyze traffic incident trends to understand if traffic is getting worse in my state?**
+Absolutely! Use `get_trends` with your jurisdiction code (e.g., jurisdiction=CA for California) to get time-series incident data showing whether incidents are increasing, decreasing, or stable over time. Use `get_clearance` to understand how quickly incidents are being resolved (P50 median and P95 resolution times). Combined with `get_summary` for current snapshot data, you can build comprehensive traffic safety and efficiency reports. This is perfect for transportation planning, resource allocation, and operational performance benchmarking.
+
+
 ## Installation & Usage
 
-To install and use the **Road511** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/road511](https://vinkius.com/mcp/road511)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Road511** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `road511` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Road511** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "road511": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

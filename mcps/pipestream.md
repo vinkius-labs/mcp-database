@@ -1,7 +1,6 @@
 # PipeStream MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pipestream)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pipestream-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pipestream-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pipestream)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **PipeStream** MCP serve
 > I've fetched the 5 most recent events from 'user-signups'. They include payload data for user registrations from the last hour. Would you like me to summarize the data?
 
 
+## ❓ FAQ
+
+**Q: Can I create a new data stream with a specific retention period?**
+Yes! Use the `create_stream` tool. You can specify the name and the `retention_hours` to define how long data should be stored in that logical channel.
+
+**Q: How do I send a JSON payload to an existing stream?**
+Use the `publish_event` tool. Provide the `stream_id` and your JSON `payload`. You can also optionally include a custom ISO8601 timestamp.
+
+**Q: Is it possible to filter events by time when fetching data?**
+Absolutely. The `fetch_events` tool allows you to provide a `from_timestamp` to retrieve only the events recorded after a specific point in time.
+
+
 ## Installation & Usage
 
-To install and use the **PipeStream** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pipestream](https://vinkius.com/mcp/pipestream)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PipeStream** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pipestream` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PipeStream** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pipestream": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

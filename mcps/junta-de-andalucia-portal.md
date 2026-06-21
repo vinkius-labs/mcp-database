@@ -1,7 +1,6 @@
 # Junta de Andalucía (Portal) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/junta-de-andalucia-portal)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/junta-de-andalucia-portal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/junta-de-andalucia-portal-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/junta-de-andalucia-portal)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Junta de Andalucía (P
 > Fetching metadata for 'centros-sanitarios'... This dataset contains information about all health centers in Andalusia, updated monthly. It includes 3 resources in CSV and JSON formats. Would you like the IDs of these resources?
 
 
+## ❓ FAQ
+
+**Q: How can I search for specific information inside a dataset's file?**
+Use the `search_datastore` tool with the specific `resource_id`. You can provide a query string `q` to filter the rows and find exactly what you need within the data table.
+
+**Q: Can I see which government department published a specific dataset?**
+Yes. You can use `list_organizations` to see all publishers or use `get_package` with the dataset ID to see the specific organization responsible for that data.
+
+**Q: Is an API key mandatory to use this server?**
+No, the API key is optional. Most data on the Junta de Andalucía portal is public. However, providing a key via the `JUNTA_API_KEY` credential may help avoid rate limits during intensive usage.
+
+
 ## Installation & Usage
 
-To install and use the **Junta de Andalucía (Portal)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/junta-de-andalucia-portal](https://vinkius.com/mcp/junta-de-andalucia-portal)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Junta de Andalucía (Portal)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `junta-de-andalucia-portal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Junta de Andalucía (Portal)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "junta-de-andalucia-portal": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

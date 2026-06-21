@@ -1,7 +1,6 @@
 # Equixly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/equixly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/equixly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/equixly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/equixly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **Equixly** MCP server u
 > I found 3 registered services: 'Billing-v1' (https://api.billing.com), 'Payments' (https://pay.example.com), and 'Auth-Service'. Each is configured for continuous security monitoring.
 
 
+## ❓ FAQ
+
+**Q: Can my agent trigger an autonomous penetration test on a specific API?**
+Yes. Use the 'trigger_scan' tool with the target Service ID. The Equixly AI Hacker will begin an autonomous session, learning and attacking the API for various flaws including BOLA and business logic errors.
+
+**Q: How do I see the security vulnerabilities found in the last scan via chat?**
+Use the 'get_scan_findings' tool. Provide the Service and Scan IDs. The agent will retrieve a detailed list of confirmed security flaws, including severity levels and actionable remediation guidance.
+
+**Q: Can I upload an OpenAPI specification to improve scan coverage through the agent?**
+Absolutely. Use the 'upload_api_spec' tool. Provide the spec content and format (e.g., 'openapi'). This allows the AI Hacker to understand the full attack surface and maximize vulnerability discovery.
+
+
 ## Installation & Usage
 
-To install and use the **Equixly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/equixly](https://vinkius.com/mcp/equixly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Equixly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `equixly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Equixly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "equixly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

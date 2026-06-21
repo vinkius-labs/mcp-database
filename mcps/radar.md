@@ -1,7 +1,6 @@
 # Radar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/radar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/radar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/radar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/radar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Radar** MCP server usi
 > Using Radar's IP tool, `ip_geocode` resolves `8.8.8.8` to the United States.
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Radar API key?**
+Log into your Radar dashboard. Under 'Project Settings' or the dedicated API keys section, look for your 'Publishable Key'. This is the standard read-only key used for client integrations and MCP operations.
+
+**Q: Should I use the Publishable Key or the Secret Key?**
+Always use the **Publishable Key** for this MCP server instance if possible, as the operations (geocoding, routing, lookup) are typically safe read-only spatial actions.
+
+**Q: Can it calculate multi-stop routes like a delivery app?**
+Yes, but indirectly through distance comparisons. The basic routing API fetches times from Point A to Point B. The AI can chain these requests together to establish an estimated schedule contextually in your chat.
+
+
 ## Installation & Usage
 
-To install and use the **Radar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/radar](https://vinkius.com/mcp/radar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Radar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `radar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Radar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "radar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # CodeRabbit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coderabbit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coderabbit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coderabbit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coderabbit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -107,12 +106,52 @@ Would you like a breakdown by repository or author?
 All entries are tamper-resistant and SIEM-ready.
 
 
+## ❓ FAQ
+
+**Q: Can I see how productive my team's code review process is over the last month?**
+Yes! Use the `get_metrics` tool with a date range (e.g., 2026-03-01 to 2026-03-31). It returns complexity scores, average review times, and comment breakdowns categorized by severity for all merged PRs.
+
+**Q: How do I enable AI code reviews for new team members?**
+First run `list_users` with `seat_filter=unassigned` to find members without seats. Then use `assign_seats` with their user IDs to grant them AI-powered code review access instantly.
+
+**Q: Can I audit who made administrative changes in the organization?**
+Absolutely. The `get_audit_logs` tool returns a complete, tamper-resistant trail of all admin actions including seat assignments, role changes, configuration updates, and API key operations. You can filter by action type and date range.
+
+
 ## Installation & Usage
 
-To install and use the **CodeRabbit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coderabbit](https://vinkius.com/mcp/coderabbit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CodeRabbit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coderabbit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CodeRabbit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coderabbit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

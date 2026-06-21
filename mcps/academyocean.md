@@ -1,7 +1,6 @@
 # AcademyOcean MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/academyocean)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/academyocean-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/academyocean-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/academyocean)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **AcademyOcean** MCP ser
 > John Doe has completed 75% of the 'Cybersecurity Basics' course. He has finished 6 out of 8 lessons and passed the midterm quiz with a score of 90%.
 
 
+## ❓ FAQ
+
+**Q: How do I invite a new employee to the academy?**
+Use the `invite_learner` tool and provide the employee's email address. Your agent will send the official invitation and create their profile in AcademyOcean.
+
+**Q: How do I track course completions in real-time?**
+AcademyOcean supports webhooks that trigger alerts when a learner starts a course, finishes a module, or earns a certificate, keeping external HR systems perfectly synced.
+
+**Q: Can I integrate training data with my CRM?**
+Yes, you can easily export course progress and engagement data to systems like Salesforce or HubSpot via API to correlate training with performance.
+
+
 ## Installation & Usage
 
-To install and use the **AcademyOcean** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/academyocean](https://vinkius.com/mcp/academyocean)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AcademyOcean** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `academyocean` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AcademyOcean** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "academyocean": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

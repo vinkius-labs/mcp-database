@@ -1,7 +1,6 @@
 # Traffic Manager Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/traffic-manager-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/traffic-manager-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/traffic-manager-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/traffic-manager-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -64,12 +63,52 @@ Here are some examples of how you can interact with the **Traffic Manager Prover
 > ATTRIBUTION_NAIVE — Economics pass (CAC:LTV healthy). Attribution FAILS: last-click GA4 does not deduplicate, no iOS adjustment, no incrementality test. Fix attribution before trusting the numbers. Then: funnel needs full stage breakdown, creative is fatigue-dead at 6 weeks, audience needs segmentation.
 
 
+## ❓ FAQ
+
+**Q: Why is platform-reported ROAS fiction?**
+Google and Meta both claim the same conversion. iOS 14.5 made 60-80% of iOS conversions invisible, so platforms model them — often generously. Incrementality tests consistently show 30-40% of attributed conversions are organic (Measured.com data). Platform-reported ROAS 4x might be 2.5x incremental. The only way to know: run a 10% holdout group that sees no ads and measure the difference.
+
+**Q: What is creative fatigue and when does it hit?**
+After 2-3 weeks of high-frequency exposure, CTR drops 30-50% from peak — that is the fatigue threshold. The audience has seen the ad too many times and stops responding. Solution: plot CTR daily per creative, set rotation deadlines at -30% from peak. Maintain a test pipeline of 5 new variants per week. Allocate 60% budget to the winner, 40% to testing. UGC-style creative fatigues slower than polished brand creative.
+
+**Q: At what point does more budget stop working?**
+When you have reached 60-70% of your addressable audience with frequency above 3, marginal ROAS goes negative. Each additional dollar returns less than the previous one. 1% lookalike audiences perform 3x better than 10% lookalikes. Track CPA by audience tier to see when expansion produces diminishing returns. Scale by finding NEW high-intent audiences, not by pushing existing ones past saturation.
+
+
 ## Installation & Usage
 
-To install and use the **Traffic Manager Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/traffic-manager-prover](https://vinkius.com/mcp/traffic-manager-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Traffic Manager Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `traffic-manager-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Traffic Manager Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "traffic-manager-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Cohere (AI Platform) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cohere-ai-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cohere-ai-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cohere-ai-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cohere-ai-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Cohere (AI Platform)**
 > Reranking complete! I've reordered the results based on their semantic relevance to your query. Result_3 is now the top recommendation with a 98% relevance score.
 
 
+## ❓ FAQ
+
+**Q: Can my agent use Cohere to generate creative or technical text?**
+Yes. The 'generate_text' and 'chat_generation' tools allow you to leverage Cohere's Command models. You can provide prompts for anything from copywriting to code generation, and the agent will return the synthesized token strings.
+
+**Q: How do I perform high-dimensional vector searches with Cohere?**
+Use the 'generate_embeddings' tool. Provide an array of texts, and your agent will return the precise dense vector shapes (floats). These can then be stored in a vector database like Chroma or ClickHouse for similarity matching.
+
+**Q: Can I audit token usage before sending a long prompt?**
+Absolutely. The 'tokenize_text' tool retrieves the exact structural segmentation of your text based on the specific model's dictionary. This allows you to verify token counts and manage your context window limits efficiently.
+
+
 ## Installation & Usage
 
-To install and use the **Cohere (AI Platform)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cohere-ai-platform](https://vinkius.com/mcp/cohere-ai-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cohere (AI Platform)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cohere-ai-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cohere (AI Platform)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cohere-ai-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

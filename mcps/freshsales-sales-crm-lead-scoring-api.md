@@ -1,7 +1,6 @@
 # Freshsales (Sales CRM & Lead Scoring API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshsales-sales-crm-lead-scoring-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freshsales-sales-crm-lead-scoring-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freshsales-sales-crm-lead-scoring-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshsales-sales-crm-lead-scoring-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **Freshsales (Sales CRM 
 > Fetching leads from view 400123... I've found 12 leads. The most recent ones are 'Alice Cooper' and 'Bob Smith'.
 
 
+## ❓ FAQ
+
+**Q: How can I find a lead if I only have their email address?**
+You can use the `search_lookup` tool. It allows you to search for records like leads or contacts specifically by fields such as email, ensuring you find the exact record you need.
+
+**Q: Can I convert a lead to a contact directly through the AI?**
+Yes! Use the `convert_lead` tool. You will need to provide the Lead ID, and ensure you have the mandatory last name and company name to complete the conversion.
+
+**Q: How do I see what stages are available for my sales deals?**
+Simply use the `list_deal_stages` tool. It will retrieve all the configured pipeline stages from your Freshsales account so you can categorize your deals correctly.
+
+
 ## Installation & Usage
 
-To install and use the **Freshsales (Sales CRM & Lead Scoring API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/freshsales-sales-crm-lead-scoring-api](https://vinkius.com/mcp/freshsales-sales-crm-lead-scoring-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Freshsales (Sales CRM & Lead Scoring API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `freshsales-sales-crm-lead-scoring-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Freshsales (Sales CRM & Lead Scoring API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "freshsales-sales-crm-lead-scoring-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

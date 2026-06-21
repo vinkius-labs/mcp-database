@@ -1,7 +1,6 @@
 # Calendly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/calendly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/calendly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/calendly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/calendly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Calendly** MCP server 
 > Checking your availability… You have a free slot from 15:00 to 16:30 on Friday. Your 30-Minute Meeting event type is active and has availability in that window. Would you like me to share your scheduling link, or should I create a one-off event?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent prepare me for my next call in 10 seconds?**
+Yes. Ask your agent to list your upcoming events — it returns the invitee name, email, event type, and scheduled time. Combine it with a CRM lookup and you have a complete pre-call brief without opening a single tab. Sales reps who adopted this workflow report saving 5–10 minutes per meeting in context-switching time.
+
+**Q: How can I track no-shows and cancellations across my team?**
+Ask your agent to list recent events filtered by status. It surfaces cancellations with their reasons and identifies no-show patterns. Perfect for weekly pipeline reviews — instead of manually exporting Calendly analytics, ask your agent to aggregate the data and highlight trends. Your AI does the number-crunching while you focus on coaching.
+
+**Q: I manage multiple event types for different use cases — can my agent help me audit them?**
+Absolutely. List all your event types and your agent shows you each one with its duration, scheduling URL, active/inactive status, and configuration. Spot duplicates, identify unused event types, and clean up your scheduling page — all through a single conversation. No clicking through dozens of Calendly settings pages.
+
+
 ## Installation & Usage
 
-To install and use the **Calendly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/calendly](https://vinkius.com/mcp/calendly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Calendly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `calendly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Calendly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "calendly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

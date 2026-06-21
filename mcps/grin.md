@@ -1,7 +1,6 @@
 # GRIN MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grin)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grin-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grin)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **GRIN** MCP server usin
 > Retrieving order details... Order #GF-88392 for creator Mark R. is currently 'In Transit'. The estimated delivery date is June 12th. Would you like the tracking link?
 
 
+## ❓ FAQ
+
+**Q: Can my agent list all content generated for a specific campaign in GRIN?**
+Yes. Use the 'list_content' tool with filters for the specific campaign. Your agent will retrieve the posts, stories, and media links associated with that activation flawlessly.
+
+**Q: How do I track the ROI of an influencer via chat?**
+You can use the 'list_conversions' tool. Your agent will retrieve sales and attributed conversion data for specific creators, providing a clear overview of their performance natively.
+
+**Q: Can I check the status of product seeding orders through the agent?**
+Absolutely. Use the 'list_orders' tool. Your agent will fetch the fulfillment statuses for all products sent to creators, ensuring your seeding logistics are on track flawlessly.
+
+
 ## Installation & Usage
 
-To install and use the **GRIN** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/grin](https://vinkius.com/mcp/grin)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GRIN** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `grin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GRIN** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "grin": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

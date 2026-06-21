@@ -1,7 +1,6 @@
 # Zoho Billing MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-billing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-billing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-billing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-billing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **Zoho Billing** MCP ser
 > You currently have 3 products configured: 'Cloud Storage', 'Analytics API', and 'Enterprise Dashboard'. There are 5 active pricing plans across these products, with the 'Analytics Pro' plan being the most frequently subscribed.
 
 
+## ❓ FAQ
+
+**Q: Can I query a customer's active subscriptions?**
+Yes, by providing the customer ID or email, the agent can fetch all their active, past due, or canceled subscriptions.
+
+**Q: How do I check if an invoice has been paid?**
+Simply ask the AI to check the status of a specific Invoice Number to see if it's paid, sent, or overdue.
+
+**Q: Does it support creating new invoices?**
+Currently, the integration primarily focuses on securely retrieving and reporting financial data rather than generating new charges.
+
+
 ## Installation & Usage
 
-To install and use the **Zoho Billing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zoho-billing](https://vinkius.com/mcp/zoho-billing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zoho Billing** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zoho-billing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zoho Billing** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zoho-billing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Skydropx API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skydropx-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/skydropx-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/skydropx-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skydropx-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Skydropx API** MCP ser
 > Here.
 
 
+## ❓ FAQ
+
+**Q: Is it completely safe typing my Skydropx Token Key under the workspace credentials menu?**
+Yes. Following standard protocol from Vinkius ecosystem, the framework utilizes an implicit `sensitive: true` marker mapping directly blocking its text input masking UI rendering perfectly from eyes.
+
+**Q: Can I simply track a parcel giving Claude only the tracking string ID?**
+Yes! Trigger dynamically `get_tracking` expressing plainly the string, and Skydropx routes heavily providing the array of checkpoints, signatures, and courier state on the payload back to you.
+
+**Q: Is the tracking live directly?**
+Yes, queries real APIs.
+
+
 ## Installation & Usage
 
-To install and use the **Skydropx API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/skydropx-api](https://vinkius.com/mcp/skydropx-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Skydropx API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `skydropx-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Skydropx API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "skydropx-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

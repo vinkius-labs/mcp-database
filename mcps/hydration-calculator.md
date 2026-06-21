@@ -1,7 +1,6 @@
 # Hydration Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hydration-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hydration-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hydration-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hydration-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -51,12 +50,52 @@ Here are some examples of how you can interact with the **Hydration Calculator**
 > Running `classify_texture` with 85% hydration and 'Chapati' profile, we get a result of [PREDICTED_TEXTURE] classification. The suitability notes advise that [SUITABILITY_NOTES]. This confirms the specific constraints needed for flatbreads.
 
 
+## ❓ FAQ
+
+**Q: How is dough hydration calculated?**
+You use the `calculate_hydration` tool. This function takes your total flour weight, total water weight, and any liquid additives (like oil or milk) to give you a precise percentage of hydration.
+
+**Q: What if I don't know my dough type?**
+Before calculating texture, run the `determine_dough_type` tool. By providing your flour type and salt weight, this tool establishes a structural profile (e.g., Neapolitan Pizza) that provides necessary context for accurate prediction.
+
+**Q: Does the texture classification rely on multiple inputs?**
+Yes. The `classify_texture` tool is designed to take two specific pieces of information: 1) your calculated hydration percentage, and 2) the confirmed dough profile name provided by the `determine_dough_type` tool. Both are required for an accurate result.
+
+
 ## Installation & Usage
 
-To install and use the **Hydration Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hydration-calculator](https://vinkius.com/mcp/hydration-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hydration Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hydration-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hydration Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hydration-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

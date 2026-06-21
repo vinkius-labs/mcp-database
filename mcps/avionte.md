@@ -1,7 +1,6 @@
 # Avionte MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/avionte)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/avionte-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/avionte-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/avionte)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Avionte** MCP server u
 > Department 5544 is located at 123 Innovation Way, Suite 400. For company 100, I found the following tags: 'Strategic Partner', 'High Volume', and 'IT Services'.
 
 
+## ❓ FAQ
+
+**Q: Can I see a candidate's full work and education history using their ID?**
+Yes! You can use the `get_talent_work_history` and `get_talent_education_history` tools with the specific Talent ID to retrieve all recorded employment and academic background details.
+
+**Q: How do I check the current nomination stage of a talent in the hiring process?**
+Simply use the `get_talent_stage` tool. It will return the specific stage of the nomination process for the provided Talent ID, helping you track where they are in the pipeline.
+
+**Q: Is it possible to list all available talent statuses configured in our system?**
+Yes, the `get_available_talent_statuses` tool retrieves a complete list of all possible statuses that can be assigned to talent profiles within your Avionte environment.
+
+
 ## Installation & Usage
 
-To install and use the **Avionte** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/avionte](https://vinkius.com/mcp/avionte)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Avionte** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `avionte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Avionte** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "avionte": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

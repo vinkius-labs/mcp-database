@@ -1,7 +1,6 @@
 # Open Brewery DB MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-brewery-db)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-brewery-db-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-brewery-db-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-brewery-db)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -64,12 +63,52 @@ Here are some examples of how you can interact with the **Open Brewery DB** MCP 
 > Russian River Brewing Company is located at 725 4th St, Santa Rosa, CA 95404. You can visit their website at http://www.russianriverbrewing.com. They are categorized as a regional brewery.
 
 
+## ❓ FAQ
+
+**Q: What brewery types are available?**
+Six types: micro (small-scale production), nano (ultra-small, often home-based), regional (large-scale distribution), brewpub (restaurant+brewery combo), contract (brewed at another location), and proprietor (owner-operated with minimal production).
+
+**Q: Can I search for breweries by location coordinates?**
+Yes, many entries in the Open Brewery DB include precise latitude and longitude coordinates, making it possible to query for breweries near a specific geographical point.
+
+**Q: Are international breweries included?**
+While the primary focus of Open Brewery DB has historically been the United States, it is actively expanding to include breweries from the UK, Ireland, South Korea, and other international locations.
+
+
 ## Installation & Usage
 
-To install and use the **Open Brewery DB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/open-brewery-db](https://vinkius.com/mcp/open-brewery-db)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Open Brewery DB** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `open-brewery-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Open Brewery DB** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "open-brewery-db": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

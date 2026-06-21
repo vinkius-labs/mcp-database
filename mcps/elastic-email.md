@@ -1,7 +1,6 @@
 # Elastic Email MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elastic-email)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elastic-email-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elastic-email-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elastic-email)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Elastic Email** MCP se
 > John Doe is a member of the 'Master List' and is currently 'Opted In'. Their last interaction was on March 15th. Should I pull their complete interaction history?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Elastic Email API Key?**
+Log in to your Elastic Email dashboard, navigate to **Settings > API**, and you can generate or retrieve your unique API Key from there. Ensure the key has the necessary permissions for campaigns and contacts.
+
+**Q: Can the agent send new email broadcasts?**
+This integration currently focuses on listing and auditing campaigns, lists, and contacts. Scheduling or sending actual email broadcasts should be managed via the Elastic Email campaign builder or SMTP interface.
+
+**Q: Does the integration show real-time delivery status?**
+Yes, you can use the list_delivery_logs tool to retrieve the latest transmission events and statuses as reported by the Elastic Email platform.
+
+
 ## Installation & Usage
 
-To install and use the **Elastic Email** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/elastic-email](https://vinkius.com/mcp/elastic-email)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Elastic Email** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `elastic-email` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Elastic Email** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "elastic-email": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

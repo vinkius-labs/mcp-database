@@ -1,7 +1,6 @@
 # Readwise MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/readwise)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/readwise-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/readwise-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/readwise)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Readwise** MCP server 
 > I queried `list_highlights` and filtered your collection. You have 15 highlights mentioning 'productivity'. One standout quote from 'Deep Work' says: 'To produce at your peak level you need to work for extended periods with full concentration.'
 
 
+## ❓ FAQ
+
+**Q: Where do I obtain my Readwise Access Token?**
+You can quickly find or generate your specific access token by logging into your Readwise account and directly visiting `https://readwise.io/access_token`. Copy the alphanumeric token presented there and insert it directly into the prompt required by this integration.
+
+**Q: Can the AI add native highlights or upload PDFs to Reader for me?**
+Currently, the integration server functions on a Read-Only standard format designed specifically to fetch existing knowledge. It fetches metadata or full-text values from highlights, tags, and Reader items, but it doesn't support publishing or updating new sources back to Readwise natively.
+
+**Q: Does it also search through to my saved Readwise Reader feed?**
+Yes. Tools like `list_reader_documents` and `get_reader_document` are designated explicitly for extracting articles or stored reads directly residing inside your connected Readwise Reader account, keeping both typical highlights and Reader data separate but reachable.
+
+
 ## Installation & Usage
 
-To install and use the **Readwise** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/readwise](https://vinkius.com/mcp/readwise)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Readwise** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `readwise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Readwise** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "readwise": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

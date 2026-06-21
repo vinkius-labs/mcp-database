@@ -1,7 +1,6 @@
 # Builder MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/builder)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/builder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/builder-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/builder)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Would you like me to create a sample block using this exact formatting for you?
 > I queried `query.data.title=Home` on the 'page' model. Found 1 match: Document ID `d9e72a4...`. It is currently published and holds multiple visual layout blocks inside `data.blocks`. Do you want to receive the full JSON output of the structure?
 
 
+## ❓ FAQ
+
+**Q: Can my AI read the strict structure of a custom model before creating a block?**
+Yes! We highly recommend asking your agent to use `get_model_schema` first. By retrieving the exact JSON fields (Strings, Lists, Booleans), the AI naturally learns the shape of your `Page` or `HeroContent` model and formats its `create_visual_block` mutation flawlessly avoiding validation errors.
+
+**Q: How can I count how many blogs or pages are in my Builder space?**
+You can use the native `count_model_entities` tool. By querying a model like `blog-post`, the agent accesses the Builder backend with `limit=1` exclusively to extract the metadata counts without downloading heavyweight content arrays—highly efficient for broad analytics.
+
+**Q: Can the agent wipe an accidentally created page completely?**
+Yes. If an error occurs or a staging draft needs removal, the agent can call `wipe_visual_block`. Supply the targeted entity ID, and the HTTP DELETE command is irreversibly broadcasted to the Builder environment. Always review IDs manually.
+
+
 ## Installation & Usage
 
-To install and use the **Builder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/builder](https://vinkius.com/mcp/builder)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Builder** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `builder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Builder** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "builder": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

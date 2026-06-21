@@ -1,7 +1,6 @@
 # Flickr MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flickr)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flickr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flickr-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flickr)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Flickr** MCP server us
 > Retrieving albums for user 12345678@N00... I've found 3 public photosets: 'Summer Trip 2025', 'Macro Nature', and 'Black & White Portraits'. Which album would you like to explore?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Flickr API Key?**
+Visit the [**Flickr App Garden**](https://www.flickr.com/services/apps/create/), choose 'Apply for your Key online', and follow the prompts to create a non-commercial or commercial app.
+
+**Q: Can I search for photos in a specific user's album?**
+Yes! Use the `get_album_photos` tool and provide the `user_id` (NSID) and the `photoset_id` to retrieve the contents of a specific public album.
+
+**Q: How do I find a user's NSID?**
+You can find the NSID in the user's profile URL or by using external lookup tools. It usually looks like `12345678@N00`.
+
+
 ## Installation & Usage
 
-To install and use the **Flickr** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flickr](https://vinkius.com/mcp/flickr)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Flickr** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flickr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Flickr** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flickr": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # PayPal MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paypal)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/paypal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/paypal-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paypal)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **PayPal** MCP server us
 > Commanded tracking parameters hitting structural bounds `get_subscription`. Payload bounds returned efficiently. Current logical profile natively sits actively running ('ACTIVE'). Next mapped explicitly invoice limits generate safely on Sep 14.
 
 
+## ❓ FAQ
+
+**Q: Can I switch explicitly between testing (Sandbox) and Live operational arrays natively?**
+Yes. The environment parameters expose an explicitly bounded flag globally allowing configuration arrays parsing seamlessly switching requests between Sandbox limits and Live endpoints. Ensure your keys correspond properly.
+
+**Q: Is it possible to list explicit mass payment histories filtering natively across accounts?**
+This particular structural node maps explicit order manipulation limits. Operations resolving broad search queries or complex un-bounded transaction logs aren't exposed natively in this immediate abstraction scope for precise object handling.
+
+**Q: Which parameter natively identifies bounds when generating refunds?**
+Proper financial refunds are mapped utilizing strictly captured payment node structures. You must pass the specific Capture ID explicitly retrieved from logging the 'capture_order' action properly, not just initial limit bounds.
+
+
 ## Installation & Usage
 
-To install and use the **PayPal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/paypal](https://vinkius.com/mcp/paypal)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PayPal** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `paypal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PayPal** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "paypal": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

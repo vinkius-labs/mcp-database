@@ -1,7 +1,6 @@
 # Cronofy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cronofy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cronofy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cronofy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cronofy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Cronofy** MCP server u
 > Scheduling request created! Here is the link for the 'Project Review': https://scheduling.cronofy.com/r/abc-123. This link is mapped to your live availability across all connected calendars.
 
 
+## ❓ FAQ
+
+**Q: Can my agent check availability across different calendar providers like Google and iCloud?**
+Yes. Use the 'query_availability' tool. Your agent will traverse multi-user JSON payloads and calculate strict intersections across all connected accounts, regardless of the underlying calendar provider.
+
+**Q: How do I create a new calendar event via the agent?**
+Provide the 'calendar_id', 'summary', and 'start/end' times to the 'create_event' tool. The agent commands Cronofy to update your upstream provider synchronously, ensuring the event appears on your calendar immediately.
+
+**Q: Can I generate a public scheduling link through chat?**
+Absolutely. Use the 'create_scheduling_request' tool. The agent will generate a shared UI link mapped to your live availability, which you can then share externally to let others book time with you.
+
+
 ## Installation & Usage
 
-To install and use the **Cronofy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cronofy](https://vinkius.com/mcp/cronofy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cronofy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cronofy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cronofy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cronofy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

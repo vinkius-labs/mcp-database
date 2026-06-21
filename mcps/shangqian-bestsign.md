@@ -1,7 +1,6 @@
 # ShangQian / 上上签 (BestSign) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shangqian-bestsign)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shangqian-bestsign-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shangqian-bestsign-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shangqian-bestsign)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **ShangQian / 上上签 
 > Contract `88210934` ('Sales Agreement') is currently 'PARTIALLY_SIGNED'. 1 out of 2 signers have completed their signatures. Would you like me to generate a download link for the current draft?
 
 
+## ❓ FAQ
+
+**Q: How do I find my ShangQian Developer ID and Secret?**
+Log in to the [BestSign Developer Platform](https://open.bestsign.cn/), navigate to the 'Application Management' or 'Credentials' section to find your unique Developer ID and RT Secret.
+
+**Q: What is the 'account' identifier?**
+The account identifier is a unique string used to identify a user in the ShangQian system, typically a mobile phone number or an email address. It is required for registration and signing operations.
+
+**Q: Does this server handle HMAC-SHA1 signatures?**
+Yes! The server automatically calculates the required HMAC-SHA1 signature using your RT Secret for every request, ensuring secure authorized communication with the ShangQian API.
+
+
 ## Installation & Usage
 
-To install and use the **ShangQian / 上上签 (BestSign)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shangqian-bestsign](https://vinkius.com/mcp/shangqian-bestsign)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ShangQian / 上上签 (BestSign)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shangqian-bestsign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ShangQian / 上上签 (BestSign)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shangqian-bestsign": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

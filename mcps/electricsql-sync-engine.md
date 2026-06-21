@@ -1,7 +1,6 @@
 # ElectricSQL (Sync Engine) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/electricsql-sync-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/electricsql-sync-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/electricsql-sync-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/electricsql-sync-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **ElectricSQL (Sync Engi
 > Live sync enabled for 'messages'. I am now long-polling the ElectricSQL engine. I will notify you immediately when new rows are detected in the database.
 
 
+## ❓ FAQ
+
+**Q: How do I perform an initial sync of a database table?**
+Use the `get_shape` tool and set the `offset` parameter to `-1`. This triggers ElectricSQL to send the full initial snapshot of the specified table.
+
+**Q: What should I do if my SQL WHERE clause is too long for a standard URL?**
+You should use the `post_shape` tool. It sends the filtering criteria in the request body, which prevents '414 Request-URI Too Long' errors when using complex logic.
+
+**Q: Can the AI agent receive updates automatically when data changes in Postgres?**
+Yes! By setting the `live` parameter to `true` in `get_shape`, the agent can establish a long-polling connection to stream incremental changes as they happen.
+
+
 ## Installation & Usage
 
-To install and use the **ElectricSQL (Sync Engine)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/electricsql-sync-engine](https://vinkius.com/mcp/electricsql-sync-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ElectricSQL (Sync Engine)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `electricsql-sync-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ElectricSQL (Sync Engine)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "electricsql-sync-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

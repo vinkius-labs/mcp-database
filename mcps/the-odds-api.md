@@ -1,7 +1,6 @@
 # The Odds API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-odds-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/the-odds-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/the-odds-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-odds-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **The Odds API** MCP ser
 > Retrieving the sports list... I've identified over 100 sports and leagues, including American Football (NFL, NCAA), Basketball (NBA, WNBA), Soccer (EPL, La Liga, Serie A), and even eSports. Which one would you like to focus on?
 
 
+## ❓ FAQ
+
+**Q: Can I get odds for the Premier League?**
+Yes! Use the `get_odds` tool with the sport key `soccer_epl`. It will return the latest odds from various bookmakers.
+
+**Q: How do I see results for recently finished games?**
+Use the `get_scores` tool and provide the sport key. It will return the scores for live games and those that have recently ended.
+
+**Q: What bookmaker regions are supported?**
+The Odds API supports 'us' (United States), 'uk' (United Kingdom), 'eu' (Europe), and 'au' (Australia). Use the `regions` parameter to filter odds.
+
+
 ## Installation & Usage
 
-To install and use the **The Odds API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/the-odds-api](https://vinkius.com/mcp/the-odds-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **The Odds API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `the-odds-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **The Odds API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "the-odds-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

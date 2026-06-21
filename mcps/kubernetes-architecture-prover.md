@@ -1,7 +1,6 @@
 # Kubernetes Architecture Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kubernetes-architecture-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kubernetes-architecture-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kubernetes-architecture-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kubernetes-architecture-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Kubernetes Architectur
 > NETWORKING_EXPOSED — Resources, security, reliability, and observability pass — but networking is flat. 'All services need to communicate' is false — your API does not need to reach your monitoring stack's database. Define deny-all default policies, then allow only the specific pod-to-pod flows you need. 'NetworkPolicies add complexity' — so does a compromised pod scanning your entire cluster. Also: 'logs to stdout' without structured format or aggregation target is insufficient observability.
 
 
+## ❓ FAQ
+
+**Q: Does it generate Kubernetes manifests?**
+No. It validates that your architecture addresses the five production-critical pillars — resource governance, security hardening, reliability design, observability instrumentation, and network restriction. It does not generate YAML. It forces you to prove your YAML is production-ready.
+
+**Q: What counts as proper resource governance?**
+Every container must have CPU and memory requests AND limits. Every namespace must have a LimitRange (defaults for containers that don't specify) and a ResourceQuota (ceiling for the namespace). 'The cluster handles it' is not governance — it is the absence of governance.
+
+**Q: Is it useful for managed Kubernetes (EKS, GKE, AKS)?**
+Yes. Managed Kubernetes handles the control plane — it does NOT handle your workload architecture. Resource limits, security context, PDBs, probes, and NetworkPolicies are YOUR responsibility on every provider. The cloud provider manages etcd. You manage everything that runs on the nodes.
+
+
 ## Installation & Usage
 
-To install and use the **Kubernetes Architecture Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kubernetes-architecture-prover](https://vinkius.com/mcp/kubernetes-architecture-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kubernetes Architecture Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kubernetes-architecture-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kubernetes Architecture Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kubernetes-architecture-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

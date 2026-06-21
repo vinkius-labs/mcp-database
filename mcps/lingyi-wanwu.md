@@ -1,7 +1,6 @@
 # Lingyi Wanwu MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lingyi-wanwu)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lingyi-wanwu-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lingyi-wanwu-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lingyi-wanwu)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Lingyi Wanwu** MCP ser
 > Checking billing status... Your current account balance is 50.00 CNY. This is sufficient for approximately 2 million tokens on the Yi-Large model.
 
 
+## ❓ FAQ
+
+**Q: Which Yi model is best for complex reasoning?**
+For complex reasoning and high-quality outputs, `yi-large` is recommended. For faster response times and cost efficiency, `yi-medium` or `yi-spark` are excellent alternatives.
+
+**Q: Can I automatically retrieve my remaining account balance?**
+Yes! Use the `get_balance` tool. Your agent will connect to the Lingyi Wanwu billing service and return your current remaining credits.
+
+**Q: How do I list all the technical specs for the Yi models?**
+Use the `list_models` tool. Your agent will retrieve a list of all models currently available on the platform, along with their IDs and capabilities.
+
+
 ## Installation & Usage
 
-To install and use the **Lingyi Wanwu** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lingyi-wanwu](https://vinkius.com/mcp/lingyi-wanwu)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lingyi Wanwu** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lingyi-wanwu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lingyi Wanwu** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lingyi-wanwu": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

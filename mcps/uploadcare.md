@@ -1,7 +1,6 @@
 # Uploadcare MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uploadcare)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uploadcare-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uploadcare-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uploadcare)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Uploadcare** MCP serve
 > I've successfully executed the `batch_delete_files` command. All 4 assets (`e33b...`, `f55a...`, `8c11...`, `ab99...`) and their related CDN variants have been irrevocably deleted from your Uploadcare project. Your storage limits have been safely reduced.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent batch delete unused Uploadcare files?**
+Yes! Provide your agent with the list of unused UUIDs or ask it to identify temporary incomplete uploads, and simply command it to `batch delete these assets`. The agent uses the `batch_delete_files` tool to permanently erase them from the CDN instantly, freeing up your project's storage.
+
+**Q: How can I quickly check my current CDN bandwidth and storage usage?**
+Instead of digging through the web dashboard, ask your AI agent to `get project info`. It instantly fetches your Uploadcare project-level metadata, returning your precise storage usage (bytes), traffic bandwidth usage, and active file count. Perfect for quick billing audits.
+
+**Q: Will my temporary UI uploads expire automatically?**
+By default, temporary files uploaded via your front-end will be wiped after 24 hours. To prevent this, you can ask your agent to `store this file <UUID>` or `batch store` a bunch of UUIDs. The agent communicates with Uploadcare to mark the files as permanently stored, saving them from the garbage collector.
+
+
 ## Installation & Usage
 
-To install and use the **Uploadcare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/uploadcare](https://vinkius.com/mcp/uploadcare)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Uploadcare** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `uploadcare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Uploadcare** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "uploadcare": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

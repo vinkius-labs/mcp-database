@@ -1,7 +1,6 @@
 # GoatCounter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goatcounter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/goatcounter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/goatcounter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goatcounter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **GoatCounter** MCP serv
 > Analyzing browser data... Chrome 118 is your most popular version (45%), followed by Firefox 119 (20%) and Safari 17 (15%).
 
 
+## ❓ FAQ
+
+**Q: Can I see which browsers my visitors are using?**
+Yes. Use the `get_stats_page` tool with the 'browsers' category to see a breakdown of visitor browser statistics for your chosen date range.
+
+**Q: How do I export all my analytics data for backup?**
+You can start a background export using `start_export`. Once processed, use `get_export` to check the status and `download_export` to retrieve the file.
+
+**Q: Is it possible to track custom events from my server code?**
+Absolutely. The `count_hits` tool allows you to send pageviews or custom events directly to GoatCounter from any backend or middleware.
+
+
 ## Installation & Usage
 
-To install and use the **GoatCounter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/goatcounter](https://vinkius.com/mcp/goatcounter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GoatCounter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `goatcounter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GoatCounter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "goatcounter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

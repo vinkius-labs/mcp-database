@@ -1,7 +1,6 @@
 # Rapid URL Indexer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rapid-url-indexer-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rapid-url-indexer-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rapid-url-indexer-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rapid-url-indexer-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Rapid URL Indexer** MC
 > I've retrieved your projects. Your most recent project 'Blog Update' (ID: 54321) is currently 'completed'.
 
 
+## ❓ FAQ
+
+**Q: How many URLs can I submit in a single project?**
+You can submit an array of up to 9,999 URLs using the `submit_project` tool. Each URL must start with http or https.
+
+**Q: What is Apex Mode and how do I enable it?**
+Apex Mode is a high-priority indexing feature that costs 3 credits per URL. You can enable it by setting the `apex_mode_enabled` parameter to true when calling `submit_project`.
+
+**Q: When will my indexing report be available for download?**
+Reports are available 4 days (96 hours) after the project is created. Use the `get_project_report` tool with your Project ID to retrieve it.
+
+
 ## Installation & Usage
 
-To install and use the **Rapid URL Indexer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rapid-url-indexer-alternative](https://vinkius.com/mcp/rapid-url-indexer-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rapid URL Indexer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rapid-url-indexer-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rapid URL Indexer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rapid-url-indexer-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

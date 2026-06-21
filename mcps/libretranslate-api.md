@@ -1,7 +1,6 @@
 # LibreTranslate API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/libretranslate-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/libretranslate-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/libretranslate-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/libretranslate-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **LibreTranslate API** M
 > I've retrieved the language catalog! There are dozens of languages supported, including English, Spanish, French, and Chinese. I can help you translate text between any of these thematic markers.
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for LibreTranslate API?**
+No. LibreTranslate is open-source and many public instances allow free requests. However, some instances or the official site may require an API Key for higher limits.
+
+**Q: Can I use a custom self-hosted instance?**
+Yes. Provide the `LIBRETRANSLATE_URL` in the server configuration to point your agent to your own private instance.
+
+**Q: Does it support language detection?**
+Yes. Use the `detect_language` tool to identify the primary language of any text string along with a confidence metadata score.
+
+
 ## Installation & Usage
 
-To install and use the **LibreTranslate API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/libretranslate-api](https://vinkius.com/mcp/libretranslate-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LibreTranslate API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `libretranslate-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LibreTranslate API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "libretranslate-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

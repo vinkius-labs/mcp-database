@@ -1,7 +1,6 @@
 # Dailymotion MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dailymotion)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dailymotion-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dailymotion-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dailymotion)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Dailymotion** MCP serv
 > Title updated! Video 'x8abc12' is now named 'Updated Tutorial' on your Dailymotion channel. The changes are live and visible to your viewers.
 
 
+## ❓ FAQ
+
+**Q: Can my agent search for public videos on Dailymotion?**
+Yes. Use the 'search_videos' tool. You can provide a query string and specify which fields to return. The agent will query the global Dailymotion library and return matching public video metadata.
+
+**Q: How do I update the title or tags of an uploaded video via chat?**
+Provide the video ID and the new parameters (e.g., 'title=New Title&tags=news,tech') to the 'update_video' tool. The agent will execute the mutation on your Dailymotion channel, updating the metadata instantly.
+
+**Q: Does the agent support the full Dailymotion video upload flow?**
+Yes. You can use 'get_upload_url' to retrieve a temporary endpoint. After uploading your file to that URL, use the 'publish_video' tool to create the final entry on your channel with a title, channel slug, and tags.
+
+
 ## Installation & Usage
 
-To install and use the **Dailymotion** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dailymotion](https://vinkius.com/mcp/dailymotion)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dailymotion** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dailymotion` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dailymotion** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dailymotion": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

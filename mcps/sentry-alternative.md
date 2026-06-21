@@ -1,7 +1,6 @@
 # Sentry MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sentry-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sentry-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sentry-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sentry-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -112,12 +111,52 @@ Here are some examples of how you can interact with the **Sentry** MCP server us
 > Your mobile-app project has 3 active alert rules: 1) Notify #eng-mobile on Slack when a new issue is created, 2) Send email to oncall@company.com when issue count exceeds 100 in 5 minutes, 3) Create PagerDuty incident for errors with priority 50. Would you like the full configuration details for any rule?
 
 
+## ❓ FAQ
+
+**Q: How do I create a Sentry Internal Integration Token?**
+Go to your [**Sentry Organization Settings**](https://sentry.io/settings/), select **API Keys** > **Create New Integration**. Name it (e.g. 'Vinkius MCP'), select the scopes you need (recommended: `org:read`, `project:read`, `event:read`, `team:read`, `release:read`), and click **Save**. Copy the token immediately — it starts with `sntrys_` and won't be shown again.
+
+**Q: Can I resolve or mute an issue directly from the agent?**
+Yes! Use the `update_issue` action with the issue's numeric ID and set `status` to `resolved` (marks it fixed), `muted` (hides it from the inbox) or `deleted` (removes it permanently). You can also reassign issues using the `assigned_to` parameter.
+
+**Q: What Sentry query syntax does the search support?**
+Sentry uses its own query syntax. Common filters include: `is:unresolved` (open issues), `is:resolved` (fixed issues), `priority:[1-50]` (priority levels), `first_release:1.2.3` (issues introduced in a specific release), `user.email:example@co.com` (errors affecting a specific user). You can combine filters: `is:unresolved priority:50`.
+
+
 ## Installation & Usage
 
-To install and use the **Sentry** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sentry-alternative](https://vinkius.com/mcp/sentry-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sentry** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sentry-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sentry** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sentry-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

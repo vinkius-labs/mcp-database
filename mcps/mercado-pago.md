@@ -1,7 +1,6 @@
 # Mercado Pago MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mercado-pago)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mercado-pago-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mercado-pago-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mercado-pago)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Mercado Pago** MCP ser
 > Found 3 approved payments: 1. R$ 50.00 (Visa). 2. R$ 120.00 (Pix). 3. R$ 85.50 (Mastercard).
 
 
+## ❓ FAQ
+
+**Q: How do I get a Mercado Pago Access Token?**
+Go to your Mercado Pago account, navigate to **Developers > Your Integrations > Production Credentials** (or Sandbox), and copy your **Access Token**. It starts with 'APP_USR-' for production.
+
+**Q: Can I generate Pix payments?**
+Yes! Use the `create_pix_payment` action. It generates a Pix transaction and returns QR Code data that can be displayed for the payer to scan and pay instantly.
+
+**Q: Can I issue refunds?**
+Yes! Use the `refund_payment` action with a payment_id. If you omit the amount, it performs a full refund. If you provide an amount, it performs a partial refund.
+
+
 ## Installation & Usage
 
-To install and use the **Mercado Pago** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mercado-pago](https://vinkius.com/mcp/mercado-pago)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mercado Pago** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mercado-pago` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mercado Pago** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mercado-pago": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Brandfolder MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brandfolder)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brandfolder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brandfolder-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brandfolder)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Brandfolder** MCP serv
 > Your active Brandfolder personal key maps to Organization ID xyz-123. The namespace is designated 'Global Enterprise Tier'.
 
 
+## ❓ FAQ
+
+**Q: Can it search for specific file types like PDFs or PNGs?**
+Absolutely. Through the `list_assets` capability, the AI can parse queries finding exactly what format you need among your organization's total index.
+
+**Q: Can the AI return download links for an asset?**
+Yes. Upon locating an asset, you can ask the AI to provide the CDN URL representing the final high-resolution source file directly in the chat.
+
+**Q: Is my API token secure during the requests?**
+Yes. The API Token is encrypted at rest and dynamically injected strictly at the runtime limit inside a secure sandbox container. Keys are never exposed within chat interactions.
+
+
 ## Installation & Usage
 
-To install and use the **Brandfolder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/brandfolder](https://vinkius.com/mcp/brandfolder)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Brandfolder** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `brandfolder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Brandfolder** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "brandfolder": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

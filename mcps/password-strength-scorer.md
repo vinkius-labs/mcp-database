@@ -1,7 +1,6 @@
 # Password Strength Scorer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/password-strength-scorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/password-strength-scorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/password-strength-scorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/password-strength-scorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **Password Strength Scor
 > Score: 4 (Very Strong). Crack time: centuries at 10B guesses/sec. Entropy exceeds compliance minimum.
 
 
+## ❓ FAQ
+
+**Q: Why can't my AI evaluate password strength?**
+AI checks superficial rules like 'has uppercase + number + symbol'. zxcvbn does combinatorial analysis — it knows 'P@ssw0rd' is just 'Password' with l33t substitutions, and rates it as weak despite passing every 'rule-based' check.
+
+**Q: Is the password sent to any external server?**
+No. 100% local. The embedded dictionary and pattern matching engine run entirely in-process. Zero network calls, zero data leakage, zero risk.
+
+**Q: What do the crack time numbers actually mean?**
+Four real attack scenarios: Online throttled (100/hour — most login pages), Online unthrottled (10/sec), Local slow hash (10K/sec — bcrypt), Local fast hash (10B/sec — MD5/SHA). Choose the scenario matching your system.
+
+
 ## Installation & Usage
 
-To install and use the **Password Strength Scorer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/password-strength-scorer](https://vinkius.com/mcp/password-strength-scorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Password Strength Scorer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `password-strength-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Password Strength Scorer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "password-strength-scorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

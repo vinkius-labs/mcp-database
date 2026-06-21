@@ -1,7 +1,6 @@
 # 5E Arena MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/5e-arena)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/5e-arena-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/5e-arena-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/5e-arena)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **5E Arena** MCP server 
 > Processing aim arrays... User NIKO showcases an aggressive 64% total headshot percentage via the Desert Eagle rounding a jaw-dropping level across the span isolated requested actively here. Shall I aggregate the same metrics pulling side-arm stats versus AR equivalents comprehensively?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically aggregate an entire 5E player's history down to K/D metrics and match win rates instantly?**
+Yes! Utilize the `get_player_stats` tool pointing exactly at their user alias. Your agent will dynamically hook to the 5E core bringing back heavy statistical arrays mapping out KD margins and history avoiding web load natively securely here.
+
+**Q: How do I easily discover what tier of users dominate the current regional leaderboard ranking?**
+Direct your agent to use the `top_leaderboard` tool checking the highest weighted nodes inside the Asian spheres isolating pure ELO ratings. Bypassing manual page scrolling routines completely it generates markdown tables directly.
+
+**Q: Are there destructive capabilities enabling unwarranted permanent matchmaking bans or structural changes?**
+No. The core structure isolates tasks strictly on retrieving passive arrays avoiding meddling on the game engines or database banning architectures securely rendering safe boundaries constantly without any backdoor holes left open out there.
+
+
 ## Installation & Usage
 
-To install and use the **5E Arena** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/5e-arena](https://vinkius.com/mcp/5e-arena)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **5E Arena** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `5e-arena` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **5E Arena** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "5e-arena": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

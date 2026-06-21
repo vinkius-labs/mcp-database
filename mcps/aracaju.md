@@ -1,7 +1,6 @@
 # Aracaju MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aracaju)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aracaju-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aracaju-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aracaju)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Aracaju** MCP server u
 > Querying expenses for the health department in 2023... I found the spending records. Would you like to see the total amount or a list of specific payment orders?
 
 
+## ❓ FAQ
+
+**Q: How do I check the municipality's income for a specific month?**
+Use the `list_revenues` tool with the `ano` (year) and `mes` (month) parameters. The agent will return the total income and breakdown for that period.
+
+**Q: Can I see who is on the public payroll?**
+Yes, use the `list_personnel` tool. You can filter by year and month to retrieve data regarding public servants and their respective payroll information.
+
+**Q: Is it possible to monitor active public tenders?**
+Absolutely. Use the `list_bids` tool to get a comprehensive list of all public tenders and bidding processes currently recorded in the portal.
+
+
 ## Installation & Usage
 
-To install and use the **Aracaju** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aracaju](https://vinkius.com/mcp/aracaju)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aracaju** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aracaju` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aracaju** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aracaju": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

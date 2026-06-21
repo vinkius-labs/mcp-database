@@ -1,7 +1,6 @@
 # ContextQA MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contextqa)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contextqa-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contextqa-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contextqa)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **ContextQA** MCP server
 > Analyzing last execution for 'mobile-app'... It failed at step 5: 'Click Login Button'. The element was not found. ContextQA's AI-healing attempted to locate it but failed due to a structural change in the DOM.
 
 
+## ❓ FAQ
+
+**Q: Can my agent help me identify the root cause of a failed test case?**
+Yes. Use the 'get_case' tool to resolve the AI root-cause model for a specific test. The agent retrieves the definitions and AI insights to confirm exactly why a boundary was breached during execution.
+
+**Q: How do I trigger a full test suite run via chat?**
+Provide the 'project_id' and 'suite_id' to your agent and use the 'trigger_run' mutation. The agent will command the backend to queue the tests against live ContextQA test clusters instantly.
+
+**Q: Can I see screen captures of failed test steps through the agent?**
+The 'get_execution' tool retrieves detailed logs tracking failing step boundaries. Where supported by ContextQA, the agent can surface the associated physical screen capture limits to help you visualize the failure.
+
+
 ## Installation & Usage
 
-To install and use the **ContextQA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/contextqa](https://vinkius.com/mcp/contextqa)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ContextQA** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `contextqa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ContextQA** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "contextqa": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

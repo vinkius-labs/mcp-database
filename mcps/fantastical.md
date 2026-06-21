@@ -1,7 +1,6 @@
 # Fantastical MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fantastical)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fantastical-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fantastical-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fantastical)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Fantastical** MCP serv
 > I found 2 active Openings: '15 Minute Coffee Chat' and '60 Minute Strategy Session'. I can provide the booking links for you to share.
 
 
+## ❓ FAQ
+
+**Q: Can my agent create events using natural language phrases like in the Fantastical app?**
+Yes. Use the 'create_event' tool. Fantastical's engine is designed to parse phrases like 'Lunch with Bob at 1pm next Tuesday'. The agent will transmit the string and return the structured event data flawlessly.
+
+**Q: How do I see my available scheduling links (Openings) via chat?**
+Use the 'list_openings' tool. Your agent will retrieve all your active scheduling pages, providing the booking link URLs and duration settings so you can share them with others easily.
+
+**Q: Can I suggest multiple meeting times to someone through the agent?**
+Absolutely. Use the 'list_proposals' tool to monitor existing suggestions. Fantastical Proposals allow you to offer several slots to attendees, and your agent can help you track their responses and finalize the event.
+
+
 ## Installation & Usage
 
-To install and use the **Fantastical** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fantastical](https://vinkius.com/mcp/fantastical)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fantastical** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fantastical` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fantastical** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fantastical": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

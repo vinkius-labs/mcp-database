@@ -1,7 +1,6 @@
 # KeepTruckin MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/keeptruckin)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/keeptruckin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/keeptruckin-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/keeptruckin)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **KeepTruckin** MCP serv
 > Asset 55022 is currently located at 34.0522° N, 118.2437° W (Los Angeles, CA). The reefer activity report shows a set point of 34°F with an ambient temperature of 72°F. Fuel level is at 85%.
 
 
+## ❓ FAQ
+
+**Q: Can I get the real-time location of a specific asset?**
+Yes! Use the `locate_asset` tool with the specific Asset ID. The agent will trigger a location update and return the most recent coordinates and status for that unit.
+
+**Q: How do I monitor temperature for refrigerated trailers?**
+You can use `list_reefer_activity_reports` for general status or `list_reefer_sensor_samples` for granular temperature and humidity data over a specific time range.
+
+**Q: Can I analyze fuel usage and idle time for my vehicles?**
+Yes, the `get_vehicle_utilization` tool provides detailed metrics including fuel consumption, idle time, driving time, and distance for any specified time period.
+
+
 ## Installation & Usage
 
-To install and use the **KeepTruckin** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/keeptruckin](https://vinkius.com/mcp/keeptruckin)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **KeepTruckin** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `keeptruckin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **KeepTruckin** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "keeptruckin": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

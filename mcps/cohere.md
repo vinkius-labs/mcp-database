@@ -1,7 +1,6 @@
 # Cohere MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cohere)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cohere-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cohere-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cohere)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,55 @@ Here are some examples of how you can interact with the **Cohere** MCP server us
 > Generated embeddings for 2 texts using embed-v4 with input_type 'search_document'. Each embedding is a 1024-dimensional vector. You can use these for semantic search, similarity comparison or vector database storage.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Cohere API Key?**
+Log in to the [**Cohere Dashboard**](https://dashboard.cohere.com/api-keys), go to **API Keys** and click **Create API Key**. Copy the key immediately — it starts with a random string and won't be shown again. Free tier includes trial access with rate limits.
+
+**Q: What models are available?**
+Use the `list_models` tool to see all available Cohere models. Key models include command-r-plus (most capable, 128K context), command-r (efficient, 128K context), command-r7b (lightweight, 128K context), embed-v4 (embeddings) and rerank-v3.5 (reranking).
+
+**Q: Can I send multi-turn conversations?**
+Yes! Pass a messages array with alternating 'user', 'assistant' and 'system' roles. Each message has a 'role' and 'content' field. Command models support function calling and will return tool_calls when appropriate.
+
+**Q: What is reranking and when should I use it?**
+Reranking reorders a set of documents by their relevance to a query. Use it after an initial search to improve result quality. The rerank tool takes a query, list of documents and returns them ranked by relevance score. Cohere's rerank models are industry-leading for search applications.
+
+
 ## Installation & Usage
 
-To install and use the **Cohere** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cohere](https://vinkius.com/mcp/cohere)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cohere** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cohere` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cohere** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cohere": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

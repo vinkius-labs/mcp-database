@@ -1,7 +1,6 @@
 # Binance MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/binance)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/binance-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/binance-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/binance)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,55 @@ Here are some examples of how you can interact with the **Binance** MCP server u
 > SOL/USDT Daily (30 candles): Current candle open $185.50, high $188.20, low $183.40, close $187.10, volume 2.5M SOL. Over the past 30 days SOL has gained +12.5% from $166.30.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! All public market data (prices, order books, trades, klines, exchange info) is available without authentication. Just subscribe and start querying.
+
+**Q: What trading pairs are available?**
+Binance supports 1500+ trading pairs. Use get_exchange_info to see the complete list. Popular pairs include BTCUSDT, ETHUSDT, BNBUSDT, SOLUSDT and many altcoin pairs.
+
+**Q: What candlestick intervals are available?**
+15 intervals are available: 1m, 3m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 8h, 12h, 1d, 3d, 1w, 1M. Use get_klines with the interval parameter. Each candle includes open, high, low, close and volume.
+
+**Q: Can I get historical price data?**
+Yes! Use get_klines with startTime and endTime parameters (Unix timestamp in milliseconds) to retrieve historical candlestick data. You can get up to 1000 candles per request.
+
+
 ## Installation & Usage
 
-To install and use the **Binance** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/binance](https://vinkius.com/mcp/binance)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Binance** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `binance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Binance** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "binance": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

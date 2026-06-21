@@ -1,7 +1,6 @@
 # Froged MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/froged)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/froged-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/froged-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/froged)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,55 @@ Here are some examples of how you can interact with the **Froged** MCP server us
 > Searching contacts... I found Jane Doe (jane@example.com). She signed up 30 days ago and last interacted with support yesterday regarding 'API limits'.
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Key for Froged?**
+Log in to your Froged Admin Panel, navigate to Settings > Integrations > API, and you can generate or copy your active API Key.
+
+**Q: Can I track custom events to trigger campaigns?**
+Yes! Use the 'track_custom_event' tool. Provide the event name and the user's email to log the behavior and trigger any associated workflows.
+
+**Q: Is it possible to reply to support chats through the agent?**
+Yes, use the 'send_chat_message' tool with the specific Conversation ID to post replies directly to the omnichannel inbox.
+
+**Q: How do I sync a new user to Froged?**
+Use the 'upsert_contact' tool. Provide the user's email address, and if they don't exist, a new profile will be created. If they do, their metadata will update.
+
+
 ## Installation & Usage
 
-To install and use the **Froged** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/froged](https://vinkius.com/mcp/froged)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Froged** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `froged` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Froged** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "froged": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

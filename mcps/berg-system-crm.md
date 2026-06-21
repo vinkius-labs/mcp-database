@@ -1,7 +1,6 @@
 # Berg System CRM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/berg-system-crm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/berg-system-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/berg-system-crm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/berg-system-crm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Berg System CRM** MCP 
 > Lead created! I've successfully registered Alice Smith in your CRM and tagged her as interested in Life Insurance (ID: lead_789). Shall I assign a follow-up task to a specific agent?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Berg System Tenant ID?**
+Your Tenant ID is the unique identifier for your agency instance, found in your Berg System sub-domain (e.g., yourcompany.bergsystem.pl).
+
+**Q: Can I check for duplicates via AI?**
+Yes! The system automatically checks for existing records, and you can use the `forceAdd` parameter in creation tools to decide how to handle them.
+
+**Q: How do I retrieve insurance policies?**
+Use the `list_insurance_policies` tool to retrieve a comprehensive summary of all active policies managed within your CRM programmatically.
+
+
 ## Installation & Usage
 
-To install and use the **Berg System CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/berg-system-crm](https://vinkius.com/mcp/berg-system-crm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Berg System CRM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `berg-system-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Berg System CRM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "berg-system-crm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

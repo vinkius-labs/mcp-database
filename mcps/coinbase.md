@@ -1,7 +1,6 @@
 # Coinbase MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coinbase)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coinbase-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coinbase-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coinbase)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Coinbase** MCP server 
 > BTC-USD spot price on 2024-01-01: $42,650. Current price: $104,070. Change: +144.0% since Jan 1 2024.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key for price data?**
+No! Public price endpoints (buy, sell, spot prices, currencies, exchange rates) are completely free and open. No authentication required.
+
+**Q: What trading pairs are supported?**
+Common pairs: BTC-USD, ETH-USD, SOL-USD, USDC-USD, BCH-USD, LTC-USD, DOGE-USD, ADA-USD, DOT-USD, LINK-USD and many more. Use getCurrencies to see the full list.
+
+**Q: Can I get historical prices?**
+Yes! Use get_spot_price with the date parameter (YYYY-MM-DD format) to get historical spot prices for any pair.
+
+
 ## Installation & Usage
 
-To install and use the **Coinbase** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coinbase](https://vinkius.com/mcp/coinbase)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Coinbase** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coinbase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Coinbase** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coinbase": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

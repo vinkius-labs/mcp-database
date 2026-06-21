@@ -1,7 +1,6 @@
 # ComplyAdvantage MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/complyadvantage)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/complyadvantage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/complyadvantage-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/complyadvantage)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **ComplyAdvantage** MCP 
 > Comment successfully added to search 12345. The note 'Verified identity via passport' is now recorded in the case history.
 
 
+## ❓ FAQ
+
+**Q: How do I perform a new AML screening search for a company?**
+Use the `create_search` tool. You can provide the company name in the `search_term` and optionally add `filters` like country codes or specific entity types to narrow down the results.
+
+**Q: Can I enable ongoing monitoring for a specific search result?**
+Yes. Use the `update_search_monitors` tool with the specific Search ID. This allows you to start or stop the monitoring service for that entity to receive updates on risk changes.
+
+**Q: How can I see the full details and risk matches of a previous search?**
+You can use `get_search_details` with the Search ID to retrieve the full detailed results, including all identified risk matches and entity metadata.
+
+
 ## Installation & Usage
 
-To install and use the **ComplyAdvantage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/complyadvantage](https://vinkius.com/mcp/complyadvantage)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ComplyAdvantage** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `complyadvantage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ComplyAdvantage** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "complyadvantage": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

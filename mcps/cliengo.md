@@ -1,7 +1,6 @@
 # Cliengo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cliengo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cliengo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cliengo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cliengo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Cliengo** MCP server u
 > Retrieving user list... Your account has 3 active users: Sarah Miller (Admin), Mike Scott (Agent), and Jane Doe (Agent). All are currently available to handle new conversations.
 
 
+## ❓ FAQ
+
+**Q: Can I see what a specific customer said to the chatbot?**
+Yes! Use the `get_contact_messages` tool with the contact ID. The agent will return the full message history for that specific lead, allowing you to review their questions and needs.
+
+**Q: How do I check which of my websites have Cliengo active?**
+Use the `list_cliengo_websites` tool. Your agent will fetch all projects and websites registered in your account, including their configuration details.
+
+**Q: Where do I find my Cliengo API Key?**
+Log in to Cliengo, navigate to **Settings**, and select **API**. You can find or generate your API key in that section.
+
+
 ## Installation & Usage
 
-To install and use the **Cliengo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cliengo](https://vinkius.com/mcp/cliengo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cliengo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cliengo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cliengo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cliengo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

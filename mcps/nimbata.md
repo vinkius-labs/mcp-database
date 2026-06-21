@@ -1,7 +1,6 @@
 # Nimbata MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nimbata)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nimbata-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nimbata-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nimbata)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Nimbata** MCP server u
 > Call call_7823 details: Incoming call from +1 (555) 234-5678 on May 10th at 3:42 PM, duration 4m 32s. Source: "Google Ads Brand Campaign". The recording URL has been retrieved and is ready for playback. The caller was matched to tracking number +1 (800) 555-0199.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific call by its ID?**
+Yes! Use the `get_call_details` tool with the Call ID. Your agent will respond with complete metadata for the record, including duration, caller city, and marketing source in seconds.
+
+**Q: How do I find my Nimbata API Key?**
+Log in to your Nimbata account, navigate to **Settings** > **API**, and you will find your unique secret token there.
+
+**Q: Does it support tracking sources?**
+Yes, use the `list_tracking_sources` tool to retrieve all your configured channels and understand where your inbound calls are coming from via the AI.
+
+
 ## Installation & Usage
 
-To install and use the **Nimbata** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nimbata](https://vinkius.com/mcp/nimbata)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nimbata** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nimbata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nimbata** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nimbata": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

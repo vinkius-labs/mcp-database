@@ -1,7 +1,6 @@
 # Amplitude MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amplitude)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amplitude-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amplitude-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amplitude)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Here are some examples of how you can interact with the **Amplitude** MCP server
 > I fetched the DAU data. Since the 1st of the month, DAU has ranged from 45,000 to 52,000. Yesterday hit a peak at 52,104, reflecting our recent campaign launch. Would you like a breakdown of revenue from this period?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent debug a specific user dropping out of our onboarding?**
+Yes. Search for the user by their email or ID using `search_users`, completely avoiding the manual lookup. Then, ask your agent to pull their raw activity stream via `get_user_activity`. The agent will retrieve all events triggered by this user, making it simple to spot exactly where they failed or stopped interacting.
+
+**Q: Can I request funnel conversions without building a dashboard manually?**
+Absolutely. You can provide a sequence of events (e.g., 'Homepage Viewed', 'Sign Up Clicked', 'Account Created') and ask for the funnel conversion for the last 7 days. Your AI agent queries Amplitude and parses the exact drop-off rates at each step right into your prompt window.
+
+**Q: How does the cohort fetching work for custom targeted segments?**
+Your agent can list all available cohorts associated with your project. Once you find the target cohort's ID, you can use the `get_cohort` tool to request its download URL. This is incredibly useful for instantly moving targeted lists of power-users or churned-users into your other workflows.
+
+
 ## Installation & Usage
 
-To install and use the **Amplitude** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amplitude](https://vinkius.com/mcp/amplitude)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amplitude** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amplitude` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amplitude** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amplitude": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

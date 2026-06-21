@@ -1,7 +1,6 @@
 # Clientify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clientify-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clientify-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clientify-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clientify-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Clientify** MCP server
 > I've fetched the user directory. There are 3 active users: Sarah (Admin), Mike (Sales), and Elena (Marketing). Let me know if you need to assign a deal to one of them.
 
 
+## ❓ FAQ
+
+**Q: Can I search for a contact using only their email address?**
+Yes. Use the `list_contacts` tool and provide the email in the optional parameter. The agent will return the specific contact record associated with that email if it exists in your CRM.
+
+**Q: How do I move a deal to a different stage in the pipeline?**
+You can update deal details using our action tools. Simply specify the Deal ID and the new Pipeline Stage ID to transition the opportunity instantly.
+
+**Q: Does this integration support creating new tasks for follow-ups?**
+Absolutely. The `create_activity` tool allows you to schedule calls, meetings, or tasks, assign them to contacts, and set due dates directly from the AI agent.
+
+
 ## Installation & Usage
 
-To install and use the **Clientify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clientify-alternative](https://vinkius.com/mcp/clientify-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clientify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clientify-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clientify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clientify-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

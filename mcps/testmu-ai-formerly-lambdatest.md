@@ -1,7 +1,6 @@
 # TestMu AI (formerly LambdaTest) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/testmu-ai-formerly-lambdatest)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/testmu-ai-formerly-lambdatest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/testmu-ai-formerly-lambdatest-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/testmu-ai-formerly-lambdatest)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **TestMu AI (formerly La
 > I've queried the platform capabilities. Currently supported: Windows 11 (Chrome 120+, Firefox 118+), macOS Sonoma (Safari 17, Chrome 120+), and latest Android/iOS versions. I can provide the full JSON matrix if you need specific sub-versions.
 
 
+## ❓ FAQ
+
+**Q: Can I see the exact console errors from a failed browser test through my agent?**
+Yes. Use the `get_session_details` tool with a specific Session ID. Your agent will retrieve full metadata including console logs, network configurations, and execution artifacts, helping you identify the root cause of the failure instantly.
+
+**Q: How do I retrieve the video recording of a specific test execution?**
+Ask your agent to `get_session_video` for a targeted Session ID. Your agent will return the absolute MP4 URL to stream or download the complete browser session recording, which is essential for debugging flakey UI bugs.
+
+**Q: Can my agent check if our secure localhost tunnel is active?**
+Absolutely. Use the `list_active_tunnels` tool to identify dedicated private connection endpoints. Your agent will report which TestMu AI tunnels are currently running, ensuring you can test local environments from the cloud.
+
+
 ## Installation & Usage
 
-To install and use the **TestMu AI (formerly LambdaTest)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/testmu-ai-formerly-lambdatest](https://vinkius.com/mcp/testmu-ai-formerly-lambdatest)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TestMu AI (formerly LambdaTest)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `testmu-ai-formerly-lambdatest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TestMu AI (formerly LambdaTest)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "testmu-ai-formerly-lambdatest": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

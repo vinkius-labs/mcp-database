@@ -1,7 +1,6 @@
 # Taranis MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/taranis)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/taranis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/taranis-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/taranis)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -107,12 +106,52 @@ Here are some examples of how you can interact with the **Taranis** MCP server u
 > Analyzing wheat field (field ID: WH-5512)... Current threat level: MODERATE. Season summary: 3 flights completed, 18 total detections. Disease trend: Septoria tritici increasing from 2 to 6 detections over 3 flights — monitor closely. Weed trend: Annual ryegrass stable at 5 patches (1.8% coverage). Nutrient trend: Nitrogen deficiency decreasing after top-dress application — 3 zones down to 1 zone. NDVI trend: Flight 1 (0.45) — tillering stage, Flight 2 (0.68) — stem extension, Flight 3 (0.82) — current heading stage. Field performing above regional average. Recommendation: Continue disease monitoring, no immediate treatment required. Next flight scheduled in 10 days.
 
 
+## ❓ FAQ
+
+**Q: Can my AI detect specific weed species in my soybean field from Taranis imagery?**
+Yes! Use the `get_weed_detections` tool with your field ID to get AI-detected weed infestations with species-level identification. Returns weed locations, estimated coverage area, species classification, growth stage, and herbicide resistance indicators. For a comprehensive view of all threats (weeds, diseases, pests, nutrients), use `get_detections` without a type filter.
+
+**Q: How do I get scouting recommendations based on the latest flight imagery?**
+Use the `get_scouting_recommendations` tool with your field ID. Taranis AI analyzes the latest imagery, detected threats, crop growth stage, and field history to generate specific action items including ground truth verification locations, recommended scouting patterns, treatment suggestions, and priority levels. You can also use `get_threats` first to see the overall threat severity before reviewing recommendations.
+
+**Q: What resolution imagery does Taranis capture and how often are flights conducted?**
+Taranis captures ultra-high-resolution imagery at sub-millimeter to centimeter level resolution using specialized drone and fixed-wing aircraft. Flight frequency depends on your monitoring plan and crop growth stage — typically every 7-14 days during critical growth periods. Use `get_flights` to see all flight history for a field, and `get_flight_imagery` to access specific imagery products (orthomosaics, DSM, NDVI maps) from any flight mission.
+
+
 ## Installation & Usage
 
-To install and use the **Taranis** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/taranis](https://vinkius.com/mcp/taranis)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Taranis** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `taranis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Taranis** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "taranis": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

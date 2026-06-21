@@ -1,7 +1,6 @@
 # Quaderno MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quaderno)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/quaderno-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/quaderno-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quaderno)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,55 @@ Here are some examples of how you can interact with the **Quaderno** MCP server 
 > I've processed the `update_contact` request. The first_name field on contact #9822 has been successfully patched to 'Acorn Group Inc'. Their records are fully refreshed.
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Quaderno API Key and URL?**
+Log in to your Quaderno account. Your **API URL** is simply your domain up top in the browser bar (e.g., `https://mycompany.quadernoapp.com`). To get the **API Key**, navigate to **Settings** > **API Keys** (or Developers), and copy your private key. Do not share this key as it carries full access. Paste both credentials below.
+
+**Q: Can it calculate exact taxes dynamically before a sale?**
+Yes! Use the `calculate_taxes` tool and just provide the AI with a country code, postal code, and base amount. Quaderno's world-class engine evaluates real-time location-based tax nuances (VAT, GST) and returns the exact fraction needed.
+
+**Q: Can I draft custom test invoices natively in chat?**
+Absolutely. You can use `create_transaction`. Instruct your agent to format a JSON array with products and amounts, linking to a specific `contact_id`. The server submits this array to Quaderno and records the fully realized transaction safely.
+
+**Q: Will deleting a contact via the AI remove them permanently?**
+Yes. The `delete_contact` operation relies heavily on standard destructive API instructions. Running this means the contact is gone entirely from the Quaderno dashboard. Always review deletion queries cautiously before approving execution.
+
+
 ## Installation & Usage
 
-To install and use the **Quaderno** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/quaderno](https://vinkius.com/mcp/quaderno)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Quaderno** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `quaderno` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Quaderno** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "quaderno": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

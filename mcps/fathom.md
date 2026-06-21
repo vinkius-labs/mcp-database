@@ -1,7 +1,6 @@
 # Fathom MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fathom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fathom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fathom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fathom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Fathom** MCP server us
 > Retrieving transcript... I have the full speaker-attributed text for 'Product Roadmap Sync'. [Agent displays snippet of transcript]. Would you like me to export this or search for specific details within it?
 
 
+## ❓ FAQ
+
+**Q: Can my agent retrieve the summary of a specific meeting from Fathom?**
+Yes. Use the 'get_summary' tool. Provide the meeting ID, and the agent will return the AI-distilled context, including key discussion points and decisions made during the call natively.
+
+**Q: How do I extract action items from a call via chat?**
+Use the 'get_action_items' tool. Your agent will parse the AI-identified tasks, returning assigned owners and descriptions, making it easy to automate your follow-up workflows.
+
+**Q: Can I search for meetings where a specific keyword was mentioned through the agent?**
+Absolutely. Use the 'search_meetings' tool. Provide your query, and the agent will search through titles, transcripts, and summaries to find matching meetings across your entire Fathom history.
+
+
 ## Installation & Usage
 
-To install and use the **Fathom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fathom](https://vinkius.com/mcp/fathom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fathom** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fathom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fathom** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fathom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

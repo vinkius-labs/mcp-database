@@ -1,7 +1,6 @@
 # Nominatim MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nominatim)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nominatim-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nominatim-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nominatim)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,55 @@ Here are some examples of how you can interact with the **Nominatim** MCP server
 > Central Park, New York: Bounding box 40.7644 to 40.8006 (lat), -73.9818 to -73.9491 (lon). OSM ID: W326168186 (way). Place type: park. Address: Manhattan, New York County, New York, 10024, United States.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! Nominatim is completely free and requires no authentication. It's powered by the OpenStreetMap community. Just subscribe and start searching. Rate limit is 1 request per second.
+
+**Q: How accurate is the geocoding?**
+Nominatim uses OpenStreetMap data, which is crowd-sourced and varies by region. Urban areas typically have very accurate results. Use addressdetails=1 to get structured address components and namedetails=1 for multi-language names.
+
+**Q: Can I convert coordinates to an address?**
+Yes! Use reverse_geocode with latitude and longitude. Returns the nearest address with street name, house number, city, state, postal code and country. Supports different zoom levels for varying detail granularity.
+
+**Q: What is an OSM ID and how do I use it?**
+OSM IDs are unique identifiers for OpenStreetMap objects: N for nodes (points), W for ways (lines/areas), R for relations (groups). Use lookup_osm with IDs like 'W123456' or 'N987654'. Use get_details for comprehensive info on a single object.
+
+
 ## Installation & Usage
 
-To install and use the **Nominatim** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nominatim](https://vinkius.com/mcp/nominatim)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nominatim** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nominatim` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nominatim** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nominatim": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

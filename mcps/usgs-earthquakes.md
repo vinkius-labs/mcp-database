@@ -1,7 +1,6 @@
 # USGS Earthquakes MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usgs-earthquakes)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/usgs-earthquakes-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/usgs-earthquakes-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usgs-earthquakes)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -60,12 +59,52 @@ Here are some examples of how you can interact with the **USGS Earthquakes** MCP
 > I checked the USGS sensors. No events currently trigger a tsunami warning. The highest alert level across all oceanic faults in the last 24 hours remains green.
 
 
+## ❓ FAQ
+
+**Q: Is an API key required?**
+No! The USGS FDSNWS Event API is completely open and requires zero authentication, making this one of the most accessible and powerful real-time data sources available.
+
+**Q: What is the query limit?**
+The maximum number of events returned per single API query is 20,000. If your time range or boundaries are too wide, the API will fail. Use the `count` tool first on large searches.
+
+**Q: How fast is the data updated?**
+The USGS typically updates its earthquake data within minutes of an event occurring, making it one of the most reliable sources for near real-time seismic alerts.
+
+
 ## Installation & Usage
 
-To install and use the **USGS Earthquakes** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/usgs-earthquakes](https://vinkius.com/mcp/usgs-earthquakes)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **USGS Earthquakes** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `usgs-earthquakes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **USGS Earthquakes** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "usgs-earthquakes": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

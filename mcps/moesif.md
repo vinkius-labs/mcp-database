@@ -1,7 +1,6 @@
 # Moesif MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moesif)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moesif-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moesif-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moesif)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Moesif** MCP server us
 > Using `search_events`, I found the 5 most recent requests to '/v1/payments'. Most were successful (200 OK), but one returned a 402 Payment Required. Would you like to see the body of that specific event?
 
 
+## ❓ FAQ
+
+**Q: How can I search for specific API errors from the last 24 hours?**
+You can use the `search_events` tool. Provide a `query_body` with a filter for status codes (e.g., 500) and set the `from` parameter to '-24h'.
+
+**Q: Can I update a customer's subscription status in Moesif using this server?**
+Yes! Use the `update_company` tool with the `company_id` and include the subscription details in the `metadata` JSON object.
+
+**Q: Is there a limit to how many events I can log at once?**
+The `log_events_batch` tool supports batching. Moesif generally allows up to 1MB per event and a total batch size of 50MB.
+
+
 ## Installation & Usage
 
-To install and use the **Moesif** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/moesif](https://vinkius.com/mcp/moesif)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Moesif** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `moesif` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Moesif** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "moesif": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

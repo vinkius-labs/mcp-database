@@ -1,7 +1,6 @@
 # BoomTown (OvationCXM) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boomtown-ovationcxm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/boomtown-ovationcxm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/boomtown-ovationcxm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boomtown-ovationcxm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **BoomTown (OvationCXM)*
 > I've retrieved your organizations. Notable members include 'Global Payments Inc.', 'Tech Solutions Ltd.', and 'Retail Hub'. Would you like details for any of them?
 
 
+## ❓ FAQ
+
+**Q: Can I check the status of a customer's onboarding journey?**
+Yes! Use the `get_journey` tool with the Journey ID. Your agent will fetch the current stage and completed activities for that specific customer journey.
+
+**Q: How do I see which team is assigned to a specific support case?**
+Simply ask the agent to `get_issue` and provide the Issue ID. It will retrieve the case details, including the assigned team and its current status in the ecosystem.
+
+**Q: Does the integration allow creating new support issues?**
+Currently, the toolset is focused on querying and monitoring (Read-Only). You can list and inspect journeys, teams, and issues, but creating new records must be done through the OvationCXM platform for full workflow control.
+
+
 ## Installation & Usage
 
-To install and use the **BoomTown (OvationCXM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/boomtown-ovationcxm](https://vinkius.com/mcp/boomtown-ovationcxm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BoomTown (OvationCXM)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `boomtown-ovationcxm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BoomTown (OvationCXM)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "boomtown-ovationcxm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Best Buy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/best-buy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/best-buy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/best-buy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/best-buy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,55 @@ Here are some examples of how you can interact with the **Best Buy** MCP server 
 > Gathering feedback metrics... The Dyson Airwrap maintains a 4.6 average. Positive reviews frequently highlight 'drying speed' and 'heat protection', while negative ones cite 'steep learning curve' and price. Want to see the exact text of the top 3 critical reviews?
 
 
+## ❓ FAQ
+
+**Q: How do I get started with the Best Buy integration?**
+Subscribe, enter your API credentials (just your API Key generated from **developer.bestbuy.com → My Apps**), and you're ready. No code, no setup, no webhooks — just connect and start exploring retail data through your AI agent. Takes only 30 seconds — no secondary OAuth apps, no logs.
+
+**Q: Can my AI agent check if a specific TV is available at my local store?**
+Yes. Your agent queries the exact SKU against real-time local inventories using your ZIP code or Store ID. It returns exact quantities and pickup availability instantly without you ever opening the website.
+
+**Q: What happens when I need to compare highly-rated products before a purchase?**
+Just ask your AI agent. It actively parses Best Buy's endpoint for items matching your criteria, filtering only for top-tier ratings and summarizing user reviews—all in a single conversation, accelerating your decision-making.
+
+**Q: Can I automate pulling product data and images for my affiliate marketing site?**
+Absolutely. Program the agent to fetch bulk product schemas, including high-res URLs, precise dimensions, and technical specifications, which is perfect for e-commerce developers maintaining synchronized comparison sites.
+
+
 ## Installation & Usage
 
-To install and use the **Best Buy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/best-buy](https://vinkius.com/mcp/best-buy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Best Buy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `best-buy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Best Buy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "best-buy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

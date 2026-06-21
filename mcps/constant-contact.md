@@ -1,7 +1,6 @@
 # Constant Contact MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/constant-contact)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/constant-contact-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/constant-contact-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/constant-contact)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Constant Contact** MCP
 > You have a total of 12,450 contacts. Your account limit is 15,000. You've grown by 2% this month. Would you like to see a list of your most recent mailing lists?
 
 
+## ❓ FAQ
+
+**Q: How do I securely obtain an API V3 access key from Constant Contact?**
+To obtain your credentials, access the Constant Contact Developer Portal securely. Log in and go to 'My Applications', then create a new application to generate your API keys and access tokens safely for integration usage.
+
+**Q: Can the AI mistakenly delete entire segmented contact lists indiscriminately?**
+The operations rely exclusively on standard API permissions governed by Constant Contact safeguards. While modification is generally available upon explicit directive via AI inputs, broad sweeping list deletions typically require definitive specific confirmations minimizing occurrences of unintentional data loss.
+
+**Q: Does the system inherently provide HTML generating capability for campaigns?**
+Yes, depending heavily on conversational context provided the backend structure translates Markdown text into valid readable HTML formatting payloads suitable strictly toward sending well structured email models seamlessly.
+
+
 ## Installation & Usage
 
-To install and use the **Constant Contact** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/constant-contact](https://vinkius.com/mcp/constant-contact)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Constant Contact** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `constant-contact` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Constant Contact** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "constant-contact": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

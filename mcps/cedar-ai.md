@@ -1,7 +1,6 @@
 # Cedar AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cedar-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cedar-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cedar-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cedar-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Cedar AI** MCP server 
 > Fetching waybill details... WB-88231 is an active shipment for 'Lumber' from Portland to Houston via CONSIST-102. It contains 3 flatcars. Would you like to see the movement history?
 
 
+## ❓ FAQ
+
+**Q: Can I record a railcar movement via AI?**
+Yes! Use the `setout_cars` tool to record placement or `pickup_cars` for removal. Provide the location name and a list of railcar IDs to log the movement instantly.
+
+**Q: How do I see the latest waybills for my shipments?**
+Run the `list_waybills` query. The agent will retrieve a history of active and completed shipping instructions, including route details and commodity info.
+
+**Q: Is it possible to check the status of a specific work order via AI?**
+Absolutely. Use the `get_work_order_details` tool with the Work Order ID to retrieve the current status, assigned tasks, and completion progress.
+
+
 ## Installation & Usage
 
-To install and use the **Cedar AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cedar-ai](https://vinkius.com/mcp/cedar-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cedar AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cedar-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cedar AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cedar-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

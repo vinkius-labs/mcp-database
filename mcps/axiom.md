@@ -1,7 +1,6 @@
 # Axiom MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/axiom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/axiom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/axiom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/axiom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Axiom** MCP server usi
 > I've created the 'High Latency' monitor. It will run every 5 minutes using your APL query to detect threshold breaches. Monitor ID: mon_abc123.
 
 
+## ❓ FAQ
+
+**Q: Can I run complex log analysis using Axiom Processing Language (APL)?**
+Yes! Use the `run_query` tool to execute any APL string. You can specify `start_time` and `end_time` to filter your data and get precise analytical results directly in the chat.
+
+**Q: How do I send new log data to my Axiom datasets?**
+You can use the `ingest_data` tool. Simply provide the `dataset_name`, the data `payload`, and the `content_type` (JSON, NDJSON, or CSV) to stream data into your Axiom account.
+
+**Q: Is it possible to manage system monitors and alerts through this integration?**
+Absolutely. You have access to a full suite of tools including `list_monitors`, `create_monitor`, and `update_monitor` to configure threshold or anomaly detection alerts based on your APL queries.
+
+
 ## Installation & Usage
 
-To install and use the **Axiom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/axiom](https://vinkius.com/mcp/axiom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Axiom** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `axiom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Axiom** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "axiom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

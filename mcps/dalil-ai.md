@@ -1,7 +1,6 @@
 # Dalil AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dalil-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dalil-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dalil-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dalil-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Dalil AI** MCP server 
 > Fetching signals... Michael Ross recently updated his title to 'VP of Infrastructure' and his company just announced a new funding round. These are high-intent signals. Shall I draft a follow-up?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Dalil AI API Key?**
+Log in to your account at [usedalil.ai](https://usedalil.ai/), navigate to **Settings** or **API**, and copy your unique secret key.
+
+**Q: Can I automate LinkedIn messages with dynamic text?**
+Yes! The `send_linkedin_message` tool allows your agent to dispatch personalized content directly to a contact's LinkedIn profile.
+
+**Q: What kind of buying signals does Dalil provide?**
+Dalil provides real-time indicators such as job changes, company funding rounds, and strategic shifts that signal high purchase intent.
+
+
 ## Installation & Usage
 
-To install and use the **Dalil AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dalil-ai](https://vinkius.com/mcp/dalil-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dalil AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dalil-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dalil AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dalil-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

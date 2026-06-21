@@ -1,7 +1,6 @@
 # Plaid Enterprise Banking MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plaid-enterprise-banking)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/plaid-enterprise-banking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/plaid-enterprise-banking-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plaid-enterprise-banking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Plaid Enterprise Banki
 > Running the Recurring Transactions Model... Plaid successfully detected 5 active passive flows on the main checking account: Netflix ($15.99), Spotify ($10.99), Equinox Gym ($205.00), AWS Cloud ($89.00), and an obscure app called 'AnyDo' ($4.99). Would you like to check the fraud signal prediction for these?
 
 
+## ❓ FAQ
+
+**Q: Is this safe to run against production Plaid accounts? Will the AI transfer money?**
+Yes, it is entirely safe. We deliberately designed the 20 tools purely for deep inspection (fetching assets, checking IDs, balancing ledgers). Endpoints capable of moving capital (like `/transfer/create`) were excluded. The worst the AI can do is give you a highly detailed dashboard of your expenses.
+
+**Q: How does the agent analyze different bank accounts when I talk to it?**
+You hold the master Server keys (Client ID and Secret). When you ask the agent a question, you just paste or mention the unique `access_token` representing that customer's bank connection, and the AI automatically uses it under the hood.
+
+**Q: Can it cross check watchlists (AML) and biometrics?**
+Yes. Tools like `get_watchlist_screening` and `get_identity_verification` hook directly into Plaid Identity, matching end-users to PEP (Politically Exposed Persons), OFAC, and global government watchlists instantaneously.
+
+
 ## Installation & Usage
 
-To install and use the **Plaid Enterprise Banking** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/plaid-enterprise-banking](https://vinkius.com/mcp/plaid-enterprise-banking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Plaid Enterprise Banking** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `plaid-enterprise-banking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Plaid Enterprise Banking** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "plaid-enterprise-banking": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

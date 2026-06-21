@@ -1,7 +1,6 @@
 # Jina AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jina-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jina-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jina-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jina-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Jina AI** MCP server u
 > I've performed a grounded search. The statement is false; according to scientific consensus, the moon is composed of rock and metal. I can provide the sources if you'd like.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Jina AI API Key?**
+Log in to your [**Jina AI dashboard**](https://jina.ai/api-keys), and you will find your API Key on the main page. Copy and paste it below.
+
+**Q: What is the difference between Jina Search and Reader?**
+Jina Search searches across the entire web for results, while Reader extracts the specific main content from a single provided URL, optimized for AI models.
+
+**Q: Can the agent rerank my search results?**
+Yes. The `rerank_documents` tool allows your agent to sort a list of documents by relevancy to a query using Jina's advanced reranking models.
+
+
 ## Installation & Usage
 
-To install and use the **Jina AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jina-ai](https://vinkius.com/mcp/jina-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Jina AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jina-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Jina AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jina-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

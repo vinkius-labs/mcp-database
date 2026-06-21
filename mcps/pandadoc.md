@@ -1,7 +1,6 @@
 # PandaDoc MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pandadoc)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pandadoc-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pandadoc-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pandadoc)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -100,12 +99,55 @@ The TechStart agreement hasn't been opened — would you like me to check the co
 > The contract 'Acme Corp Q3 agreement' was viewed by their team today at 9:14 AM, but it has not been signed yet. Would you like me to draft a gentle follow-up email?
 
 
+## ❓ FAQ
+
+**Q: How do I get started with PandaDoc?**
+Subscribe, then enter your PandaDoc API key (from **Settings → Integrations → API & Webhooks → API Key**). Your AI agent connects instantly. No code, no SDK, no webhooks — just connect and start creating documents through conversation.
+
+**Q: Can my AI agent create and send a proposal from a template?**
+Yes. Tell your agent "create a proposal for John at Acme Corp" and it selects the right template, fills in recipient details, and creates the document. Then say "send it" and PandaDoc emails the signing link — the entire flow happens in one conversation.
+
+**Q: How do I know if a client viewed or signed my document?**
+Ask your agent "has Acme signed the proposal?" and it checks the document status — draft, sent, viewed, completed, or declined. You get real-time tracking without opening PandaDoc, so you always know where every document stands.
+
+**Q: Can I manage multiple document types and team members?**
+Absolutely. Browse all your templates (proposals, contracts, NDAs, quotes), list workspace members with their roles, and track documents across the entire team — perfect for sales teams, agencies, and consulting firms managing dozens of active proposals.
+
+
 ## Installation & Usage
 
-To install and use the **PandaDoc** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pandadoc](https://vinkius.com/mcp/pandadoc)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PandaDoc** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pandadoc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PandaDoc** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pandadoc": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

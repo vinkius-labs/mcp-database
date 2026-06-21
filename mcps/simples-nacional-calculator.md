@@ -1,7 +1,6 @@
 # Simples Nacional Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simples-nacional-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/simples-nacional-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/simples-nacional-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simples-nacional-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,52 @@ Here are some examples of how you can interact with the **Simples Nacional Calcu
 > The total tax due (DAS) for this month is 300.00 BRL.
 
 
+## ❓ FAQ
+
+**Q: How can I find the tax rate for my business activity?**
+You can use the `get_bracket_parameters` tool. Provide your accumulated revenue from the last 12 months and the specific Annex type (e.g., Annex I for commerce) to retrieve the nominal rate and deduction amount.
+
+**Q: What is Fator R and how does it affect my taxes?**
+Fator R is a rule for certain service activities. By using `evaluate_factor_r`, you can check if your payroll costs relative to revenue allow you to move from Annex V to the more favorable Annex III.
+
+**Q: Can I calculate the exact amount of DAS to pay?**
+Yes. After determining your effective rate, use `compute_monthly_tax_amount` with your current month's revenue to get the final currency value of your tax liability.
+
+
 ## Installation & Usage
 
-To install and use the **Simples Nacional Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/simples-nacional-calculator](https://vinkius.com/mcp/simples-nacional-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Simples Nacional Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `simples-nacional-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Simples Nacional Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "simples-nacional-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

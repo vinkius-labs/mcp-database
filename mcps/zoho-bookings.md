@@ -1,7 +1,6 @@
 # Zoho Bookings MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-bookings)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-bookings-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-bookings-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-bookings)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,49 @@ Here are some examples of how you can interact with the **Zoho Bookings** MCP se
 > In the 'Downtown Clinic' workspace, you currently offer 5 services: 'General Consultation' (30 mins), 'Specialist Review' (60 mins), 'Follow-up' (15 mins), 'Annual Checkup' (45 mins), and 'Vaccination' (10 mins).
 
 
+## ❓ FAQ
+
+**Q: How do I find my Zoho Bookings Authtoken?**
+Log in to your Zoho Bookings account, navigate to the API section in your settings, or use the Zoho Accounts portal to generate a permanent authtoken for API access.
+
+**Q: Can the AI agent check staff availability for a specific day?**
+Yes! Use the `get_staff_slots` tool with the Staff ID, Service ID, and the target Date to see all available time slots for that day.
+
+
 ## Installation & Usage
 
-To install and use the **Zoho Bookings** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zoho-bookings](https://vinkius.com/mcp/zoho-bookings)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zoho Bookings** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zoho-bookings` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zoho Bookings** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zoho-bookings": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

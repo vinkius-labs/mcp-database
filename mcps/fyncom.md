@@ -1,7 +1,6 @@
 # FynCom MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fyncom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fyncom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fyncom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fyncom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **FynCom** MCP server us
 > Your current rewards wallet balance is $250.00. You have sufficient funds to cover approximately 50 more rewards of $5.00 each.
 
 
+## ❓ FAQ
+
+**Q: How do I find my FynCom API Key?**
+Log in to your FynCom dashboard and navigate to the **Settings** > **API** section to generate or copy your unique key.
+
+**Q: Can I check my wallet balance via AI?**
+Yes! Use the `get_wallet_balance` tool to retrieve your current rewards budget and ensured you have sufficient funds for your campaigns.
+
+**Q: How do I add a lead to a reward campaign?**
+Use the `add_reward_lead` tool by providing the `campaign_id` and a JSON string with the lead's email and other required details.
+
+
 ## Installation & Usage
 
-To install and use the **FynCom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fyncom](https://vinkius.com/mcp/fyncom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FynCom** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fyncom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FynCom** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fyncom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

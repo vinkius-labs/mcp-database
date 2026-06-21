@@ -1,7 +1,6 @@
 # Whereby MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whereby)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/whereby-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/whereby-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whereby)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Whereby** MCP server u
 > Successfully updated the theme for room 'Support-101'. The primary branding color is now set to #00ff00 (Green). You can view the changes in your embedded iframe immediately.
 
 
+## ❓ FAQ
+
+**Q: Can I get a direct download link for a past meeting recording?**
+Yes. The `get_recording_details` tool allows your AI agent to retrieve the full metadata for any cloud recording, including a temporary direct download link for the MP4 file.
+
+**Q: How do I change the branding colors of my meeting room?**
+You can use the `update_room_theme` tool. Provide the room name and your preferred hex color code, and your agent will update the primary branding color for that specific space instantly.
+
+**Q: Can I create a room that requires my approval before others can join?**
+Yes. When using the `create_meeting_room` tool, you can set the `is_locked` parameter to true. This ensures the room is locked by default, and participants must 'knock' to be allowed in by the host.
+
+
 ## Installation & Usage
 
-To install and use the **Whereby** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/whereby](https://vinkius.com/mcp/whereby)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Whereby** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `whereby` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Whereby** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "whereby": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # CoinCap MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coincap)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coincap-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coincap-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coincap)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,55 @@ Here are some examples of how you can interact with the **CoinCap** MCP server u
 > ETH/USD 1h candles: Most recent candle closed at $3,245.60 (open: $3,220, high: $3,260, low: $3,210, volume: $45M). The trend has been upward over the last 12 hours with a 1.8% gain.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! CoinCap's API is completely free and requires no authentication. Just subscribe and start querying. Rate limit is 30 requests/second on the free tier.
+
+**Q: What cryptocurrencies are supported?**
+CoinCap tracks thousands of cryptocurrencies including Bitcoin, Ethereum, Solana, XRP, Cardano, Dogecoin, Avalanche, Polkadot and many more. Use list_assets with the search parameter to find any coin by name or symbol.
+
+**Q: Can I get OHLCV data for technical analysis?**
+Yes! Use get_candles with the asset ID and interval (m1, m5, m15, m30, h1, h2, h6, h12, d1). Returns open, high, low, close and volume for each candle period.
+
+**Q: Can I see which exchanges list a specific crypto?**
+Yes! Use get_markets with asset_id to see all exchanges that list a specific cryptocurrency. Results include the exchange name, trading pair, current price, 24h volume and volume percentage.
+
+
 ## Installation & Usage
 
-To install and use the **CoinCap** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coincap](https://vinkius.com/mcp/coincap)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CoinCap** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coincap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CoinCap** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coincap": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

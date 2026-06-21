@@ -1,7 +1,6 @@
 # CDC Public Health / 美国疾控中心 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cdc-public-health)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cdc-public-health-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cdc-public-health-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cdc-public-health)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **CDC Public Health / �
 > I've retrieved the latest health resources. Recent publications include updates on 'Travel Health Notices', 'Emerging Infections Reports', and new dietary guidelines for parents. Would you like to see the description for the travel notices?
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key for the CDC tools?**
+Most CDC Content Services are public and do not require a key. However, providing an HHS API Key (from the digitalmedia.hhs.gov portal) can provide higher rate limits and access to restricted resources.
+
+**Q: What kind of health recommendations are provided?**
+The recommendations are retrieved from the MyHealthfinder API (health.gov), providing evidence-based preventative clinical services and wellness tips authorized by the U.S. Department of Health and Human Services.
+
+**Q: Can I embed CDC content into my own website?**
+Yes! Use the `get_syndication_html` tool with a media ID. It will return the standard HTML snippet that you can copy and paste into your site to display up-to-date CDC content automatically.
+
+
 ## Installation & Usage
 
-To install and use the **CDC Public Health / 美国疾控中心** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cdc-public-health](https://vinkius.com/mcp/cdc-public-health)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CDC Public Health / 美国疾控中心** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cdc-public-health` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CDC Public Health / 美国疾控中心** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cdc-public-health": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

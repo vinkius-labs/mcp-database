@@ -1,7 +1,6 @@
 # Offerslook MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/offerslook)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/offerslook-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/offerslook-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/offerslook)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Offerslook** MCP serve
 > Generating performance report... For the week of March 1st to March 7th, your network generated 45,000 clicks and 1,250 conversions, resulting in $8,400 in revenue. Would you like to see which affiliate performed best during this period?
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Offerslook API Key?**
+Log in to your Offerslook network dashboard and navigate to the API settings section to find your Network ID and API Key.
+
+**Q: Can I see conversions in real-time?**
+Yes! Use the `list_recent_conversions` tool to retrieve a list of the latest successful goal completions in your network.
+
+**Q: How do I generate a performance report?**
+The `get_performance_report` tool allows you to specify a start and end date to retrieve aggregated metrics for your network.
+
+
 ## Installation & Usage
 
-To install and use the **Offerslook** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/offerslook](https://vinkius.com/mcp/offerslook)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Offerslook** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `offerslook` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Offerslook** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "offerslook": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

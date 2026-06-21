@@ -1,7 +1,6 @@
 # Net Revenue Retention Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/net-revenue-retention-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/net-revenue-retention-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/net-revenue-retention-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/net-revenue-retention-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Net Revenue Retention 
 > Yes, an NRR of 125.0% for the Enterprise segment is classified as World Class status.
 
 
+## ❓ FAQ
+
+**Q: How do I calculate my retention percentages?**
+Use the `calculate_retention_metrics` tool by providing your starting MRR, expansion MRR, contraction MRR, and churn MRR for a specific segment.
+
+**Q: What is the difference between NRR and GRR?**
+Net Revenue Retention (NRR) includes expansion revenue, while Gross Revenue Retention (GRR) only accounts for losses from contraction and churn.
+
+**Q: How can I tell if my cohort is healthy?**
+You can use the `evaluate_cohort_health` tool with your observed NRR percentage to see if it meets segment-specific benchmarks.
+
+
 ## Installation & Usage
 
-To install and use the **Net Revenue Retention Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/net-revenue-retention-calculator](https://vinkius.com/mcp/net-revenue-retention-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Net Revenue Retention Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `net-revenue-retention-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Net Revenue Retention Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "net-revenue-retention-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

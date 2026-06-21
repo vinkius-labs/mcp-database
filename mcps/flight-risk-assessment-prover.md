@@ -1,7 +1,6 @@
 # Flight Risk Assessment Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flight-risk-assessment-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flight-risk-assessment-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flight-risk-assessment-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flight-risk-assessment-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -59,12 +58,52 @@ Here are some examples of how you can interact with the **Flight Risk Assessment
 > Individual MEL items within limits. Compound risk of 3 simultaneous deferrals + low-visibility departure: cross-check dispatch minima (single-pack may restrict altitude), verify autobrake MEL dispatch conditions vs wet runway, confirm APU-off start procedure. Compound index approaches Intolerable threshold.
 
 
+## ❓ FAQ
+
+**Q: What makes this different from a standard flight risk assessment tool?**
+Standard tools accept 'medium risk' as an answer. This Prover rejects anything that is not quantified on the ICAO 5×5 matrix with probability (A-E) and severity (1-5). It catches 5 specific failure modes: generic threats without METAR data, adjective-based risk without numerical scoring, missing Swiss Cheese barrier analysis, human factors reduced to 'pilot error' instead of SHELL/IMSAFE, and sycophantic go-bias where the AI says 'proceed with caution' instead of committing NO-GO when the data demands it.
+
+**Q: How does the go-bias detection work?**
+The engine maintains a semantic trap list of go-bias phrases: 'proceed with caution,' 'acceptable to proceed,' 'can proceed,' 'within acceptable limits.' If the LLM uses any of these instead of an explicit GO or NO-GO decision with pre-defined criteria, the assessment is rejected with GO_BIAS verdict. The LLM must define NO-GO criteria BEFORE the assessment and then commit to a binary decision defensible on a CVR transcript.
+
+**Q: What aviation frameworks does this enforce?**
+Five industry-standard frameworks: (1) ICAO Annex 19 Safety Management System — proactive hazard identification and risk assessment. (2) ICAO 5×5 Risk Matrix — probability × severity quantification. (3) Reason's Swiss Cheese Model — multi-layer defense analysis with hole alignment detection. (4) SHELL Model — Software-Hardware-Environment-Liveware interaction analysis for human factors. (5) Threat and Error Management (TEM) — threat categorization into environmental, airline, and crew factors per FAA AC 120-92B.
+
+
 ## Installation & Usage
 
-To install and use the **Flight Risk Assessment Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flight-risk-assessment-prover](https://vinkius.com/mcp/flight-risk-assessment-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Flight Risk Assessment Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flight-risk-assessment-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Flight Risk Assessment Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flight-risk-assessment-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

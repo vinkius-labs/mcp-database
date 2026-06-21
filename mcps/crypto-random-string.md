@@ -1,7 +1,6 @@
 # Crypto Random String MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crypto-random-string)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/crypto-random-string-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/crypto-random-string-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crypto-random-string)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Crypto Random String**
 > Random String: 64-char url-safe token generated (384 bits entropy)
 
 
+## ❓ FAQ
+
+**Q: Is this truly cryptographically secure?**
+Yes. It uses Node.js crypto.randomBytes() which draws from the OS CSPRNG (Cryptographically Secure Pseudo-Random Number Generator). This is the same source used by OpenSSL and TLS.
+
+**Q: What is the 'distinguishable' charset?**
+It uses only characters that cannot be confused visually: CDEHKMPRTUWXY012458. This avoids pairs like O/0, I/l/1 that cause errors when users type codes manually.
+
+**Q: What is the maximum string length?**
+1024 characters. This is more than enough for any API key, session token, or invite code. The entropy bits are reported so you can verify the security level.
+
+
 ## Installation & Usage
 
-To install and use the **Crypto Random String** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/crypto-random-string](https://vinkius.com/mcp/crypto-random-string)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Crypto Random String** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `crypto-random-string` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Crypto Random String** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "crypto-random-string": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # DocRaptor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docraptor)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docraptor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docraptor-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docraptor)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **DocRaptor** MCP server
 > I've retrieved your recent documents. Here are the last 5: 'Invoice_Jan.pdf', 'Report_Q4.xlsx', 'Test_Layout.pdf', etc. Would you like details on any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I generate a test document without using my document balance?**
+Yes! When calling the `create_document` tool, set the `test` parameter to `true`. This creates a free, watermarked document for testing your layout.
+
+**Q: How do I handle very large HTML files that take a long time to render?**
+Use the `async` parameter in `create_document`. The tool will return a `status_id`, which you can then use with `get_document_status` to check when the file is ready for download.
+
+**Q: Can I get a direct URL to share the generated document?**
+Yes, by setting the `hosted` parameter to `true` in the `create_document` tool. DocRaptor will host the file and return a `download_url` that you can share.
+
+
 ## Installation & Usage
 
-To install and use the **DocRaptor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/docraptor](https://vinkius.com/mcp/docraptor)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DocRaptor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `docraptor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DocRaptor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "docraptor": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

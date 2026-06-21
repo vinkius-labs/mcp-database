@@ -1,7 +1,6 @@
 # Cockpit (Self-hosted Headless CMS API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cockpit-self-hosted-headless-cms-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cockpit-self-hosted-headless-cms-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cockpit-self-hosted-headless-cms-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cockpit-self-hosted-headless-cms-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Cockpit (Self-hosted H
 > I've updated the product (ID: 98765). The price field has been successfully set to 49.99. All other fields remain unchanged. Is there anything else you'd like to modify?
 
 
+## ❓ FAQ
+
+**Q: Can I filter content items using Mongo-style queries?**
+Yes! The `list_content_items` tool supports a `filter` parameter where you can pass a JSON object with Mongo-style query operators to precisely target your data.
+
+**Q: Is it possible to resize images directly through the agent?**
+Absolutely. Use the `get_asset_image` tool with parameters like `w` (width), `h` (height), and `m` (mode) to request processed versions of your stored image assets.
+
+**Q: Can I fetch data from multiple collections at once?**
+Yes, the `batch_content_items` tool allows you to define multiple models and their respective query parameters in a single JSON object to retrieve all required data in one go.
+
+
 ## Installation & Usage
 
-To install and use the **Cockpit (Self-hosted Headless CMS API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cockpit-self-hosted-headless-cms-api](https://vinkius.com/mcp/cockpit-self-hosted-headless-cms-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cockpit (Self-hosted Headless CMS API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cockpit-self-hosted-headless-cms-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cockpit (Self-hosted Headless CMS API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cockpit-self-hosted-headless-cms-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

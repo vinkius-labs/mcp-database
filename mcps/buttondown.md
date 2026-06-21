@@ -1,7 +1,6 @@
 # Buttondown MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buttondown)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/buttondown-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/buttondown-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buttondown)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Buttondown** MCP serve
 > Draft 'Hello World' has been successfully created in your Buttondown account with ID email_99283.
 
 
+## ❓ FAQ
+
+**Q: Can I check the open rate for a specific email using the agent?**
+Yes! Use the `get_email_analytics` tool with the Email ID. Your agent will fetch the detailed statistics, including deliveries, opens, and clicks, directly from Buttondown.
+
+**Q: How do I add a new subscriber with a specific tag?**
+Simply ask the agent to `create_subscriber` and provide the email address and a JSON array of tags, for example: `["customer", "api-lead"]`. The subscriber will be added to Buttondown instantly.
+
+**Q: Does the integration allow creating a new draft email?**
+Yes. Use the `create_email` action and set the status to `draft`. You can provide the subject and the body in markdown format, and it will appear in your Buttondown account ready for review.
+
+
 ## Installation & Usage
 
-To install and use the **Buttondown** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/buttondown](https://vinkius.com/mcp/buttondown)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Buttondown** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `buttondown` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Buttondown** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "buttondown": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Webshare MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webshare)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/webshare-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/webshare-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webshare)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Webshare** MCP server 
 > You have consumed 45.2 GB of your 100 GB monthly quota. You have approximately 54.8 GB remaining. You've made 1.2 million requests with a 98.5% success rate. Would you like to see a breakdown by day?
 
 
+## ❓ FAQ
+
+**Q: Can I authorize my current IP address to use proxies via chat?**
+Yes. The `authorize_new_ip` tool allows you to immediately whitelist a new IPv4 address in your Webshare account, so you can start using your proxies from that machine without a password.
+
+**Q: How do I replace a proxy that has been blocked by a target website?**
+Use the `request_proxy_replacement` tool and provide the unique `proxy_id`. Your agent will instruct Webshare to cycle that specific IP for a new one, subject to your account's replacement quota.
+
+**Q: Can I check how much bandwidth I have left this month?**
+Absolutely. The `get_account_profile` tool provides real-time info on your plan limits and remaining bandwidth quota, so you can monitor consumption and avoid interruptions.
+
+
 ## Installation & Usage
 
-To install and use the **Webshare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/webshare](https://vinkius.com/mcp/webshare)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Webshare** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `webshare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Webshare** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "webshare": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

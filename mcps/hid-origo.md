@@ -1,7 +1,6 @@
 # HID Origo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hid-origo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hid-origo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hid-origo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hid-origo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,55 @@ Here are some examples of how you can interact with the **HID Origo** MCP server
 > Process started! I've initiated an enrollment invitation for user_992. I'll use your default part number for the digital card. An email will be sent to the user with instructions to activate their credential in the HID Origo app. Should I check the audit log to confirm the invite was sent?
 
 
+## ❓ FAQ
+
+**Q: How do I find my HID Origo Client ID and Secret?**
+Log in to the **HID Origo Management Portal**, navigate to the **System Accounts** section, and create a new system account. You will be provided with a Client ID and Client Secret for that account.
+
+**Q: What is the Organization ID?**
+The Organization ID is a unique UUID that identifies your company in the HID Origo cloud. You can find it in the Management Portal under the Organization settings or profile section.
+
+**Q: Can I send mobile identity invitations via the AI agent?**
+Yes! Use the `create_enrollment_invitation` tool. You must provide a JSON string containing the `userId` and the `partNumber` for the mobile identity you wish to issue.
+
+**Q: Is the integration secure for access control data?**
+Absolutely. The integration uses industry-standard OAuth 2.0 Client Credentials over HTTPS. Your credentials are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **HID Origo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hid-origo](https://vinkius.com/mcp/hid-origo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HID Origo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hid-origo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HID Origo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hid-origo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

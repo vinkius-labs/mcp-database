@@ -1,7 +1,6 @@
 # Cypress Cloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cypress-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cypress-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cypress-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cypress-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Cypress Cloud** MCP se
 > Analyzing flaky tests since Jan 1st... I identified 3 flaky tests. 'Checkout flow' has a 15% flake rate, and 'User profile update' has flaked twice this month. I can list the last flake dates for these.
 
 
+## ❓ FAQ
+
+**Q: Can my agent help me debug a failed Cypress test?**
+Yes. Use the 'get_instance' tool with the instance ID. The agent will retrieve explicit error messages and can provide you with direct links to failure screenshots and video recordings stored in Cypress Cloud.
+
+**Q: How do I identify which tests are flaky in my project?**
+Provide a start date to the 'report_flaky' tool. Your agent will analyze the historical data from Cypress Cloud and identify tests that intermittently pass and fail, helping you improve your CI reliability.
+
+**Q: Can I use the agent to monitor the duration of my test runs?**
+Absolutely. The 'report_slow' tool retrieves high-precision duration metrics. The agent can surface the slowest tests by average or p95 duration, allowing you to optimize your test suite's execution time.
+
+
 ## Installation & Usage
 
-To install and use the **Cypress Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cypress-cloud](https://vinkius.com/mcp/cypress-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cypress Cloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cypress-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cypress Cloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cypress-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

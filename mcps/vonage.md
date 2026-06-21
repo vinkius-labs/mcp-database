@@ -1,7 +1,6 @@
 # Vonage MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vonage)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vonage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vonage-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vonage)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Vonage** MCP server us
 > Your current Vonage balance is 42.50 EUR. For the United Kingdom (GB), the outbound SMS price is approximately 0.045 EUR per message. You have enough credit for roughly 944 messages.
 
 
+## ❓ FAQ
+
+**Q: Can I send WhatsApp messages using this server?**
+Yes. The `send_whatsapp_message` tool allows you to send outbound WhatsApp messages through the Vonage Messages API. You'll need a verified WhatsApp Business Number configured in your Vonage account as the sender.
+
+**Q: How do I implement two-factor authentication (2FA)?**
+You can use the `start_verification` tool to send an OTP code to a user's phone. Once the user receives the code, use `check_verification_code` with the `request_id` to validate it. Your agent can handle the entire flow through a single conversation.
+
+**Q: Can I check how much sending an SMS will cost me?**
+Absolutely. Use the `get_country_pricing` tool and provide the ISO country code (e.g., 'US' or 'GB'). Your agent will return the outbound SMS pricing for that region, helping you estimate costs before sending.
+
+
 ## Installation & Usage
 
-To install and use the **Vonage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vonage](https://vinkius.com/mcp/vonage)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vonage** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vonage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vonage** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vonage": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

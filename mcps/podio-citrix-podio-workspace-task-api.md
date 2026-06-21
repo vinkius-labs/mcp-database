@@ -1,7 +1,6 @@
 # Podio (Citrix Podio Workspace & Task API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/podio-citrix-podio-workspace-task-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/podio-citrix-podio-workspace-task-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/podio-citrix-podio-workspace-task-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/podio-citrix-podio-workspace-task-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Podio (Citrix Podio Wo
 > I've successfully created the task 'Review Q4 Report' using `create_task`. It has been set with the due date for tomorrow as requested.
 
 
+## ❓ FAQ
+
+**Q: Can I add new data to my Podio apps using this server?**
+Yes! Use the `add_item` tool. You can specify the `app_id` and provide a JSON object of fields to create new records instantly.
+
+**Q: How do I search for specific items within an app?**
+The `filter_items` tool allows you to perform complex queries. You can filter by tags, field values, or metadata to narrow down your results within a specific `app_id`.
+
+**Q: Can I assign tasks to specific users?**
+Absolutely. When using `create_task`, you can provide an array of user IDs in the `responsible` field to assign the task to the right team members.
+
+
 ## Installation & Usage
 
-To install and use the **Podio (Citrix Podio Workspace & Task API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/podio-citrix-podio-workspace-task-api](https://vinkius.com/mcp/podio-citrix-podio-workspace-task-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Podio (Citrix Podio Workspace & Task API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `podio-citrix-podio-workspace-task-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Podio (Citrix Podio Workspace & Task API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "podio-citrix-podio-workspace-task-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

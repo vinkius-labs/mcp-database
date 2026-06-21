@@ -1,7 +1,6 @@
 # Squarespace Commerce MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/squarespace-commerce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/squarespace-commerce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/squarespace-commerce-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/squarespace-commerce)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Adjustment Processed: `-1 Unit Subtract`
 The Squarespace backend accepted structural changes. Your active live stock now officially reflects 1 physical good available seamlessly avoiding overselling.
 
 
+## ❓ FAQ
+
+**Q: Can the AI add inventory if a new shipment of stock arrives?**
+Yes. Once you know the `variant_id` representing your SKU item (extracted from `get_product_details`), simply instruct the AI: "Add +10 to the stock of this variant". The AI securely triggers `adjust_inventory` scaling up the quantities actively across your storefront.
+
+**Q: Am I able to finalize orders automatically feeding a Tracking ID string?**
+Yes! Use the `fulfill_order` command naturally. Pass the order ID, the postal tracking number, and specify the dispatch carrier (FedEx, UPS, etc). The workflow marks the backend as satisfied natively informing Squarespace.
+
+**Q: How detailed is the product variant readout locally?**
+By executing `get_product_details`, the agent drops deep metadata directly inline. You get descriptions, arrays mapping every single variant SKU attached, full pricing metrics (sale versus original tags), images context arrays, visibility flags, and physical weight calculations.
+
+
 ## Installation & Usage
 
-To install and use the **Squarespace Commerce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/squarespace-commerce](https://vinkius.com/mcp/squarespace-commerce)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Squarespace Commerce** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `squarespace-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Squarespace Commerce** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "squarespace-commerce": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

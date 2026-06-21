@@ -1,7 +1,6 @@
 # GPA Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gpa-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gpa-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gpa-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gpa-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -49,12 +48,52 @@ Here are some examples of how you can interact with the **GPA Calculator** MCP s
 > A grade of 8.5 on the Brazilian scale is equivalent to 3.4 on the US scale.
 
 
+## ❓ FAQ
+
+**Q: How does the weighted GPA calculation work?**
+The tool multiplies each subject's grade by its credit value, sums these products, and then divides the total by the sum of all credits. You can use `compute_weighted_gpa` to perform this calculation.
+
+**Q: Can I convert grades from the Brazilian scale to the US scale?**
+Yes, you can use the `convert_grade_scale` tool to normalize grades from the 10.0 Brazilian scale to the 4.0 US scale using linear scaling.
+
+**Q: How are academic honors determined?**
+Honors like Summa Cum Laude, Magna Cum Laude, and Cum Laude are determined based on the US 4.0 scale thresholds (3.9+, 3.7+, and 3.5+ respectively) when using `compute_weighted_gpa`.
+
+
 ## Installation & Usage
 
-To install and use the **GPA Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gpa-calculator](https://vinkius.com/mcp/gpa-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GPA Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gpa-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GPA Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gpa-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

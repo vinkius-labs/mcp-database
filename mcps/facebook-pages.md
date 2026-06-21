@@ -1,7 +1,6 @@
 # Facebook Pages MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/facebook-pages)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/facebook-pages-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/facebook-pages-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/facebook-pages)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Facebook Pages** MCP s
 > Analyzing insights... Your page had 5,000 impressions and 450 engagements over the last 7 days. Your total fan count has grown by 2% this week.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Facebook Page Access Token?**
+You can generate a Page Access Token via the [**Meta Graph API Explorer**](https://developers.facebook.com/tools/explorer/) by selecting your Page and requesting the necessary permissions (e.g., `pages_manage_posts`).
+
+**Q: Can I reply to user comments using this agent?**
+Yes! Use the `reply_to_comment` tool with the specific Comment ID and your message. Your AI will post the reply directly to the Facebook Page thread.
+
+**Q: What insights can I track for my page?**
+The `get_page_insights` tool retrieves core metrics like total impressions, overall engagement, and fan growth history to help you analyze your page's performance.
+
+
 ## Installation & Usage
 
-To install and use the **Facebook Pages** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/facebook-pages](https://vinkius.com/mcp/facebook-pages)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Facebook Pages** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `facebook-pages` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Facebook Pages** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "facebook-pages": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

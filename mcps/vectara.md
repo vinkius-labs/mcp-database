@@ -1,7 +1,6 @@
 # Vectara MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vectara)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vectara-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vectara-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vectara)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Would you like me to pull the total document count indexing actively inside 'Dev
 > I've retrieved historical chat sessions. You have 2 sessions retained matching your request: `chat-89bf` (Initiated: Mon 14th) covering Corpus HR, and `chat-21zx` (Initiated: Wed 16th) heavily focused on developer queries. Do you want to see the sequence of turns for the DevOps troubleshooting session?
 
 
+## ❓ FAQ
+
+**Q: Can I query my internal documents directly using just conversational chat?**
+Yes. If your data is indexed in a Vectara corpus, simply ask your agent: `search the 'employee-handbook' corpus for remote work policies`. The agent uses the `queryTool` to pass your question to Vectara's semantic engine, effortlessly bringing back precisely matching paragraph citations instantly.
+
+**Q: How do I remove outdated context files destroying the accuracy of my RAG model?**
+You don't need to rebuild APIs or use cURL. Tell your AI: `delete document ID 'doc-992a' from my Sales corpus`. It automatically formats the mutation and wipes the poisoned embedding from Vectara's nodes permanently, restoring high accuracy.
+
+**Q: Will the RAG Chat tool provide accurate source citations?**
+Yes. When you instruct the agent to run `execute_rag_chat`, Vectara processes the query against its internal LLM and index, returning a synthesized natural language answer appended solidly with exact document citations, proving the AI isn't hallucinating facts.
+
+
 ## Installation & Usage
 
-To install and use the **Vectara** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vectara](https://vinkius.com/mcp/vectara)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vectara** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vectara` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vectara** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vectara": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

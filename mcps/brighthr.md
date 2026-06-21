@@ -1,7 +1,6 @@
 # BrightHR MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brighthr)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brighthr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brighthr-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brighthr)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **BrightHR** MCP server 
 > Absence recorded! I've successfully registered the sickness absence for @user1 in BrightHR. The start date is set for tomorrow. Shall I notify the team lead about this update?
 
 
+## ❓ FAQ
+
+**Q: How do I find my BrightHR Access Token?**
+Log in to your account, navigate to **Settings** > **API**, or visit the **BrightHR Developer Portal** to generate a Personal Access Token.
+
+**Q: Can I record a sickness absence via AI?**
+Yes! The `record_absence` tool allows you to log an absence by providing the employee ID, reason, and start date programmatically.
+
+**Q: How do I check upcoming holidays?**
+Use the `list_holiday_requests` tool to retrieve all planned leave, with the option to filter by specific employee IDs.
+
+
 ## Installation & Usage
 
-To install and use the **BrightHR** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/brighthr](https://vinkius.com/mcp/brighthr)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BrightHR** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `brighthr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BrightHR** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "brighthr": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

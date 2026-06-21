@@ -1,7 +1,6 @@
 # Qase MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qase)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qase-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qase-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qase)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,55 @@ Shall I write a Cypress test for this?
 Both are in 'open' status. Shall I pull the details for #12?
 
 
+## ❓ FAQ
+
+**Q: How do I securely obtain my Qase Token?**
+Log in to Qase.io and click your profile icon to go to **Account settings**. Select **API Tokens** (or sometimes found under Apps for an integration token), and click **Create a new API token**. Add a name, click generate, and copy the string provided. It takes exactly 15 seconds. Paste it here to authenticate. Your token is encrypted at rest and injected securely at runtime.
+
+**Q: Can my AI write test scripts using the case details?**
+Absolutely. Inside your IDE (like Cursor), you can ask the agent to 'Fetch case #12 from Qase project PROJ'. The tool retrieves the precise steps, preconditions, and expected results. The agent can then automatically generate Playwright, Cypress, or Selenium scripts based exactly on those Qase definitions.
+
+**Q: How can I check the results of a recent QA cycle?**
+Ask your agent to `list_runs` for your project. This will surface your recent executions. If you notice a run with a high failure rate, ask the agent to pull `get_run` with that run's ID to dive into specifics and see which modules failed the automated checks.
+
+**Q: Can it help me track Jira bugs linked to tests?**
+Yes. By using the `list_defects` capability, your AI can pull all registered defects in a Qase project. If your Qase is integrated with Jira or GitHub, the returned defect data includes external issue links, helping developers immediately map a failed test to the corresponding engineering ticket.
+
+
 ## Installation & Usage
 
-To install and use the **Qase** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/qase](https://vinkius.com/mcp/qase)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Qase** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `qase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Qase** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "qase": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Data Pipeline Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/data-pipeline-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/data-pipeline-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/data-pipeline-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/data-pipeline-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Data Pipeline Prover**
 > Verdict: NON_IDEMPOTENT. Appending rows without deduplication causes duplication if the run fails mid-process and restarts. Enforce a composite primary key or perform upserts to ensure safety.
 
 
+## ❓ FAQ
+
+**Q: How do you achieve idempotency in write jobs?**
+Use unique keys and database constraints (e.g. `INSERT INTO ... ON CONFLICT DO UPDATE`), match against unique business transaction IDs, or write to partition targets that are cleared before the load.
+
+**Q: What is data lineage and why is it important?**
+Data lineage represents the complete lifecycle of a data point: from raw ingestion, through transformations and aggregations, to the final report. It is critical for root-cause analysis when data is wrong.
+
+**Q: Where should pipeline schemas be enforced?**
+Schemas should be validated at the boundaries of each processing stage: immediately upon ingestion, after cleaning transformations, and prior to writing to the destination data warehouse.
+
+
 ## Installation & Usage
 
-To install and use the **Data Pipeline Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/data-pipeline-prover](https://vinkius.com/mcp/data-pipeline-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Data Pipeline Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `data-pipeline-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Data Pipeline Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "data-pipeline-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

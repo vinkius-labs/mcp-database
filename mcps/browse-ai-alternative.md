@@ -1,7 +1,6 @@
 # Browse AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browse-ai-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browse-ai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browse-ai-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browse-ai-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Browse AI** MCP server
 > Fetching results... Task task_456 has successfully 'Finished'. I've retrieved 12 data points including plan names and monthly prices. Would you like the full high-fidelity JSON export?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Browse AI Secret API Key?**
+Log in to your account, navigate to **Account** > **API**, and copy your Secret API Key.
+
+**Q: Can I override the origin URL via AI?**
+Yes! The `trigger_robot_run` tool accepts a `jsonInput` parameter where you can provide an `originUrl` to override the robot's default settings.
+
+**Q: How do I check my remaining credits?**
+Use the `get_usage_quotas` tool to retrieve information about your current subscription and remaining credits directly from the platform.
+
+
 ## Installation & Usage
 
-To install and use the **Browse AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/browse-ai-alternative](https://vinkius.com/mcp/browse-ai-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Browse AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `browse-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Browse AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "browse-ai-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

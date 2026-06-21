@@ -1,7 +1,6 @@
 # Increase MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/increase)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/increase-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/increase-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/increase)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,55 @@ Here are some examples of how you can interact with the **Increase** MCP server 
 > Success chain completed in sequence. First, entity 'Server Spends' received a booked ID structure constraint within banking logic. Secondly, the routing generator hooked an incoming ABA/Account array assigned completely to this context. Account numbers are currently available.
 
 
+## ❓ FAQ
+
+**Q: Can I test money flows safely without losing real funds?**
+Absolutely. Increase has a top-tier sandbox environment. In your MCP settings, pass a Sandbox API Key (starting with `sk_test_`) and optionally set the environment to 'sandbox'. We even implemented literal tool overrides like `increase_simulate_inbound_ach` which are intentionally restricted exclusively to simulating inbound events on your test environment.
+
+**Q: Does adding a new account via the Agent require paperwork?**
+No! Assuming your global LLC has already passed initial onboarding and your Entity object handles compliance, any subsequent programmatic calls to `increase_create_account` yield a fully compliant sub-ledger and associated numbers instantaneously contextually within the UI chat responses.
+
+**Q: What is the difference between ACH and Wire transfer arrays here?**
+ACH acts through clearing houses taking normally 1-3 business days suited perfectly for non-urgent vendor mass payouts (`create_ach`). Wire transfers (`create_wire`) tie directly to Fedwire routing logic hitting banks internally within minutes - often bearing a slight static fee. Dictate which the bot should invoke based on liquidity needs.
+
+**Q: How can I trace a specific payment?**
+We've added `increase_list_transactions` to handle historical booked transfers strictly by ID limits, exposing whether money cleared Fed limits safely.
+
+
 ## Installation & Usage
 
-To install and use the **Increase** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/increase](https://vinkius.com/mcp/increase)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Increase** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `increase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Increase** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "increase": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

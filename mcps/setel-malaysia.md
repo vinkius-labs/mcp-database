@@ -1,7 +1,6 @@
 # Setel Malaysia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/setel-malaysia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/setel-malaysia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/setel-malaysia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/setel-malaysia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Setel Malaysia** MCP s
 > Fetching merchant metrics... For April 2024, your total settlements amount to RM 45,200.00 across 1,200 transactions. Service status: All mobility services operational.
 
 
+## ❓ FAQ
+
+**Q: Can I test this in a staging environment?**
+Yes! Setel provides a pre-production API (`api-pre-prod.setel.com`) for integration testing without affecting real balances.
+
+**Q: How do I check the loyalty points for a user?**
+Use the `get_mesra_points` tool with the specific User ID. Your agent will return the current Mesra points balance associated with that account.
+
+**Q: Can I automatically list all nearby EV charging locations?**
+Yes! The `list_charging_locations` tool retrieves available Setel-compatible EV chargers, allowing your agent to help you find the best spot to power up.
+
+
 ## Installation & Usage
 
-To install and use the **Setel Malaysia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/setel-malaysia](https://vinkius.com/mcp/setel-malaysia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Setel Malaysia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `setel-malaysia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Setel Malaysia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "setel-malaysia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

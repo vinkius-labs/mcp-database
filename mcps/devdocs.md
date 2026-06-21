@@ -1,7 +1,6 @@
 # DevDocs MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/devdocs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/devdocs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/devdocs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/devdocs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **DevDocs** MCP server u
 > Retrieving 'aws' documentation for 's3 cp'... [Agent pulls official Markdown segments detailing the cp command, including description, usage syntax, and examples like 'aws s3 cp file.txt s3://my-bucket/'].
 
 
+## ❓ FAQ
+
+**Q: Does this server require a DevDocs.io account or API key?**
+No. This server uses the public DevDocs.io registry and documentation indices, which do not require authentication. You can start querying technical documentation immediately without any setup.
+
+**Q: Can my agent search within a specific library like 'react' or 'tailwindcss'?**
+Yes. Use the 'search_docs' tool. Provide the library slug (e.g., 'react') and your search query. The agent will directly attack the internal search index, rapidly filtering available paths matching your keyword.
+
+**Q: How do I get the actual documentation content in Markdown format?**
+Use the 'read_page' tool. Provide the library slug and the exact page path (which you can find using search_docs). Your agent will translate the native DevDocs static HTML blobs directly into clean, human-readable Markdown payloads.
+
+
 ## Installation & Usage
 
-To install and use the **DevDocs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/devdocs](https://vinkius.com/mcp/devdocs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DevDocs** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `devdocs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DevDocs** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "devdocs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Traction Guest MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/traction-guest)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/traction-guest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/traction-guest-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/traction-guest)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -196,12 +195,55 @@ The group visit is now scheduled and ready for individual invite creation. Would
 Would you like to check in a new visitor or review audit logs?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Traction Guest API key and where do I find it?**
+Log in to your Traction Guest account, go to the **Developer Portal** at us.tractionguest.com/dev_portal, and generate a new API key. Copy the key immediately and paste it into the API key field below. This key authenticates all API v3 requests to https://us.tractionguest.com/api/v3.
+
+**Q: What's the difference between invites, sign-ins, and registrations?**
+**Invites** are scheduled visitor appointments created in advance (future visits). **Sign-ins** are actual check-in records when visitors arrive on-site (current/past visits). **Registrations** are pre-registration records awaiting conversion to invites. The workflow is: Registration → Invite → Sign-in (check-in) → Sign-out.
+
+**Q: Can I create multiple hosts at once for bulk employee onboarding?**
+Yes! Use the `create_hosts_batch` tool with an array of host objects. Each host needs firstName, lastName, and email. This is much more efficient than creating hosts one at a time, especially when onboarding new teams or importing from HR systems.
+
+**Q: How do I manage group visits like tours and training sessions?**
+Use `create_group_visit` to schedule a group event with name, date, expected attendees, host, and location. Then use `list_group_visits` to see all upcoming group events. You can update or delete group visits as needed. Each group visit tracks expected vs actual attendance.
+
+
 ## Installation & Usage
 
-To install and use the **Traction Guest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/traction-guest](https://vinkius.com/mcp/traction-guest)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Traction Guest** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `traction-guest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Traction Guest** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "traction-guest": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

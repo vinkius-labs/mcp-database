@@ -1,7 +1,6 @@
 # HyperDX (Open Source Observability) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hyperdx-open-source-observability)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hyperdx-open-source-observability-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hyperdx-open-source-observability-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hyperdx-open-source-observability)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **HyperDX (Open Source O
 > I found 3 dashboards in your organization: 'System Health', 'API Performance', and 'User Analytics'. Which one would you like to inspect in detail?
 
 
+## ❓ FAQ
+
+**Q: Can I search for specific errors in my logs using this server?**
+Yes! Use the `list_logs` tool with a query like `level:error`. You can also specify a time range using the `from` parameter (e.g., '1h' or '24h') to narrow down the results.
+
+**Q: How do I set up a new alert for a specific service?**
+You can use the `create_alert` tool. You'll need to provide a name, the search query (e.g., `service:auth level:error`), a threshold value, the type of alert (like 'count'), and the evaluation interval (e.g., '5m').
+
+**Q: Is it possible to delete an alert rule if it's no longer needed?**
+Yes, simply use the `delete_alert` tool and provide the unique ID of the alert rule you wish to remove.
+
+
 ## Installation & Usage
 
-To install and use the **HyperDX (Open Source Observability)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hyperdx-open-source-observability](https://vinkius.com/mcp/hyperdx-open-source-observability)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HyperDX (Open Source Observability)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hyperdx-open-source-observability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HyperDX (Open Source Observability)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hyperdx-open-source-observability": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

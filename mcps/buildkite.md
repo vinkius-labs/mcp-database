@@ -1,7 +1,6 @@
 # Buildkite MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buildkite)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/buildkite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/buildkite-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buildkite)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Buildkite** MCP server
 > I've successfully created a new build execution for the react-app pipeline targeting 'HEAD' on the 'main' branch. It's now running. Let me know if you want me to monitor its status.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent restart failed builds for a specific branch?**
+Yes. Ask the agent to find failed builds across your pipeline by using the list builds tool. Once it locates the specific build number, it can run the rebuild tool instantly, eliminating the need to search through hundreds of logs on the dashboard.
+
+**Q: How can I check the status of my physical runner agents?**
+Ask your agent to list all agents connected to the Buildkite organization. It returns their UUIDs, operating systems, and connection state. If a runner hangs offline, your AI can immediately flag it to the Platform team, saving crucial deployment time.
+
+**Q: If a commit is pushed to 'main', can the agent trigger a fresh pipeline deployment?**
+Absolutely. You can provide the commit SHA (or simply ask it to target 'HEAD' on the 'main' branch) and ask the agent to create a new build. It will hit the Buildkite trigger endpoint with a message of your choosing.
+
+
 ## Installation & Usage
 
-To install and use the **Buildkite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/buildkite](https://vinkius.com/mcp/buildkite)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Buildkite** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `buildkite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Buildkite** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "buildkite": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

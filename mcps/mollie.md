@@ -1,7 +1,6 @@
 # Mollie MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mollie)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mollie-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mollie-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mollie)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Mollie** MCP server us
 > Retrieving your refunds... You have processed 3 refunds recently: two for 'Service Refund' (€20.00 each) and one for 'Returned Product' (€55.00). All are marked as 'succeeded'.
 
 
+## ❓ FAQ
+
+**Q: Does this server support Mollie's Test Mode?**
+Yes! Simply provide your Test API Key instead of your Live API Key during authentication. The agent will then interact with your test environment.
+
+**Q: Can I see exactly what items were in a specific order?**
+Yes. Use the `get_order` tool with an Order ID (starting with `ord_`). Your agent will return the full breakdown of products, prices, and shipping details.
+
+**Q: How do I check for disputed payments?**
+Use the `list_chargebacks` tool to see a list of all transactions that have been disputed by customers through their banks.
+
+
 ## Installation & Usage
 
-To install and use the **Mollie** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mollie](https://vinkius.com/mcp/mollie)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mollie** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mollie` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mollie** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mollie": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

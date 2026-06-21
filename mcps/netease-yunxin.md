@@ -1,7 +1,6 @@
 # Netease Yunxin / 网易云信 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/netease-yunxin)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/netease-yunxin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/netease-yunxin-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/netease-yunxin)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Netease Yunxin / 网�
 > I've created the chat team 'Project Alpha'. The Team ID (TID) is `12345678`. The owner and initial members have been added successfully. Should I send an invitation message to the group now?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Yunxin AppKey and AppSecret?**
+Log in to the [Yunxin Console](https://console.yunxin.163.com/), select your application from the dashboard, and you will find your AppKey and AppSecret in the application details overview.
+
+**Q: What is an accid?**
+An accid is a unique account identifier for a user in the Yunxin IM system. It is defined by you during account creation and used for all subsequent user-related operations.
+
+**Q: How does the CheckSum authentication work?**
+Yunxin requires a dynamic CheckSum in the HTTP header for every request. This server automatically calculates it for you using the SHA1(AppSecret + Nonce + CurTime) formula, ensuring secure authorized access.
+
+
 ## Installation & Usage
 
-To install and use the **Netease Yunxin / 网易云信** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/netease-yunxin](https://vinkius.com/mcp/netease-yunxin)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Netease Yunxin / 网易云信** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `netease-yunxin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Netease Yunxin / 网易云信** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "netease-yunxin": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

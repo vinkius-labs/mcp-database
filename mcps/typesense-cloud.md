@@ -1,7 +1,6 @@
 # Typesense Cloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typesense-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/typesense-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/typesense-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typesense-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Typesense Cloud** MCP 
 > Pulling cluster metrics... The search_latency median is currently at 14ms globally. The 99th percentile spike reached 88ms. Fortunately, there are no endpoints dropping past 100ms. CPU stands at an idle 12% usage.
 
 
+## ❓ FAQ
+
+**Q: Can the AI provide an analysis if our search endpoints hit performance degradation?**
+Yes. Instructing the agent to run the 'get_cluster_metrics' tool will pull out CPU times, active requests processing, and milliseconds threshold details so the AI inherently explains why the node slows down.
+
+**Q: Can it execute a multi-search batch via chat?**
+Absolutely. Give it a target array of searches (e.g., search product_A and product_B tables). It formats the payload perfectly to hit the endpoint natively and unpacks both search answers logically back to you.
+
+**Q: Does it detect empty aliases mapped incorrectly?**
+Yes! When listing all collections and matching them against 'list_aliases', the agent can see if a virtual layer points to a non-existent cluster data structure instantly. Very handy for debugging production releases.
+
+
 ## Installation & Usage
 
-To install and use the **Typesense Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/typesense-cloud](https://vinkius.com/mcp/typesense-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Typesense Cloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `typesense-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Typesense Cloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "typesense-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Plants MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plants)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/plants-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/plants-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plants)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Plants** MCP server us
 > Fetching details for species 192034... This is 'Lavandula angustifolia'. It belongs to the genus Lavandula. I have data on its flower color (purple), foliage texture, and preferred soil pH.
 
 
+## ❓ FAQ
+
+**Q: How do I search for a specific plant like 'Lavender'?**
+You can use the `search_plants` tool. Simply provide the name as the 'q' parameter, and the agent will return a list of matching plants from the database.
+
+**Q: Can I find plants native to a specific region or country?**
+Yes! Use the `list_distribution_plants` tool with the specific distribution zone slug (e.g., 'fra' for France or 'bra' for Brazil) to see plants found in that area.
+
+**Q: What is the difference between get_plant and get_species?**
+`get_plant` retrieves the main record for a plant, while `get_species` provides more granular taxonomic data, including specific varieties, subspecies, and detailed growth characteristics.
+
+
 ## Installation & Usage
 
-To install and use the **Plants** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/plants](https://vinkius.com/mcp/plants)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Plants** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `plants` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Plants** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "plants": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

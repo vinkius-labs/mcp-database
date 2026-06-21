@@ -1,7 +1,6 @@
 # Bold MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bold)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bold-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bold-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bold)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Bold** MCP server usin
 > I queried your transactions from April 3 to April 10, 2026. You processed 47 transactions totaling $8,234,500 COP. 43 were approved (91.5%), 3 declined, and 1 refunded. The peak day was Friday with 12 transactions. Want me to break down by payment method?
 
 
+## ❓ FAQ
+
+**Q: Can my AI remotely trigger a payment on one of my physical Bold terminals?**
+Yes! Use the `initiate_terminal_payment` tool with the terminal serial number and amount in COP. The datáfono will immediately display the checkout screen for the customer to tap or insert their card.
+
+**Q: How do I generate a payment link that I can share with my customers via WhatsApp or email?**
+Simply ask the agent to run `create_payment_link` with the amount in COP and a description. You'll receive a unique URL that your customers can open to complete the payment securely through Bold's hosted checkout.
+
+**Q: Can I check my settlement balance and pending disbursements through my AI agent?**
+Absolutely. The `get_account_balance` tool returns your real-time available balance and pending settlement amounts in COP, giving you instant financial visibility without logging into the Bold dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **Bold** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bold](https://vinkius.com/mcp/bold)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bold** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bold` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bold** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bold": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

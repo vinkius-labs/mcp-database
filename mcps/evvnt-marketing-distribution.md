@@ -1,7 +1,6 @@
 # Evvnt Marketing & Distribution MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evvnt-marketing-distribution)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/evvnt-marketing-distribution-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/evvnt-marketing-distribution-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evvnt-marketing-distribution)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Evvnt Marketing & Dist
 > You have 12 saved venues, including 'The Grand Theater', 'City Convention Center', and 'Downtown Gallery'. All profiles are active. Would you like the contact details for The Grand Theater?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Evvnt API Key?**
+Log in to your Evvnt partner dashboard, navigate to **Account > API**, and you can generate or retrieve your unique **Partner API Token** from there. API access is typically provided to authorized partners.
+
+**Q: Does the integration show clicks per site?**
+Yes, you can use the get_event_distribution_reports tool to retrieve detailed telemetry, including total site count and engagement metrics for specific events.
+
+**Q: Can the agent submit new events?**
+This integration currently focuses on listing and auditing promoted events and reports. Submitting new events for syndication should be managed via the Evvnt submission interface or automated ingestion partner tools.
+
+
 ## Installation & Usage
 
-To install and use the **Evvnt Marketing & Distribution** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/evvnt-marketing-distribution](https://vinkius.com/mcp/evvnt-marketing-distribution)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Evvnt Marketing & Distribution** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `evvnt-marketing-distribution` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Evvnt Marketing & Distribution** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "evvnt-marketing-distribution": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

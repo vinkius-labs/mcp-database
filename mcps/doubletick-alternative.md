@@ -1,7 +1,6 @@
 # DoubleTick MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doubletick-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/doubletick-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/doubletick-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doubletick-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **DoubleTick** MCP serve
 > Fetching status... Message msg_123 has been successfully 'Delivered' and was 'Read' by the recipient at 2:30 PM today. Would you like to view your full sent history?
 
 
+## ❓ FAQ
+
+**Q: How do I find my DoubleTick API Key?**
+Log in to your DoubleTick account, navigate to **Settings** > **Developer API**, and generate or copy your unique access token.
+
+**Q: Do I need approved templates to send messages?**
+Yes, for business-initiated conversations, the WhatsApp Business API requires using templates that have been approved by Meta.
+
+**Q: How do I handle template placeholders?**
+The `send_template_message` tool accepts a `placeholders_json` string. Provide a JSON array containing the values for your template variables in order.
+
+
 ## Installation & Usage
 
-To install and use the **DoubleTick** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/doubletick-alternative](https://vinkius.com/mcp/doubletick-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DoubleTick** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `doubletick-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DoubleTick** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "doubletick-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

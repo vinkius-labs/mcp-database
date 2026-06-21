@@ -1,7 +1,6 @@
 # Lexzur MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lexzur)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lexzur-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lexzur-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lexzur)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Lexzur** MCP server us
 > Contact orchestrated! I've successfully retrieved the high-fidelity metadata for Acme Legal (ID: comp_789). They have 3 linked lawyers and 5 active matters. Shall I list the detailed history for this company?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Lexzur API Token?**
+Log in to your account, navigate to **Settings** > **API**, and copy your unique access token from the credentials section.
+
+**Q: Can I retrieve litigation cases via AI?**
+Yes! The `list_litigation_cases` tool allows your agent to retrieve high-fidelity data for all ongoing court cases in your Lexzur portfolio.
+
+**Q: How do I search for a specific contact?**
+Use the `list_lexzur_contacts` tool and provide search parameters to retrieve high-fidelity metadata for specific individuals or companies.
+
+
 ## Installation & Usage
 
-To install and use the **Lexzur** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lexzur](https://vinkius.com/mcp/lexzur)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lexzur** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lexzur` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lexzur** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lexzur": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

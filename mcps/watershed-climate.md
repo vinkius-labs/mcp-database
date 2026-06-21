@@ -1,7 +1,6 @@
 # Watershed Climate MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/watershed-climate)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/watershed-climate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/watershed-climate-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/watershed-climate)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -166,12 +165,55 @@ The task is currently processing. I can monitor the status for you. Would you li
 You're on track for the 2030 SBTi target at current reduction rate. Would you like a detailed emissions trend analysis?
 
 
+## ❓ FAQ
+
+**Q: What is the workflow to upload activity data and get emissions calculated in Watershed?**
+The complete workflow is: (1) Use `create_upload` to create an upload container, (2) Use `upload_data_records` to add your activity data records (electricity, flights, shipping, etc.), (3) Use `validate_upload` to check data quality and fix any errors, (4) Use `submit_upload` to send data for emissions calculation, (5) Use `get_task_status` with the returned task_id to monitor processing. Once complete, your measurements appear in the inventory.
+
+**Q: Can I check my organization's total carbon footprint for a specific year?**
+Yes! Use `list_inventories` to find your organization's GHG inventories by year. Then use `get_inventory` with the specific inventory_id to see the complete emissions breakdown by Scope 1 (direct), Scope 2 (energy), and Scope 3 (value chain). You can also use `list_measurements` with the year filter to see individual measurement details across all inventories.
+
+**Q: Where do I find my Watershed API key and how do I generate one?**
+Log in to your Watershed dashboard at dashboard.watershedclimate.com, navigate to **Organization Settings** in the left menu, then go to the **API** section. Click to generate a new API key. Copy and save this key immediately — it won't be shown again. The key typically starts with `wh_`. Keep it secure as it provides full access to your organization's climate data.
+
+**Q: What types of activity data can I upload to Watershed?**
+Watershed accepts a wide range of activity data including: electricity and energy consumption (kWh, therms), business travel (flights, hotels, rental cars), employee commuting, freight and shipping (ton-miles, kg-km), waste generated, water usage, and purchased goods/services. Each record needs fields like activity_type, quantity, unit, start_date, end_date, and optionally location and spend_amount for accurate emissions calculation.
+
+
 ## Installation & Usage
 
-To install and use the **Watershed Climate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/watershed-climate](https://vinkius.com/mcp/watershed-climate)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Watershed Climate** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `watershed-climate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Watershed Climate** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "watershed-climate": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

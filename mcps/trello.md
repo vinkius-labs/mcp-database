@@ -1,7 +1,6 @@
 # Trello MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trello)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/trello-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/trello-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trello)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -96,12 +95,52 @@ Here are some examples of how you can interact with the **Trello** MCP server us
 > Task accomplished. 'Verify Webhooks' has been successfully created with an attached ID of 660f9a2bccd. Feel free to ask if you need to fetch its timeline or update the card further.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically gather details of a specific card by its ID?**
+Yes! Use the `get_card` tool with exactly the Card ID. Your agent will respond with complete metadata, assignee fields, standard labels, and precise notes within seconds.
+
+**Q: How do I move a card from 'To Do' to 'Done' seamlessly?**
+Simply ask the agent to run the `update_card` tool. Provide the Card ID and set the destination List ID (which you can find using `list_lists` first). The card will be moved across columns instantly.
+
+**Q: Does the integration allow completely destructive operations like deleting my entire board?**
+No. The agent is limited to safe mutations related to Cards—creating, updating, and removing cards. It does not contain tools to delete large configurations like Boards or Columns, protecting your company’s structure.
+
+
 ## Installation & Usage
 
-To install and use the **Trello** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/trello](https://vinkius.com/mcp/trello)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Trello** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `trello` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Trello** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "trello": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

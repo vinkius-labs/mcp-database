@@ -1,7 +1,6 @@
 # Justia Legal Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/justia-legal-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/justia-legal-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/justia-legal-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/justia-legal-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Justia Legal Intellige
 > Searching the professional database... I've found a list of qualified environmental law practitioners in Seattle. I can provide their names and practice details.
 
 
+## ❓ FAQ
+
+**Q: Can I find medical malpractice cases?**
+Yes! Use the `search_legal_cases` tool with the query 'medical malpractice'. The response will include a list of relevant cases and summaries.
+
+**Q: Are the statutes available for all 50 states?**
+Yes. Justia provides comprehensive access to the statutes and codes for all 50 US states. Use the `get_state_statutes` tool with the specific state name.
+
+**Q: Does this include recent Supreme Court decisions?**
+Yes. The Justia database is updated with recent judicial opinions and decisions from federal and state courts, including the US Supreme Court.
+
+
 ## Installation & Usage
 
-To install and use the **Justia Legal Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/justia-legal-intelligence](https://vinkius.com/mcp/justia-legal-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Justia Legal Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `justia-legal-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Justia Legal Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "justia-legal-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Braze MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/braze)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/braze-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/braze-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/braze)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Braze** MCP server usi
 > Retrieving Canvases... You have 2 active Canvases: 'Onboarding Journey' (ID: can_1) and 'Win-back Flow' (ID: can_2).
 
 
+## ❓ FAQ
+
+**Q: Can I trigger an API campaign for a specific user?**
+Yes! Use the `trigger_campaign` tool with the Campaign ID and a JSON array of recipient objects (e.g., `[{"external_user_id":"123"}]`).
+
+**Q: How do I update a user's custom attribute?**
+Simply ask the agent to `track_user` and provide the External ID along with the new attributes in JSON format (e.g., `{"favorite_color":"blue"}`).
+
+**Q: Does the integration allow permanently deleting a user for GDPR compliance?**
+Yes. Use the `delete_user` mutation with the user's External ID. This will permanently remove their profile and data from your Braze dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **Braze** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/braze](https://vinkius.com/mcp/braze)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Braze** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `braze` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Braze** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "braze": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

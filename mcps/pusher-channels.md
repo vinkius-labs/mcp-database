@@ -1,7 +1,6 @@
 # Pusher Channels MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pusher-channels)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pusher-channels-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pusher-channels-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pusher-channels)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Pusher Channels** MCP 
 > All active WebSocket connections for 'user_999' have been terminated. The user will need to re-authenticate to reconnect.
 
 
+## ❓ FAQ
+
+**Q: Can I send the same event to multiple channels at once?**
+Yes. The `trigger_event` tool accepts an array of channel names (up to 100) to broadcast your message simultaneously across your infrastructure.
+
+**Q: How do I check which users are currently online in a presence channel?**
+Use the `list_channel_users` tool with the specific channel name (must start with `presence-`). It will return a list of all active user IDs.
+
+**Q: Is it possible to force a user to disconnect?**
+Yes. The `terminate_user_connections` tool allows you to close all active WebSocket connections for a specific user ID immediately.
+
+
 ## Installation & Usage
 
-To install and use the **Pusher Channels** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pusher-channels](https://vinkius.com/mcp/pusher-channels)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pusher Channels** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pusher-channels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pusher Channels** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pusher-channels": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

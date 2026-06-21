@@ -1,7 +1,6 @@
 # Payload CMS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payload-cms-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/payload-cms-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/payload-cms-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payload-cms-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Payload CMS** MCP serv
 > I've fetched the 'header' global data. It currently contains the site logo URL, a navigation array with 5 links, and a 'sticky' setting set to true. Do you need to update any of these fields?
 
 
+## ❓ FAQ
+
+**Q: How can I filter results to find specific documents in a collection?**
+You can use the `find_many` tool and provide a JSON string in the `where` parameter. This follows Payload's standard query syntax, allowing you to filter by fields, operators (like `equals`, `contains`), and nested logic.
+
+**Q: Can I control how much related data is returned in a query?**
+Yes! Most query tools like `find_many`, `find_by_id`, and `get_global` include a `depth` parameter. Increasing this number will populate more levels of nested relationships.
+
+**Q: Does this server support updating global settings like site headers?**
+Absolutely. Use the `get_global` tool to retrieve current data and `update_global` to modify it. This is perfect for managing site-wide configurations without leaving your AI assistant.
+
+
 ## Installation & Usage
 
-To install and use the **Payload CMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/payload-cms-alternative](https://vinkius.com/mcp/payload-cms-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Payload CMS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `payload-cms-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Payload CMS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "payload-cms-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

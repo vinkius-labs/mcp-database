@@ -1,7 +1,6 @@
 # Deepgram MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepgram)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deepgram-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deepgram-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepgram)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Deepgram** MCP server 
 > Retrieving usage data... You have transcribed 450 minutes of audio and generated 12MB of TTS content this month. Your project limits are well within the current thresholds.
 
 
+## ❓ FAQ
+
+**Q: Can my agent transcribe an audio file from a public URL?**
+Yes. Use the 'transcribe_url' tool. Provide the public URL of the audio file (WAV, MP3, etc.) and specify the model (e.g., 'nova-2'). The agent will dispatch the request to Deepgram and return the transcribed text instantly.
+
+**Q: How do I generate speech from text using the agent?**
+Use the 'speak_text' tool. Provide the text script and the target voice model (e.g., 'aura-asteria-en'). Your agent will trigger the high-fidelity Aura voice engine and return the binary audio stream data.
+
+**Q: Can I monitor my remaining project balance via chat?**
+Absolutely. Use the 'get_balances' tool with your project ID. The agent will retrieve your current wallet thresholds and funding limits directly from Deepgram to ensure your audio pipelines stay active.
+
+
 ## Installation & Usage
 
-To install and use the **Deepgram** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deepgram](https://vinkius.com/mcp/deepgram)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deepgram** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deepgram` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deepgram** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deepgram": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

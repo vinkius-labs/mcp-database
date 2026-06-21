@@ -1,7 +1,6 @@
 # Albacross MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/albacross)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/albacross-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/albacross-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/albacross)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Albacross** MCP server
 > I've checked your workflows. The 'CRM Sync' (ID: 12345) is currently active and has successfully synced 15 leads to HubSpot in the last 24 hours. There are no reported errors.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Albacross API Key?**
+Log in to your Albacross dashboard, navigate to **Integrations** or **API**, and generate a new API key. This key is used for the Reveal API and other REST interactions.
+
+**Q: Can I identify a company using only an IP address?**
+Yes! The `identify_company_by_ip` tool uses the Reveal API to provide detailed firmographics (name, size, industry) based on any valid IPv4 address.
+
+**Q: Does this support lead lists from specific segments?**
+Yes, the `list_leads` tool allows you to filter identified companies by `segment_id`, helping you focus on leads that match your high-intent or target industry criteria.
+
+
 ## Installation & Usage
 
-To install and use the **Albacross** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/albacross](https://vinkius.com/mcp/albacross)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Albacross** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `albacross` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Albacross** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "albacross": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

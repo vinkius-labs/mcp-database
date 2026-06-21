@@ -1,7 +1,6 @@
 # CARTO MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/carto)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/carto-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/carto-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/carto)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **CARTO** MCP server usi
 > Isoline calculation finished. Based on current local routing systems, the GeoJSON geometry covers exactly the 15-minute vehicular reach extending roughly 1.8 miles outwards, factoring one-way routes. I am outputting the boundary format payload here.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent orchestrate heavy spatial analytics on large datasets directly?**
+Yes. While small checks use the immediate SQL endpoint, your agent knows how to use the async Job API to submit massive postGIS or BigQuery geospatial operations on millions of rows. It automatically polls the remote status and notifies you once your heavy data transformation is structurally completed.
+
+**Q: Am I able to geocode raw customer addresses in bulk through the agent?**
+Definitely. Give your agent a list of unstructured addresses and it will fire the bulk `geocode_batch_addresses` tool. CARTO’s native LDS engine (powered by TomTom/HERE) returns the validated geo-coordinates for each row, avoiding manual CSV matching.
+
+**Q: Can the agent create travel-time polygons (Isolines)?**
+Absolutely. The agent uses the `calculate_isoline` tool passing the desired travel duration and coordinate center. It immediately receives a precise GeoJSON polygon defining the catchment zone or service area, without requiring you to use the map UI.
+
+
 ## Installation & Usage
 
-To install and use the **CARTO** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/carto](https://vinkius.com/mcp/carto)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CARTO** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `carto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CARTO** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "carto": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

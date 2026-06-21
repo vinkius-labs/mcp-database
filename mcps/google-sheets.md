@@ -1,7 +1,6 @@
 # Google Sheets MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-sheets)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-sheets-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-sheets-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-sheets)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Google Sheets** MCP se
 > Tab successfully instantiated in spreadsheet ID '1abcxyz'. The empty array logic has been set.
 
 
+## ❓ FAQ
+
+**Q: How do I specify which cells to read or update?**
+You use 'A1 notation'. For example, 'Sheet1!A1:B5' refers to the first two columns and first five rows of the tab named 'Sheet1'. If you just say 'Sheet1', it attempts to read the active data range.
+
+**Q: Can I add a new row of data without knowing the exact empty row number?**
+Yes! Use the `append_sheet_values` tool. You simply provide the range of the table (e.g., 'Sheet1!A:C') and the data you want to add. It automatically appends to the next empty row.
+
+**Q: Can it delete sheets completely?**
+The tool endpoints are restricted to inside-sheet operations. It cannot delete the root spreadsheet itself from your Drive to prevent catastrophic destructive commands.
+
+
 ## Installation & Usage
 
-To install and use the **Google Sheets** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-sheets](https://vinkius.com/mcp/google-sheets)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Sheets** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-sheets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Sheets** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-sheets": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

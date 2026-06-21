@@ -1,7 +1,6 @@
 # Aircall MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aircall)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aircall-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aircall-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aircall)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Aircall** MCP server u
 > I've checked Jane Smith's status. She is currently 'Busy' on another call. Her average call duration is 5 minutes, so she might be free soon. Would you like me to check again in a moment?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Aircall API ID and Token?**
+Log in to your Aircall Dashboard, navigate to **Integrations & API** > **API keys**, and create a new key. You will see both the `api_id` and `api_token` there.
+
+**Q: Can I listen to call recordings via the agent?**
+The `get_call_details` tool provides the URL to the call recording if available. Your agent can retrieve this metadata, and you can access the link to listen to the audio.
+
+**Q: Does this support checking user availability?**
+Yes! Use the `get_user_details` tool. It returns the current availability status (Available, Busy, or Offline) for any team member in your account.
+
+
 ## Installation & Usage
 
-To install and use the **Aircall** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aircall](https://vinkius.com/mcp/aircall)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aircall** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aircall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aircall** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aircall": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # DBpedia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dbpedia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dbpedia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dbpedia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dbpedia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **DBpedia** MCP server u
 > Fetching live data... The latest version of the 'Artificial Intelligence' resource includes updated links to recent developments in Large Language Models and neural network architectures. The data is synchronized with the latest Wikipedia edits.
 
 
+## ❓ FAQ
+
+**Q: How do I perform a custom semantic query on DBpedia?**
+Use the `query_sparql` tool. You can provide a standard SPARQL query string to filter and retrieve specific data from the DBpedia knowledge graph, such as lists of people, places, or specific properties.
+
+**Q: Can I find a DBpedia resource if I only have a partial name?**
+Yes! Use the `lookup_prefix` tool for autocomplete-style searching or `lookup_search` for keyword-based resolution. These tools help map natural language names to official DBpedia identifiers.
+
+**Q: How can I track the most recent updates to Wikipedia articles?**
+Use the `get_live_changes` tool to list recent change events from the DBpedia Live Sync API, or `get_live_resource` to fetch the absolute latest data for a specific page title.
+
+
 ## Installation & Usage
 
-To install and use the **DBpedia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dbpedia](https://vinkius.com/mcp/dbpedia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DBpedia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dbpedia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DBpedia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dbpedia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Dynatrace (APM and Observability) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dynatrace-apm-and-observability)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dynatrace-apm-and-observability-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dynatrace-apm-and-observability-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dynatrace-apm-and-observability)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -102,12 +101,52 @@ Here are some examples of how you can interact with the **Dynatrace (APM and Obs
 > I've retrieved the list of monitored hosts. You have 12 active hosts, including 'App-Server-01', 'DB-Primary', and 10 worker nodes. All are currently reporting as healthy.
 
 
+## ❓ FAQ
+
+**Q: How can I check for active problems in my environment?**
+You can use the `list_problems` tool. It retrieves all open and closed problems detected by Dynatrace, providing you with an immediate overview of your system's health.
+
+**Q: Is it possible to query specific performance metrics like CPU usage?**
+Yes! Use the `query_metrics` tool with a metric selector (e.g., `builtin:host.cpu.usage:avg`). The agent will fetch the relevant data points for analysis.
+
+**Q: Can I manage my synthetic monitoring tests through this server?**
+Absolutely. You can use `list_synthetic_monitors` to see your current tests and `trigger_synthetic_batch` to manually start execution sequences.
+
+
 ## Installation & Usage
 
-To install and use the **Dynatrace (APM and Observability)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dynatrace-apm-and-observability](https://vinkius.com/mcp/dynatrace-apm-and-observability)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dynatrace (APM and Observability)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dynatrace-apm-and-observability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dynatrace (APM and Observability)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dynatrace-apm-and-observability": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

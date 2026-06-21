@@ -1,7 +1,6 @@
 # Memo Meister MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/memo-meister)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/memo-meister-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/memo-meister-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/memo-meister)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Memo Meister** MCP ser
 > Open tasks (Assigned to you): 4. 1) 'Review Electrical Plan' (Project A, Due: Tomorrow). 2) 'Approve Material Invoice' (Project B, Due: Friday). 3) 'Schedule Crane Delivery' (Project A, Overdue ⚠️). 4) 'Sign off on Safety Audit' (Project C).
 
 
+## ❓ FAQ
+
+**Q: Can I read and create project memos?**
+Yes. Create text memos, attach files, and organize them within specific project folders.
+
+**Q: What API does Memo Meister use?**
+Memo Meister uses a custom API Key header against a GraphQL endpoint at `api.memomeister.com/graphql`.
+
+**Q: Can I search for specific field reports?**
+Yes. Query the GraphQL API to search memos by tags, content, or project assignment.
+
+
 ## Installation & Usage
 
-To install and use the **Memo Meister** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/memo-meister](https://vinkius.com/mcp/memo-meister)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Memo Meister** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `memo-meister` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Memo Meister** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "memo-meister": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

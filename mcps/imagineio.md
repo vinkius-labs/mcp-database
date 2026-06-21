@@ -1,7 +1,6 @@
 # Imagine.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/imagineio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/imagineio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/imagineio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/imagineio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Imagine.io** MCP serve
 > You have 8 scenes available: 'Studio White', 'Kitchen Modern', 'Living Room Warm', and 5 more. Each scene includes customizable lighting and camera angles. Want to see details for any of them?
 
 
+## ❓ FAQ
+
+**Q: How do I start a 3D render job?**
+Use the `create_render_job` tool with a product identifier. The render runs asynchronously — check progress with `get_job_status`.
+
+**Q: Can I browse available 3D scenes and materials?**
+Yes. Use `list_scenes` to browse environments and `list_materials` to see all available textures and finishes for your products.
+
+**Q: How do I download the final rendered images?**
+Use `list_renders` with the product identifier to retrieve all completed render URLs including resolution details and download links.
+
+
 ## Installation & Usage
 
-To install and use the **Imagine.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/imagineio](https://vinkius.com/mcp/imagineio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Imagine.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `imagineio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Imagine.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "imagineio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

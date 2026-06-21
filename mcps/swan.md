@@ -1,7 +1,6 @@
 # Swan MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/swan)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/swan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/swan-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/swan)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Swan** MCP server usin
 > Log fetched. Examining the exact nodes, the account handled a deposit of 200 EUR and a 50 EUR withdrawal, both marked as settled on the API tier.
 
 
+## ❓ FAQ
+
+**Q: Are actions simulated or operating live on real Ledgers?**
+If you inject your core Project Access Token with full production permissions and leave the `env` string off `sandbox`, yes! It executes heavy Core Banking GraphQL mutations that immediately provision legally compliant EU ledgers behind the scenes.
+
+**Q: Can the AI Agent manage physical or virtual credit cards?**
+Yes. Via `swan_add_virtual_card` and `swan_cancel_card` the LLM has complete programmatic control over debit and spend cards mapped to underlying accounts.
+
+**Q: Does the system support sandbox incoming money simulation?**
+Yes! We expose the `swan_simulate_incoming_transfer` specifically so you can test your programmatic workflows in SandBox by pushing fake money into target ledgers.
+
+
 ## Installation & Usage
 
-To install and use the **Swan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/swan](https://vinkius.com/mcp/swan)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Swan** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `swan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Swan** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "swan": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

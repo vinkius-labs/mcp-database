@@ -1,7 +1,6 @@
 # MediaWiki MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mediawiki)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mediawiki-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mediawiki-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mediawiki)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **MediaWiki** MCP server
 > I've called `list_recent_changes` with a limit of 5. Recent edits include updates to 'API Documentation' by User:Admin and a new page 'Draft:Policy' created by User:Editor1. Would you like details on any of these?
 
 
+## ❓ FAQ
+
+**Q: How do I get the actual text content of a specific wiki page?**
+Use the `get_page_revisions` tool with the page title. You can specify `rvprop` as 'content' to retrieve the full text of the latest revision.
+
+**Q: Can I see all pages that belong to a specific category like 'Physics'?**
+Yes! Use the `list_category_members` tool and provide the category title (e.g., 'Category:Physics'). It will return a list of all pages filed under that category.
+
+**Q: How do I check the general settings and namespaces of the wiki?**
+Simply run the `get_site_info` tool. It fetches general information about the MediaWiki site, including its configuration and available namespaces.
+
+
 ## Installation & Usage
 
-To install and use the **MediaWiki** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mediawiki](https://vinkius.com/mcp/mediawiki)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MediaWiki** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mediawiki` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MediaWiki** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mediawiki": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Buffer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buffer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/buffer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/buffer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buffer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Would you like me to shuffle them or create a new one?
 I have successfully injected this into the Buffer queue for your Twitter profile (ID: 62a3f). It will automatically take the next available time slot according to your predefined buffer schedule.
 
 
+## ❓ FAQ
+
+**Q: Can my AI draft a post and immediately schedule it?**
+Yes! The `create_update` tool is specifically designed for this. You can list your profiles to fetch the correct profile IDs, and then instruct the agent to write a post. The agent will push the new content using the IDs as target destinations. If you omit the explicit time, it falls back to the next empty spot in the profile's schedule.
+
+**Q: Can the agent shuffle my pending queue if I don't like the order?**
+Yes. If you have loaded 20 evergreen posts into your Buffer, you can simply ask the agent to "shuffle the queue for my Twitter profile." It will invoke the `shuffle_queue` endpoint to mix up all pending un-timed updates, keeping your timeline fresh.
+
+**Q: Is there a risk that my AI posts something to the wrong account?**
+The integration mandates profile IDs explicitly inside the payload. As a safety net, always instruct your AI to *list* your pending posts and verify the target profile string names *before* pulling the trigger on production updates. The agent behaves deterministically with tools.
+
+
 ## Installation & Usage
 
-To install and use the **Buffer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/buffer](https://vinkius.com/mcp/buffer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Buffer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `buffer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Buffer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "buffer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

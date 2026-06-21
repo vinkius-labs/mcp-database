@@ -1,7 +1,6 @@
 # Terraform Cloud (HCP) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/terraform-cloud-hcp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/terraform-cloud-hcp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/terraform-cloud-hcp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/terraform-cloud-hcp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -106,12 +105,52 @@ Here are some examples of how you can interact with the **Terraform Cloud (HCP)*
 > The outputs for 'vpc-prod' are: vpc_id = 'vpc-0a1b2c', public_subnets = ['subnet-1', 'subnet-2'], and region = 'us-east-1'.
 
 
+## ❓ FAQ
+
+**Q: Can I trigger a new infrastructure deployment (run) using this server?**
+Yes. You can use the `create_run` tool by providing the Workspace ID. You can also subsequently use `apply_run` or `discard_run` to manage the lifecycle of that specific execution.
+
+**Q: How do I see the output variables from my last successful Terraform apply?**
+Use the `get_state_version_outputs` tool with the Workspace ID. It will retrieve all calculated outputs from the current state, such as IP addresses, DNS names, or resource IDs.
+
+**Q: Is it possible to list all workspaces across my organization?**
+Absolutely. Use the `list_workspaces` tool and provide your organization name. You can also filter the results by name or tags using optional parameters.
+
+
 ## Installation & Usage
 
-To install and use the **Terraform Cloud (HCP)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/terraform-cloud-hcp](https://vinkius.com/mcp/terraform-cloud-hcp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Terraform Cloud (HCP)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `terraform-cloud-hcp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Terraform Cloud (HCP)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "terraform-cloud-hcp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

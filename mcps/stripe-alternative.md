@@ -1,7 +1,6 @@
 # Stripe MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stripe-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stripe-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stripe-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stripe-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -108,12 +107,55 @@ Here are some examples of how you can interact with the **Stripe** MCP server us
 > Your available balance is $8,234.50 USD and €1,120.00 EUR. Pending balance: $2,450.00 USD (3 payment intents still processing). Next payout is scheduled for tomorrow.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Stripe Secret Key?**
+Log in to the [**Stripe Dashboard**](https://dashboard.stripe.com/apikeys), go to **Developers > API keys**, toggle **Test mode** for testing or stay in Live mode for production. Copy the Secret Key (starts with `sk_test_` or `sk_live_`). Keep it secret — never expose it in frontend code.
+
+**Q: What's the difference between a payment intent and a charge?**
+A **Payment Intent** represents a pending payment that may require additional steps (3D Secure, confirmation). It tracks the lifecycle of a payment attempt. A **Charge** is the result of a successfully completed payment — it represents money that has been collected. Use list_payment_intents to track in-progress payments and list_charges for completed ones.
+
+**Q: Can I create a payment intent for any amount?**
+Yes! Use the `create_payment_intent` tool with the amount in the smallest currency unit (e.g. 1000 = $10.00 USD, 1000 = €10.00 EUR) and the currency code (usd, eur, gbp, etc.). Optionally associate it with a customer ID. The tool returns the payment intent with its client_secret for use with Stripe.js.
+
+**Q: Can I track subscription statuses?**
+Yes! Use `list_subscriptions` to see all subscriptions with their status (active, trialing, past_due, canceled, unpaid), customer, billing cycle and items. You can filter by customer ID or status to narrow results. This is useful for monitoring recurring revenue and identifying at-risk accounts.
+
+
 ## Installation & Usage
 
-To install and use the **Stripe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stripe-alternative](https://vinkius.com/mcp/stripe-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Stripe** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stripe-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Stripe** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stripe-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

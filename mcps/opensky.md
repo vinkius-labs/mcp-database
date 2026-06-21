@@ -1,7 +1,6 @@
 # OpenSky MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opensky)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opensky-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opensky-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opensky)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **OpenSky** MCP server u
 > Fetching the track data for 4b1813... I have retrieved 150 trajectory points showing the climb, cruise, and descent phases of the flight. The path started at Zurich (LSZH) and ended at London (EGLL).
 
 
+## ❓ FAQ
+
+**Q: How can I see all planes currently flying over a specific area?**
+Use the `get_states` tool and provide the geographic bounding box using `lamin`, `lomin`, `lamax`, and `lomax` parameters. The agent will return all active aircraft within those coordinates.
+
+**Q: Can I track the exact path a flight took yesterday?**
+Yes. First, identify the aircraft's ICAO24 address, then use the `get_tracks` tool with the specific timestamp to retrieve the full trajectory points of that flight.
+
+**Q: Is it possible to list all flights that arrived at London Heathrow (EGLL) today?**
+Absolutely. Use the `get_flights_by_arrival` tool, entering 'EGLL' as the airport and providing the Unix timestamps for the start and end of the day.
+
+
 ## Installation & Usage
 
-To install and use the **OpenSky** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opensky](https://vinkius.com/mcp/opensky)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenSky** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opensky` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenSky** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opensky": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

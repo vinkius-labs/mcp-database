@@ -1,7 +1,6 @@
 # Floor Area Ratio Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/floor-area-ratio-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/floor-area-ratio-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/floor-area-ratio-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/floor-area-ratio-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Floor Area Ratio Calcu
 > Use the `max_site_coverage` tool: `max_site_coverage(plotArea=5000, maxSiteCoveragePercentage=0.4)`. This will confirm if your proposed footprint is within the legal limit set by the zoning code.
 
 
+## ❓ FAQ
+
+**Q: If I increase the building size, which constraint is most likely to fail first: Site Coverage or Permeability?**
+The relationship between these constraints is complex. You must run `max_site_coverage` first to find the maximum ground footprint. Then, use this result in `calculate_permeability`. The permeability check will often be the most restrictive physical constraint because it mandates a minimum unpaved area before considering building size.
+
+**Q: Can I calculate the total buildable space without knowing the ground footprint?**
+Yes, you can use `max_total_area` with just the plot area and the FAR ratio. However, for a complete assessment, you should always run `calculate_permeability` as well, because permeability might force your buildable footprint to be smaller than what `max_total_area` assumes.
+
+**Q: What is the role of plotArea in these calculations?**
+The `plotArea` (or `lotArea`) is your fixed starting point--the total surface area of the land parcel. It serves as the base input for all three tools (`max_site_coverage`, `max_total_area`, and `calculate_permeability`), providing the dimensional context against which zoning rules are applied.
+
+
 ## Installation & Usage
 
-To install and use the **Floor Area Ratio Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/floor-area-ratio-calculator](https://vinkius.com/mcp/floor-area-ratio-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Floor Area Ratio Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `floor-area-ratio-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Floor Area Ratio Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "floor-area-ratio-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

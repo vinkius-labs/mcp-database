@@ -1,7 +1,6 @@
 # NAICS/SIC Classification API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/naicssic-classification-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/naicssic-classification-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/naicssic-classification-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/naicssic-classification-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **NAICS/SIC Classificati
 > I've scanned the SIC catalog for manufacturing! I've identified several matching codes, including those for electronics and machinery production. I can provide the full metadata for any of these identifiers to help you in your research.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Brand.dev API Key?**
+Log in to your [**Brand.dev dashboard**](https://brand.dev/), and you will find your API Key in the 'API' section. Copy and paste it below.
+
+**Q: What is the difference between NAICS and SIC?**
+SIC is the older classification system, while NAICS is the modern standard used by North American statistical agencies. Both provide hierarchical metadata for industries.
+
+**Q: Can the agent show industry descriptions?**
+Yes. The `get_classification_details` tool retrieves the official title and detailed description for any valid classification code.
+
+
 ## Installation & Usage
 
-To install and use the **NAICS/SIC Classification API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/naicssic-classification-api](https://vinkius.com/mcp/naicssic-classification-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NAICS/SIC Classification API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `naicssic-classification-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NAICS/SIC Classification API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "naicssic-classification-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

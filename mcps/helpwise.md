@@ -1,7 +1,6 @@
 # Helpwise MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helpwise)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/helpwise-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/helpwise-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helpwise)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Helpwise** MCP server 
 > Team members: 6 agents. 1) Sarah Chen (Admin, online). 2) Mike Torres (Agent, online). 3) Lisa Park (Agent, away). 4) James Rodriguez (Agent, offline). 5) Ana Müller (Agent, online). 6) Bot Agent (Automation). Billing conversation thread (conv_8901, 4 messages): [Customer 2h ago]: 'I was charged twice for my subscription. Order #12345.' [Mike 1h30m ago]: 'I apologize for the inconvenience. Let me check your account.' [Customer 1h ago]: 'Please fix this ASAP, I need the refund.' [Mike 45m ago]: 'I've initiated a refund for the duplicate charge. You should see it within 3-5 business days.' Status: Awaiting customer confirmation. Would you like to send a follow-up or close this conversation?
 
 
+## ❓ FAQ
+
+**Q: Can I send emails through my shared inbox using the AI agent?**
+Yes. The `send_email` tool sends an outgoing email through any connected mailbox. Provide the mailbox ID, recipient email, subject, and body (HTML or plain text). Use `list_mailboxes` to see all available shared inboxes and their IDs.
+
+**Q: Can I view the full conversation history for a customer thread?**
+Yes. Use `list_conversations` with a mailbox ID to browse all threads, then call `get_conversation_details` with the conversation ID to retrieve the complete message history including sender, timestamp, and content for each message.
+
+**Q: Does Helpwise require two separate credentials?**
+Yes. Helpwise uses HTTP Basic Authentication with an **API Key** and an **API Secret**. Both are generated in your Helpwise account under **Settings** > **API**. The credentials are Base64-encoded and sent in the Authorization header as `Basic base64(apiKey:apiSecret)`.
+
+
 ## Installation & Usage
 
-To install and use the **Helpwise** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/helpwise](https://vinkius.com/mcp/helpwise)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Helpwise** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `helpwise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Helpwise** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "helpwise": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

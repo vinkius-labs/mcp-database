@@ -1,7 +1,6 @@
 # PaperQuotes MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paperquotes)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/paperquotes-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/paperquotes-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paperquotes)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **PaperQuotes** MCP serv
 > I've found several quotes matching those tags. Here are 5 selections including insights from ancient philosophers and modern thinkers. Would you like the full metadata for any of these?
 
 
+## ❓ FAQ
+
+**Q: How can I get a daily inspirational quote?**
+You can use the `get_qod` tool. It fetches a curated Quote of the Day, and you can even specify a language preference.
+
+**Q: Can I search for quotes by a specific author?**
+Yes. First, use `search_authors` to find the correct author name, then use `list_quotes` with the `author` parameter to see their quotes.
+
+**Q: Is it possible to filter quotes by topic or tag?**
+Absolutely. Use the `list_tags` tool to see available categories, and then pass those tags into the `list_quotes` tool to filter the results.
+
+
 ## Installation & Usage
 
-To install and use the **PaperQuotes** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/paperquotes](https://vinkius.com/mcp/paperquotes)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PaperQuotes** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `paperquotes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PaperQuotes** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "paperquotes": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

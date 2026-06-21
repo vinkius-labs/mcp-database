@@ -1,7 +1,6 @@
 # CurrencyBeacon MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/currencybeacon)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/currencybeacon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/currencybeacon-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/currencybeacon)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **CurrencyBeacon** MCP s
 > Using real-time mid-market rates, 1500 JPY is approximately 10.45 USD. Would you like to perform this conversion for a historical date instead?
 
 
+## ❓ FAQ
+
+**Q: Can I convert currencies using rates from a specific past date?**
+Yes. Use the `convert_currency` tool and provide the `date` parameter in YYYY-MM-DD format to perform historical conversions.
+
+**Q: How do I limit the results to only specific currencies?**
+When using `get_latest_rates` or `get_historical_rates`, use the `symbols` parameter to provide a comma-separated list of currency codes (e.g., 'EUR,GBP,JPY').
+
+**Q: What is the maximum range for time-series data?**
+The `get_timeseries` tool typically supports a range of up to 365 days between the `start_date` and `end_date` parameters.
+
+
 ## Installation & Usage
 
-To install and use the **CurrencyBeacon** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/currencybeacon](https://vinkius.com/mcp/currencybeacon)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CurrencyBeacon** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `currencybeacon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CurrencyBeacon** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "currencybeacon": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

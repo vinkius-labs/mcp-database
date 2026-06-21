@@ -1,7 +1,6 @@
 # Statistics Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/statistics-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/statistics-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/statistics-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/statistics-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Statistics Engine** MC
 > Using the calculate_mode tool: The most frequent score is 5.
 
 
+## ❓ FAQ
+
+**Q: Why use this instead of asking the AI to analyze the dataset directly?**
+AIs hallucinate complex data calculations because they generate text, not numbers. This MCP provides the AI with a deterministic tool, forcing it to offload the actual number-crunching to a strict JavaScript engine.
+
+**Q: Is my data sent to any external service?**
+No. The entire engine runs completely local in your local environment. It is "Privacy First" by design, requiring no external APIs or network access.
+
+**Q: How does the percentile calculation work?**
+The tool sorts your dataset and uses a robust interpolation method to find the exact boundary value below which a given percentage of observations fall. Perfect for p95 or p99 SLA reporting.
+
+
 ## Installation & Usage
 
-To install and use the **Statistics Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/statistics-engine](https://vinkius.com/mcp/statistics-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Statistics Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `statistics-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Statistics Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "statistics-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

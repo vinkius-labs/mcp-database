@@ -1,7 +1,6 @@
 # Adzuna MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adzuna)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adzuna-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adzuna-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adzuna)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Adzuna** MCP server us
 > Based on current Adzuna data for Brazil, the top companies hiring for Sales roles include major retail chains and tech startups. I've listed the top 5 employers along with their active vacancy counts for you.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Adzuna App ID and Key?**
+Register for a developer account at `developer.adzuna.com`. Once logged in, you can create a new application to generate your unique App ID and App Key.
+
+**Q: Which countries does the Adzuna API support?**
+Adzuna supports dozens of countries including the UK (gb), USA (us), Brazil (br), France (fr), and many others. You must provide the 2-letter country code in your search requests.
+
+**Q: Can I see salary data without listing specific jobs?**
+Yes! Use the `get_salary_histogram` or `get_salary_history` tools to retrieve aggregated market data and trends for any job title or location.
+
+
 ## Installation & Usage
 
-To install and use the **Adzuna** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/adzuna](https://vinkius.com/mcp/adzuna)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Adzuna** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `adzuna` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Adzuna** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "adzuna": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

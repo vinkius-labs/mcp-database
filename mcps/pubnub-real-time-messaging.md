@@ -1,7 +1,6 @@
 # PubNub (Real-time Messaging) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pubnub-real-time-messaging)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pubnub-real-time-messaging-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pubnub-real-time-messaging-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pubnub-real-time-messaging)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -96,12 +95,52 @@ Here are some examples of how you can interact with the **PubNub (Real-time Mess
 > There are currently 3 users in the 'lobby' channel: 'admin-01', 'user-55', and 'guest-12'.
 
 
+## ❓ FAQ
+
+**Q: How can I check if a specific user is currently online in a channel?**
+You can use the `presence_here_now` tool to see a list of all active UUIDs in a specific channel, or `presence_where_now` to find all channels a specific UUID is currently subscribed to.
+
+**Q: Can the AI retrieve past messages from a channel?**
+Yes, the `get_message_history` tool allows the agent to fetch historical messages from one or more channels, including metadata and specific time ranges.
+
+**Q: Is it possible to manage user profiles and metadata through this server?**
+Absolutely. You can use `set_user` to create or update profiles and `get_user` to retrieve them. You can also manage channel metadata using `set_channel` and `get_channel`.
+
+
 ## Installation & Usage
 
-To install and use the **PubNub (Real-time Messaging)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pubnub-real-time-messaging](https://vinkius.com/mcp/pubnub-real-time-messaging)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PubNub (Real-time Messaging)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pubnub-real-time-messaging` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PubNub (Real-time Messaging)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pubnub-real-time-messaging": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

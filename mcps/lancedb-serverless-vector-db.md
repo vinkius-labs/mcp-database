@@ -1,7 +1,6 @@
 # LanceDB (Serverless Vector DB) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lancedb-serverless-vector-db)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lancedb-serverless-vector-db-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lancedb-serverless-vector-db-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lancedb-serverless-vector-db)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **LanceDB (Serverless Ve
 > Schema for 'support_kb': The table has 4 columns: 'id' (String), 'text' (String), 'vector' (Float32, Dimensions: 1536), and 'metadata' (JSON). It is currently using an IVF-PQ index for optimized ANN lookups.
 
 
+## ❓ FAQ
+
+**Q: Can I perform a semantic similarity search using my agent?**
+Yes. Use the `vector_search` tool by providing the target Table name and a JSON array of floating-point numbers representing your query embedding. Your agent will return the k-nearest rows from LanceDB based on semantic similarity.
+
+**Q: How do I create a new table with a specific Apache Arrow schema?**
+The `create_table` tool allows your agent to initialize a new columnar vector table. You just need to provide the desired Table name and a valid Apache Arrow schema mapping in JSON format defining dimensions and scalar fields.
+
+**Q: Can my agent insert new embeddings directly into a LanceDB table?**
+Absolutely. Use the `insert_rows` tool to persist new data rows containing native embeddings and arbitrary JSON metadata. Your agent will handle the payload delivery, and LanceDB will automatically update its ANN index.
+
+
 ## Installation & Usage
 
-To install and use the **LanceDB (Serverless Vector DB)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lancedb-serverless-vector-db](https://vinkius.com/mcp/lancedb-serverless-vector-db)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LanceDB (Serverless Vector DB)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lancedb-serverless-vector-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LanceDB (Serverless Vector DB)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lancedb-serverless-vector-db": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # SEO Authority Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/seo-authority-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/seo-authority-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/seo-authority-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/seo-authority-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,55 @@ Here are some examples of how you can interact with the **SEO Authority Prover**
 > Verdict: TECHNICALLY_BROKEN. Triple failure. (1) LCP 4.2s (target <2.5s) — hero images likely not optimized (use WebP/AVIF, avoid lazy-loading LCP element, use CDN). (2) INP 380ms (target <200ms) — this is the CRITICAL 2026 metric. Long JavaScript tasks are blocking the main thread. Split tasks, defer third-party scripts (analytics, chat, ads), avoid synchronous DOM updates. (3) Canonical/internal link mismatch — this sends CONFLICTING signals to Google. Canonicals, internal links...
 
 
+## ❓ FAQ
+
+**Q: Does this tool generate SEO content?**
+No. The agent generates the SEO strategy and content. The tool VALIDATES that the strategy covers all dimensions of modern search excellence: SpamBrain compliance, E-E-A-T demonstration, technical foundation, GEO for AI citation, and AEO for answer engines. It catches the five failure modes that cause AI-generated SEO to fail.
+
+**Q: What is SpamBrain and why does it matter?**
+SpamBrain is Google's ML-powered spam detection system. Unlike older rule-based systems, it uses machine learning to detect evolving manipulation patterns: keyword stuffing, unnatural link growth, cloaking, scaled content abuse, and site reputation abuse. The March 2026 Spam Update completed in under 20 hours — near real-time enforcement. AI agents unknowingly produce SpamBrain-triggering content because they optimize for keyword density and pattern-match to SEO templates. This tool catches those patterns before publishing.
+
+**Q: What is the difference between GEO and AEO?**
+GEO (Generative Engine Optimization) focuses on being CITED by AI models that synthesize answers — ChatGPT, Perplexity, Google AI Overviews. The key tactics (from Princeton/Georgia Tech KDD 2024 research): add verifiable statistics every 150-200 words, cite authoritative sources, include expert quotes, structure content in modular autonomous sections. AEO (Answer Engine Optimization) focuses on being the DIRECT ANSWER that AI engines extract — answer-first format with 40-60 word atomic answers after each heading, entity consistency across the web, FAQPage schema markup. GEO gets you cited. AEO gets you quoted. Both are essential in 2026.
+
+**Q: Why is INP the critical Core Web Vital in 2026?**
+INP (Interaction to Next Paint) replaced FID (First Input Delay) as Google's responsiveness metric. While FID only measured the delay of the FIRST interaction, INP measures ALL interactions throughout the entire session — every click, tap, and keyboard input. Target: <200ms. The most common cause of poor INP: long JavaScript tasks blocking the main thread. Fix: split long tasks, defer non-essential third-party scripts (chat, ads, analytics), avoid synchronous DOM updates. INP is now the metric most sites fail.
+
+
 ## Installation & Usage
 
-To install and use the **SEO Authority Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/seo-authority-prover](https://vinkius.com/mcp/seo-authority-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SEO Authority Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `seo-authority-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SEO Authority Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "seo-authority-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

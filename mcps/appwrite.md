@@ -1,7 +1,6 @@
 # Appwrite MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appwrite)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/appwrite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/appwrite-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appwrite)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Appwrite** MCP server 
 > Retrieving logs for 'resize-image'... The last 5 executions were successful, with an average duration of 150ms. I can display the specific status codes and output for each run.
 
 
+## ❓ FAQ
+
+**Q: How do I list all users in my Appwrite project?**
+Use the `list_users` tool. It retrieves a comprehensive list of all registered users, allowing you to audit account statuses and registration activity.
+
+**Q: Can I see the data within a specific collection?**
+Yes! Use the `list_documents` tool by providing the Database ID and Collection ID. Your agent will fetch the documents stored in that collection for auditing and analysis.
+
+**Q: How do I check if my Appwrite services are running correctly?**
+Use the `get_health_status` tool. It provides a real-time overview of the health of various system components, ensuring your infrastructure is operational.
+
+
 ## Installation & Usage
 
-To install and use the **Appwrite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/appwrite](https://vinkius.com/mcp/appwrite)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Appwrite** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `appwrite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Appwrite** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "appwrite": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

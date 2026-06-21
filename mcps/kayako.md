@@ -1,7 +1,6 @@
 # Kayako MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kayako)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kayako-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kayako-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kayako)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Kayako** MCP server us
 > I found several configured views: 'All Open Cases', 'My Assigned Tickets', 'Pending Customer Response', and 'Recently Completed'. Which one would you like to explore?
 
 
+## ❓ FAQ
+
+**Q: How can I view the conversation history of a specific support ticket?**
+You can use the `list_case_posts` tool by providing the specific Case ID. This will retrieve all messages, replies, and internal notes associated with that conversation.
+
+**Q: Is it possible to browse Help Center articles through the AI?**
+Yes! Use the `list_articles` tool to fetch knowledge base content and `list_categories` to see how the information is structured within your Kayako Help Center.
+
+**Q: Can I create a new support case directly from the chat?**
+Absolutely. The `create_case` tool allows you to open a new support ticket by providing a subject and the initial message contents.
+
+
 ## Installation & Usage
 
-To install and use the **Kayako** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kayako](https://vinkius.com/mcp/kayako)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kayako** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kayako` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kayako** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kayako": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

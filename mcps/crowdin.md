@@ -1,7 +1,6 @@
 # Crowdin MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crowdin)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/crowdin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/crowdin-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crowdin)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Crowdin** MCP server u
 > I've retrieved 3 active tasks: 'Translate UI Strings' (due June 15), 'Review Help Docs' (due June 20), and 'Proofread Marketing Copy'. Would you like the details for a specific task?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Crowdin Personal Access Token?**
+Log in to your Crowdin account, navigate to **Account Settings > API**, and you will find the Personal Access Tokens section to generate a new token.
+
+**Q: Can the agent upload new files for translation?**
+This integration currently focuses on listing and retrieving project and file data. File uploads should be handled through the Crowdin dashboard or CI/CD integrations.
+
+**Q: Does Crowdin support custom glossaries?**
+Yes, you can use the list_glossaries tool to view all glossaries available in your account, ensuring consistent terminology across your projects.
+
+
 ## Installation & Usage
 
-To install and use the **Crowdin** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/crowdin](https://vinkius.com/mcp/crowdin)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Crowdin** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `crowdin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Crowdin** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "crowdin": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Pipeliner MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pipeliner)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pipeliner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pipeliner-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pipeliner)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Pipeliner** MCP server
 > You have 12 activities scheduled this week: 5 follow-up calls, 3 discovery meetings, and 4 internal tasks. Would you like a daily breakdown?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Pipeliner Space ID and Service URL?**
+Log in to Pipeliner, go to **Admin Space** > **API**. There you can find your unique Space ID and the specific API Service URL for your instance.
+
+**Q: Can I see opportunities across multiple pipelines?**
+Yes! Use the `list_pipeliner_opportunities` tool to retrieve a full list of deals. You can then ask the AI agent to filter or group them by pipeline name.
+
+**Q: Does this support looking up individual user activities?**
+Absolutely. Use the `list_pipeliner_activities` tool to retrieve a log of all sales tasks, calls, and meetings recorded in your CRM space.
+
+
 ## Installation & Usage
 
-To install and use the **Pipeliner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pipeliner](https://vinkius.com/mcp/pipeliner)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pipeliner** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pipeliner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pipeliner** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pipeliner": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

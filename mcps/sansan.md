@@ -1,7 +1,6 @@
 # Sansan MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sansan)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sansan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sansan-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sansan)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Sansan** MCP server us
 > Here is the detailed profile for person-12345: The contact is Satoshi Nakamoto. Current Title: CEO. Email: satoshi@example.com. Phone: +81 3-1234-5678. The record confirms 3 business cards merging to form this unified profile.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent find a specific business card by just a first name?**
+Yes. Ask the agent to run the `search_biz_cards` tool with the contact's name. It will look through all digitized cards in the shared corporate database and return the matching profiles, including their company, department, and direct contact details.
+
+**Q: Is it possible to list only contacts from a specific department?**
+Yes, you can ask your agent to first execute `list_departments` to view your organizational structure, and then cross-reference those entities with the cards via natural prompts to summarize card acquisitions per department.
+
+**Q: What is the difference between business cards and persons?**
+Business Cards are individual scan snapshots of physical cards acquired over time. A 'Person' represents the consolidated identity created when multiple updated cards from the same individual are merged. You can query both views via `list_biz_cards` or `list_persons`.
+
+
 ## Installation & Usage
 
-To install and use the **Sansan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sansan](https://vinkius.com/mcp/sansan)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sansan** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sansan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sansan** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sansan": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Huginn (IFTTT Alternative) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/huginn-ifttt-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/huginn-ifttt-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/huginn-ifttt-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/huginn-ifttt-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Huginn (IFTTT Alternat
 > I have exported the scenario 'Home Automation' (ID: 5). Here is the JSON configuration containing all associated agents and settings.
 
 
+## ❓ FAQ
+
+**Q: How do I trigger a specific Webhook Agent with data?**
+Use the `trigger_webhook` tool. You will need the `user_id`, the `agent_id`, and the `secret` defined in that agent's configuration, along with the JSON payload you want to send.
+
+**Q: Can I see what data my agents have collected recently?**
+Yes! Use the `list_events` tool to see a list of recent activity, or `get_event` with a specific ID to see the full JSON payload of a single event.
+
+**Q: Is it possible to run an agent immediately without waiting for its schedule?**
+Absolutely. Use the `run_agent` tool with the Agent ID to force an immediate execution of that specific agent.
+
+
 ## Installation & Usage
 
-To install and use the **Huginn (IFTTT Alternative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/huginn-ifttt-alternative](https://vinkius.com/mcp/huginn-ifttt-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Huginn (IFTTT Alternative)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `huginn-ifttt-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Huginn (IFTTT Alternative)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "huginn-ifttt-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

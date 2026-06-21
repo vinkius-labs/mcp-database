@@ -1,7 +1,6 @@
 # Elevio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elevio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elevio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elevio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elevio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Elevio** MCP server us
 > I've found 3 articles matching 'integrations': 'Setting up Slack', 'API Overview', and 'Webhooks Guide'. All are published. Would you like the full content for the API Overview?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Elevio API Key?**
+Log in to your Elevio dashboard, navigate to **Settings > API**, and you can generate or retrieve your unique API Key from there. API access is typically enabled for most paid plans.
+
+**Q: Can the agent translate my articles?**
+This integration currently focuses on listing and auditing articles and categories. Translating content or creating new language versions should be managed via the Elevio translation workflow in the dashboard.
+
+**Q: Does the integration show real-time views?**
+You can retrieve article metadata using the get_article_details tool. While it shows current status and settings, detailed real-time analytics should be viewed in the Elevio reporting section.
+
+
 ## Installation & Usage
 
-To install and use the **Elevio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/elevio](https://vinkius.com/mcp/elevio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Elevio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `elevio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Elevio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "elevio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # OFX Bank Statement Parser MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ofx-bank-statement-parser)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ofx-bank-statement-parser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ofx-bank-statement-parser-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ofx-bank-statement-parser)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -60,12 +59,52 @@ Here are some examples of how you can interact with the **OFX Bank Statement Par
 > Based on the OFX data, your total income was $5,000 and total expenses were $4,000. Your savings rate for this period is 20%.
 
 
+## ❓ FAQ
+
+**Q: Are my bank statements uploaded to Anthropic or OpenAI?**
+Absolutely not. The parsing engine runs entirely on your local machine. It extracts the raw numbers and feeds them securely to the AI chat context window only during the session.
+
+**Q: What exact data is extracted from the OFX?**
+It extracts the bank ID, account ID, currency, and the full array of statement transactions including TRNTYPE, DTPOSTED, TRNAMT, FITID, NAME, and MEMO.
+
+**Q: Can it process QFX files from Quicken?**
+Yes! QFX is essentially the exact same structure as OFX. This engine reads both seamlessly.
+
+
 ## Installation & Usage
 
-To install and use the **OFX Bank Statement Parser** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ofx-bank-statement-parser](https://vinkius.com/mcp/ofx-bank-statement-parser)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OFX Bank Statement Parser** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ofx-bank-statement-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OFX Bank Statement Parser** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ofx-bank-statement-parser": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

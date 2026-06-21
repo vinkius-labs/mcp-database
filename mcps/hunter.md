@@ -1,7 +1,6 @@
 # Hunter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hunter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hunter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hunter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hunter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,55 @@ Here are some examples of how you can interact with the **Hunter** MCP server us
 > Verification result: INVALID. The MX records for oldstartup.io are not configured — the domain's email server is unreachable. Do not send to this address. I recommend removing it from your outreach list.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Hunter.io API key?**
+Log in to your Hunter.io account at **hunter.io**. In the left sidebar, click the **API** section (or go directly to **hunter.io/api-keys**). Your API key is displayed on this page. Click the **copy** button to copy it. Paste it into the configuration field below. Free plans include 25 searches and 50 verifications per month.
+
+**Q: Can I find the email of a specific person at a company?**
+Yes. Give your AI agent a person's first name, last name, and company domain, and it returns their most likely professional email address with a confidence score. Perfect for reaching out to specific decision-makers.
+
+**Q: How accurate is the email verification?**
+Hunter's verification checks MX records, SMTP responses, and catch-all configurations — returning a status of 'valid', 'invalid', 'accept_all', or 'unknown'. Valid emails have over 95% deliverability. Always verify before sending cold outreach to protect your sender reputation.
+
+**Q: Does it work with free plans?**
+Yes. Hunter offers a free plan with 25 email searches and 50 verifications per month. The API key works the same regardless of plan — the only difference is quota limits. Upgrade to a paid plan for higher volumes.
+
+
 ## Installation & Usage
 
-To install and use the **Hunter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hunter](https://vinkius.com/mcp/hunter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hunter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hunter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hunter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hunter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

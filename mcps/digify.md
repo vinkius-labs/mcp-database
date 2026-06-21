@@ -1,7 +1,6 @@
 # Digify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/digify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/digify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/digify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/digify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Digify** MCP server us
 > The 'Investor Data Room' contains 45 files and has 8 active members. 5 new documents were added this week. Would you like a list of members who haven't logged in recently?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Digify API Key?**
+Log in to your Digify account, navigate to the API section in your settings, and you can generate or retrieve your unique API Key from there. Note that API access may require a specific plan.
+
+**Q: Can the agent show exactly who viewed a file?**
+Yes, you can use the get_file_access_statistics tool to see a list of recipients who have opened your secure file and their total viewing duration.
+
+**Q: Does the integration support watermarking settings?**
+The agent can retrieve current security settings for a file, including whether watermarking is enabled. Adjusting these settings should be managed via the Digify dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **Digify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/digify](https://vinkius.com/mcp/digify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Digify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `digify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Digify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "digify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

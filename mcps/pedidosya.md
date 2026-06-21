@@ -1,7 +1,6 @@
 # PedidosYa MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pedidosya)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pedidosya-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pedidosya-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pedidosya)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -100,12 +99,52 @@ Here are some examples of how you can interact with the **PedidosYa** MCP server
 > Courier requested! Shipment #SH-77201 has been created. Pickup: Av. 18 de Julio 1234, Montevideo. Dropoff: Rambla Wilson 500, Montevideo. Estimated pickup in 12 minutes. A courier will be assigned shortly. Use `track_shipment` with ID SH-77201 to monitor real-time GPS location.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent accept or reject incoming orders automatically?**
+Yes! Use `accept_order` to confirm an incoming order or `reject_order` with a reason (out_of_stock, closing_soon, too_busy, item_unavailable). Once accepted, the PedidosYa system begins assigning a delivery courier. When ready, use `mark_order_ready` to signal the courier for pickup.
+
+**Q: How do I mark items as sold out on my live menu?**
+Use the `update_product_status` tool with the restaurant ID, product ID, and set `available` to false. The product will immediately show as unavailable on PedidosYa. To bring it back, call the same tool with `available` set to true.
+
+**Q: Can I request a courier for deliveries outside of food orders?**
+Yes! Use the `request_courier` tool to create a shipment request with pickup and dropoff addresses. This leverages PedidosYa's logistics network for B2B courier services, independent of restaurant orders. Track the courier in real-time with `track_shipment`.
+
+
 ## Installation & Usage
 
-To install and use the **PedidosYa** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pedidosya](https://vinkius.com/mcp/pedidosya)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PedidosYa** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pedidosya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PedidosYa** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pedidosya": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

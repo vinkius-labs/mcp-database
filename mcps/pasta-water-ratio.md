@@ -1,7 +1,6 @@
 # Pasta Water Ratio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pasta-water-ratio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pasta-water-ratio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pasta-water-ratio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pasta-water-ratio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Pasta Water Ratio** MC
 > Use the `assess_texture_risk` tool with pastaShape='spaghetti', thicknessCategory='medium', and minutesCooked=12 to check your current texture state.
 
 
+## ❓ FAQ
+
+**Q: How do I know if my pasta water is properly salted?**
+Use the `verify_salinity` tool by providing the total liters of water and grams of salt added. It will tell you if your salinity is optimal.
+
+**Q: Can I use this for different pasta thicknesses?**
+Yes. The `get_ideal_ratios` tool allows you to specify thickness categories like thin, medium, or thick to get accurate results.
+
+**Q: How can I prevent my pasta from becoming overcooked?**
+You can use the `assess_texture_risk` tool. By inputting your pasta shape, thickness, and minutes cooked, you can see if you are approaching the overcooked state.
+
+
 ## Installation & Usage
 
-To install and use the **Pasta Water Ratio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pasta-water-ratio](https://vinkius.com/mcp/pasta-water-ratio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pasta Water Ratio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pasta-water-ratio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pasta Water Ratio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pasta-water-ratio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

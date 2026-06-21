@@ -1,7 +1,6 @@
 # Conflux MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/conflux)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/conflux-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/conflux-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/conflux)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Conflux** MCP server u
 > I've retrieved block 0x8e5f... It contains 12 transactions. Notable transactions include a contract call to the 'Sponsor' system and several CFX transfers. Would you like to inspect a specific transaction receipt?
 
 
+## ❓ FAQ
+
+**Q: How can I check the CFX balance of a specific Core Space address?**
+Use the `cfx_get_balance` tool by providing the Conflux address. You can also optionally specify an epoch (like 'latest_state') to get the balance at a specific point in time.
+
+**Q: Can I see if a smart contract has gas or storage sponsorship?**
+Yes! The `cfx_get_sponsor_info` tool returns the sponsorship details for any target contract address, showing who is covering the costs for users interacting with it.
+
+**Q: How do I get the latest state of the Conflux Core network?**
+Run the `cfx_get_status` tool. It provides the current epoch number, block height, chain ID, and other essential metrics about the node's synchronization state.
+
+
 ## Installation & Usage
 
-To install and use the **Conflux** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/conflux](https://vinkius.com/mcp/conflux)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Conflux** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `conflux` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Conflux** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "conflux": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

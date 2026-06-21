@@ -1,7 +1,6 @@
 # Descope (Auth Platform) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/descope-auth-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/descope-auth-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/descope-auth-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/descope-auth-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **Descope (Auth Platform
 > I've triggered `auth_oauth_authorize` for Google. You can now proceed with the authentication at the provided redirect URL.
 
 
+## ❓ FAQ
+
+**Q: How do I verify an email OTP code sent to a user?**
+Use the `auth_otp_verify_email` tool by providing the user's `loginId` (email) and the `code` they received. The agent will return the session details if the verification is successful.
+
+**Q: Can I start a Google OAuth login flow using this server?**
+Yes. Use the `auth_oauth_authorize` tool with 'google' as the `provider` and specify your `redirectURL`. The agent will initiate the OAuth flow for you.
+
+**Q: What is the purpose of the enchanted link polling tool?**
+The `auth_enchantedlink_poll` tool allows the agent to check the status of a pending enchanted link authentication using a `pendingRef`. It helps determine if the user has clicked the link and completed the session.
+
+
 ## Installation & Usage
 
-To install and use the **Descope (Auth Platform)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/descope-auth-platform](https://vinkius.com/mcp/descope-auth-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Descope (Auth Platform)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `descope-auth-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Descope (Auth Platform)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "descope-auth-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # GrabFood Partner MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grabfood-partner)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grabfood-partner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grabfood-partner-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grabfood-partner)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -253,12 +252,58 @@ Here are some examples of how you can interact with the **GrabFood Partner** MCP
 > I've batch-updated your menu: Nasi Goreng price is now 25,000 IDR and Fried Rice has been marked as unavailable. Customers will see these changes reflected on the GrabFood app within a few minutes.
 
 
+## ❓ FAQ
+
+**Q: How do I get my GrabFood Merchant ID?**
+Your Merchant ID is provided when you register as a GrabFood Partner. You can find it in the GrabFood Partner Portal under your restaurant settings, or in the welcome email you received when your restaurant was onboarded to GrabFood.
+
+**Q: Can I use this integration in production, not just sandbox?**
+Yes! The integration defaults to the GrabFood sandbox environment for safe testing. To switch to production, you'll need to update the base URL in the engine configuration to the production endpoint. Contact GrabFood Partner support for production API credentials.
+
+**Q: What happens if I reject an order? Does it affect my merchant rating?**
+Rejecting orders may impact your merchant performance metrics on GrabFood. Frequent rejections can lead to lower visibility in search results. It's recommended to only reject orders when absolutely necessary (e.g., item out of stock, kitchen closure). Always verify order details before making a decision.
+
+**Q: Can I update menu items individually without replacing the entire menu?**
+Yes! Use the `batch_update_menu` tool for targeted updates to specific items, prices, or availability. This is safer than a full menu replacement since it only touches the items you specify. Use `update_menu` only when you need to replace the entire menu structure.
+
+**Q: How do I get my OAuth2 access token for the GrabFood Partner API?**
+You can obtain your OAuth2 access token through the GrabFood Partner Portal. Log in to your partner account and navigate to API Settings or Developer section to generate or retrieve your token. If you don't have access, contact your GrabFood Partner account manager.
+
+
 ## Installation & Usage
 
-To install and use the **GrabFood Partner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/grabfood-partner](https://vinkius.com/mcp/grabfood-partner)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GrabFood Partner** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `grabfood-partner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GrabFood Partner** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "grabfood-partner": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

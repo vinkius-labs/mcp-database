@@ -1,7 +1,6 @@
 # Scale SERP MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scale-serp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scale-serp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scale-serp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scale-serp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Scale SERP** MCP serve
 > I performed an organic Google Search. The current top ranking pages are: 1. Salesforce's 'What is CRM' portal. 2. HubSpot's Complete Guide for 2024. 3. Forbes Advisor 'Best CRM Software of The Year'. Would you like me to fetch the SEO titles or visit any of the URLs?
 
 
+## ❓ FAQ
+
+**Q: Can the AI generate content ideas by analyzing Google 'Related Questions'?**
+Yes. This is a very common SEO workflow. You can prompt the agent: 'Find the related questions for "how to bake sourdough" and write a blog outline covering them'. The agent uses `google_related_questions` to pull the PAA (People Also Ask) boxes directly from Google and drafts your content.
+
+**Q: Is it possible to track market prices in Google Shopping?**
+Absolutely. You can run the `google_shopping` tool with a product query like 'iPhone 15 Pro 256GB'. Scale SERP will return the top structured shopping results, allowing the AI to summarize the lowest, highest, and median prices for you instantly.
+
+**Q: How does the agent do location-aware searches?**
+When using `google_organic` or `custom_search`, you can specify a location (e.g., 'London, UK' or a specific GL country code). Scale SERP ensures the query is routed exactly as if you were physically browsing from that region, avoiding default IP bias.
+
+
 ## Installation & Usage
 
-To install and use the **Scale SERP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/scale-serp](https://vinkius.com/mcp/scale-serp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Scale SERP** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `scale-serp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Scale SERP** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "scale-serp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

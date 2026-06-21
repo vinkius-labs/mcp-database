@@ -1,7 +1,6 @@
 # Google Analytics 4 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-analytics-4)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-analytics-4-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-analytics-4-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-analytics-4)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Google Analytics 4** M
 > Device breakdown (last 30 days): Desktop 58.4% (24,100 users), Mobile 35.2% (14,500 users), Tablet 6.4% (2,640 users). User demographics by country: 1) United States — 34.2% (14,100 users). 2) United Kingdom — 12.8% (5,280). 3) Germany — 8.4% (3,460). 4) Canada — 7.1% (2,930). 5) Brazil — 6.3% (2,600). 6) France — 5.2% (2,140). Mobile traffic has grown 15% month-over-month. Would you like to run a device-specific conversion analysis?
 
 
+## ❓ FAQ
+
+**Q: Can I run custom reports with specific dimensions and metrics?**
+Yes! The `run_report` tool accepts a JSON configuration with dateRanges, dimensions (e.g., pagePath, sessionSource), and metrics (e.g., sessions, screenPageViews, conversions). Use `get_metadata` to list all available dimensions and metrics, and `check_compatibility` to verify your combination is valid before running.
+
+**Q: Does GA4 require two credentials — an access token and a property ID?**
+Yes. You need a Google OAuth **Access Token** (for authentication via Bearer header) and a **GA4 Property ID** (numeric ID identifying your specific GA4 property). The Access Token can be generated via a Google Cloud Service Account with the Analytics Data API enabled. The Property ID is found in GA4 Admin > Property Settings.
+
+**Q: Can I see real-time active users on my website?**
+Yes. The `run_realtime_report` tool provides current active user data with real-time dimensions and metrics. For pre-built convenience reports, use `get_page_views` for top pages, `get_traffic_sources` for session sources, and `get_device_breakdown` for device distribution.
+
+
 ## Installation & Usage
 
-To install and use the **Google Analytics 4** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-analytics-4](https://vinkius.com/mcp/google-analytics-4)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Analytics 4** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-analytics-4` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Analytics 4** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-analytics-4": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

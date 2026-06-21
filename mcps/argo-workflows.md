@@ -1,7 +1,6 @@
 # Argo Workflows MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/argo-workflows)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/argo-workflows-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/argo-workflows-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/argo-workflows)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Argo Workflows** MCP s
 > Listing your templates... You have 3 reusable components: `model-training-tmpl` (requires hyperparameters as array input), `data-cleanup` (expects an S3 bucket URI), and `slack-notification-hook`. They are all initialized and stored in the default namespace.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent figure out exactly which pod/node failed in an active workflow execution?**
+Yes. If a workflow fails, you can ask your agent to retrieve the workflow tree by name. The agent uses the `get_workflow` tool to inspect the deeply nested structure, traverse the active nodes, and pinpoint the exact step or container that resulted in an error state without you ever needing to click through the Argo UI.
+
+**Q: Can I list only scheduled periodic jobs across my cluster?**
+Absolutely. You can use the dedicated `list_cron_workflows` capability to isolate and return strictly workloads orchestrated on a time schedule across any namespace, saving you from parsing through thousands of isolated runs.
+
+**Q: Do I need to expose my internal Kubernetes API to use this?**
+No. The integration strictly interfaces with the Argo Server UI/API layer via standard REST traffic using a scoped ServiceAccount Bearer token. Your cluster's overarching master `kube-apiserver` remains safely isolated from external agentic logic.
+
+
 ## Installation & Usage
 
-To install and use the **Argo Workflows** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/argo-workflows](https://vinkius.com/mcp/argo-workflows)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Argo Workflows** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `argo-workflows` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Argo Workflows** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "argo-workflows": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Meteostat MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meteostat)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meteostat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meteostat-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meteostat)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Meteostat** MCP server
 > Fetching climate normals for station 10637 (Frankfurt am Main)... The average annual temperature is 10.6°C, with July being the warmest month (avg 20.1°C) and January the coldest (avg 1.6°C).
 
 
+## ❓ FAQ
+
+**Q: How can I find weather data for a location that doesn't have a specific weather station?**
+You can use the `point_hourly` or `point_daily` tools. These tools use interpolation to calculate weather data for any geographic coordinate (latitude/longitude) by combining data from surrounding stations.
+
+**Q: What is the difference between historical data and climate normals?**
+Historical tools like `stations_daily` provide actual observations for specific dates. The `stations_normals` tool provides long-term statistical averages (usually over 30 years), which represent the 'typical' weather for a location.
+
+**Q: Can I get weather data in Fahrenheit instead of Celsius?**
+Yes. Most tools, such as `stations_hourly` and `point_daily`, include an optional `units` parameter. You can set this to 'imperial' to receive data in Fahrenheit and other non-metric units.
+
+
 ## Installation & Usage
 
-To install and use the **Meteostat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/meteostat](https://vinkius.com/mcp/meteostat)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Meteostat** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `meteostat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Meteostat** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "meteostat": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

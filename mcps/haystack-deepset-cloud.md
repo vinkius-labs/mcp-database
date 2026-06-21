@@ -1,7 +1,6 @@
 # Haystack (deepset Cloud) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/haystack-deepset-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/haystack-deepset-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/haystack-deepset-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/haystack-deepset-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Haystack (deepset Clou
 > You have 12 files in the 'knowledge-base' workspace. Recent uploads include 'q4_report.pdf', 'security_guidelines.md', and 'api_docs.txt'. I can fetch metadata for any of these files.
 
 
+## ❓ FAQ
+
+**Q: Can I test my RAG pipelines directly via my AI agent?**
+Yes. Use the `run_pipeline` tool to dispatch a query to any registered pipeline in your workspace. Your agent will return the response from the NLP topology, allowing you to verify retriever performance and LLM grounding without leaving your workspace.
+
+**Q: How can I audit my document indexing status?**
+Ask your agent to list files in your workspace. You can then get specific metadata for any file to ensure embeddings and attributes are correctly attached. This is essential for debugging retrieval issues in production environments.
+
+**Q: Is it possible to manage multiple deepset Cloud workspaces?**
+Absolutely. The agent provides high-level workspace listing, allowing you to navigate across tenant boundaries and isolation zones easily. You just need to provide the workspace name to any pipeline or search command.
+
+
 ## Installation & Usage
 
-To install and use the **Haystack (deepset Cloud)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/haystack-deepset-cloud](https://vinkius.com/mcp/haystack-deepset-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Haystack (deepset Cloud)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `haystack-deepset-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Haystack (deepset Cloud)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "haystack-deepset-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

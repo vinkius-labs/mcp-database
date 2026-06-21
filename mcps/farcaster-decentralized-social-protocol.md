@@ -1,7 +1,6 @@
 # Farcaster (Decentralized Social Protocol) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/farcaster-decentralized-social-protocol)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/farcaster-decentralized-social-protocol-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/farcaster-decentralized-social-protocol-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/farcaster-decentralized-social-protocol)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -104,12 +103,52 @@ Here are some examples of how you can interact with the **Farcaster (Decentraliz
 > I'm fetching the followers for 'farcaster'... I found the most recent followers including FID 123, FID 456, and FID 789. Would you like to see the next page of followers?
 
 
+## ❓ FAQ
+
+**Q: Can I follow or unfollow Farcaster channels using this agent?**
+Yes! You can use the `follow_channel` and `unfollow_channel` tools. Simply provide the Channel ID, and the agent will update your social graph on the protocol immediately.
+
+**Q: How do I moderate content within a channel I manage?**
+You can use the `moderate_cast` tool to hide or unhide specific casts by their hash. Additionally, you can use `pin_cast` to highlight content or `ban_channel_user` to restrict access for specific FIDs.
+
+**Q: Is it possible to see who is following a specific channel?**
+Absolutely. Use the `list_channel_followers` tool with the target Channel ID. The agent will return a paginated list of users currently following that channel.
+
+
 ## Installation & Usage
 
-To install and use the **Farcaster (Decentralized Social Protocol)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/farcaster-decentralized-social-protocol](https://vinkius.com/mcp/farcaster-decentralized-social-protocol)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Farcaster (Decentralized Social Protocol)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `farcaster-decentralized-social-protocol` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Farcaster (Decentralized Social Protocol)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "farcaster-decentralized-social-protocol": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

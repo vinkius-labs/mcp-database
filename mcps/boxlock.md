@@ -1,7 +1,6 @@
 # BoxLock MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boxlock)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/boxlock-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/boxlock-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boxlock)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **BoxLock** MCP server u
 > Accessing audit logs... Today's last 5 events include 3 successful openings at 'Warehouse West' and 2 barcode scans for asset 'P-500'. All interactions were within high-fidelity norms. Need more historical context?
 
 
+## ❓ FAQ
+
+**Q: How do I find my BoxLock API Key?**
+Log in to your BoxLock Control account, navigate to **Settings** > **Developer API**, and generate a new v3 Bearer Token.
+
+**Q: Can I open a lock remotely via AI?**
+Yes! The `press_to_open` tool allows you to authorize the physical button on a lock to be active for a specific worker and reason programmatically.
+
+**Q: How do I check battery levels?**
+Use the `list_locks` or `get_lock` tools to retrieve real-time metadata including current battery percentage and signal strength for every device.
+
+
 ## Installation & Usage
 
-To install and use the **BoxLock** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/boxlock](https://vinkius.com/mcp/boxlock)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BoxLock** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `boxlock` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BoxLock** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "boxlock": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

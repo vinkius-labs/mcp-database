@@ -1,7 +1,6 @@
 # One Rep Max Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/one-rep-max-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/one-rep-max-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/one-rep-max-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/one-rep-max-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,52 @@ Here are some examples of how you can interact with the **One Rep Max Calculator
 > The `get_brzyck_estimate` tool predicts a 1RM of approximately 210.53lbs.
 
 
+## ❓ FAQ
+
+**Q: What is 1RM?**
+One Repetition Maximum (1RM) is the heaviest weight you can lift for a single repetition with proper form.
+
+**Q: Which estimation model should I use?**
+It depends on your preference. `get_epley_estimate` is standard, while `get_brzycki_estimate` and `get_lander_estimate` offer alternative mathematical approaches.
+
+**Q: Can I calculate training intensity?**
+Yes, use the `get_lift_intensity` tool to find out what percentage of your estimated 1RM you used during a set.
+
+
 ## Installation & Usage
 
-To install and use the **One Rep Max Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/one-rep-max-calculator](https://vinkius.com/mcp/one-rep-max-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **One Rep Max Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `one-rep-max-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **One Rep Max Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "one-rep-max-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

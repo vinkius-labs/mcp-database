@@ -1,7 +1,6 @@
 # Integrate.io (ETL & Data Integration) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/integrateio-etl-data-integration)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/integrateio-etl-data-integration-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/integrateio-etl-data-integration-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/integrateio-etl-data-integration)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Integrate.io (ETL & Da
 > I've identified 4 connected data sources: 'Production PostgreSQL', 'Cloud Snowflake DW', 'Stripe API', and 'HubSpot CRM'. All connections are active and ready for pipeline use. Would you like to see the transformation models mapped to 'Snowflake'?
 
 
+## ❓ FAQ
+
+**Q: Can I see the exact logic of a data transformation through my agent?**
+Yes. Use the `list_transformations` tool to retrieve the established data mappings in your account. This allows your agent to describe the transformation rules being applied to your data without you needing to open the Integrate.io UI.
+
+**Q: How do I check if my last pipeline run was successful?**
+The `list_jobs` tool provides a complete history of pipeline runs. Your agent will report the status (Success, Failed, Running) and duration of recent jobs, making it easy to monitor the health of your automated data flows.
+
+**Q: Can my agent list all connected databases in my account?**
+Absolutely. Use the `list_connections` tool to identify all source and destination targets, including Postgres, MySQL, Snowflake, and BigQuery instances currently linked to your data stack.
+
+
 ## Installation & Usage
 
-To install and use the **Integrate.io (ETL & Data Integration)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/integrateio-etl-data-integration](https://vinkius.com/mcp/integrateio-etl-data-integration)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Integrate.io (ETL & Data Integration)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `integrateio-etl-data-integration` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Integrate.io (ETL & Data Integration)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "integrateio-etl-data-integration": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # SafeCube Container Tracking MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/safecube-container-tracking)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/safecube-container-tracking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/safecube-container-tracking-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/safecube-container-tracking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **SafeCube Container Tra
 > I've identified the events for shipment SHIP-123! The latest marker is 'Vessel Departure' from Singapore, recorded on May 10th. I can assist you with an audit of the previous port calls and duration markers if you'd like.
 
 
+## ❓ FAQ
+
+**Q: How do I find my SafeCube API Key?**
+Log in to your [**SafeCube account**](https://app.safecube.ai/), navigate to the 'API' or 'Integrations' section in your dashboard, and generate a new Bearer Token. Copy and paste it below.
+
+**Q: What container formats are supported?**
+The API supports standard 11-character BIC codes (e.g., TCNU1234567) used by global maritime shipping lines.
+
+**Q: Can the agent show real-time ETAs?**
+Yes. The `get_container_tracking` tool retrieves the current Estimated Time of Arrival (ETA) metadata for specified containers.
+
+
 ## Installation & Usage
 
-To install and use the **SafeCube Container Tracking** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/safecube-container-tracking](https://vinkius.com/mcp/safecube-container-tracking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SafeCube Container Tracking** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `safecube-container-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SafeCube Container Tracking** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "safecube-container-tracking": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

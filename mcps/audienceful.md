@@ -1,7 +1,6 @@
 # Audienceful MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/audienceful)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/audienceful-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/audienceful-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/audienceful)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Audienceful** MCP serv
 > I've retrieved your custom data structure. You currently have 5 custom fields defined: 'Company' (company_name), 'Job Title' (job_title), 'Lead Score' (lead_score), 'Referral Source' (ref_source), and 'Last Event' (last_event).
 
 
+## ❓ FAQ
+
+**Q: Can the AI automatically update a subscriber's custom field values?**
+Yes! By using the `update_person` tool, your agent can modify any existing custom field values for a specific subscriber identified by their email or ID in seconds.
+
+**Q: How do I trigger an automation sequence for a new user?**
+Simply ask the agent to run the `trigger_automation` action. You'll need to provide the slug of the automation and the target person's email address.
+
+**Q: Does this integration allow for bulk deletion of my entire audience?**
+No. The current toolset focuses strictly on managing individual subscriber records and queries. Destructive actions on the entire audience structure are not exposed to ensure your data remains secure.
+
+
 ## Installation & Usage
 
-To install and use the **Audienceful** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/audienceful](https://vinkius.com/mcp/audienceful)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Audienceful** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `audienceful` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Audienceful** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "audienceful": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

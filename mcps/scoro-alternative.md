@@ -1,7 +1,6 @@
 # Scoro MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scoro-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scoro-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scoro-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scoro-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,49 @@ Here are some examples of how you can interact with the **Scoro** MCP server usi
 > 18 pending quotes/proposals totaling $1.4M. Due to close this week (4): Meridian Corp $180K (90% probability), TechVentures $95K (75%), DataFlow $67K (60%), ScaleUp $45K (80%). Due within 30 days (8): $620K combined. Overdue for follow-up (6): $392K (oldest: 21 days). Win rate on similar proposals: 42%. Average time to decision: 14 days. 3 proposals need revision based on client feedback. Top contributor: James Park with $450K in active proposals.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the latest status for a specific project by providing its ID?**
+Yes! Use the `get_project` tool with the Project ID. Your agent will respond with complete metadata, including completion rates, linked tasks, and member assignments in seconds.
+
+**Q: How do I find my Scoro API Key and Subdomain?**
+Log in to your Scoro account, navigate to **Settings** > **Integration** > **API**, and you will find your key. Your Subdomain is the first part of your Scoro URL (e.g., 'yourcompany'.scoro.com).
+
+
 ## Installation & Usage
 
-To install and use the **Scoro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/scoro-alternative](https://vinkius.com/mcp/scoro-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Scoro** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `scoro-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Scoro** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "scoro-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

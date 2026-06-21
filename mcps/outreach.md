@@ -1,7 +1,6 @@
 # Outreach MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/outreach)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/outreach-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/outreach-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/outreach)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,55 @@ Here are some examples of how you can interact with the **Outreach** MCP server 
 > Yesterday's team summary (8 reps): 342 emails sent, 28 calls made, 45 opens tracked, 12 replies received (4 positive), and 2 meetings booked. Top performer: Sarah M. (52 emails, 3 replies, 1 meeting).
 
 
+## ❓ FAQ
+
+**Q: How do I get my Outreach API credentials?**
+Go to the **Outreach Developer Portal** at **developers.outreach.io** and log in with your Outreach account. Navigate to **My Apps** and click **Create New App**. Provide a name, description, and configure the **Redirect URI** and required **scopes** (e.g., `read_prospects`, `write_prospects`). After saving, you'll receive your **Client ID** and **Client Secret**. Copy both and paste them into the configuration fields below. Note: Outreach generates both development and production credentials — use development credentials for testing.
+
+**Q: Can my AI agent tell me which sequences are performing best?**
+Yes. Ask your agent to compare sequences by reply rate, open rate, or meeting booked rate and it returns a ranked list — helping you double down on what works and kill underperforming sequences before they damage your domain reputation.
+
+**Q: What if I need to check team activity quickly during standup?**
+Ask your AI agent 'What did my team do yesterday?' and get a summary of emails sent, calls made, replies received, and meetings booked per rep — perfect for 30-second standup updates without pulling up dashboards.
+
+**Q: Is this suitable for large enterprise SDR teams?**
+Absolutely. Outreach is built for enterprise sales organizations with hundreds of reps. Your AI agent queries the same API used by Outreach's native platform — supporting team-level views, advanced filtering, and role-based access controls.
+
+
 ## Installation & Usage
 
-To install and use the **Outreach** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/outreach](https://vinkius.com/mcp/outreach)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Outreach** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `outreach` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Outreach** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "outreach": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

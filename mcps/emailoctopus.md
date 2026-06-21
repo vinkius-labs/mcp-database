@@ -1,7 +1,6 @@
 # EmailOctopus MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emailoctopus)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/emailoctopus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/emailoctopus-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emailoctopus)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **EmailOctopus** MCP ser
 > Jane is a member of 'Weekly Newsletter' and is currently 'Subscribed'. They joined on February 10th. Should I pull their complete field data?
 
 
+## ❓ FAQ
+
+**Q: How do I get an EmailOctopus API Key?**
+Log in to your EmailOctopus account, navigate to **Account > API**, and you can generate or retrieve your unique API Key from there.
+
+**Q: Can the agent send new email campaigns?**
+This integration currently focuses on listing and auditing campaigns, lists, and contacts. Creating or sending new email campaigns should be managed via the EmailOctopus dashboard.
+
+**Q: Does the integration show open rates?**
+Yes, you can use the get_campaign_performance_summary tool to retrieve specific counts for opens and clicks for any sent campaign.
+
+
 ## Installation & Usage
 
-To install and use the **EmailOctopus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/emailoctopus](https://vinkius.com/mcp/emailoctopus)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EmailOctopus** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `emailoctopus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EmailOctopus** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "emailoctopus": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # WordPress Media Uploader MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wordpress-media-uploader)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wordpress-media-uploader-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wordpress-media-uploader-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wordpress-media-uploader)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -39,12 +38,49 @@ Here are some examples of how you can interact with the **WordPress Media Upload
 > The image was uploaded successfully! Here is the public URL on your site: https://myblog.com/wp-content/uploads/2026/05/seo-future-ai-cover.png
 
 
+## ❓ FAQ
+
+**Q: Can the AI delete my existing images?**
+No! This MCP strictly uses the POST method to create new media. It is completely blind to your existing media library and cannot delete or modify older files.
+
+**Q: Do I need to install a plugin on my WordPress?**
+No. We use the official, native WordPress REST API. You only need to generate an Application Password, which is a built-in feature in WordPress since version 5.6.
+
+
 ## Installation & Usage
 
-To install and use the **WordPress Media Uploader** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wordpress-media-uploader](https://vinkius.com/mcp/wordpress-media-uploader)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WordPress Media Uploader** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wordpress-media-uploader` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WordPress Media Uploader** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wordpress-media-uploader": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

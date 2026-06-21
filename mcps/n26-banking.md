@@ -1,7 +1,6 @@
 # N26 Banking MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/n26-banking)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/n26-banking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/n26-banking-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/n26-banking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **N26 Banking** MCP serv
 > Retrieving your Spaces... You have 3 active spaces: 'Vacation' (€1,200), 'New Car' (€5,000), and 'Emergency Fund' (€2,500). Your total savings across all spaces is €8,700.
 
 
+## ❓ FAQ
+
+**Q: Can I see my N26 Spaces balance?**
+Yes! Use the `get_n26_spaces` tool. It will return a list of all your sub-accounts (Spaces) along with their specific current balances.
+
+**Q: Does this support transactions from all merchants?**
+The `get_n26_transactions` tool retrieves all visible transactions in your history, providing the merchant name or partner name as recorded by N26.
+
+**Q: Is my banking data secure?**
+Yes. Your access token is encrypted at rest and only injected securely at runtime. The MCP server acts as a secure proxy and does not store your login credentials.
+
+
 ## Installation & Usage
 
-To install and use the **N26 Banking** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/n26-banking](https://vinkius.com/mcp/n26-banking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **N26 Banking** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `n26-banking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **N26 Banking** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "n26-banking": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

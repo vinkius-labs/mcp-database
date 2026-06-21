@@ -1,7 +1,6 @@
 # Chatwoot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chatwoot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chatwoot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chatwoot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chatwoot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Chatwoot** MCP server 
 > Sending your reply to conversation 555... The message has been delivered to Sarah Smith via WhatsApp.
 
 
+## ❓ FAQ
+
+**Q: Can I reply to a WhatsApp message through the agent?**
+Yes! Use the `send_chat_message` tool with the conversation ID. As long as your WhatsApp inbox is connected to Chatwoot, the agent will deliver your reply.
+
+**Q: How do I see the full history of a chat?**
+Use the `get_chat_history` tool with the unique conversation ID. Your agent will fetch all previous messages, allowing you to review the entire interaction.
+
+**Q: Where do I find my Chatwoot Access Token?**
+Log in to Chatwoot, click on your profile avatar in the bottom left, and select 'Profile Settings'. Scroll to the bottom to find your personal 'Access Token'.
+
+
 ## Installation & Usage
 
-To install and use the **Chatwoot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chatwoot](https://vinkius.com/mcp/chatwoot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chatwoot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chatwoot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chatwoot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chatwoot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

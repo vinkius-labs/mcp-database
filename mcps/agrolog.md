@@ -1,7 +1,6 @@
 # AgroLog MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agrolog)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agrolog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agrolog-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agrolog)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -105,12 +104,52 @@ Here are some examples of how you can interact with the **AgroLog** MCP server u
 > Checking crop levels across all bins... Silo 1: 85% full (approx. 4,250 tonnes). Silo 2: 62% full (approx. 3,100 tonnes). Silo 3: 72% full (approx. 3,600 tonnes). Silo 4: 45% full (approx. 2,250 tonnes). Silo 5: 91% full (approx. 4,550 tonnes) — approaching capacity. Silo 6: 28% full (approx. 1,400 tonnes). Silo 7: 55% full (approx. 2,750 tonnes). Total estimated inventory: 21,900 tonnes. Silo 5 is approaching maximum capacity — consider planning grain removal soon. Would you like a detailed report with moisture and temperature data for each bin?
 
 
+## ❓ FAQ
+
+**Q: Can my AI check the current temperature and moisture in my grain silo?**
+Yes! First use `get_devices` to find the device ID for your silo sensors. Then use `get_temperature` and `get_moisture` with that device ID to get current readings. Temperature above 25°C or moisture above 15% may indicate spoilage risk. For historical trends, use `get_device_telemetry` with keys=temperature,moisture to see how conditions have changed over time.
+
+**Q: How do I detect early signs of grain spoilage using CO2 levels?**
+Use the `get_co2` tool to check CO2 readings from headspace sensors in your bins. Elevated CO2 levels (above 1500 ppm) indicate biological activity from mold, insects, or grain respiration — often appearing days before temperature changes. Combine with `get_alarms` to check for any active spoilage alerts. If CO2 is rising, consider turning on aeration using `set_relay_state` to ventilate the bin and reduce spoilage risk.
+
+**Q: Can I remotely control my aeration fans based on sensor readings?**
+Yes! Use the `set_relay_state` tool with your device ID, relay name (e.g., "fan", "aeration"), and desired state (true for ON, false for OFF). Before activating, check current conditions with `get_temperature` and `get_moisture`, and verify weather conditions with `get_weather` to ensure outdoor conditions are suitable for aeration. For example, avoid running aeration during high humidity or rain.
+
+
 ## Installation & Usage
 
-To install and use the **AgroLog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/agrolog](https://vinkius.com/mcp/agrolog)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AgroLog** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `agrolog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AgroLog** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "agrolog": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

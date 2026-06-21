@@ -1,7 +1,6 @@
 # Woodpecker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/woodpecker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/woodpecker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/woodpecker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/woodpecker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,55 @@ Here are some examples of how you can interact with the **Woodpecker** MCP serve
 > 18 replies this week across 3 campaigns. 12 positive (67%), 4 not interested, 2 auto-replies. Notable: CTO at DataFlow requested a demo.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Woodpecker API key?**
+Log in to your Woodpecker account at **app.woodpecker.co**. Navigate to **Settings** (gear icon). Click on **API keys** in the left menu. Click **Create new key**, give it a descriptive name, and copy the generated key. Paste it below. API access is available on all Woodpecker plans.
+
+**Q: Can I automate multi-step follow-up sequences?**
+Yes. Woodpecker specializes in automated follow-up sequences. Your AI agent can create campaigns with up to 7 follow-up steps, each with customizable delays and personalization variables.
+
+**Q: Does it protect my sender reputation?**
+Yes. Woodpecker includes built-in bounce detection, auto-blacklisting, and sending throttling. Your AI agent can monitor these safety metrics and alert you if deliverability drops below healthy thresholds.
+
+**Q: Can I use it for agency clients?**
+Yes. Woodpecker offers an Agency plan with multi-client management. Each API key is scoped to your account, and you can manage campaigns for all clients from your AI agent.
+
+
 ## Installation & Usage
 
-To install and use the **Woodpecker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/woodpecker](https://vinkius.com/mcp/woodpecker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Woodpecker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `woodpecker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Woodpecker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "woodpecker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

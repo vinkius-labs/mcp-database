@@ -1,7 +1,6 @@
 # Agency Elephant MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agency-elephant)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agency-elephant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agency-elephant-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agency-elephant)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Agency Elephant** MCP 
 > Lead orchestrated! I've successfully registered John Doe (ID: lead_789) in your CRM. He is now active and ready for assignment to a pipeline or campaign. Shall I list your available groups for him?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Agency Elephant API Key?**
+Log in to your account, navigate to **Account Settings** > **Integrations**, and copy your unique API Key from the credentials section.
+
+**Q: Can I add a lead to a specific group via AI?**
+Yes! The `add_lead_to_group` tool allows your agent to categorize leads programmatically by providing the lead ID and target group ID.
+
+**Q: How do I trigger an automated drip campaign?**
+Use the `trigger_drip_campaign` tool and provide the lead ID along with the campaign ID you want to initialize programmatically.
+
+
 ## Installation & Usage
 
-To install and use the **Agency Elephant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/agency-elephant](https://vinkius.com/mcp/agency-elephant)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Agency Elephant** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `agency-elephant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Agency Elephant** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "agency-elephant": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

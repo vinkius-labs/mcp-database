@@ -1,7 +1,6 @@
 # Workable MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workable-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/workable-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/workable-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workable-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Workable** MCP server 
 > Candidate profile created successfully! John Smith has been added to your Workable account as a 'Senior Developer'.
 
 
+## ❓ FAQ
+
+**Q: Can I retrieve the full details of a specific job posting?**
+Yes! Use the `get_job` tool with the job's shortcode. Your agent will return the full job description, requirements, and metadata associated with that posting.
+
+**Q: Is it possible to add a new candidate directly through the AI?**
+Absolutely. Use the `create_candidate` action. You can provide the candidate's name, email, headline, and a summary to instantly create their profile in your Workable account.
+
+**Q: How can I see the different steps in our recruitment process?**
+Simply ask the agent to run the `list_stages` tool. It will provide a list of all configured hiring stages, helping you understand where candidates are in the pipeline.
+
+
 ## Installation & Usage
 
-To install and use the **Workable** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/workable-alternative](https://vinkius.com/mcp/workable-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Workable** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `workable-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Workable** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "workable-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Product Hunt MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/product-hunt)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/product-hunt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/product-hunt-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/product-hunt)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,55 @@ Would you like me to fetch a deep dive description on any of these?
 > I've fetched the details for WidgetX: It's an open-source cross-platform UI builder. It has an average review of 4.9, 950 upvotes, and its direct URL is `widgetx.io`. The listed makers are John Doe and Sarah Lee.
 
 
+## ❓ FAQ
+
+**Q: How do I get started?**
+Subscribe, enter your API credentials (your Developer Token from the **Product Hunt API Dashboard**), and you're ready. No code, no setup, no webhooks — just connect and start exploring daily startup launches through your AI agent.
+
+**Q: Can my AI agent create a summary brief of the top 3 startups launched today?**
+Yes. Ask your agent to fetch the daily leaderboard and pull the details of the top 3 items. It will return the product names, descriptions, upvote counts, maker names, and direct URLs — generating a complete morning brief on the tech ecosystem without opening a single browser tab.
+
+**Q: What happens when I need to find the best AI tools launched recently?**
+Just tell your AI agent. It uses the search tool to query "AI" directly against the Product Hunt database, surfacing highly-rated matches with their taglines and upvotes instantly. You skip the doom-scrolling and go straight to evaluating the exact tools you are looking for.
+
+**Q: Is this suitable for VC scouting workflows and competitive analysis?**
+Absolutely. Because your agent can pull deeply nested product details (including maker names, review scores, and direct website links) for any product ID, you get a comprehensive pulse on fresh competitors or investment opportunities immediately. Perfect for scouting teams building automated deal-flow monitors.
+
+
 ## Installation & Usage
 
-To install and use the **Product Hunt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/product-hunt](https://vinkius.com/mcp/product-hunt)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Product Hunt** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `product-hunt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Product Hunt** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "product-hunt": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

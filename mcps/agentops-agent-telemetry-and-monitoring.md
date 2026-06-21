@@ -1,7 +1,6 @@
 # AgentOps (Agent Telemetry and Monitoring) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agentops-agent-telemetry-and-monitoring)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agentops-agent-telemetry-and-monitoring-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agentops-agent-telemetry-and-monitoring-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agentops-agent-telemetry-and-monitoring)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **AgentOps (Agent Teleme
 > Span span_998877 was a 'tool_call' to 'web_search'. It started at 10:05:02 and finished at 10:05:04. Input parameters included 'query: agent observability' and it returned 3 search results.
 
 
+## ❓ FAQ
+
+**Q: How can I check the token usage and cost for a specific agent execution?**
+You can use the `get_trace_metrics` tool by providing the specific Trace ID. It will return detailed data on token counts and the calculated financial cost for that execution.
+
+**Q: Can I see the details of a single step within a larger trace?**
+Yes! Use the `get_span` tool with the specific Span ID. This allows you to isolate and inspect individual operations, such as a single tool call or a specific LLM completion.
+
+**Q: How do I verify which AgentOps project is currently active?**
+Simply run the `get_project` tool. It retrieves the metadata and configuration details of the project associated with your current API key.
+
+
 ## Installation & Usage
 
-To install and use the **AgentOps (Agent Telemetry and Monitoring)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/agentops-agent-telemetry-and-monitoring](https://vinkius.com/mcp/agentops-agent-telemetry-and-monitoring)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AgentOps (Agent Telemetry and Monitoring)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `agentops-agent-telemetry-and-monitoring` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AgentOps (Agent Telemetry and Monitoring)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "agentops-agent-telemetry-and-monitoring": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

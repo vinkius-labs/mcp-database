@@ -1,7 +1,6 @@
 # Harness MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harness)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/harness-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/harness-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harness)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **Harness** MCP server u
 > Retrieving execution status... The latest execution for 'Production Deploy' (ID: exec_992) is currently IN_PROGRESS. 2 out of 5 steps have completed successfully (Build and Unit Tests). Step 3 (Artifact Push) is running. Should I monitor this for you?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Harness API Key?**
+Log in to Harness, go to **My Profile** (bottom left), and select **API Keys**. You can generate either a Personal API Key or use a Service Account Token from there.
+
+**Q: Where can I find my Account ID and Org ID?**
+The Account ID is visible in your browser's URL when logged in (e.g., `account/XYZ123`). The Organization ID is typically found in the project settings or sidebar (default is often 'default').
+
+**Q: Can I trigger a pipeline execution via this integration?**
+Yes! Use the `execute_pipeline` tool by providing the project ID and pipeline ID. Harness will initiate the workflow immediately.
+
+**Q: Is the integration secure for managing secrets?**
+Absolutely. The integration only lists the metadata of your secrets (like names and identifiers) through your API key. Your credentials are encrypted and stored securely in the Vinkius Cloud.
+
+
 ## Installation & Usage
 
-To install and use the **Harness** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/harness](https://vinkius.com/mcp/harness)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Harness** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `harness` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Harness** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "harness": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

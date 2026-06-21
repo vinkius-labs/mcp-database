@@ -1,7 +1,6 @@
 # SM2 Spaced Repetition MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sm2-spaced-repetition)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sm2-spaced-repetition-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sm2-spaced-repetition-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sm2-spaced-repetition)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **SM2 Spaced Repetition*
 > The scores 6 and -1 are invalid. All scores must be integers between 0 and 5.
 
 
+## ❓ FAQ
+
+**Q: How does the SM-2 algorithm work?**
+It uses review quality scores (0-5) to adjust the interval between reviews and the Easiness Factor, helping to schedule reviews at the peak of your forgetting curve. Tools available: `your_tool_name`.
+
+**Q: Can I process multiple cards at once?**
+Yes, the `evaluate_review_batch` tool allows you to send a batch of card updates in a single request for maximum efficiency.
+
+**Q: What are the supported card statuses?**
+The system manages cards through three stages: New, Learning, and Mature.
+
+
 ## Installation & Usage
 
-To install and use the **SM2 Spaced Repetition** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sm2-spaced-repetition](https://vinkius.com/mcp/sm2-spaced-repetition)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SM2 Spaced Repetition** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sm2-spaced-repetition` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SM2 Spaced Repetition** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sm2-spaced-repetition": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

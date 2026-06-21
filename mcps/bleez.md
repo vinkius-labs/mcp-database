@@ -1,7 +1,6 @@
 # Bleez MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bleez)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bleez-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bleez-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bleez)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Bleez** MCP server usi
 > Accessing ledger... I found 5 recent entries including a payment for 'Electricity' and 4 sales records. The total volume is within high-fidelity norms for April. Shall I retrieve the detailed account lines?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Bleez Encrypted Folder Key?**
+Log in to your Bleez account, navigate to **Administration** > **Dossier** > **Paramétrages**, and copy the **Clé du dossier encryptée**.
+
+**Q: Can I upload invoices for processing via AI?**
+Yes! The `upload_document` tool allows you to deposit PDF or image files directly into the Bleez automated processing queue programmatically.
+
+**Q: Does it support French journal entries?**
+Absolutely. The `list_accounting_entries` and `create_accounting_entry` tools are designed for standard French accounting ledger orchestration.
+
+
 ## Installation & Usage
 
-To install and use the **Bleez** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bleez](https://vinkius.com/mcp/bleez)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bleez** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bleez` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bleez** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bleez": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

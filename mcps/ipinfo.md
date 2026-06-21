@@ -1,7 +1,6 @@
 # IPinfo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ipinfo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ipinfo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ipinfo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ipinfo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **IPinfo** MCP server us
 > I've retrieved the details for AS15169. It belongs to Google LLC and has over 15 million IPs allocated. Would you like to see the domains associated with this ASN?
 
 
+## ❓ FAQ
+
+**Q: How do I find my IPinfo Access Token?**
+Log in to your [**IPinfo dashboard**](https://ipinfo.io/account), and you will find your Access Token on the overview page. Copy and paste it below.
+
+**Q: Does the agent detect VPNs and Proxies?**
+Yes. The `get_privacy_details` tool allows your agent to identify if an IP address is masked by a VPN, proxy, or Tor network instantly.
+
+**Q: Is ASN information provided for all IPs?**
+Yes. IPinfo provides comprehensive ASN metadata for any IP address, helping you audit the network provider and routing hierarchy.
+
+
 ## Installation & Usage
 
-To install and use the **IPinfo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ipinfo](https://vinkius.com/mcp/ipinfo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IPinfo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ipinfo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IPinfo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ipinfo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

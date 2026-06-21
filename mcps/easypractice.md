@@ -1,7 +1,6 @@
 # EasyPractice MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/easypractice)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/easypractice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/easypractice-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/easypractice)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **EasyPractice** MCP ser
 > I've identified 3 unpaid invoices, including INV-101 ($150.00) and INV-105 ($200.00). 2 of these are past their due date. Would you like me to pull the associated client names for these invoices?
 
 
+## ❓ FAQ
+
+**Q: How do I get an EasyPractice API Key?**
+Log in to your EasyPractice account, navigate to **Settings > API**, and you can generate or retrieve your unique API Key from there. API access is typically enabled for pro plans.
+
+**Q: Can the agent book new appointments?**
+This integration currently focuses on listing and auditing clinic data. Booking new appointments or sessions should be managed via your EasyPractice online booking page or calendar app.
+
+**Q: Does the integration show client contact info?**
+Yes, you can use the list_clinic_clients or search_clinic_clients tools to retrieve client profile details, including their registered email addresses and phone numbers.
+
+
 ## Installation & Usage
 
-To install and use the **EasyPractice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/easypractice](https://vinkius.com/mcp/easypractice)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EasyPractice** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `easypractice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EasyPractice** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "easypractice": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

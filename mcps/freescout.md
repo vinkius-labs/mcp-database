@@ -1,7 +1,6 @@
 # FreeScout MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freescout)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freescout-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freescout-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freescout)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **FreeScout** MCP server
 > Internal note added successfully to conversation 502. Your team will see it in the FreeScout dashboard.
 
 
+## ❓ FAQ
+
+**Q: How do I reply to a customer conversation using the AI?**
+You can use the `add_reply` tool. Just provide the Conversation ID and the body of your message, and the agent will send it to the customer via FreeScout.
+
+**Q: Can I update the status or assignee of a ticket?**
+Yes! Use the `update_conversation` tool. You can change the status (active, pending, closed, spam) or provide an `assignee_id` to route the ticket to a specific team member.
+
+**Q: Is it possible to add internal notes that the customer won't see?**
+Absolutely. Use the `add_note` tool to post internal comments on a conversation. These are visible to your team in FreeScout but are never sent to the customer.
+
+
 ## Installation & Usage
 
-To install and use the **FreeScout** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/freescout](https://vinkius.com/mcp/freescout)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FreeScout** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `freescout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FreeScout** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "freescout": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

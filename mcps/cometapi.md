@@ -1,7 +1,6 @@
 # CometAPI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cometapi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cometapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cometapi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cometapi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **CometAPI** MCP server 
 > Scanning account... You have $25.50 in credits remaining. Your average daily cost is $1.20, giving you approximately 21 days of uptime at current levels. Need a list of supported providers?
 
 
+## ❓ FAQ
+
+**Q: How do I find my CometAPI API Key?**
+Log in to your account, navigate to the **API Dashboard**, and copy your secret key (sk-...).
+
+**Q: Can I generate images with different models?**
+Yes! Use the `generate_ai_image` tool and specify the model ID (e.g., 'midjourney' or 'dall-e-3') for your creation.
+
+**Q: Does it support voice-to-text?**
+Absolutely. The `transcribe_audio_to_text` tool allows you to convert any public audio URL into text using high-performance STT models.
+
+
 ## Installation & Usage
 
-To install and use the **CometAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cometapi](https://vinkius.com/mcp/cometapi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CometAPI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cometapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CometAPI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cometapi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

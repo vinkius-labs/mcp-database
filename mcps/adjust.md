@@ -1,7 +1,6 @@
 # Adjust MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adjust)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adjust-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adjust-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adjust)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Adjust** MCP server us
 > I've pulled the KPI report. Last week, your apps generated a total of 15,400 installs, which is an 8% increase compared to the previous week. Would you like to see the breakdown by platform?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Adjust API Token?**
+Log in to your Adjust dashboard, go to **My Profile** or **Account Settings**, and find the **API Token** section. You can copy your existing token or generate a new one there.
+
+**Q: Can I check the attribution of a test device?**
+Yes! Use the `inspect_device` tool and provide the Adjust Device ID (ADID). Your agent will return the current tracker, network, and campaign associated with that device.
+
+**Q: Does this server support KPI reporting?**
+Yes, you can use the `get_kpi_report` tool to retrieve aggregated performance data such as installs, re-attributions, and clicks for your apps.
+
+
 ## Installation & Usage
 
-To install and use the **Adjust** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/adjust](https://vinkius.com/mcp/adjust)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Adjust** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `adjust` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Adjust** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "adjust": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Speechmatics MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/speechmatics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/speechmatics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/speechmatics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/speechmatics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Speechmatics** MCP ser
 > Fetching your recent jobs... I found 5 jobs. The most recent one is 'Meeting_Notes.mp3' (ID: j987xyz) which is currently 'completed'.
 
 
+## ❓ FAQ
+
+**Q: What formats can I get my transcripts in?**
+You can use the `get_transcript` tool to retrieve results in `json`, `txt`, or `srt` (subtitle) formats. Simply specify the `format` parameter when calling the tool.
+
+**Q: Which voices are available for Text-to-Speech?**
+The `generate_tts` tool supports four high-quality voices: `sarah`, `theo`, `megan`, and `jack`. You can choose the one that best fits your content's tone.
+
+**Q: How do I check if my transcription job is finished?**
+Use the `get_job` tool with your specific `job_id`. It will return the current status (e.g., running, completed) and metadata about the processing task.
+
+
 ## Installation & Usage
 
-To install and use the **Speechmatics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/speechmatics](https://vinkius.com/mcp/speechmatics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Speechmatics** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `speechmatics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Speechmatics** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "speechmatics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

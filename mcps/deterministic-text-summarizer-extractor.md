@@ -1,7 +1,6 @@
 # Deterministic Text Summarizer & Extractor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-text-summarizer-extractor)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-text-summarizer-extractor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-text-summarizer-extractor-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-text-summarizer-extractor)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Deterministic Text Sum
 > Using the extract_top_bigrams tool: The most repeated bigram is 'machine learning' with 14 occurrences.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between Extractive and Abstractive summarization?**
+Abstractive summarization (what ChatGPT does) writes a completely new text based on its understanding. Extractive summarization (what this tool does) selects the most mathematically important sentences directly from the original text without changing a single word. It guarantees 100% factual accuracy.
+
+**Q: Does the keyword extraction ignore simple connection words?**
+Yes. It has a built-in cross-language 'Stop Words' dictionary (supporting English, Portuguese, and Spanish) to ensure words like 'the', 'and', 'for', 'uma' are completely ignored during Term Frequency calculations.
+
+**Q: Why use this tool instead of just asking an AI to summarize?**
+If you have a massive 50-page document, passing the entire text into an AI context window is extremely expensive and slow. Running an algorithmic extraction first condenses the text dramatically while retaining all key facts.
+
+
 ## Installation & Usage
 
-To install and use the **Deterministic Text Summarizer & Extractor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deterministic-text-summarizer-extractor](https://vinkius.com/mcp/deterministic-text-summarizer-extractor)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deterministic Text Summarizer & Extractor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deterministic-text-summarizer-extractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deterministic Text Summarizer & Extractor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deterministic-text-summarizer-extractor": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

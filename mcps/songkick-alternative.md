@@ -1,7 +1,6 @@
 # Songkick MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/songkick-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/songkick-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/songkick-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/songkick-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Songkick** MCP server 
 > Retrieving the calendar for venue ID 1234... There are 3 upcoming events: 'The Jazz Trio' on Friday, 'Rock Night' on Saturday, and 'Indie Showcase' next Tuesday.
 
 
+## ❓ FAQ
+
+**Q: How do I find the unique Songkick ID for an artist?**
+Use the `search_artists` tool with the artist's name. The agent will return a list of matching artists along with their unique Songkick IDs, which you can then use for calendar lookups.
+
+**Q: Can I see the schedule for a specific concert hall or venue?**
+Yes! First, find the venue's ID using `search_venues`. Once you have the ID, use the `get_venue_calendar` tool to retrieve all upcoming events scheduled at that location.
+
+**Q: Is it possible to filter events by date or type?**
+Absolutely. The `search_events` tool allows you to specify `min_date`, `max_date`, and `type` (concert or festival) to refine your search results.
+
+
 ## Installation & Usage
 
-To install and use the **Songkick** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/songkick-alternative](https://vinkius.com/mcp/songkick-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Songkick** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `songkick-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Songkick** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "songkick-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

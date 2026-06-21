@@ -1,7 +1,6 @@
 # Pendo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pendo-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pendo-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pendo-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pendo-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Pendo** MCP server usi
 > You have 7 active guides. "Onboarding Tour" has the highest completion at 82% (3,421 starts, 2,805 completions). "Feature Discovery" runs at 71% completion. "Upgrade Prompt" shows 45% engagement with 12% click-through to pricing. "NPS Survey" collected 1,247 responses (average score: 8.2). The lowest performer is "Advanced Settings Tour" at 38% completion, suggesting it may need simplification.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically run a data aggregation for unique visitors?**
+Yes! Use the `run_aggregation` tool. Provide the aggregation logic (following Pendo's JSON syntax), and your agent will respond with complete metadata and result sets in seconds.
+
+**Q: Where do I find my Pendo Integration Key?**
+Log in as an Admin, navigate to **Settings** > **Integrations**, select the **Integration Keys** tab, and create a new key with the required permissions.
+
+**Q: Does this work with EU or Japan instances?**
+Yes! During setup, you can specify your regional base URL (e.g., `app.eu.pendo.io` or `app.jpn.pendo.io`) to ensure the MCP server connects to the correct data center.
+
+
 ## Installation & Usage
 
-To install and use the **Pendo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pendo-alternative](https://vinkius.com/mcp/pendo-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pendo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pendo-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pendo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pendo-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

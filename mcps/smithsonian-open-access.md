@@ -1,7 +1,6 @@
 # Smithsonian Open Access MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smithsonian-open-access)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smithsonian-open-access-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smithsonian-open-access-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smithsonian-open-access)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Smithsonian Open Acces
 > Searching for 'impressionism' in the art category... I found works by Mary Cassatt, John Singer Sargent, and various French impressionist prints. Which artist or specific work should we explore?
 
 
+## ❓ FAQ
+
+**Q: Can I search for specific historical figures across all Smithsonian museums?**
+Yes! Use the `search_records` tool with your query (e.g., 'Abraham Lincoln'). It will return matching records, images, and artifacts from across all Smithsonian units.
+
+**Q: How do I get the full metadata for a specific museum object?**
+Use the `get_content` tool with the unique identifier (ID) of the record. This will fetch detailed metadata, including descriptions, dates, and media links.
+
+**Q: Is it possible to limit my search to just art or science categories?**
+Yes, the `search_category` tool allows you to specify a category (like 'art', 'history', or 'science') along with your search query to get more targeted results.
+
+
 ## Installation & Usage
 
-To install and use the **Smithsonian Open Access** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/smithsonian-open-access](https://vinkius.com/mcp/smithsonian-open-access)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Smithsonian Open Access** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `smithsonian-open-access` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Smithsonian Open Access** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "smithsonian-open-access": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

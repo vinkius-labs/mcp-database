@@ -1,7 +1,6 @@
 # Redox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/redox)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/redox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/redox-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/redox)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Redox** MCP server usi
 > I've sent the Data Model payload to the Redox API. The event has been successfully queued for processing. Here is the response metadata from the server.
 
 
+## ❓ FAQ
+
+**Q: Can I search for patients across different healthcare systems?**
+Yes, by using the `search_patient` tool with the specific `destination_slug` and `identifier`, you can query any connected system in your Redox network.
+
+**Q: Does this support writing clinical data back to an EHR?**
+Yes. The `create_observation` tool allows you to perform writeback operations by sending FHIR bundles containing vitals or other clinical observations.
+
+**Q: What is the difference between FHIR tools and the Data Model tool?**
+The `search_patient` and `search_condition` tools use the FHIR API for standardized resource access, while `post_data_model` uses Redox's proprietary JSON Data Models for broader interoperability events.
+
+
 ## Installation & Usage
 
-To install and use the **Redox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/redox](https://vinkius.com/mcp/redox)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Redox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `redox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Redox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "redox": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Clarifai (Vision AI) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clarifai-vision-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clarifai-vision-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clarifai-vision-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clarifai-vision-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Clarifai (Vision AI)**
 > The 'Custom-Trainer' app has 2 datasets: 'training-v1' (500 images) and 'validation-v1' (100 images). I can also list the concepts tagging these images.
 
 
+## ❓ FAQ
+
+**Q: Can my agent run image predictions using custom models?**
+Yes. Provide the User ID, App ID, and Model ID, along with the input JSON (containing image URLs or bytes). The agent calls Clarifai's predict API and returns exactly what the AI detected, from tags to bounding boxes.
+
+**Q: How can I audit the datasets being used in my Clarifai app?**
+Ask your agent to list datasets for a specific app. It returns the precise physical bounds mapping the image sets, helping you ensure that your training loop is using the correct data boundaries.
+
+**Q: Can I see all active workflows in my organization?**
+Absolutely. Use the 'list_workflows' tool. Your agent will pull the chained AI limits, showing you composed computational blocks that tie multiple neural networks together for complex visual tasks.
+
+
 ## Installation & Usage
 
-To install and use the **Clarifai (Vision AI)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clarifai-vision-ai](https://vinkius.com/mcp/clarifai-vision-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clarifai (Vision AI)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clarifai-vision-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clarifai (Vision AI)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clarifai-vision-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

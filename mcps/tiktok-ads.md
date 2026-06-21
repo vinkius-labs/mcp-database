@@ -1,7 +1,6 @@
 # TikTok Ads MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tiktok-ads)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tiktok-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tiktok-ads-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tiktok-ads)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,61 @@ Here are some examples of how you can interact with the **TikTok Ads** MCP serve
 > Month-over-month comparison: Spend: $12,400 (+8%). Impressions: 4.8M (+15%). CTR: 1.61% (+0.12pp). ROAS: 3.8x (-0.3x). Conversions: 890 (+12%). CPC dropped 5% — efficiency is improving but ROAS dipped slightly.
 
 
+## ❓ FAQ
+
+**Q: How do I get my TikTok Ads API credentials?**
+1. Go to **developers.tiktok.com** and log in with your TikTok account.
+2. Click **Manage Apps** → **Create App**.
+3. Select **Marketing API** as the app type.
+4. Fill in the app details and submit for review.
+5. After approval, go to your app's page and copy the **App ID** and **App Secret**.
+6. Generate an **Access Token** by authorizing your ad account.
+7. Paste App ID, App Secret, and Access Token below.
+
+**Q: Can I manage multiple ad accounts?**
+Yes. Your AI agent can switch between ad accounts using their advertiser IDs, giving agencies and multi-brand teams unified campaign management.
+
+**Q: What metrics can I track?**
+Impressions, clicks, CTR, CPC, CPM, total spend, conversions, conversion rate, ROAS, video views (2s, 6s, 100%), engagement rate, and audience demographics — all filterable by date range, campaign, ad group, and individual ad.
+
+**Q: Can I pause underperforming ads automatically?**
+Yes. Ask your agent to check which ads have CPC above a threshold or ROAS below target, and it can pause those ads immediately — protecting your budget in real time.
+
+
 ## Installation & Usage
 
-To install and use the **TikTok Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tiktok-ads](https://vinkius.com/mcp/tiktok-ads)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TikTok Ads** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tiktok-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TikTok Ads** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tiktok-ads": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

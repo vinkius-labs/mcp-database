@@ -1,7 +1,6 @@
 # Moova MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moova)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moova-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moova-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moova)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Moova** MCP server usi
 > Tracking shipment MOV-28491-AR... Current status: IN_TRANSIT. The package was picked up at 14:32 from Av. Corrientes 1234 and is currently en route with driver Martín G. (Flash Express). Last GPS ping: Av. Cabildo y Juramento at 15:10. Estimated delivery: 16:00-17:00 today.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent get an instant shipping quote between two addresses in Argentina?**
+Yes! Use the `get_budget` tool with the origin and destination addresses. Moova's smart routing engine will return pricing from all available carriers including same-day, next-day, and standard delivery options.
+
+**Q: How do I track a shipment in real-time and see all delivery events?**
+Ask the agent to run `track_shipment` with your shipment ID. You'll receive a chronological list of all tracking events with GPS coordinates, timestamps, and carrier notes — from pickup to final delivery confirmation.
+
+**Q: Can I cancel a shipment that hasn't been picked up yet?**
+Yes. Use the `cancel_shipment` tool with the shipment ID. Cancellation is only possible before the carrier picks up the package. Once picked up, the shipment must complete its delivery cycle. A new shipment will need to be created if needed afterward.
+
+
 ## Installation & Usage
 
-To install and use the **Moova** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/moova](https://vinkius.com/mcp/moova)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Moova** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `moova` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Moova** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "moova": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

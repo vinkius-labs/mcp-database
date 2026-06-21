@@ -1,7 +1,6 @@
 # Microsoft Dynamics 365 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/microsoft-dynamics-365)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/microsoft-dynamics-365-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/microsoft-dynamics-365-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/microsoft-dynamics-365)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,55 @@ Here are some examples of how you can interact with the **Microsoft Dynamics 365
 > EMEA Revenue (Q2 2026): Total closed-won revenue: €3,240,000 across 34 deals. Top contributors: 1. UK — €1,120,000 (15 deals), 2. Germany — €890,000 (8 deals), 3. France — €620,000 (6 deals). Quarter-over-quarter growth: +14.2%. Want a breakdown by product line?
 
 
+## ❓ FAQ
+
+**Q: How does authentication work with Dynamics 365?**
+Dynamics 365 uses OAuth 2.0 via Microsoft Entra ID (Azure AD). You register an app in Azure Portal, obtain a Client ID and Client Secret, configure API permissions for Dynamics CRM, and create an Application User in your Dynamics environment.
+
+**Q: Can I query custom entities and tables in Dataverse?**
+Yes. The `query_dataverse` tool queries any entity in Dataverse — standard or custom. Use OData filter expressions, $expand for related entities, and $select for specific columns.
+
+**Q: Does it work with both Dynamics 365 Sales and Business Central?**
+Yes. The MCP server supports the Dataverse Web API (for Sales, Service, Marketing) and the Business Central API (for financials, inventory, purchasing). Just point to the correct environment URL.
+
+**Q: Can I advance opportunities through pipeline stages?**
+Absolutely. The `update_record` tool can update the stage, probability, estimated revenue, and close date of any opportunity. The agent also supports advancing records through Business Process Flows.
+
+
 ## Installation & Usage
 
-To install and use the **Microsoft Dynamics 365** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/microsoft-dynamics-365](https://vinkius.com/mcp/microsoft-dynamics-365)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Microsoft Dynamics 365** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `microsoft-dynamics-365` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Microsoft Dynamics 365** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "microsoft-dynamics-365": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

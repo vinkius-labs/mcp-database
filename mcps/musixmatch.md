@@ -1,7 +1,6 @@
 # Musixmatch MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/musixmatch)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/musixmatch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/musixmatch-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/musixmatch)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Musixmatch** MCP serve
 > Retrieving the current US top chart... Here are the top 10 tracks, featuring artists like Taylor Swift, Drake, and SZA. Would you like more details on any of these songs?
 
 
+## ❓ FAQ
+
+**Q: Can I search for a song using only a few words from the lyrics?**
+Yes! Use the `search_tracks` tool and provide the words in the `q_lyrics` parameter. Your agent will find all tracks that contain those specific lyrics.
+
+**Q: How do I get the full discography for a specific artist?**
+First, find the artist's unique ID using `search_artists`. Then, use the `get_artist_albums` tool with that ID to retrieve the list of all their recorded albums.
+
+**Q: Is it possible to see which songs are currently trending in my country?**
+Absolutely. Use the `get_top_tracks` tool and provide your country code (e.g., 'us', 'br', 'fr'). Your agent will return the current top tracks chart for that location.
+
+
 ## Installation & Usage
 
-To install and use the **Musixmatch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/musixmatch](https://vinkius.com/mcp/musixmatch)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Musixmatch** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `musixmatch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Musixmatch** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "musixmatch": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

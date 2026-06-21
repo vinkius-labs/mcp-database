@@ -1,7 +1,6 @@
 # MAPA (Agricultura) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapa-agricultura)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mapa-agricultura-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mapa-agricultura-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapa-agricultura)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **MAPA (Agricultura)** M
 > Fetching metadata for 'registro-de-agrotoxicos'... This dataset is maintained by SDA and was last updated on 2023-10-15. It contains 3 resources (CSV, PDF, and XLS). Should I provide the download links?
 
 
+## ❓ FAQ
+
+**Q: How can I find datasets about a specific topic like 'coffee'?**
+You can use the `search_packages` tool with the query 'café'. It will return all datasets that match the term in their title or description.
+
+**Q: How do I get the actual download link for a data file?**
+First, use `get_package` to find the resource IDs within a dataset. Then, call `get_resource` with the specific ID to retrieve the download URL and file format.
+
+**Q: Can I see which government departments publish the data?**
+Yes! Use the `list_organizations` tool to see all publishing entities. You can then use `get_organization` to see all datasets managed by a specific department.
+
+
 ## Installation & Usage
 
-To install and use the **MAPA (Agricultura)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mapa-agricultura](https://vinkius.com/mcp/mapa-agricultura)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MAPA (Agricultura)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mapa-agricultura` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MAPA (Agricultura)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mapa-agricultura": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

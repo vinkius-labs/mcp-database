@@ -1,7 +1,6 @@
 # Prismatic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/prismatic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/prismatic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/prismatic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/prismatic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Prismatic** MCP server
 > I've fetched the logs for that period. I found 12 events, including a 'Webhook Received' success and one 'Execution Error' related to a timeout in the Slack component.
 
 
+## ❓ FAQ
+
+**Q: Can I execute custom GraphQL queries if a specific tool isn't available?**
+Yes! Use the `run_graphql` tool to execute any valid Prismatic GraphQL query or mutation. This gives you full access to the schema, including actions, components, and user data.
+
+**Q: How do I make sure my integration changes are actually live?**
+After creating or updating an instance, you must use the `deploy_instance` tool with the specific Instance ID. This triggers the deployment process required for changes to take effect.
+
+**Q: Is it possible to filter logs by a specific time range?**
+Yes, the `fetch_logs` tool requires `timestampGte` and `timestampLte` parameters in DateTime format, allowing you to pinpoint exactly when an event occurred.
+
+
 ## Installation & Usage
 
-To install and use the **Prismatic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/prismatic](https://vinkius.com/mcp/prismatic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Prismatic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `prismatic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Prismatic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "prismatic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

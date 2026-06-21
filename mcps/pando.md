@@ -1,7 +1,6 @@
 # Pando MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pando)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pando-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pando-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pando)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Pando** MCP server usi
 > Indent request created successfully (ID: IND-8923). 3 trucks requested for Delhi Warehouse to Jaipur Hub, scheduled for May 14th at 6:00 AM. Vehicle type: 20-ft closed body. Estimated transit time: 6 hours. The system has notified 4 registered carriers on this route for bid responses within the next 2 hours.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the status for a specific shipment by its ID?**
+Yes! Use the `get_shipment` tool with the Shipment ID. Your agent will respond with complete metadata, including carrier name, current stage, and expected delivery dates in seconds.
+
+**Q: How do I find my Pando TMS API Token?**
+Log in to your Pando TMS dashboard, navigate to your Profile or Developer settings, and you will find your unique secret token under the 'API Info' section.
+
+**Q: What is a vehicle 'indent'?**
+An indent is a formal request within the Pando platform to assign a specific vehicle for a shipment. You can track their lifecycle from placement to fulfillment via the AI.
+
+
 ## Installation & Usage
 
-To install and use the **Pando** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pando](https://vinkius.com/mcp/pando)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pando** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pando` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pando** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pando": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

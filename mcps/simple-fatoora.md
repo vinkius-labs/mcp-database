@@ -1,7 +1,6 @@
 # Simple Fatoora MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simple-fatoora)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/simple-fatoora-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/simple-fatoora-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simple-fatoora)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Simple Fatoora** MCP s
 > Searching clients... I found one match for 'Acme Corp' (ID: 98765). They have a registered VAT number and 3 previous invoices. Would you like to see their contact history?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically create a ZATCA-compliant VAT invoice for a customer?**
+Yes! Use the `create_vat_invoice` tool. Provide the client details and item list, and your agent will generate a compliant ZATCA Phase 2 invoice instantly.
+
+**Q: How do I check the stock level for a specific item in Simple Fatoora?**
+Simply ask the agent to run the `list_items` action. It will retrieve the current inventory catalog, including stock counts and pricing for all items.
+
+**Q: How do I find my Simple Fatoora API Key?**
+Log in to your Simple Fatoora dashboard, navigate to **Settings** > **API Integration**, and you will find your unique secret API Key there.
+
+
 ## Installation & Usage
 
-To install and use the **Simple Fatoora** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/simple-fatoora](https://vinkius.com/mcp/simple-fatoora)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Simple Fatoora** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `simple-fatoora` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Simple Fatoora** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "simple-fatoora": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

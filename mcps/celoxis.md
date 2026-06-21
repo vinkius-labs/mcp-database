@@ -1,7 +1,6 @@
 # Celoxis MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/celoxis)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/celoxis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/celoxis-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/celoxis)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Celoxis** MCP server u
 > I've pulled the risks matrices mapping your global network structures. There are 2 high-severity systemic risks graded heavily impacting the standard client CRM deliveries, notably a 'Supply Bottleneck' bound to the primary client entity mapping. Should I extract the isolated blocking tasks mapped there as well?
 
 
+## ❓ FAQ
+
+**Q: Can the AI agent track active project milestones and timeline risks?**
+Yes. The agent uses the explicit milestones and risks endpoints to provide real-time updates on deliverable health, letting you manage complex Portfolio lifecycles entirely through natural language commands without sifting through gantt charts.
+
+**Q: Does it map team hours and billable expenses internally?**
+Absolutely. Using the resources, time entries, and expenses tools, the agent accurately links organizational workers, the exact time they logged natively, and their costs—directly mapping them onto specific project ledgers on the fly.
+
+**Q: Can the agent query custom issues and complex gating approvals?**
+Yes. The integration pulls mapped states of blocking issues and traces routing limits for approvals over timesheets or expenses, granting you full observability into administrative constraints without opening the Celoxis interface.
+
+
 ## Installation & Usage
 
-To install and use the **Celoxis** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/celoxis](https://vinkius.com/mcp/celoxis)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Celoxis** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `celoxis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Celoxis** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "celoxis": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

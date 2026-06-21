@@ -1,7 +1,6 @@
 # Clearbit (HubSpot) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clearbit-hubspot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clearbit-hubspot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clearbit-hubspot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clearbit-hubspot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Clearbit (HubSpot)** M
 > Searching Clearbit Discovery... I found several companies matching your criteria, including 'Vanta', 'Figma', and 'Honeycomb'. Would you like the full list or details for one of them?
 
 
+## ❓ FAQ
+
+**Q: Can I find the LinkedIn profile of an email address through the agent?**
+Yes! Use the `enrich_person_details` tool. The agent will return professional social links, including LinkedIn, Twitter, and others, if available in the Clearbit database.
+
+**Q: How do I see the estimated revenue and size of a company?**
+Use the `enrich_company_details` tool with the company domain. Your agent will fetch firmographic data, including employee count and estimated annual revenue.
+
+**Q: Where do I find my Clearbit API Key?**
+Log in to your Clearbit dashboard and go to the **API** section. You can copy your Secret API Key from there. (Note: Standalone keys are being moved to HubSpot Breeze Intelligence).
+
+
 ## Installation & Usage
 
-To install and use the **Clearbit (HubSpot)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clearbit-hubspot](https://vinkius.com/mcp/clearbit-hubspot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clearbit (HubSpot)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clearbit-hubspot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clearbit (HubSpot)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clearbit-hubspot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

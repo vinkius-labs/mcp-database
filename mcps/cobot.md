@@ -1,7 +1,6 @@
 # Cobot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cobot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cobot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cobot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cobot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Cobot** MCP server usi
 > Checking account history... I found 2 unpaid invoices from last month for members 'Sarah Smith' and 'Global Tech'. All other memberships are in good standing.
 
 
+## ❓ FAQ
+
+**Q: Can I see who has booked a specific meeting room today?**
+Yes! Use the `list_space_bookings` tool with today's date range. The agent will return all bookings, allowing you to see which members have reserved specific rooms.
+
+**Q: How do I check the status of a member's last invoice?**
+Use the `list_cobot_invoices` tool. Your agent will fetch all invoices, and you can filter for a specific member's name or ID to see if their last payment was successful.
+
+**Q: Where do I find my Cobot Access Token and Subdomain?**
+The **Subdomain** is the first part of your Cobot URL (e.g., `myspace` in `myspace.cobot.me`). You can generate an **Access Token** via the Cobot developer portal or by creating an application in your account settings.
+
+
 ## Installation & Usage
 
-To install and use the **Cobot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cobot](https://vinkius.com/mcp/cobot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cobot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cobot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cobot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cobot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

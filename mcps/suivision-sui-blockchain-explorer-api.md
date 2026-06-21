@@ -1,7 +1,6 @@
 # Suivision (Sui Blockchain Explorer API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/suivision-sui-blockchain-explorer-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/suivision-sui-blockchain-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/suivision-sui-blockchain-explorer-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/suivision-sui-blockchain-explorer-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Suivision (Sui Blockch
 > The SUI coin (0x2::sui::SUI) has 9 decimals. The current total supply is approximately 10 billion. Is there another coin type you'd like to analyze?
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance and owned objects of a specific Sui address?**
+Yes! Use the `get_account_overview` tool to see the general balance or `get_account_objects` to list all objects, including NFTs, associated with that address.
+
+**Q: How do I get the technical details of a specific transaction digest?**
+Simply provide the transaction hash to the `get_transaction` tool. It will return the sender, gas usage, status, and execution effects.
+
+**Q: Can I inspect the source code or modules of a Move package?**
+Yes, use the `get_package_details` tool with the Package ID. It retrieves the Move bytecode and module information directly from the blockchain.
+
+
 ## Installation & Usage
 
-To install and use the **Suivision (Sui Blockchain Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/suivision-sui-blockchain-explorer-api](https://vinkius.com/mcp/suivision-sui-blockchain-explorer-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Suivision (Sui Blockchain Explorer API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `suivision-sui-blockchain-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Suivision (Sui Blockchain Explorer API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "suivision-sui-blockchain-explorer-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # SurveyMonkey MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/surveymonkey)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/surveymonkey-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/surveymonkey-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/surveymonkey)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **SurveyMonkey** MCP ser
 > I've pulled the latest bulk responses for survey 401235. I found 50 recent responses. Most respondents rated the product 'Very Satisfied'. Would you like a summary of the open-ended comments?
 
 
+## ❓ FAQ
+
+**Q: Can I retrieve the entire structure of a survey including all its questions at once?**
+Yes. Use the `get_survey_details` tool with the specific Survey ID. It will return the full hierarchy of pages and questions configured for that survey.
+
+**Q: Is it possible to export or list all responses for a survey in bulk?**
+Absolutely. The `list_survey_responses_bulk` tool allows you to fetch multiple responses at once, making it ideal for data analysis and reporting.
+
+**Q: Can I see how my survey is being distributed?**
+Yes. You can use `list_survey_collectors` to see all active distribution channels (links, emails, etc.) associated with a specific survey.
+
+
 ## Installation & Usage
 
-To install and use the **SurveyMonkey** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/surveymonkey](https://vinkius.com/mcp/surveymonkey)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SurveyMonkey** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `surveymonkey` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SurveyMonkey** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "surveymonkey": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

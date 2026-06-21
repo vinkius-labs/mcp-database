@@ -1,7 +1,6 @@
 # Export Parity Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/export-parity-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/export-parity-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/export-parity-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/export-parity-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Export Parity Calculat
 > The `analyze_market_opportunity` tool will recommend 'EXPORT' because the parity price is higher.
 
 
+## ❓ FAQ
+
+**Q: How do I find the transport cost for a specific mode?**
+Use the `get_transportation_rate` tool and provide the mode (truck, rail, or barge).
+
+**Q: What inputs are needed for parity calculation?**
+You need the FOB price in USD, the exchange rate, distance in km, and the transport mode for `calculate_farm_gate_parity`.
+
+**Q: Can I compare export prices with domestic prices?**
+Yes, the `analyze_market_opportunity` tool compares your calculated parity price to the domestic market price.
+
+
 ## Installation & Usage
 
-To install and use the **Export Parity Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/export-parity-calculator](https://vinkius.com/mcp/export-parity-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Export Parity Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `export-parity-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Export Parity Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "export-parity-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

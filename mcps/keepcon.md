@@ -1,7 +1,6 @@
 # Keepcon MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/keepcon)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/keepcon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/keepcon-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/keepcon)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Keepcon** MCP server u
 > I found 50 user profiles. Notable users include 'user_abc' (Twitter) and 'user_xyz' (Facebook).
 
 
+## ❓ FAQ
+
+**Q: What is the difference between synchronic and asynchronic moderation?**
+Synchronic (`moderate_content`) provides an immediate decision, while asynchronic (`import_batch`) is for large volumes where results are retrieved later via the export tool.
+
+**Q: How do I ensure results are not exported twice?**
+After retrieving results with `export_results`, use the `acknowledge_results` tool with the corresponding `set_id` to confirm processing.
+
+**Q: Can I provide feedback on incorrect moderation decisions?**
+Yes, use the `submit_feedback` tool to report false positives or negatives, helping the Keepcon engine learn and improve over time.
+
+
 ## Installation & Usage
 
-To install and use the **Keepcon** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/keepcon](https://vinkius.com/mcp/keepcon)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Keepcon** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `keepcon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Keepcon** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "keepcon": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

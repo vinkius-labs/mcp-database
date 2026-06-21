@@ -1,7 +1,6 @@
 # Everbridge Critical Management MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/everbridge-critical-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/everbridge-critical-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/everbridge-critical-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/everbridge-critical-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Everbridge Critical Ma
 > John Doe (External ID: 998877) has 3 communication methods: Mobile (SMS/Call), Work Email, and Personal Phone. They are a member of the 'Emergency Response Team' group. Would you like the full profile for this contact?
 
 
+## ❓ FAQ
+
+**Q: How do I get Everbridge API credentials?**
+You need your **Organization ID** (found in your Everbridge dashboard URL), along with a dedicated **API Username** and **Password** created by your organization's administrator. Ensure the user has the 'API' role assigned.
+
+**Q: Can the agent launch new notifications?**
+This integration currently focuses on listing and auditing notifications, contacts, and incidents. Launching actual emergency broadcasts should be managed via the Everbridge manager portal or mobile app to ensure safety protocols are followed.
+
+**Q: Does the integration show confirmation rates?**
+Yes, you can use the get_notification_detailed_status tool to retrieve detailed delivery statistics, including how many contacts received and confirmed the notification.
+
+
 ## Installation & Usage
 
-To install and use the **Everbridge Critical Management** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/everbridge-critical-management](https://vinkius.com/mcp/everbridge-critical-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Everbridge Critical Management** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `everbridge-critical-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Everbridge Critical Management** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "everbridge-critical-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

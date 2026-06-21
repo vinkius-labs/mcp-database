@@ -1,7 +1,6 @@
 # Paleobiology Database MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paleobiology-database)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/paleobiology-database-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/paleobiology-database-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paleobiology-database)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **Paleobiology Database*
 > I've filtered collections for the Montana region (approx. lat 44-49, lng -116 to -104). I found numerous collections, primarily from the Cretaceous and Paleogene, including many dinosaur and early mammal sites. Should I list the most recent ones?
 
 
+## ❓ FAQ
+
+**Q: Can I search for fossils within a specific geological time period like the Cretaceous?**
+Yes! Use the `list_occurrences` tool and provide the period name in the `interval` parameter. The agent will return all recorded fossil occurrences from that specific time block.
+
+**Q: How do I analyze the diversity of a specific group of animals over time?**
+You can use the `get_occurrences_diversity` or `get_occurrences_quickdiv` tools. By providing a `base_name` (like 'Trilobita'), the agent will generate a tabulation of how many different taxa existed across different geological intervals.
+
+**Q: Can I find fossil collections based on geographic coordinates?**
+Absolutely. The `list_collections` and `list_occurrences` tools allow you to specify a bounding box using `lngmin`, `lngmax`, `latmin`, and `latmax` to find all records within a specific map area.
+
+
 ## Installation & Usage
 
-To install and use the **Paleobiology Database** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/paleobiology-database](https://vinkius.com/mcp/paleobiology-database)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Paleobiology Database** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `paleobiology-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Paleobiology Database** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "paleobiology-database": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

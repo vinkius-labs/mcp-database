@@ -1,7 +1,6 @@
 # SmartThings MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartthings)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smartthings-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smartthings-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartthings)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **SmartThings** MCP serv
 > Checking status... The 'Smart Thermostat' is currently reporting a temperature of 22°C (71.6°F) with the operating mode set to 'Auto'.
 
 
+## ❓ FAQ
+
+**Q: Can I check if my lights are on and see the current brightness level?**
+Yes. Use the `get_device_status` tool with the specific Device ID. It will return the current state of all components, including switch status and level attributes.
+
+**Q: How do I trigger a 'Movie Night' scene that I already created in the SmartThings app?**
+First, use `list_scenes` to find the ID of your 'Movie Night' scene. Then, use the `execute_scene` tool with that ID to trigger all associated actions at once.
+
+**Q: Is it possible to organize my devices into a new room using this server?**
+Yes. You can use the `create_room` tool by providing the target Location ID and the desired name for the new room subdivision.
+
+
 ## Installation & Usage
 
-To install and use the **SmartThings** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/smartthings](https://vinkius.com/mcp/smartthings)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SmartThings** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `smartthings` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SmartThings** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "smartthings": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

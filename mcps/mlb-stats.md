@@ -1,7 +1,6 @@
 # MLB Stats MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mlb-stats)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mlb-stats-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mlb-stats-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mlb-stats)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **MLB Stats** MCP server
 > In 2023, Shohei Ohtani had a .304 batting average, 44 home runs, and 95 RBIs over 135 games. He also posted a 1.066 OPS. Would you like to see his pitching stats for the same year?
 
 
+## ❓ FAQ
+
+**Q: How can I get the play-by-play data for a game currently in progress?**
+Use the `get_live_game_feed` tool with the specific `gamePk` (game ID). This provides the most detailed real-time feed, including play-by-play and boxscores.
+
+**Q: Can I retrieve historical statistics for a specific season?**
+Yes! The `get_stats` and `get_standings` tools both accept a `season` parameter (e.g., 2023) to filter data for that specific year.
+
+**Q: How do I find the schedule for a specific team?**
+You can use `get_schedule` with a date range. While the schedule tool returns all games, you can ask your AI agent to filter the results for a specific team name or ID found via `list_teams`.
+
+
 ## Installation & Usage
 
-To install and use the **MLB Stats** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mlb-stats](https://vinkius.com/mcp/mlb-stats)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MLB Stats** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mlb-stats` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MLB Stats** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mlb-stats": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

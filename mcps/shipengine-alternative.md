@@ -1,7 +1,6 @@
 # ShipEngine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shipengine-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shipengine-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shipengine-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shipengine-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **ShipEngine** MCP serve
 > The UPS package is currently 'In Transit'. It was last scanned at the Louisville, KY hub and is estimated to be delivered by tomorrow at 7:00 PM.
 
 
+## ❓ FAQ
+
+**Q: Can I validate multiple addresses at once to avoid shipping surcharges?**
+Yes! Use the `validate_addresses` tool. You can provide an array of address objects, and the agent will return validation results for up to 250 addresses in a single request.
+
+**Q: How does the AI choose the best shipping rate for me?**
+You can use the `create_label_rate_shopper` tool with a specific strategy: 'cheapest', 'fastest', or 'best_value'. The agent will automatically compare rates across your carriers and purchase the label that fits your criteria.
+
+**Q: Can I track a package if I only have the tracking number and carrier code?**
+Absolutely. Use the `track_package` tool by providing the `carrier_code` (e.g., 'ups', 'fedex') and the `tracking_number`. The agent will retrieve the latest status and location updates.
+
+
 ## Installation & Usage
 
-To install and use the **ShipEngine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shipengine-alternative](https://vinkius.com/mcp/shipengine-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ShipEngine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shipengine-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ShipEngine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shipengine-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Permit.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/permitio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/permitio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/permitio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/permitio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Permit.io** MCP server
 > The 'editor' role has been updated. It now has 'read' and 'write' permissions for the 'document' resource.
 
 
+## ❓ FAQ
+
+**Q: How do I check if a specific user has permission to access a resource?**
+Use the `check_permission` tool. You need to provide the user identifier, the action (e.g., 'read'), and the resource object (including type and tenant). The agent will query your PDP and return the authorization decision.
+
+**Q: Can I create new roles and assign permissions to them using this server?**
+Yes. You can use `create_role` to define a new role in your schema and then use `assign_permissions_to_role` to specify exactly what that role is allowed to do within a project and environment.
+
+**Q: Does this integration support AuthZen standards?**
+Yes, it includes several tools like `authzen_access_evaluation` and `authzen_bulk_evaluations` to perform authorization checks following the AuthZen specification.
+
+
 ## Installation & Usage
 
-To install and use the **Permit.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/permitio](https://vinkius.com/mcp/permitio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Permit.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `permitio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Permit.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "permitio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

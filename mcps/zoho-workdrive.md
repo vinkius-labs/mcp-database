@@ -1,7 +1,6 @@
 # Zoho WorkDrive MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-workdrive)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-workdrive-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-workdrive-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-workdrive)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,49 @@ Here are some examples of how you can interact with the **Zoho WorkDrive** MCP s
 > I've retrieved the workspaces for the Engineering Team. For the 'Architecture Specs' folder, there are 3 users with access: Sarah (Admin), John (Editor), and the 'Guest Contractors' group (Viewer). Would you like to modify any of these permissions?
 
 
+## ❓ FAQ
+
+**Q: How do I obtain my Zoho WorkDrive Client ID and Secret?**
+Go to the [**Zoho API Console**](https://api-console.zoho.com/), register a new 'Server-based Application', and generate your credentials by providing the required redirect URI.
+
+**Q: Can the AI agent permanently delete files from my WorkDrive?**
+Yes, the agent has access to the `delete_file` tool. Use it with caution as it will remove the specified file or folder from your storage.
+
+
 ## Installation & Usage
 
-To install and use the **Zoho WorkDrive** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zoho-workdrive](https://vinkius.com/mcp/zoho-workdrive)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zoho WorkDrive** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zoho-workdrive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zoho WorkDrive** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zoho-workdrive": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

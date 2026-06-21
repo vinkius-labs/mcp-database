@@ -1,7 +1,6 @@
 # SEON MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/seon)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/seon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/seon-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/seon)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **SEON** MCP server usin
 > 12 flagged transactions in 24 hours. High risk (3): TX-8923 ($2,400, score 89, disposable email + VPN), TX-8934 ($1,800, score 82, velocity abuse - 5 orders in 10 min), TX-8941 ($3,200, score 91, card-country mismatch + new account). Medium risk (5): velocity patterns, mismatched billing/shipping (scores 55-72). Low risk (4): minor flags, first-time buyers (scores 35-48). Auto-blocked: 2 transactions. Manual review queue: 6. False positive rate (last 30 days): 3.2%.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically check the fraud risk for a specific transaction by providing its ID?**
+Yes! Use the `get_transaction` tool with the Transaction ID. Your agent will respond with the complete risk score, rule triggers, and digital footprint data in seconds.
+
+**Q: How do I check the digital footprint for a new user's email address?**
+Simply ask the agent to run the `check_email` action. It will retrieve social media profile associations, domain age, and potential risk flags associated with that email.
+
+**Q: How do I find my SEON Admin API Key?**
+Log in to your SEON dashboard, navigate to **Settings** > **API Keys**, and you will find your unique Admin License Key there.
+
+
 ## Installation & Usage
 
-To install and use the **SEON** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/seon](https://vinkius.com/mcp/seon)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SEON** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `seon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SEON** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "seon": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Appbot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appbot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/appbot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/appbot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appbot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Appbot** MCP server us
 > The top topics for your Android app are 'Performance', 'Ease of Use', and 'Bug Reports'. 'Performance' has seen a slight increase in mentions over the last 30 days.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Appbot API credentials?**
+Log in to your Appbot dashboard, go to your team settings, and navigate to the API section. You can generate an API Key which consists of a Username and a Password.
+
+**Q: Can I filter reviews for a specific app version?**
+Yes, you can use the `list_versions` tool to see detected versions and then use the `list_reviews` tool with the version filter to see feedback for that specific release.
+
+**Q: What types of sentiment does Appbot detect?**
+Appbot classifies reviews into four sentiment categories: positive, negative, neutral, and mixed. You can filter reviews using these categories in the `list_reviews` tool.
+
+
 ## Installation & Usage
 
-To install and use the **Appbot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/appbot](https://vinkius.com/mcp/appbot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Appbot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `appbot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Appbot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "appbot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

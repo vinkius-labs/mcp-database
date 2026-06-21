@@ -1,7 +1,6 @@
 # Rapid7 InsightVM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rapid7-insightvm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rapid7-insightvm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rapid7-insightvm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rapid7-insightvm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Rapid7 InsightVM** MCP
 > I submitted the `trigger_scan` command for Site ID 15. The InsightVM engine has confirmed the execution, and the scan is now running in the background. You can check its progress shortly using queries.
 
 
+## ❓ FAQ
+
+**Q: How do I configure my credentials for Rapid7?**
+The integration uses Basic Authentication interacting with the Rapid7 Console API. You must configure the `RAPID7_HOST` (IP or FQDN), `RAPID7_PORT` (usually 3780), along with a dedicated `RAPID7_USER` and `RAPID7_PASSWORD`. We strongly recommend generating a specific service account in your console with restricted scan permissions.
+
+**Q: Is the scanning triggered individually per asset?**
+By default, the `trigger_scan` mechanism relies on referencing a defined `site_id`, scanning the preconfigured scope attached to it rather than blindly scanning one unassociated IP.
+
+**Q: Does it report CVSS scores?**
+Yes, depending on the response data provided by your installed version of the InsightVM console. Using `get_vulnerability` or checking asset lists brings standard threat metadata and corresponding CVSS vectors directly into your AI interface context.
+
+
 ## Installation & Usage
 
-To install and use the **Rapid7 InsightVM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rapid7-insightvm](https://vinkius.com/mcp/rapid7-insightvm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rapid7 InsightVM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rapid7-insightvm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rapid7 InsightVM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rapid7-insightvm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

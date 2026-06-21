@@ -1,7 +1,6 @@
 # Salesloft MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesloft)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salesloft-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salesloft-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesloft)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,49 @@ Here are some examples of how you can interact with the **Salesloft** MCP server
 > 15 prospects added to "Enterprise Outbound" cadence. Source: TechCrunch Disrupt attendee list. Roles: 6 CTOs, 4 VPs Engineering, 3 Founders, 2 Product Leads. Companies: Series A-C startups, avg size 85 employees. Duplicate check: 2 already in SalesLoft (skipped). Net new: 13 prospects. First touchpoint: personalized email scheduled for tomorrow 9 AM. Cadence steps: Day 1 email → Day 3 call → Day 5 email → Day 8 LinkedIn → Day 12 email → Day 15 call.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details and history for a specific lead just by providing their email?**
+Yes! Use the `list_people` tool with the email as a filter. Your agent will respond with complete metadata, including cadence membership, job title, and social URLs in seconds.
+
+**Q: How do I find my Salesloft API Access Token?**
+Log in to your Salesloft account, navigate to **Settings** > **Personal Settings** > **API Tokens**, and you will find or generate your unique bearer token there.
+
+
 ## Installation & Usage
 
-To install and use the **Salesloft** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/salesloft](https://vinkius.com/mcp/salesloft)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Salesloft** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `salesloft` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Salesloft** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "salesloft": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

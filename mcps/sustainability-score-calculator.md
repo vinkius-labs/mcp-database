@@ -1,7 +1,6 @@
 # Sustainability Score Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sustainability-score-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sustainability-score-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sustainability-score-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sustainability-score-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -49,12 +48,52 @@ Here are some examples of how you can interact with the **Sustainability Score C
 > To reach a target of 90, you should focus on improving your Energy and Food habits through the suggested actions in the roadmap.
 
 
+## ❓ FAQ
+
+**Q: How can an agent calculate my sustainability score?**
+Agents use the `calculate_personal_score` tool, providing scores for categories like Transport, Food, and Energy to receive a total weighted average.
+
+**Q: Can I get specific advice on improving my score?**
+Yes. By using `generate_improvement_roadmap`, an agent can analyze your current breakdown and suggest actionable targets to reach a desired sustainability goal.
+
+**Q: What categories are assessed?**
+The assessment covers five pillars: Transport, Food, Consumption, Energy, and Waste. You can check the status of any specific pillar using `get_category_status`.
+
+
 ## Installation & Usage
 
-To install and use the **Sustainability Score Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sustainability-score-calculator](https://vinkius.com/mcp/sustainability-score-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sustainability Score Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sustainability-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sustainability Score Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sustainability-score-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

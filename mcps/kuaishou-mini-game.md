@@ -1,7 +1,6 @@
 # Kuaishou Mini-Game MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kuaishou-mini-game)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kuaishou-mini-game-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kuaishou-mini-game-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kuaishou-mini-game)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Kuaishou Mini-Game** M
 > 🏆 Top 10 Leaderboard: 1) PlayerA - 9850, 2) PlayerB - 8720, 3) PlayerC - 7650...
 
 
+## ❓ FAQ
+
+**Q: How do I get my Kuaishou Mini-Game credentials?**
+Register at the [Kuaishou Open Platform](https://open.kuaishou.com/), create a mini-game application, and find your App ID and App Secret in the application settings.
+
+**Q: What monetization models are supported?**
+Kuaishou supports IAA (In-App Advertising) with rewarded videos and interstitial ads, as well as IAP (In-App Purchases). Revenue split is 89% for paid traffic and 30% for organic traffic.
+
+**Q: How does cloud storage work?**
+Cloud storage saves user game data as key-value pairs. Each user gets their own storage space. Use set_user_storage to save and get_user_storage to load data. Essential for cross-device game continuity.
+
+
 ## Installation & Usage
 
-To install and use the **Kuaishou Mini-Game** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kuaishou-mini-game](https://vinkius.com/mcp/kuaishou-mini-game)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kuaishou Mini-Game** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kuaishou-mini-game` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kuaishou Mini-Game** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kuaishou-mini-game": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

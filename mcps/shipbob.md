@@ -1,7 +1,6 @@
 # ShipBob MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shipbob)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shipbob-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shipbob-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shipbob)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Here are some examples of how you can interact with the **ShipBob** MCP server u
 > For SKU 'SUMMER-HAT-01', you have 150 units fulfillable across all locations, with 25 units currently committed to open orders.
 
 
+## ❓ FAQ
+
+**Q: Can I check the status of a specific order using its ID?**
+Yes! Use the `get_order` tool with the Order ID. Your agent will return the current fulfillment status, tracking information, and shipment details associated with that order.
+
+**Q: How do I see current inventory levels across different warehouse locations?**
+You can use the `get_inventory_levels_by_location` tool. It provides a breakdown of on-hand, fulfillable, and committed inventory for each ShipBob fulfillment center.
+
+**Q: Is it possible to cancel an order through the AI agent?**
+Yes, if the order is in a cancellable state, you can use the `cancel_order` tool by providing the Order ID to stop the fulfillment process.
+
+
 ## Installation & Usage
 
-To install and use the **ShipBob** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shipbob](https://vinkius.com/mcp/shipbob)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ShipBob** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shipbob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ShipBob** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shipbob": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

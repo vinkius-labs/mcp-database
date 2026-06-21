@@ -1,7 +1,6 @@
 # Lob MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lob)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lob-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lob-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lob)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,55 @@ Here are some examples of how you can interact with the **Lob** MCP server using
 > I'll create a physical check for $500 payable to ABC Consulting. This requires a verified bank account in your Lob account. The check will be printed and mailed within 24 hours via USPS.
 
 
+## ❓ FAQ
+
+**Q: What types of physical mail can I send with Lob?**
+Lob supports three main mail types: Letters (formal correspondence, invoices, notifications with customizable color, double-sided printing), Postcards (marketing campaigns, invitations, reminders in 4x6, 6x9, or 6x11 sizes), and Checks (vendor payments, payroll, refunds, rebates with customizable memo lines and company logos). All mail is printed and mailed within 24 hours via USPS.
+
+**Q: How does Lob address verification work?**
+Lob's address verification validates and standardizes addresses using USPS data. It corrects formatting, adds missing ZIP+4 codes, fixes typos, and confirms deliverability. The service returns a deliverability status: 'deliverable' (valid and deliverable), 'undeliverable' (cannot be delivered), or 'deliverable_unnecessary' (valid but additional info not needed). This reduces returned mail by up to 5% and ensures your mailings reach the correct destination.
+
+**Q: Can I use HTML templates for personalized mailings?**
+Yes! Lob supports HTML templates with merge variables using the Handlebars templating engine. Create a template with placeholders like {{name}}, {{order_number}}, {{delivery_date}}, then pass actual values when creating letters or postcards. This enables personalized, scalable direct mail campaigns. Templates are reusable and can be referenced by ID when creating mailings. You can also embed CSS styling for professional-looking mail designs.
+
+**Q: How long does it take for mail to be delivered?**
+Lob prints and mails all items within 24 hours of creation. Delivery time depends on the mail type selected: USPS First Class Mail typically delivers in 2-5 business days, while USPS Standard Mail takes 3-7 business days. You receive a tracking number for each piece of mail to monitor delivery status. Lob also provides expected delivery dates in API responses for planning purposes.
+
+
 ## Installation & Usage
 
-To install and use the **Lob** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lob](https://vinkius.com/mcp/lob)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lob** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lob** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lob": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

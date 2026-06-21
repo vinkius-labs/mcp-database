@@ -1,7 +1,6 @@
 # OpenReplay MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openreplay)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openreplay-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openreplay-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openreplay)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **OpenReplay** MCP serve
 > Inspecting session 'sess-abc-123'... I found a 'Uncaught TypeError' at 02:15 and a series of rapid clicks on the 'Submit' button immediately following the error. It looks like a validation issue.
 
 
+## ❓ FAQ
+
+**Q: Can I see technical logs and console errors for a specific session?**
+Yes! Use the `list_session_events` tool with a Session ID. It will retrieve all recorded technical and user events, including clicks, inputs, and console logs.
+
+**Q: How do I find sessions for a specific user email?**
+First, use `search_users` with the email and Project ID to find the user. Then, use `list_sessions` with that User ID to see all their recorded activity.
+
+**Q: Does this integration support self-hosted OpenReplay instances?**
+Yes. You can provide an optional `OPENREPLAY_BASE_URL` during setup to point the agent to your private instance instead of the default cloud API.
+
+
 ## Installation & Usage
 
-To install and use the **OpenReplay** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openreplay](https://vinkius.com/mcp/openreplay)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenReplay** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openreplay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenReplay** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openreplay": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

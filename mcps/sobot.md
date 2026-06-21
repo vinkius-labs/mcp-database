@@ -1,7 +1,6 @@
 # Sobot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sobot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sobot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sobot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sobot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Sobot** MCP server usi
 > I've found an article titled 'Refund Policy and Procedures' in your Sobot knowledge base. It details the steps for processing refunds and the eligibility criteria. Shall I retrieve the full content for you?
 
 
+## ❓ FAQ
+
+**Q: How do I obtain my Sobot App ID and Key?**
+You need to contact your Sobot business manager or support personnel to apply for your unique `appid` and `app_key`.
+
+**Q: Can I check if an agent is currently online?**
+Yes. Use the `get_agent_status` tool with the specific agent ID to retrieve their real-time status, including whether they are online, busy, or offline.
+
+**Q: Is it possible to retrieve knowledge base articles through the agent?**
+Yes! You can list available articles using `list_knowledge` and retrieve the full content of a specific document using the `get_knowledge_detail` tool.
+
+
 ## Installation & Usage
 
-To install and use the **Sobot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sobot](https://vinkius.com/mcp/sobot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sobot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sobot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sobot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sobot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

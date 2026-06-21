@@ -1,7 +1,6 @@
 # SugarCRM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sugarcrm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sugarcrm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sugarcrm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sugarcrm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **SugarCRM** MCP server 
 > Call log has been created successfully and linked to Jane Smith's contact record.
 
 
+## ❓ FAQ
+
+**Q: Can I retrieve the details of a specific Account?**
+Yes! Supply the Account name or ID and the AI will extract all relevant firmographics and recent activities.
+
+**Q: How do I log a call or meeting?**
+You can tell the agent to 'Log a call with John Doe', provide the summary, and the integration will create the activity record in SugarCRM.
+
+**Q: Is it possible to update an Opportunity's status?**
+Yes, by passing the Opportunity ID, the AI can transition it to 'Closed Won' or any other active stage.
+
+
 ## Installation & Usage
 
-To install and use the **SugarCRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sugarcrm](https://vinkius.com/mcp/sugarcrm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SugarCRM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sugarcrm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SugarCRM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sugarcrm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

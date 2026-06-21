@@ -1,7 +1,6 @@
 # Fieldwire MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fieldwire)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fieldwire-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fieldwire-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fieldwire)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Fieldwire** MCP server
 > I've retrieved the task bubbles. There are 2 comments: 'Leak identified' and 'Parts ordered', along with one photo attachment showing the pipe damage.
 
 
+## ❓ FAQ
+
+**Q: Can I see photos and comments attached to a specific task?**
+Yes! Use the `list_task_bubbles` tool with the Project and Task UUIDs. It retrieves all messages, photos, and files attached to that specific task.
+
+**Q: How do I organize multiple floorplans into a collection?**
+You can use `batch_move_floorplans` to move an array of floorplan UUIDs into a target collection. Make sure to use `enable_collections` first if they aren't active for the project.
+
+**Q: Is it possible to invite new team members to my Fieldwire account via AI?**
+Yes, the `invite_user` tool allows you to send an invitation to a user's email address directly from the agent.
+
+
 ## Installation & Usage
 
-To install and use the **Fieldwire** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fieldwire](https://vinkius.com/mcp/fieldwire)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fieldwire** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fieldwire` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fieldwire** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fieldwire": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

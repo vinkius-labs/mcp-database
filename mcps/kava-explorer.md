@@ -1,7 +1,6 @@
 # Kava Explorer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kava-explorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kava-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kava-explorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kava-explorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Kava Explorer** MCP se
 > I found 15 reward events for this address in the last 24 hours, totaling 5.2 KAVA. No slash events were detected in the recent history.
 
 
+## ❓ FAQ
+
+**Q: Can I check the token balances for a specific Kava address?**
+Yes! Use the `get_account_token` tool with the target Kava address to retrieve all token balances associated with that account.
+
+**Q: How do I find details about a specific transaction or extrinsic?**
+You can use the `get_extrinsic` tool by providing either the transaction hash or the extrinsic index (e.g., '123456-2').
+
+**Q: Is it possible to monitor validator performance and staking status?**
+Absolutely. Use `list_validators` to see the network-wide list, and `get_validator` with a specific address to see detailed performance and staking metrics.
+
+
 ## Installation & Usage
 
-To install and use the **Kava Explorer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kava-explorer](https://vinkius.com/mcp/kava-explorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kava Explorer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kava-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kava Explorer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kava-explorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

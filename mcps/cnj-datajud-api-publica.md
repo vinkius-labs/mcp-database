@@ -1,7 +1,6 @@
 # CNJ (Datajud API Pública) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cnj-datajud-api-publica)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cnj-datajud-api-publica-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cnj-datajud-api-publica-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cnj-datajud-api-publica)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **CNJ (Datajud API Públ
 > I found 12 processes with movements in the last week. Most are related to 'Labor Appeals'. I can list their numbers and main subjects for you.
 
 
+## ❓ FAQ
+
+**Q: How do I find a process if I only have the CNJ number?**
+Use the `search_process_by_number` tool. You will need the unformatted digits of the process and the specific court alias (e.g., `api_publica_tjsp` for São Paulo State Court).
+
+**Q: Can I list multiple processes from a specific court organ?**
+Yes, use `search_processes_by_class_and_organ`. Provide the court alias, the procedural class code, and the organ code. You can also control the result size and use pagination.
+
+**Q: What is the 'Advanced Search' tool for?**
+The `search_processes_advanced` tool allows you to send a raw Elasticsearch query body. This is useful for complex filtering that isn't covered by standard search tools, such as filtering by specific dates or nested metadata.
+
+
 ## Installation & Usage
 
-To install and use the **CNJ (Datajud API Pública)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cnj-datajud-api-publica](https://vinkius.com/mcp/cnj-datajud-api-publica)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CNJ (Datajud API Pública)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cnj-datajud-api-publica` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CNJ (Datajud API Pública)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cnj-datajud-api-publica": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

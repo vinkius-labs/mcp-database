@@ -1,7 +1,6 @@
 # Onfleet MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/onfleet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/onfleet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/onfleet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/onfleet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Onfleet** MCP server u
 > 5 drivers currently online. Maria Chen — 3 active tasks, last seen at Market St. Alex Rivera — 6 active tasks (at capacity). Tom Wilson — 1 active task, available for more. Sarah Kim — 4 active tasks. Jake Patel — 0 active tasks, standing by at Hub North. Want me to pull Tom's schedule to confirm his shift end time?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent create a complete delivery task with address and recipient?**
+Yes. Pass a JSON object with destination address, recipient name, phone, and any notes — the agent calls the Onfleet Tasks API and returns the created task with its tracking ID. You can also update or delete tasks the same way.
+
+**Q: How does force-completing a task differ from a normal driver completion?**
+Force-completing bypasses the driver app flow — useful when a delivery was made but the driver forgot to mark it done, or for admin overrides. The agent sends the completion details (success/failure and notes) directly to the Onfleet API, updating the task status without driver interaction.
+
+**Q: Can I see which drivers are online right now and their schedules?**
+Yes. List all workers to see their online/offline status, active task count, and current location. Then query any specific worker's schedule to see their shift times and availability windows. Perfect for capacity planning and real-time dispatch decisions.
+
+
 ## Installation & Usage
 
-To install and use the **Onfleet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/onfleet](https://vinkius.com/mcp/onfleet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Onfleet** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `onfleet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Onfleet** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "onfleet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # watsonx Discovery MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/watsonx-discovery)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/watsonx-discovery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/watsonx-discovery-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/watsonx-discovery)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **watsonx Discovery** MC
 > Your project has 4 active NLP enrichments: 1. Sentiment Analysis, 2. Entity Extraction (People, Places, Organizations), 3. Category Classification, and 4. Keyword Extraction. These are applied to all documents during ingestion.
 
 
+## ❓ FAQ
+
+**Q: Can I query my data collections using natural language?**
+Yes. The `query_discovery_content` tool allows your AI agent to perform natural language queries against your watsonx Discovery collections, returning highly relevant results based on IBM's cognitive search engine.
+
+**Q: How do I see what NLP models are being applied to my documents?**
+Use the `list_available_enrichments` tool to see all NLP enrichments (like Sentiment, Entity Extraction, or Category Classification) configured for your project and applied during the ingestion pipeline.
+
+**Q: Can I monitor the ingestion status of a specific document?**
+Absolutely. Using the `get_document_details` tool, you can check the ingestion status and technical metadata for any specific document ID, ensuring your data is correctly indexed and searchable.
+
+
 ## Installation & Usage
 
-To install and use the **watsonx Discovery** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/watsonx-discovery](https://vinkius.com/mcp/watsonx-discovery)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **watsonx Discovery** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `watsonx-discovery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **watsonx Discovery** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "watsonx-discovery": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

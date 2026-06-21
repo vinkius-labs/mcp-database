@@ -1,7 +1,6 @@
 # Supabase Vector MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/supabase-vector)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/supabase-vector-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/supabase-vector-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/supabase-vector)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Running `insert_table_rows` natively perfectly. Data has been embedded successfu
 Rows correctly instantiated.
 
 
+## ❓ FAQ
+
+**Q: Are embedding arrays processed efficiently during intensive vector similarity matching?**
+The integration specifically manages large semantic arrays seamlessly by calling lightweight Postgres RPC configurations locally natively internally securely.
+
+**Q: How is risk managed securely when manipulating and clearing root analytical vectors?**
+Executing `delete_table_rows` operates systematically relying inherently on exactly structured string conditions implicitly naturally precisely eliminating ambiguity securely effectively actively strictly smoothly securely precisely correctly reliably locally dynamically successfully effortlessly intelligently gracefully elegantly safely accurately directly comprehensively natively.
+
+**Q: Which distance metrics does the vector search support?**
+pgvector supports cosine similarity, inner product, and L2 (Euclidean) distance. The metric used depends on how your RPC function and index are configured in PostgreSQL — the AI passes arguments accordingly.
+
+
 ## Installation & Usage
 
-To install and use the **Supabase Vector** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/supabase-vector](https://vinkius.com/mcp/supabase-vector)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Supabase Vector** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `supabase-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Supabase Vector** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "supabase-vector": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

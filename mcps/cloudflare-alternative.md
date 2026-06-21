@@ -1,7 +1,6 @@
 # Cloudflare MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudflare-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudflare-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudflare-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudflare-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -115,12 +114,52 @@ Here are some examples of how you can interact with the **Cloudflare** MCP serve
 > Your production zone has 5 active firewall rules: 1) Block traffic from known bots (action: Block, enabled), 2) Challenge requests from high-risk countries (action: Challenge, enabled), 3) Allow internal team IPs (action: Allow, enabled), 4) Rate limit /api endpoints to 1000 req/5min per IP (action: Challenge, enabled), 5) Log all 4xx responses (action: Log, enabled). Would you like the full filter expressions for any rule?
 
 
+## ❓ FAQ
+
+**Q: How do I create a Cloudflare API Token?**
+Log in to the [**Cloudflare dashboard**](https://dash.cloudflare.com/profile/api-tokens), go to **My Profile** > **API Tokens** > **Create Token**. Use the 'Edit zone DNS' template or create a custom token with permissions for Zones, DNS, Workers, KV, Pages and Firewall as needed. Copy the token immediately — it won't be shown again.
+
+**Q: Can I modify DNS records for multiple domains?**
+Yes! First use `list_zones` to find the zone ID for each domain. Then use `create_dns_record`, `update_dns_record` or `delete_dns_record` with the appropriate zone_id. You can manage DNS records across all zones your API token has access to.
+
+**Q: Where do I find my Cloudflare Account ID?**
+Your Account ID appears in the Cloudflare dashboard URL after logging in (e.g. `dash.cloudflare.com/<account_id>/...`). You can also find it in Organization Settings. The Account ID is needed for Workers, KV namespaces and Pages project queries.
+
+
 ## Installation & Usage
 
-To install and use the **Cloudflare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cloudflare-alternative](https://vinkius.com/mcp/cloudflare-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cloudflare** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cloudflare-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cloudflare** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cloudflare-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

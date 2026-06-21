@@ -1,7 +1,6 @@
 # Systems Thinking Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/systems-thinking-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/systems-thinking-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/systems-thinking-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/systems-thinking-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Systems Thinking Prove
 > Verdict: SYSTEMS_THINKING_PROVEN. You mapped the loops, traced the cold DB effect, and isolated the real constraint.
 
 
+## ❓ FAQ
+
+**Q: Why force the identification of feedback loops?**
+Systems are not linear. If you fix a bottleneck without mapping the reinforcing loop, the system will just break faster somewhere else.
+
+**Q: What is a second-order effect?**
+The consequence of the consequence. Fixing the DB makes the app faster, which draws more users, which crashes the cache.
+
+**Q: How do you prove math in systems thinking?**
+By calculating throughput, capacity, or latency limits (e.g. proving a 5k RPS upstream source will crash a 1k RPS bottleneck database).
+
+
 ## Installation & Usage
 
-To install and use the **Systems Thinking Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/systems-thinking-prover](https://vinkius.com/mcp/systems-thinking-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Systems Thinking Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `systems-thinking-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Systems Thinking Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "systems-thinking-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

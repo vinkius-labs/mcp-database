@@ -1,7 +1,6 @@
 # Deterministic Base Converter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-base-converter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-base-converter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-base-converter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-base-converter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -55,12 +54,52 @@ Here are some examples of how you can interact with the **Deterministic Base Con
 > Using the convert_base tool (value='z9', fromBase=36, toBase=8): The converted string is '2371'.
 
 
+## ❓ FAQ
+
+**Q: Why do AI models fail at converting large hexadecimal numbers?**
+Standard Javascript and LLMs often rely on 64-bit floating point math (`Number.MAX_SAFE_INTEGER`), which truncates numbers larger than 9 quadrillion. This tool uses `BigInt` algorithmic engines to bypass hardware limits, securing precision for any sequence length.
+
+**Q: What does arbitrary base (2-36) mean?**
+It means you are not limited to just Binary (2), Octal (8), or Hex (16). You can convert a Base 5 sequence directly into Base 13 if necessary. The engine maps combinations of 0-9 and a-z mathematically.
+
+**Q: Does it validate characters properly?**
+Yes. If you attempt to convert a Binary string containing the number '2', or a Hexadecimal string containing 'g', the engine immediately throws a mathematical boundary error to prevent data corruption.
+
+
 ## Installation & Usage
 
-To install and use the **Deterministic Base Converter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deterministic-base-converter](https://vinkius.com/mcp/deterministic-base-converter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deterministic Base Converter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deterministic-base-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deterministic Base Converter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deterministic-base-converter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

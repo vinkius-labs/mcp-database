@@ -1,7 +1,6 @@
 # Sumsub MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sumsub)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sumsub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sumsub-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sumsub)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Sumsub** MCP server us
 > Generated token: 'sb:eyJhbG...'. You can use this token to initialize the Sumsub WebSDK for 'user_456'.
 
 
+## ❓ FAQ
+
+**Q: Can I check if a specific user has passed their KYC verification?**
+Yes. Use the `get_applicant_status` tool with the Applicant ID. The AI will return the current verification stage and whether they are approved, pending, or rejected.
+
+**Q: How do I provide a verification link to my users?**
+You can use the `generate_access_token` tool. It provides the necessary token to initialize the Sumsub WebSDK for a specific User ID and verification level.
+
+**Q: Is it possible to upload a user's ID document directly through the agent?**
+Yes, by using the `add_document` tool. You will need the Applicant ID, the document type (like PASSPORT), the country code, and the base64 encoded content of the file.
+
+
 ## Installation & Usage
 
-To install and use the **Sumsub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sumsub](https://vinkius.com/mcp/sumsub)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sumsub** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sumsub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sumsub** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sumsub": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

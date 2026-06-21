@@ -1,7 +1,6 @@
 # Lyko MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lyko)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lyko-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lyko-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lyko)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **Lyko** MCP server usin
 > Checking Netherlands transit operators... I found 8 operators: NS (Nederlandse Spoorwegen) — national rail network, GVB — Amsterdam public transport (metro, tram, bus), RET — Rotterdam metro and tram, HTM — The Hague transit, Arriva — regional buses and trains, Connexxion — regional buses, Breng — Arnhem-Nijmegen regional transit, and Qbuzz — Groningen-Drenthe buses. Now checking NS network status: NS is operating normally today with all major intercity lines running on schedule. No reported disruptions, strikes, or planned works affecting main routes. Minor delays of 2-3 minutes on regional services in the Limburg area due to maintenance. High-speed international services (Thalys, Eurostar to London) are also running normally. Would you like me to check any other operator?
 
 
+## ❓ FAQ
+
+**Q: Can my AI plan a complete multimodal trip from my hotel to a tourist attraction using public transit?**
+Yes! Use the `plan_trip` tool with your hotel address or name as the origin and the tourist attraction as the destination. The Lyko routing engine will return complete door-to-door itineraries combining buses, trains, subways, trams, and walking segments with departure times, arrival times, total duration, number of transfers, line names, operators, walking distances, and real-time delay information. You can also specify preferred transport modes or a desired departure time. Perfect for tourist planning, business travel, and navigating unfamiliar European cities.
+
+**Q: How do I check real-time departures and arrivals at a specific train station or bus stop?**
+First, use `search_stops` to find the stop by name (e.g., "Gare du Nord" or "Alexanderplatz"). Once you have the stop ID, use `get_departures` to see upcoming services with ETAs, platforms, and delay indicators, or `get_arrivals` to track incoming services. The results include line names, destinations, scheduled vs. real-time times, and operator information. This is perfect for passenger pickup coordination, connection planning, and monitoring service reliability.
+
+**Q: Can I check if there are any service disruptions or strikes affecting transit operators in France or Germany?**
+Absolutely! Use `get_operators` with the country filter (e.g., "FR" for France, "DE" for Germany) to list all available operators, then use `get_network_status` with the operator ID (e.g., "sncf" for SNCF, "db" for Deutsche Bahn) to check current service disruptions, planned works, strike notifications, weather impacts, and line closures. This gives you real-time awareness of transit reliability across 300+ European operators. AI agents can proactively alert travelers to service issues before trip planning.
+
+
 ## Installation & Usage
 
-To install and use the **Lyko** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lyko](https://vinkius.com/mcp/lyko)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lyko** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lyko` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lyko** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lyko": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

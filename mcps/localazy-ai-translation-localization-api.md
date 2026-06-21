@@ -1,7 +1,6 @@
 # Localazy (AI Translation & Localization API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/localazy-ai-translation-localization-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/localazy-ai-translation-localization-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/localazy-ai-translation-localization-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/localazy-ai-translation-localization-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Localazy (AI Translati
 > The glossary term 'Workspace' has been successfully created in project 'p456' with the provided description to help your translators.
 
 
+## ❓ FAQ
+
+**Q: How can I check which file formats are supported for import?**
+You can use the `list_import_formats` tool. It will return a comprehensive list of all supported file types and their specific parameters for the Localazy API.
+
+**Q: Can I update the context or character limit for a specific translation key?**
+Yes! Use the `update_source_key` tool. You can modify properties like the character limit, context comments, and even mark keys as hidden or deprecated.
+
+**Q: How do I retrieve the translations for a specific file in a target language?**
+Use the `list_file_content` tool by providing the Project ID, File ID, and the target language code. It will return the keys and their corresponding translations.
+
+
 ## Installation & Usage
 
-To install and use the **Localazy (AI Translation & Localization API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/localazy-ai-translation-localization-api](https://vinkius.com/mcp/localazy-ai-translation-localization-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Localazy (AI Translation & Localization API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `localazy-ai-translation-localization-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Localazy (AI Translation & Localization API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "localazy-ai-translation-localization-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

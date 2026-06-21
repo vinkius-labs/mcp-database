@@ -1,7 +1,6 @@
 # Snowtrace (Avalanche Explorer) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snowtrace-avalanche-explorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/snowtrace-avalanche-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/snowtrace-avalanche-explorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snowtrace-avalanche-explorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Snowtrace (Avalanche E
 > I have retrieved the ABI for the verified contract. It contains 24 functions, including `swapExactTokensForTokens` and `addLiquidity`. I can help you format a specific call if needed.
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance of multiple Avalanche addresses at once?**
+Yes. Use the `get_avax_balance_multi` tool and provide a comma-separated list of up to 20 addresses to get all balances in a single response.
+
+**Q: How do I track specific token movements like USDT or NFTs?**
+You can use `get_erc20_transfers` for standard tokens or `get_erc721_transfers` for NFTs. You can filter by wallet address or specific contract address to narrow down the results.
+
+**Q: Is it possible to see the source code of a verified contract?**
+Absolutely. The `get_contract_source_code` tool retrieves the verified Solidity source code and metadata for any contract address that has been verified on Snowtrace.
+
+
 ## Installation & Usage
 
-To install and use the **Snowtrace (Avalanche Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/snowtrace-avalanche-explorer](https://vinkius.com/mcp/snowtrace-avalanche-explorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Snowtrace (Avalanche Explorer)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `snowtrace-avalanche-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Snowtrace (Avalanche Explorer)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "snowtrace-avalanche-explorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

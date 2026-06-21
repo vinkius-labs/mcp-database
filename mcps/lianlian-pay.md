@@ -1,7 +1,6 @@
 # LianLian Pay MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lianlian-pay)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lianlian-pay-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lianlian-pay-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lianlian-pay)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **LianLian Pay** MCP ser
 > I've listed your 5 most recent settlements. The largest was for $45,000 on April 8th. Total settled amount for this week is $112,000. Should I check for any failed withdrawal attempts?
 
 
+## ❓ FAQ
+
+**Q: How do I find my LianLian Merchant ID?**
+Your Merchant ID is an 18-digit number starting with '14', provided by LianLian Pay after your account is successfully registered and verified. You can find it in the LianLian Global portal dashboard.
+
+**Q: How do I set up the RSA keys for API calls?**
+Generate a 2048-bit RSA key pair. Upload your Public Key to the LianLian Global portal under [Developer Settings]. Use your Private Key in the credentials section of this server to sign requests.
+
+**Q: Can I initiate a refund through the agent?**
+Yes. Use the `refund_order` tool with the original order ID and the refund amount. Your agent will initiate the request with LianLian Pay and monitor the processing status for you.
+
+
 ## Installation & Usage
 
-To install and use the **LianLian Pay** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lianlian-pay](https://vinkius.com/mcp/lianlian-pay)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LianLian Pay** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lianlian-pay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LianLian Pay** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lianlian-pay": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

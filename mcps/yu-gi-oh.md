@@ -1,7 +1,6 @@
 # Yu-Gi-Oh MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yu-gi-oh)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/yu-gi-oh-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/yu-gi-oh-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yu-gi-oh)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Yu-Gi-Oh** MCP server 
 > Drawing a random card... You got 'Pot of Greed'! It's a Spell Card that allows you to draw 2 cards from your deck.
 
 
+## ❓ FAQ
+
+**Q: How can I find the specific effects and stats of a card by its name?**
+Use the `get_card_info` tool with the `name` or `fname` parameter. The agent will return full metadata including ATK/DEF, Level, Type, and the official card text.
+
+**Q: Is there a way to see all the different card themes or archetypes available in the game?**
+Yes! Run the `list_archetypes` action. It will provide a comprehensive list of all archetypes currently recognized in the database, such as 'Elemental HERO' or 'Blue-Eyes'.
+
+**Q: How do I know if the card data is up to date with the latest releases?**
+You can use the `check_db_version` tool. It returns the current database version and the timestamp of the last update from the YGOPRODeck servers.
+
+
 ## Installation & Usage
 
-To install and use the **Yu-Gi-Oh** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/yu-gi-oh](https://vinkius.com/mcp/yu-gi-oh)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Yu-Gi-Oh** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `yu-gi-oh` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Yu-Gi-Oh** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "yu-gi-oh": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

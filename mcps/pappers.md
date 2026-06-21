@@ -1,7 +1,6 @@
 # Pappers MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pappers)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pappers-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pappers-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pappers)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Pappers** MCP server u
 > Found 342 active software companies in the Lyon metropolitan area (code NAF 6201Z). 89 were created in the last 2 years. Top 5 by revenue: "Axway Software" (EUR 298M), "Esker SA" (EUR 178M), "Cegid Group" (EUR 156M), "Bonitasoft" (EUR 12M), and "Hardis Group" (EUR 9.4M). Average company age: 8.7 years.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the financial details for a company by its SIREN?**
+Yes! Use the `get_company_financials` tool with the 9-digit SIREN. Your agent will respond with complete metadata, including turnover, profit, and debt ratios in seconds.
+
+**Q: How do I find my Pappers API Key?**
+Log in to your Pappers account, navigate to the [**API Subscription**](https://www.pappers.fr/api) page, and you will find your unique secret token there.
+
+**Q: Does this work for international companies?**
+This MCP server specifically targets the Pappers France API. For international European company data, Pappers provides a separate API (pappers.in).
+
+
 ## Installation & Usage
 
-To install and use the **Pappers** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pappers](https://vinkius.com/mcp/pappers)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pappers** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pappers` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pappers** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pappers": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

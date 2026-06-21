@@ -1,7 +1,6 @@
 # Tomorrow.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomorrowio-extended)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tomorrowio-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tomorrowio-extended-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomorrowio-extended)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Tomorrow.io** MCP serv
 > Fetching air quality data for Beijing... The AQI is currently 120 (Unhealthy for Sensitive Groups), primarily due to PM2.5 levels. I recommend minimizing outdoor activities if you are sensitive.
 
 
+## ❓ FAQ
+
+**Q: Can I get weather updates for a specific set of coordinates?**
+Yes! You can provide coordinates (latitude, longitude) in the `location` parameter for any tool to get hyper-local data for that exact point.
+
+**Q: What timesteps are supported for weather forecasts?**
+Tomorrow.io supports `1m` (minute-by-minute), `1h` (hourly), and `1d` (daily) timesteps. Specify your preference in the `timesteps` parameter of the `get_weather_forecast` tool.
+
+**Q: Does the air quality tool provide specific pollutant levels?**
+Yes, the `get_air_quality` tool retrieves data for various pollutants including PM2.5, PM10, O3, NO2, and CO, along with the overall Air Quality Index (AQI).
+
+
 ## Installation & Usage
 
-To install and use the **Tomorrow.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tomorrowio-extended](https://vinkius.com/mcp/tomorrowio-extended)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tomorrow.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tomorrowio-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tomorrow.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tomorrowio-extended": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # MailerLite MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailerlite-alternative-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailerlite-alternative-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailerlite-alternative-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailerlite-alternative-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -117,12 +116,52 @@ Here are some examples of how you can interact with the **MailerLite** MCP serve
 > You have 4 groups configured: 'Newsletter' (ID: 111), 'VIP Customers' (ID: 222), 'Webinar Leads' (ID: 333), and 'Uncategorized' (ID: 444).
 
 
+## ❓ FAQ
+
+**Q: Can I find a specific subscriber using their email address?**
+Yes! Use the `get_subscriber` tool and provide the email address. The agent will return the subscriber's ID, status, and custom field data.
+
+**Q: How do I see what a subscriber has been doing recently?**
+You can use the `get_subscriber_activity` tool with the subscriber's ID. This will show you opens, clicks, and other interactions recorded in MailerLite.
+
+**Q: Is there a way to comply with GDPR 'Right to be Forgotten' requests?**
+Absolutely. Use the `forget_subscriber` tool with the subscriber's ID to completely and permanently delete their data from your account.
+
+
 ## Installation & Usage
 
-To install and use the **MailerLite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mailerlite-alternative-1](https://vinkius.com/mcp/mailerlite-alternative-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MailerLite** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mailerlite-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MailerLite** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mailerlite-alternative-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

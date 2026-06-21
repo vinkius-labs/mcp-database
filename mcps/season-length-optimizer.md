@@ -1,7 +1,6 @@
 # Season Length Optimizer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/season-length-optimizer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/season-length-optimizer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/season-length-optimizer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/season-length-optimizer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Season Length Optimize
 > The recommended duration with the 20% comfort buffer is 36 days.
 
 
+## ❓ FAQ
+
+**Q: How does the tool calculate completion days?**
+It uses `estimate_completion_days` to divide total required XP by the product of XP per hour and median daily hours, providing both steady and accelerated (rush) estimates.
+
+**Q: What is the purpose of the comfort buffer?**
+The `get_buffer_duration` tool adds a hardcoded 20% margin to your base days to account for player fatigue or unexpected content droughts.
+
+**Q: Can I plan specific seasonal deadlines?**
+Yes, use `calculate_daily_xp_requirement` to determine exactly how much XP players must earn daily to reach the final tier by your target date.
+
+
 ## Installation & Usage
 
-To install and use the **Season Length Optimizer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/season-length-optimizer](https://vinkius.com/mcp/season-length-optimizer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Season Length Optimizer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `season-length-optimizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Season Length Optimizer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "season-length-optimizer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

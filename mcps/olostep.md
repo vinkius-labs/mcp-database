@@ -1,7 +1,6 @@
 # Olostep MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/olostep)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/olostep-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/olostep-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/olostep)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Olostep** MCP server u
 > This month: 1,245 pages scraped, 82 batch jobs, 340 MB bandwidth used. You have 8,755 credits remaining on your plan. Would you like to see agent-level breakdown?
 
 
+## ❓ FAQ
+
+**Q: How do I scrape a web page via AI?**
+Use the `scrape_url` tool with the target URL and optional format (markdown, html, or text). The content is extracted and returned instantly.
+
+**Q: Can I scrape multiple URLs at once?**
+Yes. Use `create_batch` with comma-separated URLs to submit a batch job. Track progress with `get_batch` and retrieve results with `get_batch_results`.
+
+**Q: What are scraping agents and how do I use them?**
+Agents are reusable scraping configurations with custom extraction rules. Use `create_agent` to set one up and `list_agents` to manage them.
+
+
 ## Installation & Usage
 
-To install and use the **Olostep** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/olostep](https://vinkius.com/mcp/olostep)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Olostep** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `olostep` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Olostep** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "olostep": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

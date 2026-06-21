@@ -1,7 +1,6 @@
 # Paycove MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paycove)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/paycove-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/paycove-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paycove)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Paycove** MCP server u
 > TechStart has 2 paid invoices and 1 sent invoice awaiting payment. Their last payment of $1,500 was received 2 days ago.
 
 
+## ❓ FAQ
+
+**Q: Can I automatically convert quotes?**
+Yes, you can directly convert an accepted quote into an invoice for immediate payment collection using the Paycove MCP.
+
+**Q: How do I find overdue invoices?**
+The MCP provides dedicated tools to list overdue invoices or filter all invoices strictly by the 'overdue' status.
+
+**Q: Can I manage the product catalog?**
+Absolutely. You can list all products, get pricing and tax settings, and even create new products directly through the agent.
+
+
 ## Installation & Usage
 
-To install and use the **Paycove** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/paycove](https://vinkius.com/mcp/paycove)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Paycove** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `paycove` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Paycove** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "paycove": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

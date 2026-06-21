@@ -1,7 +1,6 @@
 # DeepOpinion (No-code NLP & Text AI API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepopinion-no-code-nlp-text-ai-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deepopinion-no-code-nlp-text-ai-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deepopinion-no-code-nlp-text-ai-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepopinion-no-code-nlp-text-ai-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **DeepOpinion (No-code N
 3. 'I want a refund' -> Category: Billing & Payments
 
 
+## ❓ FAQ
+
+**Q: How can I see which NLP models are available in my account?**
+You can use the `list_models` tool. Your AI agent will retrieve a complete list of all custom models you have trained or have access to in DeepOpinion.
+
+**Q: Can I process multiple sentences at once to save time?**
+Yes! Use the `predict_batch` tool. It allows you to send an array of text strings to a specific `model_id`, making it perfect for analyzing large datasets quickly.
+
+**Q: What information do I need to run a prediction?**
+To use the `predict` tool, you need the `model_id` (which you can find using `list_models`) and the `text` you want to analyze.
+
+
 ## Installation & Usage
 
-To install and use the **DeepOpinion (No-code NLP & Text AI API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deepopinion-no-code-nlp-text-ai-api](https://vinkius.com/mcp/deepopinion-no-code-nlp-text-ai-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DeepOpinion (No-code NLP & Text AI API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deepopinion-no-code-nlp-text-ai-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DeepOpinion (No-code NLP & Text AI API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deepopinion-no-code-nlp-text-ai-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

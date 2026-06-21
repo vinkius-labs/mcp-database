@@ -1,7 +1,6 @@
 # Media Mix Efficiency Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/media-mix-efficiency-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/media-mix-efficiency-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/media-mix-efficiency-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/media-mix-efficiency-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -51,12 +50,52 @@ Here are some examples of how you can interact with the **Media Mix Efficiency C
 > The system will use `rank_channel_efficiency` setting the primary goal to 'Lead Generation Volume'. It then feeds that ranking to `propose_budget_reallocation` using $50,000 as the total budget, providing a concrete spending plan.
 
 
+## ❓ FAQ
+
+**Q: How do I determine if a channel is truly profitable?**
+Profitability requires calculating the Return On Ad Spend (ROAS). You must first run `calculate_channel_metrics` to get the ROAS for each channel. Then, use `rank_channel_efficiency` to get a composite score that weights this ROAS against your primary goal.
+
+**Q: What is the final step after analyzing channel metrics?**
+The last and most critical step is using `propose_budget_reallocation`. This tool takes your optimal efficiency rankings (from `rank_channel_efficiency`) and mathematically determines the precise amount of budget each channel should receive to maximize total conversions.
+
+**Q: Can this tool handle different optimization goals (e.g., leads vs. revenue)?**
+Yes. The `rank_channel_efficiency` tool accepts a `primaryGoal` parameter, allowing you to instruct the system whether the ranking should prioritize 'Lead Generation Volume' or 'Revenue Maximization', ensuring the subsequent budget proposal is tailored to your business objective.
+
+
 ## Installation & Usage
 
-To install and use the **Media Mix Efficiency Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/media-mix-efficiency-calculator](https://vinkius.com/mcp/media-mix-efficiency-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Media Mix Efficiency Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `media-mix-efficiency-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Media Mix Efficiency Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "media-mix-efficiency-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

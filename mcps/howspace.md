@@ -1,7 +1,6 @@
 # Howspace MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/howspace)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/howspace-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/howspace-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/howspace)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Howspace** MCP server 
 > Your profile: Sarah Chen (sarah@company.com), Role: Admin, Organization: Acme Corp. Active campaigns: 4. 1) 'New Hire Welcome' — triggers on participant addition to 'Employee Onboarding 2025', sends welcome email + first assignment. 2) 'Weekly Engagement Pulse' — runs every Monday, surveys all active workspace participants. 3) 'Leadership Reflection' — biweekly prompt in 'Leadership Development' workspace. 4) 'Workshop Reminder' — 24h before scheduled sessions. Total campaign reach: 145 participants across all workspaces. Would you like to create a new workspace or add participants?
 
 
+## ❓ FAQ
+
+**Q: Can I create a workspace and add participants through the AI agent?**
+Yes. Use `create_workspace` with a name to create a new collaborative workspace. Then use `add_participant` with the workspace ID, participant email, and optional first/last name to invite members. Use `list_workspaces` to see all existing workspaces and `list_participants` to review who is already in a workspace.
+
+**Q: Does Howspace require a custom Base URL in addition to the API Key?**
+Yes. Howspace instances are hosted on custom subdomains, so you need to provide your **Base URL** (e.g., `https://your-org.howspace.com`) along with the **API Key**. The API Key is sent as a Bearer token, and all requests are routed to your specific Howspace instance.
+
+**Q: Can I view all campaigns running in my Howspace account?**
+Yes. The `list_campaigns` tool retrieves all campaigns configured in your account, including engagement campaigns, communication sequences, and notification triggers. Use `get_me` to verify your authenticated identity and permissions.
+
+
 ## Installation & Usage
 
-To install and use the **Howspace** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/howspace](https://vinkius.com/mcp/howspace)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Howspace** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `howspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Howspace** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "howspace": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

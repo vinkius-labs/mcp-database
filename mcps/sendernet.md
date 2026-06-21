@@ -1,7 +1,6 @@
 # Sender.net MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sendernet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sendernet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sendernet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sendernet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Sender.net** MCP serve
 > Campaign created: "New Feature: AI-Powered Analytics Dashboard". Target group: Product Updates (6,400 subscribers). Subject: "Introducing AI Analytics - Your data, intelligently visualized". Preheader: "Discover patterns you never knew existed". Content: hero image, feature highlights (3 key benefits), CTA "Try It Now". A/B test configured: Subject line A vs B (50/50 split, winner after 4 hours). Scheduled: Tomorrow 10:00 AM (optimal send time). Estimated opens: 2,560 (40% based on group history).
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically add a new subscriber to a specific group by providing their email?**
+Yes! Use the `create_subscriber` tool. Provide the email address and an array of Group IDs, and your agent will create the record and assign them instantly.
+
+**Q: How do I check the performance statistics for a recently sent campaign?**
+Simply ask the agent to run the `get_campaign_stats` action with the Campaign ID. It will retrieve the detailed metadata, including opens, clicks, and bounces.
+
+**Q: How do I find my Sender.net API Token?**
+Log in to your Sender.net dashboard, navigate to **Settings** > **API access tokens**, and you will find or generate your unique Bearer token there.
+
+
 ## Installation & Usage
 
-To install and use the **Sender.net** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sendernet](https://vinkius.com/mcp/sendernet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sender.net** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sendernet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sender.net** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sendernet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

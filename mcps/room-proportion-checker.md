@@ -1,7 +1,6 @@
 # Room Proportion Checker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/room-proportion-checker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/room-proportion-checker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/room-proportion-checker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/room-proportion-checker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -51,12 +50,52 @@ Here are some examples of how you can interact with the **Room Proportion Checke
 > Running through `calculate_axis_balance_ratio` and `evaluate_floor_area_index` suggests ideal proportions are close to square. For 4x5m, the current dimensions yield a good FAI score, but increasing the height would improve overall balance.
 
 
+## ❓ FAQ
+
+**Q: What does 'axis balance' mean for a room?**
+Axis balance checks if the Width, Length, and Height are proportionally similar. Using the `calculate_axis_balance_ratio` tool gives you a score that shows how close your room is to an ideal 1:1:1 volume ratio. A low score suggests significant skewing.
+
+**Q: How does the service check for floor suitability?**
+The `evaluate_floor_area_index` tool assesses the relationship between the floor's surface area and its ceiling height. This ensures that the room doesn't feel too shallow or excessively vast for its vertical scale, which is crucial for proper human use.
+
+**Q: What is the final overall grade?**
+The `classify_room_proportions` tool synthesizes all checks (axis balance, FAI, minimum clearances) into one comprehensive report. It gives a final grade and actionable suggestions on how to improve the room's dimensions.
+
+
 ## Installation & Usage
 
-To install and use the **Room Proportion Checker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/room-proportion-checker](https://vinkius.com/mcp/room-proportion-checker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Room Proportion Checker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `room-proportion-checker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Room Proportion Checker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "room-proportion-checker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

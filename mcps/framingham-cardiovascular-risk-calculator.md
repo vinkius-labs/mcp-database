@@ -1,7 +1,6 @@
 # Framingham Cardiovascular Risk Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/framingham-cardiovascular-risk-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/framingham-cardiovascular-risk-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/framingham-cardiovascular-risk-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/framingham-cardiovascular-risk-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -50,12 +49,52 @@ Here are some examples of how you can interact with the **Framingham Cardiovascu
 > I recommend running both `calculate_ten_year_risk` and `estimate_vascular_age`. The risk calculation will provide the 10-year probability, while the vascular age tool provides insight into your current arterial stress levels.
 
 
+## ❓ FAQ
+
+**Q: What inputs does the risk calculator need?**
+The system requires several key metrics, including age, sex, total cholesterol, HDL-C, systolic blood pressure, smoking status, and diabetes diagnosis. The `calculate_ten_year_risk` tool uses all these inputs to generate a comprehensive score.
+
+**Q: Is the calculated risk a definitive diagnosis?**
+No. The score is an estimation based on medical formulas and population data. Always consult a healthcare professional. Tools like `calculate_ten_year_risk` provide predictive metrics, not diagnoses.
+
+**Q: What is 'vascular age' and how is it calculated?**
+Vascular age estimates the apparent wear and tear on your arteries, independent of chronological age. The `estimate_vascular_age` tool uses cholesterol ratios, blood pressure, and age to calculate this value, giving a deeper picture of your cardiovascular health.
+
+
 ## Installation & Usage
 
-To install and use the **Framingham Cardiovascular Risk Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/framingham-cardiovascular-risk-calculator](https://vinkius.com/mcp/framingham-cardiovascular-risk-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Framingham Cardiovascular Risk Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `framingham-cardiovascular-risk-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Framingham Cardiovascular Risk Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "framingham-cardiovascular-risk-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

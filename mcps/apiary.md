@@ -1,7 +1,6 @@
 # Apiary MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apiary)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apiary-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apiary-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apiary)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Apiary** MCP server us
 > I have successfully published the updated markdown code to 'users-api'. Apiary has verified the syntax to be valid Blueprint, and the mock server along with the documentation URL has been refreshed automatically.
 
 
+## ❓ FAQ
+
+**Q: Can the agent fetch the exact mock server endpoints for one of my APIs?**
+Yes. You can use the `get_doc_url` capability to retrieve both the public facing documentation url and the private mock server endpoint string. Your agent can immediately use this url to simulate requests internally using other modules or tests.
+
+**Q: Am I able to update the Blueprint markup completely through the agent?**
+Absolutely. Instruct your AI agent to fetch the blueprint with `get_api`. Once read into context, prompt the agent to make your desired changes (e.g. 'Add a new POST route for user creation'). Then, instruct it to use `publish_blueprint` to upload the newly revised markdown.
+
+**Q: How does the team feature list function mapping work?**
+Apiary enables collaboration. Utilizing `list_teams`, the agent finds the slugs of your organizations. Then, using `list_team_apis`, it fetches all collaborative APIs available for that precise team. This hierarchy avoids hallucinating random endpoint repositories.
+
+
 ## Installation & Usage
 
-To install and use the **Apiary** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/apiary](https://vinkius.com/mcp/apiary)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Apiary** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `apiary` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Apiary** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "apiary": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

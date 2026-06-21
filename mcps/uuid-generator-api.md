@@ -1,7 +1,6 @@
 # UUID Generator API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uuid-generator-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uuid-generator-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uuid-generator-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uuid-generator-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **UUID Generator API** M
 > I've checked the status of the UUID Generator service! It is currently identified as 'active' and fully operational. I can assist you with batch identifier generation for your technical projects.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Apify API Key?**
+Log in to your [**Apify dashboard**](https://console.apify.com/settings/integrations), and you will find your Personal Access Token under 'Settings' > 'Integrations'. Copy and paste it below.
+
+**Q: What UUID versions are supported?**
+The API currently supports the most common versions: v1 (time-based) and v4 (randomly generated).
+
+**Q: Can I generate more than one UUID at a time?**
+Yes. Use the `generate_uuids` tool and provide the `count` parameter (e.g., 50). Your agent will return a batch of unique identifiers instantly.
+
+
 ## Installation & Usage
 
-To install and use the **UUID Generator API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/uuid-generator-api](https://vinkius.com/mcp/uuid-generator-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **UUID Generator API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `uuid-generator-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **UUID Generator API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "uuid-generator-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

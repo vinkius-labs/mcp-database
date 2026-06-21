@@ -1,7 +1,6 @@
 # Spocket MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spocket)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spocket-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spocket-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spocket)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Spocket** MCP server u
 > Order successfully created! The Order ID is ord_556677. You can track its status using this ID.
 
 
+## ❓ FAQ
+
+**Q: Can I check the current stock level for a specific product?**
+Yes! Use the `get_inventory` tool with the product ID. The agent will return the real-time stock levels for that item or its variants.
+
+**Q: How do I track the status of a customer's order?**
+Simply provide the Order ID to the `get_order` tool. Your AI agent will retrieve the current fulfillment status and order details from Spocket.
+
+**Q: Can I filter products by a specific category?**
+Yes, the `list_products` tool allows you to pass a `category` parameter to narrow down the results to only the items you are interested in.
+
+
 ## Installation & Usage
 
-To install and use the **Spocket** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/spocket](https://vinkius.com/mcp/spocket)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Spocket** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `spocket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Spocket** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "spocket": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

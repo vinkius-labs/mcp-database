@@ -1,7 +1,6 @@
 # Calendly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/calendly-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/calendly-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/calendly-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/calendly-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -104,12 +103,55 @@ Here are some examples of how you can interact with the **Calendly** MCP server 
 > Done! I've created a scheduling link for your '30 Minute Meeting' event type. The URL is https://calendly.com/schedule/abc123xyz. Anyone with this link can book a 30-minute slot directly without going through the Calendly website.
 
 
+## ❓ FAQ
+
+**Q: How do I create a Calendly Personal Access Token?**
+Log in to the [**Calendly Dashboard**](https://calendly.com), go to **Integrations & Settings > API & Webhooks**, and generate a Personal Access Token. Copy the token immediately — it won't be shown again.
+
+**Q: Can I see who booked a meeting?**
+Yes! Use `list_invitees` to see all attendees across your events, or `list_scheduled_events` to see upcoming meetings with their invitee URIs. Then use `get_invitee` with the invitee UUID to get their full name, email, timezone and answers to custom questions.
+
+**Q: Can I check availability before booking?**
+Yes! Use `get_user_availability` with the user's URI, start time and end time (ISO 8601 UTC). It returns the user's scheduling rules, busy times and date overrides so you can identify open slots before creating a booking.
+
+**Q: Can I set up webhooks for new bookings?**
+Yes! Use `create_webhook` with your callback URL, events like 'invitee.created' and 'invitee.canceled', and the scope (your user or organization URI). Optionally provide a signing key for verification. You can audit existing webhooks with `list_webhooks`.
+
+
 ## Installation & Usage
 
-To install and use the **Calendly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/calendly-alternative](https://vinkius.com/mcp/calendly-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Calendly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `calendly-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Calendly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "calendly-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

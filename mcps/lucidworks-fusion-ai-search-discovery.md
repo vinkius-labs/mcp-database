@@ -1,7 +1,6 @@
 # Lucidworks Fusion (AI Search & Discovery) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lucidworks-fusion-ai-search-discovery)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lucidworks-fusion-ai-search-discovery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lucidworks-fusion-ai-search-discovery-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lucidworks-fusion-ai-search-discovery)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Lucidworks Fusion (AI 
 > Signal posted successfully. I've sent the click event for 'doc-987' to the Fusion signal pipeline for the Support app. This will be used to improve future search results for similar queries.
 
 
+## ❓ FAQ
+
+**Q: Can my agent help improve search relevance by posting signals?**
+Yes. Use the `lw.post_signal` tool to feed conversion or click events into Fusion. These signals are used by the machine learning models to identify high-value results and re-rank them for better precision automatically.
+
+**Q: How do I check which AI models are active in my query pipeline?**
+The `lw.list_query_profiles` tool retrieves all defined profiles in your gateway. Your agent will expose the exact AI models and routing configurations assigned to each profile, helping you audit your search logic.
+
+**Q: Can I index new documents directly through a conversation?**
+Absolutely. Use the `lw.index_documents` tool by providing a JSON array of your data. Your agent will synchronize these new mappings into your Fusion collection, making the content queryable instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Lucidworks Fusion (AI Search & Discovery)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lucidworks-fusion-ai-search-discovery](https://vinkius.com/mcp/lucidworks-fusion-ai-search-discovery)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lucidworks Fusion (AI Search & Discovery)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lucidworks-fusion-ai-search-discovery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lucidworks Fusion (AI Search & Discovery)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lucidworks-fusion-ai-search-discovery": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ScreenshotOne MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/screenshotone)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/screenshotone-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/screenshotone-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/screenshotone)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **ScreenshotOne** MCP se
 > I've retrieved the metadata for Google. The site title is 'Google' and the page size is approximately 50KB. Would you like me to take a screenshot now?
 
 
+## ❓ FAQ
+
+**Q: How do I find my ScreenshotOne Access Key?**
+Log in to your [**ScreenshotOne dashboard**](https://screenshotone.com/app/settings), and you will find your Access Key under the 'API Keys' section. Copy and paste it below.
+
+**Q: Can the agent capture elements by ID or Class?**
+Yes. Use the `take_element_screenshot` tool providing a valid CSS selector (e.g., `#header` or `.product-card`). Your agent will return a screenshot of just that element.
+
+**Q: Is PDF generation supported for all sites?**
+Yes. The `generate_pdf` tool works for any publicly accessible URL, converting the website content into a high-quality PDF document instantly.
+
+
 ## Installation & Usage
 
-To install and use the **ScreenshotOne** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/screenshotone](https://vinkius.com/mcp/screenshotone)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ScreenshotOne** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `screenshotone` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ScreenshotOne** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "screenshotone": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

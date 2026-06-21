@@ -1,7 +1,6 @@
 # Cuiabá Transparency MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cuiaba-transparency)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cuiaba-transparency-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cuiaba-transparency-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cuiaba-transparency)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Cuiabá Transparency**
 > I'm accessing the personnel records... I've found the list of active servants, including their departments and roles. Would you like to filter by a specific department like Education or Health?
 
 
+## ❓ FAQ
+
+**Q: Can I filter expenses by a specific month and year?**
+Yes. You can use the `list_expenses` tool and provide the `exercicio` (year) and `mes` (month) parameters to get precise data for that period.
+
+**Q: Is it possible to see the salaries of public servants in Cuiabá?**
+Yes, the `list_personnel` tool retrieves data on public servants, including their positions and remuneration details as provided by the transparency portal.
+
+**Q: How can I check active municipal contracts?**
+Use the `list_contracts` tool. It allows you to query public tenders, bids, and active contracts for a specific fiscal year.
+
+
 ## Installation & Usage
 
-To install and use the **Cuiabá Transparency** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cuiaba-transparency](https://vinkius.com/mcp/cuiaba-transparency)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cuiabá Transparency** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cuiaba-transparency` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cuiabá Transparency** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cuiaba-transparency": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

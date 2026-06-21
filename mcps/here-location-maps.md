@@ -1,7 +1,6 @@
 # HERE (Location & Maps) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/here-location-maps)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/here-location-maps-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/here-location-maps-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/here-location-maps)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **HERE (Location & Maps)
 > Current weather in Tokyo: 18°C, Partly Cloudy, Humidity 62%, Wind 12km/h from the SE. The forecast for the next 6 hours shows a slight chance of rain. Would you like a detailed 24-hour forecast?
 
 
+## ❓ FAQ
+
+**Q: Can I geocode a list of addresses through my agent?**
+Yes. Use the `forward_geocode` tool to convert any text-based address into precise coordinates. Your agent can process multiple addresses in a single conversation, making it ideal for cleaning up location datasets.
+
+**Q: How do I calculate travel time between multiple points?**
+The `calculate_routing_matrix` tool allows you to generate distance and duration spans between arrays of origins and destinations, perfect for fleet optimization and logistics planning.
+
+**Q: Can I get real-time traffic updates for a specific area?**
+Absolutely. Use the `get_traffic_flow` tool with a bounding box (bbox) query to detect current congestion patterns and flow speeds, helping you optimize routes based on live road conditions.
+
+
 ## Installation & Usage
 
-To install and use the **HERE (Location & Maps)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/here-location-maps](https://vinkius.com/mcp/here-location-maps)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HERE (Location & Maps)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `here-location-maps` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HERE (Location & Maps)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "here-location-maps": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

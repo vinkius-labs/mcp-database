@@ -1,7 +1,6 @@
 # Pomodoro Mental Health Tracker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pomodoro-mental-health-tracker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pomodoro-mental-health-tracker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pomodoro-mental-health-tracker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pomodoro-mental-health-tracker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Pomodoro Mental Health
 > We need to check for violations. Running `check_for_skip_violation` shows that the elapsed time since your last work session exceeds the mandatory minimum break period, indicating a potential violation.
 
 
+## ❓ FAQ
+
+**Q: How does the system ensure I take enough active breaks?**
+The tracker uses the `check_for_skip_violation` tool to validate adherence. It compares your elapsed time against mandatory minimums and requires physical movement confirmation, ensuring that breaks are genuinely restorative, not just passive screen time.
+
+**Q: What if I feel overwhelmed or fatigued?**
+If fatigue is detected, the system automatically runs `suggest_load_adjustment`. This tool analyzes your current Load Score and violation frequency to provide immediate advice on whether you need to reduce work hours or increase break intervals.
+
+**Q: How does it track my daily capacity limits?**
+The `query_session_status` tool maintains a running tally of your total focused work minutes against your set daily target. This prevents overwork by showing you exactly how close you are to hitting critical operational safety bounds.
+
+
 ## Installation & Usage
 
-To install and use the **Pomodoro Mental Health Tracker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pomodoro-mental-health-tracker](https://vinkius.com/mcp/pomodoro-mental-health-tracker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pomodoro Mental Health Tracker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pomodoro-mental-health-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pomodoro Mental Health Tracker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pomodoro-mental-health-tracker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

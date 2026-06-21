@@ -1,7 +1,6 @@
 # TheMealDB MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/themealdb-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/themealdb-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/themealdb-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/themealdb-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **TheMealDB** MCP server
 > Found 12 Italian meals including 'Spaghetti Bolognese', 'Chicken Alfredo Primavera', 'Osso Buco alla Milanese', and 'Mediterranean Pasta Salad'.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key to use TheMealDB?**
+No! TheMealDB is completely free and open. No API key is required to search and retrieve recipes.
+
+**Q: Can I get full recipe details with ingredients and instructions?**
+Yes! Use the `lookup_meal` tool with a meal ID to retrieve the full recipe including all ingredients with measurements, category, area, and detailed instructions.
+
+**Q: How do I find recipes by ingredient?**
+Use the `filter_by_ingredient` tool with the ingredient name. It returns all meals that have that ingredient as their main component.
+
+
 ## Installation & Usage
 
-To install and use the **TheMealDB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/themealdb-alternative](https://vinkius.com/mcp/themealdb-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TheMealDB** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `themealdb-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TheMealDB** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "themealdb-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

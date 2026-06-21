@@ -1,7 +1,6 @@
 # Roblox Avatar & Catalog Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/roblox-avatar-catalog-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/roblox-avatar-catalog-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/roblox-avatar-catalog-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/roblox-avatar-catalog-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Roblox Avatar & Catalo
 > Retrieving user assets... User '7654321' has 150 public items. Their top 5 most expensive assets include 'Dominus Empyreus' and 'Clockwork's Headphones'. The total estimated value of these 5 items is 1.2M Robux. Would you like the full breakdown?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find 'Limited' items that are currently for sale?**
+Yes! Use the `get_limited_resale_data` tool. Your agent will filter the official Roblox catalog to return only rare Limited and Limited U assets, including their current resale prices and availability.
+
+**Q: How do I check the contents of a specific avatar bundle?**
+Simply provide the Bundle ID to the agent and ask for details. It will run the `get_avatar_bundle_details` action to retrieve the full list of constituent items, price, and descriptive metadata for that bundle.
+
+**Q: Is it possible to estimate the total Robux value of a user's public inventory?**
+Absolutely. By using the `get_user_catalog_inventory` tool, the agent retrieves the list of items. It can then run the `get_limited_resale_data` tool to provide a summed estimation of the collection's market worth.
+
+
 ## Installation & Usage
 
-To install and use the **Roblox Avatar & Catalog Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/roblox-avatar-catalog-intelligence](https://vinkius.com/mcp/roblox-avatar-catalog-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Roblox Avatar & Catalog Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `roblox-avatar-catalog-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Roblox Avatar & Catalog Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "roblox-avatar-catalog-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Brasil.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brasilio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brasilio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brasilio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brasilio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Brasil.io** MCP server
 > I found the latest records for Curitiba, PR. On 2023-03-20, there were X confirmed cases and Y deaths. Would you like to see previous dates?
 
 
+## ❓ FAQ
+
+**Q: How can I filter data for a specific state or city?**
+Use the `query_table_data` tool and provide a JSON string in the `filters` parameter, such as `{"state": "SP", "city": "São Paulo"}`. The agent will apply these filters to the Brasil.io API request.
+
+**Q: How do I find out what columns are available in a dataset?**
+First, use `list_datasets` to find the slug of the dataset. Then, use `get_table_metadata` with the dataset and table slugs to see the full list of available fields and their descriptions.
+
+**Q: Can I navigate through large amounts of data?**
+Yes. Both `list_datasets` and `query_table_data` support `page` and `page_size` parameters, allowing you to iterate through results without overloading the response.
+
+
 ## Installation & Usage
 
-To install and use the **Brasil.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/brasilio](https://vinkius.com/mcp/brasilio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Brasil.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `brasilio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Brasil.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "brasilio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

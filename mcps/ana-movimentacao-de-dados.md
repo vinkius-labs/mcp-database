@@ -1,7 +1,6 @@
 # ANA (Movimentação de Dados) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ana-movimentacao-de-dados)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ana-movimentacao-de-dados-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ana-movimentacao-de-dados-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ana-movimentacao-de-dados)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **ANA (Movimentação de
 > Querying rainfall data... On 2023-05-20, station 45001000 recorded a total precipitation of 12.5mm. There are 3 active series associated with this station.
 
 
+## ❓ FAQ
+
+**Q: How can I search for flow data for a specific station?**
+Use the `get_serie_vazao` tool by providing the `codigo_estacao`. You can also filter by `data_busca` to get data for a specific date.
+
+**Q: Is it possible to update existing rainfall records?**
+Yes, if you have the necessary permissions, you can use the `update_serie_chuva` tool with the updated JSON data body.
+
+**Q: What information is included in the cross-section profile search?**
+The `get_serie_perfil_transversal` tool retrieves morphological data of the riverbed at the station location, including depth and width measurements recorded in the series.
+
+
 ## Installation & Usage
 
-To install and use the **ANA (Movimentação de Dados)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ana-movimentacao-de-dados](https://vinkius.com/mcp/ana-movimentacao-de-dados)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ANA (Movimentação de Dados)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ana-movimentacao-de-dados` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ANA (Movimentação de Dados)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ana-movimentacao-de-dados": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

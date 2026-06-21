@@ -1,7 +1,6 @@
 # Cognita (RAG Framework) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cognita-rag-framework)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cognita-rag-framework-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cognita-rag-framework-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cognita-rag-framework)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Cognita (RAG Framework
 > Ingestion pipeline triggered! Cognita is now syncing 'gh-repo-vinkius' into the 'technical-docs' collection. I will let you know once the knowledge base is updated.
 
 
+## ❓ FAQ
+
+**Q: Can my agent perform semantic RAG queries against my collections?**
+Yes. The 'rag_query' tool allows you to ask questions in natural language. The agent queries your vector store via Cognita and uses an LLM to synthesize a final answer based explicitly on the retrieved context.
+
+**Q: How can I trigger a data ingestion pipeline through the agent?**
+Provide the collection name and the data source FQN (Fully Qualified Name). The 'ingest_data' tool will command the Cognita backend to start a sync, updating your RAG vector space with the latest remote documents.
+
+**Q: Can I audit the raw document chunks before LLM generation?**
+Absolutely. Use the 'search_chunks' tool to perform vector searches that return raw text segments and metadata without LLM synthesis. This is the perfect way to verify that your retrieval logic is pulling the correct data boundaries.
+
+
 ## Installation & Usage
 
-To install and use the **Cognita (RAG Framework)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cognita-rag-framework](https://vinkius.com/mcp/cognita-rag-framework)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cognita (RAG Framework)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cognita-rag-framework` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cognita (RAG Framework)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cognita-rag-framework": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

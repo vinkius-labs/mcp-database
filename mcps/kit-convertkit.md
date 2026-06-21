@@ -1,7 +1,6 @@
 # Kit (ConvertKit) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kit-convertkit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kit-convertkit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kit-convertkit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kit-convertkit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Kit (ConvertKit)** MCP
 > I've retrieved 12 tags from your account, including 'Newsletter Subscriber', 'Ebook Download', and 'Webinar-2024-Attendee'. Which tag should we apply to the current segment?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Kit API Secret?**
+Log in to Kit, go to **Settings > Advanced**. Under 'API', click **Show** next to API Secret, copy the string, and paste it below.
+
+**Q: Why is the API Secret required instead of the standard API Key?**
+The API Key only provides read access to public forms. The API Secret grants full access to manage subscribers, tags, and broadcast data as needed by this integration.
+
+**Q: Can the agent send broadcast emails?**
+No. For safety, the integration is read/manage only. The agent can check campaign metrics and manage tags, but actual email sending must be done via the Kit dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **Kit (ConvertKit)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kit-convertkit](https://vinkius.com/mcp/kit-convertkit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kit (ConvertKit)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kit-convertkit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kit (ConvertKit)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kit-convertkit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

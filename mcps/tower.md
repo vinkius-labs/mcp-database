@@ -1,7 +1,6 @@
 # Tower MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tower)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tower-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tower-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tower)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Tower** MCP server usi
 > I've found 4 recent discussions in 'API Integration', including 'Authentication Flow' and 'Endpoint Mapping'. Would you like to see the details of any of these topics?
 
 
+## ❓ FAQ
+
+**Q: How do I obtain a Tower Access Token?**
+Log in to your Tower account, go to the [App Center](https://tower.im/oauth/tokens), and generate a new Personal Access Token. Make sure to copy it immediately.
+
+**Q: Can I see team discussions through this server?**
+Yes. Use the `list_discussions` tool with a project ID to retrieve the list of recent topics and discussions shared within that project.
+
+**Q: Is it possible to manage multiple teams?**
+Yes. You can use `list_teams` to see all teams you are a part of and then use the team IDs to list members or access specific projects associated with those teams.
+
+
 ## Installation & Usage
 
-To install and use the **Tower** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tower](https://vinkius.com/mcp/tower)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tower** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tower` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tower** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tower": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

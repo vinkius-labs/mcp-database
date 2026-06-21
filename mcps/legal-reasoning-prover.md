@@ -1,7 +1,6 @@
 # Legal Reasoning Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/legal-reasoning-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/legal-reasoning-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/legal-reasoning-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/legal-reasoning-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Legal Reasoning Prover
 > Multiple rejections. (1) AUTHORITY_UNGROUNDED — 'courts have generally held' is weasel authority. Which court? Which case? (2) JURISDICTION_BLIND — non-compete enforceability varies by state. California bans them (Bus. & Prof. Code § 16600), Texas requires ancillary agreement, Illinois requires $75K salary. Which state governs? (3) SYLLOGISM_BROKEN — 'too broad' lacks element-by-element analysis of scope, duration, and restriction.
 
 
+## ❓ FAQ
+
+**Q: Does it verify if cited cases actually exist?**
+It catches the most common hallucination patterns — placeholder names like 'Smith v. Jones' and 'Doe v. Roe', weasel authority language like 'courts have generally held', and citations that lack proper Bluebook format. It cannot access legal databases to verify every case, but it forces the agent to provide full citation details (party names, reporter, court, year, specific holding) — which dramatically reduces fabrication because the agent must commit to verifiable specifics.
+
+**Q: Is it only for litigation or does it work for transactional law?**
+The IRAC framework is most natural for litigation analysis, but the five pivots apply broadly. For transactional work: the 'syllogism' becomes 'does the contract structure achieve the stated objective?', 'authority' becomes 'is the statutory basis for this structure valid?', 'jurisdiction' becomes 'which state law governs this agreement?', and 'remedy' becomes 'what happens if the counterparty breaches?' The reasoning validation is universal — the domain language adapts.
+
+**Q: Does it generate legal advice?**
+No. Legal Reasoning Prover generates zero content. It validates the STRUCTURE of legal reasoning — whether the argument follows IRAC, whether citations are properly formed, whether jurisdiction is identified, whether counter-arguments are addressed. The agent does the legal analysis; the tool proves whether that analysis is structurally sound. It is a reasoning quality gate, not a legal advisor.
+
+
 ## Installation & Usage
 
-To install and use the **Legal Reasoning Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/legal-reasoning-prover](https://vinkius.com/mcp/legal-reasoning-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Legal Reasoning Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `legal-reasoning-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Legal Reasoning Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "legal-reasoning-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

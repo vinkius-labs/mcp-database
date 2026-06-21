@@ -1,7 +1,6 @@
 # Discord Bot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/discord-bot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/discord-bot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/discord-bot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/discord-bot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Discord Bot** MCP serv
 > I've found 5 roles in that server: '@everyone', 'Admin', 'Moderator', 'VIP', and 'New Member'. I can provide the permission bits for any of them if you like.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Discord Bot Token?**
+Log in to the [**Discord Developer Portal**](https://discord.com/developers/applications), select your Application, go to the **Bot** tab, and click 'Reset Token' to generate a new one. Copy and paste it below.
+
+**Q: Can the agent send messages to any channel?**
+Yes. If your bot has the 'Send Messages' permission in the specific channel, use the `send_message` tool providing the Channel ID. Your agent will deliver the content instantly.
+
+**Q: Is it possible to check who has a specific role?**
+Yes. The `list_guild_members` tool allows your agent to retrieve the full list of members, including their assigned roles, helping you audit your community hierarchy.
+
+
 ## Installation & Usage
 
-To install and use the **Discord Bot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/discord-bot](https://vinkius.com/mcp/discord-bot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Discord Bot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `discord-bot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Discord Bot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "discord-bot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

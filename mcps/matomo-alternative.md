@@ -1,7 +1,6 @@
 # Matomo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/matomo-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/matomo-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/matomo-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/matomo-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Matomo** MCP server us
 > I've generated the processed report for site 5. Today's data shows 450 visits and 1,200 actions, with top referrers being Google and Direct entry.
 
 
+## ❓ FAQ
+
+**Q: How do I get a summary of visits for a specific site?**
+Use the `get_visits_summary` tool. Provide the `idSite`, the `period` (day, week, month, etc.), and the `date`. The agent will return metrics like total visits, actions, and bounce counts.
+
+**Q: Can I track custom events like button clicks via the AI?**
+Yes! Use the `track_action` tool. You can specify parameters like `e_c` (Event Category), `e_a` (Event Action), and `e_n` (Event Name) to record interactions directly into Matomo.
+
+**Q: Is it possible to see which reports are available for my Matomo instance?**
+Absolutely. Run the `get_report_metadata` tool for your `idSite`. It will list all available API functions, their descriptions, and the metrics they provide.
+
+
 ## Installation & Usage
 
-To install and use the **Matomo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/matomo-alternative](https://vinkius.com/mcp/matomo-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Matomo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `matomo-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Matomo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "matomo-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

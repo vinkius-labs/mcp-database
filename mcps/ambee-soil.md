@@ -1,7 +1,6 @@
 # Ambee Soil MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ambee-soil)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ambee-soil-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ambee-soil-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ambee-soil)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Ambee Soil** MCP serve
 > Retrieving soil properties for your vineyard... Soil Composition: Sandy Loam (Sand: 62%, Silt: 24%, Clay: 14%). pH Level: 6.4 (slightly acidic, optimal for grape cultivation). Organic Carbon: 1.8% (good fertility level). Bulk Density: 1.42 g/cm3. Cation Exchange Capacity: 14.2 cmol/kg. Water Holding Capacity: 18%. Assessment: Your soil is well-suited for viticulture with good drainage and adequate nutrient retention. The slightly acidic pH is ideal for most grape varietals. Consider adding organic matter to boost carbon content above 2%. Would you like crop suitability recommendations based on these soil properties?
 
 
+## ❓ FAQ
+
+**Q: Can my AI check real-time soil moisture and temperature for my farm location?**
+Yes! Use the `get_latest_soil` tool with your farm latitude and longitude coordinates. The API returns current soil moisture percentage and soil temperature in Celsius. This data is updated in near real-time using satellite and sensor fusion models, making it perfect for daily irrigation decisions and crop health monitoring.
+
+**Q: How do I get historical soil moisture trends to analyze drought patterns?**
+Use the `get_historical_soil` tool with your coordinates and the number of days you want to analyze (e.g., 30, 60, or 90 days). This returns daily soil moisture and temperature readings that you can use to identify drying trends, assess drought severity, and plan irrigation schedules based on historical patterns.
+
+**Q: What soil properties are available and how can they help with crop planning?**
+Use the `get_soil_properties` tool to access detailed soil composition data including sand/silt/clay percentages, organic carbon content, bulk density, pH, and cation exchange capacity (CEC). These properties help determine soil texture classification, drainage capacity, nutrient retention, and optimal crop selection for your land.
+
+
 ## Installation & Usage
 
-To install and use the **Ambee Soil** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ambee-soil](https://vinkius.com/mcp/ambee-soil)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ambee Soil** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ambee-soil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ambee Soil** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ambee-soil": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # PubChem MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pubchem)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pubchem-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pubchem-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pubchem)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **PubChem** MCP server u
 > CID 5090: Metformin — Formula C4H11N5, MW 129.16, SMILES CN(C)C(=N)NC(=N)N. XLogP: -1.4 (highly water-soluble). H-bond donors: 3, acceptors: 3. Widely used as first-line treatment for type 2 diabetes. Molecular complexity: 95.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key to use PubChem?**
+No. PubChem PUG REST is completely free and open without any authentication. The only limitation is a rate limit of 5 requests per second and 400 requests per minute, which is more than sufficient for conversational AI usage.
+
+**Q: What molecular properties are returned for each compound?**
+Each compound includes: CID, IUPAC name, molecular formula, molecular weight, canonical SMILES, InChI identifier, XLogP (lipophilicity), hydrogen bond donor count, hydrogen bond acceptor count, and molecular complexity score. These cover Lipinski's Rule of Five for drug-likeness assessment.
+
+**Q: Can I search by molecular formula instead of name?**
+Yes! Use the formula search tool with standard notation (e.g., C8H10N4O2 for caffeine, C9H8O4 for aspirin, H2O for water). PubChem will return all compounds matching that exact formula with their names and properties.
+
+
 ## Installation & Usage
 
-To install and use the **PubChem** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pubchem](https://vinkius.com/mcp/pubchem)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PubChem** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pubchem` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PubChem** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pubchem": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

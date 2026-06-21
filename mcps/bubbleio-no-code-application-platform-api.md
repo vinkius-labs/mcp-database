@@ -1,7 +1,6 @@
 # Bubble.io (No-code Application Platform API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bubbleio-no-code-application-platform-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bubbleio-no-code-application-platform-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bubbleio-no-code-application-platform-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bubbleio-no-code-application-platform-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Bubble.io (No-code App
 > The 'process_refund' backend workflow has been triggered for UID 987654321. The Bubble server has acknowledged the request and is processing the logic now.
 
 
+## ❓ FAQ
+
+**Q: Can I search for records with specific filters?**
+Yes! Use the `search_things` tool. You can provide a `constraints` JSON array to filter by fields (e.g., `equals`, `greater than`). You can also control the `limit` and `sort_field` to refine your results.
+
+**Q: How do I trigger a backend workflow?**
+Simply use the `trigger_workflow` tool by providing the `workflow_name` (the URL-friendly name defined in your Bubble API settings). This allows your AI to execute complex logic defined in your Bubble backend.
+
+**Q: Is it possible to create many records at once?**
+Yes, the `bulk_create_things` tool allows you to create up to 1,000 records in a single call. You should provide the data in NDJSON format (one JSON object per line) for high-performance data ingestion.
+
+
 ## Installation & Usage
 
-To install and use the **Bubble.io (No-code Application Platform API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bubbleio-no-code-application-platform-api](https://vinkius.com/mcp/bubbleio-no-code-application-platform-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bubble.io (No-code Application Platform API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bubbleio-no-code-application-platform-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bubble.io (No-code Application Platform API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bubbleio-no-code-application-platform-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

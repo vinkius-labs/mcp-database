@@ -1,7 +1,6 @@
 # NewsAPI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/newsapi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/newsapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/newsapi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/newsapi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **NewsAPI** MCP server u
 > Top Brazil Sources: Globo, Folha de S.Paulo, O Estado de S. Paulo, UOL, CNN Brasil, Metrópoles, and Valor Econômico. Total: 35+ active Brazilian sources indexed.
 
 
+## ❓ FAQ
+
+**Q: How far back can I search for articles?**
+The /everything endpoint allows you to search articles from the last 5 years. Use the 'from' and 'to' parameters (YYYY-MM-DD format) to specify your date range.
+
+**Q: What countries and languages are supported?**
+NewsAPI supports headlines for specific countries (e.g., us, gb, br, fr, de, jp) and articles in many languages including English, Portuguese, Spanish, French, German, and more.
+
+**Q: Can I filter news by specific sources like BBC or CNN?**
+Yes! Use the 'sources' parameter with comma-separated source IDs (e.g., 'bbc-news,cnn'). Use get_sources to find the exact IDs for publishers you want to follow.
+
+
 ## Installation & Usage
 
-To install and use the **NewsAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/newsapi](https://vinkius.com/mcp/newsapi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NewsAPI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `newsapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NewsAPI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "newsapi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

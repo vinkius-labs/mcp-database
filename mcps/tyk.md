@@ -1,7 +1,6 @@
 # Tyk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tyk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tyk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tyk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tyk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -100,12 +99,52 @@ Here are some examples of how you can interact with the **Tyk** MCP server using
 > Triggering hot reload... The Tyk Gateway has successfully reloaded its configuration and all API definitions are now up to date.
 
 
+## ❓ FAQ
+
+**Q: How do I apply changes to my Tyk Gateway after updating a policy?**
+You can use the `hot_reload` tool. This forces the Tyk Gateway to reload its configuration and API definitions, ensuring all updates are live without a full restart.
+
+**Q: Can I list all my existing API definitions from the Dashboard?**
+Yes! Use the `list_apis` tool. It returns a paginated list of all API definitions. You can also filter by name using the optional search string.
+
+**Q: Is it possible to retrieve the details of a specific API key?**
+Absolutely. Use the `get_key` tool with the specific Key ID. The agent will return the session object, including access rights and rate limit configurations.
+
+
 ## Installation & Usage
 
-To install and use the **Tyk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tyk](https://vinkius.com/mcp/tyk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tyk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tyk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tyk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tyk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

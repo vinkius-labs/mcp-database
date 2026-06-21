@@ -1,7 +1,6 @@
 # LearnWorlds MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/learnworlds)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/learnworlds-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/learnworlds-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/learnworlds)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **LearnWorlds** MCP serv
 > New enrollments (7 days): 42. Web Dev: 15, UX Design: 10, Data Science: 8, Python: 5, Others: 4. Revenue: $6,890. School analytics: Total students: 2,726. Active (30 days): 1,890 (69%). Avg session: 28 min. Certificates issued (month): 34. Course completion rate: 41%. MRR: $12,400.
 
 
+## ❓ FAQ
+
+**Q: Can I track student progress and enrollments?**
+Yes. Browse all students with course enrollment data, completion percentages, last activity, and engagement metrics.
+
+**Q: Does LearnWorlds use OAuth2?**
+Yes. LearnWorlds requires **Client ID**, **Client Secret**, and your **School Domain** (e.g., `your-school.learnworlds.com`). OAuth2 tokens are exchanged at `https://{domain}/admin/api/oauth2/token`.
+
+**Q: Can I manage course content and settings?**
+Yes. List courses with curricula, manage course settings, and access enrollment and pricing configurations.
+
+
 ## Installation & Usage
 
-To install and use the **LearnWorlds** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/learnworlds](https://vinkius.com/mcp/learnworlds)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LearnWorlds** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `learnworlds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LearnWorlds** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "learnworlds": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

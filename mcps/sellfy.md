@@ -1,7 +1,6 @@
 # Sellfy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sellfy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sellfy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sellfy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sellfy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Sellfy** MCP server us
 > Product created: "Premium Dashboard UI Kit - Figma". Price: $49.99. Category: Digital Download. File uploaded: dashboard_ui_kit_v2.fig (34 MB). Description: 120+ components, dark/light modes, responsive layouts. Product page generated with auto-preview thumbnails. SEO: meta title and description optimized. Payment options: credit card, PayPal. Discount code slot: empty (add anytime). Analytics tracking enabled. Shareable link generated. Estimated based on similar products: 15-20 sales/month.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details and status for a specific order by providing its ID?**
+Yes! Use the `get_order` tool with the Order ID. Your agent will respond with complete metadata, including payment status, items purchased, and customer notes in seconds.
+
+**Q: How do I check the current subscription status for a specific customer?**
+Simply ask the agent to run the `get_subscription` action with the Subscription ID. It will retrieve the detailed metadata for that recurring billing profile.
+
+**Q: How do I find my Sellfy API Key?**
+Log in to your Sellfy dashboard, navigate to **Store Settings** > **Integrations** > **Developer API**, and you will find your unique secret API key there.
+
+
 ## Installation & Usage
 
-To install and use the **Sellfy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sellfy](https://vinkius.com/mcp/sellfy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sellfy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sellfy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sellfy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sellfy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

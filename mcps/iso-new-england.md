@@ -1,7 +1,6 @@
 # ISO New England MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iso-new-england)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/iso-new-england-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/iso-new-england-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iso-new-england)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **ISO New England** MCP 
 > I'll look up the current 5-minute LMP data for the New England grid.
 
 
+## ❓ FAQ
+
+**Q: How do I get ISO New England API credentials?**
+You need to register for an ISO Express account at https://www.iso-ne.com/isoexpress/login. Use your account username and password for API authentication.
+
+**Q: What data is available in real-time?**
+The API provides real-time updates for system load, fuel mix, and 5-minute locational marginal prices (LMP).
+
+**Q: Does it support historical data?**
+This MCP currently focuses on retrieving the most recent current and daily data available through the Web Services API.
+
+
 ## Installation & Usage
 
-To install and use the **ISO New England** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/iso-new-england](https://vinkius.com/mcp/iso-new-england)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ISO New England** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `iso-new-england` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ISO New England** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "iso-new-england": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

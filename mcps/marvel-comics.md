@@ -1,7 +1,6 @@
 # Marvel Comics MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marvel-comics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/marvel-comics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/marvel-comics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marvel-comics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -96,12 +95,55 @@ Here are some examples of how you can interact with the **Marvel Comics** MCP se
 > Civil War (2006-2007) was a major Marvel crossover event written by Mark Millar with art by Steve McNiven. The conflict divided heroes over the Superhuman Registration Act, pitting Iron Man against Captain America. The event spanned 7 main issues and over 100 tie-in comics across multiple series.
 
 
+## ❓ FAQ
+
+**Q: How do I get Marvel API keys?**
+Visit [**developer.marvel.com/account**](https://developer.marvel.com/account), sign in with a Marvel or social account, and you'll immediately see your Public and Private keys. Both are required for authentication.
+
+**Q: Can I search for characters by name?**
+Yes! Use `list_characters` with `name_starts_with` to search. For example, 'Spider' returns Spider-Man (Peter Parker), Spider-Man (Miles Morales), Spider-Gwen and more. Each result includes the character ID for use with other tools.
+
+**Q: Can I find comics for a specific character?**
+Yes! Use `list_comics` with `character_id`. First find the character ID with `list_characters`, then pass it to `list_comics` to get all their comic appearances with issue numbers, titles and cover dates.
+
+**Q: How many results can I get at once?**
+The API supports up to 100 results per request. Use the `limit` parameter (1-100, default 20) and `offset` for pagination. The total count is returned in each response so you know how many pages exist.
+
+
 ## Installation & Usage
 
-To install and use the **Marvel Comics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/marvel-comics](https://vinkius.com/mcp/marvel-comics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Marvel Comics** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `marvel-comics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Marvel Comics** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "marvel-comics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

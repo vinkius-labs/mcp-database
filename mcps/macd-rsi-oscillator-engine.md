@@ -1,7 +1,6 @@
 # MACD & RSI Oscillator Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/macd-rsi-oscillator-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/macd-rsi-oscillator-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/macd-rsi-oscillator-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/macd-rsi-oscillator-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **MACD & RSI Oscillator 
 > The computation has been executed with mathematical precision. All results are exact and ready for review.
 
 
+## ❓ FAQ
+
+**Q: What does RSI indicate?**
+RSI ranges from 0 to 100. Traditionally, a value above 70 indicates an asset is Overbought, and below 30 indicates it is Oversold.
+
+**Q: What are the MACD parameters?**
+It uses the standard 12-period Fast EMA, 26-period Slow EMA, and 9-period Signal line to generate exact histograms.
+
+**Q: Is this for crypto or stocks?**
+Both. Technical oscillators are mathematically agnostic and work on any sequential numeric data array, regardless of the asset class.
+
+
 ## Installation & Usage
 
-To install and use the **MACD & RSI Oscillator Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/macd-rsi-oscillator-engine](https://vinkius.com/mcp/macd-rsi-oscillator-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MACD & RSI Oscillator Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `macd-rsi-oscillator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MACD & RSI Oscillator Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "macd-rsi-oscillator-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

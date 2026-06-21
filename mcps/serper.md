@@ -1,7 +1,6 @@
 # Serper MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/serper)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/serper-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/serper-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/serper)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Serper** MCP server us
 3. **Deep Learning Layers Visualization** — towardsdatascience.com
 
 
+## ❓ FAQ
+
+**Q: How many free searches do I get?**
+Serper offers 2,500 free searches per month — no credit card required. This includes Google Search, News, and Images queries. Paid plans start at $50/month for 50,000 searches with additional volume discounts.
+
+**Q: Can I get results for specific countries and languages?**
+Yes! Serper supports geolocation (gl parameter) and language (hl parameter) for all search types. For example, set gl='br' and hl='pt' for Brazilian Portuguese results, or gl='fr' and hl='fr' for French results. This works for Search, News, and Images endpoints.
+
+**Q: What types of search results are available?**
+Serper provides three search types: organic web results (with titles, links, snippets, and knowledge panels), Google News (with headlines, sources, dates), and Google Images (with image URLs and source pages). All results include structured metadata for easy parsing.
+
+
 ## Installation & Usage
 
-To install and use the **Serper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/serper](https://vinkius.com/mcp/serper)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Serper** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `serper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Serper** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "serper": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

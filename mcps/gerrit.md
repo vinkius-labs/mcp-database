@@ -1,7 +1,6 @@
 # Gerrit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gerrit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gerrit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gerrit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gerrit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Gerrit** MCP server us
 > Retrieving branches for 'frontend-v2'... I found 3 branches: 'master' (SHA: abc123), 'release-v1.0' (SHA: def456), and 'feature-auth'. Would you like the latest commit message for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can my agent list open changes across all Gerrit projects?**
+Yes. Use the 'query_changes' tool with the query 'status:open'. The agent will retrieve the global array of all matching changes, including subjects, numbers, and owners natively.
+
+**Q: How do I see the approval labels (Code-Review, Verified) for a specific change via chat?**
+Use the 'get_change' tool. It retrieves the full details of a Gerrit change, including the 'labels' section where you can see the Code-Review and Verified scores assigned by reviewers natively.
+
+**Q: Can I check which groups have access to a specific project through the agent?**
+Absolutely. Use the 'list_groups' tool to identify existing groups. While project access rules are often defined in the project settings, the agent can help you verify group definitions and ownership within your organizational tree flawlessly.
+
+
 ## Installation & Usage
 
-To install and use the **Gerrit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gerrit](https://vinkius.com/mcp/gerrit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gerrit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gerrit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gerrit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gerrit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

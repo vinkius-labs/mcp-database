@@ -1,7 +1,6 @@
 # Snipcart MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snipcart)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/snipcart-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/snipcart-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snipcart)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ The last order (Token: `SNIP-9923`) belongs to Alice Smith.
 Inventory checks indicate no products are currently marked as out of stock.
 
 
+## ❓ FAQ
+
+**Q: Can I progress an order to 'Shipped' natively inside Cursor?**
+Yes! Provide the order token context to the AI (or ask it to fetch recent orders) and instruct: 'Mark order SNIP-1234 as Shipped'. The agent will call the `update_order_status` endpoint, and your Snipcart dashboard will instantly sync up the new status.
+
+**Q: Can the AI distinguish my test vs live orders?**
+The distinction entirely relies on which Secret API Key you supply. Snipcart has dedicated keys for 'Live' mode and 'Test' mode. Whichever key is saved in your credential injection config governs the space the AI operates within.
+
+**Q: How do I check a customer's total spending history using LLMs?**
+Tell your AI to 'Look up the customer John Doe in Snipcart and fetch their details'. The agent first polls `list_customers` for the user directory ID, and then passes the match to `get_customer_details` to return their detailed transaction history completely synthesized for you.
+
+
 ## Installation & Usage
 
-To install and use the **Snipcart** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/snipcart](https://vinkius.com/mcp/snipcart)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Snipcart** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `snipcart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Snipcart** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "snipcart": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

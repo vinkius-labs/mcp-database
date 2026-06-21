@@ -1,7 +1,6 @@
 # Kavak MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kavak)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kavak-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kavak-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kavak)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Kavak** MCP server usi
 > Financing options for KV-88201 (2022 Mazda 3 — $345,000 MXN) with $50,000 enganche: 12 months: $27,100/mo (12.9% rate, CAT 16.2%). 24 months: $14,500/mo (13.9% rate, CAT 17.5%). 36 months: $10,300/mo (14.5% rate, CAT 18.8%). 48 months: $8,250/mo (15.2% rate, CAT 19.5%). 60 months: $7,100/mo (15.9% rate, CAT 20.1%). Would you like to reserve this vehicle?
 
 
+## ❓ FAQ
+
+**Q: Can I get an instant trade-in offer for my current car?**
+Yes! Use the `estimate_trade_in` tool with your car's make, model, year, mileage, and condition. Kavak's AI valuation engine will return an instant buy-back offer based on current Mexican market conditions and comparable recent transactions.
+
+**Q: What does the 240-point inspection cover?**
+Use `get_vehicle_inspection` to see the full 240-point report. It covers engine health, transmission status, brake system, tire condition, electrical systems, suspension, body/paint integrity, interior condition, and all safety features. Each point is rated as pass, warning, or replaced.
+
+**Q: Can I calculate monthly payments for different financing scenarios?**
+Yes. Use `get_financing_options` with the vehicle ID and an optional down payment amount (enganche). It returns a matrix of monthly payment options across 12, 24, 36, 48, and 60-month terms, each with interest rates, total cost, and CAT (Costo Anual Total).
+
+
 ## Installation & Usage
 
-To install and use the **Kavak** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kavak](https://vinkius.com/mcp/kavak)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kavak** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kavak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kavak** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kavak": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

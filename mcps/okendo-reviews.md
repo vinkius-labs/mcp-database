@@ -1,7 +1,6 @@
 # Okendo Reviews MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/okendo-reviews)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/okendo-reviews-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/okendo-reviews-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/okendo-reviews)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Okendo Reviews** MCP s
 > Retrieving Q&A... I found 3 new questions regarding 'Size and Fit' and 'International Shipping'. 2 of these questions are currently unanswered. Would you like to see the details so you can prepare a response?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Okendo Subscriber ID?**
+You can find your Subscriber ID in the Okendo dashboard settings. It is a unique identifier for your specific store instance.
+
+**Q: Does this support AI-generated review summaries?**
+This implementation focuses on retrieving raw review and Q&A data. If your Okendo plan includes AI summaries, they may be accessible within the detailed review metadata.
+
+**Q: Can I see photos uploaded by customers?**
+Yes! Use the `list_review_media` tool to retrieve a list of all visual assets (photos and videos) provided by your customers in their feedback.
+
+
 ## Installation & Usage
 
-To install and use the **Okendo Reviews** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/okendo-reviews](https://vinkius.com/mcp/okendo-reviews)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Okendo Reviews** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `okendo-reviews` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Okendo Reviews** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "okendo-reviews": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

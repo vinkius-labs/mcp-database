@@ -1,7 +1,6 @@
 # Meituan Waimai Open API / 美团外卖 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meituan-waimai-open-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meituan-waimai-open-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meituan-waimai-open-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meituan-waimai-open-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Meituan Waimai Open AP
 > Done! I've updated the status for store `STORE_8821` to 'Online'. You are now visible on the Meituan app and ready to receive new orders. Would you like me to list any pending orders?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Meituan Client ID and Secret?**
+Log in to the [Meituan Open Platform](https://developer.waimai.meituan.com/), register as a developer, and create an application to receive your unique Client ID and Secret.
+
+**Q: What is an app_poi_code?**
+The `app_poi_code` is a unique identifier for your store (Point of Interest) defined within your Meituan application. It is required for all store-specific operations.
+
+**Q: Can I track deliveries in real-time?**
+Yes! Use the `track_delivery` tool with a valid order ID to retrieve the courier's current status and predicted arrival information.
+
+
 ## Installation & Usage
 
-To install and use the **Meituan Waimai Open API / 美团外卖** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/meituan-waimai-open-api](https://vinkius.com/mcp/meituan-waimai-open-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Meituan Waimai Open API / 美团外卖** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `meituan-waimai-open-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Meituan Waimai Open API / 美团外卖** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "meituan-waimai-open-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

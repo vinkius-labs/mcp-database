@@ -1,7 +1,6 @@
 # Pdfcrowd MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pdfcrowd-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pdfcrowd-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pdfcrowd-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pdfcrowd-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Pdfcrowd** MCP server 
 > I'm generating your modern invoice. I've added 'Software Consulting' as the line item for a total of $1200 USD. The PDF document has been created.
 
 
+## ❓ FAQ
+
+**Q: Can I convert a raw HTML string instead of a URL?**
+Yes! Use the `convert_html_to_pdf` or `convert_html_to_image` tools and provide your HTML code in the `text` parameter instead of using the `url` parameter.
+
+**Q: How do I generate a professional invoice from my data?**
+Use the `generate_business_document` tool. Provide the `document_type` as 'invoice', and include your line items, total, and currency in the JSON payload to get a styled PDF.
+
+**Q: Is it possible to extract plain text from a PDF file?**
+Absolutely. Use the `convert_pdf_to_text` tool with the URL of your PDF. You can also enable `no_layout` if you want the text in reading order without layout preservation.
+
+
 ## Installation & Usage
 
-To install and use the **Pdfcrowd** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pdfcrowd-alternative](https://vinkius.com/mcp/pdfcrowd-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pdfcrowd** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pdfcrowd-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pdfcrowd** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pdfcrowd-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

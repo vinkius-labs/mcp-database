@@ -1,7 +1,6 @@
 # freee MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freee)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freee-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freee-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freee)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **freee** MCP server usi
 > Checking wallets... You have 3 connected accounts: 'MUFG Main' (¥2,500,000), 'Corporate Visa' (-¥120,000), and 'Petty Cash' (¥50,000). The MUFG account was last synced 2 hours ago.
 
 
+## ❓ FAQ
+
+**Q: Can my agent list all unpaid invoices in freee?**
+Yes. Use the 'list_invoices' tool. The agent retrieves explicitly attached invoice states, allowing you to filter for 'unpaid' or 'overdue' status to monitor your tenant's AR limits flawlessly.
+
+**Q: How do I check the details of a specific business partner via chat?**
+Use the 'get_partner' tool. Provide the Partner ID. Your agent will retrieve the strict physical mapping from the freee address book, including vendor/customer profiles and tax ID metadata.
+
+**Q: Can I see my connected bank accounts and their balances through the agent?**
+Absolutely. The 'list_walletables' tool identifies connected physical bank accounts, credit cards, and cash repositories. You can query current balances and sync states natively within your chat context.
+
+
 ## Installation & Usage
 
-To install and use the **freee** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/freee](https://vinkius.com/mcp/freee)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **freee** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `freee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **freee** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "freee": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

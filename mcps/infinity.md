@@ -1,7 +1,6 @@
 # Infinity MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/infinity)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/infinity-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/infinity-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/infinity)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Infinity** MCP server 
 > Bug Tracker attributes: 8 fields. Status (dropdown: Open, In Progress, Resolved, Closed), Priority (dropdown: Critical, High, Medium, Low), Assignee (person), Due Date (date), Component (dropdown: Frontend, Backend, API, Mobile), Steps to Reproduce (text), Screenshots (file), Resolution (text). Folders: 4. 'Frontend Bugs' (8 items), 'Backend Bugs' (6), 'API Issues' (5), 'Mobile' (4). Total: 23 bug reports.
 
 
+## ❓ FAQ
+
+**Q: Can I create and manage tasks through the AI agent?**
+Yes. Use `create_board_item` to add new items to any board, `list_board_items` to browse existing items, `update_board_item` to modify fields and status, and `delete_board_item` to remove items. Use `list_board_attributes` to see available fields.
+
+**Q: Can I navigate workspaces, boards, and folders?**
+Yes. Use `list_workspaces` → `list_workspace_boards` → `list_board_folders` to navigate the hierarchy. Each level provides IDs needed for the next level and for item management.
+
+**Q: Can I view custom fields and attributes on boards?**
+Yes. `list_board_attributes` retrieves all custom attributes (fields) configured on a board, including field type, options, and default values. This helps understand the data structure before creating or updating items.
+
+
 ## Installation & Usage
 
-To install and use the **Infinity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/infinity](https://vinkius.com/mcp/infinity)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Infinity** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `infinity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Infinity** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "infinity": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Nash Game Theory Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nash-game-theory-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nash-game-theory-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nash-game-theory-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nash-game-theory-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Nash Game Theory Prove
 > Classic Prisoner Dilemma with price war dynamics. NE analysis: (drop, match) = both lose margin with no share gain. Mechanism design needed — differentiate on value, not price. Add switching costs through long-term commitments. Convert to repeated game: multi-year contracts with loyalty pricing break the one-shot race to the bottom.
 
 
+## ❓ FAQ
+
+**Q: Why is single-player thinking a mathematical error?**
+Nash (1950): every finite game with n players has at least one equilibrium. If your strategy does not account for every other player's best response, it is not in equilibrium — any rational opponent can exploit it. 'Our competitive advantage' without mapping the opponent's counter-move is a wish, not a proof.
+
+**Q: What does 'design the game' mean?**
+Mechanism design (Myerson, 2007 Nobel): instead of playing the game as given, change the rules, incentive structure, or information revelation so the DESIRED equilibrium becomes dominant. Add contracts, commitments, auctions, or public information that makes cooperation rational and defection costly.
+
+**Q: Why do repeated games change everything?**
+Axelrod (1984): in repeated Prisoner's Dilemma, tit-for-tat — cooperate first, then mirror opponent's last move — wins. Cooperation emerges when: (1) interaction repeats, (2) reputation has value, (3) discount factor is high enough. One-shot defection gains $X. Repeated cooperation gains NPV of $10X. Reputation is the mechanism.
+
+
 ## Installation & Usage
 
-To install and use the **Nash Game Theory Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nash-game-theory-prover](https://vinkius.com/mcp/nash-game-theory-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nash Game Theory Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nash-game-theory-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nash Game Theory Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nash-game-theory-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

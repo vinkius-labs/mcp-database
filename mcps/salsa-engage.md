@@ -1,7 +1,6 @@
 # Salsa Engage MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salsa-engage)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salsa-engage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salsa-engage-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salsa-engage)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,49 @@ Here are some examples of how you can interact with the **Salsa Engage** MCP ser
 > 34 major donors ($5,000+) this year. Top 5: Robert Chen ($50,000, 8-year donor), Sarah Williams ($25,000, monthly recurring), James Park ($18,000, first-time major), Lisa Wang ($15,000, board member), David Kim ($12,000, event sponsor). Total major gifts: $456,000. Average major gift: $13,412. 12 donors upgraded from mid-level. 5 are legacy society members. 8 have pending pledges. Recommended cultivation: 6 donors near $10K threshold for next recognition level.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find all supporters who signed a specific petition today?**
+Yes! Use the `list_engagement_activities` tool with a date filter. Your agent will respond with the complete metadata for all participants and their submission details in seconds.
+
+**Q: How do I find my Salsa Engage API Token?**
+Log in to your Salsa Engage account, navigate to **Organization Settings** > **API** tab, and you will find your unique Integration API token listed there.
+
+
 ## Installation & Usage
 
-To install and use the **Salsa Engage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/salsa-engage](https://vinkius.com/mcp/salsa-engage)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Salsa Engage** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `salsa-engage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Salsa Engage** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "salsa-engage": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # World Bank Population MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/world-bank-population)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/world-bank-population-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/world-bank-population-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/world-bank-population)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,55 @@ China's urban population surged from 41% to over 65%, driven by massive infrastr
 Ethiopia and Rwanda stand out with significant reductions in extreme poverty over the past two decades, moving millions above the $2.15/day threshold through sustained economic growth.
 
 
+## ❓ FAQ
+
+**Q: How do I get started?**
+Our World Bank Open Data servers require absolutely zero authentication. You do not need to register, get an API key, or setup webhooks. Just instantly connect and your AI agent can begin querying decades of global data.
+
+**Q: Can my AI analyze poverty trends?**
+Absolutely. Your agent can pull the exact percentage of populations living on less than $2.15/day over decades to chart progress in developing nations.
+
+**Q: Does it support urban vs rural distribution?**
+Yes. By requesting urban population ratios, your AI can perfectly map urbanization shifts across different regions.
+
+**Q: What is the scale of the data I can access?**
+You have direct access to 64 years of historical data covering 196+ sovereign states and global regional aggregates, powered directly by the World Bank's robust open data initiatives.
+
+
 ## Installation & Usage
 
-To install and use the **World Bank Population** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/world-bank-population](https://vinkius.com/mcp/world-bank-population)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **World Bank Population** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `world-bank-population` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **World Bank Population** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "world-bank-population": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

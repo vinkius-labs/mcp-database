@@ -1,7 +1,6 @@
 # Firecrawl MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firecrawl)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firecrawl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firecrawl-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firecrawl)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,52 @@ Firecrawl offers four core capabilities: Scrape (single page → Markdown), Craw
 ... and 36 more URLs
 
 
+## ❓ FAQ
+
+**Q: How does Firecrawl pricing work?**
+Firecrawl uses a credit-based system. You get 500 free lifetime credits to start (no credit card required). Base cost is 1 credit per page scraped. Advanced features like JSON extraction (+4 credits) or enhanced mode (+4 credits) consume additional credits per page. Paid plans start at $16/month with 3,000 monthly credits.
+
+**Q: Can Firecrawl handle JavaScript-heavy websites?**
+Yes! Firecrawl renders pages in a full browser environment before extracting content — this means it handles React, Next.js, Angular, and any other JavaScript framework. It also automatically bypasses common anti-bot protections, removes cookie consent banners, and waits for dynamic content to load before extraction.
+
+**Q: What formats does Firecrawl return?**
+Firecrawl can return content in multiple formats: Markdown (default and most popular for LLM consumption), HTML, raw HTML, structured JSON (with LLM-powered extraction), screenshots, links, and page metadata. You can request multiple formats in a single call.
+
+
 ## Installation & Usage
 
-To install and use the **Firecrawl** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/firecrawl](https://vinkius.com/mcp/firecrawl)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Firecrawl** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `firecrawl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Firecrawl** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "firecrawl": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Asian Development Bank MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/asian-development-bank)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/asian-development-bank-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/asian-development-bank-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/asian-development-bank)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -54,12 +53,49 @@ Here are some examples of how you can interact with the **Asian Development Bank
 > I've compared CPI inflation across the ASEAN corridor. Thailand and Malaysia maintained relatively stable rates around 1-3%, while the Philippines and Indonesia experienced higher volatility. Vietnam showed a steady downward trend from its 2022 peak. The data comes directly from the ADB's official statistical database.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API Key?**
+No. The ADB KIDB API is completely open and requires zero authentication. The only limit is 20 queries per minute to maintain service stability.
+
+**Q: What economies are covered?**
+The database covers all 49 ADB member economies across the Asia-Pacific region, including China, Japan, India, South Korea, all ASEAN nations, Central Asian republics, and Pacific Island states.
+
+
 ## Installation & Usage
 
-To install and use the **Asian Development Bank** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/asian-development-bank](https://vinkius.com/mcp/asian-development-bank)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Asian Development Bank** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `asian-development-bank` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Asian Development Bank** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "asian-development-bank": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

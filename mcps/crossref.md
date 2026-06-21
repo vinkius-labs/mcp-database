@@ -1,7 +1,6 @@
 # CrossRef MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crossref)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/crossref-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/crossref-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crossref)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **CrossRef** MCP server 
 > Found 10 relevant works. Highlights: 'Suppressing quantum errors by scaling a surface code logical qubit' in Nature (2023) — cited 320 times. Also found recent work from Google Quantum AI and IBM Research on topological error correction codes. All results include DOI, full author lists, and citation metrics.
 
 
+## ❓ FAQ
+
+**Q: What exactly is a DOI and why is CrossRef important?**
+A Digital Object Identifier (DOI) is a unique, permanent identifier assigned to every published scholarly work — like a social security number for academic papers. CrossRef maintains the world's largest DOI registry with 140M+ records, making it the authoritative source for bibliographic metadata across all publishers globally.
+
+**Q: Is authentication or registration required to use this server?**
+No. CrossRef's public API is free and open without authentication. Adding a polite email in the User-Agent header (which this server does automatically) grants access to the 'polite pool' with significantly faster response times.
+
+**Q: What types of scholarly works can I find through CrossRef?**
+CrossRef covers virtually every type of scholarly output: journal articles, book chapters, conference proceedings, preprints, datasets, dissertations, and technical reports. It aggregates metadata from 20,000+ publishers including Elsevier, Springer Nature, Wiley, Oxford University Press, and thousands of smaller publishers worldwide.
+
+
 ## Installation & Usage
 
-To install and use the **CrossRef** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/crossref](https://vinkius.com/mcp/crossref)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CrossRef** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `crossref` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CrossRef** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "crossref": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

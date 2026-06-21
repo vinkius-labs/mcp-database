@@ -1,7 +1,6 @@
 # Veraset MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/veraset)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/veraset-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/veraset-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/veraset)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ I then instantly checked `getQueryStatus` for you. The infrastructure shows the 
 We can fetch the results dynamically using the `getQueryResultsTool` in a few moments. Hang tight.
 
 
+## ❓ FAQ
+
+**Q: Can the AI really create and download a pre-signed link from Veraset's S3 directly?**
+Yes. Upon using the `generateDownloadLinkTool`, the agent will interface via Veraset's protocol using your API token, instantly retrieving an authenticated, time-sensitive download link to let you extract the immense dataset files securely.
+
+**Q: What happens if a SQL statement to Veraset starts taking too long?**
+You don't need to panic or swap tools. Instruct your agent: `cancel the running query id 'query-xx9'`, and the `cancelQueryTool` fires an immediate abort network call. The computation ends, saving extensive costs without abandoning the conversational flow.
+
+**Q: How can I preview geolocation signals before compiling expensive queries?**
+Ask for the `getSchemaTool` followed by `getSampleTool`. The AI perfectly delivers the dataset definitions and outputs five physical preview rows right inside your message history, confirming expected structure formatting.
+
+
 ## Installation & Usage
 
-To install and use the **Veraset** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/veraset](https://vinkius.com/mcp/veraset)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Veraset** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `veraset` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Veraset** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "veraset": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

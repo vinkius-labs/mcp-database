@@ -1,7 +1,6 @@
 # Tableau MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tableau)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tableau-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tableau-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tableau)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Tableau** MCP server u
 > Active users this week: 142 unique logins. Viewers: 98 (69%). Explorers: 31 (22%). Creators: 13 (9%). Peak activity: Tuesday 10AM (89 concurrent). Most viewed: 'Executive KPI Dashboard' (245 views).
 
 
+## ❓ FAQ
+
+**Q: What authentication does Tableau use?**
+Tableau uses Personal Access Tokens (PATs). Generate one in My Account Settings > Personal Access Tokens. You'll need the token name and token secret.
+
+**Q: Can I get dashboard data through the agent?**
+Yes. The get_view_data tool retrieves the underlying data of any view/dashboard in CSV or JSON format.
+
+**Q: Does it work with both Tableau Cloud and Server?**
+Yes. Set your server URL to either your Tableau Cloud pod (e.g. https://10ay.online.tableau.com) or your on-premise server URL.
+
+
 ## Installation & Usage
 
-To install and use the **Tableau** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tableau](https://vinkius.com/mcp/tableau)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tableau** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tableau` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tableau** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tableau": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

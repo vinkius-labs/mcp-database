@@ -1,7 +1,6 @@
 # Mistral AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mistral-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mistral-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mistral-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mistral-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,55 @@ Here are some examples of how you can interact with the **Mistral AI** MCP serve
 > The text passed moderation with all safety scores below thresholds. Categories checked: sexual (0.01), hate (0.00), violence (0.00), self-harm (0.00), criminal (0.00). Content is safe to process.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Mistral AI API Key?**
+Log in to the [**Mistral Console**](https://console.mistral.ai), go to **API Keys** in your workspace settings, click **Create new key** and copy it immediately. You'll need to set up billing in the admin portal first.
+
+**Q: What models are available?**
+Use the `list_models` tool to see all available Mistral models. Key models include mistral-large-latest (most capable), mistral-small-latest (efficient), codestral-latest (code specialist), and mistral-embed for embeddings. Each has different context windows, capabilities and pricing.
+
+**Q: Can I send multi-turn conversations?**
+Yes! Pass a messages array with alternating 'user', 'assistant' and 'system' roles. Each message has a 'role' and 'content' field. Mistral will continue the conversation based on the full message history.
+
+**Q: Can I moderate content for safety?**
+Yes! Use the `moderate` tool with text input. It returns safety scores for categories including sexual, hate, violence, self-harm, criminal and other harmful content. This is useful for filtering user-generated content before processing.
+
+
 ## Installation & Usage
 
-To install and use the **Mistral AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mistral-ai](https://vinkius.com/mcp/mistral-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mistral AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mistral-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mistral AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mistral-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Internet Archive Metadata MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/internet-archive-metadata)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/internet-archive-metadata-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/internet-archive-metadata-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/internet-archive-metadata)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Internet Archive Metad
 > Found 23 reviews. Average rating: 4.8/5 stars. Top review from user 'spacefan42': "Incredible historical footage. The quality restoration is remarkable. A must-watch for anyone interested in space exploration."
 
 
+## ❓ FAQ
+
+**Q: How do I get the identifier for an item?**
+The identifier is the unique string in the item's URL. For example, from https://archive.org/details/big_buck_bunny, the identifier is "big_buck_bunny". You can also get identifiers from search results using the ia-search-mcp server.
+
+**Q: What file formats are typically available?**
+It depends on the item type. Texts often have PDF, EPUB, MOBI, plain text, and Daisy formats. Movies have MP4, OGV, and archival formats. Audio has MP3, OGG, and FLAC. The get_files tool shows all available formats for each item.
+
+**Q: Can I see who reviewed an item?**
+Yes! Use the get_reviews tool. It returns the reviewer's username, star rating (1-5), review text, and review date. Not all items have reviews — community-contributed items tend to have more user feedback.
+
+
 ## Installation & Usage
 
-To install and use the **Internet Archive Metadata** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/internet-archive-metadata](https://vinkius.com/mcp/internet-archive-metadata)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Internet Archive Metadata** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `internet-archive-metadata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Internet Archive Metadata** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "internet-archive-metadata": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # FirstPromoter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firstpromoter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firstpromoter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firstpromoter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firstpromoter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **FirstPromoter** MCP se
 > Reward created! I've manually added a commission of $50.00 (5000 cents) to promoter ID 'prom_456'. The reward is now pending in their account.
 
 
+## ❓ FAQ
+
+**Q: How can I search for a specific promoter using the agent?**
+You can use the 'list_promoters' tool and provide a search term in the 'q' parameter. This can be the promoter's name, email, or referral ID. The agent will return matching profiles.
+
+**Q: Can I manually award a commission to an affiliate?**
+Yes! The 'create_reward' tool allows you to manually create a reward for a specific promoter by providing their ID and the amount in cents.
+
+**Q: Is it possible to see which campaigns are performing best?**
+Absolutely. Use the 'get_campaign_report' tool to retrieve aggregate performance metrics across all your active campaigns, including referral counts and revenue generated.
+
+
 ## Installation & Usage
 
-To install and use the **FirstPromoter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/firstpromoter](https://vinkius.com/mcp/firstpromoter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FirstPromoter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `firstpromoter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FirstPromoter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "firstpromoter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

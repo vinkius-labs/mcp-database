@@ -1,7 +1,6 @@
 # Baidu Map Web Service API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baidu-map-web-service-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baidu-map-web-service-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baidu-map-web-service-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baidu-map-web-service-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Baidu Map Web Service 
 > I've found 5 hotels near your coordinates in Shanghai, including 'The Langham' and 'The Westin Bund Center'. Would you like the addresses and contact numbers for these locations?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Baidu Map Access Key (AK)?**
+Log in to the [Baidu Map Open Platform Console](https://lbsyun.baidu.com/apiconsole/key), create an application, and your AK will be displayed. Ensure the application type is 'Server' for use with this MCP.
+
+**Q: When do I need to provide a Secret Key (SK)?**
+You only need to provide an SK if your Baidu Map application has 'SN verification' enabled in the settings. This server will automatically calculate the required signature (sn) for every request if the SK is provided.
+
+**Q: Does this work for international locations?**
+Baidu Map specialized services are highly optimized for mainland China. While some international data exists, for global coverage outside of China, other MCP servers like Google Maps or Mapbox might be more appropriate.
+
+
 ## Installation & Usage
 
-To install and use the **Baidu Map Web Service API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/baidu-map-web-service-api](https://vinkius.com/mcp/baidu-map-web-service-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Baidu Map Web Service API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `baidu-map-web-service-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Baidu Map Web Service API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "baidu-map-web-service-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # BreezoMeter Air Quality & Pollen MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/breezometer-air-quality-pollen)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/breezometer-air-quality-pollen-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/breezometer-air-quality-pollen-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/breezometer-air-quality-pollen)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **BreezoMeter Air Qualit
 > Analyzing London's environment... The AQI is currently 45. For sensitive groups (like those with asthma), it is recommended to limit prolonged outdoor exertion today. Would you like to see the specific pollutants causing this?
 
 
+## ❓ FAQ
+
+**Q: Can I check the pollen count in Paris?**
+Yes! Use the `get_pollen_levels` tool and provide the latitude and longitude for Paris. It will return the current risk levels for various types of pollen.
+
+**Q: What does the BAQI score represent?**
+BAQI stands for BreezoMeter Air Quality Index. It is a standardized scale from 0 to 100, where 100 is excellent air quality and 0 is very poor.
+
+**Q: Does it provide health advice for athletes?**
+Yes. The health recommendations include specific advice for outdoor sports and physical activities based on the current pollutant levels.
+
+
 ## Installation & Usage
 
-To install and use the **BreezoMeter Air Quality & Pollen** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/breezometer-air-quality-pollen](https://vinkius.com/mcp/breezometer-air-quality-pollen)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BreezoMeter Air Quality & Pollen** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `breezometer-air-quality-pollen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BreezoMeter Air Quality & Pollen** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "breezometer-air-quality-pollen": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

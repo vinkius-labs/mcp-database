@@ -1,7 +1,6 @@
 # ImageCharts MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/imagecharts)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/imagecharts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/imagecharts-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/imagecharts)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **ImageCharts** MCP serv
 > Radar chart generated! Team skills: Frontend (85%), Backend (92%), DevOps (70%), Design (65%), Testing (78%). Shape shows strong backend with design as growth area. Bubble chart generated! Projects: 'Alpha' (high impact, low effort, large team), 'Beta' (medium impact, high effort, small team), 'Gamma' (low impact, low effort, medium team). Bubble size = team size. Both charts ready.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key to use ImageCharts?**
+The API key is optional. Without it, generated charts include a watermark. With a paid API key, charts are watermark-free and you get higher rate limits. The key is passed as a query parameter to `image-charts.com/chart`.
+
+**Q: What chart types can I generate?**
+Six types: bar charts (`generate_bar_chart`), pie charts (`generate_pie_chart`), line charts (`generate_line_chart`), radar charts (`generate_radar_chart`), bubble charts (`generate_bubble_chart`), and QR codes (`generate_qr_code`). Each supports custom colors, labels, sizes, and data series.
+
+**Q: Can I generate QR codes from any text or URL?**
+Yes. The `generate_qr_code` tool creates a scannable QR code image from any text, URL, or data string. You can customize the size and error correction level.
+
+
 ## Installation & Usage
 
-To install and use the **ImageCharts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/imagecharts](https://vinkius.com/mcp/imagecharts)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ImageCharts** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `imagecharts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ImageCharts** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "imagecharts": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

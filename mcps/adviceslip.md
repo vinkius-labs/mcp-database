@@ -1,7 +1,6 @@
 # Adviceslip MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adviceslip)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adviceslip-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adviceslip-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adviceslip)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Adviceslip** MCP serve
 > Advice slip #50 is: 'Don't always take advice from others.' A bit ironic, isn't it?
 
 
+## ❓ FAQ
+
+**Q: Can I search for advice about a specific topic like 'work' or 'life'?**
+Yes! Use the `search_advice` tool with your keyword. It will return a list of all advice slips in the database that contain that specific term.
+
+**Q: How do I get a completely random piece of wisdom?**
+Simply call the `get_random_advice` tool. It requires no arguments and will fetch one random slip from the collection of millions.
+
+**Q: What should I do if I want to retrieve a specific advice slip I've seen before?**
+If you have the numeric ID of the slip, use the `get_advice_by_id` tool and pass the ID as the `slip_id` parameter to fetch it directly.
+
+
 ## Installation & Usage
 
-To install and use the **Adviceslip** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/adviceslip](https://vinkius.com/mcp/adviceslip)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Adviceslip** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `adviceslip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Adviceslip** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "adviceslip": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

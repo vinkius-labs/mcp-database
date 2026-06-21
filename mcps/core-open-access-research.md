@@ -1,7 +1,6 @@
 # CORE (Open Access Research) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/core-open-access-research)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/core-open-access-research-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/core-open-access-research-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/core-open-access-research)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **CORE (Open Access Rese
 > The ISSN 2041-1723 corresponds to 'Nature Communications'. It is a high-profile open access journal. I can list recent articles from this journal or provide more metadata if needed.
 
 
+## ❓ FAQ
+
+**Q: How do I get the PDF of a specific research article?**
+Use the `get_article_pdf` tool with the CORE Article ID. The agent will return the direct download URL for the open access PDF version of the paper.
+
+**Q: Can I search for specific journals or repositories?**
+Yes! You can use `search_journals` or `search_repositories` for general text queries, or use `get_journal` (with an ISSN) and `get_repository` (with a Repository ID) for direct lookups.
+
+**Q: What does the OAI resolution tool do?**
+The `resolve_oai` tool takes an OAI identifier (like oai:oro.open.ac.uk:75049) and resolves it to the CORE metadata page or the original repository link, helping you find the source of the research.
+
+
 ## Installation & Usage
 
-To install and use the **CORE (Open Access Research)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/core-open-access-research](https://vinkius.com/mcp/core-open-access-research)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CORE (Open Access Research)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `core-open-access-research` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CORE (Open Access Research)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "core-open-access-research": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

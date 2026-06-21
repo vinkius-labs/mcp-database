@@ -1,7 +1,6 @@
 # Smartsheet MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartsheet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smartsheet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smartsheet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartsheet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Which sheet would you like me to inspect in more detail?
 | Q3 Marketing Rollouts | `W-1102` | Viewer |
 
 
+## ❓ FAQ
+
+**Q: Can the AI understand the raw tabular data of my spreadsheet?**
+Yes. When you call the `get_sheet_details` tool, the server returns the spreadsheet's metadata, including all column names, types (e.g., date, dropdown), and rows. The AI maps the internal IDs together to form a highly accurate contextual grid of your project.
+
+**Q: Does my agent need to use a sheet ID?**
+No manual hunting needed! While the underlying tool does require a sheet ID, you can just tell your bot, 'Find our Onboarding Spreadsheet and read the rows'. The AI will first scan via `list_sheets`, match the textual name to the ID, and then naturally pull the targeted entity.
+
+**Q: How do I list folders within a workspace?**
+Your AI agent will act autonomously. Ask it to 'check our Engineering workspace' and it will first fetch its workspace ID and intelligently map the nested sub-folders and sheets stored inside. You can instruct it to keep going deeper as needed.
+
+
 ## Installation & Usage
 
-To install and use the **Smartsheet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/smartsheet](https://vinkius.com/mcp/smartsheet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Smartsheet** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `smartsheet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Smartsheet** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "smartsheet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

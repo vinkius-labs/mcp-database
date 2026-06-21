@@ -1,7 +1,6 @@
 # Algolia Analytics MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/algolia-analytics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/algolia-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/algolia-analytics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/algolia-analytics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Algolia Analytics** MC
 > You have 2 active AB tests. Test 'Ranking Logic V2' shows a 5% increase in conversion rate for the variant group. Test 'Mobile UI Tweak' is currently showing neutral results. Would you like the detailed metrics for the Ranking Logic test?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Algolia Analytics API Key?**
+Log in to the Algolia Dashboard, go to **API Keys**, and look for a key with the `analytics` ACL enabled. You will also need your **Application ID** found on the same page.
+
+**Q: Which region should I choose?**
+Algolia Analytics provides region-specific endpoints. Choose **US** for `analytics.us.algolia.com` or **DE** for `analytics.de.algolia.com`. Most applications use the US region by default.
+
+**Q: Why do some metrics show 0 conversion?**
+Conversion metrics require you to send events via the **Insights API**. If you aren't currently sending click or conversion events from your frontend, the Analytics API will not have data to report for those metrics.
+
+
 ## Installation & Usage
 
-To install and use the **Algolia Analytics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/algolia-analytics](https://vinkius.com/mcp/algolia-analytics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Algolia Analytics** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `algolia-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Algolia Analytics** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "algolia-analytics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # TheSportsDB Global Sports Database MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thesportsdb-global-sports-database)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/thesportsdb-global-sports-database-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/thesportsdb-global-sports-database-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thesportsdb-global-sports-database)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **TheSportsDB Global Spo
 > Inspecting the calendar... Arsenal has 5 upcoming fixtures. The next match is against Everton at the Emirates Stadium. I also found matches against Brighton and Bournemouth. Would you like the precise start times?
 
 
+## ❓ FAQ
+
+**Q: Can my AI find the history and official badge of a specific team just by its name?**
+Yes! Use the `search_teams` tool with the team name. Your agent will respond with complete metadata, founded year, and high-resolution badge URLs in seconds.
+
+**Q: How do I check the current standings for a major league like the Premier League?**
+Simply ask the agent to run the `get_league_table` tool providing the League ID (e.g., 4328 for Premier League) and the current season. It will compile the full standings with points and goal differences.
+
+**Q: Does the integration provide video highlights for recent match events?**
+Yes. Many event results retrieved via tools like `list_last_events_by_team` include a `strVideo` field which contains direct YouTube links to official match highlights when available.
+
+
 ## Installation & Usage
 
-To install and use the **TheSportsDB Global Sports Database** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/thesportsdb-global-sports-database](https://vinkius.com/mcp/thesportsdb-global-sports-database)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TheSportsDB Global Sports Database** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `thesportsdb-global-sports-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TheSportsDB Global Sports Database** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "thesportsdb-global-sports-database": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

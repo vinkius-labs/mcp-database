@@ -1,7 +1,6 @@
 # Chiirp MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chiirp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chiirp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chiirp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chiirp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Chiirp** MCP server us
 > New contact created: Sarah Johnson (+1-555-0404). The contact is now in your Chiirp CRM and ready for tagging or campaign enrollment.
 
 
+## ❓ FAQ
+
+**Q: Can I search for a contact by phone number?**
+Yes! Use `search_contacts` with the phone number to find matching contacts in your Chiirp database.
+
+**Q: How do I add a tag to trigger an automation?**
+Use `apply_tag` with the contact's phone number and the tag ID. If the tag is linked to an automation sequence in Chiirp, it will trigger automatically.
+
+**Q: Can I view my active campaigns?**
+Yes! Use `list_campaigns` to see all SMS and drip campaigns, or `list_sequences` to view automation workflows with their statuses.
+
+
 ## Installation & Usage
 
-To install and use the **Chiirp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chiirp](https://vinkius.com/mcp/chiirp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chiirp** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chiirp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chiirp** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chiirp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

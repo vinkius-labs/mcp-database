@@ -1,7 +1,6 @@
 # Munger Latticework Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/munger-latticework-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/munger-latticework-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/munger-latticework-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/munger-latticework-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Munger Latticework Pro
 > Latticework analysis: INVERSION — fail if regulation changes, competitors with regulatory moats win, ML accuracy plateau. COMPETENCE — ML inside circle, regulatory OUTSIDE (critical gap). INCENTIVES — team incentivized to ship ML, not learn compliance (misalignment). SAFETY — 24-month break-even with  assumes no competitor price war. Bear case: , 36 months. Verdict: competence gap in the core differentiator domain is disqualifying. Hire regulatory expertise before entering.
 
 
+## ❓ FAQ
+
+**Q: Why 'invert, always invert'?**
+Jacobi solved complex mathematics by working backward. Munger applied this to decisions: instead of asking how to build a great company, ask how to destroy one — and avoid those things. Pre-mortem, not post-mortem. If you cannot name 5 catastrophic failure modes, you have not thought about the decision enough.
+
+**Q: Why map incentive conflicts?**
+Munger: 'Show me the incentives and I will show you the outcome.' Sales teams paid on revenue will discount to close. Engineers rewarded for shipping will cut corners. If incentives conflict with desired behavior, behavior wins. Every time. Map every stakeholder's reward structure. Find the conflicts. Fix the incentives, not the symptoms.
+
+**Q: What is 'margin of safety'?**
+Graham (1949): buy at a price so far below intrinsic value that you are protected even when your analysis is wrong. Applied to decisions: what if your best estimate is off by 30%? 50%? Does the strategy survive being COMPLETELY wrong? Show base case, bear case, worst case, and break-even. If worst case kills you, you have no margin.
+
+
 ## Installation & Usage
 
-To install and use the **Munger Latticework Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/munger-latticework-prover](https://vinkius.com/mcp/munger-latticework-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Munger Latticework Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `munger-latticework-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Munger Latticework Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "munger-latticework-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

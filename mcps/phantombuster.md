@@ -1,7 +1,6 @@
 # PhantomBuster MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/phantombuster)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/phantombuster-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/phantombuster-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/phantombuster)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **PhantomBuster** MCP se
 > I've fetched the results for Phantom 12345. It extracted 150 leads, including names, company titles, and LinkedIn profile URLs. Would you like a detailed breakdown?
 
 
+## ❓ FAQ
+
+**Q: How do I find my PhantomBuster API Key?**
+In your PhantomBuster account, click on your name in the top right, go to **Org settings** or **Workspace settings**, and look for the **API Key** section.
+
+**Q: Can I provide arguments when launching a Phantom?**
+Yes! The `launch_phantom` action accepts an optional `argument` field where you can provide a JSON string of parameters to override the default Phantom configuration.
+
+**Q: How do I see the data extracted by a Phantom?**
+Use the `get_phantom_output` tool with the specific agent ID. It will return the results of the last successful execution of that Phantom.
+
+
 ## Installation & Usage
 
-To install and use the **PhantomBuster** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/phantombuster](https://vinkius.com/mcp/phantombuster)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PhantomBuster** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `phantombuster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PhantomBuster** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "phantombuster": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

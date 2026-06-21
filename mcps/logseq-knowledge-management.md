@@ -1,7 +1,6 @@
 # Logseq (Knowledge Management) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/logseq-knowledge-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/logseq-knowledge-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/logseq-knowledge-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/logseq-knowledge-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Logseq (Knowledge Mana
 > Block added successfully to 'Project Alpha'. It is now part of the outliner tree for that page. Would you like me to add any specific child blocks or sub-tasks under this point?
 
 
+## ❓ FAQ
+
+**Q: Can I search across all my Logseq pages using my agent?**
+Yes. Use the `search_content` tool to execute deep property searches across your graph indices. Your agent will filter titles, namespaces, and block scopes to find the exact information you need.
+
+**Q: How do I add a new note to a specific page?**
+Use the `insert_block` tool and provide the target Page name or ID. Your agent will drive the Logseq editor to add a new outliner chunk with your markdown content immediately.
+
+**Q: Can my agent retrieve the hierarchical structure of a long page?**
+Absolutely. The `get_page_blocks` tool extracts the full hierarchical tree from a page map. Your agent will return the nested arrays of outliner blocks, ensuring you have the complete structural context of your data.
+
+
 ## Installation & Usage
 
-To install and use the **Logseq (Knowledge Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/logseq-knowledge-management](https://vinkius.com/mcp/logseq-knowledge-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Logseq (Knowledge Management)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `logseq-knowledge-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Logseq (Knowledge Management)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "logseq-knowledge-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

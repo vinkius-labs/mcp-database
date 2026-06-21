@@ -1,7 +1,6 @@
 # Mailjet MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailjet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailjet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailjet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailjet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Mailjet** MCP server u
 > I've fetched the statistics. For campaign 12345, you have an open rate of 22.5% and a click rate of 3.2% across 5,000 recipients.
 
 
+## ❓ FAQ
+
+**Q: Which version of the Mailjet API does this server use?**
+This server uses Mailjet REST API v3 for resource management (contacts, lists, campaigns) and the modern v3.1 Send API for reliable email delivery.
+
+**Q: Can I send bulk emails using the agent?**
+Yes, the `send_transactional_email` tool supports the full v3.1 structure, allowing you to include multiple message objects in a single call.
+
+**Q: How do I find my API Key and Secret?**
+Log in to your Mailjet account and navigate to Account Settings > API Key Management to find or generate your credentials.
+
+
 ## Installation & Usage
 
-To install and use the **Mailjet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mailjet](https://vinkius.com/mcp/mailjet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mailjet** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mailjet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mailjet** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mailjet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

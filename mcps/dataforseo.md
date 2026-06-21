@@ -1,7 +1,6 @@
 # DataForSEO MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dataforseo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dataforseo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dataforseo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dataforseo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **DataForSEO** MCP serve
 > Retrieving Amazon UK data for ASIN B08N5KWB9H... Current Price: £899.00, Best Sellers Rank: #1 in Electronics. Prime shipping is available. Would you like to track historical price changes?
 
 
+## ❓ FAQ
+
+**Q: Can my agent retrieve localized Google search results for a specific city?**
+Yes. Provide the city or country name in the 'location' parameter. The agent will query DataForSEO's localized endpoints to return the exact SERP results as seen by users in that specific geographic boundary.
+
+**Q: How do I audit competitor rankings across different search engines?**
+You can use specialized tools for each engine (google_organic, bing_organic, baidu_organic, etc.). Provide the target keyword, and the agent will retrieve the top positional stats, allowing you to compare rankings across multiple global indexes.
+
+**Q: Does the agent help with Amazon product price and stock monitoring?**
+Absolutely. The 'amazon_asin' tool retrieves live retail data including Price, Best Sellers Rank (BSR), and Prime availability. Your agent can track these variables natively by ASIN to monitor e-commerce trends.
+
+
 ## Installation & Usage
 
-To install and use the **DataForSEO** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dataforseo](https://vinkius.com/mcp/dataforseo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DataForSEO** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dataforseo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DataForSEO** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dataforseo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

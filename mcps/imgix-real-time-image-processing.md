@@ -1,7 +1,6 @@
 # imgix (Real-time Image Processing) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/imgix-real-time-image-processing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/imgix-real-time-image-processing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/imgix-real-time-image-processing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/imgix-real-time-image-processing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **imgix (Real-time Image
 > I've retrieved the assets for source 'src_123'. Recent files include '/banners/hero-winter.jpg', '/icons/social-bundle.svg', and '/product-shots/model-01.webp'. Total assets in this source: 1,245.
 
 
+## ❓ FAQ
+
+**Q: What happens when I purge an asset in imgix?**
+Using the `purge` tool removes the cached version of the original image and ALL processed derivatives (resized, filtered, etc.) from imgix Edge nodes. This forces the system to re-fetch the file from your origin storage on the next request.
+
+**Q: Can I connect my AWS S3 bucket to imgix using my agent?**
+Absolutely. Use the `create_source` tool and provide your S3 origin base URL. Your agent will handle the backend orchestration to map your storage bucket to a new imgix CDN domain.
+
+**Q: How do I check if a source is currently serving traffic?**
+The `get_source` tool retrieves the real-time status of any imgix source. Your agent will return the deployment type and current state, so you'll know exactly if it's enabled and live.
+
+
 ## Installation & Usage
 
-To install and use the **imgix (Real-time Image Processing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/imgix-real-time-image-processing](https://vinkius.com/mcp/imgix-real-time-image-processing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **imgix (Real-time Image Processing)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `imgix-real-time-image-processing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **imgix (Real-time Image Processing)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "imgix-real-time-image-processing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

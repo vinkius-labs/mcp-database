@@ -1,7 +1,6 @@
 # UniProt MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uniprot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uniprot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uniprot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uniprot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **UniProt** MCP server u
 > Q9BYF1: ACE2_HUMAN — Angiotensin-converting enzyme 2. Gene: ACE2, Homo sapiens. 805 amino acids. Swiss-Prot reviewed ✅. Function: Metalloprotease that converts angiotensin II to angiotensin-(1-7). Notably serves as the functional receptor for SARS-CoV and SARS-CoV-2 spike proteins. Located in cell membrane.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between Swiss-Prot and TrEMBL entries?**
+Swiss-Prot contains 570K+ entries that have been manually reviewed and curated by expert biologists — the gold standard for protein annotation. TrEMBL contains 250M+ entries that are computationally annotated from gene sequences. Swiss-Prot entries are marked as 'reviewed' and are highly reliable; TrEMBL entries are automatically generated and may contain errors.
+
+**Q: Do I need to register or pay for an API key?**
+No. UniProt REST API is completely free and open without any authentication. There are no rate limits for reasonable usage patterns. UniProt is funded by the National Institutes of Health (NIH), European Molecular Biology Laboratory (EMBL), and the Swiss Institute of Bioinformatics (SIB).
+
+**Q: Can I retrieve full amino acid sequences for proteins?**
+Yes. Every protein entry includes the full amino acid sequence with length information. The sequence is returned in standard one-letter amino acid code. For very large proteins (10,000+ residues), the sequence may be truncated in the response but the full accession data is always provided for direct download.
+
+
 ## Installation & Usage
 
-To install and use the **UniProt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/uniprot](https://vinkius.com/mcp/uniprot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **UniProt** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `uniprot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **UniProt** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "uniprot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

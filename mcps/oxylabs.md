@@ -1,7 +1,6 @@
 # Oxylabs MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oxylabs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oxylabs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oxylabs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oxylabs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Oxylabs** MCP server u
 > Successfully scraped techcrunch.com with JS rendering. Page title: 'TechCrunch | Startup and Technology News'. Extracted 42 article headlines, 28 author names, 15 featured images, and 8 category tags. Top headline: 'AI startup raises $200M Series C at $2B valuation'. Content size: 245 KB (after rendering). Want me to extract just the article titles and links in a structured format?
 
 
+## ❓ FAQ
+
+**Q: Can the scraper handle JavaScript-heavy websites like React or Vue apps?**
+Yes. Enable js_render=true on the universal scraper and Oxylabs runs a headless Chromium instance that executes all client-side JavaScript before extracting the HTML. This handles SPAs, lazy-loaded content, and dynamically rendered components.
+
+**Q: How does it handle anti-bot protection?**
+Oxylabs manages a global residential and datacenter proxy network with automatic IP rotation, browser fingerprinting, and CAPTCHA solving. The API handles all proxy management transparently — you just send the URL and receive structured data back. No proxy configuration needed on your end.
+
+**Q: Can I scrape Amazon in different countries — like amazon.de or amazon.co.jp?**
+Yes. Both Amazon search and product scrapers accept a domain parameter (com, de, co.jp, co.uk, fr, it, es, etc.). The parser adapts to the regional layout and returns localized pricing, availability, and seller data specific to that marketplace.
+
+
 ## Installation & Usage
 
-To install and use the **Oxylabs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/oxylabs](https://vinkius.com/mcp/oxylabs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Oxylabs** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `oxylabs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Oxylabs** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "oxylabs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

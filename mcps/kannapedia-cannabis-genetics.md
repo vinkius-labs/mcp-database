@@ -1,7 +1,6 @@
 # Kannapedia Cannabis Genetics MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kannapedia-cannabis-genetics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kannapedia-cannabis-genetics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kannapedia-cannabis-genetics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kannapedia-cannabis-genetics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,55 @@ Here are some examples of how you can interact with the **Kannapedia Cannabis Ge
 > Found 5 strains: 1. Granddaddy Purple. 2. Northern Lights. 3. 9 Pound Hammer.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Kannapedia API Key?**
+Sign up on the Kannapedia website, navigate to your account settings, and generate a new API key for developer access.
+
+**Q: Can I search for specific terpenes?**
+Yes, the search_by_terpene tool allows you to find strains known for dominant terpenes like Myrcene, Limonene, or Caryophyllene.
+
+**Q: Does it include lineage and parentage?**
+Yes, the get_strain_detail tool provides full lineage data, including parent strains and genetic background for each entry.
+
+**Q: Can I filter strains by their reported effects?**
+Yes! Use the search_by_effect tool to discover strains associated with specific effects such as Sleep, Focus, or Relaxation.
+
+
 ## Installation & Usage
 
-To install and use the **Kannapedia Cannabis Genetics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kannapedia-cannabis-genetics](https://vinkius.com/mcp/kannapedia-cannabis-genetics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kannapedia Cannabis Genetics** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kannapedia-cannabis-genetics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kannapedia Cannabis Genetics** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kannapedia-cannabis-genetics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

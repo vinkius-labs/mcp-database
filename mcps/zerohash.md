@@ -1,7 +1,6 @@
 # ZeroHash MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zerohash)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zerohash-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zerohash-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zerohash)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **ZeroHash** MCP server 
 > I've requested a quote for buying 0.5 BTC. The current rate is 65,000 USD per BTC, totaling 32,500 USD. This quote is valid for the next 30 seconds. Would you like to execute this trade?
 
 
+## ❓ FAQ
+
+**Q: How can I check which digital assets are currently supported for trading?**
+You can use the `list_assets` tool. It allows you to filter by symbol, chain code, or specific features like whether the asset is a stablecoin or if staking is enabled.
+
+**Q: Is it possible to onboard a new customer participant directly through the AI?**
+Yes, the `create_customer` tool allows you to submit all necessary participant details, including name, email, address, and KYC status, to create a new record in ZeroHash.
+
+**Q: How do I view my current balances across different account types?**
+Use the `list_accounts` tool. You can filter the results by account group, label, owner, or specific asset to get a precise view of your holdings.
+
+
 ## Installation & Usage
 
-To install and use the **ZeroHash** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zerohash](https://vinkius.com/mcp/zerohash)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ZeroHash** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zerohash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ZeroHash** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zerohash": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

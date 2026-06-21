@@ -1,7 +1,6 @@
 # Durianpay MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/durianpay)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/durianpay-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/durianpay-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/durianpay)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Durianpay** MCP server
 > I've identified 2 failed payments today: one declined by the bank (IDR 200,000) and one expired checkout. Would you like me to pull the detailed error codes for the declined payment?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Durianpay API Key?**
+Log in to your Durianpay dashboard, navigate to **Settings > API Keys**, and you can find your unique Secret API Key there. Ensure you use the live key for production data.
+
+**Q: Can the agent initiate refunds?**
+This integration currently focuses on listing and auditing payments and orders. Processing refunds should be managed via the Durianpay dashboard or specific refund API endpoints.
+
+**Q: Which payment methods are tracked?**
+Durianpay tracks various methods including Virtual Accounts, E-wallets, Credit Cards, and Retail outlets. The agent can retrieve the specific method used for each transaction.
+
+
 ## Installation & Usage
 
-To install and use the **Durianpay** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/durianpay](https://vinkius.com/mcp/durianpay)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Durianpay** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `durianpay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Durianpay** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "durianpay": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

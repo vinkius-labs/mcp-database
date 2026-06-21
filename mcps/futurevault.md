@@ -1,7 +1,6 @@
 # FutureVault MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/futurevault)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/futurevault-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/futurevault-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/futurevault)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **FutureVault** MCP serv
 > Fetching members... The 'Acme Corporate' vault has 4 members: Mike Ross (Admin), Harvey Specter (Member), and 2 others. Would you like their profile details?
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Token for FutureVault?**
+Log in to your FutureVault Developer Portal or contact your account administrator to generate a new API Access Token.
+
+**Q: What is a 'Digital Vault' in this context?**
+A Digital Vault is a secure organizational space where documents and folders are stored, typically assigned to a specific entity or client.
+
+**Q: Can I search for documents across all my vaults?**
+Yes! The 'search_vault_content' tool allows you to perform a global keyword search for documents or folders across every vault you have access to.
+
+**Q: How do I see the folders inside a vault?**
+Use the 'list_vault_folders' tool and provide the specific Vault ID. The agent will return the top-level directory structure for that vault.
+
+
 ## Installation & Usage
 
-To install and use the **FutureVault** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/futurevault](https://vinkius.com/mcp/futurevault)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FutureVault** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `futurevault` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FutureVault** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "futurevault": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

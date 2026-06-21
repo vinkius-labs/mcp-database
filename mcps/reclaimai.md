@@ -1,7 +1,6 @@
 # Reclaim.ai MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reclaimai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reclaimai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reclaimai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reclaimai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Reclaim.ai** MCP serve
 > I requested your statistical summary via `get_analytics`. During January 2024, you dedicated roughly 84 hours to 'Deep Work', spent 30 hours locked in manual multi-participant meetings, and sustained your 'Reading' habit strictly spanning 12 aggregate hours across 20 distinct days.
 
 
+## ❓ FAQ
+
+**Q: Where do I obtain my Reclaim API Key?**
+Log into your Reclaim.ai web application. Head towards 'Settings', select 'Integrations' from the sidebar, and look for 'API' at the bottom of the connected apps. Generate your personal token there and provide it using the setup authorization parameter below.
+
+**Q: Does creating a task automatically schedule it on my calendar?**
+Yes. When the AI uses the `create_task` tool, Reclaim.ai takes your input duration, designated priority (P1 to P4), and due date to contextually slot it securely into an available window on your connected Google or Outlook calendar without extra prompts.
+
+**Q: Can I query what was already booked in the past by AI vs manually added?**
+Yes. The `list_calendar_events` query imports event types accurately across any given time period, allowing the AI to effectively understand both the manual meetings you accepted and the tasks Reclaim auto-negotiated on your schedule.
+
+
 ## Installation & Usage
 
-To install and use the **Reclaim.ai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/reclaimai](https://vinkius.com/mcp/reclaimai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Reclaim.ai** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `reclaimai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Reclaim.ai** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "reclaimai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

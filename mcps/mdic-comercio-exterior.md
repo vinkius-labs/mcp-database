@@ -1,7 +1,6 @@
 # MDIC (Comércio Exterior) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mdic-comercio-exterior)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mdic-comercio-exterior-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mdic-comercio-exterior-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mdic-comercio-exterior)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **MDIC (Comércio Exteri
 > Retrieved 5 rows from the datastore. The data includes columns for 'Year', 'Month', 'Product_Code', and 'Value_FOB'. Would you like me to summarize these results?
 
 
+## ❓ FAQ
+
+**Q: Can I search for specific trade terms like 'soybean' or 'iron ore'?**
+Yes! Use the `search_packages` tool with your query string. It will return all datasets matching those terms within the MDIC portal.
+
+**Q: How do I access the actual data rows inside a CSV resource?**
+Use the `search_datastore` tool by providing the `resource_id`. You can also apply filters and limits to retrieve exactly the data points you need.
+
+**Q: Is it possible to see the file format and download URL for a dataset?**
+Yes. The `get_package` tool returns a list of resources, and `get_resource` provides specific metadata including the format (CSV, XLSX, etc.) and the direct download URL.
+
+
 ## Installation & Usage
 
-To install and use the **MDIC (Comércio Exterior)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mdic-comercio-exterior](https://vinkius.com/mcp/mdic-comercio-exterior)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MDIC (Comércio Exterior)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mdic-comercio-exterior` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MDIC (Comércio Exterior)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mdic-comercio-exterior": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

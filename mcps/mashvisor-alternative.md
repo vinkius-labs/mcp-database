@@ -1,7 +1,6 @@
 # Mashvisor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mashvisor-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mashvisor-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mashvisor-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mashvisor-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Mashvisor** MCP server
 > Analyzing Orlando market... The top neighborhoods based on investment performance are 'Downtown' (Cash on Cash: 5.2%) and 'Lake Nona' (Cash on Cash: 4.8%). Would you like a detailed overview of 'Downtown'?
 
 
+## ❓ FAQ
+
+**Q: Can I find comparable properties for a specific address to estimate its value?**
+Yes! Use the `get_property_comps` tool by providing the property address or ID. The agent will return a list of nearby properties with similar characteristics to help you perform a comparative market analysis.
+
+**Q: How do I check the investment performance of a specific city?**
+You can use the `get_city_investment_performance` tool. Simply provide the state and city name, and the agent will retrieve key metrics like cash on return, cap rate, and rental income for that market.
+
+**Q: Is it possible to get ownership information and contact details for a property?**
+Yes, the `get_ownership_info` tool retrieves owner contact information and residency indicators for a specific property ID or address, allowing you to identify potential leads or current owners.
+
+
 ## Installation & Usage
 
-To install and use the **Mashvisor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mashvisor-alternative](https://vinkius.com/mcp/mashvisor-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mashvisor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mashvisor-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mashvisor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mashvisor-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Levo.ai (API Security & Observability) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/levoai-api-security-observability)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/levoai-api-security-observability-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/levoai-api-security-observability-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/levoai-api-security-observability)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Levo.ai (API Security 
 > Generating OpenAPI spec based on live traffic… Done. I've successfully exported the specification for the User Management service. It includes 12 verified endpoints and mapped request/response schemas. Would you like the JSON payload?
 
 
+## ❓ FAQ
+
+**Q: Can Levo.ai identify undocumented APIs in my environment?**
+Yes. Use the `list_catalog_endpoints` tool to see the full inventory auto-discovered by Levo sensors. Your agent can highlight 'Shadow' or 'Zombie' APIs that exist in your infrastructure but are missing from official documentation.
+
+**Q: How do I check which endpoints are exposing PII or sensitive data?**
+The `list_sensitive_data` tool allows your agent to query endpoints categorized by regulated data flows. You'll see which paths are transmitting names, emails, SSNs, or financial data, helping you prioritize compliance audits.
+
+**Q: Can my agent generate a live OpenAPI specification for an existing service?**
+Absolutely. Use the `export_openapi_spec` tool with a specific App ID. Your agent will retrieve a specification derived from actual observed traffic, providing a more accurate reflection of your live API than static files.
+
+
 ## Installation & Usage
 
-To install and use the **Levo.ai (API Security & Observability)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/levoai-api-security-observability](https://vinkius.com/mcp/levoai-api-security-observability)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Levo.ai (API Security & Observability)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `levoai-api-security-observability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Levo.ai (API Security & Observability)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "levoai-api-security-observability": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

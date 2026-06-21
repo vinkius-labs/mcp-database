@@ -1,7 +1,6 @@
 # NS1 (IBM NS1 Premium DNS API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ns1-ibm-ns1-premium-dns-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ns1-ibm-ns1-premium-dns-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ns1-ibm-ns1-premium-dns-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ns1-ibm-ns1-premium-dns-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **NS1 (IBM NS1 Premium D
 > Fetching monitoring data... I found 2 active jobs: 'Global-Web-Check' (monitoring from US-East, EU-West, and Asia-Pacific) and 'API-Health' (monitoring from US-West).
 
 
+## ❓ FAQ
+
+**Q: Can I create a new DNS zone using this server?**
+Yes! Use the `create_zone` tool with the zone name (e.g., 'example.com'). You can also optionally set TTL, refresh, and expiry values during creation.
+
+**Q: How do I add a record with specific answers for traffic steering?**
+Use the `create_record` tool. You can provide a JSON array of `answers` (e.g., IP addresses) and a JSON array of `filters` to define how NS1 should steer traffic between those answers.
+
+**Q: Can I see my active monitoring jobs and their status?**
+Yes, the `list_monitoring_jobs` tool retrieves all configured monitoring jobs, allowing your AI agent to report on the health and status of your monitored endpoints.
+
+
 ## Installation & Usage
 
-To install and use the **NS1 (IBM NS1 Premium DNS API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ns1-ibm-ns1-premium-dns-api](https://vinkius.com/mcp/ns1-ibm-ns1-premium-dns-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NS1 (IBM NS1 Premium DNS API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ns1-ibm-ns1-premium-dns-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NS1 (IBM NS1 Premium DNS API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ns1-ibm-ns1-premium-dns-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

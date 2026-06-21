@@ -1,7 +1,6 @@
 # eGestor ERP MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/egestor-erp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/egestor-erp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/egestor-erp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/egestor-erp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **eGestor ERP** MCP serv
 > Found 28 active clients this quarter. Top 5 by total spend: 1) 'Tech Solutions Ltda' (contact_201) — R$ 8,450.00 across 6 orders. 2) 'Maria Comercial' (contact_145) — R$ 5,120.50 across 4 orders. 3) 'João Pereira ME' (contact_089) — R$ 3,890.00 across 3 orders. 4) 'Distribuidora Norte' (contact_312) — R$ 2,780.00 across 2 orders. 5) 'Carlos Eletrônicos' (contact_178) — R$ 1,950.00 across 5 orders. Total quarterly revenue from these clients: R$ 34,290.50. Would you like to check purchase orders from suppliers?
 
 
+## ❓ FAQ
+
+**Q: Can I check stock levels for all my products?**
+Yes. The `list_products` tool retrieves your full product catalog including prices, stock quantities, categories, and SKUs. Use `get_product` with a product code to inspect a specific item's full details including cost price, sale price, and stock history.
+
+**Q: Can I view both sales and purchase records for financial reconciliation?**
+Yes. Use `list_sales` to retrieve all sales orders and `get_sale` with a sale code for individual transaction details (line items, totals, payment method). Similarly, `list_purchases` retrieves supplier orders and `get_purchase` shows complete purchase details. Both are essential for financial reconciliation and fiscal reporting.
+
+**Q: What authentication does eGestor require?**
+eGestor uses a **Personal Token** (Bearer authentication). Generate it from **Configurações > API** in your eGestor dashboard. The token is sent as `Authorization: Bearer <token>` in all requests. Note: the API has a rate limit of 60 requests per minute.
+
+
 ## Installation & Usage
 
-To install and use the **eGestor ERP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/egestor-erp](https://vinkius.com/mcp/egestor-erp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **eGestor ERP** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `egestor-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **eGestor ERP** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "egestor-erp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

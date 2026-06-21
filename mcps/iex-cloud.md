@@ -1,7 +1,6 @@
 # IEX Cloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iex-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/iex-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/iex-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iex-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **IEX Cloud** MCP server
 > Querying the market lists... The top gainers today are led by 'TechSolutions Inc' (+12.4%) and 'BioHealth Corp' (+8.9%). Would you like details on any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I see historical price trends for a specific stock?**
+Yes. Use the `get_stock_chart` tool by providing the symbol and a range (like '1m' or '1y') to retrieve historical data points for analysis.
+
+**Q: Does this server support cryptocurrency prices?**
+Absolutely. You can use `get_crypto_quote` with symbols like 'BTCUSD' to get real-time pricing and market data for major digital assets.
+
+**Q: How can I find out which companies are reporting earnings soon?**
+Use the `get_upcoming_earnings` tool. It returns a calendar of companies scheduled to release their financial results in the near future.
+
+
 ## Installation & Usage
 
-To install and use the **IEX Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/iex-cloud](https://vinkius.com/mcp/iex-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IEX Cloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `iex-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IEX Cloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "iex-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

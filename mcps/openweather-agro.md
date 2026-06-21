@@ -1,7 +1,6 @@
 # OpenWeather Agro MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openweather-agro)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openweather-agro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openweather-agro-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openweather-agro)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **OpenWeather Agro** MCP
 > Checking frost risk for your vineyard location... FROST RISK: HIGH tonight. Predicted low temperature: -1.8°C (28.8°F) around 5:00 AM. Soil temperature: 4.2°C. Wind speed: 2 km/h (calm conditions increase frost risk). Dew point: -3.1°C. Recommendation: Activate frost protection measures immediately. Wind machines should be turned on by 3:00 AM (before temperature drops below critical threshold). If available, supplement with irrigation for additional 1-2°C protection. Monitor conditions hourly through dawn.
 
 
+## ❓ FAQ
+
+**Q: Can my AI check NDVI for my field to assess crop health?**
+Yes! Use the `get_ndvi` tool with your field coordinates and a date. NDVI values range from -1 to 1, with 0.6-0.9 indicating healthy dense vegetation and 0.2-0.5 indicating stressed or sparse vegetation. For trend analysis over a growing season, use `get_historical_ndvi` with a date range. The data comes from satellite imagery processed by OpenWeather algorithms.
+
+**Q: How do I calculate irrigation needs using evapotranspiration data?**
+Use the `get_evapotranspiration` tool with your field coordinates and date. ET values show how much water your crops are losing through transpiration and soil evaporation. Compare ET with rainfall (from `get_current_weather` or `get_weather_forecast`) to determine irrigation deficits. If ET exceeds precipitation, irrigation is needed to replace the difference. For precise scheduling, track daily ET over time and accumulate deficits.
+
+**Q: Can I get frost warnings to protect my crops?**
+Yes! Use the `get_frost_risk` tool with your field coordinates. It returns frost risk levels (low, moderate, high, critical) based on temperature forecasts and local conditions. For proactive planning, combine with `get_weather_forecast` to monitor approaching cold fronts. High or critical frost risk indicates you should activate frost protection measures like irrigation, wind machines, or covers.
+
+
 ## Installation & Usage
 
-To install and use the **OpenWeather Agro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openweather-agro](https://vinkius.com/mcp/openweather-agro)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenWeather Agro** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openweather-agro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenWeather Agro** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openweather-agro": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Hookdeck (Webhook Gateway) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hookdeck-webhook-gateway)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hookdeck-webhook-gateway-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hookdeck-webhook-gateway-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hookdeck-webhook-gateway)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -145,12 +144,52 @@ Here are some examples of how you can interact with the **Hookdeck (Webhook Gate
 > Fetching details for 'conn_xyz789'... This connection routes from Source 'GitHub-Repo' to Destination 'Vercel-Deploy'. It currently has 2 active rules and is in 'Enabled' status.
 
 
+## ❓ FAQ
+
+**Q: Can I pause a specific webhook connection if my destination server is undergoing maintenance?**
+Yes. Use the `pause_connection` tool with the Connection ID. This will hold incoming events until you use `unpause_connection` to resume delivery.
+
+**Q: How do I see all the active sources currently receiving webhooks?**
+Simply ask the agent to run `list_sources`. It will return a list of all configured sources, including their IDs and current status.
+
+**Q: Is it possible to get a quick count of how many connections I have configured?**
+Yes, the `count_connections` tool provides the total number of connections in your Hookdeck project instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Hookdeck (Webhook Gateway)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hookdeck-webhook-gateway](https://vinkius.com/mcp/hookdeck-webhook-gateway)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hookdeck (Webhook Gateway)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hookdeck-webhook-gateway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hookdeck (Webhook Gateway)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hookdeck-webhook-gateway": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

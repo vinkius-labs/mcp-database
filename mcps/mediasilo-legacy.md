@@ -1,7 +1,6 @@
 # MediaSilo (Legacy) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mediasilo-legacy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mediasilo-legacy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mediasilo-legacy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mediasilo-legacy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **MediaSilo (Legacy)** M
 > Q1 Pitch Analytics: 45 unique views. Total watch time: 18 hours. Average completion: 78%. Drop-off spike: @1:45 (Pricing slide, 12 viewers stopped watching). Top viewers: Apple Inc. (12 views), Internal (5 views).
 
 
+## ❓ FAQ
+
+**Q: Can I create secure review links?**
+Yes. Generate password-protected, expiring links for external clients to review video assets.
+
+**Q: How does MediaSilo authentication work?**
+It requires both an **API Key** and **API Secret** sent via custom headers against `api.shift.io/v3`.
+
+**Q: Can I track viewer engagement on videos?**
+Yes. Track playbacks, total watch time, drop-off points, and specific timestamp comments.
+
+
 ## Installation & Usage
 
-To install and use the **MediaSilo (Legacy)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mediasilo-legacy](https://vinkius.com/mcp/mediasilo-legacy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MediaSilo (Legacy)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mediasilo-legacy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MediaSilo (Legacy)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mediasilo-legacy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

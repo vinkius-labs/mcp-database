@@ -1,7 +1,6 @@
 # Decentraland (Virtual World Content API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/decentraland-virtual-world-content-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/decentraland-virtual-world-content-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/decentraland-virtual-world-content-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/decentraland-virtual-world-content-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Decentraland (Virtual 
 > Searching near the center... I found 'Sotheby's Gallery' at (1,1) and 'MUSE Art Space' at (-2,3). Both are highly rated and currently active.
 
 
+## ❓ FAQ
+
+**Q: How can I find the most crowded places in Decentraland right now?**
+You can use the `get_hot_scenes` tool to get a real-time list of popular scenes with active user counts, or `get_parcel_stats` for a granular view of user distribution across coordinates.
+
+**Q: Can I see what events are happening today?**
+Yes! The `list_events` tool retrieves all active and upcoming community-organized events, including their descriptions and locations.
+
+**Q: Is it possible to search for specific scenes by name or coordinates?**
+Absolutely. Use the `list_places` tool with the `search` parameter for names or the `coordinates` parameter (e.g., "-23,-96") to find content in specific areas.
+
+
 ## Installation & Usage
 
-To install and use the **Decentraland (Virtual World Content API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/decentraland-virtual-world-content-api](https://vinkius.com/mcp/decentraland-virtual-world-content-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Decentraland (Virtual World Content API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `decentraland-virtual-world-content-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Decentraland (Virtual World Content API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "decentraland-virtual-world-content-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Bazaarvoice MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bazaarvoice)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bazaarvoice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bazaarvoice-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bazaarvoice)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Bazaarvoice** MCP serv
 > I found 4 unanswered questions. They cover topics like 'compatibility with older models' and 'shipping times to Europe'. Would you like the full text of these questions?
 
 
+## ❓ FAQ
+
+**Q: Can I search for specific keywords within my product reviews?**
+Yes! Use the `search_reviews` tool and provide a text query. Your agent will search through your Bazaarvoice reviews and return those matching your search term.
+
+**Q: How do I get the overall rating statistics for a product?**
+Simply use the `get_statistics` action with the target Product ID. It will return a summary of ratings, including average rating and distribution.
+
+**Q: Does this integration allow me to post new answers to customer questions?**
+Currently, the toolset is read-only, focusing on retrieving and analyzing content (listing products, reviews, questions). Posting content is not supported in the current version to ensure content moderation workflows are respected.
+
+
 ## Installation & Usage
 
-To install and use the **Bazaarvoice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bazaarvoice](https://vinkius.com/mcp/bazaarvoice)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bazaarvoice** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bazaarvoice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bazaarvoice** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bazaarvoice": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

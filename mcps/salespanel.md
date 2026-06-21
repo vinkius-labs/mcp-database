@@ -1,7 +1,6 @@
 # Salespanel MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salespanel)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salespanel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salespanel-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salespanel)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,46 @@ Here are some examples of how you can interact with the **Salespanel** MCP serve
 > Meridian Corp lead journey (David Chen). Day 1: First visit via Google search "enterprise API platform". Viewed homepage and features page (3 min). Day 3: Returned directly. Read 2 case studies and pricing page (12 min). Day 5: Downloaded whitepaper "API-First Architecture Guide" (form submitted). Day 7: Attended webinar "Scaling Enterprise APIs". Day 9: 3 visits to API documentation (22 min total). Day 10: Visited pricing page twice, opened comparison page. Day 11 (today): Submitted demo request form. Total touchpoints: 14. Lead score trajectory: 25 → 94.
 
 
+## ❓ FAQ
+
+**Q: Can I list all my website visitors using my AI agent?**
+Yes! Use the `list_anonymous_visitors` tool to retrieve a comprehensive list of both anonymous and identified visitors to your site.
+
+
 ## Installation & Usage
 
-To install and use the **Salespanel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/salespanel](https://vinkius.com/mcp/salespanel)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Salespanel** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `salespanel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Salespanel** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "salespanel": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ROR API (Research Organization Registry) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ror-api-research-organization-registry)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ror-api-research-organization-registry-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ror-api-research-organization-registry-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ror-api-research-organization-registry)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **ROR API (Research Orga
 > I'll check the system status using `get_heartbeat`. The ROR API responded with 'OK', so the service is fully operational.
 
 
+## ❓ FAQ
+
+**Q: How can I find a ROR ID for a specific university name?**
+Use the `list_organizations` tool with the `query` parameter. For example, searching for 'University of Cambridge' will return the matching record and its unique ROR ID.
+
+**Q: Can I retrieve external identifiers like GRID or ISNI for an organization?**
+Yes! When you use `get_organization` with a ROR ID, the response includes a crosswalk to other identifiers like GRID, ISNI, Crossref Funder ID, and Wikidata.
+
+**Q: Is there a way to check if the ROR service is currently available?**
+You can use the `get_heartbeat` tool. It performs a simple check and returns an 'OK' status if the ROR API is operational.
+
+
 ## Installation & Usage
 
-To install and use the **ROR API (Research Organization Registry)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ror-api-research-organization-registry](https://vinkius.com/mcp/ror-api-research-organization-registry)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ROR API (Research Organization Registry)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ror-api-research-organization-registry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ROR API (Research Organization Registry)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ror-api-research-organization-registry": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

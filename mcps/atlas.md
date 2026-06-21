@@ -1,7 +1,6 @@
 # Atlas MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/atlas)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/atlas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/atlas-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/atlas)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Atlas** MCP server usi
 > I've found 3 articles related to pricing: 'Subscription Plans', 'Annual vs Monthly Billing', and 'Refund Policy'.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Atlas.so API Token?**
+Log in to your Atlas dashboard, go to **App Configuration > Data > API**, and you will find your API Token there.
+
+**Q: Can I see help center articles via this server?**
+Yes, use the `list_articles` tool to retrieve a list of articles from your Atlas help center.
+
+**Q: How are customer IDs handled?**
+Atlas uses unique internal IDs for customers. You can discover these IDs by using the `list_customers` tool or searching for a specific customer by email.
+
+
 ## Installation & Usage
 
-To install and use the **Atlas** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/atlas](https://vinkius.com/mcp/atlas)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Atlas** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `atlas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Atlas** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "atlas": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

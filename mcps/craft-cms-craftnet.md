@@ -1,7 +1,6 @@
 # Craft CMS (Craftnet) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/craft-cms-craftnet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/craft-cms-craftnet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/craft-cms-craftnet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/craft-cms-craftnet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Craft CMS (Craftnet)**
 > I've searched Craftnet and found several e-commerce plugins, including 'Commerce', 'Shopify', and 'Snipcart'. Which one would you like to inspect for details?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Craftnet API Key?**
+Log in to your Craft ID account at craftcms.com, go to **Settings > API Keys**, and generate a new key. Note that some endpoints require developer permissions.
+
+**Q: Can I manage client licenses via chat?**
+Yes, you can list all CMS and plugin licenses associated with your account, helping you audit and track renewals or project-specific assignments.
+
+**Q: Does the integration track plugin sales?**
+Yes, if you are a plugin developer, you can list your recent sales history and historical payout data directly through the agent.
+
+
 ## Installation & Usage
 
-To install and use the **Craft CMS (Craftnet)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/craft-cms-craftnet](https://vinkius.com/mcp/craft-cms-craftnet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Craft CMS (Craftnet)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `craft-cms-craftnet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Craft CMS (Craftnet)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "craft-cms-craftnet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

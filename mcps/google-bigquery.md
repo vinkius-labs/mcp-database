@@ -1,7 +1,6 @@
 # Google BigQuery MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-bigquery)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-bigquery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-bigquery-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-bigquery)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Google BigQuery** MCP 
 > Listing recent jobs. Job `cron_transform_01` (ID: 11a0ab3-xxx) failed globally at 03:00AM. Root cause trace indicates native `Unrecognized name: user_account_id` syntax failure halting workflow explicitly mapped.
 
 
+## ❓ FAQ
+
+**Q: Can my AI write its own queries if I just ask it a business question?**
+Yes! The agent will typically use `list_tables` and `get_table` to study the columns first. Then, realizing constraints, it will natively invoke `execute_query` running an optimized Standard SQL string to fetch exactly what you asked for.
+
+**Q: Will my prompt fail if it returns millions of rows?**
+It might hit the context window boundaries of the chosen foundational LLM. Good practice suggests instructing your AI to always append `LIMIT 100` initially or run macro aggregations (like `COUNT()` or `SUM()`) natively inside BigQuery first.
+
+**Q: How do I check if a query was expensive after it ran?**
+Use the `list_jobs` or `get_job` endpoints. They expose metadata directly from Google's history returning the `totalBytesProcessed` flag so your agent can estimate overhead intelligently.
+
+
 ## Installation & Usage
 
-To install and use the **Google BigQuery** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-bigquery](https://vinkius.com/mcp/google-bigquery)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google BigQuery** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-bigquery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google BigQuery** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-bigquery": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

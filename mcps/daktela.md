@@ -1,7 +1,6 @@
 # Daktela MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/daktela)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/daktela-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/daktela-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/daktela)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Daktela** MCP server u
 > Fetching email interactions... For contact cont_5521, I found 3 recent email threads discussing 'Billing Inquiry' and 'Product Upgrade'. Would you like the full body of the latest message?
 
 
+## ❓ FAQ
+
+**Q: Can I see all the open tickets in my Daktela account?**
+Yes! Use the `list_tickets` tool. Your agent will retrieve the complete directory of support cases, which you can then filter or summarize.
+
+**Q: How do I create a new contact in the Daktela CRM?**
+Use the `create_contact` action. Provide the first name, last name, and optional email or phone number to register the person in your CRM database instantly.
+
+**Q: Is it possible to list the history of past phone calls via AI?**
+Absolutely. Use the `list_call_history` query. The agent will retrieve a detailed log of past voice interactions, including participants and durations.
+
+
 ## Installation & Usage
 
-To install and use the **Daktela** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/daktela](https://vinkius.com/mcp/daktela)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Daktela** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `daktela` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Daktela** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "daktela": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

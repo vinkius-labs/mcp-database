@@ -1,7 +1,6 @@
 # Cerbos (Access Control) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cerbos-access-control)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cerbos-access-control-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cerbos-access-control-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cerbos-access-control)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Cerbos (Access Control
 > I've retrieved the list of policies. You have 12 policies active, including 'resource.expense.v1', which handles authorization for expense reports.
 
 
+## ❓ FAQ
+
+**Q: Can I test if a specific user has access to a resource without writing code?**
+Yes. You can ask the agent to use the `check_resources` tool by providing the principal (user) details and the resource you want to check. The agent will return the allowed or denied status based on your Cerbos policies.
+
+**Q: How do I view all the authorization policies currently loaded in my Cerbos server?**
+Simply ask the agent to 'list all policies'. It will invoke the `list_policies` tool (requires Admin credentials) and display the IDs of all active policies in your environment.
+
+**Q: Can the AI help me generate filters for my database based on permissions?**
+Yes, by using the `plan_resources` tool. The agent will generate a query plan (AST) that describes the conditions under which a user is allowed to access resources, which you can then apply to your database queries.
+
+
 ## Installation & Usage
 
-To install and use the **Cerbos (Access Control)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cerbos-access-control](https://vinkius.com/mcp/cerbos-access-control)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cerbos (Access Control)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cerbos-access-control` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cerbos (Access Control)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cerbos-access-control": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

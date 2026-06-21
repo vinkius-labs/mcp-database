@@ -1,7 +1,6 @@
 # Kinde (Modern Authentication) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kinde-modern-authentication)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kinde-modern-authentication-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kinde-modern-authentication-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kinde-modern-authentication)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Kinde (Modern Authenti
 > Inspecting user kp_987654321... This is 'Alice Wonderland'. Email: alice@example.com. Status: Active. Last login: 2 hours ago.
 
 
+## ❓ FAQ
+
+**Q: Can I create a new user directly through the AI?**
+Yes! Use the `create_user` tool by providing the necessary data payload (email, name, etc.). The agent will interface with Kinde to provision the account immediately.
+
+**Q: How do I audit the roles available in my Kinde environment?**
+Simply ask the agent to run the `list_roles` tool. It will retrieve all defined roles, allowing you to verify access levels and configurations.
+
+**Q: Is it possible to update an existing user's information?**
+Yes, you can use the `update_user` tool. You'll need to provide the `user_id` and the specific fields you wish to modify in the data payload.
+
+
 ## Installation & Usage
 
-To install and use the **Kinde (Modern Authentication)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kinde-modern-authentication](https://vinkius.com/mcp/kinde-modern-authentication)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kinde (Modern Authentication)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kinde-modern-authentication` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kinde (Modern Authentication)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kinde-modern-authentication": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

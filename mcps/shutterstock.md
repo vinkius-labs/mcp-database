@@ -1,7 +1,6 @@
 # Shutterstock MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shutterstock)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shutterstock-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shutterstock-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shutterstock)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,12 +62,52 @@ Here are some examples of how you can interact with the **Shutterstock** MCP ser
 > Activating query execution parameters exclusively natively via `search_audio` matching explicitly strings 'spooky' heavily. Filtered definitively filtering explicitly identifying structural loops securely yielding exactly 5 ominous soundscapes seamlessly retrieved fully efficiently. Do you require the absolute strict structural IDs subsequently seamlessly?
 
 
+## ❓ FAQ
+
+**Q: Can the integration forcefully license or automatically purchase an image?**
+No. By structural design, this module is strictly bound as an observational and search lens tailored purely around querying assets violently efficiently. It explicitly omits write protocols preventing your autonomous agent from accidentally sabotaging valid corporate wallets or unintentionally mass-licensing redundant data.
+
+**Q: Can it search for specific internal user collections or boards?**
+Yes, utilizing the explicit `list_collections` operational protocol, the token directly verifies and systematically grabs all active native groupings created rigidly beneath the account bounding that token natively.
+
+**Q: Is the Editorial access separated structurally from the standard image search?**
+Yes aggressively. Because editorial resources operate identically under completely distinct structural usage and strict rights matrices, we forcibly separate standard asset queries (`search_images`) strictly away from the rigorous editorial boundaries specifically bound uniquely under `search_editorial`.
+
+
 ## Installation & Usage
 
-To install and use the **Shutterstock** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shutterstock](https://vinkius.com/mcp/shutterstock)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Shutterstock** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shutterstock` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Shutterstock** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shutterstock": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

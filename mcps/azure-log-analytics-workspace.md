@@ -1,7 +1,6 @@
 # Azure Log Analytics Workspace MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-log-analytics-workspace)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/azure-log-analytics-workspace-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/azure-log-analytics-workspace-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-log-analytics-workspace)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,49 @@ Here are some examples of how you can interact with the **Azure Log Analytics Wo
 > I used `| where TimeGenerated > ago(24h) | where UserId == 'admin'` and found 3 relevant log entries.
 
 
+## ❓ FAQ
+
+**Q: Why limit the agent to a single Log Table?**
+To enforce zero-trust security. A Workspace often contains sensitive audit trails (like AzureActivity or SecurityEvents). By locking the agent to a specific table (e.g., 'AppExceptions'), you prevent it from reading global infrastructure access logs.
+
+**Q: How should I format my KQL queries?**
+You do NOT need to include the table name. The MCP engine automatically handles the table prefix. Just pass the KQL operators starting with a pipe. Example: `| where TimeGenerated > ago(1h) | limit 50`.
+
+
 ## Installation & Usage
 
-To install and use the **Azure Log Analytics Workspace** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/azure-log-analytics-workspace](https://vinkius.com/mcp/azure-log-analytics-workspace)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Azure Log Analytics Workspace** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `azure-log-analytics-workspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Azure Log Analytics Workspace** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "azure-log-analytics-workspace": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

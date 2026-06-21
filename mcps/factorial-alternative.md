@@ -1,7 +1,6 @@
 # Factorial MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/factorial-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/factorial-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/factorial-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/factorial-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Factorial** MCP server
 > Fetching contracts... I've found the active employment contracts for all staff. Notable items include the recently signed agreements. Would you like me to provide specific details?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details of a specific employee just by providing their ID?**
+Yes! Use the `get_employee` tool with the unique ID. Your agent will respond with complete metadata, contact information, and role details in seconds.
+
+**Q: How do I monitor team leaves and availability?**
+Simply ask the agent to run the `list_leaves` tool. It will compile a list of all requested and approved absences, allowing you to see who is out of the office.
+
+**Q: Does the integration permit modifying employee data?**
+No. The core set of tools focuses strictly on querying and analyzing HR context—listing employees, leaves, and attendance. State alteration operations are not currently exposed, ensuring your records remain secure.
+
+
 ## Installation & Usage
 
-To install and use the **Factorial** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/factorial-alternative](https://vinkius.com/mcp/factorial-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Factorial** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `factorial-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Factorial** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "factorial-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

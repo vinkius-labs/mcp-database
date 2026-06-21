@@ -1,7 +1,6 @@
 # OpenClassrooms MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openclassrooms)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openclassrooms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openclassrooms-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openclassrooms)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **OpenClassrooms** MCP s
 > 3 students earned certificates in March. Alex Chen — 'Data Analyst' path completed (Cert ID: OC-2024-8834). Julia Martinez — 'Product Manager' path completed (Cert ID: OC-2024-8901). Tom Nguyen — 'Front-End Developer' path completed (Cert ID: OC-2024-8955). All certificates are publicly verifiable.
 
 
+## ❓ FAQ
+
+**Q: Can I track completion rates across my entire team at once?**
+Yes. List all students associated with your partner API key, then ask your agent to summarize each student's completion percentage and pending projects. Get a full team progress report in a single conversation — no spreadsheets, no manual exports from the OpenClassrooms dashboard.
+
+**Q: What data do I get about mentoring sessions?**
+The agent pulls session date, time, mentor name, session status (completed, scheduled, or missed), and the student linked to each session. This is useful for auditing mentorship quality and identifying students who are missing their scheduled sessions.
+
+**Q: Is this API available to everyone or only to OpenClassrooms partners?**
+The OpenClassrooms API is restricted to approved partners. You need an active partnership agreement with OpenClassrooms to obtain production API credentials. If you're already a partner, your account manager can provide the API key. This integration is designed for organizations using OpenClassrooms for team training.
+
+
 ## Installation & Usage
 
-To install and use the **OpenClassrooms** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openclassrooms](https://vinkius.com/mcp/openclassrooms)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenClassrooms** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openclassrooms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenClassrooms** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openclassrooms": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

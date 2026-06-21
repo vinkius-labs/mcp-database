@@ -1,7 +1,6 @@
 # U.S. Treasury Debt — National Debt & Interest Rates MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-treasury-debt-national-debt-interest-rates)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-treasury-debt-national-debt-interest-rates-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-treasury-debt-national-debt-interest-rates-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-treasury-debt-national-debt-interest-rates)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Recent 10-Year Treasury Note Auction (2026-03-15):
 - Bid-to-Cover Ratio: 2.54
 
 
+## ❓ FAQ
+
+**Q: What is 'Debt to the Penny'?**
+It is the exact daily public debt of the United States, updated each business day. It includes all Treasury securities issued to the public.
+
+**Q: How often are the interest rates updated?**
+Average interest rates are typically reported at the end of each month.
+
+**Q: Do I need authentication?**
+No, all Treasury Fiscal Data API endpoints are public and do not require API keys.
+
+
 ## Installation & Usage
 
-To install and use the **U.S. Treasury Debt — National Debt & Interest Rates** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-treasury-debt-national-debt-interest-rates](https://vinkius.com/mcp/us-treasury-debt-national-debt-interest-rates)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **U.S. Treasury Debt — National Debt & Interest Rates** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-treasury-debt-national-debt-interest-rates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **U.S. Treasury Debt — National Debt & Interest Rates** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-treasury-debt-national-debt-interest-rates": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # CrowdSec MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crowdsec)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/crowdsec-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/crowdsec-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crowdsec)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **CrowdSec** MCP server 
 > According to CrowdSec CTI, 185.220.101.101 is classified as a 'Tor Exit Node'. It has a high noise score and is frequently reported for scanning activities globally. It is currently flagged in multiple community blocklists.
 
 
+## ❓ FAQ
+
+**Q: Can I check if a specific IP address is currently blocked in my local CrowdSec instance?**
+Yes! Use the `get_decisions` tool providing the IP address. Your agent will query your Local API and return any active decisions, including the reason and duration of the block.
+
+**Q: How do I see the latest security threats detected by my server in real-time?**
+You can use the `get_decisions_stream` tool. This allows your agent to poll for new and deleted decisions, giving you a clear view of recent security activity on your infrastructure.
+
+**Q: Can I verify an IP's global reputation even if it hasn't attacked my server yet?**
+Absolutely. The `get_cti_smoke` tool queries the global CrowdSec CTI network. It provides background information, attack behaviors, and risk scores for any IP based on community data.
+
+
 ## Installation & Usage
 
-To install and use the **CrowdSec** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/crowdsec](https://vinkius.com/mcp/crowdsec)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CrowdSec** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `crowdsec` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CrowdSec** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "crowdsec": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

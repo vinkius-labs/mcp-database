@@ -1,7 +1,6 @@
 # Bland AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bland-ai-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bland-ai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bland-ai-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bland-ai-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Bland AI** MCP server 
 > Accessing voice personas... You currently have 3 configured agents, including 'Support Maya' (Voice: Maya) and 'Sales Mason'. Would you like the detailed prompt configuration for any of them?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Bland AI API Key?**
+Log in to your account, navigate to **Settings** > **API Keys**, and generate a new key for your integration.
+
+**Q: Can I use specific AI voices via agent?**
+Yes! The `send_phone_call` and `create_voice_agent` tools allow you to specify voice IDs (e.g., 'maya', 'mason') programmatically.
+
+**Q: How do I retrieve call transcripts?**
+Use the `get_call_details` tool with a specific call ID to retrieve the high-fidelity transcript and recording link directly from the platform.
+
+
 ## Installation & Usage
 
-To install and use the **Bland AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bland-ai-alternative](https://vinkius.com/mcp/bland-ai-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bland AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bland-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bland AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bland-ai-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

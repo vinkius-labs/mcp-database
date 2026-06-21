@@ -1,7 +1,6 @@
 # Quotable API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quotable-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/quotable-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/quotable-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quotable-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Quotable API** MCP ser
 > I've scanned the tag catalog. There are over 50 tags available, including 'technology', 'success', 'love', and 'life'. I can help you retrieve a random quote for any of these specific themes.
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for Quotable API?**
+No. Quotable.io is a free and open service. This server works out of the box without any static credentials required.
+
+**Q: Can I filter quotes by author?**
+Yes. Use the `get_random_quote` tool and provide the `author` parameter (name or slug). Your agent will return matching quotes instantly.
+
+**Q: What biographical data is provided for authors?**
+The `get_author_details` tool provides the author's full name, a brief description, and a complete biography from the database.
+
+
 ## Installation & Usage
 
-To install and use the **Quotable API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/quotable-api](https://vinkius.com/mcp/quotable-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Quotable API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `quotable-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Quotable API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "quotable-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

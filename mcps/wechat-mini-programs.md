@@ -1,7 +1,6 @@
 # WeChat Mini-Programs / 微信小程序 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wechat-mini-programs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wechat-mini-programs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wechat-mini-programs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wechat-mini-programs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **WeChat Mini-Programs /
 > I've generated the unlimited QR code for you. The binary data is ready for processing. This code will automatically pass the 'referral_8821' scene parameter to your mini-program when scanned. Would you like me to check the security of this page path?
 
 
+## ❓ FAQ
+
+**Q: How do I find my WeChat AppID and Secret?**
+Log in to the [WeChat Official Accounts Platform](https://mp.weixin.qq.com/), navigate to [Settings] -> [Development] -> [Basic Configuration] to find your unique AppID and generate your AppSecret.
+
+**Q: How can I retrieve a user's phone number?**
+First, use the `getPhoneNumber` capability in your mini-program frontend to obtain a code. Then, pass that code to the `get_phone_number` tool in this server to retrieve the verified mobile number.
+
+**Q: What is the difference between standard and unlimited QR codes?**
+Standard QR codes (up to 100,000) are mapped to a specific path. Unlimited QR codes (scene-based) use a scene string to pass parameters and have no creation limit, making them ideal for large-scale marketing.
+
+
 ## Installation & Usage
 
-To install and use the **WeChat Mini-Programs / 微信小程序** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wechat-mini-programs](https://vinkius.com/mcp/wechat-mini-programs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WeChat Mini-Programs / 微信小程序** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wechat-mini-programs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WeChat Mini-Programs / 微信小程序** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wechat-mini-programs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

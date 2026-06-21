@@ -1,7 +1,6 @@
 # Open-Meteo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-meteo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-meteo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-meteo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-meteo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,55 @@ Here are some examples of how you can interact with the **Open-Meteo** MCP serve
 > Beijing air quality: PM2.5 at 85 μg/m³ (unhealthy for sensitive groups), PM10 at 120 μg/m³, NO2 at 45 μg/m³, O3 at 65 μg/m³. Overall AQI: 165 (Unhealthy). Sensitive groups should reduce outdoor exposure.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! Open-Meteo is completely free and open-source for non-commercial use. No API key, no sign-up, no registration. Just subscribe and start querying. For commercial use, you'll need an API key from open-meteo.com.
+
+**Q: What weather variables are available?**
+50+ variables including: temperature (2m, 80m, 120m, 180m), apparent temperature, humidity, dew point, wind speed/direction/gusts, precipitation, rain, snowfall, snow depth, cloud cover, pressure, UV index, sunshine duration, visibility, evapotranspiration, soil temperature/moisture and many more.
+
+**Q: How far back does historical data go?**
+Historical weather data goes back to 1940 for most locations worldwide. Use get_historical_weather with start_date and end_date in YYYY-MM-DD format to retrieve archived data.
+
+**Q: How do I find coordinates for a city?**
+Use get_geocoding with the city name (e.g. 'São Paulo', 'Tokyo', 'London'). Returns coordinates, elevation, timezone and country info. Then use those coordinates with get_forecast or get_historical_weather.
+
+
 ## Installation & Usage
 
-To install and use the **Open-Meteo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/open-meteo](https://vinkius.com/mcp/open-meteo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Open-Meteo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `open-meteo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Open-Meteo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "open-meteo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

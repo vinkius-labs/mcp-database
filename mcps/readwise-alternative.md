@@ -1,7 +1,6 @@
 # Readwise MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/readwise-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/readwise-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/readwise-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/readwise-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Readwise** MCP server 
 > Successfully added your highlight to 'The Almanack of Naval Ravikant' with the note regarding leverage.
 
 
+## ❓ FAQ
+
+**Q: What can I do with the Readwise connector?**
+You can list, search, create, update, and delete highlights, browse books by source or category, manage tags, access your daily spaced repetition review, and export all data incrementally for analysis or backup.
+
+**Q: How does the daily review feature work?**
+The daily review tool retrieves highlights selected by Readwise's spaced repetition algorithm, helping your AI agent surface the most important passages at the optimal retention interval.
+
+**Q: Can I filter books by where they came from?**
+Yes, you can filter by source (Kindle, Instapaper, Pocket, web, Apple Books) or by category (books, articles, tweets, podcasts) to quickly find the content you need.
+
+
 ## Installation & Usage
 
-To install and use the **Readwise** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/readwise-alternative](https://vinkius.com/mcp/readwise-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Readwise** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `readwise-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Readwise** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "readwise-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

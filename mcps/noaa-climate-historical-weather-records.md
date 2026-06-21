@@ -1,7 +1,6 @@
 # NOAA Climate — Historical Weather Records MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-climate-historical-weather-records)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/noaa-climate-historical-weather-records-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/noaa-climate-historical-weather-records-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-climate-historical-weather-records)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Monthly avg high: 4.8°C. Monthly precip: 89mm.
 > Based on the 1991-2020 normals for Miami International Airport: The average annual high is 84.4°F, the average low is 71.2°F, and the average annual precipitation is 61.9 inches.
 
 
+## ❓ FAQ
+
+**Q: How far back does the data go?**
+GHCN-Daily records go back to the 1700s for some stations, with widespread coverage since the 1890s. Over 100,000 stations worldwide, with the densest network in the United States.
+
+**Q: What is the difference between GHCN-D, GSOM, and GSOY?**
+GHCN-Daily provides day-by-day records. GSOM (Global Summary of the Month) aggregates these into monthly averages and totals. GSOY (Global Summary of the Year) provides annual summaries.
+
+**Q: Are observations available for international locations?**
+Yes, while NOAA is a US agency, the GHCN incorporates data from over 100,000 stations worldwide, though the highest density remains in North America, Europe, and Australia.
+
+
 ## Installation & Usage
 
-To install and use the **NOAA Climate — Historical Weather Records** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/noaa-climate-historical-weather-records](https://vinkius.com/mcp/noaa-climate-historical-weather-records)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NOAA Climate — Historical Weather Records** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `noaa-climate-historical-weather-records` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NOAA Climate — Historical Weather Records** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "noaa-climate-historical-weather-records": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

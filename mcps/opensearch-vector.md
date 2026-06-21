@@ -1,7 +1,6 @@
 # OpenSearch Vector MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opensearch-vector)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opensearch-vector-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opensearch-vector-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opensearch-vector)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **OpenSearch Vector** MC
 > Index 'customer-feedback' created successfully. Configuration: k-NN enabled, 1536 dimensions, cosine similarity, NMSLIB engine. The index is empty and ready for document ingestion. Want me to upsert a test document to verify the mapping?
 
 
+## ❓ FAQ
+
+**Q: What vector dimensions does it support?**
+Any dimension supported by OpenSearch k-NN. Common values: 384 (MiniLM), 768 (BERT/all-mpnet), 1536 (OpenAI text-embedding-ada-002), 3072 (text-embedding-3-large). When creating an index, specify the exact dimension and the agent provisions the mapping automatically.
+
+**Q: Can I delete an entire index or just individual documents?**
+Currently, the agent supports deleting individual documents by ID from an index. Full index deletion is not exposed through this integration to prevent accidental data loss. If you need to drop an index, use the OpenSearch Dashboards or direct API calls.
+
+**Q: Does this work with Amazon OpenSearch Service (managed)?**
+Yes. Provide the Amazon OpenSearch Service endpoint as the host (e.g., https://search-xxx.us-east-1.es.amazonaws.com) along with the master username and password. The integration uses standard REST APIs that work identically on managed and self-hosted clusters.
+
+
 ## Installation & Usage
 
-To install and use the **OpenSearch Vector** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opensearch-vector](https://vinkius.com/mcp/opensearch-vector)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenSearch Vector** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opensearch-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenSearch Vector** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opensearch-vector": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

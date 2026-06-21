@@ -1,7 +1,6 @@
 # Blockdaemon (Blockchain Infrastructure) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blockdaemon-blockchain-infrastructure)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blockdaemon-blockchain-infrastructure-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blockdaemon-blockchain-infrastructure-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blockdaemon-blockchain-infrastructure)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Blockdaemon (Blockchai
 > Generating the report using `get_financial_report`... The report for the Algorand address is ready. It includes total balance, rewards earned, and transaction volume for the specified period.
 
 
+## ❓ FAQ
+
+**Q: Which protocols are supported for financial reports?**
+The `get_financial_report` tool currently supports Algorand, Polkadot, Stellar, Tezos, and XRP.
+
+**Q: Can I filter transactions by date?**
+Yes, the `list_transactions` tool allows you to provide 'from' and 'to' Unix timestamps to narrow down your search.
+
+**Q: How do I check unspent balances for Bitcoin?**
+Use the `get_utxos` tool with the 'bitcoin' protocol and the specific wallet address. You can also toggle 'check_mempool' to include unconfirmed transactions.
+
+
 ## Installation & Usage
 
-To install and use the **Blockdaemon (Blockchain Infrastructure)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blockdaemon-blockchain-infrastructure](https://vinkius.com/mcp/blockdaemon-blockchain-infrastructure)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Blockdaemon (Blockchain Infrastructure)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blockdaemon-blockchain-infrastructure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Blockdaemon (Blockchain Infrastructure)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blockdaemon-blockchain-infrastructure": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

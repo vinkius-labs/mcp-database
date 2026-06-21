@@ -1,7 +1,6 @@
 # SkuVault MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skuvault)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/skuvault-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/skuvault-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skuvault)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **SkuVault** MCP server 
 > I will use the `create_product` tool to create a new product with SKU 'SHIRT-XL-RED' and name 'Red XL Shirt' in your SkuVault catalog.
 
 
+## ❓ FAQ
+
+**Q: How can I add inventory to a specific warehouse location?**
+You can use the `add_item` tool. Provide the SKU or Code, the WarehouseId, the LocationCode, the Quantity, and a valid transaction Reason.
+
+**Q: Can I retrieve product lot details filtered by location?**
+Yes! Use the `get_lot_inventory_by_location` tool to retrieve lot inventory details filtered by specific locations.
+
+**Q: Is there a way to create multiple products at once?**
+Yes, you can use the `create_products` tool to bulk-create products by passing a JSON payload with the product details.
+
+
 ## Installation & Usage
 
-To install and use the **SkuVault** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/skuvault](https://vinkius.com/mcp/skuvault)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SkuVault** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `skuvault` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SkuVault** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "skuvault": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

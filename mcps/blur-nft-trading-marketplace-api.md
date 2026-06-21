@@ -1,7 +1,6 @@
 # Blur (NFT Trading Marketplace API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blur-nft-trading-marketplace-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blur-nft-trading-marketplace-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blur-nft-trading-marketplace-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blur-nft-trading-marketplace-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Blur (NFT Trading Mark
 > The Azuki collection has a total supply of 10,000 tokens and an all-time volume of approximately 650,000 ETH. The current floor price is 5.8 ETH. Do you need information on specific tokens in this collection?
 
 
+## ❓ FAQ
+
+**Q: Can I see floor prices on other marketplaces besides Blur?**
+Yes! The `get_collection_floor` tool retrieves current floor prices across multiple marketplaces for a given collection slug, allowing for easy price comparison.
+
+**Q: What information do I need to list an NFT for sale?**
+To use the `create_ask` tool, you need the maker's wallet address, the collection contract address, token ID, price in ETH, expiration time, and a valid cryptographic signature.
+
+**Q: How do I find the volume and total supply of a specific collection?**
+Simply use the `get_collection` tool with the collection's unique slug. It will return comprehensive metadata including volume, total supply, and other key stats.
+
+
 ## Installation & Usage
 
-To install and use the **Blur (NFT Trading Marketplace API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blur-nft-trading-marketplace-api](https://vinkius.com/mcp/blur-nft-trading-marketplace-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Blur (NFT Trading Marketplace API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blur-nft-trading-marketplace-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Blur (NFT Trading Marketplace API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blur-nft-trading-marketplace-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

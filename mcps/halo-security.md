@@ -1,7 +1,6 @@
 # Halo Security MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/halo-security)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/halo-security-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/halo-security-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/halo-security)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **Halo Security** MCP se
 > Accessing risk scores... Your organization's overall security score is 78/100. The score has improved by 5% since last month. Your primary risk drivers are outdated software on 2 targets. Would you like to see those targets?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Halo Security API Key?**
+Log in to your Halo Security account, navigate to **Account Settings** and then to the **API** section. You will be able to generate and copy your unique API key from there.
+
+**Q: Can I trigger a new scan through this integration?**
+Yes! Use the `trigger_scan` tool by providing the unique target ID of the asset you want to assess. Halo Security will initiate the scan immediately.
+
+**Q: How are security issues categorized?**
+Issues are categorized by their severity (e.g., Critical, High, Medium, Low) and type (e.g., Vulnerability, Information, SSL Issue). You can use `list_issues` to see all findings.
+
+**Q: Is it possible to add new domains to monitor?**
+Yes, the `add_target` tool allows you to add new domains or IP addresses to your security perimeter directly from the AI agent.
+
+
 ## Installation & Usage
 
-To install and use the **Halo Security** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/halo-security](https://vinkius.com/mcp/halo-security)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Halo Security** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `halo-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Halo Security** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "halo-security": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

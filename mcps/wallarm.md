@@ -1,7 +1,6 @@
 # Wallarm MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wallarm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wallarm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wallarm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wallarm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Wallarm** MCP server u
 > I found 3 open vulnerabilities: 1. Broken Object Level Authorization (BOLA) on /api/user/{id} (Critical), 2. Information Disclosure via verbose error messages (Medium), and 3. Insecure Direct Object Reference (IDOR) on /api/orders (High). I can provide the remediation guidance for any of these.
 
 
+## ❓ FAQ
+
+**Q: Can I block a malicious IP address directly from my agent?**
+Yes. Using the `create_ip_acl_rule` tool, you can immediately add an IP or CIDR range to your global denylist (black list) to mitigate threats as soon as they are identified during your security audit.
+
+**Q: How can I see all the API endpoints Wallarm has discovered?**
+The `get_discovered_api_inventory` tool provides you with the full API inventory automatically discovered through passive traffic analysis, showing exposed endpoints, methods, and parameters without requiring manual specifications.
+
+**Q: Is it possible to triage vulnerabilities and change their status via chat?**
+Absolutely. You can use `update_vulnerability_status` to change a vulnerability's lifecycle status (e.g., to closed or false positive) once you have investigated it or applied remediation steps.
+
+
 ## Installation & Usage
 
-To install and use the **Wallarm** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wallarm](https://vinkius.com/mcp/wallarm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wallarm** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wallarm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wallarm** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wallarm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

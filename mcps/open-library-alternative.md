@@ -1,7 +1,6 @@
 # Open Library MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-library-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-library-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-library-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-library-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Open Library** MCP ser
 > Searching for the author... Gabriel García Márquez has the unique key 'OL23714A' in the Open Library database. I can now list all his works, such as 'One Hundred Years of Solitude'.
 
 
+## ❓ FAQ
+
+**Q: Can I find the ISBN for 'The Great Gatsby'?**
+Yes! Use the `search_books` tool with the title 'The Great Gatsby'. The results will include various editions with their respective ISBNs and publication years.
+
+**Q: How do I find all books written by a specific author?**
+First, find the author's unique key using the `search_authors` tool. Then, use the `get_author_works` tool with that key to retrieve their complete bibliography.
+
+**Q: Can I lookup a book using its ISBN-13?**
+Yes. The `get_book_by_isbn` tool supports both ISBN-10 and ISBN-13 formats to retrieve specific edition metadata.
+
+
 ## Installation & Usage
 
-To install and use the **Open Library** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/open-library-alternative](https://vinkius.com/mcp/open-library-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Open Library** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `open-library-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Open Library** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "open-library-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

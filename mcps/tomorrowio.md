@@ -1,7 +1,6 @@
 # Tomorrow.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomorrowio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tomorrowio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tomorrowio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomorrowio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Tomorrow.io** MCP serv
 > Over the next 60 minutes around the Golden Gate location, the predicted precipitation is registering strictly at 0.00 mm/hr continuously, indicating no expected rainfall directly matching those micro-coordinates.
 
 
+## ❓ FAQ
+
+**Q: Where do I retrieve my Tomorrow.io API Key?**
+Log into your account via `app.tomorrow.io`. Navigate directly to the **API Management** or Developer tab nested inside your settings. Create a new root token, copy it in its entirety, and insert it securely to enable queries.
+
+**Q: How accurate is the 'minutely' precipitation forecast tool?**
+Tomorrow.io operates proprietary radar networks, satellites, and sophisticated high-resolution systems natively intended to provide powerful precision for up to exactly 60 minutes ahead, projecting precipitation downshifts incredibly well locally.
+
+**Q: How far into the future can the agent forecast extreme weather events?**
+Using Tomorrow.io's advanced predictive modeling, the agent can provide precise hour-by-hour projections and daily forecasts up to 15 days ahead. This extended timeline offers ample opportunity for logistical and operational planning against severe environmental risks.
+
+
 ## Installation & Usage
 
-To install and use the **Tomorrow.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tomorrowio](https://vinkius.com/mcp/tomorrowio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tomorrow.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tomorrowio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tomorrow.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tomorrowio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

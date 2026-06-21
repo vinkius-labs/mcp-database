@@ -1,7 +1,6 @@
 # Deterministic Color Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-color-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-color-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-color-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-color-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -57,12 +56,52 @@ Here are some examples of how you can interact with the **Deterministic Color En
 > Using the generate_color_palette tool (type='complementary'): The palette is ['#f59e0b', '#0b62f5'].
 
 
+## ❓ FAQ
+
+**Q: Why use an MCP for basic color conversion?**
+While AI models can sometimes guess standard conversions, they fail consistently when computing HSL luminance shifts (like creating a 10-step Tailwind color scale). An algorithmic engine guarantees zero error margins.
+
+**Q: How does the palette generation work?**
+It converts the base color into HSL format and shifts the Hue degree. Complementary shifts by 180 degrees, while Analogous generates a harmonic palette by shifting -30 and +30 degrees.
+
+**Q: Are there any external dependencies to run this tool?**
+Absolutely none. The color engine is built from scratch utilizing pure Javascript bitwise operators and math algorithms, providing zero-latency execution without external bloated libraries.
+
+
 ## Installation & Usage
 
-To install and use the **Deterministic Color Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deterministic-color-engine](https://vinkius.com/mcp/deterministic-color-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deterministic Color Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deterministic-color-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deterministic Color Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deterministic-color-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

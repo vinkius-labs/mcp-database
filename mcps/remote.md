@@ -1,7 +1,6 @@
 # Remote MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/remote)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/remote-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/remote-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/remote)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Remote** MCP server us
 > 8 pending time-off requests. Sarah Chen (Germany): 5 days vacation Jun 2-6, 18 days remaining. James Park (US): 3 days personal May 26-28. Lisa Wang (Brazil): 2 days sick leave May 19-20. Alex Rivera (UK): 10 days vacation Jun 16-27 (team coverage confirmed). 4 additional requests from India (2), Canada (1), Japan (1). No conflicts detected with current project deadlines. 2 requests overlap with the sprint planning week, flagged for review.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Remote API Key?**
+Log in to your Remote account, navigate to the **Developer** or **API Keys** section in your dashboard, and generate a new key for your integration.
+
+**Q: Which countries are supported?**
+Remote supports hiring and payroll in over 150 countries. You can use the `list_supported_countries` tool to see the full list in real-time.
+
+**Q: Can I add employees programmatically?**
+Yes, the `create_employee` tool allows you to initialize new records for international hires directly from your AI agent, including job titles and locales.
+
+
 ## Installation & Usage
 
-To install and use the **Remote** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/remote](https://vinkius.com/mcp/remote)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Remote** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `remote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Remote** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "remote": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

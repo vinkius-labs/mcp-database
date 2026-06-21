@@ -1,7 +1,6 @@
 # Fulcrum MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fulcrum)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fulcrum-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fulcrum-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fulcrum)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,55 @@ Here are some examples of how you can interact with the **Fulcrum** MCP server u
 > Fetching schema... The form contains 12 fields. Key fields include 'Asset Tag' (Type: Text, Required: Yes) and 'Condition' (Type: Choice).
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Token for Fulcrum?**
+Log in to your Fulcrum web app, click the Settings (gear icon), select 'API', and you can generate a new API Token.
+
+**Q: Can I run SQL queries on my field data?**
+Yes! Use the 'query_records_sql' tool. Provide a standard SQL statement (e.g., SELECT * FROM "form_id") to instantly retrieve filtered datasets.
+
+**Q: Is it possible to see the schema of a form?**
+Absolutely. The 'get_form_schema' tool retrieves the complete JSON definition of a form, including all its field keys, data types, and validation rules.
+
+**Q: Can I programmatically create a new record?**
+Yes, you can use the 'create_record' tool. You will need the Form ID, latitude, longitude, and a JSON payload containing the specific form values.
+
+
 ## Installation & Usage
 
-To install and use the **Fulcrum** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fulcrum](https://vinkius.com/mcp/fulcrum)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fulcrum** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fulcrum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fulcrum** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fulcrum": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

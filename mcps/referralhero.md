@@ -1,7 +1,6 @@
 # ReferralHero MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/referralhero)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/referralhero-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/referralhero-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/referralhero)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,49 @@ Here are some examples of how you can interact with the **ReferralHero** MCP ser
 > Reminder email sent to 222 inactive participants (those who joined but have 0 referrals). Subject: "Your referral link is waiting! Share & earn $10 per friend". Email includes their unique referral link, one-click social share buttons, and a progress bar showing how close they are to their first reward. Delivery: 218 delivered (98.2%). 4 bounced (invalid emails). Based on previous reminders, expect 15-20% to make their first share within 48 hours.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details and points for a specific subscriber by providing their ID?**
+Yes! Use the `get_subscriber` tool with the List UUID and Subscriber ID. Your agent will respond with complete metadata, including referral counts and current point balances in seconds.
+
+**Q: How do I find my ReferralHero API Token?**
+Log in to your ReferralHero dashboard, navigate to **Account** > **API**, and you will find your unique secret token there.
+
+
 ## Installation & Usage
 
-To install and use the **ReferralHero** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/referralhero](https://vinkius.com/mcp/referralhero)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ReferralHero** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `referralhero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ReferralHero** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "referralhero": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

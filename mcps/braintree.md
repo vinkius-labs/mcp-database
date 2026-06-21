@@ -1,7 +1,6 @@
 # Braintree MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/braintree)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/braintree-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/braintree-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/braintree)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Braintree** MCP server
 > I've successfully initiated a partial refund of $20.00 for transaction TX_NODE_123. The refund status is currently 'SUBMITTED_FOR_SETTLEMENT'.
 
 
+## ❓ FAQ
+
+**Q: Can I process a refund for a transaction using the agent?**
+Yes! Use the `refund_transaction` tool with the Transaction Node ID. You can also specify a partial amount if you don't want to refund the full charge.
+
+**Q: How do I capture a previously authorized transaction?**
+Simply ask the agent to `capture_transaction` and provide the Transaction Node ID. The funds will be captured and the status updated in your Braintree account.
+
+**Q: Does the integration allow searching for a customer by email?**
+Yes. Use the `search_customers` tool and provide the exact email address. The agent will execute a GraphQL query to find the matching customer profile.
+
+
 ## Installation & Usage
 
-To install and use the **Braintree** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/braintree](https://vinkius.com/mcp/braintree)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Braintree** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `braintree` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Braintree** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "braintree": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

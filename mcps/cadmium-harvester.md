@@ -1,7 +1,6 @@
 # Cadmium Harvester MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cadmium-harvester)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cadmium-harvester-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cadmium-harvester-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cadmium-harvester)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Cadmium Harvester** MC
 > Retrieving assets for pres_123... I found 3 files: 'Slides.pdf', 'Handout_Notes.docx', and 'BackgroundVideo.mp4'. Would you like the download links?
 
 
+## ❓ FAQ
+
+**Q: Can I check the status of a specific presentation using the agent?**
+Yes! Use the `list_presentations` tool. Your agent will fetch all sessions, allowing you to see if a presentation is 'Approved', 'Pending', or in another state in the Harvester.
+
+**Q: How do I list all the speakers for my conference?**
+Simply ask the agent to `list_presenters`. It will retrieve the list of all speakers registered for your event in Cadmium, including their names and unique IDs.
+
+**Q: Does the integration allow accessing presentation handouts?**
+Yes. Use the `list_presentation_assets` tool with the Presentation ID. It will retrieve all the associated files, including handouts, slides, and other media uploaded by the speaker.
+
+
 ## Installation & Usage
 
-To install and use the **Cadmium Harvester** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cadmium-harvester](https://vinkius.com/mcp/cadmium-harvester)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cadmium Harvester** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cadmium-harvester` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cadmium Harvester** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cadmium-harvester": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

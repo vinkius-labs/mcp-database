@@ -1,7 +1,6 @@
 # Twilio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twilio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/twilio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/twilio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twilio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **Twilio** MCP server us
 > Accessing usage records... So far, your heaviest consumption comes from SMS outbound ($45.00 total over 4,500 messages). Voice minutes account for $12.30. Should I break down the voice categories further?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent trigger an incident alert SMS to the on-call engineer?**
+Absolutely. You can provide your Twilio phone number, the destination E.164 number, and the alert body text. The agent will hit the Twilio API instantly, dispatch the SMS, and return the Message SID along with delivery status.
+
+**Q: How can I stop a rogue voice call stuck in a loop?**
+Ask your agent to list active or recent voice calls and find the offending Call SID. Then instruct the AI to cancel the active call by its ID. The agent updates its status to 'canceled', dropping the connection right away.
+
+**Q: Can it check how much my company has spent so far this month?**
+Yes. Ask the agent to pull your account's usage records. It interfaces with the Twilio billing records and can display breakdowns of amounts sent, call durations, and costs incurred, giving you full transparency without opening the dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **Twilio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/twilio](https://vinkius.com/mcp/twilio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Twilio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `twilio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Twilio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "twilio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

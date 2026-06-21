@@ -1,7 +1,6 @@
 # Adyen MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adyen)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adyen-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adyen-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adyen)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Adyen** MCP server usi
 > I've retrieved your merchant accounts. You have 3 active accounts: 'EcomStore_US', 'EcomStore_EU', and 'RetailPOS_UK'. Would you like to check the available payment methods for any of them?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Adyen API Key?**
+Log in to your Adyen Customer Area, go to **Developers** > **API credentials**, and select your web service user (ws@Company.YourCompany). You can generate and copy your API key from the 'Authentication' section.
+
+**Q: Can I process a refund via the agent?**
+Yes! Use the `refund_payment` tool and provide the original PSP reference and the amount. Your agent will submit the refund request to Adyen for processing.
+
+**Q: Does this support checking payment statuses?**
+Yes, the `get_payment_details` tool allows you to retrieve the full technical response for any PSP reference, including authorization codes and refusal reasons.
+
+
 ## Installation & Usage
 
-To install and use the **Adyen** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/adyen](https://vinkius.com/mcp/adyen)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Adyen** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `adyen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Adyen** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "adyen": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

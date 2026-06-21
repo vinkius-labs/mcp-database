@@ -1,7 +1,6 @@
 # Fomo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fomo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fomo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fomo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fomo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Fomo** MCP server usin
 > Retrieving templates... I found 3 templates: 'Standard Purchase', 'New Sign-up', and 'Live Visitor Count'. Which one would you like to inspect?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Auth Token for Fomo?**
+You can find your API token in your Fomo dashboard under Settings > Site > API Access.
+
+**Q: Can I use the agent to create new notification designs?**
+Yes, you can use the 'create_template' tool to programmatically add new notification shells using the {{ variable }} syntax.
+
+**Q: How do I push a purchase event to my feed via the agent?**
+Use the 'create_event' tool and provide the event_type_id along with metadata like first_name, city, and title.
+
+
 ## Installation & Usage
 
-To install and use the **Fomo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fomo](https://vinkius.com/mcp/fomo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fomo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fomo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fomo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fomo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

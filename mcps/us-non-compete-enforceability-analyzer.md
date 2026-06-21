@@ -1,7 +1,6 @@
 # US Non-Compete Enforceability Analyzer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-non-compete-enforceability-analyzer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-non-compete-enforceability-analyzer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-non-compete-enforceability-analyzer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-non-compete-enforceability-analyzer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **US Non-Compete Enforce
 > By calling `get_enforceability_guidelines` for Florida, you can retrieve the specific maximum reasonable duration and radius allowed before a clause is considered risky.
 
 
+## ❓ FAQ
+
+**Q: What does it mean if a state is 'banned'?**
+A banned status means the state has passed legislation that prohibits all non-compete agreements, making them legally void regardless of other terms.
+
+**Q: How is enforceability determined?**
+Enforceability is assessed by checking the state's legality, the duration of the restriction in months, and the geographic radius in miles against established reasonableness standards.
+
+**Q: Can I check specific thresholds for my state?**
+Yes, use the `get_enforceability_guidelines` tool to find the maximum reasonable duration and radius for a specific US state.
+
+
 ## Installation & Usage
 
-To install and use the **US Non-Compete Enforceability Analyzer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-non-compete-enforceability-analyzer](https://vinkius.com/mcp/us-non-compete-enforceability-analyzer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **US Non-Compete Enforceability Analyzer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-non-compete-enforceability-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **US Non-Compete Enforceability Analyzer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-non-compete-enforceability-analyzer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

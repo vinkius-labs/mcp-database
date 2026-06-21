@@ -1,7 +1,6 @@
 # Kavita (eBook/Manga) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kavita-ebookmanga)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kavita-ebookmanga-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kavita-ebookmanga-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kavita-ebookmanga)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Kavita (eBook/Manga)**
 > Targeted scan for Library ID 5 has been started. I will let you know if any issues occur during the process.
 
 
+## ❓ FAQ
+
+**Q: Can I trigger a scan for just one specific library?**
+Yes! Use the `scan_library` tool and provide the specific Library ID. The agent will trigger a targeted scan to detect new or changed content in that folder only.
+
+**Q: How do I check if my API key is still valid?**
+You can run the `check_authkey_expires` tool. It will return the exact expiration timestamp for your current API key, helping you avoid service interruptions.
+
+**Q: Can I refresh my entire collection at once?**
+Absolutely. Use the `scan_all_libraries` tool to trigger a global scan across all configured libraries in your Kavita instance.
+
+
 ## Installation & Usage
 
-To install and use the **Kavita (eBook/Manga)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kavita-ebookmanga](https://vinkius.com/mcp/kavita-ebookmanga)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kavita (eBook/Manga)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kavita-ebookmanga` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kavita (eBook/Manga)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kavita-ebookmanga": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

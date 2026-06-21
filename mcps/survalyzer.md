@@ -1,7 +1,6 @@
 # Survalyzer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/survalyzer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/survalyzer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/survalyzer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/survalyzer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,46 @@ Here are some examples of how you can interact with the **Survalyzer** MCP serve
 > Customer Satisfaction Q2 Report. Responses: 456 (22.8% rate). NPS: 67 (+5 vs Q1). Overall satisfaction: 4.2/5. By category: Product quality 4.5/5, Customer support 4.1/5, Pricing 3.8/5, Onboarding 4.3/5, Documentation 3.9/5. Sentiment analysis (open-ended): Positive 62%, Neutral 24%, Negative 14%. Top positive themes: "easy to use" (89 mentions), "great support" (67). Top negative themes: "pricing too high" (34), "mobile app needs improvement" (23). Demographic breakdown: Enterprise 4.4/5, SMB 4.0/5, Startup 3.9/5. Report exported as PDF (28 pages).
 
 
+## ❓ FAQ
+
+**Q: How do I find my Survalyzer API credentials?**
+Log in to your Survalyzer account and navigate to the Public API section in your settings to generate your unique Client ID and Client Secret. Also note if your account is in the EU or Swiss datacenter.
+
+
 ## Installation & Usage
 
-To install and use the **Survalyzer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/survalyzer](https://vinkius.com/mcp/survalyzer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Survalyzer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `survalyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Survalyzer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "survalyzer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

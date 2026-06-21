@@ -1,7 +1,6 @@
 # Webflow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webflow-alternative-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/webflow-alternative-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/webflow-alternative-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webflow-alternative-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Webflow** MCP server u
 > Initiating publish for 'Portfolio 2024' (site_abc123)... The site has been successfully queued for publishing to its configured domains.
 
 
+## ❓ FAQ
+
+**Q: Can I publish my Webflow site directly through the AI?**
+Yes! You can use the `publish_site` tool by providing your Site ID. This will deploy your latest changes to all configured domains.
+
+**Q: Is it possible to manage CMS content like blog posts or products?**
+Absolutely. The server includes tools like `list_items`, `create_items`, and `update_items` specifically for interacting with your Webflow CMS collections.
+
+**Q: Can I update SEO settings for my pages?**
+Yes, the `update_page` tool allows you to modify page metadata, including SEO titles and descriptions, via a JSON payload.
+
+
 ## Installation & Usage
 
-To install and use the **Webflow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/webflow-alternative-1](https://vinkius.com/mcp/webflow-alternative-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Webflow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `webflow-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Webflow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "webflow-alternative-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

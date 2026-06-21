@@ -1,7 +1,6 @@
 # OpenWeather MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openweather)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openweather-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openweather-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openweather)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,12 +102,55 @@ Here are some examples of how you can interact with the **OpenWeather** MCP serv
 > Beijing's current AQI is 4 (Poor). PM2.5 is 75 μg/m³ (3x WHO guideline), PM10 is 120 μg/m³. Ozone and NO2 levels are moderate. Sensitive groups should reduce outdoor exposure.
 
 
+## ❓ FAQ
+
+**Q: How do I get an OpenWeather API key?**
+Visit [**openweathermap.org/api**](https://openweathermap.org/api), click **Sign Up** for a free account, go to **API Keys** in your account settings, and create a new key. Copy it — it's a 32-character hex string. Free tier includes 60 calls/minute.
+
+**Q: Can I get weather alerts for my location?**
+Yes! Use `get_weather_alerts` with lat/lon coordinates. Returns active alerts with sender name, event type, severity, description and start/end times. Useful for monitoring severe weather, floods, heat waves and other dangerous conditions.
+
+**Q: Can I get historical weather data?**
+Yes! Use `get_historical_weather` with lat/lon and a date in YYYY-MM-DD format. Returns the weather conditions for that specific day including temperature, humidity, wind and pressure.
+
+**Q: How do I find coordinates for a city?**
+Use `geocode` with the city name (e.g. 'London', 'São Paulo', 'Tokyo'). Returns the top 5 matching locations with their latitude, longitude, country code and state. Use these coordinates with other weather tools.
+
+
 ## Installation & Usage
 
-To install and use the **OpenWeather** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openweather](https://vinkius.com/mcp/openweather)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenWeather** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openweather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenWeather** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openweather": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

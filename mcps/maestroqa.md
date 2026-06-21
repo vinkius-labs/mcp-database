@@ -1,7 +1,6 @@
 # MaestroQA MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/maestroqa)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/maestroqa-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/maestroqa-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/maestroqa)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **MaestroQA** MCP server
 > I've retrieved the details for ticket 54321. The Internal Quality Score (IQS) is 🟢 95%. It was graded on 2024-08-15 using the 'Global Support Rubric'.
 
 
+## ❓ FAQ
+
+**Q: What is an Internal Quality Score (IQS)?**
+IQS is the grade assigned to a ticket during the QA process based on your rubrics. The agent can retrieve this score using the `get_ticket_qa_details` tool.
+
+**Q: How do I download a data export?**
+First, request the export using `request_qa_data_export`. Once processed, use `get_export_download_links` with the provided ID to retrieve the download URL.
+
+**Q: Where do I find my API Token?**
+Log in to MaestroQA, go to Settings > API, and generate a new token. Note that the API is also referred to as 'Rippit' in technical documentation.
+
+
 ## Installation & Usage
 
-To install and use the **MaestroQA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/maestroqa](https://vinkius.com/mcp/maestroqa)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MaestroQA** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `maestroqa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MaestroQA** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "maestroqa": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

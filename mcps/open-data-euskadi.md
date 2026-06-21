@@ -1,7 +1,6 @@
 # Open Data Euskadi MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-data-euskadi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-data-euskadi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-data-euskadi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-data-euskadi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Open Data Euskadi** MC
 > I found 3 recent news articles regarding sustainability. The most recent is 'New Green Energy Initiative for 2025'. Would you like me to fetch the full content details?
 
 
+## ❓ FAQ
+
+**Q: How can I filter content by a specific language or date range?**
+You can use the `metadata_filters` parameter in the `search_euskadi_content` tool. For example, use `documentLanguage.EQ.es` for Spanish or `procedureStartDate.BETWEEN.01/01/2023,31/12/2023` for dates.
+
+**Q: Can I perform advanced semantic analysis on the data?**
+Yes! Use the `execute_sparql_query` tool to run raw SPARQL queries against the Linked Open Data (LOD) endpoint. This allows you to traverse relationships in the RDF graph directly.
+
+**Q: What types of administrative content can I search for?**
+The `search_euskadi_content` tool allows you to filter by `content_type`. Common types include `ayuda_subvencion` (grants), `contratacion` (contracts), `noticia` (news), and `anuncio_tablon` (board notices).
+
+
 ## Installation & Usage
 
-To install and use the **Open Data Euskadi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/open-data-euskadi](https://vinkius.com/mcp/open-data-euskadi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Open Data Euskadi** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `open-data-euskadi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Open Data Euskadi** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "open-data-euskadi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

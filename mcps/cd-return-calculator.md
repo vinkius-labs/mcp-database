@@ -1,7 +1,6 @@
 # CD Return Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cd-return-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cd-return-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cd-return-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cd-return-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **CD Return Calculator**
 > A $10,000 CD at 5% APY for 24 months will yield a final balance of $11,049.41. This outperforms the current HYSA benchmark rate.
 
 
+## ❓ FAQ
+
+**Q: How does the calculator determine my final balance?**
+The `calculate_cd_yield` tool applies your specified compounding frequency (daily, monthly, quarterly, or annually) to the principal amount over the chosen term to calculate total interest and the final balance.
+
+**Q: Can I compare my CD rate to other savings options?**
+Yes. By using `fetch_market_benchmarks`, the tool retrieves current benchmark rates for HYSA and Money Market funds, allowing you to see how your CD compares to liquid alternatives.
+
+**Q: What does the advantage score represent?**
+The advantage score, generated via `generate_investment_comparison`, represents the numeric margin between your CD's APY and the relevant market benchmark rate.
+
+
 ## Installation & Usage
 
-To install and use the **CD Return Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cd-return-calculator](https://vinkius.com/mcp/cd-return-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CD Return Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cd-return-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CD Return Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cd-return-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

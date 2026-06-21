@@ -1,7 +1,6 @@
 # Azure Cognitive Search MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-cognitive-search)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/azure-cognitive-search-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/azure-cognitive-search-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-cognitive-search)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Azure Cognitive Search
 > You have a single configuration skillset named 'ocr-and-translate' applied. It chains out the Azure Cognitive Vision API to extract image text seamlessly and subsequently forces Language Service mapping toward default EN tokens via integration.
 
 
+## ❓ FAQ
+
+**Q: Can my AI use this connector to grab an individual document by its key?**
+Yes! Unlike complex search endpoints, this provides a point-read mechanism (Get Document). Your agent maps the target UUID and bypasses search algorithms completely, quickly delivering the raw JSON of that exact specific item for isolated deep reading.
+
+**Q: Does it also show Cognitive Service enrichment skillsets?**
+Yes. This connector tracks and lists structured Cognitive Skillsets. Your agent can discover whether OCR, translation features, or entity extraction bots are currently attached and applied correctly inside the Azure indexing pipeline.
+
+**Q: Can it search using direct text inputs and semantic rankings?**
+Absolutely. Using the lexical search capability, your agent can push natural string keywords right into Azure. It returns mapped documents ranked gracefully using BM25 relevance or integrated semantic processing out of the box.
+
+
 ## Installation & Usage
 
-To install and use the **Azure Cognitive Search** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/azure-cognitive-search](https://vinkius.com/mcp/azure-cognitive-search)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Azure Cognitive Search** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `azure-cognitive-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Azure Cognitive Search** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "azure-cognitive-search": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

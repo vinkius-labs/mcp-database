@@ -1,7 +1,6 @@
 # BrowserStack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browserstack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browserstack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browserstack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browserstack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -111,12 +110,52 @@ The test failed because the `#checkout-btn` element could not be found after 5 s
 > According to your `Automate Enterprise` plan, your team is allowed 20 parallel sessions globally. Currently, 18 parallel sessions are in use, and 0 sessions are queued. You have room to start 2 more concurrent threads without throttling.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically read the logs of a failed Selenium test?**
+Yes. When you ask it to investigate a recently failed build, the agent can use `get_build` to find the failed session, and then automatically call `get_session_logs`. It will download the raw textual execution steps directly into the chat and summarize why the UI test failed.
+
+**Q: Is there a risk that my AI alters my testing scripts or repository code?**
+No, this MCP server integrates exclusively with BrowserStack Automate API. It can read statuses, logs, and configurations, and can delete hung sessions or builds, but it has no connection to your actual codebase or git repository.
+
+**Q: How can I resolve concurrent session limits preventing my pipeline from advancing?**
+You can ask your agent to `get_plan` to inspect your parallel boundaries and verify if you are queuing. Then, the agent can look up stalled items via `list_builds` and execute `delete_session` or `delete_build` to manually unblock stuck processes.
+
+
 ## Installation & Usage
 
-To install and use the **BrowserStack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/browserstack](https://vinkius.com/mcp/browserstack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BrowserStack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `browserstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BrowserStack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "browserstack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

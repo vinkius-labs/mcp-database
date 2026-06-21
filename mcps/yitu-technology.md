@@ -1,7 +1,6 @@
 # Yitu Technology / 依图科技 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yitu-technology)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/yitu-technology-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/yitu-technology-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yitu-technology)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Yitu Technology / 依�
 > I've retrieved the list of repositories. You have 2 active collections: 'HQ_Access_List' (ID: `rep_01`) and 'Visitor_Log' (ID: `rep_02`). Would you like me to check the statistics or add a new face to one of these?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Yitu AppID and APIKey?**
+Log in to the [Yitu Cloud Platform](https://www.yitutech.com/), navigate to the 'Developer Center' or 'API Management' section to find your unique AppID (DevId) and APIKey (DevKey).
+
+**Q: What is a facial repository?**
+A facial repository is a secure, private database where you store facial features (templates) of known individuals. This allows the system to perform 1:N searches to identify a person from a large group.
+
+**Q: How accurate is the identity comparison?**
+Yitu is a world leader in facial recognition accuracy. The system returns a confidence score (typically 0.0 to 1.0). A score above 0.8 is generally considered a highly reliable match for the same person.
+
+
 ## Installation & Usage
 
-To install and use the **Yitu Technology / 依图科技** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/yitu-technology](https://vinkius.com/mcp/yitu-technology)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Yitu Technology / 依图科技** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `yitu-technology` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Yitu Technology / 依图科技** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "yitu-technology": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

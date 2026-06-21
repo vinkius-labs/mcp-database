@@ -1,7 +1,6 @@
 # Hotjar (Behavior Analytics) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hotjar-behavior-analytics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hotjar-behavior-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hotjar-behavior-analytics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hotjar-behavior-analytics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Hotjar (Behavior Analy
 > Your 'NPS Widget' (ID: fb-987) has received a total of 1,245 responses with an average rating of 8.4. I can retrieve the detailed comments and device metadata if you'd like to analyze the trends.
 
 
+## ❓ FAQ
+
+**Q: Can I see individual survey responses through my agent?**
+Yes. Use the `get_survey_responses` tool with a specific Survey ID to retrieve all recorded answers, timestamps, and device info. This allows your agent to summarize user sentiment and identify common themes automatically.
+
+**Q: How do I handle GDPR data deletion requests?**
+The agent includes a `delete_user_data` tool for GDPR compliance. You can provide a User ID to irreversibly wipe all associated behavioral data from Hotjar, ensuring you meet privacy regulations efficiently.
+
+**Q: Can I list all feedback widgets for a specific site?**
+Absolutely. Use the `list_feedback` tool to enumerate all active feedback widgets on your configured site. Your agent will return widget IDs and response counts, helping you identify which areas of your site are generating the most user input.
+
+
 ## Installation & Usage
 
-To install and use the **Hotjar (Behavior Analytics)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hotjar-behavior-analytics](https://vinkius.com/mcp/hotjar-behavior-analytics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hotjar (Behavior Analytics)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hotjar-behavior-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hotjar (Behavior Analytics)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hotjar-behavior-analytics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

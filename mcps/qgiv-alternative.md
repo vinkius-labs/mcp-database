@@ -1,7 +1,6 @@
 # Qgiv MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qgiv-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qgiv-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qgiv-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qgiv-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -121,12 +120,52 @@ Here are some examples of how you can interact with the **Qgiv** MCP server usin
 > Using `get_custom_field`, I retrieved the details for field 'cf_98765'. It is a text field labeled 'How did you hear about us?' and is currently set as optional on your main donation form.
 
 
+## ❓ FAQ
+
+**Q: How do I clone an existing donation form using the AI?**
+You can use the `clone_form` tool. Provide the JSON payload containing the details of the form you wish to clone, and the agent will handle the cloning process for you.
+
+**Q: Can I view and update the custom suggested donation amounts on my forms?**
+Yes. You can list all custom suggested amounts using `list_custom_amounts`, retrieve a specific one with `get_custom_amount`, or update an existing amount using `update_custom_amount`.
+
+**Q: How do I manage custom fields on my donation forms?**
+You can list all custom fields using `list_custom_fields`, retrieve a specific field's details with `get_custom_field`, or create and update fields using `create_custom_field` and `update_custom_field`.
+
+
 ## Installation & Usage
 
-To install and use the **Qgiv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/qgiv-alternative](https://vinkius.com/mcp/qgiv-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Qgiv** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `qgiv-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Qgiv** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "qgiv-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # YouCanBook.me MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/youcanbookme)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/youcanbookme-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/youcanbookme-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/youcanbookme)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **YouCanBook.me** MCP se
 > Success! I've cancelled the booking 'book-999'. The attendee has been notified and the time slot is now open on your calendar again. Is there anything else you need to reschedule?
 
 
+## ❓ FAQ
+
+**Q: Can I cancel a specific booking and notify the attendee via chat?**
+Yes. The `cancel_booking` tool allows your AI agent to permanently revoke an appointment using its booking ID. This action automatically removes the event from your calendar and sends a cancellation notice to the attendee.
+
+**Q: How do I check my upcoming appointments for a specific booking page?**
+Use the `list_bookings` tool. Provide the unique `profile_id` and set the status to 'upcoming'. Your agent will return a list of all confirmed future appointments for that scheduling page.
+
+**Q: Is it possible to see which staff members are assigned to a booking profile?**
+Absolutely. Using the `list_team_members` tool, you can retrieve a list of all staff members linked to a specific profile, showing you who is available to take appointments on that page.
+
+
 ## Installation & Usage
 
-To install and use the **YouCanBook.me** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/youcanbookme](https://vinkius.com/mcp/youcanbookme)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **YouCanBook.me** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `youcanbookme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **YouCanBook.me** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "youcanbookme": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

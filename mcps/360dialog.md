@@ -1,7 +1,6 @@
 # 360dialog MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/360dialog)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/360dialog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/360dialog-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/360dialog)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **360dialog** MCP server
 > Verified! +5511988888888 is a valid WhatsApp account. +5511977777777 is not currently registered on the platform. Would you like me to send a message to the valid number?
 
 
+## ❓ FAQ
+
+**Q: Can my AI verify if phone numbers are registered on WhatsApp?**
+Yes. Use the `check_contacts` tool with a comma-separated list of phone numbers. The agent returns the WhatsApp registration status for each number instantly.
+
+**Q: How do I send a pre-approved template message?**
+Use the `send_template_message` tool. Provide the recipient phone number, the template name, and the language code (e.g., en_US). The agent delivers the template through the 360dialog API.
+
+**Q: Can I send images and documents through WhatsApp via AI?**
+Yes. The `send_media_message` tool supports image, video, document, and audio types. Provide the media URL and type, and the agent delivers it directly to the WhatsApp contact.
+
+
 ## Installation & Usage
 
-To install and use the **360dialog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/360dialog](https://vinkius.com/mcp/360dialog)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **360dialog** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `360dialog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **360dialog** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "360dialog": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

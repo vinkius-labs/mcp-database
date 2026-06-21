@@ -1,7 +1,6 @@
 # Cardly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cardly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cardly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cardly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cardly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Cardly** MCP server us
 > I've initiated the order for Jane Smith. I'll need her full address in Australia and your preferred artwork ID to finalize the send.
 
 
+## ❓ FAQ
+
+**Q: Can I see a preview of the card before sending it?**
+Yes! Use the `preview_greeting_card` tool with your message and artwork ID. Your agent will return a preview URL (usually a PDF) so you can verify everything looks perfect.
+
+**Q: How do I find the correct artwork ID for a design?**
+Simply ask the agent to `list_card_artwork`. It will retrieve all the available designs from your account, including their titles and unique IDs or slugs.
+
+**Q: Does the integration support international shipping?**
+Yes. When using the `place_greeting_card_order` action, you can specify the country code (e.g., 'UK', 'AU', 'US'). Cardly handles the local printing and postage automatically.
+
+
 ## Installation & Usage
 
-To install and use the **Cardly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cardly](https://vinkius.com/mcp/cardly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cardly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cardly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cardly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cardly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

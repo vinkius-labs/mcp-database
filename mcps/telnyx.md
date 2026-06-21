@@ -1,7 +1,6 @@
 # Telnyx MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telnyx)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/telnyx-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/telnyx-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telnyx)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Message: 'The server is down.'
 Message UUID: 8e5f22e8-xxxx. Would you like me to check its real-time delivery status?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent check if a specific message was delivered?**
+Yes. If an end user reports completely missing an important text, you can ask your agent to pull up the message status using its unique ID. The agent will read back exactly whether Telnyx successfully handed off the payload or if it encountered carrier-level rejection codes.
+
+**Q: Is it possible to track the account billing balance?**
+Absolutely. You can request your current Telnyx account balance to confirm you have enough credit left to continue broadcasting. Just ask 'What is my current Telnyx balance?' and your agent will give you the exact remaining dollar threshold.
+
+**Q: Can I configure new Messaging Profiles via AI?**
+Yes! Developers often need to isolate test traffic from production. You can simply ask your agent to list all current global profiles, and if needed, instruct it to immediately create a new messaging profile to attach webhook URLs.
+
+
 ## Installation & Usage
 
-To install and use the **Telnyx** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/telnyx](https://vinkius.com/mcp/telnyx)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Telnyx** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `telnyx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Telnyx** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "telnyx": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

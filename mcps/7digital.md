@@ -1,7 +1,6 @@
 # 7digital MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/7digital)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/7digital-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/7digital-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/7digital)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Here are some examples of how you can interact with the **7digital** MCP server 
 > Preview URL: https://preview.7digital.com/clip/xxxxx.mp3 (30s preview, audio/mpeg). Duration: 6:23.
 
 
+## ❓ FAQ
+
+**Q: How do I get a 7digital API key?**
+Register at [**7digital.com/developer**](https://www.7digital.com/developer) and sign up for a free developer account. You'll receive an API consumer key.
+
+**Q: Can I listen to full tracks?**
+The API provides 30-second preview streams for tracks. Full track purchases are available through the 7digital store integration.
+
+**Q: What countries are supported?**
+7digital operates in 30+ countries including US, GB, DE, FR, ES, IT, AU, CA, JP and many more. Use the country parameter for region-specific catalogs and pricing.
+
+
 ## Installation & Usage
 
-To install and use the **7digital** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/7digital](https://vinkius.com/mcp/7digital)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **7digital** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `7digital` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **7digital** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "7digital": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

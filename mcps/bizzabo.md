@@ -1,7 +1,6 @@
 # Bizzabo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bizzabo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bizzabo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bizzabo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bizzabo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Bizzabo** MCP server u
 > Registration reg_992 belongs to John Doe (john@example.com). They registered for the 'Early Bird' ticket type on March 15th and the status is 'Approved'.
 
 
+## ❓ FAQ
+
+**Q: Can I check the registration count for a specific event?**
+Yes! Use the `list_registrations` tool with the Event ID. Your agent will fetch the list of registrants, allowing you to see the total volume directly.
+
+**Q: How do I see the schedule for my upcoming event?**
+Simply ask the agent to `list_sessions` and provide the Event ID. It will retrieve all scheduled sessions, showing titles and timings.
+
+**Q: Does the integration allow creating new events?**
+Currently, the toolset is focused on querying and monitoring (Read-Only). You can list and inspect events, registrations, and contacts, but creating new events must be done through the Bizzabo platform directly for full configuration control.
+
+
 ## Installation & Usage
 
-To install and use the **Bizzabo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bizzabo](https://vinkius.com/mcp/bizzabo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bizzabo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bizzabo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bizzabo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bizzabo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

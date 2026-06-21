@@ -1,7 +1,6 @@
 # FRED Full Access — U.S. Economic Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fred-full-access-us-economic-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fred-full-access-us-economic-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fred-full-access-us-economic-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fred-full-access-us-economic-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -138,12 +137,46 @@ Found via tags: housing + quarterly + sa
 +45 more matching series
 
 
+## ❓ FAQ
+
+**Q: Why choose the Full server instead of individual ones?**
+The Full server bundles **all 19 tools** from all 5 domain-specific servers in a single integration. Ideal for multi-disciplinary AI agents that need to combine time series data with regional analysis, release monitoring, and tag-based discovery — all in one query session.
+
+
 ## Installation & Usage
 
-To install and use the **FRED Full Access — U.S. Economic Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fred-full-access-us-economic-intelligence](https://vinkius.com/mcp/fred-full-access-us-economic-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FRED Full Access — U.S. Economic Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fred-full-access-us-economic-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FRED Full Access — U.S. Economic Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fred-full-access-us-economic-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

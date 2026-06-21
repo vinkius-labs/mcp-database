@@ -1,7 +1,6 @@
 # Deterministic Reading Project Manager MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-reading-project-manager)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-reading-project-manager-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-reading-project-manager-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-reading-project-manager)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Deterministic Reading 
 > Using the analyze_reading_list tool: Your diagnostic shows you are 45.2% complete overall, having finished 7 papers entirely and being halfway through another.
 
 
+## ❓ FAQ
+
+**Q: How does it estimate the time remaining?**
+The algorithmic engine multiplies your remaining unread pages by an industry-standard 300 words-per-page. It then divides that massive word count by your specific reading speed (defaulting to 250 Words Per Minute) to output an exact hour count.
+
+**Q: What is the Snowball Method sequence?**
+It is a psychological productivity framework. The algorithm sorts your 'reading' books by how close you are to finishing them. For completely unread books, it sorts them from shortest to longest. This guarantees you secure 'quick wins' fast to build reading momentum.
+
+**Q: Can it process dozens of books at once?**
+Yes. Because it uses pure JSON and mathematical mapping without LLM token limits, it can instantly evaluate libraries containing thousands of entries without any calculation hallucination.
+
+
 ## Installation & Usage
 
-To install and use the **Deterministic Reading Project Manager** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deterministic-reading-project-manager](https://vinkius.com/mcp/deterministic-reading-project-manager)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deterministic Reading Project Manager** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deterministic-reading-project-manager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deterministic Reading Project Manager** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deterministic-reading-project-manager": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

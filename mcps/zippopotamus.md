@@ -1,7 +1,6 @@
 # Zippopotam.us MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zippopotamus)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zippopotamus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zippopotamus-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zippopotamus)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -64,12 +63,52 @@ Here are some examples of how you can interact with the **Zippopotam.us** MCP se
 > Retrieving data for Miami... I've found a large list of zip codes including 33101, 33109, 33125, and many others. Would you like me to list them all or focus on a specific neighborhood?
 
 
+## ❓ FAQ
+
+**Q: Can I lookup a US zip code and get its coordinates?**
+Yes! Use the `lookup_postcode` tool with the country 'US' and the zip code. It will return the city, state, and coordinates for that location.
+
+**Q: Which countries are supported by Zippopotam.us?**
+Zippopotam.us supports over 60 countries, including the US, Canada, Great Britain, Brazil, France, Germany, and many others. You can use the standard 2-letter ISO country codes.
+
+**Q: Can I find all zip codes for a specific city?**
+Yes! Use the `lookup_city` tool with the country code, state, and city name. It will return a list of all postal codes associated with that urban area.
+
+
 ## Installation & Usage
 
-To install and use the **Zippopotam.us** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zippopotamus](https://vinkius.com/mcp/zippopotamus)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zippopotam.us** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zippopotamus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zippopotam.us** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zippopotamus": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

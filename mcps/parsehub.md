@@ -1,7 +1,6 @@
 # ParseHub MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/parsehub)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/parsehub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/parsehub-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/parsehub)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **ParseHub** MCP server 
 > Pulled exact constraints running `get_run_data`. The JSON indicates 40 records containing titles and strict price fields. Would you like me to process this data or format it differently?
 
 
+## ❓ FAQ
+
+**Q: Do I need the ParseHub Desktop tool running to use this?**
+No. This integration operates completely natively via ParseHub's Cloud API endpoints. You only need the desktop app to build the templates originally. All executions mapped here happen on their cloud scaling servers.
+
+**Q: Can I provide a different Start URL when running a project?**
+Yes. The `run_project_with_url` command allows you to explicitly provide a `start_url` query property. This instructs the ParseHub crawler to ignore its project-saved URL and begin parsing the newly mapped domain using the same semantic template.
+
+**Q: Is the downloaded data returned in JSON or raw HTML?**
+The payload fetched by `get_run_data` is exported entirely as structured, pre-parsed JSON mirroring the exact template node selections defined in your project architecture.
+
+
 ## Installation & Usage
 
-To install and use the **ParseHub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/parsehub](https://vinkius.com/mcp/parsehub)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ParseHub** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `parsehub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ParseHub** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "parsehub": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

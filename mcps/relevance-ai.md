@@ -1,7 +1,6 @@
 # Relevance AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/relevance-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/relevance-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/relevance-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/relevance-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Relevance AI** MCP ser
 > I invoked `insert_documents` targeting dataset 'competitor_docs' with your provided dataset rows. The array of records has been persistently saved into your Relevance AI knowledge table.
 
 
+## ❓ FAQ
+
+**Q: Can the agent monitor a long-running relevance AI agent task?**
+Yes. You can trigger an agent using `trigger_agent`, and because it provides a `run_id`, you can explicitly prompt your local Assistant to periodically "check in on the status using `get_agent_run` every minute until finished" or ask it to summarize the step-by-step agent logs after completion.
+
+**Q: What is the differences between tasks, tools, and agents in Relevance AI?**
+Agents are autonomous workers capable of making step-by-step reasoning choices based on instructions and tools. Tasks are linear, pre-chained sets of commands and prompts. Tools (`list_tools`) are the individual capabilities, like a custom API integration or web scraper, that tasks and agents utilize to perform their actions.
+
+**Q: How do I find my specific Region and Project ID?**
+These details are typically nested within the URL string when you are logged into your workspace or found globally in your developer API keys configuration pane inside your Relevance AI team dashboard. The Region is usually something like 'us-east-1' or 'v2'.
+
+
 ## Installation & Usage
 
-To install and use the **Relevance AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/relevance-ai](https://vinkius.com/mcp/relevance-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Relevance AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `relevance-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Relevance AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "relevance-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

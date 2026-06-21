@@ -1,7 +1,6 @@
 # NOAA Marine — Tides, Currents & Coastal Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-marine-tides-currents-coastal-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/noaa-marine-tides-currents-coastal-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/noaa-marine-tides-currents-coastal-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-marine-tides-currents-coastal-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Tidal range: 1.44 m. Semi-diurnal pattern.
 > At the Virginia Key station in Miami (8723214), relative sea level has been rising at an average rate of 3.01 millimeters per year based on data from 1931 to present.
 
 
+## ❓ FAQ
+
+**Q: How do I find my nearest CO-OPS station?**
+Visit tidesandcurrents.noaa.gov/map to find your nearest station and its ID number. Major stations include 8518750 (NYC), 9414290 (San Francisco), 8723214 (Virginia Key, Miami).
+
+**Q: What is CO-OPS?**
+CO-OPS stands for Center for Operational Oceanographic Products and Services, a branch of NOAA that manages a national network of coastal stations providing marine environmental data.
+
+**Q: Can I get long-term sea level trends?**
+Yes, the API provides sea level rise trends calculated over decades of data, offering precise measurements of relative sea level changes in millimeters per year at specific coastal stations.
+
+
 ## Installation & Usage
 
-To install and use the **NOAA Marine — Tides, Currents & Coastal Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/noaa-marine-tides-currents-coastal-data](https://vinkius.com/mcp/noaa-marine-tides-currents-coastal-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NOAA Marine — Tides, Currents & Coastal Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `noaa-marine-tides-currents-coastal-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NOAA Marine — Tides, Currents & Coastal Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "noaa-marine-tides-currents-coastal-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

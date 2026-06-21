@@ -1,7 +1,6 @@
 # Semrush MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/semrush)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/semrush-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/semrush-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/semrush)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Semrush** MCP server u
 > I executed `domain_vs_domain` between the corporate endpoints. Both share astronomically similar Authority Scores (~91). Coca-Cola leads marginally in total referring domains (approx. 240k unique backlinking entities), while Pepsi tracks slightly higher on brand-name aggregate search volume in the US. However, Coca-Cola is currently picking up 15% more non-brand long-tail queries overall.
 
 
+## ❓ FAQ
+
+**Q: Are there additional charges for querying Semrush from my agent?**
+The Semrush API inherently consumes 'API Units' based on the weight of each request line (Keyword ranks, Domain analytics). You are completely bound to your established Semrush Business subscription rules. Vurb/MCP itself doesn't impose surcharges.
+
+**Q: Can I filter SEO performance based on different global markets or languages?**
+Yes. Most core functions such as `domain_overview` and `keyword_overview` optionally accept a targeted string code array for Regional Databases (such as 'uk', 'fr', 'de', 'es', or strictly 'us'). Just specify it organically in your LLM chatting window.
+
+**Q: Can it check a website's technical health natively?**
+Yes, through the specific `site_audit` directive. The AI agent will ingest the aggregated technical score corresponding directly to your preconfigured Semrush Project IDs, returning high-level data regarding crawled warnings and crawler fatal errors.
+
+
 ## Installation & Usage
 
-To install and use the **Semrush** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/semrush](https://vinkius.com/mcp/semrush)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Semrush** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `semrush` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Semrush** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "semrush": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

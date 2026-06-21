@@ -1,7 +1,6 @@
 # Railz MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/railz)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/railz-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/railz-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/railz)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Railz** MCP server usi
 > Fetching normalized P&L data... For the current period, your total revenue is $50,000 with operating expenses of $30,000, resulting in a net income of $20,000.
 
 
+## ❓ FAQ
+
+**Q: Can I access data from multiple accounting platforms like QuickBooks and Xero simultaneously?**
+Yes! Railz normalizes data across all supported providers. Use the `list_businesses` and `list_connections` tools to identify the target entity, then query reports which will return in a consistent format regardless of the underlying source.
+
+**Q: How do I retrieve a Balance Sheet for a specific company connection?**
+First, find the relevant `connection_id` for the business using `list_connections`. Then, use the `get_balance_sheet` tool with that ID to fetch the snapshot of assets and liabilities.
+
+**Q: Does this integration allow creating new invoices or only reading them?**
+The current toolset focuses on read-only operations for auditing and analysis, such as `list_invoices`, `list_bills`, and `list_accounts`. This ensures safe exploration of financial data without accidental modifications.
+
+
 ## Installation & Usage
 
-To install and use the **Railz** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/railz](https://vinkius.com/mcp/railz)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Railz** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `railz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Railz** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "railz": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

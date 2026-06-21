@@ -1,7 +1,6 @@
 # Doppler MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doppler)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/doppler-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/doppler-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doppler)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -102,12 +101,55 @@ Here are some examples of how you can interact with the **Doppler** MCP server u
 > I found 14 activity events in the last 7 days: 3 secret updates by alice@company.com, 8 secret reads by the CI/CD service account, 2 config changes by bob@company.com and 1 new secret added by admin@company.com.
 
 
+## ❓ FAQ
+
+**Q: How do I create a Doppler Service Token?**
+Log in to the [**Doppler Dashboard**](https://dashboard.doppler.com), select your project, go to **Settings** > **Tokens** and click **Generate Token**. Choose the scope (project + config/environment), set the access level (Read or Read+Write) and copy the token immediately — it won't be shown again.
+
+**Q: Can I update multiple secrets at once?**
+Yes! Use the `change_secrets` tool with a JSON object mapping names to values, e.g. `{"DATABASE_URL":"postgres://new-host","API_KEY":"sk-new"}`. This creates or updates all specified secrets in a single atomic operation.
+
+**Q: What is the difference between a Personal Token and a Service Token?**
+A **Personal Token** is scoped to your user account and can access all workspaces and projects you have permission for. A **Service Token** is scoped to a specific project and config, with either read-only or read+write access. Service tokens are recommended for CI/CD and automated integrations, while personal tokens are better for development and admin tasks.
+
+**Q: Can I view the activity history for a project?**
+Yes! Use the `list_activity_logs` tool with the project_slug to see all audit events (secret reads, writes, config changes, user additions). Optionally filter by config_name to see activity for a specific environment only. Each log entry shows who performed the action, when, and what was affected.
+
+
 ## Installation & Usage
 
-To install and use the **Doppler** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/doppler](https://vinkius.com/mcp/doppler)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Doppler** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `doppler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Doppler** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "doppler": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

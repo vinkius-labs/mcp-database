@@ -1,7 +1,6 @@
 # Fresha MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fresha)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fresha-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fresha-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fresha)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Fresha** MCP server us
 > Running the query on `list_sales` with a filter for today's date... I found 12 sales transactions totaling $1,450. The largest transaction was Invoice #1042 for $220. Would you like me to list the individual items for that invoice using `list_sale_items`?
 
 
+## ❓ FAQ
+
+**Q: Can I filter appointments by status or date using this server?**
+Yes! The `list_appointments` tool supports standard OData `$filter` parameters. For example, you can pass `Status eq 'Completed'` or filter by start times to isolate specific booking periods.
+
+**Q: How do I retrieve the specific services booked within an appointment?**
+You can use the `list_appointment_services` tool, or use the `$expand` parameter in `list_appointments` to load related service details in a single query.
+
+**Q: Can I view financial transactions and checkout details?**
+Yes. Use the `list_sales` tool to query invoices and transactions, and the `list_sale_items` tool to inspect individual line items, products, or services sold during checkout.
+
+
 ## Installation & Usage
 
-To install and use the **Fresha** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fresha](https://vinkius.com/mcp/fresha)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fresha** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fresha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fresha** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fresha": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

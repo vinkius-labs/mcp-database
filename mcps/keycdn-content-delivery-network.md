@@ -1,7 +1,6 @@
 # KeyCDN (Content Delivery Network) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/keycdn-content-delivery-network)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/keycdn-content-delivery-network-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/keycdn-content-delivery-network-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/keycdn-content-delivery-network)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **KeyCDN (Content Delive
 > Retrieving traffic reports… In the last 7 days, your account consumed a total of 1.24 TB of bandwidth. The peak usage occurred on Tuesday at 4 PM with 45 GB/hour. Your current credit balance is sufficient for this usage level.
 
 
+## ❓ FAQ
+
+**Q: Can I purge the entire cache for a specific zone using my agent?**
+Yes. Use the `purge_zone_cache_all` tool with your Zone ID. Your agent will instantly trigger a global invalidation across all Edge servers, forcing KeyCDN to re-fetch all assets from your origin upon the next request.
+
+**Q: How do I invalidate a single file instead of purging the whole zone?**
+The `purge_specific_url` tool allows for granular cache invalidation. You just need to provide the Zone ID and the absolute URL of the resource (e.g. your CDN subdomain + path) to clear that specific file from the edge nodes.
+
+**Q: Can my agent check how much traffic I've used this month?**
+Absolutely. Use the `list_traffic_reports` tool and provide a start and end timestamp. Your agent will retrieve the bandwidth consumption analytics for your account, helping you track CDN usage and spending in real-time.
+
+
 ## Installation & Usage
 
-To install and use the **KeyCDN (Content Delivery Network)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/keycdn-content-delivery-network](https://vinkius.com/mcp/keycdn-content-delivery-network)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **KeyCDN (Content Delivery Network)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `keycdn-content-delivery-network` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **KeyCDN (Content Delivery Network)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "keycdn-content-delivery-network": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # APImage MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apimage)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apimage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apimage-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apimage)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **APImage** MCP server u
 > Enhanced prompt: 'A fluffy tabby cat sitting peacefully on a sun-drenched wooden windowsill, warm golden afternoon light streaming through lace curtains, potted herbs in the background, soft bokeh, photorealistic, 4K detail'. Would you like to generate an image with this enhanced prompt?
 
 
+## ❓ FAQ
+
+**Q: Which AI image models are available?**
+Use the `list_models` tool to see all supported models. Current options include Flux 1 Dev, Flux 1 Schnell, Stable Diffusion XL, and DALL-E 3. Each model has different strengths for various visual styles.
+
+**Q: Can my AI upscale an image and remove its background in one session?**
+Yes. Use `upscale_image` first to increase resolution, then `remove_background` on the result. Both tools accept image URLs, so you can chain operations seamlessly.
+
+**Q: How does inpainting work?**
+The `inpaint_image` tool requires three inputs: the source image URL, a mask image URL (white areas = regions to fill), and a text prompt describing what to generate in those areas. The AI fills the masked regions while preserving the rest of the image.
+
+
 ## Installation & Usage
 
-To install and use the **APImage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/apimage](https://vinkius.com/mcp/apimage)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **APImage** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `apimage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **APImage** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "apimage": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

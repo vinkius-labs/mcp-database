@@ -1,7 +1,6 @@
 # Plone MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plone)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/plone-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/plone-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plone)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Plone** MCP server usi
 > I've retrieved the page. The title is 'About Our Company' and its current workflow state is 'private'. Would you like to transition it to 'published'?
 
 
+## ❓ FAQ
+
+**Q: Can I search for specific content types like Folders or Documents?**
+Yes! Use the `search_content` tool and provide the `portal_type` parameter (e.g., 'Folder' or 'Document') to filter your results.
+
+**Q: How do I update the title or description of an existing page?**
+Use the `update_content` tool. Provide the `path` to the content and a `json_body` containing the fields you want to change, such as `{"title": "New Title"}`.
+
+**Q: Is it possible to manage user accounts through this server?**
+Yes, if your credentials have sufficient permissions, you can use `list_users`, `get_user`, and `create_user` to manage the site's membership.
+
+
 ## Installation & Usage
 
-To install and use the **Plone** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/plone](https://vinkius.com/mcp/plone)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Plone** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `plone` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Plone** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "plone": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

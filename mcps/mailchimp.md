@@ -1,7 +1,6 @@
 # Mailchimp MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailchimp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailchimp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailchimp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailchimp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Mailchimp** MCP server
 > I've fetched 3 campaign items. 'Summer Sale 2026' (Sent), 'Welcome Series' (Draft), and 'Churn Automation' (Sent). Would you like to inspect CTR metrics for the sent ones?
 
 
+## ❓ FAQ
+
+**Q: Do I need the server prefix combined with my API key automatically?**
+Mailchimp API keys usually have a suffix (like `key-us6`). The system will parse everything internally. Just paste the full API key into our simplified authentication box naturally.
+
+**Q: Can I bulk add 5,000 users directly in a single conversational prompt?**
+While structurally possible via API logic, context windows prohibit reading arrays of 5000 units. Adding is handled dynamically unit by unit securely or in exceptionally tiny batches to bypass hard egress caps effectively.
+
+**Q: Does the system allow firing off actual live campaigns immediately to massive audiences?**
+No. The MCP server prioritizes safe state changes (subscribers). Launching massive destructive dispatches is omitted from the handler array to avoid rogue AI actions firing misconfigured commercial payload sets blindly.
+
+
 ## Installation & Usage
 
-To install and use the **Mailchimp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mailchimp](https://vinkius.com/mcp/mailchimp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mailchimp** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mailchimp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mailchimp** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mailchimp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

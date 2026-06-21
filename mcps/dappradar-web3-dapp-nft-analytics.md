@@ -1,7 +1,6 @@
 # DappRadar (Web3 Dapp & NFT Analytics) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dappradar-web3-dapp-nft-analytics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dappradar-web3-dapp-nft-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dappradar-web3-dapp-nft-analytics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dappradar-web3-dapp-nft-analytics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **DappRadar (Web3 Dapp &
 > Analyzing Bored Ape Yacht Club... The current floor price is 12.5 ETH with 15 sales recorded in the last 24 hours. The total volume for this period is 190 ETH.
 
 
+## ❓ FAQ
+
+**Q: Can I see historical volume and sales for a specific NFT collection?**
+Yes! Use the `get_nft_collection_metrics` tool with the collection ID. It returns historical floor prices, volume, and sales data to help you analyze market trends.
+
+**Q: How do I find the top performing dapps on a specific blockchain like Polygon?**
+You can use the `list_dapps` tool and provide 'polygon' in the `chain` parameter. You can also filter by category like 'games' or 'defi' to narrow down your search.
+
+**Q: Is it possible to get aggregate statistics for an entire blockchain ecosystem?**
+Absolutely. Use the `get_chain_stats` tool with the name of the blockchain (e.g., 'ethereum'). It will provide aggregate metrics for that specific ecosystem.
+
+
 ## Installation & Usage
 
-To install and use the **DappRadar (Web3 Dapp & NFT Analytics)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dappradar-web3-dapp-nft-analytics](https://vinkius.com/mcp/dappradar-web3-dapp-nft-analytics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DappRadar (Web3 Dapp & NFT Analytics)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dappradar-web3-dapp-nft-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DappRadar (Web3 Dapp & NFT Analytics)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dappradar-web3-dapp-nft-analytics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

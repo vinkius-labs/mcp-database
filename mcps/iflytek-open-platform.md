@@ -1,7 +1,6 @@
 # iFLYTEK Open Platform / 讯飞开放平台 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iflytek-open-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/iflytek-open-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/iflytek-open-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iflytek-open-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **iFLYTEK Open Platform 
 > I've generated a summary. The main points are: 1) AI integration in daily hardware, 2) Growth of edge computing, and 3) Decentralized cloud storage. Would you like me to identify the key entities mentioned in the full text?
 
 
+## ❓ FAQ
+
+**Q: How do I find my iFLYTEK App ID and API Key?**
+Log in to the [iFLYTEK Open Platform Console](https://www.xfyun.cn/console/myapp), select your application, and you will find your AppID, API Key, and API Secret in the application details section.
+
+**Q: What languages are supported for translation?**
+iFLYTEK supports dozens of languages, including Chinese, English, Japanese, Korean, French, Spanish, Russian, and more. Use standard ISO language codes (e.g., 'zh', 'en', 'fr') in the translation tool.
+
+**Q: Can I use SparkDesk LLM through this server?**
+Yes! Use the `spark_desk` tool to query the iFLYTEK large language model. Note that this requires your application to have specific permissions enabled for the SparkDesk service.
+
+
 ## Installation & Usage
 
-To install and use the **iFLYTEK Open Platform / 讯飞开放平台** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/iflytek-open-platform](https://vinkius.com/mcp/iflytek-open-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **iFLYTEK Open Platform / 讯飞开放平台** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `iflytek-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **iFLYTEK Open Platform / 讯飞开放平台** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "iflytek-open-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

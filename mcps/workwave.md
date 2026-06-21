@@ -1,7 +1,6 @@
 # WorkWave MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workwave)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/workwave-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/workwave-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workwave)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **WorkWave** MCP server 
 > Profile for tech-555: Name: Alice Johnson, Role: Senior Technician, Skills: HVAC, Electrical, Plumbing. Contact: alice@example.com. Would you like me to check her current assigned jobs?
 
 
+## ❓ FAQ
+
+**Q: Can I update the status of a work order through the agent?**
+Yes. The `update_order_status` tool allows your AI agent to change the lifecycle status of any service order (e.g., to 'InProgress' or 'Completed') so you can manage dispatching directly through chat.
+
+**Q: How do I see the contact details for a field technician?**
+You can use the `get_employee_profile` tool. Simply provide the unique employee ID, and your agent will return their full profile details, including contact information and assigned skills.
+
+**Q: Is it possible to list all service locations for a customer?**
+Absolutely. Using the `list_service_locations` tool, you can retrieve a list of all physical sites and addresses registered in your WorkWave instance, helping you coordinate where jobs need to be performed.
+
+
 ## Installation & Usage
 
-To install and use the **WorkWave** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/workwave](https://vinkius.com/mcp/workwave)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WorkWave** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `workwave` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WorkWave** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "workwave": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

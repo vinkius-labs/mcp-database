@@ -1,7 +1,6 @@
 # Isaac Newton Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/isaac-newton-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/isaac-newton-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/isaac-newton-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/isaac-newton-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Isaac Newton Prover** 
 > Three failures in one pitch. First — CAUSALITY_ABSENT: 'seems to correlate' is not a causal force. WHAT force drives the delay? Sequential dependencies? Information asymmetry? Authority bottlenecks? Measure, don't guess. Second — PATCHWORK_SOLUTION: 'like most organizations do' is copying, not deriving. Why are parallel reviews the answer? What axiom makes it correct? Third — FRAMEWORK_FRAGMENTED: 'handle complex cases separately' is a per-case branch. Find ONE rule that governs ALL approval types. Start over: formalize, identify forces, derive, unify.
 
 
+## ❓ FAQ
+
+**Q: Does it generate code or architectures?**
+No. It computes nothing and generates nothing. The LLM makes the technical decision — this tool validates that the reasoning is formally rigorous. If the LLM says 'it scales well' without formalizing WHY, the tool rejects and explains what formalization is missing.
+
+**Q: Why does it reject 'best practices' and industry patterns?**
+Because 'the industry leader does it this way' is not a derivation — it is copying. Newton did not cite Aristotle. He derived the laws from his own axioms. The tool forces the LLM to identify its foundational axioms and derive the solution from them, not assemble it from borrowed patterns.
+
+**Q: What is 'Framework Unification'?**
+Newton had ONE law of gravitation that explains both the apple falling from a tree and the Moon orbiting Earth. This tool demands the same: one abstraction that handles ALL cases in your domain. If your solution uses switch statements or per-case handlers, it is fragmented — and this tool will reject it.
+
+
 ## Installation & Usage
 
-To install and use the **Isaac Newton Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/isaac-newton-prover](https://vinkius.com/mcp/isaac-newton-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Isaac Newton Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `isaac-newton-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Isaac Newton Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "isaac-newton-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Typeform MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typeform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/typeform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/typeform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typeform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Typeform** MCP server 
 > Extracted architectural blueprint correctly. The Form XYZ encompasses exactly 6 blocks. Notably, a multiple-choice element ('How did you know us?') and a large text-field entry block ('Give suggestions'). Would you like to dump its responses now securely inside the session locally purely unhindered natively without blocks?
 
 
+## ❓ FAQ
+
+**Q: Can I publish a new dynamic Typeform directly from a conversational command?**
+No, this architecture specifically focuses purely and strictly on ingesting incoming feedback payloads and analyzing structures. Complex visual form generation natively lacks API flexibility conducive to safe autonomous LLM builders efficiently avoiding poor user interfaces natively constructed blindly.
+
+**Q: Are hidden variables pulled alongside standard answers when retrieving responses?**
+Yes! Extracted payloads contain an aggregated matrix detailing exact answers seamlessly mixed with tracking parameters natively gathered enabling profound correlation matching intelligently done effortlessly inside the AI model natively securely attached perfectly.
+
+**Q: Does pagination protect aggressive limits natively for massive sets of answers?**
+Totally protected. Vurb's native egress filtering dynamically manages page streams safely avoiding out-of-context faults gracefully when looping through immense objects autonomously parsing inputs effortlessly natively correctly securely stably unified absolutely correctly.
+
+
 ## Installation & Usage
 
-To install and use the **Typeform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/typeform](https://vinkius.com/mcp/typeform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Typeform** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `typeform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Typeform** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "typeform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

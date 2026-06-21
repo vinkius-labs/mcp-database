@@ -1,7 +1,6 @@
 # Pinterest MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pinterest-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pinterest-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pinterest-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pinterest-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,49 @@ Here are some examples of how you can interact with the **Pinterest** MCP server
 > Pin created successfully on "Home Inspiration" board. Title: Modern Living Room Design. Description optimized for search with 5 relevant keywords. Link: points to your blog post. The pin is now live and discoverable. Pinterest suggests posting between 8-11 PM for this category to maximize reach. Estimated first-day impressions based on board followers: 2,400.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the top-performing pins for a specific date range?**
+Yes! Use the `get_top_pins_analytics` tool. Provide the start and end dates along with a sort criteria (like 'IMPRESSION'), and your agent will respond with complete metadata for your best content in seconds.
+
+**Q: How do I find my Pinterest OAuth Access Token?**
+Log in to the [**Pinterest Developer Portal**](https://developers.pinterest.com/), create an application, and use the 'Token Generator' or perform the OAuth 2.0 flow to obtain your secret access token.
+
+
 ## Installation & Usage
 
-To install and use the **Pinterest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pinterest-alternative](https://vinkius.com/mcp/pinterest-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pinterest** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pinterest-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pinterest** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pinterest-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

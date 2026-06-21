@@ -1,7 +1,6 @@
 # BatchDialer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/batchdialer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/batchdialer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/batchdialer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/batchdialer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **BatchDialer** MCP serv
 > Today's logs show 15 completed calls. Most interactions resulted in 'Voicemail' (8) or 'Follow-up Needed' (4). Would you like to see the details for the follow-up calls?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically add a new lead to BatchDialer?**
+Yes! Use the `add_lead` action with the contact's name and phone number. Your agent will register the lead in your BatchDialer system instantly.
+
+**Q: How do I easily list all recent call logs?**
+Simply ask the agent to `list_call_logs`. It will compile the history of recent outbound activities, including status and duration.
+
+**Q: Does the integration allow starting an active call from the agent?**
+No. For security and operational safety, the current toolset focuses on management and auditing (listing campaigns, managing leads, checking logs). Initiating live calls must be done through the BatchDialer interface.
+
+
 ## Installation & Usage
 
-To install and use the **BatchDialer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/batchdialer](https://vinkius.com/mcp/batchdialer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BatchDialer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `batchdialer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BatchDialer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "batchdialer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

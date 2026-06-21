@@ -1,7 +1,6 @@
 # Unleashed MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unleashed)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unleashed-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unleashed-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unleashed)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -102,12 +101,52 @@ Here are some examples of how you can interact with the **Unleashed** MCP server
 > Retrieving assembly details... Assembly '12345-abcde-67890' is currently 'In Progress'. It is assembling 50 units of 'Premium Widget' using BOM 'BOM-004'. No quality issues have been flagged.
 
 
+## ❓ FAQ
+
+**Q: How do I fetch the details of a specific Bill of Materials (BOM)?**
+You can use the `get_bom` tool by providing the unique GUID of the Bill of Materials. The agent will return the complete component list and configuration details.
+
+**Q: Can I create a new customer directly through my AI agent?**
+Yes! Use the `create_customer` tool. You will need to provide a unique `CustomerCode` and a `CustomerName`, along with any optional fields you wish to populate.
+
+**Q: How can I monitor active assembly processes?**
+You can list all assemblies using `list_assemblies` (supporting pagination) or fetch a specific one using `get_assembly` with its GUID to check its status and progress.
+
+
 ## Installation & Usage
 
-To install and use the **Unleashed** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/unleashed](https://vinkius.com/mcp/unleashed)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Unleashed** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `unleashed` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Unleashed** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "unleashed": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

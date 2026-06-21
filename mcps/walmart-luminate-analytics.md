@@ -1,7 +1,6 @@
 # Walmart Luminate Analytics MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/walmart-luminate-analytics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/walmart-luminate-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/walmart-luminate-analytics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/walmart-luminate-analytics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Walmart Luminate Analy
 > Analyzed Shopper Behavior over the last 90 days. You have a 68% retention rate among returning customers with an average of 2.4 purchases per cohort.
 
 
+## ❓ FAQ
+
+**Q: Can this integration edit my item prices or titles?**
+No. The `walmart-luminate-mcp` works as a Read-Only analytics collector directly. If you seek editing arrays, combine this setup natively with `walmart-marketplace-mcp`.
+
+**Q: Is Luminate data real-time or delayed?**
+Luminate insights provide highly accurate aggregated models but generally operate on a 24-48 hour processing delay to ensure large-scale data integrity across all US stores.
+
+**Q: Can I see what other products customers buy alongside mine?**
+Yes. The Market Basket Affinity algorithms correlate transactions, showing you exact percentages of cross-category items frequently purchased with your SKUs.
+
+
 ## Installation & Usage
 
-To install and use the **Walmart Luminate Analytics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/walmart-luminate-analytics](https://vinkius.com/mcp/walmart-luminate-analytics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Walmart Luminate Analytics** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `walmart-luminate-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Walmart Luminate Analytics** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "walmart-luminate-analytics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

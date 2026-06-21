@@ -1,7 +1,6 @@
 # String Operations Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/string-operations-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/string-operations-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/string-operations-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/string-operations-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -55,12 +54,52 @@ Here are some examples of how you can interact with the **String Operations Engi
 > Using the get_text_stats tool: The text has 142 characters (120 without spaces) and exactly 23 words.
 
 
+## ❓ FAQ
+
+**Q: Why use an MCP just to count words?**
+Because LLMs process tokens, not individual letters or words. If you ask an LLM to generate exactly 250 characters, it will guess and often fail. This MCP provides a deterministic mathematical check to guarantee exact limits.
+
+**Q: Does the slugify tool handle international accents?**
+Yes! The slugify logic decomposes strings (NFD normalization) to strip out all diacritics (like á, ö, ç) before converting spaces to hyphens and removing non-alphanumeric characters.
+
+**Q: Does it require internet access?**
+No. The entire engine executes purely on local JavaScript without any API requests, guaranteeing total privacy for your source code and content.
+
+
 ## Installation & Usage
 
-To install and use the **String Operations Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/string-operations-engine](https://vinkius.com/mcp/string-operations-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **String Operations Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `string-operations-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **String Operations Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "string-operations-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Helicone (LLM Observability) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helicone-llm-observability)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/helicone-llm-observability-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/helicone-llm-observability-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helicone-llm-observability)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Helicone (LLM Observab
 > Found 5 versions for 'customer-service-bot'. Version 5 (latest) was deployed 2 days ago with updated grounding rules. Version 4 was active for 3 months. I can fetch the exact instruction text for any version.
 
 
+## ❓ FAQ
+
+**Q: Can I see the exact prompt that caused a specific error?**
+Yes. Use the `query_requests` tool to fetch direct prompts and outputs from the proxy logs. You can filter by status or custom tags to find the exact interaction that needs debugging.
+
+**Q: How do I track costs for a specific customer ID?**
+Ask your agent to `query_costs` and include your customer identity in the filter. Helicone maps costs per model and user, allowing you to see exactly how much each client is burning in LLM tokens.
+
+**Q: Can my agent log human feedback into Helicone?**
+Absolutely. Use the `log_feedback` tool to inject offline Human-in-the-Loop verdicts or text critiques directly into Helicone's database, helping you refine your model's grounding over time.
+
+
 ## Installation & Usage
 
-To install and use the **Helicone (LLM Observability)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/helicone-llm-observability](https://vinkius.com/mcp/helicone-llm-observability)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Helicone (LLM Observability)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `helicone-llm-observability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Helicone (LLM Observability)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "helicone-llm-observability": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

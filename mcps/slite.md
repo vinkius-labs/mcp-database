@@ -1,7 +1,6 @@
 # Slite MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/slite)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/slite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/slite-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/slite)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,49 @@ Here are some examples of how you can interact with the **Slite** MCP server usi
 > Found 8 documents matching "API authentication" and "rate limiting". Most relevant: "API Authentication Guide" (last updated 3 days ago, OAuth 2.0, API keys, JWT tokens covered). "Rate Limiting Policy" (updated last week, 1000 req/min default, burst handling). "API Security Best Practices" (comprehensive, 2,340 words). "Developer Quickstart" (getting started with auth). "Troubleshooting Auth Errors" (common 401/403 fixes). 3 additional related docs. Combined reading time: 45 minutes. 2 documents flagged as needing review.
 
 
+## ❓ FAQ
+
+**Q: Can I ask questions to Slite AI?**
+Yes, use the ask_slite_ai tool to get answers sourced directly from your documents.
+
+**Q: How do I create a nested note?**
+When using create_note, provide the note_id of the parent in the parent_note_id parameter.
+
+
 ## Installation & Usage
 
-To install and use the **Slite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/slite](https://vinkius.com/mcp/slite)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Slite** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `slite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Slite** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "slite": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

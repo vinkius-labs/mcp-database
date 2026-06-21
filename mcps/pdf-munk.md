@@ -1,7 +1,6 @@
 # PDF Munk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pdf-munk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pdf-munk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pdf-munk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pdf-munk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,46 @@ Here are some examples of how you can interact with the **PDF Munk** MCP server 
 > HTML to PDF conversion complete. Output: 18 pages. Page size: A4. Custom header applied with company logo and report title on each page. Footer includes page numbers ("Page X of 18") and generation timestamp. Table of contents auto-generated on page 1. All CSS styles preserved including charts and data tables. File size: 1.2 MB.
 
 
+## ❓ FAQ
+
+**Q: Can I convert a website URL to a PDF using my AI agent?**
+Yes! Use the `convert_url_to_pdf` tool and provide the target URL. Your agent will return a link to the generated PDF document.
+
+
 ## Installation & Usage
 
-To install and use the **PDF Munk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pdf-munk](https://vinkius.com/mcp/pdf-munk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PDF Munk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pdf-munk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PDF Munk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pdf-munk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

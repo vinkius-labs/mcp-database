@@ -1,7 +1,6 @@
 # Channels MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/channels)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/channels-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/channels-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/channels)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Channels** MCP server 
 > Link generated! You can download the audio for call_789 here: [recording_url]. The link is secure and will expire in 24 hours. Need a summary of the call statistics?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Channels API Key and Account ID?**
+Log in to your account, click on your profile menu, go to the **Developer** tab, and you will see your API Key and Account ID.
+
+**Q: Can I listen to call recordings via AI?**
+Yes! The `get_call_recording` tool generates a temporary secure download link for any recorded call in your history.
+
+**Q: How do I create a new contact programmatically?**
+Use the `create_contact` tool and provide the customer's name and phone number (in E.164 format).
+
+
 ## Installation & Usage
 
-To install and use the **Channels** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/channels](https://vinkius.com/mcp/channels)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Channels** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `channels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Channels** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "channels": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

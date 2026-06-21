@@ -1,7 +1,6 @@
 # AfterShip MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aftership)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aftership-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aftership-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aftership)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **AfterShip** MCP server
 > You have 5 active trackings: 2 In Transit (UPS, FedEx), 1 Out for Delivery (USPS), 1 Pending (DHL), and 1 Attempted Delivery (Canada Post). The USPS package is expected to be delivered today.
 
 
+## ❓ FAQ
+
+**Q: How do I get an AfterShip API Key?**
+Sign up at [**AfterShip**](https://www.aftership.com/), go to Settings > API Keys, and generate a new key. Free tier includes 100 shipments/month.
+
+**Q: How many couriers are supported?**
+AfterShip supports 1,000+ courier companies worldwide including FedEx, UPS, DHL, USPS, Royal Mail, Canada Post, Australia Post, and many regional carriers.
+
+**Q: Can I automatically detect which courier handles my tracking number?**
+Yes! Use the `detect_courier` tool with just the tracking number. It returns a ranked list of likely courier companies based on the tracking number format.
+
+
 ## Installation & Usage
 
-To install and use the **AfterShip** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aftership](https://vinkius.com/mcp/aftership)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AfterShip** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aftership` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AfterShip** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aftership": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

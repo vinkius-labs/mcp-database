@@ -1,7 +1,6 @@
 # CloudCard ID Photos MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudcard-id-photos)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudcard-id-photos-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudcard-id-photos-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudcard-id-photos)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **CloudCard ID Photos** 
 > I've retrieved John Doe's profile. He has one approved photo and his physical ID card was picked up at the Main Office on April 10th.
 
 
+## ❓ FAQ
+
+**Q: How do I get a CloudCard API Token?**
+Log in to your [**CloudCard Admin**](https://app.cloudcard.us/) portal, go to your Profile or Settings, and generate an API Token (X-Auth-Token).
+
+**Q: Can the agent auto-approve photos?**
+Yes, using the `approve_id_photo` tool, the agent can approve any pending photo submission once verified through conversation.
+
+**Q: Is student ID management supported?**
+Absolutely. CloudCard is widely used in higher education, and this server supports registering students and managing their photo submissions.
+
+
 ## Installation & Usage
 
-To install and use the **CloudCard ID Photos** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cloudcard-id-photos](https://vinkius.com/mcp/cloudcard-id-photos)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CloudCard ID Photos** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cloudcard-id-photos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CloudCard ID Photos** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cloudcard-id-photos": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Corsizio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corsizio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/corsizio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/corsizio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corsizio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Corsizio** MCP server 
 > This week, you've generated a total of $1,250 from 12 new registrations. Your most popular event was 'Advanced Yoga Class'. Would you like a breakdown of payments by day?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Corsizio API Key?**
+Log in to your Corsizio account, navigate to **Account Settings > Developer API**, and you will find your Secret API Key there.
+
+**Q: Can I process refunds via chat?**
+This integration currently provides read-only access to lists of payments and refunds for auditing purposes. Refund processing should be done via the Corsizio dashboard.
+
+**Q: Is my data secure?**
+Yes, the integration uses the official Corsizio API with your encrypted secret key. We do not store your attendee data on our servers.
+
+
 ## Installation & Usage
 
-To install and use the **Corsizio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/corsizio](https://vinkius.com/mcp/corsizio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Corsizio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `corsizio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Corsizio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "corsizio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

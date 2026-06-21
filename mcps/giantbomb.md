@@ -1,7 +1,6 @@
 # GiantBomb MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/giantbomb)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/giantbomb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/giantbomb-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/giantbomb)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **GiantBomb** MCP server
 > Querying platforms... I've found several SEGA platforms including the Genesis (GUID 3045-6), Dreamcast (GUID 3045-37), Game Gear (GUID 3045-5), and Saturn (GUID 3045-42). Would you like the technical specifications for any of these?
 
 
+## ❓ FAQ
+
+**Q: How do I find the unique GUID for a specific game or character?**
+You can use the `search` tool with your query. The results will include the `guid` (e.g., 3030-4725) for each item, which you can then use with `get_game` or `get_character` for full details.
+
+**Q: Can I filter games by a specific platform or developer?**
+Yes! Use the `list_games` tool and provide a string to the `filter` parameter (e.g., `platforms:146` or `name:Mario`). You can also use `field_list` to limit the data returned.
+
+**Q: What kind of resources can I search for simultaneously?**
+The `search` tool allows you to specify multiple types in the `resources` parameter, such as `game,character,company,platform`. This returns the most relevant matches across all those categories in one go.
+
+
 ## Installation & Usage
 
-To install and use the **GiantBomb** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/giantbomb](https://vinkius.com/mcp/giantbomb)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GiantBomb** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `giantbomb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GiantBomb** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "giantbomb": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

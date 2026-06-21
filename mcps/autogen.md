@@ -1,7 +1,6 @@
 # AutoGen MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/autogen)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/autogen-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/autogen-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/autogen)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **AutoGen** MCP server u
 > A new clean boundary UUID a9f2-bcd has been created. I've successfully routed a POST Message into it targeting the 'Market Research' topograph topology. The agentic group is starting now. Should I poll it and summarize their conclusions after five minutes?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent debug a looping multi-agent conversation?**
+Yes. You can instruct your primary agent to retrieve the message traces for a specific AutoGen session ID. It will instantly unpack the internal LLM-to-LLM conversation, highlighting exactly which secondary agent is looping, throwing errors, or deviating from the constraints without manual log parsing.
+
+**Q: How do I add a new Python capability or skill dynamicly?**
+Your agent can list currently mapped Python skills bound to the studio runtime. If you need a new capability, your primary AI can iterate on the script directly on your CLI/editor and once deployed in your studio, you can map it natively to customized agents via the creation parameters.
+
+**Q: Can it trigger a Workflow to start executing a new complex task?**
+Absolutely. Ask your agent to create a fresh, blank, and completely isolated session, then dispatch a newly constructed 'human message' targeting an existing Multi-Agent workflow topology. It initiates the whole automated logic sequence securely and remotely.
+
+
 ## Installation & Usage
 
-To install and use the **AutoGen** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/autogen](https://vinkius.com/mcp/autogen)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AutoGen** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `autogen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AutoGen** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "autogen": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

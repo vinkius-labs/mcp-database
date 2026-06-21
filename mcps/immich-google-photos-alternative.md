@@ -1,7 +1,6 @@
 # Immich (Google Photos Alternative) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/immich-google-photos-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/immich-google-photos-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/immich-google-photos-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/immich-google-photos-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **Immich (Google Photos 
 > Inspecting asset... This is a JPEG image taken on 2023-08-15. It is currently marked as a favorite and is part of the 'Travel' album.
 
 
+## ❓ FAQ
+
+**Q: How can I check if my Immich server is online and see its version?**
+You can use the `get_server_info` tool. It will return the current version of the Immich server and its operational status.
+
+**Q: Is it possible to upload a photo directly from my computer using this server?**
+Yes! Use the `upload_asset` tool by providing the absolute local file path. The AI will handle the multipart upload to your Immich instance.
+
+**Q: Can I create a new album to organize my photos?**
+Absolutely. Use the `create_album` tool and provide a JSON payload with the `albumName`. You can also manage existing ones with `list_albums` and `update_album`.
+
+
 ## Installation & Usage
 
-To install and use the **Immich (Google Photos Alternative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/immich-google-photos-alternative](https://vinkius.com/mcp/immich-google-photos-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Immich (Google Photos Alternative)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `immich-google-photos-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Immich (Google Photos Alternative)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "immich-google-photos-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

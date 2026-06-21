@@ -1,7 +1,6 @@
 # Paraíba Open Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paraiba-open-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/paraiba-open-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/paraiba-open-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paraiba-open-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Paraíba Open Data** M
 > I found the records for daily allowances in January 2024. The data includes the names of recipients, the purpose of travel, and the amounts paid. Should I summarize the top spending units?
 
 
+## ❓ FAQ
+
+**Q: Can I see the total payroll for a specific month and year?**
+Yes! Use the `get_folha_pagamento` tool by providing the `exercicio` (year) and `mes` (month). The agent will return a summary of personnel spending for that period.
+
+**Q: How do I check government contracts for a specific year?**
+You can use the `get_contratos` tool with the `exercicio` parameter. This will list the contracts registered in the state's system for the requested year.
+
+**Q: Is it possible to track outstanding debts (Restos a Pagar)?**
+Yes, the `get_restos_a_pagar` tool allows you to fetch data on expenses that were committed but not yet paid from previous fiscal years.
+
+
 ## Installation & Usage
 
-To install and use the **Paraíba Open Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/paraiba-open-data](https://vinkius.com/mcp/paraiba-open-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Paraíba Open Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `paraiba-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Paraíba Open Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "paraiba-open-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

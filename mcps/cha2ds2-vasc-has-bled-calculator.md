@@ -1,7 +1,6 @@
 # CHA₂DS₂-VASc & HAS-BLED Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cha2ds2-vasc-has-bled-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cha2ds2-vasc-has-bled-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cha2ds2-vasc-has-bled-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cha2ds2-vasc-has-bled-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **CHA₂DS₂-VASc & HAS
 > The full assessment requires three steps: 1) **`query_cha2ds2_vasc_score`** for the high thromboembolic risk. 2) **`calculate_hasbled_score`** to check bleeding risk (inputs: 160, True, False, YES). 3) **`get_risk_recommendations`** uses both results to give a definitive O/A recommendation and annual stroke percentage.
 
 
+## ❓ FAQ
+
+**Q: Does this tool only calculate the CHA₂DS₂-VASc score?**
+No. While the **`query_cha2ds2_vasc_score`** tool handles the thromboembolic risk, we also use **`calculate_hasbled_score`** to assess bleeding risk and finally **`get_risk_recommendations`** to synthesize both scores into a single, actionable guideline recommendation.
+
+**Q: How does the tool determine if anticoagulation is needed?**
+The recommendation comes from **`get_risk_recommendations`**. This tool combines your CHA₂DS₂-VASc score with the HAS-BLED score to provide a guideline-based decision (O for Oral Anticoagulation, A for Avoidance), ensuring both stroke and bleed risks are weighed.
+
+**Q: Are the scoring criteria based on current medical guidelines?**
+Yes. Both the CHA₂DS₂-VASc and HAS-BLED calculations follow established clinical protocols, as implemented in **`query_cha2ds2_vasc_score`** and **`calculate_hasbled_score`**, respectively. The final guidelines are managed by **`get_risk_recommendations`**.
+
+
 ## Installation & Usage
 
-To install and use the **CHA₂DS₂-VASc & HAS-BLED Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cha2ds2-vasc-has-bled-calculator](https://vinkius.com/mcp/cha2ds2-vasc-has-bled-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CHA₂DS₂-VASc & HAS-BLED Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cha2ds2-vasc-has-bled-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CHA₂DS₂-VASc & HAS-BLED Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cha2ds2-vasc-has-bled-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

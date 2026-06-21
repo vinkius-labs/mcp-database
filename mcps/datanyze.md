@@ -1,7 +1,6 @@
 # Datanyze MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datanyze)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datanyze-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datanyze-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datanyze)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Datanyze** MCP server 
 > You currently have 450 credits remaining in your Datanyze account for the current billing cycle. Would you like to see a summary of your recent usage?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Datanyze API Token?**
+Log in to your Datanyze account, navigate to the API section in your settings, and you can retrieve your unique API Token from there.
+
+**Q: What are technographics?**
+Technographics refers to the analysis of the software and technology tools a company uses, such as their CRM, cloud provider, or analytics platform.
+
+**Q: Does searching for a domain use credits?**
+Yes, most Datanyze API calls consume credits based on your current plan. You can use the get_api_credit_balance tool to monitor your remaining credits.
+
+
 ## Installation & Usage
 
-To install and use the **Datanyze** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/datanyze](https://vinkius.com/mcp/datanyze)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Datanyze** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `datanyze` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Datanyze** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "datanyze": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

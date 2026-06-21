@@ -1,7 +1,6 @@
 # Persana AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/persana-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/persana-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/persana-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/persana-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Persana AI** MCP serve
 > 23 job changes detected in your target accounts over the last 30 days. Notable moves: James Park joined Acme Corp as CTO (previously VP Eng at TechFlow). Lisa Wang became Head of Product at ScaleUp. 8 new VP-level hires detected across your enterprise accounts. 5 contacts left their companies entirely. These represent high-value outreach opportunities since new decision-makers often evaluate tooling within the first 90 days.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the verified email for a prospect by their LinkedIn URL?**
+Yes! Use the `enrich_person` tool. Provide the LinkedIn URL, and your agent will respond with complete metadata, including firmographics and waterfall-verified email addresses in seconds.
+
+**Q: How do I find my Persana AI Key?**
+Log in to your Persana AI dashboard, navigate to **Settings** > **API Keys**, and you will find your unique secret token there.
+
+**Q: What are 'Intent Signals'?**
+Intent signals are real-time alerts about key account activities, such as a company raising a new funding round or a decision-maker starting a new role, allowing for perfectly timed outreach.
+
+
 ## Installation & Usage
 
-To install and use the **Persana AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/persana-ai](https://vinkius.com/mcp/persana-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Persana AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `persana-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Persana AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "persana-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

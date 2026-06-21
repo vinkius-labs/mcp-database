@@ -1,7 +1,6 @@
 # Mail-in-a-Box MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mail-in-a-box)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mail-in-a-box-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mail-in-a-box-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mail-in-a-box)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Mail-in-a-Box** MCP se
 > I've checked the system status. All core services (DNS, IMAP, SMTP) are running correctly. 2 minor updates are available for your OS.
 
 
+## ❓ FAQ
+
+**Q: What format is required for the instance host?**
+Provide the full hostname without the 'https://' prefix, for example: `box.yourdomain.com`.
+
+**Q: Can I add multiple forwarding targets to an alias?**
+Yes, when using the `create_or_update_alias` tool, provide a comma-separated list of emails in the `forwards_to` field.
+
+**Q: Does this work with 2FA enabled accounts?**
+The current API implementation uses Basic Auth. If 2FA is enabled on your admin account, you may need to use an API key or a dedicated admin user without 2FA for the integration.
+
+
 ## Installation & Usage
 
-To install and use the **Mail-in-a-Box** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mail-in-a-box](https://vinkius.com/mcp/mail-in-a-box)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mail-in-a-Box** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mail-in-a-box` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mail-in-a-Box** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mail-in-a-box": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

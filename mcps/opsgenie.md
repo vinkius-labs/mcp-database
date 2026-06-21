@@ -1,7 +1,6 @@
 # Opsgenie MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opsgenie)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opsgenie-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opsgenie-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opsgenie)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Opsgenie** MCP server 
 > The current on-call responder for 'SRE-Primary' is Sarah Miller (sarah.miller@example.com). Her shift ends at 08:00 AM UTC tomorrow.
 
 
+## ❓ FAQ
+
+**Q: How do I know which region to select?**
+If your Opsgenie URL ends in `.eu`, select the EU region. Otherwise, use the default US region. This ensures the agent calls the correct API endpoints for your account.
+
+**Q: Can I acknowledge multiple alerts at once?**
+While the tools handle alerts individually, you can ask the AI agent to 'Acknowledge all open alerts with priority P1' and it will process them sequentially for you.
+
+**Q: Does this support Major Incidents as well as Alerts?**
+Yes! Use the `create_incident` and `list_incidents` tools to manage higher-level response efforts beyond standard technical alerts.
+
+
 ## Installation & Usage
 
-To install and use the **Opsgenie** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opsgenie](https://vinkius.com/mcp/opsgenie)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Opsgenie** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opsgenie` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Opsgenie** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opsgenie": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

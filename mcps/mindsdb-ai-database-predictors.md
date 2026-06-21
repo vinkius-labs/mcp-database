@@ -1,7 +1,6 @@
 # MindsDB (AI Database & Predictors) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mindsdb-ai-database-predictors)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mindsdb-ai-database-predictors-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mindsdb-ai-database-predictors-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mindsdb-ai-database-predictors)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **MindsDB (AI Database &
 > I've identified 3 connected data sources: 'production_pg' (PostgreSQL), 'snowflake_warehouse' (Snowflake), and 'marketing_sheets' (Google Sheets). I can list the available tables for any of these sources if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Can I train a machine learning model using SQL through my agent?**
+Yes. Use the `execute_sql_query` tool with the 'CREATE MODEL' statement. Your agent will dispatch the command to MindsDB, which will automatically handle the data processing and training of your predictor asynchronously.
+
+**Q: How do I connect an external database like PostgreSQL to MindsDB using the agent?**
+The `execute_sql_query` tool supports the 'CREATE DATABASE' syntax. You can command your agent to link a new data source by providing the connection parameters, allowing MindsDB to query your existing data natively.
+
+**Q: Can my agent retrieve the status of an ongoing model training?**
+Absolutely. Use the `get_model` tool by providing the model name and project. Your agent will report the current training state, accuracy metrics, and any errors encountered during the AI generation process.
+
+
 ## Installation & Usage
 
-To install and use the **MindsDB (AI Database & Predictors)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mindsdb-ai-database-predictors](https://vinkius.com/mcp/mindsdb-ai-database-predictors)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MindsDB (AI Database & Predictors)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mindsdb-ai-database-predictors` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MindsDB (AI Database & Predictors)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mindsdb-ai-database-predictors": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

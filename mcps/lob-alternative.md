@@ -1,7 +1,6 @@
 # Lob MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lob-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lob-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lob-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lob-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Lob** MCP server using
 > Check created! ID: chk_8901. Amount: $5,000.00. To: Acme Corp, 456 Business Ave, Chicago, IL 60601. Memo: 'Q2 services payment'. Mail class: First Class. Expected delivery: May 1-3. Templates: 5 available. 'Welcome Letter' (HTML), 'Invoice Notice' (HTML), 'Thank You Card' (postcard), 'Payment Notice' (letter), 'Renewal Reminder' (postcard).
 
 
+## ❓ FAQ
+
+**Q: Can I send letters and postcards through the AI agent?**
+Yes. Create and send letters with PDF/HTML content and postcards with custom designs. Track delivery through the postal system.
+
+**Q: Does Lob use Basic Auth?**
+Yes. Lob uses **HTTP Basic Auth** with the API Key as username (no password) against `api.lob.com/v1`.
+
+**Q: Can I verify US addresses?**
+Yes. Verify and standardize US addresses with CASS certification. Returns deliverability status, corrected addresses, and coordinates.
+
+
 ## Installation & Usage
 
-To install and use the **Lob** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lob-alternative](https://vinkius.com/mcp/lob-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lob** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lob-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lob** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lob-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

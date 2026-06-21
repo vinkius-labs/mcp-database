@@ -1,7 +1,6 @@
 # CoinPaprika API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coinpaprika-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coinpaprika-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coinpaprika-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coinpaprika-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **CoinPaprika API** MCP 
 > I've retrieved the exchange catalog from CoinPaprika! There are hundreds of exchanges listed, including Binance, Coinbase, and Kraken. I can provide the unique ID and status for each of these platforms to assist in your liquidity audit.
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for CoinPaprika API?**
+No. CoinPaprika provides a free public API. This server works out of the box without any static credentials required.
+
+**Q: What does OHLCV stand for?**
+OHLCV stands for Open, High, Low, Close, and Volume. It provides a comprehensive view of price activity for a specific time period.
+
+**Q: Can the agent show global market statistics?**
+Yes. The `get_global_market_overview` tool retrieves metadata for the entire cryptocurrency market, including total market cap and volume.
+
+
 ## Installation & Usage
 
-To install and use the **CoinPaprika API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coinpaprika-api](https://vinkius.com/mcp/coinpaprika-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CoinPaprika API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coinpaprika-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CoinPaprika API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coinpaprika-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

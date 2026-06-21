@@ -1,7 +1,6 @@
 # AbstractAPI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/abstractapi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/abstractapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/abstractapi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/abstractapi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **AbstractAPI** MCP serv
 > Stripe (stripe.com) operates in the Financial Services / FinTech sector. They were founded in 2010. They employ thousands globally and you can view their main corporate page here: linkedin.com/company/stripe.
 
 
+## ❓ FAQ
+
+**Q: How do AbstractAPI keys work across different services?**
+AbstractAPI issues a unique API key for each distinct service (e.g., one key for IP Geolocation, a completely different key for Email Validation). You must insert the API key that aligns with the specific service you want your AI agent to utilize. If you want to use multiple tools, you'll need to instantiate multiple servers or swap the keys.
+
+**Q: Can my AI agent build a lead list using just a domain name?**
+Yes. Provide the domain to your agent and ask it to run the company enrichment capability. It will return the full official company name, founded year, employee count, and LinkedIn profile URL, allowing you to quickly qualify accounts before outreach.
+
+**Q: How accurate is the Email Validation tool?**
+Extremely accurate. When your agent calls the Email tool, it doesn't just check the regex formatting. It probes the domain's MX records, runs real-time SMTP handshakes to ensure the inbox exists, and tests against massive databases of known disposable or role-based email addresses (like info@).
+
+
 ## Installation & Usage
 
-To install and use the **AbstractAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/abstractapi](https://vinkius.com/mcp/abstractapi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AbstractAPI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `abstractapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AbstractAPI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "abstractapi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

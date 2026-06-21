@@ -1,7 +1,6 @@
 # Construction Cost Estimator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/construction-cost-estimator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/construction-cost-estimator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/construction-cost-estimator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/construction-cost-estimator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -51,12 +50,52 @@ Here are some examples of how you can interact with the **Construction Cost Esti
 > Understood. We will execute `estimate_total_cost_range(150, baseRate, multiplier)` immediately to provide the cost range for your simple residential structure.
 
 
+## ❓ FAQ
+
+**Q: Does the estimate account for local market variability?**
+Yes. The process starts with `get_region_cost_index`, which pulls a baseline rate specific to your target region and reference month, ensuring local market dynamics are included.
+
+**Q: How do I adjust the cost for a high-end finish?**
+You must use `calculate_standard_multiplier` with 'high' or 'luxury' as the standard. This tool provides the necessary multiplier factor to scale up the base cost correctly.
+
+**Q: What inputs does the final calculation require?**
+The `estimate_total_cost_range` tool requires three key pieces of data: your total built area (sq meters), the result from `get_region_cost_index`, and the multiplier from `calculate_standard_multiplier`.
+
+
 ## Installation & Usage
 
-To install and use the **Construction Cost Estimator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/construction-cost-estimator](https://vinkius.com/mcp/construction-cost-estimator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Construction Cost Estimator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `construction-cost-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Construction Cost Estimator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "construction-cost-estimator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

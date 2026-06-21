@@ -1,7 +1,6 @@
 # Miniflux (RSS Reader) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/miniflux-rss-reader)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/miniflux-rss-reader-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/miniflux-rss-reader-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/miniflux-rss-reader)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -109,12 +108,52 @@ Here are some examples of how you can interact with the **Miniflux (RSS Reader)*
 > Fetching unread entries for Hacker News (ID: 15)... Here are the latest 5: 'Show HN: MCP Server for Miniflux', 'New Rust Release', 'The Future of RSS', 'AI in 2024', and 'Web Standards Update'. Would you like to read the content of any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I find RSS feeds from a website URL automatically?**
+Yes! Use the `discover_subscriptions` tool with any website URL. The agent will scan the site and return all available RSS/Atom feed links found.
+
+**Q: How do I mark all articles in a specific feed as read?**
+Simply use the `mark_feed_as_read` action providing the `feed_id`. This will instantly update the status of all entries within that feed to 'read'.
+
+**Q: Can I search for specific keywords across all my articles?**
+Yes. Use the `list_entries` tool and provide a keyword in the `search` parameter. You can also filter by status (read/unread) or starred items.
+
+
 ## Installation & Usage
 
-To install and use the **Miniflux (RSS Reader)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/miniflux-rss-reader](https://vinkius.com/mcp/miniflux-rss-reader)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Miniflux (RSS Reader)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `miniflux-rss-reader` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Miniflux (RSS Reader)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "miniflux-rss-reader": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

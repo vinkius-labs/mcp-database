@@ -1,7 +1,6 @@
 # Machinery Cost Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/machinery-cost-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/machinery-cost-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/machinery-cost-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/machinery-cost-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Machinery Cost Calcula
 > The `compare_ownership_models` tool recommends 'Keep Owned', as you will save $5,000 over the 1,000-hectare area.
 
 
+## ❓ FAQ
+
+**Q: What is included in the hourly cost calculation?**
+The `calculate_hourly_costs` tool calculates both fixed costs (depreciation, interest, insurance, and shelter) and variable costs (fuel consumption and maintenance) to provide a complete hourly operational rate.
+
+**Q: How can I determine if outsourcing is cheaper than owning machinery?**
+You can use the `compare_ownership_models` tool. By providing your calculated cost per hectare and the contractor's rate, the tool will recommend whether to 'Keep Owned' or 'Switch to Outsourced'.
+
+**Q: Does this tool account for land area?**
+Yes, the `calculate_area_impact` tool allows you to input your total area in hectares and machine capacity to find the total cost for a specific project or harvest.
+
+
 ## Installation & Usage
 
-To install and use the **Machinery Cost Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/machinery-cost-calculator](https://vinkius.com/mcp/machinery-cost-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Machinery Cost Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `machinery-cost-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Machinery Cost Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "machinery-cost-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

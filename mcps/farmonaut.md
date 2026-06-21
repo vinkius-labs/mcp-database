@@ -1,7 +1,6 @@
 # Farmonaut MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/farmonaut)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/farmonaut-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/farmonaut-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/farmonaut)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **Farmonaut** MCP server
 > Generating AI advisory for cotton field (field ID: C-3156)... Current growth stage: Boll development. Recommendations: 1) IRRIGATION: Apply 25mm this week — soil moisture at 42% with no significant rain forecast. 2) FERTILIZER: Top-dress with potassium (K2O 40kg/ha) to support boll filling. 3) PEST CONTROL: Monitor for bollworm — NDVI shows uniform canopy but scout field edges. 4) HARVEST: Expected harvest window in 4-6 weeks based on current development rate. Priority: Irrigation within 3 days.
 
 
+## ❓ FAQ
+
+**Q: Can my AI calculate NDVI for my rice field and show me the crop health trend?**
+Yes! Use the `get_ndvi` tool with your field ID and date range (e.g., date_from=2025-04-01, date_to=2025-10-31). This returns NDVI values for each satellite overpass from Sentinel-2, Landsat, or PlanetScope, showing vegetation health progression. You can also use `get_crop_advisory` for AI-powered recommendations based on the NDVI trends and current growth stage.
+
+**Q: How do I get soil moisture and weather forecast data to plan irrigation?**
+Use `get_soil_moisture` with your field ID and date range to check current soil moisture levels at root zone depth. Combine with `get_weather_forecast` (forecast_range=7_days or 15_days) to see upcoming precipitation. Together these tools help determine if and when irrigation is needed. For AI-powered irrigation recommendations, use `get_crop_advisory` with advisory_type=irrigation.
+
+**Q: Can I monitor my crops during cloudy season when optical satellites cannot see?**
+Yes! Use the `get_sar_analysis` tool which uses Synthetic Aperture Radar (SAR) data that penetrates clouds and works day/night. SAR provides backscatter values, soil moisture estimates, and crop structure information regardless of weather conditions. This is essential for monitoring in tropical regions, monsoon seasons, or any cloudy conditions where optical satellites like Sentinel-2 cannot provide clear imagery.
+
+
 ## Installation & Usage
 
-To install and use the **Farmonaut** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/farmonaut](https://vinkius.com/mcp/farmonaut)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Farmonaut** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `farmonaut` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Farmonaut** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "farmonaut": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

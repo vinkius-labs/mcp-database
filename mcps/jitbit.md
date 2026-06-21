@@ -1,7 +1,6 @@
 # Jitbit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jitbit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jitbit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jitbit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jitbit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Jitbit** MCP server us
 > Reply sent to #4521! ✅ Content: 'We've identified the root cause — a misconfigured load balancer rule. Our DevOps team is applying the fix now. ETA: 30 minutes.' Status updated: New → In Progress. SLA timer paused. Assigned to: Mike Torres (DevOps). Would you like to add an internal note or check other tickets?
 
 
+## ❓ FAQ
+
+**Q: Can I manage tickets and reply to customers through the AI agent?**
+Yes. List tickets with filters, inspect individual tickets with full history, create new tickets, update status, and reply to customers or add internal notes.
+
+**Q: Does Jitbit require a self-hosted URL?**
+Yes. Jitbit can be self-hosted or cloud-hosted. Provide your instance URL (e.g., `https://helpdesk.company.com`), username, and password. Authentication uses HTTP Basic Auth (Base64 encoded) against `{url}/api`.
+
+**Q: Can I track SLA compliance across tickets?**
+Yes. Tickets include response and resolution time metadata. Monitor SLA compliance by checking time-to-first-response and time-to-resolution against your SLA targets.
+
+
 ## Installation & Usage
 
-To install and use the **Jitbit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jitbit](https://vinkius.com/mcp/jitbit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Jitbit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jitbit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Jitbit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jitbit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

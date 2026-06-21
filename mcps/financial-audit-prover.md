@@ -1,7 +1,6 @@
 # Financial Audit Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/financial-audit-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/financial-audit-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/financial-audit-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/financial-audit-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Financial Audit Prover
 > Multiple rejections. (1) TRAIL_BROKEN — 'approximately $1.2M' is hedged language suggesting fabricated precision. What is the exact GL balance? Which invoices? What aging bucket? What confirmation results? (2) 'Based on financial data' is not an audit trail — name the source documents. (3) MATERIALITY_IGNORED — 'immaterial' without a threshold is not an assessment. What is 5% of pre-tax income? How does $1.2M compare? (4) DISCLOSURE_MISSING — 'required disclosures have been made' names zero specific ASC topics. ASC 310-10-50 (receivables), ASC 326-20 (CECL allowance), ASC 820-10-50 (fair value hierarchy if measured at FV)? Which disclosures specifically?
 
 
+## ❓ FAQ
+
+**Q: Does it perform calculations or generate financial statements?**
+No. Financial Audit Prover generates zero content and performs zero calculations. It validates the REASONING behind financial conclusions — whether the correct GAAP standard is applied, whether numbers trace to source documents, whether statements reconcile, whether materiality is properly assessed, and whether required disclosures are identified. The agent does the financial analysis; the tool proves whether that analysis meets audit-grade standards.
+
+**Q: Does it support IFRS or only US GAAP?**
+US GAAP only. The engine actively detects IFRS terminology leakage (IAS references, 'revaluation model', 'true and fair view') and rejects it. US GAAP and IFRS differ materially on inventory (LIFO), development costs, leases, and revenue recognition implementation. Mixing frameworks produces unreliable analysis. If you need IFRS validation, a separate tool would be required — this one validates ASC codification exclusively.
+
+**Q: What types of entities does it cover?**
+Any US entity reporting under GAAP: SEC registrants (10-K/10-Q filers), private companies (including private company alternatives under ASC), nonprofits (ASC 958), and tax-reporting entities (IRC Title 26). The tool adapts — SEC registrants trigger Reg S-K and SOX validation; private companies focus on ASC compliance and footnote completeness; nonprofits require net asset classification checks. Specify the entity type in the 'regulatoryContext' field.
+
+
 ## Installation & Usage
 
-To install and use the **Financial Audit Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/financial-audit-prover](https://vinkius.com/mcp/financial-audit-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Financial Audit Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `financial-audit-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Financial Audit Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "financial-audit-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

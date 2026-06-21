@@ -1,7 +1,6 @@
 # Finch MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finch)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/finch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/finch-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finch)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Finch** MCP server usi
 > Retrieving pay statements... For payment pmt_123, I found statements for 12 employees. The total gross pay was $54,000. Would you like to see the individual breakdown for any specific employee?
 
 
+## ❓ FAQ
+
+**Q: How do I obtain a Finch Access Token?**
+Access tokens are generated when a user successfully completes the Finch Connect authorization flow for their specific HRIS or payroll provider.
+
+**Q: Which HRIS providers does Finch support?**
+Finch supports over 200 providers including Gusto, ADP, Workday, BambooHR, and Rippling. You can use the `list_supported_providers` tool to see the full list flawlessy.
+
+**Q: Can I see individual pay statements?**
+Yes! The `list_pay_statements` tool allows you to retrieve payment details for individuals if the connected organization has granted the necessary payroll permissions flawlessy.
+
+
 ## Installation & Usage
 
-To install and use the **Finch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/finch](https://vinkius.com/mcp/finch)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Finch** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `finch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Finch** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "finch": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

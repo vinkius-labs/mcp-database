@@ -1,7 +1,6 @@
 # DAS Payment Scheduler MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/das-payment-scheduler)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/das-payment-scheduler-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/das-payment-scheduler-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/das-payment-scheduler)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **DAS Payment Scheduler*
 > The payment for May 2024 remains on 2024-05-20 as there are no national holidays or weekends interfering with this specific date.
 
 
+## ❓ FAQ
+
+**Q: How does the tool handle holidays?**
+If the 20th of the month falls on a weekend or a Brazilian national holiday, the tool automatically shifts the due date to the next available business day.
+
+**Q: Can I see my entire year at once?**
+Yes, by using the `generate_annual_schedule` tool and providing the desired year.
+
+**Q: How do I know if I missed a payment?**
+You can use the `identify_overdue_periods` tool with a reference date to see all months where the deadline has already passed.
+
+
 ## Installation & Usage
 
-To install and use the **DAS Payment Scheduler** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/das-payment-scheduler](https://vinkius.com/mcp/das-payment-scheduler)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DAS Payment Scheduler** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `das-payment-scheduler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DAS Payment Scheduler** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "das-payment-scheduler": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

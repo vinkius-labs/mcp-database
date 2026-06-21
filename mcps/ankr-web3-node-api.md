@@ -1,7 +1,6 @@
 # Ankr (Web3 Node API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ankr-web3-node-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ankr-web3-node-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ankr-web3-node-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ankr-web3-node-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Here are some examples of how you can interact with the **Ankr (Web3 Node API)**
 > I've retrieved the receipt. The transaction was successful, included in block 18,450,210, and used 21,000 gas.
 
 
+## ❓ FAQ
+
+**Q: How can I check the current block height on a specific network?**
+Use the `eth_blockNumber` tool and provide the `chain_alias` (e.g., 'eth' for Ethereum). The agent will return the most recent block number recorded on that chain.
+
+**Q: Is it possible to simulate a transaction before sending it to the mainnet?**
+Yes! You can use the `eth_simulateV1` tool. By providing a simulation payload, you can see the potential outcome and state changes of transactions without actually broadcasting them.
+
+**Q: How do I retrieve the balance of a specific wallet address?**
+Simply use the `eth_getBalance` tool with the target `address` and `chain_alias`. The agent will fetch the current balance in Wei for that account.
+
+
 ## Installation & Usage
 
-To install and use the **Ankr (Web3 Node API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ankr-web3-node-api](https://vinkius.com/mcp/ankr-web3-node-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ankr (Web3 Node API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ankr-web3-node-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ankr (Web3 Node API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ankr-web3-node-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # iFax MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ifax)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ifax-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ifax-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ifax)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **iFax** MCP server usin
 > Latest received fax: fax_recv_445. From: +1-555-0789 (Acme Legal Dept). Received: Apr 26, 10:15 AM. Pages: 3. Document downloaded: Contract_Amendment_v2.pdf (245 KB). Pending fax cancelled: fax_8920 (to +33-1-4567, Q1 Summary). Status: ❌ Cancelled. Refund: credited. Would you like to send a new fax or view the downloaded document?
 
 
+## ❓ FAQ
+
+**Q: Can I send a fax to any number worldwide?**
+Yes. The `send_fax` tool transmits a document to any fax number. Provide the destination number in international format and the document content. Use `get_fax_status` to track delivery confirmation in real-time.
+
+**Q: Can I retry a failed fax transmission?**
+Yes. Use `resend_fax` with the original fax ID to retry a failed transmission. Use `list_faxes` to see all faxes and their status, then identify failed ones for retry.
+
+**Q: How does iFax API authentication work?**
+iFax uses a custom `accessToken` header (not standard Bearer) for authentication. Your API key from the iFax dashboard is sent in all requests to `api.ifaxapp.com/v1`.
+
+
 ## Installation & Usage
 
-To install and use the **iFax** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ifax](https://vinkius.com/mcp/ifax)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **iFax** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ifax` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **iFax** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ifax": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

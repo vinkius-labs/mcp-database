@@ -1,7 +1,6 @@
 # Cisco Meraki MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cisco-meraki)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cisco-meraki-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cisco-meraki-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cisco-meraki)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Cisco Meraki** MCP ser
 > Retrieving client count... There are currently 45 clients connected across your active networks. 30 are on the 'Main-Staff' SSID and 15 are on 'Guest-WiFi'.
 
 
+## ❓ FAQ
+
+**Q: Can I see which devices are currently offline?**
+Yes! Use the `list_network_devices` tool. The agent will return a list of all devices in the network, and you can identify those with a non-'online' status.
+
+**Q: How do I check the signal strength for a specific wireless client?**
+Use the `list_network_clients` tool. Your agent will fetch the list of connected clients, which typically includes signal strength (RSSI), data usage, and the AP they are connected to.
+
+**Q: Where do I find my Meraki Dashboard API Key?**
+Log in to your Meraki Dashboard, click on your profile name in the top right, and go to 'My Profile'. Scroll down to the 'API access' section to generate your key.
+
+
 ## Installation & Usage
 
-To install and use the **Cisco Meraki** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cisco-meraki](https://vinkius.com/mcp/cisco-meraki)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cisco Meraki** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cisco-meraki` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cisco Meraki** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cisco-meraki": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Mintlify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mintlify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mintlify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mintlify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mintlify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Mintlify** MCP server 
 > Deployment triggered successfully! Mintlify is now building the latest version of your documentation. You can check the status in your dashboard.
 
 
+## ❓ FAQ
+
+**Q: How can I check the current navigation structure of my documentation?**
+You can use the `get_metadata` tool. It retrieves the complete project metadata, including settings and the navigation hierarchy defined in your configuration.
+
+**Q: Is it possible to see how many views my pages received last week?**
+Yes! Use the `get_page_views` tool and provide the optional start and end dates in ISO 8601 format to filter the analytics for that specific period.
+
+**Q: Can I trigger a production build of my docs using the AI?**
+Absolutely. By calling the `trigger_deployment` tool, the agent will send a request to Mintlify to start a new deployment process immediately.
+
+
 ## Installation & Usage
 
-To install and use the **Mintlify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mintlify](https://vinkius.com/mcp/mintlify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mintlify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mintlify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mintlify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mintlify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

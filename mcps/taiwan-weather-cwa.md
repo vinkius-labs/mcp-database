@@ -1,7 +1,6 @@
 # Taiwan Weather (CWA) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/taiwan-weather-cwa)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/taiwan-weather-cwa-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/taiwan-weather-cwa-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/taiwan-weather-cwa)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -57,12 +56,49 @@ Here are some examples of how you can interact with the **Taiwan Weather (CWA)**
 > I've checked the CWA seismological feed. The most recent significant earthquake was a magnitude 5.2 event centered 23 km east of Hualien at a depth of 15 km. Minor shaking was felt across eastern Taiwan. No tsunami warning was issued. The CWA registered 3 additional minor events in the surrounding area over the past 48 hours.
 
 
+## ❓ FAQ
+
+**Q: How do I get a CWA API key?**
+Register for a free account at opendata.cwa.gov.tw. Once logged in, your Authorization key is available immediately in your profile dashboard. No approval wait time required.
+
+**Q: Why is Taiwan earthquake data so important?**
+Taiwan sits directly on the Pacific Ring of Fire, one of the most seismically active zones on Earth. The CWA operates one of the densest seismological sensor networks in Asia, providing rapid, high-precision earthquake data that is critical for safety, construction, and insurance applications.
+
+
 ## Installation & Usage
 
-To install and use the **Taiwan Weather (CWA)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/taiwan-weather-cwa](https://vinkius.com/mcp/taiwan-weather-cwa)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Taiwan Weather (CWA)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `taiwan-weather-cwa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Taiwan Weather (CWA)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "taiwan-weather-cwa": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # B5 Arena MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/b5-arena)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/b5-arena-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/b5-arena-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/b5-arena)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **B5 Arena** MCP server 
 > Parsing logs for 992-abc... The weakest link resolves strictly pointing to 'User_Echo', pulling a meager 0.44 ratio closing down with only 5 secure frags across 24 intense rounds played globally there. Providing structural JSON export for extended penalty tracking.
 
 
+## ❓ FAQ
+
+**Q: Can my AI pull exhaustive match histories avoiding manual browser checks on specific dates?**
+Yes! Utilize the `get_user_matches` tool providing the B5 Identity. Your engine will dynamically assemble their 20 latest scorelines fetching K/D performance strictly tabulated avoiding bloated HTML arrays altogether.
+
+**Q: How do I fetch the active rank node indexing the top competitive ladder without lag?**
+Direct your agent to use `get_b5_leaderboard`. The backend will isolate the primary ELO structure bypassing typical heavy website loading sequences and generate markdown ranks purely focused on point values quickly.
+
+**Q: Are there vulnerabilities enabling irreversible edits like ranking manipulation from within this scope?**
+No. The architecture provides rigid read-only isolation boundaries securing the data pool ensuring zero write permissions block any attempt at destructive data corruption natively securely all times seamlessly executing perfectly.
+
+
 ## Installation & Usage
 
-To install and use the **B5 Arena** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/b5-arena](https://vinkius.com/mcp/b5-arena)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **B5 Arena** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `b5-arena` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **B5 Arena** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "b5-arena": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

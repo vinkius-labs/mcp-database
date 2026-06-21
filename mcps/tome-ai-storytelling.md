@@ -1,7 +1,6 @@
 # Tome (AI Storytelling) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tome-ai-storytelling)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tome-ai-storytelling-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tome-ai-storytelling-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tome-ai-storytelling)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Tome (AI Storytelling)
 > Done. I've added the 'Market Analysis' page to your tome. You can now see it in the presentation structure.
 
 
+## ❓ FAQ
+
+**Q: Can I see the full structure of a specific presentation including its pages?**
+Yes! Use the `get_tome` tool with the specific Tome ID. Your agent will retrieve detailed information about the tome, including its page list and metadata.
+
+**Q: How do I add a new slide or page to an existing project?**
+Simply use the `add_page` action. Provide the `tome_id` and the `title` for your new page, and the agent will insert it into your presentation immediately.
+
+**Q: Can I list all the presentations I have in a specific workspace?**
+Yes, use the `list_tomes` tool. By providing the `workspace_id`, the agent will return a list of all tomes available in that specific environment.
+
+
 ## Installation & Usage
 
-To install and use the **Tome (AI Storytelling)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tome-ai-storytelling](https://vinkius.com/mcp/tome-ai-storytelling)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tome (AI Storytelling)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tome-ai-storytelling` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tome (AI Storytelling)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tome-ai-storytelling": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

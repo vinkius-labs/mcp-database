@@ -1,7 +1,6 @@
 # 15Five MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/15five)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/15five-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/15five-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/15five)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **15Five** MCP server us
 > I've listed the current company objectives. You have 3 active OKRs, with the 'Revenue Growth' target at 75% completion. Would you like a breakdown of the key results?
 
 
+## ❓ FAQ
+
+**Q: How do I send a High Five through the agent?**
+Use the `send_high_five` tool and provide the recipient's email or ID and a recognition message. Your agent will process it immediately and notify the recipient.
+
+**Q: Can I see team pulse scores with this integration?**
+Yes, you can use the `list_checkins` tool to retrieve check-in data which includes employee pulse scores and sentiment analysis.
+
+**Q: Does the agent support managing OKRs?**
+The agent can list and track progress on objectives using the `list_objectives` tool, allowing you to monitor goal attainment across your team.
+
+
 ## Installation & Usage
 
-To install and use the **15Five** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/15five](https://vinkius.com/mcp/15five)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **15Five** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `15five` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **15Five** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "15five": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

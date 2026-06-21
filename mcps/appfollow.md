@@ -1,7 +1,6 @@
 # AppFollow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appfollow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/appfollow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/appfollow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appfollow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **AppFollow** MCP server
 > Your app is currently ranked #12 in 'Health & Fitness' in the United States, up 2 spots from yesterday.
 
 
+## ❓ FAQ
+
+**Q: How do I find my AppFollow API Token?**
+You can find your API token in your AppFollow account settings under the **API** or **Integrations** section.
+
+**Q: What is an 'extId' in AppFollow?**
+The `extId` is the external ID of the app in the store. For iOS apps, it's the numeric Apple ID. For Google Play apps, it's the bundle name (e.g., `com.example.app`).
+
+**Q: Does this integration support semantic tags?**
+Yes, you can use the `get_reviews_semantic` tool to retrieve reviews categorized by their content type, such as 'Bug', 'Feature Request', or 'Pricing'.
+
+
 ## Installation & Usage
 
-To install and use the **AppFollow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/appfollow](https://vinkius.com/mcp/appfollow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AppFollow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `appfollow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AppFollow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "appfollow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

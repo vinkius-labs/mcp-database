@@ -1,7 +1,6 @@
 # Equinix Metal MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/equinix-metal)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/equinix-metal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/equinix-metal-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/equinix-metal)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Equinix Metal** MCP se
 > Fetching invitation details... This is an invite to join the 'Production-Cluster' project, sent by admin@equinix.com. It expires in 48 hours.
 
 
+## ❓ FAQ
+
+**Q: Can I create a read-only API key for a specific project?**
+Yes! Use the `create_project_api_key` tool. You can specify the `project_id`, a description, and set the `read_only` flag to true to ensure the key has restricted permissions.
+
+**Q: How do I manage the email addresses associated with my account?**
+You can use `create_email` to add a new address, `update_email` to change settings like the default status, and `delete_email` to remove an address from your profile.
+
+**Q: Is it possible to view and decline project invitations via AI?**
+Yes. Use `get_invitation` to see the details of a pending invite and `decline_invitation` if you do not wish to join that specific project.
+
+
 ## Installation & Usage
 
-To install and use the **Equinix Metal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/equinix-metal](https://vinkius.com/mcp/equinix-metal)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Equinix Metal** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `equinix-metal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Equinix Metal** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "equinix-metal": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

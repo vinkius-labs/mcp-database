@@ -1,7 +1,6 @@
 # Open-Meteo Flood & Rivers MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-meteo-flood-rivers)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-meteo-flood-rivers-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-meteo-flood-rivers-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-meteo-flood-rivers)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,46 @@ Current discharge: 2,100 m³/s (normal)
 2002 was one of the worst flood events in European history, with discharge 5× above current levels.
 
 
+## ❓ FAQ
+
+**Q: How accurate is the flood forecast?**
+Data comes from **GloFAS v4** (Global Flood Awareness System) by Copernicus at 5km resolution. Short-term forecasts (1-30 days) are highly reliable. Seasonal forecasts (1-7 months) indicate trends but have wider uncertainty bands.
+
+
 ## Installation & Usage
 
-To install and use the **Open-Meteo Flood & Rivers** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/open-meteo-flood-rivers](https://vinkius.com/mcp/open-meteo-flood-rivers)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Open-Meteo Flood & Rivers** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `open-meteo-flood-rivers` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Open-Meteo Flood & Rivers** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "open-meteo-flood-rivers": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

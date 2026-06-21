@@ -1,7 +1,6 @@
 # Minas Gerais (Estado) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/minas-gerais-estado)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/minas-gerais-estado-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/minas-gerais-estado-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/minas-gerais-estado)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Minas Gerais (Estado)*
 > The dataset 'Planejamento e Monitoramento' contains 12 resources, including CSV files for budget execution and PDF reports. It is maintained by the SEPLAG organization.
 
 
+## ❓ FAQ
+
+**Q: How can I find datasets related to a specific topic like 'health'?**
+You can use the `search_packages` tool with the query 'saude' or use `get_group` with the ID 'saude' to list all datasets categorized under that theme.
+
+**Q: Can I see the actual download links for the data files?**
+Yes. By using `get_package` with a dataset ID, the AI will retrieve the metadata for all associated resources, which typically includes the URL, format (CSV, PDF), and description of each file.
+
+**Q: How do I list all government agencies that publish data on the portal?**
+Use the `list_organizations` tool. It will return a list of all government bodies (like CGE, SEF, etc.) that have active datasets in the Minas Gerais portal.
+
+
 ## Installation & Usage
 
-To install and use the **Minas Gerais (Estado)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/minas-gerais-estado](https://vinkius.com/mcp/minas-gerais-estado)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Minas Gerais (Estado)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `minas-gerais-estado` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Minas Gerais (Estado)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "minas-gerais-estado": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Geekflare MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geekflare)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/geekflare-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/geekflare-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geekflare)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Geekflare** MCP server
 > Fetching DNS data... For apple.com, I found A records pointing to 17.253.144.10 and MX records for apple-com.mail.protection.outlook.com. Would you like to see the TXT or CNAME records as well?
 
 
+## ❓ FAQ
+
+**Q: Can I run a full Lighthouse SEO audit via AI?**
+Yes! Use the `run_lighthouse_audit` tool and provide the target URL. Your agent will return scores for Performance, SEO, Accessibility, and Best Practices.
+
+**Q: How do I check if my SSL certificate is valid using the agent?**
+Use the `scan_ssl_tls_cert` tool. Provide the domain name, and Geekflare will verify the issuer, expiration date, and security protocols used by your site.
+
+**Q: Is it possible to see the DNS records for a domain via AI?**
+Absolutely. Use the `get_dns_records` query. Provide the URL, and the agent will retrieve A, MX, CNAME, and TXT records registered for that domain.
+
+
 ## Installation & Usage
 
-To install and use the **Geekflare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/geekflare](https://vinkius.com/mcp/geekflare)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Geekflare** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `geekflare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Geekflare** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "geekflare": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

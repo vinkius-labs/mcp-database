@@ -1,7 +1,6 @@
 # ShipStation MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shipstation)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shipstation-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shipstation-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shipstation)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **ShipStation** MCP serv
 > You have 3 carriers connected: Stamps.com (Balance: $45.20), FedEx (Account-based), and UPS (Account-based). Would you like to add funds to your Stamps.com account?
 
 
+## ❓ FAQ
+
+**Q: Can I check shipping rates for a specific order before creating a label?**
+Yes! Use the `get_rates` tool. Provide the carrier, service, and package details to receive real-time pricing for your shipment.
+
+**Q: How do I list all orders that are currently awaiting shipment?**
+You can use the `list_orders` tool and set the `order_status` parameter to 'awaiting_shipment'. This will return all orders ready for fulfillment.
+
+**Q: Is it possible to add funds to my carrier account through the AI?**
+Yes, the `add_funds` tool allows you to add a specific amount to a carrier account (like Stamps.com) using the payment method you have on file in ShipStation.
+
+
 ## Installation & Usage
 
-To install and use the **ShipStation** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shipstation](https://vinkius.com/mcp/shipstation)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ShipStation** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shipstation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ShipStation** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shipstation": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

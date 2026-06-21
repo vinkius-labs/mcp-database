@@ -1,7 +1,6 @@
 # Sensible MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sensible)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sensible-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sensible-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sensible)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Here are some examples of how you can interact with the **Sensible** MCP server 
 > I've generated the upload URL using `generate_upload_url`. You can upload your PDF directly to this secure endpoint to start the extraction process.
 
 
+## ❓ FAQ
+
+**Q: Can I extract data from a document instantly if I have its Base64 representation?**
+Yes! Use the `extract_sync` tool. Provide the document type and the Base64-encoded document bytes, and your agent will return the structured extraction results synchronously.
+
+**Q: How do I extract data from a document hosted at a public URL?**
+You can use the `extract_from_url` tool. Simply provide the document type, the document URL, and the content type (e.g., application/pdf) to trigger an asynchronous extraction.
+
+**Q: Can I specify a custom configuration layout when extracting?**
+Yes, you can target specific configurations by using the `extract_sync_with_config` or `extract_from_url_with_config` tools, which allow you to define the exact configuration name to use for parsing.
+
+
 ## Installation & Usage
 
-To install and use the **Sensible** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sensible](https://vinkius.com/mcp/sensible)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sensible** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sensible` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sensible** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sensible": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

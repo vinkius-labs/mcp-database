@@ -1,7 +1,6 @@
 # Data.gov MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datagov)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datagov-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datagov-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datagov)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -105,12 +104,55 @@ Here are some examples of how you can interact with the **Data.gov** MCP server 
 > Found 800+ education datasets including: NAEP Student Assessment, College Scorecard, Civil Rights Data Collection, Education Spending and many more from Department of Education.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! Data.gov data is public domain and freely accessible. No authentication required.
+
+**Q: How many datasets are available?**
+Data.gov catalogs 300,000+ datasets from over 200 federal agencies including NASA, USDA, EPA, NOAA, Department of Education, Census Bureau and many more.
+
+**Q: What organizations publish data?**
+Over 200 federal agencies including NASA, USDA, EPA, NOAA, Department of Education, Census Bureau, Department of Transportation, FBI, CDC, FDA and many more.
+
+**Q: What formats are available?**
+Common formats: CSV, JSON, XML, Shapefile, GeoJSON, PDF, HTML, RDF, KML, ZIP. Use list_resource_formats to see all available formats.
+
+
 ## Installation & Usage
 
-To install and use the **Data.gov** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/datagov](https://vinkius.com/mcp/datagov)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Data.gov** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `datagov` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Data.gov** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "datagov": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # GoHighLevel MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gohighlevel)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gohighlevel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gohighlevel-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gohighlevel)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,55 @@ Here are some examples of how you can interact with the **GoHighLevel** MCP serv
 > You have 4 appointments today: Sarah Chen at 10:00 AM (Discovery Call), Mark Johnson at 1:00 PM (Demo), Emily Davis at 3:00 PM (Follow-up), and Alex Rivera at 4:30 PM (Onboarding).
 
 
+## ❓ FAQ
+
+**Q: How do I get my GoHighLevel API key?**
+Log in to your GoHighLevel sub-account. Click **Settings** (bottom left corner). Navigate to **Business Profile**. Scroll down to the **API Key** section — your key will be displayed there, or click **Generate Key** if one hasn't been created. Copy the key and paste it below. Note: In newer accounts, you may see a **Private Integration** option instead — create one and use the generated token.
+
+**Q: Can I manage multiple client accounts from one agent?**
+Yes. Each GoHighLevel sub-account has its own API key. Configure separate integrations for each client account and your AI agent can switch between them — managing contacts, deals, and campaigns across your entire agency portfolio.
+
+**Q: Can my AI agent move deals through pipeline stages?**
+Yes. Your agent can list all pipeline stages, view deals in each stage, update deal values, and move opportunities between stages — giving your sales team a conversational way to manage their entire sales process.
+
+**Q: Does this work with GoHighLevel's white-label versions?**
+Yes. The API is the same regardless of whether you use GoHighLevel directly or through a white-label reseller. The API key from your sub-account works identically across all branded versions of the platform.
+
+
 ## Installation & Usage
 
-To install and use the **GoHighLevel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gohighlevel](https://vinkius.com/mcp/gohighlevel)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GoHighLevel** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gohighlevel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GoHighLevel** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gohighlevel": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # SPTrans Olho Vivo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sptrans-olho-vivo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sptrans-olho-vivo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sptrans-olho-vivo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sptrans-olho-vivo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **SPTrans Olho Vivo** MC
 > There are currently 4 buses active on line 33657. Two are near Terminal Lapa, one is on Rua Clélia, and one is approaching the city center.
 
 
+## ❓ FAQ
+
+**Q: How do I find the specific code for a bus line?**
+Use the `search_lines` tool with the line number or name (e.g., '8000' or 'Lapa'). The agent will return the line code (`cl`), which is required for tracking positions or forecasts.
+
+**Q: Can I see the arrival times for all buses at a particular stop?**
+Yes! Use the `get_forecast_by_stop` tool with the stop code (`cp`). It will list all upcoming bus arrivals for that location in real-time.
+
+**Q: Is it possible to track the live location of buses on a map?**
+While the MCP returns raw coordinates, you can use `get_positions_by_line` to get the latitude and longitude of every active bus on a line, which your AI can then describe or plot.
+
+
 ## Installation & Usage
 
-To install and use the **SPTrans Olho Vivo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sptrans-olho-vivo](https://vinkius.com/mcp/sptrans-olho-vivo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SPTrans Olho Vivo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sptrans-olho-vivo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SPTrans Olho Vivo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sptrans-olho-vivo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

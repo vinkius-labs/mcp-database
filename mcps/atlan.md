@@ -1,7 +1,6 @@
 # Atlan MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/atlan)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/atlan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/atlan-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/atlan)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Atlan** MCP server usi
 > There are 7 active classification tags in Atlan currently utilized across your assets. Notable ones include `GDPR_Sensitive`, `Confidential_Tier_1`, and `Public_Domain`. I can identify the specific tags shielding individual table rows if directed.
 
 
+## ❓ FAQ
+
+**Q: Can my AI search for a specific dashboard or data table by keyword?**
+Yes. Ask the agent to perform an asset search using a natural phrase like 'Q3 revenue report' or 'customer addresses table'. The agent triggers Atlan's semantic asset search, returning linked objects across all connected BI and database sources.
+
+**Q: Are custom Atlan Classifications and Tags exposed to the AI?**
+Yes. The agent can list all organizational classifications configured in Atlan (e.g., Sensitive, Restricted, CCPA). This lets the AI contextualize whether the assets it discovers are safe to be shared globally or subject to governance restrictions.
+
+**Q: Can the agent modify or write back metadata to Atlan?**
+No. This MCP integration focuses strictly on safe discovery and organizational governance retrieval (queries). It guarantees your metadata catalogues remain pristine, acting purely as an active lookup augmentation tool for your agent.
+
+
 ## Installation & Usage
 
-To install and use the **Atlan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/atlan](https://vinkius.com/mcp/atlan)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Atlan** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `atlan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Atlan** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "atlan": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

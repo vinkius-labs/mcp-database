@@ -1,7 +1,6 @@
 # Pixabay MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pixabay-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pixabay-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pixabay-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pixabay-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Pixabay** MCP server u
 > I've filtered for the best cinematic clips of ocean waves and surfing awarded with Editor's Choice. I found 3 high-quality films showing slow-motion breaks and professional surfing footage.
 
 
+## ❓ FAQ
+
+**Q: Can I filter specifically for illustrations or vector graphics instead of photos?**
+Yes! When using the `search_images` tool, you can set the `image_type` parameter to 'illustration' or 'vector' to narrow down your results to specific artistic formats.
+
+**Q: How do I ensure I only get the highest quality images recommended by Pixabay?**
+You can set the `editors_choice` parameter to `true` in both `search_images` and `search_videos` tools. This filters the results to show only assets that have received the Editor's Choice award.
+
+**Q: Is it possible to search for videos and animations as well?**
+Absolutely. Use the `search_videos` tool to find video clips. You can further filter by `video_type` to choose between 'film' (live action) or 'animation'.
+
+
 ## Installation & Usage
 
-To install and use the **Pixabay** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pixabay-alternative](https://vinkius.com/mcp/pixabay-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pixabay** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pixabay-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pixabay** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pixabay-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

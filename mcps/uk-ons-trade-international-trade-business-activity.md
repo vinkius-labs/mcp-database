@@ -1,7 +1,6 @@
 # UK ONS Trade — International Trade & Business Activity MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uk-ons-trade-international-trade-business-activity)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uk-ons-trade-international-trade-business-activity-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uk-ons-trade-international-trade-business-activity-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uk-ons-trade-international-trade-business-activity)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Source: ONS, trade dataset
 > Based on the Inter-Departmental Business Register (IDBR) counts, there are approximately 58,000 active enterprises classified within the Information and Communication sector in the London region.
 
 
+## ❓ FAQ
+
+**Q: What is the IDBR?**
+The Inter-Departmental Business Register (IDBR) is a comprehensive list of UK businesses used for all government statistical surveys. It covers 2.7 million+ live enterprises across all sectors.
+
+**Q: Does this cover both goods and services?**
+Currently, the primary datasets focus extensively on the trade in goods by commodity and country. Trade in services data is also available but categorized separately in larger macroeconomic releases.
+
+**Q: What kind of traffic activity data is available?**
+The ONS provides experimental real-time indicators compiled from traffic camera activity, which measure vehicle counts and traffic movement as a proxy for economic and supply chain activity.
+
+
 ## Installation & Usage
 
-To install and use the **UK ONS Trade — International Trade & Business Activity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/uk-ons-trade-international-trade-business-activity](https://vinkius.com/mcp/uk-ons-trade-international-trade-business-activity)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **UK ONS Trade — International Trade & Business Activity** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `uk-ons-trade-international-trade-business-activity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **UK ONS Trade — International Trade & Business Activity** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "uk-ons-trade-international-trade-business-activity": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

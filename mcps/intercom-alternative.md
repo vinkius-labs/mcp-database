@@ -1,7 +1,6 @@
 # Intercom MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/intercom-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/intercom-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/intercom-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/intercom-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Intercom** MCP server 
 > Message sent! ✅ To: Ana Costa. Content: 'Hi Ana, following up on your pricing question. Our Pro plan at $99/mo includes all features you mentioned. Happy to schedule a demo!' Team admins: 6. Sarah (Owner), Mike (Admin), Lisa (Admin), James (Member), Chen (Member), David (Member).
 
 
+## ❓ FAQ
+
+**Q: Can I search for contacts and send messages through the AI agent?**
+Yes. Use `search_contacts` to find contacts by email, name, or custom attributes. Then use `send_message` to send a message to a specific contact, or reply to an active conversation thread.
+
+**Q: Can I view full conversation histories?**
+Yes. `list_conversations` shows all conversations with status. Use `get_conversation` with a conversation ID to retrieve the full message thread including sender, timestamps, and content.
+
+**Q: What type of Intercom token do I need?**
+You need an **Access Token** from a Private App in the Intercom Developer Hub. This provides scoped API access with Bearer authentication against `api.intercom.io`.
+
+
 ## Installation & Usage
 
-To install and use the **Intercom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/intercom-alternative](https://vinkius.com/mcp/intercom-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Intercom** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `intercom-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Intercom** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "intercom-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

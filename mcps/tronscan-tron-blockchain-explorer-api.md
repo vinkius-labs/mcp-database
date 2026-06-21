@@ -1,7 +1,6 @@
 # Tronscan (TRON Blockchain Explorer API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tronscan-tron-blockchain-explorer-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tronscan-tron-blockchain-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tronscan-tron-blockchain-explorer-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tronscan-tron-blockchain-explorer-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -122,12 +121,52 @@ Here are some examples of how you can interact with the **Tronscan (TRON Blockch
 > I've found the latest events for the USDT contract. Recent activities include multiple 'Transfer' events and 'Approval' updates. Would you like me to decode the parameters for the last five transfers?
 
 
+## ❓ FAQ
+
+**Q: Can I check the energy and bandwidth resources of a TRON account?**
+Yes! You can use the `list_account_resources_v2` tool to get detailed information about Stake 2.0 resources, including available energy and bandwidth for any address.
+
+**Q: How do I see all the TRC20 tokens held by a specific address?**
+Use the `list_account_tokens` tool with the target address. You can filter by `show: 1` to specifically list TRC20 tokens and their current balances.
+
+**Q: Is it possible to monitor live events from a smart contract?**
+Yes. The `get_contract_events` tool allows you to retrieve a list of event information for a specific contract address, helping you track interactions and state changes.
+
+
 ## Installation & Usage
 
-To install and use the **Tronscan (TRON Blockchain Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tronscan-tron-blockchain-explorer-api](https://vinkius.com/mcp/tronscan-tron-blockchain-explorer-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tronscan (TRON Blockchain Explorer API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tronscan-tron-blockchain-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tronscan (TRON Blockchain Explorer API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tronscan-tron-blockchain-explorer-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

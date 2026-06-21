@@ -1,7 +1,6 @@
 # Pet Enrichment Planner MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pet-enrichment-planner)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pet-enrichment-planner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pet-enrichment-planner-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pet-enrichment-planner)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Pet Enrichment Planner
 > The system will use `get_pet_base_profile` (which correctly sets high energy for a puppy) and `assess_environment_capacity`. The final plan from `generate_weekly_plan` will recommend structured indoor play, respecting the apartment's limitations.
 
 
+## ❓ FAQ
+
+**Q: Does this system account for different living spaces?**
+Absolutely. The `assess_environment_capacity` tool analyzes your space--whether it's an apartment or a yard--to set hard limits on activity duration and type, ensuring all recommendations are safe for your specific home environment.
+
+**Q: How does it handle age-related changes in needs?**
+The `get_pet_base_profile` tool incorporates developmental science. It automatically adjusts the pet's suggested energy level and mobility rating based on age (e.g., senior pets receive lower-impact recommendations), ensuring activities are always appropriate.
+
+**Q: What if I only want to focus on mental stimulation?**
+You can specify a 'Cognitive Focus' in the final planning step. The `generate_weekly_plan` tool will then prioritize puzzle feeders, scent work, and training games while still ensuring minimal physical activity is included.
+
+
 ## Installation & Usage
 
-To install and use the **Pet Enrichment Planner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pet-enrichment-planner](https://vinkius.com/mcp/pet-enrichment-planner)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pet Enrichment Planner** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pet-enrichment-planner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pet Enrichment Planner** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pet-enrichment-planner": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

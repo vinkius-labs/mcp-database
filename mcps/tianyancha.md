@@ -1,7 +1,6 @@
 # Tianyancha / 天眼查 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tianyancha)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tianyancha-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tianyancha-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tianyancha)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Tianyancha / 天眼查
 > I've retrieved the risk indicators for Evergrande. There are numerous court cases and industrial abnormalities listed. Should I retrieve the details for the most recent legal incidents?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Tianyancha API Token?**
+Log in to the [Tianyancha OpenAPI Platform](https://open.tianyancha.com/), go to [Control Panel] -> [My Interface], and you will find your unique Authorization Token there.
+
+**Q: Is there a limit to the search queries?**
+The search limits depend on your Tianyancha OpenAPI subscription plan. Ensure your token has the necessary permissions enabled for the interfaces you want to use.
+
+**Q: Can I check contact information for companies?**
+Yes. Use the `get_contact_info` tool with a company name or keyword to retrieve phone numbers, emails, and official addresses registered in the database.
+
+
 ## Installation & Usage
 
-To install and use the **Tianyancha / 天眼查** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tianyancha](https://vinkius.com/mcp/tianyancha)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tianyancha / 天眼查** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tianyancha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tianyancha / 天眼查** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tianyancha": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Timeero MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/timeero)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/timeero-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/timeero-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/timeero)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Timeero** MCP server u
 > Task catalog orchestrated! For the 'Repair' job, I've identified 3 active high-fidelity tasks. Your API connection is healthy. Shall I retrieve the detailed scheduling metadata for these tasks?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Timeero API Token?**
+Log in to your account, navigate to **Account Settings** > **API**, and generate a new high-fidelity **Bearer Token**.
+
+**Q: Can I check my team's schedules via AI?**
+Yes! The `list_timeero_schedules` tool allows your agent to retrieve high-fidelity work schedules and user shifts for operational coordination.
+
+**Q: How do I list my active jobs?**
+Use the `list_timeero_jobs` tool to retrieve the complete high-fidelity directory of jobs along with their unique identifiers for precise orchestration.
+
+
 ## Installation & Usage
 
-To install and use the **Timeero** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/timeero](https://vinkius.com/mcp/timeero)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Timeero** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `timeero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Timeero** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "timeero": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

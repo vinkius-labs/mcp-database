@@ -1,7 +1,6 @@
 # WeChat Official Accounts / 微信公众号 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wechat-official-accounts)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wechat-official-accounts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wechat-official-accounts-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wechat-official-accounts)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **WeChat Official Accoun
 > I've sent the template message to the specified user. The transaction ID is `88210934`. The user will receive the structured notification on their WeChat app immediately. Should I check the delivery status?
 
 
+## ❓ FAQ
+
+**Q: How do I find my WeChat AppID and Secret?**
+Log in to the [WeChat Official Accounts Platform](https://mp.weixin.qq.com/), navigate to [Settings] -> [Development] -> [Basic Configuration] to find your unique AppID and generate your AppSecret.
+
+**Q: What is an OpenID?**
+An OpenID is a unique identifier for a specific user relative to your Official Account. It is required for most user-specific operations like sending messages or retrieving profiles.
+
+**Q: Can I send messages to anyone?**
+Custom messages can only be sent to users who have interacted with your account in the last 48 hours. Template messages can be sent at any time but must follow specific structured formats and use-cases defined by WeChat.
+
+
 ## Installation & Usage
 
-To install and use the **WeChat Official Accounts / 微信公众号** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wechat-official-accounts](https://vinkius.com/mcp/wechat-official-accounts)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WeChat Official Accounts / 微信公众号** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wechat-official-accounts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WeChat Official Accounts / 微信公众号** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wechat-official-accounts": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

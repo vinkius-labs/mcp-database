@@ -1,7 +1,6 @@
 # RisingWave (Streaming Database) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/risingwave-streaming-database)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/risingwave-streaming-database-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/risingwave-streaming-database-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/risingwave-streaming-database)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **RisingWave (Streaming 
 > Querying the catalog... I found 2 configured sinks: 's3_archived_logs' (S3) and 'postgres_reporting_db' (JDBC).
 
 
+## ❓ FAQ
+
+**Q: Can I run complex JOIN queries on my materialized views?**
+Yes! Use the `execute_sql` tool to run any valid RisingWave SQL query. You can perform complex analytical queries or inspect the results of your real-time aggregations.
+
+**Q: How do I check if my Kafka or Pulsar sources are correctly connected?**
+Use the `list_sources` tool. It queries the internal catalog to provide a list of all external data sources currently configured in your RisingWave instance.
+
+**Q: Is there a way to push data directly into a table without using an external source?**
+Absolutely. Use the `ingest_events` tool to send JSON objects or arrays directly to a specific table via the Events API, perfect for testing or low-latency ingestion.
+
+
 ## Installation & Usage
 
-To install and use the **RisingWave (Streaming Database)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/risingwave-streaming-database](https://vinkius.com/mcp/risingwave-streaming-database)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **RisingWave (Streaming Database)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `risingwave-streaming-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **RisingWave (Streaming Database)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "risingwave-streaming-database": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

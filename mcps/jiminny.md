@@ -1,7 +1,6 @@
 # Jiminny MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jiminny)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jiminny-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jiminny-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jiminny)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Jiminny** MCP server u
 > User USR-201 (Sarah Chen): Average call score 8.2/10, talk ratio 42%, 15 calls this week. Improvement trend: +12% over last month. Top strength: discovery questions. Would you like team-wide analytics?
 
 
+## ❓ FAQ
+
+**Q: How do I access call transcripts via AI?**
+Use the `get_transcript` tool with the activity ID to retrieve the full transcript with speaker identification and timestamps.
+
+**Q: Can my agent extract action items from calls?**
+Yes. Use `get_action_items` to retrieve all AI-detected follow-ups and tasks from any recorded conversation.
+
+**Q: How do I review coaching metrics for my team?**
+Use `get_coaching_stats` with the user ID to see call scores, framework ratings, and improvement trends for any team member.
+
+
 ## Installation & Usage
 
-To install and use the **Jiminny** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jiminny](https://vinkius.com/mcp/jiminny)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Jiminny** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jiminny` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Jiminny** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jiminny": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

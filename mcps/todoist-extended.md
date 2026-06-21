@@ -1,7 +1,6 @@
 # Todoist MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/todoist-extended)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/todoist-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/todoist-extended-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/todoist-extended)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Todoist** MCP server u
 > I've fetched the tasks. You have 3 active items with the '@errand' label: 'Buy groceries', 'Post office', and 'Pick up dry cleaning'. Shall I retrieve the details for the post office task?
 
 
+## ❓ FAQ
+
+**Q: Can I filter tasks for today using the AI?**
+Yes! Use the `list_active_tasks` tool and provide the `filter` parameter set to 'today'. Your agent will retrieve all tasks scheduled for the current date.
+
+**Q: How do I add a new task to a specific project?**
+Use the `create_task` tool. Provide the content and the unique Project ID. You can also include a `due_string` like 'tomorrow at 10am' to set a deadline.
+
+**Q: Is it possible to list all my labels via AI?**
+Absolutely. Run the `list_all_labels` query. The agent will retrieve the complete directory of labels you use to categorize tasks in your account.
+
+
 ## Installation & Usage
 
-To install and use the **Todoist** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/todoist-extended](https://vinkius.com/mcp/todoist-extended)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Todoist** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `todoist-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Todoist** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "todoist-extended": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

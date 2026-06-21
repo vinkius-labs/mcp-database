@@ -1,7 +1,6 @@
 # AgentMail MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agentmail)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agentmail-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agentmail-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agentmail)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **AgentMail** MCP server
 > The email has been successfully sent. I replied directly to the client's thread, thanked them for their interest, and included the 'Pricing_2024.pdf' attachment as requested.
 
 
+## ❓ FAQ
+
+**Q: Does my AI agent need a preexisting Gmail or Outlook account to use this?**
+No. AgentMail is entirely standalone. You can use your agent to programmatically provision brand new, unique email addresses in seconds, completely independent of legacy email providers.
+
+**Q: Can my agent download files that users send to its email address?**
+Yes. When scanning threads in the inbox, your agent will detect any attached files. It can then use the dedicated attachments tool to retrieve and analyze the contents of the file before drafting a reply.
+
+**Q: Is it possible to manage multiple outreach campaigns at the same time?**
+Absolutely. Your agent can create and manage multiple inboxes simultaneously. It can list all active boxes, read unread threads for each, and contextualize its replies based on the specific campaign inbox.
+
+
 ## Installation & Usage
 
-To install and use the **AgentMail** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/agentmail](https://vinkius.com/mcp/agentmail)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AgentMail** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `agentmail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AgentMail** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "agentmail": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Fivetran MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fivetran)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fivetran-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fivetran-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fivetran)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Fivetran** MCP server 
 > Retrieving users... I found 5 registered users. Highlights include 'Admin User' (Account Administrator), 'Data Analyst' (Analyst), and 3 other members. Would you like the detailed profile for any of them?
 
 
+## ❓ FAQ
+
+**Q: Can my agent list all connectors in a specific Fivetran group?**
+Yes. Use the 'list_connectors' tool. Provide the Group ID, and the agent will return a list of all connectors configured within that destination group, including their unique IDs and statuses.
+
+**Q: How do I check the details of a specific data destination via chat?**
+Use the 'get_destination' tool. Provide the Group ID. Your agent will retrieve configuration details about the database or data warehouse connected to that group, providing clear boundary information natively.
+
+**Q: Can I audit users and their roles in my Fivetran workspace through the agent?**
+Absolutely. Use the 'list_users' tool. The agent retrieves all registered users in your workspace with their assigned roles and current statuses, allowing for organizational administrative auditing natively.
+
+
 ## Installation & Usage
 
-To install and use the **Fivetran** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fivetran](https://vinkius.com/mcp/fivetran)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fivetran** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fivetran` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fivetran** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fivetran": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

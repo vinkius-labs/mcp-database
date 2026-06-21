@@ -1,7 +1,6 @@
 # BotPenguin MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/botpenguin)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/botpenguin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/botpenguin-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/botpenguin)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **BotPenguin** MCP serve
 > OTP SMS successfully triggered for +1555998877. The user should receive their verification code momentarily.
 
 
+## ❓ FAQ
+
+**Q: Can I search for a specific lead or contact by name?**
+Yes! Use the `list_contacts` tool and provide the `search_text` parameter with the name, email, or details you are looking for. The agent will return the matching profiles.
+
+**Q: How do I review the chat history of a conversation?**
+First, use `list_chats` to find the active or historical session. Then, use `get_chat_history` with the Chat ID to retrieve the full log of messages.
+
+**Q: Can I send an OTP SMS to a user?**
+Yes. Use the `send_otp` action and provide the user's phone number (with the country code). BotPenguin will handle the integration to send the verification code.
+
+
 ## Installation & Usage
 
-To install and use the **BotPenguin** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/botpenguin](https://vinkius.com/mcp/botpenguin)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BotPenguin** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `botpenguin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BotPenguin** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "botpenguin": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

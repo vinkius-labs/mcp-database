@@ -1,7 +1,6 @@
 # Avochato MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/avochato)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/avochato-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/avochato-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/avochato)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Avochato** MCP server 
 > Searching contacts... I found 5 contacts matching the 'High-Value' tag: John D., Sarah M., Robert P., Emily W., and Kevin S. Would you like to schedule a broadcast message for this group?
 
 
+## ❓ FAQ
+
+**Q: Can the AI automatically send an SMS to a new contact?**
+Yes! Use the `send_message` tool. You'll need to provide the phone number and the message body. Your agent will instantly transmit the SMS through your Avochato inbox.
+
+**Q: How do I find all contacts that have been tagged with a specific label?**
+Simply ask the agent to run the `get_contacts` tool with the target tag. It will return a list of matching contact profiles, including their names and phone numbers.
+
+**Q: Does the integration allow for sending images through MMS?**
+Yes. The `send_message` tool supports a `media_url` parameter, allowing you to include images or other media files in your outgoing messages.
+
+
 ## Installation & Usage
 
-To install and use the **Avochato** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/avochato](https://vinkius.com/mcp/avochato)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Avochato** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `avochato` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Avochato** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "avochato": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

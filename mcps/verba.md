@@ -1,7 +1,6 @@
 # Verba MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/verba)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/verba-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/verba-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/verba)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,53 @@ Here are some examples of how you can interact with the **Verba** MCP server usi
 > I've queried the document catalog. You have 15 items overall. The specific 'Employee Code of Conduct' document is indexed under the Document ID `5fcbeb99-xxxx`. Would you like me to delete it or replace its contents with a new updated chunk?
 
 
+## ❓ FAQ
+
+**Q: Can I query my local Verba instance directly through Cursor?**
+Yes! Once you configure `VERBA_API_URL` to point to `http://localhost:8000` (or your host port), you can prompt your AI assistant to execute rigorous `perform_rag_query` instructions without ever breaking your developer focus.
+
+**Q: How do I insert fresh text data into Verba completely using conversational chat?**
+Provide the agent with your desired context directly. For example: `Add this chunk of markdown as a new document to Verba: '# Title 
+ Content...'`. The agent leverages `addDocumentTool`, serializes the payload, and commits it into Verba's vector store immutably.
+
+**Q: Are the query answers backed by citations from its embedded documents?**
+Absolutely. That's the primary benefit of the integration. When you run `perform_rag_query`, Verba utilizes Weaviate's hybrid search mechanics. The output explicitly includes natural language synthesis backed by the unique document IDs and snippet texts it referenced.
+
+
 ## Installation & Usage
 
-To install and use the **Verba** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/verba](https://vinkius.com/mcp/verba)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Verba** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `verba` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Verba** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "verba": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

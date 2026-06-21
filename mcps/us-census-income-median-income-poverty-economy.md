@@ -1,7 +1,6 @@
 # U.S. Census Income — Median Income, Poverty & Economy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-census-income-median-income-poverty-economy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-census-income-median-income-poverty-economy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-census-income-median-income-poverty-economy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-census-income-median-income-poverty-economy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Data for Texas (48) Counties:
 - Travis County: 41,832 establishments, 856,120 employees
 
 
+## ❓ FAQ
+
+**Q: What is County Business Patterns (CBP)?**
+CBP is an annual series that provides subnational economic data by industry. This server uses it to return total business establishments, employees, and annual payroll by county.
+
+**Q: Does income include taxes?**
+Median household income reported by the Census represents pre-tax (gross) income from all sources.
+
+**Q: Can it separate individual vs household income?**
+The primary metrics fetched here are Household metrics as they give the highest fidelity snapshot of local living conditions.
+
+
 ## Installation & Usage
 
-To install and use the **U.S. Census Income — Median Income, Poverty & Economy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-census-income-median-income-poverty-economy](https://vinkius.com/mcp/us-census-income-median-income-poverty-economy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **U.S. Census Income — Median Income, Poverty & Economy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-census-income-median-income-poverty-economy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **U.S. Census Income — Median Income, Poverty & Economy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-census-income-median-income-poverty-economy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

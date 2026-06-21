@@ -1,7 +1,6 @@
 # Agile CRM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agile-crm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agile-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agile-crm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agile-crm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Agile CRM** MCP server
 > I've found Jane Doe. She has 2 pending tasks: 'Send Proposal' (due today) and 'Follow-up Call' (due Friday). Would you like to mark any of these as completed?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Agile CRM REST API Key?**
+Log in to Agile CRM, go to **Admin Settings** > **Developers & API**. You will find your REST API Key listed there. Use this along with your account email for authentication.
+
+**Q: Can I search for a contact by email?**
+Yes! Use the `search_contact_by_email` tool. It provides a direct way to find a contact profile using their email address, returning their full history and properties.
+
+**Q: Does this support custom properties?**
+Yes, custom properties are included in the contact details retrieved via the API. You can also update them by specifying the property name and value.
+
+
 ## Installation & Usage
 
-To install and use the **Agile CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/agile-crm](https://vinkius.com/mcp/agile-crm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Agile CRM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `agile-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Agile CRM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "agile-crm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

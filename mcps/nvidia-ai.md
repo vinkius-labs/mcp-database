@@ -1,7 +1,6 @@
 # NVIDIA AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nvidia-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nvidia-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,55 @@ async def get_items():
 > Q3 revenue increased 15% year-over-year, driven by strong demand in AI and cloud services.
 
 
+## ❓ FAQ
+
+**Q: Which AI models are available?**
+The NVIDIA API Catalog offers Llama 3.1 (8B, 70B, 405B), Mistral, CodeLlama, Gemma, Nemotron, and many more. Use the `list_models` tool to see all available models.
+
+**Q: How do I get an NVIDIA API Key?**
+Sign up at [**build.nvidia.com**](https://build.nvidia.com), go to your account settings, and generate an API key. The Developer Program includes free inference credits.
+
+**Q: Can I generate code in specific languages?**
+Yes! The `generate_code` tool lets you specify the programming language (Python, JavaScript, TypeScript, Java, etc.) for better results.
+
+**Q: Are there usage limits on the free tier?**
+Yes, the NVIDIA Developer Program provides free inference credits. Once exhausted, you can upgrade to a paid plan for higher throughput. Check your usage dashboard at build.nvidia.com.
+
+
 ## Installation & Usage
 
-To install and use the **NVIDIA AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nvidia-ai](https://vinkius.com/mcp/nvidia-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NVIDIA AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nvidia-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NVIDIA AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nvidia-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

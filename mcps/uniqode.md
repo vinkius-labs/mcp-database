@@ -1,7 +1,6 @@
 # Uniqode MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uniqode)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uniqode-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uniqode-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uniqode)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Uniqode** MCP server u
 > Update successful! QR code 10293 is now redirecting to 'https://vinkius.com/new-promo'. The physical QR code remains valid and will instantly lead users to the new page.
 
 
+## ❓ FAQ
+
+**Q: Can I change the URL of a QR code after it has been printed?**
+Yes, if it is a dynamic QR code. Use the `update_qrcode` tool and provide the new destination URL. The physical code remains the same but the user will be redirected to the new link.
+
+**Q: How do I see where people are scanning my codes from?**
+Run the `get_analytics_location` query with your QR Code ID. It returns scan data aggregated by country and city, allowing you to track geographic engagement.
+
+**Q: Is it possible to list all the tags I'm using for organization?**
+Absolutely. Use the `list_tags` query. The agent will retrieve all tags used for categorization, helping you filter and find specific QR codes more easily.
+
+
 ## Installation & Usage
 
-To install and use the **Uniqode** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/uniqode](https://vinkius.com/mcp/uniqode)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Uniqode** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `uniqode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Uniqode** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "uniqode": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

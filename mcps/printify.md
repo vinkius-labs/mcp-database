@@ -1,7 +1,6 @@
 # Printify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/printify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/printify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/printify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/printify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Printify** MCP server 
 > Checking shipping details... For the Unisex Jersey Tee (ID: 6) via Monster Digital (ID: 45), shipping starts at $4.75 for the US with an estimated handling time of 2-5 business days.
 
 
+## ❓ FAQ
+
+**Q: How can I see which blank products are available to customize?**
+You can use the `list_blueprints` tool. It retrieves the full catalog of available blank items (blueprints) that you can use to create your custom products.
+
+**Q: Is it possible to check shipping costs for a specific product and provider?**
+Yes! Use the `get_shipping` tool by providing the Blueprint ID and Print Provider ID. It will return the exact shipping costs and handling times for that combination.
+
+**Q: Can I list all the products currently in one of my shops?**
+Absolutely. Use the `list_products` tool with your Shop ID to fetch all products created within that specific shop, including their status and details.
+
+
 ## Installation & Usage
 
-To install and use the **Printify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/printify](https://vinkius.com/mcp/printify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Printify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `printify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Printify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "printify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

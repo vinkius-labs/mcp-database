@@ -1,7 +1,6 @@
 # QR Code Generator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qr-code-generator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qr-code-generator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qr-code-generator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qr-code-generator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **QR Code Generator** MC
 > I've scanned the image. The QR code contains the following data: 'https://github.com/mcp-servers'.
 
 
+## ❓ FAQ
+
+**Q: Can I customize the color and size of the generated QR code?**
+Yes! The `create_qr_code` tool allows you to specify the `size` (e.g., '300x300'), `color` (in RGB or Hex), and `bgcolor` to match your branding requirements.
+
+**Q: How do I extract text from an existing QR code image?**
+Use the `read_qr_code` tool and provide the `fileurl` of the image. The AI will decode the contents and return the stored text or URL to you instantly.
+
+**Q: What is the 'ecc' parameter and which value should I use?**
+ECC stands for Error Correction Code. It allows the QR code to be read even if it's dirty or damaged. Values range from 'L' (7% recovery) to 'H' (30% recovery). Use 'H' for codes that might face physical wear.
+
+
 ## Installation & Usage
 
-To install and use the **QR Code Generator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/qr-code-generator](https://vinkius.com/mcp/qr-code-generator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **QR Code Generator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `qr-code-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **QR Code Generator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "qr-code-generator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Timekit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/timekit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/timekit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/timekit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/timekit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Timekit** MCP server u
 > Success! I've confirmed booking 88231. The resource and the customer have been notified. Your schedule is now up-to-date.
 
 
+## ❓ FAQ
+
+**Q: Can I check availability for multiple resources at once?**
+Yes! Use the `check_availability` tool and provide a JSON array of Resource IDs. The agent will return time slots where all specified resources are available.
+
+**Q: How do I confirm a tentative booking request?**
+Use the `confirm_booking` action and provide the unique Booking ID. This will transition the request from 'tentative' to 'confirmed' in your Timekit account.
+
+**Q: Is it possible to reschedule an existing appointment via AI?**
+Absolutely. Use the `reschedule_booking` tool. Provide the Booking ID and the new start and end times to update the appointment instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Timekit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/timekit](https://vinkius.com/mcp/timekit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Timekit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `timekit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Timekit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "timekit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Cody AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cody-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cody-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cody-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cody-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Sources: employee-handbook.pdf (p.12), security-policy.docx (p.3)
 > Upload initiated. 'compliance_guidelines.pdf' has been sent to Cody AI servers. The AI is now training on the new vectors. It will be fully ready to answer policy questions in about 2 minutes.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Cody AI API key?**
+In the Cody AI dashboard, go to **Settings > API** and copy your key. Paste it below.
+
+**Q: What is Focus Mode?**
+Focus Mode restricts a bot's knowledge to specific documents for a given conversation, improving answer relevance.
+
+**Q: How long does it take to learn new documents?**
+Usually seconds to minutes depending on document size. Use 'get_document_status' to check when sync is complete.
+
+
 ## Installation & Usage
 
-To install and use the **Cody AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cody-ai](https://vinkius.com/mcp/cody-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cody AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cody-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cody AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cody-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

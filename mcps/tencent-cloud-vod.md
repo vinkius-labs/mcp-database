@@ -1,7 +1,6 @@
 # Tencent Cloud VOD / 腾讯云点播 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-cloud-vod)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tencent-cloud-vod-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tencent-cloud-vod-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-cloud-vod)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Tencent Cloud VOD / �
 > I've retrieved your storage usage data. Over the last 30 days, your peak storage reached 1.2 TB, with an average daily increase of 5 GB. Your current active SubAppId is set to 'Root Application'. Would you like a daily breakdown of these metrics?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Tencent Cloud SecretId and SecretKey?**
+Log in to the [Tencent Cloud Console](https://console.cloud.tencent.com/), navigate to [Access Management] -> [API Key Management] to find or generate your unique SecretId and SecretKey.
+
+**Q: What is a FileId?**
+A FileId is the unique identifier for a media file in the Tencent Cloud VOD system. It is assigned when a video is uploaded and is used for all media-specific operations like metadata retrieval or deletion.
+
+**Q: Does this server support SubAppIds?**
+Yes! You can provide a `tencent_vod_subappid` in your credentials. If set, the agent will automatically include it in all VOD requests to manage resources within that specific sub-application.
+
+
 ## Installation & Usage
 
-To install and use the **Tencent Cloud VOD / 腾讯云点播** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tencent-cloud-vod](https://vinkius.com/mcp/tencent-cloud-vod)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tencent Cloud VOD / 腾讯云点播** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tencent-cloud-vod` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tencent Cloud VOD / 腾讯云点播** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tencent-cloud-vod": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Sirv MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sirv)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sirv-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sirv-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sirv)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Total size: 48.2 MB. Would you like metadata details for any specific file?
 You're at 62.3% of your monthly bandwidth allowance.
 
 
+## ❓ FAQ
+
+**Q: Can it accidentally delete all my files?**
+The delete_file tool only removes the specific file you target by path. It cannot delete entire directories at once. Each deletion requires an explicit file path.
+
+**Q: How does authentication work?**
+You provide your Client ID and Client Secret. The integration automatically exchanges them for a Bearer token on each session — no manual OAuth setup required.
+
+**Q: What file types does Sirv support?**
+Sirv supports images (JPEG, PNG, WebP, SVG, GIF), videos, PDFs, and other static files. The integration can browse and manage all file types stored in your account.
+
+
 ## Installation & Usage
 
-To install and use the **Sirv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sirv](https://vinkius.com/mcp/sirv)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sirv** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sirv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sirv** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sirv": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

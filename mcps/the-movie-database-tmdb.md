@@ -1,7 +1,6 @@
 # The Movie Database (TMDb) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-movie-database-tmdb)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/the-movie-database-tmdb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/the-movie-database-tmdb-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-movie-database-tmdb)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -120,12 +119,58 @@ Here are some examples of how you can interact with the **The Movie Database (TM
 > The Matrix (1999) main cast: Keanu Reeves as Neo, Laurence Fishburne as Morpheus, Carrie-Anne Moss as Trinity, Hugo Weaving as Agent Smith. Keanu Reeves' notable films include: John Wick series, Speed, Constantine, John Wick: Chapter 4, The Devil's Advocate, and Point Break. Would you like details on any of these films?
 
 
+## ❓ FAQ
+
+**Q: How do I find movies similar to one I already watched and loved?**
+Use the `get_movie_recommendations` tool with the TMDb ID of the movie you loved. TMDb's algorithm analyzes genre, keywords, cast, crew, and user rating patterns to suggest films you're likely to enjoy. For example, if you loved The Dark Knight (ID: 155), the tool will recommend similar superhero and crime thrillers. You can find the TMDb ID by first using `search_movies` with the title.
+
+**Q: Can I filter movies by a specific studio like Warner Bros. or Marvel?**
+Yes! Use the `discover_movies` tool with the `with_companies` parameter. Studio IDs include: 17 (Warner Bros.), 420 (Marvel Studios), 33 (Universal Pictures), 2 (Walt Disney Pictures), 5 (Columbia Pictures), 12 (New Line Cinema). You can combine with other filters like genre, year, or minimum rating. For example: genre="878" (Sci-Fi), with_companies="420" returns all Marvel sci-fi movies sorted by popularity.
+
+**Q: Can I watch trailers directly through this integration?**
+The `get_movie_videos` tool retrieves all official trailers, teasers, and promotional videos for any movie. Each result includes a YouTube video key. You can watch the trailer by visiting https://www.youtube.com/watch?v={key}. The tool returns videos sorted by type (Trailer, Teaser, Behind the Scenes) with resolution and official status information.
+
+**Q: How can I find what movies are trending right now?**
+Use the `trending` tool with media_type="movie" and time_window="day" for today's trending movies, or time_window="week" for this week's trends. You can also use media_type="all" to see mixed results (movies, TV shows, and people) or media_type="tv" for trending series. Results include popularity scores, vote averages, and poster images.
+
+**Q: Can I convert an IMDb ID to a TMDb entry?**
+Yes! Use the `find_by_external_id` tool with the IMDb ID (e.g., "tt0111161" for The Shawshank Redemption) and external_source="imdb_id". The tool will return the matching TMDb movie, TV show, or person with the TMDb ID, which you can then use with other tools like `get_movie`, `get_movie_credits`, or `get_movie_videos`. This is essential for cross-referencing between IMDb and TMDb databases.
+
+
 ## Installation & Usage
 
-To install and use the **The Movie Database (TMDb)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/the-movie-database-tmdb](https://vinkius.com/mcp/the-movie-database-tmdb)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **The Movie Database (TMDb)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `the-movie-database-tmdb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **The Movie Database (TMDb)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "the-movie-database-tmdb": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Oura MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oura)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oura-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oura-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oura)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Oura** MCP server usin
 > Yesterday's activity: Score 75/100. Steps: 8,450. Calories: 2,340 (active: 520). MET minutes: 145. Average HR: 72 bpm. Inactivity: 11h 20m. Daily goal: 85% achieved.
 
 
+## ❓ FAQ
+
+**Q: How do I get an Oura Personal Access Token?**
+Log in to your Oura account at [**cloud.ouraring.com**](https://cloud.ouraring.com/oauth2/authorize), create a personal access token in your account settings. The token gives access to your sleep, activity, readiness and health data.
+
+**Q: What health data is available?**
+Sleep (score, stages, efficiency), Activity (steps, calories, MET), Readiness (score, HRV, RHR, temperature), Tags (mood, energy, behaviors), Workouts (type, duration, HR zones) and Heart Rate (5-min samples).
+
+**Q: How far back can I access data?**
+You can access all historical data recorded by your Oura Ring. Use start_date and end_date parameters to filter results. Data is paginated with a nextToken for large date ranges.
+
+
 ## Installation & Usage
 
-To install and use the **Oura** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/oura](https://vinkius.com/mcp/oura)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Oura** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `oura` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Oura** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "oura": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

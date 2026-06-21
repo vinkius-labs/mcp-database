@@ -1,7 +1,6 @@
 # AI21 Labs MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ai21-labs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ai21-labs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ai21-labs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ai21-labs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **AI21 Labs** MCP server
 > Jamba model response: 'Unlocking High-Fidelity Language Intelligence: A Deep Dive into Modern AI API Orchestration'. Shall I generate an outline for this post?
 
 
+## ❓ FAQ
+
+**Q: How do I find my AI21 API Key?**
+Log in to the [**AI21 Studio Dashboard**](https://studio.ai21.com/), click on your profile (top right), and navigate to **API Keys** to copy your token.
+
+**Q: Can I use AI21 for RAG via AI?**
+Yes! The `contextual_answers` tool allows your agent to extract precise information from provided text context using high-fidelity RAG technology.
+
+**Q: Does it support grammar correction?**
+Absolutely. Use the `grammar_correction` tool to fix spelling, syntax, and phrasing in your text programmatically.
+
+
 ## Installation & Usage
 
-To install and use the **AI21 Labs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ai21-labs](https://vinkius.com/mcp/ai21-labs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AI21 Labs** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ai21-labs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AI21 Labs** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ai21-labs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

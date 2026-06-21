@@ -1,7 +1,6 @@
 # Nylas MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nylas)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nylas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nylas-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nylas)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Nylas** MCP server usi
 > I checked your Nylas contact directory. Robert's formal email address is `robert.smith@domain.com`. Would you like me to draft a message to him?
 
 
+## ❓ FAQ
+
+**Q: Can my AI draft and actually send emails natively?**
+Yes! Provide the recipient, subject, and prompt your agent on what the body should look like. The agent leverages the `send_message` tool interacting directly through the Nylas provider, and your real account will dispatch the email in seconds.
+
+**Q: How can I check if I have upcoming meeting clashes?**
+Your agent queries your complete agenda using the `list_events` tool. Describe your timeframe, and the AI will scan down the returned events, identifying overlapping blocks or showing you pure free space availability.
+
+**Q: Will the agent read my historical email archives?**
+When using `list_messages`, the agent fetches paginated incoming boxes. You can search directly by providing queries within the prompt, letting the agent fetch and summarize the content of past conversation threads effectively.
+
+
 ## Installation & Usage
 
-To install and use the **Nylas** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nylas](https://vinkius.com/mcp/nylas)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nylas** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nylas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nylas** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nylas": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Robolytix MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/robolytix)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/robolytix-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/robolytix-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/robolytix)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Robolytix** MCP server
 > Run ID: run_8923 (Invoice Generation, failed at 10:47 AM). 12 messages in log. Start: "Process initiated, 45 invoices queued". Steps 1-8: successful (customer lookup, line item calculation, tax computation). Step 9 ERROR: "Template 'INV-2024-v3' not found. Expected path: /templates/invoices/". Step 10: "Attempting fallback template 'INV-2024-v2'". Step 11 ERROR: "Fallback failed - missing required field 'tax_region'". End: "Process terminated with error code E-TPL-404". Recommendation: update template path in config.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically start a process run in Robolytix and track its common steps?**
+Yes! Use the `sonar_start` tool to initiate a run, and `sonar_common` for subsequent steps. Provide the `processid` and a unique `runid`, and your agent will log the milestones in your Robolytix dashboard instantly.
+
+**Q: How do I find a processid for my automation?**
+Log in to the Robolytix dashboard, go to **Settings** > **Processes**, select your process, and the unique GUID will be displayed in the **General** tab.
+
+**Q: What should I use as a runid?**
+The `runid` can be any unique string for that specific execution instance (e.g., a timestamp, a UUID, or an order number). Just ensure you use the same ID for all sonar messages belonging to that single run.
+
+
 ## Installation & Usage
 
-To install and use the **Robolytix** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/robolytix](https://vinkius.com/mcp/robolytix)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Robolytix** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `robolytix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Robolytix** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "robolytix": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

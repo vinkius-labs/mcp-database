@@ -1,7 +1,6 @@
 # Bsale MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bsale)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bsale-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bsale-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bsale)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,52 @@ Here are some examples of how you can interact with the **Bsale** MCP server usi
 > Client created successfully! 'Distribuidora Los Andes Ltda' has been registered with RUT 76.543.210-K and assigned internal ID #2847. You can now use this client ID when issuing facturas electrónicas or boletas. Would you like to issue an invoice for them right now?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent issue a SII-compliant electronic invoice (factura electrónica) directly?**
+Yes! Use the `create_document` tool with the appropriate document type ID (factura, boleta, etc.), office ID, and line item details. Bsale automatically validates and transmits the document to Chile's SII for electronic stamping.
+
+**Q: How can I check the stock level of a specific product variant across all my stores?**
+Use the `list_stocks` tool with the variant ID as a filter. It will return the current available quantity for that SKU across every office branch configured in your Bsale account, giving you instant cross-store visibility.
+
+**Q: Can I register a new client with their RUT for tax compliance before issuing an invoice?**
+Absolutely. Use the `create_client` tool with the client's name, RUT (in the code field), and business activity (giro). Once created, you can immediately reference their client ID when issuing documents through the `create_document` tool.
+
+
 ## Installation & Usage
 
-To install and use the **Bsale** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bsale](https://vinkius.com/mcp/bsale)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bsale** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bsale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bsale** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bsale": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

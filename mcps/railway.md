@@ -1,7 +1,6 @@
 # Railway MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/railway)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/railway-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/railway-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/railway)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Railway** MCP server u
 > Using the `get_deployments` query, I found the latest deployment status. The Production build on service 'sv_222' successfully completed 4 minutes ago and is currently in a 'SUCCESS' state.
 
 
+## ❓ FAQ
+
+**Q: How do I create a Railway API token?**
+Log into your main Railway dashboard. Navigate to your Account Settings and head to the 'Tokens' section. Generate a standard Personal Access API Token, copy it definitively, and paste it into the secure configuration field provided by the MCP integration here.
+
+**Q: Can I target specific environments (like Staging vs Production)?**
+Yes. Each API operation supports passing explicit `project_id` and `environment_id` variables, ensuring the AI performs operations strictly inside your requested boundaries.
+
+**Q: Is restarting a service destructive?**
+It behaves identically to clicking 'Restart' on the Railway dashboard. It forces an immediate container recycle for the specific service based on the last successful build.
+
+
 ## Installation & Usage
 
-To install and use the **Railway** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/railway](https://vinkius.com/mcp/railway)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Railway** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `railway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Railway** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "railway": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

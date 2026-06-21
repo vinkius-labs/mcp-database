@@ -1,7 +1,6 @@
 # LEAP Legal MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leap-legal)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/leap-legal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/leap-legal-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leap-legal)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -196,12 +195,55 @@ Here are some examples of how you can interact with the **LEAP Legal** MCP serve
 > Found 3 contacts associated with John Smith: 1) John Smith (Client) — john.smith@email.com, 555-0123, 2) Jane Smith (Spouse) — jane.smith@email.com, 555-0124, 3) Robert Williams (Opposing Counsel) — robert@williamslaw.com, 555-0456.
 
 
+## ❓ FAQ
+
+**Q: What features of LEAP Legal are available through this API?**
+The API provides access to: Matters/Cases (CRUD operations), Contacts/Clients (create and list), Time Entries (list and create), Bills/Invoices (list and get), Payments (list), Tasks (list), Documents (list by matter), Calendar Events (list), and Custom Fields (list schemas). You can search matters by keyword, filter by status and practice area, and view all matters for a specific client.
+
+**Q: How do I get a LEAP Legal API access token?**
+Visit the LEAP Developer Console at developer.leap.build and register your application. Use OAuth 2 authentication to obtain an access token. The token is used as a Bearer token in the Authorization header for all API requests. Contact LEAP support if you need help setting up API access for your firm.
+
+**Q: Can I create new matters and contacts through the API?**
+Yes! You can create new matters with name, client assignment, status, and practice area. You can also create new contacts with first name, last name, email, phone, and contact type (Client, Opposing Party, Witness, etc.). Use `create_leap_matter` and `create_leap_contact` tools for these operations.
+
+**Q: How do I track billable time with LEAP Legal API?**
+Use `create_leap_time_entry` to log time against any matter. Provide the matter ID, description of work, and duration in minutes. You can specify whether the entry is billable and set a custom hourly rate. Use `list_leap_time_entries` to view all time logged against a specific matter or across all matters.
+
+
 ## Installation & Usage
 
-To install and use the **LEAP Legal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/leap-legal](https://vinkius.com/mcp/leap-legal)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LEAP Legal** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `leap-legal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LEAP Legal** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "leap-legal": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

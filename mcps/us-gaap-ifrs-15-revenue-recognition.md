@@ -1,7 +1,6 @@
 # US GAAP & IFRS 15 Revenue Recognition MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-gaap-ifrs-15-revenue-recognition)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-gaap-ifrs-15-revenue-recognition-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-gaap-ifrs-15-revenue-recognition-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-gaap-ifrs-15-revenue-recognition)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **US GAAP & IFRS 15 Reve
 > $2,000 has been recognized as revenue, and $3,000 remains as deferred revenue.
 
 
+## ❓ FAQ
+
+**Q: How does the tool identify performance obligations?**
+The `identify_performance_abilities` tool analyzes a list of contract items to determine which are distinct enough to be treated as separate promises under the ASC 606 framework.
+
+**Q: How is the transaction price allocated?**
+Using `allocate_transaction_price`, the total contract value is distributed across all identified obligations proportionally, based on their relative Standalone Selling Price (SSP).
+
+**Q: Can I calculate deferred revenue?**
+Yes. The `calculate_revenue_recognition` tool calculates both recognized revenue (earned) and deferred revenue (remaining balance) based on the percentage of completion provided.
+
+
 ## Installation & Usage
 
-To install and use the **US GAAP & IFRS 15 Revenue Recognition** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-gaap-ifrs-15-revenue-recognition](https://vinkius.com/mcp/us-gaap-ifrs-15-revenue-recognition)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **US GAAP & IFRS 15 Revenue Recognition** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-gaap-ifrs-15-revenue-recognition` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **US GAAP & IFRS 15 Revenue Recognition** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-gaap-ifrs-15-revenue-recognition": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

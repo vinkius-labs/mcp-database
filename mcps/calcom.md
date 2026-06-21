@@ -1,7 +1,6 @@
 # Cal.com MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/calcom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/calcom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/calcom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/calcom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Cal.com** MCP server u
 > Booking 99283 has been successfully cancelled in your Cal.com account. Notification emails have been sent to participants.
 
 
+## ❓ FAQ
+
+**Q: Can I cancel a booking using the agent?**
+Yes! Use the `cancel_booking` tool with the Booking ID. Your agent will trigger the cancellation in Cal.com, notifying all participants automatically.
+
+**Q: How do I see the list of all my upcoming meetings?**
+Simply ask the agent to `list_bookings`. It will retrieve the list of all scheduled meetings from your Cal.com account, including start times and attendee details.
+
+**Q: Does the integration allow creating a new event type?**
+Yes. Use the `create_event_type` action and provide the title, slug, and duration. The new scheduling template will be created in your account instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Cal.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/calcom](https://vinkius.com/mcp/calcom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cal.com** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `calcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cal.com** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "calcom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

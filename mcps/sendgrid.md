@@ -1,7 +1,6 @@
 # SendGrid MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sendgrid)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sendgrid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sendgrid-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sendgrid)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **SendGrid** MCP server 
 > Email sent via SendGrid. To: customer@email.com. Template: "Order Confirmation" (d-a1b2c3d4). Dynamic data populated: order number #ORD-2025-456, 3 items totaling $189.97, shipping address, estimated delivery May 22. From: orders@yourcompany.com. Message ID: msg_abc123. Delivered in 0.6 seconds. Open tracking: enabled. Click tracking: enabled on CTA buttons. Categories tagged: "transactional", "order-confirmation". Webhook events will fire for open/click/delivery.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically send an email using a SendGrid dynamic template?**
+Yes! Use the `send_email` tool. Provide the destination email and the Template ID, and your agent will deliver the message via SendGrid's infrastructure instantly.
+
+**Q: How do I check the global email statistics for my account?**
+Simply ask the agent to run the `get_email_stats` action. Provide a start date, and it will retrieve aggregate metrics including requests, delivered, opens, and clicks.
+
+**Q: How do I find my SendGrid API Key?**
+Log in to your SendGrid dashboard, navigate to **Settings** > **API Keys**, and click 'Create API Key' to generate your unique secret key (SG.xxx).
+
+
 ## Installation & Usage
 
-To install and use the **SendGrid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sendgrid](https://vinkius.com/mcp/sendgrid)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SendGrid** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sendgrid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SendGrid** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sendgrid": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

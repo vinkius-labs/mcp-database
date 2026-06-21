@@ -1,7 +1,6 @@
 # OpenFDA MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openfda-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openfda-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openfda-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openfda-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **OpenFDA** MCP server u
 > Found 15 FDA-approved drug applications containing atorvastatin. Notable: Lipitor (Pfizer, approved 1996), Atorvastatin Calcium (generic, multiple sponsors), Liptruzet (Merck). Includes application numbers, approval dates, dosage forms and strengths.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! OpenFDA data is completely free and open. No authentication required. Just subscribe and start searching. Rate limit is 240 requests/minute for unauthenticated access.
+
+**Q: What search syntax should I use?**
+Use Lucene query syntax: openfda.brand_name:"Advil" for brand names, patient.reaction.reactionmeddrapt:"headache" for reactions, event_type:"Injury" for device events. Combine with AND/OR operators.
+
+**Q: What are drug adverse events?**
+Drug adverse events are safety reports submitted to the FDA about potential side effects from medications. Reports come from healthcare professionals, consumers and manufacturers. They do NOT prove the drug caused the event — just that the event was reported while the patient was taking the drug.
+
+
 ## Installation & Usage
 
-To install and use the **OpenFDA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openfda-alternative](https://vinkius.com/mcp/openfda-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenFDA** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openfda-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenFDA** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openfda-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

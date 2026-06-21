@@ -1,7 +1,6 @@
 # Recruit CRM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recruit-crm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/recruit-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/recruit-crm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recruit-crm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,46 @@ Here are some examples of how you can interact with the **Recruit CRM** MCP serv
 > Candidate added: Alex Rivera. Position: Senior Backend Engineer. Source: LinkedIn. Resume parsed: 8 years experience, Python/Go/AWS. Skills match: 92%. First-round interview scheduled: Thursday, May 22 at 10 AM with James Park (Engineering Manager). Calendar invite sent to candidate and interviewer. Interview scorecard template "Technical Assessment v3" attached. Candidate status: Active, Stage: Phone Screen.
 
 
+## ❓ FAQ
+
+**Q: How do I get my API Token?**
+Log in to Recruit CRM and go to Admin Settings > Account Management > API Token to generate your token.
+
+
 ## Installation & Usage
 
-To install and use the **Recruit CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/recruit-crm](https://vinkius.com/mcp/recruit-crm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Recruit CRM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `recruit-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Recruit CRM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "recruit-crm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

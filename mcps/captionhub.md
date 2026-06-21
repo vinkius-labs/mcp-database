@@ -1,7 +1,6 @@
 # CaptionHub MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/captionhub)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/captionhub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/captionhub-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/captionhub)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **CaptionHub** MCP serve
 > Retrieving French caption export... Your download link is ready: https://api.captionhub.com/exports/abcd-1234.srt
 
 
+## ❓ FAQ
+
+**Q: Can I trigger auto-transcription for a video using the agent?**
+Yes! Use the `transcribe_video` tool with the Project ID. Your agent will trigger CaptionHub's AI engine to start transcribing the video content instantly.
+
+**Q: How do I get the download link for finished subtitles?**
+Simply ask the agent to `export_captions` and provide the Project ID and the language code (e.g., 'fr' or 'es'). It will return the export URL for your finished caption set.
+
+**Q: Does the integration allow approving captions via the workspace?**
+Yes. Use the `approve_captions` tool with the Project ID and Language. This will mark the specific caption set as approved in your CaptionHub workflow.
+
+
 ## Installation & Usage
 
-To install and use the **CaptionHub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/captionhub](https://vinkius.com/mcp/captionhub)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CaptionHub** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `captionhub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CaptionHub** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "captionhub": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

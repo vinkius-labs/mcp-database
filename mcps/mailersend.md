@@ -1,7 +1,6 @@
 # MailerSend MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailersend)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailersend-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailersend-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailersend)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **MailerSend** MCP serve
 > I found 15 'opened' events for domain 98765 in the last 7 days. Most recent interactions were from 'customer@corp.com' and 'alice@test.io'.
 
 
+## ❓ FAQ
+
+**Q: Can I use templates with the send_transactional_email tool?**
+Yes, you can specify a `template_id` within the `email_json` body to use pre-defined designs created in your MailerSend account.
+
+**Q: How do I filter activity for a specific event like 'opened'?**
+Use the `list_domain_activity` tool and provide the `params` string with the desired event types (e.g., `event[]=opened`).
+
+**Q: Is there a limit to bulk email requests?**
+The `send_bulk_transactional_emails` tool supports up to 500 email objects per single request as per MailerSend API limits.
+
+
 ## Installation & Usage
 
-To install and use the **MailerSend** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mailersend](https://vinkius.com/mcp/mailersend)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MailerSend** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mailersend` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MailerSend** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mailersend": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Guerrilla Marketing MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/guerrilla-marketing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/guerrilla-marketing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/guerrilla-marketing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/guerrilla-marketing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Guerrilla Marketing** 
 > Verdict: BUDGET_BLOAT. Multiple failures. (1) Hiring actors is paid spend — not guerrilla. (2) 'Boost brand awareness' is a vanity outcome with no attribution path to revenue. (3) Handing out stickers is the oldest conference play in history — zero shareability, zero surprise factor. Strip the budget: do it yourself, in your own t-shirt, with a controversial sign that people photograph and share because it says something nobody else will say.
 
 
+## ❓ FAQ
+
+**Q: Does Guerrilla Marketing generate marketing ideas?**
+No. Guerrilla Marketing performs zero content generation. It forces the AI agent to PROVE its own guerrilla tactic is genuine — zero cost, precisely targeted, inherently shareable, risk-aware, and traceable to revenue. The agent does all the creative thinking — the tool catches budget creep, lazy targeting, wishful virality, and untraceable outcomes.
+
+**Q: What does it catch that a prompt instruction doesn't?**
+Prompt instructions are suggestions — agents routinely ignore 'make sure it costs nothing.' Tool calls are obligations — the agent must fill every field. Beyond that, Guerrilla Marketing has 13 consistency rules that catch domain-specific anti-patterns: cost language in 'zero cost' plans (budget, spend, boost), vague channels as ambush points ('social media'), wishful thinking as viral mechanisms ('go viral', 'make noise'), dismissive risk assessments ('no risk'), and vanity metrics disguised as attribution ('track analytics').
+
+**Q: How is this different from Growth Strategist?**
+Growth Strategist validates any growth tactic — paid or organic — against ICP specificity, channel fit, differentiation, evidence, and measurable outcomes. Guerrilla Marketing is narrower and more aggressive: it ONLY validates zero-cost tactics and adds three dimensions Growth Strategist doesn't cover — ambush point precision (where exactly is the ICP's attention unguarded), viral mechanism design (why would someone share this), and risk assessment (what could go wrong). Use Growth Strategist for strategy. Use Guerrilla Marketing when the constraint is literally $0.
+
+
 ## Installation & Usage
 
-To install and use the **Guerrilla Marketing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/guerrilla-marketing](https://vinkius.com/mcp/guerrilla-marketing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Guerrilla Marketing** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `guerrilla-marketing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Guerrilla Marketing** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "guerrilla-marketing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

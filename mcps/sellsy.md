@@ -1,7 +1,6 @@
 # Sellsy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sellsy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sellsy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sellsy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sellsy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Sellsy** MCP server us
 > I processed `list_invoices`. You possess 32 documented billables in the current view loop. Around 60% are safely flagged as 'PAID'. However, there are 5 critical invoices flagged manually as 'OVERDUE' contributing a gap of near €4,300 to your ledger right now.
 
 
+## ❓ FAQ
+
+**Q: Can the AI alter invoices or update CRM statuses remotely?**
+No, it cannot. The agent is explicitly configured to possess pure Read-Only access capability via API V2 GET methodology endpoints (Such as `list_companies` and `get_invoices`). Your operational data remains completely immutable regardless of what you prompt.
+
+**Q: Can I query a specific estimate document generated for a client?**
+Yes. While the integration allows sweeping over lists using `list_estimates`, the LLM can interpret the raw data to give you the summary of any pending quotes directly tied to associated internal pipelines effortlessly.
+
+**Q: Does it track sales activities like recent calls?**
+Yes—by prompting your LLM with the underlying `list_activities` directive, you immediately gain access to the chronological logs outlining calls, meetings, generic events, and tasks created by your native Sales Development Representatives (SDRs).
+
+
 ## Installation & Usage
 
-To install and use the **Sellsy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sellsy](https://vinkius.com/mcp/sellsy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sellsy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sellsy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sellsy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sellsy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

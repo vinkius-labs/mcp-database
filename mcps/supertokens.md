@@ -1,7 +1,6 @@
 # SuperTokens MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/supertokens)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/supertokens-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/supertokens-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/supertokens)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **SuperTokens** MCP serv
 > Here are the roles currently configured in your SuperTokens instance: 'admin', 'editor', and 'viewer'.
 
 
+## ❓ FAQ
+
+**Q: Can I retrieve specific user information using their ID?**
+Yes, by using the `get_user` tool with the specific User ID, you can fetch the full profile, including email and account linking status.
+
+**Q: How do I assign a specific role like 'admin' to a user?**
+You can use the `assign_role_to_user` tool. Just provide the User ID and the role name to update their permissions immediately.
+
+**Q: Is it possible to update custom user data or preferences?**
+Absolutely. The `update_user_metadata` tool allows you to pass a JSON object to store or update custom information for any user.
+
+
 ## Installation & Usage
 
-To install and use the **SuperTokens** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/supertokens](https://vinkius.com/mcp/supertokens)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SuperTokens** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `supertokens` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SuperTokens** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "supertokens": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

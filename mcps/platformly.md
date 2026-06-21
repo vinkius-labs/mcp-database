@@ -1,7 +1,6 @@
 # Platform.ly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/platformly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/platformly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/platformly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/platformly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Platform.ly** MCP serv
 > Segment created: "New Users - Onboarding Incomplete" (ID: seg_4821). Matching contacts: 127 users. Criteria: signup date within 14 days AND onboarding_completed equals false. Demographics: 62% from organic search, 24% from paid ads, 14% from referrals. Average time since signup: 8.3 days. This segment is now available for targeting in automation sequences and broadcast campaigns.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific contact just by providing their email?**
+Yes! Use the `get_contact` tool. Provide the contact email or ID, and your agent will respond with complete metadata, including tags, custom fields, and pipeline status in seconds.
+
+**Q: How do I find my Platform.ly API Key?**
+Log in to your Platform.ly account, click on your profile name at the top right, navigate to **API Docs & Keys**, and generate your unique secret key.
+
+**Q: Can I use the AI to trigger a specific automation?**
+Yes, by using the `apply_tag_to_contact` or `fire_event` tools, you can trigger any automated workflow you have configured in your account.
+
+
 ## Installation & Usage
 
-To install and use the **Platform.ly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/platformly](https://vinkius.com/mcp/platformly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Platform.ly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `platformly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Platform.ly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "platformly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # CallFire MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/callfire-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/callfire-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/callfire-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/callfire-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **CallFire** MCP server 
 > You have 4,231 contacts total. 4,189 have valid phone numbers (99.0%). 42 contacts are missing phone numbers — these were imported from a CSV on March 15. The top 5 contacts by interaction volume: 'Apex Industries' (contact_8901, 47 calls), 'Green Valley Corp' (contact_8234, 38 calls), and 'Metro Health' (contact_7912, 31 calls). Would you like to view details for any contact?
 
 
+## ❓ FAQ
+
+**Q: Can I review the full history of calls and text messages for a specific contact?**
+Yes. Use `list_calls` to browse all call records and `get_call` with a specific Call ID for full details including duration, recording URL, and disposition. For SMS, use `list_texts` to browse messages and `get_text` for individual message content and delivery status.
+
+**Q: Does CallFire require two separate credentials?**
+Yes. CallFire uses HTTP Basic Authentication with an **API Login** (username) and an **API Password**. Both are generated in your CallFire account under Settings > API Access. They are separate from your dashboard login credentials.
+
+**Q: Can I monitor my active broadcast campaigns and their delivery status?**
+Yes. The `list_campaigns` tool retrieves all voice and text broadcast campaigns with their status (active, paused, finished). Use `get_campaign` with a Campaign ID to inspect configuration details, delivery rates, and audience targeting. Combine with `list_webhooks` to verify event-driven notifications are configured correctly.
+
+
 ## Installation & Usage
 
-To install and use the **CallFire** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/callfire-alternative](https://vinkius.com/mcp/callfire-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CallFire** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `callfire-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CallFire** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "callfire-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

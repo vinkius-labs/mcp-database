@@ -1,7 +1,6 @@
 # Portkey MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/portkey)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/portkey-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/portkey-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/portkey)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -96,12 +95,52 @@ Here are some examples of how you can interact with the **Portkey** MCP server u
 > I'll trigger a log export for the last 7 days in JSON format for your records.
 
 
+## ❓ FAQ
+
+**Q: Which LLM providers does Portkey support?**
+Portkey supports 1,600+ LLMs including OpenAI, Anthropic, Google, Mistral, Azure OpenAI, AWS Bedrock, Cohere, Hugging Face, and many more. Use the list_models tool to see the full catalog available via your gateway.
+
+**Q: How does Portkey help control AI costs?**
+Portkey provides granular visibility into token usage, latency, and costs per model, team, or virtual key. You can create budget policies with hard limits to prevent runaway spending. The gateway also supports caching to reduce duplicate calls and fallbacks to cheaper models when appropriate.
+
+**Q: Can I track feedback on AI responses?**
+Yes! Portkey allows you to submit Like/Dislike feedback for any logged LLM call. This data helps improve model selection, evaluate agent performance, and build RLHF datasets for fine-tuning.
+
+
 ## Installation & Usage
 
-To install and use the **Portkey** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/portkey](https://vinkius.com/mcp/portkey)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Portkey** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `portkey` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Portkey** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "portkey": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Stanford OpenAlex MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-openalex)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stanford-openalex-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stanford-openalex-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-openalex)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -115,12 +114,52 @@ Here are some examples of how you can interact with the **Stanford OpenAlex** MC
 > I've retrieved the Machine Learning concept from OpenAlex. It sits at level 1 under Computer Science (level 0), and has child concepts including Deep Learning, Neural Networks, Reinforcement Learning, and Natural Language Processing at finer granularity levels.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No. OpenAlex is 100% free and open. No registration or API key is required.
+
+**Q: How is OpenAlex different from Semantic Scholar?**
+OpenAlex provides a broader ecosystem view with entities for institutions, journals, funders, publishers, and concepts — not just papers and authors. It is ideal for bibliometric analysis, institutional benchmarking, and understanding the structure of the research system. Semantic Scholar excels at AI-powered recommendations and citation graph navigation.
+
+**Q: What replaced Microsoft Academic Graph?**
+OpenAlex was created as the free, open-source successor to Microsoft Academic Graph (MAG), which was discontinued in 2022. OpenAlex now contains over 250 million works and continues to grow, fully funded by grants to ensure permanent public access.
+
+
 ## Installation & Usage
 
-To install and use the **Stanford OpenAlex** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/stanford-openalex](https://vinkius.com/mcp/stanford-openalex)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Stanford OpenAlex** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `stanford-openalex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Stanford OpenAlex** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "stanford-openalex": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Polar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/polar-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/polar-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/polar-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/polar-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **Polar** MCP server usi
 > On Oct 25th, you reached 115% of your activity goal with 12,450 steps and 2,840 calories burned. You had 1 hour and 20 minutes of high-intensity activity.
 
 
+## ❓ FAQ
+
+**Q: Can I download my training sessions in FIT or GPX format for other apps?**
+Yes! You can use `get_exercise_fit`, `get_exercise_tcx`, or `get_exercise_gpx` with a specific Exercise ID to retrieve the raw file data for your training sessions.
+
+**Q: How do I check my recovery and sleep quality from last night?**
+Simply ask the agent to run `list_sleep` or `list_nightly_recharge`. It will provide the latest metrics recorded by your Polar device, including sleep scores and recharge levels.
+
+**Q: Can I see my physical metrics like weight and heart rate max?**
+Yes, the `get_physical_info` tool retrieves your current physical settings from Polar Flow, including weight, height, and HR max.
+
+
 ## Installation & Usage
 
-To install and use the **Polar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/polar-alternative](https://vinkius.com/mcp/polar-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Polar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `polar-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Polar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "polar-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

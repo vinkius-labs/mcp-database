@@ -1,7 +1,6 @@
 # Geopard Agriculture MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geopard-agriculture)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/geopard-agriculture-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/geopard-agriculture-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geopard-agriculture)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Geopard Agriculture** 
 > Fetching crop health for 'North Vineyard' (f-67890)... I've identified 3 active health layers. The 'Nitrogen Level' is optimal, but the 'Water Stress' layer shows some moderate stress in the south-east corner. Shall I provide specific coordinates?
 
 
+## ❓ FAQ
+
+**Q: How can I see the NDVI index for my field?**
+Use the `get_field_analytics` tool with your specific Field ID. The response will include the Mean NDVI value, which indicates the vegetation health and biomass.
+
+**Q: Does this work for any location?**
+The server retrieves data for fields already registered and mapped in your Geopard account. Ensure your parcels are setup in the Geopard dashboard first.
+
+**Q: Can I check soil moisture levels?**
+Yes. The `get_field_analytics` tool includes soil moisture estimates among other precision indicators retrieved from the satellite data layers.
+
+
 ## Installation & Usage
 
-To install and use the **Geopard Agriculture** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/geopard-agriculture](https://vinkius.com/mcp/geopard-agriculture)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Geopard Agriculture** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `geopard-agriculture` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Geopard Agriculture** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "geopard-agriculture": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

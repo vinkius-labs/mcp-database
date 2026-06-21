@@ -1,7 +1,6 @@
 # Yousign MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yousign)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/yousign-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/yousign-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yousign)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Yousign** MCP server u
 > You have consumed 45 out of 100 signatures in your current billing cycle. You have 55 signature credits remaining. Would you like me to list the most recent signed documents?
 
 
+## ❓ FAQ
+
+**Q: Can I check the status of a signature request via chat?**
+Yes. The `get_signature_request` tool allows your AI agent to retrieve the real-time status of any request ID, showing you whether it is in 'draft', 'ongoing', 'done', or has been 'cancelled'.
+
+**Q: How do I add signers to a draft request using the agent?**
+You can use the `add_signer` tool. Provide the unique request ID along with the signer's email, first name, and last name. You can add multiple signers to a single request before activating it.
+
+**Q: Can I see how many signature credits I have left in my plan?**
+Absolutely. Use the `get_api_consumption` tool to retrieve your current usage statistics and remaining signature credits, helping you manage your Yousign subscription budget.
+
+
 ## Installation & Usage
 
-To install and use the **Yousign** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/yousign](https://vinkius.com/mcp/yousign)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Yousign** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `yousign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Yousign** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "yousign": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

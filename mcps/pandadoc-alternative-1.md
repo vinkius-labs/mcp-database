@@ -1,7 +1,6 @@
 # PandaDoc MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pandadoc-alternative-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pandadoc-alternative-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pandadoc-alternative-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pandadoc-alternative-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **PandaDoc** MCP server 
 > I've processed the download request for the completed document. You can access the final signed PDF here: [Link].
 
 
+## ❓ FAQ
+
+**Q: Can I create a document from a specific template using its ID?**
+Yes. Use the `create_document` tool and provide the `template_uuid`. You can also pass `recipients` and `tokens` to pre-fill the document automatically.
+
+**Q: How do I check if a client has signed the document?**
+You can use the `get_document_status` tool with the Document ID. It will return the current status, such as 'document.completed' if everyone has signed.
+
+**Q: Can I organize my documents into folders via the AI?**
+Yes, the `create_document_folder` tool allows you to create new folders and even nest them using a `parent_uuid` to keep your workspace organized.
+
+
 ## Installation & Usage
 
-To install and use the **PandaDoc** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pandadoc-alternative-1](https://vinkius.com/mcp/pandadoc-alternative-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PandaDoc** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pandadoc-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PandaDoc** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pandadoc-alternative-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

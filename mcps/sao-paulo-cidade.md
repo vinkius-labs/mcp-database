@@ -1,7 +1,6 @@
 # São Paulo (Cidade) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sao-paulo-cidade)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sao-paulo-cidade-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sao-paulo-cidade-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sao-paulo-cidade)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **São Paulo (Cidade)** 
 > The dataset 'folha-de-pagamento' contains payroll information for city employees. It has 12 resources available, mostly in CSV and PDF formats. Would you like the ID of the latest CSV resource to query it?
 
 
+## ❓ FAQ
+
+**Q: How can I search for datasets related to a specific topic like 'Health'?**
+You can use the `search_packages` tool with the query 'saúde'. The agent will return a list of matching datasets available in the portal.
+
+**Q: Can I perform SQL queries on the data directly?**
+Yes! If a resource is stored in the DataStore, you can use the `datastore_search_sql` tool to run standard SQL queries against the resource ID.
+
+**Q: How do I find which city departments have published data?**
+Use the `list_organizations` tool to see all registered entities. Then, use `get_organization` with a specific ID to see all datasets owned by that department.
+
+
 ## Installation & Usage
 
-To install and use the **São Paulo (Cidade)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sao-paulo-cidade](https://vinkius.com/mcp/sao-paulo-cidade)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **São Paulo (Cidade)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sao-paulo-cidade` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **São Paulo (Cidade)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sao-paulo-cidade": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

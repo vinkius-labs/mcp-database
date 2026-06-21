@@ -1,7 +1,6 @@
 # ArcXP MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arcxp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arcxp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arcxp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arcxp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **ArcXP** MCP server usi
 > Here are the top active publisher profiles returned by the Author service. 1. Michael Doe (Global Editor), 2. Angela Ruiz (Sports Reporter)... Would you like to dig further into any of these contributor's published work?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically rewrite an older story using Arc Native Schema and safely publish the update?**
+Absolutely. Ask your agent to fetch a specific story by its ID. It understands the complex JSON structure of ANS, allows you to instruct it on what changes to make (e.g., 'Update the headline and add this new quote to paragraph 3'), and can dispatch an update command that preserves the content tree without breaking the CMS.
+
+**Q: Is it possible to find specific high-res photos inside the ArcXP Media Library using natural language?**
+Yes! Use the photo assets search action to query tags or captions using descriptive words. The AI fetches the asset ID, caption, credit strings, and directly accessible image URLs, letting you browse your editorial imagery seamlessly.
+
+**Q: Can I query what articles a specific editor has authored?**
+Yes! You can retrieve the Editor ID from the Author service and run an Elasticsearch query targeting their author object in the search tool. This quickly compiles all the CMS output for that specific reporter.
+
+
 ## Installation & Usage
 
-To install and use the **ArcXP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/arcxp](https://vinkius.com/mcp/arcxp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ArcXP** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `arcxp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ArcXP** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "arcxp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

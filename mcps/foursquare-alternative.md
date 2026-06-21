@@ -1,7 +1,6 @@
 # Foursquare MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/foursquare-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/foursquare-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/foursquare-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/foursquare-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Foursquare** MCP serve
 > Finding nearby venues... I've identified several places within 1km, including a 'Fitness Center' and a 'Library'. Would you like the full categories and details?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Foursquare API Key?**
+Log in to the [**Foursquare Developer Console**](https://foursquare.com/developers/apps), create a Project, and you will find your API Key there. Copy and paste it into the field below.
+
+**Q: Can the agent search for places near me?**
+Yes. Use the `search_places` tool providing the `ll` (latitude, longitude) or `near` (city name) parameters. Your agent will return matching venues instantly.
+
+**Q: Is it possible to retrieve venue photos via the agent?**
+Yes. The `get_place_photos` tool allows your agent to fetch images for any venue by providing its Foursquare Place ID, helping you visualize the location.
+
+
 ## Installation & Usage
 
-To install and use the **Foursquare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/foursquare-alternative](https://vinkius.com/mcp/foursquare-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Foursquare** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `foursquare-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Foursquare** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "foursquare-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ngrok MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ngrok)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ngrok-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ngrok-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ngrok)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **ngrok** MCP server usi
 > I found 1 IP policy: 'Office-Only-Access' (ID: ipp_789) which restricts access to the corporate CIDR range.
 
 
+## ❓ FAQ
+
+**Q: Can I see all my active public URLs currently served by ngrok?**
+Yes! Use the `list_endpoints` tool to retrieve all public URLs, whether they are ephemeral, edge-based, or cloud endpoints.
+
+**Q: How do I check which custom domains I have reserved?**
+Simply ask the agent to run the `list_reserved_domains` action. It will return a list of all custom domains configured in your ngrok account.
+
+**Q: Is it possible to audit my IP security policies?**
+Yes. You can use `list_ip_policies` and `list_ip_restrictions` to review the access control rules applied to your infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **ngrok** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ngrok](https://vinkius.com/mcp/ngrok)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ngrok** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ngrok` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ngrok** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ngrok": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

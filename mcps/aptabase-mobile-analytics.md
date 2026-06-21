@@ -1,7 +1,6 @@
 # Aptabase (Mobile Analytics) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aptabase-mobile-analytics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aptabase-mobile-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aptabase-mobile-analytics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aptabase-mobile-analytics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Aptabase (Mobile Analy
 > I've recorded the 'sync_started' event for Windows 11 (app version 2.4.0) in your Aptabase analytics dashboard.
 
 
+## ❓ FAQ
+
+**Q: Can I send custom metadata with my events?**
+Yes! Use the `props` field in the `send_event` tool to provide a JSON object with key-value pairs representing your custom properties.
+
+**Q: Is it possible to track the specific OS version?**
+Absolutely. The `send_event` tool requires `osName` and `osVersion` parameters to ensure your telemetry is correctly segmented in the Aptabase dashboard.
+
+**Q: Can I use this for self-hosted Aptabase instances?**
+Yes, you can optionally provide a `baseUrl` in the configuration to point the MCP server to your own self-hosted Aptabase instance.
+
+
 ## Installation & Usage
 
-To install and use the **Aptabase (Mobile Analytics)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aptabase-mobile-analytics](https://vinkius.com/mcp/aptabase-mobile-analytics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aptabase (Mobile Analytics)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aptabase-mobile-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aptabase (Mobile Analytics)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aptabase-mobile-analytics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

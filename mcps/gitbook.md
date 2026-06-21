@@ -1,7 +1,6 @@
 # GitBook MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitbook)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gitbook-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gitbook-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitbook)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **GitBook** MCP server u
 > Retrieving hierarchy... The 'User Guide' space has a main 'Getting Started' section, followed by 'Dashboard Basics' and 'Advanced Settings'. Each section has multiple nested pages. Would you like the ID for any specific page?
 
 
+## ❓ FAQ
+
+**Q: Can my agent search for technical content across all my GitBook spaces?**
+Yes. Use the 'search_content' tool. Provide the 'space_id' and your query. The agent will execute cross-page search operations within that GitBook namespace, returning matching snippets and relevant content natively.
+
+**Q: How do I retrieve the full content of a specific documentation page via chat?**
+Use the 'get_page' tool. You will need the 'space_id' and the 'page_id'. Your agent will read the full document content from GitBook, allowing you to summarize, analyze, or verify the information flawlessly.
+
+**Q: Can I see how my product documentations are grouped through the agent?**
+Absolutely. Use the 'list_collections' tool with your Organization ID. Your agent will retrieve the collections that group multiple spaces, helping you understand your documentation hierarchy natively.
+
+
 ## Installation & Usage
 
-To install and use the **GitBook** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gitbook](https://vinkius.com/mcp/gitbook)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GitBook** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gitbook` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GitBook** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gitbook": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

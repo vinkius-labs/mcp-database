@@ -1,7 +1,6 @@
 # EODHD Financial MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eodhd-financial)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eodhd-financial-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eodhd-financial-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eodhd-financial)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -96,12 +95,55 @@ Here are some examples of how you can interact with the **EODHD Financial** MCP 
 > AAPL.US: $198.45 (+0.48%), MSFT.US: $432.10 (+1.2%), GOOGL.US: $175.80 (-0.3%). All prices are real-time with volume data.
 
 
+## ❓ FAQ
+
+**Q: How do I get an EODHD API key?**
+Sign up at [**eodhd.com**](https://eodhd.com/) and get your free API key from the dashboard. Free tier includes 20 calls/day.
+
+**Q: What exchanges are supported?**
+EODHD covers 60+ global exchanges including US (NYSE/NASDAQ), LSE (London), XETRA (Germany), TO (Tokyo), PA (Paris), TSX (Canada) and many more.
+
+**Q: What is the symbol format?**
+Symbols use the format TICKER.EXCHANGE (e.g. "AAPL.US" for Apple on US exchange, "BMW.XETRA" for BMW on German exchange). Use search_tickers to find the correct format.
+
+**Q: What fundamental data is available?**
+Fundamentals include: General info, Highlights, Valuation (P/E, P/B, P/S), Financials (balance sheet, income statement, cash flow), Earnings, Dividends, Shares Stats and Technical Analysis.
+
+
 ## Installation & Usage
 
-To install and use the **EODHD Financial** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eodhd-financial](https://vinkius.com/mcp/eodhd-financial)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EODHD Financial** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eodhd-financial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EODHD Financial** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eodhd-financial": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

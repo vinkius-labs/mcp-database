@@ -1,7 +1,6 @@
 # Xray (Test Management) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xray-test-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/xray-test-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/xray-test-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xray-test-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Xray (Test Management)
 > Plan 'v2.4 Release' (Key: PLAN-12) is 75% complete. 45/60 tests have been executed. Current status: 40 Passed, 5 Failed, 15 Pending. The regression test set is still pending execution.
 
 
+## ❓ FAQ
+
+**Q: Can I check the specific steps of a test case through the agent?**
+Yes. The `get_test_details` tool allows your AI agent to retrieve the full technical metadata for any test key, including the defined test steps, preconditions, and any linked requirement issues.
+
+**Q: How do I find out which tests failed in a recent execution?**
+You can use the `get_execution_details` tool. Provide the unique execution key, and your agent will return a granular breakdown of the results, highlighting tests that failed or were aborted.
+
+**Q: Is it possible to see the progress of a test plan via chat?**
+Absolutely. Using the `get_test_plan_details` tool, your agent can retrieve the scope and real-time progress metrics for any plan ID, helping you monitor overall QA coverage for a release.
+
+
 ## Installation & Usage
 
-To install and use the **Xray (Test Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/xray-test-management](https://vinkius.com/mcp/xray-test-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Xray (Test Management)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `xray-test-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Xray (Test Management)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "xray-test-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

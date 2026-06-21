@@ -1,7 +1,6 @@
 # Browserhub MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browserhub)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browserhub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browserhub-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browserhub)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Browserhub** MCP serve
 > You currently have 1,500 credits remaining in your Browserhub account. This is enough for approximately 150-200 standard scrape requests.
 
 
+## ❓ FAQ
+
+**Q: Can I scrape a URL directly without creating a scraper first?**
+Yes! Use the `direct_scrape` tool and provide the URL. It will use Browserhub's real browsers to render the page and extract data based on your parameters instantly.
+
+**Q: How do I monitor the progress of a scraping job?**
+Simply ask the agent to `get_scraping_job` and provide the Job ID. It will return the current status (e.g., pending, running, finished) and the result data once ready.
+
+**Q: Can I specify a proxy location for my scraping request?**
+Yes. When using `direct_scrape`, you can provide a `proxy_country` code. Use the `list_proxy_locations` tool to see the full list of supported countries in your account.
+
+
 ## Installation & Usage
 
-To install and use the **Browserhub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/browserhub](https://vinkius.com/mcp/browserhub)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Browserhub** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `browserhub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Browserhub** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "browserhub": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Cora Bank MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cora-bank)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cora-bank-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cora-bank-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cora-bank)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,55 @@ Here are some examples of how you can interact with the **Cora Bank** MCP server
 > Signal passed downwards to cancelation logic. The identified Cora invoice array has been purged and set to 'DELETED_OR_CANCELED'. Barcodes will bounce if the user attempts scanning them.
 
 
+## ❓ FAQ
+
+**Q: How do I encode my Cora `.pem` certificates properly?**
+Head to Cora Bank's portal and setup an API App yielding you exactly the Client Credentials and a certificate pairing (Public CERT `.pem`/`.crt` and Private `.key`). Go to a UNIX shell / MacOS Terminal: `base64 -i my_key.key` to get the key text, and `base64 -i my_cert.pem` to get the cert text. The unformatted, unbroken blocks are the credentials you paste directly to us.
+
+**Q: Does Cora produce a separate Pix link from its Boleto command?**
+In Cora's domain, executing `cora_create_invoice` natively packages everything. A single entity 'Invoice' acts as both your printable boleto format AND a highly specific Dynamic QR Pix, ensuring multiple avenues for your clients.
+
+**Q: Will an outgoing Pix from my chat be instant?**
+Absolutely. Emitting an explicit request down the `cora_send_pix` route connects instantaneously down Cora's active routing engine (Sistema de Pagamentos Instantâneos - SPI/Bacen) draining specific liquidity.
+
+**Q: Can I cancel unpaid user invoices rapidly from MCP?**
+Of course! Call upon the unneeded identifier within your chat interface, prompting the logic `cora_cancel_invoice`, pulling the document from global banking registration.
+
+
 ## Installation & Usage
 
-To install and use the **Cora Bank** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cora-bank](https://vinkius.com/mcp/cora-bank)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cora Bank** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cora-bank` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cora Bank** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cora-bank": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

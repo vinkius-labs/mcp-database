@@ -1,7 +1,6 @@
 # LiveKit Real-Time Rooms MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tt-voice)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tt-voice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tt-voice-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tt-voice)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **LiveKit Real-Time Room
 > Participant 'user-abc' has been removed from room 'support-call-42'. Their access token has been revoked and they will need a new token to rejoin.
 
 
+## ❓ FAQ
+
+**Q: Can I list all active rooms on my LiveKit server?**
+Yes! Use the `list_rooms` tool. It calls the LiveKit RoomService ListRooms endpoint and returns all currently open rooms with their participant count, metadata, and creation time.
+
+**Q: How do I mute a participant's microphone?**
+First use `list_participants` to get the track SID for the participant's audio track. Then call `mute_track` with the room name, participant identity, track SID, and muted set to 'true'.
+
+**Q: Does this work with self-hosted LiveKit servers?**
+Yes! Just provide your self-hosted server's URL (e.g., https://livekit.yourserver.com) as the Host URL, along with the API Key and Secret from your server's config.yaml.
+
+
 ## Installation & Usage
 
-To install and use the **LiveKit Real-Time Rooms** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tt-voice](https://vinkius.com/mcp/tt-voice)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LiveKit Real-Time Rooms** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tt-voice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LiveKit Real-Time Rooms** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tt-voice": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

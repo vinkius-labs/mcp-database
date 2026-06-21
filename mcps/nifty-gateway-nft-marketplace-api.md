@@ -1,7 +1,6 @@
 # Nifty Gateway (NFT Marketplace API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nifty-gateway-nft-marketplace-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nifty-gateway-nft-marketplace-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nifty-gateway-nft-marketplace-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nifty-gateway-nft-marketplace-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Nifty Gateway (NFT Mar
 > I've listed your owned Nifties. You currently have 3 assets in your wallet, including 'Golden Ticket #1' and 'Abstract Flow'. Which one should we inspect?
 
 
+## ❓ FAQ
+
+**Q: Can I see the specific details of an NFT if I have its ID?**
+Yes! Use the `get_nifty` tool with the unique Nifty ID. Your agent will return detailed metadata, artist information, and current attributes associated with that specific asset.
+
+**Q: How do I check which NFTs I currently own on Nifty Gateway?**
+Simply ask the agent to run the `list_user_nifties` action. It will retrieve a complete list of all digital assets currently held in your authenticated Nifty Gateway account.
+
+**Q: Can I browse entire collections or drops instead of individual items?**
+Yes, you can use `list_collections` to see all available collections on the platform, or `get_collection` with a specific ID to see the contents and details of a particular drop.
+
+
 ## Installation & Usage
 
-To install and use the **Nifty Gateway (NFT Marketplace API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nifty-gateway-nft-marketplace-api](https://vinkius.com/mcp/nifty-gateway-nft-marketplace-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nifty Gateway (NFT Marketplace API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nifty-gateway-nft-marketplace-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nifty Gateway (NFT Marketplace API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nifty-gateway-nft-marketplace-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

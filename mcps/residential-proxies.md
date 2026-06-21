@@ -1,7 +1,6 @@
 # Residential Proxies MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/residential-proxies)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/residential-proxies-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/residential-proxies-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/residential-proxies)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Residential Proxies** 
 > Operational monitoring complete! Your API connection to RapidAPI is active and healthy. Your account has processed 1,000 high-fidelity proxy requests this month. Shall I retrieve the detailed usage breakdown?
 
 
+## ❓ FAQ
+
+**Q: How do I find my RapidAPI Key?**
+Log in to [**RapidAPI**](https://rapidapi.com/), navigate to the AppVidLab Residential Proxies API page, and copy your unique API Key from the endpoints section.
+
+**Q: Can I target specific countries via AI?**
+Yes! The `list_working_proxies` tool supports a `country_code` parameter to retrieve high-fidelity proxies from specific locations.
+
+**Q: Are the proxies rotating?**
+Yes, the API provides high-fidelity residential IP strings that rotate to ensure anonymity and maintain technical scraping performance.
+
+
 ## Installation & Usage
 
-To install and use the **Residential Proxies** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/residential-proxies](https://vinkius.com/mcp/residential-proxies)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Residential Proxies** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `residential-proxies` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Residential Proxies** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "residential-proxies": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

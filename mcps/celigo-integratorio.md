@@ -1,7 +1,6 @@
 # Celigo integrator.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/celigo-integratorio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/celigo-integratorio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/celigo-integratorio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/celigo-integratorio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Celigo integrator.io**
 > Scanning for errors... I found 2 recent errors in the 'Salesforce to Zendesk' integration related to mapping. Would you like the full error details?
 
 
+## ❓ FAQ
+
+**Q: Can I manually start an integration flow?**
+Yes! Use the `run_integration_flow` tool with the flow's unique ID. The agent will trigger the execution in Celigo immediately.
+
+**Q: How do I see if any integrations have errors?**
+Use the `list_integration_errors` tool. Your agent will fetch the most recent synchronization errors, helping you identify and troubleshoot issues.
+
+**Q: Where do I generate my Celigo API Token?**
+Log in to integrator.io, go to 'Resources' in the top menu, then select 'API Tokens'. You can create a new token there (requires Admin permissions).
+
+
 ## Installation & Usage
 
-To install and use the **Celigo integrator.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/celigo-integratorio](https://vinkius.com/mcp/celigo-integratorio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Celigo integrator.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `celigo-integratorio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Celigo integrator.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "celigo-integratorio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

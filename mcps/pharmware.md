@@ -1,7 +1,6 @@
 # PharmWare MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pharmware)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pharmware-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pharmware-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pharmware)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **PharmWare** MCP server
 > Querying integration health dashboard... All external platform connections are operational. Metrc seed-to-sale sync: last successful transmission 2025-04-09 14:32 UTC (147 CoAs published, 0 failures). BioTrack inventory linkage: active, last reconciliation 2025-04-09 12:00 UTC. State regulatory API (Leaf Data Systems): compliant, all mandatory submissions current through Q1 2025. WeedMaps CoA consumer portal: 12 new certificates pushed in last 24 hours, all QR codes verified active. No sync errors detected in past 7 days. Would you like me to generate an integration performance summary?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically check if a cannabis sample has passed all required tests and is ready for Certificate of Analysis issuance?**
+Yes! Use the `list_results` tool to fetch all completed analytical findings for a specific sample. Your AI agent will respond with comprehensive pass/fail determinations across potency, terpenes, pesticides, heavy metals, and contaminant panels. Once all required tests show passing results, use `list_certificates` to verify CoA generation status. Always confirm regulatory limit compliance before releasing products to distribution or retail channels.
+
+**Q: How do I quickly identify which laboratory instruments are due for calibration or maintenance?**
+Simply ask the agent to run the `list_instruments` action. It will compile all analytical equipment with calibration status, last service date, next scheduled maintenance, and qualification records. The AI will highlight any HPLC, GC-MS, ICP-MS, or other systems approaching calibration expiry or overdue for preventive maintenance. This ensures your laboratory maintains ISO/IEC 17025 compliance and analytical data integrity.
+
+**Q: Does PharmWare integration allow modifying test results or deleting sample records?**
+No. The current toolset focuses strictly on read-only querying and analytical operations — listing samples, reviewing results, checking certificates, and monitoring workflows. State alteration operations (modifying test data, deleting samples, or revoking certificates) are not currently exposed, assuring your laboratory records remain secure against destructive queries and maintaining complete audit trail integrity for regulatory inspections.
+
+
 ## Installation & Usage
 
-To install and use the **PharmWare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pharmware](https://vinkius.com/mcp/pharmware)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PharmWare** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pharmware` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PharmWare** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pharmware": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

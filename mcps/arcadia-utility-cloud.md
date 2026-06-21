@@ -1,7 +1,6 @@
 # Arcadia Utility Cloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arcadia-utility-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arcadia-utility-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arcadia-utility-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arcadia-utility-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Arcadia Utility Cloud*
 > The latest statement for account 'acc_9988' was issued on Jan 15, 2024, with total charges of $312.50.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Arcadia Utility Cloud credentials?**
+You can generate API Client credentials in the [Arcadia Dashboard](https://dashboard.arcadia.com/). These credentials provide access to the Utility Cloud (formerly Urjanet) datasets.
+
+**Q: Is consumption data available for all meters?**
+Yes, basic consumption data is available via the `get_meter_data` tool for any meter successfully linked and scraped by the Arcadia platform.
+
+**Q: Does this replace the Arcadia Plug server?**
+This server specifically targets Utility Cloud (historical and aggregate bill data), while Arcadia Plug is designed for real-time account linking and higher-resolution data. They can be used together.
+
+
 ## Installation & Usage
 
-To install and use the **Arcadia Utility Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/arcadia-utility-cloud](https://vinkius.com/mcp/arcadia-utility-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Arcadia Utility Cloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `arcadia-utility-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Arcadia Utility Cloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "arcadia-utility-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

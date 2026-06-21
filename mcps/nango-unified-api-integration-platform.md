@@ -1,7 +1,6 @@
 # Nango (Unified API & Integration Platform) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nango-unified-api-integration-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nango-unified-api-integration-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nango-unified-api-integration-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nango-unified-api-integration-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Nango (Unified API & I
 > Executing record extraction… I've retrieved 50 contact records from Nango's unified storage for connection 'conn-456'. Highlights include 'Alex Smith' (id: 987) and 'Sarah Johnson' (id: 654). Would you like to see the full JSON mapping for these records?
 
 
+## ❓ FAQ
+
+**Q: Can I see which customers have an expired OAuth connection through my agent?**
+Yes. Use the `list_connections` tool to retrieve all authenticated linked accounts. Your agent will report the current status of each connection, helping you identify which users need to re-authenticate their external platforms.
+
+**Q: How do I check if a data synchronization failed recently?**
+The `list_syncs` tool retrieves the synchronization history for a specific connection. Your agent will expose the log outputs and status indicators, allowing you to debug data processing issues directly from your conversation.
+
+**Q: Can my agent retrieve synchronized data records from external APIs?**
+Absolutely. Use the `list_records` tool with a Connection ID and a model name (e.g., 'contacts'). Your agent will query Nango's storage to fetch the raw synchronized objects, bypassing external API limits natively.
+
+
 ## Installation & Usage
 
-To install and use the **Nango (Unified API & Integration Platform)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nango-unified-api-integration-platform](https://vinkius.com/mcp/nango-unified-api-integration-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nango (Unified API & Integration Platform)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nango-unified-api-integration-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nango (Unified API & Integration Platform)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nango-unified-api-integration-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

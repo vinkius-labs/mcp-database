@@ -1,7 +1,6 @@
 # Rollbar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rollbar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rollbar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rollbar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rollbar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Rollbar** MCP server u
 > Action logged successfully! I triggered `report_deploy` and recorded the newest application launch for the 'production' infrastructure in Rollbar tagged dynamically with the tracking code revision '8a3bd41'. All subsequent exceptions identified via Rollbar modules will now be bound closely correlated automatically to this specific commit update marker.
 
 
+## ❓ FAQ
+
+**Q: Can the assistant manipulate or modify my raw stack trace data?**
+No, raw occurrence logs and stack traces are absolutely immutable in Rollbar to preserve forensic tracking accuracy. The AI can pull the detailed traces efficiently for you using tools like `get_occurrence`, but it cannot rewrite history or change the raw context data of any logged exception. It can only adjust the top-level ticket 'status' (resolving or muting) via the `update_item` operation.
+
+**Q: Is possible to correlate an unexpected increase of exceptions immediately with a software deploy?**
+Yes! The conversational integration empowers exactly this workflow natively. You can instruct the assistant to retrieve the newest deployment records (`list_deploys`), and then read the high-frequency active exceptions concurrently listed on the top items (`top_active_items`). The AI can parse these timelines inside the chat log organically and identify patterns that align with the specific revision uploaded to production.
+
+**Q: Can the AI filter errors by environment (e.g., production vs. staging)?**
+Yes. The `list_items` tool accepts an `environment` parameter, so you can ask the AI to show only production errors, staging errors, or any other custom environment you have configured in Rollbar.
+
+
 ## Installation & Usage
 
-To install and use the **Rollbar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rollbar](https://vinkius.com/mcp/rollbar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rollbar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rollbar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rollbar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rollbar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Shopline MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shopline)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shopline-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shopline-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shopline)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -55,12 +54,52 @@ Here are some examples of how you can interact with the **Shopline** MCP server 
 > Running the precise interrogation matrix using `get_product_details` for product '20410'... Found 3 associated variant IDs. SKU 'SL-VAB-M' (Medium sized) reports 0 quantity explicitly across the aggregated node. Both Small and Large variants possess strong buffer reserves remaining actively published.
 
 
+## ❓ FAQ
+
+**Q: Can the AI forcefully transition or edit an order status directly?**
+Currently, the integration specifically implements reading mechanisms (`list_orders`, `get_order_details`) as a query matrix tailored explicitly around monitoring and auditing. It does not actively expose a write mutation structurally to alter or destroy existing operational orders.
+
+**Q: Why do I need a Custom Admin API integration token and not a public one?**
+Because the `Admin API` is the unadulterated backend context designed primarily for secure backend logic rather than client storefront interfaces. This token permits your integration to run system-level monitoring, extraction over raw orders, and sensitive customer profiles natively.
+
+**Q: Is this tool accessing the Shopline GraphQL portal or REST architecture limitlessly?**
+By structural intent, we implement targeted endpoints using Shopline's scalable endpoints to parse specifically filtered responses like single pagination segments to avoid massive latency. You interact efficiently bypassing raw structural limits naturally via these curated `list_x` and `get_x` procedures.
+
+
 ## Installation & Usage
 
-To install and use the **Shopline** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shopline](https://vinkius.com/mcp/shopline)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Shopline** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shopline` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Shopline** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shopline": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

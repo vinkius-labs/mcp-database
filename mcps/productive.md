@@ -1,7 +1,6 @@
 # Productive MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/productive)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/productive-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/productive-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/productive)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,55 @@ Here are some examples of how you can interact with the **Productive** MCP serve
 > I checked today's time entries. The team logged a total of 26 billable hours. 14 hours went to the 'Mobile App MVP' tasks, and 12 hours were split among maintenance tickets. Overall, zero unassigned internal time was recorded.
 
 
+## ❓ FAQ
+
+**Q: How do I start managing my agency via AI?**
+Subscribe, enter your API credentials (your Personal Access Token from **Settings → API integrations**, and your Organization ID found in your URL), and you're ready. No code, no SDK, no webhooks — just connect and start asking your agent for budget burn rates.
+
+**Q: Can my AI agent flag budgets that are running low?**
+Yes. Ask your agent to query all active budgets and run an analysis on hours tracked versus hours allocated. The agent reads the budget payloads securely and identifies any project that sits beyond 80% profitability burn rate before you even open a spreadsheet.
+
+**Q: What happens when I need to verify timesheets for billing?**
+Just tell your AI agent to fetch recent time entries. It compiles exactly who logged what task across which services, helping you spot unassigned hours or missing descriptions instantly, saving the operations team hours of manual monthly audits.
+
+**Q: Is this capable of helping me track sales metrics?**
+Absolutely. Ask your agent to list active deals and client companies. In a single prompt, you can see your entire sales pipeline, match deals to recent activities, and prepare for management syncs — perfectly suited for agency owners tracking rapid growth.
+
+
 ## Installation & Usage
 
-To install and use the **Productive** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/productive](https://vinkius.com/mcp/productive)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Productive** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `productive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Productive** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "productive": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

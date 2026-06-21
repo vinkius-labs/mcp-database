@@ -1,7 +1,6 @@
 # CBRE Econometric Advisors (EA) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cbre-econometric-advisors-ea)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cbre-econometric-advisors-ea-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cbre-econometric-advisors-ea-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cbre-econometric-advisors-ea)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **CBRE Econometric Advis
 > Retrieving macro data for Paris... I found population growth of 0.8%, an employment increase of 1.2%, and a median household income of €45,000.
 
 
+## ❓ FAQ
+
+**Q: Which asset sectors are covered by this integration?**
+The integration covers all major sectors including Office, Industrial, Retail, Multifamily, Hotel, and Medical Office. Use the `list_asset_sectors` tool to see all available options.
+
+**Q: How do I see vacancy rate forecasts for a specific market?**
+Use the `get_market_forecasts` tool with your market ID and asset sector. The agent will retrieve the expert forecast data from CBRE EA.
+
+**Q: Where do I get my CBRE EA API credentials?**
+API access is restricted to licensed clients. You must contact your CBRE Account Manager or the Global Helpdesk to enable API access and receive your credentials.
+
+
 ## Installation & Usage
 
-To install and use the **CBRE Econometric Advisors (EA)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cbre-econometric-advisors-ea](https://vinkius.com/mcp/cbre-econometric-advisors-ea)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CBRE Econometric Advisors (EA)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cbre-econometric-advisors-ea` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CBRE Econometric Advisors (EA)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cbre-econometric-advisors-ea": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

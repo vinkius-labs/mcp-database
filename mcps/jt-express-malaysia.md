@@ -1,7 +1,6 @@
 # J&T Express Malaysia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jt-express-malaysia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jt-express-malaysia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jt-express-malaysia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jt-express-malaysia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **J&T Express Malaysia**
 > Searching J&T network coverage... Yes! Postal code 50450 (Kuala Lumpur) is fully covered by J&T Express Malaysia. Both standard and express delivery services are available for this area.
 
 
+## ❓ FAQ
+
+**Q: Can I automatically track a J&T parcel just by providing the tracking number?**
+Yes! Use the `track_parcel` tool with the tracking number (e.g., 'JT123456789'). Your agent will retrieve the current status, location, and the full history of logistics events from the J&T system.
+
+**Q: How do I calculate shipping prices between two Malaysian cities?**
+Use the `calculate_shipping` tool with the origin and destination city names or postal codes. The agent will return the estimated price based on J&T's standard rates.
+
+**Q: Can I retrieve the waybill image for an existing order?**
+Yes! Use the `get_waybill` tool with the Order ID. Your agent will retrieve the metadata and the URL to download or print the official waybill label.
+
+
 ## Installation & Usage
 
-To install and use the **J&T Express Malaysia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jt-express-malaysia](https://vinkius.com/mcp/jt-express-malaysia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **J&T Express Malaysia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jt-express-malaysia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **J&T Express Malaysia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jt-express-malaysia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

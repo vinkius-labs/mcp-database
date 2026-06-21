@@ -1,7 +1,6 @@
 # Prometheus MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/prometheus)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/prometheus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/prometheus-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/prometheus)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Prometheus** MCP serve
 > Using `get_metadata`, I found that 'http_requests_total' is a Counter metric. It tracks the total number of HTTP requests received, partitioned by status code and method.
 
 
+## ❓ FAQ
+
+**Q: Can I run a PromQL query to get the current value of a metric?**
+Yes. Use the `query` tool to evaluate any PromQL expression at a single point in time. This is perfect for checking current CPU usage, memory levels, or error rates.
+
+**Q: How do I see how a metric has changed over the last hour?**
+Use the `query_range` tool. You can specify the `start` and `end` timestamps along with a `step` duration to retrieve historical data points for graphing or trend analysis.
+
+**Q: Can I perform administrative tasks like creating backups?**
+Yes, if your Prometheus server has the Admin API enabled (`--web.enable-admin-api`), you can use the `create_snapshot` tool to create a snapshot of all current data on disk.
+
+
 ## Installation & Usage
 
-To install and use the **Prometheus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/prometheus](https://vinkius.com/mcp/prometheus)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Prometheus** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `prometheus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Prometheus** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "prometheus": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

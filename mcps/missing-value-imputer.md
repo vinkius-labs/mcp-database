@@ -1,7 +1,6 @@
 # Missing Value Imputer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/missing-value-imputer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/missing-value-imputer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/missing-value-imputer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/missing-value-imputer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -54,12 +53,52 @@ Here are some examples of how you can interact with the **Missing Value Imputer*
 > I've replaced 243 missing Discount entries with 0. This preserves the business logic that no discount was applied to these transactions.
 
 
+## ❓ FAQ
+
+**Q: Does it modify the original data file on disk?**
+No. The engine processes the JSON payload entirely in memory and returns the cleaned array back to the AI. Your original files are never touched.
+
+**Q: What happens if the entire target column is empty?**
+If you try to compute mean or median on a completely empty column, the engine throws a deterministic error explaining the issue. You can fall back to the 'zero' strategy instead.
+
+**Q: How does it decide which cells are 'missing'?**
+The engine treats null, undefined, empty strings, and NaN as missing values. Any cell that cannot be parsed as a valid number is flagged for imputation.
+
+
 ## Installation & Usage
 
-To install and use the **Missing Value Imputer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/missing-value-imputer](https://vinkius.com/mcp/missing-value-imputer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Missing Value Imputer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `missing-value-imputer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Missing Value Imputer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "missing-value-imputer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

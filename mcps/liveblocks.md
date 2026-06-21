@@ -1,7 +1,6 @@
 # Liveblocks MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/liveblocks)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/liveblocks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/liveblocks-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/liveblocks)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Liveblocks** MCP serve
 > Checking active users... I found 3 users currently connected to 'main-editor': 'alice_dev', 'bob_designer', and 'charlie_pm'.
 
 
+## ❓ FAQ
+
+**Q: How can I filter rooms by specific metadata using the AI?**
+You can ask the agent to use the `list_rooms` tool and provide a JSON string in the metadata parameter. For example, ask to 'List rooms where the project metadata is alpha'.
+
+**Q: Can I generate a temporary access token for a user to join a room?**
+Yes. Use the `authorize_user` tool. Provide the Room ID and User ID, and the agent will return a token that grants access to that specific room.
+
+**Q: Is it possible to permanently delete a room and its data?**
+Yes, the `delete_room` tool allows you to permanently remove a room and all associated storage, comments, and metadata. Use this with caution as it is irreversible.
+
+
 ## Installation & Usage
 
-To install and use the **Liveblocks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/liveblocks](https://vinkius.com/mcp/liveblocks)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Liveblocks** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `liveblocks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Liveblocks** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "liveblocks": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

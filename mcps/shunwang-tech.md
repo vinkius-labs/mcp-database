@@ -1,7 +1,6 @@
 # Shunwang Tech MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shunwang-tech)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shunwang-tech-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shunwang-tech-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shunwang-tech)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Shunwang Tech** MCP se
 > Across your network, GPU utilization is currently at 68%. You have 120 RTX 4090 nodes available, with 45 currently dedicated to AI inference tasks. Would you like a breakdown by cluster?
 
 
+## ❓ FAQ
+
+**Q: How do I check the real-time health of a specific computing node?**
+Use the `get_node` tool with the corresponding `node_id`. It will return real-time metrics including CPU, GPU, and Memory usage, as well as the current online status.
+
+**Q: Can I deploy a new computing task using the agent?**
+Yes. Use the `create_task` tool. You will need to provide the `image_id` and the `cluster_id` where you want to deploy the task. You can also optionaly give the task a name.
+
+**Q: Is it possible to remotely reboot a node through the chat?**
+Yes, using the `send_node_command` tool. You just need the `node_id` and specify 'reboot' as the command. This allows for rapid remote maintenance without manual intervention.
+
+
 ## Installation & Usage
 
-To install and use the **Shunwang Tech** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shunwang-tech](https://vinkius.com/mcp/shunwang-tech)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Shunwang Tech** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shunwang-tech` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Shunwang Tech** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shunwang-tech": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

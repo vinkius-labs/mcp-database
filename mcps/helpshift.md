@@ -1,7 +1,6 @@
 # Helpshift MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helpshift)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/helpshift-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/helpshift-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helpshift)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,55 @@ Here are some examples of how you can interact with the **Helpshift** MCP server
 > Searching FAQs... I found 2 relevant articles: 'How to renew your plan' and 'Troubleshooting renewal errors'. Would you like the full content of 'How to renew your plan' to share with a customer?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Helpshift API Key?**
+Log in to your Helpshift dashboard, go to **Settings > API**, and you will find your **API Key** listed there. This key is used as the username for Basic Authentication.
+
+**Q: What is the 'Domain' in the setup?**
+The domain is the unique identifier for your Helpshift instance (e.g., if you access it at `company.helpshift.com`, your domain is `company`).
+
+**Q: Can I see the history of actions taken on an issue?**
+Yes! Use the `get_issue_audit_logs` tool (v2). It retrieves the action history, showing when status was changed, who was assigned, and which tags were added.
+
+**Q: Is the integration secure for support data?**
+Absolutely. The integration uses industry-standard Basic Authentication over HTTPS. Your credentials are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Helpshift** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/helpshift](https://vinkius.com/mcp/helpshift)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Helpshift** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `helpshift` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Helpshift** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "helpshift": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

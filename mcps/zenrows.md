@@ -1,7 +1,6 @@
 # ZenRows MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zenrows)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zenrows-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zenrows-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zenrows)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **ZenRows** MCP server u
 > Screenshot generated successfully. You can view the fully rendered page here: https://zenrows.com/screenshot/.... Would you like me to extract the text content from this page as well?
 
 
+## ❓ FAQ
+
+**Q: Can ZenRows bypass Cloudflare or other aggressive bot protections?**
+Yes. Using the `scrape_antibot` tool, ZenRows activates specialized technology to bypass Cloudflare, DataDome, and other advanced bot detection systems, ensuring you can access the content you need through chat.
+
+**Q: How do I get clean Markdown from a website for my AI agent?**
+You can use the `scrape_markdown` tool. ZenRows will retrieve the page and automatically convert the content into structured Markdown, removing ads and navigation headers to provide a clean input for LLMs.
+
+**Q: Can I see what a dynamic page looks like before extracting data?**
+Absolutely. Use the `get_screenshot` tool to retrieve a direct link to an image file representing the fully rendered target page, helping you verify that JavaScript content is correctly displayed.
+
+
 ## Installation & Usage
 
-To install and use the **ZenRows** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zenrows](https://vinkius.com/mcp/zenrows)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ZenRows** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zenrows` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ZenRows** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zenrows": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

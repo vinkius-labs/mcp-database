@@ -1,7 +1,6 @@
 # HackerOne MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hackerone)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hackerone-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hackerone-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hackerone)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,55 @@ Here are some examples of how you can interact with the **HackerOne** MCP server
 > State updated! Report 12345 is now marked as 'Triaged'. I've also added an internal note for the security team. What's the next step for this report?
 
 
+## ❓ FAQ
+
+**Q: How do I generate my HackerOne API Token?**
+Log in to HackerOne, navigate to **Settings > API Token**, and click 'Create API Token'. Make sure to copy both the **Identifier** and the **Token Value** immediately.
+
+**Q: Can I award bounties through this integration?**
+Yes! Use the `award_bounty` tool by providing the report ID and the amount. You can also specify an optional bonus amount for the researcher.
+
+**Q: Does the integration support internal comments?**
+Yes, the `add_report_comment` tool has an optional `internal` boolean parameter (defaults to true). This allows you to communicate with your team privately on a specific report.
+
+**Q: Can I filter reports by their handle or ID?**
+You can use `list_reports` to see all reports or `get_report` with a specific ID to retrieve detailed information for a single discovery.
+
+
 ## Installation & Usage
 
-To install and use the **HackerOne** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hackerone](https://vinkius.com/mcp/hackerone)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HackerOne** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hackerone` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HackerOne** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hackerone": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

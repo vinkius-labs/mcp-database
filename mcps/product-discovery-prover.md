@@ -1,7 +1,6 @@
 # Product Discovery Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/product-discovery-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/product-discovery-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/product-discovery-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/product-discovery-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Product Discovery Prov
 > Verdict: NO_PURCHASE_INTENT. Three failures. First — 'lawyers who use Word' is a tool preference, not a behavioral segment. Second — 'it sounds great' is a compliment, not a commitment. Money is data. Where are the credit cards? Third — your MVP has 5 features. That is not an MVP, that is a product. Strip it to one testable hypothesis.
 
 
+## ❓ FAQ
+
+**Q: Why does the tool reject demographic segments?**
+Because demographics are useless for product design. 'Millennials' is a marketing category, not a workflow. We demand behavioral segments because they isolate users actively experiencing the exact pain point you intend to solve.
+
+**Q: What qualifies as valid purchase intent?**
+Money or legally binding ink. Polite compliments and 'I would use this' are false signals that kill startups. We require active commitment: credit cards on file, signed B2B Letters of Intent (LOIs), or cash deposits.
+
+**Q: How should an MVP be scoped?**
+As a single-variable experiment. Drop the settings panels, user profiles, and polished UI. The MVP must isolate and test the core value hypothesis. Use manual back-end workarounds to deliver the outcome without building the platform.
+
+
 ## Installation & Usage
 
-To install and use the **Product Discovery Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/product-discovery-prover](https://vinkius.com/mcp/product-discovery-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Product Discovery Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `product-discovery-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Product Discovery Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "product-discovery-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

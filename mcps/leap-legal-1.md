@@ -1,7 +1,6 @@
 # LEAP Legal MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leap-legal-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/leap-legal-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/leap-legal-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leap-legal-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **LEAP Legal** MCP serve
 > Successfully created the organization card 'Legal Tech Solutions' in your LEAP database. The new card ID is 'CARD-98765'.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Client ID and Secret?**
+Register your application on the [LEAP Developer Portal](https://developer.leap.software/) to obtain your unique Client ID and Secret.
+
+**Q: Can I see all documents for a specific legal case?**
+Yes, the `get_matter_correspondence` tool retrieves all documents, emails, and appointments linked to a target matter ID.
+
+**Q: Does this server support different countries?**
+Absolutely. LEAP is regionalized. Use the `list_legal_matter_types` tool with country codes like AU, UK, US, CA, or NZ to see relevant legal schemas.
+
+
 ## Installation & Usage
 
-To install and use the **LEAP Legal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/leap-legal-1](https://vinkius.com/mcp/leap-legal-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LEAP Legal** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `leap-legal-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LEAP Legal** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "leap-legal-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

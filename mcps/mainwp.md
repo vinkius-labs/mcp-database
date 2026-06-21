@@ -1,7 +1,6 @@
 # MainWP MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mainwp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mainwp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mainwp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mainwp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **MainWP** MCP server us
 > I've initiated the network-wide vulnerability scan. MainWP is now checking for known issues in your plugins and themes. I will notify you once the process is complete.
 
 
+## ❓ FAQ
+
+**Q: Why is the API returning a 404 error?**
+You must enable 'Pretty Permalinks' in your WordPress Dashboard (Settings > Permalinks). The REST API will not function with the 'Plain' setting.
+
+**Q: How do I find my API Token?**
+In your MainWP Dashboard, navigate to Settings > REST API and create a new API Key with 'Write' permissions. Your token is encrypted at rest and injected securely at runtime.
+
+**Q: Can I update plugins across all sites?**
+Yes, the `upgrade_site_resource` tool can target specific resources across the entire network by providing the necessary parameters in the JSON body.
+
+
 ## Installation & Usage
 
-To install and use the **MainWP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mainwp](https://vinkius.com/mcp/mainwp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MainWP** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mainwp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MainWP** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mainwp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

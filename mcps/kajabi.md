@@ -1,7 +1,6 @@
 # Kajabi MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kajabi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kajabi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kajabi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kajabi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -100,12 +99,52 @@ Here are some examples of how you can interact with the **Kajabi** MCP server us
 > Checking your product list... You have 3 active courses: 'AI Mastery', 'Digital Marketing 101', and 'Advanced Funnel Strategies'. Would you like the technical ID for any of these?
 
 
+## ❓ FAQ
+
+**Q: How do I list all active offers in my Kajabi account?**
+Use the `list_offers` tool. It retrieves a comprehensive list of all offers you have configured, allowing you to audit pricing and product associations.
+
+**Q: Can I see the technical details for a specific course?**
+Yes! Use the `get_product_details` tool with the Product ID. Your agent will fetch the metadata, title, and current status for that specific digital product.
+
+**Q: Does the integration allow auditing customer purchases?**
+Absolutely. You can use the `list_purchases` and `list_orders` tools to monitor individual transaction history and verify which customers have access to specific offers.
+
+
 ## Installation & Usage
 
-To install and use the **Kajabi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kajabi](https://vinkius.com/mcp/kajabi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kajabi** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kajabi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kajabi** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kajabi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

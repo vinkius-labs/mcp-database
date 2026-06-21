@@ -1,7 +1,6 @@
 # Fourier Transform Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fourier-transform-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fourier-transform-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fourier-transform-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fourier-transform-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -54,12 +53,52 @@ Here are some examples of how you can interact with the **Fourier Transform Engi
 > The FFT reveals a strong cyclical component at bin 7 (weekly cycle) and bin 30 (monthly cycle). The data was padded from 365 to 512 points.
 
 
+## ❓ FAQ
+
+**Q: Does my array length need to be a power of 2?**
+No. The engine automatically zero-pads your signal to the nearest power of 2 before transforming. You can send any array length.
+
+**Q: What format is the output?**
+The engine returns a JSON containing the top 3 dominant frequency bin indices with their magnitudes, plus a preview array of the first 10 absolute magnitudes for quick analysis.
+
+**Q: Can it perform inverse FFT (IFFT)?**
+Currently, this tool is optimized for forward FFT frequency extraction. A dedicated IFFT tool for signal reconstruction could be added in future updates.
+
+
 ## Installation & Usage
 
-To install and use the **Fourier Transform Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fourier-transform-engine](https://vinkius.com/mcp/fourier-transform-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fourier Transform Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fourier-transform-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fourier Transform Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fourier-transform-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

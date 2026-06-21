@@ -1,7 +1,6 @@
 # Hootsuite MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hootsuite)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hootsuite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hootsuite-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hootsuite)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **Hootsuite** MCP server
 > Scanning history... In the last 24 hours, you've sent 3 messages: 2 on Twitter and 1 on Facebook. All were delivered successfully with no errors reported.
 
 
+## ❓ FAQ
+
+**Q: How do I find social profile IDs?**
+You can use the `list_social_profiles` tool to retrieve a list of all connected social networks and their unique IDs.
+
+**Q: Can I schedule posts for multiple profiles at once?**
+Yes, the `create_message` tool accepts a comma-separated list of profile IDs to post or schedule to multiple networks simultaneously.
+
+**Q: What is the correct time format for scheduling?**
+You should use the ISO 8601 format (e.g., 2026-04-18T10:00:00Z) for the `scheduledSendTime` parameter.
+
+
 ## Installation & Usage
 
-To install and use the **Hootsuite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hootsuite](https://vinkius.com/mcp/hootsuite)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hootsuite** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hootsuite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hootsuite** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hootsuite": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # EIA Natural Gas — Gas Market Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eia-natural-gas-gas-market-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eia-natural-gas-gas-market-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eia-natural-gas-gas-market-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eia-natural-gas-gas-market-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,46 @@ Top destinations: Europe (62%), Asia (28%)
 The U.S. became the world's #1 LNG exporter in 2023, surpassing Qatar and Australia.
 
 
+## ❓ FAQ
+
+**Q: When is the weekly storage report released?**
+Every **Thursday at 10:30 AM ET** by EIA. This is one of the most market-moving energy data releases — natural gas futures often swing 5-10% on storage surprises.
+
+
 ## Installation & Usage
 
-To install and use the **EIA Natural Gas — Gas Market Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eia-natural-gas-gas-market-intelligence](https://vinkius.com/mcp/eia-natural-gas-gas-market-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EIA Natural Gas — Gas Market Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eia-natural-gas-gas-market-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EIA Natural Gas — Gas Market Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eia-natural-gas-gas-market-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

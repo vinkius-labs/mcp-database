@@ -1,7 +1,6 @@
 # Monday.com (Work Management & CRM) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mondaycom-work-management-crm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mondaycom-work-management-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mondaycom-work-management-crm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mondaycom-work-management-crm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Monday.com (Work Manag
 > I've retrieved your Monday.com user directory. There are 25 active members, including 'Alex Smith' (Admin), 'Sarah Johnson' (Member), and 'Mark Rivera'. I can help you find their internal IDs for task assignments if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Can I see the column structure of a Monday board through my agent?**
+Yes. Use the `get_board` tool with a specific Board ID. Your agent will retrieve the detailed structural configuration, exposing the custom column types and titles used to organize your project data.
+
+**Q: How do I list the tasks (items) within a specific board?**
+The `list_items` tool retrieves all discrete GraphQL nodes representing rows in a board. Your agent will return the task names and their associated column values, helping you audit project progress without opening the browser.
+
+**Q: Can my agent navigate between different organizational workspaces?**
+Absolutely. Use the `list_workspaces` tool to identify the top-level directory structure of your Monday account. Your agent will report the workspace names and IDs, allowing you to locate boards grouped by department or team.
+
+
 ## Installation & Usage
 
-To install and use the **Monday.com (Work Management & CRM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mondaycom-work-management-crm](https://vinkius.com/mcp/mondaycom-work-management-crm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Monday.com (Work Management & CRM)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mondaycom-work-management-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Monday.com (Work Management & CRM)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mondaycom-work-management-crm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

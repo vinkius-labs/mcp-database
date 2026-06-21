@@ -1,7 +1,6 @@
 # Chocolate Tempering Guide MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chocolate-tempering-guide)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chocolate-tempering-guide-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chocolate-tempering-guide-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chocolate-tempering-guide)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Chocolate Tempering Gu
 > Checking the status with `check_crystal_integrity_status` shows that at 25°C, the crystals may be unstable or insufficient. You should consider raising the temperature to [RECOMMENDED_TEMP]°C to ensure proper crystallization for milk chocolate.
 
 
+## ❓ FAQ
+
+**Q: What is the most critical stage in tempering, and what temperature range should I aim for?**
+The **cooling/seeding** phase is vital. You must use the `query_chocolate_temperatures` tool to find the precise target start and stabilization temperatures for your specific chocolate type (dark, milk, or white). Following these stages ensures optimal crystal formation.
+
+**Q: I am unsure if my current temperature is safe. How can I check this?**
+Use the `check_crystal_integrity_status` tool. You provide your measured `currentTemperature` and the `chocolateType`. The tool will tell you if the crystals are safe or if immediate action, like raising heat, is required.
+
+**Q: How do I compare the ideal temperature windows between dark and milk chocolate?**
+The `get_temperatures_by_stage_comparison` tool allows you to run a comparison across different types for any single stage (melting, cooling, or working). This is useful for understanding the differences in your required processing steps.
+
+
 ## Installation & Usage
 
-To install and use the **Chocolate Tempering Guide** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chocolate-tempering-guide](https://vinkius.com/mcp/chocolate-tempering-guide)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chocolate Tempering Guide** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chocolate-tempering-guide` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chocolate Tempering Guide** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chocolate-tempering-guide": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

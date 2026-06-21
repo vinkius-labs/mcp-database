@@ -1,7 +1,6 @@
 # Forefront MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/forefront)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/forefront-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/forefront-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/forefront)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Forefront** MCP server
 > I will call `create_pipeline` with the name 'production-logs'. The pipeline has been successfully created with ID 'pipe_789'.
 
 
+## ❓ FAQ
+
+**Q: How can I generate a model response using a chat conversation?**
+You can use the `create_chat_completion` tool. Provide the model name and an array of messages in chat-ml format to receive the generated response.
+
+**Q: Can I start a custom fine-tuning job directly from my agent?**
+Yes! Use the `create_fine_tune` tool by specifying the name of your fine-tuned model, the baseModel, and the trainingDataset ID to begin training.
+
+**Q: How do I collect LLM outputs using pipelines?**
+First, create a pipeline using `create_pipeline`. Once created, you can use `add_pipeline_data` to log messages, user IDs, and custom metadata directly into that pipeline.
+
+
 ## Installation & Usage
 
-To install and use the **Forefront** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/forefront](https://vinkius.com/mcp/forefront)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Forefront** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `forefront` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Forefront** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "forefront": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

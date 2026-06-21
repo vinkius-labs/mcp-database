@@ -1,7 +1,6 @@
 # Belvo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/belvo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/belvo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/belvo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/belvo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Belvo** MCP server usi
 > Retrieving insights... I've identified 4 recurring expenses, including 'Netflix', 'Electricity Bill', and 'Gym Membership'. Would you like the breakdown for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance of a specific account using this integration?**
+Yes! Use the `get_account` tool with the Account ID. Your agent will fetch the latest balance and account metadata directly from Belvo.
+
+**Q: How do I list all transactions for a particular connection?**
+Simply ask the agent to `list_transactions`. You can then inspect specific transaction details using the `get_transaction` tool with the Transaction ID.
+
+**Q: Does the integration support all institutions in Brazil and Mexico?**
+This integration supports all institutions currently active in your Belvo account across supported countries. Use the `list_institutions` tool to see the full list of available banks and platforms.
+
+
 ## Installation & Usage
 
-To install and use the **Belvo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/belvo](https://vinkius.com/mcp/belvo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Belvo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `belvo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Belvo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "belvo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

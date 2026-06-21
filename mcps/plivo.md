@@ -1,7 +1,6 @@
 # Plivo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plivo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/plivo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/plivo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plivo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Plivo** MCP server usi
 > Query deployed against the active telecom trunk node (`list_calls`). Result: Empty array bounding currently parsed instances. The network endpoints are clean, reporting identically 0 concurrent routing states or phantom SIP loops tied to your active parameters.
 
 
+## ❓ FAQ
+
+**Q: Can my AI directly check why a specific SMS message failed to send?**
+Yes. When anomalous delivery states occur, the AI can query `list_messages` identifying problematic entries. Then, executing `get_message` feeding the discrete UUID returns explicit structural insights straight from Plivo’s carrier networks (e.g., 'Destination Not Found', 'Blocked by telecom firewall').
+
+**Q: Is it possible to terminate a live stuck call from my text prompt?**
+Absolutely. If you detect logic loops keeping Voice trunks active in `list_calls`, instruct the agent to issue the `cancel_call` action. Supplying the precise UUID forces the HTTP architecture to literally send a `DELETE` tear-down protocol, instantly vaporizing the connection physically.
+
+**Q: Can the agent interact with my billing limits to warn me?**
+Correct. Plivo natively exposes account architecture. Prompting the system to fetch `get_account` pulls cash balances, available capacity boundaries, and current currency mapping logic. It allows your Agent to perform autonomous diagnostics warning you natively before critical telecom endpoints shutdown due to zero-balance errors.
+
+
 ## Installation & Usage
 
-To install and use the **Plivo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/plivo](https://vinkius.com/mcp/plivo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Plivo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `plivo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Plivo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "plivo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

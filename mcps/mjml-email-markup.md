@@ -1,7 +1,6 @@
 # MJML (Email Markup) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mjml-email-markup)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mjml-email-markup-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mjml-email-markup-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mjml-email-markup)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **MJML (Email Markup)** 
 > I've created a responsive button using `<mj-button>`. I am now running `render_mjml` to provide you with the production-ready HTML code and a visual preview.
 
 
+## ❓ FAQ
+
+**Q: Can I render MJML from a JSON string instead of XML?**
+Yes! The `render_mjml` tool accepts both raw MJML XML and MJML JSON strings. The engine will automatically detect the format and transpile it into responsive HTML.
+
+**Q: What is the maximum size of the generated HTML output?**
+The integration supports an egress limit of up to 5MB, which is more than enough for even the most complex and content-heavy responsive email templates.
+
+**Q: Does the tool validate my MJML syntax during rendering?**
+Yes, the `render_mjml` tool uses the official MJML engine which performs validation during the transpilation process to ensure the resulting HTML is compliant with email client best practices.
+
+
 ## Installation & Usage
 
-To install and use the **MJML (Email Markup)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mjml-email-markup](https://vinkius.com/mcp/mjml-email-markup)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MJML (Email Markup)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mjml-email-markup` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MJML (Email Markup)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mjml-email-markup": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

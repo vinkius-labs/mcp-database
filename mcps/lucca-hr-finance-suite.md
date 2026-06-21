@@ -1,7 +1,6 @@
 # Lucca (HR & Finance Suite) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lucca-hr-finance-suite)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lucca-hr-finance-suite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lucca-hr-finance-suite-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lucca-hr-finance-suite)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Lucca (HR & Finance Su
 > I've retrieved the latest 3 expense reports: 1) 'Business Trip - Berlin' (€450, Approved), 2) 'Team Dinner' (€120, Pending), 3) 'Office Supplies' (€45, Processed). Would you like to see the individual claims for the Berlin trip?
 
 
+## ❓ FAQ
+
+**Q: Can I see my team's vacation balances through my agent?**
+Yes. Use the `get_leave_balances` tool with a specific User ID. Your agent will retrieve the active leave balances representing vacation arrays globally, including different types of absences (e.g. Paid Leave, RTT) managed in Timmi.
+
+**Q: How do I check the individual claims within an expense report?**
+The `list_expense_claims` tool allows your agent to extract absolute bounded individual claims for a specific Expense Report ID. You'll see precise dates, amounts, and native currency payloads for each item in the report.
+
+**Q: Can my agent list all company departments defined in Lucca?**
+Absolutely. Use the `list_departments` tool to retrieve the strict hierarchical organizational units. Your agent will report the department names and their hierarchy, helping you understand the company's structural boundaries.
+
+
 ## Installation & Usage
 
-To install and use the **Lucca (HR & Finance Suite)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lucca-hr-finance-suite](https://vinkius.com/mcp/lucca-hr-finance-suite)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lucca (HR & Finance Suite)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lucca-hr-finance-suite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lucca (HR & Finance Suite)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lucca-hr-finance-suite": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

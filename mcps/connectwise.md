@@ -1,7 +1,6 @@
 # ConnectWise MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/connectwise)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/connectwise-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/connectwise-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/connectwise)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **ConnectWise** MCP serv
 Audit preparation data retrieved successfully and accurately.
 
 
+## ❓ FAQ
+
+**Q: How do I securely obtain my ConnectWise API Keys and Company ID?**
+Log into your ConnectWise Manage instance. Note your 'Company ID' prominently displayed on the login screen. Then navigate securely via the internal system module down under 'System' > 'Members', find the specialized sub-tab marked 'API Members'. Create a new specific role API member for this AI, and within its configuration, strictly establish a new API Key generation. This will output a matched pair containing your 'Public Key' and your strictly secured 'Private Key'. Securely provide all three specific parameters below.
+
+**Q: Will the agent close tickets automatically, or must I specifically instruct it to change the status?**
+The AI remains tightly compliant to your direct prompts. It will not spontaneously close unprompted tickets or mutate parameters heavily without instruction. You must expressly request 'Change ticket X status to Closed' ensuring governance, compliance, and accurate logging remains strictly under your control at all times during interactive use.
+
+**Q: Can I query client configurations or passwords with this active integration?**
+Configurational details such as device types and basic network data models are queryable if permissions via API permit, but sensitive field extraction like retrieving unencrypted passwords directly inside the dialog typically stays strictly masked or gated, abiding exclusively by your ConnectWise native security role allowances configured previously inside the specific 'API Member' settings during your setup.
+
+
 ## Installation & Usage
 
-To install and use the **ConnectWise** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/connectwise](https://vinkius.com/mcp/connectwise)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ConnectWise** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `connectwise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ConnectWise** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "connectwise": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Modrinth MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modrinth)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/modrinth-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/modrinth-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modrinth)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Modrinth** MCP server 
 > I've checked the dependencies for Iris Shaders. It primarily requires 'Sodium' to function. It also has optional dependencies like 'Indium' for better compatibility with other mods. Shall I retrieve the latest version details for Sodium as well?
 
 
+## ❓ FAQ
+
+**Q: Is a Personal Access Token (PAT) mandatory to use this server?**
+No. Modrinth allows public searching and browsing without a token. However, providing a PAT increases your rate limits and ensures smoother operation during heavy usage.
+
+**Q: Can I check the members of a mod's development team?**
+Yes! Use the `get_team_members` tool with the project's slug or ID to see the list of authors and contributors.
+
+**Q: How do I see what other mods a project requires?**
+Use the `get_project_dependencies` tool to retrieve a list of all required and optional dependencies for a specific mod or pack.
+
+
 ## Installation & Usage
 
-To install and use the **Modrinth** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/modrinth](https://vinkius.com/mcp/modrinth)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Modrinth** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `modrinth` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Modrinth** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "modrinth": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

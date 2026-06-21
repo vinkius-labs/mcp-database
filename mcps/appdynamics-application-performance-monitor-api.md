@@ -1,7 +1,6 @@
 # AppDynamics (Application Performance Monitor API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appdynamics-application-performance-monitor-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/appdynamics-application-performance-monitor-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/appdynamics-application-performance-monitor-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appdynamics-application-performance-monitor-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **AppDynamics (Applicati
 > Checking violations... I found one 'Warning' violation for 'Payment-Gateway': 'CPU Usage is high on Tier: Web-FrontEnd'. It started 10 minutes ago.
 
 
+## ❓ FAQ
+
+**Q: How can I check the average response time for a specific application?**
+You can use the `get_metric_data` tool. Provide the `app_id` and the `metric_path` (e.g., 'Overall Application Performance|Average Response Time (ms)') to retrieve precise performance data.
+
+**Q: Can I see which server instances (nodes) are currently active in an application?**
+Yes! Use the `list_nodes` tool with the target `app_id`. It will return all individual server instances associated with that application.
+
+**Q: Is it possible to audit health rules through the AI?**
+Absolutely. Use `export_health_rules` to retrieve the current configuration for an application, or `list_health_rule_violations` to see active issues.
+
+
 ## Installation & Usage
 
-To install and use the **AppDynamics (Application Performance Monitor API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/appdynamics-application-performance-monitor-api](https://vinkius.com/mcp/appdynamics-application-performance-monitor-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AppDynamics (Application Performance Monitor API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `appdynamics-application-performance-monitor-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AppDynamics (Application Performance Monitor API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "appdynamics-application-performance-monitor-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

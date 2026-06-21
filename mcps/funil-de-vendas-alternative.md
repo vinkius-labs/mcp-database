@@ -1,7 +1,6 @@
 # Funil de Vendas MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/funil-de-vendas-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/funil-de-vendas-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/funil-de-vendas-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/funil-de-vendas-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Funil de Vendas** MCP 
 > I've retrieved your recent activities. You have 3 tasks completed and 2 upcoming follow-up calls scheduled for today.
 
 
+## ❓ FAQ
+
+**Q: Where do I get my login credentials?**
+Use the same Email and Password you use to log in to your [**Funil de Vendas**](https://app.funildevendas.com.br/) account.
+
+**Q: Can the agent move deals between stages?**
+Yes, by using the `update_crm_activity` or lead entry tools, the agent can interact with the status and progress of your opportunities.
+
+**Q: Is it possible to list all sales funnels?**
+Absolutely. The `list_sales_funnels` tool retrieves all methodologies configured in your account along with their unique codes.
+
+
 ## Installation & Usage
 
-To install and use the **Funil de Vendas** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/funil-de-vendas-alternative](https://vinkius.com/mcp/funil-de-vendas-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Funil de Vendas** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `funil-de-vendas-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Funil de Vendas** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "funil-de-vendas-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

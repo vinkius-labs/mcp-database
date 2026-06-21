@@ -1,7 +1,6 @@
 # Bilibili Live MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bilibili-live)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bilibili-live-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bilibili-live-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bilibili-live)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Bilibili Live** MCP se
 > Accessing donation arrays filtering outliers aggressively... The pinnacle contribution sits at ~3000 CNY dropped by user ID 'VIP91'. The subsequent 9 donations average around 800 CNY tightly clustered across a 2-minute competitive wave. Rendering complete table now...
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically aggregate bullet-chat density from a major active esports broadcast directly?**
+Yes! Utilize the `get_room_danmu` endpoint integration tool. Your agent will dynamically hook to the channel pinging the rapid incoming stream mapping it natively to your terminal workspace seamlessly bypassing clunky UI obstacles totally.
+
+**Q: How do I fetch the exact real-time audience capacity on a specified VTuber room?**
+Simply ask the agent to run `get_room_popularity` targeting the internal integer Room ID. The pipeline will isolate the live audience metric securely displaying the engagement index free of visual latency delays instantly in markdown format natively.
+
+**Q: Are there destructive capabilities enabling unwarranted permanent room shutdowns programmatically?**
+Absolutely not. This suite adheres to read-only data mining directives strictly mapping traffic, messages, and identities. No system administration functions or destructive endpoints are configured assuring unbreakable security fences from external tampering continuously.
+
+
 ## Installation & Usage
 
-To install and use the **Bilibili Live** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bilibili-live](https://vinkius.com/mcp/bilibili-live)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bilibili Live** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bilibili-live` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bilibili Live** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bilibili-live": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Figshare MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/figshare)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/figshare-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/figshare-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/figshare)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Figshare** MCP server 
 > Checking files for article 1234567... I found 3 files: 'methodology.pdf', 'raw_data.csv', and 'analysis_script.py'. Would you like the specific details or download URLs for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I upload files to a Figshare article using this integration?**
+Yes. You can use `initiate_file_upload` to start the process and `complete_file_upload` once the data transfer is finished. You can also use `list_article_files` to verify the contents of any article.
+
+**Q: How do I create a new private draft for my research?**
+Simply ask the agent to use the `create_private_article` tool. Provide a title and an optional description, and the agent will generate a new private entry in your Figshare account.
+
+**Q: Is it possible to organize my articles into projects or collections?**
+Absolutely. You can use `create_project` or `create_collection` to set up organizational structures, and use `list_public_projects` or `list_public_collections` to browse existing ones.
+
+
 ## Installation & Usage
 
-To install and use the **Figshare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/figshare](https://vinkius.com/mcp/figshare)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Figshare** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `figshare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Figshare** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "figshare": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

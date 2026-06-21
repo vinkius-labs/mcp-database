@@ -1,7 +1,6 @@
 # AEMO Australian Energy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aemo-australian-energy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aemo-australian-energy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aemo-australian-energy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aemo-australian-energy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -102,12 +101,55 @@ Here are some examples of how you can interact with the **AEMO Australian Energy
 > Fetching renewable proportion data... Today the NEM is generating 39% of its electricity from renewable sources. Comparing to the same week last year, renewables accounted for 35%. This represents a 4 percentage point increase year-over-year, driven primarily by new wind farm commissioning and expanded rooftop solar adoption.
 
 
+## ❓ FAQ
+
+**Q: What Australian regions/states are covered in the NEM data?**
+The National Electricity Market (NEM) covers five regions: New South Wales (NSW1), Victoria (VIC1), Queensland (QLD1), South Australia (SA1), and Tasmania (TAS1). The API also supports the Wholesale Electricity Market (WEM) for Western Australia. Data is available at both the national aggregate level and broken down by individual region.
+
+**Q: How do I get an API token for OpenElectricity?**
+Visit the OpenElectricity developer portal at https://openelectricity.org.au/content/developers and sign up for a free Community plan. You'll receive a Bearer token that you can paste into the credential field. The Community plan provides generous rate limits suitable for individual use and research. Higher-tier plans (Pro, Academic, Enterprise) are available for commercial applications.
+
+**Q: Can I track the percentage of renewable energy in real-time?**
+Yes! Use the `get_renewable_proportion` tool to fetch the current percentage of electricity generation coming from renewable sources (solar, wind, hydro, battery) versus fossil fuels (coal, gas). You can query this at 5-minute intervals for live tracking, or aggregate to hourly, daily, or monthly views. The `get_network_by_fueltech` tool also provides a detailed breakdown showing each technology's contribution separately.
+
+**Q: What time intervals are available for querying historical data?**
+The API supports multiple time granularities: `5m` (5-minute intervals, most granular), `1h` (hourly), `1d` (daily), `7d` (weekly), `1M` (monthly), `3M` (quarterly), `1y` (yearly), `season` (seasonal aggregation), and `fy` (financial year). You can specify date ranges using `date_start` and `date_end` parameters in ISO format. Historical data extends back several years for most metrics.
+
+
 ## Installation & Usage
 
-To install and use the **AEMO Australian Energy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aemo-australian-energy](https://vinkius.com/mcp/aemo-australian-energy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AEMO Australian Energy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aemo-australian-energy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AEMO Australian Energy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aemo-australian-energy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

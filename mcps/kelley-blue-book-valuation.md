@@ -1,7 +1,6 @@
 # Kelley Blue Book Valuation MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kelley-blue-book-valuation)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kelley-blue-book-valuation-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kelley-blue-book-valuation-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kelley-blue-book-valuation)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,49 @@ Here are some examples of how you can interact with the **Kelley Blue Book Valua
 > Retrieving 2023 Toyota models... I found several models including Camry (ID: 123), Corolla (ID: 456), RAV4 (ID: 789), and Tacoma (ID: 012). Which one would you like to explore?
 
 
+## ❓ FAQ
+
+**Q: How do I get a KBB API Key?**
+You must register at the [**KBB Developer Portal**](https://developer.kbb.com/) and request access to the 'InfoDriver Web Service'. Access is typically granted to business entities and automotive professionals.
+
+**Q: Does this tool support international valuations?**
+Kelley Blue Book primarily focuses on the North American market (USA and Canada). Valuations are based on regional data from these locations.
+
+
 ## Installation & Usage
 
-To install and use the **Kelley Blue Book Valuation** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kelley-blue-book-valuation](https://vinkius.com/mcp/kelley-blue-book-valuation)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kelley Blue Book Valuation** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kelley-blue-book-valuation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kelley Blue Book Valuation** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kelley-blue-book-valuation": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

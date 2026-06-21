@@ -1,7 +1,6 @@
 # DoorDash Drive MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doordash-drive)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/doordash-drive-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/doordash-drive-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doordash-drive)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **DoorDash Drive** MCP s
 > Delivery 'D-998877' is currently 'Picked Up'. The Dasher (John D.) is 2 miles from the dropoff location with an ETA of 12:45 PM. Should I pull the dasher's contact information?
 
 
+## ❓ FAQ
+
+**Q: How do I get DoorDash Developer credentials?**
+Sign up for a developer account at the [**DoorDash Developer Portal**](https://developer.doordash.com). Once registered, you can create an Access Key to generate your Developer ID, Key ID, and Signing Secret.
+
+**Q: Can the agent track dashers on a map?**
+The agent can retrieve real-time latitude and longitude coordinates for dashers via the get_delivery_details tool, which can be used to identify their current location.
+
+**Q: Does the integration support delivery quotes?**
+Yes, you can use the get_delivery_quote tool to retrieve estimated pricing and delivery times before actually requesting a fulfillment.
+
+
 ## Installation & Usage
 
-To install and use the **DoorDash Drive** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/doordash-drive](https://vinkius.com/mcp/doordash-drive)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DoorDash Drive** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `doordash-drive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DoorDash Drive** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "doordash-drive": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

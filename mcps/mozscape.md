@@ -1,7 +1,6 @@
 # Mozscape MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mozscape)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mozscape-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mozscape-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mozscape)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **Mozscape** MCP server 
 > The Brand Authority™ score for nike.com is 98, indicating an exceptionally strong brand presence in the Moz index.
 
 
+## ❓ FAQ
+
+**Q: How can I check my remaining Moz API credits?**
+Use the `lookup_quota` tool. It will return your current API limits and the number of rows consumed in the current billing cycle.
+
+**Q: Can I analyze multiple websites in a single request?**
+Yes, you can use the `fetch_multiple_site_metrics` tool to get DA, PA, and Spam Score for up to 50 URLs at once.
+
+**Q: Is it possible to find common backlink sources between competitors?**
+Absolutely. Use the `fetch_link_intersect` tool with a list of target domains to identify sites that link to all of them.
+
+
 ## Installation & Usage
 
-To install and use the **Mozscape** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mozscape](https://vinkius.com/mcp/mozscape)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mozscape** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mozscape` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mozscape** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mozscape": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

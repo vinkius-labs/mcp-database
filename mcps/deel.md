@@ -1,7 +1,6 @@
 # Deel MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deel)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deel-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deel)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Deel** MCP server usin
 > I found 3 pending time-off requests: 'Alex Kim' (3 days in May), 'Sarah Lee' (1 week in June), and 'David Chen' (today). Would you like to see the reasons provided for these requests?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Deel API Token?**
+Log in to your Deel account, navigate to **Organization Settings** → **Developer Center** → **API Tokens**, and click **Create Token**.
+
+**Q: Can I see all active contracts?**
+Yes! You can use the list_contracts tool to see all contracts with their type, status, and compensation details across your entire organization.
+
+**Q: How do I track payments to contractors?**
+Use the list_payments tool to see full payment history, or list_invoices to track specific billing statuses and amounts.
+
+
 ## Installation & Usage
 
-To install and use the **Deel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deel](https://vinkius.com/mcp/deel)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deel** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deel** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deel": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

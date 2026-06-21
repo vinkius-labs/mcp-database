@@ -1,7 +1,6 @@
 # LA Metro MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/la-metro)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/la-metro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/la-metro-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/la-metro)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **LA Metro** MCP server 
 > Planning rail-to-rail journey... Recommended route: Take B Line (Red) from North Hollywood to 7th Street/Metro Center — 26 minutes. Transfer to E Line (Expo) at 7th Street/Metro Center heading westbound to Downtown Santa Monica — 32 minutes. Total journey time: approximately 58 minutes plus transfer time. 1 transfer required. Both lines running on schedule. Would you like me to check next train times at North Hollywood station?
 
 
+## ❓ FAQ
+
+**Q: Can my AI check when the next Metrobus is arriving at a specific stop in LA?**
+Yes! First use `get_bus_stops` with a route_id to find the stop ID for your location. Then use `get_stop_predictions` with that stop ID to get real-time arrival predictions in minutes and seconds, including route numbers, direction, and whether the bus is departing soon. This gives you live predictions based on actual vehicle GPS positions and schedule adherence.
+
+**Q: How do I plan a Metro Rail journey from one station to another?**
+Use `get_rail_stations` first to find the station IDs for your origin and destination. Then use `get_rail_to_rail` with both station IDs to get the recommended rail route with transfer stations, estimated travel time, number of transfers, and step-by-step directions. You can also use `get_rail_arrivals` at your origin station to see when the next trains are coming.
+
+**Q: Are there any service disruptions affecting Metro Rail or Metrobus right now?**
+Use `get_service_alerts` to check all active service disruptions across the LA Metro system. This returns alerts with affected routes and stations, disruption descriptions, severity levels, cause types (maintenance, incident, weather, special events), start and end times, and alternative service recommendations. Check this before planning any journey to ensure you are aware of delays or service changes.
+
+
 ## Installation & Usage
 
-To install and use the **LA Metro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/la-metro](https://vinkius.com/mcp/la-metro)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LA Metro** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `la-metro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LA Metro** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "la-metro": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

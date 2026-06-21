@@ -1,7 +1,6 @@
 # Google Business Profile MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-business-profile)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-business-profile-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-business-profile-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-business-profile)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Google Business Profil
 > Analyzing insights... The top search terms were 'coffee near me' (1,200 searches), 'best latte in town' (850 searches), and 'breakfast cafe' (600 searches). This is a 15% increase in discovery compared to the previous month.
 
 
+## ❓ FAQ
+
+**Q: Can I respond to customer reviews directly using the AI agent?**
+Yes! Use the `create_review_reply` tool. You can ask the AI to draft a professional response to a specific review and post it to your profile instantly.
+
+**Q: How do I update my business hours for a specific holiday?**
+You can use the `update_business_hours` tool. Simply provide the new hours object for the target location ID, and the agent will update your profile across Google Search and Maps.
+
+**Q: Can I see how many people clicked 'Call' or 'Directions' on my profile?**
+Yes. The `getLocationInsights` tool retrieves daily metrics, including actions like phone calls, direction requests, and website clicks initiated from your Google Business Profile.
+
+
 ## Installation & Usage
 
-To install and use the **Google Business Profile** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-business-profile](https://vinkius.com/mcp/google-business-profile)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Business Profile** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-business-profile` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Business Profile** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-business-profile": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

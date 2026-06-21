@@ -1,7 +1,6 @@
 # HappyFox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/happyfox)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/happyfox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/happyfox-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/happyfox)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,55 @@ Here are some examples of how you can interact with the **HappyFox** MCP server 
 > Process started! I found the 'Technical' category (ID: 5). To create the ticket, I'll need the customer's name and email address. Could you provide those?
 
 
+## ❓ FAQ
+
+**Q: How do I find my HappyFox API credentials?**
+Log in to HappyFox, go to **Manage > Integrations > API**. You will be able to generate your **API Key** and **Auth Code** from there.
+
+**Q: What is the 'Account Name'?**
+The Account Name is the subdomain used to access your HappyFox instance (e.g., if you log in at `company.happyfox.com`, your account name is `company`).
+
+**Q: Can I add updates to existing tickets?**
+Yes! Use the `add_staff_update` tool. You just need to provide the `ticket_id` and the text of your update. This will appear as a staff response in the help desk.
+
+**Q: Is the integration secure for managing support data?**
+Absolutely. The integration uses industry-standard HTTP Basic authentication over HTTPS. Your credentials are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **HappyFox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/happyfox](https://vinkius.com/mcp/happyfox)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HappyFox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `happyfox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HappyFox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "happyfox": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

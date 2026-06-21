@@ -1,7 +1,6 @@
 # Recharge MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recharge-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/recharge-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/recharge-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recharge-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -136,12 +135,52 @@ Here are some examples of how you can interact with the **Recharge** MCP server 
 > Inspecting subscription 998877... It is an active 'Premium Skincare Bundle' priced at $45.00, renewing every 30 days. The next charge date is set for June 20th.
 
 
+## ❓ FAQ
+
+**Q: Can I see when a customer's next delivery is scheduled?**
+Yes! Use the `get_customer_delivery_schedule` tool with the Customer ID. It will return the projected delivery dates and associated items for that specific user.
+
+**Q: Is it possible to skip a specific charge for a customer's address?**
+Absolutely. Use the `skip_address_charges` action by providing the Address ID and the subscription details in the payload to bypass the next scheduled payment.
+
+**Q: How do I handle duplicate shipping addresses for a single customer?**
+You can use the `merge_addresses` tool. It allows you to merge up to 10 source addresses into a single target address, keeping your customer records clean.
+
+
 ## Installation & Usage
 
-To install and use the **Recharge** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/recharge-alternative](https://vinkius.com/mcp/recharge-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Recharge** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `recharge-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Recharge** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "recharge-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

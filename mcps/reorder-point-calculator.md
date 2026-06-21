@@ -1,7 +1,6 @@
 # Reorder Point Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reorder-point-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reorder-point-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reorder-point-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reorder-point-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Reorder Point Calculat
 > Increasing the standard deviation from 5 to 8 units results in an increase of approximately 7.6 units in your required safety stock.
 
 
+## ❓ FAQ
+
+**Q: What is the Reorder Point (ROP)?**
+The Reorder Point is the specific inventory level that triggers a new purchase order to ensure you have enough stock to cover demand during the lead time.
+
+**Q: How is safety stock calculated?**
+Safety stock is calculated using the statistical method: Z-score (derived from your target service level) multiplied by the standard deviation of demand and the square root of the average lead time.
+
+**Q: Can I analyze the impact of demand volatility?**
+Yes, you can use the `analyze_volatility_impact` tool to see how an increase or decrease in demand standard deviation affects your required safety stock levels.
+
+
 ## Installation & Usage
 
-To install and use the **Reorder Point Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/reorder-point-calculator](https://vinkius.com/mcp/reorder-point-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Reorder Point Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `reorder-point-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Reorder Point Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "reorder-point-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

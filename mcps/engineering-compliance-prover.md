@@ -1,7 +1,6 @@
 # Engineering Compliance Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/engineering-compliance-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/engineering-compliance-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/engineering-compliance-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/engineering-compliance-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Engineering Compliance
 > Verdict: FAILURE_MODE_IGNORED. You validated against NEC, but intentionally ignored voltage drop and thermal runaway analysis. Name the failure mode and demonstrate that the design mitigates it.
 
 
+## ❓ FAQ
+
+**Q: Can this MCP run FEA simulations or structural math?**
+No. This is a strictly stateless reasoning gatekeeper. It does not perform mathematical structural analysis or run simulations. It validates the structural logic of the AI's engineering reasoning based on the inputs provided, ensuring no assumptions are skipped.
+
+**Q: Why did the Prover reject my design with CODE_COMPLIANCE_BLIND?**
+Because the reasoning relied on vague appeals like 'industry standards' or 'standard engineering practice'. To pass the Prover, you must cite specific US codes (e.g., ASCE 7-22, AISC 360-16) and applicable sections.
+
+**Q: What happens if I omit material grades?**
+The Prover will reject the design with TOLERANCE_OMITTED. In engineering, 'steel' or 'concrete' is not a specification. You must specify exact grades like 'ASTM A992' or '4000 psi compressive strength'.
+
+
 ## Installation & Usage
 
-To install and use the **Engineering Compliance Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/engineering-compliance-prover](https://vinkius.com/mcp/engineering-compliance-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Engineering Compliance Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `engineering-compliance-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Engineering Compliance Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "engineering-compliance-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

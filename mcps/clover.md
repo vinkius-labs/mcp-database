@@ -1,7 +1,6 @@
 # Clover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Clover** MCP server us
 > Order #89283 was processed at table 4. Total: $42.50. Items: 2x Cheeseburger, 1x Large Fries, 2x Cola. Payment: Visa ending in 4412.
 
 
+## ❓ FAQ
+
+**Q: What is Clover?**
+Clover is a Fiserv-backed POS platform with dedicated hardware and software for restaurants, retail, and services. One of the largest POS ecosystems globally.
+
+**Q: Does the AI see my real-time inventory count?**
+Yes. Upon checking the API inventory endpoints, your agent has exact visibility over product quantities on the floor. It can warn you about low-stock situations instantly.
+
+**Q: Can it issue a customer refund?**
+If specifically permitted within your dashboard tokens, yes. The agent can query an order ID and submit a refund command matching the original payment method.
+
+
 ## Installation & Usage
 
-To install and use the **Clover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clover](https://vinkius.com/mcp/clover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

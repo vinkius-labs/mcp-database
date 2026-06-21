@@ -1,7 +1,6 @@
 # TaxJar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/taxjar-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/taxjar-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/taxjar-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/taxjar-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **TaxJar** MCP server us
 > The sales tax rate for Beverly Hills (90210, CA) is currently 9.5%. This includes a state rate of 6%, a county rate of 0.25%, and a local rate of 3.25%.
 
 
+## ❓ FAQ
+
+**Q: Can I calculate sales tax for a specific address via AI?**
+Yes! Use the `calculate_sales_tax` tool. Provide the destination country, zip code, and state along with the order amount. Your agent will return the precise tax to be collected.
+
+**Q: How do I see in which states I have a tax nexus?**
+Run the `list_nexus_regions` query. The agent will retrieve a list of all regions (states or countries) where you have configured a tax nexus in your TaxJar account.
+
+**Q: Is it possible to validate a shipping address via AI?**
+Absolutely. Use the `validate_tax_address` tool and provide the full address details. The agent will verify the address through TaxJar to ensure it is accurate for tax purposes.
+
+
 ## Installation & Usage
 
-To install and use the **TaxJar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/taxjar-alternative](https://vinkius.com/mcp/taxjar-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TaxJar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `taxjar-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TaxJar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "taxjar-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

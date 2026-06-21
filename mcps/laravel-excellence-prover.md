@@ -1,7 +1,6 @@
 # Laravel Excellence Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/laravel-excellence-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/laravel-excellence-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/laravel-excellence-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/laravel-excellence-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,55 @@ Here are some examples of how you can interact with the **Laravel Excellence Pro
 > Verdict: FAT_CONTROLLER. Four violations in one method. (1) Validation belongs in a StoreUserRequest FormRequest, not inline. (2) $request->all() is a mass assignment vulnerability — use $request->validated(). (3) Authorization belongs in a Policy, not an if-statement. (4) Email is a side effect — dispatch UserCreated event, handle email in a Listener. Extract ALL of this from the controller.
 
 
+## ❓ FAQ
+
+**Q: Does Laravel Excellence Prover generate or write Laravel code?**
+No. The agent writes the code. The tool VALIDATES that the code meets senior-level Laravel standards — query optimization, framework idioms, responsibility separation, mass assignment protection, and architectural compliance. It catches the five failure modes before the code is committed.
+
+**Q: What does it catch that a system prompt instruction doesn't?**
+Prompt instructions are suggestions — agents routinely ignore 'use eager loading' or 'validate with FormRequests.' Tool calls are obligations — the agent must fill every field. The engine has 22 consistency rules that catch specific anti-patterns: N+1, raw SQL without justification, env() in app code, unbounded get()/all(), synchronous heavy I/O, dd()/dump() in production, magic values, vague claims like 'follows best practices', and platitude conclusions. A prompt cannot enforce these — a tool schema can.
+
+**Q: Why is N+1 checked before everything else?**
+Because N+1 is the single most common and damaging performance anti-pattern in Laravel. A beautifully architected application with clean controllers and perfect FormRequests will still crash under load if every Blade view triggers 100 lazy-loaded queries. N+1 is checked first because no amount of clean architecture compensates for a database under siege.
+
+**Q: Can I use this for existing legacy Laravel codebases?**
+Yes. When refactoring legacy code, call the tool to validate each change against excellence standards. The tool catches the same patterns regardless of whether you're writing new code or improving old code. Start with the most critical pivot: enable Model::preventLazyLoading() to surface all N+1 issues, then progressively extract logic from fat controllers into Services, add FormRequests, and define $fillable.
+
+
 ## Installation & Usage
 
-To install and use the **Laravel Excellence Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/laravel-excellence-prover](https://vinkius.com/mcp/laravel-excellence-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Laravel Excellence Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `laravel-excellence-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Laravel Excellence Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "laravel-excellence-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Siteminder MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/siteminder)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/siteminder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/siteminder-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/siteminder)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Siteminder** MCP serve
 > Retrieving your reservation history... You have 12 recent bookings. The latest is 'RES-99821' for 'John Doe' at 'Grand Plaza', confirmed on Oct 12th. Would you like details on a specific reference ID?
 
 
+## ❓ FAQ
+
+**Q: How do I search for available hotels in a specific area?**
+Use the `cp_search_properties` tool by providing the latitude, longitude, and search radius. You can also include check-in and check-out dates to filter availability.
+
+**Q: Can I hold a room before finalizing a booking?**
+Yes! The `cp_lock_reservation` tool creates a 10-minute hold on inventory for a specific property, allowing you to gather guest details before confirming.
+
+**Q: How do I see all properties associated with my account?**
+You can use the `db_list_properties` tool to retrieve a full list of all properties in your group via the Direct Booking API.
+
+
 ## Installation & Usage
 
-To install and use the **Siteminder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/siteminder](https://vinkius.com/mcp/siteminder)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Siteminder** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `siteminder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Siteminder** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "siteminder": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

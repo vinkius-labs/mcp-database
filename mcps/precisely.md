@@ -1,7 +1,6 @@
 # Precisely MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/precisely)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/precisely-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/precisely-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/precisely)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Precisely** MCP server
 > Using `verify_address`, I confirm it standardizes perfectly to '350 5TH AVE, NEW YORK, NY 10118-0110' (The Empire State Building), fully deliverable. Extracting `get_timezone` with its coordinates, it operates under `America/New_York` (UTC-05:00).
 
 
+## ❓ FAQ
+
+**Q: Can the AI find out if a specific property is inside a flood zone?**
+Yes. First the AI uses `geocode_address` to find the exact Latitude/Longitude of the building's rooftop. Then it feeds those coordinates into `enrich_flood_risk` to extract the strict FEMA designation naturally.
+
+**Q: How accurately does verify_address standardize locations?**
+Very accurately. It connects to native postal services (like USPS and Royal Mail) to autocorrect misspellings, adjust zip codes, and flag impossible addresses before they reach your logistics layer.
+
+**Q: Do I need two separate keys to use this?**
+Yes. Precisely Developer APIs use robust OAuth workflows. You must supply both the individual API Key (Consumer Key) and the API Secret. The MCP server handles token exchanging for you internally.
+
+
 ## Installation & Usage
 
-To install and use the **Precisely** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/precisely](https://vinkius.com/mcp/precisely)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Precisely** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `precisely` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Precisely** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "precisely": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

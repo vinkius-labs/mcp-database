@@ -1,7 +1,6 @@
 # Home Assistant MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/home-assistant)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/home-assistant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/home-assistant-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/home-assistant)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -134,12 +133,55 @@ Here are some examples of how you can interact with the **Home Assistant** MCP s
 > Checking climate.bedroom... Current temperature: 21.5°C. The thermostat is in 'heat' mode with a target temperature of 22°C. Humidity is 45%.
 
 
+## ❓ FAQ
+
+**Q: What Home Assistant URL should I use?**
+For local instances, use your Home Assistant's local network URL: `http://YOUR_IP:8123` (or `http://homeassistant.local:8123`). For cloud access via Nabu Casa, use your remote URL: `https://YOUR_INSTANCE.ui.nabu.casa`. The API is accessible at the same base URL as your Home Assistant frontend.
+
+**Q: How do I get a Long-Lived Access Token?**
+Log in to your Home Assistant web interface, go to your user profile (click your name in the sidebar, then **Profile**), scroll down to **Long-Lived Access Tokens**, click **Create Token**, give it a name (e.g., 'MCP Server'), and copy the generated token. This token never expires unless manually revoked.
+
+**Q: What devices and integrations are supported?**
+All Home Assistant integrations are supported since the API works at the service/state level. This includes lights (Philips Hue, LIFX, etc.), thermostats (Nest, Ecobee, etc.), covers/blinds, switches, media players (Sonos, Chromecast, etc.), sensors, cameras, locks, vacuums, and 1000+ other integrations. Use `list_entity_states` to discover all available entities.
+
+**Q: Can I trigger Home Assistant automations from the API?**
+Yes! You can trigger automations in multiple ways: 1) Call the `automation.trigger` service directly, 2) Fire a custom event using `fire_ha_event` that matches an event trigger in your automation, 3) Call the `script.turn_on` service to run scripts. You can also control devices directly which will trigger related automations.
+
+
 ## Installation & Usage
 
-To install and use the **Home Assistant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/home-assistant](https://vinkius.com/mcp/home-assistant)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Home Assistant** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `home-assistant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Home Assistant** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "home-assistant": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

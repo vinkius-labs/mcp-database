@@ -1,7 +1,6 @@
 # Microsoft Teams Events MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/microsoft-teams-events)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/microsoft-teams-events-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/microsoft-teams-events-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/microsoft-teams-events)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Microsoft Teams Events
 > You have 3 upcoming webinars. The next one is 'Q2 Product Launch' on May 5 with 142 registrants. Would you like to see registration details or session data?
 
 
+## ❓ FAQ
+
+**Q: How do I create a Teams meeting from my AI agent?**
+Use the `create_meeting` tool with subject, start and end times (ISO 8601), and attendee emails. A Teams meeting link is generated automatically.
+
+**Q: Can I check attendance after a meeting?**
+Yes. Use `get_attendance_report` with the meeting ID to retrieve join/leave times for each participant.
+
+**Q: Does this connector support webinars?**
+Absolutely. Use `list_webinars` to see all scheduled webinars and `get_webinar` for detailed session and registration data.
+
+
 ## Installation & Usage
 
-To install and use the **Microsoft Teams Events** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/microsoft-teams-events](https://vinkius.com/mcp/microsoft-teams-events)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Microsoft Teams Events** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `microsoft-teams-events` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Microsoft Teams Events** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "microsoft-teams-events": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

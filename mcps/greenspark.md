@@ -1,7 +1,6 @@
 # Greenspark MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/greenspark)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/greenspark-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/greenspark-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/greenspark)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Greenspark** MCP serve
 > Calculating footprint... For a $50 transaction in the 'Airlines' category, the estimated impact is 125 kg of CO2e. Would you like to offset this amount now?
 
 
+## ❓ FAQ
+
+**Q: Can my agent trigger a climate impact like planting a tree through chat?**
+Yes. Use the 'create_impact' tool. By passing the impact type (e.g., 'tree') and the quantity, the agent can programmatically trigger verified climate actions natively through Greenspark's API.
+
+**Q: How do I check my total accumulated impact via chat?**
+You can use the 'get_impact_summary' tool. Your agent will fetch the total count of trees planted, kg of CO2 offset, and plastic bottles rescued, providing a real-time overview of your sustainability goals flawlessly.
+
+**Q: Can I calculate the carbon footprint of a transaction through the agent?**
+Absolutely. Use the 'estimate_footprint' tool. Provide the transaction amount and merchant category, and your agent will return the estimated CO2e impact using Greenspark's estimation engines synchronously.
+
+
 ## Installation & Usage
 
-To install and use the **Greenspark** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/greenspark](https://vinkius.com/mcp/greenspark)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Greenspark** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `greenspark` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Greenspark** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "greenspark": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

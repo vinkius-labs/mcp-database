@@ -1,7 +1,6 @@
 # Yonyou / 用友 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yonyou)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/yonyou-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/yonyou-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yonyou)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Yonyou / 用友** MCP 
 > I've retrieved the organizational metadata. Your ERP environment is structured into 3 main branches: 'Headquarters', 'Manufacturing Division', and 'Global Sales'. Would you like a detailed breakdown of the legal entities under each branch?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Yonyou Tenant ID?**
+Log in to your Yonyou YonBIP administration backend, go to [Digital Modeling] → [My Enterprise] → [Enterprise Information], and you will find your Tenant ID there.
+
+**Q: Can I query inventory levels through this server?**
+Yes. Use the `get_inventory` tool to retrieve real-time stock information. You can filter by material ID or warehouse to get precise availability data.
+
+**Q: Is it possible to list financial vouchers?**
+Yes! Use the `list_vouchers` tool to retrieve a history of accounting vouchers, allowing your agent to audit financial movements across the organization.
+
+
 ## Installation & Usage
 
-To install and use the **Yonyou / 用友** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/yonyou](https://vinkius.com/mcp/yonyou)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Yonyou / 用友** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `yonyou` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Yonyou / 用友** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "yonyou": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

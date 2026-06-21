@@ -1,7 +1,6 @@
 # Webex MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webex)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/webex-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/webex-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webex)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Webex** MCP server usi
 > Searching your Webex calendar… You have 2 meetings today: 1. 'Daily Standup' at 09:30 AM and 2. 'Client Review' at 02:00 PM. Would you like the join details for either of these?
 
 
+## ❓ FAQ
+
+**Q: Can I get the join link for my next meeting through the agent?**
+Yes. The `get_meeting_details` tool allows your AI agent to retrieve the full configuration for any scheduled meeting, including the join URL and dial-in numbers, so you can join instantly.
+
+**Q: How do I create a new collaboration space for my team using chat?**
+You can use the `create_webex_room` tool. Simply provide a title for the space, and your agent will provision the new Webex room for your team immediately.
+
+**Q: Can I reschedule a meeting if I have a conflict?**
+Absolutely. Using the `update_meeting_schedule` tool, you can instruct your agent to change the start and end times or the title of any existing scheduled meeting in your Webex calendar.
+
+
 ## Installation & Usage
 
-To install and use the **Webex** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/webex](https://vinkius.com/mcp/webex)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Webex** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `webex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Webex** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "webex": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

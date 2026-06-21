@@ -1,7 +1,6 @@
 # Open5e MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open5e)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open5e-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open5e-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open5e)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Open5e** MCP server us
 > Searching for Legendary Wondrous Items... I found several, including the 'Apparatus of Kwalish', 'Cubic Gate', and 'Sovereign Glue'. Would you like to see the properties of the Apparatus of Kwalish?
 
 
+## ❓ FAQ
+
+**Q: How can I find a monster with a specific Challenge Rating?**
+Use the `list_creatures` tool and provide the `cr` parameter (e.g., '1', '1/4', or '20'). You can also combine this with the `type` parameter to find, for example, all CR 5 Dragons.
+
+**Q: Can I search for spells available only to a specific class?**
+Yes! Use the `list_spells` tool and set the `class` parameter to your desired class, such as 'Wizard' or 'Cleric'. You can further filter by `level` to narrow down the results.
+
+**Q: What is the best way to find a specific rule or condition?**
+For status effects, use `list_conditions`. For general rules or supplemental text, use `list_sections`. If you aren't sure where it is, use `search_open5e` for a global search across all categories.
+
+
 ## Installation & Usage
 
-To install and use the **Open5e** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/open5e](https://vinkius.com/mcp/open5e)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Open5e** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `open5e` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Open5e** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "open5e": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

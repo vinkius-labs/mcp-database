@@ -1,7 +1,6 @@
 # Cartesia (Voice AI) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cartesia-voice-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cartesia-voice-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cartesia-voice-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cartesia-voice-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Cartesia (Voice AI)** 
 > You currently have 45,200 credits remaining in your account. Your last billing cycle refreshed on the 1st of the month.
 
 
+## ❓ FAQ
+
+**Q: Can I generate audio in different formats like MP3 or WAV?**
+Yes. Using the `tts_bytes` tool, you can specify the `output_format_container` as 'mp3', 'wav', or 'raw', and configure the sample rate and encoding to match your needs.
+
+**Q: How do I transcribe an existing audio file to text?**
+Use the `stt_batch` tool. Provide the base64 encoded audio file, specify the model (e.g., 'ink-whisper'), and the language code to receive a full transcription.
+
+**Q: Is it possible to clone a voice using this integration?**
+Absolutely. The `clone_voice` tool allows you to create a new voice model by uploading a short (approx. 5s) base64 encoded audio clip.
+
+
 ## Installation & Usage
 
-To install and use the **Cartesia (Voice AI)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cartesia-voice-ai](https://vinkius.com/mcp/cartesia-voice-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cartesia (Voice AI)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cartesia-voice-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cartesia (Voice AI)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cartesia-voice-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

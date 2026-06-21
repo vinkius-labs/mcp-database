@@ -1,7 +1,6 @@
 # Telnyx MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telnyx-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/telnyx-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/telnyx-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telnyx-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Telnyx** MCP server us
 > I've found 5 recent calls. Notable interactions include an outbound call to '+1 111 2222' with status 'completed'. Would you like the full metadata for any specific call?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Telnyx API Key?**
+Log in to the [**Telnyx Mission Control Portal**](https://portal.telnyx.com/), go to **Account Settings** > **API Keys**, and create a new key. Copy and paste it below.
+
+**Q: Can the agent check my available balance?**
+Yes. Use the `get_balance` tool. Your agent will retrieve your current account balance and credit limit from Telnyx instantly.
+
+**Q: Is it possible to send global SMS messages via the agent?**
+Yes. The `send_message` tool allows your agent to deliver SMS to any global number using your Telnyx phone numbers, provided your account has the correct messaging profiles.
+
+
 ## Installation & Usage
 
-To install and use the **Telnyx** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/telnyx-alternative](https://vinkius.com/mcp/telnyx-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Telnyx** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `telnyx-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Telnyx** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "telnyx-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

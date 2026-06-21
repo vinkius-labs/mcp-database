@@ -1,7 +1,6 @@
 # Deterministic Global Postal Formatter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-global-postal-formatter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-global-postal-formatter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-global-postal-formatter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-global-postal-formatter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Deterministic Global P
 > Using the format_postal_code tool: Validation failed (`isValid: false`). A US ZIP requires exactly 5 or 9 digits.
 
 
+## ❓ FAQ
+
+**Q: Does it connect to a web API to verify if the address exists?**
+No. The Postal Formatter is an algorithmic formatting tool designed for high-speed offline validation. It checks structural integrity (e.g., ensuring a US ZIP has exactly 5 or 9 digits) rather than pinging a geolocation API.
+
+**Q: What happens if my agent submits a badly malformed string?**
+The engine intercepts the failure via deterministic Regex. Instead of crashing, it gracefully returns an object with `isValid: false` and a clear diagnostic so your AI can prompt the user for the correct format.
+
+**Q: Why do I need a formatting tool for this?**
+LLMs constantly hallucinate formatting characters. If you pass 'sw1a1aa' to an LLM to capitalize and space it, it might generate 'SW 1A 1AA' instead of the mathematically correct 'SW1A 1AA'. This MCP guarantees precision.
+
+
 ## Installation & Usage
 
-To install and use the **Deterministic Global Postal Formatter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deterministic-global-postal-formatter](https://vinkius.com/mcp/deterministic-global-postal-formatter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deterministic Global Postal Formatter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deterministic-global-postal-formatter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deterministic Global Postal Formatter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deterministic-global-postal-formatter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # SpotHero Parking MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spothero-parking)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spothero-parking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spothero-parking-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spothero-parking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **SpotHero Parking** MCP
 > Found 3 events: 1) Concert at City Hall (7 PM). 2) Sports Game at Arena (8 PM). Parking rates nearby are +20% due to high demand.
 
 
+## ❓ FAQ
+
+**Q: How do I book a parking spot via the API?**
+Use the book_parking action. You need the spot_id, start/end times, a valid payment method ID, and vehicle details (plate, make, model) in JSON format.
+
+**Q: Can I compare prices for different spots?**
+Yes! Use search_parking to get a list of spots with their total costs, or use get_pricing to check the specific rate for a single spot over a duration.
+
+**Q: How do I cancel a reservation?**
+Use the cancel_reservation action with the reservation_id. Check SpotHero's policy for refund timelines.
+
+
 ## Installation & Usage
 
-To install and use the **SpotHero Parking** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/spothero-parking](https://vinkius.com/mcp/spothero-parking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SpotHero Parking** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `spothero-parking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SpotHero Parking** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "spothero-parking": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

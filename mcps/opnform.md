@@ -1,7 +1,6 @@
 # OpnForm MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opnform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opnform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opnform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opnform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **OpnForm** MCP server u
 > New form "Product Feedback Survey" created successfully in the Product workspace (ID: form_847). It includes a 5-star rating field, a text area for comments, an email field for follow-ups, and a dropdown for product category selection. The form is currently in draft mode and ready for customization before publishing.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically create a new form by describing it?**
+Yes! Use the `create_form` tool. Provide a title and optional fields, and your agent will generate the form in your workspace instantly. You can then refine it via natural language.
+
+**Q: How do I find my OpnForm Personal Access Token?**
+Log in to OpnForm, navigate to **Settings** > **API Keys**, and click 'Create a new token'. Copy the generated key immediately as it will only be shown once.
+
+**Q: Does it support listing all submissions?**
+Yes, use the `list_submissions` tool with your Form ID. The AI can then help you search, filter, or summarize the results directly in the chat.
+
+
 ## Installation & Usage
 
-To install and use the **OpnForm** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opnform](https://vinkius.com/mcp/opnform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpnForm** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opnform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpnForm** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opnform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

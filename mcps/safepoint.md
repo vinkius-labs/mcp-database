@@ -1,7 +1,6 @@
 # Safepoint MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/safepoint)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/safepoint-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/safepoint-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/safepoint)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Safepoint** MCP server
 > Safety task created: "Emergency Exit Inspection - Building A". Assigned to: Maintenance Team (5 members). Location: Building A (8 emergency exits across 4 floors). Checklist: door functionality, signage visibility, pathway clearance, alarm testing, lighting verification. Due date: May 20, 2025. Priority: High (post-fire alarm incident). Compliance requirement: OSHA 1910.37. Previous inspection: March 15, 2025 (all passed). Photo documentation required for each exit.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the last 5 safety alerts in Safepoint?**
+Yes! Use the `list_alerts` tool. Your agent will respond with complete metadata for the most recent safety incidents, including status, location, and user details in seconds.
+
+**Q: How do I check the live location for a specific worker?**
+Simply ask the agent to run the `list_locations` action. It will retrieve the current GPS coordinates and activity status for all active workers in your team.
+
+**Q: How do I find my Safepoint API Token?**
+Log in to your Safepoint web portal, navigate to **Account** > **API Token**, and click **Generate** to create and copy your unique secret token.
+
+
 ## Installation & Usage
 
-To install and use the **Safepoint** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/safepoint](https://vinkius.com/mcp/safepoint)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Safepoint** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `safepoint` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Safepoint** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "safepoint": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

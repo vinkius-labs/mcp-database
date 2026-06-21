@@ -1,7 +1,6 @@
 # ClickHouse MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clickhouse)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clickhouse-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clickhouse-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clickhouse)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **ClickHouse** MCP serve
 > The `execute_query` action was successful. The table 'mcp_test' has been created in the default database with the specified schema.
 
 
+## ❓ FAQ
+
+**Q: Can I safely run analytical queries without accidentally modifying data?**
+Yes. The `select_query` tool is strictly read-only and automatically enforces the `readonly=1` setting, ensuring that only SELECT, SHOW, and DESCRIBE operations are permitted.
+
+**Q: How do I check if my ClickHouse cluster is healthy and synchronized?**
+You can use the `ping` tool to check server reachability and the `replicas_status` tool to inspect replication delays and the status of your replicas.
+
+**Q: Is it possible to create new tables or insert data using this server?**
+Yes. For mutating operations like INSERT, CREATE, or ALTER, use the `execute_query` action. This tool allows you to modify the database schema and manage data records.
+
+
 ## Installation & Usage
 
-To install and use the **ClickHouse** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clickhouse](https://vinkius.com/mcp/clickhouse)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ClickHouse** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clickhouse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ClickHouse** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clickhouse": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

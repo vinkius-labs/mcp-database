@@ -1,7 +1,6 @@
 # JD Cloud Infrastructure MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jd-cloud-infrastructure)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jd-cloud-infrastructure-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jd-cloud-infrastructure-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jd-cloud-infrastructure)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,46 @@ Here are some examples of how you can interact with the **JD Cloud Infrastructur
 > I pulled cpu.util metrics for i-abc123. Average CPU usage: 34.2%, peak: 78.9% at 23:42 UTC. The instance appears healthy with no sustained high-load periods.
 
 
+## ❓ FAQ
+
+**Q: Is the JDCLOUD2-HMAC-SHA256 signing handled automatically?**
+Yes. The MCP engine locally derives signing keys through HMAC chains (date → region → service → jdcloud2_request), constructs canonical requests, and injects the Authorization header transparently. Your AI never handles raw crypto.
+
+
 ## Installation & Usage
 
-To install and use the **JD Cloud Infrastructure** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jd-cloud-infrastructure](https://vinkius.com/mcp/jd-cloud-infrastructure)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **JD Cloud Infrastructure** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jd-cloud-infrastructure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **JD Cloud Infrastructure** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jd-cloud-infrastructure": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

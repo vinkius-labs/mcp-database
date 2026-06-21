@@ -1,7 +1,6 @@
 # FCC Broadcaster MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fcc-broadcaster)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fcc-broadcaster-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fcc-broadcaster-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fcc-broadcaster)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **FCC Broadcaster** MCP 
 The FM facility spanning 89.3 has been formally checked. Current status: Actively licensed to operate optimally safely purely within standard bandwidth constraints natively structurally.
 
 
+## ❓ FAQ
+
+**Q: Do I need to pay or provide an API Key?**
+Absolutely not. The broadcaster database queries operate completely unmetered in the public domain, providing direct agency-to-agent accessibility.
+
+**Q: Can I search for both television and radio networks?**
+Yes. This configuration comes with dedicated AI routes for looking up specific Call Signs spanning across the entire FM, AM, and modern TV landscape.
+
+**Q: Are there limits to how many searches I can perform daily?**
+As the platform utilizes public regulatory endpoints natively, there are no strict quotas. You can safely poll multiple licensing metrics back-to-back without hitting hard paywalls.
+
+
 ## Installation & Usage
 
-To install and use the **FCC Broadcaster** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fcc-broadcaster](https://vinkius.com/mcp/fcc-broadcaster)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FCC Broadcaster** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fcc-broadcaster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FCC Broadcaster** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fcc-broadcaster": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

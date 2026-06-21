@@ -1,7 +1,6 @@
 # Leonardo da Vinci Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leonardo-da-vinci-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/leonardo-da-vinci-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/leonardo-da-vinci-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leonardo-da-vinci-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Leonardo da Vinci Prov
 > INTERDISCIPLINARY_BLIND — Observation passes: 340K delays, 72% bottlenecks, concentrated step — this is empirical data. But cross-domain fails: 'from a purely operational perspective' is single-domain thinking. Da Vinci connected fluid dynamics to painting. What does queueing theory (mathematics) teach about your bottleneck pattern — is it gradual accumulation or a sudden surge? What does urban planning teach about your lookup flow — is this a highway bottleneck or a neighborhood dead-end? The transferred insight changes the solution: a staging buffer fixes symptoms, but queueing theory reveals whether the problem is concurrency (add staff) or sequencing (parallelize steps).
 
 
+## ❓ FAQ
+
+**Q: Is this only for visual design?**
+No. Da Vinci was an engineer, anatomist, architect, and painter. This tool applies his method to any creative problem: process design, product design, experience flows, organizational structure, service design, operational improvement. The 5 pivots — observe, connect domains, prototype, exploit constraints, iterate — apply wherever a human designs something for other humans.
+
+**Q: What counts as cross-domain synthesis?**
+Two genuinely different disciplines, not sub-fields. Frontend and backend are the same domain. Psychology and software architecture are different domains. Biology and data modeling are different domains. Music theory and UI rhythm are different domains. The insight must transfer — not 'I thought about psychology' but 'cognitive load theory from psychology limits my dashboard to 7±2 elements per view.'
+
+**Q: Why does it require 3+ variations?**
+Da Vinci's notebooks contain 50+ sketches of a single muscle group. One answer is a reflex — three variations with annotated trade-offs is design. Variation A optimizes for simplicity. Variation B optimizes for performance. Variation C asks 'what if the opposite were true?' The comparison reveals which trade-offs you are willing to make and which you are not.
+
+
 ## Installation & Usage
 
-To install and use the **Leonardo da Vinci Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/leonardo-da-vinci-prover](https://vinkius.com/mcp/leonardo-da-vinci-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Leonardo da Vinci Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `leonardo-da-vinci-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Leonardo da Vinci Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "leonardo-da-vinci-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

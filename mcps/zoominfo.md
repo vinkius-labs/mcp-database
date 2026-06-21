@@ -1,7 +1,6 @@
 # ZoomInfo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoominfo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoominfo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoominfo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoominfo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,55 @@ Here are some examples of how you can interact with the **ZoomInfo** MCP server 
 > 12 companies in your target market are showing strong intent signals for 'marketing automation' this week: TechFlow Inc (intent score: 95), GrowthStack (89), DataDriven Co (87), and 9 others. Average company size: 200-500 employees.
 
 
+## ❓ FAQ
+
+**Q: How do I get my ZoomInfo API credentials?**
+You need a **ZoomInfo Enterprise plan** with API access enabled. Log in as an admin user. Navigate to **Admin → Integrations → API**. Click **Generate Credentials** to create your **Client ID** and **Client Secret**. Copy both values and paste them below. Note: API access requires admin approval — if you don't see the API section, contact your ZoomInfo account manager.
+
+**Q: Can my AI agent find VP-level contacts at specific companies?**
+Yes. Ask 'Find all VP-level contacts at Salesforce in Engineering' and get verified names, titles, emails, direct dial numbers, and LinkedIn profiles — ready for immediate outreach without any data cleanup.
+
+**Q: Can I enrich my existing CRM contacts with ZoomInfo data?**
+Yes. Provide an email or company name and ZoomInfo returns the latest verified data — including updated job titles, phone numbers, company revenue, employee count, and tech stack. Perfect for cleaning stale CRM records before outreach campaigns.
+
+**Q: Is intent data available through the API?**
+Yes, if your ZoomInfo plan includes Intent Data. Your AI agent can query which companies are actively researching topics related to your product — giving your sales team a warm lead signal before prospects even visit your website.
+
+
 ## Installation & Usage
 
-To install and use the **ZoomInfo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zoominfo](https://vinkius.com/mcp/zoominfo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ZoomInfo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zoominfo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ZoomInfo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zoominfo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

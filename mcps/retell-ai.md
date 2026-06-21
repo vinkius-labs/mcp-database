@@ -1,7 +1,6 @@
 # Retell AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/retell-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/retell-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/retell-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/retell-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Retell AI** MCP server
 > Done. I engaged `create_phone_call` injecting your JSON settings to ring out! Retell processing is initiated. Monitor your active calls using `list_calls` to see when it connects and check its metrics after completion.
 
 
+## ❓ FAQ
+
+**Q: Does Retell handle the telephone lines, or do I need my own Twilio/carrier?**
+Retell AI is designed to integrate seamlessly into telephony workflows but generally focuses on the conversational agent side. They provide features to list and attach numbers (`list_phone_numbers`), but you often purchase those numbers or link a custom SIP trunk through Retell accounts. You can run `list_phone_numbers` to see your currently available direct lines.
+
+**Q: How do I create an outbound call programmatically with my assistant?**
+Simply ask your assistant to "Call X using my Y agent." Behind the scenes, the AI relies on the `create_phone_call` tool, transmitting a JSON payload supplying the `from_number` (a Retell registered phone number), `to_number` (destination), and an `override_agent_id` parameter to assign your voice agent correctly.
+
+**Q: Can the AI initiate voice calls in a web browser instead of over the phone?**
+Yes. Use the `register_web_call` tool to create a browser-based voice session. This returns a connection URL and access token that your frontend application can use to start a real-time WebRTC conversation with a Retell voice agent, without requiring any phone line.
+
+
 ## Installation & Usage
 
-To install and use the **Retell AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/retell-ai](https://vinkius.com/mcp/retell-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Retell AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `retell-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Retell AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "retell-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

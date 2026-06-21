@@ -1,7 +1,6 @@
 # Hallucination Detector Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hallucination-detector-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hallucination-detector-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hallucination-detector-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hallucination-detector-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -57,12 +56,52 @@ Here are some examples of how you can interact with the **Hallucination Detector
 > Verdict: KNOWLEDGE_EXCEEDED. 'I checked' fabricates data access — LLMs do not browse the internet. '$500 billion' lacks source attribution.
 
 
+## ❓ FAQ
+
+**Q: What counts as a verifiable source?**
+Author or organization, publication name, date, and DOI or URL. 'Studies show' is rejected. 'Smith et al., Nature 2024, doi:10.1038/...' is accepted.
+
+**Q: How does confidence calibration work?**
+The engine requires per-claim confidence with evidence quality: '90% confident (3 peer-reviewed sources)' instead of 'definitely' or '100% certain'.
+
+**Q: Can it detect self-contradictions?**
+Yes. It rejects circular self-validation like 'as I said' and demands explicit cross-referencing by paragraph and claim number.
+
+
 ## Installation & Usage
 
-To install and use the **Hallucination Detector Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hallucination-detector-prover](https://vinkius.com/mcp/hallucination-detector-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hallucination Detector Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hallucination-detector-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hallucination Detector Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hallucination-detector-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

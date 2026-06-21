@@ -1,7 +1,6 @@
 # OpenCage Geocoder MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opencage-geocoder)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opencage-geocoder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opencage-geocoder-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opencage-geocoder)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **OpenCage Geocoder** MC
 > Searching for 'Main Street' in the UK... I found a primary result: Main Street, Gibraltar, Royaume-Uni (Note: Gibraltar is a British Overseas Territory). Would you like to see other matches within the UK?
 
 
+## ❓ FAQ
+
+**Q: Can I limit the search results to a specific country?**
+Yes! Use the `countrycode` parameter in the `forward_geocode` tool with ISO 3166-1 alpha-2 codes (e.g., 'us' for USA, 'br' for Brazil) to restrict results to that territory.
+
+**Q: How do I get the address of a specific set of coordinates?**
+Use the `reverse_geocode` tool by providing the `lat` (latitude) and `lng` (longitude). The agent will return the most accurate formatted address found for those coordinates.
+
+**Q: Can I get information about the nearest road to a location?**
+Yes. By setting the `roadinfo` parameter to true in either `forward_geocode` or `reverse_geocode`, the API will attempt to match the location to the nearest road and include road-specific data in the response.
+
+
 ## Installation & Usage
 
-To install and use the **OpenCage Geocoder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/opencage-geocoder](https://vinkius.com/mcp/opencage-geocoder)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenCage Geocoder** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `opencage-geocoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenCage Geocoder** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "opencage-geocoder": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

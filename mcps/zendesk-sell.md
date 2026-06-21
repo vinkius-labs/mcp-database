@@ -1,7 +1,6 @@
 # Zendesk Sell MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zendesk-sell)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zendesk-sell-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zendesk-sell-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zendesk-sell)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Zendesk Sell** MCP ser
 > Successfully updated deal 54321. The status is now marked as 'Won' in your Zendesk Sell pipeline. Congratulations!
 
 
+## ❓ FAQ
+
+**Q: What is the difference between a Lead and a Contact in Zendesk Sell?**
+Leads represent potential interest but are not yet qualified. Contacts are qualified individuals or organizations that can be associated with sales deals.
+
+**Q: Can I associate a deal with a contact via the agent?**
+Yes, when using the `create_sales_deal` tool, you must provide a `contact_id` to link the new opportunity to an existing person or company.
+
+**Q: How do I update the status of an existing deal?**
+Use the `update_existing_deal` tool with the unique deal ID and a JSON object containing the new status (e.g., 'Won', 'Lost', or a specific pipeline stage).
+
+
 ## Installation & Usage
 
-To install and use the **Zendesk Sell** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zendesk-sell](https://vinkius.com/mcp/zendesk-sell)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zendesk Sell** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zendesk-sell` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zendesk Sell** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zendesk-sell": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

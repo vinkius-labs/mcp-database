@@ -1,7 +1,6 @@
 # PurpleAir MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/purpleair)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/purpleair-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/purpleair-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/purpleair)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Here are some examples of how you can interact with the **PurpleAir** MCP server
 > I found 47 outdoor sensors in the Los Angeles area. PM2.5 readings range from 4.1 to 35.6 µg/m³. Areas near freeways show higher readings (15-35 µg/m³) while coastal areas are cleaner (4-8 µg/m³). Here's the complete map with readings.
 
 
+## ❓ FAQ
+
+**Q: How do I find air quality near my address?**
+Use the `get_sensors_near_me` tool with your latitude and longitude. Alternatively, search for sensors by bounding box using `get_sensors_by_bounding_box` with corner coordinates. The API will return nearby sensors with current PM2.5, temperature, and humidity readings.
+
+**Q: Can I get historical air quality data?**
+Yes. Use `get_sensor_history` with a sensor index and time range (Unix timestamps). You can specify which fields to retrieve (PM2.5, temperature, humidity) and set an averaging interval (e.g. 3600 for hourly averages). For spreadsheet analysis, use `get_sensor_history_csv` to get data in CSV format.
+
+**Q: What does PM2.5 mean and why is it important?**
+PM2.5 refers to fine particulate matter smaller than 2.5 micrometers — about 30 times smaller than a human hair. These particles can penetrate deep into lungs and enter the bloodstream, causing respiratory and cardiovascular health effects. The WHO guideline is 5 µg/m³ annual average. PurpleAir sensors measure PM2.5 in real-time, making them essential for health advisories and pollution monitoring.
+
+
 ## Installation & Usage
 
-To install and use the **PurpleAir** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/purpleair](https://vinkius.com/mcp/purpleair)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PurpleAir** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `purpleair` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PurpleAir** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "purpleair": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

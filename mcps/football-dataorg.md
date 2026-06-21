@@ -1,7 +1,6 @@
 # Football-Data.org MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/football-dataorg)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/football-dataorg-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/football-dataorg-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/football-dataorg)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **Football-Data.org** MC
 > Real Madrid's upcoming matches are: 1. vs AC Milan (Champions League), 2. vs Osasuna (La Liga), and 3. vs Leganés (La Liga). Would you like the exact dates and times?
 
 
+## ❓ FAQ
+
+**Q: Can I see the current league table for a specific competition like the Premier League?**
+Yes. Use the `get_competition_standings` tool with the competition code (e.g., 'PL' for Premier League). It will return the full standings including points, goals, and form.
+
+**Q: How do I find the top goal scorers for the current Champions League season?**
+Simply use the `list_competition_scorers` tool and provide the competition ID or code (e.g., 'CL'). The agent will list the top players and their goal counts.
+
+**Q: Is it possible to check the match history or upcoming fixtures for a specific team?**
+Yes, you can use `list_team_matches` by providing the Team ID. You can also filter by status (e.g., 'FINISHED' or 'SCHEDULED') to see past or future games.
+
+
 ## Installation & Usage
 
-To install and use the **Football-Data.org** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/football-dataorg](https://vinkius.com/mcp/football-dataorg)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Football-Data.org** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `football-dataorg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Football-Data.org** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "football-dataorg": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

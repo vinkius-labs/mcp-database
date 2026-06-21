@@ -1,7 +1,6 @@
 # Redis Vector MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/redis-vector)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/redis-vector-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/redis-vector-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/redis-vector)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Redis Vector** MCP ser
 > I extracted the metadata using `get_index_info`. 'docs-semantic-index' holds 5,000 documents parameterized with the HNSW algorithm, set to 1536 float dimensions, utilizing the COSINE metric protocol.
 
 
+## ❓ FAQ
+
+**Q: What is the format required for the 'Redis URL' parameter?**
+The parameter requires standard Redis URI string formatting. Typically it looks like `redis://[username]:[password]@[host]:[port]`. For TLS/SSL-enabled endpoints spanning secure setups, use the `rediss://` scheme prefix.
+
+**Q: Does my Redis instance strictly need the RediSearch module?**
+Yes, absolutely. The base Redis product (standard open-source) only manages key-value caching out of the box. You must be running the Redis Stack or a managed tier (like Redis Enterprise or compatible cloud offerings) that explicitly includes RediSearch to generate and query KNN vector indexes.
+
+**Q: Can I query using embedding arrays output directly from OpenAI models?**
+Yes. Once you receive your numerical float array from an embedding model (like text-embedding-ada-002), you can pipe that exact JSON array into the `search_vectors` agent tool alongside the relevant index name to perform immediate proximity lookups.
+
+
 ## Installation & Usage
 
-To install and use the **Redis Vector** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/redis-vector](https://vinkius.com/mcp/redis-vector)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Redis Vector** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `redis-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Redis Vector** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "redis-vector": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

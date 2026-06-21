@@ -1,7 +1,6 @@
 # Google Books MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-books-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-books-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-books-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-books-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Google Books** MCP ser
 > Retrieving volume data... This is 'Project Hail Mary' by Andy Weir. It has 496 pages, published by Ballantine Books, and is categorized under Fiction / Science Fiction / Space Exploration.
 
 
+## ❓ FAQ
+
+**Q: Can I search for a book specifically by its ISBN?**
+Yes. Use the `search_volumes` tool and include `isbn:` followed by the number in the query string (e.g., `isbn:9780141036144`).
+
+**Q: How do I add a book to my personal 'Favorites' shelf?**
+Use the `add_volume_to_my_bookshelf` tool. You will need the `volumeId` of the book and the `shelf` ID (usually '0' for Favorites). This requires an OAuth access token.
+
+**Q: Can I filter search results to only show free ebooks?**
+Absolutely. When using `search_volumes`, set the `filter` parameter to `free-ebooks` to restrict results to titles available at no cost.
+
+
 ## Installation & Usage
 
-To install and use the **Google Books** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-books-alternative](https://vinkius.com/mcp/google-books-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Books** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-books-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Books** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-books-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

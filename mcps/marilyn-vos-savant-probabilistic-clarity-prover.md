@@ -1,7 +1,6 @@
 # Marilyn vos Savant Probabilistic Clarity Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marilyn-vos-savant-probabilistic-clarity-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/marilyn-vos-savant-probabilistic-clarity-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/marilyn-vos-savant-probabilistic-clarity-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marilyn-vos-savant-probabilistic-clarity-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Marilyn vos Savant Pro
 > FRAMING_ACCEPTED — The 50/50 split frames this as a coin flip. It is not. Who are the 50%? DBAs vs. frontend devs? The framing hides that expertise weighting matters more than headcount.
 
 
+## ❓ FAQ
+
+**Q: Does it compute probabilities?**
+No. It forces the agent to show its probabilistic reasoning — state the intuitive answer, compute the actual probability, account for base rates, scrutinize the sample. The engine validates consistency, not computation. If the agent claims it checked intuition but uses phrases like 'it seems like,' the engine rejects.
+
+**Q: How is this different from the Critical Thinking Prover?**
+Critical Thinking validates general reasoning — assumptions, perspectives, evidence. Marilyn targets PROBABILISTIC reasoning specifically: base rates, sample bias, framing traps, independence assumptions. Critical Thinking asks 'did you consider alternatives?' Marilyn asks 'did you compute the actual probability, or did you just go with your gut?'
+
+**Q: What is the Monty Hall problem and why does it matter here?**
+Three doors. One prize. You pick door 1. The host opens door 3 — empty. Switch or stay? Intuition says 50/50. Math says switch wins 2/3 of the time. 10,000 people — including PhDs — got this wrong. The prover catches the same failure pattern: trusting intuition when the math says otherwise.
+
+
 ## Installation & Usage
 
-To install and use the **Marilyn vos Savant Probabilistic Clarity Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/marilyn-vos-savant-probabilistic-clarity-prover](https://vinkius.com/mcp/marilyn-vos-savant-probabilistic-clarity-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Marilyn vos Savant Probabilistic Clarity Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `marilyn-vos-savant-probabilistic-clarity-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Marilyn vos Savant Probabilistic Clarity Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "marilyn-vos-savant-probabilistic-clarity-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

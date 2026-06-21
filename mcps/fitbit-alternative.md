@@ -1,7 +1,6 @@
 # Fitbit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fitbit-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fitbit-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fitbit-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fitbit-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -115,12 +114,52 @@ Here are some examples of how you can interact with the **Fitbit** MCP server us
 > Fetching your AZM data for the past week... You averaged 35 minutes per day, with a peak of 60 minutes last Tuesday. You've met your weekly intensity goal!
 
 
+## ❓ FAQ
+
+**Q: Can I check my Active Zone Minutes for a specific date range?**
+Yes. You can use the `get_azm_by_interval` tool by providing a start and end date to see your heart rate intensity trends over that period.
+
+**Q: Is it possible to log a workout manually through the AI?**
+Absolutely. Use the `create_activity_log` tool. You just need to provide the activity details like ID, start time, and duration in the JSON body.
+
+**Q: Can I monitor my weight and body fat goals?**
+Yes, the `get_body_goals` tool allows you to retrieve your current configured goals for either 'weight' or 'fat' to keep track of your progress.
+
+
 ## Installation & Usage
 
-To install and use the **Fitbit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fitbit-alternative](https://vinkius.com/mcp/fitbit-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fitbit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fitbit-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fitbit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fitbit-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

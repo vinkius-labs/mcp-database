@@ -1,7 +1,6 @@
 # BLS Jobs — Nonfarm Payrolls & Wages MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bls-jobs-nonfarm-payrolls-wages)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bls-jobs-nonfarm-payrolls-wages-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bls-jobs-nonfarm-payrolls-wages-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bls-jobs-nonfarm-payrolls-wages)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,55 @@ Average hourly earnings for all employees on private nonfarm payrolls rose to **
 These three sectors accounted for over 60% of all nonfarm payroll additions that month.
 
 
+## ❓ FAQ
+
+**Q: How do I get started?**
+Subscribe, create a Free BLS Account at **data.bls.gov/registrationEngine**, and enter your API Key. No complex coding required — your AI will automatically parse the SeriesIDs for Nonfarm Payrolls and wages, retrieving the exact macro snapshots.
+
+**Q: Are these numbers seasonally adjusted?**
+Yes, by default the AI interacts with the Seasonally Adjusted (SA) SeriesIDs for Nonfarm Payrolls, allowing you to track macro trends cleanly without the noise of holiday hiring surges.
+
+**Q: Does this include agricultural (farm) jobs?**
+No. The CES (Current Employment Statistics) specifically tracks Nonfarm payrolls, representing about 80% of workers who produce the entire Gross Domestic Product of the United States.
+
+**Q: Can I drill down into specific industries?**
+Absolutely. Ask your agent to fetch CES data for the 'Information' sector, 'Construction', or 'Leisure and Hospitality' to identify precisely which parts of the economy are hiring or firing.
+
+
 ## Installation & Usage
 
-To install and use the **BLS Jobs — Nonfarm Payrolls & Wages** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bls-jobs-nonfarm-payrolls-wages](https://vinkius.com/mcp/bls-jobs-nonfarm-payrolls-wages)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BLS Jobs — Nonfarm Payrolls & Wages** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bls-jobs-nonfarm-payrolls-wages` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BLS Jobs — Nonfarm Payrolls & Wages** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bls-jobs-nonfarm-payrolls-wages": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

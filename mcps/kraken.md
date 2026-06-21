@@ -1,7 +1,6 @@
 # Kraken MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kraken)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kraken-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kraken-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kraken)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,55 @@ Here are some examples of how you can interact with the **Kraken** MCP server us
 > Recent SOL/USD trades: $185.50 (buy, 12.5 SOL), $185.45 (sell, 8.2 SOL), $185.55 (buy, 25 SOL), $185.40 (sell, 15 SOL), $185.60 (buy, 5.3 SOL). Total volume in last 10 trades: ~250 SOL.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! All public market data (tickers, OHLC, trades, order book, spreads, asset info) is available without authentication. Just subscribe and start querying.
+
+**Q: What trading pairs are available?**
+Kraken supports 500+ trading pairs including major pairs like XBT/USD, ETH/USD, ETH/XBT, SOL/USD and many altcoin pairs. Use get_asset_pairs to see the complete list.
+
+**Q: What timeframes are available for OHLC data?**
+OHLC data is available in these intervals: 1 (1 minute), 5, 15, 30, 60 (1 hour), 240 (4 hours), 1440 (1 day), 10080 (1 week), 21600 (15 days). Use get_ohlc with the interval parameter.
+
+**Q: What is the difference between XBT and BTC?**
+They're the same cryptocurrency! XBT is the ISO 4217 standard code for Bitcoin used by Kraken's API, while BTC is the common ticker symbol. Kraken pairs use XBT (e.g., XBTUSD = Bitcoin/US Dollar).
+
+
 ## Installation & Usage
 
-To install and use the **Kraken** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kraken](https://vinkius.com/mcp/kraken)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kraken** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kraken` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kraken** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kraken": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

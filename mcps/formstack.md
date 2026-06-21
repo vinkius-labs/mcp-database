@@ -1,7 +1,6 @@
 # Formstack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/formstack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/formstack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/formstack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/formstack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,55 @@ Here are some examples of how you can interact with the **Formstack** MCP server
 > Retrieving HTML... I've fetched the raw HTML code for form 9876543. You can now copy and paste it into your website's source code.
 
 
+## ❓ FAQ
+
+**Q: How do I get an Access Token for Formstack?**
+You can generate a Personal Access Token in your Formstack account settings under the API section.
+
+**Q: Can I retrieve the raw HTML of a form for embedding?**
+Yes! Use the 'get_form_html' tool and provide the Form ID. The agent will return the raw HTML code ready for use.
+
+**Q: Is there a limit to the number of submissions I can retrieve?**
+The retrieval depends on your Formstack plan limits. The 'list_submissions' tool supports pagination to help you navigate through large sets of records.
+
+**Q: Can I manage form webhooks through the agent?**
+Yes, you can use the 'list_form_webhooks' and 'create_webhook' tools to monitor and automate your real-time data notifications.
+
+
 ## Installation & Usage
 
-To install and use the **Formstack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/formstack](https://vinkius.com/mcp/formstack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Formstack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `formstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Formstack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "formstack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

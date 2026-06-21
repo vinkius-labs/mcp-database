@@ -1,7 +1,6 @@
 # Gong MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gong)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gong-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gong-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gong)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Gong** MCP server usin
 > Retrieving metrics... Marcus R. had 45 calls with an average duration of 22 minutes. His 'Talk-to-Listen' ratio was 45%, which is within the target range. However, his longest monologue increased by 10% compared to last month.
 
 
+## ❓ FAQ
+
+**Q: Can I search for specific keywords across all my company's recorded calls?**
+Yes! Use the `search_calls` tool to filter calls by content, participants, or specific trackers. You can then use `get_transcript` to analyze exactly how those terms were used in context.
+
+**Q: Does this integration provide access to the actual audio or video recording?**
+The `get_call_media` tool provides details about the media associated with a call. For security reasons, the AI primarily analyzes the text-based transcript and metadata, but it can provide links to the recording on the Gong platform.
+
+**Q: How current is the data retrieved by the AI agent?**
+The integration queries Gong's API in real-time. As soon as a call is processed and available in your Gong dashboard, it can be retrieved and analyzed by your AI agent.
+
+
 ## Installation & Usage
 
-To install and use the **Gong** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gong](https://vinkius.com/mcp/gong)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gong** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gong` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gong** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gong": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

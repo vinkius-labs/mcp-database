@@ -1,7 +1,6 @@
 # CallFire MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/callfire)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/callfire-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/callfire-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/callfire)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **CallFire** MCP server 
 > SMS 99283 was sent to +1234567890 on March 20th. The status is 'FINISHED' and the message body was 'Your code is 1234'.
 
 
+## ❓ FAQ
+
+**Q: Can I send an SMS using the agent?**
+Yes! Use the `send_sms` tool with the recipient's phone number and your message content. Your agent will trigger the dispatch through CallFire instantly.
+
+**Q: How do I check the status of a specific call?**
+Simply ask the agent to `get_call_details` and provide the Call ID. It will retrieve the latest status, such as 'finished' or 'failed', directly from CallFire.
+
+**Q: Does the integration allow creating a new voice broadcast?**
+The current toolset is focused on individual actions and querying (Read-Only/Individual Dispatch) for operational control. Massive broadcasts should be configured via the CallFire web dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **CallFire** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/callfire](https://vinkius.com/mcp/callfire)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CallFire** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `callfire` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CallFire** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "callfire": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

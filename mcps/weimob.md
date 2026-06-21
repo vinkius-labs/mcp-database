@@ -1,7 +1,6 @@
 # Weimob / 微盟 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/weimob)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/weimob-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/weimob-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/weimob)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Weimob / 微盟** MCP 
 > Across the last 7 days, your shop generated ¥150,000 in revenue from 450 orders. Your top-selling category is 'Electronics'. Would you like a more detailed breakdown by product?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Weimob Client ID and Secret?**
+Log in to the [Weimob Cloud Console](https://cloud.weimob.com/), create an application, and you will find your Client ID (App Key) and Client Secret in the application management section.
+
+**Q: Can I check stock levels for specific SKUs?**
+Yes. Use the `get_inventory` tool with the SKU ID. It will return the current stock level for that specific product variant.
+
+**Q: Does this server support multi-shop management?**
+Yes, as long as your Client ID and Secret have authorized access to multiple shops within your Weimob organization, your agent can manage them through the unified API interface.
+
+
 ## Installation & Usage
 
-To install and use the **Weimob / 微盟** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/weimob](https://vinkius.com/mcp/weimob)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Weimob / 微盟** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `weimob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Weimob / 微盟** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "weimob": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

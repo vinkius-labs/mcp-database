@@ -1,7 +1,6 @@
 # 3Scribe MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/3scribe)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/3scribe-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/3scribe-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/3scribe)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **3Scribe** MCP server u
 > I've successfully deleted the transcription job 99999 from your account. The data has been permanently removed.
 
 
+## ❓ FAQ
+
+**Q: How do I start a new transcription?**
+Use the `create_job` tool and provide the public URL of your audio or video file. Your agent will initiate the process and provide a Job ID.
+
+**Q: Can I check if a transcription is finished?**
+Yes. Use the `get_job` tool with the Job ID. It will return the current status and, if completed, the transcribed text.
+
+**Q: How can I clean up my transcription history?**
+Use the `delete_job` tool and provide the Job ID. This permanently removes the transcription data from your 3Scribe account.
+
+
 ## Installation & Usage
 
-To install and use the **3Scribe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/3scribe](https://vinkius.com/mcp/3scribe)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **3Scribe** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `3scribe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **3Scribe** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "3scribe": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

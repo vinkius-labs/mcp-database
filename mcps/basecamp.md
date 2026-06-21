@@ -1,7 +1,6 @@
 # Basecamp MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/basecamp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/basecamp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/basecamp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/basecamp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Basecamp** MCP server 
 > I've pulled the Basecamp hierarchy. You have 3 primary explicit team projects: 'Mobile MVP 2026', 'Accounting Integration', and 'HQ General Ops'. Would you like the people directory mapping their team memberships?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent summarize discussions from Basecamp Campfires?**
+Yes. Command the agent to 'List recent campfire lines from project X'. It retrieves the chat log arrays, allowing the LLM natively to digest confusing thread debates into a pristine bullet-point summary.
+
+**Q: How does the agent handle nested 'Todoset' boundaries?**
+Basecamp uses specific bounded models. The agent automatically runs sequential tools: finding the project, identifying the explicit Todoset ID, listing todolists inside it, and ultimately grabbing the real atomic 'Todos'. It navigates the structure smoothly.
+
+**Q: Does it track who wrote a specific task or message board post?**
+Absolutely. Alongside content, it extracts explicit metadata profiling authors using the 'list_people' bindings. This perfectly exposes actionable context on exactly who dropped a critical file or task update.
+
+
 ## Installation & Usage
 
-To install and use the **Basecamp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/basecamp](https://vinkius.com/mcp/basecamp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Basecamp** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `basecamp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Basecamp** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "basecamp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

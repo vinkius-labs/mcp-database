@@ -1,7 +1,6 @@
 # Substack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/substack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/substack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/substack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/substack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,55 @@ Here are some examples of how you can interact with the **Substack** MCP server 
 > Your last newsletter 'Q1 Market Insights' had a 52% open rate (2,210 opens out of 4,250 sent), 8% click rate on embedded links, and generated 23 new subscribers from shares.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Substack API token?**
+Log in to your Substack publication at **yourdomain.substack.com**. Navigate to **Settings** from the left sidebar. Look for the **Publication API** or **Developer** section. Generate an API token and copy it. Paste it into the configuration field below. Note: Substack's API is currently in limited availability — check Substack's developer page for the latest access information.
+
+**Q: Can I draft and schedule newsletter posts?**
+Yes. Your AI agent can create draft posts with title, body content, subtitle, and metadata. You can then schedule them for a specific date and time — managing your entire editorial calendar conversationally.
+
+**Q: Can I track how many subscribers I gained this month?**
+Yes. Ask your AI agent for subscriber growth metrics and get total subscribers, new subscribers this month, churn rate, and free vs. paid subscriber breakdown.
+
+**Q: Does this work with paid Substack publications?**
+Yes. The integration supports both free and paid publications. You can manage paywalled content, check paid subscriber counts, and analyze revenue metrics through your AI agent.
+
+
 ## Installation & Usage
 
-To install and use the **Substack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/substack](https://vinkius.com/mcp/substack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Substack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `substack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Substack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "substack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

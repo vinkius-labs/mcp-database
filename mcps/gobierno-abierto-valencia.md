@@ -1,7 +1,6 @@
 # Gobierno Abierto Valencia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gobierno-abierto-valencia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gobierno-abierto-valencia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gobierno-abierto-valencia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gobierno-abierto-valencia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Gobierno Abierto Valen
 > Fetching metadata for 'EMT Valencia'... This dataset contains real-time bus information, routes, and schedules. It includes 5 resources (CSV, JSON, and GeoJSON formats).
 
 
+## ❓ FAQ
+
+**Q: How do I search for specific records within a data file?**
+Use the `search_datastore` tool with the specific Resource ID. You can provide a search string `q` to filter the records and use `limit` or `offset` for pagination.
+
+**Q: How can I see the metadata for a specific dataset?**
+Simply use the `show_package` tool and provide the name or ID of the dataset. The agent will return full metadata including descriptions, maintainers, and associated resources.
+
+**Q: Can I list all the data categories available in the portal?**
+Yes! The `list_groups` tool returns all dataset groups or categories available in the Valencia Open Data portal, helping you browse by topic.
+
+
 ## Installation & Usage
 
-To install and use the **Gobierno Abierto Valencia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gobierno-abierto-valencia](https://vinkius.com/mcp/gobierno-abierto-valencia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gobierno Abierto Valencia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gobierno-abierto-valencia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gobierno Abierto Valencia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gobierno-abierto-valencia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

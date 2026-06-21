@@ -1,7 +1,6 @@
 # Tenderly (Ethereum Dev Platform) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tenderly-ethereum-dev-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tenderly-ethereum-dev-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tenderly-ethereum-dev-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tenderly-ethereum-dev-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Tenderly (Ethereum Dev
 > I've created the alert for contract 0x123... monitoring the 'transfer' method. You will receive notifications based on your Tenderly project settings whenever this event is detected on-chain.
 
 
+## ❓ FAQ
+
+**Q: Can I simulate a transaction without spending real ETH or gas?**
+Yes! Use the `simulate_transaction` tool. It runs the transaction against the latest state of the network in a virtual environment, providing full trace and results without any on-chain cost.
+
+**Q: How do I create a private fork of Ethereum for testing?**
+You can use the `create_virtual_testnet` tool. Provide a slug, display name, and the network ID you want to fork from (e.g., 1 for Mainnet) to spin up a private RPC endpoint.
+
+**Q: Can I monitor specific smart contract events automatically?**
+Absolutely. Use the `create_alert` tool with an `alert_config` object to monitor method calls, state changes, or emitted logs on any contract address.
+
+
 ## Installation & Usage
 
-To install and use the **Tenderly (Ethereum Dev Platform)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tenderly-ethereum-dev-platform](https://vinkius.com/mcp/tenderly-ethereum-dev-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tenderly (Ethereum Dev Platform)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tenderly-ethereum-dev-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tenderly (Ethereum Dev Platform)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tenderly-ethereum-dev-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # TransportAPI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/transportapi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/transportapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/transportapi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/transportapi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -107,12 +106,52 @@ Here are some examples of how you can interact with the **TransportAPI** MCP ser
 > Planning multimodal journey with TransportAPI... I found 3 options: Option 1 (fastest): Train from Manchester Airport to Manchester Piccadilly — 18 minutes, TransPennine Express or Northern Rail, trains every 10 minutes, fare from £3.50 with contactless, arrive at Piccadilly Gardens in 25 minutes total. Option 2 (direct bus): Metrolink tram from Airport to St Peters Square — 35 minutes, direct service every 12 minutes, fare £3.30 with contactless. Option 3 (budget): Bus 43 from Airport Terminal to Piccadilly Gardens — 55 minutes, Stagecoach service, fare £2.00 with contactless cap. All options show normal service with no disruptions. Would you like real-time departures for any option?
 
 
+## ❓ FAQ
+
+**Q: Can my AI check when the next bus is arriving at a specific UK bus stop?**
+Yes! First use `search_stops` to find the bus stop by name or location (e.g., "Oxford Street" or "Piccadilly Circus"). This returns the Naptan stop ID. Then use `get_bus_departures` with that stop ID to see all upcoming departures with expected arrival times, line numbers, destinations, and any delay information. You can also use `get_bus_arrivals` to monitor incoming services. The API provides real-time predictions based on live vehicle tracking across Great Britain.
+
+**Q: How do I plan a complete journey from my hotel to a UK attraction using public transport?**
+Use the `get_journey_plan` tool with your hotel address or postcode as the origin and the attraction name or postcode as the destination. The TransportAPI journey planner will return complete multimodal itineraries combining buses, trains, trams, underground (tube), walking, and cycling with departure times, arrival times, total duration, number of changes, detailed legs with line names and operators, walking distances, and real-time disruption alerts. You can also specify a desired departure or arrival time for time-specific planning.
+
+**Q: Can I check if there are any disruptions or engineering works affecting UK rail services?**
+Absolutely! Use `get_updates` to fetch current service alerts and disruption notices across the UK transport network. You can filter by mode ("rail" for trains, "bus" for buses) to get targeted alerts. The results include affected lines or stations, disruption descriptions, severity levels, expected duration, and alternative route recommendations. For station-specific information, use `get_rail_departures` or `get_rail_arrivals` which include cancellation and delay indicators for individual services.
+
+
 ## Installation & Usage
 
-To install and use the **TransportAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/transportapi](https://vinkius.com/mcp/transportapi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TransportAPI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `transportapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TransportAPI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "transportapi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

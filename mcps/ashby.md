@@ -1,7 +1,6 @@
 # Ashby MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ashby)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ashby-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ashby-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ashby)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Ashby** MCP server usi
 > Application 'app_998877' is for the 'Senior Frontend Engineer' role. The current status is 'Technical Interview' and it was created on Feb 1st.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Ashby API Key?**
+Log in to Ashby, go to **Admin > API Keys**, and click **Create API Key**. Ensure you grant the necessary permissions (e.g., `jobsRead`, `candidatesRead`).
+
+**Q: Why does this server use POST for all requests?**
+The Ashby API is designed as an RPC-style API where even data retrieval (reading) endpoints require a POST request with a JSON body.
+
+**Q: Can I search for candidates by email?**
+Yes, use the `search_candidates` tool and provide the `email` parameter to find a specific candidate in your database.
+
+
 ## Installation & Usage
 
-To install and use the **Ashby** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ashby](https://vinkius.com/mcp/ashby)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ashby** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ashby` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ashby** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ashby": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

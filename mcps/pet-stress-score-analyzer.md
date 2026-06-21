@@ -1,7 +1,6 @@
 # Pet Stress Score Analyzer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pet-stress-score-analyzer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pet-stress-score-analyzer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pet-stress-score-analyzer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pet-stress-score-analyzer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Pet Stress Score Analy
 > Based on your inputs, we recommend a three-phase plan: Phase 1 focuses on immediate calming corners, Phase 2 suggests increasing interactive play sessions, and Phase 3 recommends consulting a local behaviorist. The key resource is [RESOURCE_RECOMMENDATION].
 
 
+## ❓ FAQ
+
+**Q: What kind of data do I need to calculate the stress score?**
+You must provide specific observations like hiding frequency, vocalization severity, days of appetite loss, and destructive behavior severity. The `calculate_stress_score` tool uses these inputs to give a reliable 0-10 risk score.
+
+**Q: If the pet's behavior changes, how do I find the cause?**
+Use `query_probable_triggers`. This tool examines potential shifts in routine or environment (like a new neighbor or schedule change) to pinpoint the underlying trigger, giving you a probability score and an investigation focus.
+
+**Q: Are the management suggestions tailored to my area?**
+Yes, `generate_management_suggestions` requires you to specify a geographic region (e.g., USA East). The recommendations are then grounded in local pet care norms for that area.
+
+
 ## Installation & Usage
 
-To install and use the **Pet Stress Score Analyzer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pet-stress-score-analyzer](https://vinkius.com/mcp/pet-stress-score-analyzer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pet Stress Score Analyzer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pet-stress-score-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pet Stress Score Analyzer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pet-stress-score-analyzer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

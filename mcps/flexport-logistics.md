@@ -1,7 +1,6 @@
 # Flexport Logistics MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flexport-logistics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flexport-logistics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flexport-logistics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flexport-logistics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Flexport Logistics** M
 > Fetching inbound details... Shipment 'INB-123' is currently 'In Transit' and is expected to arrive at the warehouse by Friday. I'll notify you once it's been received and processed.
 
 
+## ❓ FAQ
+
+**Q: Can I check my inventory levels across all Flexport warehouses using the agent?**
+Yes! The 'list_inventory' tool retrieves real-time stock data across the entire warehouse network, helping you manage SKU availability and prevent stockouts.
+
+**Q: How do I track a customer's fulfillment order using this server?**
+Use the 'get_logistics_order' tool and provide the Flexport Order ID or your external reference. The agent will return the fulfillment status and any available tracking numbers.
+
+**Q: Can I manage product SKUs through the agent?**
+Absolutely. The 'list_products' tool provides a view of your entire fulfillment catalog, while 'get_product' allows you to drill down into the metadata for a specific item.
+
+
 ## Installation & Usage
 
-To install and use the **Flexport Logistics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flexport-logistics](https://vinkius.com/mcp/flexport-logistics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Flexport Logistics** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flexport-logistics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Flexport Logistics** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flexport-logistics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Joomla (Open-Source CMS) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/joomla-open-source-cms)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/joomla-open-source-cms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/joomla-open-source-cms-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/joomla-open-source-cms)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Joomla (Open-Source CM
 > I've identified 4 active categories: 'Uncategorised' (ID: 1), 'News' (ID: 2), 'Blog' (ID: 3), and 'Technology' (ID: 5). I can provide the description and parent mapping for any of these if needed.
 
 
+## ❓ FAQ
+
+**Q: Can I create a new article draft using my agent?**
+Yes. Use the `create_cms_article` tool by providing a title, alias, category ID, and the HTML content. Your agent will generate the article in Joomla, allowing you to publish content without opening the admin panel.
+
+**Q: How do I find the correct Category ID for a new article?**
+Ask your agent to `list_global_categories`. It will return a list of all available categories on your Joomla site along with their unique numerical IDs, making it easy to map your new content accurately.
+
+**Q: Can my agent check the site's menu structure?**
+Absolutely. Use the `list_site_menus` tool to retrieve all configured menus and menu items. This is useful for auditing navigation links and ensuring your site layout is consistent with your content hierarchy.
+
+
 ## Installation & Usage
 
-To install and use the **Joomla (Open-Source CMS)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/joomla-open-source-cms](https://vinkius.com/mcp/joomla-open-source-cms)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Joomla (Open-Source CMS)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `joomla-open-source-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Joomla (Open-Source CMS)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "joomla-open-source-cms": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

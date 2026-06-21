@@ -1,7 +1,6 @@
 # Evernest Property Management MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evernest-property-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/evernest-property-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/evernest-property-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evernest-property-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Evernest Property Mana
 > John Doe (Tenant at 101 Cedar Ln) has a perfect payment history for the last 12 months. Their last payment of $1,500 was received on March 1st. Would you like to see the current lease agreement terms?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Evernest API Key?**
+Log in to your Evernest account, navigate to **Settings > API**, and you can generate or retrieve your unique **API Key** from there. Ensure your account is authorized for API access.
+
+**Q: Does the integration show rent payment status?**
+Yes, you can use the get_tenant_detailed_profile tool to retrieve current rent payment history and identify any outstanding balances for specific tenants.
+
+**Q: Can the agent open new maintenance tickets?**
+This integration currently focuses on listing and auditing properties, tenants, and maintenance requests. Creating or updating maintenance tickets should be managed via the Evernest dashboard or property manager portal.
+
+
 ## Installation & Usage
 
-To install and use the **Evernest Property Management** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/evernest-property-management](https://vinkius.com/mcp/evernest-property-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Evernest Property Management** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `evernest-property-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Evernest Property Management** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "evernest-property-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

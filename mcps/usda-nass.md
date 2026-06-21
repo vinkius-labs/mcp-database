@@ -1,7 +1,6 @@
 # USDA NASS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usda-nass)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/usda-nass-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/usda-nass-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usda-nass)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,55 @@ Here are some examples of how you can interact with the **USDA NASS** MCP server
 > Available commodities include: CORN, SOYBEANS, WHEAT, COTTON, RICE, SORGHUM, OATS, BARLEY, HAY, PEANUTS, POTATOES, SUGARCANE, SUNFLOWER, CATTLE, HOGS, CHICKENS, TURKEYS, MILK, EGGS, HONEY, WOOL and 200+ more. Use `get_param_values` with any parameter to see the complete list.
 
 
+## ❓ FAQ
+
+**Q: How do I get a USDA NASS API key?**
+Visit [**nass.usda.gov/developer**](https://www.nass.usda.gov/developer/index.php) and register for a free API key. The key is delivered instantly via the web form. It's completely free with no usage cost.
+
+**Q: What crops and commodities are available?**
+The NASS Quick Stats database covers all major US agricultural commodities: CORN, SOYBEANS, WHEAT, COTTON, RICE, SORGHUM, OATS, BARLEY, HAY, PEANUTS, POTATOES for crops; CATTLE, HOGS, CHICKENS, TURKEYS, MILK, EGGS, HONEY for livestock; plus fruit, vegetables, nursery products and many more. Use `get_param_values` with param 'commodity' to see the complete list.
+
+**Q: Can I filter data by state and year?**
+Yes! All query tools support optional state and year parameters. State can be the full name (e.g. 'IOWA') or abbreviation (e.g. 'IA'). Year accepts specific years (e.g. '2024') or ranges. The data returned includes the state, year, commodity, value and unit for each record.
+
+**Q: What kind of economic data is available?**
+The ECONOMICS sector includes: prices received by farmers for crops and livestock, prices paid by farmers (inputs, feed, fuel), farm production expenses, farm real estate values, cash rent for cropland and pasture, and agricultural income data. Use `get_economics_data` to query by commodity, state and year.
+
+
 ## Installation & Usage
 
-To install and use the **USDA NASS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/usda-nass](https://vinkius.com/mcp/usda-nass)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **USDA NASS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `usda-nass` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **USDA NASS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "usda-nass": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

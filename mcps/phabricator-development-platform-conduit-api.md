@@ -1,7 +1,6 @@
 # Phabricator (Development Platform Conduit API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/phabricator-development-platform-conduit-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/phabricator-development-platform-conduit-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/phabricator-development-platform-conduit-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/phabricator-development-platform-conduit-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Phabricator (Developme
 > Retrieving history for T101... The task was created by 'alice' 2 days ago, moved to 'In Progress' by 'bob' yesterday, and 'charlie' added a comment regarding the API specs 4 hours ago.
 
 
+## ❓ FAQ
+
+**Q: Can I update the status of a Maniphest task using this server?**
+Yes. You can use the `maniphest_edit` tool. You'll need to provide the task identifier (like T123) and a transaction object specifying the 'status' type and the desired value.
+
+**Q: How do I see the full history of changes for a specific task?**
+Use the `maniphest_gettasktransactions` tool with the task ID (e.g., 'T123'). It will return a chronological list of all edits, comments, and status changes made to that task.
+
+**Q: Can I search for code revisions that are currently open?**
+Absolutely. Use `differential_revision_search` and pass a constraint for statuses like 'open' or 'needs-review' to filter the results to active code reviews.
+
+
 ## Installation & Usage
 
-To install and use the **Phabricator (Development Platform Conduit API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/phabricator-development-platform-conduit-api](https://vinkius.com/mcp/phabricator-development-platform-conduit-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Phabricator (Development Platform Conduit API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `phabricator-development-platform-conduit-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Phabricator (Development Platform Conduit API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "phabricator-development-platform-conduit-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Azure AI Search MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-ai-search)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/azure-ai-search-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/azure-ai-search-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-ai-search)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Azure AI Search** MCP 
 > Searching the 'reports-index' via BM25 matching. I found 3 highly relevant paragraphs. The primary document `q3-audit.pdf` highlights a successful reconciliation process without anomalies. Would you like me to read the secondary findings?
 
 
+## ❓ FAQ
+
+**Q: Can my AI use this to query documents using vector embeddings directly?**
+Yes. If your agent is equipped with an embedding tool (like an OpenAI Ada dimension generator), it can compute the embedding float locally and transmit the precise K-Nearest Neighbors request into your Azure Index via the `vector_search` tool to return perfectly isolated contextual passages.
+
+**Q: How can I verify if my Azure Search Indexer completed successfully?**
+You can ask your agent to list all indexers. It retrieves the scheduled background configurations defining how your Azure SQL or Blob stores migrate into Search form, allowing you to instantly assess if the pipeline is active or encountering extraction errors.
+
+**Q: Can I audit the core configuration components of a specific index?**
+Absolutely. By providing the exact Index name, your AI fetches the exhaustive schema architecture: semantic mapping references, exact lexical BM25 fallback values, field weights, language analyzers, and HNSW graphs mapping vector space limits.
+
+
 ## Installation & Usage
 
-To install and use the **Azure AI Search** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/azure-ai-search](https://vinkius.com/mcp/azure-ai-search)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Azure AI Search** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `azure-ai-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Azure AI Search** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "azure-ai-search": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

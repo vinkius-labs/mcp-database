@@ -1,7 +1,6 @@
 # Pumble MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pumble)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pumble-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pumble-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pumble)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,55 @@ Here are some examples of how you can interact with the **Pumble** MCP server us
 I also successfully placed a 👍 reaction on User A's last message.
 
 
+## ❓ FAQ
+
+**Q: How do I securely obtain my API Key?**
+Installation in Pumble is unique. In your workspace, click **+ Add apps** in the left sidebar, find the **API** addon, and install it. After doing so, go to any chat input box in Pumble and type `/api-keys generate`. A private, ephemeral message will appear containing your secret token. Paste that token here.
+
+**Q: Can my AI automatically reply to unread issues?**
+Yes. You can instruct your agent to regularly fetch messages from a specific channel (`chat_history_messages`). The agent can evaluate questions, generate answers based on your knowledge base, and then use `chat_post_message` to post the solution back to the team instantly.
+
+**Q: Is it possible for the AI to react with emojis?**
+Absolutely. It uses the `chat_add_reaction` functionality. A common use case is having the agent process a batch of tickets reported in Pumble, and instruct it to leave a '✅' checkmark reaction on the original message to signify that work is complete.
+
+**Q: What happens if a bot message has a typo?**
+Unlike standard webhooks, this integration provides full bidirectional control. If your AI posted something incorrect, simply ask it to update its previous message. It will fetch its message ID and push a new payload using the `chat_update_message` tool instantly without leaving double messages.
+
+
 ## Installation & Usage
 
-To install and use the **Pumble** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pumble](https://vinkius.com/mcp/pumble)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pumble** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pumble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pumble** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pumble": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

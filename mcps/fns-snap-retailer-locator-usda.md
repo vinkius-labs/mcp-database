@@ -1,7 +1,6 @@
 # FNS SNAP Retailer Locator (USDA) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fns-snap-retailer-locator-usda)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fns-snap-retailer-locator-usda-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fns-snap-retailer-locator-usda-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fns-snap-retailer-locator-usda)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **FNS SNAP Retailer Loca
 > Querying retailers in VA with 'Market' in the name... I found entries like 'Union Market' in Richmond and 'Farmers Market' in Alexandria. Do you want to see more results or filter by city?
 
 
+## ❓ FAQ
+
+**Q: How do I search for SNAP retailers in a specific zip code?**
+You can use the `search_retailers` tool and provide a filter like `Zip5 = '20001'` in the `where` parameter. This will return all authorized retailers within that specific postal area.
+
+**Q: Can I find retailers near my current GPS coordinates?**
+Yes! Use the `search_retailers_by_location` tool by providing your `longitude` and `latitude`. You can also specify a `distance` (default is 5 miles) to define the search radius.
+
+**Q: Is there a limit to how many retailers I can retrieve at once?**
+By default, the tools return up to 100 records. You can adjust this using the `resultRecordCount` parameter, and use `resultOffset` to paginate through larger lists of retailers.
+
+
 ## Installation & Usage
 
-To install and use the **FNS SNAP Retailer Locator (USDA)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fns-snap-retailer-locator-usda](https://vinkius.com/mcp/fns-snap-retailer-locator-usda)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FNS SNAP Retailer Locator (USDA)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fns-snap-retailer-locator-usda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FNS SNAP Retailer Locator (USDA)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fns-snap-retailer-locator-usda": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

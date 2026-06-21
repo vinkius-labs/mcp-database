@@ -1,7 +1,6 @@
 # Wikidata MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wikidata)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wikidata-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wikidata-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wikidata)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Wikidata** MCP server 
 > I've retrieved the statements for Douglas Adams (Q42). Key statements include: instance of 'human' (P31), occupation 'writer' (P106), and notable work 'The Hitchhiker's Guide to the Galaxy' (P800).
 
 
+## ❓ FAQ
+
+**Q: How can I find a Wikidata Item if I don't know its Q-ID?**
+You can use the `search_items_vector` tool. It performs a hybrid search using high-dimensional embeddings and keywords to find the most relevant entities based on your natural language description.
+
+**Q: Is it possible to run complex queries like 'List all female scientists born in the 19th century'?**
+Yes, the `execute_sparql` tool allows you to run any valid SPARQL query against the Wikidata Query Service. This is the most powerful way to filter and aggregate data across the entire knowledge graph.
+
+**Q: Can I use this server to update information on Wikidata?**
+Yes, if you provide an OAuth 2.0 Access Token, you can use `create_statement` to add new data or `set_item_description` to update descriptions in various languages.
+
+
 ## Installation & Usage
 
-To install and use the **Wikidata** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wikidata](https://vinkius.com/mcp/wikidata)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wikidata** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wikidata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wikidata** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wikidata": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

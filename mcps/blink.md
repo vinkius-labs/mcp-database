@@ -1,7 +1,6 @@
 # BL.INK MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blink)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blink-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blink-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blink)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **BL.INK** MCP server us
 > I've retrieved your domains. You have 2 active branded domains: 'go.company.com' (ID: dom_1) and 'links.brand.net' (ID: dom_2).
 
 
+## ❓ FAQ
+
+**Q: Can I use my own branded domain for shortening links?**
+Yes! If you have branded domains configured in your BL.INK account, you can use the `list_domains` tool to find their IDs and pass a `domain_id` to the `shorten_link` action.
+
+**Q: How do I check the click performance of a link?**
+Simply ask the agent to `get_link_analytics` and provide the Link ID. It will retrieve the latest click data and statistics directly from BL.INK.
+
+**Q: Can I update the destination URL of an existing link?**
+Yes. Use the `update_link` action with the Link ID and provide the new `long_url`. Your Bitlink will redirect to the new destination immediately.
+
+
 ## Installation & Usage
 
-To install and use the **BL.INK** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blink](https://vinkius.com/mcp/blink)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BL.INK** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blink` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BL.INK** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blink": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

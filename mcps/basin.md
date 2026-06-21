@@ -1,7 +1,6 @@
 # Basin MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/basin)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/basin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/basin-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/basin)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Basin** MCP server usi
 > I've found 3 forms in your account: 'Contact Page', 'Newsletter Signup', and 'Ebook Download'. Which one would you like to audit?
 
 
+## ❓ FAQ
+
+**Q: How can I check the latest lead that submitted a form?**
+Use the `get_latest_submission` tool. It automatically retrieves the single most recent entry across all your forms, allowing you to respond instantly.
+
+**Q: Can the agent filter out spam submissions?**
+Yes. Use the `mark_as_spam` tool with a Submission ID to flag suspicious entries. You can also use `mark_as_not_spam` to restore entries that were incorrectly flagged.
+
+**Q: Is it possible to re-send data to my CRM if it failed?**
+Yes. Use the `refire_webhooks` tool by providing the Submission ID. This manually triggers any webhooks associated with that form, ensuring your external integrations receive the data.
+
+
 ## Installation & Usage
 
-To install and use the **Basin** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/basin](https://vinkius.com/mcp/basin)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Basin** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `basin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Basin** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "basin": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

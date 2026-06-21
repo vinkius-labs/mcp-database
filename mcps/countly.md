@@ -1,7 +1,6 @@
 # Countly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/countly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/countly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/countly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/countly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Countly** MCP server u
 > I have updated the profile for device 'dev_123'. The email address is now set to 'test@example.com' in your Countly user database.
 
 
+## ❓ FAQ
+
+**Q: How can I retrieve aggregated data like total sessions or user counts?**
+You can use the `read_metrics` tool. Simply specify the method (e.g., 'sessions' or 'users') to get the aggregated analytics data from your Countly instance.
+
+**Q: Can I record custom user actions with metadata?**
+Yes! Use the `record_events` tool. You can provide a device ID and an array of event objects containing keys, counts, and segmentation details to track specific interactions.
+
+**Q: Does this server support advanced filtering for Enterprise users?**
+Yes, if you have the Enterprise Edition, you can use the `read_drill` tool to perform complex queries and segmentation using the Drill API.
+
+
 ## Installation & Usage
 
-To install and use the **Countly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/countly](https://vinkius.com/mcp/countly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Countly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `countly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Countly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "countly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

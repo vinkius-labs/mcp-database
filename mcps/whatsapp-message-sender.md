@@ -1,7 +1,6 @@
 # WhatsApp Message Sender MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whatsapp-message-sender)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/whatsapp-message-sender-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/whatsapp-message-sender-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whatsapp-message-sender)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -39,12 +38,49 @@ Here are some examples of how you can interact with the **WhatsApp Message Sende
 > I've successfully dispatched the WhatsApp message.
 
 
+## ❓ FAQ
+
+**Q: Can the agent read incoming WhatsApp replies with this?**
+No. This MCP utilizes the REST API strictly for creating new messages. It does not configure or expose incoming webhooks, meaning it acts strictly as a one-way notification megaphone. It cannot see your customer's replies.
+
+**Q: Why are some messages failing to send?**
+The Meta WhatsApp Cloud API has a strict 24-hour service window. If you are sending a free-form text message to a user who hasn't messaged you in the last 24 hours, the API will block it unless you use a pre-approved Message Template. Ensure you are within the 24-hour window for free-form replies.
+
+
 ## Installation & Usage
 
-To install and use the **WhatsApp Message Sender** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/whatsapp-message-sender](https://vinkius.com/mcp/whatsapp-message-sender)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WhatsApp Message Sender** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `whatsapp-message-sender` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WhatsApp Message Sender** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "whatsapp-message-sender": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Grounding Exercise Generator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grounding-exercise-generator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grounding-exercise-generator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grounding-exercise-generator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grounding-exercise-generator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Grounding Exercise Gen
 > Understood. I will use `determine_anchoring_script()` with 'overwhelmed' and 'breathing'. Focus only on the count: Inhale for 4, hold for 4, exhale for 6.
 
 
+## ❓ FAQ
+
+**Q: What is the 5-4-3-2-1 technique?**
+The 5-4-3-2-1 method is a powerful sensory grounding tool. You can use it by asking the system to run `generate_sensory_exercise()`. This tool walks you through identifying five things you see, four things you feel, three sounds, two smells, and one taste in your immediate environment.
+
+**Q: I want a full-body meditation, but I don't know where to start.**
+For a complete physical scan, use the `get_body_scan_segments()` tool. You can specify a starting point or let it default to your feet for a systematic progression from base to scalp.
+
+**Q: How do I get help for a specific emotion like 'overwhelmed'?**
+Use the `determine_anchoring_script()` tool. Simply provide your emotional state (e.g., 'anxious', 'sad') and choose a focus type ('breathing' or 'mantra') to get a personalized cognitive script.
+
+
 ## Installation & Usage
 
-To install and use the **Grounding Exercise Generator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/grounding-exercise-generator](https://vinkius.com/mcp/grounding-exercise-generator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Grounding Exercise Generator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `grounding-exercise-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Grounding Exercise Generator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "grounding-exercise-generator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Coolify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coolify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coolify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coolify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coolify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **Coolify** MCP server u
 > Retrieving connection string for 'user-db-prod'... The internal URI is: postgres://user:pass@coolify-db-abc:5432/user_db. This URI is only accessible within your internal Docker network.
 
 
+## ❓ FAQ
+
+**Q: Can my agent trigger a new deployment for a Coolify application?**
+Yes. Use the 'trigger_deployment' tool with the application UUID. The agent will initiate a full build pipeline, fetching the latest commit and rolling out the updated version directly on your server.
+
+**Q: How do I retrieve the internal connection string for a managed database?**
+Provide the database UUID to the 'get_database' tool. Your agent will extrapolate the internal network URI (e.g., for PostgreSQL or MySQL), allowing you to securely link your apps without external port exposure.
+
+**Q: Can I restart an application to apply new environment variables?**
+Absolutely. Use the 'restart_application' tool. The agent will execute an overlapping bounce, destroying old instances and initializing fresh replicas with the latest configuration and environment variables.
+
+
 ## Installation & Usage
 
-To install and use the **Coolify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coolify](https://vinkius.com/mcp/coolify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Coolify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coolify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Coolify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coolify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

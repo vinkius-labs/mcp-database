@@ -1,7 +1,6 @@
 # Double the Donation MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/double-the-donation)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/double-the-donation-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/double-the-donation-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/double-the-donation)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Double the Donation** 
 > Fetching status... Donation don_123 is currently in the 'Waiting for Donor' stage. The donor has been notified to submit their matching request. Shall I check for any update emails sent?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Public and Private API Keys?**
+Log in to your 360MatchPro dashboard, navigate to **Settings** > **API Keys**, and copy both your Public and Private access tokens.
+
+**Q: Can I search for any employer in the database?**
+Yes! The `search_company` tool allows you to query a database of over 24,000 employers to find matching gift opportunities programmatically.
+
+**Q: Does it support real-time donation status updates?**
+The `get_donation` tool retrieves the most current status and history for any registered donation ID directly from the 360MatchPro platform.
+
+
 ## Installation & Usage
 
-To install and use the **Double the Donation** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/double-the-donation](https://vinkius.com/mcp/double-the-donation)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Double the Donation** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `double-the-donation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Double the Donation** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "double-the-donation": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

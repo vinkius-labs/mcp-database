@@ -1,7 +1,6 @@
 # Kapwing MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kapwing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kapwing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kapwing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kapwing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Kapwing** MCP server u
 > I've initiated the render with your specifications. The new Render ID is 'render_998877'. I'll monitor it for you, or you can check back in a few minutes.
 
 
+## ❓ FAQ
+
+**Q: How can I check if my video render is finished?**
+You can use the `get_render_status` tool by providing your unique Render ID. The agent will return the current status (e.g., 'completed') and the download URL if it's ready.
+
+**Q: Can I start a new render using a JSON project definition?**
+Yes! Use the `create_render` action. You just need to provide the project object containing dimensions and layers. You can also specify a `webhookUrl` for automated notifications.
+
+**Q: Is it possible to see a history of all my renders?**
+Absolutely. The `list_renders` tool fetches all renders associated with your authenticated account, allowing the AI to summarize or find specific past projects.
+
+
 ## Installation & Usage
 
-To install and use the **Kapwing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kapwing](https://vinkius.com/mcp/kapwing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kapwing** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kapwing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kapwing** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kapwing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

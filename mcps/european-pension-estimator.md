@@ -1,7 +1,6 @@
 # European Pension Estimator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/european-pension-estimator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/european-pension-estimator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/european-pension-estimator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/european-pension-estimator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **European Pension Estim
 > By extending your career by 5 years with your current contribution history and salary, you can expect a benefit increase of approximately 120.00 EUR per month.
 
 
+## ❓ FAQ
+
+**Q: Which countries are currently supported?**
+The estimator currently supports the United Kingdom (UK), Germany (DE), France (FR), and Spain (ES).
+
+**Q: How accurate are the pension estimates?**
+The estimates are approximations based on hardcoded country-specific formulas and multipliers. They should be used for planning purposes rather than as official legal or financial advice.
+
+**Q: Can I see how working longer affects my pension?**
+Yes, you can use the `assess_contribution_gap` tool to simulate the benefit increase from extending your career by a specific number of years.
+
+
 ## Installation & Usage
 
-To install and use the **European Pension Estimator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/european-pension-estimator](https://vinkius.com/mcp/european-pension-estimator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **European Pension Estimator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `european-pension-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **European Pension Estimator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "european-pension-estimator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

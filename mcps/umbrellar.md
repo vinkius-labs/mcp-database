@@ -1,7 +1,6 @@
 # Umbrellar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/umbrellar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/umbrellar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/umbrellar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/umbrellar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **Umbrellar** MCP server
 > 'Web-Node-1' is currently using 45% CPU, 2.1GB of RAM, and 40GB of disk space.
 
 
+## ❓ FAQ
+
+**Q: Can I check the uptime status of my virtual machines?**
+Yes, just supply the VM ID and the agent will return its current operational status.
+
+**Q: How do I query my registered domains?**
+Ask the AI to list all your domains, and it will fetch their expiration dates and current configurations.
+
+**Q: Is it possible to reboot a server through the chat?**
+Server alteration commands like rebooting are disabled by default for safety, focusing the integration on observability.
+
+
 ## Installation & Usage
 
-To install and use the **Umbrellar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/umbrellar](https://vinkius.com/mcp/umbrellar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Umbrellar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `umbrellar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Umbrellar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "umbrellar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

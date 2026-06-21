@@ -1,7 +1,6 @@
 # Cosmic (Headless CMS & Content API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cosmic-headless-cms-content-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cosmic-headless-cms-content-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cosmic-headless-cms-content-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cosmic-headless-cms-content-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Cosmic (Headless CMS &
 > I found 12 media assets in your bucket. Recent uploads include 'hero-banner.jpg', 'logo-white.png', and 'intro-video.mp4'. Do you need the URL for any specific file?
 
 
+## ❓ FAQ
+
+**Q: Can I filter objects by a specific type like 'blog-posts'?**
+Yes! Use the `list_objects` tool and provide a JSON query string like `{"type":"blog-posts"}` in the query parameter to filter your results.
+
+**Q: How do I update the content of an existing object?**
+You can use the `update_object` tool. Provide the Object ID and the new values for `title`, `metadata`, or `status` to modify the entry.
+
+**Q: Is it possible to see who made changes to an object?**
+Yes, you can use the `list_revisions` tool for a specific object to see its history, and `get_revision` to inspect the details of a specific version.
+
+
 ## Installation & Usage
 
-To install and use the **Cosmic (Headless CMS & Content API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cosmic-headless-cms-content-api](https://vinkius.com/mcp/cosmic-headless-cms-content-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cosmic (Headless CMS & Content API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cosmic-headless-cms-content-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cosmic (Headless CMS & Content API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cosmic-headless-cms-content-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

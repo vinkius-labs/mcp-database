@@ -1,7 +1,6 @@
 # Eurostat Trade — EU International Commerce MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-trade-eu-international-commerce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eurostat-trade-eu-international-commerce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eurostat-trade-eu-international-commerce-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-trade-eu-international-commerce)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,46 @@ Non-food: +3.2%
 E-commerce continues to drive overall retail growth.
 
 
+## ❓ FAQ
+
+**Q: What product classifications does Eurostat use?**
+Trade data uses SITC (Standard International Trade Classification) and CN (Combined Nomenclature). Industrial data uses NACE Rev. 2 (statistical classification of economic activities).
+
+
 ## Installation & Usage
 
-To install and use the **Eurostat Trade — EU International Commerce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eurostat-trade-eu-international-commerce](https://vinkius.com/mcp/eurostat-trade-eu-international-commerce)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Eurostat Trade — EU International Commerce** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eurostat-trade-eu-international-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Eurostat Trade — EU International Commerce** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eurostat-trade-eu-international-commerce": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

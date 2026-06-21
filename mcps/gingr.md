@@ -1,7 +1,6 @@
 # Gingr MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gingr)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gingr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gingr-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gingr)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **Gingr** MCP server usi
 > Retrieving whiteboard... In location 1, there are currently 12 pets checked-in for daycare and 5 for boarding. 3 pets are currently assigned to the 'Blue Room'.
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Key for Gingr?**
+Log in to Gingr, navigate to Reports & More > Users, edit your user, and look for the 'API Keys' section to generate or copy your key.
+
+**Q: Can I create new reservations via the agent?**
+No, the current Gingr Public API is read-only. This integration is designed for safely retrieving and auditing your existing data.
+
+**Q: How do I find my Location ID?**
+Use the 'list_business_locations' tool. The agent will return all configured locations in your app along with their unique IDs.
+
+**Q: Is the Digital Whiteboard data live?**
+Yes, all data retrieved through the 'get_digital_whiteboard' tool is fetched directly from the Gingr API, reflecting the current state of your facility.
+
+
 ## Installation & Usage
 
-To install and use the **Gingr** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gingr](https://vinkius.com/mcp/gingr)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gingr** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gingr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gingr** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gingr": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

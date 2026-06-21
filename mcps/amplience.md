@@ -1,7 +1,6 @@
 # Amplience MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amplience)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amplience-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amplience-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amplience)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ If you want to modify this banner output structure, simply provide the changes.
 > Understood. Bypassing draft constraints and hitting publication edge. Content Item '5tYv92' has been published correctly from mapping to live domain! Would you like me to fetch the delivery URL JSON logic for verification?
 
 
+## ❓ FAQ
+
+**Q: Can the agent push updates without breaking my Amplience JSON schemas?**
+Yes. Before invoking the update tool, the agent utilizes context to retrieve the item's precise configuration. It parses the associated Schema ID requirements and injects the updated stringified payload adhering identically to Amplience's validation rules.
+
+**Q: Will the integration protect my items against concurrent manipulation issues?**
+Yes. Our Amplience server requires the agent to explicitly pass the exact `version` lock integer on every DELETE or UPDATE request. If a human colleague alters your CMS page while the agent is typing, the AI request is robustly rejected avoiding fatal overwrites.
+
+**Q: Can I publish a finalized post straight to the Edge Delivery API from here?**
+Absolutely. Once the content looks solid offline, just declare 'Publish this content item now.' The agent resolves the `publish_content_item` tool pointing to your Edge API and the post lives dynamically on your core frontend instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Amplience** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amplience](https://vinkius.com/mcp/amplience)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amplience** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amplience` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amplience** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amplience": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

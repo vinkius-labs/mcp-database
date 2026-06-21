@@ -1,7 +1,6 @@
 # Meme Generator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meme-generator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meme-generator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meme-generator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meme-generator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Meme Generator** MCP s
 > Creating your programmer meme... I've put 'Writing documentation' in the top section and 'Fixing a bug for 8 hours' in the bottom. Here is your generated meme: [Meme URL].
 
 
+## ❓ FAQ
+
+**Q: Do I need an account to create memes?**
+Yes, you need a free Imgflip account. Once created, provide your username and password to the server to authorize meme generation.
+
+**Q: How do I find the ID for a specific meme template?**
+Use the `get_meme_templates` tool. It will return a list of the top 100 trending templates, each with its unique numerical ID and a preview URL.
+
+**Q: Can I leave the captions blank?**
+Yes, both `topText` and `bottomText` are optional in the `create_meme` tool. If left blank, the generated meme will only show the original template image.
+
+
 ## Installation & Usage
 
-To install and use the **Meme Generator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/meme-generator](https://vinkius.com/mcp/meme-generator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Meme Generator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `meme-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Meme Generator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "meme-generator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Anvyl MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anvyl)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/anvyl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/anvyl-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anvyl)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Anvyl** MCP server usi
 > I've updated the milestone 'm_456' for order PO-789. The new expected date is now set to May 22nd, and the reason 'raw material shortage' has been recorded.
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Anvyl Team ID?**
+You can find your Team ID in the URL when you are logged into the Anvyl dashboard (e.g., `app.anvyl.com/teams/{TEAM_ID}/...`) or in your workspace settings.
+
+**Q: Can I update the status of a production milestone via AI?**
+Yes, you can use the `confirm_milestone` tool to mark a milestone as complete or `delay_milestone` if production is behind schedule, providing a reason and a new expected date.
+
+**Q: How do I track the shipping status of my orders?**
+Use the `list_logistics` tool with your Purchase Order ID. It will return all tracking records and shipping updates associated with that specific order.
+
+
 ## Installation & Usage
 
-To install and use the **Anvyl** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/anvyl](https://vinkius.com/mcp/anvyl)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Anvyl** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `anvyl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Anvyl** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "anvyl": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

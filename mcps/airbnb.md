@@ -1,7 +1,6 @@
 # Airbnb MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airbnb)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/airbnb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/airbnb-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airbnb)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -140,12 +139,55 @@ Would you like full details about any of these experiences?
 I've checked the availability calendar for your Lisbon trip: the dates March 22-27 are confirmed and reserved. Would you like the check-in instructions or details about the neighborhood?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Airbnb API key?**
+Airbnb's API access is available through their partner program. Visit the Airbnb partner portal, apply for API access, and upon approval you'll receive your API credentials. Alternatively, many travel data aggregators provide Airbnb data via API keys that can be used with this server.
+
+**Q: Can I search for listings in multiple cities at once?**
+Yes! Simply run the `search_listings` tool multiple times with different location parameters. The AI agent can compare results across cities, helping you choose the best destination based on price, availability, and ratings.
+
+**Q: Can I book a listing directly through this integration?**
+This integration focuses on search, discovery, and information retrieval. You can find available listings, check pricing, read reviews, and verify availability. To complete a booking, you'll need to use the Airbnb website or app directly. The AI agent can provide booking links for each listing found.
+
+**Q: What are Airbnb Experiences and how can I find them?**
+Airbnb Experiences are unique activities hosted by locals — from food tours and cooking classes to adventure sports and cultural workshops. Use the `search_experiences` tool with a location to discover activities in your destination. You can also filter by date to see what's available during your stay. Each experience includes details about what's included, meeting point, duration, and reviews from previous participants.
+
+
 ## Installation & Usage
 
-To install and use the **Airbnb** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/airbnb](https://vinkius.com/mcp/airbnb)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Airbnb** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `airbnb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Airbnb** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "airbnb": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

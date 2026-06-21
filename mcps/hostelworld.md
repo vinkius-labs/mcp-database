@@ -1,7 +1,6 @@
 # Hostelworld MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hostelworld)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hostelworld-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hostelworld-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hostelworld)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -59,12 +58,46 @@ Here are some examples of how you can interact with the **Hostelworld** MCP serv
 > Found 5 top-rated hostels in Barcelona. 'Casa Kessler' (9.1 rating) in Gothic Quarter from €22/night has beds available. 'Sant Jordi Hostel Sagrada Familia' (9.3 rating) from €25/night. Want details on any?
 
 
+## ❓ FAQ
+
+**Q: Can I check availability for specific dates?**
+Yes! Use the `get_property_availability` tool with the property ID and your check-in/check-out dates to see real-time bed and room availability.
+
+
 ## Installation & Usage
 
-To install and use the **Hostelworld** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hostelworld](https://vinkius.com/mcp/hostelworld)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hostelworld** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hostelworld` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hostelworld** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hostelworld": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # PDF.co MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pdfco)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pdfco-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pdfco-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pdfco)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **PDF.co** MCP server us
 > 3 PDFs merged successfully into a single document (42 pages total). Q1 Report (14 pages), Q2 Report (16 pages), and Q3 Report (12 pages) combined in order. Sequential page numbers added in the footer. Output file size: 2.8 MB. Download link generated and valid for 24 hours.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find and extract a specific table from a PDF?**
+Yes! Use the `convert_to_csv` or `convert_to_json` tools. Your agent will respond with the structured tabular data from the document in seconds, ready for analysis.
+
+**Q: How do I find my PDF.co API Key?**
+Log in to your PDF.co account, navigate to the main dashboard, and you will find your unique secret API key (starting with your email reference or key string) there.
+
+**Q: Does this support handwritten text recognition?**
+Absolutely. PDF.co's high-fidelity OCR engine is designed to handle both printed and handwritten text with high accuracy across multiple languages.
+
+
 ## Installation & Usage
 
-To install and use the **PDF.co** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pdfco](https://vinkius.com/mcp/pdfco)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PDF.co** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pdfco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PDF.co** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pdfco": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

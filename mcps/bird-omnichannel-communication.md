@@ -1,7 +1,6 @@
 # Bird (Omnichannel Communication) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bird-omnichannel-communication)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bird-omnichannel-communication-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bird-omnichannel-communication-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bird-omnichannel-communication)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Bird (Omnichannel Comm
 > I've retrieved your contacts. You have 1,250 registered entities. Recent contacts include 'Alex Smith' (+44123456789) and 'Sarah Johnson' (+1987654321). Which one would you like to see the detailed profile for?
 
 
+## ❓ FAQ
+
+**Q: Can I send WhatsApp messages through my agent using Bird?**
+Yes. Use the `dispatch_omnichannel_stream` tool by specifying your WhatsApp Channel ID. Your agent will handle the formatting and transmit the text payload directly to your customer's WhatsApp inbox securely.
+
+**Q: How do I check why an SMS wasn't delivered?**
+The `get_sms_metadata` tool allows your agent to retrieve the precise delivery status for any Message ID. You'll be able to see if the carrier rejected the message or if it's currently buffered in their network.
+
+**Q: Can my agent monitor my account balance to avoid service interruptions?**
+Absolutely. Use the `get_account_balance` tool to retrieve your current funds status. Your agent will report your financial limits, helping you ensure there are enough credits to support your global communication flows.
+
+
 ## Installation & Usage
 
-To install and use the **Bird (Omnichannel Communication)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bird-omnichannel-communication](https://vinkius.com/mcp/bird-omnichannel-communication)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bird (Omnichannel Communication)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bird-omnichannel-communication` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bird (Omnichannel Communication)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bird-omnichannel-communication": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

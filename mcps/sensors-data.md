@@ -1,7 +1,6 @@
 # Sensors Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sensors-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sensors-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sensors-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sensors-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Sensors Data** MCP ser
 > Checking pipeline health for 'AnalyticsBeta'... Current status: Healthy. Ingestion rate is 15K events/sec with zero reported errors in the last hour. Connectivity to the Sensors Data cluster is stable.
 
 
+## ❓ FAQ
+
+**Q: Can I automatically retrieve the behavioral profile for a specific user ID?**
+Yes! Use the `get_user_profile` tool with the specific User ID. Your agent will return all recorded attributes and recent behavioral events associated with that user.
+
+**Q: How do I monitor the data ingestion status via the AI agent?**
+Use the `get_ingestion_health` tool. The agent will retrieve real-time statistics on data volume, successful ingestions, and any flagged errors in your pipeline.
+
+**Q: Can I list all events tracked in a specific project?**
+Yes! Use the `list_events` tool. Your agent will return a list of all event names and their associated metadata currently configured in your Sensors Data project.
+
+
 ## Installation & Usage
 
-To install and use the **Sensors Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sensors-data](https://vinkius.com/mcp/sensors-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sensors Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sensors-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sensors Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sensors-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

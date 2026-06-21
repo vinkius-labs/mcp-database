@@ -1,7 +1,6 @@
 # Tailwind Excellence Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tailwind-excellence-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tailwind-excellence-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tailwind-excellence-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tailwind-excellence-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Tailwind Excellence Pr
 > Verdict: ACCESSIBILITY_VIOLATED. Tokens and colors correct, but: use <nav> not <div>, add aria-label='Main navigation', focus-visible:ring-2 on every link, sr-only for screen readers. Semantic HTML + ARIA are non-negotiable.
 
 
+## ❓ FAQ
+
+**Q: Does it generate Tailwind code?**
+No. The agent writes the UI. The tool VALIDATES that it follows design system principles — @theme tokens instead of arbitrary values, semantic HTML for accessibility, mobile-first responsive strategy, and clean component architecture with proper state variants.
+
+**Q: Does it support Tailwind v4?**
+Yes. Tailwind v4 awareness is built in: @theme for design tokens (not tailwind.config.js), @import 'tailwindcss' (not @tailwind directives), @utility for custom utilities, @variant for custom variants, built-in container queries, and automatic content detection. It catches v3 anti-patterns in v4 projects.
+
+**Q: Why is accessibility a dedicated pillar?**
+Because AI agents consistently generate div soup with no semantic HTML, no focus states, and no ARIA. Tailwind makes styling effortless but semantic structure and accessibility still require deliberate choices. This tool forces: semantic elements, focus-visible:ring, sr-only text, contrast ratios, and motion-safe variants.
+
+
 ## Installation & Usage
 
-To install and use the **Tailwind Excellence Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tailwind-excellence-prover](https://vinkius.com/mcp/tailwind-excellence-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tailwind Excellence Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tailwind-excellence-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tailwind Excellence Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tailwind-excellence-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

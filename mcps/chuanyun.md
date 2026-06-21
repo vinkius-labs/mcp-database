@@ -1,7 +1,6 @@
 # Chuanyun MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chuanyun)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chuanyun-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chuanyun-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chuanyun)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Chuanyun** MCP server 
 > I've retrieved the approval history for 'OBJ-9920'. The order was approved by the Sales Manager at 9 AM and is currently pending with the Warehouse Director for final verification. Would you like a detailed step-by-step breakdown?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Chuanyun Engine Code and Secret?**
+Log in to the H3Yun Portal, go to [Settings] → [Integration] → [API], and you will find your Engine Code and Engine Secret (API Secret) there.
+
+**Q: What is a 'Schema Code' in Chuanyun?**
+A Schema Code is the unique identifier for a specific form or business object structure. You can find these codes in the application design section or by using the `list_forms` tool.
+
+**Q: Can I see who approved a specific business object?**
+Yes. Use the `get_workflow_history` tool with the business object ID. It will return the detailed history of the workflow, including all approval steps and the users involved.
+
+
 ## Installation & Usage
 
-To install and use the **Chuanyun** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chuanyun](https://vinkius.com/mcp/chuanyun)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chuanyun** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chuanyun` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chuanyun** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chuanyun": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

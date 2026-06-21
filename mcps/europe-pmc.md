@@ -1,7 +1,6 @@
 # Europe PMC MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/europe-pmc)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/europe-pmc-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/europe-pmc-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/europe-pmc)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Europe PMC** MCP serve
 > Searching the Grist database... I found several grants from Wellcome Trust. For example, grant GID:206194 for 'Human Functional Genomics'. Would you like to see the institution details or the abstract?
 
 
+## ❓ FAQ
+
+**Q: Can I sort article search results by citation count?**
+Yes. When using the `search_articles` tool, you can include sorting parameters in your query, such as `sort_cited:y` to prioritize highly cited publications.
+
+**Q: How do I know which specific fields I can use to filter my searches?**
+You can use the `get_article_fields` tool. It returns a comprehensive list of all available search fields that can be used as parameters in your queries.
+
+**Q: Is it possible to find funding information for specific researchers?**
+Yes! Use the `search_grants` tool and provide the investigator's name (e.g., `pi:name`) in the query to find details of grants awarded to them.
+
+
 ## Installation & Usage
 
-To install and use the **Europe PMC** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/europe-pmc](https://vinkius.com/mcp/europe-pmc)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Europe PMC** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `europe-pmc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Europe PMC** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "europe-pmc": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

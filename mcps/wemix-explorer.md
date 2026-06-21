@@ -1,7 +1,6 @@
 # Wemix Explorer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wemix-explorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wemix-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wemix-explorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wemix-explorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Wemix Explorer** MCP s
 > Extrinsic 0x123...abc was finalized in block #14502100. It was a 'balances.transfer' call from address A to address B. The status is 'Success'.
 
 
+## ❓ FAQ
+
+**Q: Can I check the token balances for a specific wallet address?**
+Yes. Use the `list_account_tokens` tool by providing the account address. The agent will return a list of all tokens held by that account on the Wemix network.
+
+**Q: How do I get details about a specific transaction hash?**
+You can use the `get_extrinsic` tool with the transaction hash. It will provide detailed information including status, block number, and associated events.
+
+**Q: Is it possible to list the most recent blocks on the network?**
+Absolutely. The `list_blocks` tool allows you to retrieve a list of recent blocks, and you can use `get_block` with a block number to see specific details of any block.
+
+
 ## Installation & Usage
 
-To install and use the **Wemix Explorer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wemix-explorer](https://vinkius.com/mcp/wemix-explorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wemix Explorer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wemix-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wemix Explorer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wemix-explorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

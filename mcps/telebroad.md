@@ -1,7 +1,6 @@
 # Telebroad MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telebroad)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/telebroad-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/telebroad-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telebroad)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Telebroad** MCP server
 > Fetching extensions... I found 5 internal destinations: 101 (Sales), 102 (Support), 103 (Finance), and 2 staff extensions. Which one would you like to call?
 
 
+## ❓ FAQ
+
+**Q: Can I initiate a voice call using the AI?**
+Yes! Use the `send_call` tool and provide the destination phone number. Your agent will trigger the call through your Telebroad line instantly.
+
+**Q: How do I see the history of my recent calls?**
+Run the `list_call_history` query. The agent will retrieve a log of all recent incoming, outgoing, and missed calls associated with your account.
+
+**Q: Is it possible to send a PDF as a fax via AI?**
+Absolutely. Use the `send_fax` tool. Provide the recipient's fax number, your authorized fax line, and the public URL of the PDF document.
+
+
 ## Installation & Usage
 
-To install and use the **Telebroad** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/telebroad](https://vinkius.com/mcp/telebroad)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Telebroad** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `telebroad` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Telebroad** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "telebroad": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # NASA TechPort (Technology Projects) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-techport-technology-projects)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nasa-techport-technology-projects-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nasa-techport-technology-projects-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-techport-technology-projects)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **NASA TechPort (Technol
 > I found 2 opportunities matching 'autonomous robotics'. One is a Small Business Innovation Research (SBIR) call with a max funding of $150,000. Would you like the full criteria?
 
 
+## ❓ FAQ
+
+**Q: How can I find detailed information about a specific NASA project if I have its ID?**
+You can use the `get_project` tool by providing the specific `projectId`. The agent will return comprehensive metadata including the project's description, status, and lead organizations.
+
+**Q: Is it possible to search for active funding opportunities for space technology?**
+Yes! Use the `search_opportunities` tool with your specific criteria. You can also use `list_opportunities` to see all current funding calls available in the TechPort system.
+
+**Q: Can I see the entire NASA technology taxonomy structure?**
+Absolutely. Use the `get_taxonomy_tree` tool to retrieve the full hierarchical structure of NASA's technology areas, which helps in understanding how different projects are categorized.
+
+
 ## Installation & Usage
 
-To install and use the **NASA TechPort (Technology Projects)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nasa-techport-technology-projects](https://vinkius.com/mcp/nasa-techport-technology-projects)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NASA TechPort (Technology Projects)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nasa-techport-technology-projects` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NASA TechPort (Technology Projects)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nasa-techport-technology-projects": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Convai MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/convai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/convai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/convai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/convai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Convai** MCP server us
 > Fetching details for 'Cyber Guard' (char_123)... Voice: 'M-US-1', Backstory: 'A sentinel programmed to protect the vault...', Model: 'gpt-4o', Temperature: 0.7.
 
 
+## ❓ FAQ
+
+**Q: How do I create a new character with a specific voice?**
+Use the `create_character` tool. You can specify the `charName`, `backstory`, and `voiceType`. To see available voices, run the `list_voices` query first.
+
+**Q: Can I give my character custom documents to learn from?**
+Yes! Use the `upload_knowledge_bank` tool to add files. Once uploaded, you can link them to your character using the `update_character` tool by passing the document IDs in the `docs` field.
+
+**Q: How can I test a character's response to a specific input?**
+You can use the `get_response` tool. Provide the `charID` and the user text, and the agent will return the character's generated response along with any triggered actions.
+
+
 ## Installation & Usage
 
-To install and use the **Convai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/convai](https://vinkius.com/mcp/convai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Convai** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `convai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Convai** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "convai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

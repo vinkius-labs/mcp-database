@@ -1,7 +1,6 @@
 # Amplemarket MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amplemarket-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amplemarket-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amplemarket-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amplemarket-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Amplemarket** MCP serv
 > Scanning exclusion architecture... Yes, 'competitor.com' is currently on your opt-out list and is excluded from all automated outreach. Need help managing any other B2B exclusions?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Amplemarket API Key?**
+Log in to your account, navigate to **Settings** > **API**, and generate or copy your unique secret key.
+
+**Q: Can I enrich a person using LinkedIn?**
+Yes! The `enrich_person` tool allows you to provide either an email or a LinkedIn URL to retrieve the most current B2B metadata.
+
+**Q: How do I check my exclusion list?**
+Use the `list_exclusions` tool to retrieve all emails and domains currently blocked from your automated sales engagement program.
+
+
 ## Installation & Usage
 
-To install and use the **Amplemarket** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amplemarket-alternative](https://vinkius.com/mcp/amplemarket-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amplemarket** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amplemarket-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amplemarket** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amplemarket-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

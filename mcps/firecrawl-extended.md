@@ -1,7 +1,6 @@
 # Firecrawl MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firecrawl-extended)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firecrawl-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firecrawl-extended-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firecrawl-extended)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Firecrawl** MCP server
 > Mapping site structure... I've identified all reachable links for the requested domain. I found 25 internal URLs, including various repository and profile paths. Would you like the full list of mapped URLs?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Firecrawl API Key?**
+Log in to your [**Firecrawl dashboard**](https://www.firecrawl.dev/app/dashboard), and navigate to the **API Keys** section to copy your unique token.
+
+**Q: Can I scrape content excluding headers and footers?**
+Yes! The `scrape_url` tool includes an `onlyMainContent` parameter. When set to true, Firecrawl uses AI to extract only the core article or page content.
+
+**Q: How long does a recursive crawl take?**
+Crawl time depends on the site size and depth. Use the `get_crawl_status` tool to monitor progress and retrieve results once the job is complete.
+
+
 ## Installation & Usage
 
-To install and use the **Firecrawl** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/firecrawl-extended](https://vinkius.com/mcp/firecrawl-extended)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Firecrawl** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `firecrawl-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Firecrawl** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "firecrawl-extended": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Balena MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/balena)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/balena-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/balena-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/balena)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Balena** MCP server us
 > I found several versions for raspberrypi4-64. The latest stable releases include v2.115.18, v2.113.18, and v2.108.27. Would you like the download URL for any of these?
 
 
+## ❓ FAQ
+
+**Q: How can I find a specific device using its UUID?**
+You can use the `list_devices` tool with an OData filter. For example, provide `$filter` as `uuid eq '<YOUR_UUID>'` to retrieve the exact device metadata.
+
+**Q: Is it possible to update a device's environment variables through the AI?**
+Yes! Use the `create_device_env_var` tool by providing the Device ID, the variable name, and the desired value. The AI will apply the change to the specific device immediately.
+
+**Q: How do I get the download link for a specific balenaOS version?**
+First, use `list_os_versions` to find the correct version string for your device type. Then, call `get_os_download_url` with the device type and version to receive the direct ZIP download URL.
+
+
 ## Installation & Usage
 
-To install and use the **Balena** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/balena](https://vinkius.com/mcp/balena)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Balena** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `balena` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Balena** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "balena": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

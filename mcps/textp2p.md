@@ -1,7 +1,6 @@
 # TextP2P MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/textp2p)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/textp2p-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/textp2p-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/textp2p)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **TextP2P** MCP server u
 > Fetching balance... You currently have 1,200 SMS credits and 450 RVM credits available. You have plenty of budget for your upcoming marketing campaigns.
 
 
+## ❓ FAQ
+
+**Q: Can I send an SMS to multiple numbers at once?**
+Yes! Use the `send_textp2p_sms` tool and provide a comma-separated list of phone numbers in the `phone` parameter. The AI agent will trigger the bulk send instantly.
+
+**Q: How do I check my remaining credit balance for RVM?**
+Run the `get_textp2p_balance` query. The agent will retrieve your current available credits for SMS, MMS, and Ringless Voicemail directly from your account.
+
+**Q: Is it possible to add a new contact to a specific marketing list?**
+Absolutely. Use the `add_textp2p_contact` action. Provide the phone number and the `list_name` to register the new lead in your chosen directory instantly.
+
+
 ## Installation & Usage
 
-To install and use the **TextP2P** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/textp2p](https://vinkius.com/mcp/textp2p)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TextP2P** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `textp2p` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TextP2P** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "textp2p": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

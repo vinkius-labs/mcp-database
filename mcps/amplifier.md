@@ -1,7 +1,6 @@
 # Amplifier MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amplifier)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amplifier-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amplifier-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amplifier)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Amplifier** MCP server
 > I've accessed your shipment reports. The last 3 orders were shipped via UPS Ground. The tracking number for the most recent order (Order #1005) is '1Z9999999999999999'. Would you like the tracking numbers for the others?
 
 
+## ❓ FAQ
+
+**Q: How do I get my Amplifier API Key?**
+Log in to your Amplifier account. You need a PRO account to generate production API keys. You can also create Sandbox keys for testing. The API key is used as the username in Basic Auth with a blank password.
+
+**Q: Can I test orders without fulfilling them?**
+Yes! If you use a Sandbox API key, the `create_order` tool will simulate the order creation without triggering actual fulfillment in the warehouse.
+
+**Q: How do I check my current stock levels?**
+Use the `get_inventory_report` tool. It retrieves the current stock levels for all your catalog items at once, making it easy to identify low-stock SKUs.
+
+
 ## Installation & Usage
 
-To install and use the **Amplifier** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amplifier](https://vinkius.com/mcp/amplifier)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amplifier** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amplifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amplifier** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amplifier": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

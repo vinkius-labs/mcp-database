@@ -1,7 +1,6 @@
 # Evolio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evolio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/evolio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/evolio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evolio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Evolio** MCP server us
 > Case created! ID: case_4028, Client: Jan Novák (client_234), Type: Family Law, Status: active, Assigned attorney: Dr. Procházková. Task created! ID: task_8901, Title: 'File initial petition', Due: May 2, 2025 (Friday), Assigned: Dr. Procházková, Linked case: case_4028. The case now appears in the active cases list. Would you like to add more tasks or upload documents?
 
 
+## ❓ FAQ
+
+**Q: Can I create new cases and tasks directly through the AI agent?**
+Yes! The `create_case` action accepts a JSON payload with client, case type, and initial status. The `create_task` action creates tasks linked to specific cases with description, due date, and assignee. Use `update_case` to modify case status, notes, or attorney assignments as the case progresses.
+
+**Q: Can I filter cases by their current status?**
+Yes. The `list_cases_by_status` tool accepts a status parameter — 'active', 'pending', 'closed', or 'archived'. This lets you quickly focus on active matters requiring attention, review pending cases awaiting decisions, or audit closed cases for reporting.
+
+**Q: Can I access client documents and case files through the AI agent?**
+Yes. Use `list_client_files` with a Client ID to retrieve all documents uploaded for that client. Use `list_case_files` with a Case ID to see all documents associated with a specific case. Both tools return file names, upload dates, and file types for easy reference.
+
+
 ## Installation & Usage
 
-To install and use the **Evolio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/evolio](https://vinkius.com/mcp/evolio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Evolio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `evolio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Evolio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "evolio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

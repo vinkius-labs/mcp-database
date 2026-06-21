@@ -1,7 +1,6 @@
 # Apideck MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apideck)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apideck-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apideck-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apideck)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Apideck** MCP server u
 > I've created a new Vault session. You can direct the user to this URL to manage their integrations: https://vault.apideck.com/session/example-token
 
 
+## ❓ FAQ
+
+**Q: Can I fetch contacts from a specific CRM like Salesforce or HubSpot?**
+Yes. Use the `list_crm_contacts` tool and provide the `service_id` (e.g., 'salesforce') to retrieve unified contact data from that specific integration.
+
+**Q: How do I allow my users to configure their own integrations?**
+You can use the `create_vault_session` tool to generate a secure session URL where users can manage their connections within the Apideck Vault.
+
+**Q: What if I need to call an API endpoint that isn't part of the unified schema?**
+The `execute_proxy` tool allows you to make direct calls to any downstream service URL using the stored credentials for a specific `service_id`.
+
+
 ## Installation & Usage
 
-To install and use the **Apideck** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/apideck](https://vinkius.com/mcp/apideck)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Apideck** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `apideck` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Apideck** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "apideck": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

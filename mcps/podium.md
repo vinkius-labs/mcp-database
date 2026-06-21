@@ -1,7 +1,6 @@
 # Podium MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/podium)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/podium-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/podium-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/podium)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Podium** MCP server us
 > Review requests sent to 15 customers. Message: "Thanks for choosing us today! We'd love your feedback. Leave a review here: [review_link]". Delivery status: 14 delivered, 1 pending. Based on historical data, you can expect 5-6 reviews (38% response rate). Your current Google rating: 4.7 stars from 234 reviews. These review requests typically boost monthly review volume by 40%.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the latest reviews for a specific business location?**
+Yes! Use the `list_reviews` tool with the Location ID. Your agent will respond with the most recent customer reviews and their ratings in seconds.
+
+**Q: How do I find my Podium Location ID?**
+Ask the AI agent to run the `list_locations` tool. It will retrieve all your business locations along with their unique IDs for you to use in other commands.
+
+**Q: Can I send an SMS invitation for a review via the AI?**
+Absolutely. Use the `send_review_invitation` tool. Provide the customer details and the location ID, and the agent will trigger the invitation via Podium immediately.
+
+
 ## Installation & Usage
 
-To install and use the **Podium** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/podium](https://vinkius.com/mcp/podium)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Podium** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `podium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Podium** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "podium": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

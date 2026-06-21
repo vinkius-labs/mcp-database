@@ -1,7 +1,6 @@
 # Spaceflight News MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spaceflight-news)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spaceflight-news-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spaceflight-news-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spaceflight-news)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Spaceflight News** MCP
 > Searching blogs... Using `list_blogs` with the term 'Starship' and filtering for 'SpaceX', I found several updates regarding recent flight tests and orbital attempts.
 
 
+## ❓ FAQ
+
+**Q: How can I find news articles specifically about Mars or SpaceX?**
+You can use the `list_articles` tool and provide a keyword in the `search` parameter. For example, searching for 'Mars' will return all articles containing that term in the title or summary.
+
+**Q: Can I filter news by a specific source like NASA or SpaceNews?**
+Yes! Use the `list_articles` or `list_blogs` tools with the `news_site` parameter to filter results from a specific provider.
+
+**Q: How do I see which news sites are currently supported by the API?**
+Simply run the `get_info` tool. It returns metadata about the API, including a list of all news sites currently being tracked.
+
+
 ## Installation & Usage
 
-To install and use the **Spaceflight News** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/spaceflight-news](https://vinkius.com/mcp/spaceflight-news)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Spaceflight News** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `spaceflight-news` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Spaceflight News** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "spaceflight-news": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

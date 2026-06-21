@@ -1,7 +1,6 @@
 # Prefect MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/prefect)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/prefect-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/prefect-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/prefect)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Prefect** MCP server u
 > Running `list_automations` globally. I discovered 2 explicit rules: 'Slack Incident Notifier' reacting to Flow FAILED triggers, and 'K8s Pod Cleanup' executing automatically when an ECS cluster returns 'Destroyed' payloads.
 
 
+## ❓ FAQ
+
+**Q: Can the AI pinpoint the exact error in a failed Python data flow?**
+Yes. Upon discovering a FAILED execution with `list_flow_runs`, it uses `get_flow_run` to unpack the explicit metadata and stack trace, isolating exactly what task and line broke your ETL logic.
+
+**Q: How does the agent find where a flow actually executes (compute layer)?**
+It investigates `list_deployments` and `list_work_pools`. This exposes the underlying compute binding, allowing the AI to tell you whether the workflow executed inside an ECS cluster, Kubernetes, or a local Docker agent.
+
+**Q: Where do I retrieve the Workspace ID precisely?**
+From the Prefect Cloud URL. The format is `app.prefect.cloud/account/{AccountId}/workspace/{WorkspaceId}`. Copy the UUID strictly following the `/workspace/` path.
+
+
 ## Installation & Usage
 
-To install and use the **Prefect** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/prefect](https://vinkius.com/mcp/prefect)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Prefect** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `prefect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Prefect** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "prefect": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

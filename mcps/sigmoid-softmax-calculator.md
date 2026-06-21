@@ -1,7 +1,6 @@
 # Sigmoid & Softmax Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sigmoid-softmax-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sigmoid-softmax-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sigmoid-softmax-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sigmoid-softmax-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -45,12 +44,52 @@ Here are some examples of how you can interact with the **Sigmoid & Softmax Calc
 > The computation has been executed with mathematical precision. All results are exact and ready for review.
 
 
+## ❓ FAQ
+
+**Q: Why is native Softmax calculation necessary?**
+Softmax involves exponential division. Relying on an LLM for these complex floats guarantees severe hallucination and ruined accuracy scores.
+
+**Q: When should I use Sigmoid instead of Softmax?**
+Deploy Softmax for exclusive multi-class problems (array sums to 1.0). Use Sigmoid when handling isolated binary or independent multi-label scenarios.
+
+**Q: Does it prevent Infinity/NaN math overflow?**
+Yes. By automatically subtracting the maximum logit threshold prior to computing the exponentials, it guarantees total numerical stability.
+
+
 ## Installation & Usage
 
-To install and use the **Sigmoid & Softmax Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sigmoid-softmax-calculator](https://vinkius.com/mcp/sigmoid-softmax-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sigmoid & Softmax Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sigmoid-softmax-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sigmoid & Softmax Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sigmoid-softmax-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

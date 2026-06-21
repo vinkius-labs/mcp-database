@@ -1,7 +1,6 @@
 # LearnUpon MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/learnupon)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/learnupon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/learnupon-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/learnupon)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **LearnUpon** MCP server
 > Successfully enrolled user 12345 into 'Introduction to Cybersecurity'. The new enrollment ID is '98765'.
 
 
+## ❓ FAQ
+
+**Q: How do I find my API Key ID and Secret?**
+Log in to your LearnUpon portal, navigate to Settings > API, and you will be able to generate and copy your API Key ID and Secret.
+
+**Q: Can I search for a user by email?**
+Yes, use the `search_users` tool and provide the email address to retrieve the specific learner profile.
+
+**Q: Is it possible to unenroll a user via the agent?**
+Absolutely. Use the `unenroll_user` tool with the unique enrollment ID to remove a user from a course.
+
+
 ## Installation & Usage
 
-To install and use the **LearnUpon** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/learnupon](https://vinkius.com/mcp/learnupon)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LearnUpon** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `learnupon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LearnUpon** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "learnupon": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

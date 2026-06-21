@@ -1,7 +1,6 @@
 # ACRCloud Music Recognition MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/acrcloud-music-recognition)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/acrcloud-music-recognition-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/acrcloud-music-recognition-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/acrcloud-music-recognition)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **ACRCloud Music Recogni
 > Searching... I've located the track 'Get Lucky' by Daft Punk. Here is the direct Spotify link: [Spotify Link]. It also includes metadata for Apple Music and YouTube.
 
 
+## ❓ FAQ
+
+**Q: How do I get ACRCloud credentials?**
+Sign up at the [**ACRCloud Console**](https://console.acrcloud.com/), create a 'Music Recognition' project, and you will find your Access Key, Secret, and Host in the project settings.
+
+**Q: Which audio formats are supported for identification?**
+ACRCloud supports most common audio formats including MP3, WAV, AAC, and OGG. The agent will download the file from the provided URL and send it for fingerprinting.
+
+**Q: Can I find the ISRC code for a specific track?**
+Yes! When you identify a song or search for metadata, the `acr_music_search` tool returns industry-standard identifiers like ISRC, allowing you to track specific recordings across different systems.
+
+
 ## Installation & Usage
 
-To install and use the **ACRCloud Music Recognition** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/acrcloud-music-recognition](https://vinkius.com/mcp/acrcloud-music-recognition)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ACRCloud Music Recognition** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `acrcloud-music-recognition` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ACRCloud Music Recognition** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "acrcloud-music-recognition": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

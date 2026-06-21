@@ -1,7 +1,6 @@
 # AWeber MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aweber)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aweber-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aweber-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aweber)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **AWeber** MCP server us
 > Retrieving stats... Your latest broadcast 'July Promo' reached 1,200 recipients with a 24% open rate and a 5% click-through rate. There were 2 unsubscribes reported. Would you like a detailed breakdown?
 
 
+## ❓ FAQ
+
+**Q: Can the AI automatically find a subscriber across all my mailing lists?**
+Yes! Use the `find_subscriber` tool with an email address. Your agent will scan your entire account to retrieve the subscriber's profile, list associations, and status in seconds.
+
+**Q: How do I check the statistics for my latest email broadcast through the AI?**
+Simply ask the agent to run the `get_broadcast_stats` tool. It will return performance metrics like open rates and click-throughs for your most recent sends.
+
+**Q: Does the integration allow for managing automated campaign flows?**
+Yes. The `list_campaigns` tool allows you to audit all active automated sequences, helping you monitor onboarding flows and follow-up sequences directly from your workspace.
+
+
 ## Installation & Usage
 
-To install and use the **AWeber** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aweber](https://vinkius.com/mcp/aweber)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AWeber** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aweber` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AWeber** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aweber": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # HealthCare.gov MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/healthcaregov)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/healthcaregov-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/healthcaregov-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/healthcaregov)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,55 @@ Here are some examples of how you can interact with the **HealthCare.gov** MCP s
 > Accessing issuer data... In Virginia (VA), there are 8 main issuers operating in the Marketplace, including 'Anthem Health', 'CareFirst BlueCross BlueShield', and 'Kaiser Permanente'. Would you like to see the available plan counts for each?
 
 
+## ❓ FAQ
+
+**Q: How do I obtain a HealthCare.gov API Key?**
+You must request a free API key through the **CMS Marketplace API** portal (developer.cms.gov/marketplace-api). Keys are typically sent via email and must be renewed every 60 days.
+
+**Q: Can I check if my doctor is in-network for a specific plan?**
+Yes! Use the `get_provider_coverage` tool by providing the plan ID and the provider ID. The agent will confirm the network status for that specific combination.
+
+**Q: What geographic information is required for plan searches?**
+Most searches require a 5-digit ZIP code and a 5-digit County FIPS code. You can use the `get_counties_by_zip` tool to retrieve the FIPS code for any ZIP code.
+
+**Q: Is the integration secure for searching health data?**
+Absolutely. The integration uses official CMS API keys over HTTPS. Your credentials are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **HealthCare.gov** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/healthcaregov](https://vinkius.com/mcp/healthcaregov)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HealthCare.gov** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `healthcaregov` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HealthCare.gov** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "healthcaregov": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

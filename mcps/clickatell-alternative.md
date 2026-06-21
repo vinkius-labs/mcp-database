@@ -1,7 +1,6 @@
 # Clickatell MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clickatell-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clickatell-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clickatell-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clickatell-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Clickatell** MCP serve
 > Scanning account... Your current balance is $25.50. Based on your recent usage, you have enough credits for approximately 1,200 SMS messages. Need a breakdown of recent sending costs?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Clickatell API Key?**
+Log in to your Clickatell account, navigate to **My Workspace** > **API Integrations**, and create a new HTTP API integration to get your key.
+
+**Q: Do I need templates for WhatsApp?**
+Yes, for business-initiated messages, WhatsApp requires the use of pre-approved templates. You can list them using the `list_whatsapp_templates` tool.
+
+**Q: Can I check my remaining balance via AI?**
+Yes! The `get_account_balance` tool retrieves your current remaining funds directly from the Clickatell platform.
+
+
 ## Installation & Usage
 
-To install and use the **Clickatell** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clickatell-alternative](https://vinkius.com/mcp/clickatell-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clickatell** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clickatell-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clickatell** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clickatell-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Keycloak MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/keycloak)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/keycloak-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/keycloak-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/keycloak)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Here are some examples of how you can interact with the **Keycloak** MCP server 
 > Group 'Engineering-Leads' has been successfully created in the 'master' realm.
 
 
+## ❓ FAQ
+
+**Q: Can I reset a user's password using this integration?**
+Yes. You can use the `reset_user_password` tool by providing the realm name, the user ID, and the new credential representation. This allows for immediate password management via the AI.
+
+**Q: Is it possible to audit administrative changes in a specific realm?**
+Absolutely. The `list_admin_events` tool retrieves the history of administrative actions for a target realm, helping you track who changed what and when.
+
+**Q: Can I retrieve OIDC client secrets for my applications?**
+Yes, the `get_client_secret` tool allows you to fetch the secret for any configured client in a realm. You can also use `regenerate_client_secret` if a rotation is required.
+
+
 ## Installation & Usage
 
-To install and use the **Keycloak** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/keycloak](https://vinkius.com/mcp/keycloak)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Keycloak** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `keycloak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Keycloak** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "keycloak": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

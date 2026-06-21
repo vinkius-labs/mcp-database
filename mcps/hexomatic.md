@@ -1,7 +1,6 @@
 # Hexomatic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hexomatic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hexomatic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hexomatic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hexomatic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,55 @@ Here are some examples of how you can interact with the **Hexomatic** MCP server
 > Workflow triggered! I've successfully started the execution of workflow hex_5501 with the provided URL. You can check the progress using the `get_execution_logs` tool in a few minutes.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Hexomatic API Key?**
+Log in to your Hexomatic account and navigate to the **Integrations** or **API** section in your settings. You will be able to generate and copy your unique API key from there.
+
+**Q: Can I run a specific workflow via the AI agent?**
+Yes! Use the `run_workflow` tool by providing the unique workflow ID. You can also pass runtime parameters (like a list of URLs to scrape) as a JSON string in the `body_json` parameter.
+
+**Q: How do I access the data scraped by a workflow?**
+Once a workflow execution is complete, use the `get_workflow_results` tool with the workflow ID to retrieve the scraped data in a structured format.
+
+**Q: Is the integration secure for managing automation data?**
+Absolutely. The integration uses official Hexomatic API keys over HTTPS. Your credentials are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Hexomatic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hexomatic](https://vinkius.com/mcp/hexomatic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hexomatic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hexomatic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hexomatic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hexomatic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Authorize.net MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/authorizenet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/authorizenet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/authorizenet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/authorizenet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Authorize.net** MCP se
 > Initiating Void payload to Authorize.net... Success achieved. Transaction `91230` has been stripped and obliterated successfully avoiding batch capture entirely. The associated card strings will organically restore the missing limits swiftly within general issuer intervals natively.
 
 
+## ❓ FAQ
+
+**Q: Can my AI safely create standard CIM profiles?**
+Yes. The agent utilizes Authorize.net's API structure strictly intended for PCI-compliant scenarios. It successfully tokens the user emails converting them into shielded unique underlying node endpoints (Profile ID). Subsequent commands elegantly pin payment PAN inputs strictly onto that boundary.
+
+**Q: Why would I use "Auth Only" instead of "Auth Capture"?**
+An "Auth Only" is essential when shipping physical goods that aren't instantly ready. It guarantees the user's funds exist and freezes them for up to 30 days without legally withdrawing the cash. Once the shipment processes, your AI issues a Prior Auth Capture logically finishing the monetary path.
+
+**Q: Is it possible to completely void transactions instead of waiting for a settlement?**
+Yes. Authorize.net supports a strict "Void" capability on unsettled transactions. The AI can cancel a transaction if asked quickly within the same business day, preventing the funds from ever being captured in the overnight batch—saving you settlement and processing fees.
+
+
 ## Installation & Usage
 
-To install and use the **Authorize.net** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/authorizenet](https://vinkius.com/mcp/authorizenet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Authorize.net** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `authorizenet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Authorize.net** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "authorizenet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

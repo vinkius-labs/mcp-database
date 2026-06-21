@@ -1,7 +1,6 @@
 # SendCloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sendcloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sendcloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sendcloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sendcloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **SendCloud** MCP server
 > I've listed your mailing address lists. You have 3 active lists: 'Newsletter Subscribers', 'VIP Clients', and 'Internal Team'. Which one would you like to see the members for?
 
 
+## ❓ FAQ
+
+**Q: How do I find my SendCloud API User and Key?**
+Log in to your SendCloud account, go to [Settings] -> [API Keys], and you will find your API User (api_user) and API Key there.
+
+**Q: Can I check the delivery status of an email?**
+Yes. Use the `get_email_status` tool with the unique message ID (msgId) returned when the email was sent. It will provide real-time status such as 'Delivered', 'Opened', or 'Bounced'.
+
+**Q: Is it possible to manage address list members through the agent?**
+Yes! Use the `add_address_member` tool to programmatically add new emails to your existing address lists, facilitating automated subscriber management.
+
+
 ## Installation & Usage
 
-To install and use the **SendCloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sendcloud](https://vinkius.com/mcp/sendcloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SendCloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sendcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SendCloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sendcloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

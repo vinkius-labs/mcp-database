@@ -1,7 +1,6 @@
 # Expensify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expensify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/expensify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/expensify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expensify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Expensify** MCP server
 > I've fetched the policy details using `get_policy` for PLY123. The active categories are 'Travel', 'Meals', and 'Software', and the tags are 'Marketing' and 'Engineering'.
 
 
+## ❓ FAQ
+
+**Q: How do I download a generated export or reconciliation file?**
+You can use the `download_file` tool by providing the exact `fileName` returned by your export or reconciliation job. The agent will fetch the file content directly.
+
+**Q: Can I create a new expense report and attach multiple transactions at once?**
+Yes! Use the `create_report` tool. You can specify the employee's email, the target policy ID, report details, and pass an array of expense objects (including merchant, currency, date, and amount).
+
+**Q: How do I retrieve policy details like categories, tags, or tax rates?**
+Use the `get_policy` tool. Provide a comma-separated list of policy IDs and specify the fields you want to retrieve (e.g., 'categories,tags,tax,employees,reportFields').
+
+
 ## Installation & Usage
 
-To install and use the **Expensify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/expensify](https://vinkius.com/mcp/expensify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Expensify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `expensify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Expensify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "expensify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

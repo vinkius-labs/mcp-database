@@ -1,7 +1,6 @@
 # AniList GraphQL MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anilist-graphql)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/anilist-graphql-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/anilist-graphql-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anilist-graphql)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **AniList GraphQL** MCP 
 > I've retrieved the data for Studio MAPPA (ID: 569) using `get_studio`. They are known for works like 'Jujutsu Kaisen' and 'Attack on Titan: The Final Season'.
 
 
+## ❓ FAQ
+
+**Q: Can I search for a specific anime by its title?**
+Yes! Use the `search_media` tool with the title as the search term. You can then use `get_media` with the resulting ID to get full details.
+
+**Q: How do I see my own AniList profile and lists?**
+Once authenticated, use the `get_viewer` tool. It will fetch the profile information associated with your access token.
+
+**Q: Can I check when the next episode of an anime airs?**
+Yes, use the `get_airing_schedule` tool with the specific `mediaId` to see the upcoming broadcast times.
+
+
 ## Installation & Usage
 
-To install and use the **AniList GraphQL** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/anilist-graphql](https://vinkius.com/mcp/anilist-graphql)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AniList GraphQL** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `anilist-graphql` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AniList GraphQL** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "anilist-graphql": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

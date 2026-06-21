@@ -1,7 +1,6 @@
 # Circle.so MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/circleso)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/circleso-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/circleso-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/circleso)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Circle.so** MCP server
 > Checking the event calendar... You have 2 upcoming events: 'Weekly Office Hours' (Tomorrow at 2 PM) and 'Monthly Guest Speaker' (Next Friday at 10 AM).
 
 
+## ❓ FAQ
+
+**Q: Can I see who the most recent members to join are?**
+Yes! Use the `list_community_members` tool. The agent will return a list of members, and you can see their join dates and profile details directly.
+
+**Q: How do I see the comments for a specific post?**
+Use the `list_post_comments` tool with the unique post ID. Your agent will fetch all comments, allowing you to review the discussion without leaving your chat.
+
+**Q: Where do I find my Circle API Token?**
+Log in to your Circle community as an admin, go to **Settings**, and select **API**. You can generate and copy your token from that section.
+
+
 ## Installation & Usage
 
-To install and use the **Circle.so** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/circleso](https://vinkius.com/mcp/circleso)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Circle.so** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `circleso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Circle.so** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "circleso": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

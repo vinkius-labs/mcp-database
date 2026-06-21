@@ -1,7 +1,6 @@
 # Reddit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reddit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reddit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reddit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reddit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,49 @@ Here are some examples of how you can interact with the **Reddit** MCP server us
 > Found 23 relevant posts in r/startups about Series A advice. Most upvoted: "What I wish I knew before our Series A" (2,340 upvotes, detailed founder retrospective). "Series A pitch deck template that raised $12M" (1,890 upvotes, includes template link). "VC red flags during Series A due diligence" (1,456 upvotes). Key themes: unit economics (mentioned 34 times), team composition (28), market timing (22), board structure (18). 3 AMA posts from Series A founders this month.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the hot posts in a specific subreddit?**
+Yes! Use the `list_subreddit_posts` tool with the subreddit name and sort set to 'hot'. Your agent will return the trending discussions, including titles, scores, and links in seconds.
+
+**Q: How do I get my Reddit Client ID and Client Secret?**
+Log in to your Reddit account, navigate to **Preferences** > **Apps** (https://www.reddit.com/prefs/apps), and create a new app of type **script** to reveal your credentials.
+
+
 ## Installation & Usage
 
-To install and use the **Reddit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/reddit](https://vinkius.com/mcp/reddit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Reddit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `reddit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Reddit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "reddit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

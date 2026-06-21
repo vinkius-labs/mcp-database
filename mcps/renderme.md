@@ -1,7 +1,6 @@
 # RenderMe MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/renderme)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/renderme-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/renderme-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/renderme)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,49 @@ Here are some examples of how you can interact with the **RenderMe** MCP server 
 > Monthly rendering statistics. Total renders: 3,456. Successful: 3,421 (99.0%). Failed: 35 (1.0%, mostly timeout on complex templates). API calls: 4,890. Average render time: 2.1 seconds. Peak usage: Tuesday at 2 PM (234 renders/hour). By format: PNG 58%, PDF 32%, JPG 10%. Storage used: 2.3 GB of 10 GB. Plan limit: 5,000 renders/month (69.1% used). Estimated overage at current pace: none.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find my RenderMe templates?**
+Yes! Use the `list_deployments` tool. Your agent will respond with complete metadata for all your video templates, including their IDs and technical specifications in seconds.
+
+**Q: How do I find my RenderMe (re.video) API Key?**
+Log in to your RenderMe account at app.re.video, navigate to the **Settings** or **API** section, and you will find your unique secret token there.
+
+
 ## Installation & Usage
 
-To install and use the **RenderMe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/renderme](https://vinkius.com/mcp/renderme)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **RenderMe** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `renderme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **RenderMe** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "renderme": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

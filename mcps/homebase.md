@@ -1,7 +1,6 @@
 # Homebase MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/homebase)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/homebase-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/homebase-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/homebase)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,55 @@ Here are some examples of how you can interact with the **Homebase** MCP server 
 > Retrieving schedules... For next Wednesday (April 14th) at your primary location, 6 shifts are scheduled, starting with 'Morning Prep' at 06:00 AM and ending with 'Closing Duty' at 10:00 PM. Should I list the assigned employees for each shift?
 
 
+## ❓ FAQ
+
+**Q: How do I obtain my Homebase API Key?**
+Log in to Homebase as an Owner, ensure you are on the 'All in One' plan, navigate to **Settings > API Access**, and click **Request API Key**. Your key will typically be approved within one business day.
+
+**Q: Is the Homebase API read-only?**
+Yes, as of current documentation, the Homebase public API provides read-only access to locations, employees, timecards, and schedules. Writing data (like creating shifts) must be done through the web dashboard or official POS/Payroll integrations.
+
+**Q: How can I see who is currently working?**
+Use the `get_active_clock_ins` tool with your location UUID. It filters current timecards to show only employees who have clocked in but not yet clocked out for the day.
+
+**Q: Is the integration secure for managing employee data?**
+Absolutely. The integration uses official Homebase Bearer tokens over HTTPS. Your credentials and sensitive employee information are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Homebase** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/homebase](https://vinkius.com/mcp/homebase)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Homebase** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `homebase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Homebase** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "homebase": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

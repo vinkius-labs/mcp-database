@@ -1,7 +1,6 @@
 # Strava MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/strava-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/strava-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,46 @@ Here are some examples of how you can interact with the **Strava** MCP server us
 > Running comparison: May vs April. May (so far): 12 runs, 98.4 km, avg pace 5:08/km, best pace 4:32/km, elevation 1,230m. April: 14 runs, 112 km, avg pace 5:22/km, best pace 4:45/km, elevation 980m. Improvements: avg pace -14 sec/km (2.7% faster), best pace -13 sec/km. On track to exceed April distance (projected 118 km). Longest run: May 10.2 km vs April 8.8 km. Consistency: May avg 3.2 runs/week vs April 3.5. Heart rate efficiency improved: same pace at 5 bpm lower avg HR.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Strava Access Token?**
+Log in to [**Strava Developers**](https://www.strava.com/settings/api), create an API application, and you will find your Access Token in the settings. Note that you may need to use the OAuth flow to generate a long-lived or refreshed token.
+
+
 ## Installation & Usage
 
-To install and use the **Strava** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/strava](https://vinkius.com/mcp/strava)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Strava** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `strava` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Strava** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "strava": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

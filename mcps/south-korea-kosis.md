@@ -1,7 +1,6 @@
 # South Korea KOSIS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/south-korea-kosis)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/south-korea-kosis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/south-korea-kosis-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/south-korea-kosis)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **South Korea KOSIS** MC
 > According to KOSIS labor force survey data, employment in the manufacturing sector for Q3 reached 4.45 million workers, representing a 1.2% year-over-year growth, largely supported by automotive exports.
 
 
+## ❓ FAQ
+
+**Q: How do I get a KOSIS API key?**
+Register at kosis.kr, then apply for API access in the Open API section. Your API key is issued instantly upon application.
+
+**Q: What makes Korean data unique?**
+South Korea is the world's leading producer of memory semiconductors and a major hub for display panels, batteries, and shipbuilding. KOSIS provides granular production, export, and trade data for these critical industries that is unavailable from any other source.
+
+**Q: Does the API provide historically consistent data?**
+Yes, KOSIS standardizes time-series data ensuring that demographic, industrial, and national accounts figures remain historically consistent, often providing data points spanning several decades.
+
+
 ## Installation & Usage
 
-To install and use the **South Korea KOSIS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/south-korea-kosis](https://vinkius.com/mcp/south-korea-kosis)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **South Korea KOSIS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `south-korea-kosis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **South Korea KOSIS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "south-korea-kosis": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

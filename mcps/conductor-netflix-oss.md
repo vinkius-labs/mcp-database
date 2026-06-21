@@ -1,7 +1,6 @@
 # Conductor (Netflix OSS) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/conductor-netflix-oss)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/conductor-netflix-oss-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/conductor-netflix-oss-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/conductor-netflix-oss)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -113,12 +112,52 @@ Here are some examples of how you can interact with the **Conductor (Netflix OSS
 > Starting workflow 'payment_processing'... Execution started successfully. The Workflow ID is `8f2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d`.
 
 
+## ❓ FAQ
+
+**Q: Can I check if my workflow JSON is valid without saving it to the server?**
+Yes! Use the `validate_workflow_definition` tool. It allows you to submit a workflow definition JSON for validation, and the server will return any structural or logic errors without persisting the changes.
+
+**Q: How do I see all available workflows and their versions?**
+You can use the `get_workflow_names_and_versions` tool to get a high-level list of all registered workflows and their associated version numbers.
+
+**Q: Is it possible to inspect the configuration of a specific task type?**
+Yes, use the `get_task_definition` tool with the specific `taskType` name. This will return the complete task metadata, including retry logic, timeouts, and input/output keys.
+
+
 ## Installation & Usage
 
-To install and use the **Conductor (Netflix OSS)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/conductor-netflix-oss](https://vinkius.com/mcp/conductor-netflix-oss)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Conductor (Netflix OSS)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `conductor-netflix-oss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Conductor (Netflix OSS)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "conductor-netflix-oss": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

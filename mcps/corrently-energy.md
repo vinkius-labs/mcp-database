@@ -1,7 +1,6 @@
 # Corrently Energy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corrently-energy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/corrently-energy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/corrently-energy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corrently-energy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -273,12 +272,55 @@ Here are some examples of how you can interact with the **Corrently Energy** MCP
 > Fetching market data for Hamburg 20095... Current wholesale electricity prices range from 45 €/MWh to 120 €/MWh today. The cheapest hours are 12:00-15:00 (solar peak, ~48 €/MWh) and 02:00-05:00 overnight (~52 €/MWh). The most expensive period is 18:00-20:00 evening peak at ~115 €/MWh.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API token to use the Corrently Energy MCP server?**
+No! Most Corrently API endpoints work without authentication. An optional token is only needed if you want higher rate limits for heavy usage. Simply subscribe to the server and start querying energy data immediately.
+
+**Q: What German zip codes are supported for energy forecasts?**
+All German Postleitzahl (PLZ) 5-digit zip codes are supported — from 01067 (Dresden) to 80331 (Munich). Simply provide any valid German zip code and the API will return localized energy forecasts for that region's grid area.
+
+**Q: Can I use this MCP server to optimize when I charge my electric vehicle?**
+Absolutely! Use the `get_best_hour` tool to find optimal charging windows based on renewable energy availability or lowest CO₂ emissions. Then use `create_energy_schedule` to generate a full optimized charging plan. You can also use `get_phev_charge_or_fuel` if you drive a plug-in hybrid and need advice on whether to charge electrically or use fuel.
+
+**Q: How accurate are the solar generation predictions for my photovoltaic system?**
+The `get_solar_prediction` tool provides forecasts based on weather models and your system's kWp capacity. Accuracy depends on location, panel orientation, and weather conditions. It's best used for relative comparisons (e.g., "Will tomorrow be sunnier than today?") rather than absolute precision. For typical home systems (5-10 kWp), day-ahead forecasts are generally within 15-25% of actual generation.
+
+
 ## Installation & Usage
 
-To install and use the **Corrently Energy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/corrently-energy](https://vinkius.com/mcp/corrently-energy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Corrently Energy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `corrently-energy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Corrently Energy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "corrently-energy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

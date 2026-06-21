@@ -1,7 +1,6 @@
 # Aserto MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aserto)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aserto-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aserto-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aserto)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Aserto** MCP server us
 > I've retrieved the decision logs using `list_decision_logs`. I found 3 storage objects available for the 'production-policy' ID. Would you like to inspect a specific log?
 
 
+## ❓ FAQ
+
+**Q: How do I verify a specific permission for a user?**
+Use the `authz_is` tool. You need to provide the identity context (user), the policy context (the path to the rule), and any relevant resource context to get a boolean decision.
+
+**Q: Can I execute complex Rego logic through the agent?**
+Yes! The `authz_query` tool allows you to run any valid Rego query against your authorizer, enabling you to inspect data or evaluate custom logic on the fly.
+
+**Q: Is it possible to trigger a policy sync on an Edge Authorizer?**
+Yes. Use the `control_plane_exec` tool with the instance ID and the appropriate command (e.g., `{"discovery": {}}`) to manage your connected authorizers.
+
+
 ## Installation & Usage
 
-To install and use the **Aserto** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aserto](https://vinkius.com/mcp/aserto)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aserto** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aserto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aserto** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aserto": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

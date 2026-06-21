@@ -1,7 +1,6 @@
 # Trigger.dev MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/triggerdev)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/triggerdev-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/triggerdev-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/triggerdev)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,55 @@ Here are some examples of how you can interact with the **Trigger.dev** MCP serv
 > Today's stats: 1,247 total runs — 1,238 successful (99.3%), 7 failed (0.6%), and 2 currently running. Average execution time: 2.4 seconds. Most active task: 'process-order' with 892 runs.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Trigger.dev API key?**
+Log in to your Trigger.dev dashboard at **cloud.trigger.dev**. Open your project, then find the **API Keys** section in the project settings. Copy your **Secret API Key** (it starts with `tr_dev_` for development or `tr_prod_` for production). Paste it into the configuration field below. For Personal Access Tokens (used for admin operations), go to **Profile → Personal Access Tokens** tab instead.
+
+**Q: Can my AI agent tell me why a background job failed in production?**
+Yes. Ask your agent to list failed runs and it returns the task name, error message, stack trace, execution duration, and retry count for each failure. You can then drill into a specific run to see the exact input payload and which step failed — cutting your debugging time from minutes to seconds.
+
+**Q: What if I'm on-call and need to check job health at 2 AM?**
+Just ask your AI agent 'Are there any failed jobs in production?' and get an instant triage report — number of failures, which tasks are affected, when they started failing, and whether retries resolved them. No need to open a browser, log in, or navigate dashboards in the middle of the night.
+
+**Q: Does it support multiple environments like dev, staging, and production?**
+Yes. Each API key is scoped to a specific environment (dev or prod), just like in Trigger.dev itself. You can configure separate integrations for each environment, or switch between them by updating the API key — giving you full control over which environment your AI agent queries.
+
+
 ## Installation & Usage
 
-To install and use the **Trigger.dev** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/triggerdev](https://vinkius.com/mcp/triggerdev)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Trigger.dev** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `triggerdev` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Trigger.dev** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "triggerdev": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

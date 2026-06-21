@@ -1,7 +1,6 @@
 # FastSpring MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fastspring)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fastspring-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fastspring-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fastspring)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **FastSpring** MCP serve
 > Subscription cancelled! sub_xyz789 has been terminated. The recorded churn metadata indicates the reason was 'Price too high'. The customer will no longer be charged for this plan.
 
 
+## ❓ FAQ
+
+**Q: Can my agent check if an order passed fraud filtering in FastSpring?**
+Yes. Use the 'get_order_details' tool. The agent retrieves explicit cloud logs resolving if customers successfully passed fraud checks, providing you with the exact status of any transaction UUID.
+
+**Q: How do I generate a customer login link via chat?**
+Use the 'generate_auth_link' tool. Provide the account ID. Your agent will command the FastSpring API to generate an ephemeral 24h JWT link that grants the customer secure access to their portal without a password.
+
+**Q: Can I manually trigger a renewal charge for a subscription through the agent?**
+Absolutely. Use the 'charge_managed_subscription' tool. Providing the sub ID allows the agent to execute a manual renewal charge via the MoR infrastructure, handling the ad-hoc billing event synchronously.
+
+
 ## Installation & Usage
 
-To install and use the **FastSpring** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fastspring](https://vinkius.com/mcp/fastspring)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FastSpring** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fastspring` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FastSpring** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fastspring": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

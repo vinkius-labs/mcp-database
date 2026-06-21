@@ -1,7 +1,6 @@
 # PubMed MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pubmed)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pubmed-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pubmed-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pubmed)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **PubMed** MCP server us
 > Found 10 citing articles for the landmark CRISPR paper. Top citations include applications in gene therapy, agricultural biotechnology, diagnostic systems (SHERLOCK/DETECTR), and base editing. Authors span institutions from MIT, Harvard, UC Berkeley, and the Broad Institute. Each result includes PMID, DOI, and full abstract.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key or any registration to use PubMed?**
+No. PubMed E-utilities are freely accessible to everyone without registration. An optional API key (available at ncbi.nlm.nih.gov) increases your rate limit from 3 to 10 requests per second, but is not required for standard usage.
+
+**Q: What types of searches are supported and how can I refine my results?**
+You can search by keyword, disease name, gene symbol, drug name, author surname, or journal title. Boolean operators (AND, OR, NOT) and field tags like [Title], [Author], and [MeSH Terms] work natively. Example: 'CRISPR AND cancer NOT review' targets original research on CRISPR in oncology.
+
+**Q: Can I access full-text articles through this server?**
+This server returns complete abstracts and metadata for all indexed articles. Full-text access depends on publisher open access policies — articles from PubMed Central (PMC) are freely available. The DOI link provided with each result allows direct navigation to the publisher's page.
+
+
 ## Installation & Usage
 
-To install and use the **PubMed** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pubmed](https://vinkius.com/mcp/pubmed)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PubMed** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pubmed` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PubMed** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pubmed": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

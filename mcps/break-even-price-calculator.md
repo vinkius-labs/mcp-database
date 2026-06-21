@@ -1,7 +1,6 @@
 # Break-even Price Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/break-even-price-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/break-even-price-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/break-even-price-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/break-even-price-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Break-even Price Calcu
 > You need an additional 11.43 bags per hectare to cover your costs at the current market price.
 
 
+## ❓ FAQ
+
+**Q: What is the break-even price?**
+The break-even price is the minimum price per bag you must receive to cover all your production costs per hectare.
+
+**Q: How can I calculate my profit margin targets?**
+Use the `calculate_price_targets` tool by providing your production cost per hectare and expected yield. It will return target prices for 10%, 20%, and 30% margins.
+
+**Q: What should I do if the market price is below my break-even point?**
+You can use `calculate_yield_requirement` to find out how many additional bags per hectare you need to produce to cover your costs at the current market price.
+
+
 ## Installation & Usage
 
-To install and use the **Break-even Price Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/break-even-price-calculator](https://vinkius.com/mcp/break-even-price-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Break-even Price Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `break-even-price-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Break-even Price Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "break-even-price-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

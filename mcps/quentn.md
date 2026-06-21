@@ -1,7 +1,6 @@
 # Quentn MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quentn)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/quentn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/quentn-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quentn)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Quentn** MCP server us
 > Contact created successfully. Name: Alexandra Petrov. Email: a.petrov@scaleup.io. Tag: VIP Customer applied. Added to automation: "VIP Onboarding Sequence" (5 emails over 14 days). First email "Welcome to VIP" scheduled to send in 15 minutes. The contact has been assigned to your CRM with lead score: 85/100. Custom fields populated: Company: ScaleUp Inc, Role: Head of Product, Source: Partner Referral.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific contact just by providing their ID?**
+Yes! Use the `get_contact` tool. Your agent will respond with complete metadata, including tags, custom fields, and engagement history in seconds.
+
+**Q: Where do I find my Quentn Base URL?**
+Log in to Quentn, go to **My Account** > **API Info**. Your unique base URL follows the pattern `https://<system_id>.<server_id>.quentn.com/public/api/V1`.
+
+**Q: How do I add a tag to a contact?**
+Use the `update_contact` tool and include the new tag in the 'terms' field of the request body.
+
+
 ## Installation & Usage
 
-To install and use the **Quentn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/quentn](https://vinkius.com/mcp/quentn)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Quentn** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `quentn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Quentn** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "quentn": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

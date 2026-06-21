@@ -1,7 +1,6 @@
 # Inversion Thinking Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inversion-thinking-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/inversion-thinking-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/inversion-thinking-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inversion-thinking-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Inversion Thinking Pro
 > Verdict: INVERSION_PROVEN. You successfully destroyed your hypothesis, secured measurable falsifiability, built a defense, and then realistically simulated how your defense creates a second-order failure. Proceed with architecture.
 
 
+## ❓ FAQ
+
+**Q: Why reject words like 'maybe' or 'could'?**
+Because LLMs use modal verbs to distance themselves from critique. True red-teaming requires certainty. The trap forces the AI to say 'This WILL fail because of X'.
+
+**Q: What is the difference between an anti-pattern and a red team attack?**
+An anti-pattern is a structural bad design choice (like storing raw passwords in a DB). A red team attack is an active exploit or failure mechanism (like exhausting memory via connection pooling) that breaks the system. You must define both.
+
+**Q: Why are measurable kill criteria necessary for validation?**
+Without measurable metrics, 'failure' is just a subjective opinion. Forcing the agent to define concrete thresholds (such as latency > 350ms, memory usage > 90%, or packet loss > 5%) creates absolute, falsifiable limits. It forces the AI to abandon hand-waving assertions.
+
+
 ## Installation & Usage
 
-To install and use the **Inversion Thinking Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/inversion-thinking-prover](https://vinkius.com/mcp/inversion-thinking-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Inversion Thinking Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `inversion-thinking-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Inversion Thinking Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "inversion-thinking-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

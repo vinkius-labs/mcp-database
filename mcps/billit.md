@@ -1,7 +1,6 @@
 # Billit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/billit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/billit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/billit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/billit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Billit** MCP server us
 > Retrieving expenses... Your 3 most recent expenses include 'Office Supplies' (€45.50), 'Cloud Hosting' (€120.00), and 'Internet Bill' (€60.00).
 
 
+## ❓ FAQ
+
+**Q: Can I check the payment status of a specific invoice?**
+Yes! Use the `get_invoice` tool with the Invoice ID. Your agent will fetch the latest details and payment status (e.g., Draft, Issued, Paid).
+
+**Q: How do I list all my customers in Billit?**
+Simply ask the agent to `list_parties`. It will retrieve the directory of all companies and persons registered as customers or suppliers in your account.
+
+**Q: Can I see recent expenses or receipts?**
+Yes. Use the `list_expenses` tool to retrieve a list of all incoming invoices and receipts recorded in your Billit account.
+
+
 ## Installation & Usage
 
-To install and use the **Billit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/billit](https://vinkius.com/mcp/billit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Billit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `billit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Billit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "billit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

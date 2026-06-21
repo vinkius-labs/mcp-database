@@ -1,7 +1,6 @@
 # Formspree MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/formspree)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/formspree-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/formspree-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/formspree)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Formspree** MCP server
 > Submitting data... The test entry was successfully sent to form 'mqkvpogq'. Formspree confirmed the submission was received.
 
 
+## ❓ FAQ
+
+**Q: How can I see the most recent submissions for a specific form?**
+Use the `list_submissions` tool with the form's `hashid`. You can set the `limit` parameter to control how many recent entries you want to retrieve.
+
+**Q: Can I filter submissions to only show those received after a certain date?**
+Yes! The `list_submissions` tool accepts a `since` parameter. Provide an ISO formatted date (e.g., 2023-12-01T00:00:00) to fetch only newer submissions.
+
+**Q: Is it possible to test a form by sending data through the AI?**
+Absolutely. Use the `submit_form` tool with the target `hashid`. You can provide details like `email`, `name`, and `message` to simulate a real user submission.
+
+
 ## Installation & Usage
 
-To install and use the **Formspree** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/formspree](https://vinkius.com/mcp/formspree)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Formspree** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `formspree` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Formspree** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "formspree": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

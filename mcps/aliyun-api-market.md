@@ -1,7 +1,6 @@
 # Aliyun API Market / 阿里云云市场 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aliyun-api-market)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aliyun-api-market-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aliyun-api-market-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aliyun-api-market)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Aliyun API Market / �
 > I've retrieved the tracking history. Your package from YuanTong Express is currently in Shanghai and was processed at the sorting center at 10:30 AM today. It is expected to arrive tomorrow.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Aliyun AppCode?**
+Log in to the [Aliyun Console](https://market.console.aliyun.com/), go to 'Purchased Services', and select an API subscription. Your unique AppCode will be displayed in the API details or application management section.
+
+**Q: Do I need to subscribe to each API individually?**
+Yes. Before calling a specific API via this server, you must have an active subscription (often with a free tier) for that service in the Aliyun Market to use your AppCode.
+
+**Q: Can I use this for any provider on the market?**
+This server uses the standard `Authorization: APPCODE` header, which is supported by the vast majority of APIs on the Aliyun Cloud Market. Some high-security official services might require AK/SK signatures which are not the primary focus of this connector.
+
+
 ## Installation & Usage
 
-To install and use the **Aliyun API Market / 阿里云云市场** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aliyun-api-market](https://vinkius.com/mcp/aliyun-api-market)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aliyun API Market / 阿里云云市场** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aliyun-api-market` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aliyun API Market / 阿里云云市场** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aliyun-api-market": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

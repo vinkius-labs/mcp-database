@@ -1,7 +1,6 @@
 # Logto (Auth Platform) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/logto-auth-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/logto-auth-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/logto-auth-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/logto-auth-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Logto (Auth Platform)*
 > Fetching members for organization 'org_999'... I found 3 members: Alice, Bob, and Charlie. Would you like to inspect Alice's specific permissions?
 
 
+## ❓ FAQ
+
+**Q: Can I see which roles are assigned to a specific user?**
+Yes! Use the `list_user_roles` tool with the target User ID to retrieve all global roles associated with that account.
+
+**Q: Is it possible to manage multi-tenant organizations through this server?**
+Absolutely. You can use `list_organizations` to see existing ones, `create_organization` to add new ones, and `list_organization_users` to audit membership.
+
+**Q: Can I update user profiles or suspend accounts?**
+Yes, the `update_user` tool allows you to modify the username, name, avatar, and the `isSuspended` status of any user.
+
+
 ## Installation & Usage
 
-To install and use the **Logto (Auth Platform)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/logto-auth-platform](https://vinkius.com/mcp/logto-auth-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Logto (Auth Platform)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `logto-auth-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Logto (Auth Platform)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "logto-auth-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

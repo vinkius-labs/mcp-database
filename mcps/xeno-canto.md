@@ -1,7 +1,6 @@
 # Xeno-canto MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xeno-canto)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/xeno-canto-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/xeno-canto-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xeno-canto)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Xeno-canto** MCP serve
 > Fetching page 2 of the search results for 'owl'... I have loaded the next set of recordings, featuring various species like the Barn Owl and Tawny Owl from different global locations.
 
 
+## ❓ FAQ
+
+**Q: How can I find recordings of a specific bird species?**
+Use the `search_recordings` tool with the species name or scientific name (e.g., 'Common Blackbird' or 'Turdus merula'). You can combine this with other filters like country or quality.
+
+**Q: Can I filter results by recording quality or location?**
+Yes! The `search_recordings` tool supports Xeno-canto syntax. Use `cnt:france` for location or `q:A` for the highest quality recordings within your query string.
+
+**Q: Is there a limit to the number of results I can retrieve?**
+The `search_recordings` tool returns results in pages. You can use the `page` parameter to navigate through the database, with each page containing up to 500 recordings.
+
+
 ## Installation & Usage
 
-To install and use the **Xeno-canto** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/xeno-canto](https://vinkius.com/mcp/xeno-canto)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Xeno-canto** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `xeno-canto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Xeno-canto** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "xeno-canto": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

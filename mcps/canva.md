@@ -1,7 +1,6 @@
 # Canva MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/canva)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/canva-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/canva-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/canva)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Canva** MCP server usi
 > Here are 4 Brand Templates mapped in your environment. You have access to: 'Annual Review Matrix', 'Sales Cold Outreach', 'Tech Update Blank', and 'Social Media Grid'. Tell me if you desire to list additional data.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent export my presentation as a PDF and give me the download link?**
+Yes! You can ask the AI to export any of your specific designs. The agent triggers an asynchronous export job in Canva (supporting PDF, MP4, JPEG, and more), monitors the progress, and ultimately provides you the native physical download URL right in the chat.
+
+**Q: Am I able to upload midjourney or generated assets directly to Canva folders?**
+Absolutely. The agent can take image URLs from anywhere and upload them directly into your Canva asset pipeline securely. It creates the structural IDs automatically, so the new images are immediately available when you open Canva's design editor.
+
+**Q: Can the agent create new design templates from scratch?**
+The agent can provision standard new designs using preset types (like Presentation, Poster, or InstagramPost) and retrieve your existing brand templates to keep everything aligned. However, actually placing visual elements on a canvas is restricted to the Canva editor UI via web.
+
+
 ## Installation & Usage
 
-To install and use the **Canva** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/canva](https://vinkius.com/mcp/canva)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Canva** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `canva` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Canva** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "canva": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

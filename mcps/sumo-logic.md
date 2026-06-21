@@ -1,7 +1,6 @@
 # Sumo Logic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sumo-logic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sumo-logic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sumo-logic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sumo-logic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Status natively secured actively.
 Search results retrieved seamlessly.
 
 
+## ❓ FAQ
+
+**Q: How does the AI handle asynchronous search jobs properly since large logs take time natively?**
+The integration specifically manages this asynchronously. The AI invokes `create_search_job` effectively obtaining a unique job tracking ID. It autonomously utilizes `get_search_status` routinely actively safely until the task reports resolution, seamlessly proceeding afterwards intelligently triggering `get_search_results` natively securely.
+
+**Q: Can this integration edit user parameters, manage collectors fundamentally, or delete billing records?**
+No, this module functions predominantly securely executing read-only investigations or orchestrating transient analytical read capabilities (creates logically secure temporal jobs). Destructive modifications fundamentally affecting users, collectors realistically securely actively explicitly structurally are avoided completely securely internally naturally globally by architectural design.
+
+**Q: Which log sources can the AI query through this integration?**
+Any source ingested by your Sumo Logic collectors — application logs, infrastructure metrics, cloud audit trails, and custom HTTP sources. The AI queries them all through the unified search API.
+
+
 ## Installation & Usage
 
-To install and use the **Sumo Logic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sumo-logic](https://vinkius.com/mcp/sumo-logic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sumo Logic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sumo-logic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sumo Logic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sumo-logic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

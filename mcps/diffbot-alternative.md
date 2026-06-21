@@ -1,7 +1,6 @@
 # Diffbot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/diffbot-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/diffbot-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/diffbot-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/diffbot-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Diffbot** MCP server u
 > Profile enhanced! Vinkius is identified as a 'Technology' organization based in Portugal. I've retrieved their social links, employee count, and latest funding metadata. Shall I search for their key people?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Diffbot API Token?**
+Log in to your Diffbot account and navigate to the **Dashboard** or **Manage Tokens** section to copy your unique access token.
+
+**Q: What is DQL and how can I use it?**
+DQL (Diffbot Query Language) allows you to filter the Knowledge Graph. Use the `search_knowledge_graph` tool with queries like `type:Organization industries:"AI"`.
+
+**Q: Can I extract comments from articles?**
+Yes! The `extract_article_data` tool has an optional `discussion` parameter. Set it to `true` to retrieve structured comment threads if available.
+
+
 ## Installation & Usage
 
-To install and use the **Diffbot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/diffbot-alternative](https://vinkius.com/mcp/diffbot-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Diffbot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `diffbot-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Diffbot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "diffbot-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Birdeye MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/birdeye-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/birdeye-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/birdeye-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/birdeye-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Birdeye** MCP server u
 > Accessing customer intelligence... John Doe (ID: 12345) has a consistently 'Positive' sentiment profile across 3 reviews and 1 survey response. His latest NPS score was 10. Need more historical context from his high-fidelity profile?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Birdeye API Key and Business ID?**
+Log in to your account, navigate to **Settings** > **Integrations** > **API**, and you will find your API Key and the Business ID (bid).
+
+**Q: Can I request a review via AI?**
+Yes! The `customer_checkin` tool allows your agent to record a customer visit and automatically send a review request via their preferred channel.
+
+**Q: How do I check review ratings programmatically?**
+Use the `list_reviews` tool and provide an optional `rating` filter (1-5) to retrieve specific categories of feedback directly from the platform.
+
+
 ## Installation & Usage
 
-To install and use the **Birdeye** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/birdeye-alternative](https://vinkius.com/mcp/birdeye-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Birdeye** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `birdeye-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Birdeye** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "birdeye-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

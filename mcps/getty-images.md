@@ -1,7 +1,6 @@
 # Getty Images MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/getty-images)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/getty-images-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/getty-images-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/getty-images)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Getty Images** MCP ser
 > Retrieving collections... You have 3 active lightboxes: 'Q2 Web Campaign', 'Social Media Assets', and 'Inspiration Board'. Which one would you like to explore for selected assets?
 
 
+## ❓ FAQ
+
+**Q: Can my agent search only for commercially safe images in Getty?**
+Yes. Use the 'search_creative' tool. It pre-filters results for commercial, advertising, and marketing use, ensuring the assets you discover are commercially safe natively.
+
+**Q: How do I download an image through the agent?**
+Use the 'download_image' tool. Provide the Asset ID. Note that this requires an active subscription and will consume your corporate quota. The agent will return a secure download URL synchronously.
+
+**Q: Can I find images similar to one I already liked through the agent?**
+Absolutely. Use the 'get_similar' tool. Provide the ID of your source image, and the agent will analyze its visual properties to find related compositions and aesthetic patterns within Getty's library.
+
+
 ## Installation & Usage
 
-To install and use the **Getty Images** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/getty-images](https://vinkius.com/mcp/getty-images)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Getty Images** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `getty-images` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Getty Images** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "getty-images": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

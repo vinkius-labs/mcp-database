@@ -1,7 +1,6 @@
 # VTEX Orders MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vtex-orders)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vtex-orders-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vtex-orders-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vtex-orders)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,55 @@ Would you like to move any of these to 'handling' status?
 > Order **v-444** has been canceled. Reason logged: 'Customer requested wrong size'. The payment refund of R$ 2,100.00 has been automatically initiated via the original payment method (Credit Card). The customer will receive the refund within 5-10 business days.
 
 
+## ❓ FAQ
+
+**Q: How do I get my VTEX API credentials?**
+Log in to your VTEX Admin, go to **Account Settings → Application Keys**, and create a new App Key. You'll receive an App Key and App Token pair. You also need your Account Name (the subdomain you use to access the VTEX Admin, e.g., 'mystore'). Ensure the key has **OMS** read/write permissions. No code, no SDK — just connect and go.
+
+**Q: Can my agent register an invoice and tracking number at the same time?**
+Yes! The 'register_invoice' tool accepts the invoice number and an optional tracking number in one call. Once submitted, the order automatically moves to 'Invoiced' status — eliminating the manual step of navigating to the VTEX Admin, opening the order detail, and filling each field separately.
+
+**Q: How does the agent handle order cancellations with refunds?**
+Just tell your agent to cancel the order. It uses the 'cancel_order' tool with an optional reason (so your team has an audit trail). VTEX then handles the refund automatically based on the payment method. No tab-switching, no admin navigation — your support team resolves it in one conversation.
+
+**Q: Can I monitor fulfillment status across hundreds of orders?**
+Absolutely. The 'search_orders' tool supports status filters and pagination, so your agent can scan the entire order queue — for example, listing all orders stuck in 'ready-for-handling' to identify fulfillment delays. Perfect for operations teams managing high-volume VTEX stores with multiple sellers.
+
+
 ## Installation & Usage
 
-To install and use the **VTEX Orders** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vtex-orders](https://vinkius.com/mcp/vtex-orders)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **VTEX Orders** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vtex-orders` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **VTEX Orders** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vtex-orders": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

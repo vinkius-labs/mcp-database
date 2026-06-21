@@ -1,7 +1,6 @@
 # Bitly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bitly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bitly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bitly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bitly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Bitly** MCP server usi
 > Retrieving your groups... You have 2 groups: 'Marketing Team' (GUID: g_123) and 'Personal Links' (GUID: g_456).
 
 
+## ❓ FAQ
+
+**Q: Can I check how many people clicked my link today?**
+Yes! Use the `get_link_clicks` tool with your Bitlink. Your agent will fetch the total click summary directly from the Bitly engine.
+
+**Q: How do I see which countries my clicks are coming from?**
+Simply ask the agent to `get_clicks_by_country` for a specific Bitlink. It will return a breakdown of traffic by geographic origin.
+
+**Q: Does the integration allow me to delete a Bitlink?**
+Bitlinks cannot be truly deleted via the standard API; they can only be archived or hidden. Currently, the toolset focuses on creation and monitoring (shortening links, checking metrics).
+
+
 ## Installation & Usage
 
-To install and use the **Bitly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bitly](https://vinkius.com/mcp/bitly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bitly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bitly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bitly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bitly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

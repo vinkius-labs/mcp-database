@@ -1,7 +1,6 @@
 # Linnworks (E-commerce Ops) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linnworks-e-commerce-ops)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/linnworks-e-commerce-ops-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/linnworks-e-commerce-ops-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linnworks-e-commerce-ops)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Linnworks (E-commerce 
 > I've identified 4 active sales channels: 1) Amazon (US Marketplace), 2) Shopify (Main Webstore), 3) eBay (Global), and 4) TikTok Shop (Beta). All integrations are showing 'Healthy' status. Would you like me to check the last sync time for the Shopify channel?
 
 
+## ❓ FAQ
+
+**Q: Can I check stock levels across all my warehouses through my agent?**
+Yes. Use the `get_stock_level` tool with a targeted Item ID. Your agent will return a breakdown of available, in-order, and due quantities for each of your configured locations, ensuring you have a global view of your inventory.
+
+**Q: How do I find detailed information for a specific product SKU?**
+Use the `get_inventory_item` tool and provide the exact SKU code. Your agent will fetch the full product record from Linnworks, exposing pricing, weight, dimensions, and category assignments directly in your conversation.
+
+**Q: Can my agent list all active sales channels connected to Linnworks?**
+Absolutely. Use the `list_channels` tool to identify all integrated marketplaces like Amazon, Shopify, or eBay. Your agent will report the channel source, subchannel info, and current integration status to verify your sync health.
+
+
 ## Installation & Usage
 
-To install and use the **Linnworks (E-commerce Ops)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/linnworks-e-commerce-ops](https://vinkius.com/mcp/linnworks-e-commerce-ops)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Linnworks (E-commerce Ops)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `linnworks-e-commerce-ops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Linnworks (E-commerce Ops)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "linnworks-e-commerce-ops": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

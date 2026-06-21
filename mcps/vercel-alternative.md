@@ -1,7 +1,6 @@
 # Vercel MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vercel-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vercel-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vercel-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vercel-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,55 @@ Here are some examples of how you can interact with the **Vercel** MCP server us
 > The domain example.com is VERIFIED with valid A records pointing to Vercel's IPs (76.76.21.21). SSL certificate is active and issued by Let's Encrypt. The apex domain and www subdomain are both configured correctly. No DNS misconfigurations detected.
 
 
+## ❓ FAQ
+
+**Q: How do I create a Vercel Access Token?**
+Log in to the [**Vercel Dashboard**](https://vercel.com/account/tokens), go to **Settings > Access Tokens**, click **Create Token**, give it a name, select your team (optional) and scope. Copy the token immediately — it won't be shown again.
+
+**Q: Can I manage environment variables via the agent?**
+Yes! Use `list_env_vars` to see all variable keys (values are hidden for security), `create_env_var` to add new ones with key, value and target environments (production, preview, development), and `delete_env_var` to remove them.
+
+**Q: Can I cancel a running deployment?**
+Yes! Use `cancel_deployment` with the deployment ID to stop a build that is currently in progress. The deployment status will change to CANCELED. You can find the deployment ID from `list_deployments`.
+
+**Q: How do I check my deployment history?**
+Use `list_deployments` optionally filtered by teamId and projectId to see recent deployments. Each entry shows the deployment URL, status (READY, BUILDING, ERROR), framework, git commit and creation date. Use `get_deployment` with a specific deployment ID for full details including build logs.
+
+
 ## Installation & Usage
 
-To install and use the **Vercel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vercel-alternative](https://vinkius.com/mcp/vercel-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vercel** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vercel-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vercel** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vercel-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

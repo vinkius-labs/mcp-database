@@ -1,7 +1,6 @@
 # Bexio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bexio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bexio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bexio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bexio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Bexio** MCP server usi
 > Retrieving invoices... Your 5 most recent invoices include 'INV-2024-001' (Status: Paid) and 'INV-2024-005' (Status: Draft). Would you like the details for any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I check the payment status of an invoice using the agent?**
+Yes! Use the `get_invoice` tool with the Invoice ID. Your agent will fetch the latest status, showing if it is draft, issued, or paid.
+
+**Q: How do I list all my customers in Bexio?**
+Simply ask the agent to `list_contacts`. It will retrieve the directory of all companies and persons registered in your Bexio account.
+
+**Q: Does the integration allow me to create a new invoice?**
+Currently, the toolset is focused on querying and management (listing contacts, checking projects, auditing invoices). For creating complex financial documents like invoices with multiple line items, we recommend using the Bexio platform directly.
+
+
 ## Installation & Usage
 
-To install and use the **Bexio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bexio](https://vinkius.com/mcp/bexio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bexio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bexio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bexio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bexio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

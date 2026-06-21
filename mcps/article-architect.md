@@ -1,7 +1,6 @@
 # Article Architect MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/article-architect)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/article-architect-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/article-architect-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/article-architect)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Article Architect** MC
 > Multiple rejections. (1) NO_THESIS — 'simplifies container orchestration' is a marketing tagline, not a thesis. Compared to what? At what cost? (2) ONE_SIDED — 'minor complexity overhead' dismisses real pain. (3) ABSTRACT — kubectl apply is documentation, not evidence. (4) THEORETICAL — 'widely used in production' is generic. Fix all four.
 
 
+## ❓ FAQ
+
+**Q: Does Article Architect write the article?**
+No. Article Architect generates zero content. It forces the AI agent to architect the article's argumentative structure — thesis, tradeoffs, code strategy, production evidence, reader transformation — before writing a single paragraph. The architecture then guides the writing. The tool validates structural depth, not prose quality.
+
+**Q: What is the difference between a thesis and a description?**
+A description tells you what something IS: 'Docker is a containerization platform.' A thesis takes a POSITION: 'Docker Compose replaced our Kubernetes cluster for 8 of 12 services — saving $4,200/month in infrastructure but requiring manual rollback procedures we hadn't planned for.' If a smart engineer could disagree with it, you have a thesis.
+
+**Q: Why does it reject boilerplate code?**
+Code in a technical article is EVIDENCE, not illustration. If the reader can find the same code in the official documentation, the code adds nothing. Every code block must support the thesis: a before/after comparison showing the improvement, a benchmark proving the claim, a failing test that passes after the fix, a production trace revealing the bottleneck. Boilerplate teaches syntax. Evidence proves arguments.
+
+
 ## Installation & Usage
 
-To install and use the **Article Architect** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/article-architect](https://vinkius.com/mcp/article-architect)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Article Architect** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `article-architect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Article Architect** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "article-architect": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

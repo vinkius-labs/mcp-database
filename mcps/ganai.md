@@ -1,7 +1,6 @@
 # GAN.ai MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ganai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ganai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ganai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ganai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,55 @@ Here are some examples of how you can interact with the **GAN.ai** MCP server us
 > Checking status... The video for John Doe is 'Completed'! You can access the personalized landing page here: [Permalink].
 
 
+## ❓ FAQ
+
+**Q: How do I find my Workspace ID and API Token?**
+Log in to GAN.ai, go to Settings, and navigate to the API section to find your Workspace ID and generate a Bearer Token.
+
+**Q: What is an 'Inference ID'?**
+An Inference ID is a unique tracking number returned when you trigger a video generation. You use it with the 'get_generation_status' tool to check if the video is ready.
+
+**Q: Are personalized landing pages included in the API response?**
+Yes! Once a video is completed, the agent retrieves the 'permalink', which is a non-expiring link to the personalized landing page hosting the video.
+
+**Q: Can I monitor video view analytics via the agent?**
+Yes, the 'get_video_stats' tool allows you to retrieve real-time engagement data, such as view counts and playback metrics, for any generated video.
+
+
 ## Installation & Usage
 
-To install and use the **GAN.ai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ganai](https://vinkius.com/mcp/ganai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GAN.ai** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ganai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GAN.ai** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ganai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

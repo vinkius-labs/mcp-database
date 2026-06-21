@@ -1,7 +1,6 @@
 # Grepsr MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grepsr)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grepsr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grepsr-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grepsr)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Grepsr** MCP server us
 5. 202 Hill Ct - $275,000
 
 
+## ❓ FAQ
+
+**Q: Can my agent trigger a new web crawl in Grepsr?**
+Yes. Use the 'run_report' tool. By providing the Report ID, the agent can programmatically trigger an on-demand crawl, starting the data extraction process immediately flawlessly.
+
+**Q: How do I retrieve the actual scraped data records via chat?**
+You can use the 'get_report_data' or 'get_latest_data' tools. Your agent will fetch the structured records from Grepsr's database and present them in a readable format within your chat interface flawlessly.
+
+**Q: Can I check my API usage limits through the agent?**
+Absolutely. Use the 'get_usage_stats' tool. Your agent will retrieve your current plan limits and remaining API credits, helping you manage your data extraction budget flawlessly.
+
+
 ## Installation & Usage
 
-To install and use the **Grepsr** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/grepsr](https://vinkius.com/mcp/grepsr)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Grepsr** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `grepsr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Grepsr** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "grepsr": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

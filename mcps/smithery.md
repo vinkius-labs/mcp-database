@@ -1,7 +1,6 @@
 # Smithery MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smithery)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smithery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smithery-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smithery)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -100,12 +99,52 @@ Here are some examples of how you can interact with the **Smithery** MCP server 
 > I'll create a managed connection to the Slack MCP server through Smithery Connect.
 
 
+## ❓ FAQ
+
+**Q: Do I need a Smithery account to use this MCP server?**
+Yes, you need a free Smithery account to generate an API key. Sign up at smithery.ai, then go to Account Settings > API Keys to create your key. The key gives access to the registry search, server details, and connection management features.
+
+**Q: How does Smithery Connect handle OAuth for MCP servers?**
+Smithery Connect automatically handles OAuth flows, token refresh, and session management for MCP servers that require authentication. You don't need to configure redirect URIs, client IDs, or manage token expiration. Simply create a connection and Smithery manages the authentication lifecycle, providing your agents with seamless access.
+
+**Q: Can I search for verified MCP servers only?**
+Yes! Use the verified filter in the search_servers tool by setting verified=true. This returns only servers that have been verified by Smithery, ensuring higher quality and security standards. Verified servers display a verification badge and have undergone additional review.
+
+
 ## Installation & Usage
 
-To install and use the **Smithery** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/smithery](https://vinkius.com/mcp/smithery)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Smithery** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `smithery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Smithery** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "smithery": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

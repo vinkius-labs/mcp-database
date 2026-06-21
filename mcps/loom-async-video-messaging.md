@@ -1,7 +1,6 @@
 # Loom (Async Video Messaging) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/loom-async-video-messaging)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/loom-async-video-messaging-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/loom-async-video-messaging-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/loom-async-video-messaging)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Loom (Async Video Mess
 > Generating download URL… Done. You can download the raw MP4 file for 'Bug Report: Login Flow' here: [pre-signed-s3-url]. Note that this link is ephemeral and will expire in 1 hour.
 
 
+## ❓ FAQ
+
+**Q: Can I see who watched my video using my agent?**
+Yes. Use the `list_viewer_sessions` tool with a specific Video ID. Your agent will retrieve the viewing telemetry, allowing you to see exactly how many times the video was watched and which specific segments were most engaging.
+
+**Q: How do I download a raw MP4 file of a Loom video through a conversation?**
+The `create_download_url` tool forces the backend to allocate an ephemeral S3 pre-signed URL. Your agent will provide this link, which allows you to stream or download the raw bytes of your video directly.
+
+**Q: Can my agent respond to comments on my video timeline?**
+Absolutely. Use the `add_timeline_comment` tool to post threaded messages directly to the video. Your agent can help you maintain community interaction by drafting and sending replies through natural conversation.
+
+
 ## Installation & Usage
 
-To install and use the **Loom (Async Video Messaging)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/loom-async-video-messaging](https://vinkius.com/mcp/loom-async-video-messaging)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Loom (Async Video Messaging)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `loom-async-video-messaging` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Loom (Async Video Messaging)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "loom-async-video-messaging": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

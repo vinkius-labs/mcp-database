@@ -1,7 +1,6 @@
 # Local Falcon MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/local-falcon)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/local-falcon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/local-falcon-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/local-falcon)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Local Falcon** MCP ser
 > Scan orchestrated! I've successfully triggered a new geo-grid scan for 'Acme Plumbers'. The report key is rep_456. Local Falcon is now gathering real-time visibility data. Shall I notify you once the high-fidelity results are ready?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Local Falcon API Key?**
+Log in to your account, navigate to the **API Credentials** page, and copy your unique Bearer Token or API Key.
+
+**Q: Can I run new scans via AI?**
+Yes! The `run_localfalcon_scan` tool allows your agent to trigger real-time geo-grid scans by providing business and keyword metadata.
+
+**Q: How do I check my scan credit balance?**
+Use the `check_localfalcon_status` tool to retrieve your current account metrics and remaining high-fidelity scan credits programmatically.
+
+
 ## Installation & Usage
 
-To install and use the **Local Falcon** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/local-falcon](https://vinkius.com/mcp/local-falcon)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Local Falcon** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `local-falcon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Local Falcon** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "local-falcon": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

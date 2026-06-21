@@ -1,7 +1,6 @@
 # Deterministic Readability Scorer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-readability-scorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-readability-scorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-readability-scorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-readability-scorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -59,12 +58,52 @@ Here are some examples of how you can interact with the **Deterministic Readabil
 > Using the calculate_gunning_fog tool: The index is 16.2 due to a high volume of complex, poly-syllabic words.
 
 
+## ❓ FAQ
+
+**Q: Why do AI models fail at calculating readability scores?**
+Readability formulas require knowing the exact number of phonetic syllables. LLMs process text in semantic tokens (e.g., 'unbelievable' might be 2 tokens, but it has 5 syllables). They cannot count syllables accurately, making algorithmic tools mandatory.
+
+**Q: Does it support multiple languages?**
+The syllable counting heuristic is highly optimized for English, which is the baseline for Flesch-Kincaid. However, the reading time and basic word/sentence extraction work flawlessly across all Latin-script languages.
+
+**Q: Are there any external library dependencies?**
+No. We utilize a custom Regular Expression syllable engine built natively into the TypeScript architecture, achieving 0ms latency processing without downloading external NLP packages.
+
+
 ## Installation & Usage
 
-To install and use the **Deterministic Readability Scorer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deterministic-readability-scorer](https://vinkius.com/mcp/deterministic-readability-scorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deterministic Readability Scorer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deterministic-readability-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deterministic Readability Scorer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deterministic-readability-scorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

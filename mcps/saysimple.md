@@ -1,7 +1,6 @@
 # Saysimple MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/saysimple)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/saysimple-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/saysimple-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/saysimple)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,49 @@ Here are some examples of how you can interact with the **Saysimple** MCP server
 > WhatsApp template broadcast sent. Template: "Post-Purchase Feedback" (approved by Meta). Recipients: 156 contacts (purchased in last 7 days). Message: "Hi [Name], thank you for your recent purchase! We'd love to hear about your experience. Rate us 1-5 by replying to this message." Delivery: 154 delivered (98.7%). 2 failed (opted out). Read rate after 1 hour: 72% (111 contacts). 34 have already replied with ratings. Average rating so far: 4.3/5.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the last 5 customer chats across all channels?**
+Yes! Use the `list_chats` tool. Your agent will respond with complete metadata for the most recent conversations, including the channel (WhatsApp/SMS) and participant details in seconds.
+
+**Q: How do I find my Saysimple API Key and Auth Token?**
+Log in to your Saysimple dashboard, navigate to **Settings** > **API**, and you will find your unique X-API-Key and generate your Bearer Auth Token there.
+
+
 ## Installation & Usage
 
-To install and use the **Saysimple** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/saysimple](https://vinkius.com/mcp/saysimple)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Saysimple** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `saysimple` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Saysimple** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "saysimple": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

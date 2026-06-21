@@ -1,7 +1,6 @@
 # Indy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/indy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/indy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/indy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/indy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Indy** MCP server usin
 > Bug Report form: 23 records. Priority breakdown: Critical (3), High (8), Medium (9), Low (3). Recent: Record #23 — 'Login button unresponsive on mobile' (Critical, with screenshot). Record #22 — 'Dashboard slow loading' (High). Files attached: 12 total across all records. Largest: screenshot_login_bug.png (2.1 MB, Record #23). Would you like to inspect a specific record?
 
 
+## ❓ FAQ
+
+**Q: Can I create new forms and manage submissions through the AI agent?**
+Yes. Use `create_form` to build new forms, `list_forms` to see all forms, `list_records` to browse submissions, and `get_record` to inspect individual responses with full field data. Use `delete_form` to remove unused forms.
+
+**Q: Can I use templates to create forms faster?**
+Yes. Use `list_templates` to browse available form templates and `get_template` to inspect their structure. Templates provide reusable form designs that save time on repetitive form creation.
+
+**Q: Can I access files attached to form submissions?**
+Yes. Use `list_files` to retrieve all files attached to form submissions. Each file includes metadata like name, size, and the record it belongs to.
+
+
 ## Installation & Usage
 
-To install and use the **Indy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/indy](https://vinkius.com/mcp/indy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Indy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `indy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Indy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "indy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

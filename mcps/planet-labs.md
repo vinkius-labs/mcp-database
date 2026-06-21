@@ -1,7 +1,6 @@
 # Planet Labs MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/planet-labs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/planet-labs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/planet-labs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/planet-labs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **Planet Labs** MCP serv
 > Creating subscription for daily cloud-free imagery... Subscription created successfully! Name: Daily Monitoring, Item types: PSScene, Max cloud cover: 10%. Status: Active. New imagery matching your criteria will be delivered automatically as it becomes available. You can manage this subscription with list_subscriptions and modify filters anytime. Would you like to add delivery to cloud storage (S3, GCS, Azure) or set up webhook notifications?
 
 
+## ❓ FAQ
+
+**Q: Can my AI search for cloud-free satellite imagery over my farm from last month?**
+Yes! Use the `quick_search` tool with your farm boundary as GeoJSON geometry, date range for last month, item_types=PSScene, and max_cloud_cover=10 (for 10% or less cloud cover). The search returns all available imagery matching your criteria with acquisition dates, cloud cover percentages, and download URLs for visual and analytic assets. For ongoing monitoring, create a saved search with `create_saved_search` and execute it regularly with `get_search_results`.
+
+**Q: What is the difference between PSScene, SkySat, and RapidEye imagery?**
+PSScene (PlanetScope) provides daily global coverage at 3-5m resolution with 200+ satellites, ideal for broad-area monitoring and time-series analysis. SkySat offers sub-meter resolution (0.5-0.9m) with video capability, perfect for detailed inspection of specific sites. RapidEye provides 5m resolution with a 5-band sensor (including red-edge) and a deep historical archive dating back to 2009. Use `list_item_types` to see all available imagery types and their supported asset types.
+
+**Q: How do I set up automated daily imagery delivery for my area of interest?**
+Use the `create_subscription` tool with your area geometry, item types (e.g., PSScene), and cloud cover filter. You can specify delivery to AWS S3, Google Cloud Storage, Azure Blob, or webhook endpoints. The subscription will continuously deliver new imagery matching your criteria as it becomes available. To manage existing subscriptions, use `list_subscriptions` to review and monitor active deliveries.
+
+
 ## Installation & Usage
 
-To install and use the **Planet Labs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/planet-labs](https://vinkius.com/mcp/planet-labs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Planet Labs** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `planet-labs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Planet Labs** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "planet-labs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Remove.bg MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/removebg)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/removebg-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/removebg-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/removebg)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Remove.bg** MCP server
 > Applying improvement algorithms... The image has been refined for better edge quality and detail. Here is the updated result.
 
 
+## ❓ FAQ
+
+**Q: How can I check how many credits I have left in my Remove.bg account?**
+You can ask the AI to check your balance. It will use the `get_account` tool to retrieve your current credit balance and API usage statistics immediately.
+
+**Q: Can I specify the output format and resolution of the processed image?**
+Yes. When using the `remove_background` tool, you can specify the `format` (png, jpg, webp) and the `size` (auto, hd, 4k, etc.) to match your project requirements.
+
+**Q: What should I do if the background removal needs a quality boost?**
+You can use the `improve_result` tool. Provide the image URL or base64 data to this tool, and it will apply additional processing to enhance the edge detection and overall quality.
+
+
 ## Installation & Usage
 
-To install and use the **Remove.bg** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/removebg](https://vinkius.com/mcp/removebg)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Remove.bg** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `removebg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Remove.bg** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "removebg": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

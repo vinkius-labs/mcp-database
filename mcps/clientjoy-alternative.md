@@ -1,7 +1,6 @@
 # Clientjoy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clientjoy-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clientjoy-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clientjoy-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clientjoy-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Clientjoy** MCP server
 > Checking billing... Yes, you have 1 overdue invoice: #INV-88231 ($450.00) from 'Global Logistics'. It was due 5 days ago. Shall I retrieve the contact info for follow-up?
 
 
+## ❓ FAQ
+
+**Q: Can I check the payment status of an invoice via AI?**
+Yes! Use the `list_billing_invoices` tool. Your agent will retrieve the history of invoices, including whether they are Paid, Overdue, or Unpaid.
+
+**Q: How do I add a new sales lead using the agent?**
+Use the `create_new_lead` action. Provide the lead's name and email address to register them instantly in your Clientjoy sales pipeline.
+
+**Q: Is it possible to list all my active customers via AI?**
+Absolutely. Use the `list_customers` query. The agent will retrieve the complete directory of organizations and clients managed in your account.
+
+
 ## Installation & Usage
 
-To install and use the **Clientjoy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clientjoy-alternative](https://vinkius.com/mcp/clientjoy-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Clientjoy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clientjoy-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Clientjoy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clientjoy-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Combat Balance Checker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/combat-balance-checker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/combat-balance-checker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/combat-balance-checker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/combat-balance-checker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -49,12 +48,52 @@ Here are some examples of how you can interact with the **Combat Balance Checker
 > You can check this using `audit_balance`. A 70% win rate will likely be flagged as Skewed or Broken depending on your thresholds.
 
 
+## ❓ FAQ
+
+**Q: How accurate are the simulation results?**
+Every request executes 1,000 independent combat iterations using randomized rolls for critical hits to ensure statistical significance and account for RNG volatility.
+
+**Q: What attributes can I compare?**
+You can compare any profiles containing HP, ATK, DEF, SPD, critRate, and critMult. Use `simulate_combat` to see how these stats interact.
+
+**Q: How do I know if a matchup is broken?**
+Use the `audit_balance` tool. It classifies matchups as Stable, Skewed, or Broken based on whether the win rate stays within acceptable professional bounds.
+
+
 ## Installation & Usage
 
-To install and use the **Combat Balance Checker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/combat-balance-checker](https://vinkius.com/mcp/combat-balance-checker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Combat Balance Checker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `combat-balance-checker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Combat Balance Checker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "combat-balance-checker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

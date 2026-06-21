@@ -1,7 +1,6 @@
 # Namely MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/namely)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/namely-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/namely-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/namely)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Namely** MCP server us
 > Retrieving upcoming events... We have 4 birthdays this week: Sarah Jenkins (Tomorrow), Michael Chen (Thursday), and two others on Saturday. Shall I get their Slack handles for you?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Namely API Token?**
+You can generate a Personal Access Token in your Namely account under API > Personal Access Tokens. Ensure your user has the appropriate permissions to view the data you want to retrieve.
+
+**Q: Can I see salary information through this server?**
+This depends on the permissions of the user who generated the API token. If your Namely user can see salary data, the `get_profile` and `list_jobs` tools will return that information.
+
+**Q: What is the Company Slug?**
+The slug is the unique part of your Namely URL. For example, if you log in at 'acme.namely.com', your slug is 'acme'.
+
+
 ## Installation & Usage
 
-To install and use the **Namely** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/namely](https://vinkius.com/mcp/namely)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Namely** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `namely` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Namely** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "namely": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

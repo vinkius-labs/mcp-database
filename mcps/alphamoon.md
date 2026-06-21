@@ -1,7 +1,6 @@
 # Alphamoon MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alphamoon)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/alphamoon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/alphamoon-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alphamoon)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Alphamoon** MCP server
 > Accessing OCR data... I've retrieved the complete high-fidelity recognized text from document 90210. It contains 15 paragraphs and includes all detected hand-written notes. Shall I summarize the content for you?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Alphamoon API Key?**
+Log in to your account, navigate to **Settings** > **API**, and generate a new API Key for your integration.
+
+**Q: Can I retrieve raw OCR text via AI?**
+Yes! The `get_ocr_results` tool allows your agent to retrieve the complete high-fidelity recognized text from any processed document.
+
+**Q: How do I check extraction results?**
+Use the `get_extraction_results` tool and provide the document ID to retrieve structured fields and confidence scores programmatically.
+
+
 ## Installation & Usage
 
-To install and use the **Alphamoon** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/alphamoon](https://vinkius.com/mcp/alphamoon)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Alphamoon** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `alphamoon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Alphamoon** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "alphamoon": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

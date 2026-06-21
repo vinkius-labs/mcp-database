@@ -1,7 +1,6 @@
 # Cin7 Omni MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cin7-omni)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cin7-omni-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cin7-omni-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cin7-omni)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Cin7 Omni** MCP server
 > Searching for 'Shirt'... I found 3 products: 'Blue Cotton Shirt', 'Red Polo Shirt', and 'White Formal Shirt'. Which one would you like more information on?
 
 
+## ❓ FAQ
+
+**Q: Can I check the stock level for a specific SKU?**
+Yes! Use the `get_sku_stock_level` tool with the unique product ID. The agent will return the current available quantities across all your warehouses.
+
+**Q: How do I see my latest purchase orders?**
+Use the `list_purchase_orders` tool. Your agent will fetch the list of inbound orders, their statuses, and associated suppliers.
+
+**Q: Where do I find my API Username and Key?**
+Log in to Cin7 Omni, navigate to **Settings > Integrations & API > API v1**. Your API Username is listed there, and you can generate a new API Key by adding a connection.
+
+
 ## Installation & Usage
 
-To install and use the **Cin7 Omni** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cin7-omni](https://vinkius.com/mcp/cin7-omni)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cin7 Omni** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cin7-omni` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cin7 Omni** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cin7-omni": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Cin7 Core MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cin7-core)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cin7-core-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cin7-core-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cin7-core)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Cin7 Core** MCP server
 > I've retrieved the profile for 'Furniture Pros'. Your main contact is 'Jane Smith' (jane.smith@furniturepros.com). They currently have 2 active purchase orders with us. Should I list their recent order history?
 
 
+## ❓ FAQ
+
+**Q: How do I get Cin7 Core API credentials?**
+Log in to Cin7 Core, navigate to **Settings > Integration > API**, and click the '+' button to create a new API application. You will be provided with an Account ID and an Application Key.
+
+**Q: Is the stock data across all locations included?**
+Yes, you can check real-time stock availability across all your warehouses using the get_all_stock_availability tool.
+
+**Q: Can the agent check order status?**
+Absolutely. You can list sales and purchase orders or retrieve full details for a specific order ID to check its current status and fulfillment progress.
+
+
 ## Installation & Usage
 
-To install and use the **Cin7 Core** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cin7-core](https://vinkius.com/mcp/cin7-core)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cin7 Core** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cin7-core` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cin7 Core** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cin7-core": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

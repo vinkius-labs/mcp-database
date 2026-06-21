@@ -1,7 +1,6 @@
 # Adobe Acrobat Sign MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-acrobat-sign)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adobe-acrobat-sign-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adobe-acrobat-sign-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-acrobat-sign)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,55 @@ Here are some examples of how you can interact with the **Adobe Acrobat Sign** M
 The TechStart MSA hasn't been opened — shall I send a reminder?
 
 
+## ❓ FAQ
+
+**Q: How do I get started with Adobe Sign?**
+Subscribe, then enter your Adobe Sign access token (from **Adobe Admin Console → Acrobat Sign → API → Integration Key**). Your AI agent connects instantly to the global v6 API. No code, no complex setup — just connect and start signing.
+
+**Q: Can my AI agent send a contract for signature to multiple people?**
+Yes. Upload a document, then create an agreement with multiple signers in a specific order. Adobe Sign handles the sequential signing flow — Signer 1 gets notified first, then Signer 2 after completion, and so on. Your agent tracks each signer's progress in real time.
+
+**Q: What if a signer hasn't signed yet — can I send a reminder?**
+Just tell your agent "send a reminder for the Acme NDA." It sends an email reminder to all pending signers with an optional custom message. No tab-switching, no logging into Adobe Sign — your agent handles it directly from your conversation.
+
+**Q: Can I access the legal audit trail for compliance?**
+Yes. Every signed agreement has a tamper-proof audit trail showing exactly when it was created, viewed, signed, and by whom — with timestamps and IP addresses. Perfect for legal departments, regulated industries, and any business that needs proof of signing for compliance.
+
+
 ## Installation & Usage
 
-To install and use the **Adobe Acrobat Sign** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/adobe-acrobat-sign](https://vinkius.com/mcp/adobe-acrobat-sign)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Adobe Acrobat Sign** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `adobe-acrobat-sign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Adobe Acrobat Sign** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "adobe-acrobat-sign": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Nord Pool MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nord-pool)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nord-pool-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nord-pool-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nord-pool)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -100,12 +99,55 @@ Here are some examples of how you can interact with the **Nord Pool** MCP server
 > I have pulled the yearly aggregate data for four zones. Finland (FI): 2024 averaged 51.30 EUR/MWh, 2025 dropped to 43.80 EUR/MWh (-14.6%). Estonia (EE): dropped from 62.10 to 48.90 EUR/MWh (-21.3%). Latvia (LV): from 59.40 to 47.20 EUR/MWh. Lithuania (LT): from 58.80 to 46.50 EUR/MWh. All Baltic zones converged closer to Finnish levels over the period. Shall I also get the corresponding volume data to see if consumption patterns shifted?
 
 
+## ❓ FAQ
+
+**Q: How do I get started with Nord Pool market data?**
+Subscribe, enter your API credentials (Client ID and Client Secret from the **Nord Pool Developer Portal** at developers.nordpoolgroup.com), and you are ready. Your AI agent can immediately start pulling day-ahead prices, auction volumes, and consumption forecasts across all 16 European markets. No code, no SDK, no webhooks — just connect and start analyzing electricity data through your AI agent. It takes exactly 30 seconds — no complex OAuth apps, no manual logging, and no approval processes required. Your token is encrypted at rest and injected securely at runtime.
+
+**Q: Can my AI agent compare electricity prices across multiple European bidding zones in a single request?**
+Absolutely. Pass multiple bidding zone codes (like NO1,SE3,DK1,DE-LU) separated by commas, and your agent returns the full day-ahead price curve for each zone side by side. You can filter by specific delivery dates and currencies — perfect for spotting price spreads, identifying arbitrage opportunities, and benchmarking regional tariffs without opening a single spreadsheet.
+
+**Q: What happens when I need to analyze cross-border transmission capacity or energy flows between countries?**
+Simply tell your AI agent the source and destination bidding zones (e.g. NO1 to SE3, or DK1 to DE-LU). It will pull Available Transmission Capacities (ATC), commercial auction flows, and scheduled physical power transfers for the specified interconnection — all in a single conversation. No need to navigate the data portal, download CSVs, or run custom scripts. Your agent handles the complete cross-border analysis workflow end to end.
+
+**Q: Can I use this for long-term analysis and portfolio management across multiple markets?**
+Yes. Beyond real-time day-ahead data, the server provides yearly aggregated price and volume tools that let you compare entire years of clearing prices side by side for any delivery area. Combined with consumption forecast tools, your AI agent can build a comprehensive market overview spanning 16 European countries — ideal for energy portfolio managers, utility analysts, and research teams tracking price volatility, seasonal patterns, and demand-supply fundamentals.
+
+
 ## Installation & Usage
 
-To install and use the **Nord Pool** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nord-pool](https://vinkius.com/mcp/nord-pool)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nord Pool** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nord-pool` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nord Pool** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nord-pool": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

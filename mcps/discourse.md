@@ -1,7 +1,6 @@
 # Discourse MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/discourse)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/discourse-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/discourse-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/discourse)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Discourse** MCP server
 > The top trending discussions are 'Major System Update' (25 new posts today) and 'Community Guidelines RFC' (12 new posts). Would you like a summary of the latest comments in 'Major System Update'?
 
 
+## ❓ FAQ
+
+**Q: How do I get Discourse API credentials?**
+Log in to your Discourse instance as an administrator, navigate to **Admin > API**, and click **Generate API Key**. You will also need your administrative username.
+
+**Q: Can the agent post new replies?**
+This integration currently focuses on listing and retrieving community data for analysis. Posting new topics or replies should be managed through the Discourse web interface or mobile app.
+
+**Q: Does the integration support private categories?**
+Yes, as long as the provided API Username and Key have the necessary permissions, the agent can list and retrieve information from any category you have access to, including private ones.
+
+
 ## Installation & Usage
 
-To install and use the **Discourse** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/discourse](https://vinkius.com/mcp/discourse)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Discourse** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `discourse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Discourse** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "discourse": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

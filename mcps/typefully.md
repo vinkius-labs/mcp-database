@@ -1,7 +1,6 @@
 # Typefully MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typefully)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/typefully-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/typefully-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typefully)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Typefully** MCP server
 > I've fetched the scheduled content. You have 3 posts in the queue for 'Company News', including a thread for Tuesday and a single post for Friday. Would you like to review the text for any of them?
 
 
+## ❓ FAQ
+
+**Q: Can I publish to both X and LinkedIn at the same time?**
+Yes! When using the `publish_immediately` tool, you can specify the target platform or let Typefully post to all enabled channels for that social set.
+
+**Q: How do I schedule a post for the next available time slot?**
+Use the `schedule_content` tool and set the `publishAt` parameter to 'next-free-slot'. Typefully will automatically place the post in the best upcoming time according to your queue settings.
+
+**Q: Is it possible to see the content of an existing draft?**
+Absolutely. Use the `get_draft_details` tool and provide the Social Set ID and Draft ID. The agent will retrieve the full text and configuration for that draft.
+
+
 ## Installation & Usage
 
-To install and use the **Typefully** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/typefully](https://vinkius.com/mcp/typefully)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Typefully** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `typefully` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Typefully** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "typefully": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

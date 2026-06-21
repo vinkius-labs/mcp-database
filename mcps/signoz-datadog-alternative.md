@@ -1,7 +1,6 @@
 # SigNoz (Datadog Alternative) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/signoz-datadog-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/signoz-datadog-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/signoz-datadog-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/signoz-datadog-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **SigNoz (Datadog Altern
 > The alert rule 'alert-123' has been successfully deleted from your SigNoz instance.
 
 
+## ❓ FAQ
+
+**Q: Can I list all my current alert rules from SigNoz?**
+Yes! Use the `list_rules` tool to fetch all alert rules configured in your SigNoz instance, including their conditions and thresholds.
+
+**Q: How do I verify if my API key is working correctly?**
+You can use the `get_service_account_me` tool. It validates your current API key and retrieves the associated service account details.
+
+**Q: Is it possible to create a new alert rule via chat?**
+Absolutely. Use the `create_rule` tool by providing the required JSON payload containing the alert type, condition, and thresholds.
+
+
 ## Installation & Usage
 
-To install and use the **SigNoz (Datadog Alternative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/signoz-datadog-alternative](https://vinkius.com/mcp/signoz-datadog-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SigNoz (Datadog Alternative)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `signoz-datadog-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SigNoz (Datadog Alternative)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "signoz-datadog-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

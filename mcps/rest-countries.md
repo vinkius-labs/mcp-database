@@ -1,7 +1,6 @@
 # REST Countries MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rest-countries)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rest-countries-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rest-countries-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rest-countries)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **REST Countries** MCP s
 > I've identified over 20 countries where Spanish is an official language, including Spain, Mexico, and Argentina. Would you like the population count for any specific one?
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for REST Countries?**
+No. REST Countries is a free and open service. This server works out of the box without any static credentials required.
+
+**Q: Can the agent search for countries by currency?**
+Yes. Use the `get_countries_by_currency` tool providing the currency code (e.g., 'EUR'). Your agent will return all countries using that specific currency instantly.
+
+**Q: Is population data included?**
+Yes. Every country record retrieved by your agent includes the most recent official population count available in the database.
+
+
 ## Installation & Usage
 
-To install and use the **REST Countries** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rest-countries](https://vinkius.com/mcp/rest-countries)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **REST Countries** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rest-countries` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **REST Countries** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rest-countries": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

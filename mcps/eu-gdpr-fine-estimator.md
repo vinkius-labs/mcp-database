@@ -1,7 +1,6 @@
 # EU GDPR Fine Estimator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eu-gdpr-fine-estimator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eu-gdpr-fine-estimator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eu-gdpr-fine-estimator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eu-gdpr-fine-estimator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **EU GDPR Fine Estimator
 > The tool `classify_infringement_severity` identifies this as a Lower Tier violation with a Medium severity rating.
 
 
+## ❓ FAQ
+
+**Q: How does the fine estimation work?**
+The tool uses the `calculate_fine_range` function to evaluate the maximum potential fine based on the organization's annual turnover and the specific violation tier (Article 83(4) or 83(5)). Tools available: `your_tool_name`.
+
+**Q: Can I see the list of aggravating factors?**
+Yes, you can use the `list_regulatory_factors` tool to retrieve a complete list of all supported aggravating and mitigating factors.
+
+**Q: Does it support different violation tiers?**
+Yes, using `classify_infringement_severity`, the tool identifies whether a breach falls under the lower tier (2% cap) or upper tier (4% cap) of GDPR fines.
+
+
 ## Installation & Usage
 
-To install and use the **EU GDPR Fine Estimator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eu-gdpr-fine-estimator](https://vinkius.com/mcp/eu-gdpr-fine-estimator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EU GDPR Fine Estimator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eu-gdpr-fine-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EU GDPR Fine Estimator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eu-gdpr-fine-estimator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

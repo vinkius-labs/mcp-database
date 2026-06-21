@@ -1,7 +1,6 @@
 # Discord MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/discord)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/discord-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/discord-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/discord)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -108,12 +107,52 @@ Here are some examples of how you can interact with the **Discord** MCP server u
 > Retrieving messages from channel 101... I found 5 recent posts. Highlights include a welcome message from 'System' and a question about API keys from 'User_A'. Would you like the full text of these messages?
 
 
+## ❓ FAQ
+
+**Q: Can my agent list all members of a Discord server?**
+Yes. Use the 'list_guild_members' tool. Note that this action is heavily restricted by the 'GUILD_MEMBERS' Privileged Intent, which must be enabled for your bot in the Discord Developer Portal.
+
+**Q: How do I edit a message previously sent by the bot via chat?**
+Provide the 'channel_id', 'message_id', and the new 'content' to the 'edit_message' tool. Your agent will update the core content directly, substituting the payload rendered globally without deleting and reposting.
+
+**Q: Can I delete an entire channel through natural conversation?**
+Yes. The 'delete_channel' mutation allows you to irreversibly delete an active Discord channel. The agent will destroy the routing bucket and vaporize all nested chat payloads and attachments.
+
+
 ## Installation & Usage
 
-To install and use the **Discord** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/discord](https://vinkius.com/mcp/discord)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Discord** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `discord` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Discord** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "discord": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

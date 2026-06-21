@@ -1,7 +1,6 @@
 # DOD Contracts (FPDS) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dod-contracts-fpds)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dod-contracts-fpds-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dod-contracts-fpds-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dod-contracts-fpds)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **DOD Contracts (FPDS)**
 > Fetching the next page of results (records 11-20) for DOD cloud services... I've found additional contracts involving cloud migration and infrastructure support. Would you like me to summarize the vendors involved in this batch?
 
 
+## ❓ FAQ
+
+**Q: How do I specifically target Department of Defense (DOD) contracts?**
+To target DOD contracts, include `DEPARTMENT_ID:"9700"` or `AGENCY_CODE:"9700"` in your `sQuery` parameter when using the `search_contracts` tool.
+
+**Q: Can I paginate through large sets of contract results?**
+Yes. The `search_contracts` tool supports a `start` parameter. Results are returned in batches of 10, so you can increment the start number (e.g., 10, 20, 30) to see more records.
+
+**Q: What search syntax should I use for the sQuery parameter?**
+The `search_contracts` tool uses the standard FPDS Atom Feed search syntax. You can search by keywords, or use specific fields like `VENDOR_NAME:"Example Corp"` or `PIID:"ContractID"`.
+
+
 ## Installation & Usage
 
-To install and use the **DOD Contracts (FPDS)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dod-contracts-fpds](https://vinkius.com/mcp/dod-contracts-fpds)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DOD Contracts (FPDS)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dod-contracts-fpds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DOD Contracts (FPDS)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dod-contracts-fpds": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

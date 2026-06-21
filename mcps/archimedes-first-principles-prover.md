@@ -1,7 +1,6 @@
 # Archimedes First Principles Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/archimedes-first-principles-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/archimedes-first-principles-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/archimedes-first-principles-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/archimedes-first-principles-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Archimedes First Princ
 > PROOF_MISSING — 'Restructure the entire organization' is not derived from the axiom. The axiom is measured (340 min — good), but the conclusion jumps to restructuring without proof. WHY does 340 min mean restructuring? Decompose first: which step in the inspection takes the most time? If it is cross-referencing 3 data sources manually, a standardized template addresses the source — no restructuring needed. Archimedes: 'We must suppose that... therefore it follows that...' Your 'therefore' is missing. What logical chain connects '340 minutes' to 'restructure everything'?
 
 
+## ❓ FAQ
+
+**Q: How is this different from the Elon Musk Physics Prover?**
+Elon Musk Physics Prover forces the 5-Step Starbase Algorithm: question, delete, simplify, accelerate, automate. It is about operational engineering — cutting bloat. Archimedes First Principles Prover forces axiom-based reasoning: state axioms, decompose, prove, test boundaries, find leverage. It is about analytical rigor — proving your logic before building. Musk asks 'should this exist?' Archimedes asks 'is this actually true?'
+
+**Q: What counts as a valid axiom?**
+An axiom is a foundational claim your reasoning depends on, with an explicit source: measurement ('our average processing time is 340 minutes — measured last Tuesday'), physics ('material strength decreases by 15% per 10°C above threshold'), economics ('our acquisition cost exceeds lifetime value at current pricing'), or stated assumption ('we assume retention stays at 14 months'). 'Organization X does Y' is analogy. 'Obviously' is assertion. Neither is an axiom.
+
+**Q: Can I use this for business strategy, not just engineering?**
+Yes. First-principles reasoning applies wherever analogical reasoning misleads. 'We should use freemium because the market leader does' is an analogy. The axiom is: at what conversion rate does freemium generate more lifetime value than paid-only? Decomposition: acquisition, activation, retention, monetization — which component is the actual bottleneck? Proof: if conversion is 3% and free-tier cost is $X/user, then... Boundary: at what scale does free-tier cost exceed premium revenue? Leverage: which single metric, if improved 10%, changes the business?
+
+
 ## Installation & Usage
 
-To install and use the **Archimedes First Principles Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/archimedes-first-principles-prover](https://vinkius.com/mcp/archimedes-first-principles-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Archimedes First Principles Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `archimedes-first-principles-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Archimedes First Principles Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "archimedes-first-principles-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

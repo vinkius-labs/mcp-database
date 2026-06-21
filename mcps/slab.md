@@ -1,7 +1,6 @@
 # Slab MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/slab)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/slab-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/slab-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/slab)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -100,12 +99,52 @@ Your topic is ready. Whenever we draft notes or objectives in this chat, just te
 Let me know if you need to read the full contents of any of these updates.
 
 
+## ❓ FAQ
+
+**Q: Can my AI use existing wiki guidelines to write new code or copy?**
+Absolutely. You can request your agent to 'search the Slab wiki for our Frontend Coding Standards' or 'find our Brand Voice Guidelines'. The agent will retrieve the exact Markdown content of those articles and use them as system instructions for the rest of your conversation.
+
+**Q: How do I easily publish my AI chat output back to Slab?**
+When your AI agent generates a good technical specification or summary, simply tell it: 'Create a new post in Slab called [Name], using this entire response as the content, and place it in the Engineering topic.' The agent will format the Markdown and publish it immediately through the `create_post` tool.
+
+**Q: Can my agent clean up outdated company documentation?**
+Yes. If an article is deprecated, you can tell your AI: 'Archive the post with ID XYZ' or 'Find the old setup guide and archive it.' The agent can execute the `archive_post` command to hide outdated information and keep your knowledge base pristine.
+
+
 ## Installation & Usage
 
-To install and use the **Slab** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/slab](https://vinkius.com/mcp/slab)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Slab** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `slab` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Slab** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "slab": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

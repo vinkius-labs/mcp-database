@@ -1,7 +1,6 @@
 # Cloudflare MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudflare)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudflare-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudflare-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudflare)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -143,12 +142,52 @@ Here are some examples of how you can interact with the **Cloudflare** MCP serve
 > Parsing telemetry array from metrics. The D1 metrics reveal stable instances with precisely 0% crash loops inside the isolated runtime edges.
 
 
+## ❓ FAQ
+
+**Q: Can I deploy new Worker scripts directly through the AI agent?**
+Yes! You can orchestrate deployments natively mapping source code variables seamlessly without touching Wrangler.
+
+**Q: Does it interact with specific D1 Serverless SQL definitions?**
+Absolutely. Ask your agent to parse complex D1 databases and query tables instantly utilizing precise analytical calls.
+
+**Q: How are environment variables and secrets handled?**
+All `add_secret` queries execute symmetrically securely masking output variables while committing seamlessly inside Cloudflare matrices.
+
+
 ## Installation & Usage
 
-To install and use the **Cloudflare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cloudflare](https://vinkius.com/mcp/cloudflare)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cloudflare** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cloudflare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cloudflare** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cloudflare": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

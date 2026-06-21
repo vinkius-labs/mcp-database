@@ -1,7 +1,6 @@
 # Zhumu / 瞩目 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zhumu)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zhumu-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zhumu-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zhumu)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Zhumu / 瞩目** MCP s
 > I've listed your 5 most recent recordings. The largest is 'Project Launch' from yesterday. Would you like the download links or the access passwords for these files?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Zhumu App Key and Secret?**
+Log in to the Zhumu Developer Center, create a new application, and you will find your unique App Key and App Secret in the application credentials section.
+
+**Q: Can I retrieve meeting recordings through this server?**
+Yes. Use the `list_recordings` tool with a specific user ID to retrieve a list of all cloud recordings saved for that user's sessions.
+
+**Q: Is it possible to manage webinars?**
+Yes! Use the `list_webinars` tool to retrieve a list of all scheduled webinars and identify upcoming sessions and engagement metrics.
+
+
 ## Installation & Usage
 
-To install and use the **Zhumu / 瞩目** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zhumu](https://vinkius.com/mcp/zhumu)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zhumu / 瞩目** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zhumu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zhumu / 瞩目** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zhumu": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

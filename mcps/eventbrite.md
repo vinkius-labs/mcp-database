@@ -1,7 +1,6 @@
 # Eventbrite MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventbrite)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eventbrite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eventbrite-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventbrite)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Eventbrite** MCP serve
 > The 'Summer Gala' has sold 850/1000 tickets, generating $42,500 in gross sales. 15 orders were placed in the last 24 hours. Would you like a list of the most recent orders?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Eventbrite Private Token?**
+Log in to your Eventbrite account, navigate to **Account Settings > API Keys**, and you can find or generate your **Private Token** (OAuth token) there. Ensure you use the Private Token for authorized access to your data.
+
+**Q: Can the agent create new events?**
+This integration currently focuses on listing and auditing events, attendees, and orders. Creating or publishing new events should be managed via the Eventbrite event builder or professional management tools.
+
+**Q: Does the integration show real-time gross sales?**
+Yes, you can use the get_event_performance_summary tool to retrieve a summary of gross sales, total tickets sold, and other revenue metrics for a specific event.
+
+
 ## Installation & Usage
 
-To install and use the **Eventbrite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eventbrite](https://vinkius.com/mcp/eventbrite)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Eventbrite** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eventbrite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Eventbrite** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eventbrite": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

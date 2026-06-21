@@ -1,7 +1,6 @@
 # PrestaShop MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/prestashop)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/prestashop-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/prestashop-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/prestashop)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **PrestaShop** MCP serve
 > Via `get_stock` targeting ID 15, the structural array dictates that there are exactly `7` physical units physically authorized for checkout operations, tied implicitly to Product ID `42`.
 
 
+## ❓ FAQ
+
+**Q: Can the AI handle PrestaShop's complex XML responses?**
+Yes. While PrestaShop's Core API sends XML trees, the AI parses nodes extracting items, IDs, and pricing fluidly, eliminating the need for you to read tag-heavy formats manually.
+
+**Q: Is there a way to limit the amount of products or orders I query?**
+Absolutely. Functions like `list_products` and `list_orders` accept a `limit` parameter string in bounds format (like `0,20`). Just ask the AI to 'show me the first 5 orders'.
+
+**Q: Can it inspect how many physical items are in stock?**
+Yes. Under the hood, PrestaShop splits stock models. Using `list_stock` and `get_stock`, the AI retrieves the exact array nodes managing physical stock overriding quantities.
+
+
 ## Installation & Usage
 
-To install and use the **PrestaShop** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/prestashop](https://vinkius.com/mcp/prestashop)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PrestaShop** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `prestashop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PrestaShop** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "prestashop": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

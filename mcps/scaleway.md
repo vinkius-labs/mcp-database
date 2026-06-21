@@ -1,7 +1,6 @@
 # Scaleway MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scaleway)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scaleway-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scaleway-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scaleway)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Scaleway** MCP server 
 > The reboot command has been successfully sent to the server in nl-ams-1. It should be restarting now.
 
 
+## ❓ FAQ
+
+**Q: How do I see my servers in a specific region like Paris?**
+Use the `list_instances` tool and provide the zone parameter (e.g., 'fr-par-1'). The agent will return a list of all instances currently provisioned in that specific Scaleway zone.
+
+**Q: Can I reboot or shut down a server using this integration?**
+Yes! The `perform_instance_action` tool allows you to send 'poweron', 'poweroff', 'reboot', or 'terminate' commands to any specific server ID within a zone.
+
+**Q: What information is needed to create a new instance?**
+To use `create_instance`, you need to provide the zone, a name for the server, the commercial type (e.g., 'DEV1-S'), and the image ID or label you wish to deploy.
+
+
 ## Installation & Usage
 
-To install and use the **Scaleway** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/scaleway](https://vinkius.com/mcp/scaleway)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Scaleway** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `scaleway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Scaleway** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "scaleway": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

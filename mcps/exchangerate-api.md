@@ -1,7 +1,6 @@
 # ExchangeRate-API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exchangerate-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/exchangerate-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/exchangerate-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exchangerate-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **ExchangeRate-API** MCP
 > Retrieving historical data for 2020-01-01... On that day, 1 USD was worth approximately 0.89 EUR. I can pull the full data table for that specific date if you need.
 
 
+## ❓ FAQ
+
+**Q: How many currencies are supported by this integration?**
+ExchangeRate-API supports over 160 world currencies. You can use the `list_supported_currencies` tool to see the full list of available codes and their corresponding names.
+
+**Q: Can I perform a direct conversion between USD and EUR with a specific amount?**
+Yes! Use the `convert_currency_pair` tool and provide 'USD' in the `from` parameter, 'EUR' in the `to` parameter, and your desired amount. The agent will calculate the result based on the latest rates.
+
+**Q: Is historical exchange rate data available?**
+Absolutely. You can use the `get_historical_rates` tool by providing the base currency and the specific year, month, and day. This allows you to audit financial records from any point in the past.
+
+
 ## Installation & Usage
 
-To install and use the **ExchangeRate-API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/exchangerate-api](https://vinkius.com/mcp/exchangerate-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ExchangeRate-API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `exchangerate-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ExchangeRate-API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "exchangerate-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Pixabay MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pixabay)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pixabay-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pixabay-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pixabay)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Pixabay** MCP server u
 > Executing video lookup targeted for mobile devices. Found `ID: 329004` (Drone over Alps). It spans exactly 15 seconds, available native dimension mapping 1080x1920 MP4 (`8mb filesize`). Shall I construct a snippet that mounts this locally?
 
 
+## ❓ FAQ
+
+**Q: Can my AI download and directly embed high-resolution MP4 video URLs into my code?**
+Yes. Instruct the agent to run a video search (`search_videos`). The JSON returned points mapping precisely to the highest resolution native CDN endpoints. Your AI agent can ingest these exact `mp4` URI addresses and format them perfectly into `<video>` tags inside your application mockup.
+
+**Q: How can I easily discover only landscape photos related to 'urban night' containing mainly orange?**
+The integration exposes distinct analytical endpoints natively. You simply prompt: 'Search Pixabay for urban night landscape containing orange'. The agent internally invokes the pixel-color mapping API (`search_by_color`) bounded by the (`horizontal`) orientation constraint to drastically minimize latency and fetch the literal perfect image.
+
+**Q: Are there licensing restrictions when generating code using these results?**
+No. All media assets managed by the Pixabay integration carry the pure royalty-free license. They are completely safe for commercial use, client mockups, and public deployment without explicit attribution, meaning you don't face unexpected DMCA copyright claims when your agent auto-selects dummy data.
+
+
 ## Installation & Usage
 
-To install and use the **Pixabay** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pixabay](https://vinkius.com/mcp/pixabay)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pixabay** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pixabay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pixabay** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pixabay": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

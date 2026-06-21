@@ -1,7 +1,6 @@
 # Smartling (Translation Workflow API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartling-translation-workflow-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smartling-translation-workflow-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smartling-translation-workflow-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartling-translation-workflow-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Smartling (Translation
 > I've downloaded the 'fr-FR' version of 'strings.json'. The content is ready for use. Would you like me to display the translated strings?
 
 
+## ❓ FAQ
+
+**Q: Can I upload a file and have it immediately ready for translation?**
+Yes! When using the `upload_file` tool, set the `authorize` parameter to true. This will automatically authorize the content for translation in your project.
+
+**Q: How do I group multiple files into a single translation task?**
+First, use `create_job` to create a new translation job. Then, use `add_content_to_job` for each file URI you want to associate with that specific job UID.
+
+**Q: Can I provide visual context to help translators?**
+Absolutely. Use the `upload_context` tool to send visual references (like screenshots or HTML) to your project, ensuring higher translation quality.
+
+
 ## Installation & Usage
 
-To install and use the **Smartling (Translation Workflow API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/smartling-translation-workflow-api](https://vinkius.com/mcp/smartling-translation-workflow-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Smartling (Translation Workflow API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `smartling-translation-workflow-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Smartling (Translation Workflow API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "smartling-translation-workflow-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

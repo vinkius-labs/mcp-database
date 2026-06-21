@@ -1,7 +1,6 @@
 # CoinAPI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coinapi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coinapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coinapi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coinapi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **CoinAPI** MCP server u
 > Fetching the most recent trades for BINANCE_SPOT_SOL_USDT... In the last few seconds, I see several buy orders filled around $145.20. The largest single trade was for 500 SOL. Should I check the current bid/ask quotes?
 
 
+## ❓ FAQ
+
+**Q: How do I format the symbol ID to get specific exchange data?**
+CoinAPI uses a specific format: `EXCHANGE_TYPE_BASE_QUOTE`. For example, to get Bitcoin to USD on Bitstamp, use `BITSTAMP_SPOT_BTC_USD`. You can use the `list_symbols` tool to find exact identifiers.
+
+**Q: Can I get the current price of Ethereum in Euros?**
+Yes! Use the `get_specific_rate` tool. Set `asset_id_base` to 'ETH' and `asset_id_quote` to 'EUR'. This will return the real-time average conversion rate.
+
+**Q: What timeframes are available for OHLCV data?**
+The `get_ohlcv` tool supports various periods via the `period_id` parameter, such as `1MIN`, `1HRS`, `1DAY`, `1MTH`, etc. It defaults to `1DAY`.
+
+
 ## Installation & Usage
 
-To install and use the **CoinAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coinapi](https://vinkius.com/mcp/coinapi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CoinAPI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coinapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CoinAPI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coinapi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

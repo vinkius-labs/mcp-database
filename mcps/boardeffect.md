@@ -1,7 +1,6 @@
 # BoardEffect MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boardeffect)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/boardeffect-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/boardeffect-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boardeffect)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **BoardEffect** MCP serv
 > I found one matching member: 'Sarah Miller' (ID: mem_992). Her email is sarah.miller@example.com and she is the Chair of the Audit Committee.
 
 
+## ❓ FAQ
+
+**Q: Can I see the agenda for my next board meeting?**
+Yes! Use the `get_meeting` tool with the Meeting ID. Your agent will fetch the latest details, including the agenda and scheduled time, directly from BoardEffect.
+
+**Q: How do I list all the members of a specific committee?**
+Simply ask the agent to `list_members`. You can then inspect individual member profiles or use the `list_workrooms` tool to see which members are assigned to specific committee spaces.
+
+**Q: Does the integration allow me to archive a project?**
+Currently, the toolset focuses on querying and monitoring (Read-Only). You can list and inspect meetings, members, and archives, but archiving active projects or deleting data must be done through the BoardEffect platform for security and compliance.
+
+
 ## Installation & Usage
 
-To install and use the **BoardEffect** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/boardeffect](https://vinkius.com/mcp/boardeffect)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BoardEffect** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `boardeffect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BoardEffect** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "boardeffect": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

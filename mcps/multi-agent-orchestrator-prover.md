@@ -1,7 +1,6 @@
 # Multi-Agent Orchestrator Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/multi-agent-orchestrator-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/multi-agent-orchestrator-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/multi-agent-orchestrator-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/multi-agent-orchestrator-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Multi-Agent Orchestrat
 > FAILURES_CASCADING — 'Fault tolerant by design' and 'auto-recovers' are claims, not strategies. What is the timeout per agent? What is the retry policy — how many retries, with what backoff? What is the fallback if the agent is permanently down? What is the circuit breaker threshold? Also: 'logging for debugging' is not observability — implement correlation IDs, per-agent metrics, and automated alerting.
 
 
+## ❓ FAQ
+
+**Q: Do I need this with only two agents?**
+Yes. Two agents still need role boundaries, a handoff protocol, failure containment, and observability. The failure modes don't care about agent count — they care about architectural discipline. A 2-agent system with undefined handoffs fails the same way a 20-agent system does.
+
+**Q: What is a consensus mechanism for agents?**
+When two agents produce conflicting outputs, a consensus mechanism resolves the conflict deterministically. Options: confidence scoring (highest confidence wins), supervisor agent review, voting with tie-breaking rules, evidence-coverage scoring. 'They usually agree' is not a mechanism — it is hope that collapses the first time agents disagree.
+
+**Q: Does it generate agent architectures?**
+No. It computes nothing. It validates that your agent architecture passes five structural checks — role boundaries, handoff protocols, failure containment, consensus, and observability. The design is yours. The discipline is enforced by the tool.
+
+
 ## Installation & Usage
 
-To install and use the **Multi-Agent Orchestrator Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/multi-agent-orchestrator-prover](https://vinkius.com/mcp/multi-agent-orchestrator-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Multi-Agent Orchestrator Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `multi-agent-orchestrator-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Multi-Agent Orchestrator Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "multi-agent-orchestrator-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

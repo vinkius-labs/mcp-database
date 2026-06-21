@@ -1,7 +1,6 @@
 # Zoho Desk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-desk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-desk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-desk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-desk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,12 +102,52 @@ Here are some examples of how you can interact with the **Zoho Desk** MCP server
 > I'll post the reply to the ticket right now.
 
 
+## ❓ FAQ
+
+**Q: What Zoho Desk plan do I need for this MCP server?**
+This MCP server works with any paid Zoho Desk plan (Standard, Professional, Enterprise). The free plan has limited API access. Ensure your organization has API enabled in admin settings.
+
+**Q: Can this MCP server automate ticket routing and escalation?**
+Yes! AI agents can list tickets, filter by status/priority, update assignees, change departments, and add internal notes for escalation. Combined with workflow rules in Zoho Desk, you can build fully automated support pipelines.
+
+**Q: Does this work with Zoho's multi-tenant organizations?**
+Absolutely. The MCP server requires an orgId parameter, so you can connect to any Zoho Desk organization you have access to. For multiple orgs, deploy separate MCP instances with different credentials.
+
+
 ## Installation & Usage
 
-To install and use the **Zoho Desk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zoho-desk](https://vinkius.com/mcp/zoho-desk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zoho Desk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zoho-desk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zoho Desk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zoho-desk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

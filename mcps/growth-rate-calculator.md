@@ -1,7 +1,6 @@
 # Growth Rate Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/growth-rate-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/growth-rate-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/growth-rate-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/growth-rate-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Growth Rate Calculator
 > I will use the `generate_growth_projection` tool. I'll set the last known revenue to 10,000,000, the horizon months to 12, the scenario to 'Accelerated', and provide the base monthly growth rate (if applicable) and the rate determiner of 7%.
 
 
+## ❓ FAQ
+
+**Q: Does the calculator only look at monthly data?**
+No. The `analyze_historical_growth` tool allows you to specify the time granularity ('Month', 'Quarter', or 'Year'). This ensures that whether you are looking for short-term momentum (MoM) or long-term seasonal trends (YoY), the comparison is accurate based on your data.
+
+**Q: What is the difference between CAGR and Rule of 40?**
+CAGR measures the overall smooth, annualized growth rate over a long period. The Rule of 40 uses `calculate_key_rates` to provide a composite score (Growth Rate % + EBITDA Margin %). It is a single metric that tells investors about both revenue expansion and operational profitability simultaneously.
+
+**Q: Can I predict revenue for more than 12 months?**
+The `generate_growth_projection` tool is designed to project a full twelve-month (12-month) forecast horizon. While you can adjust the inputs, the default and most reliable projection window provided by this server is exactly one year.
+
+
 ## Installation & Usage
 
-To install and use the **Growth Rate Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/growth-rate-calculator](https://vinkius.com/mcp/growth-rate-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Growth Rate Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `growth-rate-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Growth Rate Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "growth-rate-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

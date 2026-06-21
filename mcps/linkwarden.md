@@ -1,7 +1,6 @@
 # Linkwarden MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkwarden)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/linkwarden-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/linkwarden-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkwarden)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -96,12 +95,52 @@ Here are some examples of how you can interact with the **Linkwarden** MCP serve
 > Fetching your dashboard data... You currently have 150 links across 5 collections, with 120 successfully archived.
 
 
+## ❓ FAQ
+
+**Q: How can I see a list of all my bookmark folders?**
+You can use the `list_collections` tool. It will retrieve all your existing collections, allowing the AI to show you how your bookmarks are organized.
+
+**Q: Is it possible to retrieve an archived version of a saved link?**
+Yes! Use the `get_archive` tool with the specific Link ID. This will fetch the preserved archive file associated with that link.
+
+**Q: Can I create a new collection directly through the AI?**
+Absolutely. Use the `create_collection` tool by providing a unique ID and the collection details in the payload.
+
+
 ## Installation & Usage
 
-To install and use the **Linkwarden** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/linkwarden](https://vinkius.com/mcp/linkwarden)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Linkwarden** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `linkwarden` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Linkwarden** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "linkwarden": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

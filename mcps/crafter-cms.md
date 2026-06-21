@@ -1,7 +1,6 @@
 # Crafter CMS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crafter-cms)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/crafter-cms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/crafter-cms-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crafter-cms)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Crafter CMS** MCP serv
 > Retrieving Studio tree... I found 5 files in '/site/website/landing-pages' including 'summer-sale.xml', 'winter-promo.xml', and 'black-friday.xml'. Each represents a managed XML content node.
 
 
+## ❓ FAQ
+
+**Q: Can my agent write new content files to Crafter Studio via Git?**
+Yes. Use the 'write_studio_xml' tool. Provide the site name, file path, and raw XML content. The agent will command the backend to write the physical Git boundaries, generating new content nodes or pages directly in your Studio environment.
+
+**Q: How do I publish changes from Studio to the live Delivery Engine?**
+Use the 'publish_crafter_content' tool. Provide the site name and the specific object path. Your agent will trigger the automated publication workflow, migrating the changes from your Git-based Studio repo to the live high-performance delivery endpoint.
+
+**Q: Can I perform full-text searches across all site content?**
+Absolutely. The 'search_crafter_delivery' tool leverages Crafter's Elasticsearch integration. Your agent can pull explicitly queried words spanning all nodes, returning matches based on the query logic defined in your search engine.
+
+
 ## Installation & Usage
 
-To install and use the **Crafter CMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/crafter-cms](https://vinkius.com/mcp/crafter-cms)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Crafter CMS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `crafter-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Crafter CMS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "crafter-cms": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

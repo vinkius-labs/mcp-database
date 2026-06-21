@@ -1,7 +1,6 @@
 # TextGrid MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/textgrid)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/textgrid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/textgrid-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/textgrid)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **TextGrid** MCP server 
 > Fetching available numbers... I found 5 numbers available in the UK (Country Code: GB) including +447700... and +447701... Shall I retrieve the pricing and feature list for these?
 
 
+## ❓ FAQ
+
+**Q: Can I check the delivery status of a specific message via AI?**
+Yes! Use the `get_message_details` tool and provide the Message SID. Your agent will retrieve the real-time delivery status (e.g., sent, delivered, failed) and other metadata.
+
+**Q: How do I find a new available phone number in the US?**
+Run the `search_available_numbers` query and set the `countryCode` parameter to 'US'. The agent will return a list of phone numbers available for purchase in that region.
+
+**Q: Is it possible to see the costs associated with my messaging usage?**
+Absolutely. Use the `get_usage_statistics` tool to retrieve detailed usage records and associated costs for your SMS and voice services directly from TextGrid.
+
+
 ## Installation & Usage
 
-To install and use the **TextGrid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/textgrid](https://vinkius.com/mcp/textgrid)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TextGrid** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `textgrid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TextGrid** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "textgrid": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

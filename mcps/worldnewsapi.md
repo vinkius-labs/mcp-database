@@ -1,7 +1,6 @@
 # WorldNewsAPI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/worldnewsapi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/worldnewsapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/worldnewsapi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/worldnewsapi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **WorldNewsAPI** MCP ser
 > I've retrieved the article content! The text covers [Summary]. I can also assist you with the publication date and author metadata for this specific link.
 
 
+## ❓ FAQ
+
+**Q: How do I find my WorldNewsAPI Key?**
+Sign up for an account at [**worldnewsapi.com**](https://worldnewsapi.com/), and you will find your API Key in your dashboard. Copy and paste it below.
+
+**Q: Can I filter news by country?**
+Yes. Use the `get_top_world_news` tool and provide the 2-letter country code (e.g., 'us' or 'br'). Your agent will return matching top stories instantly.
+
+**Q: Does it support article extraction?**
+Yes. The `extract_news_from_url` tool retrieves the full text and metadata for a news article from any specified URL in the database.
+
+
 ## Installation & Usage
 
-To install and use the **WorldNewsAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/worldnewsapi](https://vinkius.com/mcp/worldnewsapi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WorldNewsAPI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `worldnewsapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WorldNewsAPI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "worldnewsapi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

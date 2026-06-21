@@ -1,7 +1,6 @@
 # InfoVetted MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/infovetted)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/infovetted-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/infovetted-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/infovetted)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **InfoVetted** MCP serve
 > Completed vettings (last 30 days): 22 total. ✅ Clear: 18 (82%). ⚠️ Flagged: 3 (14%). ❌ Failed: 1 (4%). Flagged details: 'João Santos' — employment gap (6 months unaccounted). 'Ana Costa' — minor traffic violation. 'David Kim' — degree verification delayed. Cancelled: Pending check for candidate #3 (vetting_4519, 'Lisa Park', Basic Package). Refund: credited. Status: ❌ Cancelled.
 
 
+## ❓ FAQ
+
+**Q: Can I initiate a background check through the AI agent?**
+Yes. Use `create_new_vetting_check` with the contact ID and vetting package to initiate a background check. Use `create_screening_contact` first if the person isn't in your system. Track progress with `get_vetting_request_status`.
+
+**Q: Can I track the status of active vetting requests?**
+Yes. Use `list_vetting_requests` to see all requests with their current status. Use `get_vetting_request_status` for detailed progress on a specific check. Use `cancel_active_vetting` to stop a check that's no longer needed.
+
+**Q: Can I manage screening contacts and their data?**
+Yes. Use `list_screening_contacts` to browse all contacts, `get_screening_contact` for individual profiles, and `create_screening_contact` to add new people to the system. Each contact can have multiple vetting requests associated.
+
+
 ## Installation & Usage
 
-To install and use the **InfoVetted** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/infovetted](https://vinkius.com/mcp/infovetted)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **InfoVetted** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `infovetted` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **InfoVetted** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "infovetted": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Mosaic (Resource Planning & Workforce Management) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mosaic-resource-planning-workforce-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mosaic-resource-planning-workforce-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mosaic-resource-planning-workforce-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mosaic-resource-planning-workforce-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Mosaic (Resource Plann
 > Retrieving budget data for 'proj-98765'… The current estimate is $125,000 based on your resource mappings. This includes $85,000 in billable hours and $40,000 in operational overhead. I can break this down by role if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Can I see my team's workload across different projects through my agent?**
+Yes. Use the `list_work_plans` tool. Your agent will retrieve the hierarchical timeline mapping resources to projects, allowing you to see exactly how many hours are allocated to each member across your entire portfolio.
+
+**Q: How do I check if a specific project is still within its estimated budget?**
+The `list_budgets` tool allows your agent to retrieve financial estimates for a given Project ID. You'll see the structured budget models and applied rates, helping you monitor financial health through natural conversation.
+
+**Q: Can my agent list all the roles and bill rates configured in our Mosaic account?**
+Absolutely. Use the `list_roles` and `list_bill_rates` tools to identify your organizational allocation vectors. Your agent will report the roles and associated financial constants used to calculate project margins.
+
+
 ## Installation & Usage
 
-To install and use the **Mosaic (Resource Planning & Workforce Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mosaic-resource-planning-workforce-management](https://vinkius.com/mcp/mosaic-resource-planning-workforce-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mosaic (Resource Planning & Workforce Management)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mosaic-resource-planning-workforce-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mosaic (Resource Planning & Workforce Management)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mosaic-resource-planning-workforce-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # 4399 Open Platform MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/4399-open-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/4399-open-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/4399-open-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/4399-open-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **4399 Open Platform** M
 > Scanning content... The sensitive word filter flagged 1 term in your input. It is recommended to reject this content for role names or public chat.
 
 
+## ❓ FAQ
+
+**Q: How do I validate a user login token from my backend?**
+Use the `validate_login` tool with the user's `uid` and the `access_token` provided by the 4399 SDK. The agent will confirm if the session is legitimate and return the authentication code.
+
+**Q: Can I check the status of a specific payment order?**
+Yes! Use the `query_order` tool with the 4399 order ID. Your agent will retrieve the transaction status, amount, and timestamp from the payment gateway.
+
+**Q: Does it support high score submission?**
+Yes! The `submit_score` tool allows your agent to update the high score for a specific user ID on the configured 4399 leaderboard.
+
+
 ## Installation & Usage
 
-To install and use the **4399 Open Platform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/4399-open-platform](https://vinkius.com/mcp/4399-open-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **4399 Open Platform** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `4399-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **4399 Open Platform** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "4399-open-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Optum Claims & Billing MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/optum-claims-billing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/optum-claims-billing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/optum-claims-billing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/optum-claims-billing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Optum Claims & Billing
 > The ANSI 837 Professional Claim string has been successfully prepared for code 99213 passing all pre-adjudication compliance checks.
 
 
+## ❓ FAQ
+
+**Q: Can this Optum Server check a patient's insurance card status?**
+No. In adherence to US Healthcare segregation architecture (Least Privilege), Claims processing is totally decoupled from Eligibility. For front-desk validations, install the `optum-eligibility-mcp` array safely.
+
+**Q: Is this system capable of sending secondary claims crossing over from Medicare?**
+Yes. The X12 837 payload infrastructure fully supports coordination of benefits (COB) logic required to submit clean secondary claims dynamically.
+
+**Q: How fast are ERA (835) remittances processed by the engine?**
+ERAs are fetched in real-time as they become available on Optum Clearinghouse networks, expediting auto-posting to your financial ledgers.
+
+
 ## Installation & Usage
 
-To install and use the **Optum Claims & Billing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/optum-claims-billing](https://vinkius.com/mcp/optum-claims-billing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Optum Claims & Billing** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `optum-claims-billing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Optum Claims & Billing** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "optum-claims-billing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

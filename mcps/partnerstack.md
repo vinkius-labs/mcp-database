@@ -1,7 +1,6 @@
 # PartnerStack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/partnerstack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/partnerstack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/partnerstack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/partnerstack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **PartnerStack** MCP ser
 > I've retrieved the rewards log. For the 'Summer Campaign', there are 12 rewards 'pending_approval' and 8 'paid' rewards. Would you like a list of the pending ones?
 
 
+## ❓ FAQ
+
+**Q: How do I find my PartnerStack API Key?**
+In your PartnerStack dashboard, go to **Settings** > **Integrations** and look for the API Key section. You may need to generate a new key if one doesn't exist.
+
+**Q: Can I see leads submitted by a specific partner?**
+Yes! Use the `list_partner_leads` tool. You can ask the AI agent to filter the results for a particular partner name or ID from the retrieved list.
+
+**Q: Does this support reward tracking?**
+Absolutely. Use the `list_partner_rewards` tool to see a log of all generated rewards and their current status across your partner ecosystem.
+
+
 ## Installation & Usage
 
-To install and use the **PartnerStack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/partnerstack](https://vinkius.com/mcp/partnerstack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PartnerStack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `partnerstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PartnerStack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "partnerstack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

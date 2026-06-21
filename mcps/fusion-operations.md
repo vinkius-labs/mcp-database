@@ -1,7 +1,6 @@
 # Fusion Operations MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fusion-operations)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fusion-operations-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fusion-operations-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fusion-operations)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Fusion Operations** MC
 > Scanning production logs... Today, 5 records have been completed so far. Total output includes 500 Gear Shafts and 25 Pump Units. All operations are running within the scheduled timeframe.
 
 
+## ❓ FAQ
+
+**Q: How do I find my API Key and Secret?**
+Log in to Fusion Operations as an Admin, click on your profile name, and select **Request an API key**. You will receive your credentials via email.
+
+**Q: Can I check stock levels in a specific warehouse?**
+Yes! Use the `list_inventory_stocks` tool. You can also use `list_storage_locations` first to identify the correct warehouse ID.
+
+**Q: Does the integration support tracking individual floor workers?**
+The `list_floor_workers` tool allows you to retrieve a directory of all registered personnel and their current status in the system.
+
+
 ## Installation & Usage
 
-To install and use the **Fusion Operations** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fusion-operations](https://vinkius.com/mcp/fusion-operations)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fusion Operations** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fusion-operations` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fusion Operations** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fusion-operations": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Cat Facts MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cat-facts)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cat-facts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cat-facts-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cat-facts)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Cat Facts** MCP server
 > Searching the breed list... I found several breeds from the US, such as the American Shorthair, American Curl, and the Maine Coon. Would you like to know more about a specific one?
 
 
+## ❓ FAQ
+
+**Q: Can I get a list of all cat breeds?**
+Yes! Use the `list_cat_breeds` tool. It will return a list of various cat breeds along with their country of origin.
+
+**Q: How can I get multiple cat facts at once?**
+Use the `list_cat_facts` tool and specify the `limit` parameter for the number of facts you want to retrieve.
+
+**Q: Is there a limit to the length of the facts?**
+Yes, you can use the `max_length` parameter in the `get_random_cat_fact` or `list_cat_facts` tools to filter for shorter or longer facts.
+
+
 ## Installation & Usage
 
-To install and use the **Cat Facts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cat-facts](https://vinkius.com/mcp/cat-facts)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cat Facts** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cat-facts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cat Facts** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cat-facts": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Bright Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bright-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bright-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bright-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bright-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Bright Data** MCP serv
 > The snapshot 's_l1m2n3b4' is currently at 75% completion. It has processed 15,000 records so far with 0 errors.
 
 
+## ❓ FAQ
+
+**Q: How do I bypass anti-bot systems on a specific website?**
+Use the `send_request` tool and specify a zone configured with Web Unlocker. Provide the target URL, and Bright Data will handle the rotation and headers to return the content.
+
+**Q: Can I check if my data collection is finished?**
+Yes. Use the `get_dataset_progress` tool with your Snapshot ID. It will return the current percentage and status of the extraction process.
+
+**Q: How do I get the proxy credentials for my scraper?**
+You can use the `get_zone_passwords` tool by providing the zone name. This will retrieve the necessary passwords for proxy authentication.
+
+
 ## Installation & Usage
 
-To install and use the **Bright Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bright-data](https://vinkius.com/mcp/bright-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bright Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bright-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bright Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bright-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

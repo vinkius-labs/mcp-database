@@ -1,7 +1,6 @@
 # Artsy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/artsy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/artsy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/artsy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/artsy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Artsy** MCP server usi
 > Fetching artworks by Vincent van Gogh... I've identified several masterpieces including 'The Starry Night' and 'Sunflowers'. I can provide technical details like medium and dimensions for any of these.
 
 
+## ❓ FAQ
+
+**Q: How do I find information about a specific art movement like Cubism?**
+Use the `search_artsy` tool with 'Cubism' and set the `type` to 'gene'. This will retrieve the specific entry for that art movement, including descriptions and related artworks.
+
+**Q: Can I search for artworks by a specific artist?**
+Yes! Use the `search_artsy` tool with the artist's name. You can then use the `get_artist_details` tool with their ID to see their full profile and explore their body of work.
+
+**Q: Is information about current art shows available?**
+Absolutely. Use the `list_shows` tool to retrieve a list of current and upcoming art shows globally, including their locations and participating artists.
+
+
 ## Installation & Usage
 
-To install and use the **Artsy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/artsy](https://vinkius.com/mcp/artsy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Artsy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `artsy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Artsy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "artsy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

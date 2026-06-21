@@ -1,7 +1,6 @@
 # Steam MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/steam-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/steam-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/steam-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/steam-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Steam** MCP server usi
 > Activity orchestrated! In the last 2 weeks, you've played 3 games, including 'Elden Ring' for 15 high-fidelity hours. Your total gaming time across all apps is 25 hours. Shall I retrieve your progress on recent achievements?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Steam Web API Key?**
+Log in to your account and navigate to [**steamcommunity.com/dev/apikey**](https://steamcommunity.com/dev/apikey) to generate or copy your unique key.
+
+**Q: Can I see my friends' status via AI?**
+Yes! The `list_steam_friends` tool allows your agent to retrieve high-fidelity status metadata and recently played games for your friend list.
+
+**Q: How do I check my total playtime for a game?**
+Use the `list_owned_games` tool to retrieve your complete high-fidelity library along with total playtimes (in minutes) for each app.
+
+
 ## Installation & Usage
 
-To install and use the **Steam** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/steam-alternative](https://vinkius.com/mcp/steam-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Steam** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `steam-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Steam** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "steam-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

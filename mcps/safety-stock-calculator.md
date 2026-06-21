@@ -1,7 +1,6 @@
 # Safety Stock Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/safety-stock-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/safety-stock-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/safety-stock-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/safety-stock-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,52 @@ Here are some examples of how you can interact with the **Safety Stock Calculato
 > The analysis shows the following results: Square Root method suggests 17.32 safety stock with a total estimated cost of 34.64; Statistical method suggests 19.58 safety stock with a total estimated cost of 39.16; Fixed Coverage method suggests 250.0 safety stock with a total estimated cost of 500.0.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between the three calculation methods?**
+The Square Root method uses demand variability and lead time; the Statistical method incorporates both demand and lead time uncertainty using Z-scores; and the Fixed Coverage method calculates stock based on a set number of supply periods.
+
+**Q: How can I find the most cost-effective safety stock level?**
+Use the `analyze_inventory_costs` tool. It compares the estimated holding costs and stockout risk costs for all three methods, allowing you to identify the strategy with the lowest total estimated cost.
+
+**Q: What inputs are required for the statistical method?**
+You need to provide the target service level percentage, demand standard deviation, average demand, lead time duration, and the standard deviation of the lead time.
+
+
 ## Installation & Usage
 
-To install and use the **Safety Stock Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/safety-stock-calculator](https://vinkius.com/mcp/safety-stock-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Safety Stock Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `safety-stock-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Safety Stock Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "safety-stock-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

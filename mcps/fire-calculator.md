@@ -1,7 +1,6 @@
 # FIRE Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fire-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fire-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fire-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fire-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **FIRE Calculator** MCP 
 > Based on a $3,000 monthly baseline, your targets are: Lean FIRE: $720,000; Standard FIRE: $900,000; Barista FIRE: $1,080,000; and Fat FIRE: $1,440,000.
 
 
+## ❓ FAQ
+
+**Q: What is the 4% rule?**
+The 4% rule is a guideline suggesting that you can withdraw 4% of your initial retirement portfolio annually, adjusted for inflation, with a high probability of the funds lasting at least 30 years.
+
+**Q: How do I use `calculate_milestones`?**
+You can use `calculate_milestones` by providing your current net worth, monthly contributions, expected real annual return, and target monthly retirement expenses to see when you will reach independence.
+
+**Q: What are the different FIRE tiers?**
+The calculator supports various lifestyles including Lean FIRE (minimalist), Standard FIRE (baseline), Fat FIRE (affluent), and Barista FIRE (supplemented income).
+
+
 ## Installation & Usage
 
-To install and use the **FIRE Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fire-calculator](https://vinkius.com/mcp/fire-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FIRE Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fire-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FIRE Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fire-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

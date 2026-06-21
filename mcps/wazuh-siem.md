@@ -1,7 +1,6 @@
 # Wazuh (SIEM) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wazuh-siem)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wazuh-siem-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wazuh-siem-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wazuh-siem)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,12 +102,52 @@ Here are some examples of how you can interact with the **Wazuh (SIEM)** MCP ser
 > Inspecting manager logs... I found a few 'connection refused' warnings from 10 minutes ago related to agent enrollment. The rest of the daemons are running normally.
 
 
+## ❓ FAQ
+
+**Q: Can I filter agents by specific operating systems or versions?**
+Yes! The `list_agents` tool supports WQL (Wazuh Query Language). You can use queries like `os.name=ubuntu;os.version>18` to find specific endpoints.
+
+**Q: How do I check for unauthorized file changes on my servers?**
+You can use the `get_syscheck` tool. It retrieves File Integrity Monitoring (FIM) results, allowing you to audit file modifications, deletions, or additions across your agents.
+
+**Q: Is it possible to check the health of the Wazuh manager cluster?**
+Absolutely. Use `get_manager_status` to check daemon health or `list_cluster_nodes` to see the status of all nodes in your Wazuh cluster.
+
+
 ## Installation & Usage
 
-To install and use the **Wazuh (SIEM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wazuh-siem](https://vinkius.com/mcp/wazuh-siem)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wazuh (SIEM)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wazuh-siem` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wazuh (SIEM)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wazuh-siem": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

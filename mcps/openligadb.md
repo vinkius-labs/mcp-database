@@ -1,7 +1,6 @@
 # OpenLigaDB MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openligadb)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openligadb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openligadb-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openligadb)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **OpenLigaDB** MCP serve
 > I've scanned the catalog. Available leagues include Bundesliga 1 (bl1), Bundesliga 2 (bl2), and various international cups. I can provide the shortcuts for any of these to retrieve more data.
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for OpenLigaDB?**
+No. OpenLigaDB is a public and community-driven service. This server works out of the box without any static credentials required.
+
+**Q: What leagues are supported?**
+OpenLigaDB primarily covers German football (Bundesliga), but also supports many other international leagues. Use the `list_available_leagues` tool to see the full list.
+
+**Q: Can the agent show the next match for a team?**
+Yes. Use the `get_next_league_match` tool providing the league shortcut. Your agent will identify the next upcoming event in that league instantly.
+
+
 ## Installation & Usage
 
-To install and use the **OpenLigaDB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openligadb](https://vinkius.com/mcp/openligadb)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenLigaDB** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openligadb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenLigaDB** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openligadb": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

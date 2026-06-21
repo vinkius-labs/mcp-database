@@ -1,7 +1,6 @@
 # Distance Metrics Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/distance-metrics-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/distance-metrics-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/distance-metrics-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/distance-metrics-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -54,12 +53,52 @@ Here are some examples of how you can interact with the **Distance Metrics Engin
 > The Manhattan distance computation returned exactly 12.0. This positions the user in the outer boundary of Cluster 3.
 
 
+## ❓ FAQ
+
+**Q: Is Cosine distance the same as Cosine similarity?**
+No, Cosine Distance equals 1 minus Cosine Similarity. The engine returns both exact values in the JSON response so you always have the complete picture.
+
+**Q: Can it compare 1536-dimensional embeddings like OpenAI's?**
+Yes! It processes any equal-length array instantly. 1536-dimensional vectors are evaluated in milliseconds local, with exact floating-point precision.
+
+**Q: What if the two vectors have different lengths?**
+The engine enforces a strict validation constraint and throws a clear error. Both arrays must be mathematically equal in length — there is no silent truncation or padding.
+
+
 ## Installation & Usage
 
-To install and use the **Distance Metrics Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/distance-metrics-engine](https://vinkius.com/mcp/distance-metrics-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Distance Metrics Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `distance-metrics-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Distance Metrics Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "distance-metrics-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # LangSmith MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/langsmith)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/langsmith-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/langsmith-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/langsmith)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **LangSmith** MCP server
 Error: Tool 'web_search' returned timeout after 30s. The agent retried 3 times before failing.
 
 
+## ❓ FAQ
+
+**Q: What is LangSmith and why do I need it?**
+LangSmith is the 'Datadog for LLM applications'. Without observability, AI agents in production are black boxes — you can't see what they're doing, why they fail, or how much they cost. LangSmith traces every LLM call, chain execution, and tool use, giving you complete visibility into inputs, outputs, latency, token usage, and error rates.
+
+**Q: Does LangSmith work only with LangChain?**
+No! While LangSmith is built by the LangChain team and has native LangChain/LangGraph integration, it works with any LLM application. You can trace OpenAI, Anthropic, or any LLM provider directly using the REST API. It also integrates with CrewAI, AutoGen, and other frameworks.
+
+**Q: How much does LangSmith cost?**
+LangSmith offers a generous free tier with 5,000 traces per month — no credit card required. The Developer plan is $39/month with 50,000 traces. Enterprise plans include SSO, RBAC, dedicated support, and unlimited traces with volume discounts.
+
+
 ## Installation & Usage
 
-To install and use the **LangSmith** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/langsmith](https://vinkius.com/mcp/langsmith)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LangSmith** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `langsmith` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LangSmith** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "langsmith": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

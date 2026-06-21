@@ -1,7 +1,6 @@
 # Xata (Serverless DB) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xata-serverless-db)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/xata-serverless-db-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/xata-serverless-db-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xata-serverless-db)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Xata (Serverless DB)**
 > Query executed successfully. Here are the first 5 active users: 1. Alice (alice@example.com), 2. Bob (bob@example.com)...
 
 
+## ❓ FAQ
+
+**Q: Can I execute raw SQL queries on my Xata branches?**
+Yes! You can use the `execute_sql` tool to run any valid SQL statement against a specific database branch. For multiple statements, use `execute_sql_batch`.
+
+**Q: How do I check the performance or usage of a specific database branch?**
+Use the `get_branch_metrics` tool. It provides real-time insights into the operational status and usage metrics of your targeted database branch.
+
+**Q: Is it possible to manage team access and invitations through the AI?**
+Absolutely. You can use `list_members` to see who has access, and `send_invitation` to invite new collaborators to your organization directly.
+
+
 ## Installation & Usage
 
-To install and use the **Xata (Serverless DB)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/xata-serverless-db](https://vinkius.com/mcp/xata-serverless-db)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Xata (Serverless DB)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `xata-serverless-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Xata (Serverless DB)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "xata-serverless-db": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

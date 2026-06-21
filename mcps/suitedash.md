@@ -1,7 +1,6 @@
 # SuiteDash MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/suitedash)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/suitedash-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/suitedash-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/suitedash)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,46 @@ Here are some examples of how you can interact with the **SuiteDash** MCP server
 > Client workspace created: Meridian Corp. Modules enabled: CRM (contacts, pipeline), Projects (tasks, Gantt, Kanban), Billing (invoices, estimates, payments). Portal URL: app.yourdomain.com/meridian-corp. Admin users: 2 (David Chen CEO, Sarah Williams PM). Client portal access: enabled with branded login page. File storage: 10 GB allocated. Integration: Stripe connected for online payments. Automation: welcome email sent, onboarding checklist created (8 tasks). Template applied: "Enterprise Client" workflow.
 
 
+## ❓ FAQ
+
+**Q: How do I find my SuiteDash API credentials?**
+Log in to your SuiteDash portal, navigate to **Integrations** > **Secure API**, and you will find your unique **Public ID** and **Secret Key** there.
+
+
 ## Installation & Usage
 
-To install and use the **SuiteDash** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/suitedash](https://vinkius.com/mcp/suitedash)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SuiteDash** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `suitedash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SuiteDash** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "suitedash": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # FtmScan (Fantom Network Explorer) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ftmscan-fantom-network-explorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ftmscan-fantom-network-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ftmscan-fantom-network-explorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ftmscan-fantom-network-explorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **FtmScan (Fantom Networ
 > I have successfully retrieved the verified source code for the contract. It appears to be a SpookySwap LP token contract written in Solidity.
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance of multiple wallets at once?**
+Yes, use the `get_ftm_balance_multi` tool with a comma-separated list of addresses. The agent will return the FTM balance for each address in the list.
+
+**Q: How do I see the source code of a smart contract?**
+Use the `get_contract_source_code` tool with the contract's address. If the contract is verified on FtmScan, the agent will retrieve the source code and metadata.
+
+**Q: How can I verify if a transaction was successful?**
+Use the `get_transaction_status` tool with the transaction hash. It will return the execution status code directly from the Fantom network.
+
+
 ## Installation & Usage
 
-To install and use the **FtmScan (Fantom Network Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ftmscan-fantom-network-explorer](https://vinkius.com/mcp/ftmscan-fantom-network-explorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FtmScan (Fantom Network Explorer)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ftmscan-fantom-network-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FtmScan (Fantom Network Explorer)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ftmscan-fantom-network-explorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

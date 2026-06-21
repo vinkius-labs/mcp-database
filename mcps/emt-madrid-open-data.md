@@ -1,7 +1,6 @@
 # EMT Madrid (Open Data) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emt-madrid-open-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/emt-madrid-open-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/emt-madrid-open-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emt-madrid-open-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **EMT Madrid (Open Data)
 > Calculating routes from stop 1022... You can take Line 27 towards Plaza de Castilla. The next departure is in 5 minutes. Where is your final destination?
 
 
+## ❓ FAQ
+
+**Q: How do I check when the next bus arrives at a specific stop?**
+You can use the `get_bus_arrivals` tool by providing the unique Stop ID. The agent will return real-time estimates for all lines serving that stop.
+
+**Q: Can I see the availability of BiciMAD electric bikes?**
+Yes! The `list_bicimad_stations` tool provides a complete list of all stations in Madrid, including the number of available bikes and free docks at each location.
+
+**Q: Does this server require a login to access the data?**
+The server uses the `login` tool internally or via your API key to authenticate with EMT MobilityLabs, ensuring you have a valid session to fetch real-time transport data.
+
+
 ## Installation & Usage
 
-To install and use the **EMT Madrid (Open Data)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/emt-madrid-open-data](https://vinkius.com/mcp/emt-madrid-open-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EMT Madrid (Open Data)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `emt-madrid-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EMT Madrid (Open Data)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "emt-madrid-open-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

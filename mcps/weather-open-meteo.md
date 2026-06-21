@@ -1,7 +1,6 @@
 # Weather (Open-Meteo) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/weather-open-meteo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/weather-open-meteo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/weather-open-meteo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/weather-open-meteo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Weather (Open-Meteo)**
 > Comparing conditions: New York is currently 8°C and overcast (☁️), while Miami is much warmer at 26°C with clear skies (☀️). New York is experiencing light rain, whereas Miami is dry. It's significantly warmer in Miami right now.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key to use this weather server?**
+No. This server uses the Open-Meteo API, which is free and open-source for non-commercial use. You can start using it immediately without any manual configuration or signup processes.
+
+**Q: Can I check the air quality for my city?**
+Yes. The `weather.air_quality` tool provides the current US AQI level, concentrations of PM2.5, PM10, Ozone, and health recommendations based on the current conditions.
+
+**Q: How can I find the best time for a run or a hike?**
+Use the `weather.best_time` tool. You can specify your preferred temperature range and whether you want to avoid rain. Your agent will analyze the forecast and suggest the optimal time windows for your activity.
+
+
 ## Installation & Usage
 
-To install and use the **Weather (Open-Meteo)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/weather-open-meteo](https://vinkius.com/mcp/weather-open-meteo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Weather (Open-Meteo)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `weather-open-meteo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Weather (Open-Meteo)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "weather-open-meteo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

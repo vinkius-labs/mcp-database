@@ -1,7 +1,6 @@
 # CryptoCompare (Crypto Market Data) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cryptocompare-crypto-market-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cryptocompare-crypto-market-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cryptocompare-crypto-market-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cryptocompare-crypto-market-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **CryptoCompare (Crypto 
 > The current top 5 coins by market cap are: 1. Bitcoin (BTC), 2. Ethereum (ETH), 3. Tether (USDT), 4. BNB, and 5. Solana (SOL).
 
 
+## ❓ FAQ
+
+**Q: Can I get historical price data for specific timeframes?**
+Yes! You can use `get_historical_daily`, `get_historical_hourly`, or `get_historical_minute` to fetch OHLCV data for any supported cryptocurrency pair.
+
+**Q: How do I find the top performing coins by market capitalization?**
+Use the `get_top_mktcap` tool. You can specify the target currency (like USD) and the number of coins to return to see the current market leaders.
+
+**Q: Can I check prices across multiple currencies at once?**
+Absolutely. The `get_price_multi` tool allows you to input a list of symbols and get their current valuations in multiple target currencies simultaneously.
+
+
 ## Installation & Usage
 
-To install and use the **CryptoCompare (Crypto Market Data)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cryptocompare-crypto-market-data](https://vinkius.com/mcp/cryptocompare-crypto-market-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CryptoCompare (Crypto Market Data)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cryptocompare-crypto-market-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CryptoCompare (Crypto Market Data)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cryptocompare-crypto-market-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

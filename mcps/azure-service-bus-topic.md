@@ -1,7 +1,6 @@
 # Azure Service Bus Topic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-service-bus-topic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/azure-service-bus-topic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/azure-service-bus-topic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-service-bus-topic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Azure Service Bus Topi
 > The high-priority reboot command has been dispatched successfully.
 
 
+## ❓ FAQ
+
+**Q: Why limit the agent to a single Service Bus Topic?**
+To enforce zero-trust security. An autonomous AI agent should not have the ability to blast messages across every queue and topic in your cloud infrastructure. By restricting the scope, you prevent rogue agents from accidentally triggering critical systems like payroll or database wipes.
+
+**Q: What are custom properties?**
+Custom properties are metadata key-value pairs (like `"environment": "production"` or `"type": "alert"`). Service Bus Subscriptions can use these properties to filter messages, ensuring a downstream app only receives messages it cares about.
+
+**Q: Can this server pull messages?**
+No. This MCP server is explicitly designed for **publishing** (pushing) messages to a Topic. For polling or consuming messages from a queue, use the companion `azure-servicebus-queue` MCP server.
+
+
 ## Installation & Usage
 
-To install and use the **Azure Service Bus Topic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/azure-service-bus-topic](https://vinkius.com/mcp/azure-service-bus-topic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Azure Service Bus Topic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `azure-service-bus-topic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Azure Service Bus Topic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "azure-service-bus-topic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

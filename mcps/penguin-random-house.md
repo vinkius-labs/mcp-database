@@ -1,7 +1,6 @@
 # Penguin Random House MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/penguin-random-house)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/penguin-random-house-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/penguin-random-house-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/penguin-random-house)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Penguin Random House**
 > I've retrieved the latest events for the US domain. There are tours scheduled for several bestselling authors this month. Should I list the specific dates and locations for a particular author?
 
 
+## ❓ FAQ
+
+**Q: What is the difference between a 'Title' and a 'Work' in this server?**
+A 'Title' refers to a specific edition (identified by ISBN), while a 'Work' (using `get_work`) groups all formats of that book—like hardcover, paperback, and ebook—under a single record.
+
+**Q: Can I retrieve an author's biography along with their details?**
+Yes! When using the `get_author` tool, set the `showBio` parameter to true to include the full author biography in the response.
+
+**Q: How can I find books that are currently on sale or coming soon?**
+Use the `list_titles` tool with filters like `showComingSoon` or date ranges `onSaleFrom` and `onSaleTo` to find specific release windows.
+
+
 ## Installation & Usage
 
-To install and use the **Penguin Random House** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/penguin-random-house](https://vinkius.com/mcp/penguin-random-house)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Penguin Random House** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `penguin-random-house` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Penguin Random House** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "penguin-random-house": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

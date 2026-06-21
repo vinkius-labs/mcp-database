@@ -1,7 +1,6 @@
 # Mirakl (Enterprise Marketplace Platform) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mirakl-enterprise-marketplace-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mirakl-enterprise-marketplace-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mirakl-enterprise-marketplace-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mirakl-enterprise-marketplace-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Mirakl (Enterprise Mar
 > Searching communication history… I've found a thread for order 'order-987' between the buyer and the seller. The customer is asking about the delivery timeframe. Would you like me to retrieve the full message content or draft a reply as the operator?
 
 
+## ❓ FAQ
+
+**Q: Can I see the price and stock for a specific seller offer through my agent?**
+Yes. Use the `get_offer` tool with a specific Mirakl Offer ID. Your agent will retrieve the live inventory status and pricing mappings for that seller's listing, helping you audit availability across your marketplace instantly.
+
+**Q: How do I check the compliance status of a third-party shop on my platform?**
+The `get_shop` tool retrieves the complete operational configuration for a Shop ID. Your agent will expose the compliance constraints, seller profiles, and active flags, ensuring you can audit merchant health directly from your conversation.
+
+**Q: Can my agent list all multi-vendor orders placed in a specific period?**
+Absolutely. Use the `list_orders` tool to retrieve recent marketplace transactions. Your agent will report the order IDs, payment statuses, and line-item details, helping you monitor high-level multi-vendor checkout activity.
+
+
 ## Installation & Usage
 
-To install and use the **Mirakl (Enterprise Marketplace Platform)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mirakl-enterprise-marketplace-platform](https://vinkius.com/mcp/mirakl-enterprise-marketplace-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mirakl (Enterprise Marketplace Platform)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mirakl-enterprise-marketplace-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mirakl (Enterprise Marketplace Platform)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mirakl-enterprise-marketplace-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

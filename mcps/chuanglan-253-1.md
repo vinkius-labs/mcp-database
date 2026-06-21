@@ -1,7 +1,6 @@
 # Chuanglan 253 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chuanglan-253-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chuanglan-253-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chuanglan-253-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chuanglan-253-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,52 @@ Here are some examples of how you can interact with the **Chuanglan 253** MCP se
 > 📬 Message ID 162575412960104448 status: DELIVRD (Delivered successfully). Delivered at 2024-01-15 14:32:07. The verification code reached the recipient's device.
 
 
+## ❓ FAQ
+
+**Q: How do I format phone numbers for sending SMS?**
+Phone numbers must include the country code without the 00 prefix. For example: China uses 86 (e.g., 8615800000000), Brazil uses 55 (e.g., 5511999999999), US uses 1 (e.g., 12025551234). The number should be 5-20 digits total. For Chinese domestic SMS, the message must start with a registered signature like [YourBrand].
+
+**Q: What's the difference between send_sms and send_international_sms tools?**
+The `send_sms` tool uses the standard SMS gateway (smssh.253.com) optimized for Chinese domestic messages and requires pre-registered templates and signatures. The `send_international_sms` tool uses the international gateway (intapi.253.com) for global delivery outside China, which supports SenderId and doesn't require Chinese-style signatures. International SMS permissions must be separately enabled in your account.
+
+**Q: How does the MD5 signature authentication work?**
+The Chuanglan API uses MD5 signature authentication for security. Your password is NEVER sent in the request body. Instead, it's combined with the request parameters and timestamp (nonce), then hashed with MD5 to generate a `sign` header. The server validates this signature to ensure request integrity. The framework handles all signature generation automatically — you only need to provide your account and password.
+
+
 ## Installation & Usage
 
-To install and use the **Chuanglan 253** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chuanglan-253-1](https://vinkius.com/mcp/chuanglan-253-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chuanglan 253** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chuanglan-253-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chuanglan 253** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chuanglan-253-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

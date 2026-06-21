@@ -1,7 +1,6 @@
 # Refersion MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/refersion)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/refersion-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/refersion-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/refersion)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Refersion** MCP server
 > You currently have 2 webhooks configured: one for 'New Affiliate' events pointing to your production server and another for 'New Conversion' events.
 
 
+## ❓ FAQ
+
+**Q: Can I register a new affiliate directly through the AI?**
+Yes! Use the `create_affiliate` tool by providing the first name, last name, and email address. The agent will register them in your Refersion account immediately.
+
+**Q: How do I check the details of a specific conversion?**
+Simply provide the conversion ID to the `get_conversion` tool. The agent will return the amount, currency, and the associated affiliate information.
+
+**Q: Is it possible to manage webhooks using this server?**
+Yes, you can use `list_webhooks` to see your current configuration and `create_webhook` to register new endpoints for real-time notifications.
+
+
 ## Installation & Usage
 
-To install and use the **Refersion** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/refersion](https://vinkius.com/mcp/refersion)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Refersion** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `refersion` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Refersion** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "refersion": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

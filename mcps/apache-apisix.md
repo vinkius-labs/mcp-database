@@ -1,7 +1,6 @@
 # Apache APISIX MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apache-apisix)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apache-apisix-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apache-apisix-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apache-apisix)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -114,12 +113,52 @@ Here are some examples of how you can interact with the **Apache APISIX** MCP se
 > I found 2 consumers: 'mobile-app-client' and 'internal-dev-team'. Both are active and linked to their respective authentication plugins.
 
 
+## ❓ FAQ
+
+**Q: Can I update a route's configuration directly through the AI?**
+Yes. Use the `put_route` tool by providing the Route ID and the new configuration JSON. The agent will interface with the APISIX Admin API to apply the changes immediately.
+
+**Q: How do I list all the backend upstreams configured in my gateway?**
+Simply ask the agent to 'list upstreams'. It will trigger the `list_upstreams` tool and return a detailed list of all virtual hosts and load balancer nodes.
+
+**Q: Is it possible to delete a service that is no longer needed?**
+Yes, you can use the `delete_service` tool. Provide the specific Service ID, and the agent will remove the resource from your APISIX configuration.
+
+
 ## Installation & Usage
 
-To install and use the **Apache APISIX** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/apache-apisix](https://vinkius.com/mcp/apache-apisix)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Apache APISIX** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `apache-apisix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Apache APISIX** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "apache-apisix": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Flow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Flow** MCP server usin
 > Comment added! Your feedback has been successfully posted to task 'task_123'. The team will see your update in the task discussion timeline.
 
 
+## ❓ FAQ
+
+**Q: How do I find the Workspace ID for my Flow account?**
+You can use the 'list_workspaces' tool. The agent will retrieve all workspaces you have access to and return their names and unique IDs, which you can then use for other operations.
+
+**Q: Can I mark a task as completed using the agent?**
+Yes! Use the 'update_task' tool, provide the Task ID, and set the 'status' parameter to 'completed'. The task will be immediately updated in Flow.
+
+**Q: How do I see the discussion history for a task?**
+Use the 'list_task_comments' tool and provide the Task ID. The agent will retrieve all messages and replies associated with that task, allowing you to catch up on the discussion.
+
+
 ## Installation & Usage
 
-To install and use the **Flow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flow](https://vinkius.com/mcp/flow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Flow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Flow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

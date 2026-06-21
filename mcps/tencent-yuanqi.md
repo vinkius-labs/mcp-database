@@ -1,7 +1,6 @@
 # Tencent Yuanqi MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-yuanqi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tencent-yuanqi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tencent-yuanqi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-yuanqi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Tencent Yuanqi** MCP s
 > Fetching your assistant list... I found 2 assistants: 1. ResearchBot (ID: asst_1), 2. CodeHelper (ID: asst_2). Which one would you like to interact with?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details of an assistant just by providing its ID?**
+Yes! Use the `get_assistant_info` tool with the Assistant ID. Your agent will respond with complete metadata, configuration, and capabilities connected to that specific agent in seconds.
+
+**Q: How do I check the remaining token quota for my account?**
+Simply ask the agent to run the `get_usage` action. It will retrieve the current token consumption statistics and the remaining quota provided by the Yuanqi platform.
+
+**Q: Can I upload multiple files for my assistant's knowledge base?**
+Yes! Use the `upload_file` tool for each document you want to add. After uploading, use the `list_files` tool to verify they are processed and available for RAG operations.
+
+
 ## Installation & Usage
 
-To install and use the **Tencent Yuanqi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tencent-yuanqi](https://vinkius.com/mcp/tencent-yuanqi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tencent Yuanqi** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tencent-yuanqi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tencent Yuanqi** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tencent-yuanqi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

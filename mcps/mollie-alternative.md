@@ -1,7 +1,6 @@
 # Mollie MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mollie-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mollie-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mollie-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mollie-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Mollie** MCP server us
 > Enabled methods: 6. iDEAL ✅, Credit Card ✅, Bancontact ✅, PayPal ✅, SEPA Direct Debit ✅, Klarna ✅. Refunds (last 30 days): 3. 1) €12.00 (tr_abc, Refunded ✅). 2) €45.00 (tr_def, Processing). 3) €8.50 (tr_ghi, Refunded ✅).
 
 
+## ❓ FAQ
+
+**Q: Can I create payments and track their status?**
+Yes. Create payment links with amount, description, and redirect URL, then track status (open, paid, failed, expired).
+
+**Q: How does Mollie authentication work?**
+Mollie uses Bearer authentication with your API Key against `api.mollie.com/v2`.
+
+**Q: Which European payment methods are supported?**
+All methods enabled in your Mollie profile are accessible: iDEAL, Bancontact, SEPA, credit cards, PayPal, Klarna, and more.
+
+
 ## Installation & Usage
 
-To install and use the **Mollie** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mollie-alternative](https://vinkius.com/mcp/mollie-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mollie** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mollie-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mollie** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mollie-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

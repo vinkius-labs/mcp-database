@@ -1,7 +1,6 @@
 # iNaturalist MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inaturalist)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/inaturalist-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/inaturalist-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inaturalist)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **iNaturalist** MCP serv
 > Red Fox (Vulpes vulpes) — Species, Kingdom: Animalia, Phylum: Chordata, Class: Mammalia, Order: Carnivora, Family: Canidae. 200K+ observations worldwide. Introduced and native populations across North America, Europe, Asia and Australia.
 
 
+## ❓ FAQ
+
+**Q: Do I need an iNaturalist account?**
+No! All public endpoints work without authentication. Just start searching. For write operations (creating observations, identifications), you'd need OAuth2 authentication.
+
+**Q: What kind of species data is available?**
+iNaturalist has 150M+ observations of plants, animals, fungi, insects and more. Each observation includes species ID, photos, location, date, observer info and community identifications.
+
+**Q: Can I search for species in my area?**
+Yes! Use search_observations with place_id, or lat/lng/radius parameters to filter by location. You can also use get_species_counts with place_id to see which species are most commonly observed in an area.
+
+
 ## Installation & Usage
 
-To install and use the **iNaturalist** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/inaturalist](https://vinkius.com/mcp/inaturalist)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **iNaturalist** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `inaturalist` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **iNaturalist** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "inaturalist": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

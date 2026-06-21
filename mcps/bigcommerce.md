@@ -1,7 +1,6 @@
 # BigCommerce MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bigcommerce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bigcommerce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bigcommerce-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bigcommerce)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **BigCommerce** MCP serv
 > Auditing active logic constraints. Pulled explicit coupon data revealing 'HOLIDAY20' discounting rigidly 20% strictly bounded excluding digital categories and retaining an expiration cap naturally.
 
 
+## ❓ FAQ
+
+**Q: Can my agent see exactly what items are inside a specific order?**
+Yes. While `get_order` yields the financial macro parameters, executing `get_order_products` descends specifically into the transaction to parse independent line items, variants, and precise inventory counts attached directly.
+
+**Q: Are promotional coupons and discounts strictly observable?**
+Absolutely. You can request `list_coupons` to explicitly audit exact active promo codes mapping boundaries like expiration constraints implicitly inside the logic.
+
+**Q: Can my AI automatically complete refunds or modify orders?**
+No. To ensure absolute data governance regarding financial boundaries, endpoints are firmly scoped to retrieving live operational states recursively and reading inventory without risking active payment mutation.
+
+
 ## Installation & Usage
 
-To install and use the **BigCommerce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bigcommerce](https://vinkius.com/mcp/bigcommerce)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BigCommerce** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bigcommerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BigCommerce** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bigcommerce": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

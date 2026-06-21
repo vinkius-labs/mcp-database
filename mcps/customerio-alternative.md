@@ -1,7 +1,6 @@
 # Customer.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/customerio-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/customerio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/customerio-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/customerio-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Customer.io** MCP serv
 > Message dispatched! I've successfully triggered the transactional email 'trans_123' for Jane Doe. The delivery is now being tracked in your performance logs.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Customer.io App API Key?**
+Log in to Customer.io, navigate to **Settings** > **Account Settings** > **API Keys**, and select the **App API Keys** tab to generate a new token.
+
+**Q: Does it support EU regional accounts?**
+Yes! You can specify your region ('us' or 'eu') via the `CUSTOMER_IO_REGION` credential to ensure the agent connects to the correct data center.
+
+**Q: Can I trigger a broadcast via AI?**
+Yes! Use the `dispatch_broadcast` tool with a specific broadcast ID. You can optionally provide JSON parameters for Liquid data injection.
+
+
 ## Installation & Usage
 
-To install and use the **Customer.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/customerio-alternative](https://vinkius.com/mcp/customerio-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Customer.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `customerio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Customer.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "customerio-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

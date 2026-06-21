@@ -1,7 +1,6 @@
 # Geometry Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geometry-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/geometry-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/geometry-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geometry-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -59,12 +58,52 @@ Here are some examples of how you can interact with the **Geometry Calculator** 
 > Using the calculate_distance tool: The exact Euclidean distance is 13.
 
 
+## ❓ FAQ
+
+**Q: Does it support 3D spatial distances?**
+Yes! The `calculate_distance` tool supports both 2D (x,y) and 3D (x,y,z) coordinates, calculating the exact Euclidean distance between any two points.
+
+**Q: Why use this instead of an LLM prompt?**
+LLMs predict text; they do not natively compute math. When calculating volumes (like Pi * r^2 * h), LLMs often generate subtly incorrect approximations. This MCP engine guarantees 100% architectural precision.
+
+**Q: Does this require internet access?**
+No. The entire engine runs strictly local in your local environment, ensuring that proprietary architectural layouts or sensitive geospatial coordinates never leave your machine.
+
+
 ## Installation & Usage
 
-To install and use the **Geometry Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/geometry-calculator](https://vinkius.com/mcp/geometry-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Geometry Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `geometry-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Geometry Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "geometry-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

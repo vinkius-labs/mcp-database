@@ -1,7 +1,6 @@
 # Settlement Value Estimator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/settlement-value-estimator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/settlement-value-estimator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/settlement-value-estimator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/settlement-value-estimator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Settlement Value Estim
 > The analysis generated scenarios for 60%, 70%, and 80% win probabilities, showing how the ZOPA expands or contracts as your legal outlook changes.
 
 
+## ❓ FAQ
+
+**Q: What is the purpose of `calculate_emv`?**
+The `calculate_emv` tool calculates the Expected Monetary Value (EMV) by weighing the probability of a favorable verdict against the certain costs of litigation.
+
+**Q: How does the tool determine BATNA and ZOPA?**
+Using `derive_negotiation_surfaces`, the server applies a discount rate to future values, establishing the Best Alternative to a Negotiated Agreement (BATNA) and the Zone of Possible Agreement (ZOPA).
+
+**Q: Can I perform scenario analysis?**
+Yes, the `perform_risk_sensitivity_analysis` tool allows you to simulate how changes in your estimated probability of victory affect your negotiation boundaries.
+
+
 ## Installation & Usage
 
-To install and use the **Settlement Value Estimator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/settlement-value-estimator](https://vinkius.com/mcp/settlement-value-estimator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Settlement Value Estimator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `settlement-value-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Settlement Value Estimator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "settlement-value-estimator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

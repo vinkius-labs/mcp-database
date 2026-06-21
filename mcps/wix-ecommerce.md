@@ -1,7 +1,6 @@
 # Wix eCommerce MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wix-ecommerce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wix-ecommerce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wix-ecommerce-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wix-ecommerce)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Wix eCommerce** MCP se
 > Success! I've created a fulfillment record for order #1005. The order status has been updated to 'Fulfilled' and the tracking number TRACK12345 has been added. The customer will be notified.
 
 
+## ❓ FAQ
+
+**Q: Can I check which products are running low on stock via chat?**
+Yes. The `query_stock_inventory` tool allows your AI agent to check real-time stock quantities for specific product IDs, helping you identify items that need restocking without manual auditing.
+
+**Q: How do I mark an order as shipped and add a tracking number?**
+You can use the `create_order_fulfillment` tool. Simply provide the order ID and the tracking number, and your agent will update the Wix order status and record the shipment details instantly.
+
+**Q: Can I see details for abandoned carts to help with recovery?**
+Absolutely. The `list_abandoned_carts` tool retrieves a list of recent checkout sessions that weren't completed, showing you which products were left behind so you can plan recovery strategies.
+
+
 ## Installation & Usage
 
-To install and use the **Wix eCommerce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wix-ecommerce](https://vinkius.com/mcp/wix-ecommerce)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wix eCommerce** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wix-ecommerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wix eCommerce** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wix-ecommerce": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # SEC EDGAR MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sec-edgar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sec-edgar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **SEC EDGAR** MCP server
 > Filtering Tesla submissions... I've identified 5 '8-K' (current report) filings for Tesla so far this year. These usually cover major corporate events. Would you like to see the items disclosed in the most recent one?
 
 
+## ❓ FAQ
+
+**Q: How do I find the CIK for a company like Apple?**
+You can search for a company's CIK on the official SEC website or ask your agent to find it. For Apple, the CIK is '0000320193'. Remember to use the leading zeros if necessary.
+
+**Q: Can I see the latest 10-K filing for a specific entity?**
+Yes! Use the `get_submissions` tool with the company's CIK. The response will list the most recent filings, and you can identify the 10-K report among them.
+
+**Q: What is XBRL data?**
+XBRL (eXtensible Business Reporting Language) is a standardized format for business reporting. It allows the SEC and analysts to extract specific financial facts (like Net Income) from filings programmatically.
+
+
 ## Installation & Usage
 
-To install and use the **SEC EDGAR** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sec-edgar](https://vinkius.com/mcp/sec-edgar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SEC EDGAR** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sec-edgar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SEC EDGAR** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sec-edgar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

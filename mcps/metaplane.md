@@ -1,7 +1,6 @@
 # Metaplane MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/metaplane)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/metaplane-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/metaplane-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/metaplane)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Metaplane** MCP server
 > Triggering run... Monitor 'mon_12345' (Postgres Volume) has been started and is currently processing.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Metaplane API Key?**
+Log in to Metaplane, go to your Account Settings, and you can generate or copy your API Key from the API section.
+
+**Q: Can I trigger a monitor run manually?**
+Yes! Use the `trigger_monitor_run` tool and provide the monitor ID to start a data quality check immediately.
+
+**Q: Is my data observability data secure?**
+Absolutely. Your token is encrypted at rest and injected securely at runtime.
+
+
 ## Installation & Usage
 
-To install and use the **Metaplane** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/metaplane](https://vinkius.com/mcp/metaplane)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Metaplane** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `metaplane` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Metaplane** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "metaplane": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

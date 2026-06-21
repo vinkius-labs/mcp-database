@@ -1,7 +1,6 @@
 # BuiltWith Tech Lookup MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/builtwith-tech-lookup)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/builtwith-tech-lookup-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/builtwith-tech-lookup-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/builtwith-tech-lookup)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **BuiltWith Tech Lookup*
 > I've analyzed the Tesla domain. They are using several marketing and data tools, including Google Tag Manager and custom internal systems. I don't see any standard third-party marketing automation platforms like Marketo or Pardot currently active.
 
 
+## ❓ FAQ
+
+**Q: Can I detect if a site uses Shopify?**
+Yes! Use the `lookup_domain_tech` tool. The response will include any detected eCommerce platforms, including Shopify, Magento, or WooCommerce.
+
+**Q: What kind of technologies can BuiltWith identify?**
+BuiltWith identifies thousands of technologies including CMS, Analytics, JavaScript Libraries, Advertising, Widgets, Hosting, and Email Services.
+
+**Q: Is there a limit to how many sites I can lookup?**
+The usage depends on your specific BuiltWith API plan. Each call to `lookup_domain_tech` consumes one API credit from your account.
+
+
 ## Installation & Usage
 
-To install and use the **BuiltWith Tech Lookup** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/builtwith-tech-lookup](https://vinkius.com/mcp/builtwith-tech-lookup)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BuiltWith Tech Lookup** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `builtwith-tech-lookup` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BuiltWith Tech Lookup** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "builtwith-tech-lookup": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

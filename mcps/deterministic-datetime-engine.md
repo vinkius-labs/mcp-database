@@ -1,7 +1,6 @@
 # Deterministic Datetime Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-datetime-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-datetime-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-datetime-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-datetime-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -45,12 +44,52 @@ Here are some examples of how you can interact with the **Deterministic Datetime
 > Using the calculate_date_difference tool: Exactly 1568 days (or 4 years and 3 months) have passed.
 
 
+## ❓ FAQ
+
+**Q: Why use an MCP for adding days to a date?**
+AI models predict tokens, they don't "compute" calendars. When crossing months (e.g., February 28th to March 1st) or calculating Business Days, LLMs hallucinate dates frequently. This MCP forces exact algorithmic execution.
+
+**Q: Are public holidays supported?**
+Currently, `add_business_days` only skips weekends (Saturdays and Sundays). True holiday calculation requires country-specific data which violates the zero-dependency nature of this core utility.
+
+**Q: Is this tool secure and local?**
+Yes. It executes 100% locally using standard Date parsing built into V8. No cloud dependencies or API calls are used.
+
+
 ## Installation & Usage
 
-To install and use the **Deterministic Datetime Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deterministic-datetime-engine](https://vinkius.com/mcp/deterministic-datetime-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Deterministic Datetime Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deterministic-datetime-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Deterministic Datetime Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deterministic-datetime-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

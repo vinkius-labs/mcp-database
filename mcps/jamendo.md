@@ -1,7 +1,6 @@
 # Jamendo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jamendo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jamendo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jamendo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jamendo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **Jamendo** MCP server u
 > Analyzing track 12345... I've found 5 similar tracks that match its style and tempo, including 'Midnight Sun' and 'Ocean Breeze'. Shall I list their details?
 
 
+## ❓ FAQ
+
+**Q: Can I search for music based on specific moods or technical attributes like speed?**
+Yes! Use the `search_tracks` tool with parameters like `tags` for mood and `speed` (high, medium, low) to filter the catalog exactly how you need.
+
+**Q: How do I find artists from a specific city or country?**
+You can use the `get_artist_locations` tool. Simply provide the `location_country` (code) or `location_city` to see a list of artists from that area.
+
+**Q: Is it possible to get recommendations based on a track I like?**
+Absolutely. Use the `get_similar_tracks` tool with the ID of the track you like, and the agent will return a list of musically similar tracks from the Jamendo library.
+
+
 ## Installation & Usage
 
-To install and use the **Jamendo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jamendo](https://vinkius.com/mcp/jamendo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Jamendo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jamendo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Jamendo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jamendo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Blackbaud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blackbaud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blackbaud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blackbaud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blackbaud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Blackbaud** MCP server
 > I've fetched the academic sections. There are currently 12 active sections, including 'Advanced Mathematics - Section A' and 'Intro to Biology'. Do you need details on a specific one?
 
 
+## ❓ FAQ
+
+**Q: How can I find the specific details of a donor using their ID?**
+You can use the `get_constituent` tool. Simply provide the Constituent ID, and the agent will retrieve their full record, including names and types.
+
+**Q: Is it possible to record a new donation directly through the AI?**
+Yes! Use the `create_gift` tool by providing the constituent ID, the amount, and the date. The agent will record the donation in Blackbaud for you.
+
+**Q: Can I see a list of students or faculty members in the system?**
+Certainly. The `list_school_users` tool retrieves a list of users within the Blackbaud education management system, including students and faculty.
+
+
 ## Installation & Usage
 
-To install and use the **Blackbaud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blackbaud](https://vinkius.com/mcp/blackbaud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Blackbaud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blackbaud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Blackbaud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blackbaud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

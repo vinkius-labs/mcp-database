@@ -1,7 +1,6 @@
 # Markdown Utilities Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/markdown-utilities-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/markdown-utilities-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/markdown-utilities-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/markdown-utilities-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -55,12 +54,52 @@ Here are some examples of how you can interact with the **Markdown Utilities Eng
 | 2 | Jane | User |
 
 
+## ❓ FAQ
+
+**Q: Why use an MCP for Markdown tables?**
+When generating large Markdown tables, AI models commonly drop rows to save tokens or accidentally break the table structure by forgetting column separators. This MCP guarantees an absolutely perfect conversion from JSON.
+
+**Q: How does the TOC generator calculate URL slugs?**
+It follows standard GitHub Flavored Markdown rules. It parses every Header (e.g. `### My Title`), strips special characters, replaces spaces with hyphens, and outputs `- [My Title](#my-title)` with accurate indentation.
+
+**Q: Does this tool send my internal documents to the cloud?**
+No. The `markdown-utilities` engine executes completely locally using V8. Your proprietary documentation data is processed safely and privately.
+
+
 ## Installation & Usage
 
-To install and use the **Markdown Utilities Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/markdown-utilities-engine](https://vinkius.com/mcp/markdown-utilities-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Markdown Utilities Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `markdown-utilities-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Markdown Utilities Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "markdown-utilities-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

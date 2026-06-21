@@ -1,7 +1,6 @@
 # SleekFlow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sleekflow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sleekflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sleekflow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sleekflow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Would you like me to draft responses for the refund requests first?
 - Status: delivered ✓
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically reply to an agitated customer on WhatsApp?**
+Yes. If you point your AI to an active conversation ID, the agent can analyze the raw message history to gauge the emotion. It will draft a polite, perfectly-toned de-escalation message, and if you approve it, it'll trigger the `send_message` tool pointing directly to the customer's WhatsApp payload.
+
+**Q: Can I bulk analyze all incoming conversations over the weekend?**
+Absolutely. You can request your agent to invoke the `list_conversations` command. Your agent can read the active, unassigned threads, categorize them by user intent (e.g., 'refund query', 'feature request'), and provide you a summary dashboard right inside your IDE or markdown interface.
+
+**Q: How does the AI know if a customer has an automation flow attached?**
+Your agent can call `list_automation_flows` as well as query the specific `get_contact_details` tool. This cross-references whether the phone number currently triggers out of an existing flow ID, preventing your AI from interrupting an active bot onboarding session accidentally.
+
+
 ## Installation & Usage
 
-To install and use the **SleekFlow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sleekflow](https://vinkius.com/mcp/sleekflow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SleekFlow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sleekflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SleekFlow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sleekflow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

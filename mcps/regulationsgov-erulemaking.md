@@ -1,7 +1,6 @@
 # Regulations.gov (eRulemaking) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/regulationsgov-erulemaking)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/regulationsgov-erulemaking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/regulationsgov-erulemaking-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/regulationsgov-erulemaking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Regulations.gov (eRule
 > Accessing docket CMS-2024-0005... This docket is managed by the Centers for Medicare & Medicaid Services and contains 3 supporting documents and 1 final rule. The last modification was on 2024-02-15.
 
 
+## ❓ FAQ
+
+**Q: How can I filter documents by a specific government agency?**
+Use the `search_documents` tool and provide the `agencyId` parameter (e.g., 'EPA', 'FAA', or 'CMS'). This will restrict the results to materials published only by that specific agency.
+
+**Q: Is it possible to see what the public is saying about a specific rule?**
+Yes! Use the `search_comments` tool with the `commentOnId` parameter set to the unique Document ID. You can then use `get_comment` with a specific Comment ID to read the full text of any submission.
+
+**Q: How do I get the complete history of a specific rulemaking folder?**
+Use the `get_docket` tool with the specific Docket ID. This retrieves the primary metadata for the docket, while `search_documents` with the same docket ID can list all associated rules and supporting materials.
+
+
 ## Installation & Usage
 
-To install and use the **Regulations.gov (eRulemaking)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/regulationsgov-erulemaking](https://vinkius.com/mcp/regulationsgov-erulemaking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Regulations.gov (eRulemaking)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `regulationsgov-erulemaking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Regulations.gov (eRulemaking)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "regulationsgov-erulemaking": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

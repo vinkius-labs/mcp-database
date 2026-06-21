@@ -1,7 +1,6 @@
 # Actionstep MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/actionstep)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/actionstep-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/actionstep-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/actionstep)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Actionstep** MCP serve
 > You have 3 tasks due today: 'Review draft contract', 'Client call at 2 PM', and 'File court documents'.
 
 
+## ❓ FAQ
+
+**Q: Can I list all my active legal matters using my AI agent?**
+Yes! Use the `list_matters` tool to retrieve a comprehensive list of all legal matters registered in your Actionstep system.
+
+**Q: How do I check details for a specific matter?**
+Simply provide the Matter ID to the `get_matter_details` tool. Your agent will fetch the full metadata, status, and assigned team.
+
+**Q: Does it support OAuth 2.0 authentication?**
+Yes, it uses OAuth 2.0. You'll need to generate a Client ID and Client Secret in your developer portal to create an access token.
+
+
 ## Installation & Usage
 
-To install and use the **Actionstep** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/actionstep](https://vinkius.com/mcp/actionstep)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Actionstep** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `actionstep` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Actionstep** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "actionstep": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

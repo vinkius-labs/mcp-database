@@ -1,7 +1,6 @@
 # arXiv MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arxiv-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arxiv-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arxiv-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arxiv-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **arXiv** MCP server usi
 > I've queried the OAI-PMH interface. arXiv supports several metadata formats including 'oai_dc', 'arXiv', and 'arXivRaw'. Which format would you like to use for harvesting records?
 
 
+## ❓ FAQ
+
+**Q: How can I search for papers by a specific author?**
+Use the `search_articles` tool and include the author prefix in the `search_query` parameter, for example: `au:Einstein`.
+
+**Q: Can I get the latest daily updates for a specific category like AI?**
+Yes! Use the `get_rss_feed` or `get_atom_feed` tools with the category code (e.g., `cs.AI` for Artificial Intelligence).
+
+**Q: Is it possible to fetch metadata for a specific list of arXiv IDs?**
+Absolutely. Use the `search_articles` tool and provide the IDs as a comma-separated string in the `id_list` parameter.
+
+
 ## Installation & Usage
 
-To install and use the **arXiv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/arxiv-alternative](https://vinkius.com/mcp/arxiv-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **arXiv** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `arxiv-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **arXiv** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "arxiv-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

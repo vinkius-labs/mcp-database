@@ -1,7 +1,6 @@
 # Aristotle Logic Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aristotle-logic-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aristotle-logic-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aristotle-logic-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aristotle-logic-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Aristotle Logic Prover
 > CATEGORY_ERROR — Definition passes partially ('automates tasks' is a start), but the category classification fails. 'Does everything — routing, notifications, reporting, scheduling, approvals' lists 5 properties as essential. Remove notifications — is it still a workflow engine? Yes. Remove reporting — still a workflow engine? Yes. Those are ACCIDENTAL properties. The ESSENTIAL property is task-state-transition management. Additionally, the syllogism is invalid: 'Good organizations need automation' is a vague major premise. What IS 'good'? What IS 'automation'? The conclusion 'this proves we need' does not follow necessarily — it follows ONLY if ALL automation is beneficial in ALL contexts, which is false.
 
 
+## ❓ FAQ
+
+**Q: How is this different from the Archimedes First Principles Prover?**
+Archimedes forces DECOMPOSITION — break the problem into irreducible components. Aristotle forces FORMAL LOGIC — define terms precisely, prove conclusions through valid syllogisms, identify purpose through four causes, and examine counterarguments dialectically. Archimedes asks 'what are the components?' Aristotle asks 'is the argument VALID?'
+
+**Q: What are Aristotle's four causes?**
+Material (what is it made of?), Formal (what is its structure?), Efficient (what process made it?), Final (what is it FOR — the telos). Most people describe only the efficient cause — the mechanism. Aristotle demands the final cause first: why does this thing EXIST? What is its purpose?
+
+**Q: Can I use this for product design, not just philosophical arguments?**
+Yes. Every product decision involves definition (what IS this product — category and differentiator), categorization (which features are essential vs. nice-to-have), logical proof (does the conclusion follow from the premises), purpose (what is this product FOR — not what it does), and dialectic (what is the best argument against building this). Aristotle is not philosophy — it is the operating system of clear thinking.
+
+
 ## Installation & Usage
 
-To install and use the **Aristotle Logic Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aristotle-logic-prover](https://vinkius.com/mcp/aristotle-logic-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aristotle Logic Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aristotle-logic-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aristotle Logic Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aristotle-logic-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

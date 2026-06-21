@@ -1,7 +1,6 @@
 # Nicereply MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nicereply)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nicereply-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nicereply-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nicereply)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Nicereply** MCP server
 > Retrieving surveys... You have 3 active surveys: 'Post-Ticket CSAT' (ID: srv_123), 'Product Feedback NPS' (ID: srv_456), and 'Onboarding CES'. Which one would you like more information about?
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Nicereply API Key?**
+Log in to Nicereply, go to Settings > API and Integrations, and you will find your 'Private API Key' there.
+
+**Q: Does this support NPS surveys?**
+Yes! Nicereply supports CSAT, CES, and NPS. You can list all your surveys using the `list_surveys` tool and get stats for any of them.
+
+**Q: Can I see feedback for a specific support agent?**
+You can use the `list_users` tool to find the Agent ID and then filter responses or view individual ratings recorded in the platform.
+
+
 ## Installation & Usage
 
-To install and use the **Nicereply** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nicereply](https://vinkius.com/mcp/nicereply)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nicereply** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nicereply` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nicereply** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nicereply": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

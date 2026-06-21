@@ -1,7 +1,6 @@
 # Epic Online Services & Social Analytics MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epic-online-services-social-analytics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/epic-online-services-social-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/epic-online-services-social-analytics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epic-online-services-social-analytics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Epic Online Services &
 > Inspecting achievement logs... You have unlocked 15 out of 60 achievements. Your rarest unlock is 'The Final Chapter', which only 4.2% of the community possesses. Shall I list the technical requirements for the remaining locked achievements?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically resolve an Epic Display Name into an AccountID?**
+Yes! Use the `search_account_by_display_name` tool. Your agent will query the EOS database and return the unique identifier required for all other social and performance tools.
+
+**Q: How do I check if a player is currently in an active game session?**
+The `get_player_presence` tool retrieves real-time data from the Epic servers, indicating whether the player is 'Online', 'Away', or in a specific 'Game Session' with the associated AppID.
+
+**Q: Does the integration permit tracking achievement rarity across the entire Epic community?**
+Yes. The `get_achievement_definitions` action retrieves the percentage of all Epic players who have unlocked a specific achievement, allowing the agent to quantify the difficulty of technical milestones.
+
+
 ## Installation & Usage
 
-To install and use the **Epic Online Services & Social Analytics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/epic-online-services-social-analytics](https://vinkius.com/mcp/epic-online-services-social-analytics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Epic Online Services & Social Analytics** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `epic-online-services-social-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Epic Online Services & Social Analytics** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "epic-online-services-social-analytics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

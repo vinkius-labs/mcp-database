@@ -1,7 +1,6 @@
 # AQICN MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aqicn)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aqicn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aqicn-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aqicn)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **AQICN** MCP server usi
 > Scanning the area... I've identified 8 active stations within those bounds. AQI levels range from 140 to 165 across the grid. Would you like the specific details for the station with the highest pollution?
 
 
+## ❓ FAQ
+
+**Q: How can I find the AQI for a specific station ID?**
+Use the `get_station_feed` tool and provide the unique station UID. The agent will return real-time AQI, pollutant breakdowns, and local weather conditions for that exact location.
+
+**Q: Can I see all stations in a specific geographic area?**
+Yes! Use the `get_map_bounds` tool by providing the latitude and longitude coordinates for the north, west, south, and east boundaries of your target area.
+
+**Q: Is it possible to search for stations by name?**
+Absolutely. Use the `search_stations` tool with a keyword like 'Bangalore' or 'London' to get a list of all matching monitoring stations and their current AQI levels.
+
+
 ## Installation & Usage
 
-To install and use the **AQICN** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aqicn](https://vinkius.com/mcp/aqicn)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AQICN** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aqicn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AQICN** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aqicn": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

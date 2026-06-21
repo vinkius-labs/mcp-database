@@ -1,7 +1,6 @@
 # NVIDIA Vision MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-vision)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nvidia-vision-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nvidia-vision-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-vision)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,55 @@ Here are some examples of how you can interact with the **NVIDIA Vision** MCP se
 > The image shows a business document dated March 2026. It contains a table with revenue figures totaling $2.4M.
 
 
+## ❓ FAQ
+
+**Q: Can I generate images from text?**
+Yes! Use the `generate_image` tool with Stable Diffusion models. Provide a descriptive prompt and optionally specify size (e.g., '1024x1024').
+
+**Q: Can I ask questions about an image?**
+Yes! Use `visual_question_answering` with a public image URL and your question. The AI will analyze and respond with details about the image.
+
+**Q: Does it work with scanned documents?**
+Yes! Use `document_qa` to extract information from scanned documents, forms, receipts, and other image-based documents.
+
+**Q: What image sizes can I generate?**
+Stable Diffusion models support various sizes including 512x512, 768x768, and 1024x1024. Higher resolutions produce more detailed images but take longer to generate.
+
+
 ## Installation & Usage
 
-To install and use the **NVIDIA Vision** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nvidia-vision](https://vinkius.com/mcp/nvidia-vision)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NVIDIA Vision** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nvidia-vision` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NVIDIA Vision** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nvidia-vision": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

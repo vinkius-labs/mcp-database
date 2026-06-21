@@ -1,7 +1,6 @@
 # Magnolia (Enterprise Headless CMS) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/magnolia-enterprise-headless-cms)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/magnolia-enterprise-headless-cms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/magnolia-enterprise-headless-cms-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/magnolia-enterprise-headless-cms)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Magnolia (Enterprise H
 > Retrieving schema for 'mgnl-news-article'… This template expects 4 main fields: 'title' (Required, Text), 'body' (RichText), 'image' (Link to DAM), and 'author' (Text). I can help you create a new node implementing this structure.
 
 
+## ❓ FAQ
+
+**Q: Can I navigate the JCR tree structure through my agent?**
+Yes. Use the `mg.get_delivery_children` tool by providing an endpoint and parent path. Your agent will retrieve exclusively the hierarchical descendants, allowing you to understand the branch nesting and property distribution accurately.
+
+**Q: How do I audit the required fields for a specific Magnolia component?**
+The `mg.get_template_schema` tool parses the YAML definitions of your components. Your agent will list exactly what fields and scalar parameters the template respects, making it easy to verify your content model without opening the code.
+
+**Q: Can my agent trigger a content publication command?**
+Absolutely. Use the `mg.execute_workspace_command` tool and specify 'activate' or 'publish' as the command name. Your agent will dispatch the JSON payload to Magnolia's command system to transition your content across lifecycle states.
+
+
 ## Installation & Usage
 
-To install and use the **Magnolia (Enterprise Headless CMS)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/magnolia-enterprise-headless-cms](https://vinkius.com/mcp/magnolia-enterprise-headless-cms)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Magnolia (Enterprise Headless CMS)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `magnolia-enterprise-headless-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Magnolia (Enterprise Headless CMS)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "magnolia-enterprise-headless-cms": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

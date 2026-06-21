@@ -1,7 +1,6 @@
 # Bible API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bible-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bible-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bible-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bible-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Bible API** MCP server
 > I've scanned the catalog for Portuguese versions. There are over 10 versions available, including Almeida Corrigida Fiel and Nova Versão Internacional. I can provide the specific bibleIds for each.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Bible API Key?**
+Sign up at the [**API.Bible developer portal**](https://scripture.api.bible/signup), create a new application, and you will find your API Key on the application details page. Copy and paste it below.
+
+**Q: Are there different languages supported?**
+Yes. The API provides access to hundreds of Bible versions in dozens of languages, including English, Spanish, Portuguese, French, and many others.
+
+**Q: Can the agent show verses from specific versions?**
+Yes. Most tools require a `bibleId`. Use the `list_bibles` tool to identify the correct ID for the version you wish to audit.
+
+
 ## Installation & Usage
 
-To install and use the **Bible API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bible-api](https://vinkius.com/mcp/bible-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bible API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bible-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bible API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bible-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

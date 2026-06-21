@@ -1,7 +1,6 @@
 # Beeceptor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/beeceptor)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/beeceptor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/beeceptor-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/beeceptor)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Beeceptor** MCP server
 > Settings updated successfully for 'dev-sandbox'. CORS is now enabled and request logging is active.
 
 
+## ❓ FAQ
+
+**Q: Can I enable CORS for my mock endpoint through the AI?**
+Yes. You can use the `update_settings` tool to toggle CORS, request logging, and other endpoint features instantly.
+
+**Q: How do I see the payloads of recent requests sent to my Beeceptor subdomain?**
+Use the `list_requests` tool. It retrieves a list of recent incoming HTTP calls, allowing your agent to analyze headers and body content.
+
+**Q: Is it possible to simulate a database or state between API calls?**
+Yes, Beeceptor provides a key-value store. You can use `upsert_state` to save data and `get_state_item` to retrieve it in subsequent mock responses.
+
+
 ## Installation & Usage
 
-To install and use the **Beeceptor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/beeceptor](https://vinkius.com/mcp/beeceptor)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Beeceptor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `beeceptor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Beeceptor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "beeceptor": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

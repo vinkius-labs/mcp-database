@@ -1,7 +1,6 @@
 # Datos.gob.es (Catálogo Nacional) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datosgobes-catalogo-nacional)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datosgobes-catalogo-nacional-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datosgobes-catalogo-nacional-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datosgobes-catalogo-nacional)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -104,12 +103,52 @@ Here are some examples of how you can interact with the **Datos.gob.es (Catálog
 > The catalog is organized into several themes such as 'Hacienda', 'Cultura y Ocio', 'Medio Ambiente', and 'Salud'. Which category would you like to explore?
 
 
+## ❓ FAQ
+
+**Q: How can I search for datasets containing a specific word in the title?**
+Use the `search_datasets_by_title` tool. Provide the string you are looking for in the `title` parameter, and the agent will return all matching datasets from the national catalog.
+
+**Q: Is it possible to filter datasets by a specific file format like CSV or JSON?**
+Yes! Use the `list_datasets_by_format` tool and specify the format (e.g., 'csv', 'json', 'xlsx'). This will retrieve only the datasets that offer distributions in that format.
+
+**Q: Can I find datasets belonging to a specific category like 'Health' or 'Environment'?**
+Absolutely. Use the `list_datasets_by_theme` tool with the corresponding theme ID. You can first use `list_themes` to see all available categories in the catalog.
+
+
 ## Installation & Usage
 
-To install and use the **Datos.gob.es (Catálogo Nacional)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/datosgobes-catalogo-nacional](https://vinkius.com/mcp/datosgobes-catalogo-nacional)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Datos.gob.es (Catálogo Nacional)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `datosgobes-catalogo-nacional` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Datos.gob.es (Catálogo Nacional)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "datosgobes-catalogo-nacional": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

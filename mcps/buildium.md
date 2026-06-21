@@ -1,7 +1,6 @@
 # Buildium MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buildium)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/buildium-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/buildium-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buildium)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Buildium** MCP server 
 > Retrieving work orders... There are 5 recent orders, including 'Fix Leaky Faucet' (Status: In Progress) and 'Repaint Unit 4B' (Status: New).
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance for a specific tenant using the agent?**
+Yes! Use the `get_tenant` tool with the Tenant ID. Your agent will fetch the detailed profile, including the current total balance due.
+
+**Q: How do I list all the active maintenance tasks?**
+Simply ask the agent to `list_tasks`. It will retrieve the current maintenance tasks from your Buildium account, including descriptions and status information.
+
+**Q: Does the integration allow creating a new work order?**
+The current toolset focuses on querying and monitoring (Read-Only) for operational efficiency. Creating or updating work orders should be managed via the Buildium administrator portal.
+
+
 ## Installation & Usage
 
-To install and use the **Buildium** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/buildium](https://vinkius.com/mcp/buildium)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Buildium** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `buildium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Buildium** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "buildium": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

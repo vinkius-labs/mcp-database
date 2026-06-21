@@ -1,7 +1,6 @@
 # Observe.AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/observeai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/observeai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/observeai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/observeai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Observe.AI** MCP serve
 > Retrieving AI summaries... I found 5 recent summaries. The overall theme focuses on 'Renewals' and 'Billing Inquiries'. One summary identifies a recurring issue with 'Portal Login'. Would you like the detailed summary for that specific case?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Observe.AI API Key?**
+You can find your API Key in the Observe.AI dashboard under Settings > API Keys. This token is used as a Bearer Token for authentication.
+
+**Q: Can I read full call transcripts through the agent?**
+Yes! Use the `get_interaction_transcript` tool with a specific Interaction ID to retrieve the full text content of the conversation.
+
+**Q: What information is included in the QA evaluations?**
+Evaluations include the QA form used, individual section scores, overall score, and specific feedback or comments provided by the evaluator.
+
+
 ## Installation & Usage
 
-To install and use the **Observe.AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/observeai](https://vinkius.com/mcp/observeai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Observe.AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `observeai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Observe.AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "observeai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

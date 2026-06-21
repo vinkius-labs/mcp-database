@@ -1,7 +1,6 @@
 # Chaindesk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chaindesk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chaindesk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chaindesk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chaindesk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Chaindesk** MCP server
 > Knowledge ingestion triggered! I've added the FAQ URL to datastore ds_123. Chaindesk is now processing the content to update your agents' knowledge base. Need any other sources added?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Chaindesk API Key?**
+Log in to your Chaindesk.ai account, navigate to **Settings** > **API Keys**, and generate a new key for your integration.
+
+**Q: What is a Datastore?**
+A Datastore is a collection of documents and URLs that your AI agent uses as its knowledge base to answer queries accurately.
+
+**Q: Can I maintain conversation context via AI?**
+Yes! Provide a unique `conversationId` to the `query_agent` tool to maintain historical context across multiple turns with your custom bot.
+
+
 ## Installation & Usage
 
-To install and use the **Chaindesk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chaindesk](https://vinkius.com/mcp/chaindesk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chaindesk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chaindesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chaindesk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chaindesk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Porkbun MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/porkbun)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/porkbun-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/porkbun-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/porkbun)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Porkbun** MCP server u
 > Fetching current Porkbun pricing... For .com domains, the registration/renewal price is $10.37/year. For .net domains, it is $11.48/year. Would you like to check availability for a specific name?
 
 
+## ❓ FAQ
+
+**Q: Can I see all DNS records for a domain at once?**
+Yes! Use the `retrieve_dns_records` tool with your domain name. It will return a complete list of all active records including A, CNAME, MX, and TXT entries.
+
+**Q: Is it possible to check if a domain is available for purchase?**
+Absolutely. Use the `check_domain_availability` tool to query any domain name. The agent will tell you if it's available for registration.
+
+**Q: Can I delete a DNS record if I made a mistake?**
+Yes. Use the `delete_dns_record` tool by providing the domain and the specific record ID. This will permanently remove the record from Porkbun's nameservers.
+
+
 ## Installation & Usage
 
-To install and use the **Porkbun** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/porkbun](https://vinkius.com/mcp/porkbun)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Porkbun** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `porkbun` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Porkbun** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "porkbun": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

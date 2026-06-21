@@ -1,7 +1,6 @@
 # Decodo (Smartproxy) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/decodo-smartproxy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/decodo-smartproxy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/decodo-smartproxy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/decodo-smartproxy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ You have a total cap of 100 GB. Current usage reflects 78.4 GB used (78% of your
 You are completely safe for now, with roughly 21.6 GB left this billing cycle.
 
 
+## ❓ FAQ
+
+**Q: Can the AI generate a script with my actual proxy endpoints already inserted?**
+Yes. While prompting inside an IDE like Cursor, you can ask 'Write a Python script using my residential proxy endpoint.' The AI agent will call `list_residential_proxies` in the background, harvest the legit port numbers, and assemble runnable code on the spot.
+
+**Q: Is it safe to pull network architecture metrics inside Claude AI?**
+Absolutely secure. The MCP protocol bridges interactions locally. At no setup phase does Vinkius cloud servers retrieve your Smartproxy metrics directly—the exchange passes via your local agent bridging right into Decodo's endpoint.
+
+**Q: Can it tell me my remaining bandwidth limit?**
+Yes. Ask the bot 'How much target data do I have left?' and it will orchestrate the results of both `get_account_details` (which returns quota details) and `get_traffic_usage` (which exposes used data) to compute the remaining bytes in conversational form.
+
+
 ## Installation & Usage
 
-To install and use the **Decodo (Smartproxy)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/decodo-smartproxy](https://vinkius.com/mcp/decodo-smartproxy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Decodo (Smartproxy)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `decodo-smartproxy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Decodo (Smartproxy)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "decodo-smartproxy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

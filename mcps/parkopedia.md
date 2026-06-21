@@ -1,7 +1,6 @@
 # Parkopedia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/parkopedia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/parkopedia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/parkopedia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/parkopedia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Parkopedia** MCP serve
 > Times Square Garage: 42 spaces available out of 500 (8% full). Current rate: $25/hr.
 
 
+## ❓ FAQ
+
+**Q: Does Parkopedia cover EV charging stations?**
+Yes! The search_ev_charging tool finds EV chargers globally. Use get_ev_charger_details to see connector types (CCS, CHAdeMO, Tesla, etc.) and power output.
+
+**Q: Can I check parking restrictions before parking?**
+Yes! Use get_parking_restrictions with coordinates to see legal limits, time bans, and resident-only rules. Essential for avoiding tickets.
+
+**Q: Is real-time occupancy data available?**
+Where supported by the operator, get_occupancy returns the number of available vs total spaces in real-time. Availability varies by location.
+
+
 ## Installation & Usage
 
-To install and use the **Parkopedia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/parkopedia](https://vinkius.com/mcp/parkopedia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Parkopedia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `parkopedia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Parkopedia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "parkopedia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

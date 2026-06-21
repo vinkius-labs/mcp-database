@@ -1,7 +1,6 @@
 # Degreed MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/degreed)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/degreed-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/degreed-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/degreed)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Degreed** MCP server u
 > In the Engineering team, the top skills identified are 'React.js', 'Node.js', and 'System Architecture'. 80% of members have a 'Proficient' rating in React. Would you like a breakdown of skill gaps for this team?
 
 
+## ❓ FAQ
+
+**Q: How do I get Degreed API credentials?**
+Log in to your Degreed admin account, navigate to the API settings section, and create a new application to retrieve your Client ID and Client Secret for OAuth 2.0 authentication.
+
+**Q: Can the agent assign learning content?**
+This integration currently focuses on discovering content and monitoring progress. Assigning content to specific users is managed via the Degreed dashboard or mobile app.
+
+**Q: Are skill ratings included?**
+Yes, when retrieving user profiles, the agent can provide information on skills associated with the user and their current proficiency levels where available.
+
+
 ## Installation & Usage
 
-To install and use the **Degreed** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/degreed](https://vinkius.com/mcp/degreed)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Degreed** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `degreed` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Degreed** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "degreed": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

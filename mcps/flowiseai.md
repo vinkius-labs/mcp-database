@@ -1,7 +1,6 @@
 # FlowiseAI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flowiseai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flowiseai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flowiseai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flowiseai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **FlowiseAI** MCP server
 > Data ingested! I've successfully pushed the documents to the vector store associated with chatflow 'cf_2'. The new context is now available for RAG-based predictions.
 
 
+## ❓ FAQ
+
+**Q: How do I find my API Key in Flowise?**
+Log in to your Flowise dashboard and click on the **API Keys** tab in the sidebar to generate or copy your unique token.
+
+**Q: Does this support multi-tenant instances?**
+Yes! Ensure you provide the full Instance URL and the API Key corresponding to the specific environment you want to manage.
+
+**Q: Can I push documents to vector stores via AI?**
+Absolutely. Use the `upsert_vector_data` tool by providing the `chatflow_id` and the JSON payload containing your document data.
+
+
 ## Installation & Usage
 
-To install and use the **FlowiseAI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flowiseai](https://vinkius.com/mcp/flowiseai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FlowiseAI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flowiseai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FlowiseAI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flowiseai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

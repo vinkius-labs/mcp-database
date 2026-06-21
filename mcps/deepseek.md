@@ -1,7 +1,6 @@
 # DeepSeek MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepseek)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deepseek-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deepseek-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepseek)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **DeepSeek** MCP server 
 > I've retrieved the available models. You have access to: 'deepseek-chat' (V3) and 'deepseek-reasoner'. Which one would you like to use for your next query?
 
 
+## ❓ FAQ
+
+**Q: How do I find my DeepSeek API Key?**
+Log in to your DeepSeek Platform dashboard, navigate to **API Keys**, and generate or copy your secret token.
+
+**Q: What is the difference between V3 and Reasoner?**
+V3 is a general-purpose model for chat and writing, while Reasoner uses a thinking process for complex math, coding, and logic.
+
+**Q: Is the API compatible with OpenAI SDKs?**
+Yes! DeepSeek provides an OpenAI-compatible endpoint, making it easy to integrate into existing tools and workflows.
+
+
 ## Installation & Usage
 
-To install and use the **DeepSeek** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deepseek](https://vinkius.com/mcp/deepseek)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DeepSeek** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deepseek` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DeepSeek** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deepseek": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

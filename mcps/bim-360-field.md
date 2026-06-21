@@ -1,7 +1,6 @@
 # BIM 360 Field MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bim-360-field)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bim-360-field-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bim-360-field-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bim-360-field)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **BIM 360 Field** MCP se
 > I've retrieved the company directory for Downtown Tower. There are 12 companies involved, including 'Apex Foundations', 'Skyline Glazing', and 'City Electrical'.
 
 
+## ❓ FAQ
+
+**Q: Can I see all open issues for my project?**
+Yes! Use the `list_issues` tool with your Project ID. The agent will retrieve the latest issues recorded on the field.
+
+**Q: How do I list the companies working on my site?**
+Simply ask the agent to `list_companies` and provide the Project ID. It will retrieve the directory of all subcontractors and partners.
+
+**Q: Can I retrieve the status of equipment installation tasks?**
+Yes. Use the `list_tasks` tool with your Project ID to track commissioning and installation activities for all site equipment.
+
+
 ## Installation & Usage
 
-To install and use the **BIM 360 Field** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bim-360-field](https://vinkius.com/mcp/bim-360-field)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BIM 360 Field** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bim-360-field` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BIM 360 Field** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bim-360-field": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

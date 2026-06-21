@@ -1,7 +1,6 @@
 # TheMealDB MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/themealdb-extended)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/themealdb-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/themealdb-extended-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/themealdb-extended)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **TheMealDB** MCP server
 > I found several Canadian dishes, including BeaverTails, Poutine, Nanaimo Bars, and Tourtiere. Which one would you like to explore?
 
 
+## ❓ FAQ
+
+**Q: How do I get the full cooking instructions for a specific meal?**
+Use the `get_meal_by_id` tool with the unique Meal ID. The agent will return the full recipe, including step-by-step instructions and a complete list of ingredients with measurements.
+
+**Q: Can I search for recipes based on what I have in my fridge?**
+Yes! You can use the `filter_by_ingredient` tool to find meals that feature a specific main ingredient. For Premium V2 users, you can even provide a comma-separated list of multiple ingredients.
+
+**Q: What is the difference between the free and premium API access?**
+The free tier (API key '1') allows standard searching and filtering. Premium V2 access enables advanced tools like `get_latest_meals`, `get_random_meals_selection` (10 at once), and multi-ingredient filtering.
+
+
 ## Installation & Usage
 
-To install and use the **TheMealDB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/themealdb-extended](https://vinkius.com/mcp/themealdb-extended)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TheMealDB** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `themealdb-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TheMealDB** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "themealdb-extended": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

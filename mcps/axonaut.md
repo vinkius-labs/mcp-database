@@ -1,7 +1,6 @@
 # Axonaut MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/axonaut)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/axonaut-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/axonaut-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/axonaut)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Axonaut** MCP server u
 > I found 'TechCorp' in your Axonaut database. They are currently listed as an 'Active Client' with 2 associated contacts. Would you like to see the details?
 
 
+## ❓ FAQ
+
+**Q: Can I see a list of unpaid invoices through the agent?**
+Yes. Use the `list_invoices` tool to retrieve all your financial records. Your agent can then filter or summarize which ones are pending payment.
+
+**Q: Does this support creating new tasks in Axonaut?**
+Absolutely. Use the `create_task` tool by providing a title, optional description, and a deadline to instantly add it to your team's workflow.
+
+**Q: Can I check my product catalog via the AI agent?**
+Yes. The `list_products` tool allows your agent to browse your inventory, retrieve descriptions, and audit product availability for quotes or orders.
+
+
 ## Installation & Usage
 
-To install and use the **Axonaut** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/axonaut](https://vinkius.com/mcp/axonaut)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Axonaut** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `axonaut` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Axonaut** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "axonaut": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

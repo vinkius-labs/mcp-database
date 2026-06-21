@@ -1,7 +1,6 @@
 # Glean MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/glean)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/glean-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/glean-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/glean)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Glean** MCP server usi
 > Synthesizing answer... According to the Employee Handbook in Confluence, our business travel policy allows for $50/day in meal reimbursements and requires all flights to be booked via the Corporate Portal at least 2 weeks in advance.
 
 
+## ❓ FAQ
+
+**Q: Can my agent get direct AI answers based on my company's data via Glean?**
+Yes. Use the 'get_answer' tool. It fires Glean's internal RAG mechanisms to retrieve a pure AI-generated response distilled from your indexed company knowledge flawlessly.
+
+**Q: How do I search for experts in my company by their skills via chat?**
+Use the 'search_people' tool. The agent will retrieve information from your corporate active directory, matching user profiles, skills, and names to help you find the right colleague natively.
+
+**Q: Can I index my own custom documents in Glean through the agent?**
+Absolutely. Use the 'index_document' tool. Provide a JSON object defining the ID, Title, and text content. The agent will route the payload into Glean's search logic synchronously.
+
+
 ## Installation & Usage
 
-To install and use the **Glean** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/glean](https://vinkius.com/mcp/glean)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Glean** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `glean` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Glean** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "glean": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

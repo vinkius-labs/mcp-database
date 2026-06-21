@@ -1,7 +1,6 @@
 # Applitools MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/applitools)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/applitools-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/applitools-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/applitools)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Applitools** MCP serve
 > I found 2 baselines associated with 'feature/dark-mode-header'. Baseline ID: bs_4ab (Nav Bar Base) and Baseline ID: bs_5cd (Mobile Hamburger Dark). They appear to have been created 3 days ago. Are these outdated, and would you like me to delete them?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent resolve a test failure on its own?**
+No. The MCP server is designed for pulling state data—it retrieves batches, session diff links, and match levels so you can review them locally. Approving a new baseline or resolving a mismatch still requires human intervention within the Applitools Eyes dashboard to maintain absolute testing safety.
+
+**Q: Can I use the agent to delete old UI snapshots?**
+Yes. If your UI has undergone major structural changes and old baselines are causing false positives, you can authorize the agent to execute the `delete_baseline` tool. Provide the exact baseline ID to instantly discard the legacy screenshot from your workspace.
+
+**Q: How fast can I summarize test errors after my CI/CD action triggers?**
+Almost instantly. Rather than scrolling through dozens of Applitools logs, ask your agent to 'Get batch stats for ID 123'. It will immediately return the aggregation of Passed, Failed, and Unresolved runs, saving you countless minutes of digging.
+
+
 ## Installation & Usage
 
-To install and use the **Applitools** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/applitools](https://vinkius.com/mcp/applitools)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Applitools** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `applitools` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Applitools** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "applitools": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

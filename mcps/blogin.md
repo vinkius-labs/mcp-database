@@ -1,7 +1,6 @@
 # BlogIn MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blogin)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blogin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blogin-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blogin)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **BlogIn** MCP server us
 > Success! The post 'New Benefits Guide' has been created in the 'HR' category (ID: cat_10293). It is now published and visible to your team members in BlogIn.
 
 
+## ❓ FAQ
+
+**Q: Can I see the HTML content of a specific internal post via AI?**
+Yes! Use the `get_post_details` tool and provide the Post ID. Your agent will retrieve the complete metadata and HTML body for that specific blog entry.
+
+**Q: How do I list all the static wiki pages in my account?**
+Run the `list_internal_pages` query. The agent will retrieve a complete list of all static, wiki-style pages currently configured in your BlogIn account.
+
+**Q: Is it possible to create a new internal post via AI?**
+Absolutely. Use the `create_internal_post` action. Provide a title, the content, and an optional category ID to publish a new update instantly to your team.
+
+
 ## Installation & Usage
 
-To install and use the **BlogIn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blogin](https://vinkius.com/mcp/blogin)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BlogIn** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blogin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BlogIn** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blogin": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Pagar.me MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pagarme)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pagarme-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pagarme-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pagarme)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,55 @@ Here are some examples of how you can interact with the **Pagar.me** MCP server 
 > Subscription created successfully! Status: Active. Next billing date: 2026-04-01.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Secret Key?**
+Log in to the Pagar.me dashboard, navigate to **Settings > API Keys** and copy your **Secret Key** (starts with `sk_...`). No complex OAuth apps, no webhooks — just connect and start processing payments.
+
+**Q: Does it support Pix and Boleto?**
+Yes! Generate instant Pix QR Codes or Boletos right in the chat. Your agent handles the entire checkout flow — creating the order, retrieving the payment code, and allowing the customer to pay without ever leaving the conversation.
+
+**Q: Can I manage subscriptions?**
+Yes. Just tell your AI agent to subscribe a new customer. It will register the customer, attach them to your predefined SaaS recurring plan, and confirm the active billing status — all in a single prompt without touching a dashboard.
+
+**Q: Can I manage complete customer profiles and track their transaction histories?**
+Absolutely. View detailed customer records, pull entire order histories, and verify payment statuses instantly — perfect for SaaS founders, customer support teams, and digital agencies handling multiple accounts.
+
+
 ## Installation & Usage
 
-To install and use the **Pagar.me** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pagarme](https://vinkius.com/mcp/pagarme)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pagar.me** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pagarme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pagar.me** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pagarme": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

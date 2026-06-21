@@ -1,7 +1,6 @@
 # Route4Me MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/route4me-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/route4me-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/route4me-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/route4me-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Route4Me** MCP server 
 > Done! Customer record inserted successfully into your Route4Me address book.
 
 
+## ❓ FAQ
+
+**Q: Can the agent trigger a new algorithm calculation?**
+Currently, the agent is restricted to retrieving existing optimization histories and reading paths to ensure API limits are protected. Address book creations are however supported.
+
+**Q: Is the API key secure across requests?**
+Yes. The API key is securely appended to standard HTTPS queries locally during execution time.
+
+**Q: What addresses are retrieved from the book?**
+The tool fetches the most recent addresses but allows passing a dynamic parameter to iterate through larger chunks of your system.
+
+
 ## Installation & Usage
 
-To install and use the **Route4Me** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/route4me-alternative](https://vinkius.com/mcp/route4me-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Route4Me** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `route4me-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Route4Me** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "route4me-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

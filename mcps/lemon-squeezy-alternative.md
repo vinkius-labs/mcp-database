@@ -1,7 +1,6 @@
 # Lemon Squeezy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lemon-squeezy-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lemon-squeezy-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lemon-squeezy-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lemon-squeezy-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Lemon Squeezy** MCP se
 > Top customers by LTV: 1) Acme Corp — $2,376 (Enterprise, 24 months). 2) TechCo — $1,740 (Team, 5 seats, 12 months). 3) StartupXYZ — $1,188 (Enterprise, 12 months). Total customers: 1,890. Discount codes: 3 active. 'LAUNCH20' (20% off, 45 uses). 'ANNUAL30' (30% annual, 12 uses). 'PARTNER50' (50%, partner only, 3 uses).
 
 
+## ❓ FAQ
+
+**Q: Can I track subscriptions and MRR?**
+Yes. Monitor active subscriptions, renewals, cancellations, churn rate, and MRR with growth trends.
+
+**Q: Can I manage products and discount codes?**
+Yes. List products with variants and pricing. Access discount codes, checkout links, and store settings.
+
+**Q: What API does Lemon Squeezy use?**
+Bearer authentication against `api.lemonsqueezy.com/v1`. JSON:API format.
+
+
 ## Installation & Usage
 
-To install and use the **Lemon Squeezy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lemon-squeezy-alternative](https://vinkius.com/mcp/lemon-squeezy-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lemon Squeezy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lemon-squeezy-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lemon Squeezy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lemon-squeezy-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

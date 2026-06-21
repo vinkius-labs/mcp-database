@@ -1,7 +1,6 @@
 # Efí Pay (Gerencianet) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/efi-pay-gerencianet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/efi-pay-gerencianet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/efi-pay-gerencianet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/efi-pay-gerencianet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,55 @@ Here are some examples of how you can interact with the **Efí Pay (Gerencianet)
 > I've pulled the data! You generated 24 Boletos since September 1st, but exactly 6 remain active and unpaid across various clients.
 
 
+## ❓ FAQ
+
+**Q: How do I setup my Base64 Certificate and API credentials?**
+Log into your Efí account, go to **API > Applications**. Create an app to get the Client ID and Secret. Then generate a Production Certificate (`.p12`). Instead of uploading the file to Vinkius, use terminal command `base64 -i your_cert.p12` to convert it into a plaintext string, and paste that robust text directly into the MCP configuration.
+
+**Q: Can I automatically verify if a customer paid a Pix charge just by chatting with my AI?**
+Yes! Provide the agent the exact transaction id (`txid`) of the generated Pix. The agent will query the `efi_get_pix_payment` tool and immediately tell you if the status is active, answered, or expired.
+
+**Q: Does the integration support transferring money out (Cash-out)?**
+Yes. Using the `efi_send_pix` action, you can initiate outbound immediate payments requesting the agent to process a value directly to a receiver Pix key.
+
+**Q: Can I query a history of paid bank slips (Boletos) at the end of the day or month?**
+Certainly. The `efi_list_boletos` and `efi_get_statement` tool allows you to perform large queries parsing begin/end dates to return summaries directly in your terminal.
+
+
 ## Installation & Usage
 
-To install and use the **Efí Pay (Gerencianet)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/efi-pay-gerencianet](https://vinkius.com/mcp/efi-pay-gerencianet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Efí Pay (Gerencianet)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `efi-pay-gerencianet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Efí Pay (Gerencianet)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "efi-pay-gerencianet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

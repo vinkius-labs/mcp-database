@@ -1,7 +1,6 @@
 # Photoroom MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/photoroom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/photoroom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/photoroom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/photoroom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Photoroom** MCP server
 > I've edited the coffee mug image. The original white background was removed and replaced with a high-fidelity luxury wooden table scene. Here is the final studio-quality product shot: https://cdn.photoroom.com/v1/assets/ai-scene-49201.jpg
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically remove the background from an image URL?**
+Yes! Use the `remove_background` tool. Provide the image URL, and your agent will respond with the isolated subject as a high-fidelity data URL instantly.
+
+**Q: How do I find my Photoroom API Key?**
+Log in to your Photoroom account, navigate to the **API Dashboard** (app.photoroom.com/api-dashboard), and you will find your unique secret API key there.
+
+**Q: Is there a free trial for the API?**
+Yes! You can use a 'sandbox' key (starting with `sandbox_`) to test all features for free. Note that sandbox results will include a Photoroom watermark.
+
+
 ## Installation & Usage
 
-To install and use the **Photoroom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/photoroom](https://vinkius.com/mcp/photoroom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Photoroom** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `photoroom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Photoroom** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "photoroom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

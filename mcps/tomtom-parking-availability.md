@@ -1,7 +1,6 @@
 # TomTom Parking Availability MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomtom-parking-availability)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tomtom-parking-availability-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tomtom-parking-availability-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomtom-parking-availability)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **TomTom Parking Availab
 > I've identified the nearest parking facilities via your coordinates! These include several garages within a 0.5-mile radius. I can provide the specific IDs and names for each of these sites to assist in further mobilty audits.
 
 
+## ❓ FAQ
+
+**Q: How do I find my TomTom API Key?**
+Log in to the [**TomTom Developer Portal**](https://developer.tomtom.com/), create an account, and generate a new API Key in your dashboard. Copy and paste it below.
+
+**Q: Does it support real-time availability?**
+Yes. The API provides real-time occupancy data for supported parking facilities where sensor metadata is available.
+
+**Q: Can the agent search by city name?**
+Yes. Use the `search_parking_spots` tool and provide the city name or a general query. Your agent will return matching facilities in that area instantly.
+
+
 ## Installation & Usage
 
-To install and use the **TomTom Parking Availability** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tomtom-parking-availability](https://vinkius.com/mcp/tomtom-parking-availability)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TomTom Parking Availability** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tomtom-parking-availability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TomTom Parking Availability** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tomtom-parking-availability": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

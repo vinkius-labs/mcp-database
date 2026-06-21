@@ -1,7 +1,6 @@
 # Fliki (AI Text-to-Video & Speech API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fliki-ai-text-to-video-speech-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fliki-ai-text-to-video-speech-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fliki-ai-text-to-video-speech-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fliki-ai-text-to-video-speech-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Fliki (AI Text-to-Vide
 > The video generation for 'flk_v8291' is now 'completed'. You can download your video here: [https://fliki.ai/download/v8291].
 
 
+## ❓ FAQ
+
+**Q: How can I see which AI voices are available for my video?**
+Use the `list_voices` tool. It will return a full list of available AI voices along with their supported languages, helping you choose the right one for the `generate_video` action.
+
+**Q: Can I track the progress of a video I just started generating?**
+Yes! After starting a generation, use the `get_video` tool with the unique video ID. It will tell you if the video is 'queued', 'processing', or 'completed'.
+
+**Q: How do I specify the video format, like for Instagram Reels or YouTube?**
+When using `generate_video`, you can provide the `aspectRatio` parameter. Use '9:16' for Reels/TikTok, '16:9' for YouTube, or '1:1' for square posts.
+
+
 ## Installation & Usage
 
-To install and use the **Fliki (AI Text-to-Video & Speech API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fliki-ai-text-to-video-speech-api](https://vinkius.com/mcp/fliki-ai-text-to-video-speech-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fliki (AI Text-to-Video & Speech API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fliki-ai-text-to-video-speech-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fliki (AI Text-to-Video & Speech API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fliki-ai-text-to-video-speech-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

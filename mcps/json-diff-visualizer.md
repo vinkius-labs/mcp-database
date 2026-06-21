@@ -1,7 +1,6 @@
 # JSON Diff Visualizer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/json-diff-visualizer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/json-diff-visualizer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/json-diff-visualizer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/json-diff-visualizer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -59,12 +58,52 @@ Here are some examples of how you can interact with the **JSON Diff Visualizer**
 > Visual diff: 2 resources modified, 1 added, 0 destroyed.
 
 
+## ❓ FAQ
+
+**Q: How is this different from deep-diff-engine?**
+deep-diff-engine returns structured change objects for programmatic processing (CI/CD pipelines, automated alerts). json-diff-visualizer returns human-readable text with +/- markers for visual review (Slack, PR comments, approval workflows). Use both together.
+
+**Q: Does reordering keys show as a change?**
+No. The diff is structural — {a:1,b:2} and {b:2,a:1} show zero differences because the data is semantically identical.
+
+**Q: Can I use the output in Slack or GitHub PR comments?**
+Yes. The output is plain text with +/- markers — paste directly into code blocks in Slack, GitHub, or any markdown-compatible platform.
+
+
 ## Installation & Usage
 
-To install and use the **JSON Diff Visualizer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/json-diff-visualizer](https://vinkius.com/mcp/json-diff-visualizer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **JSON Diff Visualizer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `json-diff-visualizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **JSON Diff Visualizer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "json-diff-visualizer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

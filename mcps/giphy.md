@@ -1,7 +1,6 @@
 # GIPHY MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/giphy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/giphy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/giphy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/giphy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **GIPHY** MCP server usi
 > Perfect match! Found a cute coffee cup with sunrise animation that says 'Good Morning!' URL: https://giphy.com/gifs/good-morning-coffee
 
 
+## ❓ FAQ
+
+**Q: How do I get a GIPHY API Key?**
+Visit [**GIPHY Developers**](https://developers.giphy.com/dashboard/), create a free account, create an app, and copy your API key. Takes less than 2 minutes.
+
+**Q: What's the difference between search and translate?**
+`search_gifs` returns multiple results matching your query. `translate_to_gif` returns a single, most relevant GIF for a word or phrase — like a smart translation.
+
+**Q: Can I filter content by age rating?**
+Yes! All search and trending tools support rating filters: g (general), pg (parental guidance), pg-13, and r (restricted).
+
+
 ## Installation & Usage
 
-To install and use the **GIPHY** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/giphy](https://vinkius.com/mcp/giphy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GIPHY** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `giphy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GIPHY** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "giphy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

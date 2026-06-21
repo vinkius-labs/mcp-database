@@ -1,7 +1,6 @@
 # HeyGen MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heygen-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/heygen-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/heygen-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heygen-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **HeyGen** MCP server us
 > Checking status... Video 'v123456789' is now 100% complete! You can download it here: [download_url]. The video features a professional avatar with high-fidelity synthesis.
 
 
+## ❓ FAQ
+
+**Q: How do I choose the right avatar for my video?**
+Use the `list_available_avatars` tool to browse all options. Your agent will provide the names and unique `avatar_id` for each character, which you can then use in your generation requests.
+
+**Q: Can I generate a video without specifying an avatar or voice?**
+Yes! Use the `generate_from_prompt` tool (Video Agent). Simply describe what you want, and HeyGen will automatically select the best-matching avatar and voice for your content.
+
+**Q: Is it possible to automate personalized videos for multiple customers?**
+Absolutely. Use the `create_from_template` tool by providing a `templateId` and a set of variables. Your AI agent can iterate through your customer list and trigger unique videos for each person.
+
+
 ## Installation & Usage
 
-To install and use the **HeyGen** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/heygen-alternative](https://vinkius.com/mcp/heygen-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HeyGen** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `heygen-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HeyGen** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "heygen-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

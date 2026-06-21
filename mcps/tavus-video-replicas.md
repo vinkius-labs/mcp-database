@@ -1,7 +1,6 @@
 # Tavus Video Replicas MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tavus-video-replicas)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tavus-video-replicas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tavus-video-replicas-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tavus-video-replicas)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,12 +62,49 @@ Here are some examples of how you can interact with the **Tavus Video Replicas**
 > Generation task started! Video ID is 'vid_789'. You can check the status in a few minutes to get the download link.
 
 
+## ❓ FAQ
+
+**Q: How do I create a replica?**
+Replicas currently must be initiated via the Tavus Dashboard or their specific training endpoints which require a source video. This agent allows you to manage and use existing replicas.
+
+**Q: How long does video generation take?**
+Personalized video generation typically takes a few minutes depending on the length of the script. You can use the `get_video_details` tool to check if the status is 'completed'.
+
+
 ## Installation & Usage
 
-To install and use the **Tavus Video Replicas** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tavus-video-replicas](https://vinkius.com/mcp/tavus-video-replicas)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tavus Video Replicas** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tavus-video-replicas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tavus Video Replicas** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tavus-video-replicas": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

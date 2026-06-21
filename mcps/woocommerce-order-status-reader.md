@@ -1,7 +1,6 @@
 # WooCommerce Order Status Reader MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/woocommerce-order-status-reader)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/woocommerce-order-status-reader-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/woocommerce-order-status-reader-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/woocommerce-order-status-reader)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -37,12 +36,46 @@ Here are some examples of how you can interact with the **WooCommerce Order Stat
 > I've checked the status of Order #10452. It is currently **COMPLETED** and was shipped via FedEx. The tracking number is 1Z9999999999999999.
 
 
+## ❓ FAQ
+
+**Q: Can the AI issue refunds with this tool?**
+No. This MCP only calls the `GET` endpoint for orders. It is physically impossible for the AI to alter an order status or issue a refund using this server.
+
+
 ## Installation & Usage
 
-To install and use the **WooCommerce Order Status Reader** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/woocommerce-order-status-reader](https://vinkius.com/mcp/woocommerce-order-status-reader)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WooCommerce Order Status Reader** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `woocommerce-order-status-reader` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WooCommerce Order Status Reader** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "woocommerce-order-status-reader": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

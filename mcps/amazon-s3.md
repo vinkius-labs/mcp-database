@@ -1,7 +1,6 @@
 # Amazon S3 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-s3)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazon-s3-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazon-s3-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-s3)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Amazon S3** MCP server
 > I've retrieved the policy for 'website-images-eu'. The bucket currently has a public read policy attached (`s3:GetObject` allowed for `*`). Are you sure this bucket should be publicly accessible?
 
 
+## ❓ FAQ
+
+**Q: How do I get my AWS Access Key and Secret Key?**
+Log in to the AWS Management Console, navigate to IAM (Identity and Access Management), and create a user with programmatic access. Ensure this user has S3 permissions (e.g., `AmazonS3FullAccess`). You will receive an Access Key ID and a Secret Access Key.
+
+**Q: Can I upload large files using this integration?**
+The `put_object` tool handles standard REST uploads and is best suited for small to medium-sized files or JSON data. For very large files, standard AWS tools utilizing Multipart Uploads are recommended.
+
+**Q: How do I ensure my buckets are secure?**
+You can use the `get_bucket_policy` and `get_bucket_acl` tools to audit the current access controls applied to any of your buckets directly from the chat.
+
+
 ## Installation & Usage
 
-To install and use the **Amazon S3** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amazon-s3](https://vinkius.com/mcp/amazon-s3)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amazon S3** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amazon-s3` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amazon S3** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amazon-s3": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

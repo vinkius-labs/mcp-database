@@ -1,7 +1,6 @@
 # Dotdigital MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dotdigital)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dotdigital-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dotdigital-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dotdigital)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Dotdigital** MCP serve
 > The currently active programs include 'Abandoned Cart Recovery', 'Post-Purchase Upsell', and 'Annual Anniversary Series'. All are in an 'Active' state. Would you like to see the start date for the Abandoned Cart program?
 
 
+## ❓ FAQ
+
+**Q: How do I get Dotdigital API credentials?**
+Log in to your Dotdigital account, navigate to **Settings > Access**, and select the **API users** tab. You can create a new API user to generate a unique username and password for this integration.
+
+**Q: Can the agent send new email campaigns?**
+This integration currently focuses on listing and auditing campaigns, contacts, and automation programs. Scheduling or sending actual email broadcasts should be managed via the Dotdigital campaign builder.
+
+**Q: Does the integration support multiple address books?**
+Yes, you can use the list_marketing_address_books tool to see all your address books and then list contacts for any specific book using its ID.
+
+
 ## Installation & Usage
 
-To install and use the **Dotdigital** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dotdigital](https://vinkius.com/mcp/dotdigital)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dotdigital** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dotdigital` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dotdigital** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dotdigital": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Freesound MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freesound)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freesound-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freesound-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freesound)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Freesound** MCP server
 > User 'audio_pro' has uploaded 12 sounds, including 'Studio Kick' and 'Snare Hit'. Would you like the specific IDs or descriptions for these sounds?
 
 
+## ❓ FAQ
+
+**Q: How do I find specific sounds like 'ambient rain' with a short duration?**
+Use the `search_sounds` tool with `query: 'ambient rain'` and `filter: 'duration:[1 TO 10]'`. This uses Solr syntax to narrow down results precisely.
+
+**Q: Can I download the original high-quality file directly?**
+Yes! Use the `download_sound` action with the specific Sound ID. Note that this requires a valid `FREESOUND_OAUTH_TOKEN` to authorize the download.
+
+**Q: How can I check if my uploaded sounds are already public?**
+You can use `get_pending_uploads` to see sounds currently in the moderation queue, or `get_me` to see your profile status and total uploads.
+
+
 ## Installation & Usage
 
-To install and use the **Freesound** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/freesound](https://vinkius.com/mcp/freesound)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Freesound** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `freesound` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Freesound** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "freesound": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

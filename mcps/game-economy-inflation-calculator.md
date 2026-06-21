@@ -1,7 +1,6 @@
 # Game Economy Inflation Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/game-economy-inflation-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/game-economy-inflation-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/game-economy-inflation-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/game-economy-inflation-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Game Economy Inflation
 > The economy is in a Moderate Inflation state. You should consider introducing new gold sinks to bring the ratio closer to 1.0.
 
 
+## ❓ FAQ
+
+**Q: How do I use this tool to check my game's inflation?**
+You can use the `calculate_period_metrics` tool by providing your total gold faucets, sinks, and circulation amounts for a specific period. The tool will return the inflation rate and the sink-to-faucet ratio.
+
+**Q: Can this tool help me predict future economic crashes?**
+Yes, by using the `forecast_currency_devaluation` tool with your current daily inflation rate, you can project the percentage of purchasing power loss over a specified number of days.
+
+**Q: What should I do if my sink-to-faucet ratio is below 1.0?**
+A ratio below 1.0 indicates inflation. You can use `generate_economic_recommendations` to get specific advice, which typically involves introducing new gold sinks or reducing faucets.
+
+
 ## Installation & Usage
 
-To install and use the **Game Economy Inflation Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/game-economy-inflation-calculator](https://vinkius.com/mcp/game-economy-inflation-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Game Economy Inflation Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `game-economy-inflation-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Game Economy Inflation Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "game-economy-inflation-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Pipedream MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pipedream)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pipedream-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pipedream-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pipedream)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Pipedream** MCP server
 > Workflow `wf_AByDk` consists of 4 distinct steps: 1. `trigger_http` (Webhook inbound). 2. `format_data` (Custom code parsing Node.js strings). 3. `mysql_query` (Writes parameters to database). 4. `send_slack` (Dispatches confirmation notification). Everything appears fully active with zero deployment errors recorded. Would you like the explicit code logic in the `format_data` block?
 
 
+## ❓ FAQ
+
+**Q: Can the agent pull raw JSON payloads from specific Pipedream webhooks?**
+Yes. Ask the agent to list recent events from a specific Event Source ID. It captures the physical payloads ingested, showing you the raw keys and headers automatically. This is perfect for debugging failed external API calls without leaving your environment.
+
+**Q: How can I trace the steps of my serverless workflow components?**
+Request details on a given Workflow ID (`get_workflow`). Your agent will unpack the configuration boundaries, distinct step triggers, and deployment paths, letting you quickly verify logic flow arrays or parameter mappings without needing the web canvas editor.
+
+**Q: Can I have multiple Pipedream workspaces configured?**
+Yes, by generating separate API keys per workspace in Pipedream and authenticating them in Vinkius against distinct agents. Use `get_user` to instantly verify which token and quota limit (profile allowances) you are currently mapped onto.
+
+
 ## Installation & Usage
 
-To install and use the **Pipedream** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pipedream](https://vinkius.com/mcp/pipedream)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pipedream** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pipedream` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pipedream** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pipedream": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # OpenTHC MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openthc)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openthc-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openthc-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openthc)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -106,12 +105,52 @@ Here are some examples of how you can interact with the **OpenTHC** MCP server u
 > Cross-referencing inventory and lab testing... Current THC flower stock: 14.2 kg of Blue Dream (Lot BD-2025-0412), 8.7 kg OG Kush (Lot OG-2025-0398), and 3.1 kg Sour Diesel (Lot SD-2025-0445). Pending lab results: 2 batches awaiting clearance — Lot BD-2025-0419 (potency panel, results expected 2025-04-10) and Lot OG-2025-0421 (full pesticide panel, results expected 2025-04-12). All currently available stock has valid CoAs. Should I flag any inventory nearing expiration?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically check if a cannabis batch has passed laboratory testing before I approve a sale?**
+Yes! Use the `list_lab_results` tool to fetch all Certificates of Analysis (CoA) and review potency, terpene profiles, and contaminant test results. Your AI agent will respond with complete pass/fail determinations and analytical data linked to specific inventory lots. Always verify CoA clearance before creating B2B transfer orders or retail sales to ensure regulatory compliance.
+
+**Q: How do I quickly list all active plants in a specific cultivation room to check growth stages and predict harvest windows?**
+Simply ask the agent to run the `list_plants` action. It will compile all active plant records with their POP/PIP tags, current growth stage (vegetative, flowering, harvesting), strain variety, and estimated harvest dates. For facility-specific filtering, cross-reference with the `list_sections` tool to identify the target cultivation room GID and request plants assigned to that spatial zone.
+
+**Q: Does the OpenTHC integration permit modifying or destroying inventory records?**
+No. The current tool set focuses strictly on read-only querying and analytical operations — listing companies, verifying licenses, inspecting inventory, reviewing lab results, and tracking B2B/B2C transactions. State alteration operations (creating, adjusting, or destroying inventory) are not currently exposed, assuring your compliance records remain secure against destructive queries. This design prioritizes audit readiness and regulatory reporting safety.
+
+
 ## Installation & Usage
 
-To install and use the **OpenTHC** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openthc](https://vinkius.com/mcp/openthc)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenTHC** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openthc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenTHC** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openthc": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Docparser MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docparser)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docparser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docparser-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docparser)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Docparser** MCP server
 > I've checked your active parsers and found 2 documents that failed to process: 'BadScan_01.jpg' (Error: Unreadable) and 'UnknownFormat.pdf'. Would you like me to pull the detailed error logs for these?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Docparser API Key?**
+Log in to your Docparser account, navigate to the API section in your settings, and you can retrieve your unique API Key from there.
+
+**Q: What types of data can be extracted?**
+Docparser can extract text, numbers, dates, and even complex table data from your documents based on the rules you configure in your parsers.
+
+**Q: Can the agent show real-time processing status?**
+Yes, you can use the list_parsed_documents or list_documents_awaiting_parsing tools to see where your documents are in the extraction pipeline.
+
+
 ## Installation & Usage
 
-To install and use the **Docparser** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/docparser](https://vinkius.com/mcp/docparser)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Docparser** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `docparser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Docparser** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "docparser": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

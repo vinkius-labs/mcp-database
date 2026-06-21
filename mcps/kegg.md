@@ -1,7 +1,6 @@
 # KEGG MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kegg)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kegg-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kegg-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kegg)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **KEGG** MCP server usin
 > Fetching data using `kegg_get` for 'hsa:10458'... This gene corresponds to ACSL4 (acyl-CoA synthetase long chain family member 4). It is involved in metabolic pathways like Fatty acid metabolism (hsa00071).
 
 
+## ❓ FAQ
+
+**Q: How can I find all metabolic pathways associated with a specific human gene?**
+You can use the `kegg_link` tool. Specify 'pathway' as the target_db and the human gene ID (e.g., 'hsa:10458') as the source_db to retrieve all linked biological pathways.
+
+**Q: Can I search for chemical compounds using an exact molecular mass?**
+Yes! Use the `kegg_find` tool with the database set to 'compound', the mass value as the query, and the option set to 'exact_mass'.
+
+**Q: Is it possible to check for interactions between multiple drugs at once?**
+Absolutely. Use the `kegg_ddi` tool and provide the drug identifiers separated by a '+' sign (e.g., 'D00564+D00017') to find known adverse interactions.
+
+
 ## Installation & Usage
 
-To install and use the **KEGG** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kegg](https://vinkius.com/mcp/kegg)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **KEGG** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kegg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **KEGG** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kegg": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

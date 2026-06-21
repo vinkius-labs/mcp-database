@@ -1,7 +1,6 @@
 # Kippy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kippy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kippy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kippy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kippy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Kippy** MCP server usi
 > Goal created! 'Reduce API response time to <100ms' — Team: Engineering, Owner: Sarah, Deadline: Jun 30. Key Results: 1) Optimize DB queries (0/100%). 2) Implement caching (0/100%). 3) Load testing passing (0/100%). Alignment: Maps to company OKR 'Improve platform performance'. Engineering alignment: 85% (6 of 7 goals linked).
 
 
+## ❓ FAQ
+
+**Q: Can I track OKRs and goal progress?**
+Yes. Browse all objectives with key results and progress percentages. Create new goals, update progress, and track alignment across teams.
+
+**Q: Does Kippy require multiple credentials?**
+Yes. Kippy requires three credentials: **API Key**, **Organisation ID**, and **Username**. All are used for authentication against `kippy-tsc.appspot.com/api`.
+
+**Q: Can I access performance reviews and feedback?**
+Yes. Browse review cycles, access individual feedback and ratings, and monitor completion status across the organization.
+
+
 ## Installation & Usage
 
-To install and use the **Kippy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kippy](https://vinkius.com/mcp/kippy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kippy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kippy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kippy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kippy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # SmartChatAI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartchatai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smartchatai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smartchatai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartchatai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,46 @@ Here are some examples of how you can interact with the **SmartChatAI** MCP serv
 > 10 FAQ entries added to knowledge base. Topics: refund eligibility (30-day window), return shipping process, exchange policy, digital product refunds, partial refund scenarios, international returns, defective item procedure, refund processing time (5-7 business days), gift return policy, subscription cancellation refunds. Training status: complete. Confidence score improvement: FAQ accuracy expected to increase from 89% to 95% on refund topics. 234 existing intents re-evaluated. No conflicts detected.
 
 
+## ❓ FAQ
+
+**Q: How do I find my SmartChatAI API Key?**
+Log in to your SmartChatAI dashboard and you will find your unique secret API Key in the Settings or account management section.
+
+
 ## Installation & Usage
 
-To install and use the **SmartChatAI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/smartchatai](https://vinkius.com/mcp/smartchatai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SmartChatAI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `smartchatai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SmartChatAI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "smartchatai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

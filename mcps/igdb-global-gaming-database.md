@@ -1,7 +1,6 @@
 # IGDB Global Gaming Database MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/igdb-global-gaming-database)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/igdb-global-gaming-database-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/igdb-global-gaming-database-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/igdb-global-gaming-database)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **IGDB Global Gaming Dat
 > Inspecting the franchise timeline... The Witcher series includes the three main RPG titles, the Gwent spin-off, and several expansions. Notable GIDs include 1942 for the original and 492 for Wild Hunt. Would you like the summaries for each entry?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find high-resolution artwork just by providing a game name?**
+Yes! Your agent can use `search_games` to find the unique ID and then run `get_artworks` or `search_covers` to retrieve multiple high-resolution image URLs directly from the IGDB cloud in seconds.
+
+**Q: How do I easily check if a game is suitable for certain age groups in different regions?**
+Simply ask the agent to run the `list_age_ratings` tool. It will compile data from global systems like ESRB, PEGI, and CERO, providing precise content descriptors and rating levels for the target title.
+
+**Q: Does the integration permit listing all games within a specific franchise or collection?**
+Yes. Tools like `get_franchise` and `list_collections` allow your agent to retrieve the entire historical timeline of a series, grouping related titles and spin-offs under their structural parent IDs.
+
+
 ## Installation & Usage
 
-To install and use the **IGDB Global Gaming Database** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/igdb-global-gaming-database](https://vinkius.com/mcp/igdb-global-gaming-database)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IGDB Global Gaming Database** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `igdb-global-gaming-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IGDB Global Gaming Database** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "igdb-global-gaming-database": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

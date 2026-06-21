@@ -1,7 +1,6 @@
 # Printavo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/printavo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/printavo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/printavo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/printavo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Printavo** MCP server 
 > Order created: #ORD-4892. Customer: Tech Summit Events. Product: Custom T-Shirts x 500. Decoration: Screen print (front: full color logo, back: event schedule). Sizes: S(50), M(150), L(200), XL(75), 2XL(25). Base color: Navy Blue. Production estimate: 5 business days. Total quote: $4,750 ($9.50/unit). Status set to "Pending Approval". Customer notification email sent with approval link.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific order by providing its ID?**
+Yes! Use the `get_order_details` tool with the Order ID. Your agent will respond with complete metadata, including totals, line items, and current production status in seconds.
+
+**Q: How do I find my Printavo API Key?**
+Log in to your Printavo account, navigate to **My Account**, and you will find or generate your unique secret API key there.
+
+**Q: Can I create a new customer via the AI?**
+Yes, use the `create_customer` tool. Provide the customer name and other metadata, and the agent will add the record to your Printavo CRM immediately.
+
+
 ## Installation & Usage
 
-To install and use the **Printavo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/printavo](https://vinkius.com/mcp/printavo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Printavo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `printavo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Printavo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "printavo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

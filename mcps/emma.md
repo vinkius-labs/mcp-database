@@ -1,7 +1,6 @@
 # Emma MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emma)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/emma-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/emma-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emma)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Emma** MCP server usin
 > Retrieving stats for your latest mailing (ID: 12345)... It had a 25% open rate and 4% click-through rate. 12 members unsubscribed. Shall I provide more detail on the specific link clicks?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Emma API Keys?**
+Log in to your Emma account, click on your name in the top right, go to 'Account Settings', and then select 'API Key'. You will find your Account ID, Public Key, and Private Key there.
+
+**Q: What is the difference between a group and a segment?**
+In Emma, a group is a static collection of members you've explicitly added. A segment is a dynamic group based on rules (like 'opened last email'). This server currently focuses on managing static groups.
+
+**Q: Can I see my custom member data fields?**
+Yes! Use the `list_fields` tool to retrieve all standard and custom member data fields defined in your account.
+
+
 ## Installation & Usage
 
-To install and use the **Emma** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/emma](https://vinkius.com/mcp/emma)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Emma** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `emma` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Emma** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "emma": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

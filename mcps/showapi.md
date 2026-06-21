@@ -1,7 +1,6 @@
 # ShowAPI / 易源数据 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/showapi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/showapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/showapi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/showapi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **ShowAPI / 易源数据
 > Here's a joke for you: 'Why don't scientists trust atoms? Because they make up everything!'. Should I find another one or perhaps an inspirational quote?
 
 
+## ❓ FAQ
+
+**Q: How do I find my ShowAPI App ID and Secret?**
+Log in to the [ShowAPI](https://www.showapi.com/) website, go to your Personal Center -> [Secret Management], and you will find your `showapi_appid` and `showapi_sign` there.
+
+**Q: Does this support all 1000+ APIs from ShowAPI?**
+This server provides 10 essential tools covering the most popular categories like weather, finance, and translation. For other specific APIs, you can extend the engine or use the marketplace directly.
+
+**Q: Are there usage limits for these tools?**
+The usage limits and quotas depend on your ShowAPI subscription plan. Ensure your account has sufficient balance or points for the API points you are calling.
+
+
 ## Installation & Usage
 
-To install and use the **ShowAPI / 易源数据** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/showapi](https://vinkius.com/mcp/showapi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ShowAPI / 易源数据** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `showapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ShowAPI / 易源数据** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "showapi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

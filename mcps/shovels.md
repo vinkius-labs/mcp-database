@@ -1,7 +1,6 @@
 # Shovels MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shovels)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shovels-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shovels-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shovels)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Shovels** MCP server u
 > Scanning work activity near Googleplex... I've identified 12 contractors doing work within a 5-mile radius, mostly focusing on commercial HVAC and electrical upgrades. Shall I list the companies for you?
 
 
+## ❓ FAQ
+
+**Q: How do I find solar contractors in a specific ZIP code?**
+Use the `search_contractors` tool and provide the ZIP code in the `geo_id` parameter and 'solar' in the `work_type` parameter. Your agent will return a list of matching professionals.
+
+**Q: Can I see permit activity for a whole city?**
+Yes! Use the `get_permit_stats` tool with the city name or City/State combination in the `geo_id` parameter to retrieve aggregated construction data for that area.
+
+**Q: How do I verify if a contractor has a valid license?**
+You can use the `get_contractor_by_license` tool with their state business license ID. The returned profile will include their current licensing status and specialty data.
+
+
 ## Installation & Usage
 
-To install and use the **Shovels** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shovels](https://vinkius.com/mcp/shovels)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Shovels** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shovels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Shovels** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shovels": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

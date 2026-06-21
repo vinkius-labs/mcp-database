@@ -1,7 +1,6 @@
 # Bobascan (Boba L2 Network Block Explorer API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bobascan-boba-l2-network-block-explorer-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bobascan-boba-l2-network-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bobascan-boba-l2-network-block-explorer-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bobascan-boba-l2-network-block-explorer-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Bobascan (Boba L2 Netw
 > I have retrieved the ABI for the verified contract at 0x9012... You can now use this to decode transactions or prepare contract calls.
 
 
+## ❓ FAQ
+
+**Q: Can I check the Ether balance of multiple addresses at once?**
+Yes! Use the `get_ether_balance_multi` tool and provide a comma-separated list of addresses to retrieve all balances in a single query.
+
+**Q: How do I view the source code of a verified smart contract?**
+You can use the `get_source_code` tool with the contract's address. If the contract is verified on Bobascan, the AI will return the Solidity source code.
+
+**Q: Is it possible to track NFT transfers for a specific wallet?**
+Yes, the `get_token_nft_tx` tool allows you to list ERC721 token transfer events associated with any address on the Boba network.
+
+
 ## Installation & Usage
 
-To install and use the **Bobascan (Boba L2 Network Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bobascan-boba-l2-network-block-explorer-api](https://vinkius.com/mcp/bobascan-boba-l2-network-block-explorer-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bobascan (Boba L2 Network Block Explorer API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bobascan-boba-l2-network-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bobascan (Boba L2 Network Block Explorer API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bobascan-boba-l2-network-block-explorer-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

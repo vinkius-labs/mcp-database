@@ -1,7 +1,6 @@
 # Airparser MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airparser)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/airparser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/airparser-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airparser)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Airparser** MCP server
 > The status for document doc_98765 is 'Completed'. The data was successfully extracted using the 'Invoice' model. Would you like me to retrieve the full JSON result for you?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Airparser API Key?**
+Log in to your Airparser account and navigate to **Account Settings** or **API** section. You can generate and copy your unique API key from there. It must be used in the `X-API-Key` header.
+
+**Q: Can I get parsing results immediately?**
+Yes! Use the `parse_document_sync` tool. It waits for Airparser to finish processing (up to 60 seconds) and returns the extracted JSON data directly in the response.
+
+**Q: Does this support multi-item tables like line items in an invoice?**
+Yes, Airparser handles nested structures and tables. Ensure your **Extraction Schema** in the inbox is configured to capture these fields, and they will be returned as structured JSON arrays.
+
+
 ## Installation & Usage
 
-To install and use the **Airparser** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/airparser](https://vinkius.com/mcp/airparser)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Airparser** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `airparser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Airparser** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "airparser": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

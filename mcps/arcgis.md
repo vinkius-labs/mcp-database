@@ -1,7 +1,6 @@
 # ArcGIS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arcgis)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arcgis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arcgis-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arcgis)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **ArcGIS** MCP server us
 > Using the country-filtered search, 'Central Park' resolves to -73.96, 40.78 (New York City, New York, USA). Bounding the search to the USA avoided matching international places with similar names.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent process a spreadsheet of hundreds of addresses into coordinates automatically?**
+Yes. Simply share an array or JSON of addresses, and your agent can use the batch geocoding tool to process up to 1000 records in a single API call, returning precise latitude and longitude faster than any manual lookup.
+
+**Q: How can I figure out the optimal driving route between 5 delivery stops?**
+Share the coordinates of your multiple stops (lon,lat) with your AI agent. It utilizes the ArcGIS route solving engine to compute the fastest sequential path and returns a detailed breakdown of turn-by-turn directions and exact travel estimates.
+
+**Q: Can I search for a location but strictly within a particular country?**
+Absolutely. You can request the agent to geocode a place and pass a specific ISO country code (e.g., FRA for France, USA for United States). This ensures your spatial results are strictly bounded to that region, ideal for local datasets.
+
+
 ## Installation & Usage
 
-To install and use the **ArcGIS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/arcgis](https://vinkius.com/mcp/arcgis)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ArcGIS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `arcgis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ArcGIS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "arcgis": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

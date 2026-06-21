@@ -1,7 +1,6 @@
 # ICMS Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/icms-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/icms-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/icms-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/icms-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,52 @@ Here are some examples of how you can interact with the **ICMS Calculator** MCP 
 > The `calculate_tax_differential` tool calculates a DIFAL amount of 30.00.
 
 
+## ❓ FAQ
+
+**Q: How do I calculate the grossed-up product value?**
+Use the `calculate_tax_base` tool. You provide the net product value and the tax rate, and it returns the grossed-up base and the tax amount included in that base.
+
+**Q: Can I calculate ICMS-ST with MVA?**
+Yes. The `calculate_icms_substitution` tool allows you to input the initial tax base, the MVA percentage, and the relevant interstate and internal rates to find the substitution amount.
+
+**Q: How does the tool determine the interstate rate?**
+The `get_interstate_rate` tool checks the origin and destination regions. It applies 4% for imports, 7% for movements from South/Southeast to North/Northeast/Midwest, and 12% for all other interstate routes.
+
+
 ## Installation & Usage
 
-To install and use the **ICMS Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/icms-calculator](https://vinkius.com/mcp/icms-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ICMS Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `icms-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ICMS Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "icms-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

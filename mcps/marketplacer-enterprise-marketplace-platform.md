@@ -1,7 +1,6 @@
 # Marketplacer (Enterprise Marketplace Platform) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marketplacer-enterprise-marketplace-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/marketplacer-enterprise-marketplace-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/marketplacer-enterprise-marketplace-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marketplacer-enterprise-marketplace-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Marketplacer (Enterpri
 > Executing custom query… Done. For advert 'node-987', the Legacy ID is '554433' and the Title is 'Titanium Mountain Bike'. Would you like to fetch the inventory quantity using another query?
 
 
+## ❓ FAQ
+
+**Q: Can I retrieve product details using GraphQL identifiers through my agent?**
+Yes. Use the `get_advert` tool and provide the specific GraphQL Node ID. Your agent will fetch the full record, including descriptions, pricing arrays, and variants directly from the Marketplacer schema.
+
+**Q: How do I check recent orders on my marketplace through a conversation?**
+The `list_invoices` tool allows your agent to retrieve recent order invoices. You'll see the amount, status, and associated seller for each order, helping you monitor high-level marketplace activity instantly.
+
+**Q: Can my agent run custom GraphQL queries against the Marketplacer endpoint?**
+Absolutely. Use the `graphql_query` tool to execute sophisticated custom queries. You can provide the query string and optional JSON variables, and your agent will return the raw GraphQL response payload securely.
+
+
 ## Installation & Usage
 
-To install and use the **Marketplacer (Enterprise Marketplace Platform)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/marketplacer-enterprise-marketplace-platform](https://vinkius.com/mcp/marketplacer-enterprise-marketplace-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Marketplacer (Enterprise Marketplace Platform)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `marketplacer-enterprise-marketplace-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Marketplacer (Enterprise Marketplace Platform)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "marketplacer-enterprise-marketplace-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

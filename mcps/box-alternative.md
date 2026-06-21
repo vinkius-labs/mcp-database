@@ -1,7 +1,6 @@
 # Box MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/box-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/box-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/box-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/box-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **Box** MCP server using
 > Collaboration created! I've successfully invited @user1 to collaborate on specified folder (ID: 123) with the 'editor' role. They will receive a notification to join. Need help with any other access controls?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Box Access Token?**
+Log in to the [**Box Developer Console**](https://app.box.com/developers/console), select your app, and generate a Developer Token or use the OAuth settings to obtain an Access Token.
+
+**Q: Can I search for content via AI?**
+Yes! The `search_content` tool allows your agent to find files and folders across your entire account matching specific keywords.
+
+**Q: How do I share a folder programmatically?**
+Use the `create_collaboration` tool and provide the folder ID, the recipient's email (login), and their assigned role (e.g., 'editor', 'viewer').
+
+
 ## Installation & Usage
 
-To install and use the **Box** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/box-alternative](https://vinkius.com/mcp/box-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Box** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `box-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Box** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "box-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

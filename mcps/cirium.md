@@ -1,7 +1,6 @@
 # Cirium MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cirium)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cirium-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cirium-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cirium)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Cirium** MCP server us
 > Fetching the current track for Delta flight 456... The aircraft is currently over the Atlantic at 35,000 feet, heading Northeast at 540 knots. It is approximately 2 hours from its destination.
 
 
+## ❓ FAQ
+
+**Q: Can I see the live GPS location and flight path of a specific flight?**
+Yes! Use the `get_flight_track` tool with the carrier code, flight number, and date. It retrieves real-time positional data and flight paths for active commercial flights.
+
+**Q: How do I list all flights departing from a specific airport during a certain hour?**
+You can use the `get_airport_status` tool. Set the `type` parameter to 'dep', provide the IATA airport code, and specify the year, month, day, and hour (0-23) you wish to inspect.
+
+**Q: Is it possible to check the status of an entire airline's fleet at once?**
+Absolutely. The `get_fleet_status` tool allows you to retrieve the status for all active flights in a carrier's fleet by providing their IATA/ICAO code.
+
+
 ## Installation & Usage
 
-To install and use the **Cirium** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cirium](https://vinkius.com/mcp/cirium)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cirium** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cirium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cirium** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cirium": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

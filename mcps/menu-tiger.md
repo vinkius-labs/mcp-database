@@ -1,7 +1,6 @@
 # MENU TIGER MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/menu-tiger)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/menu-tiger-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/menu-tiger-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/menu-tiger)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **MENU TIGER** MCP serve
 > Your lunch menu has 14 items across 3 categories. Most popular: 'Grilled Chicken Bowl' (). 2 items are currently out of stock. Would you like to see allergen details?
 
 
+## ❓ FAQ
+
+**Q: How do I manage incoming orders via AI?**
+Use `list_orders` to see all incoming orders, `get_order` for details, and `update_order_status` to change status to preparing, ready, or completed.
+
+**Q: Can I browse menu items and categories?**
+Yes. Use `list_menus` to see all menus, `list_categories` for categories, and `list_items` to browse all items with prices and descriptions.
+
+**Q: How do I view details of a specific menu item?**
+Use `get_item` with the item ID to see its full details including description, modifiers, allergen information, and availability status.
+
+
 ## Installation & Usage
 
-To install and use the **MENU TIGER** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/menu-tiger](https://vinkius.com/mcp/menu-tiger)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MENU TIGER** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `menu-tiger` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MENU TIGER** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "menu-tiger": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

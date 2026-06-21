@@ -1,7 +1,6 @@
 # GivingFuel MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/givingfuel)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/givingfuel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/givingfuel-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/givingfuel)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,55 @@ Here are some examples of how you can interact with the **GivingFuel** MCP serve
 > Checking transactions... I found 2 donation orders marked as 'refunded' today, totaling $75.00. One was for the 'Summer Camp' fund.
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Key for GivingFuel?**
+Log in to your GivingFuel account, navigate to Extras > Integrations > API Keys, and click 'Add API Key' to generate your key.
+
+**Q: Can I add new donations via the agent?**
+The GivingFuel Public API is primarily designed for data extraction and polling. To record new donations, use your GivingFuel hosted donation pages.
+
+**Q: How do I filter donations for a specific date range?**
+Use the 'filter_orders_by_date' tool and provide an ISO date (YYYY-MM-DD). The agent will retrieve all records created after that date.
+
+**Q: Does this support multiple Webconnex products?**
+This MCP server is specifically configured to filter results for GivingFuel (givingfuel.com). It ensures you only see fundraising-related data.
+
+
 ## Installation & Usage
 
-To install and use the **GivingFuel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/givingfuel](https://vinkius.com/mcp/givingfuel)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GivingFuel** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `givingfuel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GivingFuel** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "givingfuel": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

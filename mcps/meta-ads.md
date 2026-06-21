@@ -1,7 +1,6 @@
 # Meta Ads MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meta-ads)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meta-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meta-ads-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meta-ads)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,64 @@ Here are some examples of how you can interact with the **Meta Ads** MCP server 
 > Lookalike audience created: 'Top 1K Customers - 1% Lookalike' in US. Estimated reach: 2.5M people. Similarity: 1% (highest match). Ready to use in campaigns.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Meta Ads API credentials?**
+1. Go to **developers.facebook.com** and log in.
+2. Click **My Apps** → **Create App**.
+3. Select **Business** as the app type.
+4. Fill in the app name and connect it to your Business Manager.
+5. Add the **Marketing API** product to your app.
+6. Go to **Settings → Basic** and copy your **App ID** and **App Secret**.
+7. Generate a **System User Access Token** in Business Manager (Business Settings → System Users → Generate Token).
+8. Paste all values below.
+
+💡 For production use, submit your app for **App Review** to get stable, long-lived tokens.
+
+**Q: Can I manage both Facebook and Instagram ads?**
+Yes. Meta Ads Manager unifies Facebook and Instagram advertising. Your AI agent manages campaigns across both platforms through the same API — including placements in Feed, Stories, Reels, and Messenger.
+
+**Q: Can I create lookalike audiences?**
+Yes. Your AI agent can create lookalike audiences from customer lists, website visitors, or app users — with configurable similarity percentages (1% being most similar, 10% broadest reach).
+
+**Q: What conversion metrics can I track?**
+Track purchases, add-to-cart, initiate checkout, lead submissions, app installs, registrations, page views, and custom conversion events — with attribution windows of 1-day click, 7-day click, and 1-day view.
+
+
 ## Installation & Usage
 
-To install and use the **Meta Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/meta-ads](https://vinkius.com/mcp/meta-ads)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Meta Ads** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `meta-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Meta Ads** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "meta-ads": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

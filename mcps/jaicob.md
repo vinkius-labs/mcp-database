@@ -1,7 +1,6 @@
 # Jaicob MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jaicob)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jaicob-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jaicob-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jaicob)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Jaicob** MCP server us
 > Extracted entities: Company: 'Acme Corp'. Contact: 'Sarah Chen' (VP Engineering). Product: 'Analytics Pro'. Sentiment: Positive (0.78). Key data points: NPS score: 8/10. Feature requests: 'real-time dashboards', 'API access'. Pain points: 'slow report generation'. Competitor mention: 'Mixpanel'. Would you like to generate a response or analyze more feedback?
 
 
+## ❓ FAQ
+
+**Q: Can I generate and analyze content through the AI agent?**
+Yes. Use the generation tools with prompts and parameters. Use analysis tools to extract sentiment, topics, and key insights from any text.
+
+**Q: How does Jaicob API authentication work?**
+Jaicob uses a custom `x-api-key` header (not Bearer) for all requests to `api.jaicob.ai/v1`. Your API key is generated from the Jaicob dashboard.
+
+**Q: Can I translate content between languages?**
+Yes. The translation tools support multiple languages. Provide source text and target language for accurate translations.
+
+
 ## Installation & Usage
 
-To install and use the **Jaicob** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jaicob](https://vinkius.com/mcp/jaicob)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Jaicob** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jaicob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Jaicob** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jaicob": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

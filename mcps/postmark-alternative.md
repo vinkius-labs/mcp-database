@@ -1,7 +1,6 @@
 # Postmark MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postmark-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/postmark-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/postmark-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postmark-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Postmark** MCP server 
 > The email has been processed! Postmark returned success mapping with a Message ID `f8a847a9-2169-45e0-...` indicating instantaneous dispatch.
 
 
+## ❓ FAQ
+
+**Q: Can I use this server to actually send operational emails from my account?**
+Yes! The `send_email` and `send_email_with_template` tools will dispatch active live emails using your Postmark server configuration.
+
+**Q: How can I debug a specific user reporting that they didn't receive an email?**
+You can ask the agent to execute `search_outbound_messages` or `search_bounces` using their exact email address. The agent will fetch the delivery log and status codes.
+
+**Q: Do I need the Account Token or the Server Token to use this?**
+You only need the **Server Token**. Postmark divides workflows by servers (environments). Supplying the server token isolates this specific operational environment perfectly.
+
+
 ## Installation & Usage
 
-To install and use the **Postmark** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/postmark-alternative](https://vinkius.com/mcp/postmark-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Postmark** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `postmark-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Postmark** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "postmark-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

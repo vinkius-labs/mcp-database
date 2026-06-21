@@ -1,7 +1,6 @@
 # Healthchecks.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/healthchecksio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/healthchecksio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/healthchecksio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/healthchecksio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Healthchecks.io** MCP 
 > I've created the 'Database Backup' check. The UUID is 'a1b2c3d4...'. You can now send pings to `https://hc-ping.com/a1b2c3d4...`. I've set the timeout to 86400 seconds as requested.
 
 
+## ❓ FAQ
+
+**Q: Can I see the specific data sent during a ping to debug a failure?**
+Yes. Use the `get_ping_body` tool with the check UUID and ping number to retrieve the exact payload or logs sent by your script during that execution.
+
+**Q: How can I see the history of when my service went down?**
+You can use the `list_flips` tool. It provides a history of status changes (from 'up' to 'down' and vice versa) for any specific check within a given timeframe.
+
+**Q: Is it possible to silence a check without deleting it?**
+Absolutely. Use the `pause_check` tool to stop monitoring and alerts for a specific check. You can later use `resume_check` to start monitoring again.
+
+
 ## Installation & Usage
 
-To install and use the **Healthchecks.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/healthchecksio](https://vinkius.com/mcp/healthchecksio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Healthchecks.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `healthchecksio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Healthchecks.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "healthchecksio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

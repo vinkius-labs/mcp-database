@@ -1,7 +1,6 @@
 # Gradient AI (LLM API & Finetuning) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gradient-ai-llm-api-finetuning)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gradient-ai-llm-api-finetuning-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gradient-ai-llm-api-finetuning-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gradient-ai-llm-api-finetuning)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Gradient AI (LLM API &
 > Using the 'base-llama3' model: 'Quantum computing is a type of computing that uses quantum-mechanical phenomena, such as superposition and entanglement...' [Full response follows]
 
 
+## ❓ FAQ
+
+**Q: How can I start training a custom model with my own data?**
+You can use the `fine_tune_model` tool. Simply provide the model ID and an array of training samples. The agent will handle the submission to Gradient's training infrastructure.
+
+**Q: Can I use RAG (Retrieval Augmented Generation) with this server?**
+Yes! The `complete_model` tool includes an optional `rag` parameter, allowing you to provide context or collection IDs to ground the model's responses in specific data.
+
+**Q: How do I generate vector embeddings for my documents?**
+Use the `generate_embeddings` tool by specifying a model slug (like 'bge-large') and a list of text inputs. It will return the high-dimensional vectors for your text.
+
+
 ## Installation & Usage
 
-To install and use the **Gradient AI (LLM API & Finetuning)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gradient-ai-llm-api-finetuning](https://vinkius.com/mcp/gradient-ai-llm-api-finetuning)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gradient AI (LLM API & Finetuning)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gradient-ai-llm-api-finetuning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gradient AI (LLM API & Finetuning)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gradient-ai-llm-api-finetuning": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

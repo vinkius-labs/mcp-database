@@ -1,7 +1,6 @@
 # PG&E Data Portals MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pge-data-portals)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pge-data-portals-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pge-data-portals-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pge-data-portals)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **PG&E Data Portals** MC
 > EV adoption data for 2024: 94301 (Palo Alto): 12,450 EVs registered (38% of households). 94102 (SF Mission): 3,280 EVs (15%). 94040 (Mountain View): 9,870 EVs (32%). 95054 (Santa Clara): 7,650 EVs (28%). Highest adoption in Peninsula/Silicon Valley ZIP codes with proximity to tech employers and charging infrastructure.
 
 
+## ❓ FAQ
+
+**Q: What types of datasets are available?**
+PG&E Data Portals offers: energy usage (electricity and gas by ZIP code), EV adoption (vehicle registrations), solar generation (capacity and production), energy efficiency programs (participation and savings), and grid infrastructure (distribution circuits, substations). Use search_datasets to discover all available datasets.
+
+**Q: Is authentication required?**
+No, the PG&E Data Portals API is publicly accessible without authentication. An API key is optional and only needed if you want higher rate limits for production use. Most queries work out of the box without any credentials.
+
+**Q: Can I filter data by specific ZIP codes and date ranges?**
+Yes! Most tools support zip_code, start_date, and end_date parameters. For example, query_energy_usage accepts ZIP code and date range to return electricity consumption for that specific area and period. Use query_by_date_range for any dataset with custom date filtering.
+
+
 ## Installation & Usage
 
-To install and use the **PG&E Data Portals** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pge-data-portals](https://vinkius.com/mcp/pge-data-portals)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PG&E Data Portals** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pge-data-portals` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PG&E Data Portals** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pge-data-portals": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

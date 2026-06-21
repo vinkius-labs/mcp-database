@@ -1,7 +1,6 @@
 # Coze MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coze)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coze-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coze-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coze)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Coze** MCP server usin
 > Reading 'manual.txt' and preparing for upload... Content successfully pushed to dataset 'ds_999'. The information is now being indexed for your RAG workflows.
 
 
+## ❓ FAQ
+
+**Q: Which Base URL should I use for my account?**
+If you are using the international version, use `https://api.coze.com`. For the Chinese version, use `https://api.coze.cn`.
+
+**Q: Can I automatically list all published bots in a space?**
+Yes! Use the `list_bots` tool with your Space ID. Your agent will return a list of all bots that have been published and are ready for interaction.
+
+**Q: How do I upload a new document to my knowledge base?**
+Use the `upload_document` tool with the target Dataset ID and the raw text content. Your agent will handle the ingestion process into the Coze RAG engine.
+
+
 ## Installation & Usage
 
-To install and use the **Coze** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coze](https://vinkius.com/mcp/coze)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Coze** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coze` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Coze** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coze": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

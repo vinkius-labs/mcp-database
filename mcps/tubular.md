@@ -1,7 +1,6 @@
 # Tubular MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tubular)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tubular-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tubular-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tubular)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Tubular** MCP server u
 > Fetching campaigns... 'TechBrand Inc' currently has 3 active sponsored video campaigns: 'Holiday Tech Guide', 'Summer Unboxing Series', and 'Home Office Overhaul'. Would you like engagement metrics for the 'Holiday Tech Guide'?
 
 
+## ❓ FAQ
+
+**Q: Can I see the audience demographics for a specific YouTube video?**
+Yes! Use the `get_video_demographics` tool and provide the Video ID. Your agent will retrieve the age and gender breakdowns for that specific piece of content.
+
+**Q: How do I analyze the shared audience between two different creators?**
+Use the `get_audience_overlap` tool and provide the IDs for both entities. The agent will return the percentage and metrics of the audience that both creators share.
+
+**Q: Is it possible to see which brands are sponsoring a specific creator?**
+Absolutely. Run the `list_sponsored_campaigns` query or search for sponsors using the `list_sponsors` tool to retrieve data on brand partnerships within the video ecosystem.
+
+
 ## Installation & Usage
 
-To install and use the **Tubular** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tubular](https://vinkius.com/mcp/tubular)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tubular** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tubular` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tubular** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tubular": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

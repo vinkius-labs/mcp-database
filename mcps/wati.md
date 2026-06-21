@@ -1,7 +1,6 @@
 # Wati MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wati)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wati-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wati-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wati)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Wati** MCP server usin
 > Retrieving history for +123456789… The last 3 messages were: 1. Customer: 'Is my package arriving today?' 2. You: 'Yes, it's out for delivery.' 3. Customer: 'Thanks!'. Would you like me to pull more history?
 
 
+## ❓ FAQ
+
+**Q: Can I send a WhatsApp message to a customer who hasn't messaged me first?**
+Yes, but you must use an approved template message. The `send_template_message` tool allows you to initiate communication using these templates. If the user has messaged you in the last 24 hours, you can use `send_session_message` for free-text replies.
+
+**Q: How do I see what templates are available to send?**
+Use the `list_whatsapp_templates` tool. It will return all your approved and pending message templates, allowing you to choose the right one for your communication needs.
+
+**Q: Can I check the delivery status of my broadcast campaigns via chat?**
+Yes. The `list_broadcast_campaigns` tool provides a list of your previous and active WhatsApp broadcasts, including their delivery statistics, so you can track performance directly from your agent.
+
+
 ## Installation & Usage
 
-To install and use the **Wati** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wati](https://vinkius.com/mcp/wati)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Wati** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wati` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Wati** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wati": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

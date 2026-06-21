@@ -1,7 +1,6 @@
 # Argo CD (GitOps) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/argo-cd-gitops)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/argo-cd-gitops-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/argo-cd-gitops-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/argo-cd-gitops)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Argo CD (GitOps)** MCP
 > Fetching logs for 'frontend-app'... I see a recurring 'Back-off restarting failed container' error. The last log entry indicates a connection timeout to the database service. Should I check the database application status?
 
 
+## ❓ FAQ
+
+**Q: Can I trigger a manual synchronization for a specific application?**
+Yes! Use the `sync_application` tool by providing the application name. The agent will trigger the Argo CD sync process and report the status back to you.
+
+**Q: Is it possible to view application logs to debug a failing pod?**
+Absolutely. The `get_application_logs` tool allows you to retrieve logs for any application managed by Argo CD, helping you identify issues directly within the conversation.
+
+**Q: Can I manage the clusters connected to my Argo CD instance?**
+Yes. You can use `list_clusters` to see all registered targets, `add_cluster` to register a new one, or `delete_cluster` to remove an existing server URL from your management plane.
+
+
 ## Installation & Usage
 
-To install and use the **Argo CD (GitOps)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/argo-cd-gitops](https://vinkius.com/mcp/argo-cd-gitops)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Argo CD (GitOps)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `argo-cd-gitops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Argo CD (GitOps)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "argo-cd-gitops": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

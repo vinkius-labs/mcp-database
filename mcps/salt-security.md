@@ -1,7 +1,6 @@
 # Salt Security MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salt-security)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salt-security-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salt-security-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salt-security)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Salt Security** MCP se
 > The remediation command was actively passed to your Salt Security console. The threat actor profile 'ATT-992' has been assigned an internal blockade rule via integrated gateways.
 
 
+## ❓ FAQ
+
+**Q: Can the AI forcefully block attackers or does it just view them?**
+You can explicitly instruct the AI to use the `block_attacker` tool, which triggers a remediation event across your security infrastructure (e.g., WAF integrations). It provides both visibility and direct active response.
+
+**Q: Does Salt Security allow me to upload spec definitions (OAS) directly from my files via chat?**
+Yes, you can upload raw specification content using the `upload_oas_spec` tool for vulnerability testing and validation. Provide the exact OpenAPI content, and Salt will interpret it securely naturally properly successfully cleanly nicely properly natively completely optimally brightly cleanly beautifully actively quickly seamlessly efficiently correctly elegantly faithfully efficiently natively perfectly.
+
+**Q: How frequently is the API inventory auto-discovered?**
+Salt maintains a continuous discovery architecture via passive traffic monitoring. This prevents any drift and immediately identifies 'Ghost APIs' when queried using the `get_inventory` capability.
+
+
 ## Installation & Usage
 
-To install and use the **Salt Security** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/salt-security](https://vinkius.com/mcp/salt-security)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Salt Security** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `salt-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Salt Security** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "salt-security": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

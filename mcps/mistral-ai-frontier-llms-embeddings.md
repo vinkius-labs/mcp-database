@@ -1,7 +1,6 @@
 # Mistral AI (Frontier LLMs & Embeddings) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mistral-ai-frontier-llms-embeddings)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mistral-ai-frontier-llms-embeddings-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mistral-ai-frontier-llms-embeddings-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mistral-ai-frontier-llms-embeddings)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Mistral AI (Frontier L
 > I've retrieved the Mistral model inventory. Highlights include 'mistral-large-latest' (General purpose), 'mistral-small-latest' (Fast inference), 'codestral-latest' (Coding), 'pixtral-12b-2409' (Multimodal), and 'mistral-embed' (Embeddings). Which model would you like to inspect further?
 
 
+## ❓ FAQ
+
+**Q: Can I use specialized models for code completion through my agent?**
+Yes. Use the `fim_completion` tool with models like 'codestral'. This allows you to provide a code prefix and suffix, and Mistral will generate the logical code missing in the middle, perfect for high-speed development workflows.
+
+**Q: How do I generate embeddings for a semantic search system?**
+The `generate_embeddings` tool allows your agent to calculate numerical vectors for any input text using the 'mistral-embed' model. These vectors can then be stored in a vector database to power semantically aware retrieval (RAG).
+
+**Q: Can my agent trigger safety checks on untrusted content?**
+Absolutely. Use the `moderate_content` tool with the 'mistral-moderation-latest' model. Your agent will analyze the input text against Mistral's safety policies and return flags identifying if the content is toxic or unsafe.
+
+
 ## Installation & Usage
 
-To install and use the **Mistral AI (Frontier LLMs & Embeddings)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mistral-ai-frontier-llms-embeddings](https://vinkius.com/mcp/mistral-ai-frontier-llms-embeddings)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mistral AI (Frontier LLMs & Embeddings)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mistral-ai-frontier-llms-embeddings` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mistral AI (Frontier LLMs & Embeddings)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mistral-ai-frontier-llms-embeddings": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

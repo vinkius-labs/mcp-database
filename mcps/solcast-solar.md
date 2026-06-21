@@ -1,7 +1,6 @@
 # Solcast Solar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/solcast-solar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/solcast-solar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/solcast-solar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/solcast-solar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -277,12 +276,55 @@ Here are some examples of how you can interact with the **Solcast Solar** MCP se
 > Getting detailed PV forecast... Your 10kW south-facing system in Melbourne (-37.81, 144.96) with 30° tilt is forecast to generate approximately 32-38kWh tomorrow. South orientation reduces output vs optimal north-facing in southern hemisphere. Peak output will be 5.5-6.5kW around 12-1pm. Morning and afternoon production will be moderate due to suboptimal azimuth. Daily total is about 15-20% lower than optimal north-facing configuration.
 
 
+## ❓ FAQ
+
+**Q: What parameters do I need to get a rooftop PV forecast?**
+At minimum, you need: **latitude**, **longitude**, and **system capacity (kW)**. For more accurate forecasts, also provide **tilt** (panel angle 0-90°), **azimuth** (panel direction 0°=north, 180°=south), and **loss_factor** (system efficiency 0-1, default ~0.9). If you don't know tilt/azimuth, Solcast will auto-estimate reasonable defaults based on your location.
+
+**Q: How far ahead can Solcast forecast solar power?**
+Solcast provides forecasts from the present time up to **14 days ahead** (336 hours). Short-term forecasts (next 24-48 hours) are the most accurate, with accuracy gradually decreasing for longer horizons. Forecast data is available in 5-minute, 10-minute, 15-minute, 30-minute, or 60-minute intervals depending on your plan tier.
+
+**Q: How do I get a Solcast API key and what does the free tier include?**
+Visit https://solcast.com/ and sign up for a free Developer API account. The free tier includes rooftop PV power forecasts with limited daily API calls. For production use with higher call volumes, historical data access, and advanced features, upgrade to Pro or Enterprise plans. Register at https://solcast.com/ to get your API key instantly.
+
+**Q: What is the difference between GHI, DNI, and DHI?**
+**GHI (Global Horizontal Irradiance)** is the total solar radiation received on a horizontal surface. **DNI (Direct Normal Irradiance)** is the direct beam radiation received on a surface perpendicular to the sun. **DHI (Diffuse Horizontal Irradiance)** is the scattered radiation from the sky (not direct sunlight). GHI = DNI × cos(zenith angle) + DHI. For flat panels, GHI is most relevant. For tracking systems, DNI matters more. Cloudy conditions increase DHI proportion.
+
+
 ## Installation & Usage
 
-To install and use the **Solcast Solar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/solcast-solar](https://vinkius.com/mcp/solcast-solar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Solcast Solar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `solcast-solar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Solcast Solar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "solcast-solar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

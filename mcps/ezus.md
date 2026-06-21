@@ -1,7 +1,6 @@
 # Ezus MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ezus)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ezus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ezus-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ezus)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Ezus** MCP server usin
 > Fetching catalog... I found 12 products including 'Safari Package', 'Guided City Tour', and 'Airport Transfer'. Which one should I inspect further?
 
 
+## ❓ FAQ
+
+**Q: How do I obtain my Ezus API Key?**
+You can find your API Key in the Ezus settings under the 'Integrations' or 'API' section. Note that a Premium plan may be required for private API access.
+
+**Q: Can I update existing projects using this integration?**
+Yes! Use the `upsert_project` tool. If you provide an existing Project ID, it will update the project; otherwise, it will create a new one.
+
+**Q: Is it possible to list invoices to track payments?**
+Absolutely. The `list_invoices` and `get_invoice` tools allow you to retrieve financial records and check their current status.
+
+
 ## Installation & Usage
 
-To install and use the **Ezus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ezus](https://vinkius.com/mcp/ezus)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ezus** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ezus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ezus** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ezus": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # CATS ATS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cats-ats)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cats-ats-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cats-ats-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cats-ats)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **CATS ATS** MCP server 
 > Retrieving recent activities... I found 10 entries including 3 new notes, 2 status changes, and 5 candidate registrations. Which activity type would you like to review?
 
 
+## ❓ FAQ
+
+**Q: Can I search for candidates by their name or status?**
+Yes! Use the `search_candidates` tool with a filter like `first_name:"John"`. The agent will return matching profiles from your CATS database.
+
+**Q: How do I see the latest notes added to a candidate?**
+Use the `list_recruitment_activities` tool. Your agent will fetch the recent activity feed, which includes notes, status changes, and emails for all candidates.
+
+**Q: Where do I find my CATS v3 API Key?**
+Log in to your CATS account, go to 'Administration' and look for the 'API' section. You can generate and copy your v3 key from there.
+
+
 ## Installation & Usage
 
-To install and use the **CATS ATS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cats-ats](https://vinkius.com/mcp/cats-ats)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CATS ATS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cats-ats` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CATS ATS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cats-ats": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

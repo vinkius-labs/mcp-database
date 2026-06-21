@@ -1,7 +1,6 @@
 # Biconomy (Account Abstraction) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/biconomy-account-abstraction)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/biconomy-account-abstraction-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/biconomy-account-abstraction-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/biconomy-account-abstraction)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Biconomy (Account Abst
 > The Supertransaction 0xabc123... is currently 'Success'. It has been confirmed on-chain. You can view the full details in the Biconomy explorer.
 
 
+## ❓ FAQ
+
+**Q: How do I request a quote for a gasless (sponsored) transaction?**
+Use the `get_quote` tool and simply omit the `feeToken` parameter. Biconomy will analyze the flow and return a quote where the gas is sponsored.
+
+**Q: What do I need to provide to the execute tool after getting a quote?**
+You must provide the full `quotePayload` to the `execute_supertx` tool. Ensure that the required signatures have been added to the `payloadToSign` fields within that object.
+
+**Q: Can I check the status of a transaction that is currently processing?**
+Yes. Use the `get_explorer_status` tool with the `supertxHash` returned by the execution endpoint to track its real-time progress on the blockchain.
+
+
 ## Installation & Usage
 
-To install and use the **Biconomy (Account Abstraction)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/biconomy-account-abstraction](https://vinkius.com/mcp/biconomy-account-abstraction)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Biconomy (Account Abstraction)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `biconomy-account-abstraction` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Biconomy (Account Abstraction)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "biconomy-account-abstraction": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

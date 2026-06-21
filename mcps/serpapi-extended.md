@@ -1,7 +1,6 @@
 # SerpApi MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/serpapi-extended)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/serpapi-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/serpapi-extended-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/serpapi-extended)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **SerpApi** MCP server u
 > I found several matches: 'San Francisco, California, United States', 'San Francisco, Cordoba, Argentina', and 'San Francisco, Heredia, Costa Rica'. Which one would you like to use for your search?
 
 
+## ❓ FAQ
+
+**Q: Can I search on engines other than Google?**
+Yes! Use the `search` tool and specify the `engine` parameter. Supported engines include Bing, Baidu, DuckDuckGo, Yahoo, and many others.
+
+**Q: How do I check my remaining API credits?**
+Run the `get_account` tool. Your agent will retrieve your current plan details, total searches, and remaining credits for the current billing cycle.
+
+**Q: How do I find the correct location string for a localized search?**
+Use the `get_locations` tool with a search prefix (e.g., 'New York'). It will return a list of valid location strings that you can then pass into the `search` tool.
+
+
 ## Installation & Usage
 
-To install and use the **SerpApi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/serpapi-extended](https://vinkius.com/mcp/serpapi-extended)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SerpApi** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `serpapi-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SerpApi** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "serpapi-extended": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

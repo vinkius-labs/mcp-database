@@ -1,7 +1,6 @@
 # ExchangeRate- MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exchangerate)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/exchangerate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/exchangerate-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exchangerate)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **ExchangeRate-** MCP se
 > I've retrieved the historical data for 2020-01-01. On that date, the exchange rate from USD to EUR was 0.891. Would you like to check another date?
 
 
+## ❓ FAQ
+
+**Q: Can I convert a specific amount between two currencies?**
+Yes! Use the `get_pair_conversion` tool by providing the base currency, target currency, and the amount you wish to convert.
+
+**Q: How do I see all available currency codes?**
+Simply use the `get_supported_codes` tool. It will return a complete list of all 160+ currency codes and their full names supported by the API.
+
+**Q: Is it possible to check my remaining API usage?**
+Yes, the `get_quota` tool allows you to check your remaining request quota for the current billing period at any time.
+
+
 ## Installation & Usage
 
-To install and use the **ExchangeRate-** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/exchangerate](https://vinkius.com/mcp/exchangerate)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ExchangeRate-** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `exchangerate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ExchangeRate-** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "exchangerate": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Guestmeter MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/guestmeter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/guestmeter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/guestmeter-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/guestmeter)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,55 @@ Here are some examples of how you can interact with the **Guestmeter** MCP serve
 > Analyzing feedback... I found 2 detractors in your recent records: Michael S. [5/10] - 'Check-in was slow' and Linda K. [4/10] - 'AC was noisy'. Would you like their contact IDs to follow up?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Guestmeter API credentials?**
+Log in to your Guestmeter dashboard and navigate to **Channels > Integration**. You will find your unique `apiKey` and `secretKey` there.
+
+**Q: Can I trigger surveys for both email and SMS?**
+Yes! The `send_survey` tool allows you to provide either a `guest_email` or a `guest_phone` number. Guestmeter will automatically deliver the survey via the provided channel.
+
+**Q: How does the integration categorize guests into Promoters or Detractors?**
+The integration uses the Net Promoter Score (NPS) logic: guests rating 9-10 are Promoters, 7-8 are Passives, and 1-6 are Detractors. You can use specialized tools like `list_promoters` to quickly access these segments.
+
+**Q: Is the survey delivery instant?**
+Yes, once the `send_survey` action is triggered, Guestmeter processes the request immediately and sends the invitation to the guest.
+
+
 ## Installation & Usage
 
-To install and use the **Guestmeter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/guestmeter](https://vinkius.com/mcp/guestmeter)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Guestmeter** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `guestmeter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Guestmeter** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "guestmeter": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Winston AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/winston-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/winston-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/winston-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/winston-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Winston AI** MCP serve
 > Detection complete! The image provided shows strong indicators of AI generation (Synthetic Score: 88%). Winston AI identified artifacts common in GAN-generated faces. It is likely a synthetic image.
 
 
+## ❓ FAQ
+
+**Q: Is there a minimum text length for AI detection?**
+Yes, Winston AI typically requires at least 300 characters for an accurate assessment of whether the text is human or AI-generated.
+
+**Q: Can I check if an image from a URL was created by AI?**
+Absolutely. Use the `detect_ai_image` tool and provide the public image URL. The AI will analyze it for signs of generation or manipulation.
+
+**Q: How reliable is the fact-checking tool?**
+The tool cross-references claims against trusted online databases and sources to provide a verification score and identifying supporting evidence.
+
+
 ## Installation & Usage
 
-To install and use the **Winston AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/winston-ai](https://vinkius.com/mcp/winston-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Winston AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `winston-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Winston AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "winston-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Evisort Contract Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evisort-contract-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/evisort-contract-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/evisort-contract-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evisort-contract-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Evisort Contract Intel
 > The 'Master Services Agreement' workflow is currently at the 'Legal Review' step (Step 3/5). It is assigned to 'Sarah Miller'. It has been pending for 2 days. Would you like to see the previous comments from the Finance team?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Evisort API Key?**
+Log in to your Evisort account, navigate to **Settings > API**, and you can generate or retrieve your unique **REST API Key** from there. Ensure your user profile has the 'Admin' or 'API Access' permission enabled.
+
+**Q: Does the integration show specific clauses?**
+Yes, you can use the list_contract_provisions tool to retrieve AI-extracted snippets for common clauses like Limitation of Liability, Indemnification, and Termination for any document.
+
+**Q: Can the agent upload new contracts?**
+This integration currently focuses on listing and auditing existing contracts and intelligence. Uploading new PDF or Word documents for AI processing should be managed via the Evisort web application or automated ingestion folders.
+
+
 ## Installation & Usage
 
-To install and use the **Evisort Contract Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/evisort-contract-intelligence](https://vinkius.com/mcp/evisort-contract-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Evisort Contract Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `evisort-contract-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Evisort Contract Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "evisort-contract-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

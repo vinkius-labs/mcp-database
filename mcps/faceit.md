@@ -1,7 +1,6 @@
 # Faceit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/faceit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/faceit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/faceit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/faceit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,52 @@ Here are some examples of how you can interact with the **Faceit** MCP server us
 > Hub Leaderboard: 1. PlayerOne (ELO 2156, Level 9) — 2. ProGamer42 (ELO 2089, Level 9) — 3. SharpShooter (ELO 2034, Level 8) — 4-10...
 
 
+## ❓ FAQ
+
+**Q: How do I get a Faceit API key?**
+Register at [**developers.faceit.com**](https://developers.faceit.com/) and create an application to get your API key. Free for non-commercial use.
+
+**Q: What games are supported?**
+Faceit supports CS2, Valorant, Dota 2, League of Legends, Rainbow Six Siege, Rocket League, PUBG and many more. Use get_games to see the full catalog.
+
+**Q: What is a Faceit level?**
+Faceit levels range from 1-10 based on ELO rating. Level 1 = 0-500 ELO, Level 10 = 2001+ ELO. Higher levels indicate more skilled players.
+
+
 ## Installation & Usage
 
-To install and use the **Faceit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/faceit](https://vinkius.com/mcp/faceit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Faceit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `faceit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Faceit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "faceit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

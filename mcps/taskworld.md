@@ -1,7 +1,6 @@
 # Taskworld MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/taskworld)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/taskworld-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/taskworld-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/taskworld)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Taskworld** MCP server
 > Task 99283 has been successfully marked as completed. Is there anything else I can help you with?
 
 
+## ❓ FAQ
+
+**Q: Can I update task points and due dates through the AI?**
+Yes! You can use the `update_task` tool to modify task properties including titles, descriptions, assignees, due dates, and points.
+
+**Q: How do I see the discussion or comments on a specific task?**
+Simply use the `list_comments` tool with the specific Task ID. The AI will retrieve all comments associated with that task.
+
+**Q: Is it possible to create a new project directly from the chat?**
+Yes, the `create_project` tool allows you to instantiate a new project within a specific workspace by providing a title.
+
+
 ## Installation & Usage
 
-To install and use the **Taskworld** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/taskworld](https://vinkius.com/mcp/taskworld)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Taskworld** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `taskworld` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Taskworld** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "taskworld": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

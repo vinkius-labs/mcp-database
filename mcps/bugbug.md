@@ -1,7 +1,6 @@
 # BugBug MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bugbug)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bugbug-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bugbug-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bugbug)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **BugBug** MCP server us
 > Fetching run results... Execution run_789 has successfully 'Passed'. All 5 steps were verified. You can view the full high-fidelity report here: [report_url]. Shall I check the historical trends for this test?
 
 
+## ❓ FAQ
+
+**Q: How do I find my BugBug API Token?**
+Log in to your account, navigate to the **Integrations** tab in the sidebar, and copy your unique API Token.
+
+**Q: Can I run tests in a specific environment?**
+Yes! Both `run_test` and `run_suite` tools accept an optional `environmentId` parameter to target specific deployment stages.
+
+**Q: How do I get the IP addresses for allowlisting?**
+Use the `get_ips` tool to retrieve the list of high-fidelity IP addresses used by BugBug's cloud infrastructure programmatically.
+
+
 ## Installation & Usage
 
-To install and use the **BugBug** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bugbug](https://vinkius.com/mcp/bugbug)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BugBug** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bugbug` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BugBug** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bugbug": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

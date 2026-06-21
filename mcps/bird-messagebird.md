@@ -1,7 +1,6 @@
 # Bird (MessageBird) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bird-messagebird)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bird-messagebird-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bird-messagebird-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bird-messagebird)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Bird (MessageBird)** M
 > Here are the 5 most recent calls. 4 were completed successfully, and one was missed from an unknown number. Would you like details on any specific call?
 
 
+## ❓ FAQ
+
+**Q: Can I send messages to multiple channels using this server?**
+Yes! Use the `send_message` tool with the appropriate `channelId` for SMS, WhatsApp, or Email as configured in your Bird account.
+
+**Q: How do I find a customer's contact ID?**
+You can use the `list_contacts` tool to browse all profiles or search for specific identifiers to retrieve the unique contact ID.
+
+**Q: Does this integration support voice call recording access?**
+Currently, the server allows listing and inspecting call metadata (status, duration, participants). Specific recording file access is not exposed in this version.
+
+
 ## Installation & Usage
 
-To install and use the **Bird (MessageBird)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bird-messagebird](https://vinkius.com/mcp/bird-messagebird)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bird (MessageBird)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bird-messagebird` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bird (MessageBird)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bird-messagebird": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

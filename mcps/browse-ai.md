@@ -1,7 +1,6 @@
 # Browse AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browse-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browse-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browse-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browse-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Browse AI** MCP server
 > Task task_99283 is successful. Captured data includes: Product Name: 'Modern Lamp', Price: '$45.00', Stock: 'In Stock'. Would you like the full JSON?
 
 
+## ❓ FAQ
+
+**Q: Can I trigger a data extraction for a specific URL?**
+Yes! Use the `run_robot` tool with the Robot ID and the target URL (`origin_url`). Your agent will create a new task in Browse AI to extract the data instantly.
+
+**Q: How do I retrieve the data once a robot finishes its task?**
+Simply ask the agent to `get_task` and provide the Task ID. If the status is 'successful', it will return the JSON structure containing all the captured data fields.
+
+**Q: Can I list all the robots I have trained in my account?**
+Yes. Use the `list_robots` tool. It will retrieve all the approved robots currently available in your Browse AI dashboard, including their names and unique IDs.
+
+
 ## Installation & Usage
 
-To install and use the **Browse AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/browse-ai](https://vinkius.com/mcp/browse-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Browse AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `browse-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Browse AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "browse-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

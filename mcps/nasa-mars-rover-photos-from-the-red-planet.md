@@ -1,7 +1,6 @@
 # NASA Mars — Rover Photos from the Red Planet MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-mars-rover-photos-from-the-red-planet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nasa-mars-rover-photos-from-the-red-planet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nasa-mars-rover-photos-from-the-red-planet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-mars-rover-photos-from-the-red-planet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Curiosity has taken 850,000+ photos since landing Aug 6, 2012.
 > The Spirit rover sent back a total of 124,838 photos from the Martian surface before communication was lost on Sol 2210 (March 22, 2010).
 
 
+## ❓ FAQ
+
+**Q: Is Curiosity still active on Mars?**
+Yes! Curiosity has been active since August 6, 2012 and continues to send new photos and science data. Opportunity operated for 15 years (2004-2018), Spirit for 6 years (2004-2010).
+
+**Q: Can I search photos by Earth date instead of Martian sol?**
+Yes, the server supports querying by both Earth date (e.g., '2023-11-20') and Martian Sol (the number of Martian days since the rover landed) for flexibility.
+
+**Q: Which cameras are available on the rovers?**
+Available cameras include FHAZ (Front Hazard), RHAZ (Rear Hazard), NAVCAM (Navigation), MAST (Mast Camera), CHEMCAM (Chemistry and Camera), and MAHLI (Mars Hand Lens Imager).
+
+
 ## Installation & Usage
 
-To install and use the **NASA Mars — Rover Photos from the Red Planet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nasa-mars-rover-photos-from-the-red-planet](https://vinkius.com/mcp/nasa-mars-rover-photos-from-the-red-planet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NASA Mars — Rover Photos from the Red Planet** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nasa-mars-rover-photos-from-the-red-planet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NASA Mars — Rover Photos from the Red Planet** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nasa-mars-rover-photos-from-the-red-planet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

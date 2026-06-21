@@ -1,7 +1,6 @@
 # TIMI Score Calculator for ACS Risk Stratification MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/timi-score-calculator-for-acs-risk-stratification)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/timi-score-calculator-for-acs-risk-stratification-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/timi-score-calculator-for-acs-risk-stratification-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/timi-score-calculator-for-acs-risk-stratification)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **TIMI Score Calculator 
 > Call `recommend_management_strategy` using 'High Risk' as the category and 'NSTEMI' as the source condition. This will provide the authoritative guideline-based pathway.
 
 
+## ❓ FAQ
+
+**Q: What inputs are required to calculate the initial TIMI score?**
+The `calculate_timi_score` tool requires patient age, key ECG abnormalities (`ecgFindings`), and whether the patient has a history of Coronary Artery Disease (`priorCADHistory`). Creatinine level is optional.
+
+**Q: Does the calculated score determine the management strategy directly?**
+No. First, you use `derive_adverse_event_risk` to get a probability estimate. Then, `recommend_management_strategy` takes that risk category and the MI type (STEMI/NSTEMI) to provide the final guideline recommendation.
+
+**Q: Can I calculate scores for different types of MIs?**
+Yes. The `calculate_timi_score` tool is designed to run two separate calculations, providing distinct provisional scores tailored specifically for STEMI and NSTEMI presentations.
+
+
 ## Installation & Usage
 
-To install and use the **TIMI Score Calculator for ACS Risk Stratification** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/timi-score-calculator-for-acs-risk-stratification](https://vinkius.com/mcp/timi-score-calculator-for-acs-risk-stratification)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TIMI Score Calculator for ACS Risk Stratification** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `timi-score-calculator-for-acs-risk-stratification` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TIMI Score Calculator for ACS Risk Stratification** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "timi-score-calculator-for-acs-risk-stratification": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

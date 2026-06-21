@@ -1,7 +1,6 @@
 # MeisterTask MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meistertask)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meistertask-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meistertask-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meistertask)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **MeisterTask** MCP serv
 > I've retrieved the comments. The last update was from Alice: 'Found the root cause in the session handler, working on a patch' (1 hour ago).
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific task by its ID?**
+Yes! Use the `get_task_details` tool with the Task ID. Your agent will respond with complete metadata for the record, including description, assignee, and due date in seconds.
+
+**Q: How do I find my MeisterTask Access Token?**
+Log in to MeisterTask, navigate to your **Account** > **API**, and you will find the section to generate a new Personal Access Token for your integration.
+
+**Q: Can I search for tasks by keyword?**
+Yes! Use the `search_tasks` tool. Provide your search query, and the agent will retrieve all matching tasks across your accessible project boards instantly.
+
+
 ## Installation & Usage
 
-To install and use the **MeisterTask** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/meistertask](https://vinkius.com/mcp/meistertask)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MeisterTask** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `meistertask` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MeisterTask** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "meistertask": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

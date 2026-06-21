@@ -1,7 +1,6 @@
 # Brivo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brivo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brivo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brivo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brivo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Brivo** MCP server usi
 > Retrieving events... John Doe accessed the Server Room at 9:15 AM today, and Alice Smith accessed it at 10:30 AM. There are no active alarms.
 
 
+## ❓ FAQ
+
+**Q: Can I unlock a door remotely using the agent?**
+Yes! Use the `unlock_door` tool with the Access Point ID. Your agent will trigger a momentary unlock command in Brivo, allowing entry instantly.
+
+**Q: How do I check if a door is currently open or closed?**
+Simply ask the agent to `get_door_status` and provide the Access Point ID. It will retrieve the live state of the door from the Brivo cloud.
+
+**Q: Does the integration allow adding a new user to the building?**
+The current toolset focuses on control and monitoring (Read-Only/Unlock) for operational efficiency. Provisioning new users or changing core permissions should be managed via the Brivo administrator portal.
+
+
 ## Installation & Usage
 
-To install and use the **Brivo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/brivo](https://vinkius.com/mcp/brivo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Brivo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `brivo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Brivo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "brivo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

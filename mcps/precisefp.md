@@ -1,7 +1,6 @@
 # PreciseFP MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/precisefp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/precisefp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/precisefp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/precisefp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **PreciseFP** MCP server
 > Questionnaire sent successfully. Template: "Retirement Planning Comprehensive". Recipients: Michael Johnson (michael@email.com) and Susan Johnson (susan@email.com). Deadline: May 20, 2025. The form includes 42 fields covering income, assets, liabilities, risk tolerance, and retirement goals. Both recipients received email notifications with secure access links. Auto-reminder emails scheduled for day 3 and day 6.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the progress of a specific client engagement?**
+Yes! Use the `get_form_engagement` tool with the Engagement ID. Your agent will respond with complete metadata, including completion status and time of the last activity in seconds.
+
+**Q: How do I find my PreciseFP Access Token?**
+First, contact PreciseFP support to activate API access. Once enabled, navigate to **Settings** > **Integrations** > **API Tokens** to generate your unique secret token.
+
+**Q: Can I use the AI to see form templates?**
+Yes, use the `list_form_templates` tool to retrieve your library of configured forms, allowing the agent to identify which ones to send to your clients.
+
+
 ## Installation & Usage
 
-To install and use the **PreciseFP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/precisefp](https://vinkius.com/mcp/precisefp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PreciseFP** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `precisefp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PreciseFP** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "precisefp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

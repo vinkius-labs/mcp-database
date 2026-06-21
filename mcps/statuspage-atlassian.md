@@ -1,7 +1,6 @@
 # Statuspage (Atlassian) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/statuspage-atlassian)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/statuspage-atlassian-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/statuspage-atlassian-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/statuspage-atlassian)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Statuspage (Atlassian)
 > I have successfully updated the name of page abc123 to 'Global Operations Status'.
 
 
+## ❓ FAQ
+
+**Q: How can I see all the status pages I have access to?**
+You can use the `list_pages` tool. It will return a list of all pages associated with your API key, including their IDs and basic settings.
+
+**Q: Can I update the name or domain of a status page using the AI?**
+Yes! Use the `update_page` tool. You just need to provide the `page_id` and the new `name`, `domain`, or `subdomain` you wish to set.
+
+**Q: How do I manage users who have access to my private status pages?**
+You can use `list_page_access_users` to see current users and `create_page_access_user` to add new ones to a specific page.
+
+
 ## Installation & Usage
 
-To install and use the **Statuspage (Atlassian)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/statuspage-atlassian](https://vinkius.com/mcp/statuspage-atlassian)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Statuspage (Atlassian)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `statuspage-atlassian` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Statuspage (Atlassian)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "statuspage-atlassian": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

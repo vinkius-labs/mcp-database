@@ -1,7 +1,6 @@
 # Criteo Retail Media API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/criteo-retail-media-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/criteo-retail-media-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/criteo-retail-media-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/criteo-retail-media-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Criteo Retail Media AP
 > Yesterday, your retail campaigns generated 50,000 impressions and $5,000 in attributed sales across all retailers. The average ROAS was 4.5. Would you like a breakdown by retailer?
 
 
+## ❓ FAQ
+
+**Q: How do I get Criteo Retail Media API credentials?**
+Log in to the Criteo Developer Portal, create a new app specifically for Retail Media, and you will receive a Client ID and Client Secret.
+
+**Q: What is the difference between Marketing and Retail Media APIs?**
+Marketing API focuses on off-site display and retargeting, while Retail Media API is designed for managing sponsored products and on-site advertising within retailer platforms.
+
+**Q: Can I see keyword performance?**
+Yes, you can use the list_line_item_keywords tool to see which keywords are being targeted and request reports to see their conversion metrics.
+
+
 ## Installation & Usage
 
-To install and use the **Criteo Retail Media API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/criteo-retail-media-api](https://vinkius.com/mcp/criteo-retail-media-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Criteo Retail Media API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `criteo-retail-media-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Criteo Retail Media API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "criteo-retail-media-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

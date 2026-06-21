@@ -1,7 +1,6 @@
 # Genderize MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/genderize)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/genderize-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/genderize-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/genderize)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,55 @@ Here are some examples of how you can interact with the **Genderize** MCP server
 > Checking local patterns... In Russia (RU), the name 'Sasha' is estimated as 'male' with 64% probability.
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for Genderize.io?**
+No, you can use the service for free without an API key for up to 100 requests per day. For higher volume, you can obtain a key from genderize.io.
+
+**Q: How accurate is the gender prediction?**
+The API returns a 'probability' score between 0.0 and 1.0. A score of 0.99 means the API is 99% certain of the associated gender based on its database.
+
+**Q: Can I localise the results for a specific country?**
+Yes! Use the 'countryId' parameter with an ISO 3166-1 alpha-2 code (e.g., 'BR' for Brazil) to get results optimized for that specific region.
+
+**Q: How many names can I check at once?**
+The 'estimate_genders_bulk' tool allows you to check up to 10 names in a single API request, which is efficient for processing small lists.
+
+
 ## Installation & Usage
 
-To install and use the **Genderize** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/genderize](https://vinkius.com/mcp/genderize)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Genderize** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `genderize` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Genderize** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "genderize": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Marqeta MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marqeta)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/marqeta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/marqeta-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marqeta)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -96,12 +95,52 @@ Here are some examples of how you can interact with the **Marqeta** MCP server u
 > Creating GPA order... The funding of $50.00 USD to user u_789 was successful. Order token: gpa_order_12345.
 
 
+## ❓ FAQ
+
+**Q: How can I see all cards belonging to a specific person?**
+Use the `list_cards_by_user` tool by providing the user's unique token. The agent will return a list of all physical and virtual cards associated with that account holder.
+
+**Q: How do I add money to a user's card account?**
+You can use the `create_gpa_order` tool. You'll need the user token, the amount, currency code, and a funding source token to move funds into their General Purpose Account.
+
+**Q: Is it possible to register a legal entity instead of an individual?**
+Yes, use the `create_business` tool to create a business entity. You can then retrieve its details using the `get_business` tool with the business token.
+
+
 ## Installation & Usage
 
-To install and use the **Marqeta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/marqeta](https://vinkius.com/mcp/marqeta)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Marqeta** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `marqeta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Marqeta** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "marqeta": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

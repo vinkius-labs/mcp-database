@@ -1,7 +1,6 @@
 # Bond Yield Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bond-yield-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bond-yield-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bond-yield-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bond-yield-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -45,12 +44,52 @@ Here are some examples of how you can interact with the **Bond Yield Calculator*
 > A 100 basis point increase in rates is estimated to cause a price decrease of approximately 4.5%.
 
 
+## ❓ FAQ
+
+**Q: What can I calculate with this server?**
+You can calculate Yield to Maturity (YTM), Current Yield, Modified Duration, Convexity, and price sensitivity scenarios for bonds.
+
+**Q: How do I use the `get_bond_yield_metrics` tool?**
+Provide the market price, face value, annual coupon rate, payment frequency, and years to maturity as numerical inputs.
+
+**Q: Does it support different payment frequencies?**
+Yes, you can specify any number of payments per year (e.g., 1 for annual, 2 for semi-annual, 4 for quarterly).
+
+
 ## Installation & Usage
 
-To install and use the **Bond Yield Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bond-yield-calculator](https://vinkius.com/mcp/bond-yield-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Bond Yield Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bond-yield-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Bond Yield Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bond-yield-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

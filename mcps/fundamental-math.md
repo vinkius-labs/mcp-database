@@ -1,7 +1,6 @@
 # Fundamental Math MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fundamental-math)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fundamental-math-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fundamental-math-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fundamental-math)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -57,12 +56,52 @@ Here are some examples of how you can interact with the **Fundamental Math** MCP
 > Using the calculate_factorial tool: The factorial of 12 (12!) is exactly 479,001,600.
 
 
+## ❓ FAQ
+
+**Q: Why use this instead of asking the AI to calculate it?**
+AI models predict the next token; they don't actually compute math. This leads to subtle and dangerous errors in calculations. This MCP forces the AI to use a deterministic JavaScript engine, ensuring absolute precision.
+
+**Q: Does this server require an internet connection or an external API?**
+Absolutely not. It is built entirely on pure, local JavaScript logic. It requires zero configuration, zero API keys, and guarantees that your sensitive data never leaves your infrastructure.
+
+**Q: How does the 'Rule of Three' tool work?**
+The Rule of Three tool solves proportional logic instantly. If you know that 100 units cost $50, you can pass A=100, B=50, and C=250 to find exactly how much 250 units will cost. The agent will handle the correlation automatically.
+
+
 ## Installation & Usage
 
-To install and use the **Fundamental Math** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fundamental-math](https://vinkius.com/mcp/fundamental-math)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fundamental Math** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fundamental-math` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fundamental Math** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fundamental-math": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

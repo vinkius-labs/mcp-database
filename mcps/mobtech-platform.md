@@ -1,7 +1,6 @@
 # MobTech Platform MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mobtech-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mobtech-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mobtech-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mobtech-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -59,12 +58,49 @@ Here are some examples of how you can interact with the **MobTech Platform** MCP
 > According to the ShareSDK data, there were 4,210 WeChat session shares and 1,200 Moments shares tracked in the last 7 days.
 
 
+## ❓ FAQ
+
+**Q: Where do I find my AppKey?**
+Log into the MobTech official dashboard at mob.com, access your App settings, and your AppKey will be displayed at the top of the interface.
+
+**Q: Can I completely bypass the Mobile SDK?**
+This backend MCP wraps the API meant to *verify* SMS sent via your front-end Mobile App SDK. Your front-end app should still invoke the SDK for sending SMS and handling UI.
+
+
 ## Installation & Usage
 
-To install and use the **MobTech Platform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mobtech-platform](https://vinkius.com/mcp/mobtech-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MobTech Platform** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mobtech-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MobTech Platform** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mobtech-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

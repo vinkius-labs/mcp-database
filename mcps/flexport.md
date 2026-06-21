@@ -1,7 +1,6 @@
 # Flexport MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flexport)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flexport-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flexport-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flexport)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Flexport** MCP server 
 > Generating document link... I've retrieved a secure temporary link for the Bill of Lading associated with SHIP-789. You can download the file here: https://api.flexport.com/documents/doc_abc/download.
 
 
+## ❓ FAQ
+
+**Q: How do I track a specific shipment using its ID?**
+You can use the 'get_shipment' tool and provide the Flexport Shipment ID. The agent will return the most recent status, location, and estimated arrival dates for that shipment.
+
+**Q: Can I retrieve commercial invoices for customs purposes?**
+Yes! The 'list_commercial_invoices' and 'list_documents' tools allow you to access the necessary paperwork for customs clearance. You can even use 'download_document' to get a temporary link to the actual file.
+
+**Q: Is it possible to filter invoices by shipment?**
+Absolutely. Use the 'list_shipment_invoices' tool and provide the Shipment ID. The agent will retrieve all freight billing documents associated with that specific cargo movement.
+
+
 ## Installation & Usage
 
-To install and use the **Flexport** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flexport](https://vinkius.com/mcp/flexport)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Flexport** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flexport` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Flexport** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flexport": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

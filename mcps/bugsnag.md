@@ -1,7 +1,6 @@
 # BugSnag MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bugsnag)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bugsnag-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bugsnag-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bugsnag)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **BugSnag** MCP server u
 > Error err_99283 is a 'ReferenceError' that has occurred 150 times in the last 24 hours. It is currently affecting 45 users in production.
 
 
+## ❓ FAQ
+
+**Q: Can I check the stability trend for a project using the agent?**
+Yes! Use the `get_project_stats` tool with the Project ID. Your agent will fetch the error trends and statistics, allowing you to monitor health over time.
+
+**Q: How do I list the top errors for my application?**
+Simply ask the agent to `list_errors` and provide the Project ID. It will retrieve the error groups from your BugSnag account, including messages and event counts.
+
+**Q: Does the integration allow inspecting a specific error occurrence?**
+Yes. Use the `get_event` tool with the Event ID. It will retrieve the full details for that specific occurrence, which is helpful for deep debugging.
+
+
 ## Installation & Usage
 
-To install and use the **BugSnag** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bugsnag](https://vinkius.com/mcp/bugsnag)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **BugSnag** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bugsnag` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **BugSnag** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bugsnag": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

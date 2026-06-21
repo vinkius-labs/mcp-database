@@ -1,7 +1,6 @@
 # LangSmith (LLM Observability & Hub) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/langsmith-llm-observability-hub)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/langsmith-llm-observability-hub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/langsmith-llm-observability-hub-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/langsmith-llm-observability-hub)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **LangSmith (LLM Observa
 > I've identified 3 prompts in your Hub: 'summarization-agent-v1', 'customer-service-v3', and 'data-extraction-helper'. I can retrieve the full instruction text and version history for any of these.
 
 
+## ❓ FAQ
+
+**Q: Can I see the token usage for a specific LLM run through my agent?**
+Yes. Use the `get_run_telemetry` tool with a specific Run ID. Your agent will retrieve the exact token count (prompt + completion) and latency metrics calculated by LangSmith for that interaction.
+
+**Q: How do I fetch a prompt template from the LangChain Hub using natural language?**
+The `list_prompts` tool allows your agent to navigate your hosted Hub repository. You can ask your agent to find a specific prompt by name to inspect its instruction text, variables, and version history.
+
+**Q: Can my agent check the status of human annotation queues?**
+Absolutely. Use the `list_annotation_queues` tool to retrieve all active queues where human feedback is being collected. Your agent can report on the number of pending traces and general alignment scores established by your reviewers.
+
+
 ## Installation & Usage
 
-To install and use the **LangSmith (LLM Observability & Hub)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/langsmith-llm-observability-hub](https://vinkius.com/mcp/langsmith-llm-observability-hub)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LangSmith (LLM Observability & Hub)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `langsmith-llm-observability-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LangSmith (LLM Observability & Hub)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "langsmith-llm-observability-hub": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

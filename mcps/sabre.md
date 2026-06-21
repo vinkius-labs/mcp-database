@@ -1,7 +1,6 @@
 # Sabre MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sabre)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sabre-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sabre-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sabre)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Sabre** MCP server usi
 > Fetching data via `get_hotel_details`... This property offers free Wi-Fi, a fitness center, and a pool. The cancellation policy requires 24-hour notice for a full refund.
 
 
+## ❓ FAQ
+
+**Q: How can I find the lowest available flight fares for a specific route?**
+You can use the `shop_flights` tool. It utilizes Sabre's Bargain Finder Max API to return the lowest available fares based on your origin, destination, and date parameters.
+
+**Q: Can I retrieve specific amenities and check-in policies for a hotel?**
+Yes, the `get_hotel_details` tool allows you to fetch full metadata, including amenities, property descriptions, and operational policies for any specific hotel property.
+
+**Q: Does this server support creating a full booking for a passenger?**
+Absolutely. Use the `create_booking` tool for flights or `book_hotel` for accommodations to generate confirmed reservations with passenger and payment information.
+
+
 ## Installation & Usage
 
-To install and use the **Sabre** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sabre](https://vinkius.com/mcp/sabre)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sabre** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sabre` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sabre** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sabre": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

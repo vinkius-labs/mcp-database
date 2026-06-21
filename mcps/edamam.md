@@ -1,7 +1,6 @@
 # Edamam MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/edamam)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/edamam-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/edamam-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/edamam)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Edamam** MCP server us
 > Here is the nutritional breakdown for 1 peanut butter sandwich (2 slices of wheat bread and 2 tbsp peanut butter): approximately 330 calories, 12g of protein, 17g of fat, and 34g of carbohydrates.
 
 
+## ❓ FAQ
+
+**Q: How does the natural language nutrition analysis work?**
+Simply type any food description — like '2 eggs and 1 slice of toast with butter' — and Edamam's NLP engine will parse the text, identify each ingredient, and return precise calorie and nutrient data. No need for structured inputs or food IDs.
+
+**Q: Does the API offer filters for vegan or paleo diets?**
+Yes, the recipe tool provides extensive dietary and health label filters including 'vegan', 'paleo', 'keto-friendly', 'gluten-free', and many more.
+
+**Q: Are both API endpoints completely free?**
+Yes, Edamam offers a Developer tier that is free of charge for both the Recipe Search API and the Nutrition Analysis API with certain monthly limits.
+
+
 ## Installation & Usage
 
-To install and use the **Edamam** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/edamam](https://vinkius.com/mcp/edamam)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Edamam** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `edamam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Edamam** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "edamam": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

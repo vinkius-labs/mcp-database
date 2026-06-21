@@ -1,7 +1,6 @@
 # LangGraph Cloud (Stateful AI Agents) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/langgraph-cloud-stateful-ai-agents)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/langgraph-cloud-stateful-ai-agents-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/langgraph-cloud-stateful-ai-agents-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/langgraph-cloud-stateful-ai-agents)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **LangGraph Cloud (State
 > I've identified 2 active scheduled jobs: 1) 'Daily-Summary-Bot' (Runs every day at 9 AM UTC), 2) 'Inventory-Monitor' (Runs every 4 hours). Both are successfully triggering runs on their respective threads. Would you like to check the last run status for the summary bot?
 
 
+## ❓ FAQ
+
+**Q: Can I manually approve an agent's step using this server?**
+Yes. Use the `update_thread_state` tool to perform manual node state overrides. This is the standard way to implement human-in-the-loop (HITL) patterns, allowing you to modify or approve graph variables directly mid-execution.
+
+**Q: How do I see the current memory of a conversation thread?**
+The `get_thread_state` tool retrieves the exact execution state of a thread, including all cyclical node variables and structured outputs stored in the cloud checkpoints. This gives your agent full visibility into the conversation history.
+
+**Q: Can my agent trigger a new run on an existing thread?**
+Absolutely. Use the `create_run` tool and provide the Thread ID, Assistant ID, and your new input payload. Your agent will fire the graph dynamically, allowing for multi-turn engagements within the same stateful boundary.
+
+
 ## Installation & Usage
 
-To install and use the **LangGraph Cloud (Stateful AI Agents)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/langgraph-cloud-stateful-ai-agents](https://vinkius.com/mcp/langgraph-cloud-stateful-ai-agents)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LangGraph Cloud (Stateful AI Agents)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `langgraph-cloud-stateful-ai-agents` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LangGraph Cloud (Stateful AI Agents)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "langgraph-cloud-stateful-ai-agents": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

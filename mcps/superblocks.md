@@ -1,7 +1,6 @@
 # Superblocks MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/superblocks)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/superblocks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/superblocks-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/superblocks)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Superblocks** MCP serv
 > I've generated a secure session token for dev@example.com. You can now use this token to authenticate their session in your embedded Superblocks components.
 
 
+## ❓ FAQ
+
+**Q: How can I see all the internal tools currently built in my organization?**
+You can use the `list_applications` tool. It retrieves a paginated list of all Superblocks applications, allowing your AI to browse through your entire internal tool library.
+
+**Q: Is it possible to generate a login token for a user to view an embedded app?**
+Yes, the `create_embed_token` tool is designed specifically for this. Provide the user's email and optional metadata to receive a secure session token for Embedded Apps.
+
+**Q: Can I check the status of my backend workflows and scheduled jobs?**
+Absolutely. Use the `list_workflows` tool to get a full inventory of all workflows in your organization, which helps in monitoring your automated processes.
+
+
 ## Installation & Usage
 
-To install and use the **Superblocks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/superblocks](https://vinkius.com/mcp/superblocks)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Superblocks** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `superblocks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Superblocks** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "superblocks": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

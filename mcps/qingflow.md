@@ -1,7 +1,6 @@
 # QingFlow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qingflow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qingflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qingflow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qingflow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **QingFlow** MCP server 
 > The leave request 'req-9920' is currently at the 'Department Head Approval' stage. It has been pending for 2 hours. Would you like me to send a reminder?
 
 
+## ❓ FAQ
+
+**Q: How do I find my QingFlow Access Token?**
+Log in to QingFlow, go to the Qing Store (轻商城), install the 'OPEN API' plugin under Third-party Connections, and find your Access Token in the plugin configuration.
+
+**Q: Can I check why a request is pending approval?**
+Yes. Using the `get_workflow_status` tool with the application and record IDs, you can retrieve the current approval node, the person responsible, and the status of the process.
+
+**Q: How do I format the data for creating a record?**
+QingFlow uses a specific format for its fields. Use the `get_app_schema` tool first to see the `queId` for each field, then provide the data as a JSON string following the required structure.
+
+
 ## Installation & Usage
 
-To install and use the **QingFlow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/qingflow](https://vinkius.com/mcp/qingflow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **QingFlow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `qingflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **QingFlow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "qingflow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Modulr MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modulr)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/modulr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/modulr-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modulr)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Modulr** MCP server us
 > Operation verified. Modulr confirmed your primary Customer instance identified as: C11XXXX. Available limits are active.
 
 
+## ❓ FAQ
+
+**Q: Modulr requires complex timestamped HMAC API Signatures, how does the prompt handle that?**
+We handle that completely in the background Engine! The Vinkius runtime grabs your static API Secret from configurations once. Then, every time the Language Model triggers a payment, our Node.js runtime creates random cryptographic hex Nonces, aligns current UTC Date limits, hashes the combination uniquely via SHA-256 and packs it into the underlying header dynamically natively.
+
+**Q: Can the Agent generate new SEPA/UK Accounts?**
+Yes, using `modulr_create_account`, you can spawn multiple isolated UK GBP ledgers natively linked to customers.
+
+**Q: Are cross-border Faster Payments supported natively?**
+Absolutely. You can inject external sorts codes inside the `modulr_create_payment` orchestrations delivering funds transparently via clearing houses.
+
+
 ## Installation & Usage
 
-To install and use the **Modulr** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/modulr](https://vinkius.com/mcp/modulr)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Modulr** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `modulr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Modulr** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "modulr": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

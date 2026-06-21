@@ -1,7 +1,6 @@
 # Limble CMMS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/limble-cmms)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/limble-cmms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/limble-cmms-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/limble-cmms)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Limble CMMS** MCP serv
 > Work order created! 'Conveyor Belt B — Alignment & Tension Adjustment'. Priority: High. Assigned: Mike Torres. ETA: 2 hours. Parts: 1 belt ($45), alignment tools (in stock). Q2 costs: $18,400 total. Labor: $12,200 (66%). Parts: $4,800 (26%). External: $1,400 (8%). vs Q1: +5% ($17,500). Top cost asset: HVAC Unit 3 ($3,200).
 
 
+## ❓ FAQ
+
+**Q: Can I create and track work orders?**
+Yes. Create work orders with priority, assign technicians, and track status through completion. Access full maintenance history per asset.
+
+**Q: Does Limble CMMS use Basic Auth?**
+Yes. Limble uses **HTTP Basic Auth** with Client ID and Client Secret against `api.limblecmms.com/v2`.
+
+**Q: Can I monitor preventive maintenance schedules?**
+Yes. Track PM schedules with due dates, recurrence patterns, and compliance rates. Monitor overdue and upcoming PMs.
+
+
 ## Installation & Usage
 
-To install and use the **Limble CMMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/limble-cmms](https://vinkius.com/mcp/limble-cmms)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Limble CMMS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `limble-cmms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Limble CMMS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "limble-cmms": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

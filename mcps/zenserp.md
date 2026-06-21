@@ -1,7 +1,6 @@
 # Zenserp MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zenserp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zenserp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zenserp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zenserp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Zenserp** MCP server u
 > Retrieving news for 'generative AI'... 1. 'New advancements in LLM reasoning' (Source: TechCrunch, 2h ago), 2. 'AI ethics board releases new guidelines' (Source: Reuters, 5h ago). Would you like to read the snippets for these articles?
 
 
+## ❓ FAQ
+
+**Q: Can I search for local businesses in a specific city through the agent?**
+Yes. The `search_google_maps` tool allows your AI agent to retrieve local business listings, including their ratings, physical addresses, and contact info, helping you perform local market research through chat.
+
+**Q: How do I get product prices from Google Shopping via conversation?**
+You can use the `search_google_shopping` tool. Simply provide the product name, and Zenserp will return a structured list of vendor prices and availability to help you audit the e-commerce landscape.
+
+**Q: Is it possible to search on Bing or DuckDuckGo using this server?**
+Absolutely. This server includes specialized tools like `search_bing_organic` and `search_duckduckgo_organic`, allowing your agent to retrieve results from multiple search engines for broader data coverage.
+
+
 ## Installation & Usage
 
-To install and use the **Zenserp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zenserp](https://vinkius.com/mcp/zenserp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zenserp** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zenserp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zenserp** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zenserp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

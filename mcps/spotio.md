@@ -1,7 +1,6 @@
 # Spotio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spotio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spotio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spotio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spotio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,46 @@ Here are some examples of how you can interact with the **Spotio** MCP server us
 > Territory created: "Downtown Business District". Boundaries: defined by 4 GPS coordinates (polygon). Assigned to: James Park (senior rep). Existing leads imported: 234 pins (from CRM). Lead categories: Hot (23, red pins), Warm (67, yellow), Cold (144, blue). Businesses mapped: 456 (from Google Places). Not yet contacted: 222 (48.7%). Last visit data: 89 businesses visited in past 90 days. Route optimization: 3 suggested daily routes (8-12 stops each). Estimated coverage time: 2 weeks for full territory.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Spotio API credentials?**
+Log in to your Spotio account and navigate to the developer or API settings section to generate your unique Client ID and Secret.
+
+
 ## Installation & Usage
 
-To install and use the **Spotio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/spotio](https://vinkius.com/mcp/spotio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Spotio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `spotio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Spotio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "spotio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

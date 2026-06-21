@@ -1,7 +1,6 @@
 # DeepL MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepl-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deepl-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deepl-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepl-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **DeepL** MCP server usi
 > API Usage: 142,800 of 500,000 characters used (28.6%). Remaining: 357,200 characters. Plan: DeepL API Free. Billing period resets: May 1, 2025. Target languages available (31): BG (Bulgarian), CS (Czech), DA (Danish), DE (German), EL (Greek), EN-GB, EN-US, ES (Spanish), ET (Estonian), FI (Finnish), FR (French), HU (Hungarian), ID (Indonesian), IT (Italian), JA (Japanese), KO (Korean), LT (Lithuanian), LV (Latvian), NB (Norwegian), NL (Dutch), PL (Polish), PT-BR, PT-PT, RO (Romanian), RU (Russian), SK (Slovak), SL (Slovenian), SV (Swedish), TR (Turkish), UK (Ukrainian), ZH (Chinese). Languages with formality support: DE, FR, ES, IT, NL, PL, PT-BR, PT-PT, RU, JA.
 
 
+## ❓ FAQ
+
+**Q: Can I control the formality of translations (formal vs. informal)?**
+Yes! Use `translate_formal` for professional communications (e.g., contracts, official correspondence) or `translate_informal` for casual content (e.g., social media, chat). The standard `translate_text` tool also accepts an optional formality parameter ('more', 'less', or 'default'). Note: formality control is available for select target languages including DE, FR, ES, PT-BR, and others.
+
+**Q: Can I create custom glossaries to ensure consistent terminology?**
+Yes. Use `create_glossary` with a name, source language, target language, and TSV entries (tab-separated source→target pairs). Then use `translate_with_glossary` to apply the glossary during translation. Use `list_glossaries` to see all glossaries, `get_glossary_entries` to inspect term pairs, and `list_glossary_language_pairs` for supported combinations.
+
+**Q: How does DeepL authentication differ from standard Bearer tokens?**
+DeepL uses a custom Authorization header format: `DeepL-Auth-Key YOUR_KEY` (not Bearer). Your API key is generated from the DeepL account dashboard. Free accounts use `api-free.deepl.com`, while Pro accounts use `api.deepl.com`. Use `get_usage` to check your current character consumption and plan limits.
+
+
 ## Installation & Usage
 
-To install and use the **DeepL** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deepl-alternative](https://vinkius.com/mcp/deepl-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DeepL** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deepl-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DeepL** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deepl-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Poplar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/poplar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/poplar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/poplar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/poplar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,55 @@ Here are some examples of how you can interact with the **Poplar** MCP server us
 > Retrieving audiences... I found 4 groups in your account, including 'Holiday VIPs' (ID: aud_552) with 1,200 members. Other audiences are 'New Signups', 'Churn Risks', and 'Global Suppressions'. Should I list the members of 'Holiday VIPs'?
 
 
+## ❓ FAQ
+
+**Q: How do I get my Poplar Access Token?**
+Log in to your Poplar account and navigate to the **API Settings** or **Developer** section. You will find your Access Token there. Use a Test Token for development and a Production Token for live mailings.
+
+**Q: Can I standardize non-US addresses?**
+No, Poplar's address standardization service is specifically designed for US addresses only. For international mailing, ensure your addresses are pre-formatted correctly.
+
+**Q: How can I check if a mailer has been delivered?**
+Use the `get_mailer_status` tool with the unique mailer ID. It will return the current status, including production phases and the final USPS delivery confirmation when available.
+
+**Q: Is the integration secure for customer addresses?**
+Absolutely. The integration uses official Poplar Bearer tokens over HTTPS. Your credentials and customer data are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **Poplar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/poplar](https://vinkius.com/mcp/poplar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Poplar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `poplar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Poplar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "poplar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

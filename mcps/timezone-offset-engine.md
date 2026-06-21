@@ -1,7 +1,6 @@
 # Timezone Offset Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/timezone-offset-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/timezone-offset-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/timezone-offset-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/timezone-offset-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Timezone Offset Engine
 > Yes. Check March 1 vs March 31 — DST transitions in both hemispheres change the offset.
 
 
+## ❓ FAQ
+
+**Q: Does it handle Daylight Saving Time?**
+Yes. This is the primary reason this tool exists. It calculates offsets at the exact moment you specify, correctly accounting for all DST transitions worldwide.
+
+**Q: What datetime format should I use?**
+ISO 8601 format: YYYY-MM-DDTHH:mm:ss (e.g. '2025-07-15T14:00:00'). If omitted, the engine uses the current moment.
+
+**Q: How many timezones are supported?**
+All 400+ IANA timezone identifiers, including regional variants like America/Argentina/Buenos_Aires and special zones like UTC and GMT.
+
+
 ## Installation & Usage
 
-To install and use the **Timezone Offset Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/timezone-offset-engine](https://vinkius.com/mcp/timezone-offset-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Timezone Offset Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `timezone-offset-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Timezone Offset Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "timezone-offset-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

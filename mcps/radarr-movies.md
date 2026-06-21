@@ -1,7 +1,6 @@
 # Radarr (Movies) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/radarr-movies)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/radarr-movies-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/radarr-movies-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/radarr-movies)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Radarr (Movies)** MCP 
 > Checking the queue... You have 2 active downloads: 'Dune: Part Two' (65% complete, ~10 mins left) and 'Poor Things' (12% complete, ~45 mins left).
 
 
+## ❓ FAQ
+
+**Q: Can I search for movies on TMDB before adding them to my library?**
+Yes! Use the `lookup_movie` tool with a search term. The agent will return potential matches from TMDB, which you can then add using `add_movie`.
+
+**Q: How do I check if I have enough disk space for new downloads?**
+Simply ask the agent to run the `get_disk_space` tool. It will provide a list of all connected drives and their available capacity.
+
+**Q: Is it possible to remove a movie and its files from the disk simultaneously?**
+Yes. When using the `delete_movie` tool, you can set the `deleteFiles` parameter to true to ensure the media is wiped from your storage.
+
+
 ## Installation & Usage
 
-To install and use the **Radarr (Movies)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/radarr-movies](https://vinkius.com/mcp/radarr-movies)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Radarr (Movies)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `radarr-movies` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Radarr (Movies)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "radarr-movies": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

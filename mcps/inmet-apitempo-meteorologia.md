@@ -1,7 +1,6 @@
 # INMET (Apitempo - Meteorologia) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inmet-apitempo-meteorologia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/inmet-apitempo-meteorologia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/inmet-apitempo-meteorologia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inmet-apitempo-meteorologia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **INMET (Apitempo - Mete
 > I've accessed the latest GOES-16 satellite data. I have several URLs for different channels (Infrared, Water Vapor, Visible). Which one would you like to view?
 
 
+## ❓ FAQ
+
+**Q: How can I get the weather forecast for a specific city in Brazil?**
+You can use the `get_forecast_by_city` tool by providing the city's IBGE code. The agent will return detailed forecast information including temperature and conditions.
+
+**Q: Can I access real-time satellite imagery of Brazil?**
+Yes! Use the `get_satellite_images` tool to retrieve the latest metadata and URLs for GOES-16 satellite images covering the Brazilian territory.
+
+**Q: How do I find the ID of a meteorological station?**
+Use the `list_stations` tool with the type 'T' for automatic or 'M' for manual stations. This will provide a list of all stations and their respective IDs.
+
+
 ## Installation & Usage
 
-To install and use the **INMET (Apitempo - Meteorologia)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/inmet-apitempo-meteorologia](https://vinkius.com/mcp/inmet-apitempo-meteorologia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **INMET (Apitempo - Meteorologia)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `inmet-apitempo-meteorologia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **INMET (Apitempo - Meteorologia)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "inmet-apitempo-meteorologia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

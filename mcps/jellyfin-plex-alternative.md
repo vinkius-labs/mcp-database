@@ -1,7 +1,6 @@
 # Jellyfin (Plex Alternative) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jellyfin-plex-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jellyfin-plex-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jellyfin-plex-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jellyfin-plex-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Jellyfin (Plex Alterna
 > Your Jellyfin server is running version 10.9.11 on Linux. The system is healthy and all services are operational.
 
 
+## ❓ FAQ
+
+**Q: Can I filter my library to only show Movies or Series?**
+Yes! Use the `list_items` tool and provide 'Movie' or 'Series' in the `include_item_types` parameter to filter your results accordingly.
+
+**Q: How do I check if my Jellyfin server is running the latest version?**
+You can use the `get_system_info` tool. It returns the server version, operating system, and other vital system metrics.
+
+**Q: Can I see all the root libraries configured on my server?**
+Absolutely. Run the `list_virtual_folders` tool to retrieve a list of all top-level libraries like Movies, TV Shows, and Music.
+
+
 ## Installation & Usage
 
-To install and use the **Jellyfin (Plex Alternative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jellyfin-plex-alternative](https://vinkius.com/mcp/jellyfin-plex-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Jellyfin (Plex Alternative)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jellyfin-plex-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Jellyfin (Plex Alternative)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jellyfin-plex-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

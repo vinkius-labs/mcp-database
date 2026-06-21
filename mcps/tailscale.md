@@ -1,7 +1,6 @@
 # Tailscale MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tailscale)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tailscale-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tailscale-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tailscale)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Tailscale** MCP server
 > I've created a new reusable auth key for example.com. The key ID is 'key-abc123xyz'. Please make sure to store it securely as it won't be shown again.
 
 
+## ❓ FAQ
+
+**Q: Can I update my network's security policy (ACL) using this server?**
+Yes! You can use `get_tailnet_acl` to view the current HuJSON policy and `update_tailnet_acl` to apply changes directly to your tailnet configuration.
+
+**Q: How do I authorize a new device that is pending approval?**
+Use the `authorize_device` tool with the specific `device_id` and set the `authorized` parameter to true. This allows you to manage node entry without the admin console.
+
+**Q: Is it possible to generate temporary authentication keys for my servers?**
+Absolutely. Use the `create_auth_key` tool. You can optionally provide capabilities like 'ephemeral' or 'reusable' in the JSON payload to define how the key should behave.
+
+
 ## Installation & Usage
 
-To install and use the **Tailscale** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tailscale](https://vinkius.com/mcp/tailscale)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tailscale** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tailscale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tailscale** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tailscale": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

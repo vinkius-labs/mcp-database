@@ -1,7 +1,6 @@
 # Linkup (AI Search & RAG) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkup-ai-search-rag)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/linkup-ai-search-rag-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/linkup-ai-search-rag-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkup-ai-search-rag)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Linkup (AI Search & RA
 > Performing deep search… I've synthesized security insights from 12 diverse sources. Key best practices for 2024 include: 1) Strict tool-call sandboxing, 2) Human-in-the-loop for high-stakes actions, 3) Real-time prompt injection monitoring. Would you like a detailed breakdown of the sandboxing techniques?
 
 
+## ❓ FAQ
+
+**Q: How can Linkup help my agent provide more up-to-date answers?**
+Use the `linkup_search` tool to give your agent access to live web data. By performing semantic searches across the internet, your agent can retrieve the latest news, reports, and documentation, grounding its answers in current facts.
+
+**Q: Can I extract clean text from a specific URL for RAG?**
+Yes. The `linkup_fetch` tool is specifically designed for content extraction. It renders the target page and returns a clean text version stripped of navigation and ads, making it ideal for feeding high-quality context to your agent.
+
+**Q: What is the difference between standard and deep search modes?**
+Standard search focuses on rapid fact-finding and top results. Deep search performs a more comprehensive crawl across many more sources, which is better for complex research tasks that require diverse perspectives and detailed data.
+
+
 ## Installation & Usage
 
-To install and use the **Linkup (AI Search & RAG)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/linkup-ai-search-rag](https://vinkius.com/mcp/linkup-ai-search-rag)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Linkup (AI Search & RAG)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `linkup-ai-search-rag` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Linkup (AI Search & RAG)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "linkup-ai-search-rag": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

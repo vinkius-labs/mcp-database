@@ -1,7 +1,6 @@
 # SolarAnywhere API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/solaranywhere-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/solaranywhere-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/solaranywhere-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/solaranywhere-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **SolarAnywhere API** MC
 > I've retrieved the site catalog from SolarAnywhere! You have 5 registered sites, including 'Solar-West-Alpha' and 'Utility-One'. I can provide the exact coordinate metadata and GHI data for any of these sites.
 
 
+## ❓ FAQ
+
+**Q: How do I find my SolarAnywhere API Key?**
+Log in to your [**SolarAnywhere account**](https://api.solaranywhere.com/account), and you will find your API Key in your dashboard or profile settings. Copy and paste it below.
+
+**Q: What irradiance parameters are provided?**
+The API provides Global Horizontal Irradiance (GHI), Direct Normal Irradiance (DNI), and Diffuse Horizontal Irradiance (DHI) metadata.
+
+**Q: Can the agent show historical typical year data?**
+Yes. The `get_typical_solar_year` tool retrieves TMY data for any coordinate pair to assist in long-term performance auditing.
+
+
 ## Installation & Usage
 
-To install and use the **SolarAnywhere API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/solaranywhere-api](https://vinkius.com/mcp/solaranywhere-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SolarAnywhere API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `solaranywhere-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SolarAnywhere API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "solaranywhere-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Commodities MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/commodities)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/commodities-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/commodities-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/commodities)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -245,12 +244,55 @@ Here are some examples of how you can interact with the **Commodities** MCP serv
 > Fetching agriculture futures... Wheat: $6.15/bushel (CBOT), Coffee: $1.85/lb (CME), Cocoa: $3,250/ton (CME). Cocoa prices have been elevated due to supply constraints from West Africa. Wheat and coffee are trading in normal ranges.
 
 
+## ❓ FAQ
+
+**Q: What commodities are available and which exchanges trade them?**
+The API offers 30+ commodities across 5 categories: Precious Metals (gold, silver, platinum, palladium on CME/NYMEX), Energy (WTI crude, Brent crude, natural gas on NYMEX/CME), Agriculture (wheat, corn, soybean, coffee, cocoa, sugar, cotton on CBOT/CME), Livestock (live cattle, feeder cattle, lean hogs, Class III milk on CME), and Industrial Metals (copper, aluminum on CME). Use the `list_all_commodities` tool to see the complete catalog.
+
+**Q: How do I get a Commodities-API key and what are the usage limits?**
+Visit https://www.omkar.cloud/api-key and sign up for a free account. The free tier includes 5,000 API requests per month. Paid plans start at $25/month for 100,000 requests. Rate limit on free tier: requests are counted monthly. After exceeding your limit, you'll receive HTTP 429 errors.
+
+**Q: Are these real-time prices or delayed?**
+The API provides near real-time futures prices that are updated periodically throughout trading hours. Prices reflect the latest available futures contract data from CME, NYMEX, and CBOT exchanges. During market hours, updates are frequent. Outside trading hours, prices reflect the last traded values. Each price response includes an `updated_at` timestamp showing when the data was last refreshed.
+
+**Q: Can I get prices for multiple commodities at once?**
+Yes! Use the specialized tools `get_precious_metals_prices`, `get_energy_commodities_prices`, or `get_agriculture_commodities_prices` to fetch multiple related commodities in a single call. You can also call individual commodity tools like `get_gold_price`, `get_crude_oil_price`, etc. for specific quotes. Each tool is designed to give you the most relevant prices for that market segment.
+
+
 ## Installation & Usage
 
-To install and use the **Commodities** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/commodities](https://vinkius.com/mcp/commodities)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Commodities** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `commodities` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Commodities** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "commodities": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

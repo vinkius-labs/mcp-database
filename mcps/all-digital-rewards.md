@@ -1,7 +1,6 @@
 # All Digital Rewards MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/all-digital-rewards)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/all-digital-rewards-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/all-digital-rewards-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/all-digital-rewards)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **All Digital Rewards** 
 > I've analyzed your reward catalog. The top 5 most redeemed items are: 1. $50 Amazon Gift Card, 2. $25 Starbucks Card, 3. Noise-cancelling Headphones, 4. Wireless Mouse, and 5. $100 Visa Prepaid Card. Would you like to check the current stock for the physical items?
 
 
+## ❓ FAQ
+
+**Q: How do I find my RewardSTACK API credentials?**
+Use your standard RewardSTACK administrative email and password. Your AI agent will use these to obtain a temporary JWT (JSON Web Token) for all API requests.
+
+**Q: Can I issue points to multiple participants at once?**
+The `issue_points` tool currently processes points for a specific participant ID. For bulk processing, you can ask your agent to loop through a list of IDs or use the RewardSTACK batch file upload feature.
+
+**Q: What types of rewards are available in the catalog?**
+The Reward Catalog API provides access to thousands of digital gift cards (Visa, Amazon, etc.), physical merchandise from major retailers, and unique experiential rewards.
+
+
 ## Installation & Usage
 
-To install and use the **All Digital Rewards** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/all-digital-rewards](https://vinkius.com/mcp/all-digital-rewards)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **All Digital Rewards** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `all-digital-rewards` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **All Digital Rewards** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "all-digital-rewards": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

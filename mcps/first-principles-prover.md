@@ -1,7 +1,6 @@
 # First Principles Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/first-principles-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/first-principles-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/first-principles-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/first-principles-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **First Principles Prove
 > Verdict: FIRST_PRINCIPLES_PROVEN. You grounded the problem in physics, broke the assumption, derived the solution, and proved the math without jargon.
 
 
+## ❓ FAQ
+
+**Q: Why does the logic engine scan for buzzwords?**
+Because words like 'leverage', 'synergy', or 'best practices' are proof of analogical thinking. The semantic trap prevents the AI from faking deep thought.
+
+**Q: What qualifies as a fundamental truth?**
+Physics (like the speed of light or CPU thermal limits), mathematical laws (like Big O complexity), or hard engineering constraints (like network bandwidth limits). Opinions and conventions do not count.
+
+**Q: Why must the solution be built from scratch?**
+To ensure you aren't just importing a library or framework that carries hidden architectural assumptions. Deriving solutions from axioms guarantees a clean, unbloated design optimized for the exact problem.
+
+
 ## Installation & Usage
 
-To install and use the **First Principles Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/first-principles-prover](https://vinkius.com/mcp/first-principles-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **First Principles Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `first-principles-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **First Principles Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "first-principles-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

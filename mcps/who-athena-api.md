@@ -1,7 +1,6 @@
 # WHO Athena API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/who-athena-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/who-athena-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/who-athena-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/who-athena-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **WHO Athena API** MCP s
 > I've retrieved the observations for child mortality! The recent data points indicate a trend of [Value] per 1000 live births. I can assist you with an audit of the comparative metadata across different WHO regions if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Is an API Key required for WHO Athena API?**
+No. The WHO Global Health Observatory API is a free and open service. This server works out of the box without any static credentials required.
+
+**Q: What format is the data returned in?**
+The API returns detailed health indicator data including numeric values, spatial dimensions (countries), and time dimensions (years).
+
+**Q: Can I filter by indicator code?**
+Yes. Use the `get_health_indicator_data` tool and provide the WHO indicator code (e.g., 'WHOSIS_000001' for life expectancy).
+
+
 ## Installation & Usage
 
-To install and use the **WHO Athena API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/who-athena-api](https://vinkius.com/mcp/who-athena-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WHO Athena API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `who-athena-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WHO Athena API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "who-athena-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

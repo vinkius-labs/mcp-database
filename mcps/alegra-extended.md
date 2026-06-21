@@ -1,7 +1,6 @@
 # Alegra MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alegra-extended)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/alegra-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/alegra-extended-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alegra-extended)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Alegra** MCP server us
 > Checking inventory... The 'Professional Desk' (ID: item_8823) currently has 15 units in stock. The unit price is $250.00. Would you like to create an invoice for this item?
 
 
+## ❓ FAQ
+
+**Q: Can I check the stock level of an item via AI?**
+Yes! Use the `get_item_details` tool and provide the Item ID. Your agent will retrieve the complete metadata, including current stock levels for that product.
+
+**Q: How do I create a new invoice for a client?**
+Use the `create_invoice` action. You'll need to provide the Contact ID, date, due date, and a JSON string of items to register the new sale in Alegra.
+
+**Q: Is it possible to list all my recent payments?**
+Absolutely. Use the `list_payments` query. The agent will retrieve a list of all recorded income payments received in your account.
+
+
 ## Installation & Usage
 
-To install and use the **Alegra** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/alegra-extended](https://vinkius.com/mcp/alegra-extended)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Alegra** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `alegra-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Alegra** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "alegra-extended": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

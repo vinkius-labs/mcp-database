@@ -1,7 +1,6 @@
 # Retirement Withdrawal Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/retirement-withdrawal-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/retirement-withdrawal-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/retirement-withdrawal-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/retirement-withdrawal-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -49,12 +48,52 @@ Here are some examples of how you can interact with the **Retirement Withdrawal 
 > The expected annual return for this allocation is 7.5% with an annualized volatility of 12.4%.
 
 
+## ❓ FAQ
+
+**Q: What is a Monte Carlo simulation?**
+It is a mathematical technique that uses randomness to model the probability of different outcomes in a process that cannot easily be predicted due to the intervention of random variables, such as market returns.
+
+**Q: How does this tool calculate withdrawal sustainability?**
+The engine simulates 1,000 different market paths based on your asset allocation. It then checks how many of those paths allow your portfolio to remain above zero until the end of your retirement horizon.
+
+**Q: Can I test different asset allocations?**
+Yes, you can use `evaluate_portfolio_risk_profile` to see the risk of your mix and then run simulations with various equity and fixed income percentages.
+
+
 ## Installation & Usage
 
-To install and use the **Retirement Withdrawal Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/retirement-withdrawal-calculator](https://vinkius.com/mcp/retirement-withdrawal-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Retirement Withdrawal Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `retirement-withdrawal-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Retirement Withdrawal Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "retirement-withdrawal-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

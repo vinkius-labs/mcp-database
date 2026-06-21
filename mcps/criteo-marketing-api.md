@@ -1,7 +1,6 @@
 # Criteo Marketing API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/criteo-marketing-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/criteo-marketing-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/criteo-marketing-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/criteo-marketing-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Criteo Marketing API**
 > I've retrieved 10 target audiences, including 'Frequent Shoppers', 'Cart Abandoners', and 'New Visitors'. Which audience would you like to target in your next campaign?
 
 
+## ❓ FAQ
+
+**Q: How do I get Criteo API credentials?**
+Log in to the Criteo Developer Portal, create a new app, and you will be provided with a Client ID and Client Secret.
+
+**Q: Which version of the API is used?**
+This integration uses the 2024-04 version of the Criteo Marketing API, ensuring access to the latest features and data structures.
+
+**Q: Can I retrieve reporting data?**
+Yes, you can use the get_marketing_statistics tool to retrieve performance reports based on custom dimensions and metrics.
+
+
 ## Installation & Usage
 
-To install and use the **Criteo Marketing API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/criteo-marketing-api](https://vinkius.com/mcp/criteo-marketing-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Criteo Marketing API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `criteo-marketing-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Criteo Marketing API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "criteo-marketing-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

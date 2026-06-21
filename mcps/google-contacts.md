@@ -1,7 +1,6 @@
 # Google Contacts MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-contacts)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-contacts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-contacts-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-contacts)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,55 @@ Here are some examples of how you can interact with the **Google Contacts** MCP 
 > I've fetched the segments. Found 3 notable groupings mapping connections: 'Starred in Android' (32 users), 'Lead Funnel 2024' (81 prospects), and 'Tech Advisors' (5 users). Would you like to check the Advisors list?
 
 
+## ❓ FAQ
+
+**Q: Which exact service and endpoints does this utilize?**
+This integration leverages the highly structured Google People API. It strictly filters and returns core metadata (emails, names, numbers) avoiding unnecessary heavy payloads.
+
+**Q: Can it automatically assign new prospects into specific mailing groups?**
+Certainly. The `create_contact` tool allows passing a specific Group Identifier (which you can discover using `list_contact_groups`). The user will instantly appear in the matching mailing segment.
+
+**Q: What happens if I try to list a corporate directory with thousands of interconnected contacts?**
+The integration is protected by aggressive egress control pagination features out-of-the-box. Your AI agent handles paginated loops automatically and queries intelligent searches to restrict context overhead limits naturally.
+
+**Q: Is it possible to manage shared domain profiles or only my personal Gmail connections?**
+Assuming you are logged in using a Google Workspace suite, the authorization supports cross-referencing domain contacts. Personal Gmail queries apply strict visibility bounding towards individual connections only.
+
+
 ## Installation & Usage
 
-To install and use the **Google Contacts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-contacts](https://vinkius.com/mcp/google-contacts)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Contacts** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-contacts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Contacts** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-contacts": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

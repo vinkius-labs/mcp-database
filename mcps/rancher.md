@@ -1,7 +1,6 @@
 # Rancher MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rancher)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rancher-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rancher-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rancher)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Rancher** MCP server u
 > Checking pod metrics... Using `list_pods`, the 'auth-service' pod is marked 'Running', executing in the requested namespace. No crash loops were detected in its recent container history.
 
 
+## ❓ FAQ
+
+**Q: How do I generate a Bearer Token in Rancher?**
+Log into your Rancher UI. Go to your User Profile menu and select 'API & Keys'. Create a new API Key with appropriate scopes. Combine the generated Access Key and Secret Key using a colon (`AccessKey:SecretKey`), or use the final Bearer Token provided to authenticate the MCP server.
+
+**Q: Does the integration require direct cluster network access?**
+No, the MCP server acts exclusively by pinging the overarching main Rancher Server API URL rather than connecting locally to standard cluster API endpoints separately. Your network configuration remains secure as it relies completely on the Rancher gateway role.
+
+**Q: Can I deploy new workloads to my cluster via the chat interface?**
+Currently, the server allows listing and fetching comprehensive statuses for namespaces, workloads, endpoints, clusters, and pods natively to observe the infrastructure state interactively without allowing unmanaged destructive configurations to roll out purely based on prompt.
+
+
 ## Installation & Usage
 
-To install and use the **Rancher** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rancher](https://vinkius.com/mcp/rancher)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rancher** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rancher` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rancher** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rancher": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

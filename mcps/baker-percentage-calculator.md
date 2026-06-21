@@ -1,7 +1,6 @@
 # Baker Percentage Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baker-percentage-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baker-percentage-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baker-percentage-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baker-percentage-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -60,12 +59,52 @@ Here are some examples of how you can interact with the **Baker Percentage Calcu
 > Based on your input, the calculated necessary flour base weight is [CALCULATED_FLOUR_WEIGHT] grams. Please note that this batch size is small (< 5g warning).
 
 
+## ❓ FAQ
+
+**Q: How does the tool handle scaling a recipe?**
+You use the `scale_baker_percentage_to_weights` function. You provide the desired batch size multiplier and an array of ingredients with their known percentages. The tool calculates the new absolute weights for every ingredient, ensuring perfect proportionality.
+
+**Q: What is the primary input required for calculating Baker's Percentages?**
+The `recipe_to_baker_percentage` tool requires two main inputs: the absolute weight of the flour base (in grams) and a list of all other ingredient weights. The flour weight always serves as the 100% reference point.
+
+**Q: If I only know one ingredient's weight, how can I find the required flour base?**
+Use the `check_flour_base` tool. You must provide the name of your known ingredient, its measured weight in grams, and its established professional percentage relative to flour. The function then calculates the necessary flour base weight.
+
+
 ## Installation & Usage
 
-To install and use the **Baker Percentage Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/baker-percentage-calculator](https://vinkius.com/mcp/baker-percentage-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Baker Percentage Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `baker-percentage-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Baker Percentage Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "baker-percentage-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

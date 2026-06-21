@@ -1,7 +1,6 @@
 # Termii MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/termii)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/termii-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/termii-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/termii)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Termii** MCP server us
 > I've retrieved your Sender IDs. You have 3 authorized IDs: 'VINKIUS', 'ALERT_MS', and 'AUTH_MSG'. Which one would you like to use for your next campaign?
 
 
+## ❓ FAQ
+
+**Q: Can I send an OTP code for user verification via AI?**
+Yes! Use the `send_otp` action. Provide the destination number, your Sender ID, and the message type in the JSON payload. Your agent will trigger the OTP delivery instantly.
+
+**Q: How do I check my remaining account balance?**
+Run the `check_balance` query. The agent will retrieve your current available credits directly from Termii, helping you monitor your messaging budget.
+
+**Q: Is it possible to see my registered Sender IDs via AI?**
+Absolutely. Use the `list_sender_ids` tool. Your agent will retrieve the complete list of all Sender IDs authorized for your account.
+
+
 ## Installation & Usage
 
-To install and use the **Termii** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/termii](https://vinkius.com/mcp/termii)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Termii** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `termii` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Termii** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "termii": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

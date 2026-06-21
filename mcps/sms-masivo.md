@@ -1,7 +1,6 @@
 # SMS Masivo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sms-masivo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sms-masivo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sms-masivo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sms-masivo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **SMS Masivo** MCP serve
 > Bulk SMS sent to 3 recipients! All messages dispatched successfully. Campaign: 'Holiday sale'. Transmission IDs available for delivery tracking.
 
 
+## ❓ FAQ
+
+**Q: Can I send SMS to multiple recipients at once?**
+Yes! Use `send_bulk_sms` with a comma-separated list of phone numbers in international format. All recipients receive the same message.
+
+**Q: How do I check if my message was delivered?**
+Use `get_delivery_report` with the transmission ID returned when the SMS was sent. It shows real-time delivery status (delivered, pending, failed).
+
+**Q: Can I schedule messages for later?**
+Yes! Use `schedule_sms` with the delivery date in ISO 8601 format (e.g., 2025-01-15T14:00:00Z). The message will be sent at the specified time.
+
+
 ## Installation & Usage
 
-To install and use the **SMS Masivo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sms-masivo](https://vinkius.com/mcp/sms-masivo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SMS Masivo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sms-masivo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SMS Masivo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sms-masivo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

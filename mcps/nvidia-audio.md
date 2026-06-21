@@ -1,7 +1,6 @@
 # NVIDIA Audio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-audio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nvidia-audio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nvidia-audio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-audio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,55 @@ Here are some examples of how you can interact with the **NVIDIA Audio** MCP ser
 > Detected 3 speakers: Speaker 1 (0:00-2:30), Speaker 2 (2:31-5:45), Speaker 1 (5:46-8:20).
 
 
+## ❓ FAQ
+
+**Q: What languages are supported for transcription?**
+Parakeel models support 50+ languages including English, Portuguese, Spanish, French, German, Mandarin, Japanese, and many more. Specify the language for best results.
+
+**Q: Can I clone a specific voice?**
+Yes! Use the `clone_voice` tool with a reference audio sample (a few seconds is enough) and the text you want the cloned voice to speak.
+
+**Q: What is speaker diarization?**
+Speaker diarization identifies 'who spoke when' in an audio recording. It segments the audio by speaker and returns timestamps for each speaker's turns.
+
+**Q: What audio formats are supported?**
+The API supports WAV, MP3, FLAC, OGG, and most common audio formats. For best transcription accuracy, use high-quality WAV or FLAC files at 16kHz or higher sample rate.
+
+
 ## Installation & Usage
 
-To install and use the **NVIDIA Audio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nvidia-audio](https://vinkius.com/mcp/nvidia-audio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NVIDIA Audio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nvidia-audio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NVIDIA Audio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nvidia-audio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

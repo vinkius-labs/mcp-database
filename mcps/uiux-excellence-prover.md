@@ -1,7 +1,6 @@
 # UI/UX Excellence Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uiux-excellence-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uiux-excellence-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uiux-excellence-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uiux-excellence-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **UI/UX Excellence Prove
 > Verdict: DARK_PATTERN_DETECTED. Parallax/particles = decorative noise without communicative purpose. Auto-play violates user agency. Infinite scroll is an attention trap (add 'Load more' or pagination). Confetti on every submit = cognitive overload. Every animation must EXPLAIN, GUIDE, or CONFIRM — nothing else.
 
 
+## ❓ FAQ
+
+**Q: Does it generate UI designs or code?**
+No. The agent designs or codes the interface. The tool VALIDATES that it meets 2026-era standards across six pillars: spatial hierarchy, spring motion, 8-state microinteractions, 8px rhythm, WCAG 2.2 AAA neuro-inclusive accessibility, and Calm UI principles. It coaches — not generates.
+
+**Q: Why 8 states per interactive element?**
+Because a button without feedback is a dead rectangle. The 8 states (idle, hover, active, focus-visible, disabled, loading, success, error) cover every moment of interaction. Each state uses spring physics for natural transitions. Without all 8, users cannot perceive affordance, progress, or outcome.
+
+**Q: What is Calm UI and why does it matter?**
+Calm UI is the 2026 shift from 'time on page' to 'time well spent'. It rejects dark patterns: infinite scroll without end states, auto-play media, fake urgency, hidden opt-outs. It implements intentional friction for destructive actions, progressive disclosure, and natural stopping points. Respect > engagement.
+
+
 ## Installation & Usage
 
-To install and use the **UI/UX Excellence Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/uiux-excellence-prover](https://vinkius.com/mcp/uiux-excellence-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **UI/UX Excellence Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `uiux-excellence-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **UI/UX Excellence Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "uiux-excellence-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

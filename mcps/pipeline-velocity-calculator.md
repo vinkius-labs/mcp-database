@@ -1,7 +1,6 @@
 # Pipeline Velocity Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pipeline-velocity-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pipeline-velocity-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pipeline-velocity-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pipeline-velocity-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Pipeline Velocity Calc
 > The initial projection over 90 days is $[BASE_REVENUE]. With a 15% improvement in close rate, your new total projected revenue increases by $[IMPACT_AMOUNT], reaching a new high of $[NEW_TOTAL_REVENUE].
 
 
+## ❓ FAQ
+
+**Q: How do I determine if my current pipeline is growing fast enough to hit a quarterly target?**
+Use the `determine_required_throughput` tool. You input your total revenue goal and time period, specifying whether you want to solve for 'opportunities', 'close_rate', or 'sales_cycle'. This tells you exactly what needs to change.
+
+**Q: I need an estimate of my total expected revenue if all things continue as usual for the next 90 days. Which tool handles this?**
+The `project_revenue_and_sensitivity` tool is designed for this. It takes your base metrics (opportunity count, close rate, etc.) and projects the total revenue over a specified number of days.
+
+**Q: What is the core calculation for daily sales velocity?**
+The `calculate_pipeline_velocity` tool calculates this rate. It takes your total opportunities, close rate, average contract value, and cycle length to give you the speed of revenue realization in dollars per day.
+
+
 ## Installation & Usage
 
-To install and use the **Pipeline Velocity Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pipeline-velocity-calculator](https://vinkius.com/mcp/pipeline-velocity-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pipeline Velocity Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pipeline-velocity-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pipeline Velocity Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pipeline-velocity-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

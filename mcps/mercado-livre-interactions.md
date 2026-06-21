@@ -1,7 +1,6 @@
 # Mercado Livre Interactions MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mercado-livre-interactions)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mercado-livre-interactions-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mercado-livre-interactions-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mercado-livre-interactions)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,55 @@ Here are some examples of how you can interact with the **Mercado Livre Interact
 > Reputation Level: Green (MercadoLíder). Metrics: Late shipments 2%, Cancellations 1%, Claims 0.5%.
 
 
+## ❓ FAQ
+
+**Q: How do I answer buyer questions?**
+Use `get_questions` to list them, then `answer_question` with the question ID and your response text.
+
+**Q: Why is my reputation yellow or red?**
+Use `get_metrics` to check your specific performance indicators. Late shipments, cancellations, and negative claims usually lower your reputation level.
+
+**Q: Can I see past conversations with buyers?**
+Yes, use `get_messages` with the Order ID to retrieve the message history for that specific sale.
+
+**Q: Can AI auto-respond to buyer questions?**
+Yes! You can set up workflows that fetch new questions with `get_questions` and automatically respond using `answer_question`. Just be mindful that each response is final and visible to all buyers browsing the listing.
+
+
 ## Installation & Usage
 
-To install and use the **Mercado Livre Interactions** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mercado-livre-interactions](https://vinkius.com/mcp/mercado-livre-interactions)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mercado Livre Interactions** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mercado-livre-interactions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mercado Livre Interactions** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mercado-livre-interactions": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

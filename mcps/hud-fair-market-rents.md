@@ -1,7 +1,6 @@
 # HUD Fair Market Rents MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hud-fair-market-rents)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hud-fair-market-rents-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hud-fair-market-rents-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hud-fair-market-rents)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **HUD Fair Market Rents*
 > Querying Income Limits for entity 0603799999 (Los Angeles County)... The median family income is $98,200. The 'Very Low Income' (50%) limit for a family of four is $59,500. Do you need the limits for other family sizes?
 
 
+## ❓ FAQ
+
+**Q: How do I find the specific ID for a county to get its rent data?**
+First, use the `list_states` tool to get the state code, then use `list_counties` with that code. This will provide you with the 10-digit FIPS code (entity ID) needed for the `get_fmr_data` tool.
+
+**Q: Can I retrieve rent data for an entire state at once?**
+Yes! Use the `get_state_fmr_data` tool and provide the two-letter state code (e.g., 'NY' for New York). It will return FMR data for all metro areas and counties within that state.
+
+**Q: What is the difference between IL and MTSP data?**
+IL data (`get_il_data`) refers to general Income Limits for housing assistance, while MTSP data (`get_mtsp_il_data`) specifically targets Multifamily Tax Subsidy Projects. Both can be queried using the same entity IDs.
+
+
 ## Installation & Usage
 
-To install and use the **HUD Fair Market Rents** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hud-fair-market-rents](https://vinkius.com/mcp/hud-fair-market-rents)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HUD Fair Market Rents** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hud-fair-market-rents` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HUD Fair Market Rents** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hud-fair-market-rents": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

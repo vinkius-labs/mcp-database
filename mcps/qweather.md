@@ -1,7 +1,6 @@
 # QWeather / 和风天气 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qweather)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qweather-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qweather-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qweather)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **QWeather / 和风天�
 > I've found the location ID for Hangzhou. The ID is `101210101`. It is located in Zhejiang, China. I can now use this ID to retrieve detailed weather or air quality data for you.
 
 
+## ❓ FAQ
+
+**Q: How do I find my QWeather API Key?**
+Log in to the [QWeather Developer Console](https://dev.qweather.com/), create a project, and your API Key will be displayed in the project settings. Ensure you select the correct key type (Web API).
+
+**Q: What is the difference between dev and commercial plans?**
+The 'dev' plan uses `devapi.qweather.com` and has limited data frequency and locations. Commercial plans (standard/premium) use `api.qweather.com` and provide higher resolution data and broader global coverage. Set your `qweather_plan` in the credentials to use the correct endpoint.
+
+**Q: Can I query weather by coordinates?**
+Yes! You can pass coordinates in the format `longitude,latitude` (e.g., '116.41,39.92') to any tool that accepts a `location` parameter.
+
+
 ## Installation & Usage
 
-To install and use the **QWeather / 和风天气** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/qweather](https://vinkius.com/mcp/qweather)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **QWeather / 和风天气** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `qweather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **QWeather / 和风天气** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "qweather": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

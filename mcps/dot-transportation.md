@@ -1,7 +1,6 @@
 # DOT Transportation / 美国交通部 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dot-transportation)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dot-transportation-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dot-transportation-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dot-transportation)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **DOT Transportation / �
 > According to the NHTSA NCAP ratings, the 2023 Honda CR-V (SUV 4WD) has received an overall safety rating of 5 stars. It scored highly in both frontal and side crash tests. Would you like me to check for any consumer complaints filed for this model?
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key for the DOT tools?**
+Most NHTSA and vPIC APIs are public and do not require a key. However, providing a Data.gov API Key can provide higher rate limits and access to more comprehensive transportation datasets.
+
+**Q: What is a VIN?**
+A VIN (Vehicle Identification Number) is a unique 17-digit code used by the automotive industry to identify individual motor vehicles. Decoding it reveals technical specs like the engine type and country of manufacture.
+
+**Q: Can I check for safety recalls using this server?**
+Yes! Use the `get_safety_recalls` tool with the vehicle's make, model, and year. Your agent will retrieve the official list of recalls issued by NHTSA for that specific configuration.
+
+
 ## Installation & Usage
 
-To install and use the **DOT Transportation / 美国交通部** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dot-transportation](https://vinkius.com/mcp/dot-transportation)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DOT Transportation / 美国交通部** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dot-transportation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DOT Transportation / 美国交通部** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dot-transportation": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

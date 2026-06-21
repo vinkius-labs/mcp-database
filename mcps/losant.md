@@ -1,7 +1,6 @@
 # Losant MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/losant)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/losant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/losant-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/losant)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -104,12 +103,52 @@ Here are some examples of how you can interact with the **Losant** MCP server us
 > The virtual button for 'Emergency Reset' in workflow 5f987654321 has been successfully pressed. The workflow logic is now executing.
 
 
+## ❓ FAQ
+
+**Q: Can I manually trigger a Losant workflow using this integration?**
+Yes! You can use the `press_virtual_button` tool by providing the Application ID and Workflow ID. This allows your AI agent to trigger specific automation logic on demand.
+
+**Q: How do I check the current status of a specific sensor or device?**
+Use the `get_device` tool with the Application ID and Device ID. The agent will return the full device metadata, including its last reported state and connection status.
+
+**Q: Is it possible to retrieve historical data for analysis?**
+Absolutely. You can use `query_time_series` to fetch historical attribute data or `query_last_value` for the most recent data points across your device fleet.
+
+
 ## Installation & Usage
 
-To install and use the **Losant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/losant](https://vinkius.com/mcp/losant)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Losant** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `losant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Losant** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "losant": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # 4YouSee MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/4yousee)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/4yousee-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/4yousee-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/4yousee)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **4YouSee** MCP server u
 > I've found 5 active templates in your 4YouSee Manager, including news layouts and weather widgets. I can provide the names and configuration details for each.
 
 
+## ❓ FAQ
+
+**Q: How do I check if a player is offline?**
+Use the `list_players` tool. It will return a list of all players including their current status (online/offline) and last seen timestamp.
+
+**Q: Can I see which media files are available for broadcast?**
+Yes. Use the `list_medias` tool to retrieve your library, including filenames, IDs, and file types. This is perfect for auditing your content before scheduling.
+
+**Q: Is it possible to manage users via the agent?**
+You can list existing users and groups using the `list_users` tool to audit permissions and access, but creating or deleting users must be done in the 4YouSee Manager.
+
+
 ## Installation & Usage
 
-To install and use the **4YouSee** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/4yousee](https://vinkius.com/mcp/4yousee)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **4YouSee** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `4yousee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **4YouSee** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "4yousee": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

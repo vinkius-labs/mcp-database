@@ -1,7 +1,6 @@
 # Lacework (Cloud Security & CNAPP) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lacework-cloud-security-cnapp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lacework-cloud-security-cnapp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lacework-cloud-security-cnapp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lacework-cloud-security-cnapp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Lacework (Cloud Securi
 > Auditing cloud inventory… I've discovered 2 unrestricted S3 buckets (AWS:S3:Bucket): 'public-assets-prod' and 'temp-data-dump'. Both allow world-readable access. Would you like to see the associated security policies for these assets?
 
 
+## ❓ FAQ
+
+**Q: Can I search for specific CVE exposure across my whole cloud environment?**
+Yes. Use the `search_cve_exposure` tool and provide the official CVE ID (e.g. CVE-2023-1234). Your agent will filter the entire cloud footprint to determine exactly which specific nodes or machines are currently vulnerable.
+
+**Q: How do I investigate the behavioral telemetry of a specific security alert?**
+The `get_alert` tool extracts precisely what baseline behavior was deviated from for a specific Alert ID. Your agent will return detailed contextual metadata, including offending container SHAs and correlated IP anomalies.
+
+**Q: Can my agent run custom threat hunting queries using LQL?**
+Absolutely. Use the `execute_query` tool to run specialized Lacework Query Language (LQL) blocks. This allows your agent to perform complex mathematical analysis on cloud telemetry to identify deep security patterns.
+
+
 ## Installation & Usage
 
-To install and use the **Lacework (Cloud Security & CNAPP)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lacework-cloud-security-cnapp](https://vinkius.com/mcp/lacework-cloud-security-cnapp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lacework (Cloud Security & CNAPP)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lacework-cloud-security-cnapp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lacework (Cloud Security & CNAPP)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lacework-cloud-security-cnapp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

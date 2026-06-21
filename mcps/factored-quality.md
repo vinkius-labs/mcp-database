@@ -1,7 +1,6 @@
 # Factored Quality MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/factored-quality)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/factored-quality-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/factored-quality-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/factored-quality)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Factored Quality** MCP
 > Booking started... I've initiated a new inspection request for 'Supplier Z'. Please provide the specific PO number and SKU details to finalize the booking.
 
 
+## ❓ FAQ
+
+**Q: How do I obtain my Factored Quality API Key?**
+Users with Company Admin access can generate API keys by navigating to **Settings > API Keys** in the Factored Quality Portal.
+
+**Q: Can I integrate this with my logistics provider?**
+Yes, you can use the API data to automate workflows with freight forwarders, such as green-lighting goods for pickup based on passing inspection results.
+
+**Q: Is it possible to view full lab test reports?**
+The `get_lab_test` tool retrieves detailed metadata and results for your lab tests. For full PDF reports, you can find the direct link in the metadata returned by the API.
+
+
 ## Installation & Usage
 
-To install and use the **Factored Quality** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/factored-quality](https://vinkius.com/mcp/factored-quality)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Factored Quality** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `factored-quality` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Factored Quality** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "factored-quality": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

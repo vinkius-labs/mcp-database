@@ -1,7 +1,6 @@
 # WebScrapingAPI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webscrapingapi)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/webscrapingapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/webscrapingapi-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webscrapingapi)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Here are some examples of how you can interact with the **WebScrapingAPI** MCP s
 > Successfully extracted product data from Amazon: Name: 'AcousticPro Wireless', Price: '$299.00', Rating: '4.8/5 stars (1,250 reviews)'. Would you like the full JSON extract?
 
 
+## ❓ FAQ
+
+**Q: Can I scrape websites that heavily use JavaScript?**
+Yes. Use the `scrape_js_rendered` tool. It utilizes a headless browser to execute the JavaScript on the target page and returns the full rendered HTML, making it ideal for SPAs built with React, Vue, or Angular.
+
+**Q: How do I get structured data from Google search results?**
+You can use the `search_google_serp` tool. Simply provide your search query, and WebScrapingAPI will return a structured JSON object containing organic results, titles, URLs, snippets, and even ads.
+
+**Q: What if a website blocks standard scraping attempts?**
+Use the `scrape_via_residential_proxy` tool. This routes your request through real residential IP addresses, providing maximum anonymity and allowing you to bypass aggressive bot protection systems.
+
+
 ## Installation & Usage
 
-To install and use the **WebScrapingAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/webscrapingapi](https://vinkius.com/mcp/webscrapingapi)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WebScrapingAPI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `webscrapingapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WebScrapingAPI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "webscrapingapi": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Spendesk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spendesk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spendesk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spendesk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spendesk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,12 +102,52 @@ I can list cards linked under these frameworks natively if required.
 There are 12 additional standard users onboard, let me know if you need specific names verified.
 
 
+## ❓ FAQ
+
+**Q: Can the AI perform destructive actions like making a real payment or deleting invoices?**
+No. The integration focuses strongly on extraction via READ endpoints (e.g. `list_payments`, `list_budgets`, `list_expense_claims`). It is designed to act as an advanced analytical viewing lens allowing you to query, organize, and monitor financial positions without executing operational mutations like transferring money.
+
+**Q: How can the AI help me understand a specific expense claim?**
+You can provide the Expense ID from your `list_expense_claims` search and ask natural questions. The AI will pull the structured data and explain explicitly who submitted the reimbursement, the exact amount, the associated spending currency, and the current processing status, formatting it all into an easily digestible summary.
+
+**Q: How deep is the Spendesk token scoped? Is it secure?**
+The integration is secure. Your Vinkius Agent runs strictly client-side on your PC. It queries the API using the explicit Bearer Token you manage. Spendesk's token access capabilities can also be carefully constrained natively from your Organization's Integration Settings to further enforce least privilege.
+
+
 ## Installation & Usage
 
-To install and use the **Spendesk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/spendesk](https://vinkius.com/mcp/spendesk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Spendesk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `spendesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Spendesk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "spendesk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

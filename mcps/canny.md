@@ -1,7 +1,6 @@
 # Canny MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/canny)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/canny-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/canny-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/canny)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Canny** MCP server usi
 > Comment 'Great idea!' has been successfully added to post 99283 in Canny.
 
 
+## ❓ FAQ
+
+**Q: Can I add a vote to a post using the agent?**
+Yes! Use the `vote_on_post` tool with the Post ID and Voter ID. Your agent will add the vote in Canny, helping prioritize the feedback item.
+
+**Q: How do I list all the planned features from a specific board?**
+Simply ask the agent to `list_feedback_posts` and provide the Board ID and set the status to `planned`. It will retrieve all matching posts from your Canny account.
+
+**Q: Does the integration allow creating a new feedback post?**
+Yes. Use the `create_feedback_post` action and provide the Board ID, Author ID, title, and details. The new item will be added to your Canny board instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Canny** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/canny](https://vinkius.com/mcp/canny)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Canny** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `canny` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Canny** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "canny": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

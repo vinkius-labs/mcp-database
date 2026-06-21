@@ -1,7 +1,6 @@
 # MusicBrainz MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/musicbrainz)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/musicbrainz-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/musicbrainz-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/musicbrainz)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -111,12 +110,52 @@ Here are some examples of how you can interact with the **MusicBrainz** MCP serv
 > Found 'Bohemian Rhapsody' by Queen. Duration: 5:55. ISRC: GBAHK7500018. First released on 'A Night at the Opera' (1975). Multiple versions exist including single edit and remastered versions.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! MusicBrainz is completely free and open. No authentication required. Just subscribe and start searching. Rate limit is 1 request per second.
+
+**Q: What is an MBID?**
+MBID stands for MusicBrainz Identifier — a unique UUID assigned to every entity in the database (artists, releases, recordings, labels, works). Use search tools to find MBIDs, then use get_* tools with the MBID for detailed info.
+
+**Q: What's the difference between a release and a release group?**
+A release is a specific physical or digital version of an album (e.g. the 2012 remastered CD). A release group groups all versions of the same album together (e.g. "The Dark Side of the Moon" as a canonical work). Use release groups for finding the canonical album.
+
+
 ## Installation & Usage
 
-To install and use the **MusicBrainz** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/musicbrainz](https://vinkius.com/mcp/musicbrainz)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MusicBrainz** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `musicbrainz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MusicBrainz** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "musicbrainz": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

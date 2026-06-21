@@ -1,7 +1,6 @@
 # Fly.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flyio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flyio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flyio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flyio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,52 @@ Here are some examples of how you can interact with the **Fly.io** MCP server us
 > Retrieving volumes... I found 1 persistent NVMe volume: 'data_vol' (Size: 10GB, Region: iad). It is currently attached to machine 918572b0 and is residency on physical hardware node xyz.
 
 
+## ❓ FAQ
+
+**Q: Can my agent scale up my application by creating more machines in a specific region?**
+Yes. Use the 'create_machine' tool. You can specify the region (e.g., 'iad', 'gru') and the Docker image. The agent will command the Fly.io orchestrator to boot up new VM instances instantly to handle increased demand.
+
+**Q: How do I run a database migration or shell command on a live machine via chat?**
+Use the 'exec_machine' tool. Provide the machine ID and the command. The agent bypasses SSH entirely by interacting directly with the hypervisor API to run your binary alongside the running container securely.
+
+**Q: Can I check the health and image version of my active machines through the agent?**
+Absolutely. The 'get_machine' tool retrieves exhaustive runtime states, including container health, current executing status (started/stopped), and the precise docker image digest actively booted into memory.
+
+
 ## Installation & Usage
 
-To install and use the **Fly.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flyio](https://vinkius.com/mcp/flyio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fly.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flyio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fly.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flyio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

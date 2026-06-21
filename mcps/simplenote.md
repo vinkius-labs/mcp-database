@@ -1,7 +1,6 @@
 # Simplenote MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simplenote)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/simplenote-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/simplenote-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simplenote)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Simplenote** MCP serve
 > The note f1b2c3d4 has been permanently deleted. This action cannot be undone.
 
 
+## ❓ FAQ
+
+**Q: Can the integration accidentally delete important notes?**
+The `delete_note` tool performs a permanent deletion. We recommend instructing your AI agent to always confirm before executing any deletion. You can also use `get_note_version` to review note history before making changes.
+
+**Q: Does it support shared or team notes?**
+Simplenote is designed for personal note management. This integration accesses notes tied to the authenticated user's account only. Team collaboration features are not available through the Simperium API.
+
+**Q: Does it support Markdown formatting?**
+Yes. Simplenote stores plain text, so Markdown syntax is preserved as-is when you create or update notes. The Simplenote clients will render Markdown formatting natively.
+
+
 ## Installation & Usage
 
-To install and use the **Simplenote** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/simplenote](https://vinkius.com/mcp/simplenote)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Simplenote** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `simplenote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Simplenote** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "simplenote": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # VWO MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vwo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vwo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vwo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vwo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **VWO** MCP server using
 > I've disabled the feature flag 'new_payment_gateway' (ID: feat-555) as requested. The status has been updated successfully across all environments. Is there anything else you need me to adjust?
 
 
+## ❓ FAQ
+
+**Q: Can I check the winning variation of an A/B test through the agent?**
+Yes. The `get_campaign_results` tool allows your AI agent to pull detailed performance metrics for any experiment, showing improvement percentages and statistical significance for each variation compared to the control.
+
+**Q: Is it possible to enable or disable feature flags via chat?**
+Absolutely. Using the `toggle_feature_flag` tool, you can instruct your agent to enable or disable any feature flag for a specific rollout or emergency kill-switch scenario, ensuring fast control without opening the VWO dashboard.
+
+**Q: How can I see what conversion goals are being tracked for my campaigns?**
+You can use the `list_conversion_goals` tool to retrieve all metrics and KPIs (like clicks, form submissions, or revenue) currently being monitored in your VWO account.
+
+
 ## Installation & Usage
 
-To install and use the **VWO** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vwo](https://vinkius.com/mcp/vwo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **VWO** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vwo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **VWO** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vwo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # INI Parser Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ini-parser-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ini-parser-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ini-parser-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ini-parser-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -52,12 +51,52 @@ Here are some examples of how you can interact with the **INI Parser Engine** MC
 > INI Conversion: [mysqld] section extracted with max_connections, innodb_buffer_pool_size.
 
 
+## ❓ FAQ
+
+**Q: Does it preserve INI sections?**
+Yes. INI sections like [database] become nested JSON objects and are fully restored when converting back to INI format.
+
+**Q: What config files does this work with?**
+Any INI-format file: php.ini, my.cnf (MySQL), .editorconfig, Git config, Windows .ini files, and custom application configs.
+
+**Q: Does it handle comments?**
+Yes. Lines starting with ; or # are treated as comments and properly handled during parsing. Comments are stripped from the JSON output.
+
+
 ## Installation & Usage
 
-To install and use the **INI Parser Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ini-parser-engine](https://vinkius.com/mcp/ini-parser-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **INI Parser Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ini-parser-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **INI Parser Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ini-parser-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

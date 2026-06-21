@@ -1,7 +1,6 @@
 # SendPulse MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sendpulse)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sendpulse-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sendpulse-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sendpulse)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **SendPulse** MCP server
 > Fetching your campaigns... I found your most recent ones: 'Summer Sale' (Sent), 'Product Update' (Draft), and 'Weekly Digest' (Scheduled). Would you like more details on any of these?
 
 
+## ❓ FAQ
+
+**Q: How can I check if I have enough credits for a new campaign?**
+You can use the `get_balance` tool. It returns the current balance for your main account and specific services like Email, SMTP, and Push notifications.
+
+**Q: Is it possible to add multiple contacts to a mailing list at once?**
+Yes! The `add_contacts` tool allows you to pass a JSON array of email objects to bulk-add subscribers to any of your address books.
+
+**Q: Can I see the details of a specific subscriber using their email address?**
+Certainly. Use the `get_contact_info` tool by providing the Address Book ID and the specific email address to retrieve their metadata and status.
+
+
 ## Installation & Usage
 
-To install and use the **SendPulse** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sendpulse](https://vinkius.com/mcp/sendpulse)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SendPulse** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sendpulse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SendPulse** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sendpulse": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

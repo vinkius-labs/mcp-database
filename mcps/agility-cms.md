@@ -1,7 +1,6 @@
 # Agility CMS MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agility-cms)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agility-cms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agility-cms-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agility-cms)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Agility CMS** MCP serv
 > Here is the layout breakdown for Page ID 12 (Home Page). It uses the 'StandardTemplate'. There are 4 UI modules mapped in the 'MainContentZone': Hero Banner, Features Grid, Testimonials, and Call to Action.
 
 
+## ❓ FAQ
+
+**Q: Can my agent keep track of incremental updates to my CMS items?**
+Yes. The agent has tools specifically designed to fetch incremental updates using a sync token. It can request only the CMS items or pages that have changed (created, updated, or deleted) since the last automated sync, optimizing fetch latency.
+
+**Q: How do I find the correct Reference Name to query content?**
+Reference Names match the identifiers predefined in your Agility CMS Models architecture (such as 'articles', 'authors', or 'posts'). If you are unsure, ask the agent to scan common variables based on your company's naming conventions.
+
+**Q: Can my agent preview unpublished drafting content?**
+That depends on the API Token you supply during the integration. If you provide a Preview API Key, the agent will have read-access to the staging and drafted documents. If you provide a Fetch API key, it will only see published items.
+
+
 ## Installation & Usage
 
-To install and use the **Agility CMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/agility-cms](https://vinkius.com/mcp/agility-cms)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Agility CMS** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `agility-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Agility CMS** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "agility-cms": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

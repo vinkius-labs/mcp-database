@@ -1,7 +1,6 @@
 # OSTI (DOE Scientific Research) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/osti-doe-scientific-research)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/osti-doe-scientific-research-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/osti-doe-scientific-research-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/osti-doe-scientific-research)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **OSTI (DOE Scientific R
 > Retrieving record 1015678... This is a technical report titled 'Atmospheric Radiation Measurement (ARM) User Facility'. It was authored by the Pacific Northwest National Laboratory and sponsored by the Office of Science.
 
 
+## ❓ FAQ
+
+**Q: How can I search for research papers by a specific author?**
+You can use the `search_osti_records` tool and provide the author's name in the `author` parameter. The agent will return a list of matching records from the OSTI.GOV repository.
+
+**Q: What is the difference between searching OSTI records and Data Explorer records?**
+Use `search_osti_records` for general research information like publications and reports. Use `search_data_explorer_records` specifically when you are looking for scientific datasets.
+
+**Q: Can I reserve a DOI for my research before it is public?**
+Yes, if you have an E-Link token, you can use the `reserve_doi` action. You'll need to provide the title, product type, and your site ownership code.
+
+
 ## Installation & Usage
 
-To install and use the **OSTI (DOE Scientific Research)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/osti-doe-scientific-research](https://vinkius.com/mcp/osti-doe-scientific-research)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OSTI (DOE Scientific Research)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `osti-doe-scientific-research` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OSTI (DOE Scientific Research)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "osti-doe-scientific-research": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Planable MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/planable)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/planable-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/planable-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/planable)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Planable** MCP server 
 > Understood. Sent the explicit mutation `reject_post` targeting `98341x`. I reversed the node state back into draft mode and attached the explicit feedback log: "Please rewrite the structural hook — it feels overly promotional and sales-oriented.". The content pipeline has been paused accordingly.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically review and bulk-approve pending posts?**
+Yes. Instruct the agent to run `list_posts` filtered by 'pending_approval'. Tell your LLM to ensure they lack profanities or adhere strictly to brand tone. If they pass, you can command the AI to loop over their unique IDs mapping the `approve_post` mutation simultaneously, scheduling the calendar effortlessly.
+
+**Q: Can I leave comments for the rest of my design team through this?**
+Absolutely. Using the `reject_post` functionality or directly targeting `add_comment` on a specific Post ID, the agent injects your exact critique ("Make the background logo larger") back into the underlying Planable portal in real-time. Your team sees your notes just as if you were logged onto their board.
+
+**Q: Will the API tell me exactly which social channel the post is meant for?**
+Yes! Running `list_pages` maps the organizational identifiers. The API correlates structural pages inside your workspace to logical federated networks (Facebook, LinkedIn, TikTok), telling your agent explicitly what bounds to consider regarding content formatting constraints.
+
+
 ## Installation & Usage
 
-To install and use the **Planable** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/planable](https://vinkius.com/mcp/planable)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Planable** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `planable` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Planable** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "planable": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

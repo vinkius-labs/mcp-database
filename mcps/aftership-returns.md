@@ -1,7 +1,6 @@
 # AfterShip Returns MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aftership-returns)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aftership-returns-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aftership-returns-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aftership-returns)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **AfterShip Returns** MC
 > I've retrieved the details for RMA-98765. It includes 2 items: 'Blue Cotton Shirt' (Wrong size) and 'Canvas Tote' (Defective). The return shipment is currently in transit via UPS.
 
 
+## ❓ FAQ
+
+**Q: How do I find my AfterShip API Key?**
+Log in to your AfterShip account, navigate to **Settings** > **API Keys**. You can generate a new API key there. This key works for both Returns and Tracking APIs.
+
+**Q: Can I approve a return request via the agent?**
+Yes! Use the `approve_return` tool and provide the Return ID. Your agent will update the status in AfterShip, which can also trigger automatic label generation if configured.
+
+**Q: Does this support marking items as received?**
+Yes, you can use the `receive_items` tool to record which items from an RMA have arrived at your warehouse and their current condition grade.
+
+
 ## Installation & Usage
 
-To install and use the **AfterShip Returns** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aftership-returns](https://vinkius.com/mcp/aftership-returns)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AfterShip Returns** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aftership-returns` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AfterShip Returns** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aftership-returns": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

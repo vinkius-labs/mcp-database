@@ -1,7 +1,6 @@
 # TransportAPI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/transportapi-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/transportapi-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/transportapi-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/transportapi-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **TransportAPI** MCP ser
 > I've identified several bus stops near Charing Cross. Notable stops include 'Trafalgar Square' and 'Horse Guards Parade'. Would you like the live departures for any specific stop ATCO code?
 
 
+## ❓ FAQ
+
+**Q: How do I find my TransportAPI credentials?**
+Log in to your [**TransportAPI dashboard**](https://developer.transportapi.com/), and you will find your App ID and App Key under your 'Account' or 'Apps' section. Copy and paste them below.
+
+**Q: Does this cover transport outside of the UK?**
+TransportAPI provides high-density data primarily for the UK transport network, including national rail, London Underground, and regional bus services.
+
+**Q: Can the agent plan a journey from coordinates?**
+Yes. Use the `get_journey_plan` tool providing coordinates in 'lat,lon' format for the 'from' or 'to' parameters. Your agent will calculate the best public transport route instantly.
+
+
 ## Installation & Usage
 
-To install and use the **TransportAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/transportapi-alternative](https://vinkius.com/mcp/transportapi-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TransportAPI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `transportapi-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TransportAPI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "transportapi-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

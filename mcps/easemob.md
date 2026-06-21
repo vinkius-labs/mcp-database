@@ -1,7 +1,6 @@
 # Easemob / 环信 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/easemob)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/easemob-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/easemob-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/easemob)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Easemob / 环信** MCP
 > I've created the chat group 'Project Alpha'. The Group ID is '12345678'. I've also assigned 'admin' as the owner. Would you like to add any members to this new group now?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Easemob Client ID and Secret?**
+Log in to the [Easemob Console](https://console.easemob.com/), select your application, and you will find your Org Name, App Name, Client ID, and Client Secret in the application details overview.
+
+**Q: Does this server handle token rotation?**
+Yes! The server automatically requests and caches an OAuth2 access token using your credentials, handling expiration and renewal internally for all operations.
+
+**Q: Can I send messages to multiple users at once?**
+Yes. In the `send_text_message` tool, you can provide a comma-separated list of usernames in the `to` parameter to reach multiple recipients simultaneously.
+
+
 ## Installation & Usage
 
-To install and use the **Easemob / 环信** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/easemob](https://vinkius.com/mcp/easemob)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Easemob / 环信** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `easemob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Easemob / 环信** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "easemob": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

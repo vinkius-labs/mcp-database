@@ -1,7 +1,6 @@
 # Paperless Parts MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paperless-parts)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/paperless-parts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/paperless-parts-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paperless-parts)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Paperless Parts** MCP 
 > Let's inspect it... Account 'Northwest Defense Systems' is categorized as a primary supplier. Their active billing cycle is set to Net 30, and the primary contact is marked as Amanda T.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details of a specific order just by providing the Order ID?**
+Yes! Use the `get_order` tool with exactly the Order ID. Your agent will respond with complete metadata and the precise operational notes connected to that order in seconds.
+
+**Q: How do I update the status of a quote during my workflow?**
+Simply ask the agent to run the `update_quote_status` action on the target Quote ID and specify the new status. The platform will automatically register the change.
+
+**Q: Does the integration permit creating new customer accounts?**
+Yes. The tools include `create_account` and `create_contact` operations, empowering your agent to expand your CRM pipeline dynamically without ever opening the web application.
+
+
 ## Installation & Usage
 
-To install and use the **Paperless Parts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/paperless-parts](https://vinkius.com/mcp/paperless-parts)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Paperless Parts** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `paperless-parts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Paperless Parts** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "paperless-parts": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

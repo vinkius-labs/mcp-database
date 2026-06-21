@@ -1,7 +1,6 @@
 # Cooper Hewitt MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cooper-hewitt)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cooper-hewitt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cooper-hewitt-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cooper-hewitt)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **Cooper Hewitt** MCP se
 > Here is a random selection: 'Bird and Anemone' textile (1882), designed by William Morris. It's a block-printed cotton fabric featuring intricate floral and avian patterns. Would you like to see its exhibition history?
 
 
+## ❓ FAQ
+
+**Q: Can I search for objects by a specific color?**
+Yes! Use the `search_collection` tool and provide a hex color or CSS name in the `color` parameter to find items matching that aesthetic.
+
+**Q: How do I find out who designed a specific object?**
+Use the `get_object_participants` tool with the Object ID. It will return the names and roles of the people involved in the item's creation.
+
+**Q: Is it possible to see what is currently on display at the museum?**
+Absolutely. The `get_objects_on_display` tool provides a paginated list of all objects currently featured in the physical galleries.
+
+
 ## Installation & Usage
 
-To install and use the **Cooper Hewitt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cooper-hewitt](https://vinkius.com/mcp/cooper-hewitt)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cooper Hewitt** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cooper-hewitt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cooper Hewitt** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cooper-hewitt": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

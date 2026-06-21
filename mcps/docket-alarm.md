@@ -1,7 +1,6 @@
 # Docket Alarm MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docket-alarm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docket-alarm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docket-alarm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docket-alarm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Docket Alarm** MCP ser
 > Analyzing the complaint... This is a copyright infringement suit where the plaintiff alleges unauthorized use of photographic works. The primary cause of action is under 17 U.S.C. § 501. Would you like the list of specific exhibits mentioned?
 
 
+## ❓ FAQ
+
+**Q: Does searching PACER directly incur fees?**
+Yes, using the `search_pacer` tool incurs a $0.10 fee per page of results as per PACER's standard pricing. You can use the `test` parameter to return fake data without incurring fees.
+
+**Q: How can I get alerts for new activity on a specific case?**
+Use the `track_case` tool by providing the court name, docket number, and a schedule (daily, weekly, or hourly). The system will then monitor the case and alert you to new filings.
+
+**Q: Can I summarize a legal complaint using this server?**
+Yes! The `get_complaint_summary` tool is designed to analyze the initial filings of a case and provide a concise summary of the allegations and parties involved.
+
+
 ## Installation & Usage
 
-To install and use the **Docket Alarm** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/docket-alarm](https://vinkius.com/mcp/docket-alarm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Docket Alarm** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `docket-alarm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Docket Alarm** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "docket-alarm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

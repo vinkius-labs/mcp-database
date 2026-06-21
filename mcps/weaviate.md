@@ -1,7 +1,6 @@
 # Weaviate MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/weaviate)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/weaviate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/weaviate-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/weaviate)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Weaviate** MCP server 
 > All 3 nodes in your cluster are currently 'HEALTHY'. Node-1 is using 42% CPU and 6.5GB RAM. Node-2 and Node-3 are also within normal operating parameters. No issues detected.
 
 
+## ❓ FAQ
+
+**Q: Can I perform a vector search using float arrays through the agent?**
+Yes. The `search_near_vector` tool allows you to perform semantic searches by providing a query vector as a JSON array of floats. Your AI agent will return the most similar objects from your Weaviate collection.
+
+**Q: How do I see the data structure of my Weaviate collections?**
+You can use the `get_full_schema` tool to see all classes and properties defined in your instance, or `get_class_schema` if you want to focus on a specific collection's definition.
+
+**Q: Is it possible to monitor cluster health via chat?**
+Absolutely. Use the `get_cluster_nodes` tool to retrieve operational data for all nodes in your Weaviate cluster, including their current status and resource utilization metrics.
+
+
 ## Installation & Usage
 
-To install and use the **Weaviate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/weaviate](https://vinkius.com/mcp/weaviate)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Weaviate** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `weaviate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Weaviate** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "weaviate": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

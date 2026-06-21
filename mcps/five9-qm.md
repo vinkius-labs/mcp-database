@@ -1,7 +1,6 @@
 # Five9 QM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/five9-qm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/five9-qm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/five9-qm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/five9-qm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Five9 QM** MCP server 
 > Retrieving forms... You have 3 active evaluation forms: 'General Support Rubric', 'Advanced Technical Troubleshooting', and 'Sales Compliance Checklist'. Which one should I inspect for you?
 
 
+## ❓ FAQ
+
+**Q: How do I get a link to listen to a specific call recording?**
+You can use the 'get_recording_link' tool by providing the Interaction ID. The agent will return a secure, temporary URL that allows you to play back the audio file directly.
+
+**Q: Can I see the structure of an evaluation form before submitting a score?**
+Yes! The 'get_evaluation_form' tool retrieves the full structure of any quality form, including questions and scoring logic, so you can ensure you have the right context for your evaluation.
+
+**Q: Is there a way to track organization-wide quality trends?**
+Absolutely. Use the 'get_qm_summary' tool to retrieve high-level metrics and summary reports that highlight overall quality performance across your entire contact center.
+
+
 ## Installation & Usage
 
-To install and use the **Five9 QM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/five9-qm](https://vinkius.com/mcp/five9-qm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Five9 QM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `five9-qm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Five9 QM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "five9-qm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

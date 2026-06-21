@@ -1,7 +1,6 @@
 # InvestorLift MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/investorlift)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/investorlift-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/investorlift-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/investorlift)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **InvestorLift** MCP ser
 > Message sent successfully to the seller of deal 98765. I've let them know you're interested in making a cash offer.
 
 
+## ❓ FAQ
+
+**Q: How can I filter real estate deals by a specific city and price range?**
+You can use the `list_deals` tool. Simply provide parameters like `city`, `min_price`, and `max_price` to narrow down the marketplace results to your specific needs.
+
+**Q: Can I update my investment criteria so the AI finds better matches?**
+Yes! Use the `update_buy_box` tool to send a JSON object containing your updated criteria. This helps the system align deal discovery with your investment strategy.
+
+**Q: Is it possible to contact a seller directly through the AI?**
+Absolutely. Use the `send_message` tool by providing the `deal_id` and your message text. The AI will deliver your inquiry to the seller regarding that specific property.
+
+
 ## Installation & Usage
 
-To install and use the **InvestorLift** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/investorlift](https://vinkius.com/mcp/investorlift)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **InvestorLift** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `investorlift` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **InvestorLift** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "investorlift": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

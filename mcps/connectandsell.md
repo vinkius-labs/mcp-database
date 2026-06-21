@@ -1,7 +1,6 @@
 # ConnectAndSell MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/connectandsell)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/connectandsell-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/connectandsell-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/connectandsell)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **ConnectAndSell** MCP s
 > Across all active reps today, there have been a total of 185 connections from 6,430 dials, giving an average connection rate of 2.87%.
 
 
+## ❓ FAQ
+
+**Q: How do I securely obtain ConnectAndSell API credentials?**
+You typically need to contact your organization's ConnectAndSell technical administrator or reach out directly to the official support channel to provision API access. Once authorized, secure the credentials supplied and enter them safely in this integration's configuration context below.
+
+**Q: Can the AI place active phone calls on behalf of the sales reps?**
+No. This integration operates primarily in a reporting, querying, and monitoring capacity. It manages system metrics to retrieve data on usage, calling statistics, performance overviews and campaign metrics, rather than taking direct voice or real-time call control roles which structurally belong strictly within the dialer platform interface natively.
+
+**Q: What exact statistics can be reviewed with this AI integration?**
+You can effectively retrieve summary counts of dials made, connection and conversion ratios, active campaign performance statuses, agent-level tallies of successful meetings set, and various log insights correlating duration of talk to explicit disposition outcomes recorded internally.
+
+
 ## Installation & Usage
 
-To install and use the **ConnectAndSell** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/connectandsell](https://vinkius.com/mcp/connectandsell)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ConnectAndSell** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `connectandsell` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ConnectAndSell** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "connectandsell": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

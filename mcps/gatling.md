@@ -1,7 +1,6 @@
 # Gatling MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gatling)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gatling-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gatling-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gatling)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Gatling** MCP server u
 > Retrieving stats for run_xyz789... The test achieved a peak of 500 Virtual Users. Total requests: 12,500. Error rate: 0.05%. Average response time: 120ms. Would you like a breakdown by request type?
 
 
+## ❓ FAQ
+
+**Q: Can my agent start a Gatling simulation run via chat?**
+Yes. Use the 'start_simulation' tool with the specific Simulation ID. The agent will command the Gatling Enterprise infrastructure to begin the load test and return a unique run ID for tracking.
+
+**Q: How do I check the request statistics for a completed test run via chat?**
+Use the 'get_run' tool. Provide the Run ID. Your agent will fetch the full details of the execution, including request stats, error counts, and the virtual user peak reached during the test.
+
+**Q: Can I see my credit quotas and team member counts through the agent?**
+Absolutely. Use the 'list_teams' tool. Your agent will enumerate the teams registered in your Gatling Enterprise account and monitor their member counts and available credit quotas natively.
+
+
 ## Installation & Usage
 
-To install and use the **Gatling** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gatling](https://vinkius.com/mcp/gatling)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gatling** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gatling` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gatling** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gatling": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

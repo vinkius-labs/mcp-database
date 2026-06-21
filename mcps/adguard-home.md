@@ -1,7 +1,6 @@
 # AdGuard Home MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adguard-home)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adguard-home-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adguard-home-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adguard-home)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **AdGuard Home** MCP ser
 > Yes, 'doubleclick.net' is being filtered for that client. It is currently blocked by the 'AdGuard DNS filter' list.
 
 
+## ❓ FAQ
+
+**Q: Can I check if a specific website is being blocked for a specific client?**
+Yes, use the `check_host` tool. Provide the domain name and optionally the client IP to see if it's filtered and which rule is responsible.
+
+**Q: Is it possible to pause the ad-blocking globally for a short period?**
+Yes. The `set_protection` tool allows you to disable filtering globally. You can also specify a duration in milliseconds if you want it to re-enable automatically.
+
+**Q: How do I add a new blocklist URL using the AI?**
+Simply use the `add_filter_url` action. You'll need to provide a name for the filter, the URL of the list, and specify if it's a whitelist or blocklist.
+
+
 ## Installation & Usage
 
-To install and use the **AdGuard Home** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/adguard-home](https://vinkius.com/mcp/adguard-home)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AdGuard Home** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `adguard-home` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AdGuard Home** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "adguard-home": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

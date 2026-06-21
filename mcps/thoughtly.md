@@ -1,7 +1,6 @@
 # Thoughtly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thoughtly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/thoughtly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/thoughtly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thoughtly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Thoughtly** MCP server
 > Extracting call data... The AI successfully booked an appointment. Here is the transcript: 'AI: Hello, are you available next Tuesday? Human: Yes, 2 PM works. AI: Great, confirmed.'
 
 
+## ❓ FAQ
+
+**Q: Can my text AI agent command a voice agent to call a specific person?**
+Yes! Use the `trigger_call` tool by providing the Interview ID (Voice Agent) and the Contact ID. The voice AI will immediately execute the outbound call.
+
+**Q: Is it possible to read the transcript of what the Voice AI discussed during a call?**
+Absolutely. By calling the `get_call_history` tool with a specific Call ID, your agent can extract the entire conversational transcript and analyze the outcome without leaving the interface.
+
+**Q: Do I need to manually register contacts in the Thoughtly dashboard before calling them?**
+No. The integration provides the `create_contact` tool, allowing your AI to dynamically add new leads to the CRM and immediately initiate a phone call in one fluid workflow.
+
+
 ## Installation & Usage
 
-To install and use the **Thoughtly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/thoughtly](https://vinkius.com/mcp/thoughtly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Thoughtly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `thoughtly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Thoughtly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "thoughtly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

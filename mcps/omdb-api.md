@@ -1,7 +1,6 @@
 # OMDb API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omdb-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/omdb-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/omdb-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omdb-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -112,12 +111,55 @@ Here are some examples of how you can interact with the **OMDb API** MCP server 
 All directed by Peter Jackson. Return of the King won 11 Academy Awards including Best Picture.
 
 
+## ❓ FAQ
+
+**Q: What's the difference between searching by title vs. using an IMDb ID?**
+Using an IMDb ID (e.g., `tt0468569`) is the most accurate method because IDs are unique — there's never ambiguity between different films with the same name. Searching by title can return errors if multiple films share the same title (e.g., "King Kong" has multiple versions). If you know the IMDb ID from a link or another source, always prefer `get_by_imdb_id`. Use `get_by_title` when you only know the film name.
+
+**Q: Can I get ratings from multiple sources (IMDb, Rotten Tomatoes, Metacritic) at once?**
+Yes! Use the `get_ratings` tool with either a movie title or IMDb ID. It returns all available ratings from IMDb (out of 10), Rotten Tomatoes (percentage), and Metacritic (out of 100) in a single call. Not all titles have all three ratings — newer or less popular films may only have IMDb data. The tool also returns the IMDb vote count and Metascore as separate fields.
+
+**Q: Can I look up details for multiple movies at the same time?**
+Yes! Use the `get_multiple_by_id` tool with comma-separated IMDb IDs (e.g., `tt0468569,tt1375666,tt0816692` for the Dark Knight trilogy). It fetches details for each ID and returns them combined in one response. If any ID fails, it shows an error for that specific ID while still returning results for the others. This is ideal for franchise comparisons or batch analysis.
+
+**Q: What's the difference between short and full plot summaries?**
+The short plot provides a concise 1-2 paragraph summary — ideal for quick identification or brief descriptions. The full plot offers a much more detailed synopsis with deeper plot points, character arcs, and story resolution. Use short for quick lookups (`get_by_title`, `get_short_plot`) and full when users want comprehensive understanding (`get_full_by_title`, `get_full_by_imdb_id`).
+
+
 ## Installation & Usage
 
-To install and use the **OMDb API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/omdb-api](https://vinkius.com/mcp/omdb-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OMDb API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `omdb-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OMDb API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "omdb-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

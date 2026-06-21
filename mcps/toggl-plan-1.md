@@ -1,7 +1,6 @@
 # Toggl Plan MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/toggl-plan-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/toggl-plan-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/toggl-plan-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/toggl-plan-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Toggl Plan** MCP serve
 > The timeline task 'Re-authenticate module' has been successfully created under project 19332. New Task ID: 52003.
 
 
+## ❓ FAQ
+
+**Q: Where do I obtain my Toggl Plan Access Token?**
+Navigate to the Toggl Plan web panel, head over to your **Profile settings**, and locate the Developer/API Integrations segment. You will need a valid Access Token (often labeled API or OAuth Bearer token in your administrative view). Create it permanently and keep the exposed hash secure.
+
+**Q: Does the system support permanent deletion of elements?**
+Yes. This connector features a `delete_timeline_task` handler. If specifically instructed by you, the AI agent is capable of making a permanent removal request which cannot be un-done. You should instruct the AI cautiously when using mutations.
+
+**Q: Are there any data sync delays when updating timelines with the agent?**
+No. Toggl Plan's API ensures immediate reflection of all timeline and milestone changes. When the agent updates a task or resource allocation, it instantly appears in the web interface for all workspace users without any caching delays.
+
+
 ## Installation & Usage
 
-To install and use the **Toggl Plan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/toggl-plan-1](https://vinkius.com/mcp/toggl-plan-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Toggl Plan** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `toggl-plan-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Toggl Plan** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "toggl-plan-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

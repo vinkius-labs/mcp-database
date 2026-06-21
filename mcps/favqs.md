@@ -1,7 +1,6 @@
 # Favqs MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/favqs)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/favqs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/favqs-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/favqs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -95,12 +94,52 @@ Here are some examples of how you can interact with the **Favqs** MCP server usi
 > I've successfully added quote 12345 to your favorites. You can view your full list of favorites anytime using `list_quotes`.
 
 
+## ❓ FAQ
+
+**Q: How do I find the daily featured quote?**
+Simply use the `get_qotd` tool. It fetches the current 'Quote of the Day' from Favqs without requiring any specific parameters.
+
+**Q: Can I search for quotes by a specific author or tag?**
+Yes! Use the `list_quotes` tool. You can provide a keyword in the `filter` parameter and specify the `type` (e.g., 'author' or 'tag') to narrow down your results.
+
+**Q: Do I need a user session for all actions?**
+No. Public actions like `get_qotd` and `list_quotes` only require an App Token. However, personalized actions like `favorite_quote`, `follow`, or `add_quote` require a User Token, which you can obtain by running `create_session` with your credentials.
+
+
 ## Installation & Usage
 
-To install and use the **Favqs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/favqs](https://vinkius.com/mcp/favqs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Favqs** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `favqs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Favqs** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "favqs": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

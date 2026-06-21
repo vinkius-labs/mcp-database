@@ -1,7 +1,6 @@
 # Replicate MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/replicate-extended)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/replicate-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/replicate-extended-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/replicate-extended)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Replicate** MCP server
 > Fetching your history... You have 3 recent predictions. The latest one (pred_123abc) succeeded and generated an image URL. Would you like to see the results?
 
 
+## ❓ FAQ
+
+**Q: How can I check if my prediction has finished and see the output?**
+Use the `get_prediction` tool with your Prediction ID. It will return the current status (starting, processing, succeeded, or failed) along with the output URLs or data once completed.
+
+**Q: Can I search for specific types of models like 'image-to-text'?**
+Yes! Use the `search_models` tool with your query. It will return a list of public models matching your terms, including their owners and descriptions.
+
+**Q: Is it possible to stop a model that is taking too long to run?**
+Absolutely. Use the `cancel_prediction` tool with the target Prediction ID to immediately stop the execution and prevent further usage costs.
+
+
 ## Installation & Usage
 
-To install and use the **Replicate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/replicate-extended](https://vinkius.com/mcp/replicate-extended)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Replicate** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `replicate-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Replicate** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "replicate-extended": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

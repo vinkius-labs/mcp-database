@@ -1,7 +1,6 @@
 # ThirdWeb MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thirdweb)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/thirdweb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/thirdweb-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thirdweb)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **ThirdWeb** MCP server 
 > Using `get_user_details`, I found that this address is linked to User ID 'user_987' with the verified email 'admin@web3app.com'.
 
 
+## ❓ FAQ
+
+**Q: Can I read data from a smart contract without paying gas?**
+Yes! Use the `read_contract` tool. It performs read-only calls (multicall) to the blockchain, which do not require gas or state changes.
+
+**Q: How do I start an authentication flow for a new user?**
+You can use the `initiate_auth` tool by specifying the method (email, sms, etc.) and the user's identifier. Then, use `complete_auth` with the verification code to finish the login.
+
+**Q: Can I find a user's profile if I only have their wallet address?**
+Absolutely. Use the `get_user_details` tool and provide the `address` parameter. The agent will return any associated user IDs, emails, or phone numbers linked to that wallet in your project.
+
+
 ## Installation & Usage
 
-To install and use the **ThirdWeb** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/thirdweb](https://vinkius.com/mcp/thirdweb)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ThirdWeb** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `thirdweb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ThirdWeb** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "thirdweb": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ToolJet MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tooljet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tooljet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tooljet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tooljet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **ToolJet** MCP server u
 > The workflow 'wf_987' has been triggered successfully. The response from ToolJet indicates the process has started.
 
 
+## ❓ FAQ
+
+**Q: Can I perform complex SQL joins using this server?**
+Yes, the `query_table` tool allows you to execute SQL queries. As long as the tables exist in your ToolJet Database and your organization ID is correct, you can perform SELECT statements including joins and filters.
+
+**Q: How do I trigger a specific automation I built in ToolJet?**
+You can use the `trigger_workflow` tool. You will need the `workflow_id` and can optionally provide a JSON `payload` to pass data into the workflow's entry point.
+
+**Q: Can I see the list of all my database tables?**
+Absolutely. Use the `list_tables` tool to retrieve a complete list of all tables currently configured in your ToolJet Database workspace.
+
+
 ## Installation & Usage
 
-To install and use the **ToolJet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tooljet](https://vinkius.com/mcp/tooljet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ToolJet** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tooljet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ToolJet** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tooljet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

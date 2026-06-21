@@ -1,7 +1,6 @@
 # Lusha MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lusha-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lusha-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lusha-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lusha-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Lusha** MCP server usi
 > You currently have 450 credits remaining in your monthly plan. Your next renewal is in 12 days.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the phone number for a LinkedIn profile?**
+Yes! Use the `get_person_by_linkedin` tool. Provide the LinkedIn URL, and your agent will respond with complete metadata for the record, including verified emails and direct phone numbers in seconds.
+
+**Q: How do I find my Lusha API Key?**
+Log in to your Lusha account, navigate to **Settings** > **API & Integrations**, and you will find your unique secret token there.
+
+**Q: Does it support bulk enrichment?**
+Yes, use the `bulk_enrich_person` tool to provide an array of contacts. The AI will process the batch and return enriched metadata for all entries in a single operation.
+
+
 ## Installation & Usage
 
-To install and use the **Lusha** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lusha-alternative](https://vinkius.com/mcp/lusha-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lusha** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lusha-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lusha** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lusha-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

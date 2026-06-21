@@ -1,7 +1,6 @@
 # Conekta MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/conekta)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/conekta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/conekta-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/conekta)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **Conekta** MCP server u
 Shall I pull the customer details for ord_9ak?
 
 
+## ❓ FAQ
+
+**Q: How do I securely obtain my Conekta Private API Key?**
+Log in to your Conekta dashboard as an administrator. In the left sidebar, click on 'Developers' (Desarrolladores), then navigate to 'API Keys' (Llaves API). Locate the 'Private Key' (Llave Privada) section—you may need to enter your password to reveal it. Copy this key and paste it into the secure input field below to connect the agent.
+
+**Q: Can the AI agent create new charges or issue refunds directly?**
+No. This integration operates strictly in read-only mode to guarantee financial security. The conversational agent can query and extract data regarding transactions, customers, and overall payments, but it cannot authorize new charges or initiate refunds, protecting your account from unintended financial actions.
+
+**Q: What kind of data can I ask the agent to retrieve from Conekta?**
+You can ask the agent to check the exact status of a specific payment ID, verify whether a charge was approved or declined, list recent successful orders, or summarize the daily transaction volume and associated processing fees.
+
+
 ## Installation & Usage
 
-To install and use the **Conekta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/conekta](https://vinkius.com/mcp/conekta)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Conekta** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `conekta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Conekta** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "conekta": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

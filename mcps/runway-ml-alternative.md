@@ -1,7 +1,6 @@
 # Runway ML MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/runway-ml-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/runway-ml-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/runway-ml-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/runway-ml-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Runway ML** MCP server
 > I've retrieved your task list. You have 5 recent tasks, including 'Cyberpunk Street' (Succeeded) and 'Mountain Sunset' (Succeeded).
 
 
+## ❓ FAQ
+
+**Q: How do I start a new video generation with a specific prompt?**
+Use the `create_task` tool. You can specify the model (like `gen3a_turbo`), the `promptText`, and even optional parameters like `duration` (5 or 10 seconds) or `ratio`.
+
+**Q: How can I check if my video is ready to download?**
+Use the `get_task` tool with your unique task ID. It will return the current status and the output URL once the generation is complete.
+
+**Q: Is it possible to remove a task from my history or stop a running one?**
+Yes, the `delete_task` tool allows you to cancel an active generation or remove the record of a completed task from your account.
+
+
 ## Installation & Usage
 
-To install and use the **Runway ML** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/runway-ml-alternative](https://vinkius.com/mcp/runway-ml-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Runway ML** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `runway-ml-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Runway ML** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "runway-ml-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

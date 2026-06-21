@@ -1,7 +1,6 @@
 # Omni BI Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omni-bi-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/omni-bi-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/omni-bi-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omni-bi-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Omni BI Intelligence**
 > Fetching model details... The 'Customer Retention' model contains 12 fields including 'cohort_month', 'retention_rate' (measure), and 'active_user_count'. Would you like the specific calculation logic for the retention rate?
 
 
+## ❓ FAQ
+
+**Q: How do I get an Omni BI API Key?**
+Log in to your Omni instance, navigate to user settings or organization settings, and look for the API Tokens section to generate a new token.
+
+**Q: Can I run raw SQL queries?**
+This implementation uses the `run_omni_query` tool which interacts with your defined data models (semantic layer). Raw SQL access depends on your specific model configuration in Omni.
+
+**Q: What formats are supported for data export?**
+The `export_query_results` tool supports CSV, JSON, and XLSX formats. You will receive a temporary URL to download the requested file.
+
+
 ## Installation & Usage
 
-To install and use the **Omni BI Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/omni-bi-intelligence](https://vinkius.com/mcp/omni-bi-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Omni BI Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `omni-bi-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Omni BI Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "omni-bi-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

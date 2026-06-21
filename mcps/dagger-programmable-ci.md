@@ -1,7 +1,6 @@
 # Dagger (Programmable CI) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dagger-programmable-ci)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dagger-programmable-ci-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dagger-programmable-ci-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dagger-programmable-ci)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Dagger (Programmable C
 > Querying the repository... I've retrieved the state for the Dagger repository. The directory ID is `dir-repo789`. Would you like to list its contents?
 
 
+## ❓ FAQ
+
+**Q: How do I run a specific build command using Dagger?**
+You can use the `execute_graphql_query` tool to send a raw GraphQL query to the Dagger engine, allowing you to chain container operations like `from`, `withExec`, and `stdout`.
+
+**Q: Can I access files from my local machine in the pipeline?**
+Yes, the `query_host` tool allows you to retrieve the state ID for your host environment, which can then be used to mount local directories into your Dagger containers.
+
+**Q: How are secrets handled in this integration?**
+Use the `query_secret` tool to load secrets from URIs (like `env://` or `file://`). This returns a secret ID that can be safely passed to other Dagger operations without exposing the plaintext value.
+
+
 ## Installation & Usage
 
-To install and use the **Dagger (Programmable CI)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dagger-programmable-ci](https://vinkius.com/mcp/dagger-programmable-ci)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dagger (Programmable CI)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dagger-programmable-ci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dagger (Programmable CI)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dagger-programmable-ci": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

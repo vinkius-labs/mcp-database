@@ -1,7 +1,6 @@
 # Merge (Unified Integration API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/merge-unified-integration-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/merge-unified-integration-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/merge-unified-integration-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/merge-unified-integration-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Merge (Unified Integra
 > I've retrieved your open support tickets. There are 12 active issues, including 'Login Loop Bug' (Priority: High), 'Pricing Question' (Priority: Med), and 'API Auth Error'. Would you like me to extract the full metadata for the high-priority bug?
 
 
+## ❓ FAQ
+
+**Q: Which integrations does Merge support through the unified API?**
+Merge supports over 150+ integrations across HRIS (BambooHR, Workday), ATS (Lever, Greenhouse), CRM (Salesforce, HubSpot), and Ticketing (Zendesk, Jira). Your agent can access all of them using the same standardized tools once the accounts are linked in Merge.
+
+**Q: How do I target a specific customer's data through the agent?**
+Each request requires a `MERGE_ACCOUNT_TOKEN` which uniquely identifies a linked account (e.g., a specific customer's integration). By providing this token along with your API key, your agent can retrieve data exclusively from that customer's connected platform.
+
+**Q: Can my agent list candidates from my ATS and support tickets from Zendesk at the same time?**
+Yes. Since Merge unifies multiple categories, your agent can use the `list_candidates` and `list_tickets` tools in the same conversation to bridge data from different functional areas of your business instantly.
+
+
 ## Installation & Usage
 
-To install and use the **Merge (Unified Integration API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/merge-unified-integration-api](https://vinkius.com/mcp/merge-unified-integration-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Merge (Unified Integration API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `merge-unified-integration-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Merge (Unified Integration API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "merge-unified-integration-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

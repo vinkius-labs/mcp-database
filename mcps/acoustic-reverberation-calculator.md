@@ -1,7 +1,6 @@
 # Acoustic Reverberation Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/acoustic-reverberation-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/acoustic-reverberation-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/acoustic-reverberation-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/acoustic-reverberation-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Acoustic Reverberation
 > The catalog includes Acoustic Foam, Heavy Carpet, Glass, Wood Panel, and Concrete.
 
 
+## ❓ FAQ
+
+**Q: What is RT60?**
+RT60 (Reverberation Time) is the time it takes for sound to decay by 60 decibels in a space.
+
+**Q: How do I use the calculator?**
+Provide the room volume and a JSON array of surfaces with their areas and material names to `calculate_reverberation_time`.
+
+**Q: Which materials are supported?**
+You can browse the full list of available materials using the `get_material_catalog` tool.
+
+
 ## Installation & Usage
 
-To install and use the **Acoustic Reverberation Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/acoustic-reverberation-calculator](https://vinkius.com/mcp/acoustic-reverberation-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Acoustic Reverberation Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `acoustic-reverberation-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Acoustic Reverberation Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "acoustic-reverberation-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

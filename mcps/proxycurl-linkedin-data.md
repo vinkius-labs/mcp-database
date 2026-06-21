@@ -1,7 +1,6 @@
 # Proxycurl (LinkedIn Data) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/proxycurl-linkedin-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/proxycurl-linkedin-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/proxycurl-linkedin-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/proxycurl-linkedin-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Proxycurl (LinkedIn Da
 > Searching for competitors... Based on product similarity and market overlap, key competitors for Zoom include Microsoft (Teams), Cisco (Webex), and Google (Meet). I can also provide a customer listing for Zoom if needed.
 
 
+## ❓ FAQ
+
+**Q: How do I find a company's official website if I only have their name?**
+Use the `company_website_lookup` tool. It resolves a company name to its canonical URL, which is the primary identifier needed for most other company-related tools.
+
+**Q: Can I see who invested in a specific startup?**
+Yes. The `get_company_funding` tool provides a detailed history of funding rounds, including the amounts raised and the names of participating investors.
+
+**Q: Is it possible to get professional details from just a work email?**
+Absolutely. Use the `get_employee_profile` tool with the `work_email` parameter to retrieve enriched professional data, including current role and employer information.
+
+
 ## Installation & Usage
 
-To install and use the **Proxycurl (LinkedIn Data)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/proxycurl-linkedin-data](https://vinkius.com/mcp/proxycurl-linkedin-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Proxycurl (LinkedIn Data)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `proxycurl-linkedin-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Proxycurl (LinkedIn Data)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "proxycurl-linkedin-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Alexa Smart Home MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alexa-smart-home)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/alexa-smart-home-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/alexa-smart-home-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alexa-smart-home)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -136,12 +135,55 @@ Here are some examples of how you can interact with the **Alexa Smart Home** MCP
 > Checking bedroom thermostat... Current temperature reading: 21.5°C (70.7°F). The thermostat is currently in HEAT mode with a target temperature of 22°C (71.6°F). The HVAC system is actively heating to reach the target.
 
 
+## ❓ FAQ
+
+**Q: What Alexa-connected devices are supported by this API?**
+The Alexa Smart Properties API supports: smart lights (on/off, brightness, color), smart plugs and switches, thermostats (mode and temperature monitoring), temperature sensors, Echo devices and speakers (volume control), security sensors, and other Alexa-connected endpoints. Each device exposes specific features (power, brightness, speaker, thermostat, etc.) that can be queried and controlled.
+
+**Q: How do I get an OAuth 2.0 access token for the Alexa API?**
+Visit the [**Alexa Developer Console**](https://developer.amazon.com/alexa/console/ask) and create a Smart Home Skill. Set up Login with Amazon (LWA) credentials in your Amazon Developer account. Complete the OAuth 2.0 authorization flow to obtain an access token. The token must be refreshed periodically as it expires after a set duration.
+
+**Q: Can I control devices in different rooms or properties?**
+Yes! The API returns all devices across all properties and rooms in your Alexa Smart Properties account. Use `list_alexa_devices` to see all devices with their room assignments, then use each device's unique endpoint ID to control them individually. You can also reassign devices to different rooms using the `update_device_room` action.
+
+**Q: What's the difference between deregister and forget a device?**
+`Deregister` removes the device from your Alexa Smart Properties account but keeps it available for re-discovery. The device itself remains configured. `Forget` completely removes the device from Alexa — it will need to be re-discovered and set up again as if it were a new device. Use deregister for temporary removal and forget for permanent removal.
+
+
 ## Installation & Usage
 
-To install and use the **Alexa Smart Home** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/alexa-smart-home](https://vinkius.com/mcp/alexa-smart-home)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Alexa Smart Home** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `alexa-smart-home` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Alexa Smart Home** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "alexa-smart-home": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

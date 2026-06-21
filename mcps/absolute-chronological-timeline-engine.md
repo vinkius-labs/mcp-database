@@ -1,7 +1,6 @@
 # Absolute Chronological Timeline Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/absolute-chronological-timeline-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/absolute-chronological-timeline-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/absolute-chronological-timeline-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/absolute-chronological-timeline-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **Absolute Chronological
 > Using the calculate_time_until_milestone tool: Her 18th birthday falls on 2028-06-01. The engine calculates the exact remaining time in years, months, and days with a precise day countdown.
 
 
+## ❓ FAQ
+
+**Q: Can it compare two distinct historical events?**
+Yes. By supplying both `birthDateStr` and the optional `compareDateStr`, the engine halts standard 'present-day' tracking and returns the exact mathematical delta between the two specific points in time.
+
+**Q: How does it handle leap year birthdates (February 29)?**
+The engine detects leap year edge-cases algorithmically. If calculating the next birthday during a non-leap year, it deterministically shifts the target to February 28, preventing silent calculation crashes.
+
+**Q: Why use this instead of raw LLM prompt arithmetic?**
+LLMs lack internal calendar logic. They guess elapsed days by approximating month lengths. This native MCP parses the actual calendar grid to return flawless metrics, generating perfect database-ready analytical values.
+
+
 ## Installation & Usage
 
-To install and use the **Absolute Chronological Timeline Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/absolute-chronological-timeline-engine](https://vinkius.com/mcp/absolute-chronological-timeline-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Absolute Chronological Timeline Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `absolute-chronological-timeline-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Absolute Chronological Timeline Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "absolute-chronological-timeline-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

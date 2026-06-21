@@ -1,7 +1,6 @@
 # OpenEI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openei)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openei-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openei-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openei)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Here are some examples of how you can interact with the **OpenEI** MCP server us
 > I retrieved the complete PG&E E-19 commercial time-of-use rate structure. It has 4 seasonal periods (Summer Peak, Summer Off-Peak, Winter Peak, Winter Off-Peak) with energy charges ranging from $0.147 to $0.326/kWh. Demand charges are $18.76/kW in summer and $12.54/kW in winter. Here's the full breakdown.
 
 
+## ❓ FAQ
+
+**Q: How do I find electricity rates for my address?**
+Use the `get_rates_by_address` tool with your full street address. The API will geocode your location and return all applicable utility rates (residential, commercial, industrial). For example, enter '1617 Cole Blvd, Golden, CO 80401' to see rates from Xcel Energy and other providers serving that area.
+
+**Q: What's the difference between residential, commercial, and industrial rates?**
+Residential rates (sector 1) are for homes and typically have simple tiered or time-of-use structures. Commercial rates (sector 2) serve businesses and include general service and large power tariffs with demand charges. Industrial rates (sector 3) are for heavy manufacturing with the lowest per-kWh costs but complex demand and power factor adjustments. Use the specific sector tools or filter with the sector parameter.
+
+**Q: Can I get complete rate structures with time-of-use details?**
+Yes. Set the detail parameter to 'full' when calling get_utility_rates or get_rate_detail. This returns the complete tariff structure including energyratestructure (time-of-use periods and seasonal blocks), demandratestructure, fixed charges, minimum charges, and tax adjustments. Essential for accurate solar ROI calculations and detailed energy cost modeling.
+
+
 ## Installation & Usage
 
-To install and use the **OpenEI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openei](https://vinkius.com/mcp/openei)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenEI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openei` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenEI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openei": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

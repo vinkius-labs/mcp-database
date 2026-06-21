@@ -1,7 +1,6 @@
 # Targetprocess MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/targetprocess)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/targetprocess-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/targetprocess-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/targetprocess)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ I found 2 'Open' bugs tagged with High Priority:
 2. Bug #5125: 'Null pointer exception on invoice generation'
 
 
+## ❓ FAQ
+
+**Q: Is the integration read-only?**
+Yes. All tools (list_projects, list_bugs, list_user_stories, etc.) are read-only queries. They cannot modify, create, or delete any records in Targetprocess.
+
+**Q: Where do I find my access token?**
+Go to Settings > Access Tokens in your Targetprocess instance. Generate a new token and copy it. You'll also need your account subdomain (e.g., `mycompany` from `mycompany.tpondemand.com`).
+
+**Q: What agile data can the agent access?**
+Projects, features, user stories, bugs, iterations (sprints), and team members. The scope depends on the permissions of the access token you provide.
+
+
 ## Installation & Usage
 
-To install and use the **Targetprocess** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/targetprocess](https://vinkius.com/mcp/targetprocess)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Targetprocess** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `targetprocess` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Targetprocess** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "targetprocess": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Franchimp MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/franchimp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/franchimp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/franchimp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/franchimp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **Franchimp** MCP server
 > Retrieving financial data... For 7-Eleven, the total investment range is between $37K and $1.6M, with a net worth requirement of $50K - $250K. Would you like more details?
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Key for Franchimp?**
+You must request an API key by emailing the Franchimp administrative team at admin@franchimp.com.
+
+**Q: What data is available for franchisees?**
+The database includes emails, phone numbers, and mailing addresses for over 450,000+ individual franchisee units.
+
+**Q: Can I download FDDs through the agent?**
+The MCP server allows you to retrieve FDD metadata. Downloading the full document typically requires document credits which you can monitor via the agent.
+
+**Q: Does it support multi-unit operators?**
+Yes! The 'list_multi_unit_operators' tool specifically identifies entities that manage multiple franchise units across one or more brands.
+
+
 ## Installation & Usage
 
-To install and use the **Franchimp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/franchimp](https://vinkius.com/mcp/franchimp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Franchimp** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `franchimp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Franchimp** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "franchimp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

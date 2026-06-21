@@ -1,7 +1,6 @@
 # Monnify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/monnify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/monnify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/monnify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/monnify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Monnify** MCP server u
 > Retrieving supported banks... Monnify supports 25+ banks including Access Bank, GTBank, Zenith Bank, First Bank, and United Bank for Africa (UBA). Would you like to see the full list with their bank codes?
 
 
+## ❓ FAQ
+
+**Q: Can I use this server with the Monnify Sandbox?**
+This implementation defaults to the live production URL. To use the sandbox, the underlying engine code would need to be updated to point to 'sandbox.monnify.com'.
+
+**Q: What information is required to reserve a virtual account?**
+You need to provide a unique account reference, the account name to display, and the customer's full name and email address.
+
+**Q: Are all Nigerian banks supported?**
+Most major commercial banks in Nigeria are supported. You can use the `list_banks` tool to see the current list of supported institutions for transfers and reservations.
+
+
 ## Installation & Usage
 
-To install and use the **Monnify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/monnify](https://vinkius.com/mcp/monnify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Monnify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `monnify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Monnify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "monnify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

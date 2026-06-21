@@ -1,7 +1,6 @@
 # Laravel Forge MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/laravel-forge)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/laravel-forge-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/laravel-forge-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/laravel-forge)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,55 @@ Here are some examples of how you can interact with the **Laravel Forge** MCP se
 > Scanning worker processes... Found 2 active Queue workers on the Production Server handling redis payloads securely.
 
 
+## ❓ FAQ
+
+**Q: How do I get started?**
+Subscribe, copy your active API Token (which you generate inside **Forge Dashboard → API**), and connect it. The integration expects standard connections so you can trigger real build routines natively without intricate pipelines or ssh logic.
+
+**Q: Can my AI automatically trigger site deployments?**
+Yes! Give the agent the Server ID and Site ID you're questioning. It utilizes `deploy_site` to physically POST to Forge's pipelines kicking off an automated release. Perfect for hands-free releases right from Cursor.
+
+**Q: What happens when I want to fetch metrics on queued application workers?**
+Provide the exact IDs. The tool evaluates endpoint rules (`list_workers`) and unpacks default configurations running PHP queues natively back to the terminal screen.
+
+**Q: Does it list physical server setups efficiently?**
+Absolutely. Execute 'list_servers' or probe 'list_ssh_keys'. It aggregates root connection statuses, IPs, and structural records giving immense monitoring peace-of-mind at the keyboard.
+
+
 ## Installation & Usage
 
-To install and use the **Laravel Forge** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/laravel-forge](https://vinkius.com/mcp/laravel-forge)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Laravel Forge** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `laravel-forge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Laravel Forge** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "laravel-forge": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

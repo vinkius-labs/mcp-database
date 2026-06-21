@@ -1,7 +1,6 @@
 # Contentdrips MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentdrips)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contentdrips-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contentdrips-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentdrips)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Contentdrips** MCP ser
 > Asset directory orchestrated! I've successfully retrieved the PNG URL for job_abc123. The image is now ready for your social media schedule. Shall I list the technical metadata for this render?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Contentdrips API Key?**
+Log in to your account, navigate to **Settings** > **API**, and copy your unique Bearer Token from the credentials section.
+
+**Q: Can I check the status of a render job via AI?**
+Yes! The `get_job_status` tool allows your agent to poll the real-time status of any generation request.
+
+**Q: How do I retrieve the final graphic URL?**
+Use the `get_job_result` tool and provide the Job ID to retrieve the hosted URL for your PNG or PDF asset.
+
+
 ## Installation & Usage
 
-To install and use the **Contentdrips** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/contentdrips](https://vinkius.com/mcp/contentdrips)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Contentdrips** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `contentdrips` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Contentdrips** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "contentdrips": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

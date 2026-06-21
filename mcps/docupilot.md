@@ -1,7 +1,6 @@
 # Docupilot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docupilot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docupilot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docupilot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docupilot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Docupilot** MCP server
 > Document 'DOCU-MERGE-12345' is now 'Completed'. You can download it here: [https://api.docupilot.app/download/...] (Link expires in 24 hours). Should I list other recently merged documents?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Docupilot API Key?**
+Log in to your Docupilot account, navigate to **Settings > API Key**, and you can generate or retrieve your unique API Key from there.
+
+**Q: Can the agent show me the merge fields for a template?**
+Yes, you can use the get_template_merge_field_audit tool to retrieve exactly which data keys are needed to populate a specific template.
+
+**Q: What formats does Docupilot support for output?**
+Docupilot supports generating documents in PDF, Microsoft Word (.docx), and other popular formats depending on your template type.
+
+
 ## Installation & Usage
 
-To install and use the **Docupilot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/docupilot](https://vinkius.com/mcp/docupilot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Docupilot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `docupilot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Docupilot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "docupilot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Twenty CRM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twenty-crm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/twenty-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/twenty-crm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twenty-crm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Twenty CRM** MCP serve
 > I found opportunity 101: 'Enterprise License Expansion'. It is currently in the 'Negotiation' stage with an estimated value of $50,000.
 
 
+## ❓ FAQ
+
+**Q: Can I create a new contact person directly through the AI?**
+Yes! Use the `create_person` tool by providing at least a first name. You can also include a last name to create a complete record in your Twenty CRM database.
+
+**Q: How do I see all the companies currently registered in my CRM?**
+Simply ask the agent to run the `list_companies` tool. It will retrieve a list of all company records (accounts) stored in your Twenty environment.
+
+**Q: Is it possible to update the details of an existing sales opportunity?**
+Yes, you can use the `update_opportunity` tool. You will need the specific Opportunity ID and the new fields (like name) you wish to modify.
+
+
 ## Installation & Usage
 
-To install and use the **Twenty CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/twenty-crm](https://vinkius.com/mcp/twenty-crm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Twenty CRM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `twenty-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Twenty CRM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "twenty-crm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

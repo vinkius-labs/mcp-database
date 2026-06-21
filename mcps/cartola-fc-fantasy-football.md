@@ -1,7 +1,6 @@
 # Cartola FC (Fantasy Football) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cartola-fc-fantasy-football)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cartola-fc-fantasy-football-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cartola-fc-fantasy-football-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cartola-fc-fantasy-football)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Cartola FC (Fantasy Fo
 > Inspecting the market... I found 4 defenders matching your criteria, including 'Defender Y' (Price: 8.5, Avg: 4.8). Would you like to see their specific scouts for the last match?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the 'Probable' lineup for a specific club to avoid injured players?**
+Yes! Use the `list_probable_players` tool combined with `list_players_by_club`. Your agent will filter the official Globo data to return only athletes currently marked with the 'Probable' status, ensuring your picks are safe.
+
+**Q: How do I identify 'Bargains' or cheap players for value appreciation (valorização)?**
+Simply ask the agent to run the `list_cheap_players` action. It will retrieve a curated list of athletes priced below 5 cartoletas, perfect for teams with a tight budget or those looking to increase their total wealth.
+
+**Q: Does the integration allow tracking the performance of my friends' teams in real-time?**
+Yes. Using the `get_user_team_by_slug` tool, your agent can fetch the current round's points and total value for any team using its unique slug, allowing for direct competitive comparisons.
+
+
 ## Installation & Usage
 
-To install and use the **Cartola FC (Fantasy Football)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cartola-fc-fantasy-football](https://vinkius.com/mcp/cartola-fc-fantasy-football)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cartola FC (Fantasy Football)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cartola-fc-fantasy-football` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cartola FC (Fantasy Football)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cartola-fc-fantasy-football": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

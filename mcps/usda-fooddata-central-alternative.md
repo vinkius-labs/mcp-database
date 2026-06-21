@@ -1,7 +1,6 @@
 # USDA FoodData Central MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usda-fooddata-central-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/usda-fooddata-central-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/usda-fooddata-central-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usda-fooddata-central-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -64,12 +63,52 @@ Here are some examples of how you can interact with the **USDA FoodData Central*
 > I've scanned the nutrient catalog. It includes over 200 items, from 'Energy' and 'Protein' to specific minerals like 'Selenium'. I can help you search for a specific dietary marker.
 
 
+## ❓ FAQ
+
+**Q: How do I find my USDA API Key?**
+Sign up at the [**USDA API portal**](https://api.nal.usda.gov/), and you will receive your API Key via email. Copy and paste it below.
+
+**Q: Can the agent search for branded food items?**
+Yes. Use the `search_foods` tool and set the `dataType` to 'Branded'. Your agent will retrieve specific products from various manufacturers instantly.
+
+**Q: Is it possible to retrieve a full nutritional breakdown?**
+Yes. The `get_food` tool provides a comprehensive list of nutrients, including vitamins, minerals, and caloric data for any specific FDC ID.
+
+
 ## Installation & Usage
 
-To install and use the **USDA FoodData Central** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/usda-fooddata-central-alternative](https://vinkius.com/mcp/usda-fooddata-central-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **USDA FoodData Central** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `usda-fooddata-central-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **USDA FoodData Central** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "usda-fooddata-central-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Tuya MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tuya)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tuya-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tuya-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tuya)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Tuya** MCP server usin
 > Checking connectivity... Yes, the smart heater is currently reporting as Online in the Tuya Cloud. Its last heartbeat was received successfully.
 
 
+## ❓ FAQ
+
+**Q: How can I check if a specific smart device is currently online?**
+Use the `get_device` tool with the target Device ID. The agent will return the current connectivity status along with other technical metadata from the Tuya Cloud.
+
+**Q: Can I send multiple commands to a device at once?**
+Yes! The `send_commands` tool accepts an array of command objects. You can trigger multiple actions, such as turning on a light and setting its color, in a single request.
+
+**Q: What kind of technical details does the agent provide for my hardware?**
+By running `get_device`, the agent retrieves the device category, its unique local key, the product name, and its current operational status, allowing for deep technical auditing.
+
+
 ## Installation & Usage
 
-To install and use the **Tuya** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tuya](https://vinkius.com/mcp/tuya)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tuya** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tuya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tuya** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tuya": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

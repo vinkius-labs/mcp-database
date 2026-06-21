@@ -1,7 +1,6 @@
 # Qovery MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qovery)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qovery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qovery-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qovery)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,55 @@ It is currently showing as 'HEALTHY' and actively running.
 > Sure, I triggered the deployment of commit SHA `7a8f9b2` for the application `backend-api` (id: app-bkn456). The deployment status is now 'DEPLOYING'. We can check back on this in a few minutes.
 
 
+## ❓ FAQ
+
+**Q: How do I securely obtain my Qovery API Token?**
+Sign in to your Qovery Console. Navigate to your **Organization Settings**, then to the **API Tokens** section. Click **Generate Token** (or Add). Give it a brief name, select the desired roles, and click Create. Copy the static string immediately as it won't be shown again, and paste it to authenticate.
+
+**Q: Can it restart specific microservices?**
+Yes. Once you identify the `app_id` using the list components tools, you can instruct your agent to `restart_application`. This triggers a rolling restart exactly as if you clicked 'Restart' on the console. Traffic is routed seamlessly while pods re-initialize.
+
+**Q: What does deploy specific Git commit do?**
+Normally, Qovery auto-deploys a branch. With `deploy_application` you can force Qovery to pull a specific commit ID (SHA) and deploy it immediately to an environment. This is perfect for hotfixes, effectively circumventing prolonged CI loops while ensuring zero downtime.
+
+**Q: Is this tool safe to run on production?**
+Yes, but with caveats. Standard queries (like listing environments and getting stats) are entirely read-only. However, tools like `restart` and `deploy` are mutating operations. Always make sure you instruct your agent precisely and maintain manual approval checkpoints before executing deployment functions.
+
+
 ## Installation & Usage
 
-To install and use the **Qovery** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/qovery](https://vinkius.com/mcp/qovery)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Qovery** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `qovery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Qovery** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "qovery": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

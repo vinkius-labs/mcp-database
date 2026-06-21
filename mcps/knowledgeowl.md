@@ -1,7 +1,6 @@
 # KnowledgeOwl MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/knowledgeowl)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/knowledgeowl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/knowledgeowl-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/knowledgeowl)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **KnowledgeOwl** MCP ser
 > Retrieved content for 'User Management Policy'. The article covers user roles, permission levels, and invited user limitations. Would you like a summary of the roles section?
 
 
+## ❓ FAQ
+
+**Q: Where do I find my KnowledgeOwl API Key?**
+Log in to KnowledgeOwl, click on your name in the top right corner, select **Your Profile**, and look for the **API Key** tab.
+
+**Q: Can I read private articles?**
+Yes, as long as your API Key has the necessary permissions, the `get_article_content` tool can retrieve any article in your project.
+
+**Q: Does this support Markdown?**
+Yes, the presenter renders article titles and high-level status in Markdown for clear reading in your chat client.
+
+
 ## Installation & Usage
 
-To install and use the **KnowledgeOwl** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/knowledgeowl](https://vinkius.com/mcp/knowledgeowl)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **KnowledgeOwl** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `knowledgeowl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **KnowledgeOwl** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "knowledgeowl": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

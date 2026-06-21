@@ -1,7 +1,6 @@
 # Podcast Index MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/podcast-index)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/podcast-index-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/podcast-index-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/podcast-index)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Podcast Index** MCP se
 > Fetching episodes for Feed ID 750746... The latest episodes include '#450 – Kevin Hart', '#449 – Donald Trump', and '#448 – Mark Zuckerberg'. Would you like the specific details or GUID for any of these episodes?
 
 
+## ❓ FAQ
+
+**Q: Can I search for podcasts where a specific person is a guest or host?**
+Yes! Use the `search_by_person` tool with the person's name. The agent will return a list of podcasts associated with that individual.
+
+**Q: How do I get the latest episodes from a specific show?**
+You can use either `get_episodes_by_feed_id` if you have the internal ID, or `get_episodes_by_feed_url` if you have the RSS link. Both will provide a list of recent episodes.
+
+**Q: Can I find a podcast if I only have its iTunes ID?**
+Absolutely. Use the `get_podcast_by_itunes_id` tool to fetch the full Podcast Index metadata using the Apple Podcasts/iTunes identifier.
+
+
 ## Installation & Usage
 
-To install and use the **Podcast Index** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/podcast-index](https://vinkius.com/mcp/podcast-index)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Podcast Index** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `podcast-index` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Podcast Index** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "podcast-index": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

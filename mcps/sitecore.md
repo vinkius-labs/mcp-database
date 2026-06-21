@@ -1,7 +1,6 @@
 # Sitecore MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sitecore)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sitecore-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sitecore-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sitecore)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Path: `/sitecore/content/Home/Campaigns/SpringCampaign`.
 Would you like me to update its initial fields with a specific JSON object?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent create new pages from specific templates?**
+Yes. Ask the agent to list your content templates to find the ID of the template you want (e.g., 'Article' or 'Landing Page'). Then, provide the parent path where you want the new items to exist. Your agent will call the Sitecore API to instantly generate the new items based on those schemas without requiring you to open the Content Editor.
+
+**Q: How can I bulk update metadata for outdated pages?**
+First, ask your agent to search for the specific path or keyword to get all related page IDs. Then, command the agent to update each item by passing a JSON with the new fields (like updating SEO descriptions or valid dates). The AI parses your instruction and dynamically executes the updates directly into Sitecore.
+
+**Q: Is it possible to check whether an item is published or still in Draft mode?**
+Absolutely. You can request the agent to get the workflow state of any given item path. The agent will respond with the current state (e.g., Draft, Awaiting Approval, or Published), making it easy to track content pipelines.
+
+
 ## Installation & Usage
 
-To install and use the **Sitecore** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sitecore](https://vinkius.com/mcp/sitecore)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sitecore** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sitecore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sitecore** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sitecore": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

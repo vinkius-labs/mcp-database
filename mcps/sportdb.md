@@ -1,7 +1,6 @@
 # SportDB MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sportdb)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sportdb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sportdb-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sportdb)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -121,12 +120,52 @@ Here are some examples of how you can interact with the **SportDB** MCP server u
 > Here are the La Liga 2024-2025 standings: 1. Barcelona — 52 pts (W16 D4 L2), 2. Real Madrid — 48 pts (W15 D3 L4), 3. Atlético Madrid — 43 pts (W13 D4 L5). The table includes 20 teams with full records. Want me to pull the upcoming fixtures for any of these clubs?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent show me live football scores while I work?**
+Yes! Simply ask your agent to run the `get_live_football` tool and it will instantly retrieve all ongoing matches with real-time scores, minute markers, and status updates. You can also use `get_live_basketball` or `get_live_hockey` for other sports.
+
+**Q: How do I find the Premier League standings for the current season?**
+Navigate the hierarchy: first use `list_countries` with sport 'football', then `get_country_competitions` for 'england', then `get_competition_seasons` for 'premier-league', and finally `get_standings` with the season slug. Your agent can chain these steps automatically from a simple question like 'Show me the Premier League table'.
+
+**Q: Can the integration modify any data on SportDB, or is it strictly read-only?**
+All 18 tools are strictly read-only query operations. The integration cannot create, update, or delete any data on SportDB. Your API key is used solely for authenticated reads, ensuring your account remains safe from any destructive operations.
+
+
 ## Installation & Usage
 
-To install and use the **SportDB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sportdb](https://vinkius.com/mcp/sportdb)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SportDB** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sportdb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SportDB** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sportdb": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

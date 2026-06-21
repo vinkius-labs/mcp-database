@@ -1,7 +1,6 @@
 # GlassFrog MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/glassfrog)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/glassfrog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/glassfrog-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/glassfrog)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,55 @@ Here are some examples of how you can interact with the **GlassFrog** MCP server
 > Retrieving metrics... For the Marketing circle, I found 2 active metrics: 'Monthly Active Users' and 'Ad Spend Efficiency'. Both were last updated 2 days ago.
 
 
+## ❓ FAQ
+
+**Q: How do I get an API Key for GlassFrog?**
+Log in to your GlassFrog account, click on your profile avatar, go to 'Settings', and then 'API Keys' to generate or copy your token.
+
+**Q: What is a Circle in GlassFrog?**
+A Circle is an organizational unit in Holacracy that groups together related roles and responsibilities to achieve a specific purpose.
+
+**Q: Can I create new projects via the agent?**
+Yes! Use the 'create_new_project' tool. You will need to provide a description and the ID of the Circle where the project should be added.
+
+**Q: How do I find a Circle ID?**
+Use the 'list_holacracy_circles' tool. The agent will return all available circles along with their unique IDs and names.
+
+
 ## Installation & Usage
 
-To install and use the **GlassFrog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/glassfrog](https://vinkius.com/mcp/glassfrog)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GlassFrog** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `glassfrog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GlassFrog** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "glassfrog": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

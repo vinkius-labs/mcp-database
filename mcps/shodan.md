@@ -1,7 +1,6 @@
 # Shodan MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shodan)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shodan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shodan-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shodan)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,55 @@ Here are some examples of how you can interact with the **Shodan** MCP server us
 > DNS resolution: google.com → 142.250.189.14, github.com → 140.82.121.4. Use get_host_info for detailed information on any IP address.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Shodan API key?**
+Sign up for a free account at [**shodan.io**](https://account.shodan.io/register). Your API key is displayed on your account dashboard. Free accounts get limited query credits per month.
+
+**Q: What kind of devices can I find?**
+Shodan indexes web servers, routers, smart TVs, webcams, IoT devices, industrial control systems (ICS/SCADA), databases, Docker instances, cloud services and virtually any internet-connected device with an open port.
+
+**Q: How do I search for vulnerabilities?**
+Use the vuln: filter in your search query. For example: 'vuln:CVE-2021-44228' for Log4Shell, 'vuln:CVE-2024-3094' for XZ backdoor. Requires a paid Shodan membership for vulnerability search.
+
+**Q: What are some useful search queries?**
+Popular queries: 'nginx' (all nginx servers), 'port:3389 country:US' (RDP servers in US), 'apache os:Windows', 'product:"MongoDB" has_screenshot:true', 'port:21' (FTP servers), 'city:"São Paulo" port:80'.
+
+
 ## Installation & Usage
 
-To install and use the **Shodan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shodan](https://vinkius.com/mcp/shodan)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Shodan** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shodan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Shodan** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shodan": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

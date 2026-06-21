@@ -1,7 +1,6 @@
 # TCE-SP (Audesp) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tce-sp-audesp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tce-sp-audesp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tce-sp-audesp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tce-sp-audesp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **TCE-SP (Audesp)** MCP 
 > Querying revenues for Campinas (12/2022)... The report shows the total collection for the month, including tax revenues and state transfers.
 
 
+## ❓ FAQ
+
+**Q: How do I find the correct name (slug) for a specific city?**
+Use the `list_municipios` tool. It returns a complete list of all municipalities under TCE-SP jurisdiction with their respective slugs needed for expense and revenue queries.
+
+**Q: Can I query data for any year and month?**
+Yes, using `list_despesas` or `list_receitas`, you can specify the `exercicio` (year) and `mes` (month, 1-12) to get precise historical data for a municipality.
+
+**Q: What is the difference between list_despesas and list_receitas?**
+`list_despesas` focuses on how the municipality spent its budget (expenses), while `list_receitas` shows the income and collections (revenues) received by the city.
+
+
 ## Installation & Usage
 
-To install and use the **TCE-SP (Audesp)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tce-sp-audesp](https://vinkius.com/mcp/tce-sp-audesp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TCE-SP (Audesp)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tce-sp-audesp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TCE-SP (Audesp)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tce-sp-audesp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

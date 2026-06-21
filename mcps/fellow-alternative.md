@@ -1,7 +1,6 @@
 # Fellow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fellow-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fellow-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fellow-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fellow-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Fellow** MCP server us
 > You have 3 pending action items: 'Update API documentation' (due tomorrow, assigned to you), 'Review PR #542' (due Friday, assigned to Marcus), and 'Send proposal to client' (due May 10, assigned to Sarah). Want me to complete any of these?
 
 
+## ❓ FAQ
+
+**Q: Can I create an action item and assign it to a team member?**
+Yes! Use `create_action_item` with the title, assignee email, and optional due date. You can also link it to a specific meeting.
+
+**Q: How do I get the notes from a specific meeting?**
+Use `list_notes` with the meeting ID to get all notes linked to that meeting, or `get_note` with a specific note ID for full content.
+
+**Q: Can I mark action items as completed via the AI agent?**
+Absolutely. Use `complete_action_item` with the action item ID to mark it as done.
+
+
 ## Installation & Usage
 
-To install and use the **Fellow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fellow-alternative](https://vinkius.com/mcp/fellow-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fellow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fellow-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fellow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fellow-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

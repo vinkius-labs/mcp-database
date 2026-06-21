@@ -1,7 +1,6 @@
 # WhatsApp Business MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whatsapp-business-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/whatsapp-business-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/whatsapp-business-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whatsapp-business-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **WhatsApp Business** MC
 > I've found 4 templates in your account: 'order_update', 'shipping_notice', 'welcome_offer', and 'feedback_request'. All are currently approved and ready for use.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Phone Number ID and WABA ID?**
+Log in to your [**Meta App Dashboard**](https://developers.facebook.com/apps/), select your app, and navigate to **WhatsApp** > **Getting Started**. You will find both IDs and your Access Token there.
+
+**Q: Can I send messages to any WhatsApp user?**
+You can send pre-approved templates at any time. However, to send free-text messages, the user must have interacted with your business in the last 24 hours.
+
+**Q: What happens if a message template is not approved?**
+Unapproved templates cannot be sent via the API. You can check the status of your templates using the `list_message_templates` tool to verify their readiness.
+
+
 ## Installation & Usage
 
-To install and use the **WhatsApp Business** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/whatsapp-business-alternative](https://vinkius.com/mcp/whatsapp-business-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WhatsApp Business** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `whatsapp-business-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WhatsApp Business** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "whatsapp-business-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

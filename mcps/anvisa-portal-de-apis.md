@@ -1,7 +1,6 @@
 # ANVISA (Portal de APIs) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anvisa-portal-de-apis)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/anvisa-portal-de-apis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/anvisa-portal-de-apis-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anvisa-portal-de-apis)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **ANVISA (Portal de APIs
 > I've retrieved the data for 'Protetor Solar' from the cosmetics database. It is currently registered under number [Reg Number] with an active status. The manufacturer is [Company Name].
 
 
+## ❓ FAQ
+
+**Q: Can I check the maximum consumer price of a specific medicine?**
+Yes. Use the `precos_medicamentos` tool providing the commercial name or registration number to get the PMC (Maximum Consumer Price) and PF (Factory Price).
+
+**Q: How do I verify if a food product is registered or just notified?**
+You can use `registros_alimentos` for products that require full registration and `notificacoes_alimentos` for those that only require notification to ANVISA.
+
+**Q: Can I search for a medicine using its active ingredient?**
+Absolutely. The `consultar_medicamentos` tool accepts a `principio_ativo` parameter to find all medicines containing that specific substance.
+
+
 ## Installation & Usage
 
-To install and use the **ANVISA (Portal de APIs)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/anvisa-portal-de-apis](https://vinkius.com/mcp/anvisa-portal-de-apis)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ANVISA (Portal de APIs)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `anvisa-portal-de-apis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ANVISA (Portal de APIs)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "anvisa-portal-de-apis": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Edison Experimentation Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/edison-experimentation-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/edison-experimentation-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/edison-experimentation-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/edison-experimentation-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Edison Experimentation
 > ITERATION_INSUFFICIENT — Experiment passes: 2 alternatives tested, digital archive selected. But iteration fails: 'it works, good enough' is premature satisfaction. Edison ran 10,000+ battery experiments. What is your default configuration? What happens when you tune batch processing? Categorization depth? Routing strategy? How much improvement does each yield? Additionally: 'out of scope' means the system is incomplete — Edison built the grid, not just the bulb. And 'should work' is not viability — where is your stress test? Your failover test? Your cost projection?
 
 
+## ❓ FAQ
+
+**Q: Doesn't requiring experiments slow down decision-making?**
+A 2-day pilot testing 3 alternatives is faster than an 8-month correction after choosing wrong. Edison's Menlo Park produced a major invention every 10 days — systematic experimentation is FASTER than guessing, because you avoid expensive dead ends. The team that picked the traditional system without testing spent 6 weeks migrating. A 3-day comparison pilot would have cost 1/30th of the migration.
+
+**Q: What counts as sufficient iteration?**
+Test variations until you hit diminishing returns. At minimum 3 variations beyond the first working version. Measure the delta between each: V1 → V2 improved throughput 40%. V2 → V3 improved 12%. V3 → V4 improved 2%. Diminishing returns at V3 — ship V3. Edison tested 10,000 battery experiments but he was measuring progress. If V2 shows < 3% improvement over V1 for a non-critical metric, iteration on THAT axis is done. Move to the next constraint.
+
+**Q: How does it differ from the Watt Efficiency Prover?**
+Watt validates OPTIMIZATION of existing systems — measuring waste, isolating bottlenecks, quantifying improvement. Edison validates DECISION-MAKING for new choices — testing alternatives, iterating designs, building ecosystems, proving viability. Watt asks 'where is 80% of your resources being wasted?' Edison asks 'how many alternatives did you test before choosing this one?' Use Watt when tuning a running operation. Use Edison when making a strategic choice or building a new capability.
+
+
 ## Installation & Usage
 
-To install and use the **Edison Experimentation Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/edison-experimentation-prover](https://vinkius.com/mcp/edison-experimentation-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Edison Experimentation Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `edison-experimentation-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Edison Experimentation Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "edison-experimentation-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

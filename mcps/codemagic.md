@@ -1,7 +1,6 @@
 # Codemagic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/codemagic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/codemagic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/codemagic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/codemagic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Codemagic** MCP server
 > The secure variable 'API_KEY' has been successfully added to the 'prod-secrets' group.
 
 
+## ❓ FAQ
+
+**Q: Can I trigger a build for a specific branch or tag using the AI?**
+Yes! Use the `start_build` tool and provide the `appId`, `workflowId`, and either the `branch` or `tag` name. You can even specify the `instanceType` if you need a specific build machine.
+
+**Q: How do I share a build artifact with someone who doesn't have a Codemagic account?**
+You can use the `create_public_artifact_url` tool. Provide the artifact `path` and a UNIX timestamp for `expires_at`. The agent will generate a temporary public link for you.
+
+**Q: Is it possible to update environment secrets safely?**
+Absolutely. The `add_variables_to_group` tool allows you to add variables to a group. By setting the `secure` parameter to true, your variables will be encrypted as secrets in Codemagic.
+
+
 ## Installation & Usage
 
-To install and use the **Codemagic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/codemagic](https://vinkius.com/mcp/codemagic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Codemagic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `codemagic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Codemagic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "codemagic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

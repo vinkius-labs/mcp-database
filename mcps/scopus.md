@@ -1,7 +1,6 @@
 # Scopus MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scopus)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scopus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scopus-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scopus)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Scopus** MCP server us
 > Author ID 7004212771 corresponds to Dr. Jane Smith. She has an H-index of 52, with 142 total documents and over 8,500 citations. Her primary affiliation is Stanford University.
 
 
+## ❓ FAQ
+
+**Q: Can I search for specific authors using their names or ORCID?**
+Yes! Use the `search_author` tool to find profiles by name or affiliation, or use `get_author` if you already have a specific Scopus Author ID to retrieve their full metrics and H-index.
+
+**Q: How do I get a breakdown of citations per year for a specific paper?**
+You can use the `get_citation_overview` tool. Provide the DOI or Scopus ID and an optional date range (e.g., 2018-2023) to see how the document's impact has evolved over time.
+
+**Q: Can the AI help me evaluate the quality of a journal?**
+Absolutely. By using the `get_serial_title` tool, your agent can retrieve official metrics like CiteScore, SJR (SCImago Journal Rank), and SNIP (Source Normalized Impact per Paper) for any journal.
+
+
 ## Installation & Usage
 
-To install and use the **Scopus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/scopus](https://vinkius.com/mcp/scopus)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Scopus** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `scopus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Scopus** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "scopus": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # OpenF1 Live Data & Telemetry MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openf1-live-data-telemetry)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openf1-live-data-telemetry-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openf1-live-data-telemetry-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openf1-live-data-telemetry)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **OpenF1 Live Data & Tel
 > Inspecting FIA updates... I found 3 messages regarding Track Limits since lap 10. Drivers warned include Perez at Turn 4 and Leclerc at Turn 12. No penalties have been issued yet. Shall I continue monitoring for specific driver numbers?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically analyze technical performance gaps between two specific drivers in a session?**
+Yes! By using tools like `get_lap_times` and `get_car_telemetry`, your agent can compare sector-by-sector data, top speeds, and braking points to identify exactly where one driver is gaining or losing time compared to another.
+
+**Q: How do I easily listen to or read the team radio communications during a race weekend?**
+Simply ask the agent to run the `get_team_radio` tool for a specific session and driver. It will retrieve direct URLs to the official audio recordings, allowing you to hear the narrative between drivers and engineers.
+
+**Q: Does the integration permit tracking official FIA race control decisions in real-time?**
+Yes. The `get_race_control_messages` action allows your agent to fetch all official updates, including yellow flags, steward investigations, and track limit warnings, mapped to specific lap numbers.
+
+
 ## Installation & Usage
 
-To install and use the **OpenF1 Live Data & Telemetry** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openf1-live-data-telemetry](https://vinkius.com/mcp/openf1-live-data-telemetry)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenF1 Live Data & Telemetry** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openf1-live-data-telemetry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenF1 Live Data & Telemetry** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openf1-live-data-telemetry": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

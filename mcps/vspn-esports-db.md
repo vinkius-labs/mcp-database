@@ -1,7 +1,6 @@
 # VSPN Esports DB MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vspn-esports-db)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vspn-esports-db-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vspn-esports-db-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vspn-esports-db)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **VSPN Esports DB** MCP 
 > QGhappy roster retrieved! 5 active players this season: 'Fly' (Mid, KDA 5.2), 'Cat' (Jungle, KDA 4.8), 'Hurt' (Clash Lane, KDA 3.9), 'Qing' (Support, KDA 7.1), and 'Xiào' (Farm Lane, KDA 4.5). Last roster change: 'Qing' promoted from substitute on March 15. Would you like a comparison against last season's performance?
 
 
+## ❓ FAQ
+
+**Q: What game titles and leagues does VSPN cover?**
+VSPN operates major leagues including KPL (Honor of Kings Pro League), PEL (Peacekeeper Elite League), and LPL ecosystem pipelines. The availability of telemetry data depends on your API access tier and the specific league season.
+
+**Q: Can I retrieve detailed round-by-round stats for a specific match?**
+Yes! Use the `get_match_details` tool with the match ID. It returns granular data including individual player KDA, damage dealt, objectives secured, and team gold differentials for each round played.
+
+**Q: Are there any write or administrative capabilities that could affect tournament data?**
+No. All tools are strictly read-only, designed for data retrieval and analysis. You cannot modify tournament brackets, player records, or match results through this integration — ensuring complete data integrity at all times.
+
+
 ## Installation & Usage
 
-To install and use the **VSPN Esports DB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vspn-esports-db](https://vinkius.com/mcp/vspn-esports-db)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **VSPN Esports DB** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vspn-esports-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **VSPN Esports DB** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vspn-esports-db": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

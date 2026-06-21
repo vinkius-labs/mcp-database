@@ -1,7 +1,6 @@
 # Authorize.net MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/authorizenet-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/authorizenet-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/authorizenet-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/authorizenet-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Authorize.net** MCP se
 > Retrieving batch stats... The last closed batch (ID: 12345) had 45 transactions totaling $5,240.50 settled. There were 2 voids and 1 refund processed in this period.
 
 
+## ❓ FAQ
+
+**Q: Can the AI automatically process a refund for a specific transaction ID?**
+Yes! Use the `create_transaction` tool with the 'refundTransaction' type. You'll need to provide the original transaction ID and the amount to be credited back to the customer.
+
+**Q: How do I check for transactions that have not yet been settled?**
+Simply ask the agent to run the `get_unsettled_transaction_list` tool. It will return all transactions currently sitting in your unsettled queue for review.
+
+**Q: Is it possible to manage customer payment profiles securely through the AI?**
+Yes. The `get_customer_profile` tool allows the agent to retrieve stored profiles (without exposing full sensitive card data), enabling you to manage recurring billing and saved information securely.
+
+
 ## Installation & Usage
 
-To install and use the **Authorize.net** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/authorizenet-1](https://vinkius.com/mcp/authorizenet-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Authorize.net** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `authorizenet-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Authorize.net** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "authorizenet-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

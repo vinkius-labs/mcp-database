@@ -1,7 +1,6 @@
 # Liveblocks (Collaborative) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/liveblocks-collaborative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/liveblocks-collaborative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/liveblocks-collaborative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/liveblocks-collaborative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -83,12 +82,52 @@ Here are some examples of how you can interact with the **Liveblocks (Collaborat
 > Room 'Sprint 24 Planning' has been successfully created with ID 'sprint-24-plan'. Default access is set to write. You can now start adding threads or initializing storage.
 
 
+## ❓ FAQ
+
+**Q: How can I see which users are currently active in a specific collaboration room?**
+You can use the `list_active_users` tool by providing the Room ID. The agent will return a list of all users currently connected to that room, including their connection IDs and associated info.
+
+**Q: Is it possible to inspect or modify the shared state of a room from the AI?**
+Yes! Use `get_storage` to retrieve the current LSON/JSON storage tree or `patch_storage` to update specific keys in the room's shared state. For Yjs-based rooms, you can use `get_ydoc` and `update_ydoc`.
+
+**Q: Can I manage user comments and discussion threads through this integration?**
+Absolutely. You can use `list_threads` to see all discussions in a room, `create_thread` to start a new one, and `resolve_thread` to mark a discussion as completed.
+
+
 ## Installation & Usage
 
-To install and use the **Liveblocks (Collaborative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/liveblocks-collaborative](https://vinkius.com/mcp/liveblocks-collaborative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Liveblocks (Collaborative)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `liveblocks-collaborative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Liveblocks (Collaborative)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "liveblocks-collaborative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

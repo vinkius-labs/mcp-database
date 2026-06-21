@@ -1,7 +1,6 @@
 # Short.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shortio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shortio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shortio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shortio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,46 @@ Here are some examples of how you can interact with the **Short.io** MCP server 
 > 5 branded links created for product launch campaign. 1) go.brand.co/launch-announce → Landing page (tagged: launch, social). 2) go.brand.co/launch-demo → Demo video (tagged: launch, video). 3) go.brand.co/launch-pricing → Pricing page (tagged: launch, conversion). 4) go.brand.co/launch-blog → Blog post (tagged: launch, content). 5) go.brand.co/launch-press → Press release (tagged: launch, PR). All links: UTM parameters auto-appended, password protection available, expiry set to June 30.
 
 
+## ❓ FAQ
+
+**Q: Can I create a custom short link using my AI agent?**
+Yes! Use the `create_short_link` action. Provide the original URL, the domain name, and an optional custom path to generate your branded link.
+
+
 ## Installation & Usage
 
-To install and use the **Short.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/shortio](https://vinkius.com/mcp/shortio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Short.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `shortio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Short.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shortio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

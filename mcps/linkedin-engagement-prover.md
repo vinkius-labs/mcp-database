@@ -1,7 +1,6 @@
 # LinkedIn Engagement Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkedin-engagement-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/linkedin-engagement-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/linkedin-engagement-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkedin-engagement-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **LinkedIn Engagement Pr
 > Verdict: LOW_VALUE. Hook is a platitude ('The secret to success? Consistency') — zero curiosity, zero tension, zero data. Body is a collection of motivational quotes that appear in 10,000 posts daily. DWELL TIME = 0 because there's nothing to absorb. Nobody saves this. Nobody writes a 15-word comment on this. To fix: replace EVERY platitude with a SPECIFIC experience. Not 'be consistent' but 'I posted on LinkedIn for 147 days straight. Days 1-30: 0 engagement. Day 45: first viral post. Here's what changed and why.'
 
 
+## ❓ FAQ
+
+**Q: Does this tool write LinkedIn posts?**
+No. The agent writes the post. The tool VALIDATES that it will drive engagement by checking six dimensions: hook effectiveness, bait detection, voice authenticity, value density, format optimization, and algorithm compliance. It catches patterns that kill engagement before you post.
+
+**Q: Why are external links penalized?**
+LinkedIn's business model depends on keeping users ON the platform. External links drive users AWAY. The algorithm suppresses posts with external links in the body by approximately 60%. The solution: put all links in the first comment and reference them in the post ('Link in the first comment'). This is not a workaround — it's how LinkedIn's algorithm is designed to work.
+
+**Q: What makes a hook effective?**
+The hook is the first 210 characters before LinkedIn's 'See more' button. It must create immediate tension, curiosity, or credibility. Five proven formats: (1) CONTRARIAN — challenge accepted wisdom. (2) DATA — specific number that surprises. (3) CURIOSITY — open loop the reader must close. (4) VULNERABILITY — personal failure or turning point. (5) SPECIFIC RESULT — concrete outcome with numbers. 'In today's fast-paced world...' is not a hook — it's a scroll trigger.
+
+
 ## Installation & Usage
 
-To install and use the **LinkedIn Engagement Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/linkedin-engagement-prover](https://vinkius.com/mcp/linkedin-engagement-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LinkedIn Engagement Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `linkedin-engagement-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LinkedIn Engagement Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "linkedin-engagement-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

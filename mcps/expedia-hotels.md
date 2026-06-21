@@ -1,7 +1,6 @@
 # Expedia Hotels MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia-hotels)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/expedia-hotels-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/expedia-hotels-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia-hotels)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -102,12 +101,52 @@ Here are some examples of how you can interact with the **Expedia Hotels** MCP s
 > Grand Palais Suites (74502) has a 4.6/5.0 average from 892 reviews. Recent highlights: guests consistently praise the central location (50m from Champs-Élysées) and the included breakfast quality. The most common critique mentions elevator wait times during peak morning hours. Overall sentiment is strongly positive — 94% of recent reviewers recommend the property.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent search for hotels in a specific city and return real-time availability?**
+Yes. Use the `search_properties` tool with your target location, check-in and check-out dates, and guest count. The agent will return a ranked list of available properties with pricing, star ratings, and room types — ready for comparison in seconds.
+
+**Q: How do I compare room rates and cancellation policies across multiple hotels?**
+Ask your agent to pull rate plans for each property using the `get_rate_plans` tool. It returns detailed pricing breakdowns including nightly rates, taxes, cancellation deadlines, and meal plan options. Your agent can then build a comparison table across all properties you're evaluating.
+
+**Q: Does this integration actually book hotels or is it read-only?**
+The integration supports both read and write operations. You can search properties, compare rates, and read reviews (read operations), as well as create and cancel itineraries through the `book_itinerary` and `cancel_itinerary` tools. All booking operations go through official Rapid API endpoints with full cancellation support.
+
+
 ## Installation & Usage
 
-To install and use the **Expedia Hotels** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/expedia-hotels](https://vinkius.com/mcp/expedia-hotels)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Expedia Hotels** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `expedia-hotels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Expedia Hotels** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "expedia-hotels": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

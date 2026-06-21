@@ -1,7 +1,6 @@
 # MIT Open Library MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mit-open-library)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mit-open-library-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mit-open-library-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mit-open-library)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -109,12 +108,52 @@ Here are some examples of how you can interact with the **MIT Open Library** MCP
 > I've filtered for machine learning books with full-text availability on the Internet Archive. These editions can be borrowed or read online for free.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No. Open Library is completely free and open. No authentication required.
+
+**Q: Can I read full books?**
+Many books on Open Library have full-text versions available through the Internet Archive. Use the full-text search filter to find freely readable editions.
+
+**Q: How many books are in Open Library?**
+Open Library catalogs over 20 million unique book records with metadata from libraries, publishers, and community contributions. It is one of the largest open book databases in the world.
+
+
 ## Installation & Usage
 
-To install and use the **MIT Open Library** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mit-open-library](https://vinkius.com/mcp/mit-open-library)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MIT Open Library** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mit-open-library` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MIT Open Library** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mit-open-library": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

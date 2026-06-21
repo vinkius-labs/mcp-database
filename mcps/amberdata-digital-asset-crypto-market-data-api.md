@@ -1,7 +1,6 @@
 # Amberdata (Digital Asset & Crypto Market Data API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amberdata-digital-asset-crypto-market-data-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amberdata-digital-asset-crypto-market-data-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amberdata-digital-asset-crypto-market-data-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amberdata-digital-asset-crypto-market-data-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Amberdata (Digital Ass
 > I've found several active protocols including Aave, Compound, and MakerDAO. Would you like to see specific metrics for one of these?
 
 
+## ❓ FAQ
+
+**Q: How do I retrieve the current price and spread for a specific crypto pair?**
+Use the `get_spot_tickers` tool for the latest bid/ask data or `get_spot_bid_ask_spread` for detailed liquidity metrics on a specific instrument.
+
+**Q: Can I check the balance of a specific blockchain address?**
+Yes, use the `get_address_balances_latest` tool. You will need to provide the address and the corresponding `blockchain_id`.
+
+**Q: Is DeFi lending protocol data available?**
+Absolutely. You can query lending protocol information using `get_defi_lending_protocols_information` or get summaries via `get_defi_lending_assets_metrics_summary`.
+
+
 ## Installation & Usage
 
-To install and use the **Amberdata (Digital Asset & Crypto Market Data API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amberdata-digital-asset-crypto-market-data-api](https://vinkius.com/mcp/amberdata-digital-asset-crypto-market-data-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amberdata (Digital Asset & Crypto Market Data API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amberdata-digital-asset-crypto-market-data-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amberdata (Digital Asset & Crypto Market Data API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amberdata-digital-asset-crypto-market-data-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

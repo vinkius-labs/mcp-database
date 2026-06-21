@@ -1,7 +1,6 @@
 # TomTom MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomtom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tomtom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tomtom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomtom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **TomTom** MCP server us
 - Center: Lat 34.05, Lon -118.25
 
 
+## ❓ FAQ
+
+**Q: Where and how do I extract my TomTom API Key?**
+Log into your account at the `developer.tomtom.com` portal. Go to the dashboard console and select **Keys** (or My Dashboard). Either use your default developer API Key or click **Add new Key** for this specific agent usage. Copy the entire cryptographic string and insert it below securely.
+
+**Q: Can the agent interact with or update the maps itself?**
+No. The integration exclusively lists and pulls read-only endpoints (timelines, distances, addresses). The AI agent leverages TomTom merely to process geographic conversions securely; it lacks parameters capable of feeding corruptions or modifying raw data maps.
+
+**Q: Should I secure my TomTom API Key?**
+Yes. It is highly recommended to set a Domain Whitelist in your key management settings on the TomTom developer portal. This restricts the use of your key to specific domains, preventing unauthorized use or rate limit exhaustion.
+
+
 ## Installation & Usage
 
-To install and use the **TomTom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tomtom](https://vinkius.com/mcp/tomtom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TomTom** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tomtom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TomTom** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tomtom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

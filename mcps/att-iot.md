@@ -1,7 +1,6 @@
 # AT&T IoT MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/att-iot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/att-iot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/att-iot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/att-iot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -100,12 +99,52 @@ Here are some examples of how you can interact with the **AT&T IoT** MCP server 
 > Pool 'Enterprise-Fleet-A' usage: 78.3 GB used out of 100 GB allocated (78.3%). 21.7 GB remaining. Renewal date: April 28. Top 5 consuming devices: 1) ICCID ...3456 (8.2 GB), 2) ICCID ...7891 (6.7 GB), 3) ICCID ...2345 (5.1 GB), 4) ICCID ...6789 (4.8 GB), 5) ICCID ...0123 (3.9 GB). At current rate, the pool will reach 90% by April 20. Consider suspending non-critical devices or reallocating capacity.
 
 
+## ❓ FAQ
+
+**Q: What information do I need to identify an IoT SIM?**
+Each IoT SIM is uniquely identified by its **ICCID** (Integrated Circuit Card Identifier) -- a 19-20 digit number printed on the SIM card or available in your IoT Control Center dashboard. The ICCID is required for all device-specific operations like activation, suspension, and usage queries. You can list all your devices with `list_devices` to discover ICCIDs for your entire fleet.
+
+**Q: How do data pools work and how can I prevent pool exhaustion?**
+Data pools are shared data plans across multiple IoT SIMs. Instead of each SIM having an individual cap, all devices in the pool draw from a common data bucket. Use `list_data_pools` to see your pools, `get_pool_usage` to check consumption and identify top-consuming devices, and set up alerts before reaching the limit. If a pool is near exhaustion, you can suspend low-priority devices with `suspend_device` or migrate high-usage devices to a different pool with `update_device_settings`.
+
+**Q: Can I automatically diagnose why an IoT device went offline?**
+Yes. Use the `diagnose_connectivity` tool with the device's ICCID. It runs automated checks for network registration status, APN configuration, active data session, signal strength, and known network outages in the device's area. The tool returns detailed diagnostic results with recommended actions -- helping your field engineers resolve connectivity issues without manual portal navigation.
+
+
 ## Installation & Usage
 
-To install and use the **AT&T IoT** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/att-iot](https://vinkius.com/mcp/att-iot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AT&T IoT** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `att-iot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AT&T IoT** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "att-iot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # IATA Developer Portal MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iata-developer-portal)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/iata-developer-portal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/iata-developer-portal-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iata-developer-portal)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **IATA Developer Portal*
 > I've retrieved the details. The IATA code '744' corresponds to the Boeing 747-400 (Passenger) aircraft. I can assist you with more aircraft metadata if needed.
 
 
+## ❓ FAQ
+
+**Q: How do I find my IATA API Key?**
+Log in to your [**IATA Developer portal**](https://developer.iata.org/), register for an API, and you will find your API Key in your subscription details. Copy and paste it below.
+
+**Q: What codes are supported for search?**
+You can search for 3-letter airport codes (e.g., LHR), 2-letter airline codes (e.g., BA), and IATA aircraft codes (e.g., 744).
+
+**Q: Is geographic location data included?**
+Yes. The `search_airports` and `get_city_details` tools include geographic metadata such as latitude and longitude where available.
+
+
 ## Installation & Usage
 
-To install and use the **IATA Developer Portal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/iata-developer-portal](https://vinkius.com/mcp/iata-developer-portal)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IATA Developer Portal** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `iata-developer-portal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IATA Developer Portal** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "iata-developer-portal": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

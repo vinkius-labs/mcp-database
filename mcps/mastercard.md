@@ -1,7 +1,6 @@
 # Mastercard MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mastercard)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mastercard-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mastercard-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mastercard)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -107,12 +106,58 @@ Here are some examples of how you can interact with the **Mastercard** MCP serve
 > Card validation complete: ****2346 is VALID. Account type: Credit card. Issuer: First National Bank. The card is active and ready for transactions. You can proceed with processing this payment safely.
 
 
+## ❓ FAQ
+
+**Q: Can I identify what bank issued a card just from the first few digits?**
+Yes! Use the `bin_lookup` tool with the first 6-8 digits of the card number (the BIN). Mastercard will return the issuer bank name, card type (credit/debit/prepaid), card category (Gold/Platinum/World), issuing country, and flags like whether it's a commercial or healthcare card. For example, BIN 542418 reveals the exact issuing bank and card tier.
+
+**Q: How can I find merchants that accept Mastercard near a specific location?**
+Use the `search_merchants` tool with latitude, longitude, and a search radius in meters. You can optionally filter by MCC code (e.g., "5812" for restaurants, "5411" for grocery stores). For example, searching with coordinates -23.5505, -46.6333 (São Paulo) and radius 5000 will return all Mastercard-accepting merchants within 5km. Results include merchant names, addresses, categories, and coordinates.
+
+**Q: Can I verify if a payment card is valid before processing a transaction?**
+Yes! Use the `validate_account` tool with the full card number. It checks Mastercard records to determine if the card is active and valid, returning the validation status (VALID/INVALID), account type (credit/debit/prepaid), and issuer information. Optionally include expiry date (MMYY format) and cardholder name for enhanced validation. This helps reduce declined transactions and fraud risk. Never store full card numbers — handle them securely.
+
+**Q: How do I report a confirmed fraudulent transaction to Mastercard?**
+Use the `submit_fraud_report` tool with the card number, transaction amount, currency (ISO 4217), and fraud type code. Fraud types: "01" = Stolen Card, "02" = Never Received Card, "03" = Fraudulent Application, "04" = Counterfeit Card. Optionally include fraud amount and transaction date. This submits to Mastercard's Fraud and Loss Database (FLD) to help reduce false positives across the network. IMPORTANT: Only authorized fraud management personnel should use this tool for confirmed cases.
+
+**Q: Can I find merchants that accept Apple Pay or Google Pay near me?**
+Yes! Use the `search_places` tool with GPS coordinates and set hasApplePay=true or hasGooglePay=true to filter for merchants with those payment capabilities. Returns detailed merchant information including names, addresses, MCC codes, and which digital wallets they accept. For example, searching near Times Square (40.7580, -73.9855) with hasApplePay=true will show all nearby Apple Pay-enabled merchants.
+
+
 ## Installation & Usage
 
-To install and use the **Mastercard** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mastercard](https://vinkius.com/mcp/mastercard)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mastercard** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mastercard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mastercard** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mastercard": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

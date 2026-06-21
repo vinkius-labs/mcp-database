@@ -1,7 +1,6 @@
 # Japan e-Stat MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/japan-e-stat)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/japan-e-stat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/japan-e-stat-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/japan-e-stat)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Japan e-Stat** MCP ser
 > According to the latest METI data from e-Stat, the Indices of Industrial Production (IIP) for the motor vehicles, parts, and accessories sector rests at 98.2, showing a slight month-over-month decrease of 1.1%.
 
 
+## ❓ FAQ
+
+**Q: How do I get an e-Stat API key?**
+Register for a free account at e-stat.go.jp, then visit your My Page to generate an Application ID (appId). Approval is instant.
+
+**Q: Is the data available in English?**
+Many tables support English translations for table titles and category names. The API uses lang=E by default. Some specialized datasets may only be available in Japanese.
+
+**Q: What types of statistics are covered?**
+The database covers national census data, labor force surveys, consumer price indices (CPI), trade statistics, industrial production, health, and education metrics published by all Japanese government ministries.
+
+
 ## Installation & Usage
 
-To install and use the **Japan e-Stat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/japan-e-stat](https://vinkius.com/mcp/japan-e-stat)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Japan e-Stat** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `japan-e-stat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Japan e-Stat** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "japan-e-stat": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

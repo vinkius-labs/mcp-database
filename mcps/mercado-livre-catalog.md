@@ -1,7 +1,6 @@
 # Mercado Livre Catalog MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mercado-livre-catalog)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mercado-livre-catalog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mercado-livre-catalog-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mercado-livre-catalog)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,55 @@ Here are some examples of how you can interact with the **Mercado Livre Catalog*
 > Required attributes: Brand, Model, Storage Capacity, Color, Screen Size, RAM.
 
 
+## ❓ FAQ
+
+**Q: How do I get an Access Token for Mercado Livre?**
+Go to the [**Mercado Livre Developers**](https://developers.mercadolivre.com.br) portal, create an App, and use the OAuth2 flow to generate your Access Token. It usually starts with `APP_USR-...`.
+
+**Q: Can I create listings with images?**
+Yes, the create_item tool accepts a JSON body where you can include picture IDs. Ensure images are already uploaded to Mercado Livre's servers via their Picture API first.
+
+**Q: How do I update stock for multiple items?**
+You can use the update_stock action for each item individually. For bulk updates, we recommend using the stock update endpoint directly or creating a loop in your workflow.
+
+**Q: What listing types does Mercado Livre support?**
+Mercado Livre supports several listing types: 'gold_special' (premium with fulfillment), 'gold_pro' (classic), and 'gold' (basic). Each type offers different levels of visibility, fees, and buyer reach.
+
+
 ## Installation & Usage
 
-To install and use the **Mercado Livre Catalog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mercado-livre-catalog](https://vinkius.com/mcp/mercado-livre-catalog)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mercado Livre Catalog** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mercado-livre-catalog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mercado Livre Catalog** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mercado-livre-catalog": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

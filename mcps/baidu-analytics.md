@@ -1,7 +1,6 @@
 # Baidu Analytics / 百度统计 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baidu-analytics)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baidu-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baidu-analytics-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baidu-analytics)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Baidu Analytics / 百�
 > I've retrieved your site list. You have 3 sites registered: 'myshop.com' (ID: `8821`), 'blog.example.cn' (ID: `9920`), and 'app-landing.com' (ID: `1024`). Which site would you like to audit today?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Baidu Analytics Token and Site ID?**
+Log in to the [Baidu Analytics Console](https://tongji.baidu.com/), navigate to [Management] -> [Site List] to find your numeric Site ID. The API Token is usually provided in the API settings or developer services section after account verification.
+
+**Q: What metrics are supported in real-time queries?**
+Real-time tools provide access to Page Views (PV), Unique Visitors (UV), IP counts, and the current number of online users on your site.
+
+**Q: Can I query data for specific dates?**
+Yes! Use the trend and metric tools with `start_date` and `end_date` in `YYYYMMDD` format. Your agent will retrieve the historical data for the requested period.
+
+
 ## Installation & Usage
 
-To install and use the **Baidu Analytics / 百度统计** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/baidu-analytics](https://vinkius.com/mcp/baidu-analytics)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Baidu Analytics / 百度统计** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `baidu-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Baidu Analytics / 百度统计** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "baidu-analytics": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # NPM Registry MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/npm-registry)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/npm-registry-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/npm-registry-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/npm-registry)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **NPM Registry** MCP ser
 > Checking registry metadata... The NPM registry currently contains over 3.5 million documents with a total database size of approximately 2.4TB. The instance name is 'registry'.
 
 
+## ❓ FAQ
+
+**Q: Can I check the latest version of a package and its dependencies?**
+Yes! Use the `get_package_version` tool with the version set to 'latest'. It will return the full metadata including dependencies, scripts, and engine requirements for that specific release.
+
+**Q: How do I search for packages by a specific author or keyword?**
+You can use the `search_packages` tool. It supports qualifiers in the text field like 'author:name' or 'keywords:word', and allows you to weight results by quality, popularity, or maintenance.
+
+**Q: Is it possible to get a faster, smaller response for package metadata?**
+Yes, when using the `get_package` tool, you can set the `abbreviated` parameter to true. This requests a 'packument' with less data, which is ideal for quick version checks or faster response times.
+
+
 ## Installation & Usage
 
-To install and use the **NPM Registry** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/npm-registry](https://vinkius.com/mcp/npm-registry)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NPM Registry** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `npm-registry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NPM Registry** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "npm-registry": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Study Abroad Cost Estimator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/study-abroad-cost-estimator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/study-abroad-cost-estimator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/study-abroad-cost-estimator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/study-abroad-cost-estimator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Study Abroad Cost Esti
 > The complete estimate requires running all three tools: `tuition_estimate`, `col_estimate`, and `logistics_and_fees`. This ensures we account for tuition, monthly living costs in France, mandatory insurance coverage, and your initial travel logistics from Brazil.
 
 
+## ❓ FAQ
+
+**Q: What specific costs does the estimator calculate?**
+The estimate is comprehensive and covers three main areas. First, we use `tuition_estimate` for mandatory academic fees. Second, `col_estimate` calculates the monthly cost of living (rent, food, utilities). Third, `logistics_and_fees` handles non-recurring costs like health insurance premiums and round-trip flights.
+
+**Q: How is the final cost presented in multiple currencies?**
+The system calculates components (tuition, CoL, etc.) using their native currency (USD or EUR). The final total is then consolidated and converted to BRL using the exchange rate you provide in the process. This ensures a single, actionable budget.
+
+**Q: Is providing a city name required for an accurate estimate?**
+While not strictly mandatory, providing the specific city greatly improves accuracy. Tools like `tuition_estimate` and `col_estimate` use localized indices when a city is provided, giving you a much more precise budget than relying on national averages.
+
+
 ## Installation & Usage
 
-To install and use the **Study Abroad Cost Estimator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/study-abroad-cost-estimator](https://vinkius.com/mcp/study-abroad-cost-estimator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Study Abroad Cost Estimator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `study-abroad-cost-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Study Abroad Cost Estimator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "study-abroad-cost-estimator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Buenbit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buenbit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/buenbit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/buenbit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buenbit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Buenbit** MCP server u
 > Understood. Bypassing UI layers to submit `create_order` against 'btcusdc' natively. Limit Buy Order successfully pushed. Order ID `3029ab1-z` resting deeply on the book. Shall I review active orders list?
 
 
+## ❓ FAQ
+
+**Q: Is it safe to pass my Secret API Key to this agent?**
+Vurb explicitly executes locally unless connected through audited Edge channels. Setting `sensitive: true` physically hides your credentials. Be sure your Buenbit API scope restricts withdrawals to safeguard capital.
+
+**Q: Do I need to generate an HMAC signature manually for trades?**
+No. The Server abstracts this. Simply instruct 'Buy 0.1 BTC at Limit' and the Agent utilizes the provided API Secret internally to digest and authenticate the packet.
+
+**Q: How can I easily get my public deposit address for stablecoins?**
+Invoke `get_deposit_address` telling the LLM the desired symbol (e.g. `usdc`, `usdt`). It fetches the exact blockchain string address tied uniquely to your wallet profile.
+
+
 ## Installation & Usage
 
-To install and use the **Buenbit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/buenbit](https://vinkius.com/mcp/buenbit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Buenbit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `buenbit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Buenbit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "buenbit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

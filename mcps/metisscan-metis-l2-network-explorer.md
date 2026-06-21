@@ -1,7 +1,6 @@
 # Metisscan (Metis L2 Network Explorer) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/metisscan-metis-l2-network-explorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/metisscan-metis-l2-network-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/metisscan-metis-l2-network-explorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/metisscan-metis-l2-network-explorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Here are some examples of how you can interact with the **Metisscan (Metis L2 Ne
 > Accessing contract data... This is a verified 'TransparentUpgradeableProxy' contract. I have retrieved the ABI and the Solidity source code. Would you like me to analyze any specific function?
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance and token holdings of a specific wallet address?**
+Yes. Use the `getAddress` tool for the main balance and `getAddressTokens` to list all ERC-20 tokens held by that specific address on the Metis network.
+
+**Q: How do I inspect the internal calls or logs of a specific transaction?**
+You can use `getTransactionInternalTransactions` to see contract-to-contract interactions and `getTransactionLogs` to retrieve event data emitted during execution.
+
+**Q: Is it possible to query the network using GraphQL or standard EVM RPC methods?**
+Absolutely. This server includes `executeGraphql` for complex queries and a full suite of EVM tools like `ethBlockNumber`, `ethGetBalance`, and `ethCall`.
+
+
 ## Installation & Usage
 
-To install and use the **Metisscan (Metis L2 Network Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/metisscan-metis-l2-network-explorer](https://vinkius.com/mcp/metisscan-metis-l2-network-explorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Metisscan (Metis L2 Network Explorer)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `metisscan-metis-l2-network-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Metisscan (Metis L2 Network Explorer)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "metisscan-metis-l2-network-explorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

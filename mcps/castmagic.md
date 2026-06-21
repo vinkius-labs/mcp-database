@@ -1,7 +1,6 @@
 # Castmagic MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/castmagic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/castmagic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/castmagic-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/castmagic)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Castmagic** MCP server
 > Retrieving your recent recordings... I found 10 entries including 'Weekly Sync' and 'Product Launch Interview'. All are successfully processed.
 
 
+## ❓ FAQ
+
+**Q: Can I generate social media posts from a podcast link?**
+Yes! Use the `create_new_transcript` tool with your podcast audio URL, then use `get_magic_content` once processing is finished to retrieve AI-generated social posts.
+
+**Q: How do I check if my transcription is ready?**
+Use the `list_transcripts` tool. Your agent will return a list of all jobs and their current status (e.g., Processing, Finished).
+
+**Q: Which languages does Castmagic support?**
+Castmagic supports over 18 languages including English, Spanish, French, German, and Portuguese. You can specify the language when creating a new transcript.
+
+
 ## Installation & Usage
 
-To install and use the **Castmagic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/castmagic](https://vinkius.com/mcp/castmagic)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Castmagic** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `castmagic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Castmagic** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "castmagic": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

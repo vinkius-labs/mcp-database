@@ -1,7 +1,6 @@
 # PracticePanther MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/practicepanther)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/practicepanther-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/practicepanther-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/practicepanther)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -209,12 +208,55 @@ Here are some examples of how you can interact with the **PracticePanther** MCP 
 > Found 3 contacts associated with John Smith: 1) John Smith (Client) — john.smith@email.com, 555-0123, 2) Jane Smith (Spouse) — jane.smith@email.com, 555-0124, 3) Robert Williams (Opposing Counsel) — robert@williamslaw.com, 555-0456.
 
 
+## ❓ FAQ
+
+**Q: What features of PracticePanther are available through this API?**
+The API provides access to: Matters/Cases (CRUD operations), Contacts/Clients (create and list), Time Entries (list and create), Bills/Invoices (list and get), Payments (list), Tasks (list), Calendar Events (list), Custom Fields (list), Activities (list), and Expenses (list). The API supports OData filtering, ordering, and pagination for flexible queries across all resources.
+
+**Q: How do I get a PracticePanther API access token?**
+PracticePanther uses OAuth 2 authentication. Visit the PracticePanther OAuth authorization endpoint to authorize your application, then exchange the authorization code for an access token at the token endpoint. The access token is a Bearer token used in the Authorization header for all API requests. Contact PracticePanther support if you need help setting up API access for your firm.
+
+**Q: Can I filter and order results using OData?**
+Yes! PracticePanther's API supports full OData query options. Use $filter for filtering (e.g. "Status eq 'Open'"), $orderby for ordering (e.g. "CreatedDate desc"), $top for limiting results, and $skip for pagination. These parameters are available on all list tools. For example, to find open matters ordered by creation date: use filter="Status eq 'Open'" and orderby="CreatedDate desc".
+
+**Q: How do I track billable time with PracticePanther API?**
+Use `create_practicepanther_time_entry` to log time against any matter. Provide the matter GUID, description of work, and duration in minutes. You can specify whether the entry is billable and set a custom hourly rate. Use `list_practicepanther_time_entries` to view all time logged against a specific matter or across all matters.
+
+
 ## Installation & Usage
 
-To install and use the **PracticePanther** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/practicepanther](https://vinkius.com/mcp/practicepanther)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PracticePanther** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `practicepanther` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PracticePanther** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "practicepanther": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

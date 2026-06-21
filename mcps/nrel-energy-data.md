@@ -1,7 +1,6 @@
 # NREL Energy Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nrel-energy-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nrel-energy-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nrel-energy-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nrel-energy-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **NREL Energy Data** MCP
 > Retrieving utility rates... For zip code 28801, the average residential electricity rate is $0.12 per kWh. The commercial rate is $0.10 and the industrial rate is $0.08. Would you like to identify the utility companies serving this area?
 
 
+## ❓ FAQ
+
+**Q: Is the NREL API Key free?**
+Yes! You can sign up for a free API key at https://developer.nrel.gov/signup/. Standard limits apply (1,000 requests per hour).
+
+**Q: What is PVWatts used for?**
+PVWatts estimates the energy production and cost of energy of grid-connected photovoltaic (PV) energy systems throughout the world.
+
+**Q: Can I search for EV charging stations?**
+Yes! EV charging stations are included in the Alternative Fuel Stations dataset. Use the `get_nearest_stations` tool to find them near a specific location.
+
+
 ## Installation & Usage
 
-To install and use the **NREL Energy Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nrel-energy-data](https://vinkius.com/mcp/nrel-energy-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NREL Energy Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nrel-energy-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NREL Energy Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nrel-energy-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

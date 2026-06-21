@@ -1,7 +1,6 @@
 # Apollo.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apolloio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apolloio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apolloio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apolloio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Apollo.io** MCP server
 > I've successfully added contact 'c_123' to the 'New Year Campaign' sequence (ID: seq_456). The first email will be sent according to your sequence schedule.
 
 
+## ❓ FAQ
+
+**Q: How do I get an Apollo API Key?**
+Log in to your Apollo.io account, go to **Settings > Integrations > API**, and generate a new API key. Ensure you have the necessary permissions based on your plan.
+
+**Q: Does searching for people consume credits?**
+Basic searching typically does not consume credits, but 'enriching' a contact to reveal their verified email or phone number will consume Apollo export credits according to your subscription plan.
+
+**Q: Can I add contacts directly to my sequences?**
+Yes! Use the `add_contact_to_sequence` tool. You'll need the Contact IDs, the Sequence ID, and the ID of the email address you want to use for the outreach.
+
+
 ## Installation & Usage
 
-To install and use the **Apollo.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/apolloio](https://vinkius.com/mcp/apolloio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Apollo.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `apolloio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Apollo.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "apolloio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

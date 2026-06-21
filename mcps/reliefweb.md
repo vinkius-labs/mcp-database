@@ -1,7 +1,6 @@
 # ReliefWeb MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reliefweb)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reliefweb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reliefweb-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reliefweb)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **ReliefWeb** MCP server
 > Found 12 humanitarian jobs in South Sudan: WASH Coordinator (Save the Children), Health Manager (MSF), Protection Officer (UNHCR), Logistics Coordinator (WFP). All with application deadlines and organization details.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! ReliefWeb's API is completely free and open. No authentication required. Just subscribe and start searching. Data is updated continuously.
+
+**Q: What kind of reports are available?**
+ReliefWeb hosts 300,000+ reports including situation reports, assessments, press releases, maps, infographics and evaluations from UN agencies, NGOs, governments and research organizations.
+
+**Q: Can I search reports by country?**
+Yes! Use get_reports with the country parameter to filter reports by country name. You can also filter by disaster type, theme, format, date range and organization simultaneously.
+
+
 ## Installation & Usage
 
-To install and use the **ReliefWeb** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/reliefweb](https://vinkius.com/mcp/reliefweb)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ReliefWeb** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `reliefweb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ReliefWeb** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "reliefweb": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

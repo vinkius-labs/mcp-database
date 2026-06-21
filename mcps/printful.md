@@ -1,7 +1,6 @@
 # Printful MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/printful)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/printful-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/printful-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/printful)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Printful** MCP server 
 > The size guide for product 71 (Unisex Staple T-Shirt) in cm is: S (Width: 45.7, Length: 71.1), M (Width: 50.8, Length: 73.7), L (Width: 55.9, Length: 76.2). Would you like the measurements for larger sizes as well?
 
 
+## ❓ FAQ
+
+**Q: Can I filter products by a specific category like 'T-shirts'?**
+Yes! Use the `list_products` tool and provide the `category_id`. The agent will return only the products belonging to that specific Printful category.
+
+**Q: How do I get the exact pricing and stock for a specific size and color?**
+You should use the `get_variant` tool with the specific Variant ID. This provides the most granular data including price, stock availability, and specific attributes.
+
+**Q: Does this server provide measurements for the products?**
+Yes, the `get_product_sizes` tool returns the complete size guide for a product ID, including measurements in both imperial (inches) and metric (cm) units.
+
+
 ## Installation & Usage
 
-To install and use the **Printful** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/printful](https://vinkius.com/mcp/printful)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Printful** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `printful` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Printful** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "printful": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

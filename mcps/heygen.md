@@ -1,7 +1,6 @@
 # HeyGen MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heygen)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/heygen-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/heygen-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heygen)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,55 @@ Here are some examples of how you can interact with the **HeyGen** MCP server us
 > Template generation triggered! I've started the production of your video using the 'welcome_v1' template. This usually takes 2-5 minutes. I'll monitor the status for you. Should I notify you once the URL is ready?
 
 
+## ❓ FAQ
+
+**Q: How do I find my HeyGen API Key?**
+Log in to your HeyGen account, navigate to **User Settings**, and select the **Developer** tab. You will be able to generate and copy your unique API key from there.
+
+**Q: How can I generate a video using a template?**
+First, use `list_templates` to find the template you want. Then, use the `generate_from_template` tool by providing the template ID and a JSON string mapping the variables (like text or image URLs) you want to replace.
+
+**Q: Can I translate existing videos into other languages?**
+Yes! Use the `translate_video` tool. You must provide the source video URL and the target language code. HeyGen will generate a new version of the video with the translated audio and lip-syncing.
+
+**Q: Is the integration secure for creative data?**
+Absolutely. The integration uses official HeyGen API keys over HTTPS. Your credentials are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **HeyGen** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/heygen](https://vinkius.com/mcp/heygen)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HeyGen** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `heygen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HeyGen** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "heygen": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

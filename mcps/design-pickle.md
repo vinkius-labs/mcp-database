@@ -1,7 +1,6 @@
 # Design Pickle MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/design-pickle)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/design-pickle-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/design-pickle-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/design-pickle)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Design Pickle** MCP se
 > Your production queue currently has 5 active requests. 2 are being worked on by your assigned designers, and 3 are in the triage phase. The next delivery is expected within 24 hours. Would you like a detailed breakdown?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Design Pickle API Key?**
+Log in to your Design Pickle account, navigate to your settings or API section, and you can generate or retrieve your unique API Key from there.
+
+**Q: Can the agent see my designers?**
+Yes, you can use the list_assigned_designers tool to see the creative team members associated with your account.
+
+**Q: Does the integration show real-time production status?**
+Yes, you can check the production queue status and individual request details to see where your designs are in the creative process.
+
+
 ## Installation & Usage
 
-To install and use the **Design Pickle** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/design-pickle](https://vinkius.com/mcp/design-pickle)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Design Pickle** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `design-pickle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Design Pickle** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "design-pickle": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

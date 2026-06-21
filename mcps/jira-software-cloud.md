@@ -1,7 +1,6 @@
 # Jira Software Cloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jira-software-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jira-software-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jira-software-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jira-software-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,52 @@ Here are some examples of how you can interact with the **Jira Software Cloud** 
 > The estimation for issue 10123 is currently set to 5 story points.
 
 
+## ❓ FAQ
+
+**Q: How do I view the backlog for a specific board?**
+Use the `get_board_backlog` tool with the target `boardId`. It will return all issues currently in the backlog for that Scrum or Kanban board.
+
+**Q: Can I change a sprint's status to active or closed?**
+Yes, use the `update_sprint` tool and provide the `sprintId` along with the desired `state` ('active' or 'closed').
+
+**Q: Is it possible to check the story point estimation for an issue?**
+Yes! The `get_issue_estimation` tool allows you to retrieve the estimation value for any specific agile issue using its ID.
+
+
 ## Installation & Usage
 
-To install and use the **Jira Software Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jira-software-cloud](https://vinkius.com/mcp/jira-software-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Jira Software Cloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jira-software-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Jira Software Cloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jira-software-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

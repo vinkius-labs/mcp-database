@@ -1,7 +1,6 @@
 # Data Analysis Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/data-analysis-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/data-analysis-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/data-analysis-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/data-analysis-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Data Analysis Prover**
 > CORRELATION_CONFUSED — Sample passes. Causality FAILS: 'leads to' is causal language from observational data. Use 'associated with.' Then fix: mean without distribution shape, p without effect size, truncated Y-axis.
 
 
+## ❓ FAQ
+
+**Q: Why is p<0.05 not enough?**
+p-value measures probability, not magnitude. Cohen's d: 0.2=small, 0.5=medium, 0.8=large. A p<0.001 with d=0.05 is trivial. Report effect size + 95% CI + practical significance.
+
+**Q: When can I say 'causes' vs 'associated with'?**
+Only RCTs establish causation. Observational studies show association. Control confounders, test reverse causality, check dose-response. Even then: 'associated with' unless experimental design.
+
+**Q: Why is the mean misleading on skewed data?**
+Income example: mean $65K, median $45K. The mean is pulled by outliers. Right-skewed data: median represents 'typical' better. Test normality with Shapiro-Wilk before choosing parametric tests.
+
+
 ## Installation & Usage
 
-To install and use the **Data Analysis Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/data-analysis-prover](https://vinkius.com/mcp/data-analysis-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Data Analysis Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `data-analysis-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Data Analysis Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "data-analysis-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

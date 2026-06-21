@@ -1,7 +1,6 @@
 # PlanetScale MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/planetscale)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/planetscale-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/planetscale-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/planetscale)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **PlanetScale** MCP serv
 > Command `delete_branch` deployed explicitly specifying target DB 'web-portal' aiming for branch 'staging-01'. The environment hook has been severed internally and queued for complete data physical destruction. Staging-01 operates out of existence as of now.
 
 
+## ❓ FAQ
+
+**Q: Can I run destructive commands like deleting databases through this AI implementation?**
+Yes. The integration provides `delete_branch` and `delete_database`. They map directly to infrastructure teardowns. You should scope the Service Token carefully inside the PlanetScale dashboard to avoid catastrophic misinterpretations if your explicit intent is just testing. Deletions via `delete_database` are absolute and irretrievable.
+
+**Q: Does `create_branch` replicate and copy my production dataset into the new branch?**
+No. PlanetScale branches solely duplicate the static underlying DDL structure (schema), exactly like taking a snapshot of empty tables. The new branch boots up free of rows. This design lets your agent freely run `ALTER TABLE` operations independently without crashing the master tables.
+
+**Q: How does the agent know which organizational node I am provisioning my branches on?**
+All queries essentially require the foundational string parameters known as the `org_name`. If unknown, a simple `list_organizations` query reveals the UUID scope dictating your authorized account parameter bounds securely.
+
+
 ## Installation & Usage
 
-To install and use the **PlanetScale** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/planetscale](https://vinkius.com/mcp/planetscale)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PlanetScale** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `planetscale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PlanetScale** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "planetscale": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

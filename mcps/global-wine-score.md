@@ -1,7 +1,6 @@
 # Global Wine Score MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/global-wine-score)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/global-wine-score-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/global-wine-score-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/global-wine-score)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Here are some examples of how you can interact with the **Global Wine Score** MC
 > The top-rated California Cabernet Sauvignon from 2018 is Promontory by Harlan Estate, boasting an aggregated Global Wine Score of 98.5/100 with a High confidence rating.
 
 
+## ❓ FAQ
+
+**Q: How is this different from Wine-Searcher?**
+Wine-Searcher focuses on pricing and market availability. Global Wine Score focuses exclusively on critic ratings — aggregating and normalizing scores from multiple reviewers into one objective number with a confidence index.
+
+**Q: Which wine critics are included in the aggregated scores?**
+Global Wine Score aggregates ratings from major publications including Wine Advocate (Parker), Wine Spectator, Jancis Robinson, Vinous, Decanter, and several others to create a single normalized score.
+
+**Q: What does the confidence index mean?**
+The confidence index reflects how reliable the aggregated score is. It takes into account the number of critics who reviewed the wine and the variance between their individual scores.
+
+
 ## Installation & Usage
 
-To install and use the **Global Wine Score** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/global-wine-score](https://vinkius.com/mcp/global-wine-score)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Global Wine Score** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `global-wine-score` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Global Wine Score** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "global-wine-score": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

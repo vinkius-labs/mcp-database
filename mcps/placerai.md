@@ -1,7 +1,6 @@
 # Placer.ai MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/placerai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/placerai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/placerai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/placerai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Placer.ai** MCP server
 > Fetching population estimates for 'Oak Plaza' (ID: poi_abc)... The visitor base is primarily aged 25-44 (42%), with a median household income of $75,000. Most visitors reside within a 5-mile radius.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the visit trends for a specific location just by its ID?**
+Yes! Use the `get_trends` tool with the POI ID. Your agent will return day-over-day or week-over-week visit changes for that specific location.
+
+**Q: How do I identify the POI ID for a specific store or venue?**
+Use the `search_poi` tool with keywords like the brand name or address. Your agent will return a list of matching locations along with their unique Placer.ai POI IDs.
+
+**Q: Does it support trade area analysis?**
+Yes! The `get_trade_area` tool retrieves the True Trade Area (TTA) for any POI, providing the geographic boundaries of where the majority of visitors originate.
+
+
 ## Installation & Usage
 
-To install and use the **Placer.ai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/placerai](https://vinkius.com/mcp/placerai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Placer.ai** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `placerai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Placer.ai** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "placerai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

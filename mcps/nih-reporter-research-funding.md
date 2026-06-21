@@ -1,7 +1,6 @@
 # NIH RePORTER (Research Funding) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nih-reporter-research-funding)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nih-reporter-research-funding-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nih-reporter-research-funding-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nih-reporter-research-funding)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **NIH RePORTER (Research
 > I've retrieved active grants for Harvard University exceeding $1M. There are 15 projects matching this criteria, including large-scale genomic studies and clinical trial infrastructures. Should I list the PIs for these projects?
 
 
+## ❓ FAQ
+
+**Q: How can I find all NIH grants awarded to a specific university?**
+Use the `search_projects` tool and provide the university name in the `org_names` array. You can also refine the search by adding `fiscal_years` to see awards for a specific period.
+
+**Q: Can I see which publications resulted from a specific NIH project number?**
+Yes! Use the `search_publications` tool and enter the project identifier in the `core_project_nums` field. The agent will return a list of associated PubMed records.
+
+**Q: Is it possible to filter research projects by funding amount?**
+Absolutely. The `search_projects` tool includes an `award_amount_range` parameter where you can specify `min_amount` and `max_amount` to find projects within your budget criteria.
+
+
 ## Installation & Usage
 
-To install and use the **NIH RePORTER (Research Funding)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nih-reporter-research-funding](https://vinkius.com/mcp/nih-reporter-research-funding)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NIH RePORTER (Research Funding)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nih-reporter-research-funding` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NIH RePORTER (Research Funding)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nih-reporter-research-funding": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

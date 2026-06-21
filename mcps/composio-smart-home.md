@@ -1,7 +1,6 @@
 # Composio Smart Home MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/composio-smart-home)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/composio-smart-home-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/composio-smart-home-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/composio-smart-home)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,55 @@ Here are some examples of how you can interact with the **Composio Smart Home** 
 > Found 8 Sensibo tools: SENSIBO_TURN_ON, SENSIBO_TURN_OFF, SENSIBO_SET_AC (set temperature/mode), SENSIBO_GET_AC_STATE, SENSIBO_SET_TIMER, SENSIBO_SET_SCHEDULE, SENSIBO_GET_ROOMS, SENSIBO_GET_MEASUREMENTS. You can execute any of these using `execute_composio_tool` or `execute_composio_tool_with_text`.
 
 
+## ❓ FAQ
+
+**Q: What smart home devices and apps are supported through Composio?**
+Composio provides access to 1000+ smart home tool integrations including Sensibo (climate control), Philips Hue (lighting), SmartThings (hub), and many more device ecosystems. Use `list_composio_tools` to discover all available tools, or `search_composio_tools` to find tools for specific apps or categories.
+
+**Q: What's the difference between executing a tool with arguments vs. with text?**
+**With arguments** (`execute_composio_tool`): You provide a JSON object matching the tool's exact schema. This gives you precise control over every parameter. **With text** (`execute_composio_tool_with_text`): You provide natural language instructions like "turn on the AC to 72 degrees" and Composio's AI parses and maps it to the correct parameters. Use arguments for precision, text for convenience.
+
+**Q: How do I get a Composio API key?**
+Visit https://app.composio.dev/ and sign up for a Composio account. Navigate to your API settings or developer dashboard to generate an API key (starts with `ak_`). The key gives you access to all available smart home tool integrations.
+
+**Q: Do I need separate authentication for each smart home app?**
+No! Composio handles authentication to individual smart home services internally. You only need your Composio API key. However, you may need to connect your accounts to specific services through Composio's connection management first. Use the `connected_account_id` parameter when executing tools if you have multiple accounts connected.
+
+
 ## Installation & Usage
 
-To install and use the **Composio Smart Home** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/composio-smart-home](https://vinkius.com/mcp/composio-smart-home)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Composio Smart Home** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `composio-smart-home` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Composio Smart Home** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "composio-smart-home": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

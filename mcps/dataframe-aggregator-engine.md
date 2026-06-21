@@ -1,7 +1,6 @@
 # DataFrame Aggregator Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dataframe-aggregator-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dataframe-aggregator-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dataframe-aggregator-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dataframe-aggregator-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -54,12 +53,52 @@ Here are some examples of how you can interact with the **DataFrame Aggregator E
 > Arquero processed 4.5 million rows in 1.2 seconds. The US has 2.1M active users, UK has 800k, Germany has 420k, and France has 310k.
 
 
+## ❓ FAQ
+
+**Q: What is the maximum CSV size supported?**
+The engine runs locally via Node.js, meaning it can handle gigabytes of CSV data as long as your machine has sufficient RAM. There is no artificial size cap.
+
+**Q: Which aggregation functions are supported?**
+Currently: sum, mean, count, min, and max. You can map different columns to different aggregations in a single call (e.g., sum Revenue and count Orders simultaneously).
+
+**Q: Why use Arquero instead of sending the CSV to the AI?**
+LLMs charge per token. A large CSV can cost dollars per query and the math will be hallucinated. Arquero is free, local, and processes data with mathematically perfect deterministic precision.
+
+
 ## Installation & Usage
 
-To install and use the **DataFrame Aggregator Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dataframe-aggregator-engine](https://vinkius.com/mcp/dataframe-aggregator-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DataFrame Aggregator Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dataframe-aggregator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DataFrame Aggregator Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dataframe-aggregator-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

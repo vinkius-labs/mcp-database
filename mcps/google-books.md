@@ -1,7 +1,6 @@
 # Google Books MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-books)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-books-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-books-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-books)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,55 @@ Here are some examples of how you can interact with the **Google Books** MCP ser
 > Found 'The Great Gatsby' (Scribner edition, ISBN 9780743273565). 180 pages, paperback. Published May 2004. This is the widely-used Scribner trade paperback edition with an introduction by Ruth Prigozy.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Google Books API key?**
+Go to [**Google Cloud Console**](https://console.cloud.google.com/apis/library/books.googleapis.com), create or select a project, enable the Books API and create credentials (API key). Copy the key — it starts with `AIzaSy`.
+
+**Q: What search operators are supported?**
+Google Books supports powerful operators: `intitle:` (search title only), `inauthor:` (search author), `inpublisher:`, `subject:`, `isbn:`, `lccn:`, `oclc:`. Use quotes for exact phrases ("the great gatsby") and `-` to exclude terms. Example: `intitle:gatsby inauthor:fitzgerald`.
+
+**Q: Can I access free ebooks?**
+Yes! Use the `filter` parameter with `free-ebooks` to get only freely available books. Many public domain works are available as full text PDFs. You can also use the `download` parameter set to `epub` to find books available for download.
+
+**Q: Can I browse my personal bookshelves?**
+Yes! Use `get_my_bookshelves` and `get_my_bookshelf_volumes` to access your personal reading lists. Note that these endpoints require OAuth 2.0 authentication, not just an API key. Shelf IDs 0-9 represent default shelves like favorites, purchased and reviewed.
+
+
 ## Installation & Usage
 
-To install and use the **Google Books** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-books](https://vinkius.com/mcp/google-books)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Books** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-books` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Books** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-books": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

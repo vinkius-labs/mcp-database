@@ -1,7 +1,6 @@
 # OpenFEC (Federal Election Commission) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openfec-federal-election-commission)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openfec-federal-election-commission-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openfec-federal-election-commission-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openfec-federal-election-commission)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **OpenFEC (Federal Elect
 > I found several committees matching 'Action'. Notable ones include 'Climate Action PAC' (ID: C...) and 'Justice Action Fund' (ID: C...). Which one would you like to inspect for detailed filings?
 
 
+## ❓ FAQ
+
+**Q: Can I find out how much a specific candidate has raised in total for an election cycle?**
+Yes! Use the `get_candidate_totals` tool with the candidate's ID and the desired cycle. It will return aggregated financial summaries including total receipts and disbursements.
+
+**Q: How do I search for all candidates running for the Senate in a specific state?**
+You can use the `list_candidates` tool and provide 'S' for the office and the two-letter state abbreviation (e.g., 'CA' for California) to filter the results.
+
+**Q: Is it possible to see the history of a candidate's previous filings?**
+Absolutely. The `get_candidate_history` tool allows you to retrieve historical data for a candidate, showing their filings and designations over time.
+
+
 ## Installation & Usage
 
-To install and use the **OpenFEC (Federal Election Commission)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/openfec-federal-election-commission](https://vinkius.com/mcp/openfec-federal-election-commission)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OpenFEC (Federal Election Commission)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `openfec-federal-election-commission` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OpenFEC (Federal Election Commission)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "openfec-federal-election-commission": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

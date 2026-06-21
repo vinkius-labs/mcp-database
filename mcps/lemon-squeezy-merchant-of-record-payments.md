@@ -1,7 +1,6 @@
 # Lemon Squeezy (Merchant of Record & Payments) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lemon-squeezy-merchant-of-record-payments)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lemon-squeezy-merchant-of-record-payments-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lemon-squeezy-merchant-of-record-payments-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lemon-squeezy-merchant-of-record-payments)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -125,12 +124,52 @@ Here are some examples of how you can interact with the **Lemon Squeezy (Merchan
 > Fetching product data... Product 'SaaS Pro Plan' (ID: 12345) is active. It is priced at $49.00 and currently has 152 active subscribers.
 
 
+## ❓ FAQ
+
+**Q: Can I check my own account details and authentication status?**
+Yes! Use the `get_me` tool to retrieve information about the currently authenticated Lemon Squeezy user profile.
+
+**Q: How do I find a specific customer by their email address?**
+You can use the `list_customers` tool and provide the `filter_email` parameter. The agent will return matching customer records from your store.
+
+**Q: Is it possible to update a customer's information like their name or location?**
+Yes. The `update_customer` tool allows you to modify attributes such as name, email, city, region, and country for an existing customer ID.
+
+
 ## Installation & Usage
 
-To install and use the **Lemon Squeezy (Merchant of Record & Payments)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lemon-squeezy-merchant-of-record-payments](https://vinkius.com/mcp/lemon-squeezy-merchant-of-record-payments)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lemon Squeezy (Merchant of Record & Payments)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lemon-squeezy-merchant-of-record-payments` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lemon Squeezy (Merchant of Record & Payments)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lemon-squeezy-merchant-of-record-payments": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

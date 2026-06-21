@@ -1,7 +1,6 @@
 # WHO-5 Wellbeing Index MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/who-5-wellbeing-index)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/who-5-wellbeing-index-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/who-5-wellbeing-index-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/who-5-wellbeing-index)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **WHO-5 Wellbeing Index*
 > The `validate_assessment_range` tool would confirm that 45 is within the valid range (0-100), though it indicates a low wellbeing state.
 
 
+## ❓ FAQ
+
+**Q: What is the WHO-5 Well-Being Index?**
+The WHO-5 is a screening tool used to assess subjective psychological well-being based on how an individual has felt over the last two weeks.
+
+**Q: How do I interpret the score?**
+The score is normalized to a 0-100 scale. A score below 50 is considered a significant indicator of potential low well-being.
+
+**Q: What inputs are required for the assessment?**
+You need to provide five numeric responses, each ranging from 0 (never) to 5 (all the time), corresponding to the five questions in the scale.
+
+
 ## Installation & Usage
 
-To install and use the **WHO-5 Wellbeing Index** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/who-5-wellbeing-index](https://vinkius.com/mcp/who-5-wellbeing-index)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WHO-5 Wellbeing Index** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `who-5-wellbeing-index` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WHO-5 Wellbeing Index** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "who-5-wellbeing-index": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

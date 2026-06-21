@@ -1,7 +1,6 @@
 # Rocketlane MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rocketlane)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rocketlane-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rocketlane-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rocketlane)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Rocketlane** MCP serve
 > Onboarding project created for DataVault Inc. Template: Enterprise Onboarding (42 tasks, 6 phases). Phase 1: Kickoff & Discovery (7 tasks, week 1). Phase 2: Technical Setup (8 tasks, weeks 2-3). Phase 3: Data Migration (6 tasks, week 3). Phase 4: Integration Testing (8 tasks, week 4). Phase 5: Training (6 tasks, week 5). Phase 6: Go-Live (7 tasks, week 6). Assigned CSM: Sarah Chen. Client stakeholders invited. Kickoff meeting auto-scheduled for Thursday.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific project just by providing its ID?**
+Yes! Use the `get_project` tool. Your agent will respond with complete metadata, including project health, custom fields, and member roles in seconds.
+
+**Q: How do I list all tasks for a particular Rocketlane project?**
+Simply ask the agent to run the `list_tasks` action with the `projectId`. It will retrieve the full task board for that specific environment.
+
+**Q: How do I find my Rocketlane API Key?**
+Log in to Rocketlane, click your profile icon > **Settings** > **Advanced** > **API Keys**, and generate your unique key there.
+
+
 ## Installation & Usage
 
-To install and use the **Rocketlane** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rocketlane](https://vinkius.com/mcp/rocketlane)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rocketlane** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rocketlane` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rocketlane** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rocketlane": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

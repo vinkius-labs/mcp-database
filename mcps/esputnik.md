@@ -1,7 +1,6 @@
 # eSputnik MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/esputnik)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/esputnik-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/esputnik-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/esputnik)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **eSputnik** MCP server 
 > Contact 'john@example.com' was successfully added to the 'VIP Customers' group.
 
 
+## ❓ FAQ
+
+**Q: Can I send transactional SMS messages via the AI agent?**
+Yes! You can specify the recipient's phone number and the message content, and the AI will trigger the eSputnik SMS endpoint.
+
+**Q: How do I query my contact segments?**
+Ask the agent to 'List all contact groups'. It will retrieve your active segments directly from the eSputnik API.
+
+**Q: Does it support adding new contacts dynamically?**
+Absolutely. You can request the AI to add an email or phone number to your active directory instantly.
+
+
 ## Installation & Usage
 
-To install and use the **eSputnik** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/esputnik](https://vinkius.com/mcp/esputnik)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **eSputnik** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `esputnik` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **eSputnik** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "esputnik": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

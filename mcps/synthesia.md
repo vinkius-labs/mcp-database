@@ -1,7 +1,6 @@
 # Synthesia MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/synthesia)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/synthesia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/synthesia-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/synthesia)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Total duration: 45 seconds.
 You can download and stream the final file here: `https://synthesia.io/stream/vid-9920_xyz`.
 
 
+## ❓ FAQ
+
+**Q: How long does video rendering take?**
+The `create_avatar_video` command submits the job instantly. Rendering typically takes 2–10 minutes depending on length. Use `get_video_details` to check progress and retrieve the final URL.
+
+**Q: Can I use my custom avatars?**
+Yes. The `list_avatars` tool returns both stock and custom avatars tied to your account. You can use any avatar ID when creating videos.
+
+**Q: Which Synthesia plan is required?**
+API access requires a Creator or Enterprise plan. Free and Starter plans do not include API keys. Check the Integrations tab in your Synthesia dashboard to verify eligibility.
+
+
 ## Installation & Usage
 
-To install and use the **Synthesia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/synthesia](https://vinkius.com/mcp/synthesia)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Synthesia** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `synthesia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Synthesia** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "synthesia": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

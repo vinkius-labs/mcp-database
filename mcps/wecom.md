@@ -1,7 +1,6 @@
 # WeCom / 企业微信 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wecom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wecom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wecom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wecom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **WeCom / 企业微信**
 > I've retrieved the check-in data for the specified users. Mario punched in at 9:00 AM, and Renato punched in at 8:45 AM. Both are currently marked as active in the system.
 
 
+## ❓ FAQ
+
+**Q: How do I find my WeCom Corp ID and Secret?**
+Log in to the WeCom Admin Backend. Your Corp ID is in [My Company] → [Company Profile]. Your App Secret and Agent ID are in [Apps] → select your application.
+
+**Q: Can I read attendance records for a group of users?**
+Yes. Use the `get_attendance_data` tool. You will need to provide a start time, end time, and a comma-separated list of user IDs to retrieve the records.
+
+**Q: Does my application need specific permissions for messages?**
+Yes. Ensure your application has 'Messaging' permissions enabled in the WeCom Admin Backend and that the 'Trusted IPs' for your server are correctly configured.
+
+
 ## Installation & Usage
 
-To install and use the **WeCom / 企业微信** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/wecom](https://vinkius.com/mcp/wecom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WeCom / 企业微信** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `wecom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WeCom / 企业微信** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "wecom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

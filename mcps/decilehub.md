@@ -1,7 +1,6 @@
 # DecileHub MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/decilehub)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/decilehub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/decilehub-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/decilehub)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **DecileHub** MCP server
 > You have 23 LPs across all funds. Top 5 by total commitments: 1) 'Nordic Pension Fund' — $45M across Fund I, II, III. 2) 'Pacific Family Office' — $32M across Fund II, III. 3) 'Alpine Endowment' — $28M across Fund I, III. 4) 'Meridian Insurance Corp' — $25M in Fund III only. 5) 'Dr. Marcus Chen (Individual)' — $18M across Fund I, II. Total capital committed across all LPs: $312M. Would you like distribution histories for any specific LP?
 
 
+## ❓ FAQ
+
+**Q: Can I check the performance metrics (IRR, TVPI, DPI) of a specific fund?**
+Yes. The `get_fund_performance` tool takes a Fund ID and returns IRR (internal rate of return), TVPI (total value to paid-in), DPI (distributions to paid-in), and benchmark comparisons against industry quartiles. Combine it with `get_fund` for the full fund profile.
+
+**Q: How do I track the valuation history of a portfolio company?**
+Use `list_valuations` with the Company ID. It returns all historical marks — entry valuation, subsequent round step-ups, quarterly fair market value assessments, and any write-downs. Each mark includes the date, valuation amount, and the methodology used.
+
+**Q: Can I access regulatory filings and compliance reports through the AI agent?**
+Yes. The `list_filings` tool retrieves all regulatory filings across your funds. For any specific filing, use `get_filing_report` with the Filing ID to access its full content, including filing type, submission date, regulatory body, and attached documentation.
+
+
 ## Installation & Usage
 
-To install and use the **DecileHub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/decilehub](https://vinkius.com/mcp/decilehub)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DecileHub** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `decilehub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DecileHub** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "decilehub": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

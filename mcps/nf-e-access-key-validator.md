@@ -1,7 +1,6 @@
 # NF-e Access Key Validator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nf-e-access-key-validator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nf-e-access-key-validator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nf-e-access-key-validator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nf-e-access-key-validator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **NF-e Access Key Valida
 > The key is compliant with all checked regulatory standards.
 
 
+## ❓ FAQ
+
+**Q: What does `verify_key_structure` do?**
+It checks if the 44-digit sequence is purely numeric, exactly 44 digits long, and passes the Modulo 11 checksum verification.
+
+**Q: How can I see the issuer's details?**
+Use the `extract_key_metadata` tool. It will parse the key and return the CNPJ, State Code, and other relevant metadata.
+
+**Q: Does this tool check for tax compliance?**
+Yes, the `validate_business_compliance` tool audits components like Model and Emission Type against official regulatory catalogs.
+
+
 ## Installation & Usage
 
-To install and use the **NF-e Access Key Validator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nf-e-access-key-validator](https://vinkius.com/mcp/nf-e-access-key-validator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NF-e Access Key Validator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nf-e-access-key-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NF-e Access Key Validator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nf-e-access-key-validator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

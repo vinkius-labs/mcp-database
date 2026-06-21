@@ -1,7 +1,6 @@
 # HiBob MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hibob)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hibob-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hibob-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hibob)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,55 @@ Here are some examples of how you can interact with the **HiBob** MCP server usi
 > Task list retrieved! You had 5 open items. I have successfully marked 'task_992' (Onboarding Check) as completed. You now have 4 tasks remaining. Would you like me to list them?
 
 
+## ❓ FAQ
+
+**Q: How do I find my HiBob API Token?**
+Log in to HiBob as an admin, go to **Settings > Integrations**, and look for the **Service Users** section. Create a new service user or select an existing one to generate and copy the API Token.
+
+**Q: Why should I use the 'search_employees' tool?**
+The `search_employees` tool uses the modern HiBob Search API, which is more powerful than legacy endpoints and supports retrieving custom fields and filtering active/inactive status efficiently.
+
+**Q: Can I check who is currently on vacation?**
+Yes! Use the `get_whos_out` tool by providing a date range. It will return a list of all employees currently on leave or scheduled to be out during those dates.
+
+**Q: Is the integration secure for HR data?**
+Absolutely. The integration uses official HiBob Service User tokens over HTTPS. Your credentials and employee data are encrypted and stored securely within the Vinkius Cloud infrastructure.
+
+
 ## Installation & Usage
 
-To install and use the **HiBob** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hibob](https://vinkius.com/mcp/hibob)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HiBob** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hibob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HiBob** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hibob": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

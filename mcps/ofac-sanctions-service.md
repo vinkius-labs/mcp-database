@@ -1,7 +1,6 @@
 # OFAC Sanctions Service MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ofac-sanctions-service)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ofac-sanctions-service-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ofac-sanctions-service-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ofac-sanctions-service)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **OFAC Sanctions Service
 > Retrieving version history... I found 12 historical versions for the SDN list, ranging from January 2023 to the current version published today. Would you like to check the delta (changes) between the last two versions?
 
 
+## ❓ FAQ
+
+**Q: Is the OFAC SLS API Key required?**
+No. The SLS API is publicly accessible. However, providing an API key if you have one ensures higher rate limits and consistent access.
+
+**Q: What is the difference between SDN and Non-SDN lists?**
+The SDN (Specially Designated Nationals) list contains individuals and entities whose assets are blocked. Non-SDN lists contain entities subject to other sanctions, such as sector-specific or prohibited accounts.
+
+**Q: Can I see aliases for a specific person?**
+Yes! Use the `get_entity_details` tool with the specific Entity ID. The agent will return the full profile, including all known aliases, addresses, and identifying information.
+
+
 ## Installation & Usage
 
-To install and use the **OFAC Sanctions Service** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ofac-sanctions-service](https://vinkius.com/mcp/ofac-sanctions-service)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **OFAC Sanctions Service** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ofac-sanctions-service` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **OFAC Sanctions Service** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ofac-sanctions-service": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

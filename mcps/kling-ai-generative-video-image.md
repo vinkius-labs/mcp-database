@@ -1,7 +1,6 @@
 # Kling AI (Generative Video & Image) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kling-ai-generative-video-image)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kling-ai-generative-video-image-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kling-ai-generative-video-image-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kling-ai-generative-video-image)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Kling AI (Generative V
 > Your virtual try-on task 'try-456' has SUCCEEDED. The digital garment has been naturally blended onto the model. You can view and download the final high-resolution composite here: [image-url].
 
 
+## ❓ FAQ
+
+**Q: Can I check the progress of my video generation task?**
+Yes. Use the `get_video_task` tool with your Task ID. Your agent will poll the Kling API and report the current status (Submitted, Processing, or Succeed). Once finished, it will provide the direct MP4 download URLs.
+
+**Q: How does the AI Virtual Try-On work through my agent?**
+Use the `virtual_try_on` tool and provide a public URL of a target person and a garment image. Your agent will submit the job to Kolors AI, which naturally blends the clothing onto the person. You can then retrieve the final image using the Task ID.
+
+**Q: Can I synchronize audio to a video portrait using my agent?**
+Absolutely. The `lip_sync_video` tool allows you to submit a portrait video and a driving audio file. Your agent will trigger the AI lip-sync process to align the mouth movements to the speech, perfect for creating professional avatars.
+
+
 ## Installation & Usage
 
-To install and use the **Kling AI (Generative Video & Image)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kling-ai-generative-video-image](https://vinkius.com/mcp/kling-ai-generative-video-image)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kling AI (Generative Video & Image)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kling-ai-generative-video-image` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kling AI (Generative Video & Image)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kling-ai-generative-video-image": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

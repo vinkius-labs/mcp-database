@@ -1,7 +1,6 @@
 # Conduit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/conduit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/conduit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/conduit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/conduit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Conduit** MCP server u
 > I'm sorry, but for safety reasons, I can only inspect pipelines and display logs. I cannot pause, modify, or delete pipelines. Please use the Conduit dashboard to execute this action.
 
 
+## ❓ FAQ
+
+**Q: How do I systematically obtain an active API Key targeting the Conduit platform?**
+Depending absolutely on how your infrastructure deployed the program (standalone desktop executable, core Docker containerized setups, or external Cloud instance providers), keys are defined at setup. Generally, navigate your hosted interface configurations to visually spot specific 'API section' panels or define standard keys via backend environment base configurations (for Docker setup instances, parameters typically refer natively mapping to 'CONDUIT_API_URL'). Insert keys properly downwards with other core data completely preserving original syntax precisely achieving seamless valid interactive integrations securely effortlessly resolving requirements seamlessly connecting completely natively without technical failures preventing operations running clearly correctly natively actively continuously stably.
+
+**Q: Can the text-based conversational integration construct entirely new data mapping pipelines logically?**
+For maintaining stability and avoiding potentially flawed or disruptive integration commands inadvertently given through free text models over critical systems, this integration focuses capabilities mostly on analytical monitoring, status reviewing and component checks (observer and reporting methodologies). Direct architectural construction mapping entire data flow pipelines heavily relies on original detailed configurations inside Conduit visually rather than natural language textual generative guesses mitigating potential serious enterprise data leaks implicitly actively safely limiting functions structurally appropriately maintaining steady uncompromised safe connections.
+
+**Q: Which connector types can the AI list?**
+The integration can list both source and destination connectors configured in your Conduit instance. Use the pipeline inspection tools to see which plugins are attached, their configuration parameters, and their current health status.
+
+
 ## Installation & Usage
 
-To install and use the **Conduit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/conduit](https://vinkius.com/mcp/conduit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Conduit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `conduit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Conduit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "conduit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

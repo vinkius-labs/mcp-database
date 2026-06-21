@@ -1,7 +1,6 @@
 # Semantic Scholar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/semantic-scholar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/semantic-scholar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/semantic-scholar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/semantic-scholar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Semantic Scholar** MCP
 > Found researcher Yann LeCun — Author at Meta AI / NYU. Papers: 950+, Total Citations: 380,000+, h-index: 162. Known for pioneering work in convolutional neural networks, self-supervised learning, and modern AI architectures. Profile link and full publication list available.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key to use Semantic Scholar?**
+No API key is required for basic usage. The public API provides 5,000 requests per 5 minutes shared among unauthenticated users. For higher throughput, academic and institutional users can request a free API key at semanticscholar.org, which grants dedicated rate limits of 1–10 requests per second depending on the endpoint.
+
+**Q: What is the TLDR feature and how does it work?**
+TLDR (Too Long; Didn't Read) is an AI-generated one-sentence summary of each paper, powered by Allen AI's SciTLDR NLP model. It distills the key contribution or finding of a paper into a single, easily digestible sentence — ideal for quickly scanning relevance without reading an entire abstract or paper.
+
+**Q: What is the difference between total citations and influential citations?**
+Total citations count every paper that references the work. Influential citations are a subset — papers where the cited work meaningfully contributes to the citing paper's research (not just a passing mention in the related work section). This metric is calculated by Semantic Scholar's AI models and provides a much more accurate measure of real scientific impact.
+
+
 ## Installation & Usage
 
-To install and use the **Semantic Scholar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/semantic-scholar](https://vinkius.com/mcp/semantic-scholar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Semantic Scholar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `semantic-scholar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Semantic Scholar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "semantic-scholar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

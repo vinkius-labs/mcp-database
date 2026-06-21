@@ -1,7 +1,6 @@
 # Donorbox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/donorbox-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/donorbox-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/donorbox-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/donorbox-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Donorbox** MCP server 
 > Action complete! Recurring plan pln_456 has been successfully paused. The donor will not be charged until the plan is resumed. I've logged this update in your Donorbox history.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Donorbox API Key?**
+Log in to your account, navigate to **Integrations & Add-ons** > **API & Zapier**, and enable the API add-on to generate your unique key.
+
+**Q: Can I pause a recurring donation via AI?**
+Yes! Use the `pause_recurring_plan` tool with the specific plan ID to temporarily suspend a donor's recurring subscription.
+
+**Q: How do I filter donations by campaign?**
+You can provide a campaign ID or name to the `list_donations` tool to retrieve transactions only for a specific fundraising goal.
+
+
 ## Installation & Usage
 
-To install and use the **Donorbox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/donorbox-alternative](https://vinkius.com/mcp/donorbox-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Donorbox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `donorbox-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Donorbox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "donorbox-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

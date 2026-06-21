@@ -1,7 +1,6 @@
 # Scoro MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scoro)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scoro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scoro-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scoro)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Scoro** MCP server usi
 > I checked the recent sales invoices. There are 5 recent invoices generated totaling $15,400. Three of them ($8,000 total) are marked as 'paid', while two ($7,400) are 'awaiting payment'. I can format these into a markdown table if needed.
 
 
+## ❓ FAQ
+
+**Q: Can the agent calculate how many hours were logged on a specific project?**
+Yes. If you ask your agent 'How many hours were logged for project Alpha recently?', the agent will invoke `list_time_entries` and filter the returned data by that specific project, summing up the billable minutes natively.
+
+**Q: Is it possible to track unpaid invoices directly from the chat?**
+Absolutely. Just prompt the AI: 'List my recent sales invoices and flag any that haven't been paid'. The agent will make an API call to `list_invoices` and analyze the 'payment status' attributes for you.
+
+**Q: Can I retrieve contact information before a meeting?**
+Yes. You can use the agent to prepare yourself. Prompt: 'Search our contacts for Acme Corp and get me their full profile'. The agent relies on `list_contacts` and `get_contact` to pull in emails, phone numbers, and relational tags.
+
+
 ## Installation & Usage
 
-To install and use the **Scoro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/scoro](https://vinkius.com/mcp/scoro)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Scoro** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `scoro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Scoro** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "scoro": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

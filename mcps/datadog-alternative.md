@@ -1,7 +1,6 @@
 # Datadog MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datadog-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datadog-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -117,12 +116,52 @@ Here are some examples of how you can interact with the **Datadog** MCP server u
 > I queried the metric `sum:api.http.5xx{env:production}.as_count()` for the past 24h. The error rate peaked at 142 errors/min at 14:30 UTC and has been trending down to ~15 errors/min currently. The 24h average is 38 errors/min. Would you like me to correlate this with recent deployments?
 
 
+## ❓ FAQ
+
+**Q: What's the difference between Datadog API Key and Application Key?**
+The **API Key** authenticates your requests to the Datadog platform and is required for all endpoints. The **Application Key** is an additional layer of authorization that controls what actions your integration can perform. Both are generated in Organization Settings > API and Application Keys. Most Datadog API endpoints require both keys.
+
+**Q: Can I mute a monitor during a maintenance window?**
+Yes! Use the `mute_monitor` action with the monitor ID. You can optionally set an `end` timestamp (ISO 8601) for the mute to automatically expire, or specify a `scope` to mute only certain sub-alerts (e.g. 'env:staging'). Use `unmute_monitor` to re-enable notifications.
+
+**Q: What query syntax does the metrics endpoint use?**
+Datadog uses a specific query format: `[function]:[metric]{[tags]}`. For example: `avg:system.cpu.user{host:web01}` returns the average CPU user time for host web01. Common functions include `avg`, `sum`, `max`, `min`, `count`. Time windows are specified in the query as `avg(last_5m):...` or passed as `from`/`to` Unix timestamps to the tool.
+
+
 ## Installation & Usage
 
-To install and use the **Datadog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/datadog-alternative](https://vinkius.com/mcp/datadog-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Datadog** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `datadog-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Datadog** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "datadog-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

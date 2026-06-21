@@ -1,7 +1,6 @@
 # Chatsistant MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chatsistant)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chatsistant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chatsistant-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chatsistant)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Chatsistant** MCP serv
 > Adding 2 data sources to 'Internal Wiki' (bot_103)... ✅ URL 'https://docs.example.com/faq' added successfully (type: url, status: processing). ✅ URL 'https://docs.example.com/api' added successfully (type: url, status: processing). The bot now has 9 data sources total: 5 URLs, 3 documents, 1 text snippet. Processing will complete within 3-5 minutes. Would you like to unpause the bot?
 
 
+## ❓ FAQ
+
+**Q: Can I send a question to a bot and get an AI-generated answer in real time?**
+Yes! The `query_bot` tool accepts a Bot ID and a question string. It sends the query to the bot's AI engine and returns a response generated from its trained knowledge base — perfect for testing bot accuracy before deploying changes.
+
+**Q: Can I review all the data sources currently training my bot?**
+Yes. The `list_data_sources` tool returns all URLs, documents, and text snippets that have been added to a specific bot's knowledge base, including their processing status. Use `add_data_source` to programmatically add new URLs, text, or file content to expand the bot's training data.
+
+**Q: Can I browse conversation histories across all my bots?**
+Yes. Use `list_conversations` to retrieve all chat sessions — optionally filter by a specific Bot ID. Then use `get_conversation` with the Conversation ID to inspect the full message timeline, including user questions, bot responses, and timestamps.
+
+
 ## Installation & Usage
 
-To install and use the **Chatsistant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chatsistant](https://vinkius.com/mcp/chatsistant)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chatsistant** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chatsistant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chatsistant** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chatsistant": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

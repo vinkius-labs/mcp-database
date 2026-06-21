@@ -1,7 +1,6 @@
 # Apidog MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apidog)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apidog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apidog-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apidog)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ export interface UserResponse {
 > The complete OpenAPI 3.0 specification has been imported into my context. The project defines 42 endpoints and 18 global schemas. Looking at the /cart endpoints, which of its constraints would you like me to test first?
 
 
+## ❓ FAQ
+
+**Q: Can I import a complete OpenAPI spec into an AI chat session?**
+Yes. Instruct the agent to run the `export_openapi` tool. It downloads the JSON metadata and safely passes it into your context. Given its size, the agent can use this massive reference guide to rapidly write tests, endpoints, or data models perfectly mimicking your production systems.
+
+**Q: How can I check the payload requirements for a single specific route?**
+If you know the general area of the project, use `list_endpoints` to verify the ID. Then query `get_endpoint`. It brings back the specific HTTP verbs, query arguments, path definitions, and expected JSON body — letting your agent craft exact functional requests to external systems.
+
+**Q: Will my Apidog tokens expire?**
+When generating your Personal Access Token in Apidog, you dictate the validity duration (e.g. 30 days, 1 year or never expire). If you choose a finite span, you will need to come back, generate a new token and insert it once more to reconnect the MCP server successfully.
+
+
 ## Installation & Usage
 
-To install and use the **Apidog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/apidog](https://vinkius.com/mcp/apidog)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Apidog** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `apidog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Apidog** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "apidog": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Roblox Social & Group Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/roblox-social-group-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/roblox-social-group-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/roblox-social-group-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/roblox-social-group-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Roblox Social & Group 
 > Running batch presence check... Users 123 and 456 are currently in the same experience: 'Work at a Pizza Place'. User 789 is currently offline. Shall I continue monitoring their status for any changes?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the UserID of a player if I only have their username?**
+Yes! Use the `search_roblox_user` tool. Your agent will query the official Users database and return the unique identifier required for all other social, group, and presence queries.
+
+**Q: How do I check the full rank structure and member count of a Roblox group?**
+Simply provide the Group ID to the agent. It will run tools like `get_group_details` and `get_group_roles` to fetch the complete organizational hierarchy and total population of the group.
+
+**Q: Is it possible to monitor if a list of several users are currently in the same game?**
+Yes. The `get_users_online_status` tool accepts multiple UserIDs and retrieves their real-time status. The agent can then identify if they are active in the same Place ID or different experiences.
+
+
 ## Installation & Usage
 
-To install and use the **Roblox Social & Group Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/roblox-social-group-intelligence](https://vinkius.com/mcp/roblox-social-group-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Roblox Social & Group Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `roblox-social-group-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Roblox Social & Group Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "roblox-social-group-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

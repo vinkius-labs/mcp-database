@@ -1,7 +1,6 @@
 # HCL AppScan MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hcl-appscan)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hcl-appscan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hcl-appscan-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hcl-appscan)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **HCL AppScan** MCP serv
 > A new DAST scan (ID: scan_998877) has been successfully started for 'Customer Portal' targeting 'https://portal.example.com'.
 
 
+## ❓ FAQ
+
+**Q: How do I get my AppScan API Key ID and Secret?**
+Log in to the AppScan on Cloud console, go to your **User Profile** (top right), and select **API Keys**. You can generate a new Key ID and Key Secret there.
+
+**Q: Does this server support the EU region?**
+Yes, you can configure the `APPSCAN_REGION` environment variable to `eu` to connect to the European data center (`eu.cloud.appscan.com`).
+
+**Q: Can I start a scan for an internal application?**
+Yes, provided you have an AppScan Presence (local agent) configured. You can use the `list_presence` tool to check their availability before starting a scan.
+
+
 ## Installation & Usage
 
-To install and use the **HCL AppScan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hcl-appscan](https://vinkius.com/mcp/hcl-appscan)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HCL AppScan** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hcl-appscan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HCL AppScan** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hcl-appscan": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

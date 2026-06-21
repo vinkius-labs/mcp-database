@@ -1,7 +1,6 @@
 # Expensya MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expensya)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/expensya-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/expensya-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expensya)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Expensya** MCP server 
 > Checking reports... You have 2 reports currently 'Pending Approval'. One is from the 'Paris Business Trip' and the other is 'Monthly Expenses June'. I can provide the individual line items if needed.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Expensya Token?**
+Log in to Expensya as an admin, navigate to **Administration** > **Integrations** > **API Keys**, and generate your unique token.
+
+**Q: What is the Ocp-Apim-Subscription-Key?**
+This is an additional security key obtained by registering on the [**Expensya Developer Portal**](https://developer.expensya.com/) and subscribing to an API product.
+
+**Q: Can I automate exports through the agent?**
+Yes! Use the `export_expense_data` tool and provide a valid `exportId`. The agent will trigger the export process in the background.
+
+
 ## Installation & Usage
 
-To install and use the **Expensya** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/expensya](https://vinkius.com/mcp/expensya)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Expensya** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `expensya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Expensya** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "expensya": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

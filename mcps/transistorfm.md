@@ -1,7 +1,6 @@
 # Transistor.fm MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/transistorfm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/transistorfm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/transistorfm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/transistorfm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Transistor.fm** MCP se
 > Success! Jane Doe has been added as a subscriber to your private podcast. She will receive her personal invite link shortly.
 
 
+## ❓ FAQ
+
+**Q: Can I publish a draft episode via AI?**
+Yes! Use the `publish_episode` action and provide the unique Episode ID. Your agent will instantly make that episode live on your RSS feed and podcast platforms.
+
+**Q: How do I add a new subscriber to my private podcast?**
+Use the `add_subscriber` action. Provide the Show ID and the person's email address to instantly grant them access to your private podcast content.
+
+**Q: Is it possible to see the list of all episodes for a show?**
+Absolutely. Use the `list_episodes` query and provide the Show ID. The agent will retrieve the complete history of episodes associated with that podcast.
+
+
 ## Installation & Usage
 
-To install and use the **Transistor.fm** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/transistorfm](https://vinkius.com/mcp/transistorfm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Transistor.fm** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `transistorfm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Transistor.fm** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "transistorfm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

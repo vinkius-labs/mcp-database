@@ -1,7 +1,6 @@
 # Kargo MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kargo)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kargo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kargo-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kargo)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Kargo** MCP server usi
 > Inspecting SHP-2024-05... This shipment is handled by 'Global Freight' and is scheduled to depart at 4:30 PM. It contains 2 orders: #ORD-99 (Customer: Acme Corp) and #ORD-102 (Customer: RetailPlus).
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Business and Facility Slugs?**
+These unique identifiers are assigned to your organization by Kargo. You can find them in your dashboard settings or by contacting your Kargo account manager.
+
+**Q: Can I check the status of physical devices in the warehouse?**
+Yes! Use the `list_devices` tool to see all IoT equipment at your facility, and `get_device_status` for detailed health metrics and last-seen timestamps for a specific unit.
+
+**Q: What is the Unified Endpoint used for?**
+The Unified Endpoint allows you to push external order or shipment data into the Kargo system for automated processing and real-time visibility updates.
+
+
 ## Installation & Usage
 
-To install and use the **Kargo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kargo](https://vinkius.com/mcp/kargo)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kargo** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kargo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kargo** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kargo": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

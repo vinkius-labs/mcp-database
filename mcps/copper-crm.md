@@ -1,7 +1,6 @@
 # Copper CRM MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/copper-crm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/copper-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/copper-crm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/copper-crm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Copper CRM** MCP serve
 > Here are your top 5 opportunities: 1. 'Global Expansion' ($50,000), 2. 'Q4 Software License' ($25,000), 3. 'Infrastructure Upgrade' ($15,000)... Would you like to update the close date for any of these?
 
 
+## ❓ FAQ
+
+**Q: How do I generate an API Key in Copper?**
+Log in to Copper, go to **Settings > API Keys**, and click 'Generate API Key'. Note that you also need the email address of an admin or the owner.
+
+**Q: Does Copper integrate with my Gmail?**
+Yes, Copper is built for Google Workspace. This integration works alongside Copper's native Google features, allowing the agent to manage the same records you see in your inbox.
+
+**Q: Can the agent log calls for me?**
+Yes! You can tell the agent to 'Log a call with John Doe about the new contract', and it will add an activity record to John's profile in Copper.
+
+
 ## Installation & Usage
 
-To install and use the **Copper CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/copper-crm](https://vinkius.com/mcp/copper-crm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Copper CRM** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `copper-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Copper CRM** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "copper-crm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

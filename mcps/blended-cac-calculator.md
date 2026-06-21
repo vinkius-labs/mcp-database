@@ -1,7 +1,6 @@
 # Blended CAC Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blended-cac-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blended-cac-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blended-cac-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blended-cac-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -64,12 +63,52 @@ Here are some examples of how you can interact with the **Blended CAC Calculator
 > Based on the input data and running `assess_budget_efficiency` for the Technology SaaS sector, we recommend increasing funding for SEO (35% allocation) due to its superior efficiency relative to industry benchmarks.
 
 
+## ❓ FAQ
+
+**Q: What is the difference between Blended CAC and channel-specific CAC?**
+Blended CAC provides a single, overall average cost across all channels. To calculate this, you must use `calculate_cac_metrics`. This tool calculates the total spend divided by total customers, giving you the true company-wide acquisition cost.
+
+**Q: How can I check if my marketing efficiency is getting better or worse over time?**
+You should use the `analyze_mom_trend` tool. By comparing CAC or Total Spend between two months, you get a percentage change that immediately tells you if your efficiency trend is positive (negative % change) or negative (positive % change).
+
+**Q: How do I decide where to allocate my budget next month?**
+The `assess_budget_efficiency` tool handles this. You provide historical data, and it compares your channels' performance against industry norms to recommend an optimal percentage split for the coming period.
+
+
 ## Installation & Usage
 
-To install and use the **Blended CAC Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blended-cac-calculator](https://vinkius.com/mcp/blended-cac-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Blended CAC Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blended-cac-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Blended CAC Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blended-cac-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

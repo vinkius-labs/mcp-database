@@ -1,7 +1,6 @@
 # Google Lighthouse SEO Auditor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-lighthouse-seo-auditor)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-lighthouse-seo-auditor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-lighthouse-seo-auditor-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-lighthouse-seo-auditor)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -48,12 +47,46 @@ To fix this, add the `defer` attribute to your script tag. I will update your `i
 > I audited GitHub's homepage. They scored **100/100 on Accessibility**. However, the Best Practices score is 83/100 because of an issue with a third-party cookie missing the `SameSite` attribute. As developers, we can learn from their flawless ARIA role implementation.
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+Yes. You must generate a free Google Cloud API key with the 'PageSpeed Insights API' enabled. Google limits requests to 400 per minute per project.
+
+
 ## Installation & Usage
 
-To install and use the **Google Lighthouse SEO Auditor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-lighthouse-seo-auditor](https://vinkius.com/mcp/google-lighthouse-seo-auditor)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Lighthouse SEO Auditor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-lighthouse-seo-auditor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Lighthouse SEO Auditor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-lighthouse-seo-auditor": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

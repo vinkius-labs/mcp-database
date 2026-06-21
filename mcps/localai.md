@@ -1,7 +1,6 @@
 # LocalAI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/localai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/localai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/localai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/localai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **LocalAI** MCP server u
 > I've initiated the image generation for a 'futuristic library'. The process is complete, and you can view the generated image at the provided local URL.
 
 
+## ❓ FAQ
+
+**Q: How can I see which AI models are currently installed on my LocalAI server?**
+You can use the `list_models` tool. It will return a complete list of all available models on your instance, including their IDs and capabilities.
+
+**Q: Does this server support generating images locally?**
+Yes! By using the `generate_image` tool, you can provide a prompt and optional size to generate images directly on your hardware using supported models like Stable Diffusion.
+
+**Q: Can I use this to transcribe audio files into text?**
+Absolutely. The `transcribe_audio` tool allows you to send audio data or file paths to your LocalAI instance for high-quality transcription using models like Whisper.
+
+
 ## Installation & Usage
 
-To install and use the **LocalAI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/localai](https://vinkius.com/mcp/localai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LocalAI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `localai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LocalAI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "localai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

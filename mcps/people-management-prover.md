@@ -1,7 +1,6 @@
 # People Management Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/people-management-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/people-management-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/people-management-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/people-management-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **People Management Prov
 > FEEDBACK_EMPTY — 'Team player,' 'positive energy,' and 'meets expectations' are personality labels, not feedback. Hattie shows praise d=0.09 — near-zero impact. Replace with: specific behaviors observed, criteria they met or missed, and one concrete development action for next quarter.
 
 
+## ❓ FAQ
+
+**Q: Why does the prover reject 'culture fit' as an evaluation criterion?**
+Because culture fit is a subjective construct that correlates with interviewer similarity bias and lacks predictive validity, acting as a proxy for unlawful discrimination.
+
+**Q: How does it audit for adverse impact?**
+By calculating selection rates for different groups and applying the EEOC 4/5ths rule across the recruitment funnel stages to highlight significant differences.
+
+**Q: What legal frameworks does this prover cover?**
+It covers US federal anti-discrimination laws (Title VII, ADA, ADEA), EU regulations (GDPR Art. 22 and EU AI Act), UK Equality Act 2010, and Brazilian labor laws (CLT, Lei 9.029, LGPD).
+
+
 ## Installation & Usage
 
-To install and use the **People Management Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/people-management-prover](https://vinkius.com/mcp/people-management-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **People Management Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `people-management-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **People Management Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "people-management-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

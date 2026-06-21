@@ -1,7 +1,6 @@
 # Flagsmith MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flagsmith)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flagsmith-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flagsmith-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flagsmith)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **Flagsmith** MCP server
 > I have successfully updated the flag. The 'maintenance_mode' feature is now enabled for environment 'ser_key_123'.
 
 
+## ❓ FAQ
+
+**Q: Can I retrieve flags for a specific user identity?**
+Yes. Use the `get_identity_flags` tool by providing the user's identifier. The agent will return all flags and traits associated with that specific identity in the environment.
+
+**Q: How do I update multiple feature flags at once?**
+You can use the `update_flag_v2` tool for batch changes. Provide the environment key and a JSON payload containing the updates you wish to apply simultaneously.
+
+**Q: Is it possible to create a new environment via the agent?**
+Yes, using the `create_environment` tool. You will need to provide a name for the environment and the target Project ID. This requires a valid Flagsmith Admin API Key.
+
+
 ## Installation & Usage
 
-To install and use the **Flagsmith** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flagsmith](https://vinkius.com/mcp/flagsmith)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Flagsmith** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flagsmith` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Flagsmith** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flagsmith": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

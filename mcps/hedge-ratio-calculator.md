@@ -1,7 +1,6 @@
 # Hedge Ratio Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hedge-ratio-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hedge-ratio-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hedge-ratio-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hedge-ratio-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Hedge Ratio Calculator
 > Based on your production volume and the current market scenario, the projected net profit accounts for both hedged and unhedged portions of your harvest.
 
 
+## ❓ FAQ
+
+**Q: How can I determine how many contracts to buy?**
+Use the `calculate_hedge_volume` tool by providing your commodity type, estimated production in bags, and the percentage of production you wish to hedge.
+
+**Q: Can I calculate my potential profit margin?**
+Yes. The `project_net_margin` tool allows you to estimate net profitability by inputting production costs, market prices, and your hedging strategy.
+
+**Q: Does this tool account for price drops?**
+Yes, the `evaluate_price_exposure` tool specifically calculates the downside protection amount provided by your hedge when market prices fall below your target.
+
+
 ## Installation & Usage
 
-To install and use the **Hedge Ratio Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hedge-ratio-calculator](https://vinkius.com/mcp/hedge-ratio-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hedge Ratio Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hedge-ratio-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hedge Ratio Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hedge-ratio-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

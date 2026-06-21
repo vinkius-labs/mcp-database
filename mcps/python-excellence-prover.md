@@ -1,7 +1,6 @@
 # Python Excellence Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/python-excellence-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/python-excellence-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/python-excellence-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/python-excellence-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Python Excellence Prov
 > Verdict: WORKAROUND_DETECTED. Four violations: (1) os.path → use pathlib.Path. (2) def f(items=[]) shares list across calls → use None default. (3) String concat for SQL → use parameterized queries. (4) requests.get blocks async → use httpx.AsyncClient.
 
 
+## ❓ FAQ
+
+**Q: Does it generate Python code?**
+No. The agent writes the code. The tool VALIDATES that it meets senior Python standards — type hints + Pydantic, structured error handling, clean architecture, and optimized async patterns. It catches five failure modes before code is committed.
+
+**Q: Why is type safety checked first?**
+Because untyped Python is a shell script. Without type hints, mypy can't catch bugs, IDEs can't autocomplete, and Pydantic can't validate data boundaries. Type safety is the foundation — error handling, architecture, and performance all depend on knowing what types flow through the code.
+
+**Q: What Python-specific anti-patterns does it catch?**
+23 consistency rules catching: bare except (catches SystemExit), mutable default args (def f(x=[])), os.path instead of pathlib, string concatenation instead of f-strings, print() instead of structured logging, open() without context manager, sync I/O in async context, global mutable state, blanket # type: ignore, and magic values.
+
+
 ## Installation & Usage
 
-To install and use the **Python Excellence Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/python-excellence-prover](https://vinkius.com/mcp/python-excellence-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Python Excellence Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `python-excellence-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Python Excellence Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "python-excellence-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

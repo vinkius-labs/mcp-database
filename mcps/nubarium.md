@@ -1,7 +1,6 @@
 # Nubarium MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nubarium)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nubarium-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nubarium-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nubarium)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Nubarium** MCP server 
 > I've identified several companies named Soluciones Tech. Notable entries include entities in Guadalajara and Monterrey. Would you like the ID for any specific match to retrieve full dossiers?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Nubarium API Key?**
+Log in to your [**Nubarium dashboard**](https://nubarium.com/), and you will find your API Key under the 'API Settings' or 'My Keys' section. Copy and paste it below.
+
+**Q: Can the agent validate Mexican tax IDs (RFC)?**
+Yes. Use the `validate_mex_rfc` tool providing the RFC string. Your agent will verify its status with official sources instantly.
+
+**Q: Is CURP validation supported for individuals?**
+Yes. The `validate_mex_curp` tool allows your agent to check the identity status of individuals in Mexico using their unique CURP ID.
+
+
 ## Installation & Usage
 
-To install and use the **Nubarium** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nubarium](https://vinkius.com/mcp/nubarium)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nubarium** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nubarium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nubarium** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nubarium": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

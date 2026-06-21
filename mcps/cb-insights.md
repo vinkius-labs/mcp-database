@@ -1,7 +1,6 @@
 # CB Insights MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cb-insights)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cb-insights-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cb-insights-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cb-insights)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **CB Insights** MCP serv
 > Fetching Sequoia Capital's profile (Investor ID: inv_9021)... Their portfolio contains 412 active companies. Notable AI-focused investments include: Anthropic ($700M), Scale AI ($325M), and Hugging Face ($235M). The median check size across their portfolio is $28M at Series B stage. Would you like to see deal details for any of these companies?
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent retrieve the full funding history of a specific company just by providing the Organization ID?**
+Yes! Use the `get_org_funding` tool with the Organization ID. Your agent will return every funding round — Seed, Series A through D, and IPO — including amounts raised, lead investors, round dates, and post-money valuations.
+
+**Q: How do I map out the competitive landscape for a target company?**
+Simply ask the agent to run `get_org_competitors` with the Organization ID. It will return direct competitors ranked by market positioning, funding similarity, and industry overlap, giving you an instant competitive analysis.
+
+**Q: Does the integration allow modifying data or creating entries in CB Insights?**
+No. All 13 tools are strictly read-only query operations — searching organizations, tracking funding, analyzing competitors, and exploring investors. The only write operation is `chat_cbi`, which sends a question to the AI engine. No destructive actions exist, ensuring your data remains secure.
+
+
 ## Installation & Usage
 
-To install and use the **CB Insights** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cb-insights](https://vinkius.com/mcp/cb-insights)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CB Insights** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cb-insights` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CB Insights** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cb-insights": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

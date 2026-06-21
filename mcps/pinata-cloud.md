@@ -1,7 +1,6 @@
 # Pinata Cloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pinata-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pinata-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pinata-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pinata-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,49 @@ Here are some examples of how you can interact with the **Pinata Cloud** MCP ser
 > You have 47 pinned files using 2.3 GB of your 5 GB plan. Top 5 by size: "nft-collection-images.zip" (890 MB), "video-assets-q2.mp4" (456 MB), "product-catalog.json" (234 MB), "user-avatars-batch.tar" (178 MB), "brand-guidelines.pdf" (89 MB). 12 files were pinned in the last 30 days. 8 files have not been accessed in over 90 days and could be candidates for unpinning.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the CID (hash) of a specific pinned file?**
+Yes! Use the `list_pins` tool. Provide filters like the pin name, and your agent will respond with the unique IPFS hash (CID) and associated technical metadata in seconds.
+
+**Q: How do I find my Pinata JWT?**
+Log in to Pinata, navigate to **API Keys**, click **New Key**, and ensure you select all **Admin** permissions. Copy the long **JWT** string provided at the end.
+
+
 ## Installation & Usage
 
-To install and use the **Pinata Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pinata-cloud](https://vinkius.com/mcp/pinata-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pinata Cloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pinata-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pinata Cloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pinata-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

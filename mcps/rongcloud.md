@@ -1,7 +1,6 @@
 # RongCloud MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rongcloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rongcloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rongcloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rongcloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **RongCloud** MCP server
 > Done! I've sent your message to all participants in chatroom 'room-8821'. The message has been successfully broadcasted.
 
 
+## ❓ FAQ
+
+**Q: How do I find my RongCloud App Key and Secret?**
+Log in to the RongCloud Developer Console, navigate to [Application Identification] or [Secret Management], and you will find your App Key and App Secret there. Note that Development and Production environments have separate keys.
+
+**Q: Can I check if a user is currently online?**
+Yes. Use the `check_online` tool with a user ID to retrieve their current connection status to the IM server.
+
+**Q: Is it possible to manage chatrooms through this server?**
+Yes! You can use the `create_chatroom` tool to initiate new rooms and `query_chatroom` to retrieve detailed information about existing ones.
+
+
 ## Installation & Usage
 
-To install and use the **RongCloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rongcloud](https://vinkius.com/mcp/rongcloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **RongCloud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rongcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **RongCloud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rongcloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

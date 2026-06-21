@@ -1,7 +1,6 @@
 # Viral Loops MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/viral-loops)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/viral-loops-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/viral-loops-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/viral-loops)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Viral Loops** MCP serv
 > Campaign Stats: 1,250 participants, 4,800 referrals, 320 conversions (25.6% conversion rate).
 
 
+## ❓ FAQ
+
+**Q: How do I get my Viral Loops API Key?**
+Log in to your Viral Loops account, navigate to Settings > API Keys, and generate a new key. Copy it and paste it below.
+
+**Q: Can I get referral URLs for participants?**
+Yes! Use the get_referral_url tool with the campaign ID and participant email to retrieve their unique referral link.
+
+**Q: Can I add new participants to a campaign?**
+Yes! Use the create_participant action with the campaign ID and participant data (email and custom fields) to register them.
+
+
 ## Installation & Usage
 
-To install and use the **Viral Loops** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/viral-loops](https://vinkius.com/mcp/viral-loops)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Viral Loops** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `viral-loops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Viral Loops** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "viral-loops": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

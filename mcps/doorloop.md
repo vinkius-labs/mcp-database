@@ -1,7 +1,6 @@
 # DoorLoop MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doorloop)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/doorloop-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/doorloop-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doorloop)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **DoorLoop** MCP server 
 > Fetching report... Your current rent roll shows 15 active leases with a total monthly revenue of $22,500. Average rent is $1,500 per unit. I can break this down by property if needed.
 
 
+## ❓ FAQ
+
+**Q: How do I find my DoorLoop API Key?**
+Log in to DoorLoop, navigate to **Settings** > **Integrations**, and generate a new key for the Public API.
+
+**Q: Can I filter units by property?**
+Yes! The `list_units` tool allows you to specify a `property_id` to retrieve only the units belonging to a specific building or site.
+
+**Q: Does it support creating maintenance work orders?**
+Absolutely. Use the `create_work_order` tool to programmatically generate a maintenance request for a specific unit with a subject and description.
+
+
 ## Installation & Usage
 
-To install and use the **DoorLoop** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/doorloop](https://vinkius.com/mcp/doorloop)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DoorLoop** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `doorloop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DoorLoop** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "doorloop": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

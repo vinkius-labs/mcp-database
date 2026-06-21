@@ -1,7 +1,6 @@
 # Culture Amp MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/culture-amp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/culture-amp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/culture-amp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/culture-amp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Culture Amp** MCP serv
 > I've found 15 organizational groups, including 'Management', 'Sales North America', 'London Office', and 'Product Design'. Which group would you like to explore further?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Culture Amp API Key?**
+Log in to Culture Amp as an administrator, navigate to **Settings > Data Integrations**, and you will find the API section to generate a new key.
+
+**Q: Can I see individual survey responses?**
+To protect employee anonymity, the API generally provides aggregated survey data and participation status, rather than individual identifiable responses.
+
+**Q: Does the integration support demographic segmentation?**
+Yes, you can use the list_demographic_fields tool to view how your data is segmented, allowing the agent to provide more targeted insights.
+
+
 ## Installation & Usage
 
-To install and use the **Culture Amp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/culture-amp](https://vinkius.com/mcp/culture-amp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Culture Amp** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `culture-amp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Culture Amp** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "culture-amp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

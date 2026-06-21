@@ -1,7 +1,6 @@
 # Eversign (Cloud Electronic Signature) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eversign-cloud-electronic-signature)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eversign-cloud-electronic-signature-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eversign-cloud-electronic-signature-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eversign-cloud-electronic-signature)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Eversign (Cloud Electr
 > Processing template 'abc123hash'... I have successfully generated a new document for business 98765 based on your template. Would you like to check the status of the signers?
 
 
+## ❓ FAQ
+
+**Q: How do I find the Business ID required for creating documents?**
+You can use the `list_businesses` tool. It will return a list of all businesses associated with your account along with their unique IDs.
+
+**Q: Can I test document creation without it being legally binding?**
+Yes! When using the `create_document` tool, set the `sandbox` parameter to true. This allows you to test the workflow with a testing prefix.
+
+**Q: Is it possible to generate a document from an existing template?**
+Absolutely. Use the `create_document` tool and provide the `template_id` (the hash of your template) to generate a document based on that template.
+
+
 ## Installation & Usage
 
-To install and use the **Eversign (Cloud Electronic Signature)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/eversign-cloud-electronic-signature](https://vinkius.com/mcp/eversign-cloud-electronic-signature)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Eversign (Cloud Electronic Signature)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `eversign-cloud-electronic-signature` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Eversign (Cloud Electronic Signature)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "eversign-cloud-electronic-signature": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

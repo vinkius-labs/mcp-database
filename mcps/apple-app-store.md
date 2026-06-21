@@ -1,7 +1,6 @@
 # Apple App Store MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apple-app-store)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apple-app-store-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apple-app-store-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apple-app-store)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Apple App Store** MCP 
 > I've found 5 new reviews for your app. The average rating is 4.5 stars, with users praising the new UI layout.
 
 
+## ❓ FAQ
+
+**Q: How do I create an App Store Connect API Key?**
+Log in to App Store Connect, go to **Users and Access**, select the **Integrations** tab, and then **App Store Connect API**. You can generate and download your private key (.p8) there.
+
+**Q: What is my Issuer ID and Key ID?**
+The Issuer ID is a unique ID for your organization, and the Key ID is specific to the API key you generated. Both are displayed on the App Store Connect API keys page.
+
+**Q: How are sales reports handled?**
+The `get_sales_reports` tool initiates a download of aggregated sales data from Apple. Note that detailed reports are provided as compressed files which are processed by the server.
+
+
 ## Installation & Usage
 
-To install and use the **Apple App Store** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/apple-app-store](https://vinkius.com/mcp/apple-app-store)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Apple App Store** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `apple-app-store` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Apple App Store** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "apple-app-store": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

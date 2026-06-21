@@ -1,7 +1,6 @@
 # PSPDFKit (Nutrient) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pspdfkit-nutrient)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pspdfkit-nutrient-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pspdfkit-nutrient-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pspdfkit-nutrient)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **PSPDFKit (Nutrient)** 
 > I've performed OCR on the image. The text has been extracted and the document is now searchable. You can download it here: [URL].
 
 
+## ❓ FAQ
+
+**Q: Can I make a scanned image searchable using this server?**
+Yes. Use the `ocr_document` tool by providing the file URL. It will extract the text and return a processed document that is fully searchable.
+
+**Q: How do I redact sensitive information from a PDF?**
+You can use the `build_document` tool. It allows you to send specific instructions for redaction, watermarking, or other advanced transformations to a source document.
+
+**Q: Is it possible to ensure my PDFs are accessible for people with disabilities?**
+Absolutely. The `autotag_pdf` tool processes your document to meet accessibility standards like PDF/UA-1, making it compatible with screen readers.
+
+
 ## Installation & Usage
 
-To install and use the **PSPDFKit (Nutrient)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pspdfkit-nutrient](https://vinkius.com/mcp/pspdfkit-nutrient)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PSPDFKit (Nutrient)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pspdfkit-nutrient` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PSPDFKit (Nutrient)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pspdfkit-nutrient": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

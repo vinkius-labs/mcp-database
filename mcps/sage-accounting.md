@@ -1,7 +1,6 @@
 # Sage Accounting MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sage-accounting)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sage-accounting-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sage-accounting-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sage-accounting)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,49 @@ Here are some examples of how you can interact with the **Sage Accounting** MCP 
 > 4 bank accounts configured. "Business Current Account" (ending 4521): Balance $234,500. Last 7 days: 23 deposits ($89,200), 45 payments ($67,400), net +$21,800. "Savings Account" (ending 7834): Balance $450,000 (reserve fund). "Tax Reserve" (ending 2156): Balance $67,800. "PayPal Business" (ending 9012): Balance $12,340. Total cash position: $764,640. Unreconciled transactions: 12 items ($8,900). Automatic bank feed: synced 1 hour ago.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the balance for all my business bank accounts in Sage?**
+Yes! Use the `list_bank_accounts` tool. Your agent will respond with complete metadata for all accounts, including currency, account type, and current balances in seconds.
+
+**Q: How do I find my Sage OAuth 2.0 Access Token?**
+Log in to the Sage Developer Portal, create an application, and use your preferred OAuth 2.0 client library to complete the authorization flow and retrieve a bearer token.
+
+
 ## Installation & Usage
 
-To install and use the **Sage Accounting** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sage-accounting](https://vinkius.com/mcp/sage-accounting)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sage Accounting** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sage-accounting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sage Accounting** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sage-accounting": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

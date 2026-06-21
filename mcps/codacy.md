@@ -1,7 +1,6 @@
 # Codacy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/codacy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/codacy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/codacy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/codacy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Codacy** MCP server us
 > Retrieving supported languages... Codacy supports over 40 languages including JavaScript, TypeScript, Python, Go, Java, PHP, Ruby, and C#. It also supports configuration files like Dockerfile and Terraform.
 
 
+## ❓ FAQ
+
+**Q: Can I see the quality grade for a specific repository?**
+Yes! Use the `get_repository_quality_analysis` tool. Provide the provider (e.g., `gh`), organization, and repository name. The agent will return the current letter grade (A-F) and core quality metrics.
+
+**Q: How do I search for security-related issues in my code?**
+Use the `search_repository_issues` tool. You can filter the payload to include `categories: ['Security']`. Your agent will fetch all security vulnerabilities identified by Codacy in that repository.
+
+**Q: Where do I find my Codacy API Token?**
+Log in to Codacy, click on your avatar in the top right, go to **User Settings**, and select the **API** tab. You can generate and copy your account token from there.
+
+
 ## Installation & Usage
 
-To install and use the **Codacy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/codacy](https://vinkius.com/mcp/codacy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Codacy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `codacy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Codacy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "codacy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

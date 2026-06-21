@@ -1,7 +1,6 @@
 # Lemlist MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lemlist)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lemlist-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lemlist-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lemlist)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,55 @@ Here are some examples of how you can interact with the **Lemlist** MCP server u
 > You received 14 replies this week across 3 campaigns. Positive replies: 9 (64%). Top responders: Mark at Acme Corp (interested in demo), Lisa at DataFlow (requesting pricing), and 7 others.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Lemlist API key?**
+Log in to your Lemlist account at **app.lemlist.com**. Click your **profile icon** (bottom left corner). Select **Settings**, then navigate to the **Integrations** tab. Look for the **API** section and click **Generate** to create a new API key. Copy the key immediately and save it securely — it is only shown once. Paste it into the configuration field below.
+
+**Q: Can I check which leads opened my emails today?**
+Yes. Ask your AI agent 'Who opened my emails today?' and it returns a list of leads with their email addresses, campaign names, open timestamps, and total open counts — giving your SDR team warm lead signals in real-time.
+
+**Q: Can my agent add new leads to an existing campaign?**
+Yes. Provide the lead's email, first name, and any custom variables, and your AI agent adds them directly to any active campaign — they'll automatically enter the sequence at step 1. Perfect for sales teams who find prospects and want to start outreach immediately.
+
+**Q: What engagement metrics can I track?**
+Your AI agent can pull opens, clicks, replies, bounces, and unsubscribes per campaign — plus step-by-step analytics showing which emails in your sequence perform best. Perfect for optimizing subject lines, send times, and follow-up cadences.
+
+
 ## Installation & Usage
 
-To install and use the **Lemlist** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lemlist](https://vinkius.com/mcp/lemlist)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lemlist** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lemlist` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lemlist** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lemlist": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

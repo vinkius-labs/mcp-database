@@ -1,7 +1,6 @@
 # Reflect MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reflect)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reflect-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reflect-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reflect)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Reflect** MCP server u
 > I called `list_notes` to verify 'React Learnings', acquiring its note_id 'xx82', then ran `get_backlinks`. You have 3 other notes connecting to it: 'Frontend Architecture', 'Day 2 Journal', and 'Tech Stack Overview'.
 
 
+## ❓ FAQ
+
+**Q: Can the agent create new graphs from scratch?**
+No. The AI via the MCP can fully manage notes, generate fresh links, and organize entries, but you must create top-level workspaces (Graphs) directly within the native Reflect desktop or web applications first.
+
+**Q: Will `append_daily_note` overwrite my existing notes for today?**
+No, `append_daily_note` strictly adds the provided Markdown blocks to the very bottom of today's Daily Note section in Reflect. It is a completely safe, non-destructive operation preserving your older notes intact.
+
+**Q: Can I search notes by standard keywords instead of IDs?**
+The underlying Reflect API largely focuses on ID-based lookups (`note_id`). You can request the AI to first `list_notes` which provides titles for semantic checking, and then it can dynamically chain the ID lookup to read your specific content immediately after.
+
+
 ## Installation & Usage
 
-To install and use the **Reflect** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/reflect](https://vinkius.com/mcp/reflect)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Reflect** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `reflect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Reflect** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "reflect": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

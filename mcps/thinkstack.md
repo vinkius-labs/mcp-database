@@ -1,7 +1,6 @@
 # ThinkStack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thinkstack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/thinkstack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/thinkstack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thinkstack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **ThinkStack** MCP serve
 > URL added successfully. ThinkStack is now crawling docs.example.com — 42 pages detected. The bot's knowledge base will be updated within minutes. Would you like to test a query?
 
 
+## ❓ FAQ
+
+**Q: How do I query my chatbot via AI agent?**
+Use the `send_query` tool with the bot ID and your message. The chatbot responds based on its trained knowledge base.
+
+**Q: Can I manage knowledge sources programmatically?**
+Yes. Use `add_source` to add new URLs, `list_sources` to browse, and `delete_source` to remove outdated sources from any chatbot.
+
+**Q: How do I review chat conversations?**
+Use `list_conversations` to see all chats for a bot, then `get_conversation` to read the full message history of any specific session.
+
+
 ## Installation & Usage
 
-To install and use the **ThinkStack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/thinkstack](https://vinkius.com/mcp/thinkstack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ThinkStack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `thinkstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ThinkStack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "thinkstack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

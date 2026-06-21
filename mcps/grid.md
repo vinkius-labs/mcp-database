@@ -1,7 +1,6 @@
 # Grid MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grid)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grid-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grid)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Grid** MCP server usin
 > Fetching dashboard metadata... I found your 'Field Operations Overview' dashboard. It indicates 85% completion across active sites with 12 records updated in the last hour. Would you like a detailed breakdown by site?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Client ID and Secret?**
+Log in to your Grid dashboard, navigate to the **Integrations** or **API Connectors** section to generate and copy your unique credentials.
+
+**Q: Can I add a record to a specific worksheet via AI?**
+Yes! The `create_new_operational_record` tool allows you to push new data directly into any authorized worksheet in your Grid account.
+
+**Q: How do I check available analytical dashboards?**
+Use the `list_grid_dashboards` tool to retrieve a list of all configured analytical views and monitors in your Grid environment.
+
+
 ## Installation & Usage
 
-To install and use the **Grid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/grid](https://vinkius.com/mcp/grid)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Grid** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `grid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Grid** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "grid": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Xero MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xero)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/xero-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/xero-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xero)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -82,12 +81,52 @@ Here are some examples of how you can interact with the **Xero** MCP server usin
 > Contact 'Global Tech' (ID: 550e8400-e29b...) found. Their last 3 payments were: 1. $1,200.00 (2026-03-15), 2. $1,200.00 (2026-02-15), and 3. $1,200.00 (2026-01-15). All applied to recurring service invoices.
 
 
+## ❓ FAQ
+
+**Q: Can I retrieve my profit and loss report for a specific period via chat?**
+Yes. The `get_profit_and_loss` tool allows your AI agent to retrieve a PnL report by providing a start and end date. This provides an instant summary of your revenue and expenses without manual reporting.
+
+**Q: How do I find out the outstanding amount on a specific invoice?**
+You can use the `get_invoice_details` tool. Provide the unique invoice ID, and your agent will return the full metadata, including the original amount, any applied payments, and the current balance due.
+
+**Q: Is it possible to see my bank transactions through the agent?**
+Absolutely. Use the `list_bank_transactions` tool to retrieve a list of all transactions recorded in your Xero bank accounts, helping you monitor cash flow directly through your conversation.
+
+
 ## Installation & Usage
 
-To install and use the **Xero** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/xero](https://vinkius.com/mcp/xero)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Xero** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `xero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Xero** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "xero": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

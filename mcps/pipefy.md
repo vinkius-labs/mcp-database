@@ -1,7 +1,6 @@
 # Pipefy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pipefy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pipefy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pipefy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pipefy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -158,12 +157,55 @@ The card is now in the 'New Requests' phase and ready for review. Would you like
 Two cards are still active (In Progress and Waiting for Parts), and one is resolved. Would you like the full details of any specific card?
 
 
+## ❓ FAQ
+
+**Q: How do I get a Pipefy API token and where do I find it?**
+Log in to Pipefy, click on your **Profile icon** (top-right), go to **Profile > API Access**, and generate a new token. Alternatively, use **Service Accounts** for team-based access. Copy the token immediately — it starts with `eyJhbG...`. Paste it into the API token field below. This token authenticates all GraphQL API requests to `https://api.pipefy.com/graphql`.
+
+**Q: How do I move a card from one phase to another in a pipe?**
+Use the `move_card_to_phase` tool with the card_id (from list_cards or get_card) and the target phase_id (from get_pipe or list_phases). This advances the card through your workflow. For example, moving a card from 'New Requests' to 'In Review' phase. The card retains all its field values after moving. This is the primary way to progress items through your process.
+
+**Q: Can I search for cards by a specific field value like email or customer name?**
+Yes! Use the `search_cards_by_field` tool with the pipe_id, field_id (the specific field to search in), and search_value (the text to find). This searches all cards in the pipe where that field contains your search text. It's perfect for finding cards by customer email, name, order number, or any custom field. Results include full card details with all field values.
+
+**Q: How do I create a new card with custom field values?**
+Use the `create_card` tool with the pipe_id and a JSON object containing field values. The fields parameter should be a JSON object where keys are field IDs (from get_pipe) and values are the data to store. Example: `{ "name": "John Doe", "email": "john@example.com", "priority": "High" }`. You can also optionally specify a phase_id to start the card in a specific phase instead of the default first phase.
+
+
 ## Installation & Usage
 
-To install and use the **Pipefy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pipefy](https://vinkius.com/mcp/pipefy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pipefy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pipefy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pipefy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pipefy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

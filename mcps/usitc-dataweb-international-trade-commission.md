@@ -1,7 +1,6 @@
 # USITC DataWeb (International Trade Commission) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usitc-dataweb-international-trade-commission)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/usitc-dataweb-international-trade-commission-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/usitc-dataweb-international-trade-commission-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usitc-dataweb-international-trade-commission)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **USITC DataWeb (Interna
 > I've processed the query for HS code '01' (Live Animals) from Canada in 2022. The total import value was $X million. Would you like a breakdown by month?
 
 
+## ❓ FAQ
+
+**Q: How do I find the correct country code for a trade query?**
+You can use the `list_metadata_values` tool. Provide the table ID (e.g., 'imports') and the field ID for countries to see a full list of valid USITC country codes.
+
+**Q: What classification systems are supported for commodity queries?**
+The server supports 'hs' (Harmonized System), 'sitc' (Standard International Trade Classification), and 'naics' (North American Industry Classification System) via the `query_trade_data` tool.
+
+**Q: Can I see what data tables are available before querying?**
+Yes, use the `list_metadata_tables` tool to retrieve a list of all available data tables and their identifiers from the USITC DataWeb API.
+
+
 ## Installation & Usage
 
-To install and use the **USITC DataWeb (International Trade Commission)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/usitc-dataweb-international-trade-commission](https://vinkius.com/mcp/usitc-dataweb-international-trade-commission)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **USITC DataWeb (International Trade Commission)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `usitc-dataweb-international-trade-commission` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **USITC DataWeb (International Trade Commission)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "usitc-dataweb-international-trade-commission": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

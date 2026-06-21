@@ -1,7 +1,6 @@
 # Accessibility Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accessibility-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/accessibility-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/accessibility-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accessibility-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -116,12 +115,67 @@ Motion: banner slides in from the top with 300ms ease-in."
 ✗ motionRespected — 300ms slide animation lacks `prefers-reduced-motion` check. Wrap in `@media (prefers-reduced-motion: no-preference)` or provide `transition: none` fallback.
 
 
+## ❓ FAQ
+
+**Q: Why does Accessibility Prover reject divs with click handlers?**
+A `<div>` has no native keyboard interactivity, no focusability, and no implicit ARIA role. Adding `onclick` creates a visual button that keyboard and screen reader users cannot operate. Native `<button>` elements provide focus, Enter/Space activation, and the 'button' role automatically — no extra JavaScript required.
+
+**Q: What is a focus trap and when is it required?**
+A focus trap constrains Tab navigation inside a specific element — typically a modal, dialog, or dropdown — so users cannot navigate to the underlying page while the overlay is active. WCAG 2.4.3 (Focus Order) requires it for all modal dialogs. Without it, a keyboard user can Tab behind the modal into invisible content.
+
+**Q: Does Accessibility Prover check contrast across all interactive states?**
+Yes. The contrastCompliant pivot validates foreground/background color combinations across five states: default, hover, focus, active, and disabled. A button that passes contrast in its default state but fails on hover (e.g., light gray text on white) is flagged as CONTRAST_FAILING.
+
+**Q: How is this different from axe-core or Lighthouse?**
+axe-core and Lighthouse scan rendered HTML in a browser — they detect violations after the code is built and running. Accessibility Prover validates UI specifications before code is written. It reasons about component behavior, keyboard flows, and interaction states at the design level, catching architectural issues that post-build scanners cannot see because they only inspect the final DOM.
+
+**Q: Can I use Accessibility Prover with an AI coding agent?**
+Yes — that is a primary use case. AI coding agents default to div-based layouts because divs are syntactically simpler. Accessibility Prover acts as a guardrail: the agent submits its component specification, the prover validates it against 5 pivots, and the agent receives a structured verdict with specific fixes before writing code.
+
+**Q: What does the European Accessibility Act (EAA 2025) mean for my product?**
+Since June 2025, the EAA requires all digital products and services sold in the EU to meet accessibility standards equivalent to WCAG 2.1 AA (with WCAG 2.2 AA as the recommended benchmark). Non-compliance carries fines up to 5% of annual revenue and potential market withdrawal. Accessibility Prover helps demonstrate compliance as a build-time gate, creating an auditable validation record.
+
+**Q: What input format does Accessibility Prover expect?**
+Submit each component as structured text covering 5 dimensions: (1) Layout — the HTML elements and hierarchy, (2) Keyboard — tab order, focus indicators, focus traps, (3) Contrast — foreground and background hex values with computed ratio, (4) Screen Reader — alt texts, aria-labels, form-label associations, (5) Motion — animation properties and prefers-reduced-motion handling. The tool reasons about each dimension independently.
+
+**Q: Does Accessibility Prover support WCAG 2.2 AAA?**
+The tool validates against WCAG 2.2 AA, which is the legally required level under the EAA 2025 and the practical target for most products. AAA requirements (e.g., 7:1 contrast ratio, sign language interpretation) are not enforced — they are aspirational goals that few products achieve fully.
+
+
 ## Installation & Usage
 
-To install and use the **Accessibility Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/accessibility-prover](https://vinkius.com/mcp/accessibility-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Accessibility Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `accessibility-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Accessibility Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "accessibility-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

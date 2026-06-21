@@ -1,7 +1,6 @@
 # WebHR MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webhr)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/webhr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/webhr-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webhr)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,49 @@ Here are some examples of how you can interact with the **WebHR** MCP server usi
 > I've pulled the attendance summary for the New York office. This week, there were 145 successful on-time clock-ins and 12 late arrivals. The overall punctuality rate is currently at 92%. Would you like a detailed log of the late entries?
 
 
+## ❓ FAQ
+
+**Q: How do I find my WebHR API Key?**
+Log in to your WebHR portal, navigate to **Setup** > **API Settings**, and generate a new key for your integration.
+
+**Q: Can the agent check employee leave balances?**
+Yes! Use the `list_leaves` tool to retrieve current leave applications and balance details for employees in your system.
+
+
 ## Installation & Usage
 
-To install and use the **WebHR** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/webhr](https://vinkius.com/mcp/webhr)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WebHR** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `webhr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WebHR** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "webhr": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

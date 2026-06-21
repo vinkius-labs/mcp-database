@@ -1,7 +1,6 @@
 # iLovePDF MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ilovepdf)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ilovepdf-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ilovepdf-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ilovepdf)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **iLovePDF** MCP server 
 > Split task started (task_4523). Source: Combined_Reports.pdf (42 pages). Extracting pages 1-10... ✅ Complete! Output: Combined_Reports_p1-10.pdf (10 pages, 1.8 MB). Remaining pages available for additional splits. Tasks today: 4 completed (merge, convert, compress, split). Would you like to process another document?
 
 
+## ❓ FAQ
+
+**Q: Can I merge multiple PDF files into one?**
+Yes. Use `start_pdf_task` with task type 'merge', then upload each PDF with `upload_pdf_by_url`, and finally call `process_pdf_task` to execute. Use `get_pdf_download_link` to retrieve the merged result.
+
+**Q: Does iLovePDF require two credentials?**
+Yes. iLovePDF uses a **Public Key** and **Secret Key** pair. The server exchanges these for a JWT token automatically via `api.ilovepdf.com/v1`. No manual token management required.
+
+**Q: Can I track the status of a PDF processing task?**
+Yes. Use `get_task_status` with the task ID to check progress. Use `list_pdf_tasks` to see all tasks with their current status (pending, processing, completed, failed).
+
+
 ## Installation & Usage
 
-To install and use the **iLovePDF** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ilovepdf](https://vinkius.com/mcp/ilovepdf)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **iLovePDF** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ilovepdf` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **iLovePDF** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ilovepdf": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Loopio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/loopio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/loopio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/loopio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/loopio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,12 +102,55 @@ The project is ready for team assignment and questionnaire responses. Would you 
 The Pied Piper RFI needs immediate attention with only 15% completion. Should I list its unanswered questions?
 
 
+## ❓ FAQ
+
+**Q: What authentication does Loopio require and where do I get my token?**
+Loopio uses OAuth2 with Bearer token authentication. You need to generate an access token from your Loopio account under Settings -> API. The token provides secure, scoped access to your projects, libraries, and team data.
+
+**Q: Can the AI agent search and retrieve approved answers from my Loopio library?**
+Yes. The search_library tool lets the agent query your master knowledge base using natural language. It searches across question text, answer text, and tags, returning the most relevant approved entries with their full content. This ensures your AI responses are always based on pre-approved, accurate information.
+
+**Q: Can I create new RFP projects programmatically through the AI agent?**
+Absolutely. The create_submission tool allows the agent to spin up new Loopio projects with a name, description, company context, due date, and assigned owner. The project is created in 'Not Started' status and ready for immediate team collaboration and answer drafting.
+
+**Q: How do I track the progress of active RFPs across my workspace?**
+Use list_projects to see all active initiatives with their current status, then drill into any project with get_project to check completion percentage, due dates, and ownership. You can also use list_questionnaires to see every individual question and which ones still need answers.
+
+
 ## Installation & Usage
 
-To install and use the **Loopio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/loopio](https://vinkius.com/mcp/loopio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Loopio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `loopio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Loopio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "loopio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

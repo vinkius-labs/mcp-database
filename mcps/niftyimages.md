@@ -1,7 +1,6 @@
 # NiftyImages MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/niftyimages)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/niftyimages-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/niftyimages-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/niftyimages)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **NiftyImages** MCP serv
 > Fetching image statistics... Your assets have generated a total of 1.2M impressions and 45K clicks this month. The 'Promo Banner' is your top performer with a 5.2% click-through rate. Shall I provide the breakdown for the dynamic widgets as well?
 
 
+## ❓ FAQ
+
+**Q: Where do I find my NiftyImages API Key?**
+Log in to your NiftyImages account and navigate to the API section in your account settings to find or generate your key.
+
+**Q: Can I update a timer that is already live in an email?**
+Yes! Because NiftyImages generates the countdown at the moment the email is opened, updating the target date via the `update_timer` tool will reflect the change for all subsequent opens.
+
+**Q: What is the Photoshop API used for?**
+It allows you to programmatically change the text or visibility of specific layers within a Photoshop file you have uploaded to NiftyImages, enabling high-fidelity dynamic imaging.
+
+
 ## Installation & Usage
 
-To install and use the **NiftyImages** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/niftyimages](https://vinkius.com/mcp/niftyimages)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NiftyImages** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `niftyimages` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NiftyImages** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "niftyimages": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

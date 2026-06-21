@@ -1,7 +1,6 @@
 # Nanoid Generator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nanoid-generator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nanoid-generator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nanoid-generator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nanoid-generator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -56,12 +55,52 @@ Here are some examples of how you can interact with the **Nanoid Generator** MCP
 > ID: kB7xZ9pQ2mN5wR8jF3vH6yT1sL4cD0aX | 32 chars, crypto-random. Entropy: 190+ bits.
 
 
+## ❓ FAQ
+
+**Q: Why should I use nanoid instead of UUID?**
+Nanoid is 40% shorter (21 vs 36 chars), 2x faster, URL-safe without encoding, and has equivalent collision resistance. UUID still wins for enterprise systems that mandate RFC 9562 compliance.
+
+**Q: Can I generate IDs with only numbers for order codes?**
+Yes. Set alphabet to '0123456789' and size to 8 for an 8-digit numeric order code like '47829163'. Works with any character set you define.
+
+**Q: Is it safe to use as a secret token or API key?**
+Yes. Nanoid uses crypto.getRandomValues() — the same cryptographic PRNG used for TLS keys and encryption. Increase the size to 32+ characters for high-security tokens.
+
+
 ## Installation & Usage
 
-To install and use the **Nanoid Generator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nanoid-generator](https://vinkius.com/mcp/nanoid-generator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nanoid Generator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nanoid-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nanoid Generator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nanoid-generator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Goflow MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goflow)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/goflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/goflow-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goflow)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Goflow** MCP server us
 > Inspecting order GF-93021... It contains 3 items: 2x 'Lid Protectors' and 1x 'Glass Jar'. The customer is 'John Doe' and the shipping address is in New York. The order is currently marked as 'Pending Fulfillment'.
 
 
+## ❓ FAQ
+
+**Q: Can I update the status of an order directly through this integration?**
+Currently, the tools focus on investigative queries and inventory adjustments. Direct order status transitions are handled via the main Goflow dashboard to ensure full compliance with marketplace workflows.
+
+**Q: Does the integration support multi-warehouse inventory management?**
+Yes! When fetching inventory levels or performing adjustments with the `update_inventory` tool, you can specify the target Warehouse ID to accurately manage stock across your entire infrastructure.
+
+**Q: How many marketplaces can I monitor with this server?**
+You can monitor all marketplaces synced with your Goflow account. The `list_listings` tool will retrieve active listings from Amazon, Walmart, eBay, Shopify, and any other connected channel in real-time.
+
+
 ## Installation & Usage
 
-To install and use the **Goflow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/goflow](https://vinkius.com/mcp/goflow)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Goflow** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `goflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Goflow** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "goflow": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

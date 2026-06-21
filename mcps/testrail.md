@@ -1,7 +1,6 @@
 # TestRail MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/testrail)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/testrail-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/testrail-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/testrail)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ Can I translate these rules over towards a framework structure?
 This run has notable defect traces. Would you like me to extract the exact test lists behind the 6 failed triggers?
 
 
+## ❓ FAQ
+
+**Q: Can I use my regular TestRail password to authenticate?**
+Technically yes, as TestRail uses HTTP Basic Auth. However, it is highly discouraged for security purposes. The gold standard is to generate a dedicated API Key via your profile interface strictly tied to this connection.
+
+**Q: Why isn't the API agent responding despite my credentials being correct?**
+TestRail requires the instance administrator to explicitly configure system-level API enablement. Ask your workspace admin to go to Administration > Site Settings > API and tick 'Enable API' box.
+
+**Q: Can the AI rewrite my test cases explicitly inside your TestRail app?**
+No. Consistent with security best practices, the TestRail MCP functions only as a powerful read-only query extraction engine. It retrieves metadata, sections, milestones, and reports, protecting your ground-truth data from accidental AI deletion.
+
+
 ## Installation & Usage
 
-To install and use the **TestRail** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/testrail](https://vinkius.com/mcp/testrail)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TestRail** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `testrail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TestRail** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "testrail": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

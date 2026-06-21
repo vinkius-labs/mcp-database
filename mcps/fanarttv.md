@@ -1,7 +1,6 @@
 # Fanart.tv MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fanarttv)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fanarttv-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fanarttv-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fanarttv)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,55 @@ Here are some examples of how you can interact with the **Fanart.tv** MCP server
 > Found artwork for The Beatles: 12 artist thumbs, 8 artist backgrounds (fanart), 5 music logos, 3 music banners, 4 artist logos and 2 concert thumbs. All images include direct URLs and like counts.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Fanart.tv API key?**
+Sign up for a free account at [**fanart.tv**](https://fanart.tv/get-an-api-key/), go to your account settings and generate an API key. Personal keys are free and have a rate limit of 2 requests/second.
+
+**Q: How do I find a movie's TMDb ID?**
+Search for the movie on [**The Movie Database (TMDb)**](https://www.themovisdb.org). The numeric ID is in the URL. For example, Fight Club's URL contains '550' as its TMDb ID.
+
+**Q: How do I find a TV show's TVDb ID?**
+Search for the show on [**TheTVDB**](https://thetvdb.com). The numeric ID is in the URL. For example, Game of Thrones' URL contains '121361' as its TVDb ID.
+
+**Q: How do I find a music artist's MusicBrainz ID?**
+Search for the artist on [**MusicBrainz**](https://musicbrainz.org). The UUID is the artist's MBID. For example, The Beatles' MBID is b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d.
+
+
 ## Installation & Usage
 
-To install and use the **Fanart.tv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fanarttv](https://vinkius.com/mcp/fanarttv)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fanart.tv** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fanarttv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fanart.tv** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fanarttv": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

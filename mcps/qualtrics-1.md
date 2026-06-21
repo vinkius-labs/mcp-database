@@ -1,7 +1,6 @@
 # Qualtrics MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qualtrics-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qualtrics-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qualtrics-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qualtrics-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Qualtrics** MCP server
 > I've initiated the export for survey SV_12345. The Export ID is ES_abc123. I will monitor the progress for you.
 
 
+## ❓ FAQ
+
+**Q: How can I export survey responses using the AI?**
+You can use the `create_response_export` tool to start the process. Then, use `get_export_progress` to check when it's ready, and finally `get_export_file` to retrieve the data.
+
+**Q: Can I create a new survey directly through the agent?**
+Yes! Use the `create_survey` tool by providing a name, and optionally the language and project category. The agent will return the new Survey ID for you.
+
+**Q: Is it possible to manage my XM Directory contacts?**
+Absolutely. You can use `list_directory_contacts` to see existing members and `create_contact` or `update_contact` to modify your directory information.
+
+
 ## Installation & Usage
 
-To install and use the **Qualtrics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/qualtrics-1](https://vinkius.com/mcp/qualtrics-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Qualtrics** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `qualtrics-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Qualtrics** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "qualtrics-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

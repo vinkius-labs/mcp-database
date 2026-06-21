@@ -1,7 +1,6 @@
 # Fibery MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fibery)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fibery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fibery-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fibery)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Fibery** MCP server us
 > Comment added successfully! Your message has been posted to the task and your team has been notified flawlessly.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Fibery Workspace name?**
+Your workspace name is the subdomain in your Fibery URL. For example, if you access Fibery at `https://my-team.fibery.io`, your workspace name is `my-team`.
+
+**Q: How do I generate a Fibery API Token?**
+In your Fibery workspace, go to **Settings > API**, click on **Create New Token**, give it a name, and copy the generated token immediately.
+
+**Q: Can I query custom fields created in my spaces?**
+Yes! Use the `get_schema` tool to see the fully qualified names of your custom fields, and then include them in the `select_json` parameter of the `query_entities` tool.
+
+
 ## Installation & Usage
 
-To install and use the **Fibery** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fibery](https://vinkius.com/mcp/fibery)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fibery** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fibery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fibery** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fibery": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

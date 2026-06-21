@@ -1,7 +1,6 @@
 # FMCSA Licensing & Insurance MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fmcsa-licensing-insurance)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fmcsa-licensing-insurance-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fmcsa-licensing-insurance-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fmcsa-licensing-insurance)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **FMCSA Licensing & Insu
 > Checking cargo authorization for DOT 987654... This carrier is authorized for General Freight, Household Goods, and Refrigerated Food.
 
 
+## ❓ FAQ
+
+**Q: How can I check if a carrier is currently authorized to transport goods?**
+You can use the `get_carrier_authority` tool with the carrier's DOT number. This will return the official operating authority status directly from FMCSA records.
+
+**Q: Can I find a carrier's DOT number if I only have their business name?**
+Yes, use the `search_carriers_by_name` tool. Provide the Legal or DBA name, and the agent will return a list of matching carriers along with their U.S. DOT numbers.
+
+**Q: Does this tool show safety ratings and inspection violations?**
+Yes. The `get_carrier_basics` tool retrieves safety performance data (BASIC measures), and `get_carrier_oos` provides data on Out-of-Service orders.
+
+
 ## Installation & Usage
 
-To install and use the **FMCSA Licensing & Insurance** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fmcsa-licensing-insurance](https://vinkius.com/mcp/fmcsa-licensing-insurance)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FMCSA Licensing & Insurance** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fmcsa-licensing-insurance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FMCSA Licensing & Insurance** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fmcsa-licensing-insurance": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

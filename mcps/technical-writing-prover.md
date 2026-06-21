@@ -1,7 +1,6 @@
 # Technical Writing Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/technical-writing-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/technical-writing-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/technical-writing-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/technical-writing-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Technical Writing Prov
 > COMPLETENESS_GAPS — Audience, structure, examples, and clarity pass. But completeness fails on three fronts: (1) No prerequisites — list kubectl version, minikube version, Docker version, and minimum system requirements. (2) No error handling — what if 'kubectl apply' fails? ImagePullBackOff? CrashLoopBackOff? Pending pod? Show the error, explain the cause, provide the fix. (3) 'Consult the Kubernetes documentation' is a completeness failure — link to the SPECIFIC next tutorial: 'Next: Expose your application with a Service (link).' Also: address edge cases — namespace already exists (409 Conflict), port already bound (address already in use).
 
 
+## ❓ FAQ
+
+**Q: Does it write documentation?**
+No. It validates that documentation meets five quality standards — defined audience, task-based structure, working examples, eliminated ambiguity, and verified completeness. It does not generate text. It forces you to prove your text is publication-ready.
+
+**Q: What is the Diátaxis framework?**
+Diátaxis classifies documentation into four types based on reader need: tutorials (learning-oriented, guided steps), how-to guides (task-oriented, goal-focused), reference (information-oriented, API specs), and explanation (understanding-oriented, conceptual). Each type has different structural requirements. Mixing them produces documentation that serves none well.
+
+**Q: Can it validate non-code documentation like architecture decision records?**
+Yes. For conceptual documents (ADRs, RFCs, design docs), the examplesWorking pivot applies to illustrative diagrams, data flow descriptions, or before/after comparisons instead of code blocks. The tool adapts to the document type — but the other four pivots (audience, structure, ambiguity, completeness) apply to every technical document regardless of type.
+
+
 ## Installation & Usage
 
-To install and use the **Technical Writing Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/technical-writing-prover](https://vinkius.com/mcp/technical-writing-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Technical Writing Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `technical-writing-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Technical Writing Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "technical-writing-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

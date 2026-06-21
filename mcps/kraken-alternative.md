@@ -1,7 +1,6 @@
 # Kraken MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kraken-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kraken-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kraken-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kraken-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Kraken** MCP server us
 > I found one open limit order to sell 0.1 BTC at $70,000. It is currently 'open' and has not been partially filled yet.
 
 
+## ❓ FAQ
+
+**Q: How can I check the current price of Bitcoin against USD?**
+You can use the `spot_get_ticker` tool. Simply provide the asset pair, such as `{"pair": "XXBTZUSD"}`, and the agent will return the latest bid, ask, and last trade prices.
+
+**Q: Is it possible to see my total account balance across all currencies?**
+Yes! The `spot_get_balance` tool retrieves your full account balance. Your AI agent will list each asset you hold and its corresponding amount.
+
+**Q: Can I monitor my active limit orders using this server?**
+Absolutely. Use the `spot_get_open_orders` tool to fetch a list of all currently active orders, including their status, volume, and price details.
+
+
 ## Installation & Usage
 
-To install and use the **Kraken** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/kraken-alternative](https://vinkius.com/mcp/kraken-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Kraken** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `kraken-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Kraken** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "kraken-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

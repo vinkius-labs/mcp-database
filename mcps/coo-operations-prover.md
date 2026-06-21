@@ -1,7 +1,6 @@
 # COO Operations Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coo-operations-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coo-operations-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coo-operations-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coo-operations-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **COO Operations Prover*
 > CAPACITY_BLIND — Four fatal gaps in sequence. (1) 'Auto-scaling on AWS' is not capacity modeling — where is the arrival rate, service rate, and utilization threshold? (2) 'Volume discounts' is cost delusion — show the per-unit cost at 10K, 100K, and 1M with the mechanism. (3) 'Flexibly' handling exceptions is process chaos — quantify the exception rate. (4) 'Investigate and post-mortem' is accountability theater — that is a press release, not an error budget with automated consequences.
 
 
+## ❓ FAQ
+
+**Q: Why does it reject 'we will scale as needed'?**
+'We will scale' is hope, not a capacity model. A wartime COO demands numbers: arrival rate (1,200 req/s), service rate (1,800 req/s across 6 workers), utilization (67%), and queue drain behavior under burst (200ms p99). Without these numbers, you do not know when the system saturates. 'Auto-scale' is not modeling — it is outsourcing the thinking to the cloud provider.
+
+**Q: Why does it demand cost at 3 data points?**
+Because 'economies of scale' is a claim — not proof. Anyone can say costs decrease at scale. Proof means showing per-unit cost at 3 specific volume points: '$0.12/user at 10K, $0.04/user at 100K, $0.008/user at 1M.' And naming the mechanism: shared compute amortization, committed use discounts, CDN cache hit ratio. If the cost per unit stays flat, you have a service agency, not a platform.
+
+**Q: What is 'Accountability Theater'?**
+It is when you write an SLA that says '99.9% uptime' but the consequence for missing it is 'we will investigate.' That is a press release, not accountability. SRE error budgets require automated penalties: if the error budget burns (43.8 minutes/month for 99.9%), feature deploys freeze automatically until reliability recovers. 'Best effort' is the opposite of a mechanism.
+
+
 ## Installation & Usage
 
-To install and use the **COO Operations Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/coo-operations-prover](https://vinkius.com/mcp/coo-operations-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **COO Operations Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `coo-operations-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **COO Operations Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "coo-operations-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

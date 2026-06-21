@@ -1,7 +1,6 @@
 # Einstellung-Challenger Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/einstellung-challenger-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/einstellung-challenger-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/einstellung-challenger-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/einstellung-challenger-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -63,12 +62,52 @@ Here are some examples of how you can interact with the **Einstellung-Challenger
 > Verdict: SOLUTION_PROVEN. (1) Einstellung heuristic detected: standard 'for' loop accumulating sum (O(N) time, O(1) space). (2) Counterexample search executed: searched for mathematical constant-time solutions. (3) Alternative mapped: Gauss summation formula n*(n+1)/2 (O(1) time, O(1) space). (4) Efficiency benchmarked: Loop takes N steps; Gauss formula takes 3 basic operations regardless of N size. (5) Optimal method selected: Gauss formula is selected. Code: `const sum = (n) => (n * (n + 1)) / 2;`.
 
 
+## ❓ FAQ
+
+**Q: What is the Einstellung effect in AI coding?**
+It is the tendency of the AI to reuse a familiar but overly complex solution pattern (like writing nested loops or installing external libraries) instead of discovering a much simpler native method or mathematical shortcut.
+
+**Q: How does Einstellung-Challenger enforce simpler code?**
+By requiring the agent to compare steps, line count, and big-O complexity between the default approach and mapped alternatives. If a simpler path is found but the agent still selects the bloated one, the engine rejects the execution.
+
+**Q: Can this be used for database query design or devops scripts?**
+Yes. It applies to any technical task where default heuristics tend to dominate, such as writing raw SQL joins instead of window functions, writing long bash commands instead of clean flags, or deploying bloated stacks for simple APIs.
+
+
 ## Installation & Usage
 
-To install and use the **Einstellung-Challenger Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/einstellung-challenger-prover](https://vinkius.com/mcp/einstellung-challenger-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Einstellung-Challenger Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `einstellung-challenger-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Einstellung-Challenger Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "einstellung-challenger-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

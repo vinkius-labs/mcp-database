@@ -1,7 +1,6 @@
 # Google Cloud Storage Bucket MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-cloud-storage-bucket)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-cloud-storage-bucket-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-cloud-storage-bucket-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-cloud-storage-bucket)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,12 +57,52 @@ Here are some examples of how you can interact with the **Google Cloud Storage B
 > The file 'processing/job-123.tmp' was successfully deleted from the Google Cloud Storage bucket.
 
 
+## ❓ FAQ
+
+**Q: Why limit the agent to a single GCS Bucket?**
+To enforce zero-trust security. An autonomous AI agent should never have carte blanche to read or delete objects across your entire Google Cloud project.
+
+**Q: How does the Service Account authentication work?**
+The MCP uses the Project ID, Client Email, and Private Key from your GCP Service Account JSON to sign JWT tokens and seamlessly access the GCS REST API.
+
+**Q: Can it read binary files?**
+Currently, the tool returns the raw text content. If you download a binary image, it will be represented as a raw string. It is best used for JSON, Markdown, CSVs, or logs.
+
+
 ## Installation & Usage
 
-To install and use the **Google Cloud Storage Bucket** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-cloud-storage-bucket](https://vinkius.com/mcp/google-cloud-storage-bucket)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Cloud Storage Bucket** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-cloud-storage-bucket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Cloud Storage Bucket** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-cloud-storage-bucket": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

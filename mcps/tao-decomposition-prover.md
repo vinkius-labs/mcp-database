@@ -1,7 +1,6 @@
 # Tao Decomposition Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tao-decomposition-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tao-decomposition-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tao-decomposition-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tao-decomposition-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Tao Decomposition Prov
 > COLLABORATION_MISSING — Decomposition passes: 3 sub-problems identified. But collaboration fails: 'I will handle it myself,' 'no need to involve others,' 'I already know the answer.' Tao has 70+ co-authors. Polymath1 solved a theorem in 6 weeks with DOZENS of contributors. Whose legal expertise do you have? Who validates your compliance strategy? Who tests the field integration? What blind spots do you have that you literally cannot see? Additionally: 'purely an administrative problem, field operations do not matter' — domain boundaries uncrossed. Credentialing migration ALWAYS touches field operations (where verification happens), client communications (how submissions are guided), compliance (what records must be retained), and training (how staff adopt the new process).
 
 
+## ❓ FAQ
+
+**Q: Is this only for complex organizational migrations?**
+No. Tao's method applies to any problem with multiple interacting parts — product development (decompose into research + design + prototype + validation), incident resolution (decompose into reproduce + isolate + fix + verify), strategic decisions (decompose into requirements + capabilities + timeline + risk), even project planning (decompose into milestones with dependencies). The key insight: if the problem takes more than one person-week or touches more than one domain, decompose it.
+
+**Q: What if the problem is too small for decomposition?**
+If the problem can be solved by one person in one domain in under 4 hours, decomposition adds overhead without value. The engine recognizes this: small, single-domain tasks should be solved directly. The engine is designed for problems that resist direct attack — multi-department transitions, cross-team initiatives, complex incident resolution, strategic decisions. If you can hold the entire problem in your head, you do not need decomposition. If you cannot, you need Tao.
+
+**Q: How does it differ from the Archimedes First Principles Prover?**
+Archimedes validates analytical DECOMPOSITION from AXIOMS — recursive reduction to fundamental truths, mathematical proof, leverage identification. It asks 'can you prove this from first principles?' Tao validates collaborative DECOMPOSITION into TRACTABLE PIECES — sub-problems, cross-domain synthesis, collaboration, visible progress, rigor. It asks 'can you break this into solvable pieces and prove each one?' Archimedes decomposes to AXIOMS. Tao decomposes to SOLVABLE SUB-PROBLEMS. Use Archimedes when you need to reach bedrock truth. Use Tao when you need to organize a complex, multi-faceted effort.
+
+
 ## Installation & Usage
 
-To install and use the **Tao Decomposition Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tao-decomposition-prover](https://vinkius.com/mcp/tao-decomposition-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tao Decomposition Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tao-decomposition-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tao Decomposition Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tao-decomposition-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

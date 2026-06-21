@@ -1,7 +1,6 @@
 # Zenloop MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zenloop)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zenloop-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zenloop-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zenloop)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Zenloop** MCP server u
 > Successfully submitted the response to survey 'abc123'. The score of 10 and your comment have been recorded in Zenloop.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Survey Hash ID?**
+Use the `list_surveys` tool to see a comprehensive list of all surveys in your account along with their unique hash IDs.
+
+**Q: Can I filter survey responses by date?**
+Yes, the `list_survey_answers` tool accepts optional `date_from` and `date_to` parameters in YYYY-MM-DD format.
+
+**Q: Is it possible to programmatically submit an NPS score?**
+Absolutely. You can use the specific create tools (e.g., `create_link_answer`) to submit scores and comments for any survey channel.
+
+
 ## Installation & Usage
 
-To install and use the **Zenloop** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zenloop](https://vinkius.com/mcp/zenloop)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zenloop** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zenloop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zenloop** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zenloop": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

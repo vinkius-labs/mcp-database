@@ -1,7 +1,6 @@
 # Livepeer (Decentralized Video) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/livepeer-decentralized-video)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/livepeer-decentralized-video-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/livepeer-decentralized-video-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/livepeer-decentralized-video)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,52 @@ Here are some examples of how you can interact with the **Livepeer (Decentralize
 > Fetching usage data... This month you have transcoded 450 minutes of video and delivered 1.2TB of data via the CDN. Your current storage usage is at 85GB.
 
 
+## ❓ FAQ
+
+**Q: Can I upload videos directly from IPFS or Arweave?**
+Yes! Use the `upload_asset_via_url` tool and provide the decentralized storage URL. Livepeer will ingest the asset and make it available for playback.
+
+**Q: How do I create a highlight clip from a running stream?**
+Use the `create_clip` action by providing the `streamId` and the specific `startTime` and `endTime`. The agent will trigger the clipping process on the Livepeer network.
+
+**Q: Can I monitor how many viewers are currently watching my stream?**
+Absolutely. Use the `get_realtime_viewership` tool with your playback ID to fetch current audience metrics directly from the Livepeer analytics engine.
+
+
 ## Installation & Usage
 
-To install and use the **Livepeer (Decentralized Video)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/livepeer-decentralized-video](https://vinkius.com/mcp/livepeer-decentralized-video)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Livepeer (Decentralized Video)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `livepeer-decentralized-video` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Livepeer (Decentralized Video)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "livepeer-decentralized-video": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

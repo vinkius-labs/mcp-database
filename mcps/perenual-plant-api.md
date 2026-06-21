@@ -1,7 +1,6 @@
 # Perenual Plant API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/perenual-plant-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/perenual-plant-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/perenual-plant-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/perenual-plant-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Perenual Plant API** M
 > I've identified several conditions related to root rot. Notable markers include yellowing leaves and mushy stems. I can provide the recommended treatment and prevention steps for these issues.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Perenual API Key?**
+Register for a free or paid account at [**perenual.com/docs/api**](https://perenual.com/docs/api), and you will find your API Key in your dashboard. Copy and paste it below.
+
+**Q: Does it support disease identification?**
+Yes. The `search_plant_diseases` tool allows your agent to audit common pests and diseases and retrieve recommended solutions.
+
+**Q: Are care guides included for all species?**
+Yes. The `get_plant_care_guide` tool retrieves specific maintenance instructions including watering frequency and sunlight exposure for most species.
+
+
 ## Installation & Usage
 
-To install and use the **Perenual Plant API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/perenual-plant-api](https://vinkius.com/mcp/perenual-plant-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Perenual Plant API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `perenual-plant-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Perenual Plant API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "perenual-plant-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

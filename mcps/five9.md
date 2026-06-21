@@ -1,7 +1,6 @@
 # Five9 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/five9)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/five9-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/five9-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/five9)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Five9** MCP server usi
 > Action successful! Agent 'agent_123' has been remotely transitioned to the 'LOGOUT' state. Their supervisor session has been updated.
 
 
+## ❓ FAQ
+
+**Q: What agent states can I set using this server?**
+You can use the 'update_agent_state' tool to force an agent into common operational states such as 'READY' (available for calls), 'NOT_READY' (unavailable), or 'LOGOUT' (ends the agent session).
+
+**Q: Is the statistics tool real-time?**
+Yes! The 'get_statistics' tool fetches the current high-level metrics from your Five9 organization, providing an up-to-the-minute view of contact center performance and volumes.
+
+**Q: Can I see who is currently on a call?**
+Absolutely. Use the 'list_active_interactions' tool to see all ongoing calls and digital interactions, including details about the participating agents and interaction durations.
+
+
 ## Installation & Usage
 
-To install and use the **Five9** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/five9](https://vinkius.com/mcp/five9)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Five9** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `five9` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Five9** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "five9": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

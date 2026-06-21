@@ -1,7 +1,6 @@
 # crowd.dev (LFX CDP) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crowddev-lfx-cdp)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/crowddev-lfx-cdp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/crowddev-lfx-cdp-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crowddev-lfx-cdp)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **crowd.dev (LFX CDP)** 
 > I've found 15 organizations associated with your members, including 'Google', 'Red Hat', and 'Vinkius'. 'Red Hat' has the highest number of active contributors. Would you like a detailed report?
 
 
+## ❓ FAQ
+
+**Q: How do I get a crowd.dev API Key?**
+Log in to your crowd.dev (or LFX CDP) dashboard, navigate to **Settings > API Keys**, and generate a new key. Copy and paste it below.
+
+**Q: Which platforms are supported for activity tracking?**
+crowd.dev supports integration with major platforms including GitHub, Discord, Slack, LinkedIn, Twitter, and more to provide a unified view of your community.
+
+**Q: Can I update member profiles via chat?**
+Currently, the integration focuses on listing and retrieving member data. For bulk updates or complex profile management, please use the crowd.dev dashboard.
+
+
 ## Installation & Usage
 
-To install and use the **crowd.dev (LFX CDP)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/crowddev-lfx-cdp](https://vinkius.com/mcp/crowddev-lfx-cdp)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **crowd.dev (LFX CDP)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `crowddev-lfx-cdp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **crowd.dev (LFX CDP)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "crowddev-lfx-cdp": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

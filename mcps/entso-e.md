@@ -1,7 +1,6 @@
 # ENTSO-E MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/entso-e)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/entso-e-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/entso-e-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/entso-e)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -108,12 +107,52 @@ Here are some examples of how you can interact with the **ENTSO-E** MCP server u
 > Checking generation outages for Germany... Found 3 active outages: 1) Nuclear plant Biblis B — 1,300 MW unavailable (planned maintenance, expected return: Friday). 2) Coal plant Neurath — 850 MW unavailable (unplanned outage, return TBD). 3) Gas plant Irsching — 400 MW unavailable (planned maintenance, expected return: Thursday). Total unavailable capacity: 2,550 MW. This represents approximately 3% of Germany's total installed capacity. Would you like impact analysis on expected prices?
 
 
+## ❓ FAQ
+
+**Q: Can my AI get day-ahead electricity prices for Germany?**
+Yes! Use the `get_day_ahead_prices` tool with area code "10YDE-RWENET---I" (Germany) and your desired date range in YYYYMMDDHHmm format. Returns day-ahead market clearing prices in EUR/MWh for each trading period. For other countries, use their respective ENTSO-E bidding zone codes.
+
+**Q: How do I check renewable energy generation forecasts for France?**
+Use the `get_wind_solar_forecast` tool with France area code "10YFR-RTE------C". This returns day-ahead wind and solar generation forecasts in MW. You can also use `get_day_ahead_generation` to see the full generation mix including nuclear, fossil, hydro, and renewables broken down by source.
+
+**Q: Can I track cross-border electricity flows between countries?**
+Yes! Use the `get_crossborder_flows` tool with the bidding zone area code to get scheduled imports and exports. This shows the planned electricity flows across interconnectors, essential for understanding cross-border trading and grid utilization.
+
+
 ## Installation & Usage
 
-To install and use the **ENTSO-E** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/entso-e](https://vinkius.com/mcp/entso-e)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ENTSO-E** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `entso-e` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ENTSO-E** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "entso-e": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

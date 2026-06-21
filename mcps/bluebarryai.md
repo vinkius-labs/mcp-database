@@ -1,7 +1,6 @@
 # bluebarry.ai MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bluebarryai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bluebarryai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bluebarryai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bluebarryai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **bluebarry.ai** MCP ser
 > Message dispatched! I've successfully sent the welcome update to +123456789 via bluebarry.ai. The status is currently 'Sent'. Need help monitoring the delivery metadata?
 
 
+## ❓ FAQ
+
+**Q: How do I find my bluebarry.ai API Key?**
+Log in to your account, navigate to **Account Settings** > **API**, and copy your Bearer Token.
+
+**Q: Can I summarize any YouTube video via AI?**
+Yes! The `analyze_youtube` tool uses high-fidelity AI to process video URLs and return structured summaries directly to your agent.
+
+**Q: Is the WhatsApp integration official?**
+Absolutely. bluebarry.ai uses the official WhatsApp Business API for all automated messaging to ensure high-fidelity delivery.
+
+
 ## Installation & Usage
 
-To install and use the **bluebarry.ai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/bluebarryai](https://vinkius.com/mcp/bluebarryai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **bluebarry.ai** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `bluebarryai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **bluebarry.ai** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "bluebarryai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

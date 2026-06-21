@@ -1,7 +1,6 @@
 # GamerPower MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gamerpower)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gamerpower-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gamerpower-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gamerpower)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,55 @@ Here are some examples of how you can interact with the **GamerPower** MCP serve
 > Calculating value... There are currently 85 active giveaways with a total estimated USD worth of $1,245.50. You can save over a thousand dollars by claiming them all!
 
 
+## ❓ FAQ
+
+**Q: Is authentication required for GamerPower?**
+No, this MCP server uses the public GamerPower API which does not require an API key or account registration.
+
+**Q: What types of giveaways are tracked?**
+GamerPower tracks free full games, in-game loot (skins, currency), and beta test keys across all major platforms.
+
+**Q: How do I filter for a specific platform?**
+You can use specific tools like 'list_steam_giveaways' or use the general 'search_giveaways' tool and provide a platform name (e.g., 'ps5', 'pc').
+
+**Q: Can I see the instructions to claim a giveaway?**
+Yes! The 'get_giveaway_details' tool provides step-by-step metadata on how to claim each free item or game.
+
+
 ## Installation & Usage
 
-To install and use the **GamerPower** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gamerpower](https://vinkius.com/mcp/gamerpower)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **GamerPower** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gamerpower` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **GamerPower** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gamerpower": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

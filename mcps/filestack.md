@@ -1,7 +1,6 @@
 # FileStack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/filestack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/filestack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/filestack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/filestack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **FileStack** MCP server
 > I've started the transcoding job for handle ABC123XYZ using the 'mp4' preset. The job UUID is `job-550e8400`. You can check the status later using `get_video_status`.
 
 
+## ❓ FAQ
+
+**Q: How can I extract text from a scanned document or image?**
+Use the `get_ocr` tool with the file handle. The AI will perform Optical Character Recognition and return the extracted text along with its coordinates.
+
+**Q: Is there a way to check if an uploaded image contains adult or unsafe content?**
+Yes, the `get_sfw_status` tool uses Filestack Intelligence to analyze the image and return a safety score, helping you moderate content automatically.
+
+**Q: Can I resize an image without actually downloading and re-uploading it?**
+Absolutely. Use `generate_transform_url` to create a specific CDN URL with tasks like `resize=width:400`. This allows the Filestack CDN to handle the transformation on the fly.
+
+
 ## Installation & Usage
 
-To install and use the **FileStack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/filestack](https://vinkius.com/mcp/filestack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FileStack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `filestack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FileStack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "filestack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

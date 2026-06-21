@@ -1,7 +1,6 @@
 # Scispot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scispot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scispot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scispot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scispot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -110,12 +109,52 @@ Here are some examples of how you can interact with the **Scispot** MCP server u
 > Querying Scispot integration health dashboard... All external platform connections are operational and compliant. Metrc seed-to-sale synchronization: last successful transmission 2025-04-09 15:47 UTC (189 CoAs published automatically, 0 submission failures, 3 pending retries for network timeouts). State regulatory API compliance: all mandatory test result submissions current through Q1 2025 reporting period. Automated CoA consumer portal (WeedMaps integration): 17 new certificates pushed in last 24 hours, all QR verification codes confirmed active and scannable. GLUE instrument data ingestion: 5 HPLC systems and 3 GC-MS instruments transmitting raw chromatograms successfully. No integration errors or data sync failures detected in past 14 days. Would you like me to generate a comprehensive integration performance summary for your records?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically verify if a cannabis sample has passed all required tests and is ready for Certificate of Analysis issuance?**
+Yes! Use the `list_results` tool to fetch all completed analytical findings for a specific sample. Your AI agent will respond with comprehensive pass/fail determinations across potency, terpenes, pesticides, heavy metals, mycotoxins, and microbial panels. Once all state-mandated tests show passing results, use `list_certificates` to verify CoA generation status and confirm automatic Metrc submission. Always verify regulatory limit compliance before releasing products to distribution or retail channels.
+
+**Q: How do I quickly identify which laboratory instruments are approaching calibration expiry or require preventive maintenance?**
+Simply ask the agent to run the `list_instruments` action. It will compile all analytical equipment tracked via Scispot GLUE integration with calibration status, last service date, next scheduled maintenance, IQ/OQ/PQ qualification records, and current operational state. The AI will proactively highlight any HPLC, GC-MS, ICP-MS, or other systems approaching calibration expiry or overdue for preventive maintenance. This ensures your laboratory maintains ISO/IEC 17025 compliance, analytical data integrity, and inspection readiness at all times.
+
+**Q: Does the Scispot integration allow modifying test results, deleting samples, or revoking issued Certificates of Analysis?**
+No. The current toolset focuses strictly on read-only querying and analytical operations — listing samples, reviewing results, checking certificates, monitoring workflows, and tracking instrument health. State alteration operations (modifying test data, deleting samples, revoking certificates, or changing approvals) are not currently exposed. This design assures your laboratory records remain secure against destructive queries, maintains complete audit trail integrity for regulatory inspections, and preserves data immutability required by FDA 21 CFR Part 11 and ISO/IEC 17025 standards.
+
+
 ## Installation & Usage
 
-To install and use the **Scispot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/scispot](https://vinkius.com/mcp/scispot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Scispot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `scispot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Scispot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "scispot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

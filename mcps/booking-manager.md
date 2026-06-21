@@ -1,7 +1,6 @@
 # Booking Manager MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/booking-manager)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/booking-manager-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/booking-manager-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/booking-manager)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Booking Manager** MCP 
 > Retrieving prices... The total quote for those dates is €3,450.00. This includes a 10% Early Booking discount and mandatory transit log fee of €150.00.
 
 
+## ❓ FAQ
+
+**Q: Can I check if a specific yacht is available for next week?**
+Yes! Use the `check_availability` tool with the start and end dates. Your agent will fetch the real-time availability status from the Booking Manager database.
+
+**Q: How do I calculate a full price quote for a charter?**
+Simply ask the agent to `get_prices` and provide the Yacht ID and the charter dates. It will return a breakdown including the base price, discounts, and any mandatory fees.
+
+**Q: Can I see photos and equipment lists for the yachts?**
+Yes. Use the `get_yacht` tool with the specific Yacht ID to retrieve its full technical specifications, equipment details, and image links.
+
+
 ## Installation & Usage
 
-To install and use the **Booking Manager** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/booking-manager](https://vinkius.com/mcp/booking-manager)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Booking Manager** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `booking-manager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Booking Manager** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "booking-manager": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

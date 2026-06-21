@@ -1,7 +1,6 @@
 # Dogechain Explorer (Dogechain Block Explorer API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dogechain-explorer-dogechain-block-explorer-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dogechain-explorer-dogechain-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dogechain-explorer-dogechain-block-explorer-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dogechain-explorer-dogechain-block-explorer-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Dogechain Explorer (Do
 > I found 3 unspent outputs for address D6r... Totaling 450 DOGE. The largest UTXO is 300 DOGE from transaction hash b2f1...
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance of a specific Dogecoin address?**
+Yes! Use the `get_address_balance` tool with the target address. The agent will return the confirmed and unconfirmed balance immediately.
+
+**Q: How do I find the latest block hash on the network?**
+Simply ask the agent to run the `get_best_block_hash` action. It will retrieve the hash of the most recently mined block on the Dogecoin blockchain.
+
+**Q: Is it possible to verify if a Dogecoin address is valid?**
+Yes. Use the `q_check_address` tool. It provides a quick validation check to confirm if the provided string is a valid Dogecoin address format.
+
+
 ## Installation & Usage
 
-To install and use the **Dogechain Explorer (Dogechain Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dogechain-explorer-dogechain-block-explorer-api](https://vinkius.com/mcp/dogechain-explorer-dogechain-block-explorer-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dogechain Explorer (Dogechain Block Explorer API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dogechain-explorer-dogechain-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dogechain Explorer (Dogechain Block Explorer API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dogechain-explorer-dogechain-block-explorer-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

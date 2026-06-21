@@ -1,7 +1,6 @@
 # Starburst MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/starburst)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/starburst-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/starburst-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/starburst)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,12 +90,52 @@ The top 10 rows from `production_hive.customer_analytics` have been successfully
 Verified active assignments for `analyst_tier_1` and `data_governance_admin`. Access privileges align securely with enterprise standards.
 
 
+## ❓ FAQ
+
+**Q: Can the AI run write or drop queries?**
+That depends on your token's permissions. The `execute_query` tool passes any SQL to Starburst. To prevent mutations, provision a read-only token via your Starburst security settings.
+
+**Q: How do I handle queries that return thousands of rows?**
+Always add a `LIMIT` clause in your SQL. Large result sets can exceed the AI's context window. Instruct the agent to use `LIMIT 10` or `LIMIT 50` to keep responses manageable.
+
+**Q: What credentials do I need?**
+Two values: `STARBURST_HOST` (your cluster URL, e.g., `https://mycluster.trino.galaxy.starburst.io`) and `STARBURST_TOKEN` (a service account token from your Starburst admin settings).
+
+
 ## Installation & Usage
 
-To install and use the **Starburst** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/starburst](https://vinkius.com/mcp/starburst)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Starburst** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `starburst` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Starburst** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "starburst": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

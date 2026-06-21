@@ -1,7 +1,6 @@
 # Dola Checkout MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dola-checkout)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dola-checkout-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dola-checkout-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dola-checkout)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Dola Checkout** MCP se
 > Fetching history... Shopper cust_789 has made 3 past purchases totaling $2,450. Notable orders include a 'Workstation' and 'Monitor Stand'. Shall I check the fulfillment status for their latest order?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Dola Secret API Key?**
+Log in to your Dola dashboard, navigate to **Settings** > **API**, and copy your Secret API Key displayed there.
+
+**Q: Can I generate a checkout URL for a specific cart?**
+Yes! Use the `create_checkout` tool and provide a JSON string containing the cart items to generate a 1-click payment session.
+
+**Q: How do I check a customer's purchase history?**
+Use the `get_customer` tool with a customer ID to retrieve their profile and a detailed log of all their past Dola transactions.
+
+
 ## Installation & Usage
 
-To install and use the **Dola Checkout** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dola-checkout](https://vinkius.com/mcp/dola-checkout)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dola Checkout** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dola-checkout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dola Checkout** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dola-checkout": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

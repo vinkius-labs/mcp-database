@@ -1,7 +1,6 @@
 # PBGC Pension Data MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pbgc-pension-data)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pbgc-pension-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pbgc-pension-data-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pbgc-pension-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **PBGC Pension Data** MC
 > I've fetched the list of active multiemployer plans insured by PBGC. I found [Number] plans. Notable entries include [Plan A] and [Plan B]. Do you need details on a specific plan?
 
 
+## ❓ FAQ
+
+**Q: How can I filter single-employer pension plans for a specific state?**
+You can use the `list_single_employer_plans` tool and provide the two-letter state code (e.g., 'NY' or 'CA') in the `state` parameter to get localized results.
+
+**Q: Can I retrieve ERISA 4044 interest rates for a specific year and quarter?**
+Yes! The `list_erisa_4044_rates` tool accepts optional `year` and `quarter` parameters to fetch the exact interest assumptions you need for valuation.
+
+**Q: Is it possible to see financial assistance payments by fiscal year?**
+Absolutely. Use the `list_financial_assistance` tool and specify the `fiscal_year` (e.g., 2023) to see all payments made to multiemployer plans during that period.
+
+
 ## Installation & Usage
 
-To install and use the **PBGC Pension Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pbgc-pension-data](https://vinkius.com/mcp/pbgc-pension-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PBGC Pension Data** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pbgc-pension-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PBGC Pension Data** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pbgc-pension-data": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

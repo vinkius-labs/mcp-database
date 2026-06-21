@@ -1,7 +1,6 @@
 # iQiyi Open Platform / 爱奇艺开放平台 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iqiyi-open-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/iqiyi-open-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/iqiyi-open-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iqiyi-open-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **iQiyi Open Platform / 
 > I've retrieved the membership package list. You have several options including 'Standard Monthly VIP' (25 CNY), 'Quarterly Gold' (68 CNY), and 'Annual Diamond' (248 CNY). Would you like to see the specific benefits for each level?
 
 
+## ❓ FAQ
+
+**Q: How do I find my iQiyi AppKey and MD5 Key?**
+Log in to the [iQiyi Open Platform](https://open.iqiyi.com/), register your application, and you will find your AppKey and MD5 Key in the application details or basic info section.
+
+**Q: What is an 'authToken'?**
+The `authToken` is a unique string representing a logged-in user's session. It is obtained after a user successfully authorizes through iQiyi's OAuth flow and is required for user-specific data like VIP status.
+
+**Q: Does this server handle MD5 signature calculation?**
+Yes! The server automatically sorts your parameters and calculates the required MD5 signature using your provided MD5 Key for every request, ensuring secure authorized communication.
+
+
 ## Installation & Usage
 
-To install and use the **iQiyi Open Platform / 爱奇艺开放平台** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/iqiyi-open-platform](https://vinkius.com/mcp/iqiyi-open-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **iQiyi Open Platform / 爱奇艺开放平台** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `iqiyi-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **iQiyi Open Platform / 爱奇艺开放平台** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "iqiyi-open-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

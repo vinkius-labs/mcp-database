@@ -1,7 +1,6 @@
 # Alchemer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alchemer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/alchemer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/alchemer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alchemer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Alchemer** MCP server 
 > I've retrieved the question list for your Customer Satisfaction survey. It contains 15 questions, including 'Net Promoter Score (NPS)', 'Feature Rating', and 'Open Feedback'. Would you like to see the technical settings for the NPS question?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Alchemer API Token and Secret?**
+Log in to Alchemer as an admin, navigate to **Account** > **Integrations** > **API Access**. You can generate and copy your `api_token` and `api_token_secret` there.
+
+**Q: Which region should I choose?**
+Choose the region based on your account's data center: **US** (api.alchemer.com), **EU** (api.alchemer.eu), or **CA** (api.alchemer.ca).
+
+**Q: Can I retrieve responses for a specific survey?**
+Yes! Use the `list_survey_responses` tool and provide the Survey ID. Your agent will retrieve the latest submissions, including timestamps and completion status.
+
+
 ## Installation & Usage
 
-To install and use the **Alchemer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/alchemer](https://vinkius.com/mcp/alchemer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Alchemer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `alchemer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Alchemer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "alchemer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

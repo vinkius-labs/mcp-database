@@ -1,7 +1,6 @@
 # LawPay MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lawpay)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lawpay-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lawpay-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lawpay)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **LawPay** MCP server us
 > Matter #1045 — Smith v. Jones. Trust balance: $45,000. Transactions (30 days): 3. Deposit: $20,000 (retainer, Apr 5). Disbursement: -$5,000 (filing fees, Apr 12). Disbursement: -$2,500 (expert witness, Apr 20). Charge created! $3,500 — 'Legal services, April billing'. Method: Credit card. Status: Approved ✅.
 
 
+## ❓ FAQ
+
+**Q: Can I manage trust account balances?**
+Yes. Monitor IOLTA trust account balances, view transactions per client matter, and track deposits and disbursements.
+
+**Q: Does LawPay use Basic Auth?**
+Yes. LawPay uses **HTTP Basic Auth** with the Secret Key against `api.affinipay.com/v1`. The Merchant ID is required for identifying the account.
+
+**Q: Can I track invoices and outstanding balances?**
+Yes. List all invoices with amounts, due dates, payment status, and client details. Monitor aging reports and outstanding balances.
+
+
 ## Installation & Usage
 
-To install and use the **LawPay** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lawpay](https://vinkius.com/mcp/lawpay)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LawPay** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lawpay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LawPay** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lawpay": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

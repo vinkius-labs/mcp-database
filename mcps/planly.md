@@ -1,7 +1,6 @@
 # Planly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/planly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/planly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/planly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/planly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Planly** MCP server us
 > Carousel post scheduled for Thursday, May 22nd at 10:00 AM on Instagram (@yourbrand). 4 images uploaded and ordered. AI-generated caption: "Transform your workspace into a productivity powerhouse. Swipe to discover 4 essential design principles that top performers swear by." Hashtags auto-suggested: #WorkspaceDesign #Productivity #OfficeGoals #RemoteWork (reach estimate: 12K). First comment scheduled with additional hashtags.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the scheduled posts for the next 7 days?**
+Yes! Use the `list_schedules` tool. Your agent will respond with complete metadata for all upcoming posts, including channel names, scheduled times, and content previews in seconds.
+
+**Q: How do I find my Planly API Key?**
+Log in to your Planly account, navigate to **Settings** > **Security**, and you will find your unique secret API key (Bearer Token) there.
+
+**Q: Can I use the AI to generate captions?**
+Absolutely. Use the `ai_complete` tool. Provide your prompt or post idea, and the agent will utilize Planly's integrated AI to return professional copy options.
+
+
 ## Installation & Usage
 
-To install and use the **Planly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/planly](https://vinkius.com/mcp/planly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Planly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `planly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Planly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "planly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

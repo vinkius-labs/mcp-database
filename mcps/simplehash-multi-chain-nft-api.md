@@ -1,7 +1,6 @@
 # SimpleHash (Multi-chain NFT API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simplehash-multi-chain-nft-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/simplehash-multi-chain-nft-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/simplehash-multi-chain-nft-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simplehash-multi-chain-nft-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **SimpleHash (Multi-chai
 > I've retrieved the last 10 transfers for this wallet. There were 3 sales on OpenSea and 2 direct transfers in the past 48 hours. Should I break down the prices and timestamps for these events?
 
 
+## ❓ FAQ
+
+**Q: How do I check all NFTs owned by a specific wallet address?**
+Use the `get_nfts_by_wallet` tool. You'll need to provide the wallet address and the chains you want to search (e.g., 'ethereum,polygon').
+
+**Q: Can I get the floor price of a specific NFT collection?**
+Yes! The `get_collection_details` tool returns comprehensive metadata for a collection, including its current floor price on various marketplaces.
+
+**Q: Is it possible to see the history of an NFT's movement?**
+Absolutely. You can use `get_nft_transfers_by_wallet` to see transfers involving a specific user, or `get_nft_transfers_by_contract` to see all transfers within a specific collection or contract.
+
+
 ## Installation & Usage
 
-To install and use the **SimpleHash (Multi-chain NFT API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/simplehash-multi-chain-nft-api](https://vinkius.com/mcp/simplehash-multi-chain-nft-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SimpleHash (Multi-chain NFT API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `simplehash-multi-chain-nft-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SimpleHash (Multi-chain NFT API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "simplehash-multi-chain-nft-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

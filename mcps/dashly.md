@@ -1,7 +1,6 @@
 # Dashly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dashly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dashly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dashly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dashly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Dashly** MCP server us
 > User profile orchestrated! I've retrieved the metadata for user 789. They are currently tagged as a 'VIP' and have 10 custom properties set. Shall I list the detailed high-fidelity history for this lead?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Dashly Auth Token?**
+Log in to your account, navigate to **Settings** > **Integrations** > **API Keys**, and copy your unique Auth Token.
+
+**Q: Can I record custom user events via AI?**
+Yes! The `track_event` tool allows your agent to log specific user actions programmatically by providing the user ID and event name.
+
+**Q: How do I check active chat sessions?**
+Use the `list_conversations` tool to retrieve a comprehensive directory of all current chat interactions and their high-fidelity metadata.
+
+
 ## Installation & Usage
 
-To install and use the **Dashly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dashly](https://vinkius.com/mcp/dashly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dashly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dashly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dashly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dashly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

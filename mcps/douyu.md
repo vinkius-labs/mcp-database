@@ -1,7 +1,6 @@
 # Douyu MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/douyu)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/douyu-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/douyu-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/douyu)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Douyu** MCP server usi
 > Sniffing stream ID 491... Caught the first 20 bullet-chats smoothly cleanly formatted! Half comprise of '666' spam, while 4 explicitly mention gameplay praise. Here is the array in JSON... shall I filter spam strings fully going forward internally?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically aggregate bullet-chat density from a major active esports broadcast directly?**
+Yes! Utilize the `get_room_danmu` integration command. Your agent will dynamically hook to the channel pinging the rapid incoming stream mapping it natively to your terminal workspace seamlessly bypassing clunky UI obstacles totally and continuously.
+
+**Q: How do I easily discover what tier of streamer category dominates the current local timezone traffic?**
+Direct your agent to use the `search_category_metrics` tool checking the highest weighted nodes inside the response hierarchy sorting viewership metrics heavily bypassing raw unstructured noise dynamically avoiding manual page scrolling routines completely.
+
+**Q: Are there any destructive capabilities regarding overarching account deletions or unapproved streaming executions?**
+No. The core structure isolates tasks strictly on retrieving passive data arrays without injecting changes downstream blocking inherently all write pathways firmly bypassing structural mutations altogether in the process loop constantly running below.
+
+
 ## Installation & Usage
 
-To install and use the **Douyu** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/douyu](https://vinkius.com/mcp/douyu)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Douyu** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `douyu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Douyu** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "douyu": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

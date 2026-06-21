@@ -1,7 +1,6 @@
 # Runway ML MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/runway-ml)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/runway-ml-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/runway-ml-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/runway-ml)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Runway ML** MCP server
 > I've scanned your recent 10 tasks. I see that task 'rw_task_1234' just SUCCEEDED! Here is the MP4 link to your generated video.
 
 
+## ❓ FAQ
+
+**Q: How can I preview the output without fully committing my prompt?**
+Video generation actions using the Runway engines are directly invoked through asynchronous background tasks. Instead of an exact real-time preview, you can start small 5-second generations or iterate closely on your prompt texts until they produce the final aesthetic you want.
+
+**Q: Does this integration process video rendering in real-time?**
+No. Video rendering is asynchronous. When you submit a prompt or an image, the AI will dispatch a background task to Runway's servers and receive a 'task_id'. You will need to ask the AI to verify the status of this task later, usually after a few minutes, to fetch the final video URL.
+
+**Q: Can I use Gen-4 models for free?**
+No. Runway requires credits for all generations, and Gen-4 Turbo consumes significantly more credits than earlier models or standard actions. You must maintain sufficient active credits or a paid subscription on your Runway account for the AI to successfully execute the rendering jobs.
+
+
 ## Installation & Usage
 
-To install and use the **Runway ML** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/runway-ml](https://vinkius.com/mcp/runway-ml)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Runway ML** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `runway-ml` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Runway ML** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "runway-ml": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

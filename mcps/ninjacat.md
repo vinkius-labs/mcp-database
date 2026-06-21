@@ -1,7 +1,6 @@
 # NinjaCat MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ninjacat)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ninjacat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ninjacat-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ninjacat)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **NinjaCat** MCP server 
 > Retrieving data sources... Your account is currently connected to 5 platforms: Google Ads, Meta Ads, LinkedIn Ads, GA4, and TikTok Ads. You have a total of 24 data accounts active across these sources. Would you like a list of the specific Google Ads accounts?
 
 
+## ❓ FAQ
+
+**Q: Where do I find my NinjaCat API credentials?**
+Log in to your NinjaCat agency settings and navigate to the 'Apps' tab. There you will find your Agency Identifier Key, Client ID, and Client Secret.
+
+**Q: Can I download a report directly through the agent?**
+Yes! The `get_report_download_url` tool provides the direct link to the latest generated file for a specific report, allowing you to access it without opening the portal.
+
+**Q: How do I see which data sources are connected?**
+Use the `list_data_sources` tool to see all platforms (e.g., Google Ads, Facebook) integrated with your account, and `list_data_accounts` for specific account connections.
+
+
 ## Installation & Usage
 
-To install and use the **NinjaCat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ninjacat](https://vinkius.com/mcp/ninjacat)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NinjaCat** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ninjacat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NinjaCat** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ninjacat": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

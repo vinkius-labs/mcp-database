@@ -1,7 +1,6 @@
 # LicenseCheck API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/licensecheck-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/licensecheck-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/licensecheck-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/licensecheck-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **LicenseCheck API** MCP
 > I've scanned the license catalog from LicenseCheck! There are hundreds of licenses listed, from common open-source ones to specialized proprietary models. I can assist you with a keyword search to identify the exact markers for your audit.
 
 
+## ❓ FAQ
+
+**Q: How do I find my LicenseCheck API Key?**
+Log in to your [**LicenseCheck account**](https://licenseapi.dev/), and you will find your API Key in your dashboard or profile settings. Copy and paste it below.
+
+**Q: What types of licenses are covered?**
+The API covers thousands of common open-source licenses (like MIT, Apache, GPL) as well as various proprietary and commercial licensing models.
+
+**Q: Can the agent check for specific permissions?**
+Yes. Every license record retrieved by your agent includes metadata on permitted actions, such as commercial use, distribution, and modification.
+
+
 ## Installation & Usage
 
-To install and use the **LicenseCheck API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/licensecheck-api](https://vinkius.com/mcp/licensecheck-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LicenseCheck API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `licensecheck-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LicenseCheck API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "licensecheck-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

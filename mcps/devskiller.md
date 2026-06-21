@@ -1,7 +1,6 @@
 # DevSkiller MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/devskiller)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/devskiller-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/devskiller-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/devskiller)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **DevSkiller** MCP serve
 > I've successfully sent an invitation to Sarah Smith for the 'Frontend React' test (ID: FR-101). She will receive an email with instructions shortly. Would you like me to track her progress?
 
 
+## ❓ FAQ
+
+**Q: How do I get a DevSkiller API Key?**
+Log in to your DevSkiller account, navigate to **Settings > API**, and you can generate or retrieve your unique API Key from that section.
+
+**Q: Can the agent show the candidate's code?**
+This integration currently focuses on retrieving scores, statuses, and technical reports. Full source code review should be performed within the DevSkiller platform.
+
+**Q: How do I invite a candidate via chat?**
+You can use the invite_candidate_to_test tool. You will need to provide the candidate's email address and the specific Test ID from your catalog.
+
+
 ## Installation & Usage
 
-To install and use the **DevSkiller** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/devskiller](https://vinkius.com/mcp/devskiller)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DevSkiller** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `devskiller` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DevSkiller** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "devskiller": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

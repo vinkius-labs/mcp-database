@@ -1,7 +1,6 @@
 # Etsy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/etsy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/etsy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/etsy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/etsy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Etsy** MCP server usin
 > I've found several matching listings for 'linen dress'. Top results include 'Handmade Linen Summer Dress' and 'Boho Linen Tunic'. Would you like the direct links to view them?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Etsy API Key and Access Token?**
+Register an App in the [**Etsy Developer Console**](https://www.etsy.com/developers/register) to get your Keystring, then perform the OAuth flow to generate an Access Token. Copy and paste them below.
+
+**Q: Can the agent list my recent sales receipts?**
+Yes. Use the `list_shop_receipts` tool providing your Shop ID. Your agent will retrieve the most recent transactions, including payment and shipping statuses.
+
+**Q: Is it possible to update an Etsy listing via the agent?**
+Yes. The `update_listing` tool allows your agent to modify existing listing titles and descriptions instantly by providing the specific Listing ID.
+
+
 ## Installation & Usage
 
-To install and use the **Etsy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/etsy](https://vinkius.com/mcp/etsy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Etsy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `etsy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Etsy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "etsy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

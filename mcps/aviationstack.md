@@ -1,7 +1,6 @@
 # Aviationstack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aviationstack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aviationstack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aviationstack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aviationstack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Aviationstack** MCP se
 > Fetching technical specifications for the Boeing 747 series... I've found detailed data including its aircraft code, production line history, and typical configuration. Shall I list the specific model variants for you?
 
 
+## ❓ FAQ
+
+**Q: Can I track a specific flight by its number?**
+Yes! Use the `list_flights` tool and provide the flight number in the `flight_number` parameter. Your agent will retrieve the real-time status and details for that specific flight.
+
+**Q: How do I find the IATA code for a specific airport?**
+Use the `list_airports` tool and provide the airport name or city in the `search` parameter. The response will include the corresponding IATA and ICAO codes for all matching airports.
+
+**Q: Does the integration provide technical aircraft specifications?**
+Absolutely. You can use the `list_aircraft_types` tool to retrieve a comprehensive list of specifications for various aircraft models used in the global fleet.
+
+
 ## Installation & Usage
 
-To install and use the **Aviationstack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aviationstack](https://vinkius.com/mcp/aviationstack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Aviationstack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aviationstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Aviationstack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aviationstack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

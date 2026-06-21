@@ -1,7 +1,6 @@
 # Correios (Brazil) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/correios-brazil)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/correios-brazil-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/correios-brazil-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/correios-brazil)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Correios (Brazil)** MC
 > Searching Brazilian zip codes... CEP 01310-914 corresponds to: Avenida Paulista, 1159, Bela Vista, São Paulo - SP. This is a business district zone.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically track a package just by providing the tracking code?**
+Yes! Use the `track_object` tool with the tracking code (e.g., 'QI123456789BR'). Your agent will retrieve the current status, location, and the full history of logistics events.
+
+**Q: How do I calculate shipping prices for PAC or SEDEX?**
+Use the `calculate_shipping` tool with the origin and destination CEPs, along with the weight and dimensions of the package. The agent will return the estimated price and delivery deadline.
+
+**Q: Can I retrieve the full address details from a zip code (CEP)?**
+Yes! The `search_cep` tool allows your agent to fetch the street name, neighborhood, city, and state associated with any valid Brazilian zip code.
+
+
 ## Installation & Usage
 
-To install and use the **Correios (Brazil)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/correios-brazil](https://vinkius.com/mcp/correios-brazil)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Correios (Brazil)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `correios-brazil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Correios (Brazil)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "correios-brazil": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

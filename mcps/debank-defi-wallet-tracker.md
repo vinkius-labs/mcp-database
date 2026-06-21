@@ -1,7 +1,6 @@
 # DeBank (DeFi Wallet Tracker) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/debank-defi-wallet-tracker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/debank-defi-wallet-tracker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/debank-defi-wallet-tracker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/debank-defi-wallet-tracker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **DeBank (DeFi Wallet Tr
 > I've retrieved the list for Polygon. There are over 50 supported protocols, including Aave V3, QuickSwap, and Curve. Are you looking for a specific type of protocol, like DEXs or Lending platforms?
 
 
+## ❓ FAQ
+
+**Q: Can I check the total balance of a specific wallet address across all chains?**
+Yes! Use the `get_user_total_balance` tool with the wallet address. The agent will return the total USD value aggregated across all supported blockchain networks.
+
+**Q: How do I see which DeFi protocols a user has active positions in?**
+You can use `get_user_protocol_positions` to see detailed positions for a specific protocol, or `get_user_all_complex_protocol_list` to get a comprehensive view of all DeFi interactions for that wallet.
+
+**Q: Is it possible to monitor current gas prices on different networks?**
+Absolutely. Use the `get_gas_market` tool to retrieve real-time gas price data for various chains, helping you optimize your transaction timing.
+
+
 ## Installation & Usage
 
-To install and use the **DeBank (DeFi Wallet Tracker)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/debank-defi-wallet-tracker](https://vinkius.com/mcp/debank-defi-wallet-tracker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DeBank (DeFi Wallet Tracker)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `debank-defi-wallet-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DeBank (DeFi Wallet Tracker)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "debank-defi-wallet-tracker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

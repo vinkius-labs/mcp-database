@@ -1,7 +1,6 @@
 # Mailshake MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailshake)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailshake-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailshake-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailshake)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Mailshake** MCP server
 > Successfully paused campaign 12345. No more messages will be sent until you unpause the campaign.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Mailshake API Key?**
+Log in to Mailshake, navigate to 'Extensions' in the main menu, and select 'API' to generate or copy your personal API key.
+
+**Q: What is the difference between a Lead and a Recipient?**
+A Recipient is anyone added to a campaign. A Lead is a recipient who has met specific engagement criteria (like replying) and is tracked in the 'Lead Catcher'.
+
+**Q: Can I add multiple prospects at once?**
+Yes, the `add_prospects_to_campaign` tool accepts a JSON body where you can provide a list of multiple recipients to be added in a single request.
+
+
 ## Installation & Usage
 
-To install and use the **Mailshake** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mailshake](https://vinkius.com/mcp/mailshake)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mailshake** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mailshake` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mailshake** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mailshake": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

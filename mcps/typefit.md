@@ -1,7 +1,6 @@
 # Type.fit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typefit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/typefit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/typefit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typefit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,12 +64,52 @@ Here are some examples of how you can interact with the **Type.fit** MCP server 
 > I am accessing the Type.fit library via get_quotes. I can see a wide variety of wisdom from authors like Buddha, Confucius, and more. How many would you like to see?
 
 
+## ❓ FAQ
+
+**Q: How can I retrieve the full list of available quotes?**
+Simply use the `get_quotes` tool. The agent will fetch the entire database of inspirational quotes, which you can then filter by author or keyword.
+
+**Q: Does this server require a paid API key?**
+No. Type.fit provides a public dataset of quotes. You can connect and start using the `get_quotes` tool immediately without any subscription costs.
+
+**Q: Can the AI filter quotes by a specific author like 'Albert Einstein'?**
+Yes. While the `get_quotes` tool retrieves the list, your AI agent can automatically process the results to find quotes specifically attributed to your requested author.
+
+
 ## Installation & Usage
 
-To install and use the **Type.fit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/typefit](https://vinkius.com/mcp/typefit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Type.fit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `typefit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Type.fit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "typefit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

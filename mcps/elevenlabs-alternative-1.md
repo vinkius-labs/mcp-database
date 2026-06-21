@@ -1,7 +1,6 @@
 # ElevenLabs MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elevenlabs-alternative-1)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elevenlabs-alternative-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elevenlabs-alternative-1-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elevenlabs-alternative-1)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Here are some examples of how you can interact with the **ElevenLabs** MCP serve
 > Processing text-to-speech... I've generated the audio for your text using the specified voice. The high-quality speech file is ready.
 
 
+## ❓ FAQ
+
+**Q: How can I convert text to a specific voice using this server?**
+You can use the `create_speech` tool. Simply provide the `voice_id` and the `text` you want to synthesize. The agent will generate the audio for you.
+
+**Q: Can I see all the voices available in my account?**
+Yes! Use the `list_voices` query. It will return a list of all available voices, including their IDs, names, and categories, so you can choose the right one for your project.
+
+**Q: Is it possible to remove background noise from an existing audio file?**
+Absolutely. Use the `isolate_audio` tool by providing the audio in base64 format. The server will process it and return a clean version with the background noise removed.
+
+
 ## Installation & Usage
 
-To install and use the **ElevenLabs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/elevenlabs-alternative-1](https://vinkius.com/mcp/elevenlabs-alternative-1)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ElevenLabs** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `elevenlabs-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ElevenLabs** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "elevenlabs-alternative-1": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

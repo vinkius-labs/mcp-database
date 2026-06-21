@@ -1,7 +1,6 @@
 # Vedic Nakshatra Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vedic-nakshatra-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vedic-nakshatra-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vedic-nakshatra-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vedic-nakshatra-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Vedic Nakshatra Calcul
 > The `calculate_lunar_position` tool will provide the ecliptic longitude and the ayanamsa value for that specific time.
 
 
+## ❓ FAQ
+
+**Q: What is a Nakshatra?**
+A Nakshatra is one of the 27 lunar mansions in Vedic astrology, representing a specific segment of the ecliptic path of the Moon.
+
+**Q: How accurate are the calculations?**
+The tool uses precise astronomical algorithms to calculate the Moon's ecliptic longitude and applies the necessary Ayanamsa correction for sidereal zodiac accuracy.
+
+**Q: Can I use this for any date and time?**
+Yes, as long as you provide a valid ISO 8601 date and time along with the correct geographic coordinates.
+
+
 ## Installation & Usage
 
-To install and use the **Vedic Nakshatra Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vedic-nakshatra-calculator](https://vinkius.com/mcp/vedic-nakshatra-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vedic Nakshatra Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vedic-nakshatra-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vedic Nakshatra Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vedic-nakshatra-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Gates Platform Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gates-platform-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gates-platform-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gates-platform-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gates-platform-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Gates Platform Prover*
 > Distribution breadth without dependency depth. 340 integrations at 3% each means no partner is committed. Versioning alone adds friction without value. Instead: create tiered access where premium features require deeper integration. Make the platform MORE valuable at higher integration depth.
 
 
+## ❓ FAQ
+
+**Q: Why does it reject 'better product'?**
+Gates did not build a better word processor — he owned the operating system every application required. 'Better product' is a feature. The standard is the monopoly. Own the platform that others build on.
+
+**Q: Why does it demand paranoid execution?**
+Gates wrote the 'Internet Tidal Wave' memo and redirected 10,000 engineers because Netscape threatened the platform. 'We are the leader' is what IBM said before losing the PC standard. Name the threat 18 months from killing your standard — or be surprised by it.
+
+**Q: What is SILO_THINKING?**
+Products operating independently without reinforcing each other. Office saved in Windows formats. Windows was optimized for Office. Each made the other essential. If your products do not feed each other, you have a portfolio, not a platform.
+
+
 ## Installation & Usage
 
-To install and use the **Gates Platform Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gates-platform-prover](https://vinkius.com/mcp/gates-platform-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gates Platform Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gates-platform-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gates Platform Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gates-platform-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

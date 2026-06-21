@@ -1,7 +1,6 @@
 # Gamma (AI Presentations) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gamma-ai-presentations)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gamma-ai-presentations-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gamma-ai-presentations-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gamma-ai-presentations)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Gamma (AI Presentation
 > Retrieving details for `gam_12345`... The status is 'completed' and the title is 'Q3 Strategy'. Would you like to see the full content outline?
 
 
+## ❓ FAQ
+
+**Q: What types of content can I create with this server?**
+You can create three types of content using the `create_gamma` tool: 'presentation', 'document', or 'webpage'. Simply specify the type and provide a prompt or outline.
+
+**Q: How can I see a list of all my existing Gamma creations?**
+Use the `list_gammas` tool. You can also provide an optional 'limit' to control the number of results returned.
+
+**Q: Is it possible to edit the title of a Gamma after it has been generated?**
+Yes! Use the `update_gamma` tool with the specific Gamma ID and provide a new 'title'. You can also update the 'content' using the same tool.
+
+
 ## Installation & Usage
 
-To install and use the **Gamma (AI Presentations)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gamma-ai-presentations](https://vinkius.com/mcp/gamma-ai-presentations)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gamma (AI Presentations)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gamma-ai-presentations` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gamma (AI Presentations)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gamma-ai-presentations": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

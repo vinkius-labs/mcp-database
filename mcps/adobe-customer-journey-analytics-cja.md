@@ -1,7 +1,6 @@
 # Adobe Customer Journey Analytics (CJA) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-customer-journey-analytics-cja)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adobe-customer-journey-analytics-cja-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adobe-customer-journey-analytics-cja-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-customer-journey-analytics-cja)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Adobe Customer Journey
 > I've retrieved your filters. You have 15 active filters, including 'High Value Customers', 'Mobile Sessions', and 'Converted via Email'. Would you like to check the definition for any of them?
 
 
+## ❓ FAQ
+
+**Q: What is a Data View in CJA?**
+A Data View is a container in CJA that lets you determine how to interpret data from a Connection. It's where you define your dimensions and metrics for reporting.
+
+**Q: How do I find my IMS Organization ID?**
+Log in to the Adobe Experience Cloud, go to **Administration** > **Organizations**, or check your project settings in the Adobe Developer Console. It usually looks like 'XYZ@AdobeOrg'.
+
+**Q: Can I retrieve offline data through this server?**
+Yes! If your offline data sources are connected to AEP and configured in a CJA Data View, the `get_report` tool will include them in your analysis.
+
+
 ## Installation & Usage
 
-To install and use the **Adobe Customer Journey Analytics (CJA)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/adobe-customer-journey-analytics-cja](https://vinkius.com/mcp/adobe-customer-journey-analytics-cja)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Adobe Customer Journey Analytics (CJA)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `adobe-customer-journey-analytics-cja` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Adobe Customer Journey Analytics (CJA)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "adobe-customer-journey-analytics-cja": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

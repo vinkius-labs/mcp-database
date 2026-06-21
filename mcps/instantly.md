@@ -1,7 +1,6 @@
 # Instantly MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/instantly)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/instantly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/instantly-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/instantly)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,55 @@ Here are some examples of how you can interact with the **Instantly** MCP server
 > 50 leads added to 'Enterprise Outreach'. 48 accepted, 2 skipped (duplicates already in campaign). They'll start receiving emails based on your campaign schedule and sending account rotation.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Instantly API key?**
+Log in to your Instantly account at **app.instantly.ai**. Navigate to **Settings** (gear icon in the left sidebar). Click on the **API** section. Click **Create API Key**, give it a name, and copy the generated key. Paste it into the configuration field below. API access is available on all paid plans.
+
+**Q: Can I monitor email warm-up health through my agent?**
+Yes. Your agent can check warm-up scores, daily sending volumes, and inbox placement rates for each sending account — helping you know when new accounts are ready for full-volume campaigns.
+
+**Q: Can I manage multiple sending accounts?**
+Yes. Instantly supports unlimited sending accounts. Your AI agent can list all accounts, check their warm-up status, and manage which accounts are assigned to which campaigns.
+
+**Q: How is Instantly different from other cold email tools?**
+Instantly differentiates with unlimited sending accounts, built-in email warm-up, and high-volume campaign infrastructure. It's designed for agencies and teams running 10K+ emails/month across dozens of sending domains.
+
+
 ## Installation & Usage
 
-To install and use the **Instantly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/instantly](https://vinkius.com/mcp/instantly)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Instantly** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `instantly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Instantly** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "instantly": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

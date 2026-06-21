@@ -1,7 +1,6 @@
 # DrChrono MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drchrono)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/drchrono-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/drchrono-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drchrono)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **DrChrono** MCP server 
 > Fetching clinical notes... I found 3 recent notes. The most recent one is from today's visit for patient ID 12345 regarding a routine checkup.
 
 
+## ❓ FAQ
+
+**Q: Can I update a patient's contact information using the AI?**
+Yes. You can use the `update_patient` tool by providing the patient ID and the specific fields you wish to change, such as first name, last name, or gender.
+
+**Q: How do I see all appointments scheduled for the practice?**
+Simply ask the agent to run the `list_appointments` tool. It will retrieve a list of all recorded appointments in your DrChrono account.
+
+**Q: Is it possible to check the status of billing claims?**
+Yes, the `list_billing_claims` tool allows the agent to fetch and display the current billing claims associated with your account.
+
+
 ## Installation & Usage
 
-To install and use the **DrChrono** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/drchrono](https://vinkius.com/mcp/drchrono)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DrChrono** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `drchrono` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DrChrono** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "drchrono": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

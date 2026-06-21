@@ -1,7 +1,6 @@
 # Value Engineering Comparator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/value-engineering-comparator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/value-engineering-comparator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/value-engineering-comparator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/value-engineering-comparator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Value Engineering Comp
 > The Savings-to-Investment Ratio (SIR) is 4.0.
 
 
+## ❓ FAQ
+
+**Q: What is Life Cycle Cost (LCC)?**
+LCC represents the total economic commitment required for a construction solution, including both upfront capital expenditure and all maintenance costs throughout its useful life.
+
+**Q: How do I use the SIR calculation?**
+Use `calculate_investment_efficiency` by providing the total savings and the initial cost delta to find out how much is saved for every dollar of extra investment.
+
+**Q: Can I compare two different materials?**
+Yes, by calculating the LCC for both materials using `compute_total_lcc` and then comparing them with `calculate_net_savings`.
+
+
 ## Installation & Usage
 
-To install and use the **Value Engineering Comparator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/value-engineering-comparator](https://vinkius.com/mcp/value-engineering-comparator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Value Engineering Comparator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `value-engineering-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Value Engineering Comparator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "value-engineering-comparator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

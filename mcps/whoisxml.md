@@ -1,7 +1,6 @@
 # WhoisXML MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whoisxml)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/whoisxml-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/whoisxml-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whoisxml)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **WhoisXML** MCP server 
 > I checked test@example.com. The syntax is valid, but the domain does not have active MX records, suggesting it cannot receive emails.
 
 
+## ❓ FAQ
+
+**Q: Can I check if a domain is available for registration?**
+Yes! Use the `check_domain_availability` tool. It provides a lightweight check to see if a specific domain name is currently available.
+
+**Q: How do I find the physical location of an IP address?**
+Simply use the `get_ip_geolocation` tool with the target IP. The agent will return the country, city, latitude, longitude, and ISP information.
+
+**Q: Can this tool detect disposable or fake email addresses?**
+Yes. The `verify_email` tool checks email syntax, MX records, and SMTP connections, and specifically flags disposable email providers.
+
+
 ## Installation & Usage
 
-To install and use the **WhoisXML** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/whoisxml](https://vinkius.com/mcp/whoisxml)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WhoisXML** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `whoisxml` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WhoisXML** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "whoisxml": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

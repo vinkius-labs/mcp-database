@@ -1,7 +1,6 @@
 # Mindbody MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mindbody)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mindbody-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mindbody-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mindbody)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -125,12 +124,52 @@ That's 12% above February ($42,250). Your new 'Unlimited Yoga' membership is you
 These 3 members represent $450/month in at-risk revenue. Consider a re-engagement campaign?
 
 
+## ❓ FAQ
+
+**Q: How do I get my Mindbody API Key?**
+Sign up at developers.mindbodyonline.com, create a developer account, then go to Account → API Credentials to generate your API Key. You'll also need the Site ID of the business you want to connect to.
+
+**Q: What is a Site ID and where do I find it?**
+The Site ID is a unique numeric identifier for each Mindbody business. The business owner can find it in their Mindbody account under Settings. For testing, use Site ID '-99' which is the Mindbody sandbox.
+
+**Q: Can I book classes or appointments through the AI agent?**
+Currently the server focuses on read operations for maximum safety. Write operations (booking, canceling) are planned for v2 and will require the optional User Token credential with staff-level permissions.
+
+
 ## Installation & Usage
 
-To install and use the **Mindbody** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mindbody](https://vinkius.com/mcp/mindbody)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mindbody** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mindbody` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mindbody** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mindbody": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

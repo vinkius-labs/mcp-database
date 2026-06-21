@@ -1,7 +1,6 @@
 # Nestoria MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nestoria)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nestoria-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nestoria-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nestoria)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **Nestoria** MCP server 
 > I've filtered listings in Paris for 'garden'. I found a beautiful ground-floor flat in the 16th arrondissement and a house in Montmartre with a private courtyard. Would you like the full descriptions?
 
 
+## ❓ FAQ
+
+**Q: Can I search for properties using specific coordinates instead of a city name?**
+Yes! Use the `search_listings` tool and provide the `centre_point` parameter with latitude and longitude separated by a comma (e.g., '51.50,-0.12').
+
+**Q: How do I filter results by price and property type?**
+You can use the `price_min`, `price_max`, and `property_type` (e.g., 'house' or 'flat') parameters within the `search_listings` tool to narrow down your search results.
+
+**Q: Is it possible to see the newest listings first?**
+Absolutely. Set the `sort` parameter to 'newest' when calling the `search_listings` tool to get the most recent entries at the top of your results.
+
+
 ## Installation & Usage
 
-To install and use the **Nestoria** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nestoria](https://vinkius.com/mcp/nestoria)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nestoria** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nestoria` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nestoria** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nestoria": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Parseur MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/parseur)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/parseur-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/parseur-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/parseur)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Parseur** MCP server u
 > Push executed successfully running `upload_document`. Triggered physical limits. The document natively entered 'Invoices Mailbox' parsing queue. Processing document UUID: doc_112. Status: pending. I'll dynamically pull it later if told.
 
 
+## ❓ FAQ
+
+**Q: Does this tool parse the document directly or use the cloud engine?**
+The tool offloads the logic specifically via endpoints mapping back to the Parseur Cloud Engine. The AI acts to organize mailboxes, list templates, and fetch final states securely without computing massive local OCR networks.
+
+**Q: Can I upload a raw file string to be parsed?**
+Yes. Utilizing the explicitly mapped `upload_document` constraint, the agent can inject raw string boundaries identifying formatting, passing files straightforward into the target mailbox ID natively.
+
+**Q: Will I see missing required fields if extraction fails?**
+Absolutely. Querying `get_document_details` lists specific status bounds. If a template expects InvoiceTotal and misses it, the document flags a processing boundary issue precisely traceable here.
+
+
 ## Installation & Usage
 
-To install and use the **Parseur** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/parseur](https://vinkius.com/mcp/parseur)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Parseur** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `parseur` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Parseur** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "parseur": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

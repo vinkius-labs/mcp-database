@@ -1,7 +1,6 @@
 # Zapier Webhook Trigger MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zapier-webhook-trigger)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zapier-webhook-trigger-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zapier-webhook-trigger-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zapier-webhook-trigger)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -39,12 +38,49 @@ Here are some examples of how you can interact with the **Zapier Webhook Trigger
 > I've successfully triggered the Zapier webhook with the requested payload.
 
 
+## ❓ FAQ
+
+**Q: Can the agent receive responses back from Zapier with this?**
+No. Zapier Webhooks respond immediately with a success confirmation. The agent cannot wait for the Zap to finish executing or retrieve data from the final step of the Zap. This is strictly a 'fire and forget' trigger.
+
+**Q: Do I need a paid Zapier account?**
+Yes. While Zapier has a free tier, the 'Webhooks by Zapier' premium integration (which you need to create a Catch Hook) is only available on paid Zapier plans.
+
+
 ## Installation & Usage
 
-To install and use the **Zapier Webhook Trigger** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zapier-webhook-trigger](https://vinkius.com/mcp/zapier-webhook-trigger)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zapier Webhook Trigger** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zapier-webhook-trigger` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zapier Webhook Trigger** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zapier-webhook-trigger": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

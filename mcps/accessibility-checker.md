@@ -1,7 +1,6 @@
 # Accessibility Checker MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accessibility-checker)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/accessibility-checker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/accessibility-checker-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accessibility-checker)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -62,12 +61,52 @@ Here are some examples of how you can interact with the **Accessibility Checker*
 > The `check_doorway` tool analyzed the location. With an unobstructed width of 0.9m for the 'Lecture Hall Entrance', compliance is confirmed, meeting minimum accessibility standards.
 
 
+## ❓ FAQ
+
+**Q: What is the minimum width required for a main corridor?**
+The system uses the `check_corridor_and_passage` tool to verify this. It checks the measured clear width against mandatory standards, ensuring safe passage for mobility aids.
+
+**Q: Does it check if ramps are steep enough?**
+The `check_ramp_compliance` tool handles slope and landings. It calculates the ratio to ensure it does not exceed the maximum permitted standard (e.g., 8.33%) and verifies landing presence.
+
+**Q: Are doorways checked for proper clearance?**
+Yes, the `check_doorway` tool specifically measures the unobstructed clear opening width. This guarantees that passage is possible regardless of the door's hardware or type.
+
+
 ## Installation & Usage
 
-To install and use the **Accessibility Checker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/accessibility-checker](https://vinkius.com/mcp/accessibility-checker)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Accessibility Checker** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `accessibility-checker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Accessibility Checker** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "accessibility-checker": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

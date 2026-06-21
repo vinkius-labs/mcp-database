@@ -1,7 +1,6 @@
 # Temperature Converter for Cooking MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/temperature-converter-for-cooking)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/temperature-converter-for-cooking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/temperature-converter-for-cooking-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/temperature-converter-for-cooking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Temperature Converter 
 > 400°F is approximately 204.4°C, which falls under the Very High heat level.
 
 
+## ❓ FAQ
+
+**Q: How can I convert Celsius to Fahrenheit?**
+You can use the `fahrenheit_from_celsius` tool by providing the temperature in degrees Celsius.
+
+**Q: What is the European Gas scale?**
+The Gas scale is a numbering system (1-9) used in many European gas ovens. The `oven_settings_from_gas` tool maps these settings to Celsius and Fahrenheit.
+
+**Q: Does it provide heat intensity information?**
+Yes. Every conversion result includes a heat level classification: Low, Medium, High, or Very High.
+
+
 ## Installation & Usage
 
-To install and use the **Temperature Converter for Cooking** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/temperature-converter-for-cooking](https://vinkius.com/mcp/temperature-converter-for-cooking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Temperature Converter for Cooking** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `temperature-converter-for-cooking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Temperature Converter for Cooking** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "temperature-converter-for-cooking": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Vertiv Environet MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vertiv-environet)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vertiv-environet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vertiv-environet-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vertiv-environet)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -96,12 +95,52 @@ Here are some examples of how you can interact with the **Vertiv Environet** MCP
 > Alert 98765 successfully acknowledged by Admin. Status updated to Investigating.
 
 
+## ❓ FAQ
+
+**Q: What types of sensors are supported?**
+Environet supports temperature, humidity, differential pressure, airflow, water leak detection, and smoke sensors. These are typically deployed in server racks, raised floors, and UPS rooms.
+
+**Q: Can I adjust alarm thresholds via the API?**
+Yes! Use the update_threshold action to modify high and low limits for specific sensors. This is useful for seasonal adjustments or when deploying new equipment with different thermal requirements.
+
+**Q: Is the API accessible remotely?**
+Typically, the Environet API is hosted on the local infrastructure (on-premise server) where the Environet software is installed. You will need the internal IP or hostname and the API Key provided by your Vertiv admin.
+
+
 ## Installation & Usage
 
-To install and use the **Vertiv Environet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/vertiv-environet](https://vinkius.com/mcp/vertiv-environet)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Vertiv Environet** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `vertiv-environet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Vertiv Environet** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "vertiv-environet": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

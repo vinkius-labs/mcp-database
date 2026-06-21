@@ -1,7 +1,6 @@
 # Assembled MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/assembled)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/assembled-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/assembled-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/assembled)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Assembled** MCP server
 > The forecast for next Monday predicts a peak of 250 tickets per hour between 10:00 AM and 12:00 PM UTC.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Assembled API Key?**
+Log in to your Assembled account, go to **Settings > API Keys**, and you can generate a new API key there.
+
+**Q: Can I see who is currently on break?**
+Yes, use the `list_agent_states` tool to see the real-time status of all your agents, including those on breaks or in specific states.
+
+**Q: How far in advance can I see schedules?**
+You can retrieve schedules for any time range by providing the `startTime` and `endTime` parameters to the `list_schedules` tool, as long as they are published in Assembled.
+
+
 ## Installation & Usage
 
-To install and use the **Assembled** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/assembled](https://vinkius.com/mcp/assembled)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Assembled** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `assembled` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Assembled** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "assembled": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

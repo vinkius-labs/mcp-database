@@ -1,7 +1,6 @@
 # SignalWire MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/signalwire)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/signalwire-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/signalwire-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/signalwire)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **SignalWire** MCP serve
 > I've found 5 recent calls. Notable interactions include an inbound call from '+1 111 2222' lasting 2 minutes. Would you like the full metadata for any specific call?
 
 
+## ❓ FAQ
+
+**Q: How do I find my SignalWire Project ID and Token?**
+Log in to your [**SignalWire Dashboard**](https://signalwire.com/signin), select your Project, and navigate to **API** in the sidebar. You will find your Project ID and can generate a new API Token there.
+
+**Q: What is the Space URL?**
+The Space URL is the prefix of your SignalWire domain (e.g., if your domain is `example.signalwire.com`, the Space is `example`). Enter only the prefix.
+
+**Q: Can the agent send SMS messages?**
+Yes. Use the `send_sms` tool providing the recipient number, your SignalWire number, and the message body. Your agent will deliver the SMS and confirm the status instantly.
+
+
 ## Installation & Usage
 
-To install and use the **SignalWire** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/signalwire](https://vinkius.com/mcp/signalwire)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SignalWire** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `signalwire` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SignalWire** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "signalwire": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

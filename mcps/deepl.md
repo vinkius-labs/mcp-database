@@ -1,7 +1,6 @@
 # DeepL MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepl)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deepl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deepl-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepl)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **DeepL** MCP server usi
 > You have used 15,000 characters out of your 500,000 monthly limit. You have 485,000 characters remaining. Would you like to check your configured glossaries as well?
 
 
+## ❓ FAQ
+
+**Q: How do I find my DeepL API Key?**
+Log in to your [**DeepL account**](https://www.deepl.com/pro-account/plan), and you will find your Authentication Key under the 'Account' tab. Copy and paste it below.
+
+**Q: Does this work with both Free and Pro API keys?**
+Yes. This server automatically detects if you are using a Free key (ending in `:fx`) or a Pro key and routes requests to the correct endpoint.
+
+**Q: Can the agent use glossaries?**
+Yes. You can list your existing glossaries via the `get_glossaries` tool and identify their IDs to maintain consistency in your agent-led translations.
+
+
 ## Installation & Usage
 
-To install and use the **DeepL** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/deepl](https://vinkius.com/mcp/deepl)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DeepL** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `deepl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DeepL** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "deepl": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

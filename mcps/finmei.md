@@ -1,7 +1,6 @@
 # Finmei MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finmei)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/finmei-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/finmei-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finmei)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Finmei** MCP server us
 > Retrieving tax types... Your account has 3 tax rates configured: 'VAT 20%', 'Sales Tax 5%', and 'Zero Rated'. Which one should I apply to your next entry?
 
 
+## ❓ FAQ
+
+**Q: Can I create an expense with a specific currency using the agent?**
+Yes! The 'create_expense' tool allows you to specify the currency code (e.g., USD, EUR, BRL). You can use the 'list_currencies' tool to find all supported codes.
+
+**Q: How do I manage different tax rates for my business?**
+You can use the 'list_tax_types' tool to see all tax rates configured in your Finmei account. This helps ensuring your recorded expenses have the correct tax data applied.
+
+**Q: Is it possible to delete an accidental expense entry?**
+Absolutely. The 'delete_expense' tool allows you to remove any expense record by providing its unique UUID. Just ask your agent to find the expense first if you need the ID.
+
+
 ## Installation & Usage
 
-To install and use the **Finmei** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/finmei](https://vinkius.com/mcp/finmei)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Finmei** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `finmei` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Finmei** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "finmei": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

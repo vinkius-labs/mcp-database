@@ -1,7 +1,6 @@
 # Structured MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/structured)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/structured-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/structured-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/structured)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,52 @@ Executing `get_user_profile` locally natively successfully.
 The context is perfectly mapped.
 
 
+## ❓ FAQ
+
+**Q: Do I need a paid plan to use the Structured programmatic API?**
+Yes. Programmatic integrations and the ability to systematically generate and query your personal API access require a Structured Pro plan to safely extract the required access tokens securely.
+
+**Q: Can the integration delete past records destructively by accident executing commands natively?**
+Risk is inherently mitigated. The AI only calls mutations like `delete_task` precisely when instructed unequivocally. Records aren't inherently purged on exploration, allowing safe queries comprehensively continuously naturally.
+
+**Q: Which platforms does the Structured integration support?**
+The MCP connects to the Structured Pro API, which syncs across iOS, iPadOS, macOS, and the web app. Any task created or updated via the AI is reflected on all your devices in real time.
+
+
 ## Installation & Usage
 
-To install and use the **Structured** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/structured](https://vinkius.com/mcp/structured)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Structured** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `structured` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Structured** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "structured": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # DVLA Vehicle API MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dvla-vehicle-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dvla-vehicle-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dvla-vehicle-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dvla-vehicle-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **DVLA Vehicle API** MCP
 > I've retrieved the specifications for CC33CCC. It has an engine capacity of 1998cc and uses Diesel fuel. The vehicle colour is Silver. Would you like to check its tax status as well?
 
 
+## ❓ FAQ
+
+**Q: How do I find my DVLA API Key?**
+Register at the [**DVLA Developer portal**](https://developer-portal.driver-vehicle-licensing.api.gov.uk/), create an application, and you will receive your API Key. Copy and paste it below.
+
+**Q: Does it support vehicles outside the UK?**
+No. The DVLA API only provides data for vehicles registered within the United Kingdom.
+
+**Q: Can the agent check if a car has a valid MOT?**
+Yes. The `get_vehicle_mot_status` tool returns the current status and expiry date of the MOT for any specified registration number.
+
+
 ## Installation & Usage
 
-To install and use the **DVLA Vehicle API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dvla-vehicle-api](https://vinkius.com/mcp/dvla-vehicle-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DVLA Vehicle API** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dvla-vehicle-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DVLA Vehicle API** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dvla-vehicle-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

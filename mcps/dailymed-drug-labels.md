@@ -1,7 +1,6 @@
 # DailyMed Drug Labels MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dailymed-drug-labels)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dailymed-drug-labels-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dailymed-drug-labels-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dailymed-drug-labels)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -67,12 +66,52 @@ Here are some examples of how you can interact with the **DailyMed Drug Labels**
 > Fetching historical records... I've retrieved the update history for this NDC. It includes changes to the packaging layout and updates to the prescribing information over the last 5 years. Would you like a summary of the most recent change?
 
 
+## ❓ FAQ
+
+**Q: What is an NDC code?**
+NDC stands for National Drug Code. It is a unique 10-digit or 11-digit, 3-segment number used in the US to identify human drugs.
+
+**Q: Can I search for labels by generic name?**
+Yes! The `search_drug_labels` tool accepts drug names, which can be either brand names or generic names. It will return all matching official labels.
+
+**Q: Does this include the history of packaging changes?**
+Yes. The `get_ndc_history` tool specifically retrieves the record of changes and updates associated with a particular National Drug Code.
+
+
 ## Installation & Usage
 
-To install and use the **DailyMed Drug Labels** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dailymed-drug-labels](https://vinkius.com/mcp/dailymed-drug-labels)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DailyMed Drug Labels** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dailymed-drug-labels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DailyMed Drug Labels** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dailymed-drug-labels": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

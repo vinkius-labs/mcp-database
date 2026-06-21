@@ -1,7 +1,6 @@
 # D-ID MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/d-id)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/d-id-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/d-id-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/d-id)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **D-ID** MCP server usin
 > You currently have 45 credits remaining on your 'Pro' plan. Based on your settings, this is enough to generate approximately 15 minutes of new AI video content.
 
 
+## ❓ FAQ
+
+**Q: Can my agent create a talking avatar using a custom voice ID?**
+Yes. Use the 'create_talk' tool and specify the TTS provider (microsoft or amazon) and the exact voice ID. The agent will orchestrate the request to generate an avatar that speaks your script with that specific vocal identity.
+
+**Q: How do I use a custom image as the source for my talking avatar?**
+First, use the 'upload_image' tool with a publicly accessible URL of your face image. The agent will upload it to D-ID and return a new internal URL which you can then pass as the 'source_url' in 'create_talk'.
+
+**Q: Can I check my remaining D-ID credits through the agent?**
+Absolutely. Use the 'get_credits' tool. Your agent will pull your current balance and plan info directly from D-ID, helping you manage your video generation limits and quotas through natural conversation.
+
+
 ## Installation & Usage
 
-To install and use the **D-ID** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/d-id](https://vinkius.com/mcp/d-id)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **D-ID** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `d-id` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **D-ID** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "d-id": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Hugging Face MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hugging-face)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hugging-face-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hugging-face-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hugging-face)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -107,12 +106,55 @@ Here are some examples of how you can interact with the **Hugging Face** MCP ser
 > There are 23 active discussions on meta-llama/Llama-3-8B. Top threads include: 'Fine-tuning with PEFT/LoRA — memory requirements' (18 replies), 'Quantization to 4-bit — GGUF format' (14 replies) and 'Comparison with Mistral-7B on reasoning tasks' (9 replies).
 
 
+## ❓ FAQ
+
+**Q: How do I get a Hugging Face Access Token?**
+Log in to [**Hugging Face**](https://huggingface.co), go to **Settings > Access Tokens**, click **New token**, give it a name and select scopes (read is sufficient for browsing, write if you need to create repos). Copy the token immediately — it starts with `hf_`.
+
+**Q: Can I search models by task type (e.g. text-generation)?**
+Yes! Use `list_models` with a search query. While the search endpoint doesn't directly filter by pipeline_tag, you can search by task name (e.g. search='text-generation') and then use `get_model` or `get_model_tags` to verify the pipeline_tag of specific models.
+
+**Q: Can I see what files are in a model repository?**
+Yes! Use `list_model_files` with the model ID (e.g. 'google-bert/bert-base-uncased') to see the complete file tree including model weights (.safetensors, .bin), config files, tokenizer files and README. Optionally set a path to browse a specific subdirectory like 'onnx' or 'pytorch'.
+
+**Q: Can I create discussions on model pages?**
+Yes! Use `create_discussion` with the repo type ('model', 'dataset' or 'space'), the repo ID and a title. This creates a new discussion thread on the repository. You can use `list_model_discussions` first to check existing threads before creating a new one.
+
+
 ## Installation & Usage
 
-To install and use the **Hugging Face** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/hugging-face](https://vinkius.com/mcp/hugging-face)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Hugging Face** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `hugging-face` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Hugging Face** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "hugging-face": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

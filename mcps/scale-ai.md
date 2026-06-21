@@ -1,7 +1,6 @@
 # Scale AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scale-ai)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scale-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scale-ai-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scale-ai)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Scale AI** MCP server 
 > Batch 'sprint-01-batch' has been finalized. Scale will now begin processing the tasks within this batch.
 
 
+## ❓ FAQ
+
+**Q: How do I start a high-volume labeling job using batches?**
+First, use `create_batch` to initialize a group for your project. After submitting your tasks to this batch, call `finalize_batch` to signal Scale to begin the labeling process.
+
+**Q: Can I check the status of a specific annotation task?**
+Yes, use the `get_task` tool with the specific Task ID. It will return the full metadata, current status, and any available results for that unit of work.
+
+**Q: What should I do if I submitted a task by mistake?**
+You can use the `cancel_task` tool with the Task ID. If you need to reuse the unique identifier, you can also set the `clear_unique_id` parameter to true.
+
+
 ## Installation & Usage
 
-To install and use the **Scale AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/scale-ai](https://vinkius.com/mcp/scale-ai)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Scale AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `scale-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Scale AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "scale-ai": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

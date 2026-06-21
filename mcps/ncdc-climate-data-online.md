@@ -1,7 +1,6 @@
 # NCDC Climate Data Online MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ncdc-climate-data-online)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ncdc-climate-data-online-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ncdc-climate-data-online-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ncdc-climate-data-online)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **NCDC Climate Data Onli
 > Retrieving datasets... For daily summaries, the primary datasets are GHCND (Global Historical Climatology Network Daily) and GSOD (Global Summary of the Day). GHCND is generally recommended for its extensive station coverage. Would you like more info on GHCND?
 
 
+## ❓ FAQ
+
+**Q: Is the NCDC API Token free?**
+Yes! You can request a free API token by providing your email address at https://www.ncdc.noaa.gov/cdo-web/token.
+
+**Q: What is the GHCND dataset?**
+GHCND stands for Global Historical Climatology Network - Daily. It is one of the most popular datasets, providing daily climate summaries (temperature, precipitation, etc.) from stations around the world.
+
+**Q: How far back does the data go?**
+NCDC archives contain data dating back to the 18th century for some locations, though the availability varies significantly by station and dataset.
+
+
 ## Installation & Usage
 
-To install and use the **NCDC Climate Data Online** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ncdc-climate-data-online](https://vinkius.com/mcp/ncdc-climate-data-online)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **NCDC Climate Data Online** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ncdc-climate-data-online` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **NCDC Climate Data Online** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ncdc-climate-data-online": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Tumblr MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tumblr)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tumblr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tumblr-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tumblr)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Tumblr** MCP server us
 > Fetching blog info... The 'staff' blog is the official Tumblr internal blog. It has over 1M followers and focuses on product updates and platform news. Would you like to see their latest posts?
 
 
+## ❓ FAQ
+
+**Q: Can I search for posts matching a specific tag across Tumblr?**
+Yes! Use the `list_tagged_posts` tool and provide your tag. Your agent will retrieve the latest posts from across the platform that use that specific tag.
+
+**Q: How do I see the posts from a specific blog like 'officialtumblr'?**
+Run the `list_blog_posts` query with the blog name. You can optionally filter by type (e.g., 'photo' or 'quote') to see only the content you're interested in.
+
+**Q: Is it possible to retrieve the avatar URL of a blog via AI?**
+Absolutely. Use the `get_blog_avatar` tool and provide the blog name. You can also specify an optional size to get the image URL that best fits your needs.
+
+
 ## Installation & Usage
 
-To install and use the **Tumblr** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tumblr](https://vinkius.com/mcp/tumblr)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tumblr** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tumblr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tumblr** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tumblr": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

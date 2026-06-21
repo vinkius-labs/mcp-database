@@ -1,7 +1,6 @@
 # ROC AUC Evaluator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/roc-auc-evaluator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/roc-auc-evaluator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/roc-auc-evaluator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/roc-auc-evaluator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -45,12 +44,52 @@ Here are some examples of how you can interact with the **ROC AUC Evaluator** MC
 > The computation has been executed with mathematical precision. All results are exact and ready for review.
 
 
+## ❓ FAQ
+
+**Q: Why is calculating AUC difficult for LLMs?**
+AUC requires sorting an array of probabilities, stepping through each threshold, and integrating the True Positive Rate over the False Positive Rate. LLMs cannot perform reliable array sorting or integral math.
+
+**Q: What format should the probabilities be in?**
+Provide a JSON array of actual labels (0 or 1) and a matching JSON array of predicted probabilities (floats between 0.0 and 1.0).
+
+**Q: Is this identical to Python's scikit-learn AUC?**
+Yes, it uses the identical trapezoidal rule approach to compute the area under the curve deterministically.
+
+
 ## Installation & Usage
 
-To install and use the **ROC AUC Evaluator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/roc-auc-evaluator](https://vinkius.com/mcp/roc-auc-evaluator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ROC AUC Evaluator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `roc-auc-evaluator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ROC AUC Evaluator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "roc-auc-evaluator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

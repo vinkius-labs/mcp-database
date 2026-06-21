@@ -1,7 +1,6 @@
 # U.S. Treasury Full — Complete Fiscal & Debt Intelligence MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-treasury-full-complete-fiscal-debt-intelligence)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-treasury-full-complete-fiscal-debt-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-treasury-full-complete-fiscal-debt-intelligence-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-treasury-full-complete-fiscal-debt-intelligence)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,12 +102,52 @@ Here are some examples of how you can interact with the **U.S. Treasury Full —
 - Sep 2025: 0.82 GBP per 1 USD
 
 
+## ❓ FAQ
+
+**Q: Why build a mega server?**
+Because an AI agent performs better when all context is centralized. By combining Debt, FX and Budget into one tool suite, the prompt routing evaluates economic dependencies efficiently.
+
+**Q: Is there an API Rate Limit?**
+No official API key is required, however they rate limit by IP if abused. This server utilizes graceful error handling.
+
+**Q: Are these figures inflation adjusted?**
+Values are nominal as recorded by accounting ledgers. The AI agent must query CPI (Consumer Price Index) if adjustment is required.
+
+
 ## Installation & Usage
 
-To install and use the **U.S. Treasury Full — Complete Fiscal & Debt Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-treasury-full-complete-fiscal-debt-intelligence](https://vinkius.com/mcp/us-treasury-full-complete-fiscal-debt-intelligence)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **U.S. Treasury Full — Complete Fiscal & Debt Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-treasury-full-complete-fiscal-debt-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **U.S. Treasury Full — Complete Fiscal & Debt Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-treasury-full-complete-fiscal-debt-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

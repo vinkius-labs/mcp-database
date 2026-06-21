@@ -1,7 +1,6 @@
 # AudD Music Recognition MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/audd-music-recognition)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/audd-music-recognition-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/audd-music-recognition-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/audd-music-recognition)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **AudD Music Recognition
 > Searching... 'Stairway to Heaven' is by Led Zeppelin, from their untitled fourth album (often called Led Zeppelin IV), released in 1971. It is considered one of the greatest rock songs of all time.
 
 
+## ❓ FAQ
+
+**Q: Can I identify a song just by providing a link to an MP3 file?**
+Yes! Use the `recognize_music` tool and provide the direct URL to the audio file. Your agent will identify the track and provide metadata and streaming links.
+
+**Q: How do I find the lyrics for a song if I only know a few words?**
+You can use the `search_lyrics` tool with those words. Your agent will search AudD's database for matching lyrics and return the full text and song details.
+
+**Q: Can I get direct links to open the song on Spotify or Apple Music?**
+Yes, when identifying a song or searching for one, you can request extra data that includes direct streaming links for various platforms.
+
+
 ## Installation & Usage
 
-To install and use the **AudD Music Recognition** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/audd-music-recognition](https://vinkius.com/mcp/audd-music-recognition)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AudD Music Recognition** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `audd-music-recognition` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AudD Music Recognition** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "audd-music-recognition": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

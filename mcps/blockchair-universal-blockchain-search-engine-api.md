@@ -1,7 +1,6 @@
 # Blockchair (Universal Blockchain Search Engine & API) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blockchair-universal-blockchain-search-engine-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blockchair-universal-blockchain-search-engine-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blockchair-universal-blockchain-search-engine-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blockchair-universal-blockchain-search-engine-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Blockchair (Universal 
 > I've filtered the Bitcoin transactions. I found 12 transactions matching your criteria. The highest fee observed was 120,500 satoshis for transaction hash 4a5e... Would you like the full list of hashes?
 
 
+## ❓ FAQ
+
+**Q: Can I search across different blockchains using this server?**
+Yes! You can specify the blockchain (e.g., 'bitcoin', 'ethereum', 'dogecoin') in tools like `get_blockchain_stats` or `get_address` to retrieve data from that specific network.
+
+**Q: How do I filter transactions by specific criteria like high fees?**
+Use the `filter_transactions` tool. You can provide a query string `q` such as `fee(10000..)` to find transactions with fees over 10,000 units, and sort them using the `s` parameter.
+
+**Q: Can I check the balance of a specific ERC-20 token on Ethereum?**
+Yes, use the `get_erc20_token_address` tool by providing the token's contract address and the wallet address you want to check.
+
+
 ## Installation & Usage
 
-To install and use the **Blockchair (Universal Blockchain Search Engine & API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/blockchair-universal-blockchain-search-engine-api](https://vinkius.com/mcp/blockchair-universal-blockchain-search-engine-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Blockchair (Universal Blockchain Search Engine & API)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `blockchair-universal-blockchain-search-engine-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Blockchair (Universal Blockchain Search Engine & API)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "blockchair-universal-blockchain-search-engine-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

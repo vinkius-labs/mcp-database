@@ -1,7 +1,6 @@
 # DNV Renewables MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dnv-renewables)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dnv-renewables-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dnv-renewables-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dnv-renewables)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -105,12 +104,55 @@ Here are some examples of how you can interact with the **DNV Renewables** MCP s
 > Fetching solar resource data... For coordinates 35.0, -106.0 (New Mexico), the site shows excellent solar resource. Annual GHI averages approximately 2,150 kWh/m²/year. DNI is around 780 kWh/m²/year, indicating strong direct sunlight ideal for concentrating solar. The site has low cloud cover and minimal soiling concerns. Temperature averages 14°C annually, which is favorable for PV module efficiency.
 
 
+## ❓ FAQ
+
+**Q: What types of wind and solar data are available?**
+DNV Renewables provides over 40 climate datasets including: Mesoscale wind data (global and regional), Solar irradiance (GHI, DNI, DHI), Reanalysis datasets (ERA5, MERRA-2), Global wind energy atlas, Temperature, pressure, humidity, and more. Data covers onshore and offshore locations worldwide with time series from 1980s to present.
+
+**Q: How do I get an API token for DNV Renewables?**
+Visit the DNV Renewables platform and contact your DNV account manager or visit the EMD/DNV Renewables website to request API access. Once your account is provisioned, you'll receive an API access token from your account dashboard. This token authenticates your requests and is linked to your subscription plan.
+
+**Q: How does the data ordering process work?**
+The data ordering process is: 1) Check availability for your location, 2) Place an order with dataset, coordinates, and time period, 3) Wait ~30 seconds for processing, 4) Check order status until 'success', 5) Download the generated time series file. Note: Download links expire after 12 hours, so download promptly. Rate limit is 10 orders per 10 minutes.
+
+**Q: What is mesoscale climate data and why is it useful?**
+Mesoscale climate data comes from numerical weather prediction models that simulate atmospheric conditions at regional scales (typically 1-50 km resolution). Unlike single-point measurements, mesoscale data provides spatially consistent, long-term time series essential for renewable energy resource assessment. It's used for wind farm siting, solar project planning, and long-term energy yield analysis because it captures multi-decadal climate patterns that short-term measurements miss.
+
+
 ## Installation & Usage
 
-To install and use the **DNV Renewables** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dnv-renewables](https://vinkius.com/mcp/dnv-renewables)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DNV Renewables** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dnv-renewables` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DNV Renewables** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dnv-renewables": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

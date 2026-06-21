@@ -1,7 +1,6 @@
 # Fee Navigator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fee-navigator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fee-navigator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fee-navigator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fee-navigator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Fee Navigator** MCP se
 > Retrieving industry stats... Current data shows an average savings of 18.5% across the retail sector and 22% for hospitality merchants when optimizing processing fees.
 
 
+## ❓ FAQ
+
+**Q: How do I obtain my Fee Navigator API Token?**
+You can generate an API Token in your Fee Navigator dashboard under the **Developer** or **Integrations** settings tab.
+
+**Q: Can I upload statement files directly via chat?**
+Yes! Use the `upload_statement` tool. You can provide the file content as a base64 string, and the agent will handle the ingestion for you.
+
+**Q: What kind of savings data does the AI provide?**
+The AI analyzes interchange rates, markups, and hidden fees to calculate potential monthly and annual savings for the merchant, which can be retrieved using the `analyze_statement` tool.
+
+
 ## Installation & Usage
 
-To install and use the **Fee Navigator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fee-navigator](https://vinkius.com/mcp/fee-navigator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Fee Navigator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fee-navigator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Fee Navigator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fee-navigator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

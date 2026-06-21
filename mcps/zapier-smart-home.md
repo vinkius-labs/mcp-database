@@ -1,7 +1,6 @@
 # Zapier Smart Home MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zapier-smart-home)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zapier-smart-home-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zapier-smart-home-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zapier-smart-home)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -94,12 +93,55 @@ Here are some examples of how you can interact with the **Zapier Smart Home** MC
 > Executing command: "turn off all the lights in the house"... Found matching action: SmartThings - Turn Off All Lights. Executing... Done! All lights have been turned off successfully.
 
 
+## ❓ FAQ
+
+**Q: What smart home devices and apps are supported through Zapier NLA?**
+Zapier NLA provides access to 5000+ app integrations including Philips Hue, LIFX, Nanoleaf (lighting), Nest, Ecobee, Honeywell (climate), Ring, Arlo, SimpliSafe (security), SmartThings, Home Assistant, IFTTT, and many more. Use `search_zapier_actions` to discover specific actions for your devices.
+
+**Q: How do I get a Zapier NLA API key?**
+Visit https://nla.zapier.com/ and sign in with your Zapier account. Navigate to the NLA API settings page and generate a new API key (starts with `sk-nla-`). You'll need a Zapier account with exposed actions configured for the smart home apps you want to control.
+
+**Q: What is the difference between exposed actions and AI zaps?**
+**Exposed actions** are individual smart home actions you've configured and made available for AI execution (e.g., "turn on kitchen light"). **AI zaps** are multi-step automation workflows that can be triggered with natural language instructions. Exposed actions are for direct device control, while AI zaps are for complex workflows involving multiple steps and apps.
+
+**Q: Can I control devices with natural language commands?**
+Yes! Use the `send_natural_language_command` tool to send any smart home command in plain English. For example: "turn off all the lights", "set the thermostat to 72 degrees", or "lock the front door". The API will search for matching actions and execute the best match. You can also use `search_zapier_actions` to find specific action IDs for more precise control.
+
+
 ## Installation & Usage
 
-To install and use the **Zapier Smart Home** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zapier-smart-home](https://vinkius.com/mcp/zapier-smart-home)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zapier Smart Home** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zapier-smart-home` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zapier Smart Home** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zapier-smart-home": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

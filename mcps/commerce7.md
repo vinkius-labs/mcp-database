@@ -1,7 +1,6 @@
 # Commerce7 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/commerce7)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/commerce7-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/commerce7-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/commerce7)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Here are some examples of how you can interact with the **Commerce7** MCP server
 > Yes, you have 4 reservations for tomorrow. Total guests: 12. First reservation is at 11:00 AM (Party of 4, VIP experience).
 
 
+## ❓ FAQ
+
+**Q: How do I get Commerce7 API access?**
+Visit developer.commerce7.com to register your application. You'll receive an App ID and Secret. Your winery's Tenant ID is your Commerce7 subdomain.
+
+**Q: What object types can I manage with this integration?**
+You can manage customers, orders, club memberships, reservations, and inventory directly from the chat interface.
+
+**Q: Are the responses real-time?**
+Yes, the AI connects directly to the Commerce7 API to provide real-time updates on your inventory and reservations.
+
+
 ## Installation & Usage
 
-To install and use the **Commerce7** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/commerce7](https://vinkius.com/mcp/commerce7)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Commerce7** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `commerce7` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Commerce7** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "commerce7": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Corescan (Core DAO Blockchain Explorer) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corescan-core-dao-blockchain-explorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/corescan-core-dao-blockchain-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/corescan-core-dao-blockchain-explorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corescan-core-dao-blockchain-explorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Corescan (Core DAO Blo
 > I have successfully fetched the ABI for the contract at 0x789ghi... It includes functions like 'transfer', 'balanceOf', and 'mint'. Would you like me to explain any specific function?
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance of multiple Core DAO addresses at once?**
+Yes! Use the `get_account_balance_multi` tool and provide a comma-separated list of up to 20 addresses to get all balances in a single response.
+
+**Q: How can I see the source code of a smart contract on Core DAO?**
+You can use the `get_contract_source_code` tool with the contract's address. If the contract is verified on Corescan, the AI will retrieve the full source code for you.
+
+**Q: Does this server support tracking NFT transfers?**
+Absolutely. Use the `get_erc721_transfers` tool to list all NFT transfer events associated with a specific wallet address or contract.
+
+
 ## Installation & Usage
 
-To install and use the **Corescan (Core DAO Blockchain Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/corescan-core-dao-blockchain-explorer](https://vinkius.com/mcp/corescan-core-dao-blockchain-explorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Corescan (Core DAO Blockchain Explorer)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `corescan-core-dao-blockchain-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Corescan (Core DAO Blockchain Explorer)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "corescan-core-dao-blockchain-explorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

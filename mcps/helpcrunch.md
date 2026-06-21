@@ -1,7 +1,6 @@
 # HelpCrunch MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helpcrunch)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/helpcrunch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/helpcrunch-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helpcrunch)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,55 @@ Here are some examples of how you can interact with the **HelpCrunch** MCP serve
 > Tags added! I've successfully applied the 'VIP' and 'Priority Support' labels to customer 5592. They will now be clearly identified in your dashboard. Should I also check if they have any open chats?
 
 
+## ❓ FAQ
+
+**Q: How do I find my HelpCrunch API Key?**
+Log in to your HelpCrunch dashboard, navigate to **Settings > Developers > Public API**. You will be able to generate and copy your unique Bearer token from there.
+
+**Q: Can I reassign a chat to another team member?**
+Yes! Use the `update_chat_assignee` tool. You must provide the `chat_id` and the numeric `assignee_id` of the team member you wish to assign the conversation to.
+
+**Q: How can I filter chats by status?**
+Use the `search_chats` tool and provide a JSON filter string. For example, to find open chats, pass `{"status": "open"}` in the `filter_json` parameter.
+
+**Q: Is it possible to tag customers through this integration?**
+Yes, you can use the `add_customer_tag` tool. Provide the `customer_id` and the name of the tag you want to add to their profile.
+
+
 ## Installation & Usage
 
-To install and use the **HelpCrunch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/helpcrunch](https://vinkius.com/mcp/helpcrunch)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **HelpCrunch** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `helpcrunch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **HelpCrunch** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "helpcrunch": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

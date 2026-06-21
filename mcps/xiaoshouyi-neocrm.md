@@ -1,7 +1,6 @@
 # Xiaoshouyi / Neocrm MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xiaoshouyi-neocrm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/xiaoshouyi-neocrm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/xiaoshouyi-neocrm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xiaoshouyi-neocrm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Xiaoshouyi / Neocrm** 
 > I've retrieved your CRM summary. This week, you've engaged with 45 leads, opened 8 new opportunities, and completed 12 tasks. Your pipeline health is currently stable. Would you like a breakdown by project?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Xiaoshouyi Client ID and Secret?**
+Log in to the Xiaoshouyi administration console, go to [PaaS Platform] → [App Management], and create a new application to generate your Client ID and Client Secret.
+
+**Q: Can I filter leads by specific criteria?**
+Yes. When using the `list_leads` tool, you can provide an optional `filter` parameter to narrow down the results based on status, source, or other CRM fields.
+
+**Q: Is it possible to create tasks for my team?**
+Yes, while the current tools focus on listing tasks, you can use the AI agent to coordinate assignments and update existing task statuses through the CRM's unified interface.
+
+
 ## Installation & Usage
 
-To install and use the **Xiaoshouyi / Neocrm** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/xiaoshouyi-neocrm](https://vinkius.com/mcp/xiaoshouyi-neocrm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Xiaoshouyi / Neocrm** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `xiaoshouyi-neocrm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Xiaoshouyi / Neocrm** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "xiaoshouyi-neocrm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

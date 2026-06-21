@@ -1,7 +1,6 @@
 # Turso MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/turso)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/turso-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/turso-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/turso)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Turso** MCP server usi
 > All previous JWT connection tokens for the 'legacy-db' instance have been successfully rotated and invalidated. Any clients using the old credentials will now be denied access. Let me know if you need to generate a new replacement token.
 
 
+## ❓ FAQ
+
+**Q: Can my AI agent provision a new database in a specific edge location?**
+Yes. You can ask your agent to list available edge locations first, and then instruct it to create a new database in a logical group hosted in that region. Ensure you provide the target group name so the database is correctly allocated to your application fleet.
+
+**Q: How can I quickly revoke database access if a token is compromised?**
+Simply ask your agent to invalidate or rotate the tokens for that specific database name. The AI will hit the /invalidate endpoint, blocking all old tokens instantly. Afterwards, you can ask for a fresh secure token with a 24-hour expiration.
+
+**Q: Can the agent check if I am approaching my dataset limits?**
+Yes. When querying the details of a specific database, the agent retrieves storage metadata and group allocation facts. You can ask the AI to summarize your database sizes and flags to see which instances might need an upgrade or clean-up.
+
+
 ## Installation & Usage
 
-To install and use the **Turso** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/turso](https://vinkius.com/mcp/turso)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Turso** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `turso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Turso** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "turso": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

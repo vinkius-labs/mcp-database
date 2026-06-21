@@ -1,7 +1,6 @@
 # US Corporate Tax Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-corporate-tax-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-corporate-tax-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-corporate-tax-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-corporate-tax-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **US Corporate Tax Calcu
 > The `compare_business_structures` tool will analyze the tax implications for C-Corp, S-Corp, and LLC based on the $1,000,000 profit in NY.
 
 
+## ❓ FAQ
+
+**Q: How can I find the tax rate for a specific state?**
+You can use the `get_state_tax_rate` tool by providing the two-letter US state abbreviation (e.g., 'NY' for New York).
+
+**Q: Does this tool calculate federal taxes?**
+Yes. The `calculate_tax_liability` tool calculates both the 21% federal corporate tax and the applicable state-level tax.
+
+**Q: Can I compare different business structures?**
+Yes, the `compare_business_structures` tool provides a side-by-side comparison of tax burdens for C-Corp, S-Corp, and LLC entities.
+
+
 ## Installation & Usage
 
-To install and use the **US Corporate Tax Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-corporate-tax-calculator](https://vinkius.com/mcp/us-corporate-tax-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **US Corporate Tax Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-corporate-tax-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **US Corporate Tax Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-corporate-tax-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

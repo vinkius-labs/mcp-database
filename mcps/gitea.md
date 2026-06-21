@@ -1,7 +1,6 @@
 # Gitea MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitea)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gitea-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gitea-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitea)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Gitea** MCP server usi
 > Retrieving organization issues... I found 15 issues across the 'Eng-Team' repositories. Most are in 'core-engine' and 'frontend-v2'. Would you like me to filter them by labels or assignees?
 
 
+## ❓ FAQ
+
+**Q: Can my agent list all issues in a Gitea repository?**
+Yes. Use the 'list_issues' tool. Provide the owner and repository name. The agent will return all issues with their titles, numbers, states, and labels, allowing you to monitor project progress natively.
+
+**Q: How do I check the details of a specific pull request via chat?**
+Use the 'list_pulls' tool to see active PRs and their numbers. You can then ask for details about a specific PR to verify source/target branches and current review status synchronously.
+
+**Q: Can I see all repositories belonging to a Gitea organization through the agent?**
+Absolutely. Use the 'list_org_repos' tool. Provide the organization name, and the agent will return all repositories belonging to that org, including their clone URLs and visibility status natively.
+
+
 ## Installation & Usage
 
-To install and use the **Gitea** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gitea](https://vinkius.com/mcp/gitea)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gitea** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gitea` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gitea** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gitea": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

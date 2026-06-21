@@ -1,7 +1,6 @@
 # Ontraport MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ontraport)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ontraport-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ontraport-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ontraport)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Ontraport** MCP server
 > I've fetched the transaction list for today. There were 12 sales processed, totaling $1,450.00. Would you like a breakdown of the items sold?
 
 
+## ❓ FAQ
+
+**Q: Where do I find my App ID and API Key?**
+In Ontraport, go to **Administration** > **Integrations** > **Ontraport API Instructions and Key Manager**. Create a new key to get both the App ID and the API Key.
+
+**Q: Can I target custom objects with these tools?**
+Currently, these tools are optimized for core objects like Contacts (0), Tasks (1), and Sequences (5). Support for other custom objects can be added by specifying their respective Object IDs in future updates.
+
+**Q: Does this support creating new contacts?**
+Yes! Use the `create_contact` action. You can provide an email address along with optional first and last names to add a new person to your Ontraport CRM.
+
+
 ## Installation & Usage
 
-To install and use the **Ontraport** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ontraport](https://vinkius.com/mcp/ontraport)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ontraport** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ontraport` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ontraport** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ontraport": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

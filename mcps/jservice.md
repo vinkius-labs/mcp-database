@@ -1,7 +1,6 @@
 # Jservice MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jservice)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jservice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jservice-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jservice)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Jservice** MCP server 
 > Searching for high-value clues in category 42 (Sports)... I found 2 clues worth $1000. One is about a famous 1920s baseball player. Should I reveal the clue text?
 
 
+## ❓ FAQ
+
+**Q: Can I get multiple random clues at once?**
+Yes! Use the `get_random_clues` tool and specify the `count` parameter (up to 100) to receive a batch of random trivia questions.
+
+**Q: How do I find clues from a specific category ID?**
+You can use `get_category` with the specific ID to get all clues in that category, or use `get_clues` and filter by the `category` parameter.
+
+**Q: Is it possible to filter clues by their difficulty or dollar value?**
+Yes, the `get_clues` tool accepts a `value` parameter (e.g., 200, 400, 800) to help you find clues corresponding to specific Jeopardy! board positions.
+
+
 ## Installation & Usage
 
-To install and use the **Jservice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/jservice](https://vinkius.com/mcp/jservice)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Jservice** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `jservice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Jservice** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "jservice": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

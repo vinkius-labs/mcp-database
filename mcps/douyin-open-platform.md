@@ -1,7 +1,6 @@
 # Douyin Open Platform MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/douyin-open-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/douyin-open-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/douyin-open-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/douyin-open-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Douyin Open Platform**
 > Searching the Douyin public feed... I've found 3 trending videos about robotics: 1. 'Humanoid Robot Demo', 2. 'DIY Robot Arm', 3. 'Boston Dynamics Update'. Which one would you like to explore?
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically reply to comments on specific videos?**
+Yes! Use the `reply_comment` tool with the video's `item_id` and the specific `comment_id`. Your agent will send the text reply directly to the Douyin platform.
+
+**Q: How do I obtain the 'open_id' for a user?**
+The `open_id` is a unique identifier for a user within your application. It is typically returned along with the `access_token` during the standard Douyin OAuth 2.0 authorization process.
+
+**Q: Can I search for trending videos using this MCP?**
+Yes! Use the `search_videos` tool with specific keywords. Your agent will return a list of public videos matching your query, along with their metadata and statistics.
+
+
 ## Installation & Usage
 
-To install and use the **Douyin Open Platform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/douyin-open-platform](https://vinkius.com/mcp/douyin-open-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Douyin Open Platform** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `douyin-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Douyin Open Platform** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "douyin-open-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

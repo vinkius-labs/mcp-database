@@ -1,7 +1,6 @@
 # Zoho Books MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-books)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-books-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-books-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-books)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Zoho Books** MCP serve
 > I've retrieved 10 items for your organization, including 'Web Design Service' ($150/hr), 'Cloud Hosting' ($25/mo), and 'Consulting Package' ($500).
 
 
+## ❓ FAQ
+
+**Q: How do I find my Organization ID?**
+Use the `list_organizations` tool to retrieve all businesses registered in your account along with their unique IDs.
+
+**Q: Which Data Center domains are supported?**
+You can use Zoho domains such as `com` (US), `eu` (Europe), `in` (India), `com.au` (Australia), or `jp` (Japan).
+
+**Q: Is it possible to create an invoice directly via the agent?**
+Yes, use the `create_new_invoice` tool by providing the Organization ID and a JSON object containing the invoice details and line items.
+
+
 ## Installation & Usage
 
-To install and use the **Zoho Books** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/zoho-books](https://vinkius.com/mcp/zoho-books)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Zoho Books** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `zoho-books` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Zoho Books** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "zoho-books": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Boloo (Bol.com Retailer) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boloo-bolcom-retailer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/boloo-bolcom-retailer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/boloo-bolcom-retailer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boloo-bolcom-retailer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **Boloo (Bol.com Retaile
 > I've retrieved the product info for EAN 8712345678901. It is a 'Wireless Gaming Mouse' in the Electronics category. Current lowest offer is €45.00.
 
 
+## ❓ FAQ
+
+**Q: Can I check for new open orders using the agent?**
+Yes! Use the `list_orders` tool with the status 'OPEN'. Your agent will fetch all orders that are currently awaiting handling in your bol.com account.
+
+**Q: How do I update the stock level for an existing product offer?**
+Simply ask the agent to `update_offer_stock` and provide the Offer ID and the new amount. It will update the availability on the bol.com platform instantly.
+
+**Q: Does the integration allow shipping items through bol.com Logistics?**
+Yes. Use the `ship_order_item` tool to confirm that an item has been handed over to the carrier. You will need to provide a shipment reference and the carrier details.
+
+
 ## Installation & Usage
 
-To install and use the **Boloo (Bol.com Retailer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/boloo-bolcom-retailer](https://vinkius.com/mcp/boloo-bolcom-retailer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Boloo (Bol.com Retailer)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `boloo-bolcom-retailer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Boloo (Bol.com Retailer)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "boloo-bolcom-retailer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

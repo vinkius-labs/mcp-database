@@ -1,7 +1,6 @@
 # Ortto (formerly Autopilot) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ortto-formerly-autopilot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ortto-formerly-autopilot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ortto-formerly-autopilot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ortto-formerly-autopilot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Ortto (formerly Autopi
 > The activity 'product-demo-requested' has been successfully triggered for [email protected]. This will initiate the corresponding automation journey in your Ortto instance.
 
 
+## ❓ FAQ
+
+**Q: Can the AI automatically find a person's profile by their email address?**
+Yes! Use the `get_person` tool with the target email address. Your agent will return the full profile metadata, including custom fields and account associations.
+
+**Q: How do I specify which region my Ortto account is hosted in?**
+When configuring the server, use the `ORTTO_REGION` field. Supported values are 'Global' (default), 'AU' (Australia), or 'EU' (Europe), ensuring your agent connects to the correct data center.
+
+**Q: Does the integration allow for triggering custom activities for engagement?**
+Yes. The `create_activity` tool allows you to programmatically trigger any custom activity defined in your Ortto instance, perfect for real-time automation and journey entry.
+
+
 ## Installation & Usage
 
-To install and use the **Ortto (formerly Autopilot)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ortto-formerly-autopilot](https://vinkius.com/mcp/ortto-formerly-autopilot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ortto (formerly Autopilot)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ortto-formerly-autopilot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ortto (formerly Autopilot)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ortto-formerly-autopilot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

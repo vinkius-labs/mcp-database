@@ -1,7 +1,6 @@
 # DropBox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dropbox-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dropbox-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dropbox-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dropbox-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **DropBox** MCP server u
 > Shared link generated! You can access the presentation at https://www.dropbox.com/s/xxxxxxxx. The link is currently set to public access.
 
 
+## ❓ FAQ
+
+**Q: How do I find my DropBox Access Token?**
+Create a new app in the [**DropBox App Console**](https://www.dropbox.com/developers/apps) and click 'Generate' under the 'Generated access token' section. Copy and paste it below.
+
+**Q: Can the agent search for specific files?**
+Yes. Use the `search_files` tool providing a query string. Your agent will return all matching files and folders from your entire account instantly.
+
+**Q: Is it possible to generate a shared link via the agent?**
+Yes. The `create_shared_link` tool allows your agent to generate a public URL for any file or folder by providing its path.
+
+
 ## Installation & Usage
 
-To install and use the **DropBox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dropbox-alternative](https://vinkius.com/mcp/dropbox-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DropBox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dropbox-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DropBox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dropbox-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

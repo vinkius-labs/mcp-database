@@ -1,7 +1,6 @@
 # Carbon Offset Comparator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/carbon-offset-comparator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/carbon-offset-comparator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/carbon-offset-comparator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/carbon-offset-comparator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Carbon Offset Comparat
 > Using `project_budget_impact` with a budget of 10000, the tool will return the estimated tonnage for all available strategies.
 
 
+## ❓ FAQ
+
+**Q: How can I find the cost of a specific strategy?**
+Use the `get_strategy_efficiency` tool by providing the strategy name, such as `tree_planting` or `solar_energy`.
+
+**Q: Can I compare multiple strategies at once?**
+Yes. The `compare_strategies_ranking` tool allows you to input an array of strategy names to see which is most cost-effective.
+
+**Q: How do I calculate the impact of a specific budget?**
+The `project_budget_impact` tool calculates how many metric tons of CO2 can be offset based on your provided total budget.
+
+
 ## Installation & Usage
 
-To install and use the **Carbon Offset Comparator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/carbon-offset-comparator](https://vinkius.com/mcp/carbon-offset-comparator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Carbon Offset Comparator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `carbon-offset-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Carbon Offset Comparator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "carbon-offset-comparator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

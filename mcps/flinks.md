@@ -1,7 +1,6 @@
 # Flinks MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flinks)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flinks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flinks-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flinks)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Flinks** MCP server us
 > I've fetched the categorization data. Significant spending categories include 'Housing' (35%), 'Groceries' (15%), and 'Transportation' (10%). Would you like a detailed breakdown of the 'Groceries' category?
 
 
+## ❓ FAQ
+
+**Q: What should I do if get_accounts_detail returns a 202 status?**
+A 202 status means the operation is pending. You should use the `get_accounts_detail_async` tool with the same RequestId to poll for the data until it is ready.
+
+**Q: Can I filter the list of supported financial institutions by country?**
+Yes. Use the `list_institutions` tool and provide a comma-separated list of country codes (e.g., 'CA,US') in the `countries` parameter.
+
+**Q: How do I start a new data retrieval session?**
+First, run `generate_authorize_token` to get a 30-minute token. Then, use `authorize_session` with that token and the user's LoginId to establish the connection.
+
+
 ## Installation & Usage
 
-To install and use the **Flinks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/flinks](https://vinkius.com/mcp/flinks)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Flinks** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `flinks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Flinks** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "flinks": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

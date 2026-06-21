@@ -1,7 +1,6 @@
 # U.S. Census Population — Demographics, Age & Diversity MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-census-population-demographics-age-diversity)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-census-population-demographics-age-diversity-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-census-population-demographics-age-diversity-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-census-population-demographics-age-diversity)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Followed by:
 - Population: 2,278,029
 
 
+## ❓ FAQ
+
+**Q: What are FIPS codes?**
+FIPS (Federal Information Processing Standard) codes are numbers used by the government to uniquely identify states, counties, and places. E.g., California is 06, Los Angeles County is 037.
+
+**Q: Which census survey do you use?**
+We use the American Community Survey (ACS) 5-Year estimates, which provide the most reliable, detailed, and broad demographic data annually.
+
+**Q: Are undocumented immigrants counted?**
+Yes, the Census Bureau attempts to count all residents regardless of immigration status, though this group is historically harder to count accurately.
+
+
 ## Installation & Usage
 
-To install and use the **U.S. Census Population — Demographics, Age & Diversity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-census-population-demographics-age-diversity](https://vinkius.com/mcp/us-census-population-demographics-age-diversity)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **U.S. Census Population — Demographics, Age & Diversity** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `us-census-population-demographics-age-diversity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **U.S. Census Population — Demographics, Age & Diversity** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-census-population-demographics-age-diversity": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

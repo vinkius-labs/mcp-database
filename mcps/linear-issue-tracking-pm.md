@@ -1,7 +1,6 @@
 # Linear (Issue Tracking & PM) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linear-issue-tracking-pm)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/linear-issue-tracking-pm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/linear-issue-tracking-pm-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linear-issue-tracking-pm)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Linear (Issue Tracking
 > The current sprint cycle for the Engineering team ends this Friday, March 27th. There are currently 12 active issues in the cycle, with 8 in the 'Todo' or 'In Progress' states. Would you like a list of remaining tasks?
 
 
+## ❓ FAQ
+
+**Q: Can I see the full context of a bug report through my agent?**
+Yes. Use the `get_issue` tool with a specific Issue ID or UUID. Your agent will retrieve the full description, assigned labels, and current status, helping you understand the technical requirements instantly.
+
+**Q: How do I check the progress of the current sprint cycle?**
+The `list_cycles` tool allows your agent to retrieve current iteration boundaries and temporal limits. You can see which cycles are active and how many issues are assigned to each team grouping.
+
+**Q: Can my agent list all members of a specific team in Linear?**
+Absolutely. Use the `list_users` tool to identify registered users. Your agent will return precise organizational mappings and IDs, making it easy to route assignment requests through natural conversation.
+
+
 ## Installation & Usage
 
-To install and use the **Linear (Issue Tracking & PM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/linear-issue-tracking-pm](https://vinkius.com/mcp/linear-issue-tracking-pm)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Linear (Issue Tracking & PM)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `linear-issue-tracking-pm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Linear (Issue Tracking & PM)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "linear-issue-tracking-pm": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

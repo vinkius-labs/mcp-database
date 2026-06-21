@@ -1,7 +1,6 @@
 # Foursquare MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/foursquare)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/foursquare-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/foursquare-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/foursquare)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Foursquare** MCP serve
 > Retrieving tips... Visitors recommend: 'Go early to avoid crowds', 'Don't miss the Egyptian wing', and 'The rooftop view is incredible'. I found 50+ detailed tips for your visit.
 
 
+## ❓ FAQ
+
+**Q: Can my agent search for places within a specific drawn area (polygon)?**
+Yes. Use the 'search_within_polygon' tool. Provide a coordinate string representing the multi-point geometry. The agent will analyze the localized boundaries and restrict the POI lookup strictly inside that drawn area.
+
+**Q: How do I retrieve the opening hours and ratings for a venue via chat?**
+Use the 'get_place_details' tool. Provide the Foursquare ID (fsq_id). The agent will fetch the full payload including operating hours, average ratings, and price levels natively from the places graph.
+
+**Q: Can I see photos and user tips for a specific store through the agent?**
+Absolutely. Use the 'get_place_photos' and 'get_place_tips' tools. Your agent will pull dynamic image URLs and capture raw text sentiments left by other visitors to help you evaluate venue quality flawlessly.
+
+
 ## Installation & Usage
 
-To install and use the **Foursquare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/foursquare](https://vinkius.com/mcp/foursquare)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Foursquare** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `foursquare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Foursquare** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "foursquare": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

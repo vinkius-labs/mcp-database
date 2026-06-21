@@ -1,7 +1,6 @@
 # DocuSeal MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docuseal)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docuseal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docuseal-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docuseal)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **DocuSeal** MCP server 
 > Signer 'Alice Smith' (ID: 88291) has received the document but has not signed it yet. The last update was 2 hours ago.
 
 
+## ❓ FAQ
+
+**Q: Can I create a document template using raw HTML code?**
+Yes! Use the `create_template` tool and provide your HTML content in the `html` parameter. DocuSeal will convert it into a reusable document template.
+
+**Q: How do I send a document to multiple signers at once?**
+Use the `create_submission` tool. You can pass an array of signer objects (including email, name, and role) to the `submitters` parameter to initiate the signing process for everyone involved.
+
+**Q: Is it possible to pre-fill form fields before the signer opens the document?**
+Absolutely. Use the `update_submitter` tool with the specific Submitter ID and provide a JSON object in the `values` parameter to map data to the form fields.
+
+
 ## Installation & Usage
 
-To install and use the **DocuSeal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/docuseal](https://vinkius.com/mcp/docuseal)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DocuSeal** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `docuseal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DocuSeal** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "docuseal": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

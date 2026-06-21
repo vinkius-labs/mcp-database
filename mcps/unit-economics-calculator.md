@@ -1,7 +1,6 @@
 # Unit Economics Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unit-economics-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unit-economics-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unit-economics-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unit-economics-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -57,12 +56,52 @@ Here are some examples of how you can interact with the **Unit Economics Calcula
 > I will first use `calculate_contribution_margin` (Revenue, $100; Costs, $45 + $5) to get a lower margin. Then, using that new margin, I can evaluate the unit economics health with `rate_health`.
 
 
+## ❓ FAQ
+
+**Q: What is the first step to calculating profitability?**
+You must first use `calculate_contribution_margin` by providing the Gross Price, COGS, and Support Cost. This establishes the core monthly profit before considering long-term effects.
+
+**Q: How do I find out if my CAC is sustainable?**
+Use `calculate_payback_period`. This tool takes your Customer Acquisition Cost and the monthly contribution margin to tell you exactly how many months it will take to break even. A lower number means better unit economics.
+
+**Q: What is the final measure of long-term value?**
+The most comprehensive view comes from `calculate_payback_period`. It synthesizes all inputs to provide a Net LTV Residual Margin, which is the true profit left over after paying back your CAC and accounting for churn.
+
+
 ## Installation & Usage
 
-To install and use the **Unit Economics Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/unit-economics-calculator](https://vinkius.com/mcp/unit-economics-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Unit Economics Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `unit-economics-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Unit Economics Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "unit-economics-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

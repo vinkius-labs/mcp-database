@@ -1,7 +1,6 @@
 # ClubPlanner MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clubplanner)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clubplanner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clubplanner-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clubplanner)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **ClubPlanner** MCP serv
 > Fetching schedule... Tomorrow you have 5 appointments, including 3 personal training sessions and 2 prospect tours. Shall I retrieve the details for the 10 AM session?
 
 
+## ❓ FAQ
+
+**Q: Can I check how many members are currently in the club?**
+Yes! Use the `list_checkins` tool to see recent entry history. Your agent can filter these to show you the active check-ins for today.
+
+**Q: How do I schedule a new personal training session for a member?**
+Use the `create_appointment` action. Provide the Member ID, the start time in ISO format, and a description (e.g., 'Leg Day with Coach Mike') to book it instantly.
+
+**Q: Is it possible to see which contracts are active via AI?**
+Absolutely. Use the `list_contracts` query. The agent will retrieve the directory of all active membership agreements currently recorded in your account.
+
+
 ## Installation & Usage
 
-To install and use the **ClubPlanner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/clubplanner](https://vinkius.com/mcp/clubplanner)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ClubPlanner** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `clubplanner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ClubPlanner** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "clubplanner": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

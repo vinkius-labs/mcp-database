@@ -1,7 +1,6 @@
 # ImageKit (Media Optimization & DAM) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/imagekit-media-optimization-dam)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/imagekit-media-optimization-dam-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/imagekit-media-optimization-dam-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/imagekit-media-optimization-dam)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **ImageKit (Media Optimi
 > EXIF metadata for file_12345: Dimensions: 4032x3024, Focal Length: 26mm, ISO: 100, Aperture: f/1.8. It was captured on an iPhone 13 Pro. Would you like to add an 'Apple' tag to this asset?
 
 
+## ❓ FAQ
+
+**Q: Can I purge the CDN cache for a specific image using my agent?**
+Yes. Use the `purge_cdn_cache` tool by providing the fully qualified delivery URL. Your agent will trigger the invalidation at the global Edge nodes and return a Request ID that you can use to track the status.
+
+**Q: How do I see technical EXIF data for an uploaded file?**
+The `get_exif_metadata` tool allows your agent to extract raw structural matching from an image, exposing technical details like focal length, ISO, and camera settings directly in your conversation.
+
+**Q: Can I update tags for multiple images at once?**
+While the `patch_file_details` tool focuses on individual files, your agent can process multiple files sequentially through natural language commands, making it easy to overwrite tags across your media vault.
+
+
 ## Installation & Usage
 
-To install and use the **ImageKit (Media Optimization & DAM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/imagekit-media-optimization-dam](https://vinkius.com/mcp/imagekit-media-optimization-dam)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ImageKit (Media Optimization & DAM)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `imagekit-media-optimization-dam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ImageKit (Media Optimization & DAM)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "imagekit-media-optimization-dam": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

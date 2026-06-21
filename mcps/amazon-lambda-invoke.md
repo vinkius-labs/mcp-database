@@ -1,7 +1,6 @@
 # Amazon Lambda Invoke MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-lambda-invoke)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazon-lambda-invoke-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazon-lambda-invoke-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-lambda-invoke)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -55,12 +54,52 @@ Here are some examples of how you can interact with the **Amazon Lambda Invoke**
 > The function returned a 200 Status Code but reported a 'FunctionError: Unhandled'. The 'LogResult' indicates a 'KeyError' occurred at line 14 of the Python code.
 
 
+## ❓ FAQ
+
+**Q: Why limit the agent to a single Lambda function?**
+To enforce zero-trust architecture. An autonomous agent shouldn't have the power to execute arbitrary code or trigger unauthorized billing spikes by invoking unapproved serverless functions.
+
+**Q: Can I invoke the function asynchronously?**
+Yes. Set the 'invocationType' parameter to 'Event'. The agent will trigger the function in the background and receive an immediate 202 Accepted response.
+
+**Q: How does the agent know if the code crashed?**
+The tool automatically requests the 'Tail' log from AWS Lambda. If the function crashes, the agent will see the 'FunctionError' flag and the stack trace inside the 'LogResult'.
+
+
 ## Installation & Usage
 
-To install and use the **Amazon Lambda Invoke** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/amazon-lambda-invoke](https://vinkius.com/mcp/amazon-lambda-invoke)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Amazon Lambda Invoke** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `amazon-lambda-invoke` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Amazon Lambda Invoke** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "amazon-lambda-invoke": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

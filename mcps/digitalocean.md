@@ -1,7 +1,6 @@
 # DigitalOcean MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/digitalocean)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/digitalocean-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/digitalocean-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/digitalocean)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **DigitalOcean** MCP ser
 > I've retrieved 2 active services on App Platform: 'Marketing-Site' (Status: Active, Last Deploy: 2 hours ago) and 'Customer-API' (Status: Active, Last Deploy: yesterday). Would you like to see the source repositories for these apps?
 
 
+## ❓ FAQ
+
+**Q: How do I get a DigitalOcean Personal Access Token?**
+Log in to your DigitalOcean account, navigate to the **API** section in the sidebar, and under the **Tokens/Keys** tab, click **Generate New Token**. Ensure you select the 'read' or 'write' scopes as needed.
+
+**Q: Can the agent reboot a Droplet?**
+This integration currently focuses on listing and auditing infrastructure resources. Power actions like rebooting or resizing should be managed via the DigitalOcean control panel or CLI.
+
+**Q: Is the App Platform supported?**
+Yes, you can use the list_app_platform_services tool to monitor your applications deployed on DigitalOcean's App Platform and check their current deployment status.
+
+
 ## Installation & Usage
 
-To install and use the **DigitalOcean** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/digitalocean](https://vinkius.com/mcp/digitalocean)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DigitalOcean** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `digitalocean` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DigitalOcean** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "digitalocean": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

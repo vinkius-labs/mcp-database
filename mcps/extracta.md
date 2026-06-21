@@ -1,7 +1,6 @@
 # Extracta MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/extracta)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/extracta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/extracta-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/extracta)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -89,12 +88,52 @@ Here are some examples of how you can interact with the **Extracta** MCP server 
 > Checking classification for doc_789... The AI has classified this document as 'Invoice' with a 98% confidence score. It fits within your defined document categories flawlessly.
 
 
+## ❓ FAQ
+
+**Q: Can my agent create a new data extraction setup with custom fields?**
+Yes. Use the 'create_extraction' tool. Provide a JSON schema defining the fields you expect (e.g., 'total_amount', 'vendor_name'). The agent will return a new extractionId for document processing.
+
+**Q: How do I process a PDF document using a specific extraction ID via chat?**
+Use the 'upload_file_url' tool. Provide the extractionId and the public URL of your PDF. The agent will trigger the workflow and return a documentId, which you can use with 'get_results' to fetch the data.
+
+**Q: Can I see the predicted document type and confidence score through the agent?**
+Absolutely. Use the 'get_classification_results' tool with the document and classification IDs. The agent will retrieve the AI-predicted label (e.g., 'Invoice') and the confidence score for the processed file.
+
+
 ## Installation & Usage
 
-To install and use the **Extracta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/extracta](https://vinkius.com/mcp/extracta)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Extracta** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `extracta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Extracta** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "extracta": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

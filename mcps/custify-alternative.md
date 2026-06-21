@@ -1,7 +1,6 @@
 # Custify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/custify-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/custify-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/custify-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/custify-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Custify** MCP server u
 > Event tracked! I've recorded the 'Button Clicked' action for user user_88231 in Custify. This data will be used to update their health score and engagement metrics.
 
 
+## ❓ FAQ
+
+**Q: Can I check the health score of a company via AI?**
+Yes! Use the `get_company_details` tool and provide the Company ID. Your agent will retrieve the current health score, risk status, and account metadata.
+
+**Q: How do I track a custom user event using the agent?**
+Use the `track_user_event` action. Provide the User ID and the Event Name. You can also pass a JSON object with additional attributes for the action.
+
+**Q: Is it possible to see my defined customer segments via AI?**
+Absolutely. Use the `list_user_segments` query. The agent will retrieve the complete list of segments configured in your Custify account.
+
+
 ## Installation & Usage
 
-To install and use the **Custify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/custify-alternative](https://vinkius.com/mcp/custify-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Custify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `custify-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Custify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "custify-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

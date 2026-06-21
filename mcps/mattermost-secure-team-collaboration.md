@@ -1,7 +1,6 @@
 # Mattermost (Secure Team Collaboration) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mattermost-secure-team-collaboration)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mattermost-secure-team-collaboration-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mattermost-secure-team-collaboration-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mattermost-secure-team-collaboration)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Mattermost (Secure Tea
 > Post sent successfully to #product-alerts. Your message including the mention for @alex has been dispatched. New Post ID: 'post-13579'. I can monitor for any replies if you'd like.
 
 
+## ❓ FAQ
+
+**Q: Does this work with self-hosted Mattermost instances?**
+Yes. You just need to provide your full Mattermost Host URL (e.g., https://mattermost.your-company.com). Your agent will connect securely to your private instance using your Personal Access Token.
+
+**Q: How do I create a message in a specific channel using my agent?**
+Use the `create_post` tool by providing the Target Channel UUID and your message in Markdown. Your agent will dispatch the payload immediately, allowing you to ping specific users using standard @mentions.
+
+**Q: Can my agent search for channels I'm not currently watching?**
+Absolutely. Use the `search_channels` tool with a search term. Your agent will perform a fuzzy search across your team's public and private (accessible) channels to identify the correct ID for your next operation.
+
+
 ## Installation & Usage
 
-To install and use the **Mattermost (Secure Team Collaboration)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mattermost-secure-team-collaboration](https://vinkius.com/mcp/mattermost-secure-team-collaboration)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mattermost (Secure Team Collaboration)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mattermost-secure-team-collaboration` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mattermost (Secure Team Collaboration)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mattermost-secure-team-collaboration": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

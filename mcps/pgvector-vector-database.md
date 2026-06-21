@@ -1,7 +1,6 @@
 # pgvector (Vector Database) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pgvector-vector-database)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pgvector-vector-database-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pgvector-vector-database-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pgvector-vector-database)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Want me to retrieve the full content of the top result?
 > Done. Created table `support_tickets` with columns: `id TEXT PRIMARY KEY`, `embedding vector(1536)`, `metadata JSONB`. Then created HNSW index using `vector_cosine_ops`. The table is ready for inserts.
 
 
+## ❓ FAQ
+
+**Q: Does the agent connect directly to my database?**
+Yes. Your connection string is encrypted at rest and injected into an isolated runtime. The agent connects directly to your PostgreSQL instance — no intermediate proxies, no data copies, no third-party storage.
+
+**Q: What vector dimensions are supported?**
+Any dimension supported by pgvector — from small 128-d vectors to large 3072-d embeddings (e.g., OpenAI text-embedding-3-large). Specify the dimension when creating a table and the agent handles the rest.
+
+**Q: Which distance metrics can I use for similarity search?**
+pgvector supports three operators: `<->` (L2/Euclidean distance), `<=>` (cosine distance), and `<#>` (negative inner product). The agent uses cosine distance by default, which works best for normalized embeddings like those from OpenAI.
+
+
 ## Installation & Usage
 
-To install and use the **pgvector (Vector Database)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pgvector-vector-database](https://vinkius.com/mcp/pgvector-vector-database)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **pgvector (Vector Database)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pgvector-vector-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **pgvector (Vector Database)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pgvector-vector-database": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

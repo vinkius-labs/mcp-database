@@ -1,7 +1,6 @@
 # EasySendy MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/easysendy)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/easysendy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/easysendy-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/easysendy)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -81,12 +80,52 @@ Here are some examples of how you can interact with the **EasySendy** MCP server
 > I've located Sarah's profile in the specified list. She is currently 'Confirmed' and joined on 2024-03-15. Her tags include 'Premium' and 'Loyalty'. Would you like to see her custom field values?
 
 
+## ❓ FAQ
+
+**Q: How do I find my EasySendy API Key?**
+Log in to your EasySendy account, click on your profile (top right), select **APIs**, and copy your Public API Key.
+
+**Q: Can I search for a subscriber by email?**
+Yes! Use the `get_subscriber_details` tool and provide the List UID and the subscriber's email address to retrieve their full profile.
+
+**Q: How do I import multiple subscribers at once?**
+Use the `add_multiple_subscribers` tool and provide a JSON array containing the subscriber details (EMAIL, FNAME, LNAME, etc.).
+
+
 ## Installation & Usage
 
-To install and use the **EasySendy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/easysendy](https://vinkius.com/mcp/easysendy)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **EasySendy** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `easysendy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **EasySendy** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "easysendy": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

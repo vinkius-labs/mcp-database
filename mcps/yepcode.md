@@ -1,7 +1,6 @@
 # YepCode MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yepcode)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/yepcode-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/yepcode-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yepcode)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **YepCode** MCP server u
 > Inspecting recent executions... I found 3 entries: 'PDF Generator' (Success), 'Database Sync' (Success), and 'Web Scraper' (Error). Would you like the error logs for the Web Scraper?
 
 
+## ❓ FAQ
+
+**Q: Can I provide input parameters when running a process?**
+Yes, the `run_process` tool accepts an optional JSON object for parameters, allowing you to pass dynamic data to your serverless functions.
+
+**Q: How do I check if a process execution failed?**
+Use the `list_executions` query. It will return a history of recent runs along with their final status (e.g., success, error, pending).
+
+**Q: Is it possible to see the code of my processes via AI?**
+Yes, you can use the `get_process_details` tool to retrieve the complete metadata and code configuration for any specific process ID.
+
+
 ## Installation & Usage
 
-To install and use the **YepCode** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/yepcode](https://vinkius.com/mcp/yepcode)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **YepCode** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `yepcode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **YepCode** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "yepcode": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

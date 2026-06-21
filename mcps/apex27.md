@@ -1,7 +1,6 @@
 # Apex27 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apex27)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apex27-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apex27-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apex27)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Apex27** MCP server us
 > I've fetched the offers. For the 'Luxury Villa' (ID: prop_5521), there are 2 recent offers: $1.2M from 'Sarah Smith' and $1.15M from 'International Investments'. Shall I retrieve the status for either of them?
 
 
+## ❓ FAQ
+
+**Q: Can I see the price and status of a specific property via AI?**
+Yes! Use the `get_property_details` tool and provide the Property ID. Your agent will retrieve the complete metadata, including the current asking price and marketing status.
+
+**Q: How do I schedule a new viewing for a contact?**
+Use the `schedule_viewing` action. You'll need to provide the Property ID, the Contact ID, and the start time in ISO format to register the new appointment in Apex27.
+
+**Q: Is it possible to list all current offers via AI?**
+Absolutely. Use the `list_offers` query. The agent will retrieve a history of all financial offers made on your properties, allowing you to monitor your sales pipeline.
+
+
 ## Installation & Usage
 
-To install and use the **Apex27** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/apex27](https://vinkius.com/mcp/apex27)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Apex27** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `apex27` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Apex27** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "apex27": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

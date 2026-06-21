@@ -1,7 +1,6 @@
 # CFO Strategy Prover MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cfo-strategy-prover)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cfo-strategy-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cfo-strategy-prover-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cfo-strategy-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **CFO Strategy Prover** 
 > Revenue-cash flow divergence signals collection problem. Growing revenue with deteriorating AR means selling to slow-paying customers. Tighten payment terms, implement early-payment discounts, and segment customers by payment reliability.
 
 
+## ❓ FAQ
+
+**Q: Why does it reject 'growth solves everything'?**
+Scale is a multiplier of unit economics — if they are negative, growth makes losses worse. First prove: LTV:CAC >3x, payback <18 months, gross margin >60%. Then scale.
+
+**Q: Why is 'we can always raise' rejected?**
+Venture capital is not a business model. Runway is measured in months, not hope. Calculate net monthly burn, months of runway (>12-18), and set a fundraising trigger at 9 months remaining.
+
+**Q: What is FORECAST_BOILERPLATE?**
+A single-line deterministic projection — 'we expect 15% monthly growth.' Model Base, Downside, and Upside scenarios with cost-cutting triggers. Every forecast needs a kill switch.
+
+
 ## Installation & Usage
 
-To install and use the **CFO Strategy Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cfo-strategy-prover](https://vinkius.com/mcp/cfo-strategy-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **CFO Strategy Prover** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cfo-strategy-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **CFO Strategy Prover** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cfo-strategy-prover": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

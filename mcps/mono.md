@@ -1,7 +1,6 @@
 # Mono MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mono)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mono-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mono-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mono)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Mono** MCP server usin
 > Payment initiation request sent. Reference: REF-998. Amount: 5000 kobo. Description: Service Fee. Please follow the redirect URL provided to complete the authorization.
 
 
+## ❓ FAQ
+
+**Q: Can I check the balance and institution details of a specific linked account?**
+Yes! Use the `get_account` tool with the specific Account ID. The agent will return the current balance, account number, and the name of the financial institution.
+
+**Q: How do I download a bank statement in PDF format for a specific period?**
+You can use the `get_statement` tool. Specify the `account_id`, set the `output` parameter to 'pdf', and define the `period` (e.g., 'last6months') to receive the statement data.
+
+**Q: Is it possible to verify the identity of the account holder?**
+Absolutely. The `get_identity` tool allows you to fetch verified information such as the holder's full name, BVN, phone number, and registered address directly from the linked bank account.
+
+
 ## Installation & Usage
 
-To install and use the **Mono** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mono](https://vinkius.com/mcp/mono)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mono** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mono` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mono** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mono": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

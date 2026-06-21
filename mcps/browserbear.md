@@ -1,7 +1,6 @@
 # Browserbear MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browserbear)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browserbear-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browserbear-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browserbear)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Browserbear** MCP serv
 > Task run tr_8877 has been triggered with the URL override. I will monitor it for completion.
 
 
+## ❓ FAQ
+
+**Q: Can I trigger a browser task with a different starting URL?**
+Yes! Use the `run_task` tool and provide the Task ID. In the `overrides` field, you can pass a JSON object like `{"url": "https://newsite.com"}` to change the starting point dynamically.
+
+**Q: How do I see the screenshot captured by a task?**
+Simply ask the agent to `get_run` and provide the Run ID. Once the status is 'finished', the response will include a `screenshot_url` that you can click to view the image.
+
+**Q: Does the integration allow taking a quick screenshot without a saved task?**
+Yes. Use the `take_screenshot` action and provide the URL. It will create a simplified run that captures the page and returns the result URL once processed.
+
+
 ## Installation & Usage
 
-To install and use the **Browserbear** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/browserbear](https://vinkius.com/mcp/browserbear)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Browserbear** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `browserbear` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Browserbear** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "browserbear": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

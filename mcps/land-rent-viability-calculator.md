@@ -1,7 +1,6 @@
 # Land Rent Viability Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/land-rent-viability-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/land-rent-viability-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/land-rent-viability-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/land-rent-viability-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Land Rent Viability Ca
 > The minimum commodity price required to reach the break-even point is $21.43 per unit.
 
 
+## ❓ FAQ
+
+**Q: What does `calculate_costs` do?**
+It calculates the total production cost per hectare and for the entire area, accounting for whether land rent is provided in weight (bags/ha) or currency ($/ha).
+
+**Q: How can I find the break-even point for my lease?**
+Use the `identify_thresholds` tool. It calculates the minimum productivity and minimum commodity price needed to cover all production costs including the land rent.
+
+**Q: Can I evaluate profit or loss?**
+Yes, the `evaluate_profitability` tool calculates net profit or loss per hectare and for the total area based on your expected yield and market price.
+
+
 ## Installation & Usage
 
-To install and use the **Land Rent Viability Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/land-rent-viability-calculator](https://vinkius.com/mcp/land-rent-viability-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Land Rent Viability Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `land-rent-viability-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Land Rent Viability Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "land-rent-viability-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

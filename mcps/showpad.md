@@ -1,7 +1,6 @@
 # Showpad MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/showpad)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/showpad-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/showpad-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/showpad)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,52 @@ Here are some examples of how you can interact with the **Showpad** MCP server u
 > Initiating raw matrix extraction accessing `list_channels` passively exclusively. Extracted 5 heavily prominent publishing funnels spanning structurally from direct marketing hubs, explicitly targeted external reseller networks, and localized sales hubs uniformly distributing collateral without disruption natively efficiently systematically.
 
 
+## ❓ FAQ
+
+**Q: Can the integration alter, upload, or delete assets directly?**
+By structural design, this module is strictly bound as an observational and auditing lens. Operations such as `search_assets`, `list_channels`, and `get_user_details` parse and extract massive contextual architecture. It explicitly omits write mechanisms preventing your autonomous agent from accidentally sabotaging or permanently deleting valid organizational sales assets.
+
+**Q: Why construct this manually over downloading platform-provided CSVs?**
+Static extracts decay instantly upon creation implicitly blinding observers. The MCP parameter configuration hands your prompt active, unadulterated runtime authority to scan real-time hierarchies, pull active tags, and interrogate asset metadata aggressively instantly. It creates dynamic query dialogue natively routing structural truths.
+
+**Q: Are specific domain aliases required for the query logic?**
+Yes exactly. Because Showpad physically partitions tenants distinctively, providing and solidifying the `SHOWPAD_SUBDOMAIN` variable string guarantees the underlying path execution targets explicitly your organizational API backbone (`your-subdomain.showpad.biz`) ruthlessly.
+
+
 ## Installation & Usage
 
-To install and use the **Showpad** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/showpad](https://vinkius.com/mcp/showpad)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Showpad** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `showpad` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Showpad** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "showpad": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

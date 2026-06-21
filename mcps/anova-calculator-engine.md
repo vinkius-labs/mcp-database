@@ -1,7 +1,6 @@
 # ANOVA Calculator Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anova-calculator-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/anova-calculator-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/anova-calculator-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anova-calculator-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **ANOVA Calculator Engin
 > Yes, the ANOVA test returns p < 0.001. Looking at the group means, Store 2 has a significantly higher average revenue than the other two.
 
 
+## ❓ FAQ
+
+**Q: Does it support Two-Way ANOVA?**
+Currently, this engine strictly computes exact One-Way ANOVA across any number of groups. The AI can assist with interpreting interaction effects manually.
+
+**Q: Do the groups need to have the same number of samples?**
+No. The jstat engine handles unbalanced group sizes perfectly, computing SSB and SSW with exact degrees of freedom adjustment.
+
+**Q: What format does the data need to be in?**
+An array of numerical arrays, one per group. The AI automatically parses your CSV or text data into the correct structure before calling the engine.
+
+
 ## Installation & Usage
 
-To install and use the **ANOVA Calculator Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/anova-calculator-engine](https://vinkius.com/mcp/anova-calculator-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ANOVA Calculator Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `anova-calculator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ANOVA Calculator Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "anova-calculator-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

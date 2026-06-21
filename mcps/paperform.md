@@ -1,7 +1,6 @@
 # Paperform MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paperform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/paperform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/paperform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paperform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Paperform** MCP server
 > There are 2 webhooks for this form: one pointing to Zapier and another to a custom endpoint (https://api.example.com/webhook).
 
 
+## ❓ FAQ
+
+**Q: How do I find my Paperform Access Token?**
+In your Paperform account, go to **Account Settings** > **API**. There you can create and manage your API access tokens.
+
+**Q: Can I see individual form responses?**
+Yes! Use the `list_submissions` tool to see a list of responses for a specific form, and `get_submission` to retrieve the full data for a particular entry.
+
+**Q: Does this support webhook management?**
+Absolutely. You can use the `list_webhooks` and `create_webhook` tools to monitor and configure integrations for any of your forms.
+
+
 ## Installation & Usage
 
-To install and use the **Paperform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/paperform](https://vinkius.com/mcp/paperform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Paperform** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `paperform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Paperform** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "paperform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

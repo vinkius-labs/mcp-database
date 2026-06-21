@@ -1,7 +1,6 @@
 # LinkedIn Page Management MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkedin-page-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/linkedin-page-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/linkedin-page-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkedin-page-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **LinkedIn Page Manageme
 > I found 3 comments on that post. Highlights include a question from 'Jane Smith' about product availability and a thank you message from 'Robert Brown'.
 
 
+## ❓ FAQ
+
+**Q: Which scopes are required to post as an organization?**
+Your access token must include `w_organization_social` to create posts and comments, and `r_organization_social` to list them.
+
+**Q: How do I find my Organization ID?**
+Use the `list_managed_pages` tool. It will return all organizations where you have management roles along with their unique IDs.
+
+**Q: Can I reply to a specific comment?**
+The current version supports creating top-level comments on posts. Support for threaded replies (using the `parent` field) is handled via the same comment tool by providing the parent URN if supported by the engine.
+
+
 ## Installation & Usage
 
-To install and use the **LinkedIn Page Management** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/linkedin-page-management](https://vinkius.com/mcp/linkedin-page-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LinkedIn Page Management** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `linkedin-page-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LinkedIn Page Management** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "linkedin-page-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

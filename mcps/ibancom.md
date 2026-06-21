@@ -1,7 +1,6 @@
 # IBAN.com MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ibancom)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ibancom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ibancom-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ibancom)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **IBAN.com** MCP server 
 > Calculation complete! The resulting IBAN for those details is identified. I've also retrieved the bank name associated with that sort code. Would you like the direct validation results?
 
 
+## ❓ FAQ
+
+**Q: How do I find my IBAN.com API Key?**
+Log in to your [**IBAN.com client area**](https://www.iban.com/login), and you will find your API Key under the 'API Settings' or 'My Keys' section. Copy and paste it below.
+
+**Q: Does the agent support SWIFT code validation?**
+Yes. Use the `validate_swift_bic` tool providing the BIC string. Your agent will verify its structure and authenticity with official banking data instantly.
+
+**Q: Can I calculate an IBAN from local bank details?**
+Yes. The `calculate_iban` tool allows your agent to generate a valid IBAN by providing the country code and local account number/sort code.
+
+
 ## Installation & Usage
 
-To install and use the **IBAN.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ibancom](https://vinkius.com/mcp/ibancom)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **IBAN.com** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ibancom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **IBAN.com** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ibancom": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Adrecord MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adrecord)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adrecord-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adrecord-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adrecord)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Adrecord** MCP server 
 > I've pulled the product feed for program 5678. It contains 250 items including names, prices, and your affiliate tracking links. Would you like to filter for a specific product category?
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Adrecord API Token?**
+Log in to your account (Adrecord or Adtraction), navigate to **Account** > **Settings**. You can generate or retrieve your API Token there. It will be used in the `X-Token` header for all requests.
+
+**Q: Can I see my pending commissions?**
+Yes! Use the `list_transactions` tool to retrieve all tracked sales and leads, including their current status (Pending, Approved, Denied) and commission amounts.
+
+**Q: Does this server support product feeds?**
+Yes, you can use the `get_product_feed` tool to retrieve structured product data from advertisers you are partnered with.
+
+
 ## Installation & Usage
 
-To install and use the **Adrecord** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/adrecord](https://vinkius.com/mcp/adrecord)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Adrecord** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `adrecord` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Adrecord** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "adrecord": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # MarketStack MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marketstack)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/marketstack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/marketstack-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marketstack)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,12 +87,52 @@ Here are some examples of how you can interact with the **MarketStack** MCP serv
 > Fetching intraday points for Tesla (TSLA) at 1-hour intervals... The data shows the price opened at $175.20 at 09:30 and reached a peak of $178.50 by 14:30. Would you like to see the volume for these periods as well?
 
 
+## ❓ FAQ
+
+**Q: Can I get intraday data for specific time intervals?**
+Yes! Use the `get_intraday` tool. You can specify intervals such as '1min', '5min', '1hour', and up to '24hour' to get precise price movements throughout the trading day.
+
+**Q: How do I find which stock exchanges are supported by this server?**
+Simply run the `list_exchanges` tool. It will return a paginated list of all supported global exchanges along with their names, MIC codes, and locations.
+
+**Q: Can I filter end-of-day data for a specific date range?**
+Absolutely. Both `get_eod` and `get_ticker_eod` tools accept `date_from` and `date_to` parameters in YYYY-MM-DD format to help you analyze specific historical periods.
+
+
 ## Installation & Usage
 
-To install and use the **MarketStack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/marketstack](https://vinkius.com/mcp/marketstack)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **MarketStack** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `marketstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **MarketStack** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "marketstack": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

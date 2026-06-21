@@ -1,7 +1,6 @@
 # PitchBox MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pitchbox)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pitchbox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pitchbox-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pitchbox)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **PitchBox** MCP server 
 > You have 5 tasks for today: 'Review pitches for Campaign 123', 'Verify contact for Opp 456', and 3 personalization tasks. Would you like to start with the reviews?
 
 
+## ❓ FAQ
+
+**Q: How do I find my PitchBox API Key?**
+Log in to your PitchBox account, click on your name in the top right, go to **Settings** > **API**. There you can find and copy your unique API Key.
+
+**Q: Can I see all emails exchanged with a lead?**
+Yes! Use the `list_pitchbox_emails` tool with an Opportunity ID to retrieve a full history of outbound and inbound messages for that specific lead.
+
+**Q: Does this support looking up individual contacts?**
+Absolutely. Use the `list_pitchbox_contacts` tool to retrieve all identified contact names and information associated with a particular outreach opportunity.
+
+
 ## Installation & Usage
 
-To install and use the **PitchBox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pitchbox](https://vinkius.com/mcp/pitchbox)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PitchBox** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pitchbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PitchBox** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pitchbox": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

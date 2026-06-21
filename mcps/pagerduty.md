@@ -1,7 +1,6 @@
 # PagerDuty MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pagerduty)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pagerduty-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pagerduty-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pagerduty)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -101,12 +100,52 @@ Escalation Policy: Platform Critical (30 min timeout per level).
 Would you like me to investigate the root cause or resolve this incident?
 
 
+## ❓ FAQ
+
+**Q: Can I acknowledge and resolve incidents directly from my AI agent?**
+Yes! Use the `update_incident` tool with the incident ID and your PagerDuty email. Set status to `acknowledged` or `resolved` to change the incident state instantly without opening the PagerDuty dashboard.
+
+**Q: How do I find out who is on-call right now?**
+Run the `list_oncalls` tool. It returns every user currently on-call across all schedules and escalation levels, showing their name, escalation policy, and coverage window.
+
+**Q: Can I create incidents programmatically for testing or escalation?**
+Absolutely. Use `create_incident` with your PagerDuty email, the target service ID, a descriptive title, and optionally set urgency to `high` or `low`. The incident will immediately trigger according to the service's escalation policy.
+
+
 ## Installation & Usage
 
-To install and use the **PagerDuty** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pagerduty](https://vinkius.com/mcp/pagerduty)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PagerDuty** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pagerduty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PagerDuty** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pagerduty": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

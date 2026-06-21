@@ -1,7 +1,6 @@
 # PHC GO MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/phc-go)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/phc-go-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/phc-go-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/phc-go)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **PHC GO** MCP server us
 > According to the ERP 'list_current_accounts' query, there are 4 open vendor invoices flagged as overdue from January. Here's a table summarizing the debtors and owed amounts.
 
 
+## ❓ FAQ
+
+**Q: Can my AI actively search for a specific customer before creating an invoice?**
+Yes. It can sequentially execute `search_customers` to find the precise Unique ID of the customer using fuzzy name matching, and subsequently inject that accurate payload into `create_document` without human error.
+
+**Q: Is 'list_stocks' showing data in real-time?**
+Yes. Since this operates as a direct pass-through via the MCP to the PHC GO platform API, all stock matrices, warehouse item counts, and current accounts represent the exact live state of your corporate database in the split second the AI requests it.
+
+**Q: Can I query products that exist across multiple warehouses?**
+Absolutely. By commanding the agent to align returns from both `list_products` and `list_warehouses` against `list_stocks`, your LLM can map out a matrix comparing which warehouse holds the higher volume of the targeted SKUs.
+
+
 ## Installation & Usage
 
-To install and use the **PHC GO** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/phc-go](https://vinkius.com/mcp/phc-go)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PHC GO** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `phc-go` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PHC GO** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "phc-go": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

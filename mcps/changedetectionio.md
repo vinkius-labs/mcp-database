@@ -1,7 +1,6 @@
 # ChangeDetection.io MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/changedetectionio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/changedetectionio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/changedetectionio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/changedetectionio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **ChangeDetection.io** M
 > Comparing snapshots for 'Competitor Pricing'... I found that the price text changed from '$49.99' to '$39.99' and a new 'On Sale' badge was added to the header.
 
 
+## ❓ FAQ
+
+**Q: Can I see exactly what text changed on a page between the last two checks?**
+Yes! Use the `get_snapshot_diff` tool with the watch UUID. It will return the specific differences between the current state and the previous snapshot.
+
+**Q: How do I trigger an immediate recheck of a specific website?**
+You can use the `get_watch` tool and set the `recheck` parameter to '1'. This forces the server to fetch the latest version of the page immediately.
+
+**Q: Can I filter my monitors by tags using the AI?**
+Absolutely. When using `list_watches`, you can provide a `tag` name to filter the results and only see monitors associated with that specific category.
+
+
 ## Installation & Usage
 
-To install and use the **ChangeDetection.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/changedetectionio](https://vinkius.com/mcp/changedetectionio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ChangeDetection.io** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `changedetectionio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ChangeDetection.io** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "changedetectionio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

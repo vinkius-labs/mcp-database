@@ -1,7 +1,6 @@
 # Google Civic Information MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-civic-information)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-civic-information-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-civic-information-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-civic-information)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Google Civic Informati
 > I've retrieved the election catalog from Google Civic! Notable upcoming events include state primaries and the next General Election. I can provide the unique election IDs and dates for each of these if you'd like.
 
 
+## ❓ FAQ
+
+**Q: How do I find my Google Civic API Key?**
+Log in to the [**Google Cloud Console**](https://console.cloud.google.com/), create a project, enable the 'Google Civic Information API', and generate an API Key in the 'Credentials' section. Copy and paste it below.
+
+**Q: Can the agent identify state-level representatives?**
+Yes. The `get_representatives_by_address` tool retrieves officials at federal, state, and local levels based on the provided address metadata.
+
+**Q: Does it support polling location search?**
+Yes. Use the `get_voter_information` tool providing an address and optionally an election ID to retrieve official polling site metadata.
+
+
 ## Installation & Usage
 
-To install and use the **Google Civic Information** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-civic-information](https://vinkius.com/mcp/google-civic-information)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Civic Information** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-civic-information` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Civic Information** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-civic-information": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # DJI Developer MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dji-developer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dji-developer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dji-developer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dji-developer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **DJI Developer** MCP se
 > Fetching flight records... The last mission occurred on 2024-04-11. Total flight time: 24 minutes. Max altitude: 120m. GPS signal was stable throughout. Would you like the full telemetry export?
 
 
+## ❓ FAQ
+
+**Q: Can I automatically list all aircraft in my DJI fleet?**
+Yes! Use the `list_aircraft` tool. Your agent will retrieve a complete list of all registered drones in your account, including their model names and current firmware versions.
+
+**Q: How do I monitor the health status of a specific drone?**
+Use the `get_device_health` tool with the aircraft serial number. The agent will return real-time health metrics, battery status, and any active error codes from the DJI platform.
+
+**Q: Can I retrieve telemetry logs from past missions?**
+Yes! Use the `get_flight_logs` tool. Your agent will fetch detailed historical flight data, including GPS coordinates, altitude, and velocity profiles for any recorded mission.
+
+
 ## Installation & Usage
 
-To install and use the **DJI Developer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/dji-developer](https://vinkius.com/mcp/dji-developer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **DJI Developer** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `dji-developer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **DJI Developer** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dji-developer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

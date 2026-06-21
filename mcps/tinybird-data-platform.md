@@ -1,7 +1,6 @@
 # Tinybird Data Platform MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tinybird-data-platform)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tinybird-data-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tinybird-data-platform-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tinybird-data-platform)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -66,12 +65,49 @@ Here are some examples of how you can interact with the **Tinybird Data Platform
 > Executing pipe... Here are the top 5 records from 'monthly_revenue_summary': 1. Jan ($12k), 2. Feb ($15k), 3. Mar ($11k)...
 
 
+## ❓ FAQ
+
+**Q: Where do I find my Tinybird Admin Token?**
+Log in to your [**Tinybird Dashboard**](https://app.tinybird.co/), select a workspace, and go to the 'Auth Tokens' section. You can use the Admin Token or create a custom one with the necessary scopes.
+
+**Q: Which SQL dialect does Tinybird use?**
+Tinybird is powered by ClickHouse, so it uses the ClickHouse SQL dialect, which includes powerful functions for high-performance analytical processing.
+
+
 ## Installation & Usage
 
-To install and use the **Tinybird Data Platform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/tinybird-data-platform](https://vinkius.com/mcp/tinybird-data-platform)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Tinybird Data Platform** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `tinybird-data-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Tinybird Data Platform** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "tinybird-data-platform": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

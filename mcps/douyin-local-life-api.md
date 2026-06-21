@@ -1,7 +1,6 @@
 # Douyin Local Life API / 抖音生活服务 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/douyin-local-life-api)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/douyin-local-life-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/douyin-local-life-api-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/douyin-local-life-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Douyin Local Life API 
 > The current stock level for 'PRD_9920' at the specified shop is 45 units. Would you like me to update this stock or check the product's performance data?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Douyin Client Key and Secret?**
+Log in to the [Douyin Open Platform](https://open.douyin.com/), create an application, and you will find your unique Client Key and Client Secret in the application details overview.
+
+**Q: What is a POI ID?**
+A POI ID (Point of Interest ID) is a unique identifier for a physical store or location registered within the Douyin ecosystem. It is required for all store-specific operations like inventory management.
+
+**Q: Can I verify coupons in real-time?**
+Yes! Use the `verify_order_coupon` tool with the customer's verification code and your POI ID. Your agent will communicate with Douyin to confirm the coupon is valid and mark the order as fulfilled.
+
+
 ## Installation & Usage
 
-To install and use the **Douyin Local Life API / 抖音生活服务** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/douyin-local-life-api](https://vinkius.com/mcp/douyin-local-life-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Douyin Local Life API / 抖音生活服务** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `douyin-local-life-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Douyin Local Life API / 抖音生活服务** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "douyin-local-life-api": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

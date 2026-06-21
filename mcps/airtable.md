@@ -1,7 +1,6 @@
 # Airtable MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airtable)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/airtable-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/airtable-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airtable)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Should I compose a follow-up email draft for them?
 > Done. Created record `rec9A8B7` in the Tasks table. The title is 'Review design assets', Assignee is set to 'Mark', and Priority is mapped to the 'Urgent' single-select parameter successfully.
 
 
+## ❓ FAQ
+
+**Q: Can the agent query and filter records using Airtable native formulas?**
+Yes! The AI agent understands Airtable's native `filterByFormula` parameter. You can ask it to "Find all records where Status is 'Done' and Priority is 'High'", and it will translate your request into the exact Airatble formula required to fetch only that data.
+
+**Q: How do I ensure the agent adds data to the correct columns?**
+Before writing, the agent will typically fetch the schema of the Table to understand the exact column spelling, ID, and data type (like Checkbox, Formula, or Single Select). You just need to say "Add a new row for John Doe with Status Lead", and it will align the values to the existing column structure.
+
+**Q: If my base has tens of thousands of records, will it hallucinate?**
+No. The integration paginates large queries to ensure accurate results. If you ask a broad open question on a 50,000-row base, the agent will gracefully fetch the data in chunks and summarize the response using the actual API output.
+
+
 ## Installation & Usage
 
-To install and use the **Airtable** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/airtable](https://vinkius.com/mcp/airtable)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Airtable** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `airtable` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Airtable** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "airtable": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

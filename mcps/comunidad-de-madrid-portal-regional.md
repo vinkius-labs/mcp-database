@@ -1,7 +1,6 @@
 # Comunidad de Madrid (Portal Regional) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/comunidad-de-madrid-portal-regional)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/comunidad-de-madrid-portal-regional-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/comunidad-de-madrid-portal-regional-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/comunidad-de-madrid-portal-regional)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Comunidad de Madrid (P
 > The dataset 'Calidad del aire: datos diarios' is managed by the Environment department. It contains 12 resources (CSV and Excel files) and is updated daily. Would you like the ID of the latest CSV resource?
 
 
+## ❓ FAQ
+
+**Q: How can I find datasets about a specific topic like 'transport'?**
+Use the `search_datasets` tool with the query 'transporte'. The agent will return a list of matching datasets with their unique IDs and descriptions from the portal.
+
+**Q: Can I see the actual content of a data file without downloading it?**
+Yes. If the resource is stored in the CKAN DataStore, you can use the `search_datastore` tool with the Resource ID to query the rows and columns directly.
+
+**Q: Is an API key mandatory to use this server?**
+No, it is optional. However, providing a `CKAN_API_KEY` allows for higher rate limits and access to restricted datasets if your account has permissions.
+
+
 ## Installation & Usage
 
-To install and use the **Comunidad de Madrid (Portal Regional)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/comunidad-de-madrid-portal-regional](https://vinkius.com/mcp/comunidad-de-madrid-portal-regional)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Comunidad de Madrid (Portal Regional)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `comunidad-de-madrid-portal-regional` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Comunidad de Madrid (Portal Regional)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "comunidad-de-madrid-portal-regional": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

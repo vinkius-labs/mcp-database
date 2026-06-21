@@ -1,7 +1,6 @@
 # WHO GHO MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/who-gho)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/who-gho-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/who-gho-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/who-gho)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **WHO GHO** MCP server u
 > Brazil (BRA) health profile: Life expectancy: 75.9 years | Healthy life expectancy: 65.4 years | Under-5 mortality: 14.3 per 1,000 | Obesity prevalence (adults): 22.3% | Current health expenditure: 9.6% of GDP. Data sourced from WHO member state reports with the most recent available year for each indicator.
 
 
+## ❓ FAQ
+
+**Q: What health topics and indicators does the WHO GHO cover?**
+The GHO covers 2,200+ indicators across 40+ themes: life expectancy, child and maternal mortality, infectious diseases (HIV, TB, Malaria, COVID-19), non-communicable diseases (cancer, diabetes, cardiovascular), mental health, immunization coverage, nutrition, water/sanitation, air quality, road safety, tobacco use, and the full Sustainable Development Goals (SDG) monitoring framework.
+
+**Q: Is the WHO GHO API free and does it require authentication?**
+Yes, the GHO OData API is completely free and open without any authentication. The data is published by the World Health Organization as a public good. There are no API keys, no registration, and no rate limits for reasonable usage. The data is updated regularly with the latest country reports.
+
+**Q: Which countries are covered and what country codes should I use?**
+All 194 WHO member states plus territories are covered. Use ISO-3 country codes: BRA (Brazil), USA (United States), GBR (United Kingdom), JPN (Japan), DEU (Germany), IND (India), CHN (China), FRA (France), AUS (Australia), ZAF (South Africa), etc. Data availability varies by indicator and country reporting.
+
+
 ## Installation & Usage
 
-To install and use the **WHO GHO** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/who-gho](https://vinkius.com/mcp/who-gho)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **WHO GHO** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `who-gho` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **WHO GHO** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "who-gho": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

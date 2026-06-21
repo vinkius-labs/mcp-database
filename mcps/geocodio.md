@@ -1,7 +1,6 @@
 # Geocodio MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geocodio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/geocodio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/geocodio-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geocodio)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Geocodio** MCP server 
 > Retrieving Census data... For the White House area, the ACS economics data shows a median household income of $120k+ and an unemployment rate of 3.2%. I can provide full neighborhood statistics for this block.
 
 
+## ❓ FAQ
+
+**Q: Can my agent geocode multiple addresses at once using Geocodio?**
+Yes. Use the 'batch_geocode_addresses' tool and provide a JSON array of address strings. Geocodio handles up to 10,000 locations per request, allowing for high-throughput data enrichment natively.
+
+**Q: How do I retrieve demographic data for an address via chat?**
+Use the 'geocode_enriched_fields' tool. Provide the address and include 'acs-demographics' in the 'fields' parameter. The agent will analyze the active Census domains and return neighborhood statistics flawlessly.
+
+**Q: Can I find the Congressional District for a set of GPS coordinates through the agent?**
+Absolutely. Use the 'reverse_enriched_fields' tool. Provide the latitude and longitude and include 'cd' in the 'fields' parameter. Your agent will execute bulk iterations to determine exactly who represents that GPS pin natively.
+
+
 ## Installation & Usage
 
-To install and use the **Geocodio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/geocodio](https://vinkius.com/mcp/geocodio)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Geocodio** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `geocodio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Geocodio** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "geocodio": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

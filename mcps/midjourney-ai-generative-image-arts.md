@@ -1,7 +1,6 @@
 # Midjourney AI (Generative Image Arts) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/midjourney-ai-generative-image-arts)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/midjourney-ai-generative-image-arts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/midjourney-ai-generative-image-arts-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/midjourney-ai-generative-image-arts)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **Midjourney AI (Generat
 > Analyzing visual concepts… I've retrieved 4 candidate prompts from Midjourney: 1) 'Minimalist architectural sketch in charcoal', 2) 'Brutalist concrete building perspective', 3) 'Abstract geometric shadows on stone', and 4) 'Architectural blueprint style'. Would you like to use any of these to generate a new variation?
 
 
+## ❓ FAQ
+
+**Q: How do I check if my Midjourney image is ready?**
+Use the `get_job` tool with the Job ID provided. Your agent will poll the API and report the current state (pending or completed). Once finished, it will return the final image URL or the 2x2 grid depending on your task.
+
+**Q: Can I edit an image by zooming out or panning the camera through the agent?**
+Absolutely. Use the `pan_image` and `zoom_out_image` tools with a completed Job ID. Your agent will command Midjourney to expand the canvas or shift the focus in your specified direction, creating professional cinematographic edits.
+
+**Q: What does the 'describe' tool do?**
+The `describe_image` tool reverse engineers prompts. Provide an image URL, and your agent will retrieve 4 candidate text descriptions from Midjourney, showing you the exact words and styles used to create that visual concept.
+
+
 ## Installation & Usage
 
-To install and use the **Midjourney AI (Generative Image Arts)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/midjourney-ai-generative-image-arts](https://vinkius.com/mcp/midjourney-ai-generative-image-arts)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Midjourney AI (Generative Image Arts)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `midjourney-ai-generative-image-arts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Midjourney AI (Generative Image Arts)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "midjourney-ai-generative-image-arts": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

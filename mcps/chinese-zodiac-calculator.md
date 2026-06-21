@@ -1,7 +1,6 @@
 # Chinese Zodiac Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chinese-zodiac-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chinese-zodiac-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chinese-zodiac-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chinese-zodiac-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -49,12 +48,52 @@ Here are some examples of how you can interact with the **Chinese Zodiac Calcula
 > The Tiger is known for its strength and bravery, but may face challenges with impulsiveness. Compatible signs include Horse and Dog.
 
 
+## ❓ FAQ
+
+**Q: What information can I get for a specific birth year?**
+By using the `get_zodiac_details` tool, you can retrieve the zodiac animal, the associated element, the polarity (Yin or Yang), and a list of key personality traits for that year.
+
+**Q: How does the compatibility tool work?**
+The `check_compatibility` tool compares two birth years to determine if the relationship is Highly Compatible, Neutral, or a Clash based on traditional zodiac groupings.
+
+**Q: Can I learn more about a specific animal?**
+Yes, the `get_animal_profile` tool provides a deep dive into an animal's strengths, weaknesses, and compatible or incompatible signs.
+
+
 ## Installation & Usage
 
-To install and use the **Chinese Zodiac Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/chinese-zodiac-calculator](https://vinkius.com/mcp/chinese-zodiac-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Chinese Zodiac Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `chinese-zodiac-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Chinese Zodiac Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "chinese-zodiac-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

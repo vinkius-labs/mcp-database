@@ -1,7 +1,6 @@
 # Content ROI Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/content-roi-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/content-roi-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/content-roi-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/content-roi-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -47,12 +46,52 @@ Here are some examples of how you can interact with the **Content ROI Calculator
 > The `calculate_roi_summary` tool would return an ROI of 400%, a cost per visit of 0.5, and a payback period of 2 months.
 
 
+## ❓ FAQ
+
+**Q: What does `calculate_total_cost` include?**
+It aggregates the professional fees for writing, graphic design, and SEO services to find your total production expenditure.
+
+**Q: How is revenue estimated in `calculate_attributed_revenue`?**
+The tool multiplies your organic traffic volume by the conversion rate and the Customer Lifetime Value (LTV) to estimate total attributed revenue.
+
+**Q: What metrics does `calculate_roi_summary` provide?**
+It calculates your ROI percentage, the cost per organic visit, and the estimated payback period in months.
+
+
 ## Installation & Usage
 
-To install and use the **Content ROI Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/content-roi-calculator](https://vinkius.com/mcp/content-roi-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Content ROI Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `content-roi-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Content ROI Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "content-roi-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

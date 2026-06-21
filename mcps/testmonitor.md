@@ -1,7 +1,6 @@
 # TestMonitor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/testmonitor)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/testmonitor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/testmonitor-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/testmonitor)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Anything I can rewrite from this?
 The project seems to currently host 2 vital reported defects. Should I inspect linked tests for `ISS-91`?
 
 
+## ❓ FAQ
+
+**Q: Does this tool automate actual user interface tests on websites?**
+No. TestMonitor is essentially a Test Management Hub. You document your cases, requirements, runs, and defect reports structurally. The MCP server reads this deep structural data allowing the AI to help correlate bugs to requirements and plan sprints—it does not inherently control a web-browser headless tester to run things.
+
+**Q: Which ID should I pass to fetch Test Runs or Cases?**
+Almost all context actions downstream require a `project_id`. Start by telling your prompt: 'List all my TestMonitor projects'. Take the numeric ID corresponding to your target platform, then use it as the anchor for subsequent 'list test cases', 'list runs', or 'list issues' queries.
+
+**Q: Where do I track the Personal Access Token setting?**
+It is tied to your individual profile. Log in via web, go to the top right avatar, pick 'My Account', open the 'API' sub-tab, and hit 'Create Token'. Copy it precisely because it is obscured upon closing.
+
+
 ## Installation & Usage
 
-To install and use the **TestMonitor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/testmonitor](https://vinkius.com/mcp/testmonitor)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **TestMonitor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `testmonitor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **TestMonitor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "testmonitor": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

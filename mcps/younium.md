@@ -1,7 +1,6 @@
 # Younium MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/younium)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/younium-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/younium-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/younium)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Younium** MCP server u
 > I found 3 invoices for Acme Corp: 1. INV-2026-001 ($1,250.00, Status: PAID), 2. INV-2026-002 ($1,250.00, Status: POSTED), and 3. INV-2026-003 ($1,250.00, Status: DRAFT). Would you like to see the breakdown for the unpaid one?
 
 
+## ❓ FAQ
+
+**Q: Can I check the MRR and ARR metrics for a specific customer contract?**
+Yes. The `get_contract_metrics` tool allows your AI agent to retrieve real-time Monthly Recurring Revenue (MRR), Annual Recurring Revenue (ARR), and Total Contract Value (TCV) for any specific subscription ID.
+
+**Q: How do I see if a customer's latest invoice has been paid?**
+You can use the `list_invoices` tool. Your AI agent will return a list of recent invoices along with their current status, such as 'DRAFT', 'POSTED', or 'PAID', helping you audit financial activity through chat.
+
+**Q: Is it possible to terminate a subscription via conversation?**
+Absolutely. Using the `cancel_subscription_version` tool, you can instruct your agent to terminate a specific subscription. You'll need to provide the subscription and version IDs plus the effective cancellation date.
+
+
 ## Installation & Usage
 
-To install and use the **Younium** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/younium](https://vinkius.com/mcp/younium)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Younium** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `younium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Younium** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "younium": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # ExerciseDB MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exercisedb)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/exercisedb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/exercisedb-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exercisedb)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **ExerciseDB** MCP serve
 > Found 100+ body weight exercises including: Push-ups, Pull-ups, Squats, Lunges, Plank, Burpees, Dips. No equipment needed — perfect for home workouts.
 
 
+## ❓ FAQ
+
+**Q: How do I get an ExerciseDB API key?**
+Sign up on [**RapidAPI**](https://rapidapi.com/justin-w-fns/api/exercisedb) and subscribe to the ExerciseDB API. Free tier includes 10 requests/day. Paid plans offer more requests.
+
+**Q: What body parts are available?**
+The database includes: back, chest, shoulders, upper arms, lower arms, upper legs, lower legs, neck, waist and cardio. Use get_body_part_list to see the complete list.
+
+**Q: Does the API include exercise instructions?**
+Yes! Each exercise includes step-by-step instructions (numbered list) and an animated GIF URL showing the proper form and movement.
+
+
 ## Installation & Usage
 
-To install and use the **ExerciseDB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/exercisedb](https://vinkius.com/mcp/exercisedb)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **ExerciseDB** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `exercisedb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **ExerciseDB** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "exercisedb": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

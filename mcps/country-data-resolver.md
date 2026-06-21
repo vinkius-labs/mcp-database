@@ -1,7 +1,6 @@
 # Country Data Resolver MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/country-data-resolver)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/country-data-resolver-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/country-data-resolver-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/country-data-resolver)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -52,12 +51,52 @@ Here are some examples of how you can interact with the **Country Data Resolver*
 > Country: Japan (alpha-2: JP, alpha-3: JPN, numeric: 392)
 
 
+## ❓ FAQ
+
+**Q: How many countries are supported?**
+All 249 countries and territories in the ISO 3166-1 standard, including overseas territories and special regions.
+
+**Q: What languages are available for country names?**
+English (en), Portuguese (pt), Spanish (es), and French (fr). The engine defaults to English if the requested language is not available.
+
+**Q: Does it validate country codes?**
+Yes. If you pass an invalid code like 'XX', the engine returns a clear error instead of guessing. This prevents data corruption in CRM systems.
+
+
 ## Installation & Usage
 
-To install and use the **Country Data Resolver** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/country-data-resolver](https://vinkius.com/mcp/country-data-resolver)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Country Data Resolver** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `country-data-resolver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Country Data Resolver** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "country-data-resolver": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

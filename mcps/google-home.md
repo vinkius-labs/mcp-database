@@ -1,7 +1,6 @@
 # Google Home MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-home)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-home-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-home-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-home)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -131,12 +130,55 @@ Here are some examples of how you can interact with the **Google Home** MCP serv
 > Generating live stream URL for Front Door Nest Camera... Stream URL generated (RTSP). The stream is active for the next 5 minutes. Use any RTSP-compatible player to view the live feed. Remember to stop the stream when done to free up resources. Would you like me to stop the stream?
 
 
+## ❓ FAQ
+
+**Q: What Google Nest devices are supported by this API?**
+The SDM API supports: Nest Thermostats (Nest Learning Thermostat, Nest Thermostat E, Nest Thermostat 2020), Nest Cameras (legacy, battery, wired, with spotlight), Nest Doorbells (legacy battery, wired, battery), and Nest Hub displays. Each device exposes specific traits (e.g., ThermostatMode, CameraLiveStream) that can be queried and controlled.
+
+**Q: How do I get OAuth 2.0 credentials for the Google SDM API?**
+Visit the [**Google Device Access console**](https://console.nest.google.com/device-access/) and create a project. You'll receive a Project ID. Then, set up OAuth 2.0 credentials in Google Cloud Console, link them to your Device Access project, and complete the OAuth flow to obtain an access token. The token expires after 1 hour and must be refreshed.
+
+**Q: Can I control multiple thermostats in different locations?**
+Yes! The API returns all devices across all structures and rooms in your project. Use `list_devices` to see all thermostats with their room assignments, then use each device's unique ID to control them individually. You can set different modes and temperatures for each thermostat.
+
+**Q: How long do camera stream URLs last?**
+Camera stream URLs (both RTSP and WebRTC) are temporary and typically expire after 5 minutes. The stream token returned in the response should be used immediately and the stream should be stopped with `stop_camera_stream` when no longer needed to free up device resources.
+
+
 ## Installation & Usage
 
-To install and use the **Google Home** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-home](https://vinkius.com/mcp/google-home)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Google Home** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `google-home` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Google Home** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "google-home": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

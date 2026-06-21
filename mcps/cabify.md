@@ -1,7 +1,6 @@
 # Cabify MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cabify)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cabify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cabify-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cabify)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,12 +92,52 @@ Here are some examples of how you can interact with the **Cabify** MCP server us
 > I'll pull your ride history and compile the monthly expense summary.
 
 
+## ❓ FAQ
+
+**Q: Do I need a Cabify Business account to use this MCP?**
+Yes, this MCP server requires a Cabify Empresas (Business) account with API access. Individual consumer accounts do not have API credentials. If your company uses Cabify for corporate transportation, contact your admin to request API access from the Cabify Empresas portal.
+
+**Q: Which cities and countries does Cabify operate in?**
+Cabify operates primarily in Spain (Madrid, Barcelona, Valencia, Seville), Portugal (Lisbon, Porto), and Latin America (Mexico, Colombia, Chile, Argentina, Peru, Uruguay, Panama, Costa Rica). Service availability and product types vary by city. Check coverage at cabify.com for your specific location.
+
+**Q: Can this MCP integrate with expense management systems like Concur?**
+The Cabify Business API supports integration with expense platforms like SAP Concur. The ride history tool returns structured expense data including cost breakdowns, business categories, and receipts. Your company's Cabify admin can configure Concur sync directly in the Cabify Empresas portal for automated expense reporting.
+
+
 ## Installation & Usage
 
-To install and use the **Cabify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/cabify](https://vinkius.com/mcp/cabify)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Cabify** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `cabify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Cabify** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "cabify": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

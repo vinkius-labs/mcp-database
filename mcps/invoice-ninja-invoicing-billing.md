@@ -1,7 +1,6 @@
 # Invoice Ninja (Invoicing & Billing) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/invoice-ninja-invoicing-billing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/invoice-ninja-invoicing-billing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/invoice-ninja-invoicing-billing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/invoice-ninja-invoicing-billing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,52 @@ Here are some examples of how you can interact with the **Invoice Ninja (Invoici
 > Client 'Future Labs' created successfully. ID: client-012. You can now generate invoices for this client or update their profile with additional VAT and address information. Would you like to add an address now?
 
 
+## ❓ FAQ
+
+**Q: Can I create a new invoice draft through my agent?**
+Yes. Use the `create_invoice` tool by providing an existing Client ID and a JSON array of line items. Your agent will generate the draft in Invoice Ninja, ready for your final review and sending.
+
+**Q: How do I check a client's outstanding balance?**
+The `get_client` tool allows your agent to retrieve complete details for a specific client, including their current balance and payment history. This helps you quickly identify which clients need follow-up on outstanding payments.
+
+**Q: Can my agent list all unpaid invoices?**
+Absolutely. Use the `list_invoices` tool to browse your billing system. Your agent can filter through the results to show you which invoices are still in 'Sent' or 'Overdue' status directly through natural conversation.
+
+
 ## Installation & Usage
 
-To install and use the **Invoice Ninja (Invoicing & Billing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/invoice-ninja-invoicing-billing](https://vinkius.com/mcp/invoice-ninja-invoicing-billing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Invoice Ninja (Invoicing & Billing)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `invoice-ninja-invoicing-billing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Invoice Ninja (Invoicing & Billing)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "invoice-ninja-invoicing-billing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

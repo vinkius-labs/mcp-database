@@ -1,7 +1,6 @@
 # Beds24 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/beds24)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/beds24-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/beds24-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/beds24)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -62,12 +61,52 @@ Here are some examples of how you can interact with the **Beds24** MCP server us
 > Yesterday closed with 85% occupancy. 6 out of 7 suites were actively checked in, producing a solid €1400 total revenue.
 
 
+## ❓ FAQ
+
+**Q: What is Beds24?**
+Beds24 is a versatile channel manager and PMS popular in Europe. Swagger V2 API, competitive pricing from €15.50/month, connects to all major OTAs.
+
+**Q: Can I automatically adjust nightly availability mapping via chat?**
+Yes! The system exposes the availability calendar directly to your AI. Just instruct it to close out specific room types or open dates based on channel rules.
+
+**Q: How quick are the price syncing updates to platforms like Booking.com?**
+Changes command via MCP execute instantly against Beds24 API v2. From there, Beds24 dispatches the payload to integrated OTAs (Booking, Airbnb) usually within moments.
+
+
 ## Installation & Usage
 
-To install and use the **Beds24** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/beds24](https://vinkius.com/mcp/beds24)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Beds24** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `beds24` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Beds24** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "beds24": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

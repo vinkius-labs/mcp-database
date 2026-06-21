@@ -1,7 +1,6 @@
 # One-Hot Encoder Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/one-hot-encoder-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/one-hot-encoder-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/one-hot-encoder-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/one-hot-encoder-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -54,12 +53,52 @@ Here are some examples of how you can interact with the **One-Hot Encoder Engine
 > I've one-hot encoded the 'Color' column. Red, Blue, and Green are now binary features (Color_Red, Color_Blue, Color_Green). Your neural network can now process this data.
 
 
+## ❓ FAQ
+
+**Q: Does it drop the original categorical column?**
+No. The engine appends new binary columns (e.g., City_London, City_Paris) and preserves the original column so the AI can verify the encoding accuracy.
+
+**Q: What if there are hundreds of unique categories?**
+The engine processes them all instantly. However, be aware that a massively expanded JSON returned to the LLM may consume significant context tokens. Consider grouping rare categories before encoding.
+
+**Q: Can it encode multiple columns at once?**
+Currently, the engine accepts one target column per execution for deterministic validation. The AI can chain multiple calls to encode several columns sequentially.
+
+
 ## Installation & Usage
 
-To install and use the **One-Hot Encoder Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/one-hot-encoder-engine](https://vinkius.com/mcp/one-hot-encoder-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **One-Hot Encoder Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `one-hot-encoder-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **One-Hot Encoder Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "one-hot-encoder-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

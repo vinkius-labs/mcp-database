@@ -1,7 +1,6 @@
 # SkootEco MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skooteco)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/skooteco-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/skooteco-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skooteco)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **SkootEco** MCP server 
 > I've generated your latest ESG compliance report. The document is aligned with CSRD and TCFD frameworks and highlights your recent 15% reduction in overall carbon footprint. Should I email this PDF directly to the board members?
 
 
+## ❓ FAQ
+
+**Q: How can my AI retrieve a breakdown of our emissions by scope?**
+Simply use the `get_emissions_by_scope` tool. Your agent will instantly fetch data categorized by GHG Scope 1 (direct emissions), Scope 2 (energy), or Scope 3 (supply chain), perfectly aligned with the GHG Protocol.
+
+**Q: Is it possible to automatically fund reforestation projects?**
+Yes. By executing the `plant_trees` action, your AI agent can programmatically fund tree planting projects to offset emissions, and return the updated total tree count in real time.
+
+**Q: Can I automatically generate ESG compliance reports for stakeholders?**
+Absolutely. Ask the agent to use the `generate_esg_report` tool. It will compile your sustainability data into compliance reports aligned with CSRD and TCFD frameworks, ready for your next board meeting.
+
+
 ## Installation & Usage
 
-To install and use the **SkootEco** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/skooteco](https://vinkius.com/mcp/skooteco)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SkootEco** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `skooteco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SkootEco** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "skooteco": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

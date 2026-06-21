@@ -1,7 +1,6 @@
 # Snapchat Ads MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snapchat-ads)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/snapchat-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/snapchat-ads-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snapchat-ads)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,63 @@ Here are some examples of how you can interact with the **Snapchat Ads** MCP ser
 > Found 2 ad squads matching criteria. Paused: 'Broad Awareness 18-24' ($620 spend, 0.9x ROAS) and 'Interest - Gaming' ($540 spend, 1.2x ROAS). Estimated daily savings: ~$165.
 
 
+## ❓ FAQ
+
+**Q: How do I get my Snapchat Ads API credentials?**
+1. Go to **kit.snapchat.com** and log in with your Snapchat account.
+2. Click **Manage Apps** → **Create App** (or **New App**).
+3. Choose **Marketing API** as your app category.
+4. Fill in the app name and redirect URI.
+5. After creation, copy your **Client ID** and **Client Secret** from the app settings.
+6. Authorize your ad account to generate an **Access Token** and **Refresh Token**.
+7. Paste all values below.
+
+💡 You need an active **Snapchat Ads Manager** account at [ads.snapchat.com](https://ads.snapchat.com).
+
+**Q: Can I track AR lens performance?**
+Yes. Your AI agent can pull AR lens metrics including scans, shares, play time, and conversion events — helping you optimize sponsored lens campaigns.
+
+**Q: What audience demographics can I target?**
+Snapchat Ads supports age, gender, location, language, device, OS, interests, behaviors, custom audiences, lookalikes, and Snap Lifestyle Categories — with a focus on 13-34 year olds who are 75% of the platform.
+
+**Q: Can I manage multiple ad accounts?**
+Yes. Snapchat Ads supports organization-level and ad account-level access. Your AI agent can switch between accounts using their IDs.
+
+
 ## Installation & Usage
 
-To install and use the **Snapchat Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/snapchat-ads](https://vinkius.com/mcp/snapchat-ads)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Snapchat Ads** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `snapchat-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Snapchat Ads** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "snapchat-ads": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Moonscan (Moonbeam Network Explorer) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moonscan-moonbeam-network-explorer)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moonscan-moonbeam-network-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moonscan-moonbeam-network-explorer-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moonscan-moonbeam-network-explorer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -90,12 +89,52 @@ Here are some examples of how you can interact with the **Moonscan (Moonbeam Net
 > I have successfully retrieved the ABI for the contract. It includes functions like `transfer`, `balanceOf`, and `approve`. Would you like me to explain any specific function?
 
 
+## ❓ FAQ
+
+**Q: Can I check the GLMR balance of multiple wallets in a single request?**
+Yes! Use the `get_glmr_balance_multi` tool and provide a comma-separated list of addresses to get all balances at once.
+
+**Q: How do I view the verified source code of a Moonbeam smart contract?**
+Simply use the `get_contract_source_code` tool with the contract address. If the contract is verified on Moonscan, the agent will retrieve the source code for you.
+
+**Q: Is it possible to track NFT movements for a specific address?**
+Yes, you can use `get_erc721_transfers` for standard NFTs or `get_erc1155_transfers` for multi-token standards to see all recent transfer events.
+
+
 ## Installation & Usage
 
-To install and use the **Moonscan (Moonbeam Network Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/moonscan-moonbeam-network-explorer](https://vinkius.com/mcp/moonscan-moonbeam-network-explorer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Moonscan (Moonbeam Network Explorer)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `moonscan-moonbeam-network-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Moonscan (Moonbeam Network Explorer)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "moonscan-moonbeam-network-explorer": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

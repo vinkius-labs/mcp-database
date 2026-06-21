@@ -1,7 +1,6 @@
 # LTV:CAC Calculator MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ltvcac-calculator)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ltvcac-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ltvcac-calculator-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ltvcac-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -61,12 +60,52 @@ Here are some examples of how you can interact with the **LTV:CAC Calculator** M
 > I will run `evaluate_profitability` using LTV=$10533.33, totalCacAmount=$10500, grossMarginPercentage=0.65, and timePeriodMonths=12. The result shows an Optimal verdict (ratio > 5:1).
 
 
+## ❓ FAQ
+
+**Q: What is the most critical ratio to monitor?**
+The LTV:CAC ratio is paramount. You can use `evaluate_profitability` by feeding it the results from `calculate_ltv` and `calculate_cac`. A healthy ratio (5:1 or higher) confirms that your acquisition spending generates sufficient long-term revenue.
+
+**Q: How do I calculate LTV?**
+Use the `calculate_ltv` tool. You must provide three inputs: ARPU, gross margin percentage (as a decimal), and the annual churn rate (also as a decimal). The resulting projected LTV is critical for subsequent steps.
+
+**Q: Does this tool track CAC by channel?**
+Yes. The `calculate_cac` tool accepts a JSON array of channel data, allowing you to calculate the specific Cost per Customer (CAC) for every source--be it paid search or social media.
+
+
 ## Installation & Usage
 
-To install and use the **LTV:CAC Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ltvcac-calculator](https://vinkius.com/mcp/ltvcac-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **LTV:CAC Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ltvcac-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **LTV:CAC Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ltvcac-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

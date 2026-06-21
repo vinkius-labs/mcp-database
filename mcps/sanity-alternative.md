@@ -1,7 +1,6 @@
 # Sanity MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sanity-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sanity-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sanity-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sanity-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -99,12 +98,55 @@ Here are some examples of how you can interact with the **Sanity** MCP server us
 > Found 8 products with price > 100. The most expensive is 'Enterprise Plan' at $499/month, followed by 'Pro Plan' at $199/month. Results include product name, price and slug for each.
 
 
+## ❓ FAQ
+
+**Q: How do I get a Sanity API token?**
+Log in to [**manage.sanity.io**](https://manage.sanity.io), select your project, go to **API** tab, and click **Generate API token**. Choose read/write permissions and copy the token immediately.
+
+**Q: What is GROQ?**
+GROQ (Graph-Relational Object Queries) is Sanity's query language for fetching and transforming content. It's similar to GraphQL but designed specifically for document-based content. Use the `query_documents` tool to run custom GROQ queries.
+
+**Q: Can I create new content types?**
+Yes! Use `create_document` with any _type value (e.g. "post", "product", "author"). The document will be created with that type. Schema validation is handled by your Sanity Studio configuration, not the API.
+
+**Q: Can I search for documents by keyword?**
+Yes! Use `search_documents` with a search term. It will search across all document fields. Optionally filter by specific document types and set a result limit. For more complex searches, use `query_documents` with custom GROQ.
+
+
 ## Installation & Usage
 
-To install and use the **Sanity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sanity-alternative](https://vinkius.com/mcp/sanity-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sanity** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sanity-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sanity** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sanity-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

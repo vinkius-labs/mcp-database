@@ -1,7 +1,6 @@
 # UserEcho MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/userecho)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/userecho-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/userecho-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/userecho)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **UserEcho** MCP server 
 > Success! The support ticket 'API Timeout error' has been created in your UserEcho account with ID TKT-10293. I've logged the technical details provided.
 
 
+## ❓ FAQ
+
+**Q: Can I see the full conversation history of a support ticket?**
+Yes! Use the `get_ticket_details` tool and provide the Ticket ID. Your agent will retrieve the complete metadata and all conversation threads for that specific issue.
+
+**Q: How do I list all the help center articles in my account?**
+Run the `list_kb_articles` query. The agent will retrieve a complete list of all articles currently published in your UserEcho knowledge base.
+
+**Q: Is it possible to create a new ticket via AI for a customer?**
+Absolutely. Use the `create_support_ticket` action. Provide a header and the detailed content, and the agent will instantly log the request in your UserEcho helpdesk.
+
+
 ## Installation & Usage
 
-To install and use the **UserEcho** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/userecho](https://vinkius.com/mcp/userecho)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **UserEcho** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `userecho` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **UserEcho** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "userecho": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

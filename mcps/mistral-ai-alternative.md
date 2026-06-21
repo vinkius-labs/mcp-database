@@ -1,7 +1,6 @@
 # Mistral AI MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mistral-ai-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mistral-ai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mistral-ai-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mistral-ai-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,12 +73,52 @@ Here are some examples of how you can interact with the **Mistral AI** MCP serve
 > Embeddings generated! ✅ Model: mistral-embed. Input: 3 sentences. Output: 3 vectors (Dimensions: 1024 each). Total tokens used: 48. Ready for vector DB insertion.
 
 
+## ❓ FAQ
+
+**Q: Which models can I access?**
+Access all available endpoints including `mistral-large-latest`, `mistral-small-latest`, `open-mixtral-8x22b`, and `mistral-embed`.
+
+**Q: How does Mistral authentication work?**
+Mistral requires an **API Key** sent as a Bearer token against `api.mistral.ai/v1`.
+
+**Q: Can I generate vector embeddings?**
+Yes. Use the `mistral-embed` model to generate 1024-dimensional embeddings for your text data.
+
+
 ## Installation & Usage
 
-To install and use the **Mistral AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mistral-ai-alternative](https://vinkius.com/mcp/mistral-ai-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mistral AI** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mistral-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mistral AI** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mistral-ai-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

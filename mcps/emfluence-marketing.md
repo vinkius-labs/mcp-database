@@ -1,7 +1,6 @@
 # emfluence Marketing MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emfluence-marketing)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/emfluence-marketing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/emfluence-marketing-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emfluence-marketing)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **emfluence Marketing** 
 > Alex is a member of the 'Lead Gen' group and is currently 'Active'. Their last recorded activity was a click on March 15th. Should I pull their full custom field history?
 
 
+## ❓ FAQ
+
+**Q: How do I get an emfluence API Key?**
+Log in to your emfluence account, navigate to **Settings > API**, and you can generate or retrieve your unique API Key from there. Ensure the key has the necessary permissions for your marketing resources.
+
+**Q: Can the agent send new marketing emails?**
+This integration currently focuses on listing and auditing emails, groups, and contacts. Creating or sending new marketing campaigns should be managed via the emfluence platform dashboard.
+
+**Q: Does the integration show bounce rates?**
+Yes, you can use the get_email_performance_stats tool to retrieve specific bounce metrics along with open and click rates for any email.
+
+
 ## Installation & Usage
 
-To install and use the **emfluence Marketing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/emfluence-marketing](https://vinkius.com/mcp/emfluence-marketing)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **emfluence Marketing** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `emfluence-marketing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **emfluence Marketing** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "emfluence-marketing": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

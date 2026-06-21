@@ -1,7 +1,6 @@
 # SmartHR MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smarthr)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smarthr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smarthr-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smarthr)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,52 @@ Here are some examples of how you can interact with the **SmartHR** MCP server u
 Do you want me to map employees to these branches?
 
 
+## ❓ FAQ
+
+**Q: Is it safe to expose my company's payrolls to the AI?**
+Yes. This connector runs entirely on your local machine or trusted enclave natively. No employee data, payload information or generated queries are routed to our servers—your API interactions occur directly from your environment straight to SmartHR's endpoints.
+
+**Q: Can the agent calculate average payroll over time automatically?**
+Absolutely. Just prompt your agent: 'List all payrolls from Q2, and display the average distribution'. The agent will call the `list_payrolls` endpoint, retrieve the raw figures, do the mathematical operation independently in context, and present you a very clear table or markdown summary.
+
+**Q: How do I look up which internal department an employee works for?**
+You don't need to specify the exact tool. You can simply ask: 'What department is crew member [Name] in?'. Your AI will automatically use the `list_crews` tool and cross reference the results with `list_departments` to formulate a correct response.
+
+
 ## Installation & Usage
 
-To install and use the **SmartHR** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/smarthr](https://vinkius.com/mcp/smarthr)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **SmartHR** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `smarthr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **SmartHR** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "smarthr": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

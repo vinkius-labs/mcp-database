@@ -1,7 +1,6 @@
 # AerisWeather MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aerisweather)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aerisweather-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aerisweather-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aerisweather)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **AerisWeather** MCP ser
 > Checking for active alerts in Miami... There is currently a 'Flood Watch' in effect until 8:00 PM. Would you like to see the full details of the advisory?
 
 
+## ❓ FAQ
+
+**Q: Can I get minute-by-minute precipitation forecasts?**
+Yes! Use the `get_conditions` tool with the `filter` parameter set to `minutelyprecip`. This provides high-resolution precipitation data for the immediate future.
+
+**Q: How do I check for active weather warnings in a specific area?**
+Use the `get_alerts` tool and provide the location in the `p` parameter. It will return active watches, warnings, and advisories from official meteorological agencies.
+
+**Q: Is it possible to search for cities or airports by name?**
+Yes! Use the `get_places` tool with the `action` set to `search` and your query. It returns geographical metadata, timezones, and coordinates.
+
+
 ## Installation & Usage
 
-To install and use the **AerisWeather** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/aerisweather](https://vinkius.com/mcp/aerisweather)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **AerisWeather** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `aerisweather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **AerisWeather** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "aerisweather": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

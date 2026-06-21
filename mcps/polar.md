@@ -1,7 +1,6 @@
 # Polar MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/polar)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/polar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/polar-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/polar)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,12 +97,55 @@ Here are some examples of how you can interact with the **Polar** MCP server usi
 > I found 47 orders totaling $3,219.50. The highest-value order was $199.00 for 'Enterprise Plan'. Average order value is $68.50. Would you like details on any specific order?
 
 
+## ❓ FAQ
+
+**Q: How do I create a Polar Personal Access Token?**
+Log in to the [**Polar Dashboard**](https://polar.sh), go to **Settings > Developer > Personal Access Tokens**, click **Create Token**, give it a name and copy the token immediately — it starts with `polar_pat_` and won't be shown again.
+
+**Q: Can I create discount codes via the agent?**
+Yes! Use the `create_discount` tool with a name, code, type (percentage or fixed_amount) and amount. Optionally set the duration (once, forever, repeating). The discount will be available during checkout.
+
+**Q: Can I check my subscription revenue?**
+Yes! Use `list_subscriptions` with status 'active' to see all active subscriptions, and `list_orders` to see completed orders with their amounts. Combine both to get a full picture of your recurring and one-time revenue.
+
+**Q: Can I create checkout links programmatically?**
+Yes! Use `create_checkout` with a product_id and optionally a customer_id and discount_id. This creates a checkout session that returns a URL you can share with customers or embed in your app.
+
+
 ## Installation & Usage
 
-To install and use the **Polar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/polar](https://vinkius.com/mcp/polar)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Polar** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `polar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Polar** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "polar": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

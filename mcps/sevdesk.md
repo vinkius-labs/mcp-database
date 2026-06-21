@@ -1,7 +1,6 @@
 # sevDesk MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sevdesk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sevdesk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sevdesk-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sevdesk)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **sevDesk** MCP server u
 > Running the targeted diagnostic `list_bank_accounts` extracted exactly 2 live inlets formally structured under this tenant entity. Check account 001 maps to the primary 'Deutsche Bank GmbH' with an active balancing status indicating ready-reckoner liquidity. Setup inlet 002 flags explicitly as the secondary 'Commerzbank Corporate Node' reserve. Both objects exhibit identical local currency encodings (EUR).
 
 
+## ❓ FAQ
+
+**Q: Are API-created contacts exactly the same as UI-created ones?**
+Yes contextually. When you execute the `create_contact` function natively alongside `category` parameters (`3` stands for customer, `4` for typical suppliers), sevDesk anchors these entries officially inside the identical primary table. Be clear about whether it's an email-lead versus a firm.
+
+**Q: Wait, does my generated API Token expire if left unused?**
+No. The verified 32-character hexadecimal key token possesses an infinite lifeline inherently tied directly, securely, and stubbornly to your primary login account. It decays or dies primarily upon deliberate manual revocation (regeneration) directly executed by you inside your dashboard user settings.
+
+**Q: Can I fetch detailed line items from a single invoice ID using this agent?**
+Absolutely. Querying `list_invoices` outputs high-level paginated arrays, but invoking the precision extractor `get_invoice` fed deliberately with a target identifier ID unveils the core metadata array detailing isolated tax mappings, due-date boundaries, and intricate line items.
+
+
 ## Installation & Usage
 
-To install and use the **sevDesk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sevdesk](https://vinkius.com/mcp/sevdesk)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **sevDesk** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sevdesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **sevDesk** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sevdesk": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

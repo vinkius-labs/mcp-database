@@ -1,7 +1,6 @@
 # Document360 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/document360)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/document360-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/document360-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/document360)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -73,12 +72,52 @@ Here are some examples of how you can interact with the **Document360** MCP serv
 > Retrieving analytics for the last 30 days... Your KB had 1,200 unique visitors and 4,500 pageviews. Most visited article: 'API Quickstart'. I can provide a daily breakdown of this traffic.
 
 
+## ❓ FAQ
+
+**Q: Can my agent list all categories in a specific project version?**
+Yes. Use the 'list_categories' tool. Provide the project version ID, and the agent will retrieve the explicitly attached categories and their physical groupings within that version.
+
+**Q: How do I search for a specific topic across my knowledge base via chat?**
+Provide your search query to the 'search' tool. Your agent will execute immediate semantic queries to discover strictly mapped textual responses and articles active inside your KB.
+
+**Q: Can I monitor live traffic metrics through the agent?**
+Absolutely. Use the 'analytics' tool. You can specify a date range (from/to), and the agent will pull available metrics exposing explicit traffic ranges and visitor interaction stamps for your portal.
+
+
 ## Installation & Usage
 
-To install and use the **Document360** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/document360](https://vinkius.com/mcp/document360)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Document360** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `document360` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Document360** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "document360": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

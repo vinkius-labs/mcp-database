@@ -1,7 +1,6 @@
 # Obsidian Publish MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/obsidian-publish)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/obsidian-publish-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/obsidian-publish-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/obsidian-publish)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,12 +67,52 @@ Here are some examples of how you can interact with the **Obsidian Publish** MCP
 > The 'Inbox' note has the following metadata: generated on May 5th, tagged with `#todo` and `#ideas`, and links heavily to `Projects.md` and `Archived Content.md`.
 
 
+## ❓ FAQ
+
+**Q: Can the AI accurately recreate the folder structure of my vault?**
+Yes. When the model invokes `list_navigation`, it downloads the systematic JSON map of the entire public vault, thereby allowing it to understand the relationships and physical structure of your folders perfectly.
+
+**Q: Does `get_file` automatically render complex Markdown components?**
+No rendering is performed on our end. The `get_file` tool returns pure raw Markdown (including frontmatter and obsidian syntax). Fortunately, LLMs (like Claude) are exceptionally adept at reading and reasoning over raw Markdown text structures.
+
+**Q: If my Published site is private and requires a password, does it still work?**
+Yes, it works gracefully. If you configured Obsidian Publish with restricted read access, you can manually inject a persistent token into the setup, giving your AI agent the clearance to read securely behind the authentication wall.
+
+
 ## Installation & Usage
 
-To install and use the **Obsidian Publish** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/obsidian-publish](https://vinkius.com/mcp/obsidian-publish)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Obsidian Publish** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `obsidian-publish` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Obsidian Publish** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "obsidian-publish": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

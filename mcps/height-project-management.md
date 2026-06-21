@@ -1,7 +1,6 @@
 # Height (Project Management) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/height-project-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/height-project-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/height-project-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/height-project-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,52 @@ Here are some examples of how you can interact with the **Height (Project Manage
 > Task T-108 ('Security Audit'): Assigned to Mark, Priority: High, Due Date: Next Friday. Description: 'Complete the quarterly security audit for the core infrastructure'. Current status: 'Blocked'.
 
 
+## ❓ FAQ
+
+**Q: Can I see the full history of a task through my agent?**
+Yes. Use the `list_activities` tool with a specific Task ID to retrieve the full audit trail, including state changes and comments, ensuring you never miss the context of a task's evolution.
+
+**Q: How do I find a specific task ID?**
+You can use `list_tasks` to browse tasks within a workspace or list. Your agent will display the Task IDs along with their names, making it easy to identify the exact task you need to inspect.
+
+**Q: Can I list all members of my workspace?**
+Absolutely. The `list_users` tool allows you to fetch all registered teammates in your Height workspace, helping you map assignments and identify collaborators in your projects.
+
+
 ## Installation & Usage
 
-To install and use the **Height (Project Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/height-project-management](https://vinkius.com/mcp/height-project-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Height (Project Management)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `height-project-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Height (Project Management)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "height-project-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Gong MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gong-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gong-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gong-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gong-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,12 +79,52 @@ Here are some examples of how you can interact with the **Gong** MCP server usin
 > Deal pipeline: 24 active deals totaling $1.2M. Stage breakdown: Prospecting (8, $280K), Discovery (6, $340K), Demo (5, $290K), Negotiation (3, $190K), Closing (2, $100K). ⚠️ 4 deals have had no calls in 14+ days: 1) 'DataFlow Inc' ($45K, Negotiation, last call 18 days ago). 2) 'CloudSync' ($30K, Discovery, 16 days). 3) 'FinTrack' ($25K, Demo, 15 days). 4) 'LogiPro' ($20K, Prospecting, 21 days). These are at risk of going cold. Would you like to check the last call transcripts?
 
 
+## ❓ FAQ
+
+**Q: Can I access the full transcript of a recorded sales call?**
+Yes. Use `list_calls` to browse all recorded calls, then call `get_transcript` with the Call ID to retrieve the full speaker-labeled transcript. Each segment includes the speaker name, timestamp, and spoken text. Use `get_call` for additional metadata like topics discussed and action items.
+
+**Q: Does Gong require two separate credentials?**
+Yes. Gong uses HTTP Basic Authentication with an **Access Key** and an **Access Key Secret**. Both are generated in **Company Settings > Ecosystem > API > API Keys**. The credentials are Base64-encoded and sent in the Authorization header. You must be a Technical Administrator to generate API keys.
+
+**Q: Can I track deal pipeline data alongside call recordings?**
+Yes. The `list_deals` tool retrieves your deal pipeline with stages, amounts, and associated calls. Cross-reference with `list_calls` and `get_call` to understand which conversations influenced deal progression. Use `get_call_stats` for aggregate metrics like total call volume and talk ratios.
+
+
 ## Installation & Usage
 
-To install and use the **Gong** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/gong-alternative](https://vinkius.com/mcp/gong-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gong** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `gong-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gong** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gong-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

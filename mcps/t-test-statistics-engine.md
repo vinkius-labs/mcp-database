@@ -1,7 +1,6 @@
 # T-Test Statistics Engine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/t-test-statistics-engine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/t-test-statistics-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/t-test-statistics-engine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/t-test-statistics-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -54,12 +53,52 @@ Here are some examples of how you can interact with the **T-Test Statistics Engi
 > The calculated p-value is 0.34. We fail to reject the null hypothesis — the batch weight is not significantly different from the 500g target.
 
 
+## ❓ FAQ
+
+**Q: Why shouldn't I just ask the AI to calculate the p-value directly?**
+Because Large Language Models generate text based on probability, not logic. They frequently hallucinate complex floating-point math. This engine forces the AI to use a real local calculator, producing exact results every single time.
+
+**Q: Does it assume equal variances?**
+For independent tests, it currently uses the standard Student's t-test which assumes equal variance. Paired and one-sample tests calculate their specific formulas independently.
+
+**Q: What alpha level is used for significance interpretation?**
+The engine automatically interprets significance using the standard alpha = 0.05 (95% confidence level). The exact p-value is always returned so you can apply any custom threshold.
+
+
 ## Installation & Usage
 
-To install and use the **T-Test Statistics Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/t-test-statistics-engine](https://vinkius.com/mcp/t-test-statistics-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **T-Test Statistics Engine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `t-test-statistics-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **T-Test Statistics Engine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "t-test-statistics-engine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

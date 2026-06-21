@@ -1,7 +1,6 @@
 # Guance Cloud / 观测云 MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/guance-cloud)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/guance-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/guance-cloud-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/guance-cloud)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Guance Cloud / 观测�
 > I've executed the DQL query. The average CPU usage across your 'Production' cluster over the last 15 minutes is 42%. Would you like a breakdown by individual host?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Guance Cloud API Key?**
+Log in to your Guance Cloud workspace, navigate to [Management] → [API Key Management], and generate a new key. Use the provided value as your DF-API-KEY.
+
+**Q: What is DQL?**
+Data Query Language (DQL) is the query syntax used by Guance Cloud to retrieve metrics, logs, and other observability data. You can use the `query_data` tool to execute these statements.
+
+**Q: Can I check my data usage via the agent?**
+Yes. Use the `get_billing` tool to retrieve current data usage and billing statistics for your workspace, helping you manage costs and resource allocation.
+
+
 ## Installation & Usage
 
-To install and use the **Guance Cloud / 观测云** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/guance-cloud](https://vinkius.com/mcp/guance-cloud)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Guance Cloud / 观测云** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `guance-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Guance Cloud / 观测云** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "guance-cloud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

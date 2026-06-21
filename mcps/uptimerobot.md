@@ -1,7 +1,6 @@
 # UptimeRobot MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uptimerobot)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uptimerobot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uptimerobot-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uptimerobot)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **UptimeRobot** MCP serv
 > I've permanently removed notification target ID `78233` (old-devops@acme.com) from UptimeRobot global alert contacts list safely. Future downtimes will no longer dispatch there. Would you like me to create an external endpoint webhook alert point to replace it immediately in the pipeline?
 
 
+## ❓ FAQ
+
+**Q: Can I automatically monitor a newly deployed application?**
+Absolutely. After you deploy a new service (for example, inside an IDE like Cursor), you can casually text the agent: `Create an HTTP uptime monitor for https://new-service.com called 'Frontend Node'`. The agent natively crafts the exact UptimeRobot POST configuration and injects the endpoints. Zero web dashboards needed.
+
+**Q: How do I easily get an executive summary of server incidents across my company?**
+You don't need to sift manually through UptimeRobot's metrics arrays. Prompt your agent to `get details for all monitors and summarize our SLA ratio`. It will fetch the individual up-ratio indicators for every entry, average them, highlight any services below 99.9%, and present you a clean Markdown table summarizing the state of your whole operations in seconds.
+
+**Q: Why should I reset my monitor logs by AI?**
+Oftentimes a development server has planned downtime, destroying your overall "green board" of perfect SLA. By asking the AI to `reset logs for monitor ID X`, you cleanly wipe the inaccurate or skewed history and start recording clean metrics instantly without disturbing real-time operations.
+
+
 ## Installation & Usage
 
-To install and use the **UptimeRobot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/uptimerobot](https://vinkius.com/mcp/uptimerobot)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **UptimeRobot** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `uptimerobot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **UptimeRobot** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "uptimerobot": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

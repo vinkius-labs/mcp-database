@@ -1,7 +1,6 @@
 # Transport for London MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/transport-for-london)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/transport-for-london-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/transport-for-london-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/transport-for-london)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -97,12 +96,55 @@ Here are some examples of how you can interact with the **Transport for London**
 > Next buses at Oxford Circus: Route 8 to Holborn (3 min), Route 55 to Walthamstow (5 min), Route 98 to Willesden (7 min), Route 13 to Archway (9 min).
 
 
+## ❓ FAQ
+
+**Q: Do I need an API key?**
+No! TfL's Unified API is completely free and open. No authentication required.
+
+**Q: What transport modes are covered?**
+TfL covers: Tube (Underground), Overground, DLR, Elizabeth line, Tram, Bus, River Bus, Santander Cycles (Boris Bikes) and major roads across London.
+
+**Q: Can I plan a journey between two locations?**
+Yes! Use get_journey with origin and destination (station names, addresses or postcodes). Returns multiple route options with duration, changes, walking distance and step-by-step directions.
+
+**Q: Can I check live bus arrivals?**
+Yes! First use search_stop to find the stop ID by name, then use get_arrivals with that stop ID to get real-time bus arrival predictions.
+
+
 ## Installation & Usage
 
-To install and use the **Transport for London** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/transport-for-london](https://vinkius.com/mcp/transport-for-london)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Transport for London** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `transport-for-london` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Transport for London** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "transport-for-london": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

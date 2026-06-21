@@ -1,7 +1,6 @@
 # Face++ / Megvii MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/face-megvii)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/face-megvii-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/face-megvii-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/face-megvii)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Face++ / Megvii** MCP 
 > I've retrieved the body detection results. I found 1 human body in the image. Would you like to analyze the skeleton keypoints or check for any specific hand gestures?
 
 
+## ❓ FAQ
+
+**Q: How do I find my Face++ API Key and Secret?**
+Log in to the [Face++ Console](https://console.faceplusplus.com.cn/), go to [Dashboard] -> [API Key], and you will find your unique Key and Secret there. Ensure you have the necessary permissions enabled.
+
+**Q: Can I analyze images from a local file?**
+This server currently supports analysis via `image_url`. To use local files, you should upload them to a public or private storage and provide the resulting URL to the tools.
+
+**Q: What attributes can be returned during face detection?**
+Common attributes include gender, age, emotion, head pose, smile, face quality, and skin status. You can specify these in the `return_attributes` parameter of the `detect_face` tool.
+
+
 ## Installation & Usage
 
-To install and use the **Face++ / Megvii** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/face-megvii](https://vinkius.com/mcp/face-megvii)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Face++ / Megvii** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `face-megvii` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Face++ / Megvii** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "face-megvii": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

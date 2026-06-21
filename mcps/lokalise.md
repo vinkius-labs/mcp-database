@@ -1,7 +1,6 @@
 # Lokalise MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lokalise)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lokalise-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lokalise-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lokalise)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -79,12 +78,55 @@ Here are some examples of how you can interact with the **Lokalise** MCP server 
 > I've generated the download bundle for Portuguese (pt-BR) translations in JSON format. The file contains 342 translated strings with 98% completion. You can download it from the provided link.
 
 
+## ❓ FAQ
+
+**Q: What kind of Lokalise API token do I need for this integration?**
+You need a Personal Access Token from your Lokalise account. Go to your profile settings, find the API Tokens section, and generate a new token with read/write access to projects. Keep this token secure as it grants full API access to your account.
+
+**Q: How do I add a new translation key to my Lokalise project via the AI agent?**
+Use the `create_key` action with the project ID, key name (e.g., `homepage.welcome.title`), and optionally specify platforms, tags, and a description. The key will be created with the base language placeholder ready for translation.
+
+**Q: Can I export all my translations in a specific format like JSON or YAML?**
+Yes! Use the `download_file` action and specify the `format` parameter (e.g., `json`, `yml`, `xliff`, `strings`, `xml`). You can also filter by specific languages or filenames to generate targeted export bundles.
+
+**Q: Is it possible to add translations programmatically for multiple languages at once?**
+Yes. The `add_translation` action supports adding translations for one or more keys at once. You can also mark translations as fuzzy or reviewed to indicate their quality status in the workflow.
+
+
 ## Installation & Usage
 
-To install and use the **Lokalise** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/lokalise](https://vinkius.com/mcp/lokalise)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Lokalise** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `lokalise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Lokalise** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "lokalise": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

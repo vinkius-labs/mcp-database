@@ -1,7 +1,6 @@
 # Matrix/Element MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/matrixelement)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/matrixelement-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/matrixelement-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/matrixelement)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Matrix/Element** MCP s
 > I found 2 users matching 'bob': Bob Smith (@bob_s:matrix.org) and Bob Builder (@builder:matrix.org).
 
 
+## ❓ FAQ
+
+**Q: How do I see the latest messages in my rooms?**
+Use the `sync_client` tool. It synchronizes your local state with the homeserver, retrieving all new events, messages, and room state changes since your last sync.
+
+**Q: Can I search for people on other Matrix servers?**
+Yes, the `search_user_directory` tool allows you to search the directory available to your homeserver, helping you find users by their display name or Matrix ID.
+
+**Q: Is it possible to manage room settings like the topic or name?**
+Absolutely. Use `set_room_state` to update room metadata. You can change the room name, topic, or other state events by providing the correct `event_type` and `body`.
+
+
 ## Installation & Usage
 
-To install and use the **Matrix/Element** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/matrixelement](https://vinkius.com/mcp/matrixelement)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Matrix/Element** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `matrixelement` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Matrix/Element** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "matrixelement": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Rentvine MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rentvine)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rentvine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rentvine-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rentvine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Rentvine** MCP server 
 > Processing update... The lease agreement lease_555 has been successfully updated to 'Renewed'. All associated records have been synchronized.
 
 
+## ❓ FAQ
+
+**Q: Can I retrieve the full details of a specific property by its ID?**
+Yes! Use the `get_property` tool with the specific Property ID. You can also use the `include` parameter to sideload related data like units or tenants in the same response.
+
+**Q: How do I get a list of all current lease agreements?**
+Simply ask the agent to run the `list_leases` tool. It will return a list of lease agreements, including their terms, statuses, and associated IDs for further inspection.
+
+**Q: Can I add a new unit to an existing property through the AI?**
+Yes, you can use the `create_unit` tool. Provide the necessary unit data in the payload, and the agent will create the new rental unit record within your Rentvine account.
+
+
 ## Installation & Usage
 
-To install and use the **Rentvine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/rentvine](https://vinkius.com/mcp/rentvine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Rentvine** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `rentvine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Rentvine** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "rentvine": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

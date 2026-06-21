@@ -1,7 +1,6 @@
 # Pixelfed (Instagram Alternative) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pixelfed-instagram-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pixelfed-instagram-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pixelfed-instagram-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pixelfed-instagram-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -85,12 +84,52 @@ Here are some examples of how you can interact with the **Pixelfed (Instagram Al
 > You have 3 new notifications. 'art_fan' just followed you, and 'photo_pro' liked your latest post. Would you like to follow 'art_fan' back?
 
 
+## ❓ FAQ
+
+**Q: Can I upload images and post them to my feed using the AI?**
+Yes! First, use the `upload_media` tool to upload your file and get a media ID. Then, use the `create_status` tool and include that ID in the `media_ids` array to publish your post.
+
+**Q: How do I see what's trending on my Pixelfed instance?**
+You can use the `get_tag_timeline` tool with a specific hashtag to see related posts, or use `get_public_timeline` to see the most recent public posts across the instance.
+
+**Q: Is it possible to manage my followers through this integration?**
+Absolutely. You can use `get_followers` and `get_following` to list accounts, and use `follow_account` or `unfollow_account` to manage your connections.
+
+
 ## Installation & Usage
 
-To install and use the **Pixelfed (Instagram Alternative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/pixelfed-instagram-alternative](https://vinkius.com/mcp/pixelfed-instagram-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Pixelfed (Instagram Alternative)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `pixelfed-instagram-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Pixelfed (Instagram Alternative)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "pixelfed-instagram-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Porsline MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/porsline)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/porsline-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/porsline-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/porsline)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -70,12 +69,46 @@ Here are some examples of how you can interact with the **Porsline** MCP server 
 > Customer Satisfaction Q2 detailed results. 1,247 total responses. NPS: 72 (Promoters: 68%, Passives: 18%, Detractors: 14%). Satisfaction by category: Product quality 4.5/5, Customer support 4.3/5, Value for money 4.1/5, Ease of use 4.6/5. Top requested improvement: "Faster response times" (mentioned 234 times). 89% would recommend to a colleague. Response trend: 12% increase vs Q1. Average completion time: 3.8 minutes.
 
 
+## ❓ FAQ
+
+**Q: Can I list all my active surveys using my AI agent?**
+Yes! Use the `list_surveys` tool to retrieve a comprehensive list of all surveys registered in your Porsline account.
+
+
 ## Installation & Usage
 
-To install and use the **Porsline** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/porsline](https://vinkius.com/mcp/porsline)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Porsline** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `porsline` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Porsline** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "porsline": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

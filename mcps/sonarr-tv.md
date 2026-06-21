@@ -1,7 +1,6 @@
 # Sonarr (TV) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sonarr-tv)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sonarr-tv-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sonarr-tv-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sonarr-tv)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,12 +83,52 @@ Here are some examples of how you can interact with the **Sonarr (TV)** MCP serv
 > Episode 1542 is 'Connor's Wedding' from 'Succession'. It is currently monitored and the file status is 'Downloaded'.
 
 
+## ❓ FAQ
+
+**Q: Can I add a new TV series to my library using this agent?**
+Yes! Use the `add_series` tool. You will need to provide the title, TVDB ID, and the root folder path where the files should be stored.
+
+**Q: How do I check if Sonarr is running correctly or has any errors?**
+You can use the `get_health` tool to see any active health checks or `get_system_status` to retrieve general system information and version details.
+
+**Q: Is it possible to see what is currently being downloaded?**
+Absolutely. Use the `get_queue` tool to list all items currently in the download queue, including their status and progress.
+
+
 ## Installation & Usage
 
-To install and use the **Sonarr (TV)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/sonarr-tv](https://vinkius.com/mcp/sonarr-tv)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Sonarr (TV)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `sonarr-tv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Sonarr (TV)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "sonarr-tv": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # FatSecret MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fatsecret)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fatsecret-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fatsecret-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fatsecret)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -59,12 +58,52 @@ Here are some examples of how you can interact with the **FatSecret** MCP server
 > A typical 30g scoop of whey protein powder contains roughly 110-120 calories, with 24g of protein, 2g of carbohydrates, and 1.5g of fat.
 
 
+## ❓ FAQ
+
+**Q: How do I get FatSecret API access?**
+Register at platform.fatsecret.com for a free developer account. You'll receive a Client ID and Client Secret for OAuth 2.0 authentication.
+
+**Q: Does FatSecret include data on restaurant chains and packaged foods?**
+Yes, the database includes a vast array of branded products, restaurant chains, and generic foods from around the world.
+
+**Q: Are multiple serving sizes supported for foods?**
+Yes, most foods in the platform have multiple serving size options available, such as per 100g, per piece, or per cup, giving you highly accurate portion logging.
+
+
 ## Installation & Usage
 
-To install and use the **FatSecret** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/fatsecret](https://vinkius.com/mcp/fatsecret)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **FatSecret** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `fatsecret` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **FatSecret** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "fatsecret": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

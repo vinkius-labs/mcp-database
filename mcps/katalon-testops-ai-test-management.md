@@ -1,7 +1,6 @@
 # Katalon TestOps (AI Test Management) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/katalon-testops-ai-test-management)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/katalon-testops-ai-test-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/katalon-testops-ai-test-management-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/katalon-testops-ai-test-management)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,12 +86,52 @@ Here are some examples of how you can interact with the **Katalon TestOps (AI Te
 > I've identified 2 active releases in project 123: 'Q1 Spring Update' (v1.2.0) and 'Hotfix Security' (v1.2.1). Release v1.2.0 has 45 associated test runs with a 98% pass rate. Would you like a detailed build report?
 
 
+## ❓ FAQ
+
+**Q: Can I rerun a failed test suite using my agent?**
+Yes. Use the `rerun_test_run` tool by providing the ID of the failed execution. Your agent will trigger a fresh run using the exact same configuration and return the new Test Run ID for tracking.
+
+**Q: How do I see the screenshots from a specific test failure?**
+Ask your agent to `get_test_result` for a specific result ID. If the test was configured to capture visuals, your agent will retrieve the screenshot links along with diagnostic logs and error messages.
+
+**Q: Can I check which browser versions were used in a test run?**
+Absolutely. Use the `list_execution_environments` tool for your project. Your agent will return detailed OS, browser, and device configurations used for executions, ensuring you have the full technical context.
+
+
 ## Installation & Usage
 
-To install and use the **Katalon TestOps (AI Test Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/katalon-testops-ai-test-management](https://vinkius.com/mcp/katalon-testops-ai-test-management)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Katalon TestOps (AI Test Management)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `katalon-testops-ai-test-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Katalon TestOps (AI Test Management)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "katalon-testops-ai-test-management": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

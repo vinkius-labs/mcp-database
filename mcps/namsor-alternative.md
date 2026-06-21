@@ -1,7 +1,6 @@
 # Namsor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/namsor-alternative)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/namsor-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/namsor-alternative-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/namsor-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -69,12 +68,52 @@ Here are some examples of how you can interact with the **Namsor** MCP server us
 > I've formatted the number using the context for Maria Garcia. The validated international format is +1 555-123-4567.
 
 
+## ❓ FAQ
+
+**Q: Can I determine if a name is male or female using this server?**
+Yes! Use the `get_gender` tool by providing a first and last name. The AI will return the likely gender along with a confidence score.
+
+**Q: How do I split a full name string into first and last names?**
+You can use the `parse_name` tool. Just provide the full name string, and it will return the structured components.
+
+**Q: Does this support US Census race and ethnicity categories?**
+Yes, the `get_us_race_ethnicity` tool classifies names into White, Black, Asian/Pacific Islander (API), and Hispanic categories based on US Census data.
+
+
 ## Installation & Usage
 
-To install and use the **Namsor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/namsor-alternative](https://vinkius.com/mcp/namsor-alternative)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Namsor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `namsor-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Namsor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "namsor-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

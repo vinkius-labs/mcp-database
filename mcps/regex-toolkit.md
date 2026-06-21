@@ -1,7 +1,6 @@
 # Regex Toolkit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/regex-toolkit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/regex-toolkit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/regex-toolkit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/regex-toolkit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -53,12 +52,52 @@ Here are some examples of how you can interact with the **Regex Toolkit** MCP se
 > Using the validate_pattern tool (type='url'): Yes, it is a perfectly valid URL structure.
 
 
+## ❓ FAQ
+
+**Q: Why use this instead of asking the AI to find the emails?**
+Because LLMs predict text probabilistically. They might miss emails embedded in weird characters (like `contact@company.com.` with a trailing dot) or hallucinate non-existent addresses. Regex provides mathematical certainty.
+
+**Q: Does the PII masking send data to the cloud?**
+Never. The `mask_sensitive_data` tool runs exclusively on your local Javascript engine (V8). It acts as a local firewall, ensuring sensitive strings are redacted before any external processing happens.
+
+**Q: What format of phone numbers are supported?**
+The regex captures international formats with country codes (e.g., +1, +55), optional parentheses for area codes, and spacing/hyphens commonly used globally.
+
+
 ## Installation & Usage
 
-To install and use the **Regex Toolkit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/regex-toolkit](https://vinkius.com/mcp/regex-toolkit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Regex Toolkit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `regex-toolkit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Regex Toolkit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "regex-toolkit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

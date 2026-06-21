@@ -1,7 +1,6 @@
 # Growth Strategist MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/growth-strategist)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/growth-strategist-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/growth-strategist-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/growth-strategist)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -77,12 +76,52 @@ Here are some examples of how you can interact with the **Growth Strategist** MC
 > Verdict: VANITY_DRIVEN. Multiple failures detected. (1) 'Brand awareness' is a vanity metric — tie the outcome to revenue, CAC reduction, or conversion rate. (2) 'Social media' is not a channel — which platform, and why does your ICP spend time there? (3) 'Thought leadership' is not a differentiator — every competitor claims thought leadership. Take a position that excludes.
 
 
+## ❓ FAQ
+
+**Q: Does Growth Strategist generate marketing strategies?**
+No. Growth Strategist performs zero content generation. It forces the AI agent to structure its own strategic reasoning into verifiable fields, then validates that the reasoning is logically consistent. The agent does all the thinking — the tool catches contradictions, generic advice, and vanity metrics.
+
+**Q: What does it catch that a prompt instruction doesn't?**
+Prompt instructions are suggestions — agents routinely ignore 'be specific about the audience' or 'cite evidence.' Tool calls are obligations — the agent must fill every field. Beyond that, Growth Strategist has 10 consistency rules that catch domain-specific anti-patterns: generic ICP terms ('everyone', 'businesses'), feature-list differentiators ('we offer', 'best in class'), and vanity metric language ('impressions', 'followers'). A prompt can't enforce these — a tool schema can.
+
+**Q: Can I use this for non-marketing strategy?**
+The 5 Decision Pivots are applicable to any domain where recommendations tend to be generic: business strategy, product strategy, sales tactics, partnership proposals. However, the semantic traps (vanity metric blocklist, feature-list differentiator detection) are calibrated for marketing. For other domains, consider building a specialized Reasoning MCP using the same Decision Pivot pattern.
+
+
 ## Installation & Usage
 
-To install and use the **Growth Strategist** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/growth-strategist](https://vinkius.com/mcp/growth-strategist)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Growth Strategist** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `growth-strategist` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Growth Strategist** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "growth-strategist": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

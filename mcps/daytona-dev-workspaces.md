@@ -1,7 +1,6 @@
 # Daytona (Dev Workspaces) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/daytona-dev-workspaces)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/daytona-dev-workspaces-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/daytona-dev-workspaces-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/daytona-dev-workspaces)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -92,12 +91,52 @@ Here are some examples of how you can interact with the **Daytona (Dev Workspace
 > Stopping 'dev-environment-1' now. The resources will be released while preserving your data.
 
 
+## ❓ FAQ
+
+**Q: Can I change the resources of an existing sandbox?**
+Yes, you can use the `resize_sandbox` tool to update the CPU, memory, or disk size of a specific sandbox by providing its ID or name.
+
+**Q: How do I create a new environment with a specific Docker image?**
+Use the `create_sandbox` tool and provide the `image` parameter with the desired Docker or OCI image name.
+
+**Q: What should I do if a sandbox is in an error state?**
+You can use the `recover_sandbox` tool to attempt to restore a sandbox from an error state back to a functional one.
+
+
 ## Installation & Usage
 
-To install and use the **Daytona (Dev Workspaces)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/daytona-dev-workspaces](https://vinkius.com/mcp/daytona-dev-workspaces)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Daytona (Dev Workspaces)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `daytona-dev-workspaces` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Daytona (Dev Workspaces)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "daytona-dev-workspaces": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

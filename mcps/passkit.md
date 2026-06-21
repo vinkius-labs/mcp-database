@@ -1,7 +1,6 @@
 # PassKit MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/passkit)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/passkit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/passkit-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/passkit)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **PassKit** MCP server u
 > Coupon pass created successfully (ID: CPN-8421). Discount: 25% off entire purchase. Valid: Now through August 31, 2025. The pass features your brand colors and summer campaign artwork. Distribution URL generated for email campaigns and social media sharing. Supports both Apple Wallet and Google Pay. Redemption limit set to single use per customer.
 
 
+## ❓ FAQ
+
+**Q: Can my AI automatically find the details for a specific loyalty member by their ID?**
+Yes! Use the `get_member` tool with the Member ID. Your agent will respond with complete metadata, including current points, tier status, and enrollment date in seconds.
+
+**Q: How do I find my PassKit Long-Lived API Token?**
+Log in to the [**PassKit Portal**](https://portal.passkit.com/), navigate to **Settings** > **Integrations**, and you will find your unique secret token under the API Credentials section.
+
+**Q: Does this work with both Apple and Google Wallets?**
+Absolutely. PassKit acts as a unified hub, allowing the AI to orchestrate digital passes that are cross-compatible with both major mobile wallet ecosystems.
+
+
 ## Installation & Usage
 
-To install and use the **PassKit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/passkit](https://vinkius.com/mcp/passkit)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **PassKit** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `passkit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **PassKit** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "passkit": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

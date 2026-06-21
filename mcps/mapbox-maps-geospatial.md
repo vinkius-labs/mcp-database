@@ -1,7 +1,6 @@
 # Mapbox (Maps & Geospatial) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapbox-maps-geospatial)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mapbox-maps-geospatial-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mapbox-maps-geospatial-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapbox-maps-geospatial)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -76,12 +75,52 @@ Here are some examples of how you can interact with the **Mapbox (Maps & Geospat
 > Computing isochrone… I've generated a 5-minute walking polygon centered near the Empire State Building. This area covers approximately 0.8 square kilometers. Would you like me to provide the GeoJSON coordinates for this reachable zone?
 
 
+## ❓ FAQ
+
+**Q: Can I calculate which areas are reachable within a 10-minute drive through my agent?**
+Yes. Use the `get_isochrones` tool by providing the center coordinates and '10' as the minutes parameter. Your agent will return GeoJSON polygons representing the reachable areas for the specified profile (driving, walking, or cycling).
+
+**Q: How do I optimize a delivery route with multiple stops through a conversation?**
+The `solve_optimization` tool determines the most efficient order to visit a list of coordinates. Your agent will process the request and return the optimized sequence, minimizing either travel time or distance for your logistics workflow.
+
+**Q: Can my agent generate a map image for a specific location?**
+Absolutely. Use the `generate_static_map` tool by specifying the center, zoom, and resolution. Your agent will provide a usable Mapbox static image URL, perfect for visual verification without needing a mapping library.
+
+
 ## Installation & Usage
 
-To install and use the **Mapbox (Maps & Geospatial)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/mapbox-maps-geospatial](https://vinkius.com/mcp/mapbox-maps-geospatial)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Mapbox (Maps & Geospatial)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `mapbox-maps-geospatial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Mapbox (Maps & Geospatial)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "mapbox-maps-geospatial": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

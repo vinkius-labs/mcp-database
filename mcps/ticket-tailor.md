@@ -1,7 +1,6 @@
 # Ticket Tailor MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ticket-tailor)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ticket-tailor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ticket-tailor-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ticket-tailor)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,12 +70,52 @@ Here are some examples of how you can interact with the **Ticket Tailor** MCP se
 > Retrieving data... For the 'Summer Music Festival' (ID: ev_88231), a total of 450 tickets have been issued so far. Shall I list the most recent orders?
 
 
+## ❓ FAQ
+
+**Q: Can I see how many tickets have been sold for a specific event?**
+Yes! Use the `list_event_orders` tool and provide the Event ID. Your agent will retrieve all sales orders, allowing you to calculate total volume and revenue.
+
+**Q: How do I list the different prices and ticket tiers for an event?**
+Run the `list_ticket_types` query with your Event ID. The agent will return all configured ticket tiers, including names, prices, and availability.
+
+**Q: Is it possible to verify an individual attendee's ticket via AI?**
+Absolutely. Use the `list_issued_tickets` tool. You can ask the AI to find a specific attendee by name or ID to verify their ticket status and check-in data.
+
+
 ## Installation & Usage
 
-To install and use the **Ticket Tailor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/ticket-tailor](https://vinkius.com/mcp/ticket-tailor)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ticket Tailor** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `ticket-tailor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ticket Tailor** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ticket-tailor": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

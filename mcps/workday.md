@@ -1,7 +1,6 @@
 # Workday MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workday)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/workday-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/workday-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workday)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -86,12 +85,55 @@ Here are some examples of how you can interact with the **Workday** MCP server u
 > Monthly Headcount Report (Q1 2026): January — 1,245 (net +18), February — 1,263 (net +12), March — 1,275 (net +8). YTD net growth: +38 workers. Attrition rate: 2.1% (below 3% target). Top hiring departments: Engineering (+22), Sales (+11), Product (+5).
 
 
+## ❓ FAQ
+
+**Q: What authentication method does Workday use?**
+Workday uses OAuth 2.0 with a registered API Client. You'll need to provide your Client ID, Client Secret, and a Refresh Token — all generated from within your Workday tenant by an administrator.
+
+**Q: Can I check PTO balances for my direct reports?**
+Yes. The `get_time_off_balances` tool retrieves current PTO balances for any worker within the security scope configured for your Integration System User. Data is returned per plan type (vacation, sick, personal).
+
+**Q: Does it support Workday Report-as-a-Service (RaaS)?**
+Absolutely. Use the `execute_raas_report` tool with your report URL to retrieve any custom Workday report, including those with prompt parameters. Results are returned in JSON format.
+
+**Q: Can I navigate the entire organizational hierarchy?**
+Yes. The `get_org_structure` tool fetches supervisory organizations, cost centers, and company hierarchies, allowing you to traverse the full org tree from any starting point.
+
+
 ## Installation & Usage
 
-To install and use the **Workday** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/workday](https://vinkius.com/mcp/workday)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Workday** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `workday` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Workday** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "workday": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

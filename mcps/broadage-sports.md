@@ -1,7 +1,6 @@
 # Broadage Sports MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/broadage-sports)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/broadage-sports-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/broadage-sports-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/broadage-sports)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -75,12 +74,52 @@ Here are some examples of how you can interact with the **Broadage Sports** MCP 
 > Retrieving stats for match 12345... Possession is 55% for Team A, they have 12 shots total (5 on target), and 6 corners. Team B has 45% possession.
 
 
+## ❓ FAQ
+
+**Q: Can I check the live score of an ongoing match?**
+Yes! Use the `list_live_matches` tool. Your agent will fetch all soccer matches currently in progress along with their real-time scores.
+
+**Q: How early are match lineups available?**
+Match lineups are typically available 45 to 60 minutes before kickoff. Use the `get_match_lineup` tool with the specific Match ID to retrieve them.
+
+**Q: Does the integration support sports other than soccer?**
+While the current toolset is optimized for soccer (football) match data, the Broadage API supports many sports. Use the `list_sports` tool to see all available sports in your subscription.
+
+
 ## Installation & Usage
 
-To install and use the **Broadage Sports** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/broadage-sports](https://vinkius.com/mcp/broadage-sports)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Broadage Sports** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `broadage-sports` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Broadage Sports** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "broadage-sports": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

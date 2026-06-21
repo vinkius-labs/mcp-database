@@ -1,7 +1,6 @@
 # Nasdaq Data Link (Quandl) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasdaq-data-link-quandl)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nasdaq-data-link-quandl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nasdaq-data-link-quandl-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasdaq-data-link-quandl)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -72,12 +71,52 @@ Here are some examples of how you can interact with the **Nasdaq Data Link (Quan
 > I have initiated the bulk download request for ZACKS/CP. The current status is 'PENDING'. I will monitor the export and let you know when the file is ready for download.
 
 
+## ❓ FAQ
+
+**Q: How can I filter a datatable for a specific ticker and date range?**
+Use the `get_datatable` tool and provide a JSON string in the `filters` parameter, such as `{"ticker": "AAPL", "date.gt": "2023-01-01"}`. This allows you to narrow down results precisely.
+
+**Q: How do I check which columns are available in a dataset before querying it?**
+Run the `get_datatable_metadata` tool with the `vendor_code` and `table_code`. It will return the table's schema, including column names, types, and which fields support filtering.
+
+**Q: What should I do if the dataset is too large for a standard query?**
+For very large datasets, use the `request_bulk_download` tool. This initiates an asynchronous export process. Once the status reaches 'SUCCEEDED', you can use `get_bulk_download_file` to retrieve the data.
+
+
 ## Installation & Usage
 
-To install and use the **Nasdaq Data Link (Quandl)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/nasdaq-data-link-quandl](https://vinkius.com/mcp/nasdaq-data-link-quandl)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Nasdaq Data Link (Quandl)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `nasdaq-data-link-quandl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Nasdaq Data Link (Quandl)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "nasdaq-data-link-quandl": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 

@@ -1,7 +1,6 @@
 # Moz (SEO Metrics & Link Research) MCP Server
 
-[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moz-seo-metrics-link-research)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moz-seo-metrics-link-research-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moz-seo-metrics-link-research-mcp)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moz-seo-metrics-link-research)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -78,12 +77,52 @@ Here are some examples of how you can interact with the **Moz (SEO Metrics & Lin
 > Analyzing anchor text… For 'vercel.com', the distribution is: 'vercel' (45%), 'next.js' (22%), 'deploy' (12%), 'https://vercel.com' (8%), and 'frontend cloud' (5%). The profile looks very natural with strong brand association. Would you like me to identify which domains use the 'frontend cloud' anchor?
 
 
+## ❓ FAQ
+
+**Q: What is the difference between DA and PA in Moz?**
+Domain Authority (DA) predicts how well a whole website will rank, while Page Authority (PA) predicts the ranking potential of a single page. Your agent can retrieve both metrics using the `get_url_metrics` tool to guide your SEO strategy.
+
+**Q: How do I check the anchor text distribution for my backlinks?**
+Use the `get_anchor_text` tool with your target domain. Your agent will retrieve a mapped list of terms and their occurrence counts, helping you identify if your link profile looks natural or over-optimized for specific keywords.
+
+**Q: Can my agent find the best pages on a competitor's site?**
+Absolutely. Use the `get_top_pages` tool with the competitor's domain. Your agent will return a list of their highest-authority pages, allowing you to see which content pieces are attracting the most link equity.
+
+
 ## Installation & Usage
 
-To install and use the **Moz (SEO Metrics & Link Research)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
 1. View installation instructions and explore the server: [https://vinkius.com/mcp/moz-seo-metrics-link-research](https://vinkius.com/mcp/moz-seo-metrics-link-research)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Moz (SEO Metrics & Link Research)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE", enter `moz-seo-metrics-link-research` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Moz (SEO Metrics & Link Research)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "moz-seo-metrics-link-research": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
 
 ---
 
