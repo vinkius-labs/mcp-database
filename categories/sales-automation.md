@@ -16,8 +16,8 @@ Explore the open database of **sales-automation** Model Context Protocol (MCP) s
 | [Cacheflow](../mcps/cacheflow.md) | Close SaaS deals faster with automated quoting, billing, and subscription management that removes procurement friction. |
 | [Capsule CRM](../mcps/capsule-crm-alternative.md) | Manage contacts, sales opportunities, and projects via Capsule CRM — search parties, track pipelines, and manage tasks directly from any AI agent. |
 | [Captain Data](../mcps/captain-data.md) | Automate web data extraction via Captain Data — find and enrich people and company profiles directly from any AI agent. |
-| [Chili Piper](../mcps/chili-piper.md) | Manage scheduling and lead routing via Chili Piper — track meetings, monitor queues, and manage teams directly from any AI agent. |
 | [Chili Piper](../mcps/chili-piper-1.md) | Automate demand conversion via Chili Piper — manage concierge routes, distribution queues, and generate instant booking links directly from any AI agent. |
+| [Chili Piper](../mcps/chili-piper.md) | Manage scheduling and lead routing via Chili Piper — track meetings, monitor queues, and manage teams directly from any AI agent. |
 | [Churnkey](../mcps/churnkey.md) | Manage customer retention and cancellation flows via Churnkey — track sessions, analyze exit surveys, and automate recovery contacts directly from any AI agent. |
 | [Clari](../mcps/clari.md) | Manage revenue intelligence and forecasting via Clari — track opportunities, monitor forecasts, and audit pipeline changes directly from any AI agent. |
 | [Close CRM (Inside Sales CRM & Automation API)](../mcps/close-crm-inside-sales-crm-automation-api.md) | Manage leads, contacts, and sales opportunities in Close CRM — automate your inside sales pipeline and lead tracking directly from any AI agent. |

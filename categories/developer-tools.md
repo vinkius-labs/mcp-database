@@ -378,8 +378,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Punk](../mcps/punk.md) | Explore the BrewDog beer catalog — search by ingredients, food pairings, and technical specs like ABV or IBU. |
 | [Pusher Channels](../mcps/pusher-channels.md) | Manage real-time communication via Pusher — trigger events, monitor active channels, and manage presence users directly from your AI agent. |
 | [Qase](../mcps/qase.md) | Bring Qase test management into your AI workflow — list projects, track test runs, inspect cases, and monitor defects directly from your chat. |
-| [Qencode](../mcps/qencode-alternative.md) | Automate video transcoding and live streaming via Qencode — manage tasks, start encodings, and orchestrate live streams directly from any AI agent. |
 | [Qencode](../mcps/qencode.md) | Automate video transcoding and live streaming via Qencode — manage tasks, start encodings, and orchestrate live streams directly from any AI agent. |
+| [Qencode](../mcps/qencode-alternative.md) | Automate video transcoding and live streaming via Qencode — manage tasks, start encodings, and orchestrate live streams directly from any AI agent. |
 | [Qovery](../mcps/qovery.md) | Bring effortless Kubernetes and cloud deployment management to your IDE. List environments, check application states, restart pods, and deploy exact Git commits via chat. |
 | [QStash (Serverless Message Queue)](../mcps/qstash-serverless-message-queue.md) | Manage serverless messaging, task scheduling, and webhooks via Upstash QStash — publish messages, manage queues, and handle DLQs directly. |
 | [Qualified.io](../mcps/qualifiedio.md) | Automate technical hiring and coding assessments — manage assessments, invite candidates, and track test results directly from your AI agent. |

@@ -100,8 +100,8 @@ Explore the open database of **customer-support** Model Context Protocol (MCP) s
 | [Odoo Helpdesk](../mcps/odoo-helpdesk.md) | Create and manage support tickets, track SLAs, organize helpdesk teams — Odoo Helpdesk through natural conversation. |
 | [Planhat](../mcps/planhat.md) | Manage customer success via Planhat — list companies, track end users, and monitor tasks directly from any AI agent. |
 | [Porsline](../mcps/porsline.md) | Automate surveys and feedback via Porsline — manage surveys, responses, and reports directly from any AI agent. |
-| [Reamaze](../mcps/reamaze-alternative.md) | Automate customer support and helpdesk workflows via Reamaze — manage help articles, channels, and contacts directly from any AI agent. |
 | [Reamaze](../mcps/reamaze.md) | Automate customer support and helpdesk workflows via Reamaze — manage help articles, channels, and contacts directly from any AI agent. |
+| [Reamaze](../mcps/reamaze-alternative.md) | Automate customer support and helpdesk workflows via Reamaze — manage help articles, channels, and contacts directly from any AI agent. |
 | [Repuso](../mcps/repuso.md) | Collect and manage customer reviews effortlessly with Repuso AI agents. |
 | [Shumei Anti-Fraud](../mcps/shumei-anti-fraud.md) | Bring Shumei's top-tier Anti-Fraud and Risk Control to your AI. Analyze text, images, and devices for malicious activity instantly. |
 | [Sobot](../mcps/sobot.md) | Leading AI customer support and ticketing platform in China — manage tickets, agents, and knowledge via AI. |

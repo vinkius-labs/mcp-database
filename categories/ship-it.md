@@ -6,8 +6,8 @@ Explore the open database of **ship-it** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Apify](../mcps/apify.md) | Command Apify scrapers from your AI agent — run actors, extract web data, poll datasets, and automate browser tasks seamlessly. |
 | [Applitools](../mcps/applitools.md) | Bring AI-powered visual testing to your AI agent — inspect test batches, review UI diffs, and manage your visual baselines naturally. |
-| [Better Stack](../mcps/better-stack.md) | Monitor uptime and incidents via Better Stack — list monitors, heartbeats, and on-call schedules directly from any AI agent. |
 | [Better Stack](../mcps/better-stack-1.md) | Automate incident management via Better Stack — monitor uptime, manage incidents, and control on-call schedules securely from your AI agent. |
+| [Better Stack](../mcps/better-stack.md) | Monitor uptime and incidents via Better Stack — list monitors, heartbeats, and on-call schedules directly from any AI agent. |
 | [Bitbucket](../mcps/bitbucket.md) | Manage your Git repositories via Bitbucket — list pull requests, commits, and pipelines directly from any AI agent. |
 | [BlazeMeter](../mcps/blazemeter.md) | Automate continuous performance testing via BlazeMeter — manage workspaces, trigger load tests, and analyze active run metrics securely via AI. |
 | [Buildkite](../mcps/buildkite.md) | Automate CI/CD pipelines via Buildkite — manage builds, agents, and deployments directly from any AI agent. |
