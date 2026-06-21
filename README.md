@@ -1,8 +1,8 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**, the world's largest open-source database of Model Context Protocol (MCP) servers.
+Welcome to the **Vinkius Open Data Initiative**, the world's largest public registry of production-ready Model Context Protocol (MCP) servers.
 
-This repository contains automatically updated, production-ready documentation for **5,033 unique MCP servers**.
+This repository contains automatically updated documentation for **5,033 unique enterprise MCP integrations**.
 
 This dataset is programmatically synchronized from the [Vinkius MCP Catalog](https://vinkius.com) — providing structured metadata, tool details, and configuration instructions for AI agent integrations.
 

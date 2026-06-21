@@ -8,8 +8,8 @@ Explore the open database of **money-moves** Model Context Protocol (MCP) server
 | [Afterpay](../mcps/afterpay.md) | Buy Now, Pay Later orchestration — manage checkouts, payments, and refunds via AI. |
 | [Airwallex](../mcps/airwallex.md) | Process global payments, manage multi-currency accounts, and track international transfers with enterprise-grade treasury tools. |
 | [Alpaca Trading](../mcps/alpaca-trading.md) | Trade stocks and crypto, access real-time market data, and manage your Alpaca brokerage account directly through any AI agent. |
-| [Authorize.net](../mcps/authorizenet-1.md) | Manage payments, transactions, and customer profiles via Authorize.net — the trusted payment gateway directly via AI. |
 | [Authorize.net](../mcps/authorizenet.md) | Process cards, manage refunds, capture holds, and inspect settled transactions on Authorize.net directly from your AI agent. |
+| [Authorize.net](../mcps/authorizenet-1.md) | Manage payments, transactions, and customer profiles via Authorize.net — the trusted payment gateway directly via AI. |
 | [Avalara AvaTax](../mcps/avalara-avatax-1.md) | Manage sales tax — audit transactions, addresses, and codes via AI. |
 | [Banco Inter](../mcps/banco-inter.md) | Connect to your Banco Inter Empresas digital account. Automate Pix, Boletos, balance inquiries and statements. |
 | [Baremetrics](../mcps/baremetrics.md) | SaaS financial analytics — audit MRR, churn, LTV, and customer subscriptions via AI. |

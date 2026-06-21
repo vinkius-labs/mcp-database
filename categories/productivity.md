@@ -697,8 +697,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [tl;dv](../mcps/tldv.md) | Record, transcribe, and clip key moments from Google Meet and Zoom calls so your team never misses important meeting insights. |
 | [Todoist](../mcps/todoist-alternative.md) | Manage your Todoist tasks and projects — audit productivity via AI. |
 | [Todoist](../mcps/todoist.md) | Manage tasks, organize projects, and streamline your personal or team workflows natively with your AI agent. |
-| [Toggl Plan](../mcps/toggl-plan-1.md) | Manage your team's visual timelines, track project phases, and balance workloads securely via your AI agent. |
 | [Toggl Plan](../mcps/toggl-plan.md) | Manage your team's visual timelines, track project phases, and balance workloads securely via your AI agent. |
+| [Toggl Plan](../mcps/toggl-plan-1.md) | Manage your team's visual timelines, track project phases, and balance workloads securely via your AI agent. |
 | [Tome (AI Storytelling)](../mcps/tome-ai-storytelling.md) | Generate and manage AI-powered presentations via Tome — list workspaces, manage tomes, and add pages directly from any AI agent. |
 | [Tower](../mcps/tower.md) | Lightweight project management and team collaboration platform — manage tasks, projects, and discussions via AI. |
 | [TrackingTime](../mcps/trackingtime.md) | Track how your team spends time across projects and clients with timesheets, reports, and budgeting tools that keep work profitable. |

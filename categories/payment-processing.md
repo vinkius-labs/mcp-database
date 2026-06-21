@@ -10,8 +10,8 @@ Explore the open database of **payment-processing** Model Context Protocol (MCP)
 | [Duffel](../mcps/duffel.md) | Search and book flights and stays directly through AI. Access real-time offers, manage orders, and explore travel metadata. |
 | [GiveForms](../mcps/giveforms.md) | Retrieve donation records and oversee fundraising data via AI agents with GiveForms. |
 | [Gordian Software (Airline Ancillaries API)](../mcps/gordian-software-airline-ancillaries-api.md) | Search and book airline ancillaries like seats, bags, and lounge access directly through Gordian Software's API. |
-| [OpenNode](../mcps/opennode.md) | Process Bitcoin and Lightning Network payments, manage charges, and initiate secure withdrawals directly from your AI agent. |
 | [OpenNode](../mcps/opennode-alternative.md) | Process Bitcoin and Lightning Network payments, manage charges, and initiate secure withdrawals directly from your AI agent. |
+| [OpenNode](../mcps/opennode.md) | Process Bitcoin and Lightning Network payments, manage charges, and initiate secure withdrawals directly from your AI agent. |
 | [Qgiv](../mcps/qgiv.md) | Manage Qgiv donation forms, custom fields, suggested amounts, and account settings directly from any AI agent. |
 | [Qgiv](../mcps/qgiv-alternative.md) | Manage Qgiv donation forms, custom fields, suggested amounts, and account settings directly from any AI agent. |
 | [Tithe.ly](../mcps/tithely.md) | Manage church giving and nonprofit fundraising via Tithe.ly — list organizations, manage payment categories, and process transactions directly from your AI agent. |
