@@ -4,12 +4,15 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Allergen Checker](../mcps/allergen-checker.md) | Scan ingredients and recipes for the 14 mandatory allergens. |
 | [Breathing Timer](../mcps/breathing-timer.md) | Accurately track structured breathing cycles (Box Breathing, 4-7-8, Coherence Heart Rate) for guided respiratory practice. |
 | [Calorie Deficit Calculator](../mcps/calorie-deficit-calculator.md) | Calculate BMR, TDEE, and personalized weight loss plans with precision. |
+| [Glycemic Index Meal Calculator](../mcps/glycemic-index-meal-calculator.md) | Calculate the weighted average Glycemic Index of a meal based on ingredient proportions. |
 | [Heart Rate Zones Calculator](../mcps/heart-rate-zones-calculator.md) | Calculate precise physiological training zones using Simple % and Karvonen (HRR) methods. |
 | [HRV Coherence Calculator](../mcps/hrv-coherence-calculator.md) | Calculates key Heart Rate Variability (HRV) metrics (RMSSD, SDNN) to classify cardiorespiratory coherence level using R-R intervals. |
 | [Lactate Threshold Estimator](../mcps/lactate-threshold-estimator.md) | Estimate metabolic lactate thresholds using effort-based metrics or heart rate drift analysis. |
 | [Natural Ventilation Calculator](../mcps/natural-ventilation-calculator.md) | Calculate air change rates and ensure ventilation compliance for different room uses. |
+| [Nutritional Estimator](../mcps/nutritional-estimator.md) | Calculate total and per-serving macro and calorie content of recipes using weight-based nutritional density data. |
 | [One Rep Max Calculator](../mcps/one-rep-max-calculator.md) | Estimate your maximum lifting capacity using Epley, Brzycki, and Lander models. |
 | [Perceived Exertion Converter](../mcps/perceived-exertion-converter.md) | Convert RPE (Borg 6-20 and CR10) to estimated heart rate and training zones. |
 | [Pet Daily Food Calculator](../mcps/pet-daily-food-calculator.md) | Calculate precise daily food portions and feeding schedules for your dog based on weight, life stage, and activity level. |

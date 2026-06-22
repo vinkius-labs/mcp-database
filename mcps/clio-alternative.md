@@ -148,9 +148,6 @@ Yes! The `create_matter` tool allows the agent to register new legal cases by pr
 **Q: Do I need to refresh my tokens manually?**
 No. The platform automatically refreshes your access token in the background. You only need to click **Connect with Clio** once during setup, and the integration will keep working indefinitely.
 
-**Q: Which Clio regions are supported?**
-All four Clio regions are supported: United States (app.clio.com), Canada (ca.app.clio.com), Europe/UK (eu.app.clio.com), and Australia (au.app.clio.com). Select your region in the first step of the setup wizard.
-
 
 ## Installation & Usage
 

@@ -24,11 +24,14 @@ Explore the open database of **growth-engine** Model Context Protocol (MCP) serv
 | [Criteo Retail Media API](../mcps/criteo-retail-media-api.md) | Equip your AI agent to manage Criteo retail campaigns, line items, and product data directly via the Criteo API. |
 | [Drift](../mcps/drift.md) | Equip your AI agent to manage conversations, track contacts, and monitor agent availability via the Drift API. |
 | [Drip](../mcps/drip-alternative.md) | Manage subscribers, campaigns, and events in Drip via your AI Agent. |
+| [GitHub Market Intelligence](../mcps/github-market-intelligence.md) | Transform GitHub into your primary growth engine. Deploy autonomous agents to intercept competitor issues, track trending repos, and engage developers in real-time. |
 | [GoHighLevel](../mcps/gohighlevel.md) | Equip your AI agent with direct access to GoHighLevel — manage contacts, pipelines, and campaigns without opening the CRM dashboard. |
 | [HighLevel](../mcps/highlevel.md) | Automate CRM and marketing via HighLevel — manage contacts, opportunities, and calendars directly from any AI agent. |
 | [Hightouch (Reverse ETL)](../mcps/hightouch-reverse-etl.md) | Synchronize data via Hightouch — list syncs, monitor runs, and manage data models. |
 | [Hootsuite](../mcps/hootsuite.md) | Schedule and publish social media content, monitor brand mentions, and measure ROI across all your channels from one dashboard. |
+| [Hugging Face Discussions](../mcps/hugging-face-discussions.md) | Transform the world's largest ML hub into your growth engine. Deploy autonomous agents to intercept trending discussions and engage the AI elite in real-time. |
 | [Iterable](../mcps/iterable.md) | Manage cross-channel marketing campaigns, users, and templates via Iterable API. |
+| [Kaggle Market Intelligence](../mcps/kaggle-market-intelligence.md) | Transform Kaggle into your primary data science engine. Deploy autonomous agents to intercept trending datasets, track competition discussions, and engage data scientists in real-time. |
 | [Klaviyo](../mcps/klaviyo.md) | Drive revenue with email and SMS marketing powered by customer data that personalizes every message to increase lifetime value. |
 | [Klaviyo (Marketing Automation)](../mcps/klaviyo-marketing-automation.md) | Manage your B2C CRM via Klaviyo — create profiles, track email campaigns, and audit automation flows. |
 | [Make (Workflow Automation)](../mcps/make-workflow-automation.md) | Manage workflow automation via Make — audit scenarios, track execution logs, and monitor data stores. |

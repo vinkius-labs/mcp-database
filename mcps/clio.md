@@ -148,12 +148,6 @@ Yes! Use the `get_matter` tool with the matter ID. The agent will return the cur
 **Q: How do I check if a bill has been paid?**
 Use the `list_bills` tool. Your agent will fetch the list of generated bills, which includes their amounts and payment statuses, directly from Clio.
 
-**Q: Do I need to refresh my tokens manually?**
-No. The platform automatically refreshes your access token in the background. You only need to click **Connect with Clio** once during setup, and the integration will keep working indefinitely.
-
-**Q: Which Clio regions are supported?**
-All four Clio regions are supported: United States (app.clio.com), Canada (ca.app.clio.com), Europe/UK (eu.app.clio.com), and Australia (au.app.clio.com). Select your region in the first step of the setup wizard. Note: the one-click Connect with Clio button currently works for US region accounts. Users in other regions should use the same Developer Application setup but may need to complete the OAuth flow using the manual instructions in the documentation.
-
 
 ## Installation & Usage
 

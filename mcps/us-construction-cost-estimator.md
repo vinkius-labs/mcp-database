@@ -5,7 +5,7 @@
 
 ## Overview
 
-**Category:** [finance](../categories/finance.md)
+**Category:** [real-estate](../categories/real-estate.md)
 
 Calculate construction costs per square foot across major US cities using regional indices and structural multipliers.
 

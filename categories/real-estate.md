@@ -46,6 +46,7 @@ Explore the open database of **real-estate** Model Context Protocol (MCP) server
 | [Shovels](../mcps/shovels.md) | Construction and permit data platform — search contractors and building permits via AI. |
 | [SimplyRETS](../mcps/simplyrets.md) | Access real-time MLS real estate listings, agent data, and property analytics directly through your AI agent. |
 | [U.S. Census Housing — Home Values, Rent & Real Estate Data](../mcps/us-census-housing-home-values-rent-real-estate-data.md) | Access the definitive source for U.S. residential real estate data. Extract median home values, median gross rent, ownership vs. renting rates, and vacancy data at the state and county level. Create full socioeconomic profiles. |
+| [US Construction Cost Estimator](../mcps/us-construction-cost-estimator.md) | Calculate construction costs per square foot across major US cities using regional indices and structural multipliers. |
 | [Zillow](../mcps/zillow-alternative.md) | Access real estate data, Zestimates, and property details directly from Zillow — search addresses, get valuations, and analyze market trends. |
 | [Zoopla](../mcps/zoopla.md) | Access real-time UK property market data — search listings, analyze sold prices, and explore local area statistics directly through your AI agent. |
 

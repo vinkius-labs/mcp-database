@@ -10,7 +10,9 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Battle Pass Value Calculator](../mcps/battle-pass-value-calculator.md) | Analyze the economic efficiency of gaming Battle Passes by calculating ROI and break-even points. |
 | [Blended CAC Calculator](../mcps/blended-cac-calculator.md) | Calculate precise Customer Acquisition Cost (CAC) across multiple channels and optimize future marketing spend allocation. |
 | [Bond Yield Calculator](../mcps/bond-yield-calculator.md) | Calculate YTM, Current Yield, and interest rate sensitivity for fixed-income bonds. |
+| [Burn Multiple Calculator](../mcps/burn-multiple-calculator.md) | Evaluate SaaS growth efficiency by measuring capital expenditure against new ARR. |
 | [Burn Rate Analyzer](../mcps/burn-rate-analyzer.md) | Analyze startup burn rate, expense composition, and runway forecasting. |
+| [CAC Payback by Segment](../mcps/cac-payback-by-segment.md) | Analyze CAC payback periods and expansion impact across SMB, Mid-Market, and Enterprise segments. |
 | [Carbon Offset Comparator](../mcps/carbon-offset-comparator.md) | Compare the financial efficiency of different carbon offset strategies. |
 | [Cash-to-Cash Cycle Calculator](../mcps/cash-to-cash-cycle-calculator.md) | Calculate and optimize your Cash Conversion Cycle (C2C) to improve liquidity. |
 | [CD Return Calculator](../mcps/cd-return-calculator.md) | Calculate potential returns on Certificates of Deposit (CD) and compare them against market benchmarks like HYSA and Money Market funds. |
@@ -36,6 +38,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [European Arbitration Cost Calculator](../mcps/european-arbitration-cost-calculator.md) | Estimate administrative and tribunal costs for ICC, LCIA, SCC, and VIAC arbitration. |
 | [European Commercial Lease Calculator](../mcps/european-commercial-lease-calculator.md) | Calculate rental adjustments, notice periods, and eviction indemnities for European commercial leases. |
 | [Export Parity Calculator](../mcps/export-parity-calculator.md) | Calculate the net farm-gate price for grain exports by accounting for logistics and taxes. |
+| [FGTS Withdrawal Simulator](../mcps/fgts-withdrawal-simulator.md) | Estimate FGTS balances, severance penalties, and payout liquidity based on salary and tenure. |
 | [Financial Ratios Calculator](../mcps/financial-ratios-calculator.md) | Calculate essential financial health indicators including liquidity, solvency, and interest coverage ratios. |
 | [FIRE Calculator](../mcps/fire-calculator.md) | Estimate your timeline and capital requirements for Financial Independence, Retire Early (FIRE). |
 | [Freelancer Budget Prover](../mcps/freelancer-budget-prover.md) | A designer charged $100/hour and calculated annual income as $208,000. Then reality arrived. Billable hours dropped to 1,352 after admin, sales, and vacation. Gross: $135,200. Self-employment tax, health insurance, tools, and accounting consumed $60,685. Net take-home: $74,515. Effective hourly rate: $35.82. Three clients paid 45 days late. This tool forces five budget axes: realistic revenue, complete costs, cash flow buffers, minimum viable pricing, and profitability with scope creep analysis. |
@@ -43,13 +46,17 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Global Effective Tax Rate & Pillar Two Compliance](../mcps/global-effective-tax-rate-pillar-two-compliance.md) | Calculate global effective tax rates and OECD Pillar Two top-up tax liabilities. |
 | [Grain Storage Cost Calculator](../mcps/grain-storage-cost-calculator.md) | Calculate grain storage expenses and determine optimal market timing. |
 | [Gross Margin Analyzer](../mcps/gross-margin-analyzer.md) | Calculate product gross margins, identify underperforming products against industry benchmarks, and simulate COGS reduction impact. |
+| [Gross Profit Efficiency Calculator](../mcps/gross-profit-efficiency-calculator.md) | Analyze SaaS unit economics, COGS breakdown, and simulate margin improvement levers. |
 | [Growth Rate Calculator](../mcps/growth-rate-calculator.md) | Calculate MoM, QoQ, YoY growth rates and model multi-scenario financial projections (CAGR, Rule of 40) from historical revenue data. |
+| [Headcount Efficiency Metrics](../mcps/headcount-efficiency-metrics.md) | Evaluate SaaS operational efficiency by comparing unit economics and spend ratios against public company benchmarks. |
 | [Hedge Ratio Calculator](../mcps/hedge-ratio-calculator.md) | Calculate commodity futures contracts and quantify price volatility exposure. |
 | [ICMS Calculator](../mcps/icms-calculator.md) | Calculate Brazilian ICMS taxes, including tax substitution (ST), tax differentials (DIFAL), and tax-inclusive base calculations. |
 | [IFRS Depreciation Calculator](../mcps/ifrs-depreciation-calculator.md) | Calculate asset depreciation schedules using IFRS/IAS 16 standards (Straight-Line, Units of Production, and SYD). |
 | [Indemnification Exposure Calculator](../mcps/indemnification-exposure-calculator.md) | Calculate maximum financial exposure in indemnity clauses by assessing contractual caps, carve-outs, and jurisdiction. |
 | [Inflation-Adjusted Return Calculator](../mcps/inflation-adjusted-return-calculator.md) | Calculate real investment returns by adjusting nominal rates against inflation. |
+| [INSS Retirement Estimator](../mcps/inss-retirement-estimator.md) | Estimate your Brazilian social security retirement benefits based on age, contribution time, and average salary. |
 | [Inventory Turnover Calculator](../mcps/inventory-turnover-calculator.md) | Calculate inventory turnover ratio, DSI, and compare performance against industry benchmarks. |
+| [Investment Profitability Comparator](../mcps/investment-profitability-comparator.md) | Compare net returns of CDB, Treasury Selic, Savings, and DI Funds after regressive income tax. |
 | [IPO Readiness Scorer](../mcps/ipo-readiness-scorer.md) | Evaluate company suitability for IPO based on financial and structural benchmarks. |
 | [ISS Calculator](../mcps/iss-calculator.md) | Calculate Service Tax (ISS) based on municipality rates and service types. |
 | [Land Rent Viability Calculator](../mcps/land-rent-viability-calculator.md) | Calculate the economic viability of agricultural land leasing. |
@@ -72,11 +79,13 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Pricing Strategy Calculator](../mcps/pricing-strategy-calculator.md) | Calculate optimal price points using Cost-Plus, Value-Based, and Competitive methodologies. |
 | [ProUni Eligibility Calculator](../mcps/prouni-eligibility-calculator.md) | Instantly calculate scholarship eligibility (Full or Partial) for ProUni by inputting family income, household size, and ENEM scores. |
 | [R&D Tax Credit Calculator](../mcps/rd-tax-credit-calculator.md) | Calculate US R&D tax credits using Regular and ASC methodologies. |
+| [Real Estate Financing Calculator](../mcps/real-estate-financing-calculator.md) | Calculate detailed monthly amortization schedules and financial summaries for Price and SAC mortgage systems. |
 | [Retirement Withdrawal Calculator](../mcps/retirement-withdrawal-calculator.md) | Estimate the sustainability of your retirement withdrawals using Monte Carlo simulations. |
 | [Revenue Multiple Valuator](../mcps/revenue-multiple-valuator.md) | Estimate SaaS enterprise value using industry-standard revenue multiples based on growth and retention. |
 | [Revenue Quality Scorer](../mcps/revenue-quality-scorer.md) | Analyze revenue stability, concentration risk, and market diversification. |
 | [ROAS Calculator](../mcps/roas-calculator.md) | Accurately determine your Return on Ad Spend (ROAS) across all channels, benchmark against industry standards, and calculate the break-even point to guide profitable ad spending. |
 | [Rule of 40 Analyzer](../mcps/rule-of-40-analyzer.md) | Calculate and benchmark Rule of 40 performance for SaaS and software companies. |
+| [Salary Net Calculator](../mcps/salary-net-calculator.md) | Calculate net salary, INSS, IRRF, and FGTS deductions based on gross pay. |
 | [Scholarship Eligibility Checker](../mcps/scholarship-eligibility-checker.md) | Calculate household per capita income and determine eligibility for scholarship programs like ProUni and FIES. |
 | [Setel Malaysia](../mcps/setel-malaysia.md) | Orchestrate Setel Malaysia payments — manage payment intents, parking sessions, and EV charging directly from any AI agent. |
 | [Settlement Value Estimator](../mcps/settlement-value-estimator.md) | Quantify legal settlement ranges using Expected Monetary Value and risk-adjusted negotiation boundaries. |
@@ -98,8 +107,9 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [UK Statutory Interest Calculator](../mcps/uk-statutory-interest-calculator.md) | Calculate statutory interest and fixed compensation for late commercial payments in the UK. |
 | [Unit Economics Calculator](../mcps/unit-economics-calculator.md) | Determine if your customer acquisition strategy is profitable by calculating LTV, CAC, and the critical LTV:CAC ratio using three interconnected financial models. |
 | [US 401k & IRA Optimizer](../mcps/us-401k-ira-optimizer.md) | Optimize your retirement contributions using tax arbitrage strategies. |
+| [US 401k Contribution Calculator](../mcps/us-401k-contribution-calculator.md) | Calculate 401k contribution limits, employer matching, tax savings, and retirement growth projections. |
 | [US Arbitration Cost Calculator](../mcps/us-arbitration-cost-calculator.md) | Compare the costs of arbitration (AAA, JAMS, ICDR) against judicial litigation expenses. |
-| [US Construction Cost Estimator](../mcps/us-construction-cost-estimator.md) | Calculate construction costs per square foot across major US cities using regional indices and structural multipliers. |
+| [US Benefits Cost Calculator](../mcps/us-benefits-cost-calculator.md) | Calculate the true total employer cost of US employees, including insurance, taxes, and PTO. |
 | [US Corporate Tax Calculator](../mcps/us-corporate-tax-calculator.md) | Estimate US federal and state corporate income taxes, providing comparative analysis between C-Corp, S-Corp, and LLC structures. |
 | [US Depreciation Calculator](../mcps/us-depreciation-calculator.md) | Calculate US asset depreciation using MACRS, Section 179, and Bonus Depreciation rules. |
 | [US GAAP & IFRS 15 Revenue Recognition](../mcps/us-gaap-ifrs-15-revenue-recognition.md) | Automate ASC 606 and IFRS 15 revenue recognition by identifying obligations, allocating prices, and calculating progress. |

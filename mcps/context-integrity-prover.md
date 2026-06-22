@@ -51,14 +51,6 @@ Here are some examples of how you can interact with the **Count Words for Agents
 **🤖 AI Agent:**
 > Here is your introduction. I've structured it to be concise and impactful, and verified that it contains exactly 3 sentences as requested.
 
----
-
-**👤 You:**
-> "How long would it take the average person to read my 8-page newsletter draft?"
-
-**🤖 AI Agent:**
-> Based on an average reading speed of 200 words per minute, your newsletter draft of 3,150 words will take approximately 15 minutes and 45 seconds to read.
-
 
 ## ❓ FAQ
 

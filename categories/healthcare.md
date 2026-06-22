@@ -5,10 +5,15 @@ Explore the open database of **healthcare** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Blood Type Compatibility & Demographics](../mcps/blood-type-compatibility-demographics.md) | Check blood and plasma transfusion compatibility, pregnancy risks, and regional blood type distributions. |
+| [BMI Clinical Calculator](../mcps/bmi-clinical-calculator.md) | Calculate BMI, ideal body weight estimates, and assess bariatric surgery eligibility. |
+| [Creatinine Clearance Calculator](../mcps/creatinine-clearance-calculator.md) | Calculate creatinine clearance using the Cockcroft-Gault equation and identify drug dose adjustments. |
 | [CURB-65 Calculator](../mcps/curb-65-calculator.md) | Calculate the CURB-65 score to assess pneumonia severity and treatment needs. |
+| [Drug Renal Dose Adjuster](../mcps/drug-renal-dose-adjuster.md) | Calculate medication dose modifications and interval extensions based on renal function levels (CrCl or eGFR) and identify contraindications. |
+| [eGFR Calculator](../mcps/egfr-calculator.md) | Estimate Glomerular Filtration Rate (eGFR) using CKD-EPI 2021 and MDRD formulas with clinical staging. |
 | [Glasgow Coma Scale Calculator](../mcps/glasgow-coma-scale-calculator.md) | Assess neurological impairment and determine airway management protocols using the Glasgow Coma Scale (GCS). |
 | [MEWS Calculator](../mcps/mews-calculator.md) | Quantify patient physiological deterioration using the Modified Early Warning Score (MEWS) system. |
 | [NIHSS Calculator](../mcps/nihss-calculator.md) | Calculate NIH Stroke Scale scores and assess stroke severity instantly. |
+| [Nutritional Risk Screening (NRS-2002)](../mcps/nutritional-risk-screening-nrs-2002.md) | Assess nutritional risk in hospitalized patients using the NRS-2002 protocol and ESPEN guidelines. |
 | [SOFA Score Calculator](../mcps/sofa-score-calculator.md) | Calculate SOFA scores, mortality risk, and sepsis status. |
 
 

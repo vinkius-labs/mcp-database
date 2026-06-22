@@ -76,22 +76,6 @@ Here are some examples of how you can interact with the **DocBreach** MCP server
 **🤖 AI Agent:**
 > I've mapped the documentation for `v0.dev`. There are 42 pages in total, structured under 'Concepts', 'UI Components', and 'Billing'. The most relevant page for getting started seems to be `https://v0.dev/docs/introduction`. Shall I read that page for you?
 
----
-
-**👤 You:**
-> "Search the Next.js documentation for how to implement Server Actions."
-
-**🤖 AI Agent:**
-> Based on the Next.js documentation, specifically the 'Data Fetching: Server Actions and Mutations' guide, you implement Server Actions using the `"use server"` directive. Should I output the code example for a basic form mutation?
-
----
-
-**👤 You:**
-> "Read the React 19 documentation on the useActionState hook and summarize its return values."
-
-**🤖 AI Agent:**
-> According to the React 19 documentation, `useActionState` returns an array with three values: `[state, formAction, isPending]`. The `isPending` boolean is new and replaces the need for `useFormStatus` in many cases. Do you want to see a full implementation example?
-
 
 ## ❓ FAQ
 

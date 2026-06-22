@@ -4,6 +4,7 @@ Explore the open database of **nutrition** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Ingredient Substitution Engine](../mcps/ingredient-substitution-engine.md) | Find dietary-friendly ingredient alternatives with usage ratios and sensory impact analysis. |
 | [Pet Calorie Needs](../mcps/pet-calorie-needs.md) | Calculate precise daily energy requirements (RER and MER) for pets based on weight and lifestyle. |
 
 

@@ -57,22 +57,6 @@ Here are some examples of how you can interact with the **Google Deps.dev Securi
 **🤖 AI Agent:**
 > I mapped the entire transitive tree (total 8 dependencies). **⚠️ WARNING: Found 1 hidden threat:** The indirect dependency `certifi` (v2022.6.15) has a known security advisory. You should override this dependency in your requirements.
 
----
-
-**👤 You:**
-> "Generate a security governance audit for https://github.com/facebook/react"
-
-**🤖 AI Agent:**
-> Here is the OSSF Scorecard audit for `facebook/react`. It scores a **7.2/10** overall. They excel in Code-Review (10/10) and Branch-Protection (10/10), but lost points on Pinned-Dependencies (3/10) and lack of Fuzzing (0/10).
-
----
-
-**👤 You:**
-> "Is the 'log4j' maven package safe to use right now?"
-
-**🤖 AI Agent:**
-> Let me check the latest versions on deps.dev. The older 2.14.x versions are famously compromised (Log4Shell - CVE-2021-44228, CVSS 10.0). However, the latest version `2.20.0` has **✅ No known security advisories** and is safe to use. Always ensure you are pinning the latest version.
-
 
 ## ❓ FAQ
 

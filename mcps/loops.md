@@ -80,22 +80,6 @@ Here are some examples of how you can interact with the **Loops** MCP server usi
 **🤖 AI Agent:**
 > Here are all the mailing lists configured in your Loops account. You can use these lists to manage subscribers and send campaigns.
 
----
-
-**👤 You:**
-> "Send a transactional email with template txn_123 to customer@example.com"
-
-**🤖 AI Agent:**
-> I sent the transactional email using template txn_123 to customer@example.com. The email has been queued for delivery.
-
----
-
-**👤 You:**
-> "Send a 'user-signed-up' event for email newuser@example.com to trigger the welcome journey"
-
-**🤖 AI Agent:**
-> I sent the 'user-signed-up' event for newuser@example.com. This will trigger the welcome email journey in Loops.
-
 
 ## ❓ FAQ
 

@@ -79,14 +79,6 @@ Here are some examples of how you can interact with the **Critical Thinking Prov
 **🤖 AI Agent:**
 > Verdict: CONFIRMATION_BIASED. Triple failure. (1) 'The evidence clearly shows' — which evidence? Every tech revolution prediction (paperless office, end of programming) has been wrong on timeline. Where is CONTRADICTING evidence? (2) 'No counterarguments' is a red flag — Jevons Paradox shows automation historically INCREASES total employment by lowering costs and expanding demand. (3) '80% within 5 years' is false precision. What would need to be true? What would falsify it?
 
----
-
-**👤 You:**
-> "I'm finished with the code migration. The build completes with no errors. No additional changes needed."
-
-**🤖 AI Agent:**
-> Verdict: UNVERIFIED_CHANGES. Contradiction: files modified but changes are not verified, yet the verdict is "DELIVERY_PROVEN". Run testing commands or build tasks to prove correctness. Assuming code works without executing it leads to broken pipelines. Please provide actual execution outputs in the verificationLogs field.
-
 
 ## ❓ FAQ
 

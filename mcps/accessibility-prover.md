@@ -95,25 +95,6 @@ Motion: none."
 
 Fix: Change icon color to #4A5568 (4.62:1) or #374151 (6.33:1) to exceed the 4.5:1 threshold. Verify the ratio in hover and focus states as well — not just default.
 
----
-
-**👤 You:**
-> "Component: NotificationBanner.
-Layout: <div role='alert'> with a dismiss button (<span onclick='close()'>×</span>).
-Keyboard: dismiss element is not focusable.
-Contrast: text #1F2937 on #FEF3C7 background. Ratio: 8.19:1.
-Screen Reader: role='alert' is set on the container. Dismiss has no label.
-Motion: banner slides in from the top with 300ms ease-in."
-
-**🤖 AI Agent:**
-> Verdict: KEYBOARD_TRAPPED + DIV_SOUP.
-
-✓ contrastCompliant — 8.19:1 exceeds the 4.5:1 minimum.
-✓ screenReaderReady (partial) — role='alert' is correct for live announcements.
-✗ semanticHTML — Dismiss uses `<span onclick>`, which has no keyboard access or ARIA role. Replace with `<button aria-label="Dismiss notification">`.
-✗ keyboardNavigable — Dismiss is unreachable by Tab. Keyboard users cannot close the notification.
-✗ motionRespected — 300ms slide animation lacks `prefers-reduced-motion` check. Wrap in `@media (prefers-reduced-motion: no-preference)` or provide `transition: none` fallback.
-
 
 ## ❓ FAQ
 
@@ -131,15 +112,6 @@ axe-core and Lighthouse scan rendered HTML in a browser — they detect violatio
 
 **Q: Can I use Accessibility Prover with an AI coding agent?**
 Yes — that is a primary use case. AI coding agents default to div-based layouts because divs are syntactically simpler. Accessibility Prover acts as a guardrail: the agent submits its component specification, the prover validates it against 5 pivots, and the agent receives a structured verdict with specific fixes before writing code.
-
-**Q: What does the European Accessibility Act (EAA 2025) mean for my product?**
-Since June 2025, the EAA requires all digital products and services sold in the EU to meet accessibility standards equivalent to WCAG 2.1 AA (with WCAG 2.2 AA as the recommended benchmark). Non-compliance carries fines up to 5% of annual revenue and potential market withdrawal. Accessibility Prover helps demonstrate compliance as a build-time gate, creating an auditable validation record.
-
-**Q: What input format does Accessibility Prover expect?**
-Submit each component as structured text covering 5 dimensions: (1) Layout — the HTML elements and hierarchy, (2) Keyboard — tab order, focus indicators, focus traps, (3) Contrast — foreground and background hex values with computed ratio, (4) Screen Reader — alt texts, aria-labels, form-label associations, (5) Motion — animation properties and prefers-reduced-motion handling. The tool reasons about each dimension independently.
-
-**Q: Does Accessibility Prover support WCAG 2.2 AAA?**
-The tool validates against WCAG 2.2 AA, which is the legally required level under the EAA 2025 and the practical target for most products. AAA requirements (e.g., 7:1 contrast ratio, sign language interpretation) are not enforced — they are aspirational goals that few products achieve fully.
 
 
 ## Installation & Usage

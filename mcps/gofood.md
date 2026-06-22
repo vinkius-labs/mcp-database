@@ -77,14 +77,6 @@ Here are some examples of how you can interact with the **GoFood** MCP server us
 **🤖 AI Agent:**
 > Order ORD-12345 has been successfully accepted and is now being processed at 'Nasi Goreng Sudirman'. The kitchen has been notified. Would you like me to mark it as prepared once cooking is done?
 
----
-
-**👤 You:**
-> "Create a 20% discount promo for outlet out_001 valid this weekend."
-
-**🤖 AI Agent:**
-> Promo created successfully! The 20% discount campaign is now active for 'Nasi Goreng Sudirman' and will run through the weekend. Customers will see the offer when browsing your GoFood listing.
-
 
 ## ❓ FAQ
 

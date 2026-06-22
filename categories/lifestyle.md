@@ -11,7 +11,10 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Dog CEO](../mcps/dog-ceo.md) | Universal dog intelligence engine — get random dog images and breed data via AI. |
 | [Eco Savings Tracker](../mcps/eco-savings-tracker.md) | Quantify and visualize your environmental impact through personal habit changes. |
 | [Environmental Impact Comparator](../mcps/environmental-impact-comparator.md) | Compare the carbon footprint and waste generation of different lifestyle choices side-by-side. |
+| [Numerology Compatibility](../mcps/numerology-compatibility.md) | Discover the vibrational alignment between individuals using numerological profiles. |
+| [Numerology Life Path Calculator](../mcps/numerology-life-path-calculator.md) | Discover your spiritual purpose and personality traits through Pythagorean numerology calculation. |
 | [Sustainability Score Calculator](../mcps/sustainability-score-calculator.md) | Quantify your environmental footprint and discover actionable paths to a more sustainable lifestyle. |
+| [Wine Pairing Matcher](../mcps/wine-pairing-matcher.md) | Get expert wine recommendations based on dish characteristics like protein, sauce weight, and intensity. |
 
 
 ---

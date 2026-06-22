@@ -243,14 +243,6 @@ Here are some examples of how you can interact with the **GrabFood Partner** MCP
 **🤖 AI Agent:**
 > Your GrabFood store is currently **open** and accepting orders. I've paused it for you — the store is now hidden from customers and no new orders will come through. Existing active orders are unaffected.
 
----
-
-**👤 You:**
-> "Update the price of my Nasi Goreng to 25000 IDR and mark Fried Rice as unavailable."
-
-**🤖 AI Agent:**
-> I've batch-updated your menu: Nasi Goreng price is now 25,000 IDR and Fried Rice has been marked as unavailable. Customers will see these changes reflected on the GrabFood app within a few minutes.
-
 
 ## ❓ FAQ
 

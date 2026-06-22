@@ -11,7 +11,9 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Global Scholarship Deadline Tracker](../mcps/global-scholarship-deadline-tracker.md) | Instantly calculate urgency and generate comprehensive document checklists for global scholarships (FUVEST, Erasmus+, DAAD). |
 | [GPA Calculator](../mcps/gpa-calculator.md) | Calculate weighted GPA for US (4.0) and Brazilian (10.0) scales, including honors classification. |
 | [GPA Converter](../mcps/gpa-converter.md) | Convert academic grades between different scales and calculate weighted averages. |
+| [IELTS Band Estimator](../mcps/ielts-band-estimator.md) | Estimate your IELTS band score, CEFR proficiency level, and discover matching visa and university requirements. |
 | [Language Proficiency Mapper](../mcps/language-proficiency-mapper.md) | Translate raw exam scores (IELTS, TOEFL, DELF, etc.) into CEFR levels and check visa/university requirements. |
+| [Numerology Name Calculator](../mcps/numerology-name-calculator.md) | Calculate Expression, Soul Urge, and Personality numbers using Pythagorean numerology. |
 | [Stanford bioRxiv](../mcps/stanford-biorxiv.md) | Search and retrieve preprint research papers in biology and life sciences from the bioRxiv open access repository. |
 | [Stanford CrossRef](../mcps/stanford-crossref.md) | Query scholarly metadata for millions of academic publications with DOI resolution, citation tracking, and publisher data. |
 | [Stanford OpenAlex](../mcps/stanford-openalex.md) | Explore the global research landscape with open access to scholarly works, authors, institutions, and citation graphs. |
