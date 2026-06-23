@@ -1,0 +1,158 @@
+# Snowflake MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snowflake)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Bring your absolute data cloud into your AI editor. Execute queries, list warehouses, and map complex schemas natively.
+
+## Description
+Connect your **Snowflake** AI Data Cloud with your AI agent to radically accelerate the way you query large datasets and audit cloud data warehouses. Navigate through deep hierarchical trees of databases, tables, and internal stages natively by chatting with your IDE. Keep your SQL robust by validating commands directly against the live engine.
+
+### What you can do
+
+- **Execute Queries in Chat** — Tell your bot to `execute_sql` based on human prompts or test new complex table joins safely right inside Cursor or Claude
+- **Map Infrastructures** — Quickly retrieve spatial contexts by pulling `list_databases`, traversing downwards through `list_schemas` to target specific columns
+- **Audit Compute Cost** — Keep a firm grip on active clusters running by auditing running instances using `list_warehouses`
+- **Diagnose Operations** — Monitor long-tail data workloads or data engineering pipelines using the `get_query_status` method asynchronously
+
+### How it works
+
+1. Subscribe to this AI integration server
+2. Introduce your explicit Snowflake Account identifier (e.g. `abc123.us-east-1`)
+3. Inject your Snowflake OAuth token or JWT Token (key pair) authentication string
+4. Ask Claude or Cursor to look into the Sales Database schema
+
+Stop juggling browser instances to paste a quick query in Snowflake Snowsight. Stay strictly inside your local codebase while examining the exact table data types.
+
+### Who is this for?
+
+- **Data Engineers** — validate that raw datasets correctly land in internal environments (`list_stages`) straight from your IDE window
+- **Analytics Engineers / dbt** — generate highly accurate SQL modeling by letting your agent examine the `list_tables` definitions live
+- **Software Architects** — write an agentic script pulling raw diagnostic query metrics without downloading hefty SDK kits locally
+
+
+## Available Tools (7)
+- **list_databases**: Lists all databases in the Snowflake account
+- **list_schemas**: Lists all schemas within a specific database
+- **list_tables**: Lists all tables within a specific schema
+- **execute_sql**: Prefers read-only statements whenever possible.
+
+Executes a SQL query on Snowflake
+- **list_warehouses**: Lists all virtual warehouses
+- **list_stages**: Lists all internal and external stages
+- **get_query_status**: Retrieves the status of an asynchronous query
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Snowflake** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all running virtual warehouses I can access in my Snowflake account."
+
+**🤖 AI Agent:**
+> I've called `list_warehouses` for your targeted Snowflake footprint.
+
+**Running Clusters Detected**:
+1. `COMPUTE_WH` – Size: X-Small | State: SUSPENDED
+2. `ANALYTICS_WH` – Size: Large | State: STARTED
+3. `ETL_LOAD_WH` – Size: Medium | State: STARTED
+
+Would you like me to run an analytical snippet under `ANALYTICS_WH` now?
+
+---
+
+**👤 You:**
+> "Write a query to grab the top 5 most engaged users from our schema and execute it."
+
+**🤖 AI Agent:**
+> No problem! I constructed this query to target exactly that and executed it against the system:
+`SELECT user_id, email, activity_score FROM prod_schema.users ORDER BY activity_score DESC LIMIT 5;`
+
+**Snowflake Output Data**:
+1. alice@example.com (Score: 980)
+2. john84@test.io (Score: 964)
+3. m_reyes@corp.com (Score: 941)
+[...]
+
+Do you want me to format this as a markdown table or save the dataset?
+
+---
+
+**👤 You:**
+> "Retrieve the schema mapping for the MASTER_DB. I need to know all nested tables before doing table joints."
+
+**🤖 AI Agent:**
+> Using `list_schemas`, `MASTER_DB` contains main partitions:
+1. `PUBLIC`
+2. `ANALYTICS_GOLD`
+
+Digging into `ANALYTICS_GOLD` using `list_tables`:
+- `dim_customers` (Type: BASE TABLE)
+- `dim_geography` (Type: BASE TABLE)
+- `fct_sales_records` (Type: BASE TABLE)
+- `vw_live_revenue` (Type: VIEW)
+
+I am ready to help build your exact JOINS. For example, `fct_sales_records.customer_id` directly joins on `dim_customers.id`.
+
+
+## ❓ FAQ
+
+**Q: Can my AI actually read the raw table rows via an execute statement?**
+Yes. When the AI uses `execute_sql` with something like `SELECT * FROM schema.users LIMIT 10`, the MCP integration parses the exact row outputs. The LLM consumes the tabular data back into context so you can converse naturally about the dataset findings.
+
+**Q: Is it completely safe to give AI power over a Data Warehouse?**
+Safety stems from principle of least privilege. Supply a Snowflake Token tied strictly to a read-only role or a heavily scoped down service account. This allows the AI to navigate schemas and extract data without risking destructive schema mutations like DROPs or DELETEs.
+
+**Q: Can it search for a column name if I don't know the exact schema?**
+Yes! Tell your agent: 'Find which table in the SALES_DB database has a column named customer_churn_score'. Due to its autonomous workflow, the bot will pull schemas, subsequently loop over `list_tables`, query Snowflake’s internal information_schema if necessary, and deduce it entirely for you.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/snowflake](https://vinkius.com/mcp/snowflake)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Snowflake** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `snowflake` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Snowflake** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "snowflake": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
