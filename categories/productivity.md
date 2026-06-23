@@ -344,6 +344,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Gamma (AI Presentations)](../mcps/gamma-ai-presentations.md) | Generate AI-powered presentations, documents, and webpages. List, update, and manage your Gamma workspace directly from any AI agent. |
 | [Geekbot](../mcps/geekbot.md) | Run asynchronous standups and team check-ins through Slack or Microsoft Teams that respect everyone timezone and schedule. |
 | [GeekJoke](../mcps/geekjoke.md) | Get random geeky and programming-related jokes to lighten up your development workflow. |
+| [Germany Income Tax Calculator](../mcps/germany-income-tax-calculator.md) | Calculate German income tax, social security contributions, and net take-home pay. |
 | [GetStream](../mcps/getstream.md) | Build and manage scalable activity feeds and social networks. Manage activities, feeds, and follower relationships directly through your AI agent. |
 | [Ghost](../mcps/ghost.md) | Manage blog posts, track authors, and oversee static pages via AI agents with Ghost CMS. |
 | [Ghost](../mcps/ghost-alternative.md) | Publish and monetize your content with a modern headless CMS built for newsletters, memberships, and independent creators. |

@@ -47,6 +47,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [FGTS Withdrawal Simulator](../mcps/fgts-withdrawal-simulator.md) | Estimate FGTS balances, severance penalties, and payout liquidity based on salary and tenure. |
 | [Financial Ratios Calculator](../mcps/financial-ratios-calculator.md) | Calculate essential financial health indicators including liquidity, solvency, and interest coverage ratios. |
 | [FIRE Calculator](../mcps/fire-calculator.md) | Estimate your timeline and capital requirements for Financial Independence, Retire Early (FIRE). |
+| [France Income Tax Calculator](../mcps/france-income-tax-calculator.md) | Calculate French income tax using the quotient familial system, progressive brackets, and social contributions. |
 | [Freelancer Budget Prover](../mcps/freelancer-budget-prover.md) | A designer charged $100/hour and calculated annual income as $208,000. Then reality arrived. Billable hours dropped to 1,352 after admin, sales, and vacation. Gross: $135,200. Self-employment tax, health insurance, tools, and accounting consumed $60,685. Net take-home: $74,515. Effective hourly rate: $35.82. Three clients paid 45 days late. This tool forces five budget axes: realistic revenue, complete costs, cash flow buffers, minimum viable pricing, and profitability with scope creep analysis. |
 | [Fuel Cost Calculator](../mcps/fuel-cost-calculator.md) | Calculate trip expenses and compare gasoline vs ethanol costs. |
 | [Global Effective Tax Rate & Pillar Two Compliance](../mcps/global-effective-tax-rate-pillar-two-compliance.md) | Calculate global effective tax rates and OECD Pillar Two top-up tax liabilities. |
@@ -111,6 +112,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Tip and Split Calculator](../mcps/tip-and-split-calculator.md) | Calculate tip amounts, split bills among groups, and round totals for easy payment. |
 | [Transfer Pricing Calculator](../mcps/transfer-pricing-calculator.md) | Verify arm's length compliance for related-party transactions using CUP, Cost Plus, and Resale Minus methods. |
 | [Treasury Return Calculator](../mcps/treasury-return-calculator.md) | Calculate fair price, YTM, and inflation-adjusted returns for US Treasuries, UK Gilts, and German Bunds. |
+| [UK Income Tax Calculator](../mcps/uk-income-tax-calculator.md) | Calculate UK income tax liabilities, including personal allowance tapering and National Insurance contributions. |
 | [UK Statutory Interest Calculator](../mcps/uk-statutory-interest-calculator.md) | Calculate statutory interest and fixed compensation for late commercial payments in the UK. |
 | [Unit Economics Calculator](../mcps/unit-economics-calculator.md) | Determine if your customer acquisition strategy is profitable by calculating LTV, CAC, and the critical LTV:CAC ratio using three interconnected financial models. |
 | [US 401k & IRA Optimizer](../mcps/us-401k-ira-optimizer.md) | Optimize your retirement contributions using tax arbitrage strategies. |
