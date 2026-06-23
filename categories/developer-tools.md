@@ -380,6 +380,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Qase](../mcps/qase.md) | Bring Qase test management into your AI workflow — list projects, track test runs, inspect cases, and monitor defects directly from your chat. |
 | [Qencode](../mcps/qencode.md) | Automate video transcoding and live streaming via Qencode — manage tasks, start encodings, and orchestrate live streams directly from any AI agent. |
 | [Qencode](../mcps/qencode-alternative.md) | Automate video transcoding and live streaming via Qencode — manage tasks, start encodings, and orchestrate live streams directly from any AI agent. |
+| [Qiita](../mcps/qiita.md) | Manage your Qiita presence — publish articles, discover trending topics, and engage with the Japanese developer community from your AI agent. |
 | [Qovery](../mcps/qovery.md) | Bring effortless Kubernetes and cloud deployment management to your IDE. List environments, check application states, restart pods, and deploy exact Git commits via chat. |
 | [QStash (Serverless Message Queue)](../mcps/qstash-serverless-message-queue.md) | Manage serverless messaging, task scheduling, and webhooks via Upstash QStash — publish messages, manage queues, and handle DLQs directly. |
 | [Qualified.io](../mcps/qualifiedio.md) | Automate technical hiring and coding assessments — manage assessments, invite candidates, and track test results directly from your AI agent. |
