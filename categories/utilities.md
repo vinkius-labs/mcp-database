@@ -18,6 +18,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Pan Size Converter](../mcps/pan-size-converter.md) | Calculate baking pan volumes and find perfect shape or size substitutions. |
 | [String Tension Calculator](../mcps/string-tension-calculator.md) | Calculate string tension, instrument total tension, and gauge requirements for musicians. |
 | [Temperature Converter for Cooking](../mcps/temperature-converter-for-cooking.md) | Convert oven temperatures between Celsius, Fahrenheit, and the European Gas scale with heat intensity classification. |
+| [Transport Carbon Calculator](../mcps/transport-carbon-calculator.md) | Calculate CO2 emissions for various transport modes including cars, planes, and trains. |
 | [Water Heater Comparator](../mcps/water-heater-comparator.md) | Compare the operational costs and carbon footprint of electric, gas, and solar thermal water heating systems. |
 
 

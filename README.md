@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,127 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,134 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -25,7 +25,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [the-unthinkable](categories/the-unthinkable.md) (106 servers)
 - [knowledge-management](categories/knowledge-management.md) (104 servers)
 - [ai-frontier](categories/ai-frontier.md) (100 servers)
-- [human-resources](categories/human-resources.md) (63 servers)
+- [human-resources](categories/human-resources.md) (64 servers)
 - [fort-knox](categories/fort-knox.md) (59 servers)
 - [growth-engine](categories/growth-engine.md) (58 servers)
 - [sales-automation](categories/sales-automation.md) (57 servers)
@@ -50,14 +50,14 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [construction](categories/construction.md) (23 servers)
 - [government-public-data](categories/government-public-data.md) (23 servers)
 - [health](categories/health.md) (22 servers)
-- [marketing](categories/marketing.md) (21 servers)
+- [marketing](categories/marketing.md) (22 servers)
 - [business-intelligence](categories/business-intelligence.md) (19 servers)
 - [content-management](categories/content-management.md) (17 servers)
 - [audio-music](categories/audio-music.md) (16 servers)
 - [education](categories/education.md) (16 servers)
+- [utilities](categories/utilities.md) (16 servers)
 - [architecture](categories/architecture.md) (15 servers)
 - [healthcare](categories/healthcare.md) (15 servers)
-- [utilities](categories/utilities.md) (15 servers)
 - [event-management](categories/event-management.md) (11 servers)
 - [lifestyle](categories/lifestyle.md) (11 servers)
 - [payment-processing](categories/payment-processing.md) (11 servers)
@@ -68,13 +68,13 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [travel-hospitality](categories/travel-hospitality.md) (8 servers)
 - [crm-sales](categories/crm-sales.md) (7 servers)
 - [project-management](categories/project-management.md) (7 servers)
+- [analytics](categories/analytics.md) (6 servers)
 - [business](categories/business.md) (6 servers)
 - [gaming](categories/gaming.md) (6 servers)
 - [other](categories/other.md) (6 servers)
 - [security](categories/security.md) (6 servers)
 - [video-conferencing](categories/video-conferencing.md) (6 servers)
 - [agriculture](categories/agriculture.md) (5 servers)
-- [analytics](categories/analytics.md) (5 servers)
 - [data](categories/data.md) (5 servers)
 - [infrastructure](categories/infrastructure.md) (5 servers)
 - [learning-training](categories/learning-training.md) (5 servers)
@@ -88,6 +88,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [mathematics](categories/mathematics.md) (4 servers)
 - [order-management](categories/order-management.md) (4 servers)
 - [science](categories/science.md) (4 servers)
+- [seo](categories/seo.md) (4 servers)
 - [shipping-logistics](categories/shipping-logistics.md) (4 servers)
 - [baking](categories/baking.md) (3 servers)
 - [communication](categories/communication.md) (3 servers)
@@ -113,10 +114,10 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [pet-care](categories/pet-care.md) (2 servers)
 - [product-management](categories/product-management.md) (2 servers)
 - [safety & compliance](categories/safety-compliance.md) (2 servers)
-- [seo](categories/seo.md) (2 servers)
 - [sustainability](categories/sustainability.md) (2 servers)
 - [transportation](categories/transportation.md) (2 servers)
 - [wellness](categories/wellness.md) (2 servers)
+- [accessibility](categories/accessibility.md) (1 servers)
 - [animal behavior](categories/animal-behavior.md) (1 servers)
 - [animal_behavior](categories/animal-behavior.md) (1 servers)
 - [astrology](categories/astrology.md) (1 servers)
