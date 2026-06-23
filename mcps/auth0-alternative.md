@@ -1,0 +1,167 @@
+# Auth0 MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/auth0-alternative)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage identity and access via Auth0 — list users, create accounts, audit logs, manage clients and review connections from any AI agent.
+
+## Description
+Connect your **Auth0** tenant to any AI agent and take full control of your identity infrastructure through natural conversation.
+
+### What you can do
+
+- **User Management** — List, search, create, update and delete users with full profile details
+- **Email Lookup** — Find users instantly by their email address
+- **Activity Auditing** — Review user-specific logs (logins, failures, password changes) and global tenant logs
+- **Application Audit** — List all registered client applications with their types and configurations
+- **Connection Review** — Browse identity connections (Google, GitHub, SAML, OIDC, database) and their settings
+- **Role Management** — List RBAC roles and their permission sets
+- **Organization Overview** — View multi-tenant organizations configured in your tenant
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Auth0 domain and Management API Token
+3. Start managing your identity from Claude, Cursor, or any MCP-compatible client
+
+No more wrestling with hundred browser tabs. Your AI acts as a dedicated identity operations engineer.
+
+### Who is this for?
+
+- **Security Teams** — quickly audit user activity logs, review failed login attempts and check blocked accounts
+- **DevOps Engineers** — manage users programmatically, audit client applications and review identity connections
+- **Product Managers** — monitor user growth, check organization membership and review application registrations
+
+
+## Available Tools (13)
+- **create_user**: Requires the connection (e.g. "Username-Password-Authentication" for default DB connection) and email. Optionally set a password and username. Returns the created user with their user_id.
+
+Create a new user in Auth0
+- **delete_user**: All associated data (sessions, logs, metadata) will be deleted. Provide the user_id. WARNING: this action is irreversible.
+
+Delete an Auth0 user
+- **get_client**: Provide the client_id.
+
+Get details for a specific Auth0 client (application)
+- **get_user**: Provide the user_id (e.g. "auth0|abc123" or "google-oauth2|xyz789").
+
+Get details for a specific Auth0 user
+- **get_user_by_email**: Returns all users matching the email (there may be multiple if they signed up via different connections). Useful for finding a user when you only know their email.
+
+Find an Auth0 user by email address
+- **list_clients**: Each client shows its client_id, name, type (regular web, SPA, M2M, native), allowed callbacks and creation date. Useful for auditing which applications can authenticate users.
+
+List applications (clients) in Auth0
+- **list_connections**: Each connection shows its name, strategy (auth0, google-oauth2, github, oidc, samlp, etc.), enabled clients and options. Use this to audit which identity providers your users can sign in with. Optionally filter by strategy type.
+
+List identity connections in Auth0
+- **list_logs**: Each log entry includes the event type (e.g. "s" = success login, "f" = failed login, "du" = user deleted, "sapi" = API operation, "limit_wc" = rate limit), date, IP, user agent and details. Optionally filter by event type and paginate.
+
+List security and activity logs for your Auth0 tenant
+- **list_organizations**: Organizations allow you to model B2B multi-tenancy. Each organization shows its ID, name, display name, branding and creation date.
+
+List organizations in Auth0
+- **list_roles**: Roles define permission sets that can be assigned to users. Each role shows its name, description, ID and creation date. Useful for auditing your RBAC (Role-Based Access Control) configuration.
+
+List roles in Auth0
+- **list_user_logs**: Each log entry includes the event type, date, IP address, user agent and details. Useful for security auditing and troubleshooting user issues.
+
+List activity logs for a specific Auth0 user
+- **list_users**: Each user shows their user_id, email, name, last login, identities (connection provider), blocked status and metadata. Optionally search with a query string (q parameter) using Lucene syntax (e.g. "email:*@example.com" or "name:John"). Supports pagination with page and per_page.
+
+List users in your Auth0 tenant
+- **update_user**: Provide the user_id and a JSON object with fields to change (e.g. {"email":"new@email.com","email_verified":true,"blocked":false,"user_metadata":{"theme":"dark"}}). Only provided fields will be updated.
+
+Update an Auth0 user
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Auth0** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all users who failed to log in today."
+
+**🤖 AI Agent:**
+> I found 23 failed login attempts today. 15 were type 'f' (valid email, wrong password) and 8 were type 'fu' (invalid email). The most targeted account was admin@company.com with 5 failed attempts.
+
+---
+
+**👤 You:**
+> "Find the user with email john@example.com and show me their profile."
+
+**🤖 AI Agent:**
+> Found user auth0|65abc123def456. Name: John Doe, Email: john@example.com (verified), Last login: 2 days ago, Total logins: 147. Roles: ['admin', 'editor']. User is not blocked.
+
+---
+
+**👤 You:**
+> "List all the identity connections we have configured."
+
+**🤖 AI Agent:**
+> You have 6 connections configured: 'Username-Password-Authentication' (database), 'google-oauth2' (Google), 'github' (GitHub), 'Okta' (oidc), 'SAML-Enterprise' (samlp) and 'sms' (passwordless).
+
+
+## ❓ FAQ
+
+**Q: How do I get an Auth0 Management API Token?**
+Go to [**Auth0 Dashboard > Applications > APIs**](https://manage.auth0.com/#/apis), find the **Auth0 Management API**, create a **Machine to Machine Application**, authorize it with the scopes you need (e.g. read:users, create:users, read:logs), and copy the generated token.
+
+**Q: Can I search for users by email?**
+Yes! Use `get_user_by_email` for a quick lookup, or `list_users` with the `q` parameter using Lucene syntax (e.g. `email:*@example.com` to find all users from a domain). The search supports all user fields.
+
+**Q: Can I audit failed login attempts?**
+Yes! Use `list_logs` with type filter `f` (failed login) or `fu` (failed login with invalid email) to see all failed authentication attempts. For a specific user's history, use `list_user_logs` with their user_id.
+
+**Q: Can I create and manage users programmatically?**
+Yes! Use `create_user` with a connection name, email and optional password. Use `update_user` to modify any user property (email, name, metadata, blocked status) and `delete_user` to remove them.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/auth0-alternative](https://vinkius.com/mcp/auth0-alternative)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Auth0** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `auth0-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Auth0** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "auth0-alternative": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
