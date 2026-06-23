@@ -1,0 +1,119 @@
+# Dog Body Language Decoder MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dog-body-language-decoder)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [animal_behavior](../categories/animal-behavior.md)
+
+Interprets dog body signals (posture, ears, tail, face) to determine emotional state and provides actionable safety guidelines for safe human interaction.
+
+## Description
+A single signal is misleading. Dogs communicate complex emotions through the *combination* of multiple body parts--a tucked tail paired with a direct stare, for example. This system translates ambiguous observations into clear emotional assessments and safety protocols.
+
+**The Problem:** Misinterpreting canine signals can lead to dangerous or stressful interactions. Guessing a dog's mood based on one trait (like wagging tails) is unreliable; you need an integrated view of the animal's entire body language.
+
+**The Mechanism:** This MCP connects structured observations to actionable intelligence using three core tools:
+1. **`query_body_signals`**: You provide raw details about posture, ear position, tail state, and facial expression. This tool structures your input into quantifiable data points.
+2. **`calculate_emotional_state`**: This engine takes the structured signals from `query_body_signals` and applies weighted rules to synthesize a primary emotional status (e.g., Fearful, Confident) along with a confidence rating.
+3. **`query_safe_approach`**: Finally, this tool translates the detected emotion into concrete safety guidelines. It tells you exactly what physical distance to maintain, how to speak, and what actions are safe for *that specific emotional state*.
+
+**The Advantage:** Instead of vague suggestions, you get a precise assessment (e.g., 'Fearful' with 'High Confidence') followed by step-by-step instructions on how to safely approach the dog, minimizing stress for both parties.
+
+
+## Available Tools (3)
+- **calculate_emotional_state**: Returns primary emotion, confidence level, and secondary readings.
+
+Analyze body signals to determine the dog primary emotional state and confidence level
+- **query_body_signals**: Ear position and tail state are required inputs.
+
+Gather and standardize canine body signal observations
+- **query_safe_approach**: Confidence level adjusts caution guidance.
+
+Get safe interaction guidelines based on the dog emotional state
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dog Body Language Decoder** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "The dog has a low posture, ears are pinned back flat, the tail is tucked tight to its body, and it has a direct hard stare. What does this mean?"
+
+**🤖 AI Agent:**
+> First, run `query_body_signals` with the inputs: posture=low to ground, ears=pinned back flat against head, tail=tucked tight to body, face=direct hard stare. Next, pass these signals to `calculate_emotional_state`. Finally, use the resulting emotion and confidence level in `query_safe_approach` to get safe guidelines.
+
+---
+
+**👤 You:**
+> "I observed a dog with an upright posture, pricked forward ears, high tail wagging broadly, and a soft mouth. How should I approach it?"
+
+**🤖 AI Agent:**
+> 1. Use `query_body_signals` to capture the data (upright posture, pricked forward ears, high and broad wag, soft mouth). 2. Pass this structured object to `calculate_emotional_state` to determine if the state is 'Playful' or 'Confident'. 3. Use the result in `query_safe_approach`. This sequence ensures your approach recommendations are appropriate for an enthusiastic dog.
+
+---
+
+**👤 You:**
+> "My friend is worried about a mix of signals: low sprawl posture, sideways listening ears, and tail thumping rhythmically. What's the best advice?"
+
+**🤖 AI Agent:**
+> Use `query_body_signals` to standardize these observations. Then use `calculate_emotional_state`. Because there may be conflicting signals, pay close attention to the secondary readings. Use the resulting primary emotion and confidence level in `query_safe_approach` to get clear, safe instructions for interacting with a cautious dog.
+
+
+## ❓ FAQ
+
+**Q: Does the system analyze individual signals or combinations?**
+The system is designed to analyze *combinations*. The core logic resides in `calculate_emotional_state`. This tool requires structured inputs from `query_body_signals` (e.g., tucked tail + pinned ears) to weigh multiple signals against predefined rules, providing a much more accurate assessment than any single signal alone.
+
+**Q: What is the final output I receive after running all tools?**
+The process flows from `query_body_signals` $\rightarrow$ `calculate_emotional_state` $\rightarrow$ `query_safe_approach`. The final output is generated by the last tool, `query_safe_approach`, which provides a comprehensive set of safety guidelines (general principle, specific actions, and distance mandates) tailored to the dog's primary emotional state.
+
+**Q: If I am unsure of a signal (e.g., distinguishing 'relaxed sprawl' from 'low to ground'), can the system handle it?**
+The initial input tool, `query_body_signals`, is responsible for standardizing ambiguous human descriptions. While users should use clear language, the system is built to accept structured inputs regarding posture, ears, tail, and face. The subsequent tools will then interpret these standardized signals.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/dog-body-language-decoder](https://vinkius.com/mcp/dog-body-language-decoder)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Dog Body Language Decoder** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dog-body-language-decoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Dog Body Language Decoder** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "dog-body-language-decoder": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
