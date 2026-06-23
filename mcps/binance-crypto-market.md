@@ -1,0 +1,144 @@
+# Binance (Crypto Market) MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/binance-crypto-market)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Track cryptocurrency markets via Binance — get real-time prices, monitor 24h trends, analyze market movers, and audit trading volumes directly from any AI agent.
+
+## Description
+Connect your AI agent to the **Binance** public API and take full control of your cryptocurrency market research and portfolio monitoring through natural conversation.
+
+### What you can do
+
+- **Real-Time Price Auditing** — Retrieve exact price strings for any trading pair (e.g., BTCUSDT, ETHUSDT) including 24h trend labels and emoji indicators
+- **Market Overview** — List top cryptocurrencies ranked by 24h USDT volume to identify active liquidity and market hotspots natively
+- **Volatility Analysis** — Inspect deep internal arrays of price fluctuations to track high/low spreads and weighted average prices limitlessly
+- **Candlestick extraction** — Perform structural extraction of K-line data (OHLC) for specific time intervals to analyze historical price action
+- **Market Movers** — Discover top gainers and losers in the last 24 hours to monitor radical volatility and pump/dump signals
+- **Ticker Metadata** — Retrieve elaborate explicit mapping of ticker statistics including trade counts and base/quote volume vectors
+
+### How it works
+
+1. Subscribe to this server
+2. No credentials required — this server uses Binance's public REST endpoints
+3. Start monitoring the crypto market from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Crypto Traders** — monitor prices and market trends quickly without switching to trading terminals
+- **Financial Analysts** — audit trading volumes and volatility across thousands of pairs using natural language
+- **Portfolio Managers** — track the value of multiple assets and verify real-time price action directly from the workspace
+- **Developers** — test and debug crypto market data integrations and candlestick logic through the chat
+
+
+## Available Tools (7)
+- **get_price**: Accept natural names: "bitcoin", "BTC", "eth", "SOLUSDT". Returns current price + 24h change percentage. For full stats (volume, high/low, trades), use crypto.ticker instead.
+
+Get the current price of any cryptocurrency in USDT with 24h trend
+- **get_ticker**: Accept natural names (e.g. "bitcoin", "BTC", "btcusdt"). For just a quick price, use crypto.price instead.
+
+Get full 24h statistics for any cryptocurrency trading pair on Binance
+- **list_market**: Returns USDT trading pairs ranked by 24h volume. Limit is 1–50 coins. Default to 10 if the user does not specify.
+
+Get the top cryptocurrencies by trading volume on Binance, ranked by 24h USDT volume
+- **get_candles**: Supported intervals: 1m, 5m, 15m, 30m, 1h, 4h, 1d, 1w. Limit is 1–100 candles. Default to 30 daily candles (interval=1d, limit=30) unless the user specifies. Do NOT use for just a current price — use crypto.price for that.
+
+Get OHLCV candlestick chart data for a cryptocurrency pair on Binance
+- **compare_coins**: Accept comma-separated list: "BTC, ETH, SOL" or "bitcoin vs ethereum". At least 2 symbols required. Maximum 10 symbols. Ranks by 24h performance and assigns verdict (top_performer, outperforming, average, underperforming, worst_performer).
+
+Compare multiple cryptocurrencies side by side — price, 24h change, volume, and relative performance
+- **list_movers**: direction=gainers returns top positive movers, losers=negative movers, both=all sorted by absolute change. Filters to coins with at least $1M USDT volume to avoid low-liquidity noise. Limit is 1–20 per direction.
+
+Get the top gaining and/or losing cryptocurrencies on Binance in the last 24 hours
+- **get_volatility**: Fetches the last N candles and computes: amplitude %, trend direction, bull/bear ratio. Do NOT use for a simple price check — use crypto.price instead. Default: interval=1h, periods=24 (last 24 hours).
+
+Analyse the price volatility and trend of a cryptocurrency over a given number of candles
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Binance (Crypto Market)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current price of Bitcoin?"
+
+**🤖 AI Agent:**
+> Bitcoin (BTCUSDT) is currently trading at $65,420.50. It has seen a +2.4% increase in the last 24 hours. The trend is currently bullish.
+
+---
+
+**👤 You:**
+> "Show me the top 10 coins by volume"
+
+**🤖 AI Agent:**
+> Here are the top 10 coins by 24h volume. BTCUSDT leads with $2.5B, followed by ETHUSDT ($1.8B) and SOLUSDT ($950M). Would you like to see the price trends for any of these?
+
+---
+
+**👤 You:**
+> "Which coins have the highest volatility today?"
+
+**🤖 AI Agent:**
+> Analyzing market volatility... The most volatile pairs today are PEPEUSDT (15% spread) and RNDRUSDT (12% spread). I've calculated the risk labels for the top movers based on their 24h high/low vectors.
+
+
+## ❓ FAQ
+
+**Q: Does this server require a Binance API key or account?**
+No. This server uses Binance's public REST API endpoints, which do not require authentication for market data, ticker stats, or candlestick retrieval. You can start using it immediately without any setup.
+
+**Q: Can I get historical price data for technical analysis?**
+Yes. Use the 'get_candles' tool. You can specify the symbol and the interval (e.g., '1h', '1d'). The agent will retrieve the OHLC (Open, High, Low, Close) candlestick data needed for technical charting and analysis.
+
+**Q: How do I identify the top gainers in the crypto market?**
+Use the 'list_movers' tool. It analyzes the entire market and identifies the top 10 gainers and top 10 losers based on 24h price change percentage, helping you spot radical volatility instantly.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/binance-crypto-market](https://vinkius.com/mcp/binance-crypto-market)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Binance (Crypto Market)** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `binance-crypto-market` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Binance (Crypto Market)** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "binance-crypto-market": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

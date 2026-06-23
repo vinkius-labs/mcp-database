@@ -1,0 +1,130 @@
+# Evisort Contract Intelligence MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evisort-contract-intelligence)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Equip your AI agent to manage contract documents, track AI-extracted provisions, and monitor workflows via the Evisort API.
+
+## Description
+Integrate **Evisort**, the AI-powered contract management and intelligence platform, directly into your AI workflow. Manage your legal document library and folders, track AI-extracted provisions and key contract data, monitor approval workflows and expiration alerts, and oversee your entire contract lifecycle using natural language.
+
+### What you can do
+
+- **Contract Oversight** — List and retrieve detailed information, party names, and effective dates for all your legal documents.
+- **AI Data Intelligence** — Monitor extracted provisions and clauses, resolving complex legal data into actionable insights via chat.
+- **Workflow Management** — Access and monitor contract approval workflows, tracking current steps and active reviewers in real-time.
+- **Legal Auditing** — Retrieve high-level summaries of contract volume, expiration alerts, and organizational legal health instantly.
+
+### How it works
+
+1. Connect the Evisort integration to your AI assistant.
+2. Authorize using your Evisort REST API Key (found in your account settings).
+3. Orchestrate your contract management and legal operations through intuitive conversation.
+
+### Who is this for?
+
+- **Legal & GC Teams** — Quickly check contract expiration dates and provision details on the go.
+- **Procurement & Sales Ops** — Research active contract terms and approval statuses via chat during deal negotiations.
+- **Compliance Teams** — Monitor organizational contract metadata and audit logs instantly.
+
+
+## Available Tools (10)
+- **get_evisort_account_metadata**: Retrieve metadata and limits for your Evisort account
+- **get_document_detailed_intelligence**: Get detailed settings and AI-extracted data for a specific contract
+- **list_upcoming_contract_expirations**: Retrieve a list of contracts that are approaching their expiration date
+- **quick_contract_portfolio_audit**: Retrieve a high-level summary of documents, workflows, and alerts
+- **list_contract_documents**: List all contract documents in your Evisort account
+- **list_previously_expired_contracts**: Identify contracts that have already reached their expiration date
+- **list_document_library_folders**: List all folders and directories in your contract library
+- **list_high_monetary_value_contracts**: Identify contracts with a monetary value above a specific threshold (mock logic)
+- **list_contract_provisions**: List all AI-extracted provisions and clauses for a specific document
+- **list_contract_workflows**: List all contract approval and review workflows
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Evisort Contract Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all contracts expiring in the next 30 days."
+
+**🤖 AI Agent:**
+> I've found 5 contracts approaching expiration, including the 'SaaS Agreement with CloudStack' and 'Vendor Terms - Global Logistics'. Would you like to see the renewal provisions for CloudStack?
+
+---
+
+**👤 You:**
+> "Show me the provisions for contract ID 'DOC-12345'."
+
+**🤖 AI Agent:**
+> For contract 'DOC-12345' (NDA with Wayne Corp), I've retrieved several provisions: 'Non-Disclosure' (Section 2.1), 'Term' (3 years), and 'Governing Law' (New York). Should I pull the extracted text for the Non-Disclosure clause?
+
+---
+
+**👤 You:**
+> "What is the status of the 'Master Services Agreement' workflow?"
+
+**🤖 AI Agent:**
+> The 'Master Services Agreement' workflow is currently at the 'Legal Review' step (Step 3/5). It is assigned to 'Sarah Miller'. It has been pending for 2 days. Would you like to see the previous comments from the Finance team?
+
+
+## ❓ FAQ
+
+**Q: How do I get an Evisort API Key?**
+Log in to your Evisort account, navigate to **Settings > API**, and you can generate or retrieve your unique **REST API Key** from there. Ensure your user profile has the 'Admin' or 'API Access' permission enabled.
+
+**Q: Does the integration show specific clauses?**
+Yes, you can use the list_contract_provisions tool to retrieve AI-extracted snippets for common clauses like Limitation of Liability, Indemnification, and Termination for any document.
+
+**Q: Can the agent upload new contracts?**
+This integration currently focuses on listing and auditing existing contracts and intelligence. Uploading new PDF or Word documents for AI processing should be managed via the Evisort web application or automated ingestion folders.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/evisort-contract-intelligence](https://vinkius.com/mcp/evisort-contract-intelligence)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Evisort Contract Intelligence** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `evisort-contract-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Evisort Contract Intelligence** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "evisort-contract-intelligence": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
