@@ -14,6 +14,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Natural Ventilation Calculator](../mcps/natural-ventilation-calculator.md) | Calculate air change rates and ensure ventilation compliance for different room uses. |
 | [Nutritional Estimator](../mcps/nutritional-estimator.md) | Calculate total and per-serving macro and calorie content of recipes using weight-based nutritional density data. |
 | [One Rep Max Calculator](../mcps/one-rep-max-calculator.md) | Estimate your maximum lifting capacity using Epley, Brzycki, and Lander models. |
+| [Pediatric BMI Calculator](../mcps/pediatric-bmi-calculator.md) | Calculate pediatric BMI, percentiles, and growth status using WHO/CDC standards for ages 2-20 years. |
 | [Perceived Exertion Converter](../mcps/perceived-exertion-converter.md) | Convert RPE (Borg 6-20 and CR10) to estimated heart rate and training zones. |
 | [Pet Daily Food Calculator](../mcps/pet-daily-food-calculator.md) | Calculate precise daily food portions and feeding schedules for your dog based on weight, life stage, and activity level. |
 | [Pet Senior Care Planner](../mcps/pet-senior-care-planner.md) | Identify pet life stages and generate customized veterinary and lifestyle protocols. |

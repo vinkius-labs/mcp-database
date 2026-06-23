@@ -57,6 +57,7 @@ Explore the open database of **human-resources** Model Context Protocol (MCP) se
 | [Onfido](../mcps/onfido.md) | Automate identity verification via Onfido — create applicants, manage workflow runs, and retrieve verification reports directly from any AI agent. |
 | [OnPay](../mcps/onpay.md) | Payroll and HR management — manage employees, transactions, and schedules via OnPay. |
 | [OpenClassrooms](../mcps/openclassrooms.md) | Monitor student progress on OpenClassrooms — search courses, track diploma paths, review mentoring sessions, and verify certificates from any AI agent. |
+| [Org Design Ratio Calculator](../mcps/org-design-ratio-calculator.md) | Analyze organizational efficiency by comparing headcount ratios against industry benchmarks. |
 | [Oyster](../mcps/oyster.md) | Manage global HR, payroll, and compliance via Oyster — list engagements, track expenses, and manage time-off requests directly from any AI agent. |
 | [PayFit](../mcps/payfit.md) | Automate HR and payroll operations via PayFit — list collaborators, fetch payslips securely, overview company structure, and export accounting entries via AI. |
 | [Personio](../mcps/personio-alternative.md) | Automate HR operations via Personio — manage employee records, track attendance, handle absences, and streamline recruiting directly from any AI agent. |

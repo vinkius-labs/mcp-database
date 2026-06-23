@@ -4,12 +4,13 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
-| [Bluesky Automation](../mcps/bluesky-automation.md) | Automate social listening, lead generation, and engagement on the Bluesky (AT Protocol) network directly from your AI agent. |
+| [Bluesky Automation](../mcps/bluesky-automation.md) | Full-spectrum Bluesky automation — 20 tools for publishing, engagement, analytics, social listening, and lead generation via the AT Protocol. |
 | [BuiltWith Tech Lookup](../mcps/builtwith-tech-lookup.md) | Universal website technology intelligence — detect CMS, analytics, and frameworks via AI. |
 | [CMO Marketing Prover](../mcps/cmo-marketing-prover.md) | A CMO asked an AI for positioning. It said 'better and faster.' It proposes 'scale the ads' without a payback model. It trusts platform attribution 100%. It designs frictionless funnels that generate garbage leads. That is not marketing — that is a tactical wishlist. This tool forces five CMO-level marketing axes: category positioning, CAC payback physics, dark social attribution, intentional funnel friction, and budget allocation. |
 | [Content ROI Calculator](../mcps/content-roi-calculator.md) | Calculate production costs, attributed revenue, and profitability metrics for content marketing assets. |
 | [crm4 solution](../mcps/crm4-solution.md) | Italian lead management and call center CRM. |
 | [Customerly](../mcps/customerly.md) | Combine live chat, email marketing, and customer surveys in one platform that helps SaaS companies grow and retain users. |
+| [Dev.to Intelligence](../mcps/devto-intelligence.md) | Publish, manage, and deeply analyze Dev.to content with 22 tools — including proprietary intelligence modules for timing optimization, audience mapping, and content strategy. |
 | [eSputnik](../mcps/esputnik.md) | Omnichannel marketing automation with eSputnik. |
 | [Influencer ROI Calculator](../mcps/influencer-roi-calculator.md) | Calculate the financial impact, EMV, and profitability of influencer marketing campaigns. |
 | [Marketing ROI Calculator](../mcps/marketing-roi-calculator.md) | Calculate marketing Return on Investment (ROI), payback period, and efficiency across all campaigns using detailed cost and revenue attribution. |

@@ -4,6 +4,7 @@ Explore the open database of **healthcare** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Apgar Score Calculator](../mcps/apgar-score-calculator.md) | Calculate and compare newborn Apgar scores to assess vitality at 1 and 5 minutes. |
 | [Blood Type Compatibility & Demographics](../mcps/blood-type-compatibility-demographics.md) | Check blood and plasma transfusion compatibility, pregnancy risks, and regional blood type distributions. |
 | [BMI Clinical Calculator](../mcps/bmi-clinical-calculator.md) | Calculate BMI, ideal body weight estimates, and assess bariatric surgery eligibility. |
 | [Creatinine Clearance Calculator](../mcps/creatinine-clearance-calculator.md) | Calculate creatinine clearance using the Cockcroft-Gault equation and identify drug dose adjustments. |
@@ -14,6 +15,9 @@ Explore the open database of **healthcare** Model Context Protocol (MCP) servers
 | [MEWS Calculator](../mcps/mews-calculator.md) | Quantify patient physiological deterioration using the Modified Early Warning Score (MEWS) system. |
 | [NIHSS Calculator](../mcps/nihss-calculator.md) | Calculate NIH Stroke Scale scores and assess stroke severity instantly. |
 | [Nutritional Risk Screening (NRS-2002)](../mcps/nutritional-risk-screening-nrs-2002.md) | Assess nutritional risk in hospitalized patients using the NRS-2002 protocol and ESPEN guidelines. |
+| [Pediatric Dose Calculator](../mcps/pediatric-dose-calculator.md) | Calculate safe pediatric medication dosages based on weight and frequency. |
+| [Pediatric Fluid Calculator](../mcps/pediatric-fluid-calculator.md) | Calculate pediatric fluid maintenance requirements using the Holliday-Segar rule. |
+| [Pediatric Growth Percentile Calculator](../mcps/pediatric-growth-percentile-calculator.md) | Calculate pediatric growth percentiles and Z-scores using WHO (0-60m) and CDC (61-216m) standards. |
 | [SOFA Score Calculator](../mcps/sofa-score-calculator.md) | Calculate SOFA scores, mortality risk, and sepsis status. |
 
 

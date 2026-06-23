@@ -734,6 +734,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Unleash (Feature Toggles)](../mcps/unleash-feature-toggles.md) | Manage feature flags, strategies, and environments via Unleash — evaluate toggles, list projects, and monitor metrics directly from your AI agent. |
 | [Upper Route Planner](../mcps/upper-route-planner.md) | Plan delivery routes for multiple drivers with optimization algorithms that minimize drive time and maximize daily stops. |
 | [Urlbox](../mcps/urlbox.md) | Render website screenshots — audit high-fidelity visual content via AI. |
+| [US Equity Compensation Calculator](../mcps/us-equity-compensation-calculator.md) | Project the future value of RSUs and Stock Options across different exit scenarios. |
 | [US Filing Deadline Calculator](../mcps/us-filing-deadline-calculator.md) | Calculate US federal court filing deadlines with automatic weekend and holiday adjustments. |
 | [Uselessfacts](../mcps/uselessfacts.md) | Access a vast database of quirky, useless facts to entertain, break the ice, or learn something new every day. |
 | [Vacation Pay Calculator](../mcps/vacation-pay-calculator.md) | Calculate vacation pay, constitutional bonuses, cash allowances, and tax withholdings. |
