@@ -1,0 +1,128 @@
+# Ashby MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ashby)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Manage your recruiting pipeline with Ashby — track jobs, candidates, and applications via AI.
+
+## Description
+The **Ashby MCP Server** provides a direct natural language interface to your Ashby recruiting platform. Empower your AI agent to manage your hiring pipeline, from job listing analysis to candidate search and application tracking.
+
+### Key Features
+
+- **Job Management** — List all open, closed, and archived jobs, and retrieve detailed metadata for any specific position.
+- **Candidate Sourcing** — Search for candidates by name or email and access full profiles, including tags and contact details.
+- **Application Tracking** — Monitor the status of job applications and filter by job ID or workflow stage (e.g., Hired, Lead).
+- **Interview Oversight** — Retrieve lists of scheduled interviews to stay on top of your recruiting calendar.
+- **Search Intelligence** — Use powerful search tools to quickly find the right talent or job openings in your organization.
+- **Secure Integration** — Uses secure HTTP Basic Authentication with your Ashby API key.
+
+### Who is this for?
+
+- **Recruiters** — Quickly audit your pipeline and candidate statuses without switching between multiple tabs.
+- **Hiring Managers** — Review candidate profiles and job details using AI-assisted summaries during your planning sessions.
+- **Talent Ops** — Monitor hiring trends and ensure all applications are being processed efficiently.
+
+
+## Available Tools (10)
+- **get_account_check**: Verify Ashby account connection
+- **get_application_info**: Get details for a specific application
+- **get_candidate_info**: Get detailed information for a specific candidate
+- **get_job_info**: Get detailed information for a specific job
+- **list_applications**: List all job applications
+- **list_candidates**: List all candidates in Ashby
+- **list_interviews**: List all interviews
+- **list_jobs**: Supports status filtering.
+
+List all job listings in Ashby
+- **search_candidates**: Search for candidates by email or name
+- **search_jobs**: Search for jobs by title
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ashby** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all currently opened jobs in Ashby."
+
+**🤖 AI Agent:**
+> I've retrieved your open jobs. You have 4 opened positions: 'Senior Frontend Engineer', 'Product Designer', 'Customer Success Manager', and 'Sales Lead'.
+
+---
+
+**👤 You:**
+> "Search for a candidate named 'John Doe'."
+
+**🤖 AI Agent:**
+> I found 1 candidate matching 'John Doe' (ID: cand_123). He is currently tagged with 'Engineering' and 'Referral'.
+
+---
+
+**👤 You:**
+> "Show me the details of application 'app_998877'."
+
+**🤖 AI Agent:**
+> Application 'app_998877' is for the 'Senior Frontend Engineer' role. The current status is 'Technical Interview' and it was created on Feb 1st.
+
+
+## ❓ FAQ
+
+**Q: How do I find my Ashby API Key?**
+Log in to Ashby, go to **Admin > API Keys**, and click **Create API Key**. Ensure you grant the necessary permissions (e.g., `jobsRead`, `candidatesRead`).
+
+**Q: Why does this server use POST for all requests?**
+The Ashby API is designed as an RPC-style API where even data retrieval (reading) endpoints require a POST request with a JSON body.
+
+**Q: Can I search for candidates by email?**
+Yes, use the `search_candidates` tool and provide the `email` parameter to find a specific candidate in your database.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/ashby](https://vinkius.com/mcp/ashby)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Ashby** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ashby` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Ashby** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "ashby": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
