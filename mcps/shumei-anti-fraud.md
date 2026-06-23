@@ -1,0 +1,101 @@
+# Shumei Anti-Fraud MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shumei-anti-fraud)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Bring Shumei's top-tier Anti-Fraud and Risk Control to your AI. Analyze text, images, and devices for malicious activity instantly.
+
+## Description
+Equip your AI agent with **Shumei** (数美), China's premier risk assessment and anti-fraud platform used by top internet companies. With this MCP server, your agent can autonomously filter NSFW content, detect robotic bot farms, and sanitize text streams.
+
+### What you can do
+
+- **Bot & Emulator Detection** — Validate Device IDs and IPs against Shumei risk databases to ban emulators and VPNs
+- **Content Moderation** — Scan text, images, and audio URLs for abusive, spam, or explicit content before they reach your platform
+- **Live Risk Scoring** — Perform real-time audits on user activities in your logs
+
+### How it works
+
+1. Subscribe to this server
+2. Insert your **Access Key** from the [Shumei Control Panel](https://www.ishumei.com/)
+3. Inject the server into your LLM logic to use it as an automated moderation backend
+
+### Who is this for?
+
+- **Community Managers** — Automate the scanning of chat transcripts for violations
+- **Trust & Safety Agents** — Intercept fraudulent account creations by scanning IP risks
+- **Backend Developers** — Prototyping safety wrappers on user-uploaded images and avatars
+
+
+## Available Tools (4)
+- **check_audio_risk**: Predict risk associated with an audio clip
+- **check_device_risk**: Determine if a specific device ID or IP is fraudulent or using a VPN
+- **check_image_risk**: Scan an image for NSFW or restricted content
+- **check_text_risk**: Scan a piece of text for spam, abuse, or NSFW content
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Shumei Anti-Fraud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Scan this block of text for spam and risk flags: 'Click here to buy cheap followers! https://...'"
+
+**🤖 AI Agent:**
+> I submitted the text to Shumei text-risk. It returned a 'Reject' flag, classifying the content under 'Spam/Advertising'.
+
+
+## ❓ FAQ
+
+**Q: Does my image data get stored on their servers?**
+Shumei caches media briefly for anti-spam scanning operations but does not persist non-flagged uploads permanently. Consult your enterprise agreement for strict retention periods.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/shumei-anti-fraud](https://vinkius.com/mcp/shumei-anti-fraud)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Shumei Anti-Fraud** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shumei-anti-fraud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Shumei Anti-Fraud** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "shumei-anti-fraud": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
