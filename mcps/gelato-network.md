@@ -1,0 +1,135 @@
+# Gelato Network MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gelato-network)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate Web3 transactions via Gelato — relay transactions, manage ERC-4337 UserOperations, and get real-time gas estimates across multiple chains.
+
+## Description
+Connect your **Gelato Network** account to any AI agent and automate complex Web3 infrastructure workflows through natural conversation. Gelato provides the ultimate reliability for transaction relaying and account abstraction.
+
+### What you can do
+
+- **Transaction Relaying** — Submit signed transactions for relaying on various chains, supporting both asynchronous and synchronous (wait-for-inclusion) modes.
+- **Account Abstraction (ERC-4337)** — Submit and estimate gas for UserOperations using Gelato's high-performance Bundler.
+- **Real-time Status Tracking** — Monitor the lifecycle of your relayed tasks using unique task IDs to ensure successful on-chain execution.
+- **Gas & Fee Intelligence** — Retrieve token exchange rates, gas price data, and precise fee quotes for specific gas amounts and tokens.
+- **Chain Capabilities** — Query supported payment tokens and fee collector addresses for any supported blockchain network.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Gelato API Key
+3. Start automating your Web3 operations from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Web3 Developers** — integrate gasless transactions and account abstraction directly from your coding environment.
+- **DevOps Engineers** — monitor transaction statuses and manage infrastructure costs without leaving the terminal.
+- **Protocol Teams** — automate fee calculations and transaction relaying for cross-chain operations.
+
+
+## Available Tools (12)
+- **bundler_estimate_user_operation_gas**: Estimate gas for a UserOperation
+- **bundler_get_user_operation_by_hash**: Retrieve UserOperation details by hash
+- **bundler_get_user_operation_gas_price**: Get current gas prices for UserOperations
+- **bundler_get_user_operation_receipt**: Get the receipt of a UserOperation
+- **bundler_send_user_operation**: Submit an ERC-4337 UserOperation
+- **bundler_supported_entry_points**: List supported EntryPoint addresses
+- **relayer_get_capabilities**: Get supported payment tokens and fee collectors
+- **relayer_get_fee_data**: Get token exchange rates and gas price data
+- **relayer_get_fee_quote**: Get a fee quote for a specific gas amount
+- **relayer_get_status**: Check the status of a relayed transaction
+- **relayer_send_transaction_sync**: Submit a transaction and wait for inclusion
+- **relayer_send_transaction**: Returns a unique 32-byte task ID for tracking.
+
+Submit a signed transaction for relaying
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gelato Network** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Relay this signed transaction data to address 0x123... on Polygon (chainId 137)."
+
+**🤖 AI Agent:**
+> I've submitted the transaction to Gelato Relayer. Your Task ID is 0xabc123... You can check its status anytime using this ID.
+
+---
+
+**👤 You:**
+> "What is the current status of Gelato task 0x550e8400-e29b-41d4-a716-446655440000?"
+
+**🤖 AI Agent:**
+> The task is currently 'ExecSuccess'. It was included in block 1523421. Would you like to see the full transaction receipt?
+
+---
+
+**👤 You:**
+> "Estimate gas for this UserOperation on Optimism (chainId 10)."
+
+**🤖 AI Agent:**
+> I've calculated the gas limits for your UserOperation on Optimism. The estimated callGasLimit is 45000 and verificationGasLimit is 120000.
+
+
+## ❓ FAQ
+
+**Q: How can I track the status of a transaction I just relayed?**
+Use the `relayer_get_status` tool with the Task ID returned during submission. It will provide the current execution state and, if completed, the transaction receipt logs.
+
+**Q: Can I get a fee quote before sending a transaction?**
+Yes! Use `relayer_get_fee_quote` by providing the chain ID, target token, and estimated gas amount. The agent will return the exact fee required for the operation.
+
+**Q: Does this server support ERC-4337 Account Abstraction?**
+Absolutely. You can use `bundler_send_user_operation` to submit operations and `bundler_estimate_user_operation_gas` to calculate the necessary gas limits for smart contract wallets.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/gelato-network](https://vinkius.com/mcp/gelato-network)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Gelato Network** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gelato-network` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Gelato Network** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "gelato-network": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
