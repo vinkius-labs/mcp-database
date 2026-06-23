@@ -1,0 +1,109 @@
+# User-Agent Parser MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/user-agent-parser)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Decode raw HTTP User-Agent strings instantly. Extract structured Browser, OS, and Device data for accurate IT log analysis.
+
+## Description
+When an IT Support Agent analyzes an error log or a firewall access log, it encounters messy User-Agent strings like `Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15`. LLMs often misinterpret these strings, causing them to hallucinate the wrong device or browser version. This MCP solves that entirely.
+
+### The Superpowers
+
+- **Deterministic Parsing:** Uses the industry-standard `ua-parser-js` to surgically extract the exact OS, Engine, Browser, and Device.
+- **Log Analysis:** Transforms unreadable logs into clean JSON, empowering AI agents to accurately diagnose platform-specific bugs.
+
+
+## Available Tools (1)
+- **parse_ua**: Pass the raw UA string from HTTP headers or server logs and receive exact identification of the client.
+
+Decodes raw HTTP User-Agent strings into structured JSON objects (Browser, OS, Device). Prevents LLMs from hallucinating client specs from log files
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **User-Agent Parser** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Parse this UA from the server log: `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)`"
+
+**🤖 AI Agent:**
+> Parsed User-Agent: {"browser": {"name": "Chrome", "version": "114.0"}, "os": {"name": "Mac OS", "version": "10.15.7"}}
+
+---
+
+**👤 You:**
+> "Find out what device the user is on based on this string: `Mozilla/5.0 (iPhone; CPU iPhone OS 16_5)`"
+
+**🤖 AI Agent:**
+> Parsed User-Agent: Device is Mobile, OS is iOS 16.5.
+
+---
+
+**👤 You:**
+> "Extract the browser version from this Android User-Agent."
+
+**🤖 AI Agent:**
+> Result: Browser is Chrome version 120 on Android 13.
+
+
+## ❓ FAQ
+
+**Q: Is it accurate for mobile devices?**
+Yes, it accurately identifies iOS, Android versions, and specific phone models.
+
+**Q: Why not use a regex in the LLM prompt?**
+User-Agents change daily and are heavily obfuscated. A hardcoded regex will fail on newer devices.
+
+**Q: Does it identify bots?**
+Yes, the parser can identify common web crawlers, scrapers, and search engine bots (like Googlebot).
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/user-agent-parser](https://vinkius.com/mcp/user-agent-parser)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **User-Agent Parser** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `user-agent-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **User-Agent Parser** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "user-agent-parser": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
