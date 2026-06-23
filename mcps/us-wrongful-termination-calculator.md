@@ -1,0 +1,104 @@
+# US Wrongful Termination Calculator MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-wrongful-termination-calculator)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [finance](../categories/finance.md)
+
+Estimate potential financial damages and legal liabilities for US wrongful termination claims.
+
+## Description
+This MCP server provides specialized tools to quantify the financial impact of employment litigation. Use `calculate_damages_estimate` to determine gross liability, including back pay, front pay, and compensatory damages based on salary and tenure. You can also use `assess_claim_risk_profile` to evaluate legal exposure levels or `lookup_state_punitive_standard` to retrieve jurisdiction-specific punitive damage amounts and statutory caps.
+
+
+## Available Tools (3)
+- **calculate_damages_estimate**: Calculate potential damages for a wrongful termination claim
+- **assess_claim_risk_profile**: Determine the qualitative legal risk level of a claim
+- **lookup_state_punitive_standard**: Lookup punitive damage rules for a specific state
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **US Wrongful Termination Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate the potential damages for an employee with a $80,000 salary and 5 years of tenure in CA due to discrimination."
+
+**🤖 AI Agent:**
+> The `calculate_damages_estimate` tool would return an estimate including back pay, front pay, and compensatory damages based on the provided salary and tenure in California.
+
+---
+
+**👤 You:**
+> "What is the legal risk profile for a 2-year employee who was a whistleblower?"
+
+**🤖 AI Agent:**
+> The `assess_claim_risk_profile` tool would evaluate the risk category and identify the primary risk driver, such as the retaliation nature or tenure length.
+
+---
+
+**👤 You:**
+> "Check if there is a statutory cap on punitive damages in New York."
+
+**🤖 AI Agent:**
+> The `lookup_state_punitive_standard` tool would return the standard punitive amount and whether a statutory cap exists for NY.
+
+
+## ❓ FAQ
+
+**Q: What types of violations can I calculate?**
+The tool supports calculations for discrimination, retaliation, and WARN Act violations.
+
+**Q: How is back pay calculated?**
+Back pay is estimated based on the proportion of the annual salary lost during the period of unemployment.
+
+**Q: Does this tool provide information on punitive damages?**
+Yes, using `lookup_state_punitive_standard`, you can retrieve hardcoded punitive damage amounts and statutory cap information for specific US states.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/us-wrongful-termination-calculator](https://vinkius.com/mcp/us-wrongful-termination-calculator)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **US Wrongful Termination Calculator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-wrongful-termination-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **US Wrongful Termination Calculator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "us-wrongful-termination-calculator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
