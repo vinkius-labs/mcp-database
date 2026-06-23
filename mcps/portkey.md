@@ -1,0 +1,153 @@
+# Portkey MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/portkey)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+AI gateway observability: monitor logs, costs, and manage LLM configurations via agents.
+
+## Description
+### What you can do
+
+Connect AI agents to the Portkey AI Gateway for enterprise-grade observability and management:
+
+- **Monitor logs and traces** of all LLM calls passing through your gateway
+- **Analyze token usage, latency, and costs** across models and teams
+- **Submit feedback** (Likes/Dislikes) to improve model quality and agent performance
+- **Export logs** for audit trails, compliance, and offline cost analysis
+- **Review gateway configurations** including retry policies, fallbacks, and cache settings
+- **Manage virtual keys** to track provider API key usage and limits
+- **Discover supported models** from 1,600+ LLMs available via Portkey
+- **Enforce budget policies** to prevent runaway AI costs per team or project
+
+### How it works
+
+1. **Get your Portkey API key** from the dashboard Settings
+2. **Ask your AI agent** to check usage, review costs, or manage policies
+3. **Natural language commands** replace manual Portkey dashboard navigation
+4. **Unified observability** across all your LLM providers (OpenAI, Anthropic, Google, etc.)
+
+### Who is this for?
+
+Essential for **AI platform engineers**, **LLM ops teams**, **FinOps analysts**, **AI governance officers**, and **engineering managers** using multiple LLM providers. Let AI agents monitor gateway health, identify cost spikes, enforce budget policies, and optimize routing. Perfect for organizations spending $10k+/month on LLMs who need granular visibility into usage, latency, and model performance across the enterprise.
+
+
+## Available Tools (10)
+- **create_policy**: Requires policy name, budget limit (USD or token count), and optionally the target users or virtual keys to restrict. Returns the created policy details. Use this to enforce cost controls on specific teams or projects using the gateway.
+
+Create a new budget or usage policy for AI gateway access
+- **delete_policy**: Requires the policy ID. Use this when a project ends or budget constraints are no longer needed.
+
+Remove a budget or usage policy from Portkey
+- **export_logs**: Optionally filters by date range, model, or user. Returns an export ID or download URL. Use this for audit trails, cost reporting, or offline analysis of AI usage patterns.
+
+Export AI gateway logs for external analysis or compliance reporting
+- **get_log_details**: Requires the log ID from list_logs results. Use this for deep debugging of specific AI interactions.
+
+Get detailed information about a specific AI gateway log entry
+- **get_virtual_keys**: Virtual keys map to underlying provider keys (OpenAI, Anthropic, etc.) with metadata, usage limits, and policy associations. Returns key IDs, names, provider targets, current usage, and status. Use this to audit API key usage or identify keys approaching limits.
+
+List all virtual API keys managed by Portkey
+- **list_configs**: Returns config IDs, names, creation dates, and associated virtual keys. Use this to review how LLM requests are routed or to audit gateway behavior.
+
+List all gateway configurations stored in Portkey
+- **list_logs**: Returns log IDs, timestamps, model names, token usage, latency, costs, and status codes. Use this to monitor AI usage, identify expensive calls, or debug latency issues. Supports pagination via limit/offset.
+
+List recent AI gateway logs and traces from Portkey
+- **list_models**: ). Returns model names, provider names, supported endpoints (chat, embeddings, etc.), and capabilities. Use this to discover which models are routable via your gateway.
+
+List all LLM models supported by the Portkey gateway
+- **list_policies**: Returns policy names, limits, current consumption, and affected users/keys. Use this to review guardrails preventing runaway AI costs.
+
+List all budget and usage policies defined in Portkey
+- **submit_feedback**: Requires the log ID, rating (LIKE, DISLIKE, or UNLIKE to remove), and optional text feedback. Use this to build RLHF datasets or monitor user satisfaction with AI outputs.
+
+Submit user feedback (Like/Dislike) for a specific AI response log
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Portkey** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the most expensive LLM calls from the last 24 hours"
+
+**🤖 AI Agent:**
+> I'll retrieve recent gateway logs and sort them by cost to identify the top spenders.
+
+---
+
+**👤 You:**
+> "Create a budget policy limiting the Marketing team to $500/month on LLM usage"
+
+**🤖 AI Agent:**
+> I'll create a policy with a $500 monthly budget target for the Marketing virtual keys.
+
+---
+
+**👤 You:**
+> "Export all logs from last week for our compliance audit"
+
+**🤖 AI Agent:**
+> I'll trigger a log export for the last 7 days in JSON format for your records.
+
+
+## ❓ FAQ
+
+**Q: Which LLM providers does Portkey support?**
+Portkey supports 1,600+ LLMs including OpenAI, Anthropic, Google, Mistral, Azure OpenAI, AWS Bedrock, Cohere, Hugging Face, and many more. Use the list_models tool to see the full catalog available via your gateway.
+
+**Q: How does Portkey help control AI costs?**
+Portkey provides granular visibility into token usage, latency, and costs per model, team, or virtual key. You can create budget policies with hard limits to prevent runaway spending. The gateway also supports caching to reduce duplicate calls and fallbacks to cheaper models when appropriate.
+
+**Q: Can I track feedback on AI responses?**
+Yes! Portkey allows you to submit Like/Dislike feedback for any logged LLM call. This data helps improve model selection, evaluate agent performance, and build RLHF datasets for fine-tuning.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/portkey](https://vinkius.com/mcp/portkey)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Portkey** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `portkey` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Portkey** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "portkey": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
