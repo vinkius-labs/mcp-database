@@ -1,0 +1,127 @@
+# Buy Me A Coffee MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buy-me-a-coffee)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Manage your creator account via Buy Me A Coffee — track supporters, memberships, and digital products directly from any AI agent.
+
+## Description
+Connect your **Buy Me A Coffee** account to any AI agent and orchestrate your creator workflows, supporter relations, and monetization through natural conversation.
+
+### What you can do
+
+- **Supporter Oversight** — List and retrieve detailed metadata for all your supporters, including one-time and recurring members.
+- **Membership Management** — List all active and inactive memberships to track your recurring revenue stream.
+- **Digital Product Tracking** — Retrieve information about 'Extras' (digital products or services) purchased through your page.
+- **Content Monitoring** — Access and list your blog posts to verify what has been shared with your audience.
+- **Account Statistics** — Retrieve core account information and total supporter counts straight from your workspace.
+- **Interaction Tracking** — Get detailed data for specific supporter or subscription IDs using natural language.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Buy Me A Coffee Personal Access Token
+3. Start managing your creator business from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Creators & Artists** — quickly check for new supporters or member statuses without manual dashboard logins.
+- **Community Managers** — retrieve member lists and participation history straight from their communication tools.
+- **Business Admins** — monitor monetization performance and product sales using natural language.
+
+
+## Available Tools (5)
+- **get_account_stats**: Retrieve core account statistics
+- **list_extras**: List digital products (extras) purchased
+- **list_posts**: List blog posts from your page
+- **list_memberships**: List all active and inactive memberships
+- **list_supporters**: List all supporters (one-time and members)
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Buy Me A Coffee** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my supporters in Buy Me A Coffee."
+
+**🤖 AI Agent:**
+> I've retrieved your supporters. You have 50 supporters, including 'John Doe' who left a note: 'Love your work!' and 'Jane Smith'.
+
+---
+
+**👤 You:**
+> "Show my active membership subscriptions."
+
+**🤖 AI Agent:**
+> Retrieving memberships... You have 15 active members, including 5 at the 'Gold' level and 10 at the 'Silver' level. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "List the digital products (extras) I have available."
+
+**🤖 AI Agent:**
+> You have 3 extras available: 'E-book: Creator Guide' ($15), '1-on-1 Consultation' ($50), and 'Custom Illustration' ($30).
+
+
+## ❓ FAQ
+
+**Q: Can I check my total number of supporters using the agent?**
+Yes! Use the `get_account_stats` tool. Your agent will fetch the core statistics, including the total count of supporters from your Buy Me A Coffee account.
+
+**Q: How do I list all my active membership subscriptions?**
+Simply ask the agent to `list_memberships`. It will retrieve the list of all active and inactive subscriptions from your Buy Me A Coffee account, including payer names and emails.
+
+**Q: Does the integration allow creating a new post?**
+The current toolset is focused on querying and monitoring (Read-Only) for safety and data retrieval. Creating or updating posts should be managed through the Buy Me A Coffee creator dashboard.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/buy-me-a-coffee](https://vinkius.com/mcp/buy-me-a-coffee)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Buy Me A Coffee** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `buy-me-a-coffee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Buy Me A Coffee** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "buy-me-a-coffee": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
