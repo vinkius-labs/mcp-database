@@ -41,6 +41,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [EU Limitation Periods Calculator](../mcps/eu-limitation-periods-calculator.md) | Calculate statutory limitation periods and expiry dates for European jurisdictions. |
 | [EU Social Contributions Calculator](../mcps/eu-social-contributions-calculator.md) | Estimate employee and employer social security contributions for France, Germany, Spain, Italy, and Portugal. |
 | [EU Transfer Pricing Checker](../mcps/eu-transfer-pricing-checker.md) | Verify intercompany transaction compliance with OECD Arm's Length Principle using industry benchmarks. |
+| [EU VAT Calculator](../mcps/eu-vat-calculator.md) | Calculate EU VAT rates, transaction taxes, and compliance rules for 27 member states. |
 | [European Arbitration Cost Calculator](../mcps/european-arbitration-cost-calculator.md) | Estimate administrative and tribunal costs for ICC, LCIA, SCC, and VIAC arbitration. |
 | [European Commercial Lease Calculator](../mcps/european-commercial-lease-calculator.md) | Calculate rental adjustments, notice periods, and eviction indemnities for European commercial leases. |
 | [Export Parity Calculator](../mcps/export-parity-calculator.md) | Calculate the net farm-gate price for grain exports by accounting for logistics and taxes. |
@@ -101,6 +102,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Slim Capital Prover](../mcps/slim-capital-prover.md) | An investment thesis picked the hottest sector at peak valuations. It said 'revenue growth' instead of free cash flow. It entered a market with no barriers to entry. It proposed hiring 50 people. It treated each investment as standalone. That is not capital allocation — that is herd following. This tool forces five Slim-level axes: contrarian timing, cash flow obsession, barrier market entry, operational austerity, and conglomerate leverage. |
 | [Solar Panel Estimator](../mcps/solar-panel-estimator.md) | Estimate solar panel requirements, installation area, and financial payback. |
 | [SOX Compliance Cost Estimator](../mcps/sox-compliance-cost-estimator.md) | Estimate the annual costs of Sarbanes-Oxley (SOX) compliance for pre-IPO companies. |
+| [Spain IRPF Calculator](../mcps/spain-irpf-calculator.md) | Calculate Spanish Personal Income Tax (IRPF) liabilities, including taxable base determination and regional tax application. |
 | [Standby Energy Waste Calculator](../mcps/standby-energy-waste-calculator.md) | Calculate the energy waste, financial cost, and carbon footprint of electronics in standby mode. |
 | [Startup Financial Model](../mcps/startup-financial-model.md) | Generate 12, 24, or 36-month financial projections including P&L, Cash Flow, and Break-even analysis. |
 | [Startup Health Score](../mcps/startup-health-score.md) | Quantify startup operational health (0-100) across Finance, Product, Growth, Team, and Market dimensions using stage-specific benchmarks. |
@@ -119,6 +121,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [US 401k Contribution Calculator](../mcps/us-401k-contribution-calculator.md) | Calculate 401k contribution limits, employer matching, tax savings, and retirement growth projections. |
 | [US Arbitration Cost Calculator](../mcps/us-arbitration-cost-calculator.md) | Compare the costs of arbitration (AAA, JAMS, ICDR) against judicial litigation expenses. |
 | [US Benefits Cost Calculator](../mcps/us-benefits-cost-calculator.md) | Calculate the true total employer cost of US employees, including insurance, taxes, and PTO. |
+| [US Capital Gains Tax Calculator](../mcps/us-capital-gains-tax-calculator.md) | Calculate US capital gains tax liability based on holding periods and taxable income. |
 | [US Corporate Tax Calculator](../mcps/us-corporate-tax-calculator.md) | Estimate US federal and state corporate income taxes, providing comparative analysis between C-Corp, S-Corp, and LLC structures. |
 | [US Depreciation Calculator](../mcps/us-depreciation-calculator.md) | Calculate US asset depreciation using MACRS, Section 179, and Bonus Depreciation rules. |
 | [US GAAP & IFRS 15 Revenue Recognition](../mcps/us-gaap-ifrs-15-revenue-recognition.md) | Automate ASC 606 and IFRS 15 revenue recognition by identifying obligations, allocating prices, and calculating progress. |
@@ -130,6 +133,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [US Pre-judgment Interest Calculator](../mcps/us-pre-judgment-interest-calculator.md) | Calculate statutory pre-judgment interest for US states based on debt amount, default date, and state law. |
 | [US Quarterly Tax Estimator](../mcps/us-quarterly-tax-estimator.md) | Calculate exact US federal quarterly estimated tax payments and deadlines using Safe Harbor rules. |
 | [US Section 409A Impact Calculator](../mcps/us-section-409a-impact-calculator.md) | Calculate legal strike price floors, tax penalties for non-compliant grants, and exercise window rules. |
+| [US Self-Employment Tax Calculator](../mcps/us-self-employment-tax-calculator.md) | Calculate US Self-Employment tax (Social Security and Medicare) and associated income tax deductions for the 202rag year. |
+| [US State Tax Calculator](../mcps/us-state-tax-calculator.md) | Calculate US state income tax rates and liabilities based on residency and taxable income. |
 | [US WARN Act Compliance Calculator](../mcps/us-warn-act-compliance-calculator.md) | Calculate employer liabilities and verify compliance with the US WARN Act. |
 | [US Wrongful Termination Calculator](../mcps/us-wrongful-termination-calculator.md) | Estimate potential financial damages and legal liabilities for US wrongful termination claims. |
 | [Vacation Provision Calculator](../mcps/vacation-provision-calculator.md) | Calculate employee vacation liabilities, including constitutional bonuses and employer taxes. |

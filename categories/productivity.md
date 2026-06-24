@@ -737,6 +737,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Urlbox](../mcps/urlbox.md) | Render website screenshots — audit high-fidelity visual content via AI. |
 | [US Equity Compensation Calculator](../mcps/us-equity-compensation-calculator.md) | Project the future value of RSUs and Stock Options across different exit scenarios. |
 | [US Filing Deadline Calculator](../mcps/us-filing-deadline-calculator.md) | Calculate US federal court filing deadlines with automatic weekend and holiday adjustments. |
+| [US W-4 Withholding Estimator](../mcps/us-w-4-withholding-estimator.md) | Calculate precise federal income tax withholding per pay period to avoid penalties. |
 | [Uselessfacts](../mcps/uselessfacts.md) | Access a vast database of quirky, useless facts to entertain, break the ice, or learn something new every day. |
 | [Vacation Pay Calculator](../mcps/vacation-pay-calculator.md) | Calculate vacation pay, constitutional bonuses, cash allowances, and tax withholdings. |
 | [Vadoo AI](../mcps/vadoo-ai.md) | Generate videos, captions, and podcasts automatically using AI. |
