@@ -27,14 +27,14 @@ Connect your **Minutemailer** account to automate your email and SMS marketing w
 
 
 ## Available Tools (8)
-- **create_contact**: Create a new contact
 - **delete_contact**: Delete a contact
 - **get_account_info**: Get account metadata
 - **list_contacts**: List all contacts
 - **list_events**: List account events
-- **list_contact_lists**: List all contact lists
 - **list_smart_lists**: List smart lists
 - **list_templates**: List email templates
+- **create_contact**: Create a new contact
+- **list_contact_lists**: List all contact lists
 
 
 ## 💬 Prompt Examples

@@ -34,20 +34,32 @@ Connect your **Brevo** account to any AI agent to orchestrate your transactional
 
 
 ## Available Tools (45)
-- **create_contact_attribute**: Create a new contact attribute
 - **create_contact_folder**: Create a new contact folder
+- **delete_contact**: Delete a contact
+- **delete_scheduled_email**: Delete a scheduled email
+- **get_account_activity**: Get user activity logs
+- **list_contacts**: List all contacts
+- **list_domains**: List all sender domains
+- **list_email_campaigns**: List all email campaigns
+- **list_email_templates**: List all email templates
+- **list_events**: Retrieve tracked events
+- **list_senders**: List all verified email senders
+- **create_email_template**: Create a new email template
+- **create_event**: Create a single event (e.g., for tracking website activity)
+- **get_webhook**: Get details of a webhook
+- **get_whatsapp_statistics_events**: Get unaggregated WhatsApp activity logs
+- **list_contact_attributes**: List all contact attributes
+- **list_contact_folders**: List all contact folders
+- **list_contact_lists**: List all contact lists
+- **list_sms_campaigns**: List all SMS campaigns
+- **create_contact_attribute**: Create a new contact attribute
 - **create_contact_list**: Create a new contact list
 - **create_contact**: Create a new contact
 - **create_email_campaign**: Create an email campaign
-- **create_email_template**: Create a new email template
-- **create_event**: Create a single event (e.g., for tracking website activity)
 - **create_events_batch**: Create events in batch
 - **create_sender**: Create a new sender
 - **create_sms_campaign**: Create an SMS campaign
 - **create_webhook**: Create a new webhook
-- **delete_contact**: Delete a contact
-- **delete_scheduled_email**: Delete a scheduled email
-- **get_account_activity**: Get user activity logs
 - **get_account**: Get general account information and credits
 - **get_contact**: Get details of a specific contact
 - **get_email_statistics_events**: Get unaggregated transactional email activity (logs)
@@ -57,18 +69,6 @@ Connect your **Brevo** account to any AI agent to orchestrate your transactional
 - **get_sms_statistics_events**: Get unaggregated SMS activity logs
 - **get_sms_statistics_reports**: Get aggregated SMS activity
 - **get_transactional_email**: Get personalized content of a sent email
-- **get_webhook**: Get details of a webhook
-- **get_whatsapp_statistics_events**: Get unaggregated WhatsApp activity logs
-- **list_contact_attributes**: List all contact attributes
-- **list_contact_folders**: List all contact folders
-- **list_contact_lists**: List all contact lists
-- **list_contacts**: List all contacts
-- **list_domains**: List all sender domains
-- **list_email_campaigns**: List all email campaigns
-- **list_email_templates**: List all email templates
-- **list_events**: Retrieve tracked events
-- **list_senders**: List all verified email senders
-- **list_sms_campaigns**: List all SMS campaigns
 - **list_transactional_emails**: Get a list of transactional emails
 - **list_webhooks**: List all configured webhooks
 - **register_domain**: Register a new domain

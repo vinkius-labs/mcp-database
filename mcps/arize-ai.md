@@ -35,6 +35,13 @@ No more context-switching into heavily graphical dashboards to figure out why an
 
 
 ## Available Tools (10)
+- **get_dataset**: Get a specific evaluation dataset
+- **get_model**: It defines the inputs, outputs, and features.
+
+Get details and metadata for a specific tracked model
+- **list_spaces**: Spaces separate different models and telemetry datasets.
+
+List accessible workspaces within the Arize platform
 - **list_datasets**: List static evaluation datasets
 - **list_environments**: g., Production, Training, Verification) used to segregate model inferences and baseline datasets.
 
@@ -42,19 +49,12 @@ List configured environments within Arize
 - **list_evals**: g., Toxicity, Hallucination, PII filtering).
 
 List automated evaluation runs
-- **get_dataset**: Get a specific evaluation dataset
-- **get_model**: It defines the inputs, outputs, and features.
-
-Get details and metadata for a specific tracked model
 - **ingest_log**: payload_json must contain valid Arize payload structures.
 
 Ingest raw telemetry logs into Arize
 - **get_metrics**: Fetch observability metrics for an ML model
 - **list_models**: List tracked ML models or LLMs
 - **run_eval**: Trigger a custom LLM evaluation run
-- **list_spaces**: Spaces separate different models and telemetry datasets.
-
-List accessible workspaces within the Arize platform
 
 
 ## 💬 Prompt Examples

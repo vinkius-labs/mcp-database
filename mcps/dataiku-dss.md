@@ -41,15 +41,15 @@ Connect your **Dataiku DSS** instance to any AI agent and take full control of y
 - **list_datasets**: List all datasets in a project
 - **dataset_schema**: Get the schema (columns, types) of a specific dataset
 - **list_recipes**: List all recipes (data transformations) in a project
-- **get_recipe**: Get recipe configuration and settings
 - **list_jobs**: List pipeline jobs in a project (build tasks, training runs)
 - **get_job**: Get job state, timing, and outputs
 - **list_scenarios**: List automation scenarios in a project
-- **run_scenario**: Trigger a scenario execution (build pipeline, retrain model)
 - **list_models**: List deployed/saved ML models in a project
 - **get_model**: Get saved model metadata, algorithm, and performance metrics
+- **run_scenario**: Trigger a scenario execution (build pipeline, retrain model)
 - **list_plugins**: List installed DSS plugins
 - **list_connections**: List all DSS data connections (databases, cloud storage, APIs)
+- **get_recipe**: Get recipe configuration and settings
 
 
 ## 💬 Prompt Examples

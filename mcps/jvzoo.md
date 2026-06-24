@@ -20,9 +20,6 @@ Retrieves details about your JVZoo account
 - **get_affiliate**: Essential for partner vetting and relationship management.
 
 Retrieves details for a specific affiliate
-- **get_product**: Returns descriptions, sales status, and technical settings. Use this when the user needs to analyze a specific listing.
-
-Retrieves details for a specific product
 - **get_sale**: Returns customer details, product purchased, and payment status. Use this for order verification or support.
 
 Retrieves details for a specific sale
@@ -35,6 +32,9 @@ Lists all active affiliate campaigns
 - **list_coupons**: Useful for auditing available incentives.
 
 Lists all active discount coupons
+- **get_product**: Returns descriptions, sales status, and technical settings. Use this when the user needs to analyze a specific listing.
+
+Retrieves details for a specific product
 - **list_products**: Returns product names, IDs, and pricing. Use this to identify specific items for sales analysis or affiliate management.
 
 Lists all products in your JVZoo account

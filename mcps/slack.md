@@ -34,25 +34,46 @@ Transform your team communication into an AI-powered workflow with **Slack**, th
 - **Operations Managers** — audit communication patterns, find specific discussions, and coordinate across multiple channels effortlessly.
 
 
-## Available Tools (6)
+## Available Tools (13)
 - **channels_list**: Returns public and private channels the bot has access to. Channel IDs are needed for sending messages or reading history.
 
 List Slack channels in the workspace
 - **channels_history**: Requires the channel ID (use channels_list to find it). Returns messages in reverse chronological order.
 
 Get recent messages from a Slack channel
+- **channel_info**: Requires the channel ID (use channels_list to discover IDs).
+
+Get detailed information about a specific Slack channel
 - **messages_send**: Requires the channel ID. Use channels_list to find available channels. Optionally specify thread_ts to reply in a thread.
 
 Send a message to a Slack channel or DM
 - **messages_search**: Searches message content, usernames, and channels. Results are sorted by most recent first.
 
 Search for messages across the Slack workspace
+- **message_update**: Requires the channel ID and exact message timestamp. The bot can only edit messages it has sent.
+
+Edit an existing Slack message
+- **message_delete**: This action is irreversible. The bot can only delete messages it has sent, or any message in channels where it has admin permissions.
+
+Delete a Slack message permanently
 - **users_list**: Returns user IDs, names, emails, and status. User IDs are needed for sending DMs or identifying message authors.
 
 List users in the Slack workspace
+- **user_info**: Returns full profile: real name, display name, email, timezone, admin status, and custom status. Requires a user ID (starts with U).
+
+Get detailed profile information for a specific Slack user
 - **reactions_add**: Requires the channel ID and the exact message timestamp (ts). Use channels_history to find message timestamps.
 
 Add a reaction emoji to a Slack message
+- **thread_replies**: Requires the channel ID and the parent message timestamp (thread_ts). Returns all replies in the thread sorted chronologically.
+
+Get replies from a message thread
+- **pin_message**: Pinned messages appear in the channel details panel for easy reference. Requires the channel ID and message timestamp.
+
+Pin an important message to a channel
+- **set_channel_topic**: The topic appears at the top of the channel for all members to see. Requires the channel ID and new topic text.
+
+Set or update the topic of a Slack channel
 
 
 ## 💬 Prompt Examples

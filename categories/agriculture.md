@@ -4,9 +4,11 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Crop Rotation Planner](../mcps/crop-rotation-planner.md) | Generate optimized agricultural crop rotation sequences to improve soil health and maximize income. |
 | [Fertilizer Requirement Calculator](../mcps/fertilizer-requirement-calculator.md) | Calculate precise nutrient dosages and fertilizer costs based on soil analysis and regional standards. |
 | [Lime Requirement Calculator](../mcps/lime-requirement-calculator.md) | Calculate precise limestone dosage and total application costs using base saturation and SMP buffer methods. |
 | [Pesticide Dilution Calculator](../mcps/pesticide-dilution-calculator.md) | Calculate precise pesticide dilution, tank loads, and safety intervals. |
+| [Planting Window Calculator](../mcps/planting-window-calculator.md) | Determine optimal planting windows, insurance deadlines, and climate risks for crops. |
 | [Seed Treatment Calculator](../mcps/seed-treatment-calculator.md) | Calculate precise quantities, application sequences, and costs for seed treatment batches. |
 | [Soil Correction Planner](../mcps/soil-correction-planner.md) | Plan a 3-year soil amendment program for lime, gypsum, and micronutrients. |
 

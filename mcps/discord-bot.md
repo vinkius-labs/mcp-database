@@ -35,6 +35,7 @@ Empower your AI agent to orchestrate your entire community ecosystem on **Discor
 
 
 ## Available Tools (10)
+- **list_messages**: List recent messages in a channel
 - **delete_message**: Delete a message from a channel
 - **get_channel**: Get details for a specific channel
 - **get_guild_roles**: Get roles for a guild
@@ -43,7 +44,6 @@ Empower your AI agent to orchestrate your entire community ecosystem on **Discor
 - **list_channels**: List channels in a guild
 - **list_guild_members**: List members of a guild
 - **list_guilds**: List guilds the bot is in
-- **list_messages**: List recent messages in a channel
 - **send_message**: Send a message to a channel
 
 

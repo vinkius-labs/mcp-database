@@ -44,6 +44,12 @@ Create a new discussion or issue in a Hugging Face repository
 - **get_discussion_details**: You MUST read the discussion details before engaging or commenting to fully understand the context.
 
 Get the full details and comments of a specific Hugging Face discussion
+- **get_repo_discussions**: Use this to monitor community activity and identify pain points.
+
+Get discussions/issues for a specific Hugging Face repository
+- **search_repositories**: Useful for identifying high-value community engagement opportunities based on keywords.
+
+Search for Hugging Face repositories (models, datasets, spaces)
 - **get_repo_intelligence**: Use this for rapid market awareness before deciding to engage.
 
 Get a comprehensive intelligence report for a Hugging Face repository
@@ -53,12 +59,6 @@ Get the top trending repositories on Hugging Face
 - **scan_target_discussions**: Use this to find relevant discussions based on targeted keywords across the most active projects.
 
 Scan trending Hugging Face repositories for discussions matching a specific keyword
-- **search_repositories**: Useful for identifying high-value community engagement opportunities based on keywords.
-
-Search for Hugging Face repositories (models, datasets, spaces)
-- **get_repo_discussions**: Use this to monitor community activity and identify pain points.
-
-Get discussions/issues for a specific Hugging Face repository
 
 
 ## 💬 Prompt Examples

@@ -33,6 +33,7 @@ Connect **Lemlist** to your AI agent and manage your cold email outreach and lea
 
 
 ## Available Tools (8)
+- **get_team**: Get team info
 - **list_campaigns**: List all campaigns
 - **get_campaign**: Get campaign details
 - **list_leads**: List campaign leads
@@ -40,7 +41,6 @@ Connect **Lemlist** to your AI agent and manage your cold email outreach and lea
 - **delete_lead**: Delete lead from campaign
 - **pause_lead**: Pause a lead
 - **resume_lead**: Resume a lead
-- **get_team**: Get team info
 
 
 ## 💬 Prompt Examples

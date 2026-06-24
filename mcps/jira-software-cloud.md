@@ -37,15 +37,17 @@ Connect your **Jira Software Cloud** instance to any AI agent to streamline your
 - **create_board**: Requires name, type (scrum or kanban), and filterId.
 
 Create a new board
+- **get_epic_issues**: Get issues for epic
+- **submit_vulnerabilities**: Submit vulnerabilities
+- **get_board_configuration**: Get board configuration
+- **move_issues_to_sprint**: Move issues to sprint
 - **create_sprint**: Create a new sprint
 - **get_agile_issue**: Get issue with Agile fields
 - **get_board_backlog**: Get issues for backlog
-- **get_board_configuration**: Get board configuration
 - **get_board_epics**: Get all epics for board
 - **get_board_sprints**: Get all sprints for board
 - **get_build**: Get build data
 - **get_deployment_gating_status**: Get deployment gating status
-- **get_epic_issues**: Get issues for epic
 - **get_epic**: Get epic details
 - **get_issue_estimation**: Get issue estimation
 - **get_repository_dev_info**: Get repository development information
@@ -55,7 +57,6 @@ Create a new board
 - **list_boards**: Get all boards in Jira Software
 - **move_issues_to_backlog**: Move issues to backlog
 - **move_issues_to_epic**: Move issues to epic
-- **move_issues_to_sprint**: Move issues to sprint
 - **rank_epics**: Rank epics
 - **rank_issues**: Rank issues
 - **set_issue_estimation**: Set issue estimation
@@ -65,7 +66,6 @@ Create a new board
 - **submit_feature_flags**: Submit feature flag data
 - **submit_incidents**: Submit incidents or reviews
 - **submit_remote_links**: Submit remote link data
-- **submit_vulnerabilities**: Submit vulnerabilities
 - **update_sprint**: Can be used to start or complete a sprint by changing state to active or closed.
 
 Update a sprint
