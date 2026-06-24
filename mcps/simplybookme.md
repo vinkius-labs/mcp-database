@@ -33,6 +33,12 @@ Connect your AI to **SimplyBook.me**, the online appointment scheduling platform
 
 
 ## Available Tools (10)
+- **get_work_calendar**: Retrieves the work calendar for a unit
+- **list_bookings**: Lists all scheduled bookings
+- **list_clients**: Lists company clients
+- **list_events**: Lists specific calendar events or classes
+- **list_services**: Lists all available services offered by the company
+- **list_units**: Lists all service units (providers or locations)
 - **create_booking**: Requires service ID, unit ID, and start time.
 
 Creates a new booking
@@ -41,12 +47,6 @@ Creates a new booking
 Cancels a scheduled booking
 - **update_booking**: Updates an existing booking
 - **get_booking_details**: Retrieves details for a specific booking
-- **get_work_calendar**: Retrieves the work calendar for a unit
-- **list_bookings**: Lists all scheduled bookings
-- **list_clients**: Lists company clients
-- **list_events**: Lists specific calendar events or classes
-- **list_services**: Lists all available services offered by the company
-- **list_units**: Lists all service units (providers or locations)
 
 
 ## 💬 Prompt Examples

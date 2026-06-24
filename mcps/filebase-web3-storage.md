@@ -33,10 +33,7 @@ Connect your **Filebase** account to any AI agent and take full control of your 
 
 
 ## Available Tools (29)
-- **platform_create_gateway**: Create a new dedicated gateway
 - **platform_create_name**: Create a new IPNS name
-- **platform_delete_gateway**: Delete a dedicated gateway
-- **platform_delete_name**: Delete an IPNS name
 - **platform_get_bucket_usage**: Get storage usage for a specific bucket
 - **platform_get_gateway**: Get details of a specific dedicated gateway
 - **platform_get_gateway_usage**: Get bandwidth usage for a dedicated gateway
@@ -51,8 +48,6 @@ Connect your **Filebase** account to any AI agent and take full control of your 
 - **psa_list_pins**: List pins using the Pinning Service API
 - **psa_remove_pin**: Remove a pin by request ID
 - **psa_replace_pin**: Replace an existing pin
-- **rpc_add**: Add a text file to IPFS
-- **rpc_block_get**: Retrieve a raw block by CID
 - **rpc_cat**: Fetch contents of a file by CID
 - **rpc_key_gen**: Create a new keypair
 - **rpc_key_list**: List all keys in the keychain
@@ -62,6 +57,11 @@ Connect your **Filebase** account to any AI agent and take full control of your 
 - **rpc_pin_ls**: List all pinned objects via RPC
 - **rpc_pin_rm**: Unpin a CID via RPC
 - **rpc_version**: Get the version of the IPFS daemon
+- **platform_create_gateway**: Create a new dedicated gateway
+- **platform_delete_gateway**: Delete a dedicated gateway
+- **platform_delete_name**: Delete an IPNS name
+- **rpc_add**: Add a text file to IPFS
+- **rpc_block_get**: Retrieve a raw block by CID
 
 
 ## 💬 Prompt Examples

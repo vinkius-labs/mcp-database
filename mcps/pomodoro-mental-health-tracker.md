@@ -24,10 +24,10 @@ This tracker doesn't just count minutes; it manages your energy. By enforcing st
 
 
 ## Available Tools (4)
-- **suggest_load_adjustment**: Provide prescriptive advice regarding schedule changes based on fatigue indicators
 - **calculate_required_break**: Calculate the required type and minimum duration of a pause
-- **query_session_status**: Determine current position within the planned working sequence
 - **check_for_skip_violation**: Validate adherence by detecting when breaks are bypassed or too short
+- **query_session_status**: Determine current position within the planned working sequence
+- **suggest_load_adjustment**: Provide prescriptive advice regarding schedule changes based on fatigue indicators
 
 
 ## 💬 Prompt Examples

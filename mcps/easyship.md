@@ -33,7 +33,6 @@ Integrate **Easyship**, the leading global shipping platform for e-commerce, dir
 
 
 ## Available Tools (10)
-- **get_easyship_account_metadata**: Retrieve metadata and limits for your Easyship account
 - **quick_shipping_volume_audit**: Retrieve a high-level summary of shipment activity and success rates
 - **get_shipment_details**: Get detailed information and tracking for a specific shipment
 - **list_available_couriers**: List all available couriers and their service capability boundaries
@@ -43,6 +42,7 @@ Integrate **Easyship**, the leading global shipping platform for e-commerce, dir
 - **list_latest_shipments**: Identify the most recently created or updated shipments
 - **list_logistics_shipments**: List all shipments in your Easyship account
 - **search_shipments_by_reference**: Search for shipments using a reference ID or keyword
+- **get_easyship_account_metadata**: Retrieve metadata and limits for your Easyship account
 
 
 ## 💬 Prompt Examples

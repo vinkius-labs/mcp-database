@@ -18,16 +18,16 @@ Finding out why customers leave or why revenue shrinks is critical for business 
 
 
 ## Available Tools (4)
-- **analyze_churn_health**: Analyze churn health against industry benchmarks
-- **customer_churn_rate_calculator**: Requires start and end customer counts.
-
-Calculate the customer churn rate for a given period
 - **net_revenue_retention_calculator**: Requires start ARR, lost revenue, and expansion revenue.
 
 Calculate Net Revenue Retention (NRR) including expansion and contraction
+- **analyze_churn_health**: Analyze churn health against industry benchmarks
 - **revenue_churn_rate_calculator**: Requires start ARR and lost revenue amount.
 
 Calculate the revenue churn rate based on lost ARR
+- **customer_churn_rate_calculator**: Requires start and end customer counts.
+
+Calculate the customer churn rate for a given period
 
 
 ## 💬 Prompt Examples

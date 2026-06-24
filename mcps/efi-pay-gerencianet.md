@@ -33,6 +33,7 @@ The **Efí Pay MCP Server** connects your AI agent directly to one of Brazil's l
 
 
 ## Available Tools (8)
+- **efi_send_pix**: Enviar um Pix em tempo real para terceiros
 - **efi_create_boleto**: Gerar um banco slip tradicional brasileiro (Boleto)
 - **efi_create_pix_charge**: Emitir cobrança imediata via Pix (Cob)
 - **efi_get_balance**: Consultar o resuldado / Saldo atual da conta digital (Efí Pay)
@@ -40,7 +41,6 @@ The **Efí Pay MCP Server** connects your AI agent directly to one of Brazil's l
 - **efi_get_statement**: Consultar o Resumo (Statement / Extrato) das movimentações da conta
 - **efi_list_boletos**: Listar todos os Boletos e transações emitidos em um range de datas
 - **efi_list_pix_charges**: Consultar cobranças Pix (Cob) recebidas ou geradas num intervalo
-- **efi_send_pix**: Enviar um Pix em tempo real para terceiros
 
 
 ## 💬 Prompt Examples

@@ -34,9 +34,6 @@ Connect to **Corescan**, the premier block explorer for the Core DAO network, an
 
 
 ## Available Tools (15)
-- **get_account_balance_multi**: Get CORE balance for multiple addresses
-- **get_account_balance**: Get CORE balance for a single address
-- **get_block_countdown**: Get estimated block countdown time
 - **get_block_reward**: Get block rewards by block number
 - **get_contract_abi**: Get Contract ABI for verified source codes
 - **get_contract_source_code**: Get Contract Source Code for verified source codes
@@ -49,6 +46,9 @@ Connect to **Corescan**, the premier block explorer for the Core DAO network, an
 - **get_total_supply**: Get total supply of CORE
 - **get_tx_receipt_status**: Check transaction receipt status
 - **get_tx_status**: Check contract execution status
+- **get_account_balance_multi**: Get CORE balance for multiple addresses
+- **get_account_balance**: Get CORE balance for a single address
+- **get_block_countdown**: Get estimated block countdown time
 
 
 ## 💬 Prompt Examples
